@@ -3,7 +3,7 @@
 import
   std/[math, tables, times],
   bumpy, chroma, opengl, pixie, silky, vmath,
-  assets, brushes, content, landscapes, sim, game, maps, replays, ui, walls,
+  assets, brushes, content, groves, landscapes, sim, game, maps, replays, ui, walls,
   controls, spelleffects,
   polyworld/actioncam, polyworld/assets, polyworld/characters,
   polyworld/clickmarks,
@@ -30,11 +30,11 @@ const
   CryptFortSurface = CryptRockSurface + 2
   CryptRoadSurface = CryptRockSurface + 3
   CryptSpawnSurface = CryptRockSurface + 4
-  # Match crypt-rock-1's mean RGB while preserving the rock texture detail.
-  CryptRockTint = vec3(0.993051'f, 0.760436'f, 0.854697'f)
 
 type
   GraphicsError = object of CatchableError
+  GodAnimation = enum
+    GodIdle, GodDeath, GodVictory
 
 proc renderPoint(position: WorldPoint): Vec3 =
   ## Converts authoritative integer coordinates at the rendering boundary.
@@ -97,12 +97,6 @@ proc addHudIcons(builder: AtlasBuilder) =
   ## Packs the theme logo into the atlas.
   builder.addThemeLogo(LogoPath)
 
-# Lane footmen and the gods per team: humans for red, undead for blue, so
-# the teams read from their models with no tinting. Heroes are outfits of
-# the same modular pack Call to Adventure uses. Blue wears the upper tank,
-# ranged, mage, support, and fighter looks. Red wears the lower ones.
-# Ranger, Crossbowman, and Arcanist drop or swap gear from their numbered
-# preset. Everyone else wears the preset as published.
 var
   window: Window
   sk: Silky
@@ -138,10 +132,8 @@ proc runGraphics*() =
   profileBlock "terrain":
     amplitude = 2.8'f
     seed = ArenaSeed
-    treeHeight = 5.8'f / 2
-    treeWidth = 0.0'f
     initTerrain(
-      GotaTreeStyle, GeneratedTerrain, PaintedRocks, ArenaTextures,
+      GotaTreeStyle, GeneratedTerrain, NoRocks, ArenaTextures,
       settings = GotaTerrainAssets
     )
     terrainUnboostedMaterial = CourtyardSurface.float32
@@ -207,10 +199,10 @@ proc runGraphics*() =
   let scene = newCharacterScene(window)
   scene.useToonShading()
   var
-    # Footmen and gods are the lane grunts of each faction: humans for red,
-    # undead for blue, so the teams read from their models alone.
     footmanModels: array[Team, CharacterModel]
     footmanRenderClips: array[Team, array[6, int]]
+    godModels: array[Team, CharacterModel]
+    godRenderClips: array[Team, array[GodAnimation, int]]
     heroModels: array[HeroClass, CharacterModel]
     heroRenderClips: array[5, int]
   profileBlock "models":
@@ -224,6 +216,13 @@ proc runGraphics*() =
         model.clipIndex("Victory"),
         model.clipIndex("Attack01"),
         model.clipIndex("Attack02")
+      ]
+      let god = loadCharacterModel(GodModels[ord(team)], GodTargetHeight)
+      godModels[team] = god
+      godRenderClips[team] = [
+        god.clipIndex("Idle"),
+        god.clipIndex("Death"),
+        god.clipIndex("Victory")
       ]
     for class in HeroClass:
       heroModels[class] = loadModularCharacterModel(
@@ -244,6 +243,9 @@ proc runGraphics*() =
     spellEffects = initSpellRenderer()
     clickMarks = initClickMarks()
     worldShapes = initShapeRenderer()
+    waypointShapes = initShapeRenderer()
+    waypointText = initWorldBarRenderer()
+    waypointLabels: seq[WorldText]
     selectionOutline = initSelectionOutline()
     occlusionOutline = initSelectionOutline(OccludedOutline)
     showOccludedCharacters = true
@@ -262,12 +264,11 @@ proc runGraphics*() =
     BarracksScale = 1.65'f
 
   const
-    # The undead asset is authored with a narrower body than the human asset.
-    # Keep the normalized height while giving Dire the same readable footprint.
+    # Preserve the undead footprint adjustment and enlarge Radiant humans 21%.
     FootmanSizeIncrease = 1.1'f32
     FootmanSizeFactors: array[Team, float32] = [
-      1.0'f32 * FootmanSizeIncrease,
-      1.15'f32 * FootmanSizeIncrease
+      RedTeam: 1.15'f32 * FootmanSizeIncrease,
+      BlueTeam: 1.21'f32 * FootmanSizeIncrease
     ]
 
   proc footmanSizeFactor(team: Team): float32 =
@@ -294,6 +295,16 @@ proc runGraphics*() =
     of GateTower:
       GateTowerScale
 
+  proc buildingPropName(building: Building): string =
+    ## Selects the living structure model from its simulation kind.
+    if building.kind == BarracksBuilding: "barracks"
+    else: towerPropName(building.tier)
+
+  proc buildingScale(building: Building): float32 =
+    ## Uses the same structure height for drawing, picking, and health bars.
+    if building.kind == BarracksBuilding: BarracksScale
+    else: towerScale(building.tier)
+
   proc wallHeight(placement: WallPlacement, width: float32): float32 =
     ## Embeds an upright wall model at the lowest ground under its footprint.
     let
@@ -319,17 +330,7 @@ proc runGraphics*() =
     result -= 0.05'f
 
   proc placeStaticStructures(packs: array[Team, PropPack]) =
-    ## Places barracks beside gates and joined wall models on natural ground.
-    for site in run.map.layout.barracks:
-      packs[Team(site.team)].placeProp(
-        "barracks",
-        renderSite(site.position),
-        arctan2(
-          (site.facing.x - site.position.x).float32,
-          (site.facing.z - site.position.z).float32
-        ),
-        BarracksScale
-      )
+    ## Places joined wall models on natural ground.
     for placement in buildWalls(run.map.layout.walls):
       let
         pack = packs[Team(placement.team)]
@@ -359,6 +360,7 @@ proc runGraphics*() =
   var
     towerPacks: array[Team, PropPack]
     decorPack: PropPack
+    grove: Grove
   let brush = mixBrush(layers[GroundLayer], run.map.preset.seed)
   profileBlock "props":
     for team in Team:
@@ -376,49 +378,8 @@ proc runGraphics*() =
     for nodes in ArenaDecorNodes:
       for name in nodes:
         doAssert decorPack.hasProp(name), "missing arena decoration: " & name
-    let
-      darkTreePack = loadPropPack(
-        darkTreePaths(),
-        textured = true,
-        textureSize = FortTextureSize,
-        mergeNodes = true
-      )
-      boulders = loadPropPack(
-        propPaths(PaintedRockPath, GotaBoulderNames),
-        only = @GotaBoulderNames,
-        textured = true,
-        repeatTexture = true,
-        textureSize = GotaDecorTextureSize
-      )
-    treeTileBrightness = brush.trees
-    darkTreePack.plantRocks(
-      DarkTreeNames,
-      ArenaRockKind,
-      run.map.preset.seed,
-      height = treeHeight,
-      sizeRange = vec2(0.85'f, 1.3'f),
-      burial = 0.03'f,
-      mask = brush.darkTrees
-    )
-    boulders.plantRocks(
-      GotaBoulderNames,
-      ArenaRockKind,
-      ArenaSeed,
-      height = 1.6'f,
-      sizeRange = vec2(0.5'f, 1.5'f),
-      burial = 0.4'f,
-      tint = CryptRockTint,
-      mask = brush.darkRocks
-    )
-    boulders.plantRocks(
-      GotaBoulderNames,
-      TreeTile,
-      ArenaSeed,
-      height = 1.6'f,
-      sizeRange = vec2(0.5'f, 1.5'f),
-      burial = 0.4'f,
-      mask = brush.lightRocks
-    )
+    grove = generateGrove(run.map.preset.seed)
+    grove.plantGrove(brush, run.map.preset.seed)
     for camp in run.map.layout.camps:
       let center = renderSite(camp)
       decorPack.placeProp("wood_crate_01a", center, scale = 0.6'f)
@@ -428,19 +389,11 @@ proc runGraphics*() =
   profileBlock "bake":
     bakeTerrain(rebuildWalkability = false)
     for i, color in run.map.minimap.mpairs:
-      let tile = layers[GroundLayer].tiles[i]
       var tint = terrainTileColor(GroundLayer, i) * 1.25'f
       if layers[WaterLayer].tiles[i].exists:
         tint = vec3(69, 135, 161) / 255'f
-      elif treeTileBrightness[i] > 0:
-        tint = vec3(55, 83, 40) / 255'f * treeTileBrightness[i]
-      elif brush.darkTrees[i]:
-        tint = vec3(58, 35, 26) / 255'f
-      elif tile.kind == ArenaRockKind:
-        tint = terrainTileColor(GroundLayer, i) * 0.88'f
-      elif tile.kind == TreeTile:
-        # Light-side replacement rocks retain their natural gray color.
-        tint = vec3(85, 85, 81) / 255'f
+      elif grove.colors[i] != vec3(0):
+        tint = grove.colors[i]
       color = uint32(clamp(tint.x * 255, 0'f, 255'f)) shl 16 or
         uint32(clamp(tint.y * 255, 0'f, 255'f)) shl 8 or
         uint32(clamp(tint.z * 255, 0'f, 255'f))
@@ -452,31 +405,19 @@ proc runGraphics*() =
     facing: float32
     animTime: float32
 
-  var gods = [
-    God(team: RedTeam, facing: arctan2(1.0'f32, 1.0'f32)),
-    God(team: BlueTeam, facing: arctan2(-1.0'f32, -1.0'f32)),
-  ]
+  var gods = [God(team: RedTeam), God(team: BlueTeam)]
   for i, god in gods.mpairs:
-    let offset =
-      if god.team == RedTeam:
-        vec3(-3.5, 0, -3.5)
-      else:
-        vec3(3.5, 0, 3.5)
-    god.position = renderPoint(run.world.forts[i].center) + offset
-    god.position.y = surfaceHeightNear(
-      god.position.x,
-      god.position.z,
-      renderPoint(run.world.forts[i].center).y
-    )
+    god.position = renderPoint(run.world.forts[i].center)
+    god.facing = arctan2(-god.position.x, -god.position.z)
 
-  proc godClip(god: God): int =
+  proc godClip(god: God): GodAnimation =
     ## Selects the god animation for the current game state.
     if not run.world.gameOver:
-      idleClip
+      GodIdle
     elif god.team == run.world.winner:
-      victoryClip
+      GodVictory
     else:
-      deathClip
+      GodDeath
 
   proc heroSizeFactor(hero: Hero): float32 =
     ## Returns the small visual scale increase earned through hero levels.
@@ -514,6 +455,8 @@ proc runGraphics*() =
         0'i32
     terrainVisionTick = int32.low
     terrainVisionMode = int32.low
+    terrainEdgeWorld: World
+    terrainEdgeRevision = -1'i32
 
   proc captureUnitPositions() =
     ## Remembers all mobile poses before one authoritative tick.
@@ -669,7 +612,7 @@ proc runGraphics*() =
         gap = DefaultGap * HeroWorldBarScale,
         border = DefaultBorder * HeroWorldBarScale
       )
-    for tower in run.world.towers:
+    for tower in run.world.buildings:
       if tower.hp <= 0 or not visibleInView(tower.team, tower.position):
         continue
       let
@@ -682,13 +625,30 @@ proc runGraphics*() =
           dt
         )
         anchor = renderPoint(tower.position) +
-          vec3(0, towerScale(tower.tier) + 0.45'f32, 0)
+          vec3(0, buildingScale(tower) + 0.45'f32, 0)
         bars = [WorldResourceBar(
           value: health,
           maximum: maximumHealth,
           delayedValue: delayedHealth,
           height: 0.14'f32,
           color: teamHudColor(tower.team),
+          showDamageTrail: true
+        )]
+      renderer.addResourceBars(anchor, TowerWorldBarWidth, bars)
+    for i, fort in run.world.forts:
+      if fort.hp <= 0 or not visibleInView(fort.team, fort.center):
+        continue
+      let
+        health = fort.hp.float32
+        maximum = FortHp.float32
+        delayed = damageTrails.delayedValue(fort.id, health, maximum, dt)
+        anchor = gods[i].position + vec3(0, GodTargetHeight + 0.45'f, 0)
+        bars = [WorldResourceBar(
+          value: health,
+          maximum: maximum,
+          delayedValue: delayed,
+          height: 0.16'f,
+          color: teamHudColor(fort.team),
           showDamageTrail: true
         )]
       renderer.addResourceBars(anchor, TowerWorldBarWidth, bars)
@@ -783,27 +743,27 @@ proc runGraphics*() =
           footmanSizeFactor(footman.team)
         )
       )
-    for tower in run.world.towers:
+    for tower in run.world.buildings:
       if tower.hp <= 0 or not visibleInView(tower.team, tower.position):
         continue
       consider(
         tower.id,
         pickProp(
           towerPacks[tower.team],
-          towerPropName(tower.tier),
+          buildingPropName(tower),
           origin,
           dir,
           renderPoint(tower.position),
           renderFacing(tower.facing),
-          towerScale(tower.tier)
+          buildingScale(tower)
         )
       )
     for i, god in gods:
       if not visibleInView(god.team, run.world.forts[i].center):
         continue
       let
-        model = footmanModels[god.team]
-        clip = footmanRenderClips[god.team][god.godClip]
+        model = godModels[god.team]
+        clip = godRenderClips[god.team][god.godClip]
       var animTime = god.animTime
       if run.world.gameOver and god.team != run.world.winner:
         animTime = min(animTime, clipDuration(model, clip))
@@ -816,8 +776,7 @@ proc runGraphics*() =
           god.position,
           god.facing,
           clip,
-          animTime,
-          2.6
+          animTime
         )
       )
 
@@ -913,13 +872,59 @@ proc runGraphics*() =
     let footman = footmanById(run.world, id)
     if footman.id != 0:
       return int32(footman.team.ord + 1)
-    for tower in run.world.towers:
+    for tower in run.world.buildings:
       if tower.id == id:
         return int32(tower.team.ord + 1)
     for fort in run.world.forts:
       if fort.id == id:
         return int32(fort.team.ord + 1)
     0
+
+  proc drawCreepWaypoints(viewProjection: Mat4, right, up: Vec3) =
+    ## Draws selected creep progress and the actual path without changing play.
+    if not showCreepWaypoints:
+      return
+    let creep = footmanById(run.world, primaryId)
+    if creep.id == 0 or not visibleInView(creep.team, creep.position):
+      return
+    let goals = creep.creepWaypoints()
+    while waypointLabels.len < goals.len:
+      waypointLabels.add layoutText(
+        sk.atlas.fonts["WorldName"], sk.atlas.size,
+        $(waypointLabels.len + 1), height = 0.65'f)
+    waypointShapes.clear()
+    waypointText.clear()
+    var remaining: seq[Vec3]
+    for i, goal in goals:
+      let
+        point = renderPoint(goal) + vec3(0, 0.3'f, 0)
+        color =
+          if i < creep.waypointIndex: rgbx(104, 111, 114, 130)
+          elif i == creep.waypointIndex: rgbx(255, 222, 92, 255)
+          else: teamHudColor(creep.team)
+      waypointShapes.addCircle(point, 0.45'f, color)
+      waypointText.addText(waypointLabels[i], point + vec3(0, 0.6'f, 0), color)
+      if i >= creep.waypointIndex:
+        remaining.add point
+      if i == creep.waypointIndex:
+        var ring: seq[Vec3]
+        for step in 0 .. 64:
+          let
+            angle = step.float32 * (2.0'f * PI.float32 / 64.0'f)
+            radius = WaypointRadius.float32 / WorldScale.float32
+            x = point.x + cos(angle) * radius
+            z = point.z + sin(angle) * radius
+          ring.add vec3(x, groundHeight(x, z) + groundOffset(x, z) + 0.3'f, z)
+        waypointShapes.addPolyline(ring, color, 0.06'f)
+    waypointShapes.addPolyline(remaining, teamHudColor(creep.team), 0.04'f)
+    var route = @[unitRenderPoint(creep.id, creep.position) + vec3(0, 0.35'f, 0)]
+    for i in creep.movePathIndex ..< creep.movePath.len:
+      let tile = creep.movePath[i]
+      route.add tileCenter(int(tile.layer), int(tile.x), int(tile.z)) +
+        vec3(0, 0.35'f, 0)
+    waypointShapes.addPolyline(route, rgbx(116, 242, 226, 255), 0.09'f)
+    waypointShapes.draw(viewProjection)
+    waypointText.draw(viewProjection, right, up, sk.atlasTextureId())
 
   proc playerMode(): bool =
     ## Returns whether this client issues orders for one hero.
@@ -975,7 +980,7 @@ proc runGraphics*() =
         position: unitRenderPoint(footman.id, footman.position),
         focusHeight: 0.6'f32
       )
-    for tower in run.world.towers:
+    for tower in run.world.buildings:
       if tower.id == id and tower.hp > 0 and
           visibleInView(tower.team, tower.position):
         return SelectionTarget(
@@ -989,7 +994,7 @@ proc runGraphics*() =
         return SelectionTarget(
           found: true,
           position: god.position,
-          focusHeight: 1.3'f32
+          focusHeight: GodTargetHeight / 2
         )
 
   proc selectedTargetCount(): int =
@@ -1129,23 +1134,22 @@ proc runGraphics*() =
       beginCharacters(scene, window, view, projection, cameraEye)
       drawCharacter(
         scene,
-        footmanModels[god.team],
+        godModels[god.team],
         god.position,
         god.facing,
-        footmanRenderClips[god.team][god.godClip],
-        god.animTime,
-        sizeFactor = 2.6
+        godRenderClips[god.team][god.godClip],
+        god.animTime
       )
       finishCharacters(scene)
       return
-    for tower in run.world.towers:
+    for tower in run.world.buildings:
       if tower.hp <= 0 or tower.id != id:
         continue
       towerPacks[tower.team].drawProp(
-        towerPropName(tower.tier),
+        buildingPropName(tower),
         renderPoint(tower.position),
         renderFacing(tower.facing),
-        towerScale(tower.tier),
+        buildingScale(tower),
         viewProjection
       )
       return
@@ -1208,7 +1212,7 @@ proc runGraphics*() =
         height: 0.9, radius: 1.2, visible: visibleInView(hero.team, hero.position),
         alive: hero.hp > 0 and hero.state != Dying,
         hp: hero.hp, maxHp: hero.maxHp, complete: true,
-        participant: max(hero.targetHeroId, hero.targetTowerId),
+        participant: max(hero.targetHeroId, hero.targetBuildingId),
         fighting: hero.state == Fighting, activity: hero.swingTicks,
         idleScore: (if hero.hasMoveTarget: 22.0'f else: 12.0'f),
         combatScore: 100
@@ -1220,12 +1224,12 @@ proc runGraphics*() =
         height: 0.8, radius: 1, visible: visibleInView(footman.team, footman.position),
         alive: footman.hp > 0 and footman.state != Dying,
         hp: footman.hp, maxHp: FootmanHp, complete: true,
-        participant: max(footman.targetHeroId, footman.targetTowerId),
+        participant: max(footman.targetHeroId, footman.targetBuildingId),
         fighting: footman.state == Fighting, activity: footman.swingTicks,
         idleScore: (if footman.state == Marching: 22.0'f else: 8.0'f),
         combatScore: 70
       )
-    for tower in run.world.towers:
+    for tower in run.world.buildings:
       subjects.add Subject(
         id: tower.id, owner: int32(tower.team),
         position: renderPoint(tower.position), height: 2.5, radius: 3,
@@ -1237,7 +1241,8 @@ proc runGraphics*() =
     for i, fort in run.world.forts:
       subjects.add Subject(
         id: fort.id, owner: int32(fort.team), position: gods[i].position,
-        height: 2.5, radius: 4, visible: visibleInView(fort.team, fort.center),
+        height: GodTargetHeight, radius: 4,
+        visible: visibleInView(fort.team, fort.center),
         alive: fort.hp > 0, hp: fort.hp, maxHp: FortHp, complete: true,
         damageOnly: true, combatScore: 165
       )
@@ -1579,12 +1584,12 @@ proc runGraphics*() =
         true,
         renderPoint(footman.position) + vec3(0, 0.65'f32, 0)
       )
-    let tower = towerById(run.world, id)
+    let tower = buildingById(run.world, id)
     if tower.id != 0:
       return (
         true,
         renderPoint(tower.position) +
-          vec3(0, towerScale(tower.tier) * 0.55'f32, 0)
+          vec3(0, buildingScale(tower) * 0.55'f32, 0)
       )
     for i, fort in run.world.forts:
       if fort.id == id:
@@ -1652,8 +1657,8 @@ proc runGraphics*() =
           footman.targetId
         elif footman.targetHeroId != 0:
           footman.targetHeroId
-        elif footman.targetTowerId != 0:
-          footman.targetTowerId
+        elif footman.targetBuildingId != 0:
+          footman.targetBuildingId
         elif footman.team == RedTeam:
           run.world.forts[1].id
         else:
@@ -1664,7 +1669,7 @@ proc runGraphics*() =
           CombatSparks,
           target.position
         )
-    for i, tower in run.world.towers:
+    for i, tower in run.world.buildings:
       if i >= oldTowerTicks.len or tower.targetId == 0 or
           oldTowerTicks[i] != TowerAttackTicks - 1 or
           tower.attackTicks != 0:
@@ -1673,7 +1678,7 @@ proc runGraphics*() =
       if not target.found:
         continue
       let origin = renderPoint(tower.position) +
-        vec3(0, towerScale(tower.tier) * 0.72'f32, 0)
+        vec3(0, buildingScale(tower) * 0.72'f32, 0)
       particles.emitParticleProjectile(
         Fireball,
         FireBurst,
@@ -1692,12 +1697,12 @@ proc runGraphics*() =
     var
       oldHeroLanded = newSeq[bool](run.world.heroes.len)
       oldFootmanLanded: Table[int32, bool]
-      oldTowerTicks = newSeq[int32](run.world.towers.len)
+      oldTowerTicks = newSeq[int32](run.world.buildings.len)
     for i, hero in run.world.heroes:
       oldHeroLanded[i] = hero.damageLanded
     for footman in run.world.footmen:
       oldFootmanLanded[footman.id] = footman.damageLanded
-    for i, tower in run.world.towers:
+    for i, tower in run.world.buildings:
       oldTowerTicks[i] = tower.attackTicks
     captureUnitPositions()
     advanceGame()
@@ -1883,7 +1888,7 @@ proc runGraphics*() =
             god.animTime = min(
               god.animTime,
               clipDuration(
-                footmanModels[god.team], footmanRenderClips[god.team][deathClip])
+                godModels[god.team], godRenderClips[god.team][GodDeath])
             )
 
       feedGotaActions()
@@ -1970,25 +1975,25 @@ proc runGraphics*() =
             if livingOnly and run.world.forts[god.team.ord].hp <= 0:
               continue
             let
-              model = footmanModels[god.team]
-              clip = footmanRenderClips[god.team][god.godClip]
+              model = godModels[god.team]
+              clip = godRenderClips[god.team][god.godClip]
             var animTime = god.animTime
             if run.world.gameOver and god.team != run.world.winner:
               animTime = min(animTime, clipDuration(model, clip))
             drawCharacter(
               scene, model, god.position, god.facing,
-              clip, animTime, sizeFactor = 2.6)
+              clip, animTime)
 
         sunDepthPasses(window.size):
           drawTerrainSunDepth()
-          for tower in run.world.towers:
+          for tower in run.world.buildings:
             if tower.hp <= 0:
               continue
             towerPacks[tower.team].drawPropSunDepth(
-              towerPropName(tower.tier),
+              buildingPropName(tower),
               renderPoint(tower.position),
               renderFacing(tower.facing),
-              towerScale(tower.tier)
+              buildingScale(tower)
             )
           scene.sunDepthPass = true
           drawWorldCharacters()
@@ -1999,15 +2004,20 @@ proc runGraphics*() =
         glClear(GL_COLOR_BUFFER_BIT or GL_DEPTH_BUFFER_BIT)
         scene.toon.drawBackground()
         updateTerrainVision()
+        if showTiles and (terrainEdgeWorld != run.world or
+            terrainEdgeRevision != run.world.navigationRevision):
+          updateTerrainEdges(navigationOpen)
+          terrainEdgeWorld = run.world
+          terrainEdgeRevision = run.world.navigationRevision
         drawTerrain(viewProjection, showTiles)
-        for tower in run.world.towers:
+        for tower in run.world.buildings:
           if tower.hp <= 0 or not visibleInView(tower.team, tower.position):
             continue
           towerPacks[tower.team].drawProp(
-            towerPropName(tower.tier),
+            buildingPropName(tower),
             renderPoint(tower.position),
             renderFacing(tower.facing),
-            towerScale(tower.tier),
+            buildingScale(tower),
             viewProjection
           )
 
@@ -2072,6 +2082,7 @@ proc runGraphics*() =
             dt
           )
           drawSelectedOutline(view, projection, viewProjection)
+          drawCreepWaypoints(viewProjection, barCameraRight, barCameraUp)
 
       profileBlock "ui":
         if not cleanScreenshot:

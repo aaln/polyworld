@@ -1,4 +1,4 @@
-## Additive VFX with an authored lightning texture and procedural particles.
+## Material sprites and forged weapons, with additive light and particles.
 ## World-space effects respect scene depth and never write into it.
 import std/[math, os]
 import opengl, pixie, shady, vmath
@@ -14,9 +14,9 @@ type
 
   VfxRenderer* = object
     program, vertexArray, vertexBuffer: GLuint
-    lightningTexture: GLuint
+    lightningTexture, oozeTexture, oozeDropletTexture: GLuint
     lightningAspect: float32
-    vertices: seq[float32]
+    vertices, materialVertices: seq[float32]
 
 const
   HoverGold* = vec4(1.0, 0.82, 0.42, 1.0)
@@ -25,6 +25,7 @@ const
 var
   vfxViewProjection: Uniform[Mat4]
   vfxLightningSampler: Uniform[Sampler2D]
+  vfxOozeSampler, vfxOozeDropletSampler: Uniform[Sampler2D]
 
 proc vfxVertex(position: Vec3, uv: Vec2, ink: Vec4, style: float32,
     dimensions: Vec2, gl_Position: var Vec4, fragmentUv: var Vec2,
@@ -42,7 +43,22 @@ proc vfxFragment(fragmentUv: Vec2, fragmentInk: Vec4,
   var
     alpha = fragmentInk.a
     light = fragmentInk.rgb
-  if fragmentStyle > 4.5'f32:
+  if fragmentStyle > 5.5'f32:
+    # Animate the jelly inside its transparent margin. Pixels loaded by Pixie
+    # are premultiplied, so recover straight color for SRC_ALPHA blending.
+    var uv = fragmentUv
+    let edge = sin(uv.y * 3.14159265'f32)
+    uv.x += sin(uv.y * 11.0'f32 + fragmentDimensions.x) *
+      fragmentDimensions.y * edge
+    uv.y += sin(uv.x * 9.0'f32 - fragmentDimensions.x * 1.3'f32) *
+      fragmentDimensions.y * 0.5'f32 * sin(uv.x * 3.14159265'f32)
+    var slime = texture(vfxOozeSampler, uv)
+    if fragmentStyle > 6.5'f32:
+      slime = texture(vfxOozeDropletSampler, uv)
+    light *= slime.rgb / max(slime.a, 0.001'f32)
+    alpha *= slime.a
+    if alpha < 0.003'f32: discardFragment()
+  elif fragmentStyle > 4.5'f32:
     # The mesh supplies the random path. Small ripples and changing branch
     # brightness animate the texture's fine detail without moving its terminals.
     var uv = fragmentUv
@@ -148,27 +164,39 @@ proc initVfxRenderer*(textureRoot: string): VfxRenderer =
       cast[pointer](attribute.offset * sizeof(float32)))
   glBindVertexArray(0)
 
-  let lightning = readImage(textureRoot / "lightning-strike.png")
+  proc loadTexture(name: string, handle: var GLuint): Image =
+    result = readImage(textureRoot / name)
+    glGenTextures(1, handle.addr)
+    glActiveTexture(GL_TEXTURE0)
+    glBindTexture(GL_TEXTURE_2D, handle)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR.GLint)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR.GLint)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE.GLint)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE.GLint)
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA.GLint, result.width.GLsizei,
+      result.height.GLsizei, 0, GL_RGBA, GL_UNSIGNED_BYTE, result.data[0].addr)
+    glGenerateMipmap(GL_TEXTURE_2D)
+  let lightning = loadTexture("lightning-strike.png", result.lightningTexture)
   result.lightningAspect = lightning.width.float32 / lightning.height.float32
-  glGenTextures(1, result.lightningTexture.addr)
-  glActiveTexture(GL_TEXTURE0)
-  glBindTexture(GL_TEXTURE_2D, result.lightningTexture)
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR.GLint)
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR.GLint)
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE.GLint)
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE.GLint)
-  glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA.GLint, lightning.width.GLsizei,
-    lightning.height.GLsizei, 0, GL_RGBA, GL_UNSIGNED_BYTE, lightning.data[0].addr)
-  glGenerateMipmap(GL_TEXTURE_2D)
+  discard loadTexture("ooze-splat.png", result.oozeTexture)
+  discard loadTexture("ooze-droplet.png", result.oozeDropletTexture)
 
 proc clear*(renderer: var VfxRenderer) =
   renderer.vertices.setLen(0)
+  renderer.materialVertices.setLen(0)
 
 proc addQuad(renderer: var VfxRenderer, corners: array[4, Vec3],
     uvs: array[4, Vec2], ink: Vec4, style: float32, dimensions = vec2(1)) =
   for i in [0, 1, 2, 0, 2, 3]:
     let p = corners[i]
     renderer.vertices.add [p.x, p.y, p.z, uvs[i].x, uvs[i].y,
+      ink.x, ink.y, ink.z, ink.w, style, dimensions.x, dimensions.y]
+
+proc addMaterialQuad(renderer: var VfxRenderer, corners: array[4, Vec3],
+    uvs: array[4, Vec2], ink: Vec4, style: float32, dimensions = vec2(1)) =
+  for i in [0, 1, 2, 0, 2, 3]:
+    let p = corners[i]
+    renderer.materialVertices.add [p.x, p.y, p.z, uvs[i].x, uvs[i].y,
       ink.x, ink.y, ink.z, ink.w, style, dimensions.x, dimensions.y]
 
 proc addCardHalo*(renderer: var VfxRenderer, center, right, down: Vec3,
@@ -225,7 +253,16 @@ proc newVfx*(kind: VfxKind, target: Choice, position: Vec3, seed: int): ActiveVf
       of LightningVfx: 0.95'f32
       of BubbleVfx: 1.05'f32
       of DamageFlashVfx: 0.55'f32
-      of NoVfx: 0.0'f32)
+      of ArrowVfx: 0.75'f32
+      of ManyArrowsVfx: 1.1'f32
+      of SwordsIntoTheWindVfx: 1.55'f32
+      of MightyShieldsVfx: 1.1'f32
+      of SwordAndShieldVfx: 1.4'f32
+      of MeleeVfx: 1.35'f32
+      of SwordClashVfx: 1.25'f32
+      of SwordBreakVfx: 1.4'f32
+      of OozeSplatVfx: 1.8'f32
+      of NoVfx, DeathVfx, DrawVfx, SummonVfx, BounceVfx, TossVfx: 0.0'f32)
 
 proc advance*(effects: var seq[ActiveVfx], dt: float32) =
   for effect in effects.mitems:
@@ -388,40 +425,165 @@ proc addBubble(renderer: var VfxRenderer, effect: ActiveVfx, eye: Vec3) =
     renderer.addBillboard(effect.position + offset, 0.07'f32 + pop * 0.045'f32,
       eye, vec4(0.5, 0.8, 1, appear * (1 - pop)), 3)
 
+proc addArrowShot(renderer: var VfxRenderer, target, start: Vec3,
+    age: float32, seed: int, eye: Vec3, lift = 1.1'f32, glow = 1.0'f32) =
+  ## One fletched arrow flies from `start`, sticks in `target`, then splinters.
+  const flight = 0.22'f32
+  let
+    t = min(1.0'f32, age / flight)
+    tip = mix(start, target, t) + vec3(0, lift * 4 * t * (1 - t), 0)
+    direction = normalize(target - start +
+      vec3(0, lift * 4 * (1 - 2 * t), 0))
+    impactAge = age - flight
+    fade = if impactAge < 0: 1.0'f32
+      else: clamp(1 - impactAge / 0.4'f32, 0.0'f32, 1.0'f32)
+    normal = cross(direction, eye - tip)
+  if fade > 0.002'f32 and length(normal) > 0.00001'f32:
+    let
+      side = normalize(normal)
+      tail = tip - direction * 1.05'f32
+      barb = tip - direction * 0.22'f32
+      ink = vec4(1.0, 0.72, 0.32, fade)
+    if impactAge < 0:
+      # A short streak behind the arrow sells its speed during flight.
+      let
+        t0 = max(0.0'f32, t - 0.45'f32)
+        trail = mix(start, target, t0) +
+          vec3(0, lift * 4 * t0 * (1 - t0), 0)
+      renderer.addLine(trail, tail, eye, 0.035, vec4(1.0, 0.85, 0.55, 0.22))
+    renderer.addGlowLine(tail, tip, eye, 0.016, ink)
+    renderer.addGlowLine(barb + side * 0.11'f32, tip, eye, 0.013, ink)
+    renderer.addGlowLine(barb - side * 0.11'f32, tip, eye, 0.013, ink)
+    for offset in [-0.1'f32, 0.1'f32]:
+      renderer.addGlowLine(tail + direction * 0.2'f32, tail + side * offset,
+        eye, 0.011, vec4(1.0, 0.9, 0.7, fade * 0.8'f32))
+  if impactAge < 0: return
+
+  renderer.addBillboard(target, 0.95, eye,
+    vec4(1.0, 0.62, 0.22, exp(-impactAge * 9) * 1.1'f32 * glow), 4)
+  # Splinters kick back toward the shooter, falling under a light gravity.
+  for i in 0 ..< 36:
+    let
+      delay = particleNoise(i, 42, seed) * 0.04'f32
+      elapsed = impactAge - delay
+      lifetime = 0.2'f32 + particleNoise(i, 43, seed) * 0.3'f32
+    if elapsed < 0 or elapsed >= lifetime: continue
+    let
+      angle = particleNoise(i, 44, seed) * 2 * PI.float32
+      scatter = vec3(cos(angle), particleNoise(i, 45, seed) * 1.4'f32, sin(angle))
+      speed = 1.8'f32 + particleNoise(i, 46, seed) * 3.2'f32
+      velocity = normalize(scatter - direction * 1.2'f32) * speed
+      tailTime = max(0.0'f32, elapsed - 0.02'f32)
+      head = target + velocity * elapsed +
+        vec3(0, -3.0'f32 * elapsed * elapsed, 0)
+      back = target + velocity * tailTime +
+        vec3(0, -3.0'f32 * tailTime * tailTime, 0)
+      sparkFade = clamp((lifetime - elapsed) / 0.15'f32, 0.0'f32, 1.0'f32)
+      ink = mix(vec3(0.95, 0.42, 0.12), vec3(1.0, 0.86, 0.5),
+        particleNoise(i, 47, seed))
+    renderer.addGlowLine(back, head, eye,
+      0.008'f32 + particleNoise(i, 48, seed) * 0.012'f32,
+      vec4(ink, sparkFade * 0.9'f32))
+
+proc addArrow(renderer: var VfxRenderer, effect: ActiveVfx, eye: Vec3) =
+  ## A fletched arrow arcs in from the table side, sticks, then splinters.
+  let
+    seed = effect.seed
+    cameraRight = normalize(cross(vec3(0, 1, 0), normalize(eye - effect.position)))
+    inward = if dot(effect.position, cameraRight) > 0: -1.0'f32 else: 1.0'f32
+    start = effect.position +
+      cameraRight * inward * (4.5'f32 + particleNoise(0, 40, seed)) +
+      vec3(0, 1.4'f32 + particleNoise(0, 41, seed) * 0.6'f32, 0)
+  renderer.addArrowShot(effect.position, start, effect.elapsed, seed, eye)
+
+proc addArrowVolley(renderer: var VfxRenderer, effect: ActiveVfx, eye: Vec3) =
+  ## A staggered volley drops steeply around the target from overhead.
+  const volley = 5
+  for i in 0 ..< volley:
+    let
+      delay = i.float32 * 0.07'f32 + particleNoise(i, 50, effect.seed) * 0.05'f32
+      age = effect.elapsed - delay
+    if age < 0: continue
+    let
+      angle = particleNoise(i, 51, effect.seed) * 2 * PI.float32
+      around = vec3(cos(angle), 0, sin(angle))
+      target = effect.position +
+        around * (0.2'f32 + particleNoise(i, 52, effect.seed) * 0.45'f32)
+      start = target + around * 1.1'f32 +
+        vec3(0, 5.0'f32 + particleNoise(i, 53, effect.seed), 0)
+    renderer.addArrowShot(target, start, age, effect.seed + i * 7919, eye,
+      lift = 0.25'f32, glow = 0.55'f32)
+
+include warriorvfx
+
+include oozevfx
+
 proc addEffects*(renderer: var VfxRenderer, effects: openArray[ActiveVfx],
     eye: Vec3) =
   for effect in effects:
     case effect.kind
     of LightningVfx: renderer.addLightning(effect, eye)
     of BubbleVfx: renderer.addBubble(effect, eye)
+    of ArrowVfx: renderer.addArrow(effect, eye)
+    of ManyArrowsVfx: renderer.addArrowVolley(effect, eye)
+    of SwordsIntoTheWindVfx: renderer.addSwordsIntoTheWind(effect, eye)
+    of MightyShieldsVfx: renderer.addMightyShields(effect, eye)
+    of SwordAndShieldVfx: renderer.addSwordAndShield(effect, eye)
+    of MeleeVfx: renderer.addMelee(effect, eye)
+    of SwordClashVfx: renderer.addSwordClash(effect, eye)
+    of SwordBreakVfx: renderer.addSwordBreak(effect, eye)
+    of OozeSplatVfx: renderer.addOozeSplat(effect, eye)
     of DamageFlashVfx:
       let t = effect.elapsed / effect.duration
       renderer.addBillboard(effect.position, 1.2'f32 + t * 0.8'f32, eye,
         vec4(1, 0.025, 0.05, (1 - t) * 0.38'f32), 4)
-    of NoVfx: discard
+    of NoVfx, DeathVfx, DrawVfx, SummonVfx, BounceVfx, TossVfx: discard
 
 proc draw*(renderer: var VfxRenderer, viewProjection: Mat4,
     additive = true, depthTest = true) =
-  if renderer.vertices.len == 0: return
+  if renderer.vertices.len == 0 and renderer.materialVertices.len == 0: return
   glBindBuffer(GL_ARRAY_BUFFER, renderer.vertexBuffer)
-  glBufferData(GL_ARRAY_BUFFER, renderer.vertices.len * sizeof(float32),
-    renderer.vertices[0].addr, GL_DYNAMIC_DRAW)
   if depthTest: glEnable(GL_DEPTH_TEST)
   else: glDisable(GL_DEPTH_TEST)
   glDepthMask(GL_FALSE)
   glDisable(GL_CULL_FACE)
   glEnable(GL_BLEND)
-  glBlendFunc(GL_SRC_ALPHA, if additive: GL_ONE else: GL_ONE_MINUS_SRC_ALPHA)
   glUseProgram(renderer.program)
   glActiveTexture(GL_TEXTURE0)
   glBindTexture(GL_TEXTURE_2D, renderer.lightningTexture)
   glUniform1i(glGetUniformLocation(renderer.program, "vfxLightningSampler"), 0)
+  var previousOozeUnit, previousDropletUnit: GLint
+  glActiveTexture(GL_TEXTURE1)
+  glGetIntegerv(GL_TEXTURE_BINDING_2D, previousOozeUnit.addr)
+  glBindTexture(GL_TEXTURE_2D, renderer.oozeTexture)
+  glUniform1i(glGetUniformLocation(renderer.program, "vfxOozeSampler"), 1)
+  glActiveTexture(GL_TEXTURE2)
+  glGetIntegerv(GL_TEXTURE_BINDING_2D, previousDropletUnit.addr)
+  glBindTexture(GL_TEXTURE_2D, renderer.oozeDropletTexture)
+  glUniform1i(glGetUniformLocation(renderer.program, "vfxOozeDropletSampler"), 2)
   vfxViewProjection = viewProjection
   glUniformMatrix4fv(glGetUniformLocation(renderer.program, "vfxViewProjection"),
     1, GL_FALSE, cast[ptr float32](vfxViewProjection.addr))
   glBindVertexArray(renderer.vertexArray)
-  glDrawArrays(GL_TRIANGLES, 0, (renderer.vertices.len div 12).GLsizei)
+  # Steel, leather, and jelly retain their shadows and alpha; light is laid
+  # over those surfaces in a second pass, using the existing additive blend.
+  if renderer.materialVertices.len > 0:
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
+    glBufferData(GL_ARRAY_BUFFER, renderer.materialVertices.len * sizeof(float32),
+      renderer.materialVertices[0].addr, GL_DYNAMIC_DRAW)
+    glDrawArrays(GL_TRIANGLES, 0, (renderer.materialVertices.len div 12).GLsizei)
+  if renderer.vertices.len > 0:
+    glBlendFunc(GL_SRC_ALPHA, if additive: GL_ONE else: GL_ONE_MINUS_SRC_ALPHA)
+    glBufferData(GL_ARRAY_BUFFER, renderer.vertices.len * sizeof(float32),
+      renderer.vertices[0].addr, GL_DYNAMIC_DRAW)
+    glDrawArrays(GL_TRIANGLES, 0, (renderer.vertices.len div 12).GLsizei)
   glBindVertexArray(0)
+  # The scene keeps its shadow maps on these units between frames.
+  glActiveTexture(GL_TEXTURE1)
+  glBindTexture(GL_TEXTURE_2D, previousOozeUnit.GLuint)
+  glActiveTexture(GL_TEXTURE2)
+  glBindTexture(GL_TEXTURE_2D, previousDropletUnit.GLuint)
+  glActiveTexture(GL_TEXTURE0)
   glDepthMask(GL_TRUE)
 
 proc drawCharacterFlash*(renderer: var VfxRenderer, stencilRef: int,
@@ -430,6 +592,7 @@ proc drawCharacterFlash*(renderer: var VfxRenderer, stencilRef: int,
   ## cutout materials. A red overlay stays bright even on blue/dark clothing.
   if strength <= 0: return
   var savedVertices = move(renderer.vertices)
+  var savedMaterials = move(renderer.materialVertices)
   renderer.addQuad([vec3(-1, 1, 0), vec3(-1, -1, 0),
     vec3(1, -1, 0), vec3(1, 1, 0)],
     [vec2(0), vec2(0), vec2(0), vec2(0)],
@@ -442,3 +605,4 @@ proc drawCharacterFlash*(renderer: var VfxRenderer, stencilRef: int,
   glDisable(GL_STENCIL_TEST)
   glStencilMask(0xff)
   renderer.vertices = move(savedVertices)
+  renderer.materialVertices = move(savedMaterials)

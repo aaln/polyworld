@@ -2,6 +2,10 @@ import
   polyworld/[metrics, pathing],
   ../examples/gods_of_the_arena/[content, sim]
 
+when not defined(replayEvents):
+  static:
+    doAssert not compiles(World().events)
+
 proc itemWorld(): World =
   ## Creates visible targets without running navigation or bot decisions.
   result = World(
@@ -14,9 +18,9 @@ proc itemWorld(): World =
     footmen: @[
       Footman(id: 1000, team: BlueTeam, hp: 60)
     ],
-    towers: @[
-      Tower(id: 10, team: BlueTeam, tier: OuterTower, hp: 600),
-      Tower(id: 11, team: BlueTeam, tier: InnerTower, hp: 800)
+    buildings: @[
+      Building(id: 10, team: BlueTeam, tier: OuterTower, hp: 600),
+      Building(id: 11, team: BlueTeam, tier: InnerTower, hp: 800)
     ],
     forts: [
       Fort(id: 1, team: RedTeam, hp: FortHp),
@@ -80,23 +84,36 @@ block:
     world = itemWorld()
     hero = world.heroes[0]
   for lane in 1 .. 2:
-    world.towers.add Tower(
+    world.buildings.add Building(
       id: int32(20 + lane),
       team: BlueTeam,
       lane: lane,
       tier: OuterTower,
       hp: 600
     )
+  for i in 0 ..< 2:
+    world.buildings.add Building(
+      id: int32(28 + i),
+      team: BlueTeam,
+      lane: -1,
+      tier: GateTower,
+      guardsGod: true,
+      hp: 1950
+    )
   hero.attackObjectId = 11
   doAssert not world.applyUseItem(hero.id, 0)
   hero.attackObjectId = 2
   doAssert not world.applyUseItem(hero.id, 0)
-  world.towers[0].hp = 0
+  world.buildings[0].hp = 0
   hero.attackObjectId = 11
   doAssert world.applyUseItem(hero.id, 0)
-  doAssert world.towers[1].hp == 800 - PoisonPotion.itemSpec.strike
-  world.towers[1].hp = 0
+  doAssert world.buildings[1].hp == 800 - PoisonPotion.itemSpec.strike
+  world.buildings[1].hp = 0
   hero.attackObjectId = 2
+  doAssert not world.applyUseItem(hero.id, 0)
+  world.buildings[4].hp = 0
+  doAssert not world.applyUseItem(hero.id, 0)
+  world.buildings[5].hp = 0
   world.forts[1].center.x = heroAttackRange(hero.class) + 1
   doAssert not world.applyUseItem(hero.id, 0)
   world.forts[1].center.x -= 1

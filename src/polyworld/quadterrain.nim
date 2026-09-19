@@ -728,7 +728,8 @@ proc texturedInstantFrag(
     fragUv: Vec3,
     fragmentNormal,
     fragmentPosition: Vec3,
-    shadowPos: Vec3
+    shadowPos: Vec3,
+    fragTint: Vec3
 ) =
   ## The tree cutout shading with the standalone prop tint folded in, for
   ## textured props drawn per frame rather than baked.
@@ -746,7 +747,9 @@ proc texturedInstantFrag(
       texture(visibilityTex, visibilityUv).x
     )
     paint = vec3(
-      texel.x * propTint.x, texel.y * propTint.y, texel.z * propTint.z)
+      texel.x * propTint.x * fragTint.x,
+      texel.y * propTint.y * fragTint.y,
+      texel.z * propTint.z * fragTint.z)
     litColor = envShadeTwoSided(
       paint, fragmentNormal, sampleSunShadow(shadowPos))
     gray = dot(litColor, vec3(0.30, 0.59, 0.11)) * 0.32
@@ -953,6 +956,7 @@ type
     vertices: seq[float32]  # x y z r g b nx ny nz; pack-scaled, base at y 0
     uvs: seq[float32]       # u v layer per vertex, into the pack's atlases
     textureArray: GLuint    # the pack's atlas array; 0 draws vertex colors
+    materialColors: bool   # Generated material tints and vertex shading.
     texturedVertexArray: GLuint       # immediate textured draw, on first use
     texturedVertexBuffer: GLuint
     texturedDepthVertexArray: GLuint
@@ -1042,7 +1046,7 @@ proc atlasLayer(images: var seq[Image], image: Image): float32 =
 proc collectPropModels(
     node: gltf.Node, parent: Mat4, models: var seq[PropModel],
     skipPrefix = "", only: seq[string] = @[], images: ptr seq[Image] = nil,
-    centerModels = true
+    centerModels = true, materialColors = false
 ) =
   ## Flattens renderable glTF nodes into normalized colored triangle models.
   ## With `only` given, nodes not named in it are skipped. With `images`
@@ -1092,7 +1096,17 @@ proc collectPropModels(
           ))
         else:
           sourceNormals.add vec3(0, 0, 0)
-        if image != nil and index < primitive.uvs.len:
+        if materialColors:
+          var tint = vec3(1)
+          if primitive.material != nil:
+            let factor = primitive.material.baseColorFactor
+            tint = vec3(factor.r, factor.g, factor.b)
+          if index < primitive.colors.len:
+            let shade = primitive.colors[index]
+            tint *= vec3(shade.r.float32, shade.g.float32,
+              shade.b.float32) / 255'f
+          colors.add tint
+        elif image != nil and index < primitive.uvs.len:
           let
             uv = primitive.uvs[index]
             px = clamp(int(uv.x * image.width.float32), 0, image.width - 1)
@@ -1122,7 +1136,9 @@ proc collectPropModels(
       let
         height = max(high.y - low.y, 0.001'f32)
         center = (low + high) / 2
-      var model = PropModel(name: node.name, height: height)
+      var model = PropModel(
+        name: node.name, height: height, materialColors: materialColors
+      )
       for t in countup(0, points.len - 3, 3):
         # Authored normals when the model has them; otherwise flat facet
         # normals from the triangle.
@@ -1157,7 +1173,8 @@ proc collectPropModels(
       models.add model
   for child in node.nodes:
     collectPropModels(
-      child, world, models, skipPrefix, only, images, centerModels)
+      child, world, models, skipPrefix, only, images, centerModels,
+      materialColors)
 
 proc mergePropModels(models: seq[PropModel], name: string): PropModel =
   ## Centers a complete asset once, preserving offsets between its meshes.
@@ -1453,6 +1470,42 @@ proc loadPropPack*(
     @[path], unitHeight, brightness, only, textured, repeatTexture,
     textureSize, mergeNodes)
 
+proc createPropPack*(
+    nodes: openArray[gltf.Node], textureSize = 512,
+    repeatTexture = false, mipmaps = true
+): PropPack =
+  ## Uploads generated nodes once, preserving their sizes, colors, and shading.
+  result = PropPack()
+  var images: seq[Image]
+  for node in nodes:
+    collectPropModels(
+      node, mat4(), result.models, images = images.addr,
+      centerModels = false, materialColors = true
+    )
+  if images.len > 0:
+    var chains: seq[seq[Image]]
+    for image in images:
+      # Generator images use straight alpha; filtering needs premultiplied RGB.
+      let source = image.copy()
+      source.data.toPremultipliedAlpha()
+      let square =
+        if source.width == textureSize and source.height == textureSize:
+          source
+        else:
+          source.resize(textureSize, textureSize)
+      var chain = if mipmaps: mipChain(square) else: @[square]
+      for mip in chain.mitems:
+        mip.data.toStraightAlpha()
+      chains.add chain
+    result.textureArray = buildTextureArray(
+      chains,
+      if repeatTexture: GL_REPEAT.GLint else: GL_CLAMP_TO_EDGE.GLint
+    )
+    for model in result.models:
+      model.textureArray = result.textureArray
+  for i, model in result.models:
+    result.names[model.name] = i
+
 proc hasProp*(pack: PropPack, name: string): bool =
   ## Returns whether a pack contains a model with the requested node name.
   pack != nil and name in pack.names
@@ -1612,8 +1665,13 @@ proc uploadTexturedPropModel(model: PropModel) =
     mesh.add model.vertices[i + 6]
     mesh.add model.vertices[i + 7]
     mesh.add model.vertices[i + 8]
+    for channel in 0 ..< 3:
+      mesh.add(
+        if model.materialColors: model.vertices[i + 3 + channel]
+        else: 1.0'f
+      )
     i += 9
-  const stride = (9 * sizeof(float32)).GLsizei
+  const stride = (12 * sizeof(float32)).GLsizei
   glGenBuffers(1, model.texturedVertexBuffer.addr)
   glBindBuffer(GL_ARRAY_BUFFER, model.texturedVertexBuffer)
   glBufferData(
@@ -1627,7 +1685,8 @@ proc uploadTexturedPropModel(model: PropModel) =
   for attribute in [
     (name: "vertPos", count: 3, offset: 0),
     (name: "vertUv", count: 3, offset: 3 * sizeof(float32)),
-    (name: "normal", count: 3, offset: 6 * sizeof(float32))
+    (name: "normal", count: 3, offset: 6 * sizeof(float32)),
+    (name: "vertTint", count: 3, offset: 9 * sizeof(float32))
   ]:
     let location = glGetAttribLocation(
       texturedInstantProgram, attribute.name.cstring)
@@ -2412,6 +2471,7 @@ proc scatterRocks*(count, randomSeed: int, scale = 1.0'f) =
 var
   vertexArray, vertexBuffer: GLuint
   mesh: seq[float32]
+  tileTopOffsets: seq[seq[int]]
   meshVertexCount = 0
   propVertexArray, propVertexBuffer: GLuint
   propMesh: seq[float32]   # x y z r g b nx ny nz; grass, boulders, props
@@ -2672,9 +2732,11 @@ proc bakeTexturedInstance(
     mesh.add cosine * normalX - sine * normalZ
     mesh.add model.vertices[i + 7]
     mesh.add sine * normalX + cosine * normalZ
-    mesh.add tint.x
-    mesh.add tint.y
-    mesh.add tint.z
+    for channel in 0 ..< 3:
+      mesh.add tint[channel] * (
+        if model.materialColors: model.vertices[i + 3 + channel]
+        else: 1.0'f
+      )
     i += 9
 
 proc initTexturedVertexArrays(batch: var TexturedBatch) =
@@ -3054,6 +3116,7 @@ proc emitLayer(
         n1 = cornerNormal(layer, faceNormals, x, z, 1)
         n2 = cornerNormal(layer, faceNormals, x, z, 2)
         n3 = cornerNormal(layer, faceNormals, x, z, 3)
+      tileTopOffsets[layerIndex][i] = mesh.len
       addTriangle(
         v00,
         v10,
@@ -3567,7 +3630,7 @@ proc initTerrain*(
   texturedPropAlphaCutoffLocation = glGetUniformLocation(
     texturedPropProgram, "treeAlphaCutoff")
   texturedInstantProgram = compileProgram(
-    toShader(treeVert, OpenGlShaderTarget, shaderVertex),
+    toShader(texturedPropVert, OpenGlShaderTarget, shaderVertex),
     toShader(texturedInstantFrag, OpenGlShaderTarget, shaderFragment)
   )
   texturedInstantMvpLocation = glGetUniformLocation(
@@ -3856,6 +3919,11 @@ proc bakeTerrain*(
   ## Nonzero per-layer blockers affect the overlay only. Omitted grids are open.
   ## Skip walkability rebuilding only after computing the final terrain edits.
   mesh.setLen(0)
+  tileTopOffsets.setLen(layers.len)
+  for i, layer in layers:
+    tileTopOffsets[i] = newSeq[int](layer.tiles.len)
+    for offset in tileTopOffsets[i].mitems:
+      offset = -1
   waterMesh.setLen(0)
   layerVertexRanges.setLen(0)
   doAssert groundRelief.len == 0 or
@@ -3889,6 +3957,27 @@ proc bakeTerrain*(
       mesh[0].addr,
       GL_DYNAMIC_DRAW
     )
+
+proc updateTerrainEdges*(walkable: PathWalkable) =
+  ## Refreshes debug edges from live navigation without rebuilding terrain.
+  glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer)
+  for layerIndex, offsets in tileTopOffsets:
+    let width = layers[layerIndex].width
+    for i, offset in offsets:
+      if offset < 0:
+        continue
+      let mask = float32(pathing.edgeMask(
+        layerIndex, i mod width, i div width, walkable = walkable))
+      if mesh[offset + 3] == mask:
+        continue
+      for vertex in 0 ..< 6:
+        mesh[offset + vertex * TerrainVertexSize + 3] = mask
+      glBufferSubData(
+        GL_ARRAY_BUFFER,
+        offset * sizeof(float32),
+        6 * TerrainVertexSize * sizeof(float32),
+        mesh[offset].addr
+      )
 
 proc drawTerrainRange*(
     viewProjection: Mat4,

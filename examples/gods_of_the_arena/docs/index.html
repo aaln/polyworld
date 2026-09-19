@@ -394,7 +394,7 @@
 
     <section class="facts">
       <div class="fact"><img src="../../../../polyworld_data/icons/champion.png" alt=""><div><b>10</b><span>HEROES</span></div></div>
-      <div class="fact"><img src="../../../../polyworld_data/icons/tower.png" alt=""><div><b>18</b><span>TOWERS</span></div></div>
+      <div class="fact"><img src="../../../../polyworld_data/icons/tower.png" alt=""><div><b>22</b><span>TOWERS</span></div></div>
       <div class="fact"><img src="../../../../polyworld_data/icons/minion.png" alt=""><div><b>3</b><span>LANES</span></div></div>
       <div class="fact"><img src="../../../../polyworld_data/icons/experience.png" alt=""><div><b>20</b><span>MAX LEVEL</span></div></div>
       <div class="fact"><img src="../../../../polyworld_data/icons/gold.png" alt=""><div><b>20</b><span>SHOP ITEMS</span></div></div>
@@ -408,8 +408,15 @@
           <p>
             Gods of the Arena is a 5v5 lane battler. Red brings
             the living roster. Blue brings the undead warband. Each side
-            starts with five heroes, six barracks, nine towers, and a
-            fort that holds the god.
+            starts with five heroes, six barracks, nine lane towers,
+            two god guards, and a god to defend.
+          </p>
+          <p>
+            The 128 by 128 arena uses the map editor's saved seed 54 preset.
+            Blue starts in the southwest and Red in the northeast. Roads
+            carve the forest and cross cliffs at short ramps. Each fort has
+            three exits, two barracks per exit, and a separate walled spawn.
+            Match seeds control gameplay randomness without changing this layout.
           </p>
           <p>
             The 128 by 128 arena uses the map editor's saved seed 54 preset.
@@ -425,15 +432,17 @@
             Heroes grow to level 20, then spend gold in a six-slot inventory.
           </p>
           <p>
-            Outer towers fall first, then inner, then the gate. A god becomes
-            attackable after one of its lanes is cleared. The first fort to
-            reach zero health loses.
+            Outer towers fall first, then inner, then the gate. Clearing a
+            lane exposes the two level-3 towers guarding that team's god.
+            Both guards must fall before the god can take any damage.
+            Red defends a warlock and Blue defends a druid. The first god
+            to reach zero health loses.
           </p>
         </div>
         <div class="lanes">
           <div class="chip"><img src="../../../../polyworld_data/icons/minion.png" alt=""><div><b>Footmen</b><div class="muted">60 HP, 12 damage, 15 gold</div></div></div>
-          <div class="chip"><img src="../../../../polyworld_data/icons/tower.png" alt=""><div><b>Towers</b><div class="muted">HP: outer 900, inner 1200, gate 1800. Damage: 18, 24, 30.</div></div></div>
-          <div class="chip"><img src="../../../../polyworld_data/icons/fort.png" alt=""><div><b>Gods</b><div class="muted">400 HP, exposed after a lane falls</div></div></div>
+          <div class="chip"><img src="../../../../polyworld_data/icons/tower.png" alt=""><div><b>Towers</b><div class="muted">HP: outer 950, inner 1300, gate 1950. Damage: 18, 24, 30.</div></div></div>
+          <div class="chip"><img src="../../../../polyworld_data/icons/fort.png" alt=""><div><b>Gods</b><div class="muted">400 HP, exposed after both god guards fall</div></div></div>
           <div class="chip"><img src="../../../../polyworld_data/icons/kills.png" alt=""><div><b>Hero bounty</b><div class="muted">150 XP and 100 gold</div></div></div>
           <div class="chip"><img src="../../../../polyworld_data/icons/experience.png" alt=""><div><b>Level curve</b><div class="muted">100 XP, then +75 each level</div></div></div>
           <div class="chip"><img src="../../../../polyworld_data/icons/day.png" alt=""><div><b>Clock</b><div class="muted">20 minute match</div></div></div>
@@ -1135,7 +1144,7 @@
               <h4>Sanguine Chalice</h4>
               <p class="cast-type">Self cast</p>
               <dl class="ability-stats">
-                <div><dt>Healing</dt><dd>+30 HP</dd></div>
+                <div><dt>Healing</dt><dd>+36 HP</dd></div>
                 <div><dt>Mana cost</dt><dd>0</dd></div>
                 <div><dt>Charges</dt><dd class="ability-charges"><span>1</span><span class="ability-charge-pips" aria-hidden="true"><span></span></span></dd></div>
                 <div><dt>Cast cooldown</dt><dd>8s</dd></div>
@@ -1238,7 +1247,7 @@
               <div class="stats">
                 <div class="stat"><img src="../../../../polyworld_data/icons/health.png" alt=""><div><b>230 → 1028</b><span class="muted">HP +42/LVL</span></div></div>
                 <div class="stat"><img src="../../../../polyworld_data/icons/mana.png" alt=""><div><b>80 → 194</b><span class="muted">MANA +6/LVL</span></div></div>
-                <div class="stat"><img src="../../../../polyworld_data/icons/attack.png" alt=""><div><b>43 → 195</b><span class="muted">BASIC DAMAGE +8/LVL</span></div></div>
+                <div class="stat"><img src="../../../../polyworld_data/icons/attack.png" alt=""><div><b>46 → 217</b><span class="muted">BASIC DAMAGE +9/LVL</span></div></div>
                 <div class="stat"><img src="../../../../polyworld_data/icons/range.png" alt=""><div><b>6.50</b><span class="muted">RANGE</span></div></div>
                 <div class="stat"><img src="../../../../polyworld_data/icons/move.png" alt=""><div><b>2.40 → 2.86</b><span class="muted">MOVE</span></div></div>
                 <div class="stat"><img src="../../../../polyworld_data/icons/damage.png" alt=""><div><b>0.67</b><span class="muted">ATTACKS / S</span></div></div>
@@ -1418,13 +1427,13 @@
               <h4>Ice Spear</h4>
               <p class="cast-type">Projectile</p>
               <dl class="ability-stats">
-                <div><dt>Damage</dt><dd>44</dd></div>
+                <div><dt>Damage</dt><dd>48</dd></div>
                 <div><dt>Mana cost</dt><dd>30</dd></div>
                 <div><dt>Charges</dt><dd class="ability-charges"><span>3</span><span class="ability-charge-pips" aria-hidden="true"><span></span><span></span><span></span></span></dd></div>
                 <div><dt>Cast cooldown</dt><dd>2s</dd></div>
                 <div><dt>Recharge</dt><dd>12s / charge</dd></div>
                 <div><dt>Cast delay</dt><dd>Instant</dd></div>
-                <div><dt>Cast range</dt><dd>6 tiles</dd></div>
+                <div><dt>Cast range</dt><dd>6.67 tiles</dd></div>
               </dl>
               <p class="bonus">Follows the selected enemy. A ground shot hits the first enemy along its path.</p>
             </article>
@@ -1524,7 +1533,7 @@
               <h4>Aether Siphon</h4>
               <p class="cast-type">Self cast</p>
               <dl class="ability-stats">
-                <div><dt>Restores</dt><dd>+24 mana</dd></div>
+                <div><dt>Restores</dt><dd>+30 mana</dd></div>
                 <div><dt>Mana cost</dt><dd>0</dd></div>
                 <div><dt>Charges</dt><dd class="ability-charges"><span>1</span><span class="ability-charge-pips" aria-hidden="true"><span></span></span></dd></div>
                 <div><dt>Cast cooldown</dt><dd>7s</dd></div>
@@ -1627,7 +1636,7 @@
               <div class="stats">
                 <div class="stat"><img src="../../../../polyworld_data/icons/health.png" alt=""><div><b>300 → 1345</b><span class="muted">HP +55/LVL</span></div></div>
                 <div class="stat"><img src="../../../../polyworld_data/icons/mana.png" alt=""><div><b>40 → 116</b><span class="muted">MANA +4/LVL</span></div></div>
-                <div class="stat"><img src="../../../../polyworld_data/icons/attack.png" alt=""><div><b>35 → 168</b><span class="muted">BASIC DAMAGE +7/LVL</span></div></div>
+                <div class="stat"><img src="../../../../polyworld_data/icons/attack.png" alt=""><div><b>38 → 190</b><span class="muted">BASIC DAMAGE +8/LVL</span></div></div>
                 <div class="stat"><img src="../../../../polyworld_data/icons/range.png" alt=""><div><b>1.33</b><span class="muted">RANGE</span></div></div>
                 <div class="stat"><img src="../../../../polyworld_data/icons/move.png" alt=""><div><b>2.72 → 3.40</b><span class="muted">MOVE</span></div></div>
                 <div class="stat"><img src="../../../../polyworld_data/icons/damage.png" alt=""><div><b>1.20</b><span class="muted">ATTACKS / S</span></div></div>
@@ -2010,7 +2019,7 @@
         <thead><tr><th>Value</th><th>Meaning</th></tr></thead>
         <tbody>
           <tr><td><code>selfMoveSpeed</code></td><td>Unblocked movement speed in world units per tick, including level and equipment bonuses.</td></tr>
-          <tr><td><code>selfAttackRange</code></td><td>Basic-attack range in world units, measured by planar Euclidean distance between centers. Towers allow at least 105000 units; forts use 255000 units.</td></tr>
+          <tr><td><code>selfAttackRange</code></td><td>Basic-attack range in world units, measured by planar Euclidean distance between centers. Towers and barracks allow at least 105000 units measured from their occupied footprint; gods use 255000 units.</td></tr>
           <tr><td><code>selfAttackDamage</code></td><td>Current basic-attack damage, including level and equipment bonuses.</td></tr>
           <tr><td><code>selfTarget</code></td><td>Current ordered or automatically acquired attack target's stable object ID, or zero for none.</td></tr>
           <tr><td><code>selfAttackCooldown</code></td><td>Ticks until the next basic hit could land if the target stays in range. Includes remaining recovery and the next windup, or the remainder of a current windup. An idle hero reports a full windup. Excludes chasing and is separate from ability cooldowns. Movement can cancel a swing.</td></tr>
@@ -2018,7 +2027,7 @@
         </tbody>
       </table>
       <h3>Visible objects</h3>
-      <p>Loop over indices <code>0</code> through <code>objectCount() - 1</code>. The existing ID, kind, team, class, position, HP, and alive queries still apply. New queries respect the same visibility filter:</p>
+      <p>Loop over indices <code>0</code> through <code>objectCount() - 1</code>. Object kinds are 1 = god, 2 = hero, 3 = creep, 4 = tower, and 5 = barracks. Barracks have 900 HP and become exposed after their lane towers fall. Each barracks spawns three creeps per wave, giving six per lane for each team. Destroying a barracks stops its three creeps from spawning. Destroyed buildings leave the object list and release their occupied tiles. New queries respect the same visibility filter:</p>
       <table class="spell-table api-table">
         <thead><tr><th>Function</th><th>Meaning</th></tr></thead>
         <tbody>
@@ -2044,8 +2053,15 @@
         </tbody>
       </table>
       <p>Other invalid spell queries return zero. Visibility of an enemy warning does not reveal its hidden caster's identity.</p>
+      <h3>Attack-move and the rusher policy</h3>
+      <p><code>attackMove(x, y)</code> follows a path toward a tile, fights enemies in the hero's normal acquisition range, and resumes afterward. It returns 1 when accepted and 0 when rejected. Orders are recorded in replays.</p>
+      <p><code>players/rusher.bas</code> pushes all five heroes down mid together. When any pair of living allies is more than 10 tiles apart, the team regroups toward its center until the gap is at most 8 tiles. Otherwise it attacks visible, vulnerable enemies within 20 tiles or attack-moves through the middle toward the enemy god. Dead allies are ignored until they respawn. Automatic abilities stay enabled.</p>
+      <h3>Action feedback</h3>
+      <p><code>lastActionError()</code> reports your hero's latest submitted command error. Success clears it to <code>NoActionError</code> (0). Rejection preserves the command's 0 return value and records the first failed check. Read-only queries and automatic casts do not overwrite it. Read the error immediately after the command; unlike sampled self data, it updates during a decision.</p>
+      <p>Read-only constants (values 0 through 19): <code>NoActionError</code>, <code>ActionNotAlive</code>, <code>ActionInvalidSlot</code>, <code>ActionUnknownItem</code>, <code>ActionInsufficientGold</code>, <code>ActionAlreadyEquipped</code>, <code>ActionStackFull</code>, <code>ActionInventoryFull</code>, <code>ActionEmptySlot</code>, <code>ActionNotConsumable</code>, <code>ActionFullHealth</code>, <code>ActionFullMana</code>, <code>ActionTargetUnavailable</code>, <code>ActionOutOfRange</code>, <code>ActionNoRoute</code>, <code>ActionInvalidPoint</code>, <code>ActionCooldown</code>, <code>ActionNoCharges</code>, <code>ActionInsufficientMana</code>, <code>ActionSpellLimit</code>. Unavailable targets share a generic reason without revealing hidden state.</p>
+      <p>The <a href="../../../docs/stats.md#gota-replay-events">replay extractor</a> provides typed post-match events for both teams. Detailed capture is compiled in with <code>-d:replayEvents</code> and is unavailable to live BASIC policies.</p>
       <h3 id="terrain-api">Terrain API</h3>
-      <p><code>terrainKind(x, y)</code>, <code>terrainWalkable(x, y)</code>, <code>terrainHeight(x, y)</code>, and <code>terrainWaterDepth(x, y)</code> inspect static terrain on <code>selfLayer</code>. Each also has an explicit layer form, such as <code>terrainKindAt(x, y, layer)</code>. Coordinates are whole global tiles. Walkability is 1 or 0; height and water depth use eighths of a tile. Invalid coordinates, invalid layers, and absent tiles return zero. Terrain remains observable through fog.</p>
+      <p><code>terrainKind(x, y)</code>, <code>terrainWalkable(x, y)</code>, <code>terrainHeight(x, y)</code>, and <code>terrainWaterDepth(x, y)</code> inspect terrain on <code>selfLayer</code>. Each also has an explicit layer form, such as <code>terrainKindAt(x, y, layer)</code>. Coordinates are whole global tiles. Walkability is 1 or 0; height and water depth use eighths of a tile. Invalid coordinates, invalid layers, and absent tiles return zero. Static terrain remains observable through fog. Walkability also includes building footprints: enemy destruction is reflected only after your team sees it; unseen buildings retain their last known state.</p>
       <p>Read-only constants expose <code>mapWidth</code>, <code>mapHeight</code>, <code>mapLayers</code>, <code>GroundLayer</code>, <code>RedFortLayer</code>, <code>BlueFortLayer</code>, and <code>WaterLayer</code>. Terrain kinds are <code>TerrainNone</code>, <code>TerrainGrass</code>, <code>TerrainRoad</code>, <code>TerrainRock</code>, <code>TerrainTrees</code>, <code>TerrainMarsh</code>, <code>TerrainWall</code>, and <code>TerrainWater</code>.</p>
     </section>
 

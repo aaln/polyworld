@@ -111,7 +111,19 @@ proc terrainProc(
         if index < 0:
           return 0
         activeGame.world.heroes[index].navLayer
-    terrainValue(arguments[0], arguments[1], layer, field)
+    let value = terrainValue(arguments[0], arguments[1], layer, field)
+    if field != TerrainWalkableField or value == 0:
+      return value
+    let index = heroIndex(activeGame.world, heroId)
+    if index < 0:
+      return 0
+    let floor = layers[int(layer)]
+    int32(activeGame.world.knownWalkable(
+      activeGame.world.heroes[index].team,
+      int(layer),
+      int(arguments[0]) + mapOrigin() - floor.originX,
+      int(arguments[1]) + mapOrigin() - floor.originZ
+    ))
 
 proc objectProc(heroId: int32, field: ObjectField): HostProc =
   ## Binds one field to the hero's visibility-filtered object snapshot.
@@ -180,6 +192,8 @@ proc spellProc(heroId: int32, field: SpellField): HostProc =
 proc initHeroHost(heroId: int32): Host =
   ## Builds the bounded world-query and action interface for one hero.
   result = initHost()
+  for error in ActionError:
+    discard result.addData($error, error.ord.int32)
   for name in HeroDataNames:
     discard result.addData(name)
   discard result.addData("mapWidth", mapTiles().int32)
@@ -290,6 +304,30 @@ proc initHeroHost(heroId: int32): Host =
         heroIndex(activeGame.world, heroId), activeGame.world.tick
       )
     int32(accepted)
+  let attackMoveProc: HostProc = proc(
+      arguments: openArray[int32]
+  ): int32 =
+    ## Records and applies the same attack-move order used by human players.
+    try:
+      if activeGame.recorder != nil:
+        activeGame.recorder.record ReplayAction(
+          tick: uint32(activeGame.world.tick),
+          heroId: heroId,
+          kind: ActionAttackMove,
+          first: arguments[0],
+          second: arguments[1]
+        )
+    except ReplayError as error:
+      activeGame.recordingError = error.msg
+      raise newException(BasicError, "replay recording failed: " & error.msg)
+    let accepted = activeGame.world.applyAttackMove(
+      heroId, arguments[0], arguments[1]
+    )
+    if accepted:
+      activeGame.metrics.command(
+        heroIndex(activeGame.world, heroId), activeGame.world.tick
+      )
+    int32(accepted)
   let attackTargetProc: HostProc = proc(
       arguments: openArray[int32]
   ): int32 =
@@ -382,8 +420,6 @@ proc initHeroHost(heroId: int32): Host =
   let castTargetProc: HostProc = proc(arguments: openArray[int32]): int32 =
     ## Records and attempts an explicit object-targeted spell.
     let slot = arguments[0]
-    if slot < 0 or slot > HeroAbilitySlot.high.ord:
-      return 0
     try:
       activeGame.recorder.recordCast(
         uint32(activeGame.world.tick), heroId, slot, arguments[1], 0, false
@@ -400,8 +436,6 @@ proc initHeroHost(heroId: int32): Host =
   let castPointProc: HostProc = proc(arguments: openArray[int32]): int32 =
     ## Records and attempts a ground-aimed spell.
     let slot = arguments[0]
-    if slot < 0 or slot > HeroAbilitySlot.high.ord:
-      return 0
     try:
       activeGame.recorder.recordCast(
         uint32(activeGame.world.tick),
@@ -440,6 +474,14 @@ proc initHeroHost(heroId: int32): Host =
     if index < 0 or arguments[0] < 0 or arguments[0] > HeroAbilitySlot.high.ord:
       return 0
     activeGame.world.heroes[index].recharges[HeroAbilitySlot(arguments[0])]
+  let lastActionErrorProc: HostProc = proc(arguments: openArray[int32]): int32 =
+    ## Reads only this hero's last submitted command error.
+    let index = activeGame.world.heroIndex(heroId)
+    if index >= 0:
+      activeGame.world.heroes[index].lastActionError.ord.int32
+    else:
+      0'i32
+  discard result.addFunction("lastActionError", 0, lastActionErrorProc, 4)
   discard result.addFunction("castTarget", 2, castTargetProc, 80)
   discard result.addFunction("castPoint", 3, castPointProc, 80)
   discard result.addFunction("abilityCharges", 1, abilityChargesProc, 4)
@@ -483,6 +525,7 @@ proc initHeroHost(heroId: int32): Host =
   discard result.addFunction("objectHp", 1, objectHpProc, 4)
   discard result.addFunction("objectAlive", 1, objectAliveProc, 4)
   discard result.addFunction("walkTo", 2, walkToProc, 800)
+  discard result.addFunction("attackMove", 2, attackMoveProc, 800)
   discard result.addFunction("attackTarget", 1, attackTargetProc, 20)
   discard result.addFunction("itemId", 1, itemIdProc, 4)
   discard result.addFunction("itemCount", 1, itemCountProc, 4)

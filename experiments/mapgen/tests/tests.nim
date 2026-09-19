@@ -173,6 +173,11 @@ proc verifyBarracks(map: MapData) =
       a = first.position - path.nearest(first.position)
       b = second.position - path.nearest(second.position)
     doAssert dot(a, b) < 0
+    doAssert length(first.route[1] - second.route[1]) < 0.01
+    doAssert length(
+      (first.position + second.position) / 2 - first.route[1]
+    ) < 0.01
+    doAssert abs(first.distance - second.distance) < 0.01
 
 proc verifyStems(map: MapData) =
   ## Ensures clearings only attach through their own single stem.
@@ -306,7 +311,7 @@ proc verifyRamps(map: MapData) =
 proc verify(map: MapData) =
   ## Checks counts, paired geometry, camp access, and lane tower alignment.
   doAssert buildMesh(map).len > 1000
-  doAssert map.towers.len == 18
+  doAssert map.towers.len == 22
   doAssert map.camps.len == 14
   doAssert map.forts[0].opposite == map.forts[1]
   var
@@ -326,7 +331,7 @@ proc verify(map: MapData) =
           length(road.nearest(tower.position) - tower.position)
         )
       doAssert distance < 0.001
-  doAssert counts == [9, 9]
+  doAssert counts == [11, 11]
   for i, camp in map.camps:
     if i mod 2 == 0:
       let other = map.camps[i + 1]

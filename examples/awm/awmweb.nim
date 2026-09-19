@@ -200,10 +200,32 @@ when defined(emscripten):
     feed.state = PfWaiting
     feed.message = "Waiting for opponent..."
 
-  proc sendPlayCard*(feed: PlayerFeed, handIndex: int, choice: Choice) =
+  proc sendPlayCard*(feed: PlayerFeed, handIndex: int,
+      choices: seq[Choice]) =
+    ## One choice per card target, in order (Duel sends two).
     var msg = %*{"type": "playCard", "handIndex": handIndex}
-    if not choice.isCanceled:
-      msg["choice"] = choiceToJson(choice)
+    var picks = newJArray()
+    for choice in choices:
+      if not choice.isCanceled:
+        picks.add choiceToJson(choice)
+    if picks.len > 0:
+      msg["choices"] = picks
+    awmWsSend(($msg).cstring)
+
+  proc sendPlayCard*(feed: PlayerFeed, handIndex: int, choice: Choice) =
+    feed.sendPlayCard(handIndex, @[choice])
+
+  proc sendToss*(feed: PlayerFeed, handIndices: seq[int]) =
+    ## Answers a waiting discard with hand positions.
+    awmWsSend(($(%*{"type": "toss", "handIndices": handIndices})).cstring)
+
+  proc sendResolveTrigger*(feed: PlayerFeed, choices: seq[Choice]) =
+    ## Answers the waiting trigger's targets, in order.
+    var msg = %*{"type": "resolveTrigger"}
+    var picks = newJArray()
+    for choice in choices:
+      picks.add choiceToJson(choice)
+    msg["choices"] = picks
     awmWsSend(($msg).cstring)
 
   proc sendEndTurn*(feed: PlayerFeed) =

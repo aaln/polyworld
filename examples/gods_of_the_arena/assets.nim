@@ -10,23 +10,19 @@ const
     "crypt-grate-2"
   ]
   ArenaTextures* = @FortTextures & @CryptTextures
-  GotaBoulderNames* = ["rock_small_02a", "rock_small_03a"]
   FortModelRoot = DataRoot & "/terrain/blender_forts/models/"
   FortFactions = ["dark", "light"]
   FortModelNames* = [
     "tower_level1", "tower_level2", "tower_level3", "barracks", "pillar", "wall"
   ]
-  DarkTreeNames* = ["tree_1", "tree_2", "tree_3", "tree_4"]
   FortTextureSize* =
     when defined(emscripten): 512
     else: 1024
   ArenaDecorPacks* = [
     DataRoot & "/terrain/toon_enchanted_meadow/props.glb",
-    DataRoot & "/terrain/toon_enchanted_meadow/vegetation.glb",
-    DataRoot & "/terrain/toon_enchanted_meadow/rocks.glb",
-    DataRoot & "/terrain/toon_golden_valley/rocks.glb"
+    DataRoot & "/terrain/toon_enchanted_meadow/vegetation.glb"
   ]
-  ArenaDecorNodes*: array[4, seq[string]] = [
+  ArenaDecorNodes*: array[2, seq[string]] = [
     @["lamp_post_01a", "wood_barrel_01a", "wood_crate_01a",
       "wood_fence_pole_01a", "pier_bollard_01a", "pier_bollard_02a",
       "boat_01a", "boat_wreck_01a", "rope_01a", "wood_cart_01a",
@@ -37,25 +33,25 @@ const
       "grass_patch_04a", "grass_patch_05a", "lily_flower_01a",
       "lily_flower_02a", "lily_flower_03a", "plant_01a", "plant_02a",
       "plant_03a", "plant_04a", "plant_05a", "plant_06a", "plant_07a",
-      "mushroom_01a", "mushroom_03a", "mushroom_06a"],
-    @["rock_small_01a", "rock_small_02a", "rock_small_03a",
-      "rock_small_04a", "rock_medium_01a", "rock_medium_02a",
-      "rock_medium_03a"],
-    @["cliff_01a", "cliff_02a", "rock_large_01a",
-      "rock_large_02a", "rock_large_03a", "rock_large_04a",
-      "rock_platform_01a", "rock_platform_02a"]
+      "mushroom_01a", "mushroom_03a", "mushroom_06a"]
   ]
   GotaTerrainAssets* =
     when defined(emscripten): WebTerrainAssets
     else: DefaultTerrainAssets
-  GotaTreeStyle* = DenseTrees
+  GotaTreeStyle* = NoTrees
   GotaDecorTextureSize* =
     when defined(emscripten): 256
     else: 512
   FootmanModels*: array[2, string] = [
-    DataRoot & "/characters/mini_legion/human/footman.glb",
-    DataRoot & "/characters/mini_legion/undead/skeleton_warrior.glb"
+    # Red/Dire uses undead; blue/Radiant uses humans, including nexus creeps.
+    DataRoot & "/characters/mini_legion/undead/skeleton_warrior.glb",
+    DataRoot & "/characters/mini_legion/human/footman.glb"
   ]
+  GodModels*: array[2, string] = [
+    DataRoot & "/characters/mini_legion/warband/warlock.glb",
+    DataRoot & "/characters/mini_legion/sentinel/druid.glb"
+  ]
+  GodTargetHeight* = 3.2'f
   HeroModelPath* = DataRoot & "/characters/modular_chars/character.glb"
   HeroTargetHeight* = 1.7'f
   HeroPortraitKeys*: array[HeroClass, string] = [
@@ -145,25 +141,18 @@ proc arenaDecorPaths*(): seq[string] =
   for i, pack in ArenaDecorPacks:
     result.add propPaths(pack, ArenaDecorNodes[i])
 
-proc darkTreePaths*(): seq[string] =
-  ## Returns the four authored dead-tree models for dark-side brush.
-  for name in DarkTreeNames:
-    result.add FortModelRoot & "dark/" & name & ".glb"
-
 proc browserAssets*(): seq[Asset] =
   ## Declares every presentation asset reachable by an arena match.
   result = hudAssets(LogoPath)
   result.add terrainAssets(
-    GotaTreeStyle, GeneratedTerrain, PaintedRocks, WebTerrainAssets, ArenaTextures
+    GotaTreeStyle, GeneratedTerrain, NoRocks, WebTerrainAssets, ArenaTextures
   )
-  for asset in result.mitems:
-    if asset.source == "terrain/handpainted_trees/fir.png":
-      asset = imageAsset(asset.source, 512)
+  for path in TreegenTextures:
+    result.add imageAsset(path, GeneratorTextureSize)
+  result.add imageAsset(RockgenTexture, GeneratorTextureSize)
   for team in 0 ..< FortFactions.len:
     for path in fortModelPaths(team):
       result.add modelAsset(path, textureSize = 512)
-  for path in darkTreePaths():
-    result.add modelAsset(path, textureSize = 512)
   for i, pack in ArenaDecorPacks:
     result.add propAssets(pack, ArenaDecorNodes[i], textureSize = 256)
   var parts: seq[string]
@@ -171,9 +160,20 @@ proc browserAssets*(): seq[Asset] =
     for part in look:
       if part notin parts:
         parts.add part
-  result.add modelAsset(HeroModelPath, parts, textureSize = 512)
+  result.add modelAsset(
+    HeroModelPath,
+    parts,
+    clips = @["Run", "Idle", "Death", "Attack01", "Attack02"],
+    textureSize = 512
+  )
   for path in FootmanModels:
     result.add modelAsset(path, textureSize = 512)
+  for path in GodModels:
+    result.add modelAsset(
+      path,
+      clips = @["Idle", "Death", "Victory"],
+      textureSize = 512
+    )
   for path in HeroPortraitPaths:
     result.add fileAsset(path)
   for hero in HeroClass:

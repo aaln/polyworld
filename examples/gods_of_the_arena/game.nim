@@ -200,8 +200,8 @@ proc teamHeroGold(team: Team): int =
 
 proc teamTowerCount(team: Team): int =
   ## Returns the number of standing towers owned by one team.
-  for tower in run.world.towers:
-    if tower.team == team and tower.hp > 0:
+  for tower in run.world.buildings:
+    if tower.kind == TowerBuilding and tower.team == team and tower.hp > 0:
       inc result
 
 proc heroVmStatus*(): tuple[active, decisions: int] =
@@ -257,7 +257,7 @@ when defined(headless):
     echo &"result: {outcome}"
     echo &"simulated: {simulated:.2f} s in {elapsed:.4f} s " &
       &"({speedup:.1f}x real time)"
-    echo &"forts: red {redFortHp} hp, blue {blueFortHp} hp"
+    echo &"gods: red {redFortHp} hp, blue {blueFortHp} hp"
     echo &"towers: red {teamTowerCount(RedTeam)}, " &
       &"blue {teamTowerCount(BlueTeam)}"
     echo &"hash: {run.stateHash().toHex(16)} map " &
