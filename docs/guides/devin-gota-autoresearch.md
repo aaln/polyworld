@@ -123,6 +123,8 @@ First read the existing failures. The Jordan counter confirmed 40/40 per color a
 
 The subsequent [transition coaching study](../../examples/gods_of_the_arena/players/ir/forks/richard135-transition-20260920/README.md) completed during this handoff: both final variants remained Richard red 0/40 and blue 40/40. The selected unchanged `transition_freshhit` then scored Alex red 2/40, Alex blue 0/40, and Jordan 0/40 on both colors. All 400 hosted games were audited. Its narrower conditional promotion gate **also failed**, so it is not an eligible challenger. Preserve these final results as well as the earlier captured worker checkpoint.
 
+The final [Alex historical-policy comparison](../reports/2026-09-20-alex-policy-history.md) recovered the formal ancestor at `53f15b12-2198-41d1-bb99-df4bdb1ff7fd`: a highlighted historical cohort scored Alex red 30/40 and blue 40/40, while red varied from 19–30/40 across recovered cohorts. This supplies a valuable comparison for objective-specific early alarms. It is not a fresh retest or joint-target qualification; do not promote it from historical wins alone.
+
 The worker's captured tower-handoff source also failed target gates; its color-composed fusion was still under local investigation at capture. Read the archived progress and obtain the latest checkpoint before continuing it. Historical wins over Richard v78 or Jordan v186 do not establish wins over current versions. Do not rerun an unchanged failed source without a new discriminator.
 
 Default **joint-target** qualification for a new final executable:

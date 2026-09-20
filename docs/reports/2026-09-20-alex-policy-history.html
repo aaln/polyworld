@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TITLE: one line naming the comparison/experiment and its date -->
+<title>Recovered Alex-winning policy — 2026-09-20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Merriweather+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fffdf4; --surface: #fffaf0; --surface-alt: #f8f6ef;
+  --fg: #111827; --fg-subtle: #555555; --fg-muted: #999999;
+  --navy: #1a3875; --sage: #6e8050; --terracotta: #b36e4e; --gold: #d4a853;
+  --border: #e4dac8; --border-strong: #d4c9b5; --border-subtle: #f0ebe1;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 400 0.85rem/1.6 'Merriweather Sans', sans-serif; }
+.page { max-width: 880px; margin: 0 auto; padding: 40px 28px 72px; }
+h1 { font: 900 1.6rem/1.2 'Merriweather', Georgia, serif; margin: 0 0 6px; }
+h2 { font: 700 1.05rem/1.3 'Merriweather', Georgia, serif; margin: 34px 0 10px; }
+.meta { font-size: 0.68rem; color: var(--fg-muted); text-transform: uppercase;
+  letter-spacing: 0.08em; margin-bottom: 22px; }
+p { margin: 0 0 11px; }
+code { font-family: ui-monospace, Menlo, monospace; font-size: 0.8em;
+  background: var(--surface-alt); padding: 1px 4px; border-radius: 3px; }
+
+/* The verdict block — the report leads with its conclusion. */
+.verdict { border-top: 3px double var(--border-strong);
+  border-bottom: 1px solid var(--border); padding: 16px 2px 14px; margin: 0 0 8px; }
+.verdict .call { font: 700 1.05rem/1.45 'Merriweather', Georgia, serif; margin: 0 0 6px; }
+.verdict .call.improved { color: var(--sage); }
+.verdict .call.regressed { color: var(--terracotta); }
+.verdict .call.noise { color: var(--fg-subtle); }
+.verdict .basis { font-size: 0.78rem; color: var(--fg-subtle); margin: 0; }
+
+table { border-collapse: collapse; width: 100%; font-size: 0.78rem; margin: 10px 0 16px; }
+th { text-align: left; font-size: 0.6rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--fg-subtle);
+  border-bottom: 2px solid var(--border-strong); padding: 5px 9px 6px; }
+td { border-bottom: 1px solid var(--border-subtle); padding: 7px 9px;
+  vertical-align: top; font-feature-settings: "tnum" 1; }
+td.num { font-family: ui-monospace, Menlo, monospace; font-size: 0.9em; text-align: right; }
+tr.sig-up td { background: rgba(110,128,80,0.07); }
+tr.sig-down td { background: rgba(179,110,78,0.07); }
+.delta-up { color: var(--sage); font-weight: 700; }
+.delta-down { color: var(--terracotta); font-weight: 700; }
+.delta-flat { color: var(--fg-muted); }
+
+.caveats { border-left: 3px solid var(--terracotta);
+  background: rgba(179,110,78,0.05); padding: 10px 14px; font-size: 0.78rem; margin: 16px 0; }
+.caveats b { color: var(--terracotta); font-size: 0.62rem; text-transform: uppercase;
+  letter-spacing: 0.08em; display: block; margin-bottom: 4px; }
+.note { font-size: 0.72rem; color: var(--fg-muted); }
+footer { margin-top: 44px; padding-top: 12px; border-top: 1px solid var(--border);
+  font-size: 0.66rem; color: var(--fg-muted); }
+</style>
+</head>
+<body><div class="page"><h1>Recovered Alex-winning policy — September 20, 2026</h1><p style="overflow-wrap:anywhere;white-space:pre-line">The previous <code>aaron-gota-ir-relh154-legacy-0916:v1</code> repeatedly beat the exact current Alex <code>gota-g002:v1</code> UUID. In the highlighted September 19 comparison it won <strong>70/80: red30/40, blue40/40</strong>. All 6 recovered blue cohorts won40/40. Red was less reliable: 19–30 wins per40 across the recovered cohorts. This is a historical result, not a fresh retest.</p><p style="overflow-wrap:anywhere;white-space:pre-line">Exact policy version: <code>53f15b12-2198-41d1-bb99-df4bdb1ff7fd</code>. BASIC SHA256: <code>b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9</code>. Opponent: <code>a30542cb-54de-4109-92e6-bcabca7db4d8</code>. Engine:2026.9.16.5. The recovered primary <code>policy.py</code>, JSON IR and BASIC preserve the old behavior; compile/extract parity is recorded. Original evidence and captured coaching inputs remain unchanged.</p><p style="overflow-wrap:anywhere;white-space:pre-line">The executable difference from the later deployed Jordan counter is confined to <strong>the observer/defense decision</strong>. Attack, spell/equipment and navigation skill definitions match. This narrows the investigation to when those unchanged skills are used; it does not independently prove which recall change caused every loss.</p><p style="overflow-wrap:anywhere;white-space:pre-line">- <strong>Early middle warning on blue:</strong> during the first75seconds, three visible clustered enemies near a standing middle tower can trigger recall instead of waiting for four.
+- <strong>Damaged side-tower warning on blue:</strong> during the first150seconds, a visible pair near a standing side tower with150HP missing triggers ordinary recall. This is current damage, not a measured damage rate.
+- <strong>Defend the threatened objective:</strong> remember the protected structure; consider visible enemies within24tiles of it and32tiles of the acting hero. The role and commitment clocks retain defense. Non-sentries with no actionable target for20seconds can release; fog is never treated as proof of safety.
+- <strong>What the Jordan counter changed:</strong> it cancels defense beyond28tiles from the friendly god; blue also clears solo backdoor commitment. This preserves distant offense, but removes the old remote return behavior.
+- <strong>What the Richard counter then added:</strong> a two-enemy, anchored near-core alarm within60tiles can override that cancellation for50seconds. This broader rule is different from restoring the old objective-specific alarms. Our latest inherited blue won40/40 against Richard but0/40 against Alex.</p><p style="overflow-wrap:anywhere;white-space:pre-line">The historical median-duration blue win was reconstructed from its exact source: <strong>24,618 owned commands and all5,880 state hashes match</strong>. The fresh early-middle alarm occurred on 5 hero slots, across 1025 decisions. This establishes that the early defense behavior was used in an actual win; it is not an ablation proving that rule alone won the game.</p><table><tr><th>Historical cohort</th><th>Our color</th><th>Wins</th><th>Losses</th><th>Draws</th><th>Distinct full command streams</th></tr><tr><td>scoped-followup</td><td>blue</td><td>40</td><td>0</td><td>0</td><td>not counted</td></tr><tr><td>target_geometry</td><td>red</td><td>29</td><td>11</td><td>0</td><td>9</td></tr><tr><td>target_geometry</td><td>blue</td><td>40</td><td>0</td><td>0</td><td>4</td></tr><tr><td>urgent-jordan-20260919</td><td>red</td><td>28</td><td>12</td><td>0</td><td>not counted</td></tr><tr><td>role_raid</td><td>red</td><td>28</td><td>12</td><td>0</td><td>not counted</td></tr><tr><td>role_raid</td><td>blue</td><td>40</td><td>0</td><td>0</td><td>not counted</td></tr><tr><td>nearby_raid</td><td>red</td><td>19</td><td>21</td><td>0</td><td>not counted</td></tr><tr><td>nearby_raid</td><td>blue</td><td>40</td><td>0</td><td>0</td><td>not counted</td></tr><tr><td>weapon_dense</td><td>red</td><td>28</td><td>12</td><td>0</td><td>9</td></tr><tr><td>weapon_dense</td><td>blue</td><td>40</td><td>0</td><td>0</td><td>4</td></tr><tr><td>readiness</td><td>red</td><td>30</td><td>10</td><td>0</td><td>8</td></tr><tr><td>readiness</td><td>blue</td><td>40</td><td>0</td><td>0</td><td>4</td></tr></table><p style="overflow-wrap:anywhere;white-space:pre-line">Stored native replay audits, row counts and replay hashes were rechecked for these cohorts. The highlighted80games have all ten successful structured VM exits and player-status hashes rechecked. The older legacy confirmation has archived headless-log validation but no structured player-status files; the manifest keeps that distinction. Seeds and repeated trajectories are correlated; do not interpret the rows as independent Bernoulli trials or select the best red cohort as a guaranteed87.5%future win rate. The broader record explains the remembered near-perfect blue results.</p><p style="overflow-wrap:anywhere;white-space:pre-line">A separate September20 experiment, <code>tower_handoff_v2</code> (<code>17db3a9d-b5eb-4f5a-b5aa-10654e9555bd</code>), recovered <strong>Alex red40/40</strong>, while <strong>Alex blue0/40</strong>. It also won40/40 each color against Jordan and0/40 each color against Richard. Its red behavior couples caster transit/support with a low-HP tower disengagement requiring a nearby live allied creep, and preserves attacks on nearly finished towers. A reviewed Alex red win contains three actual tower-target changes. The complete package, not tower disengagement alone, owns that win count. It was rejected for joint target advancement and remains unpromoted.</p><p style="overflow-wrap:anywhere;white-space:pre-line">Two discriminating follow-ups are supported by this research, not yet validated:</p><p style="overflow-wrap:anywhere;white-space:pre-line">1. Restore the historical blue observer as an exact reference, then test objective-triggered recall versus the28-tile cancellation and the broad Richard exception with other skills fixed. Predicted effect: recover early middle defense and Alex blue wins; Jordan and Richard must be checked because the timing tradeoff may return.
+2. Test the newer red caster/tower-handoff component with the historical blue observer in a separately versioned IR combination. Predicted effect: preserve the red Alex result while recovering blue; mixing individually successful color components is not proof the combined executable will win. The worker&#x27;s separate critical-blue fusion is a different hypothesis and is left untouched.</p><p style="overflow-wrap:anywhere;white-space:pre-line">No policy was pushed. The latest unchanged coaching candidate failed the user-authorized Alex/Jordan check: Alex red2W24L14D, blue0W40L; Jordan0W40L on each color. Its evaluated IR/BASIC pair and all400hosted/108local results are saved in the sibling <code>richard135-transition-20260920</code> bundle. The live incumbent was retained.</p><p style="overflow-wrap:anywhere;white-space:pre-line">Evidence manifest: <code>findings.json</code>; exact skill changes: <code>legacy-to-jordan-skills.json</code>, <code>jordan-to-critical-skills.json</code>, <code>critical-to-current-skills.json</code>. Raw historical research: <code>/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/alex-history-20260920</code>. No new hosted games were purchased for this historical investigation.
+</p></div></body></html>
