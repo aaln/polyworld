@@ -1,0 +1,513 @@
+{
+  "at": "2026-09-20T20:30:04.489117+00:00",
+  "source_sha256": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+  "version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+  "name": "aaron-gota-ir-relh154-legacy-0916:v1",
+  "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+  "game_version": "2026.9.16.5",
+  "historical_cells": [
+    {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "color": "blue",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_35d8193e-dff9-42d2-b842-439b12fa5362",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 0,
+      "distinct_command_streams": null,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/confirmation/g002/legacy/blue/plan.json",
+        "sha256": "17212b5e16c13acd63093e53bfe534eb96c8770bc16eb5250ac3f76241feaf14"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/confirmation/g002/legacy/blue/arm-result.json",
+        "sha256": "18ab64377ec466a7314772a2a10ef0e915ace4bd93df55b3be125da1b66916da"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 29,
+      "losses": 11,
+      "draws": 0,
+      "color": "red",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_01e8f294-4573-4669-818a-57d656b02858",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": 9,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_212453_e79df8/target_geometry/hosted/discovery/g002/parent/red/plan.json",
+        "sha256": "1a422cb2094dc8c538ca577950f7cd142c96037d76e2f3ec8256387b81c1acd4"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_212453_e79df8/target_geometry/hosted/discovery/g002/parent/red/arm-result.json",
+        "sha256": "8bd0ebc90aca4a42a756520f2530e7dfc0dde09af8940d1e94dac7b2a6d3f667"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "color": "blue",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_823f30fc-558a-4843-a4d3-4c76d737666b",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": 4,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_212453_e79df8/target_geometry/hosted/discovery/g002/parent/blue/plan.json",
+        "sha256": "18cc7fb6a180ebecf49117065017bcedf630ebf20092dd9523e281e6ae455c36"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_212453_e79df8/target_geometry/hosted/discovery/g002/parent/blue/arm-result.json",
+        "sha256": "8b2a67e6fbbc2a7105a94b62b9c99a1e3bdb38ca098ae1a254179e1c0387d8f2"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 28,
+      "losses": 12,
+      "draws": 0,
+      "color": "red",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_481db069-365c-4f03-bc3d-a15d93ae222a",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": null,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/urgent-jordan-20260919/promotion/g002/parent/red/plan.json",
+        "sha256": "b4653abe57e4d2ae1c6649fd7460acb0517c662f73a3ed970cec8bddc921dd5b"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/urgent-jordan-20260919/promotion/g002/parent/red/arm-result.json",
+        "sha256": "33493c54905093f489540f0170c38d2bb461f78b76d5033a6ba27a6051bf5163"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 28,
+      "losses": 12,
+      "draws": 0,
+      "color": "red",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_b4fc6e50-e655-42b4-b9bd-90d3e831cc64",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": null,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/hosted/discovery/g002/parent/red/plan.json",
+        "sha256": "083d7f03c1c1f99538613b828ae1f65df2e96ff81da7fbdf4995574cc017358e"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/hosted/discovery/g002/parent/red/arm-result.json",
+        "sha256": "7c2a1affccb7f9117955b891e17fc4496a2281fdfcbb99470b4ed9dffdd0e727"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "color": "blue",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_8efc7347-faba-4290-bf45-0a2cb1f994d1",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": null,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/hosted/discovery/g002/parent/blue/plan.json",
+        "sha256": "0ec1c480b167d453566da3bb05ce6fe4bb00613b81f31462b82d51d017d7d45c"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/hosted/discovery/g002/parent/blue/arm-result.json",
+        "sha256": "56da34836d17468258d4ff5ed74c805e1ad4634327cbf4a9e3cb067b29710138"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 19,
+      "losses": 21,
+      "draws": 0,
+      "color": "red",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_4e4f2a79-ee9a-489d-8908-cb9bc0468fa2",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": null,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/nearby_raid/hosted/discovery/g002/parent/red/plan.json",
+        "sha256": "a23b719cac7b3bb349cdcf0a54564d67e32bd78b6b5d939206dedbd500ad1daf"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/nearby_raid/hosted/discovery/g002/parent/red/arm-result.json",
+        "sha256": "82bd3877a3a8cec16a0e2d87ab650b08a20c01af3544c35164316d4e934fa899"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "color": "blue",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_b7c58698-4ca3-4ab9-a2bd-09498580139c",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": null,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/nearby_raid/hosted/discovery/g002/parent/blue/plan.json",
+        "sha256": "e86ff0ec58ee20e85be58b07dcc6637fbf370740418b7efc6835614cd6a9cd29"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/nearby_raid/hosted/discovery/g002/parent/blue/arm-result.json",
+        "sha256": "e859a10770d6faa26f75e9545b60def08280bf89e3e3937cfdb15c88f3fecba1"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 28,
+      "losses": 12,
+      "draws": 0,
+      "color": "red",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_17377593-fe6a-4fcb-94f3-89881acd6841",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": 9,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/hosted/discovery/g002/parent/red/plan.json",
+        "sha256": "dba0b9bc3c7f168598cb8e9bb4de5738978018f7e4b8113fdf918b2de7044ec6"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/hosted/discovery/g002/parent/red/arm-result.json",
+        "sha256": "1cf70ee69894ac22f8a9ca9619c3164b9d7bbb2c3ac4ead5897a451f9a604b52"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "color": "blue",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_6fbf728c-ed46-46b4-a75d-731b2068420b",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": 4,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/hosted/discovery/g002/parent/blue/plan.json",
+        "sha256": "79be3988bcc01044a64d2db15ffa42ca69e147d0af6ea5c81da3ffa3e3ce1f4b"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/hosted/discovery/g002/parent/blue/arm-result.json",
+        "sha256": "1e4f6548e78db208ac32e03cfcf05809bf901c0e18f3fcead960158bbbb4f36f"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 30,
+      "losses": 10,
+      "draws": 0,
+      "color": "red",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_7307a08e-f08d-4752-a79e-bdc199a1f11d",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": 8,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/hosted/discovery/g002/parent/red/plan.json",
+        "sha256": "fd52e00db63e5c082cea20acd2c72ff7d9f818c1bdd27bb14504023e0504117e"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/hosted/discovery/g002/parent/red/arm-result.json",
+        "sha256": "99fdc6cf035fb75afefbce6665e2a49baa1f33ca93959333268ad21ccb7d5645"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "color": "blue",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_7c8066b0-1f1b-4ba6-86a4-21e6c772d134",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": 4,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/hosted/discovery/g002/parent/blue/plan.json",
+        "sha256": "3583f4957a5ccc04a2e29c16b55da6f0bbfe99f137446395165848ede51c5656"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/hosted/discovery/g002/parent/blue/arm-result.json",
+        "sha256": "d90b8514ff5913469a7cd5ebdde6b360ea7441af934ea824158f56901678bd4f"
+      }
+    }
+  ],
+  "highlighted_cohort": [
+    {
+      "games": 40,
+      "wins": 30,
+      "losses": 10,
+      "draws": 0,
+      "color": "red",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_7307a08e-f08d-4752-a79e-bdc199a1f11d",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": 8,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/hosted/discovery/g002/parent/red/plan.json",
+        "sha256": "fd52e00db63e5c082cea20acd2c72ff7d9f818c1bdd27bb14504023e0504117e"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/hosted/discovery/g002/parent/red/arm-result.json",
+        "sha256": "99fdc6cf035fb75afefbce6665e2a49baa1f33ca93959333268ad21ccb7d5645"
+      }
+    },
+    {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "color": "blue",
+      "policy_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "request": "xreq_7c8066b0-1f1b-4ba6-86a4-21e6c772d134",
+      "stored_full_audits_and_hashes_verified": true,
+      "structured_ten_vm_status_games": 40,
+      "distinct_command_streams": 4,
+      "plan": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/hosted/discovery/g002/parent/blue/plan.json",
+        "sha256": "3583f4957a5ccc04a2e29c16b55da6f0bbfe99f137446395165848ede51c5656"
+      },
+      "result": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/hosted/discovery/g002/parent/blue/arm-result.json",
+        "sha256": "d90b8514ff5913469a7cd5ebdde6b360ea7441af934ea824158f56901678bd4f"
+      }
+    }
+  ],
+  "red_win_range": [
+    19,
+    30
+  ],
+  "behavior_diff": "Only observe skill differs between this ancestor and deployed Jordan counter. Combat, equipment and navigation skill definitions match.",
+  "blue_replay": {
+    "episode": "ereq_961b5050-b94e-454f-af6c-a9be2300d867",
+    "selection": "Median-duration recorded blue win in the readiness parent cohort",
+    "equivalence": {
+      "inputs_sha256": "1045ab06238cb13c58f7254e2221c3395ac4405d24d1fcf542a063a5395fc83c",
+      "summaries": {
+        "decoded": {
+          "type": "summary",
+          "ticks": 5880,
+          "hash_mismatches": 0,
+          "actions_consumed": 52725,
+          "timeout": false,
+          "winner": 1
+        },
+        "owned": {
+          "type": "summary",
+          "controlled_slots": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "ticks": 5880,
+          "owned_commands_matched": 24618,
+          "owned_decisions": 24432,
+          "all_state_hashes_equal": true,
+          "all_actions_consumed": true
+        }
+      },
+      "outputs": {
+        "decoded": "515bb9c36ca0f798907a5a97802bc6f97fbe3959924f63f763d1a8892aeddc3b",
+        "owned": "2bd1c23b9eb93f14b8b8cf27f316ad393c1bff3326ef534dd876147969288bdf"
+      },
+      "interpretation": "Reconstructed exact owned commands and every state hash; recorded rival actions. No decision-quality verdict."
+    },
+    "all_decision_summary": {
+      "type": "summary",
+      "controlled_slots": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ticks": 5880,
+      "owned_commands_matched": 24618,
+      "owned_decisions": 24432,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true
+    },
+    "active_defense_decisions": 12688,
+    "fresh_middle_alarm_decisions": 1025,
+    "first_fresh_middle_alarm": {
+      "type": "decision",
+      "tick": 964,
+      "slot": 5,
+      "memory": {
+        "bestId": 0,
+        "defActive": 1,
+        "defUntil": 8164,
+        "defHoldTicks": 7200,
+        "defFront": 103,
+        "defCount": 3,
+        "defAnchor": 19,
+        "defPointX": 47,
+        "defPointY": 76,
+        "defThreatX": 54,
+        "defThreatY": 67,
+        "defNavX": 45,
+        "defNavY": 76,
+        "defMoveAccepted": 1,
+        "perimeterAnchor": 19,
+        "perimeterX": 51,
+        "perimeterY": 73,
+        "perimeterLastCombat": 963,
+        "perimeterEnabled": 1,
+        "backdoorActive": 0,
+        "coreId": 0,
+        "middleRush": 1,
+        "pairedRush": 0,
+        "pairAnchorHp": 890,
+        "pairMaxHp": 0
+      },
+      "actions": [
+        {
+          "tick": 964,
+          "heroId": 105,
+          "kind": 1,
+          "first": 45,
+          "second": 76
+        }
+      ]
+    },
+    "fresh_alarm_slots": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "full_owned_trace": {
+      "path": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/alex-history-20260920/legacy-blue-median/owned-full.jsonl",
+      "sha256": "ebebd51eea6b0a775d6a6449983cb6b65ad354e12eb2611bf90aa2925423ac84"
+    },
+    "limits": "One reconstructed winning episode. This proves behavior occurred, not that a particular rule caused the win."
+  },
+  "tower_handoff_experiment": [
+    {
+      "arm": "richard135-red",
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "request": "xreq_c71a5e2b-d2af-4553-88d7-3febf865e394",
+      "version": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "evidence": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/richard135-red/result.json",
+        "sha256": "4ae88958c9eb67c0c19795fe725a2798d0926bf8b3d3376fa2c64edb75253451"
+      }
+    },
+    {
+      "arm": "richard135-blue",
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "request": "xreq_a6eb77d6-4869-4cf9-933b-61497a376bf9",
+      "version": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "evidence": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/richard135-blue/result.json",
+        "sha256": "db8e07856798d6e94f1f880e7cbd83918d04a4fc776e5090f679f617ed0abfdb"
+      }
+    },
+    {
+      "arm": "alex-g002-v1-red",
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "request": "xreq_9c3635ba-c8ad-4e9c-8755-c9abbb175c77",
+      "version": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "evidence": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/alex-g002-v1-red/result.json",
+        "sha256": "cca942d5697f5ec0ec13b56d94fdd5760b151c48615a658020561d1bfdaa7dff"
+      }
+    },
+    {
+      "arm": "alex-g002-v1-blue",
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "request": "xreq_080caa51-7db2-4497-b0fe-8cbfaffe5a3c",
+      "version": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "evidence": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/alex-g002-v1-blue/result.json",
+        "sha256": "51cac28689ff82a42b3acc894ea2a45c83cf280597a99b3cb9ef086442a8516b"
+      }
+    },
+    {
+      "arm": "jordan268-red",
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "request": "xreq_a6595c8c-5e08-439d-812d-f67c309c535a",
+      "version": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "opponent": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "evidence": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/jordan268-red/result.json",
+        "sha256": "248752176a8b1057ebd5890a285aed1c6121d010d7c3d977f244f66ef82a53c0"
+      }
+    },
+    {
+      "arm": "jordan268-blue",
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "request": "xreq_b37b7a48-f473-4b28-b7ec-832e7343e301",
+      "version": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "opponent": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "evidence": {
+        "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/jordan268-blue/result.json",
+        "sha256": "a7009977b29423ad861e3eff8c98af5e193c884cb52b6c9831b2cc7d77ba9b4d"
+      }
+    }
+  ],
+  "tower_plan": {
+    "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/plan.json",
+    "sha256": "94693afb7d98ae222414c22772de47e13a087db0a0ac954cc581b32b47256ca6"
+  },
+  "tower_rejection": {
+    "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/final-verdict.json",
+    "sha256": "aa7dcc27111414a4a2a88e51c4e48442c14951d6153ba2566e780a3bc371be9e"
+  },
+  "current_failed_gate": {
+    "path": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/promotion-check/result.json",
+    "sha256": "8b6aed117a8d0a2490d890fb60f7852f681b53f902469a21ed2dfe897e42b508"
+  },
+  "new_hosted_games": 0,
+  "league_changed": false,
+  "limits": "Historical fixed-lineup cohorts, correlated trajectories and differing generated seeds. No independent-trial significance, live retest, or isolated causal attribution. New red tower-handoff branch is separate from the historical deployed ancestor."
+}
