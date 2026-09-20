@@ -17,17 +17,17 @@ The historical median-duration blue win was reconstructed from its exact source:
 | Historical cohort | Our color | Wins | Losses | Draws | Distinct full command streams |
 |---|---|---:|---:|---:|---:|
 | scoped-followup | blue | 40 | 0 | 0 | not counted |
-| hosted | red | 29 | 11 | 0 | 9 |
-| hosted | blue | 40 | 0 | 0 | 4 |
+| target_geometry | red | 29 | 11 | 0 | 9 |
+| target_geometry | blue | 40 | 0 | 0 | 4 |
 | urgent-jordan-20260919 | red | 28 | 12 | 0 | not counted |
-| hosted | red | 28 | 12 | 0 | not counted |
-| hosted | blue | 40 | 0 | 0 | not counted |
-| hosted | red | 19 | 21 | 0 | not counted |
-| hosted | blue | 40 | 0 | 0 | not counted |
-| hosted | red | 28 | 12 | 0 | 9 |
-| hosted | blue | 40 | 0 | 0 | 4 |
-| hosted | red | 30 | 10 | 0 | 8 |
-| hosted | blue | 40 | 0 | 0 | 4 |
+| role_raid | red | 28 | 12 | 0 | not counted |
+| role_raid | blue | 40 | 0 | 0 | not counted |
+| nearby_raid | red | 19 | 21 | 0 | not counted |
+| nearby_raid | blue | 40 | 0 | 0 | not counted |
+| weapon_dense | red | 28 | 12 | 0 | 9 |
+| weapon_dense | blue | 40 | 0 | 0 | 4 |
+| readiness | red | 30 | 10 | 0 | 8 |
+| readiness | blue | 40 | 0 | 0 | 4 |
 
 Stored native replay audits, row counts and replay hashes were rechecked for these cohorts. The highlighted80games have all ten successful structured VM exits and player-status hashes rechecked. The older legacy confirmation has archived headless-log validation but no structured player-status files; the manifest keeps that distinction. Seeds and repeated trajectories are correlated; do not interpret the rows as independent Bernoulli trials or select the best red cohort as a guaranteed87.5%future win rate. The broader record explains the remembered near-perfect blue results.
 

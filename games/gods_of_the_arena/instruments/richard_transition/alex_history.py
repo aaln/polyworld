@@ -6,6 +6,7 @@ import html
 import json
 from pathlib import Path
 import pprint
+import re
 import shutil
 
 ROOT = Path(__file__).resolve().parents[4]
@@ -69,6 +70,9 @@ def historical_cell(path):
     for key, field in [('wins', 'win'), ('losses', 'loss'), ('draws', 'draw')]:
         assert sum(r[field] for r in v['rows']) == v[key]
     return {k: v[k] for k in ('games', 'wins', 'losses', 'draws')} | {
+        'cohort': next(name for name in ('scoped-followup', 'target_geometry',
+            'urgent-jordan-20260919', 'role_raid', 'nearby_raid', 'weapon_dense', 'readiness')
+            if name in path.parts),
         'color': plan['color'], 'policy_version': VERSION, 'opponent_version': ALEX,
         'request': read(path.parent / 'batch/created.json')['id'],
         'stored_full_audits_and_hashes_verified': True,
@@ -150,7 +154,7 @@ def main():
     write(STUDY / 'findings.json', record)
     write(DEST / 'findings.json', record)
     blue = [r for r in cells if r['color'] == 'blue']
-    rows = '\n'.join(f"| {Path(r['result']['path']).parents[4].name} | {r['color']} | {r['wins']} | {r['losses']} | {r['draws']} | {r['distinct_command_streams'] if r['distinct_command_streams'] is not None else 'not counted'} |" for r in cells)
+    rows = '\n'.join(f"| {r['cohort']} | {r['color']} | {r['wins']} | {r['losses']} | {r['draws']} | {r['distinct_command_streams'] if r['distinct_command_streams'] is not None else 'not counted'} |" for r in cells)
     report = f'''# Recovered Alex-winning policy — September 20, 2026
 
 The previous `aaron-gota-ir-relh154-legacy-0916:v1` repeatedly beat the exact current Alex `gota-g002:v1` UUID. In the highlighted September 19 comparison it won **70/80: red30/40, blue40/40**. All {len(blue)} recovered blue cohorts won40/40. Red was less reliable: {record['red_win_range'][0]}–{record['red_win_range'][1]} wins per40 across the recovered cohorts. This is a historical result, not a fresh retest.
@@ -203,7 +207,10 @@ Evidence manifest: `findings.json`; exact skill changes: `legacy-to-jordan-skill
                 table.append('<tr>' + ''.join(f'<{tag}>{c}</{tag}>' for c in cells_html) + '</tr>')
             paragraphs.append('<table>' + ''.join(table) + '</table>')
         else:
-            paragraphs.append('<p style="overflow-wrap:anywhere;white-space:pre-line">' + html.escape(block) + '</p>')
+            escaped = html.escape(block)
+            escaped = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', escaped)
+            escaped = re.sub(r'`([^`]+)`', r'<code>\1</code>', escaped)
+            paragraphs.append('<p style="overflow-wrap:anywhere;white-space:pre-line">' + escaped + '</p>')
     page = head + '<body><div class="page">' + ''.join(paragraphs) + '</div></body></html>'
     (ROOT / 'docs/reports/2026-09-20-alex-policy-history.html').write_text(page)
     print(json.dumps({'historical_cells': len(record['historical_cells']), 'blue_perfect_cohorts': len(blue),
