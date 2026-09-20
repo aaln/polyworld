@@ -157,7 +157,8 @@ def main():
                        env=env, check=True)
     else:
         for script in (REPO / IR / 'forks/jordan268/verify.py',
-                       REPO / IR / 'forks/richard135-coaching-20260920/reproduce.py'):
+                       REPO / IR / 'forks/richard135-coaching-20260920/reproduce.py',
+                       REPO / IR / 'forks/richard135-transition-20260920/reproduce.py'):
             subprocess.run([sys.executable, str(script)], cwd=REPO, check=True)
         subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s',
                         'games/gods_of_the_arena/instruments/opponent_ir', '-p', 'test_*.py'],

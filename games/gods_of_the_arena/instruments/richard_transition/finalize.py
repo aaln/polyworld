@@ -162,7 +162,7 @@ def main():
     shutil.copytree(OLD/'tooling',DEST/'tooling',dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__'))
     # hero_binding resolves its pinned hero schema two parents above tooling/ir.
     # Include that engine input so the captured compiler works outside the repo.
-    shutil.copy2(CLEAN/'examples/gods_of_the_arena/content.nim',DEST/'content.nim')
+    shutil.copy2(CLEAN.parent.parent/'content.nim',DEST/'content.nim')
     tool_dest=DEST/'tooling/games/gods_of_the_arena/instruments/richard_transition';tool_dest.mkdir(parents=True,exist_ok=True)
     for name in ('contracts.py','contracts_v2.py','contracts_v3.py'):shutil.copy2(Path(__file__).parent/name,tool_dest/name)
     reproduce=(OLD/'reproduce.py').read_text().replace('richard_coaching import contracts_v7','richard_transition import contracts_v3')
