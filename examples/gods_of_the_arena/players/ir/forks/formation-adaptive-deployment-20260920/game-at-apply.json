@@ -1,0 +1,416 @@
+{
+  "name": "Gods of the Arena",
+  "id": "cow_126f2fcb-80a0-4b6e-8166-eb6163576db5",
+  "version": "2026.9.16.5",
+  "manifest": {
+    "tags": [
+      "strategy",
+      "basic",
+      "polyworld"
+    ],
+    "game": {
+      "name": "Gods of the Arena",
+      "version": "2026.9.16.5",
+      "description": "Two teams of five BASIC heroes battle to slay the enemy god. Every hero on the winning team scores one win. A time limit without a god being slain gives everyone zero.",
+      "owner": "treeform",
+      "player_runtime": "game-hosted",
+      "config_schema": {
+        "type": "object",
+        "required": [
+          "tokens",
+          "players",
+          "seed",
+          "max_ticks"
+        ],
+        "properties": {
+          "seed": {
+            "type": "integer",
+            "maximum": 2147483647,
+            "minimum": -2147483648
+          },
+          "tokens": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maxItems": 10,
+            "minItems": 10
+          },
+          "players": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "name"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            },
+            "maxItems": 10,
+            "minItems": 10
+          },
+          "max_ticks": {
+            "type": "integer",
+            "maximum": 28800,
+            "minimum": 1
+          },
+          "map_preset": {
+            "type": "object",
+            "properties": {
+              "seed": {
+                "type": "integer",
+                "default": 54,
+                "maximum": 2147483647,
+                "minimum": -2147483648
+              },
+              "map_size": {
+                "type": "integer",
+                "default": 116,
+                "maximum": 256,
+                "minimum": 64,
+                "multipleOf": 2
+              },
+              "high_size": {
+                "type": "number",
+                "default": 511,
+                "maximum": 570,
+                "minimum": 450
+              },
+              "lake_width": {
+                "type": "number",
+                "default": 80,
+                "maximum": 120,
+                "minimum": 42
+              },
+              "road_width": {
+                "type": "number",
+                "default": 52.7,
+                "maximum": 62,
+                "minimum": 26
+              },
+              "camp_radius": {
+                "type": "number",
+                "default": 36,
+                "maximum": 40,
+                "minimum": 20
+              },
+              "castle_size": {
+                "type": "number",
+                "default": 295,
+                "maximum": 500,
+                "minimum": 210
+              },
+              "lake_wobble": {
+                "type": "number",
+                "default": 30,
+                "maximum": 80,
+                "minimum": 0
+              },
+              "road_wobble": {
+                "type": "number",
+                "default": 73,
+                "maximum": 80,
+                "minimum": 0
+              },
+              "stem_length": {
+                "type": "number",
+                "default": 50,
+                "maximum": 80,
+                "minimum": 30
+              },
+              "camp_scatter": {
+                "type": "number",
+                "default": 35,
+                "maximum": 60,
+                "minimum": 0
+              },
+              "jungle_roads": {
+                "type": "integer",
+                "default": 32,
+                "maximum": 50,
+                "minimum": 18,
+                "multipleOf": 2
+              },
+              "lake_crossings": {
+                "type": "integer",
+                "default": 4,
+                "maximum": 6,
+                "minimum": 0,
+                "multipleOf": 2
+              },
+              "camps_touch_roads": {
+                "type": "boolean",
+                "default": true
+              }
+            },
+            "additionalProperties": false
+          },
+          "spawn_interval_ticks": {
+            "type": "integer",
+            "default": 480,
+            "minimum": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "results_schema": {
+        "type": "object",
+        "required": [
+          "scores",
+          "ticks",
+          "seed",
+          "outcome",
+          "total_xp"
+        ],
+        "properties": {
+          "seed": {
+            "type": "integer"
+          },
+          "ticks": {
+            "type": "integer",
+            "maximum": 28800,
+            "minimum": 0
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "enum": [
+                0,
+                1
+              ],
+              "type": "integer"
+            },
+            "maxItems": 10,
+            "minItems": 10
+          },
+          "outcome": {
+            "type": "string"
+          },
+          "returned": {
+            "type": "array",
+            "items": {
+              "type": "boolean"
+            }
+          },
+          "total_xp": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "maxItems": 10,
+            "minItems": 10
+          },
+          "banked_gold": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "runnable": {
+        "type": "game",
+        "image": "public.ecr.aws/q5f4m8t9/cogames@sha256:08508267c1ee06238379206fbb9e2a14221017036f54f4ec44e07eab6882c5e5",
+        "run": [],
+        "env": {},
+        "source_url": "https://github.com/Metta-AI/polyworld/tree/f2ab9598d8f8001b6beae3e66404e341770c803f/examples/gods_of_the_arena"
+      },
+      "protocols": {
+        "player": {
+          "type": "text",
+          "value": "Slots 0\u20134 are Red and slots 5\u20139 are Blue. Supply a raw BASIC file. The existing Polyworld BASIC host API runs with bounded source, memory, work, and instruction limits. PRINT is private. See the game guide and bundled base.bas for a complete working player."
+        },
+        "global": {
+          "type": "text",
+          "value": "GET /client/global returns a static status page. /global sends one JSON status message after WebSocket upgrade and echoes Ping frames with Pong. No gameplay traffic uses WebSockets. Other legacy endpoints return explicit stubs."
+        }
+      },
+      "docs": {
+        "readme": {
+          "type": "text",
+          "value": "# Gods of the Arena\n\nTwo teams of five BASIC heroes battle to slay the enemy god. Every hero on the winning team scores one win. A time limit without a god being slain gives everyone zero.\n\nThe gods are the objectives: a warlock for Red and a druid for Blue. Each god has two level-3 guard towers. Clearing all three towers in any one lane exposes the guards. The god cannot take damage from attacks or spells until both of its guards are destroyed. Guards have the same 1950 HP and 30 damage as level-3 lane towers.\n\nSlots 0\u20134 are Red and slots 5\u20139 are Blue. Platform slots are zero-based. Upload a `.bas` file containing BASIC source. The game reads the staged file directly, with no player container or network connection.\n\nStart with the bundled `players/base.bas`. The [game documentation](https://github.com/Metta-AI/polyworld/blob/main/examples/gods_of_the_arena/docs/index.html) describes observations and available BASIC commands. The same source is available under `examples/gods_of_the_arena/bots.nim` and `content.nim`.\n\nEvery hero has a free single-target melee or ranged basic attack in addition to four abilities. Basic damage grows each level and includes equipment bonuses. Idle heroes automatically acquire nearby visible enemy creeps. `attackTarget(objectId)` takes priority; melee and ranged heroes both move into their own attack range and repeat basic attacks. `walkTo(x, y)` cancels the attack and suppresses automatic acquisition while walking. Basic attacks do not spend mana or spell charges.\n\n`attackMove(x, y)` uses the same attack-move order as the player controls. It follows a path toward that tile, stops for enemies in the hero's normal acquisition range, and resumes afterward. Like other actions, it returns 1 when accepted and 0 when rejected, and is recorded in replays.\n\nThe bundled `players/rusher.bas` sends all five heroes down mid together. It regroups toward the living team's center when any pair is more than 10 tiles apart, closing to 8 tiles before resuming. It attacks visible, vulnerable enemies within 20 tiles, favoring the enemy closest to the group's center. Otherwise it attack-moves through the middle and toward the opposing god. Dead allies are ignored until they respawn. Automatic abilities remain enabled.\n\n## BASIC observations\n\nSelf data and visible objects are sampled for each decision and remain consistent during it, including after an action call. Spell queries read the pending casts, so a successful cast can append a spell during that decision. Object and spell indices are zero-based and may change next decision. Keep `objectId(i)` when tracking an object across decisions or calling `attackTarget`, rather than keeping its list index.\n\nAll values are integers. `worldScale = 60000` is the number of world units per tile, and `tickRate = 24` is the number of simulation ticks per second. `selfX`, `selfY`, `objectX(i)`, `objectY(i)`, `spellX(i)`, and `spellY(i)` use whole global tiles. Facing, speed, range, and velocity retain sub-tile precision in world units. The Y component of these APIs is the second horizontal map axis, not height.\n\n### Your hero\n\nThe existing `selfId`, `selfTeam`, `selfClass`, `selfX`, `selfY`, `selfHp`, `selfMaxHp`, `selfMana`, `selfMaxMana`, `selfGold`, `selfLevel`, `selfLayer`, and `worldTick` remain available. These additional read-only values describe the current hero:\n\n| Value | Meaning |\n| --- | --- |\n| `selfMoveSpeed` | Unblocked movement speed in world units per tick, including level and equipment bonuses. |\n| `selfAttackRange` | Basic-attack range in world units, measured by planar Euclidean distance between centers. Towers and barracks allow at least 105000 units measured from their occupied footprint; gods use 255000 units. |\n| `selfAttackDamage` | Current basic-attack damage, including level and equipment bonuses. |\n| `selfTarget` | Current ordered or automatically acquired attack target's stable object ID, or zero for none. |\n| `selfAttackCooldown` | Ticks until the next basic hit could land if the target stays in range. Includes remaining recovery and the next windup, or the remainder of a current windup. An idle hero reports a full windup. Excludes chasing and is separate from ability cooldowns. Movement can cancel a swing. |\n| `selfAttacksLanded` | Lifetime count of successful basic hits, preserved across respawns. Spells do not increment it. |\n\n### Visible objects\n\nLoop over indices `0` through `objectCount() - 1`. Object kinds are 1 = god, 2 = hero, 3 = creep, 4 = tower, and 5 = barracks. Barracks have 900 HP and become exposed after their lane towers fall. Each barracks spawns three creeps per wave, giving six per lane for each team. Destroying a barracks stops its three creeps from spawning. Destroyed buildings leave the object list and release their occupied tiles. New queries respect the same visibility filter:\n\n| Function | Meaning |\n| --- | --- |\n| `objectLevel(i)` | Hero level. |\n| `objectMana(i)` | Hero's current mana. |\n| `objectItemId(i, slot)` | Hero's held item ID, using the same IDs as `itemId` and `buyItem`. Zero means no item. Slots are 0 through 5. |\n| `objectItemCount(i, slot)` | Stack count in that hero's inventory slot. |\n| `objectFacingX(i)`, `objectFacingY(i)` | Normalized horizontal facing, scaled by `worldScale`. A unit facing positive X reports `(60000, 0)`. |\n| `objectTarget(i)` | Current attack target's stable object ID, or zero if absent or not visible to your team. |\n| `objectVelX(i)`, `objectVelY(i)` | Actual displacement over the last simulation tick in world units, including collision adjustments. Stationary objects report zero. |\n\nThese new object queries return zero for invalid indices or fields that do not apply to that object. Invalid inventory slots also return zero. Hero level, mana, and inventory queries return zero for non-heroes. An object's ID is not a valid substitute for its list index.\n\n### Pending spells and warnings\n\nLoop over `0` through `spellCount() - 1`. This list contains unresolved casts from their start through impact, including projectiles and area warnings. Allied casts are observable; enemy casts require their aim position to be visible, matching the viewer's warning visibility. Completed effects are omitted.\n\n| Function | Meaning |\n| --- | --- |\n| `spellAbility(i)` | Ability enum ID from `content.nim`, beginning at zero. Invalid indices return -1. |\n| `spellCasterId(i)` | Caster's stable object ID, or zero if the enemy caster is hidden. |\n| `spellX(i)`, `spellY(i)` | Aim/impact position or area center in whole global tiles. This is not the projectile's interpolated flight position. |\n| `spellImpactTick(i)` | Absolute simulation tick at impact. Subtract `worldTick` to obtain the remaining ticks. |\n\nOther invalid spell queries return zero. Visibility of an enemy warning does not reveal its hidden caster's identity.\n\n## Terrain and execution\n\nBASIC can inspect the complete static terrain with `terrainKind(x, y)`, `terrainWalkable(x, y)`, `terrainHeight(x, y)`, and `terrainWaterDepth(x, y)`. These use global tile coordinates on `selfLayer`. Each has an explicit `At(x, y, layer)` version, such as `terrainKindAt(x, y, GroundLayer)`. Read-only constants expose `mapWidth`, `mapHeight`, `mapLayers`, the layer names, and terrain kinds. Height and water depth use eighths of a tile; invalid or absent tiles return zero. The Terrain API section of the game documentation lists all constants and edge cases. Static terrain is available through fog, while enemy objects remain visibility-filtered. Walkability also includes team-known building footprints; unseen enemy destruction does not reveal newly open tiles.\n\nBASIC `PRINT` output, compiler diagnostics, runtime errors, and VM lifecycle messages go to the owning player's private log. Each log is limited to 10 MiB. Runtime limit errors disable that VM; other seats continue. Invalid BASIC syntax fails the episode with a player failure diagnostic. Public game logs and action replays contain no BASIC source or private print output.\n\nMatches run up to 28,800 deterministic ticks (20 simulated minutes), without real-time pacing. Replays run entirely in the browser with playback, seeking, speed, and loop controls. The server exposes `/healthz`; legacy clients are static stubs.\n\nThe Competition league runs every 30 minutes with at least two episodes per entrant. Separate baseline filler policies complete short rosters. Fillers are not ranked entrants. Standings use binary win scores and platform Elo.\n"
+        },
+        "pages": []
+      },
+      "replay_viewer": {
+        "bundle": "sha256:58b2ddd5498c0cbf73e0445a7b6547594a1944765193070c388ddebf9a11a09a",
+        "replay_compression": "gzip"
+      }
+    },
+    "player": [
+      {
+        "type": "player",
+        "run": [],
+        "env": {},
+        "file": "sha256:e5e8ce343b55851bc6366070fdf9730b09200071b916dfaf26f14691bbdc6b53",
+        "id": "baseline",
+        "name": "Baseline",
+        "description": "Unmodified Gods of the Arena BASIC baseline."
+      },
+      {
+        "type": "player",
+        "run": [],
+        "env": {},
+        "file": "sha256:92912316f722e342606b7e824f211f42cb93682673447c5a9e2c4a3d79af57cf",
+        "id": "rusher",
+        "name": "Rusher",
+        "description": "Groups living allies within 10 tiles, pushes mid, and attacks visible enemies within 20 tiles."
+      }
+    ],
+    "reporter": [],
+    "commissioner": [],
+    "grader": [],
+    "diagnoser": [],
+    "optimizer": [],
+    "variants": [
+      {
+        "id": "competition",
+        "name": "Competition",
+        "game_config": {
+          "seed": 2026,
+          "players": [
+            {
+              "name": "Baseline 0"
+            },
+            {
+              "name": "Baseline 1"
+            },
+            {
+              "name": "Baseline 2"
+            },
+            {
+              "name": "Baseline 3"
+            },
+            {
+              "name": "Baseline 4"
+            },
+            {
+              "name": "Baseline 5"
+            },
+            {
+              "name": "Baseline 6"
+            },
+            {
+              "name": "Baseline 7"
+            },
+            {
+              "name": "Baseline 8"
+            },
+            {
+              "name": "Baseline 9"
+            }
+          ],
+          "max_ticks": 28800,
+          "map_preset": {
+            "seed": 54,
+            "map_size": 116,
+            "high_size": 511,
+            "lake_width": 80,
+            "road_width": 52.7,
+            "camp_radius": 36,
+            "castle_size": 295,
+            "lake_wobble": 30,
+            "road_wobble": 73,
+            "stem_length": 50,
+            "camp_scatter": 35,
+            "jungle_roads": 32,
+            "lake_crossings": 4,
+            "camps_touch_roads": true
+          },
+          "spawn_interval_ticks": 480
+        },
+        "description": "Full-length deterministic competition match."
+      }
+    ],
+    "certification": {
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Baseline 0"
+          },
+          {
+            "name": "Baseline 1"
+          },
+          {
+            "name": "Baseline 2"
+          },
+          {
+            "name": "Baseline 3"
+          },
+          {
+            "name": "Baseline 4"
+          },
+          {
+            "name": "Rusher 5"
+          },
+          {
+            "name": "Rusher 6"
+          },
+          {
+            "name": "Rusher 7"
+          },
+          {
+            "name": "Rusher 8"
+          },
+          {
+            "name": "Rusher 9"
+          }
+        ],
+        "max_ticks": 28800,
+        "spawn_interval_ticks": 480
+      },
+      "players": [
+        {
+          "player_id": "baseline"
+        },
+        {
+          "player_id": "baseline"
+        },
+        {
+          "player_id": "baseline"
+        },
+        {
+          "player_id": "baseline"
+        },
+        {
+          "player_id": "baseline"
+        },
+        {
+          "player_id": "rusher"
+        },
+        {
+          "player_id": "rusher"
+        },
+        {
+          "player_id": "rusher"
+        },
+        {
+          "player_id": "rusher"
+        },
+        {
+          "player_id": "rusher"
+        }
+      ]
+    }
+  },
+  "api_version": "coworld.softmax.com/v0",
+  "schema_hash": "f767aed2fbd61d9d3d4456c67eb3de3b8d619440c952bb26b90c90b72285e057",
+  "manifest_hash": "sha256:1314bafaeb2a29621a6894dbea5d5c2f00718b8f158619ac3269d96f8d665f8d",
+  "size_bytes": 13983,
+  "canonical": true,
+  "forum_markdown_url": "https://softmax.com/api/observatory/v2/forums/Gods%20of%20the%20Arena.md",
+  "wiki_markdown_url": "https://softmax.com/api/observatory/v2/wikis/Gods%20of%20the%20Arena/pages.md",
+  "documentation_url": "https://softmax.com/docs/coworld/build-a-player/choose-a-coworld",
+  "certification_status_url": "https://softmax.com/api/observatory/v2/coworlds/cow_126f2fcb-80a0-4b6e-8166-eb6163576db5/certification",
+  "certification_transcript_url": "https://softmax.com/api/observatory/v2/coworlds/cow_126f2fcb-80a0-4b6e-8166-eb6163576db5/certification/transcript"
+}

@@ -1,0 +1,38 @@
+{
+  "ply_594ec24d-d7f3-4370-a000-468354ec41c9": {
+    "policy_version": {
+      "id": "b9eb629e-a429-45eb-9e7b-559095f78552",
+      "policy": {
+        "id": "2da70f5b-20e1-4d05-868e-547e4aac1b5a",
+        "name": "aaron-gota-ir-richard135-formation3600-0920-coach"
+      },
+      "version": 1,
+      "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+      "label": "aaron-gota-ir-richard135-formation3600-0920-coach:v1"
+    },
+    "membership": "lpm_025546b6-70c6-4d95-86e7-63ff3e208f81",
+    "source_sha256": "e9eac314c36c06be53af969b54be0eb42a9ee329b0c6d1874eebda489d645e4a",
+    "action": "POST /v2/league-policy-memberships/lpm_025546b6-70c6-4d95-86e7-63ff3e208f81/champion",
+    "body": {},
+    "trigger": "Confirmed runtime invalidity or qualification rejection; ordinary red Richard losses are known, not a surprise rollback trigger.",
+    "expected_time": "One authenticated selection and readback; no rebuild."
+  },
+  "ply_630a768f-d623-44b2-80fa-36968d6fa75a": {
+    "policy_version": {
+      "id": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+      "policy": {
+        "id": "aed21370-f529-4458-b099-9aded77fb50e",
+        "name": "aaron-gota-ir-richard135-formation3600-0920"
+      },
+      "version": 1,
+      "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+      "label": "aaron-gota-ir-richard135-formation3600-0920:v1"
+    },
+    "membership": "lpm_a76b23fb-ea27-4750-b0df-b98fa667ee60",
+    "source_sha256": "e9eac314c36c06be53af969b54be0eb42a9ee329b0c6d1874eebda489d645e4a",
+    "action": "POST /v2/league-policy-memberships/lpm_a76b23fb-ea27-4750-b0df-b98fa667ee60/champion",
+    "body": {},
+    "trigger": "Confirmed runtime invalidity or qualification rejection; ordinary red Richard losses are known, not a surprise rollback trigger.",
+    "expected_time": "One authenticated selection and readback; no rebuild."
+  }
+}

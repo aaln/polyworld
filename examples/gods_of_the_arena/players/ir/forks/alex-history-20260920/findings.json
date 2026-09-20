@@ -1,8 +1,18 @@
 {
-  "at": "2026-09-20T20:30:37.051854+00:00",
+  "at": "2026-09-20T20:33:33.141410+00:00",
   "source_sha256": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
   "version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
   "name": "aaron-gota-ir-relh154-legacy-0916:v1",
+  "source_registration": [
+    {
+      "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/hosted/legacy/upload-request.json",
+      "sha256": "56cddf0c36ec01110c45b5252bc0d9dc69436fcb5fc8c86fba6819a608e3327e"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/hosted/legacy/uploaded-version.json",
+      "sha256": "d951a50bf396b60a82c8a54e6ac345a378969826ff7ca7a849c6feb9c0875205"
+    }
+  ],
   "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
   "game_version": "2026.9.16.5",
   "historical_cells": [
@@ -317,6 +327,7 @@
       }
     }
   ],
+  "distinct_historical_requests": 12,
   "red_win_range": [
     19,
     30

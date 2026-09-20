@@ -51,6 +51,18 @@ The existing `researcher.py reserve`/`xp_create` logic demonstrates durable rese
 
 ## 4. Identity and evidence index
 
+Latest deployment record (September 20, 22:41 UTC): both Aaron and Coach use the
+[adaptive formation3600 fork](../../examples/gods_of_the_arena/players/ir/forks/formation-adaptive-20260920/README.md),
+BASIC SHA256 `c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4`.
+Aaron version is `61148477-1928-43c6-a881-8daea0e8f6c2`; Coach version is
+`2bb94c84-fc32-4a81-9e6d-46666bc0315f`. Both were verified active, competing and
+champion; [deployment and rollback receipts](../../examples/gods_of_the_arena/players/ir/forks/formation-adaptive-deployment-20260920/README.md)
+record the user's authorization. Discovery and confirmation each produced Alex
+and Jordan 40/40 wins per color, Richard blue 40/40 and red 0/40. Repeated
+trajectories limit generalization; broad-field qualification and formal research
+acceptance remain unmet. This supersedes the deployed-policy anchors below,
+which preserve the earlier handoff capture. Resolve live champions before acting.
+
 Resolve the actual current champions on **every cycle** and immediately before promotion. These UUIDs are historical anchors, not “latest” aliases:
 
 | Role | Player UUID | Policy-version UUID at capture |

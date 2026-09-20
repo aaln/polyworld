@@ -1,0 +1,307 @@
+{
+  "at": "2026-09-20T21:41:07.999875+00:00",
+  "cycle": "interactive-formation-adaptive-20260920",
+  "episodes": 400,
+  "candidate": "profile_pruned",
+  "version": {
+    "id": "61148477-1928-43c6-a881-8daea0e8f6c2",
+    "name": "aaron-gota-ir-formation-profile-pruned-0920",
+    "version": 1,
+    "pools": null,
+    "submit_error": null
+  },
+  "source_sha256": "c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4",
+  "arms": [
+    {
+      "key": "alex/candidate/red",
+      "name": "candidate",
+      "kind": "team",
+      "policy_version": "61148477-1928-43c6-a881-8daea0e8f6c2",
+      "rival_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "color": "red",
+      "own_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "roster": [
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/alex/candidate/red"
+    },
+    {
+      "key": "alex/candidate/blue",
+      "name": "candidate",
+      "kind": "team",
+      "policy_version": "61148477-1928-43c6-a881-8daea0e8f6c2",
+      "rival_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "color": "blue",
+      "own_slots": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "roster": [
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/alex/candidate/blue"
+    },
+    {
+      "key": "alex/formation/red",
+      "name": "formation",
+      "kind": "team",
+      "policy_version": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+      "rival_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "color": "red",
+      "own_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "roster": [
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/alex/formation/red"
+    },
+    {
+      "key": "alex/formation/blue",
+      "name": "formation",
+      "kind": "team",
+      "policy_version": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+      "rival_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "color": "blue",
+      "own_slots": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "roster": [
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "a30542cb-54de-4109-92e6-bcabca7db4d8",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/alex/formation/blue"
+    },
+    {
+      "key": "jordan/candidate/red",
+      "name": "candidate",
+      "kind": "team",
+      "policy_version": "61148477-1928-43c6-a881-8daea0e8f6c2",
+      "rival_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "color": "red",
+      "own_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "roster": [
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/jordan/candidate/red"
+    },
+    {
+      "key": "jordan/candidate/blue",
+      "name": "candidate",
+      "kind": "team",
+      "policy_version": "61148477-1928-43c6-a881-8daea0e8f6c2",
+      "rival_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "color": "blue",
+      "own_slots": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "roster": [
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/jordan/candidate/blue"
+    },
+    {
+      "key": "jordan/formation/red",
+      "name": "formation",
+      "kind": "team",
+      "policy_version": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+      "rival_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "color": "red",
+      "own_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "roster": [
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/jordan/formation/red"
+    },
+    {
+      "key": "jordan/formation/blue",
+      "name": "formation",
+      "kind": "team",
+      "policy_version": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+      "rival_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "color": "blue",
+      "own_slots": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "roster": [
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/jordan/formation/blue"
+    },
+    {
+      "key": "richard/candidate/red",
+      "name": "candidate",
+      "kind": "team",
+      "policy_version": "61148477-1928-43c6-a881-8daea0e8f6c2",
+      "rival_version": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "color": "red",
+      "own_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "roster": [
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "7c370daf-3c5f-42f8-870b-54b79c495a44"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/richard/candidate/red"
+    },
+    {
+      "key": "richard/candidate/blue",
+      "name": "candidate",
+      "kind": "team",
+      "policy_version": "61148477-1928-43c6-a881-8daea0e8f6c2",
+      "rival_version": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "color": "blue",
+      "own_slots": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "roster": [
+        "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "61148477-1928-43c6-a881-8daea0e8f6c2"
+      ],
+      "games": 40,
+      "directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted/richard/candidate/blue"
+    }
+  ],
+  "decision_rule": ">=30/40 each Alex/Jordan color, >=8aggregate gain over fresh formation; Richard blue>=38/40 and >=40total wins; all full audits. No field or promotion claim."
+}

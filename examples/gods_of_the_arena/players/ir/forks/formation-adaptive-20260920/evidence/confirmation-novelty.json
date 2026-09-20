@@ -1,0 +1,53 @@
+{
+  "cells": [
+    {
+      "key": "alex/candidate/red",
+      "discovery_distinct": 7,
+      "confirmation_distinct": 7,
+      "new_complete_streams": 0,
+      "repeated_complete_streams": 7,
+      "confirmation_games_with_new_stream": 0
+    },
+    {
+      "key": "alex/candidate/blue",
+      "discovery_distinct": 9,
+      "confirmation_distinct": 10,
+      "new_complete_streams": 1,
+      "repeated_complete_streams": 9,
+      "confirmation_games_with_new_stream": 4
+    },
+    {
+      "key": "jordan/candidate/red",
+      "discovery_distinct": 2,
+      "confirmation_distinct": 2,
+      "new_complete_streams": 0,
+      "repeated_complete_streams": 2,
+      "confirmation_games_with_new_stream": 0
+    },
+    {
+      "key": "jordan/candidate/blue",
+      "discovery_distinct": 2,
+      "confirmation_distinct": 2,
+      "new_complete_streams": 0,
+      "repeated_complete_streams": 2,
+      "confirmation_games_with_new_stream": 0
+    },
+    {
+      "key": "richard/candidate/red",
+      "discovery_distinct": 1,
+      "confirmation_distinct": 1,
+      "new_complete_streams": 0,
+      "repeated_complete_streams": 1,
+      "confirmation_games_with_new_stream": 0
+    },
+    {
+      "key": "richard/candidate/blue",
+      "discovery_distinct": 5,
+      "confirmation_distinct": 5,
+      "new_complete_streams": 0,
+      "repeated_complete_streams": 5,
+      "confirmation_games_with_new_stream": 0
+    }
+  ],
+  "interpretation": "Fresh requests are prospective replication, not guaranteed novel or independent behavior. Canonical streams contain all ten command sequences; different streams alone do not imply independence."
+}

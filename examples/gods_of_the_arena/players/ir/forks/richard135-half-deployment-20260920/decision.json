@@ -1,0 +1,131 @@
+{
+  "recorded_at": "2026-09-20T20:58:34.102458+00:00",
+  "authorization_verbatim": "deploy the policy to league that can beat richard's v135 even half the time to both players. it's important even while we work that we start beating him",
+  "league": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+  "versions": {
+    "ply_630a768f-d623-44b2-80fa-36968d6fa75a": {
+      "id": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+      "name": "aaron-gota-ir-richard135-formation3600-0920",
+      "version": 1,
+      "pools": null,
+      "submit_error": null
+    },
+    "ply_594ec24d-d7f3-4370-a000-468354ec41c9": {
+      "id": "b9eb629e-a429-45eb-9e7b-559095f78552",
+      "name": "aaron-gota-ir-richard135-formation3600-0920-coach",
+      "version": 1,
+      "pools": null,
+      "submit_error": null
+    }
+  },
+  "source_sha256": "e9eac314c36c06be53af969b54be0eb42a9ee329b0c6d1874eebda489d645e4a",
+  "evidence": {
+    "name": "formation3600",
+    "pair": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/evaluated/formation3600",
+    "source_sha256": "e9eac314c36c06be53af969b54be0eb42a9ee329b0c6d1874eebda489d645e4a",
+    "evaluated_ir_sha256": "6c8e2b543241e1f5bde8cb7400f2e4c507ac60b89e14c7bacafaeed96afc73d3",
+    "tested_ir_sha256": "40f46109ac8d436fd8062649c5874aba2f5b0b59be4e9850d3df26863d39f032",
+    "local": {
+      "games": 12,
+      "wins": 2,
+      "deaths": 283,
+      "all_runtime_and_replay_audits_passed": true,
+      "evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/local-results.json",
+        "sha256": "e9114b0ff34b9fed6b49e9f9e746fe41fee1ffe9489a1aa8d4187acee05191a0"
+      }
+    },
+    "local_control": {
+      "games": 12,
+      "wins": 7,
+      "deaths": 50,
+      "all_runtime_and_replay_audits_passed": true,
+      "evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/local-results.json",
+        "sha256": "e9114b0ff34b9fed6b49e9f9e746fe41fee1ffe9489a1aa8d4187acee05191a0"
+      }
+    },
+    "Richard": {
+      "red": {
+        "games": 40,
+        "wins": 0,
+        "losses": 14,
+        "draws": 26,
+        "deaths": 3212,
+        "request": "xreq_c34c1c63-5059-43a9-aacf-4eef63394c3a",
+        "distinct_complete_command_streams": 10,
+        "evidence": {
+          "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/hosted/formation3600/red/arm-result.json",
+          "sha256": "b5202909820df27e4155f47da1fa177da11dd28e4a945c788691cc9814c12d0d"
+        },
+        "correlation_evidence": {
+          "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/hosted/formation3600/red/trajectory-correlation.json",
+          "sha256": "59ff2e4cdf9cf0251d79489f4c819da31c6ad3d9c4e03a1c23ff3bc59d1c9bc7"
+        }
+      },
+      "blue": {
+        "games": 40,
+        "wins": 40,
+        "losses": 0,
+        "draws": 0,
+        "deaths": 160,
+        "request": "xreq_1f0940d4-73c1-47c4-8800-84dfbe6f844f",
+        "distinct_complete_command_streams": 5,
+        "evidence": {
+          "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/hosted/formation3600/blue/arm-result.json",
+          "sha256": "8f4ed4271729b77dff5b3397ec66bbbb4894f2891ec835b5e7fb0f9496a60962"
+        },
+        "correlation_evidence": {
+          "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/hosted/formation3600/blue/trajectory-correlation.json",
+          "sha256": "d8f1ff0e00116fa0c1fe3605fb192deabebbda27dcb23825367f94d4d623f308"
+        }
+      }
+    },
+    "Richard_both_color_gate_passed": false,
+    "field_qualified": false,
+    "captured_inputs_preserved": true,
+    "compile_extract_exact_parity": true,
+    "uploaded_version": {
+      "id": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+      "name": "aaron-gota-ir-richard135-formation3600-0920",
+      "version": 1,
+      "pools": null,
+      "submit_error": null
+    }
+  },
+  "scope": "Explicit user-authorized interim deployment to both Aaron and Coach: formation3600 won40/80 Richard v135 games, blue40W0L0D/red0W14L26D, all80 full replay/ten-VM audits. Repeated trajectories; no independent-trial significance or future50% guarantee. Original both-color Richard gate failed; Alex/Jordan/field unqualified. New user half-win scope supersedes prior conditional deployment scope, not research acceptance.",
+  "rollback": {
+    "ply_594ec24d-d7f3-4370-a000-468354ec41c9": {
+      "policy_version": {
+        "id": "00cd9483-0309-4613-bf61-89f3f4a33d01",
+        "policy": {
+          "id": "17fc6f75-47b7-4fda-abe7-b7a9c1f64e82",
+          "name": "aaron-gota-ir-j268-redrace-0920"
+        },
+        "version": 1,
+        "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "label": "aaron-gota-ir-j268-redrace-0920:v1"
+      },
+      "membership": "lpm_3954a540-f536-4ef3-98a4-44847647711a",
+      "action": "POST /v2/league-policy-memberships/lpm_3954a540-f536-4ef3-98a4-44847647711a/champion",
+      "body": {},
+      "expected_time": "One authenticated selection and readback; no rebuild."
+    },
+    "ply_630a768f-d623-44b2-80fa-36968d6fa75a": {
+      "policy_version": {
+        "id": "4cdbbf36-3d70-4ea3-8aed-c92ee0e024be",
+        "policy": {
+          "id": "70d39c71-8de3-4c97-99ab-a56a95d570a3",
+          "name": "aaron-gota-ir-j268-redrace-0920-aaron"
+        },
+        "version": 1,
+        "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "label": "aaron-gota-ir-j268-redrace-0920-aaron:v1"
+      },
+      "membership": "lpm_d9ccbafb-edec-4af8-9704-17856b726f74",
+      "action": "POST /v2/league-policy-memberships/lpm_d9ccbafb-edec-4af8-9704-17856b726f74/champion",
+      "body": {},
+      "expected_time": "One authenticated selection and readback; no rebuild."
+    }
+  }
+}

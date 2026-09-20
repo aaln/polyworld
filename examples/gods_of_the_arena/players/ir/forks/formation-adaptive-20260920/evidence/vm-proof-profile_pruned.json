@@ -1,0 +1,5912 @@
+{
+  "passed": true,
+  "checks": [
+    "all ten fixed classes select intended profile",
+    "single hero repeated frames cannot vote twice",
+    "mixed,dead,late,extra-item evidence abstains",
+    "latched profile persists",
+    "blue representative commands equal exact specialist branches",
+    "late red formation guarded by unknown/dagger profile",
+    "dense budget and hard global limits"
+  ],
+  "max_instructions": 17230,
+  "max_work": 26853,
+  "globals": 256,
+  "source_sha256": "c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4",
+  "rows": [
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3897,
+      "work": 6552,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3358,
+      "work": 5341,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3893,
+      "work": 6536,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3358,
+      "work": 5341,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4225,
+      "work": 7041,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3174,
+      "work": 4819,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4233,
+      "work": 7033,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3174,
+      "work": 4819,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3885,
+      "work": 6503,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3346,
+      "work": 5292,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3881,
+      "work": 6487,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3346,
+      "work": 5292,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4213,
+      "work": 6992,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3163,
+      "work": 4772,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4221,
+      "work": 6984,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3163,
+      "work": 4772,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3837,
+      "work": 6419,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3278,
+      "work": 5184,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3833,
+      "work": 6403,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3278,
+      "work": 5184,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4221,
+      "work": 7001,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3170,
+      "work": 4779,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4256,
+      "work": 7023,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3170,
+      "work": 4779,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3925,
+      "work": 6552,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3366,
+      "work": 5317,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3921,
+      "work": 6536,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3366,
+      "work": 5317,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4225,
+      "work": 7009,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3174,
+      "work": 4787,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4260,
+      "work": 7031,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3174,
+      "work": 4787,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3790,
+      "work": 6415,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3251,
+      "work": 5204,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3786,
+      "work": 6399,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3251,
+      "work": 5204,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4202,
+      "work": 7029,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3152,
+      "work": 4809,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 4210,
+      "work": 7021,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 3152,
+      "work": 4809,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4093,
+      "work": 6882,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3541,
+      "work": 5655,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4093,
+      "work": 6874,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3545,
+      "work": 5663,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4093,
+      "work": 6874,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3545,
+      "work": 5663,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4086,
+      "work": 6848,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3545,
+      "work": 5663,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4098,
+      "work": 6892,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3546,
+      "work": 5665,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4098,
+      "work": 6884,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3550,
+      "work": 5673,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4098,
+      "work": 6884,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3550,
+      "work": 5673,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4091,
+      "work": 6858,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3550,
+      "work": 5673,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4097,
+      "work": 6890,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3545,
+      "work": 5663,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4097,
+      "work": 6882,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3549,
+      "work": 5671,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4097,
+      "work": 6882,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3549,
+      "work": 5671,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4090,
+      "work": 6856,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3549,
+      "work": 5671,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4101,
+      "work": 6898,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3549,
+      "work": 5671,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4101,
+      "work": 6890,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3553,
+      "work": 5679,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4101,
+      "work": 6890,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3553,
+      "work": 5679,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4094,
+      "work": 6864,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3553,
+      "work": 5679,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4110,
+      "work": 6916,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 1,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3558,
+      "work": 5689,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4110,
+      "work": 6908,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 2,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3562,
+      "work": 5697,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4110,
+      "work": 6908,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3562,
+      "work": 5697,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4103,
+      "work": 6882,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3562,
+      "work": 5697,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4094,
+      "work": 6880,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            1
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 1,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 2690,
+      "work": 4439,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 3558,
+      "work": 5679,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 4098,
+      "work": 6896,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 7607,
+      "work": 12458,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 15189,
+      "work": 22153,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 11096,
+      "work": 17684,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 14255,
+      "work": 20199,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 17173,
+      "work": 26789,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 16911,
+      "work": 23767,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 7595,
+      "work": 12409,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 15178,
+      "work": 22106,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 11084,
+      "work": 17635,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 14240,
+      "work": 20143,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 17161,
+      "work": 26740,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            14
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 16896,
+      "work": 23711,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 7599,
+      "work": 12410,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 15185,
+      "work": 22113,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 11088,
+      "work": 17636,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 14243,
+      "work": 20142,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 17165,
+      "work": 26741,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 16899,
+      "work": 23710,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 7599,
+      "work": 12410,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 15189,
+      "work": 22121,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 11088,
+      "work": 17636,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 14243,
+      "work": 20142,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 17165,
+      "work": 26741,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            12
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            10
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 16899,
+      "work": 23710,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 105,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 7606,
+      "work": 12456,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 15167,
+      "work": 22143,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 11124,
+      "work": 17715,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 14251,
+      "work": 20190,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            3057
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 3057,
+        "defActive": 1,
+        "criticalUntil": 2160
+      },
+      "instructions": 17230,
+      "work": 26853,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            105
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            7
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            5
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            13
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            6
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            9
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 1,
+        "bestId": 105,
+        "defActive": 0,
+        "criticalUntil": 2160
+      },
+      "instructions": 16907,
+      "work": 23758,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 13090,
+      "work": 20453,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 11030,
+      "work": 16650,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 9558,
+      "work": 15442,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 7498,
+      "work": 11639,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 14318,
+      "work": 22610,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 12258,
+      "work": 18807,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 13095,
+      "work": 20463,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 11035,
+      "work": 16660,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 9563,
+      "work": 15452,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 7503,
+      "work": 11649,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 14323,
+      "work": 22620,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 12263,
+      "work": 18817,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 13094,
+      "work": 20461,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 11034,
+      "work": 16658,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 9558,
+      "work": 15442,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 7498,
+      "work": 11639,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 14318,
+      "work": 22610,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 12258,
+      "work": 18807,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 13098,
+      "work": 20469,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 11038,
+      "work": 16666,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 9558,
+      "work": 15442,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 7498,
+      "work": 11639,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 14318,
+      "work": 22610,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 12258,
+      "work": 18807,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 13107,
+      "work": 20487,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 11047,
+      "work": 16684,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 9563,
+      "work": 15452,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 7503,
+      "work": 11649,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 14323,
+      "work": 22620,
+      "globals": 256
+    },
+    {
+      "actions": [
+        {
+          "command": "attackTarget",
+          "arguments": [
+            100
+          ],
+          "accepted": 1
+        },
+        {
+          "command": "buyItem",
+          "arguments": [
+            11
+          ],
+          "accepted": 1
+        }
+      ],
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "bestId": 100,
+        "defActive": 0,
+        "criticalUntil": 0
+      },
+      "instructions": 12263,
+      "work": 18817,
+      "globals": 256
+    }
+  ]
+}

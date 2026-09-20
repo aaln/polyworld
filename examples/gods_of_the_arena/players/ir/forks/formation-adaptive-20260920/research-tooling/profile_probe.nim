@@ -1,0 +1,96 @@
+## Source-reveal audit. Exact opponent VMs replace their recorded commands;
+## all other commands and every complete world-state hash must still match.
+## Private memory is retrospective audit evidence, never observer-model input.
+import std/[json, os, strutils, tables]
+import ../../examples/gods_of_the_arena/game
+include ../../examples/gods_of_the_arena/bots
+
+proc applyRecorded(world: World, a: ReplayAction) =
+  case a.kind
+  of ActionWalkTo: discard applyWalkTo(world, a.heroId, a.first, a.second)
+  of ActionAttackMove: discard applyAttackMove(world, a.heroId, a.first, a.second)
+  of ActionAttackTarget: discard applyAttackTarget(world, a.heroId, a.first)
+  of ActionBuyItem: discard applyBuyItem(world, a.heroId, a.first)
+  of ActionUseItem: discard applyUseItem(world, a.heroId, a.first)
+  of ActionCastTarget .. ActionCastPoint - 1:
+    discard applyCastTarget(world, a.heroId, int32(a.kind - ActionCastTarget), a.first)
+  of ActionCastPoint .. ActionManualSpells - 1:
+    discard applyCastPoint(world, a.heroId, int32(a.kind - ActionCastPoint), a.first, a.second)
+  of ActionManualSpells:
+    let i = world.heroIndex(a.heroId)
+    if i >= 0: world.heroes[i].manualSpells = a.first != 0
+  else: raise newException(ReplayError, "invalid action")
+
+doAssert game.run.replayMode
+let tape = game.run.replayData
+var controlled: array[10, bool]
+var slots: seq[int]
+for s in getEnv("AUDIT_SLOTS").split(','):
+  let slot = parseInt(s)
+  doAssert slot in 0..9 and not controlled[slot]
+  slots.add(slot)
+  controlled[slot] = true
+loadBots(game.run, [BotGroup(path: getEnv("AUDIT_POLICY"), count: 10)])
+game.run.historyPlayback = false
+startReplayRecording(uint32(tape.hashes.len))
+var index, checked, decisions, maxInstructions, maxWork: int
+var counts = initCountTable[string]()
+var examples = newJObject()
+proc event(name: string, tick, slot: int, vm: HeroVm) =
+  counts.inc(name)
+  if not examples.hasKey(name):
+    var memory = newJObject()
+    for key in ["adMode", "gaActive", "gaTethered", "defActive", "criticalUntil", "ap24", "transitActive", "motionActive", "bestId"]:
+      memory[key] = %vm.runtime.getGlobal(key)
+    examples[name] = %*{"tick": tick, "slot": slot, "memory": memory}
+
+while game.run.world.tick < tape.hashes.len and not game.run.world.gameOver:
+  tickWorld(game.run, proc() =
+    var perSlot: array[10, seq[ReplayAction]]
+    while index < tape.actions.len and tape.actions[index].tick == uint32(game.run.world.tick):
+      let a = tape.actions[index]
+      if a.kind == ActionManualSpells: applyRecorded(game.run.world, a)
+      else: perSlot[heroIndex(game.run.world, a.heroId)].add(a)
+      inc index
+    for offset in 0..<10:
+      let slot = (game.run.world.heroTurnStart + offset) mod 10
+      if not controlled[slot]:
+        for a in perSlot[slot]: applyRecorded(game.run.world, a)
+      else:
+        let first = game.run.recorder.data.actions.len
+        let vm = game.run.heroVms[slot]
+        let before = vm.decisions
+        let hero = game.run.world.heroes[slot]
+        runHeroScript(game.run, slot)
+        if vm.failed: raise newException(ValueError, vm.lastError)
+        let actual = game.run.recorder.data.actions[first..<game.run.recorder.data.actions.len]
+        if actual != perSlot[slot]:
+          echo $(%*{"type": "command_mismatch", "tick": game.run.world.tick, "slot": slot,
+                    "expected": perSlot[slot], "actual": actual})
+          quit(2)
+        checked += actual.len
+        if vm.decisions > before:
+          inc decisions
+          maxInstructions = max(maxInstructions, int(vm.lastInstructions))
+          maxWork = max(maxWork, int(vm.lastWork))
+          template value(key: string): int32 = vm.runtime.getGlobal(key)
+          template mark(key: string) = event(key, game.run.world.tick, slot, vm)
+          counts.inc("profile_" & $value("adMode"))
+          mark("first_profile_" & $value("adMode"))
+          if value("adMode") > 0: mark("selected_profile_" & $value("adMode") & "_slot_" & $slot)
+          if vm.lastInstructions > 19000: mark("over_margin")
+          for a in actual:
+            counts.inc("command_kind_" & $a.kind)
+    game.run.world.heroTurnStart = (game.run.world.heroTurnStart + 1) mod 10
+  )
+  if game.run.stateHash() != tape.hashes[game.run.world.tick - 1]:
+    echo $(%*{"type": "hash_mismatch", "tick": game.run.world.tick})
+    quit(3)
+doAssert game.run.world.tick == tape.hashes.len and index == tape.actions.len
+var totals = newJObject()
+for key, count in counts: totals[key] = %count
+echo $(%*{"schema": "gota-source-reveal-runtime-audit/1", "slots": slots,
+  "ticks": game.run.world.tick, "commands_matched": checked, "decisions": decisions,
+  "max_instructions": maxInstructions, "max_work": maxWork, "counts": totals,
+  "first_examples": examples, "all_state_hashes_equal": true, "all_actions_consumed": true,
+  "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones."})

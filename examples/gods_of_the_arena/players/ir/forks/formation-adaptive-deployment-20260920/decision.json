@@ -1,0 +1,176 @@
+{
+  "checked_at": "2026-09-20T22:40:27.283564+00:00",
+  "ready": true,
+  "authorization_verbatim": "deploy the policy to latest on league",
+  "two_player_scope": "Existing explicit user authorization to deploy to both Aaron and Coach",
+  "source_sha256": "c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4",
+  "pair": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/formation-adaptive-20260920",
+  "evidence": {
+    "discovery": {
+      "sha256": "7927c6a94cbeda65150fe4956e08d3d2c7a3498777b32d1527723ca26dbd90d5",
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/formation-adaptive-20260920/evidence/hosted-result.json",
+      "games": 400,
+      "gate": {
+        "all_audits": true,
+        "alex_jordan_each": true,
+        "alex_jordan_gain": true,
+        "richard_blue": true,
+        "richard_total": true
+      },
+      "cells": {
+        "alex/candidate/red": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "alex/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "alex/formation/red": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "alex/formation/blue": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "jordan/candidate/red": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "jordan/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "jordan/formation/red": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "jordan/formation/blue": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "richard/candidate/red": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "richard/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        }
+      }
+    },
+    "confirmation": {
+      "sha256": "ca30453aeaf6c38dd3fe684dac318df9833e857565b8b3c7902c6ca15350125e",
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/formation-adaptive-20260920/evidence/confirmation-result.json",
+      "games": 240,
+      "gate": {
+        "all_audits": true,
+        "alex_jordan_each": true,
+        "richard_blue": true,
+        "richard_total": true
+      },
+      "cells": {
+        "alex/candidate/red": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "alex/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "jordan/candidate/red": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "jordan/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "richard/candidate/red": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "richard/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        }
+      }
+    }
+  },
+  "scope": "Explicit user selection after reviewing the adaptive formation3600 fork. Discovery400 and unchanged confirmation240 fully audited: each stage Alex40/40each color, Jordan40/40each, Richardblue40/40/red0W40L. Fresh formation Alex/Jordan controls0/160. Repeated trajectories are correlated. Richard red and broad-field gates remain unqualified; the user-approved deployment does not advance formal research acceptance. Same tested source for Aaron and Coach under the existing two-player scope.",
+  "standard_field_qualified": false,
+  "formal_research_acceptance_advanced": false,
+  "recorded_at": "2026-09-20T22:40:28.538410+00:00",
+  "league": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+  "versions": {
+    "ply_630a768f-d623-44b2-80fa-36968d6fa75a": {
+      "id": "61148477-1928-43c6-a881-8daea0e8f6c2",
+      "name": "aaron-gota-ir-formation-profile-pruned-0920",
+      "version": 1,
+      "pools": null,
+      "submit_error": null
+    },
+    "ply_594ec24d-d7f3-4370-a000-468354ec41c9": {
+      "id": "2bb94c84-fc32-4a81-9e6d-46666bc0315f",
+      "name": "aaron-gota-ir-formation-profile-pruned-0920-coach",
+      "version": 1,
+      "pools": null,
+      "submit_error": null
+    }
+  },
+  "rollback": {
+    "ply_594ec24d-d7f3-4370-a000-468354ec41c9": {
+      "policy_version": {
+        "id": "b9eb629e-a429-45eb-9e7b-559095f78552",
+        "policy": {
+          "id": "2da70f5b-20e1-4d05-868e-547e4aac1b5a",
+          "name": "aaron-gota-ir-richard135-formation3600-0920-coach"
+        },
+        "version": 1,
+        "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "label": "aaron-gota-ir-richard135-formation3600-0920-coach:v1"
+      },
+      "membership": "lpm_025546b6-70c6-4d95-86e7-63ff3e208f81",
+      "source_sha256": "e9eac314c36c06be53af969b54be0eb42a9ee329b0c6d1874eebda489d645e4a",
+      "action": "POST /v2/league-policy-memberships/lpm_025546b6-70c6-4d95-86e7-63ff3e208f81/champion",
+      "body": {},
+      "trigger": "Confirmed runtime invalidity or qualification rejection; ordinary red Richard losses are known, not a surprise rollback trigger.",
+      "expected_time": "One authenticated selection and readback; no rebuild."
+    },
+    "ply_630a768f-d623-44b2-80fa-36968d6fa75a": {
+      "policy_version": {
+        "id": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de",
+        "policy": {
+          "id": "aed21370-f529-4458-b099-9aded77fb50e",
+          "name": "aaron-gota-ir-richard135-formation3600-0920"
+        },
+        "version": 1,
+        "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "label": "aaron-gota-ir-richard135-formation3600-0920:v1"
+      },
+      "membership": "lpm_a76b23fb-ea27-4750-b0df-b98fa667ee60",
+      "source_sha256": "e9eac314c36c06be53af969b54be0eb42a9ee329b0c6d1874eebda489d645e4a",
+      "action": "POST /v2/league-policy-memberships/lpm_a76b23fb-ea27-4750-b0df-b98fa667ee60/champion",
+      "body": {},
+      "trigger": "Confirmed runtime invalidity or qualification rejection; ordinary red Richard losses are known, not a surprise rollback trigger.",
+      "expected_time": "One authenticated selection and readback; no rebuild."
+    }
+  }
+}

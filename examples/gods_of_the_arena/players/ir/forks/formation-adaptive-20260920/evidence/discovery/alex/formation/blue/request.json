@@ -1,0 +1,91 @@
+{
+  "idempotency_key": "formation-adaptive-ec0d5348e7682ed569af40a4",
+  "target": {
+    "coworld_id": "cow_126f2fcb-80a0-4b6e-8166-eb6163576db5",
+    "variant_id": "competition"
+  },
+  "game_config_overrides": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  },
+  "num_episodes": 40,
+  "roster": [
+    {
+      "slot": 0,
+      "player": {
+        "policy_ref": "a30542cb-54de-4109-92e6-bcabca7db4d8"
+      }
+    },
+    {
+      "slot": 1,
+      "player": {
+        "policy_ref": "a30542cb-54de-4109-92e6-bcabca7db4d8"
+      }
+    },
+    {
+      "slot": 2,
+      "player": {
+        "policy_ref": "a30542cb-54de-4109-92e6-bcabca7db4d8"
+      }
+    },
+    {
+      "slot": 3,
+      "player": {
+        "policy_ref": "a30542cb-54de-4109-92e6-bcabca7db4d8"
+      }
+    },
+    {
+      "slot": 4,
+      "player": {
+        "policy_ref": "a30542cb-54de-4109-92e6-bcabca7db4d8"
+      }
+    },
+    {
+      "slot": 5,
+      "player": {
+        "policy_ref": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de"
+      }
+    },
+    {
+      "slot": 6,
+      "player": {
+        "policy_ref": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de"
+      }
+    },
+    {
+      "slot": 7,
+      "player": {
+        "policy_ref": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de"
+      }
+    },
+    {
+      "slot": 8,
+      "player": {
+        "policy_ref": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de"
+      }
+    },
+    {
+      "slot": 9,
+      "player": {
+        "policy_ref": "2c025f1e-a6f9-46ca-bab1-32dfaef6e9de"
+      }
+    }
+  ],
+  "notes": "Formation3600 observed equipment profile strategy fork; alex/formation/blue. All40 fixed-roster games fully audited. Generated seeds unpaired; duplicates correlated. No identity oracle, no proxy result, no automatic promotion."
+}

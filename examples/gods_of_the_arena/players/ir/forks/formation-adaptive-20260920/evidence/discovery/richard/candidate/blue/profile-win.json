@@ -1,0 +1,148 @@
+{
+  "schema": "gota-source-reveal-runtime-audit/1",
+  "slots": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "ticks": 4824,
+  "commands_matched": 23584,
+  "decisions": 23256,
+  "max_instructions": 15999,
+  "max_work": 24761,
+  "counts": {
+    "command_kind_4": 45,
+    "command_kind_3": 58,
+    "selected_profile_3_slot_9": 3289,
+    "first_profile_0": 6595,
+    "command_kind_2": 10482,
+    "selected_profile_3_slot_8": 3289,
+    "profile_3": 16661,
+    "first_profile_3": 16661,
+    "command_kind_1": 12774,
+    "command_kind_8": 69,
+    "command_kind_7": 119,
+    "selected_profile_3_slot_7": 3289,
+    "selected_profile_3_slot_5": 3289,
+    "selected_profile_3_slot_6": 3505,
+    "command_kind_9": 37,
+    "profile_0": 6595
+  },
+  "first_examples": {
+    "first_profile_0": {
+      "tick": 1,
+      "slot": 6,
+      "memory": {
+        "adMode": 0,
+        "gaActive": 0,
+        "gaTethered": 0,
+        "defActive": 0,
+        "criticalUntil": 0,
+        "ap24": 41,
+        "transitActive": 0,
+        "motionActive": 0,
+        "bestId": 0
+      }
+    },
+    "first_profile_3": {
+      "tick": 1320,
+      "slot": 5,
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "gaTethered": 0,
+        "defActive": 0,
+        "criticalUntil": 0,
+        "ap24": 70,
+        "transitActive": 0,
+        "motionActive": 0,
+        "bestId": 104
+      }
+    },
+    "selected_profile_3_slot_5": {
+      "tick": 1320,
+      "slot": 5,
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "gaTethered": 0,
+        "defActive": 0,
+        "criticalUntil": 0,
+        "ap24": 70,
+        "transitActive": 0,
+        "motionActive": 0,
+        "bestId": 104
+      }
+    },
+    "selected_profile_3_slot_6": {
+      "tick": 1320,
+      "slot": 6,
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "gaTethered": 0,
+        "defActive": 0,
+        "criticalUntil": 0,
+        "ap24": 70,
+        "transitActive": 0,
+        "motionActive": 0,
+        "bestId": 1081
+      }
+    },
+    "selected_profile_3_slot_7": {
+      "tick": 1320,
+      "slot": 7,
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "gaTethered": 0,
+        "defActive": 0,
+        "criticalUntil": 0,
+        "ap24": 70,
+        "transitActive": 0,
+        "motionActive": 0,
+        "bestId": 104
+      }
+    },
+    "selected_profile_3_slot_8": {
+      "tick": 1320,
+      "slot": 8,
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "gaTethered": 0,
+        "defActive": 0,
+        "criticalUntil": 0,
+        "ap24": 70,
+        "transitActive": 0,
+        "motionActive": 0,
+        "bestId": 104
+      }
+    },
+    "selected_profile_3_slot_9": {
+      "tick": 1320,
+      "slot": 9,
+      "memory": {
+        "adMode": 3,
+        "gaActive": 0,
+        "gaTethered": 0,
+        "defActive": 0,
+        "criticalUntil": 0,
+        "ap24": 70,
+        "transitActive": 0,
+        "motionActive": 0,
+        "bestId": 1081
+      }
+    }
+  },
+  "all_state_hashes_equal": true,
+  "all_actions_consumed": true,
+  "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+  "episode": "ereq_7b78849a-fe2c-40a8-baf7-ab1978dd9ad0",
+  "outcome": "win",
+  "source_sha256": "c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4",
+  "binary_sha256": "fd5770061f2a01978e81de7b86cd0db5505cdaf7ffb28052d44a2e26e85ac81d",
+  "replay_sha256": "61bb3697ee9d949ad966912b6792bd7378f293b1bfb4e7f216071fb9bdf5afb9"
+}

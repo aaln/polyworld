@@ -1,0 +1,4646 @@
+{
+  "complete": true,
+  "games": 240,
+  "passed": true,
+  "gate": {
+    "all_audits": true,
+    "alex_jordan_each": true,
+    "richard_blue": true,
+    "richard_total": true
+  },
+  "cells": {
+    "alex/candidate/red": {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "all_full_audits_passed": true,
+      "rows": [
+        {
+          "episode": "ereq_1c5e82b6-b553-43b9-b04f-669899997cbb",
+          "seed": 1648343060,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "35243eb93e27542f43eaa6e91ecc718e33faa864a3400b0918541c4c2a47c1c3",
+          "player_status_sha256": "a890f36adea9e4e387d3eb8b50dc19893aef082b19d07ec2c89ba57e9718139d"
+        },
+        {
+          "episode": "ereq_1dead2b8-c3e2-4a29-9400-a46b45737807",
+          "seed": 870902059,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "673a682fd645924b0624782eb58b5765b8adbf1f26f7c45d99f4e9f8c1cee55d",
+          "player_status_sha256": "e9083f821ea743c071e7e4fd536d01111c9185d69fde6f194a17727ff4ac1964"
+        },
+        {
+          "episode": "ereq_203863f0-3d5b-48e3-a209-ff31ab5cab22",
+          "seed": 788628288,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "3afef9728bd58151c944b265e2f0dcb3171d6009ab3317312c1715e72c146a16",
+          "player_status_sha256": "f1733996fbc8d4e540306cdf2d020c8035772f00005bb325e08b5ce3814dc51e"
+        },
+        {
+          "episode": "ereq_21eeabae-9763-4f39-9b70-7a2960c109e6",
+          "seed": 1203649474,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "892fc2977f50358353126909e8a4450aeeb3b2d2ef7422d114a127649c990b78",
+          "player_status_sha256": "1dbb7b68d5a13bae3b4af3e4a7b6532e1778da73566d7fde3426191e11d7c977"
+        },
+        {
+          "episode": "ereq_30f9da04-14f0-4723-992b-1c849b53b8bc",
+          "seed": 1627291167,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "f2565d02cae316d351e61db396c49c927525394358a5ed2b9ca8737cd5f0b0c0",
+          "player_status_sha256": "db2f9289366c300b31d4966fa60a50496afd95f4f6c2cd64934099ee887455f5"
+        },
+        {
+          "episode": "ereq_35715dfb-473d-40de-a252-8776b84a9af3",
+          "seed": 1256947530,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "8cd75bd8657c6938093292e5443092f4d6b4a988ff5df1a855734ff1bc3eb75e",
+          "player_status_sha256": "55fd57c890c06988445b50d094d32e262704d78794cdfe4d2ee95714a0fe0ccc"
+        },
+        {
+          "episode": "ereq_3ae5ad53-b784-4476-98ac-d78ad91f41c0",
+          "seed": 294975384,
+          "ticks": 5080,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 16,
+          "gear_heroes": 5,
+          "replay_sha256": "fa003fc694b1faf6768a338e6a6195a162e046b4de57fcca28e9b51c17ccf813",
+          "player_status_sha256": "0479a2a8198665f80cd22433416e048251e76972b03d20089f06b54b854753e0"
+        },
+        {
+          "episode": "ereq_3f8b438c-6e3f-4710-9fac-aa4a498ea45c",
+          "seed": 952657278,
+          "ticks": 5080,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 16,
+          "gear_heroes": 5,
+          "replay_sha256": "26dbb842a4397b1484ddab646caad3948e582e28c81ecfcb0ce8541d16306617",
+          "player_status_sha256": "a55650f3e6a5ba3ac9f6b73d5f2bedbb5ab26608ec6d07654f860d01c9008c57"
+        },
+        {
+          "episode": "ereq_435b2306-a6df-4d34-bd74-75403aadcedc",
+          "seed": 1535238605,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "18adef7561bb482dabebe508c97605ea50c8b36cde117803d7d4c30d2489b2b7",
+          "player_status_sha256": "5f05c239495a2000443ccd7390e83132f3f3fadb44a340a49fc2a6c95241e0f2"
+        },
+        {
+          "episode": "ereq_43728d00-0a55-4202-b273-fc00a78b5cbd",
+          "seed": 470344796,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "c1f33fe3f816cd34f7b67f4a6c81995dc098e0ef0d45c6257bdd5535d9cda995",
+          "player_status_sha256": "db2f9289366c300b31d4966fa60a50496afd95f4f6c2cd64934099ee887455f5"
+        },
+        {
+          "episode": "ereq_481afe05-2105-42ab-8b2f-022a9577b12b",
+          "seed": 464024606,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "acd0aeec09bcb6709fa4ca650a3673a7e4ac87e2c216039a447c8bc0144c1b61",
+          "player_status_sha256": "0aaf22213b62407290308bcb8b2f36cb19df99e7e1022083aaf7a56dd0c4074a"
+        },
+        {
+          "episode": "ereq_4888fdce-56c5-46ab-810c-ecc168ee6f4d",
+          "seed": 193020509,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "a871f500602dd7807dbfb2e56dbc05538caf932a3c1a3a8320f3491f29c2d064",
+          "player_status_sha256": "e9083f821ea743c071e7e4fd536d01111c9185d69fde6f194a17727ff4ac1964"
+        },
+        {
+          "episode": "ereq_5f8ca60b-3c5a-4206-810d-ba9103900617",
+          "seed": 893979742,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "aedd623de4afa240c141dbe2a0310af1d9dbd2467c7624ec4a304fee6d1a3e27",
+          "player_status_sha256": "f1733996fbc8d4e540306cdf2d020c8035772f00005bb325e08b5ce3814dc51e"
+        },
+        {
+          "episode": "ereq_6126573b-065e-4026-8329-8303a08d785b",
+          "seed": 388686299,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "6df601c4440878be34efad3410c2d587706393e3ca0075bc92b0052cfe03e92d",
+          "player_status_sha256": "db2f9289366c300b31d4966fa60a50496afd95f4f6c2cd64934099ee887455f5"
+        },
+        {
+          "episode": "ereq_65881b7f-57e0-4d99-96b2-e94affcb7f60",
+          "seed": 1959644761,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "dd5893b17297cb0cd9039833ea3f4d64d3f1fc8a5b072ff531f37338e6687813",
+          "player_status_sha256": "55fd57c890c06988445b50d094d32e262704d78794cdfe4d2ee95714a0fe0ccc"
+        },
+        {
+          "episode": "ereq_6f1b6bf1-071d-4d59-86ee-5b4926ad6231",
+          "seed": 1574920967,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "292b9015dab3a2deefae113b4b8752cd6b480d1efe10867be78342eb8972d5da",
+          "player_status_sha256": "0479a2a8198665f80cd22433416e048251e76972b03d20089f06b54b854753e0"
+        },
+        {
+          "episode": "ereq_72c32ae7-2d08-4580-bdbe-0e8e29aab388",
+          "seed": 623282169,
+          "ticks": 5080,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 16,
+          "gear_heroes": 5,
+          "replay_sha256": "8096ce706bee72b6a13a6ff15744d9fc28ad5cc664328caf844703ae44cba0ed",
+          "player_status_sha256": "f891398a89dd0400870e7205b8335bd11058c106b1b8ab77a39b834b4f43f0fa"
+        },
+        {
+          "episode": "ereq_78a70053-f37f-4ea2-aa51-1b049bcffabd",
+          "seed": 580601856,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "87b35203765ec2d988ddd73779bc950b7757152ee5c9ca0cf8dcc7234ae53bef",
+          "player_status_sha256": "a55650f3e6a5ba3ac9f6b73d5f2bedbb5ab26608ec6d07654f860d01c9008c57"
+        },
+        {
+          "episode": "ereq_7b4c2786-a95f-4e5b-b2f6-3555d750a3d3",
+          "seed": 1401311450,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "4cf3fcb9a2d0da029b57e55685857ba7a476c317497d0b288432d427b875eff1",
+          "player_status_sha256": "13e1da3217721f321d93bb03d25ecc1cfd16ab351e62bed66678f835def0dffb"
+        },
+        {
+          "episode": "ereq_7c06c2b3-c956-4511-a1bf-202290546ba9",
+          "seed": 97819541,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "53be2ddbc1931da4a23277ebccd1bf9fdd180c616a2bf80ebe1b46c9f5825c78",
+          "player_status_sha256": "26655dd30d3dac84883fe32c831dc500b09d3278f0dbf32a2552f511a3347586"
+        },
+        {
+          "episode": "ereq_7e848212-42a9-4f02-a7a0-49c267d94601",
+          "seed": 922238309,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "67c9a680a1827dfe37ca7e75a769e9f148fe375eee4f5e924966f8997ba55357",
+          "player_status_sha256": "5237766d1fb38c0b958ae60d2863d4b225a8ce51e8b9013c715ed661e4fff8ee"
+        },
+        {
+          "episode": "ereq_8252ce65-e39b-4af8-a803-3ff16546da08",
+          "seed": 1940435458,
+          "ticks": 5080,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 16,
+          "gear_heroes": 5,
+          "replay_sha256": "2f017677b261fb53ac903e432d8d112038da25c02827b81f5fa3dd654d9530b0",
+          "player_status_sha256": "a55650f3e6a5ba3ac9f6b73d5f2bedbb5ab26608ec6d07654f860d01c9008c57"
+        },
+        {
+          "episode": "ereq_8b86e500-f057-4e56-9ddf-8dba541933bf",
+          "seed": 80847053,
+          "ticks": 5080,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 16,
+          "gear_heroes": 5,
+          "replay_sha256": "62311e5171ce93fe5a1dd5c54f2b68a30b1d88c346f68b6e5f508e0eb514b7ff",
+          "player_status_sha256": "43de7685b8fa51896b602b90b108fa74f68e312637fd90b5ee0c5e5f45823e58"
+        },
+        {
+          "episode": "ereq_911d27c2-b553-485d-bf8c-071420ef3a50",
+          "seed": 594011884,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "ffbe966ae0e14f1ceb59c23a02fac56e85d6e6b4f5229d98b3e96a021a6ed581",
+          "player_status_sha256": "352aff98d4e99da30f07c1de6c7ec6c8e4d5035ba0e8898eeb8bad6d6e4b24ce"
+        },
+        {
+          "episode": "ereq_99b383c9-2e60-4656-b1b7-c5caecd9c7c4",
+          "seed": 1557724554,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "47e8113cf842fcca760f1e3ff90b5e3a1350d277ac366d113fe304d897bc4b57",
+          "player_status_sha256": "50969dbf4803ec01e3f43a9adf01eb4f2ee5ab4437fc465bc239be8db3010d3d"
+        },
+        {
+          "episode": "ereq_99d5d551-7b64-46dc-9738-e00edf47a76b",
+          "seed": 235632989,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "7803f560b239415b388fb6652b44486045880bc9ae079b9114d5d161c9a0eec8",
+          "player_status_sha256": "352aff98d4e99da30f07c1de6c7ec6c8e4d5035ba0e8898eeb8bad6d6e4b24ce"
+        },
+        {
+          "episode": "ereq_a82be33b-dac2-4e9f-964c-041ac11f60b7",
+          "seed": 804863332,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "241b4242604b1aa015786101b2d491a1d7315149fd52c27a171bb6445d7127f6",
+          "player_status_sha256": "5f05c239495a2000443ccd7390e83132f3f3fadb44a340a49fc2a6c95241e0f2"
+        },
+        {
+          "episode": "ereq_bdddd19c-a11f-458c-bc23-ccb67e438377",
+          "seed": 983084499,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "226cd0edde1652448db1499ad1127a3695929db6d042c91ae0f7cdade7c2ad46",
+          "player_status_sha256": "1dbb7b68d5a13bae3b4af3e4a7b6532e1778da73566d7fde3426191e11d7c977"
+        },
+        {
+          "episode": "ereq_c1dbb5cd-af33-46d1-8c25-141fa8d74101",
+          "seed": 796825021,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "502d340dba890c149dd560a438de615b5c051a78f62d4173c88fed56b23ccb26",
+          "player_status_sha256": "f1733996fbc8d4e540306cdf2d020c8035772f00005bb325e08b5ce3814dc51e"
+        },
+        {
+          "episode": "ereq_c4156144-9b90-4120-9bb8-3d9ff2c3a69c",
+          "seed": 1205328951,
+          "ticks": 5080,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 16,
+          "gear_heroes": 5,
+          "replay_sha256": "65478fcd76dba6287c9e1d5a296a886703f7056fb3c6fa2b1af38df29fdb3126",
+          "player_status_sha256": "a890f36adea9e4e387d3eb8b50dc19893aef082b19d07ec2c89ba57e9718139d"
+        },
+        {
+          "episode": "ereq_c70aff9f-8bf7-4355-9e8d-06c6dadfa8ed",
+          "seed": 1852094264,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "c0f972b5fa1b8e65e7f6f803595b5a65427211988c7282514b5e33e8550b245e",
+          "player_status_sha256": "352aff98d4e99da30f07c1de6c7ec6c8e4d5035ba0e8898eeb8bad6d6e4b24ce"
+        },
+        {
+          "episode": "ereq_c98a8486-de0d-446a-b846-f2d8f3766ff8",
+          "seed": 122103122,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "03224f5edd18d3ae20a3d6515e37d30223f832dcabcfc9a9908cce293a7c54ef",
+          "player_status_sha256": "5f05c239495a2000443ccd7390e83132f3f3fadb44a340a49fc2a6c95241e0f2"
+        },
+        {
+          "episode": "ereq_cd6e8917-3206-4604-bbb1-1d447efb2436",
+          "seed": 1780324295,
+          "ticks": 5080,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 16,
+          "gear_heroes": 5,
+          "replay_sha256": "653540ba5ddc40ae5430ad916725ed19c653836d721fd0c3b08004d55861d4f8",
+          "player_status_sha256": "f1733996fbc8d4e540306cdf2d020c8035772f00005bb325e08b5ce3814dc51e"
+        },
+        {
+          "episode": "ereq_ce0c4dc3-b782-4d0b-8eb9-6c2842dab5d2",
+          "seed": 18383625,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "22d010cdc64efe0cfdb5720a3eee46f9c95b7ec83b0e4b62566d9f6bf202a521",
+          "player_status_sha256": "5237766d1fb38c0b958ae60d2863d4b225a8ce51e8b9013c715ed661e4fff8ee"
+        },
+        {
+          "episode": "ereq_dbc27e99-ee6e-4473-8fc8-73e3c793ea5b",
+          "seed": 1476720475,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "042ab0803a72b03a3875089aeaf98ae0a6ab2027d7164ec143efa7d5fd38c876",
+          "player_status_sha256": "db2f9289366c300b31d4966fa60a50496afd95f4f6c2cd64934099ee887455f5"
+        },
+        {
+          "episode": "ereq_dbc638ea-be53-4015-a087-86ae15cee227",
+          "seed": 934576770,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "c9b03cab9cf2ef4f26320596d43e83d9a47e5a7b6d388680317f9799869593cd",
+          "player_status_sha256": "13e1da3217721f321d93bb03d25ecc1cfd16ab351e62bed66678f835def0dffb"
+        },
+        {
+          "episode": "ereq_dd2a94bf-9b8b-4682-b539-8f2a367adcfb",
+          "seed": 1284923626,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "34fb1e1e8ed56567efd83d3c5f5f3b25b500bb7fdb1f474c4f1201a4b66a7c3e",
+          "player_status_sha256": "0aaf22213b62407290308bcb8b2f36cb19df99e7e1022083aaf7a56dd0c4074a"
+        },
+        {
+          "episode": "ereq_df3edce5-6cab-467d-ac92-dac44ef47373",
+          "seed": 1641820325,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "ab0a6e4b3dc39f2d488378dbd055f362dacf2be8eec9b6103b8df29a418b6ec0",
+          "player_status_sha256": "fefae118619001770b6aa9af3d0a1aee6726e332ad1cc52c7b372a70a0d233eb"
+        },
+        {
+          "episode": "ereq_f6b666c6-7e48-4f78-b77e-3b78746e897c",
+          "seed": 1008667794,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "e61b9f45aca327b85093a5890fc55bf601c31996dd497e325508fac4d345bf1d",
+          "player_status_sha256": "f891398a89dd0400870e7205b8335bd11058c106b1b8ab77a39b834b4f43f0fa"
+        },
+        {
+          "episode": "ereq_f7bf5b69-e85f-40c6-be8b-0a41122f2ceb",
+          "seed": 549219241,
+          "ticks": 3611,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 11,
+          "gear_heroes": 5,
+          "replay_sha256": "3006799ee2062af66b1dd8a76ea9b63e411742dc0057a43668705b24c51a0a9b",
+          "player_status_sha256": "5237766d1fb38c0b958ae60d2863d4b225a8ce51e8b9013c715ed661e4fff8ee"
+        }
+      ],
+      "auditor_sha256": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+      "structured_ten_vm_exits": true,
+      "interpretation": "Actual fort wins. Seed repeats across deterministic trajectories do not establish independence."
+    },
+    "alex/candidate/blue": {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "all_full_audits_passed": true,
+      "rows": [
+        {
+          "episode": "ereq_01cfc75e-8d93-4f5a-be7a-0d1aabf6eae7",
+          "seed": 1885798191,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "9f0b783304fca3d6bd111e52c46e1179cfe7c55b76b7d5c66fe844a1629f4db3",
+          "player_status_sha256": "f4e76ea1cfd7694f19ffe9126e8a200afe52dd758c663fb360acf9f185c937cb"
+        },
+        {
+          "episode": "ereq_05890024-1620-4a39-94dd-58227afbb7c7",
+          "seed": 1035169683,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "6abed243bbe4f2829ce6405fb77617ec539d2ce7035ed4f1a2dfa538ca4c47e5",
+          "player_status_sha256": "b9c61e400e741df67269e75bb3e9db48ce7e8ba5c900a4a51c85a3edb07222d7"
+        },
+        {
+          "episode": "ereq_0b7fbddb-6693-4a5b-a5da-562f88c31053",
+          "seed": 2121916503,
+          "ticks": 11991,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 28,
+          "gear_heroes": 5,
+          "replay_sha256": "e1bc9803f5a759f8773c7af34bef4b0ce06afdf2b023266f8d47b5a2cc92189c",
+          "player_status_sha256": "cf2ecb706b97cc5cbd5185560963fec018554687112a95d13b8545cc0ce4a266"
+        },
+        {
+          "episode": "ereq_1d0a1b4e-ec70-415e-896a-b3b415aadcd0",
+          "seed": 901138802,
+          "ticks": 6847,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "f0f968351dc5f14ea575d783b0348b4b1c33d069e3375d431167e4ec4f3c8925",
+          "player_status_sha256": "eb85b5396951011e859a371e387cfda90119f8c3376e4a4c1933d7ffddac728f"
+        },
+        {
+          "episode": "ereq_1e50788e-d1fe-49c0-9931-746ca866b324",
+          "seed": 1911011048,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "876254cf3802cb93a00f3ddaee803298239f05327fd5256e4301caedb72e6d49",
+          "player_status_sha256": "b905594986ae2ef0e6d9978e73f39a49e5f46e8278a1d2593b2f5e11d54c276e"
+        },
+        {
+          "episode": "ereq_2533957c-e817-4efb-86d6-2d4f5ed0171e",
+          "seed": 38344277,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "6f006f5188be44925bd51bc104eaa8134a26bf09290bd911eb394fcb49b99c75",
+          "player_status_sha256": "cf2ecb706b97cc5cbd5185560963fec018554687112a95d13b8545cc0ce4a266"
+        },
+        {
+          "episode": "ereq_306238af-ed9a-488c-9155-60c5144d1242",
+          "seed": 718285962,
+          "ticks": 11991,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 28,
+          "gear_heroes": 5,
+          "replay_sha256": "096f0ba20447a625082b7a2bc3547435878898eb41cb89ac2abdc24a795fa42e",
+          "player_status_sha256": "4c6067a14201b1b5ad557e857ce07c4d1a35c14c5c9e75d7ec45c66be7672314"
+        },
+        {
+          "episode": "ereq_3a839a89-6dbf-4e12-928a-79854fdde20c",
+          "seed": 1747219249,
+          "ticks": 6847,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "f89cf641abb3f41c37ac38084859589101eb67ae758f3e5d292241035adf4e5d",
+          "player_status_sha256": "b1e858a1b4ce6d3ada9b13cd6307a671dc36c504746b98d03fd41efab47419a3"
+        },
+        {
+          "episode": "ereq_3ae51ed6-951a-41dd-9b2b-f2cd9de77cef",
+          "seed": 747870766,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "9428a0e3330c4dc34e62ac6925fe3f62126d0236ae217bf94fb9aafb3c8995e9",
+          "player_status_sha256": "1126318a633fe6e42a8749b8eb99149a2bf14f4b3aa298067bbb5b652b56e852"
+        },
+        {
+          "episode": "ereq_3da5492b-251d-4982-8d79-bcd597d12fd0",
+          "seed": 677353029,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "4ff7416f29ab1cb00b588d3c2804322f2b1506be9c73e22df562395e44908c6d",
+          "player_status_sha256": "9f083c4097a990b559661a8a37dcbc9cd076f366d7056ef87409b8fcd3697bec"
+        },
+        {
+          "episode": "ereq_4c8fcc1d-b32c-4c35-ad39-de3debba4fd3",
+          "seed": 306291070,
+          "ticks": 12027,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 29,
+          "gear_heroes": 5,
+          "replay_sha256": "a5b58b4d96f2d4aa88e712418854c1a9ddfb8528b1021108d8d79674af22b89e",
+          "player_status_sha256": "13314c43c9149649ddcc3ac01be5c0c4a21948447addf0001bcbab8ba2c400b8"
+        },
+        {
+          "episode": "ereq_4e9c32b9-8967-4a2b-8829-e7f13a3ba5b3",
+          "seed": 450995590,
+          "ticks": 11112,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 21,
+          "gear_heroes": 5,
+          "replay_sha256": "1be9a82e3fe719be95d582b8031f0c48a42dbc001940cd4e34be18bea2518e66",
+          "player_status_sha256": "b9c61e400e741df67269e75bb3e9db48ce7e8ba5c900a4a51c85a3edb07222d7"
+        },
+        {
+          "episode": "ereq_4fb14f89-63d8-47c6-8c48-600c4f0352ad",
+          "seed": 255678490,
+          "ticks": 5084,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 9,
+          "gear_heroes": 5,
+          "replay_sha256": "c31ea731ce27f88f03bf1e2511b312a1a8f513f5f160e03ea5e117d28de0e969",
+          "player_status_sha256": "eb85b5396951011e859a371e387cfda90119f8c3376e4a4c1933d7ffddac728f"
+        },
+        {
+          "episode": "ereq_57e2822d-7216-4e5c-9a5e-69a6680304fd",
+          "seed": 1929013372,
+          "ticks": 12027,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 29,
+          "gear_heroes": 5,
+          "replay_sha256": "369b78cce6ff9a447d6b59fd0df6c351080a63f903f1439401705cb74beed40b",
+          "player_status_sha256": "9f083c4097a990b559661a8a37dcbc9cd076f366d7056ef87409b8fcd3697bec"
+        },
+        {
+          "episode": "ereq_65767fe0-e251-4bb5-9037-a0b9961fa403",
+          "seed": 150013177,
+          "ticks": 12027,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 29,
+          "gear_heroes": 5,
+          "replay_sha256": "793ed900c6989b94203e850a78d1fd98db9d224bdc490354dd77075a05f2e72f",
+          "player_status_sha256": "ac23b4442d74e41e257e121a2201c989de51e5c7b12bdbbcf9e0fdf359161726"
+        },
+        {
+          "episode": "ereq_6bf3e392-a47d-450a-93b7-239fa23063ed",
+          "seed": 1200333120,
+          "ticks": 11991,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 28,
+          "gear_heroes": 5,
+          "replay_sha256": "2beb26a68c54a4fa5d5814c81923ed7d5eb48a1979cda75df047e23b401561dd",
+          "player_status_sha256": "e796c59d44025c8aafbd09580b9fb9eb5784972247f414832c071b2f3de15936"
+        },
+        {
+          "episode": "ereq_72dcd4b6-265a-46cb-a2db-cf873cc70b6f",
+          "seed": 1717449084,
+          "ticks": 5084,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 9,
+          "gear_heroes": 5,
+          "replay_sha256": "ef6b98a9695a81c3a93aae835b1dfaa43fd2e011f08750cd9effc0e63ba31ba7",
+          "player_status_sha256": "fa2c914f8f84a2ba6c32b22e0599b4e7e5b87b90958d74e1348cc25423e7163b"
+        },
+        {
+          "episode": "ereq_7820ae59-73ca-4486-8ab6-c11407194d63",
+          "seed": 1820558952,
+          "ticks": 12027,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 29,
+          "gear_heroes": 5,
+          "replay_sha256": "b112efbc09c8c6b77c84b500ed44a41dd719547f8b4f4017dc52f62240a37688",
+          "player_status_sha256": "4890aadffc91f8eaaf2bb5c731d90782125cc3ceaaf4933c1f75832a0ea4f194"
+        },
+        {
+          "episode": "ereq_794afc1b-2edb-4e52-8ba5-ef7af5deea4d",
+          "seed": 1957622888,
+          "ticks": 5084,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 9,
+          "gear_heroes": 5,
+          "replay_sha256": "e3c31230c5f3dbfde8b9abf7453fd0d2c650b777c48902abcfd13a9728a6969e",
+          "player_status_sha256": "b1e858a1b4ce6d3ada9b13cd6307a671dc36c504746b98d03fd41efab47419a3"
+        },
+        {
+          "episode": "ereq_85886bb2-f9c4-4b8a-b740-f09a726ae68f",
+          "seed": 1437186174,
+          "ticks": 11112,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 21,
+          "gear_heroes": 5,
+          "replay_sha256": "933098376d7375faf6b11538a7c4d6ada5d0972cc2a5e4dadc9042d988e4180c",
+          "player_status_sha256": "4a4fbe355430cabb38de206525b283cc2d6aa1fab16b04c01977ecd93bc786a4"
+        },
+        {
+          "episode": "ereq_8d7564f2-2655-42e0-af2d-ccba3bb71797",
+          "seed": 49962676,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "0936cbb5d099c8d9579a784c96d5b6a94af5c7bbe738faac918c946427ebad2e",
+          "player_status_sha256": "ac23b4442d74e41e257e121a2201c989de51e5c7b12bdbbcf9e0fdf359161726"
+        },
+        {
+          "episode": "ereq_9aca496f-59f7-483d-8f9c-f3231cb0b805",
+          "seed": 1468591175,
+          "ticks": 11112,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 21,
+          "gear_heroes": 5,
+          "replay_sha256": "631aaa6c5c85bfc08bd9bdebf2de720049b8289d7606798fc93079fbe36e24c1",
+          "player_status_sha256": "13314c43c9149649ddcc3ac01be5c0c4a21948447addf0001bcbab8ba2c400b8"
+        },
+        {
+          "episode": "ereq_9e11bde7-d5a8-4c8c-bf3b-66542d37b542",
+          "seed": 871684441,
+          "ticks": 5084,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 9,
+          "gear_heroes": 5,
+          "replay_sha256": "be30f38c4406d1333b5c3ce54de71ebf5b2f2b309cebb9c0b12ebac278ec82ce",
+          "player_status_sha256": "b905594986ae2ef0e6d9978e73f39a49e5f46e8278a1d2593b2f5e11d54c276e"
+        },
+        {
+          "episode": "ereq_9e8defdb-da62-4229-8d33-caaba6b3a45e",
+          "seed": 542720389,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "4cd6296331f0e1a72b8c69a350196273d86f3978f32222517fca28846da90cc3",
+          "player_status_sha256": "b9c61e400e741df67269e75bb3e9db48ce7e8ba5c900a4a51c85a3edb07222d7"
+        },
+        {
+          "episode": "ereq_a4862559-a19e-4e44-bd04-8a344a8615b7",
+          "seed": 1129666946,
+          "ticks": 11112,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 21,
+          "gear_heroes": 5,
+          "replay_sha256": "6f6961418465649af58dfe92288a784c4397e5f72d71ddc969708069f5603c65",
+          "player_status_sha256": "e796c59d44025c8aafbd09580b9fb9eb5784972247f414832c071b2f3de15936"
+        },
+        {
+          "episode": "ereq_a50f0720-c4d0-4da4-989d-70adaf40af15",
+          "seed": 1096095194,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "8098960537cda1f3d7f70ae8399197fbd5df0e6a7dc0ade0cecd0a2615db1437",
+          "player_status_sha256": "cf2ecb706b97cc5cbd5185560963fec018554687112a95d13b8545cc0ce4a266"
+        },
+        {
+          "episode": "ereq_a9225ed3-8b1c-4c0d-8e3d-3efa47f537bb",
+          "seed": 772296989,
+          "ticks": 6847,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "ee968a60ccb0d855e6b5e95b805cc5542daff86154a41abddbdce5773b9a2012",
+          "player_status_sha256": "e796c59d44025c8aafbd09580b9fb9eb5784972247f414832c071b2f3de15936"
+        },
+        {
+          "episode": "ereq_aa2f42ac-d6f7-4944-970d-5f0fb079c75f",
+          "seed": 1811991668,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "dd7929bd59f09d44a1bd69ee5eb39766734634ec72768dd26ee0f2f1038a6532",
+          "player_status_sha256": "13314c43c9149649ddcc3ac01be5c0c4a21948447addf0001bcbab8ba2c400b8"
+        },
+        {
+          "episode": "ereq_ae43d0a8-9718-4307-9c08-13f03cb870d4",
+          "seed": 1954533402,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "72f7fbb1a387f2db4fe3f16f32bc683324817e7c51f3537899690c5fa265886e",
+          "player_status_sha256": "f00acb927c42e88a6c89abac8736f7a8ba13b08fb0c3c11075c149ad844d94b3"
+        },
+        {
+          "episode": "ereq_b9a64e9d-e69e-418a-afb8-b43652bf6dd0",
+          "seed": 2055878009,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "b8c33bb8aee711bf815881d6521c9a847a0cf56785e6f0c4834c83ef984c920c",
+          "player_status_sha256": "fe4fd591b80ee62d15c5d1fb1a2cd52ee02a6f527de781aac8ccf10e7459e0d7"
+        },
+        {
+          "episode": "ereq_b9dbbc93-6299-4104-92b8-ecf06948e2ca",
+          "seed": 1475630699,
+          "ticks": 11991,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 28,
+          "gear_heroes": 5,
+          "replay_sha256": "ecb417b9740c741da4c0c9063eaf507a10de2a2d3f9f463f95222fe89f40da78",
+          "player_status_sha256": "cdaac3cd0c1b64235b409c737d1bfef534230aac09cdbd1cde83562015bfadbd"
+        },
+        {
+          "episode": "ereq_c2346add-eed0-436f-8e40-beef1784df16",
+          "seed": 1534379014,
+          "ticks": 12027,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 29,
+          "gear_heroes": 5,
+          "replay_sha256": "28e0cf09ec17c9b8d834ba84fb8a946c4c93d7729ae59f9a2b3c94a58e4ffff5",
+          "player_status_sha256": "eb85b5396951011e859a371e387cfda90119f8c3376e4a4c1933d7ffddac728f"
+        },
+        {
+          "episode": "ereq_d527a93d-f26b-41e7-b054-9ee092ca9344",
+          "seed": 104782701,
+          "ticks": 6847,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "7a5fe73e11b53eb68e99ac6dbfccd5941ba5f2f75cd2d396ae6ab9271ea7eb0b",
+          "player_status_sha256": "e796c59d44025c8aafbd09580b9fb9eb5784972247f414832c071b2f3de15936"
+        },
+        {
+          "episode": "ereq_dde576ed-ff87-44d1-b4b2-50c054d208e4",
+          "seed": 1896555979,
+          "ticks": 12027,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 29,
+          "gear_heroes": 5,
+          "replay_sha256": "29677b6e656d9ac96c5aa085709b29d068cfbd20ea529f973e97ad50d5b847c1",
+          "player_status_sha256": "9f083c4097a990b559661a8a37dcbc9cd076f366d7056ef87409b8fcd3697bec"
+        },
+        {
+          "episode": "ereq_e8b7f25d-7cc7-44eb-8731-cdc8bfcfb2d8",
+          "seed": 1795804968,
+          "ticks": 11991,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 28,
+          "gear_heroes": 5,
+          "replay_sha256": "460bfb3356a5c2dc1285bfb42ccc155c24e18e97aff2e180a787476185233b49",
+          "player_status_sha256": "36c1fccf916429d478cac928821d678b1f7c4cbf7ef5746652f66d56fb76ea8a"
+        },
+        {
+          "episode": "ereq_ea04c2d2-7808-4420-995b-ceaf8036a17f",
+          "seed": 1156123469,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "a4a1445171023dd04664c3354437a9ecc81535ec63a978739e2e20ca566a146b",
+          "player_status_sha256": "1fa0888f77a371455f416ad7850553e093470fb71112ccd389228720ef35b05e"
+        },
+        {
+          "episode": "ereq_f0d4eef3-e59b-4b1a-a013-2e4e413299b8",
+          "seed": 1711590160,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "bfc016ff110ea2f26fd9ceba18db2ce6831ea67c6ec4012480b29da15a3e8054",
+          "player_status_sha256": "b9c61e400e741df67269e75bb3e9db48ce7e8ba5c900a4a51c85a3edb07222d7"
+        },
+        {
+          "episode": "ereq_f1fedd88-21d3-426c-b552-18e4a7a71ec5",
+          "seed": 2058923148,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "2b72d67c23b1b7de5dd0d9d0d5fd379e7d362c2f2039882adc8be58bd74b603a",
+          "player_status_sha256": "2b8cddbb020dfcd57cbcac24d2027f5d1ac19c61a29c8e23440e9f5bfb0137a1"
+        },
+        {
+          "episode": "ereq_f8eb8caa-f3fa-4315-aa33-a4a8c633a59a",
+          "seed": 328202258,
+          "ticks": 6847,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "86954e1fa10d4c7064af22b8dcbd1ec6ac253fcc00f0b9ef26e014338f588926",
+          "player_status_sha256": "1fa0888f77a371455f416ad7850553e093470fb71112ccd389228720ef35b05e"
+        },
+        {
+          "episode": "ereq_fc524eb4-542e-4c39-ab3c-7d6d4ac6274a",
+          "seed": 407216144,
+          "ticks": 5919,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 19,
+          "gear_heroes": 5,
+          "replay_sha256": "cbe95b1e152305af291dcee0274a4a0acd4367266f842dbf877f8b23c7b5acec",
+          "player_status_sha256": "e796c59d44025c8aafbd09580b9fb9eb5784972247f414832c071b2f3de15936"
+        }
+      ],
+      "auditor_sha256": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+      "structured_ten_vm_exits": true,
+      "interpretation": "Actual fort wins. Seed repeats across deterministic trajectories do not establish independence."
+    },
+    "jordan/candidate/red": {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "all_full_audits_passed": true,
+      "rows": [
+        {
+          "episode": "ereq_069befd7-1e56-4a54-a75a-a6f74c87a5c2",
+          "seed": 491648374,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "8102eaf8d6891f0b87ebcf252cf12ee0eceaddcae98abbfd7b31fbfc64fb62ae",
+          "player_status_sha256": "f4d60c0174ca2797bd03c8c17335c7f787296e37710ef0ffed9919b46ef3e685"
+        },
+        {
+          "episode": "ereq_08f44e4e-1274-4a88-ad50-cb7c1a317007",
+          "seed": 1007016018,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "f2bcc4ad17076d3be9c7f4eb982bcbb6e04eafdd6deed3c9488cf643f266fbf4",
+          "player_status_sha256": "3db3ea53273149a7ab566fae7e31c7d99921313a3bd8c3af9217c190355badeb"
+        },
+        {
+          "episode": "ereq_10dab3dc-ef5e-40a6-81ee-cf4b336bd2c1",
+          "seed": 2009353679,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "0f767825c9b3d030e1e27616571ca4fa428c30b09da17558dfb2cf194d48de23",
+          "player_status_sha256": "7e94bb8cfdc67c4c47b9e5fda7964bdcc8aca39fcb68ac418e81f4c234d782d9"
+        },
+        {
+          "episode": "ereq_1141f5f2-2493-4591-9b6c-3bb3b0989917",
+          "seed": 908832409,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "24a5940eb9428fa12b46ceac5925371f804f9c60c41d6b69b8389ca4800a3a66",
+          "player_status_sha256": "f4d60c0174ca2797bd03c8c17335c7f787296e37710ef0ffed9919b46ef3e685"
+        },
+        {
+          "episode": "ereq_1ec058f6-1a4c-4505-953b-c3174d7c8bfe",
+          "seed": 1102263333,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "584dfc9fb5e3ed2aa44d43336a6a22c880eb555850f6ada5a653596917582e37",
+          "player_status_sha256": "355e58bcd3e876c6af9a388b90bdbf75c738020051eff1492781190551bc4abe"
+        },
+        {
+          "episode": "ereq_2013809b-f63f-4169-b0e7-c266d2b1276e",
+          "seed": 1417334757,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "1e32170abcfb8bf4ad881d7da44b8b1d802909f99f09765bb588d29b49bda052",
+          "player_status_sha256": "497ab045a3e72d0028d9ef3ce31582f87a71e249d3d785b248d6eec61b56c74e"
+        },
+        {
+          "episode": "ereq_241dc0df-2fdf-4931-8402-17d3353da122",
+          "seed": 871944628,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "4658d49d9dd59efad6f3e64944fe4615d824724b00f8ac67abb639726dcedbe9",
+          "player_status_sha256": "7e94bb8cfdc67c4c47b9e5fda7964bdcc8aca39fcb68ac418e81f4c234d782d9"
+        },
+        {
+          "episode": "ereq_2420fc5f-3b0d-453b-875e-4e3498aacfa8",
+          "seed": 845810025,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "2aec2fff8cd9078efc122cd0a78ddd577822e0d11b687656e1364e1abd9f1339",
+          "player_status_sha256": "a83195ec5294150533170342ac3065cfb644c7dd638bf757d2de0d40dc06338e"
+        },
+        {
+          "episode": "ereq_2494cd3e-657b-4af2-9b98-11917b6b96a8",
+          "seed": 1736468747,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "ecc04936012059eb73317a18cfef4ced83b3c7ecff35b9a874832c3e1c0d5cbb",
+          "player_status_sha256": "3db3ea53273149a7ab566fae7e31c7d99921313a3bd8c3af9217c190355badeb"
+        },
+        {
+          "episode": "ereq_2d91c4b2-eb04-4055-8b5f-22dcf92e6915",
+          "seed": 574013994,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "160c9bd522c65badc5bdefc5070e99346d3407209f234e823152cc2e7713ab0b",
+          "player_status_sha256": "4a0223df014e5650af6589304ae092962587d1d940b0ed6d7daeb600589773d6"
+        },
+        {
+          "episode": "ereq_2f88bdb8-55df-4d75-b787-bddd8d6b5812",
+          "seed": 1676153100,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "6ef4e39130a48d0e1d6caec3a38d74bcfb97e14455ce6d0d5e65a397f4884b58",
+          "player_status_sha256": "cf92fd389fd14bc0c9bc2706ae11a537b996ebfd50e2de1f00a4d9354cf7e744"
+        },
+        {
+          "episode": "ereq_31ae1b76-d337-4d34-b68d-17a2f9c53de2",
+          "seed": 851396302,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "3af0b08a5afa67869826bcb3144c11237d468429b37e49b64304e9b8312ef14c",
+          "player_status_sha256": "f7ce1cb0c2fe4710920c2765af3698df210e7508a69d0eb7168f8829818f878f"
+        },
+        {
+          "episode": "ereq_353deb19-478c-4d45-affd-ed3b2a86b66e",
+          "seed": 428912498,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "0c3f1ef96d73218e9eddceb7a938423a552dc913a33d207177bda1509ff98b48",
+          "player_status_sha256": "afe712d7592d2e5ab605676d9d759cbca911be3fafe45605c409b2db7ca20756"
+        },
+        {
+          "episode": "ereq_36b04f7b-1191-46cd-b085-a605f5238294",
+          "seed": 648639561,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "ccd57be04400684f9bb771814e779d7c59467784fbfaf6368f1a9fdf868b0d17",
+          "player_status_sha256": "afe712d7592d2e5ab605676d9d759cbca911be3fafe45605c409b2db7ca20756"
+        },
+        {
+          "episode": "ereq_398ef160-0526-49cc-b21d-92ab04d60853",
+          "seed": 1987852164,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "731151805a9cf4b02a4e0e59db08e310fdc68cb6a98fbd44056a24734a148bc1",
+          "player_status_sha256": "4a0223df014e5650af6589304ae092962587d1d940b0ed6d7daeb600589773d6"
+        },
+        {
+          "episode": "ereq_3cab2876-f456-449c-9874-327f94512ff8",
+          "seed": 1982803068,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "f09ae84859baf07d99e1d6f9a1a6925c286b5b69779f6e4049addfa4b7eb5b7f",
+          "player_status_sha256": "07eec424ceb2641d3eb1b076e28a303c4015ef4c7fca7422c766507d3664d979"
+        },
+        {
+          "episode": "ereq_404d784c-7129-404b-87d5-dbf4f433ee71",
+          "seed": 754060372,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "969a5dde847c23cac08621b21561173a9546fee5eef752eb8e288f92db0441c3",
+          "player_status_sha256": "497ab045a3e72d0028d9ef3ce31582f87a71e249d3d785b248d6eec61b56c74e"
+        },
+        {
+          "episode": "ereq_479dba00-ae82-4c39-90f6-beda41829526",
+          "seed": 1054019993,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "fb5b8a346148cd394d2995af7dd4478d37eea86b225839defc66129b1b5e88a3",
+          "player_status_sha256": "309e3c575a7ae240b16d341681fa763c1bbc8780767968850cdf18f927e0cd22"
+        },
+        {
+          "episode": "ereq_481819a2-e8e3-443c-8c95-73903fdb9767",
+          "seed": 141207186,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "39406bbe67044dc176553e7ce35c2254498adc9573ae0f0acb961dff87120944",
+          "player_status_sha256": "1b9661f8317ea8fc429e2de51229596d8810583c067105d06f1e0790a04e2176"
+        },
+        {
+          "episode": "ereq_4d6e3bb9-a700-4bc2-80fd-75771aa5eb48",
+          "seed": 228268112,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "9d49a7434c16207837169d644b1d707dcbce1b47c6478f994b5105742ca07be8",
+          "player_status_sha256": "62e71ca899276ea870d3828f78151d07af889515bc60e9daa86d29e7bfbdc1d2"
+        },
+        {
+          "episode": "ereq_4e65e29b-4197-439c-9201-dfb0d40a8972",
+          "seed": 246401611,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "b523b20823b7af50863ac0308adadac40f8a771966ccbe005411ffad1ff9e3f3",
+          "player_status_sha256": "a83195ec5294150533170342ac3065cfb644c7dd638bf757d2de0d40dc06338e"
+        },
+        {
+          "episode": "ereq_56346338-0b4e-46c3-9b34-09dcf7a52907",
+          "seed": 1938855026,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "1d702adf896c70b115930f118a7177a98b39aa6a9e25b31430b4686a27a067cf",
+          "player_status_sha256": "137215780dc62b3d65ca20c0b32f59e7f1201e3a8f5bc2e5f39381dd9c5ce202"
+        },
+        {
+          "episode": "ereq_5b8ea64f-e3a0-449b-b07a-b4ec65b5013f",
+          "seed": 1230467448,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "896e5c8513048fadf2b3c87f4f1718c4b2fc4f5a4be7a13c4b35a5096285fc22",
+          "player_status_sha256": "afe712d7592d2e5ab605676d9d759cbca911be3fafe45605c409b2db7ca20756"
+        },
+        {
+          "episode": "ereq_5d133c83-b80d-4eb4-8d9e-5ca33101c727",
+          "seed": 519886592,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "761f5cf072224192d0a955941c2617fe5f63747e916bc6b1db3cc540b6154f03",
+          "player_status_sha256": "9682fd8232411a6949e381818daee407375b1e676d9aeb40e631990c8543d97b"
+        },
+        {
+          "episode": "ereq_77ab7e51-fc2b-4f1e-9ae9-618498da3a6f",
+          "seed": 1974137904,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "d13498bd8cb94519bc9151e8f5acec551ddbbd7db6986df58ffe5a754c127a9e",
+          "player_status_sha256": "dcf3524238d10b98f53e0c219c580599104e8d79fb86a732df697ec7270ee91c"
+        },
+        {
+          "episode": "ereq_800bd1f3-1b78-4ed6-858b-d663b2612751",
+          "seed": 1013099432,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "3c423afe88860b5d5753f7ae84e19f85448248628fc57e318e428a6122dd9222",
+          "player_status_sha256": "07eec424ceb2641d3eb1b076e28a303c4015ef4c7fca7422c766507d3664d979"
+        },
+        {
+          "episode": "ereq_87993b20-01a5-48a5-8d95-c6e32317123d",
+          "seed": 354253430,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "1513e14040bf41d3d39c96324671c597e01d559d8115e492fd8c334b0a73d0e2",
+          "player_status_sha256": "9682fd8232411a6949e381818daee407375b1e676d9aeb40e631990c8543d97b"
+        },
+        {
+          "episode": "ereq_a18443fc-f8ed-4813-b9f9-0cf57e073e70",
+          "seed": 485670268,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "794547189450bfabb903eb83424edef49c6ac3356aae0778629a60c9e44e51c6",
+          "player_status_sha256": "07eec424ceb2641d3eb1b076e28a303c4015ef4c7fca7422c766507d3664d979"
+        },
+        {
+          "episode": "ereq_a2799f70-0e4f-460c-9d66-307f891d5c53",
+          "seed": 301212388,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "c6518b49fc32bf0e50c54140e6cd81e6be175da66266757f07ea975136860029",
+          "player_status_sha256": "a83195ec5294150533170342ac3065cfb644c7dd638bf757d2de0d40dc06338e"
+        },
+        {
+          "episode": "ereq_affef2a0-6890-4d13-a264-6bccdc45e0ad",
+          "seed": 1344518162,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "f0baacf41dfd1041a22c98b735cd432f43c3b51f69da8942f24eefd092343913",
+          "player_status_sha256": "cf92fd389fd14bc0c9bc2706ae11a537b996ebfd50e2de1f00a4d9354cf7e744"
+        },
+        {
+          "episode": "ereq_b7431d85-4347-44a6-be0b-95fd9b03488b",
+          "seed": 1553615526,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "de571b27a2424b4de21700cceb097e392852ce152db1039515e1c55b3d874568",
+          "player_status_sha256": "cf92fd389fd14bc0c9bc2706ae11a537b996ebfd50e2de1f00a4d9354cf7e744"
+        },
+        {
+          "episode": "ereq_bf503278-32a9-4325-826f-1875f7112b82",
+          "seed": 178197617,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "92a649a21bfc0363c4b4a5e619ff4169381a28b675e31659d65a86db4b5d151c",
+          "player_status_sha256": "7e94bb8cfdc67c4c47b9e5fda7964bdcc8aca39fcb68ac418e81f4c234d782d9"
+        },
+        {
+          "episode": "ereq_c1400f23-9f7b-4956-882b-3a4d97c0fe6d",
+          "seed": 1532211902,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "5345b77f8e8fc0fe6fa9480a438839386051017e642eff5282b3fa2bb4350c87",
+          "player_status_sha256": "3db3ea53273149a7ab566fae7e31c7d99921313a3bd8c3af9217c190355badeb"
+        },
+        {
+          "episode": "ereq_c28cb75a-059f-4512-b6ac-3e226e27351f",
+          "seed": 1296247479,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "f615d78780ec1da77d6bfd888dd37746ffbe33f123f1e3340f0fffcd223c9c97",
+          "player_status_sha256": "f4d60c0174ca2797bd03c8c17335c7f787296e37710ef0ffed9919b46ef3e685"
+        },
+        {
+          "episode": "ereq_cc033846-149c-4f3e-ad51-349011f4f7e1",
+          "seed": 766755487,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "d758febdb32ec7f2ad27302d52733b733aa4a3bf6ae5d2d1d8dc0d63fdbd3c71",
+          "player_status_sha256": "cf92fd389fd14bc0c9bc2706ae11a537b996ebfd50e2de1f00a4d9354cf7e744"
+        },
+        {
+          "episode": "ereq_e0d8a6b0-1721-42b8-8c18-8c2d906df1b3",
+          "seed": 1660177629,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "a6f436f738abc6c494546d2fc498822256bf467e0d5be09893108ae8ab5004e4",
+          "player_status_sha256": "9e48c5eba4cfad2764c58f22ee8e4fd3a5460b391c3c98c39e1d4da4a5608f33"
+        },
+        {
+          "episode": "ereq_e3d799dd-7482-4a54-830b-166cb2e9296e",
+          "seed": 1244423290,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "268f3e70d488f19c6162e9ef2051cbe54908eba87404005a1081a555e54b7fcf",
+          "player_status_sha256": "309e3c575a7ae240b16d341681fa763c1bbc8780767968850cdf18f927e0cd22"
+        },
+        {
+          "episode": "ereq_ebbeb075-f636-4e32-95f2-56dc77fffdf0",
+          "seed": 72734938,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "ca7c391a0c54e5f8c5403b37a321a5029243a8bdd9b348205069c2e5b96313d2",
+          "player_status_sha256": "9682fd8232411a6949e381818daee407375b1e676d9aeb40e631990c8543d97b"
+        },
+        {
+          "episode": "ereq_ee85c3b0-fbbd-4479-9459-580e3dcd2b69",
+          "seed": 1585871256,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "d2c8fca68d9f33e2f18cdffbc0509c1ede779a23c55612c53325a64d0f16f952",
+          "player_status_sha256": "743993337bdf0d121a4250340e660aef694bb47b45b635487d76d7b47068a15f"
+        },
+        {
+          "episode": "ereq_eeb373df-fa6e-4960-8a27-b64edbd22808",
+          "seed": 2043968369,
+          "ticks": 3521,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 3,
+          "gear_heroes": 5,
+          "replay_sha256": "87963596348e7d0c1f18ecf2db78003c9f2ee9a8e1d2e2f6004f96cb64867c46",
+          "player_status_sha256": "7e94bb8cfdc67c4c47b9e5fda7964bdcc8aca39fcb68ac418e81f4c234d782d9"
+        }
+      ],
+      "auditor_sha256": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+      "structured_ten_vm_exits": true,
+      "interpretation": "Actual fort wins. Seed repeats across deterministic trajectories do not establish independence."
+    },
+    "jordan/candidate/blue": {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "all_full_audits_passed": true,
+      "rows": [
+        {
+          "episode": "ereq_0bc95171-a726-41d3-a426-139fca872e46",
+          "seed": 686323324,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "08c7f3a0e3b0c305ca36cea010bc910ad08151144bb61fd24805df860d1dcf45",
+          "player_status_sha256": "29b191bc50a508b550a9a95a2295c125cd3a78b9644b29b5d8c671c1fa8db377"
+        },
+        {
+          "episode": "ereq_0ef4b930-f173-4b02-9823-452a6048604d",
+          "seed": 2062354596,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "3aabd0a5061e28ca0d2c56e681870c22a67deba6a06b02ac6b29588ba922a59f",
+          "player_status_sha256": "d9ee47731de9041890959385ac6d7fe168580db46f665db28d9fc5413923f2f1"
+        },
+        {
+          "episode": "ereq_0f2b7808-f83c-4e45-b65f-41c1447114f3",
+          "seed": 1602680635,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "5bf958526a69d06cf6f9f1c4b519ae3f6faea3edb9291bd8e80dbdae70d91a1c",
+          "player_status_sha256": "33b667e68d9b4030d2d695b2e58db23ee018b72d734fa5e77f1bfa5ff705f7e7"
+        },
+        {
+          "episode": "ereq_168b78cb-3beb-4f13-a433-23c7215c64c6",
+          "seed": 743460243,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "85859a19dbaee757b31b8549280572a55501f9563198a608fa9ae2c7470cc17f",
+          "player_status_sha256": "8287770bca794e79648f9d99adeffdbe091892b3bb800afe524d48474cbbdbc3"
+        },
+        {
+          "episode": "ereq_1765ce89-15b9-4ac2-8cb1-74d85670a0da",
+          "seed": 1276299238,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "8502cf679cabb79148b0ef72bf515e8a8c31018f7522aa8ec7e29a0f82713e71",
+          "player_status_sha256": "4c1db53b8b2b24d71e2e2b51632f016ac4b1d8cf5830c5ea70e8f812671705d5"
+        },
+        {
+          "episode": "ereq_211977df-7ba5-4dc7-be81-aff477240753",
+          "seed": 1406516680,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "37f1dc5551b3a4b72102aa0c85284fe057201da8617ab51ce1500f537cda663a",
+          "player_status_sha256": "cf37d96bcf5b84da962b998e7134dd03a1313d3cf3df44fab75b661fdd21ad6d"
+        },
+        {
+          "episode": "ereq_21cfb025-6e0d-47a4-932a-fb8e51cdca99",
+          "seed": 1536446005,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "4919ae36cde2fc0e041cec859ede85f8eeb0f1eda87873e46e17dd0ae79d6400",
+          "player_status_sha256": "e01198fcf7baf6b7a195615900a9f75242350973b776b051f10d5652f4f05484"
+        },
+        {
+          "episode": "ereq_27cf2fae-4149-46a3-9595-17c54fef702d",
+          "seed": 697947378,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "80c217ec9064f28cbb5fc468d37d14aeb9b7476be1c999dc2ba0095fd5c4f583",
+          "player_status_sha256": "c79faf413e72a86e8c4573f85956f60dbb4fe41709af9a1bcf6b110883208b50"
+        },
+        {
+          "episode": "ereq_2aa4fb46-3740-4b6c-8f6a-8739608a149e",
+          "seed": 517046562,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "223f7c5f04887b5eb56290f306452d115b1d45eb6019105fe49515883bf74112",
+          "player_status_sha256": "dce9efc5d6ed2f49d22eca67cee22a11fd4c587fb1132b05139e4654913d0d07"
+        },
+        {
+          "episode": "ereq_4958263d-6d2d-42f2-bdc9-0432a786c040",
+          "seed": 1363370217,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "d974fba49ab3b9ae5c2f5b27230549cd78401fd6718ad77d082fd395642833eb",
+          "player_status_sha256": "bb1d51d905f7d63f4c490b48747569b8c978c694db83ffe521f90240cbde9079"
+        },
+        {
+          "episode": "ereq_4a92ded9-7059-4981-b3d0-34894c0cb19c",
+          "seed": 642241819,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "6f7bf8db340169371474a181cb0352dae8833c74281877453f11e54411ef1833",
+          "player_status_sha256": "7a59ee07822b29db9e299975996bbe63d34c8c20c63a9818f38095b52e584b01"
+        },
+        {
+          "episode": "ereq_4b31df8a-76fb-4f52-9d5a-f6f89d74aeaa",
+          "seed": 914106925,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "dd5e507d289462150ad2b248e4891a87a9fc49e30fdf719e319067fa33d67eb5",
+          "player_status_sha256": "bb1d51d905f7d63f4c490b48747569b8c978c694db83ffe521f90240cbde9079"
+        },
+        {
+          "episode": "ereq_4df3bcf1-ed48-4a20-a9e6-b9810ebe6b73",
+          "seed": 388554468,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "1c74273e8f07fb1a95b7f5d946bfec15b2f764a9c1778b65f7433e26b91a75c1",
+          "player_status_sha256": "5033b2882d13fe190cc6b428998cfac5b04808610c052d6de5e1f6f567e685b7"
+        },
+        {
+          "episode": "ereq_4f9abc7a-1a41-409f-a2d7-de3886d5a23b",
+          "seed": 1594058485,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "3ff136aa69fc68b19b1bafe656b685b92c0c597a69fcb545d4570d2628fdf48a",
+          "player_status_sha256": "ca6d02c4c3e14a538b2afb662d1de5d7d3f7cb0c3705c83d12fa951e24ec4765"
+        },
+        {
+          "episode": "ereq_624786da-30e1-41cb-b2fa-071fe978b333",
+          "seed": 562371383,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "0f13eff2714151f0c54aa80126228478a8c66c566739869eb02744af507bbe7d",
+          "player_status_sha256": "cf37d96bcf5b84da962b998e7134dd03a1313d3cf3df44fab75b661fdd21ad6d"
+        },
+        {
+          "episode": "ereq_639fcc90-bdbe-4211-ace7-21cfd66a02e1",
+          "seed": 513655986,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "982562e0ab235f2dd51a4f3f414c879ff578a332cb849dc3c6bd6c982792e7a2",
+          "player_status_sha256": "29b191bc50a508b550a9a95a2295c125cd3a78b9644b29b5d8c671c1fa8db377"
+        },
+        {
+          "episode": "ereq_69461f36-9ff8-46a8-83fb-cca2c45a4d08",
+          "seed": 285097574,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "787d70865e92e9821df3eb1f10ac62d85df06b6aaa792164f89e0d920d2a580f",
+          "player_status_sha256": "dce9efc5d6ed2f49d22eca67cee22a11fd4c587fb1132b05139e4654913d0d07"
+        },
+        {
+          "episode": "ereq_7116a715-e55b-4d87-902f-0bce2fde0dfc",
+          "seed": 2077482813,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "3ec36aa0eaefd50e4d764bb150b2c0261ac97b8c6581439cdbb9f1b78fefcc6b",
+          "player_status_sha256": "ca6d02c4c3e14a538b2afb662d1de5d7d3f7cb0c3705c83d12fa951e24ec4765"
+        },
+        {
+          "episode": "ereq_76283937-a72b-485c-83da-b4f92ef14fde",
+          "seed": 909364307,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "ac29c31ac69484e350c659720f24c19b224d1a0170b3368bbbcfc943e6a1fa51",
+          "player_status_sha256": "33b667e68d9b4030d2d695b2e58db23ee018b72d734fa5e77f1bfa5ff705f7e7"
+        },
+        {
+          "episode": "ereq_7f9ff099-bcfe-4c79-b8d6-9b516f6de121",
+          "seed": 261700233,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "5c441f55d80e57c30816482045878e28a3477a40b1cbc4ae02d6d14e717246da",
+          "player_status_sha256": "adc679c658d042f2fb07bfa70deee4166e4e78dab5d2ce70e23842d122434aed"
+        },
+        {
+          "episode": "ereq_81783e4c-7d79-4916-ba00-31ebe2fb93cf",
+          "seed": 496917831,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "37872af6b8b4f16a0f5ab08808520e2f81a788d7022dad79b2c3fb1c4a4a8050",
+          "player_status_sha256": "4c1db53b8b2b24d71e2e2b51632f016ac4b1d8cf5830c5ea70e8f812671705d5"
+        },
+        {
+          "episode": "ereq_81855de3-91e8-4fc1-ab40-3e780e51d9e0",
+          "seed": 1477014970,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "4e58fab0634315b7b440bae3afdf17a9d6420f142cc5cb55508a8cda752e53ba",
+          "player_status_sha256": "ca6d02c4c3e14a538b2afb662d1de5d7d3f7cb0c3705c83d12fa951e24ec4765"
+        },
+        {
+          "episode": "ereq_8195bd85-fbb0-4017-a4be-013d7f52a759",
+          "seed": 909921649,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "0b4d29b8c115d4d21f662ecf9f77707d85e1fb072455abfca75787501e166a63",
+          "player_status_sha256": "c79faf413e72a86e8c4573f85956f60dbb4fe41709af9a1bcf6b110883208b50"
+        },
+        {
+          "episode": "ereq_8a34220b-71a5-461e-a821-242344777665",
+          "seed": 148083867,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "277afb541c7933fec13c1f2eefce5bb8ff1c7b1d043e2a7aabe441efcca17c33",
+          "player_status_sha256": "29b191bc50a508b550a9a95a2295c125cd3a78b9644b29b5d8c671c1fa8db377"
+        },
+        {
+          "episode": "ereq_8e835800-69c1-4005-9520-dd0bd10c6bfc",
+          "seed": 2130460625,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "8c9e2198bc5ad59211192dc269e97692a1e3854fb2bbcf91975c2dcc388df9eb",
+          "player_status_sha256": "dce9efc5d6ed2f49d22eca67cee22a11fd4c587fb1132b05139e4654913d0d07"
+        },
+        {
+          "episode": "ereq_9f6315b1-1a5f-4078-a588-528f1f157fae",
+          "seed": 1378539701,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "0af1bb62fcc7cd7df39d89854a4b867e1c4bfbc470c74699ab3632c3a67c53d5",
+          "player_status_sha256": "2fb57866131cee3712c85ae559dc12c4f5f90ac6ca0cd47b6c3e87cbac3b4713"
+        },
+        {
+          "episode": "ereq_a1d3ecab-c192-40a8-a0b6-66e47768eb16",
+          "seed": 913192411,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "6d1a39ef451e572c0c7ca795ba5d6df1a60eca66383fae945de0b2d9761fcb65",
+          "player_status_sha256": "4c1db53b8b2b24d71e2e2b51632f016ac4b1d8cf5830c5ea70e8f812671705d5"
+        },
+        {
+          "episode": "ereq_adc4fa3b-89ca-4c00-88cb-81dd0ba426e4",
+          "seed": 688578258,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "3089995f974e9092133b0c48c92d8b4b25010000af3f148ad7d99c6205856dc5",
+          "player_status_sha256": "7bdd99ab46ad3cccc8802d80fd0e06ddcca6ca664518e6af4ce90ede311795f0"
+        },
+        {
+          "episode": "ereq_b1535082-cdd5-4804-8270-ba385490a64e",
+          "seed": 164315576,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "f3312f5dff6cbb893f9e845ca73fc2d4e69a4ba64949d8782062200d44d5554d",
+          "player_status_sha256": "33b667e68d9b4030d2d695b2e58db23ee018b72d734fa5e77f1bfa5ff705f7e7"
+        },
+        {
+          "episode": "ereq_b1b77fc7-0de9-4076-82f8-e2526f577874",
+          "seed": 497464911,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "a8eaafe154e22ed5095f529786bfb27c46beeef65cefb895c1c47f2701efb784",
+          "player_status_sha256": "1b2deea00e05f6e53623c110765e51eda4dc6be3f1e1c8a61a6dbb63a616db85"
+        },
+        {
+          "episode": "ereq_b3d9f37c-4adb-4be7-99ca-e2339e7d3597",
+          "seed": 18361940,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "2b46bc25e84537b77dca8fca487e46740b76f91b3f15a4731b266f1779573a00",
+          "player_status_sha256": "adc679c658d042f2fb07bfa70deee4166e4e78dab5d2ce70e23842d122434aed"
+        },
+        {
+          "episode": "ereq_baf0f112-c266-43aa-8918-2f27ac86b802",
+          "seed": 1018573997,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "82e77875a608a3a7f2783105a3b264fbd3a687bee600a9b19190360e36711290",
+          "player_status_sha256": "5033b2882d13fe190cc6b428998cfac5b04808610c052d6de5e1f6f567e685b7"
+        },
+        {
+          "episode": "ereq_c46a308f-352d-41e8-915d-c12b233e758b",
+          "seed": 557042054,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "c3b1ab6b61c58329be18dd52af8a51ffa2723d800279ea1ac9b494e84cb6a133",
+          "player_status_sha256": "5033b2882d13fe190cc6b428998cfac5b04808610c052d6de5e1f6f567e685b7"
+        },
+        {
+          "episode": "ereq_c773b18c-d5db-4c45-871d-b2f8002fbf27",
+          "seed": 564842708,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "80171ae08d686dbfdde8291c09956cb3f650d8192136ca0022cda61c1115c58a",
+          "player_status_sha256": "5033b2882d13fe190cc6b428998cfac5b04808610c052d6de5e1f6f567e685b7"
+        },
+        {
+          "episode": "ereq_c8e4fc2c-8bd6-4045-83f0-d9d20f55d204",
+          "seed": 2000060992,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "34cb918754c7eb43313f9f76f631c7fc2c851700a988641823a1da0450ae1ca8",
+          "player_status_sha256": "37de4359450c70ce6dc1841cffed604ffd9ecbf809bf25d4db0110e763f0958e"
+        },
+        {
+          "episode": "ereq_cc4f83ee-2caa-45f9-af12-d6c4152c811b",
+          "seed": 259158258,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "6d0ff3696634505b9b0fc25d003dfbbd36971d62154e7d462eb985bacdfef0ab",
+          "player_status_sha256": "ca6d02c4c3e14a538b2afb662d1de5d7d3f7cb0c3705c83d12fa951e24ec4765"
+        },
+        {
+          "episode": "ereq_d9fbc94c-88c4-44a7-8fc7-1b9fc4571dfa",
+          "seed": 1873065539,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "cf5e801fdde30a1d83f1ff85bae33c07ef790dc13d27e07de9adbc4d322c8cc0",
+          "player_status_sha256": "2fb57866131cee3712c85ae559dc12c4f5f90ac6ca0cd47b6c3e87cbac3b4713"
+        },
+        {
+          "episode": "ereq_ed22582a-4a4a-428d-999b-101e2bb99c0c",
+          "seed": 1599093775,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "181a23891729259b53a6e263e82cbbac7d1f46f0e1ecb2a093f25e18e932d1a5",
+          "player_status_sha256": "29b191bc50a508b550a9a95a2295c125cd3a78b9644b29b5d8c671c1fa8db377"
+        },
+        {
+          "episode": "ereq_f0f60ef7-02b6-4eed-8b29-01cde9053b0a",
+          "seed": 1220747047,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "dbc4e86d6bf06a594cf0d819d711c45f1c37141e57da8fbf202f4c1f9c30bc10",
+          "player_status_sha256": "c79faf413e72a86e8c4573f85956f60dbb4fe41709af9a1bcf6b110883208b50"
+        },
+        {
+          "episode": "ereq_fe5fb91e-87f4-4d24-becf-ad1e8c986caf",
+          "seed": 1569631477,
+          "ticks": 3408,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 6,
+          "gear_heroes": 5,
+          "replay_sha256": "df455098259619b485e07fb16006ed690d0b009b0464314c9bad2a4a100f7fc9",
+          "player_status_sha256": "8e7af3dc9e5efcf7caae40009cc78c8d7378fb75fd2af972d2da65046ed36aef"
+        }
+      ],
+      "auditor_sha256": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+      "structured_ten_vm_exits": true,
+      "interpretation": "Actual fort wins. Seed repeats across deterministic trajectories do not establish independence."
+    },
+    "richard/candidate/red": {
+      "games": 40,
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "all_full_audits_passed": true,
+      "rows": [
+        {
+          "episode": "ereq_012195ab-e8e3-4a58-8221-7b3ed7447d79",
+          "seed": 659698313,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "5ec7264d6d3fed7bb1b26e50491edc1c44327de10401659d7cca739358f21fb6",
+          "player_status_sha256": "68c5106c852cbefc648a2475fea75a427d118fafc706589d57eb8d938ecde7df"
+        },
+        {
+          "episode": "ereq_03985724-f9b9-4f81-8382-dc55e0161b38",
+          "seed": 1064373379,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "834d4cd25eb2198f42b3a6d3b570035220e7bc93efd3c5696e4c62ec698ba87e",
+          "player_status_sha256": "7d9715599e2d542c535976067430c0a43397acb600f48e67a54899e869b22f1f"
+        },
+        {
+          "episode": "ereq_14034666-4537-4d28-b5f9-3e8b229b453e",
+          "seed": 574046301,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "cd2006a5338747483edda1521572649f375c10371c8e90d4e98c965f0cd2f279",
+          "player_status_sha256": "7d9715599e2d542c535976067430c0a43397acb600f48e67a54899e869b22f1f"
+        },
+        {
+          "episode": "ereq_1c0f040a-80c2-4319-8008-e9c07dd301b7",
+          "seed": 1418851391,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "fce642566ff52668905d2baa433efbe53b54d68fc1a5306f7016df5bfd003b1c",
+          "player_status_sha256": "4af5c92650b0614d550788fbe196508368ca2c367fd743b0239884a8039642a9"
+        },
+        {
+          "episode": "ereq_1c6880ab-969f-4fb6-8e4e-07e8f848c5b0",
+          "seed": 1908360750,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "2bcfb4e3ab87243218b2d8fbfffcc32b900d992c7930366c0e2f0809ea09174f",
+          "player_status_sha256": "68c5106c852cbefc648a2475fea75a427d118fafc706589d57eb8d938ecde7df"
+        },
+        {
+          "episode": "ereq_1f1e0032-54ff-4abf-adb9-07d85d50203e",
+          "seed": 567626228,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "05574ff30a1e1c31efa3c0c70d462b8572326dfbdd8606f0bcb8f17c1e62c9a8",
+          "player_status_sha256": "f6f079784c77cbd9ed8f32436cabc0176bb83785da0b78afd59bc9d02108d631"
+        },
+        {
+          "episode": "ereq_23671846-fe83-4281-b64b-9269295ee03a",
+          "seed": 1914983107,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "12e908c65189cdc9ae7b97d31f315fd1acd0ed191d97bbb61876aeb99ae785f4",
+          "player_status_sha256": "ab55b8b79ee4f4c25c06bf30442a5a97f5fb8a91e08ac2b67cc59edf9ca62f76"
+        },
+        {
+          "episode": "ereq_254e1467-60cb-4f43-aa9a-0369dda5421a",
+          "seed": 457362681,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "c7100120734973cba35b2da9bd6635a55b466dc1a7bcb447aa4fac1aa8bc92e1",
+          "player_status_sha256": "a170d2afb748e2824d9d32453970b080c64a6ba3eef08d8fcc14510b03f4a709"
+        },
+        {
+          "episode": "ereq_2f40bafe-cb51-4d3b-8c15-657d73ac6bc9",
+          "seed": 1931690352,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "c7c5060f0c16ba5d2e240fde8a513464ddebb698e05c9f61a9796320c531077f",
+          "player_status_sha256": "10d2ff39d1ebb6d5545053ec3bb358fad7ab61173ad08fc649a216e0fa9063bb"
+        },
+        {
+          "episode": "ereq_31959bd0-7135-47b9-b0a1-bcc4028fb360",
+          "seed": 686863052,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "ea2a23dab7b106b3957b5715123e2d9b49f4ddd5c5575be0e73a1efcd210999a",
+          "player_status_sha256": "f6f079784c77cbd9ed8f32436cabc0176bb83785da0b78afd59bc9d02108d631"
+        },
+        {
+          "episode": "ereq_34be33f3-df78-4018-bae9-ed5ee5c334ff",
+          "seed": 525818049,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "b538280678ddde4860a086844f2e2c0b3030b11ee26c5fee4a19086567a7f3b5",
+          "player_status_sha256": "148402d3b922b17bbcdcf2b6b1f0bb87c2180a53c1d3efb2a25c2d98262fb31c"
+        },
+        {
+          "episode": "ereq_4107fa9d-423f-44e4-ba3f-6e7e6c969009",
+          "seed": 895688222,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "58c82953540bd414fb8c44057e9aade0c43273aa7650dc11929f8c9b4483d716",
+          "player_status_sha256": "f6f079784c77cbd9ed8f32436cabc0176bb83785da0b78afd59bc9d02108d631"
+        },
+        {
+          "episode": "ereq_4d5d12be-11c7-4424-b90a-5477f8150d82",
+          "seed": 2141541840,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "61211f3e359187f32d44327637b170a77c5b2ab90dc86a6a78764231c153d002",
+          "player_status_sha256": "cc099f55a9499e195591b3b24e821bdec7cbd99b58f8263311defabb9d22fac4"
+        },
+        {
+          "episode": "ereq_4f4339cc-3ea3-4669-b286-7da07f88010a",
+          "seed": 98191762,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "3f5333ed710bd67833163154a713f6a696896e682ff64db1bdbc704bf062ddaf",
+          "player_status_sha256": "cc099f55a9499e195591b3b24e821bdec7cbd99b58f8263311defabb9d22fac4"
+        },
+        {
+          "episode": "ereq_5609ebe2-a144-425a-8162-5204f70b8c4f",
+          "seed": 960901859,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "b0196f107778d442063b79ca34f9044d7b4471f08eee91396c8ab4302fc3c9d7",
+          "player_status_sha256": "cb6c36dbded19e10d7aafff86aa36d451abed59f5b0496ad0147a9457659d9f7"
+        },
+        {
+          "episode": "ereq_6058cce2-084f-412e-a4fb-f2e0c1fd39e4",
+          "seed": 1101098444,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "e6417d1b330818bdbb59fec6fe50221c3e66fd34541f01b1789d32667a46cb92",
+          "player_status_sha256": "10d2ff39d1ebb6d5545053ec3bb358fad7ab61173ad08fc649a216e0fa9063bb"
+        },
+        {
+          "episode": "ereq_60e405e6-6242-4ad6-accb-892dc5e7706c",
+          "seed": 1343665832,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "882ed41789d5fed12fc037d644b62ddb4f2e19fb38d4d838e671b060cff9cf19",
+          "player_status_sha256": "531ed3bafce338623ed2aaf964e22283186a9fcbad9a41df9fc8d305a00ee6c7"
+        },
+        {
+          "episode": "ereq_652d97f5-997c-467a-afc7-2fff01a30ff7",
+          "seed": 1391347812,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "0f0e994a8f29b03f7bd6e099af4951ab6d7fa671036ddc97a20aff2cb1c9413b",
+          "player_status_sha256": "ab55b8b79ee4f4c25c06bf30442a5a97f5fb8a91e08ac2b67cc59edf9ca62f76"
+        },
+        {
+          "episode": "ereq_71883352-8a58-448e-9017-ee6ad8d901ac",
+          "seed": 2053930587,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "5a17709287fbbfba8595a72472563d1b5490c69d033a3f1f43ca31a96b2baaa1",
+          "player_status_sha256": "fa380d3b219902f4a19944a54f9cd9153559f3a71e567e9500e40e8189dabaa4"
+        },
+        {
+          "episode": "ereq_76122a4f-a1a2-4187-8963-bc4c730e93ea",
+          "seed": 1988145675,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "128c2a29a4e7d8dfacca71f5ba6d1e4144d73fc3b57fcb0c3feea71bd9b087a3",
+          "player_status_sha256": "10d2ff39d1ebb6d5545053ec3bb358fad7ab61173ad08fc649a216e0fa9063bb"
+        },
+        {
+          "episode": "ereq_7a481d9c-55ff-4f36-ba7f-918b07bbc12f",
+          "seed": 179086279,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "d55baa10a36d0983d579e55d9e24bd845d71bd5d7fb802cc200886bb512b5b64",
+          "player_status_sha256": "ab55b8b79ee4f4c25c06bf30442a5a97f5fb8a91e08ac2b67cc59edf9ca62f76"
+        },
+        {
+          "episode": "ereq_7b21ea4b-9025-4114-acef-4db3bbc377ec",
+          "seed": 1111848706,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "3c13ff5c43f67eba77bcf263b9b1715860847d23fa03bc12cad6ff58cccfbfe7",
+          "player_status_sha256": "148402d3b922b17bbcdcf2b6b1f0bb87c2180a53c1d3efb2a25c2d98262fb31c"
+        },
+        {
+          "episode": "ereq_84e3f876-2015-4bdf-b46b-a3c50168b267",
+          "seed": 457854824,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "cd9bdd89b0889e527fc275a4a69aa0b2acf1e27ab53e99465a052102c6d3dc88",
+          "player_status_sha256": "e49b3932c1052c9350fb9df8ab80aa42d6725a78b209cd143d1450d4ff3ab2be"
+        },
+        {
+          "episode": "ereq_8c3373bf-83dd-4f35-a70d-2284a6160a1c",
+          "seed": 1232241883,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "67a1e53941fd681de2cdf947a616cd3be640b631487012f5c5b4ac190a4463af",
+          "player_status_sha256": "68c5106c852cbefc648a2475fea75a427d118fafc706589d57eb8d938ecde7df"
+        },
+        {
+          "episode": "ereq_970e5ef9-3b3e-437f-b19c-afdd434e8b63",
+          "seed": 700609547,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "2e4fe5a6360b02ed47237f87025ec3813bbd5ca7a30b2b579753705aba49c3af",
+          "player_status_sha256": "531ed3bafce338623ed2aaf964e22283186a9fcbad9a41df9fc8d305a00ee6c7"
+        },
+        {
+          "episode": "ereq_9788d053-a5b4-44f8-84c8-31a64ccbaf97",
+          "seed": 908185563,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "acbe967179cd555fd43836e660d62eff35aa9add95f9b29b6ca2f939e2587990",
+          "player_status_sha256": "3dff89b4a21c0d0d581137e6288d9bac4bc38b76cd03dc4e13587423ecc4022d"
+        },
+        {
+          "episode": "ereq_a65daf10-65ad-4d94-b438-769bfae9ce50",
+          "seed": 479774202,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "bfa5db2cc1a9b77f46c9283a321dc15c60224d9d5dd337fdcf73954312f514a6",
+          "player_status_sha256": "18e070d3598e016766c8932b29dd4dfb4109af1d49cf54d5d8b936f6428d1ec2"
+        },
+        {
+          "episode": "ereq_abe83740-c22c-44e0-bdbb-15bb574e4bcb",
+          "seed": 1797390931,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "892bdab375364dc471792059097885bf26793e8fa614191e67aa38c02fe77fb1",
+          "player_status_sha256": "7bc28de36b8eb6ebe4684d8a8198c310629146fe6c20ffddd6e52e793ccebec2"
+        },
+        {
+          "episode": "ereq_b22e6449-0701-4b3d-9fb2-59562626eeff",
+          "seed": 1122357544,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "8704d332c290a97fda35472013411c36e767c19898fef38c2b62e6e7fd4dd28b",
+          "player_status_sha256": "46f813cd461402a510ebe8ad255762b3cd1bcb9e534b6be09fdd071a7b816a98"
+        },
+        {
+          "episode": "ereq_bc971cda-3b04-4f22-b9e1-b548a9a9786f",
+          "seed": 1637211101,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "3546626e68d205e5b81e4b8fea9e70ebf15a0a3d59df32a42819c6c0bb6d9aba",
+          "player_status_sha256": "15b9959c367d00910f51124e44b0c04032775ccfb30f9010513b7ee36ae48332"
+        },
+        {
+          "episode": "ereq_c2b0ff5b-eca7-4cd0-b064-d04e69ea1018",
+          "seed": 1709295203,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "e0db9941f00e533414ead142951ac1cc08f97f762596fec62fd29d5f6c4f57a5",
+          "player_status_sha256": "cc099f55a9499e195591b3b24e821bdec7cbd99b58f8263311defabb9d22fac4"
+        },
+        {
+          "episode": "ereq_c2f627a1-c76b-468c-995b-dfb27007d3e3",
+          "seed": 1284764377,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "d149386a5404bacbf354b943532da7e363f3dd1e31bacfff05fbe088608f33b8",
+          "player_status_sha256": "148402d3b922b17bbcdcf2b6b1f0bb87c2180a53c1d3efb2a25c2d98262fb31c"
+        },
+        {
+          "episode": "ereq_c5613fef-ba34-4c12-bc90-f2f92f011409",
+          "seed": 71755309,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "9b946479cddf5e766d6652f1f959b0c0e5f73deb5f297d100e9cd9b2e3483cfd",
+          "player_status_sha256": "ab55b8b79ee4f4c25c06bf30442a5a97f5fb8a91e08ac2b67cc59edf9ca62f76"
+        },
+        {
+          "episode": "ereq_c58d3f60-23f8-4cc6-a1c7-2dd0d8aa807d",
+          "seed": 1713721250,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "5d245f6aa6ac2ae44afd8343e5a774d14b5bf0cf6a21da5654bb1affaf0a6f2f",
+          "player_status_sha256": "15b9959c367d00910f51124e44b0c04032775ccfb30f9010513b7ee36ae48332"
+        },
+        {
+          "episode": "ereq_cf8cebd7-6343-4e44-8a3a-c0f9fb5c5679",
+          "seed": 537473368,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "09a087c4be4d2f60ccd7b4f34dd98ab3b04d72fefa5809890dff9f413efa55fe",
+          "player_status_sha256": "e87c7919e9ee553e86885a62e3d0047f0b98424d7d55ab425b492d05c04bd960"
+        },
+        {
+          "episode": "ereq_d9327ed2-f0f6-42d0-86dd-63b8f4811e94",
+          "seed": 297531246,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "feb96535f3db502ef938063906904240334fb03944606ba90a82896f0a80f442",
+          "player_status_sha256": "15b9959c367d00910f51124e44b0c04032775ccfb30f9010513b7ee36ae48332"
+        },
+        {
+          "episode": "ereq_e0530891-40d9-409d-b396-075cf9ec1d7e",
+          "seed": 1007507463,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "8e7bd15b526aed8faa33fdc5f350c7955f3f657204633a2d1bf10148b6048897",
+          "player_status_sha256": "68c5106c852cbefc648a2475fea75a427d118fafc706589d57eb8d938ecde7df"
+        },
+        {
+          "episode": "ereq_ebb0ff02-965b-435a-9b14-6dde515e02bc",
+          "seed": 1823180731,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "aea7e6df78bd08699ac59b84453a1cff136ffadc109f3b44d9601edb29593d31",
+          "player_status_sha256": "f6f079784c77cbd9ed8f32436cabc0176bb83785da0b78afd59bc9d02108d631"
+        },
+        {
+          "episode": "ereq_efdfffb9-3cf5-425b-9795-cc2d4ab57ce1",
+          "seed": 1273985261,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "8b9c7ef868924eaf6293ea145878895e174e70beeefec964ce6cc3774cf205b0",
+          "player_status_sha256": "cc099f55a9499e195591b3b24e821bdec7cbd99b58f8263311defabb9d22fac4"
+        },
+        {
+          "episode": "ereq_f10da14c-ae32-408b-bed7-f772c010abf0",
+          "seed": 112677906,
+          "ticks": 5898,
+          "win": 0,
+          "loss": 1,
+          "draw": 0,
+          "subject_classes": [
+            "DeathKnight",
+            "Crossbowman",
+            "Lich",
+            "Warlock",
+            "Berserker"
+          ],
+          "subject_deaths": 7,
+          "gear_heroes": 5,
+          "replay_sha256": "3075a2e7bd034fdd1e5e1b4cb6c3034774f073f1ace3523f520a7058d9ac5499",
+          "player_status_sha256": "42a2b6fc72ca71729eab13620e58d021ce0ed59b4f837fccc34cbafc0f2db24f"
+        }
+      ],
+      "auditor_sha256": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+      "structured_ten_vm_exits": true,
+      "interpretation": "Actual fort wins. Seed repeats across deterministic trajectories do not establish independence."
+    },
+    "richard/candidate/blue": {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "all_full_audits_passed": true,
+      "rows": [
+        {
+          "episode": "ereq_072116df-2b42-4ad4-9f66-76bb57b0ba32",
+          "seed": 2029347540,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "f28923cd9b918097095f9e2c711c1e7cf4b6b344e44a43c4d775e0dceded0f87",
+          "player_status_sha256": "eba424088dc9b7a1749056e8fc2e5eadd4433c3a6d72c3e615fb8f596efd0341"
+        },
+        {
+          "episode": "ereq_09f54e54-02da-48d1-bdf9-8a4416d0255d",
+          "seed": 1390054284,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "77b97fab658692393534f4e5460439ef6d4b09fa66df32b7c5721fae678c63d5",
+          "player_status_sha256": "59b3776f012ffbf83d472015cb2e19f4945ac6d77bd1c525bf098d83620a571e"
+        },
+        {
+          "episode": "ereq_0aecd033-598b-4439-a507-1eac4b6029a5",
+          "seed": 881866451,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "a3ce239946b54610c4b349e403542dc4fb4a90ac6bff9c8cee35c2802f6f93e2",
+          "player_status_sha256": "caa2829f67c6fa41cb0910e17bc99bd53ed5f98d81d2257a044a52d426dbfc4a"
+        },
+        {
+          "episode": "ereq_0ded75a0-7ee0-4666-b35a-6166a22950b9",
+          "seed": 1639742174,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "262a484cf71aa30adba80a92f5a5f0b11ca541f3506c74c9fb57eac100f5e0e4",
+          "player_status_sha256": "ef014c6759fb78a876a3fd6d636aa6fecfd6dd319a01ba7b70d5cbd4098d5333"
+        },
+        {
+          "episode": "ereq_138d3370-5908-4674-8691-685488176687",
+          "seed": 1079099175,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "f918351db9215774f09eb6d38566cbbf9917c17b71966ac4454e42b21c69b743",
+          "player_status_sha256": "59b3776f012ffbf83d472015cb2e19f4945ac6d77bd1c525bf098d83620a571e"
+        },
+        {
+          "episode": "ereq_14efa9c2-c400-4ffc-8492-9c759d5e80f7",
+          "seed": 1468382029,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "4c04e3fe045670cde038a2026c01e5596f9ff0299ab69f0c09bbba8d29d1660f",
+          "player_status_sha256": "a1564e62a6c1d37fee81cadf63b49a89cd526cf79b28f48c77852179c6a3fe49"
+        },
+        {
+          "episode": "ereq_18a37665-36a1-405e-9cc4-41f37ed83821",
+          "seed": 431175417,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "fa5ffba2d943b0d16d74fb08129a87ae719312ee0a9cf175db36d3248a54972d",
+          "player_status_sha256": "8019c6e759568b91e4e346e230c5768fa4107e7aa676ae158a47c058fca91272"
+        },
+        {
+          "episode": "ereq_29097bb9-667c-483d-ab7c-b1f1ec17b224",
+          "seed": 29802183,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "49fca76ef672f4bddbd8c8fc3e3af0e52959fa5a2c194920feebb141b4c72a05",
+          "player_status_sha256": "0c28d3ff047ae66882840cde969642a4ac44b24530f10474bd760958e3752d6d"
+        },
+        {
+          "episode": "ereq_2ebc4faa-7552-47d2-a721-785f103e8563",
+          "seed": 1486283393,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "9b5c6c4c67d27138c57d1901caa79e0281deb9b972345112e5101b5a0069cc70",
+          "player_status_sha256": "f58d1d2c570116b9a5c58602122bc88e59d1360f1e716f6ad5bf5c10733009d3"
+        },
+        {
+          "episode": "ereq_4427fce1-1798-4a73-8d6e-09f716a7a6e8",
+          "seed": 553236410,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "bf86f2fdaedccd0dac47192171e7e445fb3ce892c7761506b3d2d95ac66b4a29",
+          "player_status_sha256": "394baf97571d87d75d7858029b179dbe8ae7f479916132d26334a46f17a786c0"
+        },
+        {
+          "episode": "ereq_49f415d6-33d3-4fbf-ae6c-128b3ccfcddb",
+          "seed": 1059055574,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "4165b3a2b19b4da7061edb667e53efc2fae2cdd5f0d7db2f94e684cbce33e95a",
+          "player_status_sha256": "f58d1d2c570116b9a5c58602122bc88e59d1360f1e716f6ad5bf5c10733009d3"
+        },
+        {
+          "episode": "ereq_4bcca646-e29a-4813-91f5-f8e4ea5ffad3",
+          "seed": 720742873,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "bb3b7ab987a95ad8910e34333e5f50e501a0e840e7bfb0c762dff2fd37245814",
+          "player_status_sha256": "8019c6e759568b91e4e346e230c5768fa4107e7aa676ae158a47c058fca91272"
+        },
+        {
+          "episode": "ereq_5977e9a6-e587-4278-b201-706c33b89323",
+          "seed": 975002009,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "20aa03d907632a41abe9bd8848e87971b3e172d323c75ea02c3a3b5f5b9c5197",
+          "player_status_sha256": "95dcbf895ca077d76c320129c06eb3c4341a1141744e89ee9cceb5e8a652f89a"
+        },
+        {
+          "episode": "ereq_72764873-f187-422b-b98b-49f810552ce5",
+          "seed": 240229363,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "35c73a13619d0b1661449cf91c6ff8f22e7ad6b262d34ea6b0901e54767ed0a1",
+          "player_status_sha256": "8019c6e759568b91e4e346e230c5768fa4107e7aa676ae158a47c058fca91272"
+        },
+        {
+          "episode": "ereq_7e4a18b1-56ee-40ea-9bcc-631121ee90dd",
+          "seed": 1386107100,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "096a22fcb8d8ab53edd8d087079eda19dd9c2a1e4e2fec82603f3c92fc29973a",
+          "player_status_sha256": "394baf97571d87d75d7858029b179dbe8ae7f479916132d26334a46f17a786c0"
+        },
+        {
+          "episode": "ereq_85b73686-b31d-4722-9468-c1ca4bb91cd4",
+          "seed": 1725557936,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "c9b43c1694a8560873b16d5187f67bb36373e230a7d33eb4b8840881be30b146",
+          "player_status_sha256": "a1564e62a6c1d37fee81cadf63b49a89cd526cf79b28f48c77852179c6a3fe49"
+        },
+        {
+          "episode": "ereq_86340c19-10ea-4fe4-bcb2-9282cf108f6c",
+          "seed": 170652000,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "871202a9474a2a0dff1da598abee27b5ba7af11a3e5ecf8a5e5d41d7d968e4fe",
+          "player_status_sha256": "64c9d4ca58b051abf3d5a59a5ba0179998a5734984f466dae49974c89e06c0a3"
+        },
+        {
+          "episode": "ereq_874177d8-1b3e-4aa5-951e-4f90bd1a5ed1",
+          "seed": 476850630,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "1a556d8001904ac408589175889cec4ab4ac98aa0cd019c170379011c596a2c1",
+          "player_status_sha256": "0c28d3ff047ae66882840cde969642a4ac44b24530f10474bd760958e3752d6d"
+        },
+        {
+          "episode": "ereq_891bd296-99b9-42c0-b337-e140d30945b8",
+          "seed": 1025780294,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "eacaf85aff02c1493f90f335f212420bcce52a9eb583c792fdd9cff193e2b2ff",
+          "player_status_sha256": "e0b5547744edc5bc3b4315e99c49d00adf7660508275805028d55888b791ce02"
+        },
+        {
+          "episode": "ereq_91d9e32d-6118-4323-a3e3-67c95b098387",
+          "seed": 1351544211,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "b71514c7f4c15455b95c4495b1477e9cef3aee928e53915e27485dd47c8a937d",
+          "player_status_sha256": "b5679023aa9a3c0a09b8d1faf586ec4fafebd00b80a08f2c3db7a7c2497ce259"
+        },
+        {
+          "episode": "ereq_9c3e77b4-1fba-4e9b-843b-bb7679d0546c",
+          "seed": 1083560312,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "ca03e140efd79df2bc842aa11530dd5d5c136601f1cf42ce6ae63b95214a32e7",
+          "player_status_sha256": "394baf97571d87d75d7858029b179dbe8ae7f479916132d26334a46f17a786c0"
+        },
+        {
+          "episode": "ereq_a7324a5a-c0e5-40c5-8ed0-1312eae52cb1",
+          "seed": 1127112404,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "7848fc82e6e75093510643ea2f7374b7e49f64077e1a6d69c254557f42497490",
+          "player_status_sha256": "8019c6e759568b91e4e346e230c5768fa4107e7aa676ae158a47c058fca91272"
+        },
+        {
+          "episode": "ereq_addda4c0-2685-4d8d-8b71-8b5517edad58",
+          "seed": 998423085,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "8202642296e8d3d2aa7fef577cfd2882b69159345865a488ebe8afcc4405c5fb",
+          "player_status_sha256": "d2621402ae415cd15bf5edd3fa67f1a97b33155bd1141c0222802c41387e11ba"
+        },
+        {
+          "episode": "ereq_b6d78e65-21bf-44c2-ba4e-89d0d18ffcb4",
+          "seed": 416527128,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "10bcfeaed5d70bad3e38becad52b6db6662221466dc45e7d3c713027bac98066",
+          "player_status_sha256": "42a63bc4d3cbed03732f867aa516be3fd1ff342769381aba0d7a493270536b63"
+        },
+        {
+          "episode": "ereq_bd03f020-8e9a-4616-917e-f4d834cf9b6f",
+          "seed": 1803308495,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "fa9bd7438e5253100a098ed14528608e2f4aacbab94f5c8f51d627a0aca9bc99",
+          "player_status_sha256": "eba424088dc9b7a1749056e8fc2e5eadd4433c3a6d72c3e615fb8f596efd0341"
+        },
+        {
+          "episode": "ereq_bd0e564d-c3c1-4243-89cc-0c5e83cf89d0",
+          "seed": 1514858233,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "33ed37cff15df95d52b746f2e37c446b650c6691f67c843f2d24b823b9d0a603",
+          "player_status_sha256": "19e1c4bc4db013d15782406b2295006d361cf4eab66671861faf7ff7f3272734"
+        },
+        {
+          "episode": "ereq_c1994d74-7096-40b3-8b9d-24817c60419a",
+          "seed": 1686657503,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "a83e5913e4bbd11a1bb9ff4ee76c7a643d1c87f503a2cbd40f73981761e2631a",
+          "player_status_sha256": "d2621402ae415cd15bf5edd3fa67f1a97b33155bd1141c0222802c41387e11ba"
+        },
+        {
+          "episode": "ereq_c8bacd7d-7a1a-43e4-8fcc-3dc33661ec22",
+          "seed": 1887495680,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "b49f92d253b8271f25c9e79da25be5fefdda4b444e20dae3b1e8fa3b6793370b",
+          "player_status_sha256": "ef014c6759fb78a876a3fd6d636aa6fecfd6dd319a01ba7b70d5cbd4098d5333"
+        },
+        {
+          "episode": "ereq_cfc75b0e-cbcc-4b82-b571-a7e2706c57b0",
+          "seed": 1549938704,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "6f6bc805fe39f0dee5234815a17febc462bcdc71c2fc0443ffdeb2784cfc3013",
+          "player_status_sha256": "e0b5547744edc5bc3b4315e99c49d00adf7660508275805028d55888b791ce02"
+        },
+        {
+          "episode": "ereq_de7099d9-ffcf-4a91-bcc4-8aee53199eb9",
+          "seed": 1091311073,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "fa7c28dbfa64989cc11129b9f1589c52ea838c5c6cb4d17979f47ab39638fa6f",
+          "player_status_sha256": "ef014c6759fb78a876a3fd6d636aa6fecfd6dd319a01ba7b70d5cbd4098d5333"
+        },
+        {
+          "episode": "ereq_e658cb7f-aeda-4382-8a73-e8d2bde6ea38",
+          "seed": 1030509155,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "d3e55503e4a3441c95caa8ab5a3553db995ec837cab45074e018bb501d835433",
+          "player_status_sha256": "a1564e62a6c1d37fee81cadf63b49a89cd526cf79b28f48c77852179c6a3fe49"
+        },
+        {
+          "episode": "ereq_e9f139af-3d72-4dc3-bba4-db47c6d4d98c",
+          "seed": 1191637650,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "99d8ecf82eadacb05e7b5e116e468537b3a3b2cf8266e869e0488e191f670a7b",
+          "player_status_sha256": "e58a03dddbcc2c73a29e05dba4f5a4efe7955eef4e97e7d9c0694535e2492a95"
+        },
+        {
+          "episode": "ereq_ebcdaff3-41b2-48b5-ab1c-4960446f86aa",
+          "seed": 669791508,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "70049d4e06d7298e9b434605c99a08d8ebca9648b905057d577c9c92c54714af",
+          "player_status_sha256": "e58a03dddbcc2c73a29e05dba4f5a4efe7955eef4e97e7d9c0694535e2492a95"
+        },
+        {
+          "episode": "ereq_f1919b5e-46f6-4cab-9e16-6ca1fd766859",
+          "seed": 1598416750,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "db501b35309d734150983a6ac878b0654ccbc037bacbe122abd18e6131cda3d9",
+          "player_status_sha256": "ef014c6759fb78a876a3fd6d636aa6fecfd6dd319a01ba7b70d5cbd4098d5333"
+        },
+        {
+          "episode": "ereq_f28b3ec9-626c-4e62-971b-6445e7522497",
+          "seed": 1055338650,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "ef73c7a30056f9ecf1de61e58463b496f5edeecdf5e1e30cb5ae0bbd6dc28822",
+          "player_status_sha256": "e0b5547744edc5bc3b4315e99c49d00adf7660508275805028d55888b791ce02"
+        },
+        {
+          "episode": "ereq_f455c79a-ec61-4ec1-b303-4134b4c926bc",
+          "seed": 1070609241,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "963b7a0a531207ae9145f0803abb4d0cf10f832a1a52c91d432738c82b05097c",
+          "player_status_sha256": "e58a03dddbcc2c73a29e05dba4f5a4efe7955eef4e97e7d9c0694535e2492a95"
+        },
+        {
+          "episode": "ereq_f5a63d9b-e02d-481d-b472-3631a5535ccd",
+          "seed": 941238235,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "675244fda1ec9fce8b9a0948f78c23ba037bd1f36409159c1b35174cc0f44501",
+          "player_status_sha256": "d452d7bd3da7472a8eb4b97fb0c33eab7dc95768a74812c8bc16d6524fc48e2b"
+        },
+        {
+          "episode": "ereq_f5f1cc90-8a1a-484e-bbd9-a7e5053bbe69",
+          "seed": 523579330,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "dbc54f3a4029fa995fdfce25cbacba2fed04eb1a142f920899016e47fa02c3e9",
+          "player_status_sha256": "f58d1d2c570116b9a5c58602122bc88e59d1360f1e716f6ad5bf5c10733009d3"
+        },
+        {
+          "episode": "ereq_fd352a6e-b5cd-4aa9-926e-59c84daac810",
+          "seed": 784518311,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "dd9ea1946f9b279db6ec3ed5035418a171822493996a44b7d95dc5722f987c80",
+          "player_status_sha256": "42a63bc4d3cbed03732f867aa516be3fd1ff342769381aba0d7a493270536b63"
+        },
+        {
+          "episode": "ereq_fe996dc8-a672-4dd1-a46e-f8fb397dbaf1",
+          "seed": 747358184,
+          "ticks": 4824,
+          "win": 1,
+          "loss": 0,
+          "draw": 0,
+          "subject_classes": [
+            "VanguardKnight",
+            "Ranger",
+            "Arcanist",
+            "DruidWarden",
+            "DemonHunter"
+          ],
+          "subject_deaths": 4,
+          "gear_heroes": 5,
+          "replay_sha256": "3d4d3d6ee311f3c5373fd48e3a925a8e8443b95f678e8599689c1e5039551499",
+          "player_status_sha256": "37e86b1170f5e995b5495352c59ff5b7d3d816212b19edf890c3473dc6cace82"
+        }
+      ],
+      "auditor_sha256": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+      "structured_ten_vm_exits": true,
+      "interpretation": "Actual fort wins. Seed repeats across deterministic trajectories do not establish independence."
+    }
+  },
+  "promotion_eligible": false
+}

@@ -1,0 +1,34 @@
+{
+  "ply_594ec24d-d7f3-4370-a000-468354ec41c9": {
+    "policy_version": {
+      "id": "00cd9483-0309-4613-bf61-89f3f4a33d01",
+      "policy": {
+        "id": "17fc6f75-47b7-4fda-abe7-b7a9c1f64e82",
+        "name": "aaron-gota-ir-j268-redrace-0920"
+      },
+      "version": 1,
+      "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+      "label": "aaron-gota-ir-j268-redrace-0920:v1"
+    },
+    "membership": "lpm_3954a540-f536-4ef3-98a4-44847647711a",
+    "action": "POST /v2/league-policy-memberships/lpm_3954a540-f536-4ef3-98a4-44847647711a/champion",
+    "body": {},
+    "expected_time": "One authenticated selection and readback; no rebuild."
+  },
+  "ply_630a768f-d623-44b2-80fa-36968d6fa75a": {
+    "policy_version": {
+      "id": "4cdbbf36-3d70-4ea3-8aed-c92ee0e024be",
+      "policy": {
+        "id": "70d39c71-8de3-4c97-99ab-a56a95d570a3",
+        "name": "aaron-gota-ir-j268-redrace-0920-aaron"
+      },
+      "version": 1,
+      "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+      "label": "aaron-gota-ir-j268-redrace-0920-aaron:v1"
+    },
+    "membership": "lpm_d9ccbafb-edec-4af8-9704-17856b726f74",
+    "action": "POST /v2/league-policy-memberships/lpm_d9ccbafb-edec-4af8-9704-17856b726f74/champion",
+    "body": {},
+    "expected_time": "One authenticated selection and readback; no rebuild."
+  }
+}

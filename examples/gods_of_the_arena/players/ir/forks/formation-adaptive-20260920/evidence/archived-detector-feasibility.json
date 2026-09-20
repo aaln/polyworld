@@ -1,0 +1,3701 @@
+{
+  "records": 72,
+  "training_groups": 50,
+  "heldout_groups": 22,
+  "eligible_rules": 21,
+  "evaluations": [
+    {
+      "tick": 480,
+      "seconds": 20.0,
+      "cells": [
+        {
+          "label": "alex_g002",
+          "color": "red",
+          "n": 2,
+          "correct": 0,
+          "abstained": 2,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "alex_g002",
+          "color": "blue",
+          "n": 2,
+          "correct": 0,
+          "abstained": 2,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "jordan268",
+          "color": "red",
+          "n": 2,
+          "correct": 0,
+          "abstained": 2,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "jordan268",
+          "color": "blue",
+          "n": 3,
+          "correct": 0,
+          "abstained": 3,
+          "wrong_named": 0,
+          "shared_prefixes": 3
+        },
+        {
+          "label": "richard135",
+          "color": "red",
+          "n": 1,
+          "correct": 0,
+          "abstained": 1,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "richard135",
+          "color": "blue",
+          "n": 2,
+          "correct": 0,
+          "abstained": 2,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "unknown",
+          "color": "red",
+          "n": 5,
+          "correct": 5,
+          "abstained": 5,
+          "wrong_named": 0,
+          "shared_prefixes": 5
+        },
+        {
+          "label": "unknown",
+          "color": "blue",
+          "n": 5,
+          "correct": 5,
+          "abstained": 5,
+          "wrong_named": 0,
+          "shared_prefixes": 5
+        }
+      ],
+      "rows": [
+        {
+          "episode": "ereq_0f8bc91a-ca6c-4790-bde9-53c5a33a8f0e",
+          "truth": "richard135",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a722338b-035d-490f-afff-c84c6d068a2f",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a8957880-c86e-4554-b5eb-5b42f212a6d9",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_01d0d934-9556-43fe-8f09-2f6617e4852b",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_afa63af7-0c73-4d67-8da4-5b280ec295eb",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ec129a0d-b046-4cbf-b4c8-8a37c531e65c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_38cc5db7-f8a8-4ba2-8433-42f3247cf50c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0220487d-49f6-4b09-b232-f94a83ccc39e",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_14ec8ca3-a9df-4e18-acad-14163acec3c7",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_904838da-3238-4764-9fc2-9e912246dd62",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_28ab1bf0-cfda-4dba-b485-0873cb40baaf",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4635aa31-fcfd-4040-a29b-f60b867acf5a",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ed937886-1075-4c52-a876-1ec765195df3",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_7c5d2590-7451-44be-91c0-0fa466ac7a15",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_602d7a0b-6359-484a-a76a-b370908525b2",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_3a830277-104c-47df-b45f-475f84adcbba",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_033c22c8-e976-4b7c-b05d-65b2e0ce6064",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_2f7d925b-e88b-4da0-93ab-f0367802d6b1",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0e7a53dc-0e61-471f-a885-c5c0e4862099",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4f7e1a91-1c8c-4491-a68b-2542cc199310",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0dfea382-21eb-4746-ab1d-f9dca400692f",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0cd68346-eccf-46f6-aaa6-f74e67a6ecd0",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        }
+      ]
+    },
+    {
+      "tick": 960,
+      "seconds": 40.0,
+      "cells": [
+        {
+          "label": "alex_g002",
+          "color": "red",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "alex_g002",
+          "color": "blue",
+          "n": 2,
+          "correct": 0,
+          "abstained": 2,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "jordan268",
+          "color": "red",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "jordan268",
+          "color": "blue",
+          "n": 3,
+          "correct": 0,
+          "abstained": 3,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "richard135",
+          "color": "red",
+          "n": 1,
+          "correct": 0,
+          "abstained": 1,
+          "wrong_named": 0,
+          "shared_prefixes": 0
+        },
+        {
+          "label": "richard135",
+          "color": "blue",
+          "n": 2,
+          "correct": 0,
+          "abstained": 2,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "unknown",
+          "color": "red",
+          "n": 5,
+          "correct": 5,
+          "abstained": 5,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "unknown",
+          "color": "blue",
+          "n": 5,
+          "correct": 4,
+          "abstained": 4,
+          "wrong_named": 1,
+          "shared_prefixes": 1
+        }
+      ],
+      "rows": [
+        {
+          "episode": "ereq_0f8bc91a-ca6c-4790-bde9-53c5a33a8f0e",
+          "truth": "richard135",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 624,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a722338b-035d-490f-afff-c84c6d068a2f",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a8957880-c86e-4554-b5eb-5b42f212a6d9",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_01d0d934-9556-43fe-8f09-2f6617e4852b",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_afa63af7-0c73-4d67-8da4-5b280ec295eb",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ec129a0d-b046-4cbf-b4c8-8a37c531e65c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_38cc5db7-f8a8-4ba2-8433-42f3247cf50c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 888,
+              "label": "richard135"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 912,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 960,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0220487d-49f6-4b09-b232-f94a83ccc39e",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_14ec8ca3-a9df-4e18-acad-14163acec3c7",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "jordan268",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 744,
+              "label": "jordan268"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 864,
+              "label": "jordan268"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 912,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_904838da-3238-4764-9fc2-9e912246dd62",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "jordan268",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 744,
+              "label": "jordan268"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 864,
+              "label": "jordan268"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 912,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_28ab1bf0-cfda-4dba-b485-0873cb40baaf",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4635aa31-fcfd-4040-a29b-f60b867acf5a",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ed937886-1075-4c52-a876-1ec765195df3",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 624,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_7c5d2590-7451-44be-91c0-0fa466ac7a15",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_602d7a0b-6359-484a-a76a-b370908525b2",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_3a830277-104c-47df-b45f-475f84adcbba",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_033c22c8-e976-4b7c-b05d-65b2e0ce6064",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_2f7d925b-e88b-4da0-93ab-f0367802d6b1",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0e7a53dc-0e61-471f-a885-c5c0e4862099",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4f7e1a91-1c8c-4491-a68b-2542cc199310",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0dfea382-21eb-4746-ab1d-f9dca400692f",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 576,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 600,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 840,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 864,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0cd68346-eccf-46f6-aaa6-f74e67a6ecd0",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 576,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 600,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 840,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 864,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        }
+      ]
+    },
+    {
+      "tick": 1440,
+      "seconds": 60.0,
+      "cells": [
+        {
+          "label": "alex_g002",
+          "color": "red",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "alex_g002",
+          "color": "blue",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "jordan268",
+          "color": "red",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "jordan268",
+          "color": "blue",
+          "n": 3,
+          "correct": 0,
+          "abstained": 3,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "richard135",
+          "color": "red",
+          "n": 1,
+          "correct": 1,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 0
+        },
+        {
+          "label": "richard135",
+          "color": "blue",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "unknown",
+          "color": "red",
+          "n": 5,
+          "correct": 5,
+          "abstained": 5,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "unknown",
+          "color": "blue",
+          "n": 5,
+          "correct": 3,
+          "abstained": 3,
+          "wrong_named": 2,
+          "shared_prefixes": 0
+        }
+      ],
+      "rows": [
+        {
+          "episode": "ereq_0f8bc91a-ca6c-4790-bde9-53c5a33a8f0e",
+          "truth": "richard135",
+          "color": "red",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 624,
+              "label": "richard135"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 1368,
+              "label": "richard135"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 1392,
+              "label": "richard135"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 1392,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a722338b-035d-490f-afff-c84c6d068a2f",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 1224,
+              "label": "richard135"
+            },
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 1296,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 1320,
+              "label": "richard135"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1392,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a8957880-c86e-4554-b5eb-5b42f212a6d9",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 1224,
+              "label": "richard135"
+            },
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 1296,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 1320,
+              "label": "richard135"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1392,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_01d0d934-9556-43fe-8f09-2f6617e4852b",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1296,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_afa63af7-0c73-4d67-8da4-5b280ec295eb",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ec129a0d-b046-4cbf-b4c8-8a37c531e65c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 1032,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 100,
+              "class": 5,
+              "seen_at": 1080,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_38cc5db7-f8a8-4ba2-8433-42f3247cf50c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 888,
+              "label": "richard135"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 912,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 960,
+              "label": "richard135"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 984,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0220487d-49f6-4b09-b232-f94a83ccc39e",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_14ec8ca3-a9df-4e18-acad-14163acec3c7",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "jordan268",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 744,
+              "label": "jordan268"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 864,
+              "label": "jordan268"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 912,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_904838da-3238-4764-9fc2-9e912246dd62",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "jordan268",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 744,
+              "label": "jordan268"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 864,
+              "label": "jordan268"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 912,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_28ab1bf0-cfda-4dba-b485-0873cb40baaf",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4635aa31-fcfd-4040-a29b-f60b867acf5a",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ed937886-1075-4c52-a876-1ec765195df3",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 624,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_7c5d2590-7451-44be-91c0-0fa466ac7a15",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_602d7a0b-6359-484a-a76a-b370908525b2",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_3a830277-104c-47df-b45f-475f84adcbba",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_033c22c8-e976-4b7c-b05d-65b2e0ce6064",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_2f7d925b-e88b-4da0-93ab-f0367802d6b1",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0e7a53dc-0e61-471f-a885-c5c0e4862099",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 100,
+              "class": 5,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 984,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4f7e1a91-1c8c-4491-a68b-2542cc199310",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 100,
+              "class": 5,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 984,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0dfea382-21eb-4746-ab1d-f9dca400692f",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 576,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 600,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 840,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 864,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0cd68346-eccf-46f6-aaa6-f74e67a6ecd0",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 576,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 600,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 840,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 864,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        }
+      ]
+    },
+    {
+      "tick": 1920,
+      "seconds": 80.0,
+      "cells": [
+        {
+          "label": "alex_g002",
+          "color": "red",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "alex_g002",
+          "color": "blue",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "jordan268",
+          "color": "red",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 0
+        },
+        {
+          "label": "jordan268",
+          "color": "blue",
+          "n": 3,
+          "correct": 0,
+          "abstained": 3,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "richard135",
+          "color": "red",
+          "n": 1,
+          "correct": 1,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 0
+        },
+        {
+          "label": "richard135",
+          "color": "blue",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "unknown",
+          "color": "red",
+          "n": 5,
+          "correct": 4,
+          "abstained": 4,
+          "wrong_named": 1,
+          "shared_prefixes": 0
+        },
+        {
+          "label": "unknown",
+          "color": "blue",
+          "n": 5,
+          "correct": 3,
+          "abstained": 3,
+          "wrong_named": 2,
+          "shared_prefixes": 0
+        }
+      ],
+      "rows": [
+        {
+          "episode": "ereq_0f8bc91a-ca6c-4790-bde9-53c5a33a8f0e",
+          "truth": "richard135",
+          "color": "red",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 624,
+              "label": "richard135"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 1368,
+              "label": "richard135"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 1392,
+              "label": "richard135"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 1392,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a722338b-035d-490f-afff-c84c6d068a2f",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 1224,
+              "label": "richard135"
+            },
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 1296,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 1320,
+              "label": "richard135"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1392,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a8957880-c86e-4554-b5eb-5b42f212a6d9",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 1224,
+              "label": "richard135"
+            },
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 1296,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 1320,
+              "label": "richard135"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1392,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_01d0d934-9556-43fe-8f09-2f6617e4852b",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1296,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_afa63af7-0c73-4d67-8da4-5b280ec295eb",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ec129a0d-b046-4cbf-b4c8-8a37c531e65c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 1032,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 100,
+              "class": 5,
+              "seen_at": 1080,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1608,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_38cc5db7-f8a8-4ba2-8433-42f3247cf50c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 888,
+              "label": "richard135"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 912,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 960,
+              "label": "richard135"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 984,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0220487d-49f6-4b09-b232-f94a83ccc39e",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_14ec8ca3-a9df-4e18-acad-14163acec3c7",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "jordan268",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 744,
+              "label": "jordan268"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 864,
+              "label": "jordan268"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 912,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_904838da-3238-4764-9fc2-9e912246dd62",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "jordan268",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 744,
+              "label": "jordan268"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 864,
+              "label": "jordan268"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 912,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_28ab1bf0-cfda-4dba-b485-0873cb40baaf",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4635aa31-fcfd-4040-a29b-f60b867acf5a",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ed937886-1075-4c52-a876-1ec765195df3",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 624,
+              "label": "richard135"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 1656,
+              "label": "richard135"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 1656,
+              "label": "richard135"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 1680,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_7c5d2590-7451-44be-91c0-0fa466ac7a15",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_602d7a0b-6359-484a-a76a-b370908525b2",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_3a830277-104c-47df-b45f-475f84adcbba",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_033c22c8-e976-4b7c-b05d-65b2e0ce6064",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_2f7d925b-e88b-4da0-93ab-f0367802d6b1",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0e7a53dc-0e61-471f-a885-c5c0e4862099",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 100,
+              "class": 5,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 984,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4f7e1a91-1c8c-4491-a68b-2542cc199310",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 100,
+              "class": 5,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 984,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0dfea382-21eb-4746-ab1d-f9dca400692f",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 576,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 600,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 840,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 864,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0cd68346-eccf-46f6-aaa6-f74e67a6ecd0",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 576,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 600,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 840,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 864,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        }
+      ]
+    },
+    {
+      "tick": 2400,
+      "seconds": 100.0,
+      "cells": [
+        {
+          "label": "alex_g002",
+          "color": "red",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "alex_g002",
+          "color": "blue",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 2
+        },
+        {
+          "label": "jordan268",
+          "color": "red",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 0
+        },
+        {
+          "label": "jordan268",
+          "color": "blue",
+          "n": 3,
+          "correct": 0,
+          "abstained": 3,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "richard135",
+          "color": "red",
+          "n": 1,
+          "correct": 1,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 0
+        },
+        {
+          "label": "richard135",
+          "color": "blue",
+          "n": 2,
+          "correct": 2,
+          "abstained": 0,
+          "wrong_named": 0,
+          "shared_prefixes": 1
+        },
+        {
+          "label": "unknown",
+          "color": "red",
+          "n": 5,
+          "correct": 4,
+          "abstained": 4,
+          "wrong_named": 1,
+          "shared_prefixes": 0
+        },
+        {
+          "label": "unknown",
+          "color": "blue",
+          "n": 5,
+          "correct": 3,
+          "abstained": 3,
+          "wrong_named": 2,
+          "shared_prefixes": 0
+        }
+      ],
+      "rows": [
+        {
+          "episode": "ereq_0f8bc91a-ca6c-4790-bde9-53c5a33a8f0e",
+          "truth": "richard135",
+          "color": "red",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 624,
+              "label": "richard135"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 1368,
+              "label": "richard135"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 1392,
+              "label": "richard135"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 1392,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a722338b-035d-490f-afff-c84c6d068a2f",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 1224,
+              "label": "richard135"
+            },
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 1296,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 1320,
+              "label": "richard135"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1392,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_a8957880-c86e-4554-b5eb-5b42f212a6d9",
+          "truth": "richard135",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 1224,
+              "label": "richard135"
+            },
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 1296,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 1320,
+              "label": "richard135"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1392,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_01d0d934-9556-43fe-8f09-2f6617e4852b",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1296,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_afa63af7-0c73-4d67-8da4-5b280ec295eb",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ec129a0d-b046-4cbf-b4c8-8a37c531e65c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 1032,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 100,
+              "class": 5,
+              "seen_at": 1080,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 1608,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_38cc5db7-f8a8-4ba2-8433-42f3247cf50c",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 888,
+              "label": "richard135"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 912,
+              "label": "richard135"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 960,
+              "label": "richard135"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 984,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0220487d-49f6-4b09-b232-f94a83ccc39e",
+          "truth": "unknown",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_14ec8ca3-a9df-4e18-acad-14163acec3c7",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "jordan268",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 744,
+              "label": "jordan268"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 864,
+              "label": "jordan268"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 912,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_904838da-3238-4764-9fc2-9e912246dd62",
+          "truth": "jordan268",
+          "color": "red",
+          "prediction": "jordan268",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 744,
+              "label": "jordan268"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 864,
+              "label": "jordan268"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 912,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_28ab1bf0-cfda-4dba-b485-0873cb40baaf",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4635aa31-fcfd-4040-a29b-f60b867acf5a",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_ed937886-1075-4c52-a876-1ec765195df3",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "richard135",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 624,
+              "label": "richard135"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 1656,
+              "label": "richard135"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 1656,
+              "label": "richard135"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 1680,
+              "label": "richard135"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_7c5d2590-7451-44be-91c0-0fa466ac7a15",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_602d7a0b-6359-484a-a76a-b370908525b2",
+          "truth": "unknown",
+          "color": "red",
+          "prediction": "unknown",
+          "evidence": [],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": false
+        },
+        {
+          "episode": "ereq_3a830277-104c-47df-b45f-475f84adcbba",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_033c22c8-e976-4b7c-b05d-65b2e0ce6064",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_2f7d925b-e88b-4da0-93ab-f0367802d6b1",
+          "truth": "jordan268",
+          "color": "blue",
+          "prediction": "unknown",
+          "evidence": [
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 816,
+              "label": "jordan268"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0e7a53dc-0e61-471f-a885-c5c0e4862099",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 100,
+              "class": 5,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 984,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_4f7e1a91-1c8c-4491-a68b-2542cc199310",
+          "truth": "alex_g002",
+          "color": "blue",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 104,
+              "class": 9,
+              "seen_at": 696,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 100,
+              "class": 5,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 101,
+              "class": 6,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 102,
+              "class": 7,
+              "seen_at": 984,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 103,
+              "class": 8,
+              "seen_at": 984,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0dfea382-21eb-4746-ab1d-f9dca400692f",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 576,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 600,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 840,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 864,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": true,
+          "observed_to_horizon": true
+        },
+        {
+          "episode": "ereq_0cd68346-eccf-46f6-aaa6-f74e67a6ecd0",
+          "truth": "alex_g002",
+          "color": "red",
+          "prediction": "alex_g002",
+          "evidence": [
+            {
+              "hero": 109,
+              "class": 4,
+              "seen_at": 576,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 106,
+              "class": 1,
+              "seen_at": 600,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 107,
+              "class": 2,
+              "seen_at": 840,
+              "label": "alex_g002"
+            },
+            {
+              "hero": 105,
+              "class": 0,
+              "seen_at": 864,
+              "label": "alex_g002"
+            }
+          ],
+          "prefix_shared_with_training": false,
+          "observed_to_horizon": true
+        }
+      ]
+    }
+  ],
+  "profile_discovery_not_fit": [
+    {
+      "label": "alex_g002",
+      "class": 0,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "alex_g002",
+      "class": 1,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "alex_g002",
+      "class": 2,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "alex_g002",
+      "class": 3,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "alex_g002",
+      "class": 4,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "alex_g002",
+      "class": 5,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "alex_g002",
+      "class": 6,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "alex_g002",
+      "class": 7,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "alex_g002",
+      "class": 8,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "alex_g002",
+      "class": 9,
+      "inventories": [
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 0,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 6
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 1,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 6
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 2,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 6
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 3,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 6
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 4,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 6
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 5,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 9
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 6,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 9
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 7,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 9
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 8,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 9
+        }
+      ]
+    },
+    {
+      "label": "jordan268",
+      "class": 9,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 9
+        }
+      ]
+    },
+    {
+      "label": "richard135",
+      "class": 0,
+      "inventories": [
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "label": "richard135",
+      "class": 1,
+      "inventories": [
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "label": "richard135",
+      "class": 2,
+      "inventories": [
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "label": "richard135",
+      "class": 4,
+      "inventories": [
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "label": "richard135",
+      "class": 5,
+      "inventories": [
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 8
+        }
+      ]
+    },
+    {
+      "label": "richard135",
+      "class": 6,
+      "inventories": [
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 8
+        }
+      ]
+    },
+    {
+      "label": "richard135",
+      "class": 7,
+      "inventories": [
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 8
+        }
+      ]
+    },
+    {
+      "label": "richard135",
+      "class": 8,
+      "inventories": [
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 8
+        }
+      ]
+    },
+    {
+      "label": "richard135",
+      "class": 9,
+      "inventories": [
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 8
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 0,
+      "inventories": [
+        {
+          "items": [
+            "LeatherGauntlets",
+            "SteelHelmet",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "PoisonPotion",
+            "LeatherGauntlets",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 1,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 8
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "RangerBoots",
+            "PoisonPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "PoisonPotion",
+            "LeatherGauntlets",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 2,
+      "inventories": [
+        {
+          "items": [
+            "AmethystWand",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "PoisonPotion",
+            "LeatherGauntlets",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 3,
+      "inventories": [
+        {
+          "items": [
+            "AmethystWand",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "PoisonPotion",
+            "LeatherGauntlets",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 4,
+      "inventories": [
+        {
+          "items": [
+            "LeatherGauntlets",
+            "SteelHelmet",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 9
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "PoisonPotion",
+            "LeatherGauntlets",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 5,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 4
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "LeatherGauntlets",
+            "SteelHelmet",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 6,
+      "inventories": [
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 7
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 4
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "RangerBoots",
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 7,
+      "inventories": [
+        {
+          "items": [
+            "AmethystWand",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 6
+        },
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 4
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 8,
+      "inventories": [
+        {
+          "items": [
+            "AmethystWand",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 6
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "RangerBoots",
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 2
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "unknown",
+      "class": 9,
+      "inventories": [
+        {
+          "items": [
+            "LeatherGauntlets",
+            "SteelHelmet",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 6
+        },
+        {
+          "items": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 4
+        },
+        {
+          "items": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 3
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        },
+        {
+          "items": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "scope": "Retrospective classifier feasibility; not causal exploit proof or fresh-game validation.",
+  "limits": "Jordan uses a different own policy context and earlier date. Unknown population is small. Existing studies were previously analyzed for different questions. Report heldout prefix overlap explicitly; do not call repeats generalization. Further fresh same-controller heldout required."
+}

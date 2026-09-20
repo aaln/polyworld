@@ -1,0 +1,32 @@
+{
+  "passed": false,
+  "all_games_and_margin_valid": false,
+  "blue_richard_exact_command_parity": [
+    {
+      "case": {
+        "opponent": "richard135",
+        "side": 1,
+        "seed": 9990001
+      },
+      "hashes": {
+        "formation": "97f5ff52850ea20c51037e89ae64dc326001ad73884743aade75731ce28f069a",
+        "profile_switch": "97f5ff52850ea20c51037e89ae64dc326001ad73884743aade75731ce28f069a"
+      },
+      "equal": true
+    },
+    {
+      "case": {
+        "opponent": "richard135",
+        "side": 1,
+        "seed": 9990003
+      },
+      "hashes": {
+        "formation": "b469de6ec8680d7b021e18c0336a15f9e07354bf051d1a68f6c00e19df6fbb96",
+        "profile_switch": "b469de6ec8680d7b021e18c0336a15f9e07354bf051d1a68f6c00e19df6fbb96"
+      },
+      "equal": true
+    }
+  ],
+  "games": 16,
+  "source_sha256": "e8b87469c4ab2e8f1f23a549f42ced2f51140fcbfcb4fc8a683bbc392eaf337e"
+}

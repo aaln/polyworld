@@ -1,0 +1,120 @@
+{
+  "checked_at": "2026-09-20T22:40:27.283564+00:00",
+  "ready": true,
+  "authorization_verbatim": "deploy the policy to latest on league",
+  "two_player_scope": "Existing explicit user authorization to deploy to both Aaron and Coach",
+  "source_sha256": "c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4",
+  "pair": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/formation-adaptive-20260920",
+  "evidence": {
+    "discovery": {
+      "sha256": "7927c6a94cbeda65150fe4956e08d3d2c7a3498777b32d1527723ca26dbd90d5",
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/formation-adaptive-20260920/evidence/hosted-result.json",
+      "games": 400,
+      "gate": {
+        "all_audits": true,
+        "alex_jordan_each": true,
+        "alex_jordan_gain": true,
+        "richard_blue": true,
+        "richard_total": true
+      },
+      "cells": {
+        "alex/candidate/red": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "alex/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "alex/formation/red": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "alex/formation/blue": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "jordan/candidate/red": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "jordan/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "jordan/formation/red": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "jordan/formation/blue": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "richard/candidate/red": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "richard/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        }
+      }
+    },
+    "confirmation": {
+      "sha256": "ca30453aeaf6c38dd3fe684dac318df9833e857565b8b3c7902c6ca15350125e",
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/formation-adaptive-20260920/evidence/confirmation-result.json",
+      "games": 240,
+      "gate": {
+        "all_audits": true,
+        "alex_jordan_each": true,
+        "richard_blue": true,
+        "richard_total": true
+      },
+      "cells": {
+        "alex/candidate/red": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "alex/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "jordan/candidate/red": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "jordan/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        },
+        "richard/candidate/red": {
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        "richard/candidate/blue": {
+          "wins": 40,
+          "losses": 0,
+          "draws": 0
+        }
+      }
+    }
+  },
+  "scope": "Explicit user selection after reviewing the adaptive formation3600 fork. Discovery400 and unchanged confirmation240 fully audited: each stage Alex40/40each color, Jordan40/40each, Richardblue40/40/red0W40L. Fresh formation Alex/Jordan controls0/160. Repeated trajectories are correlated. Richard red and broad-field gates remain unqualified; the user-approved deployment does not advance formal research acceptance. Same tested source for Aaron and Coach under the existing two-player scope.",
+  "standard_field_qualified": false,
+  "formal_research_acceptance_advanced": false
+}

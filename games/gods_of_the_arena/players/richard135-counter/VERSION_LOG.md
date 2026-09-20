@@ -119,3 +119,59 @@ Evaluated semantic feedback and exact tested bytes: /Users/aaln/experiments/soft
 - Change: {'origin': 'Carry-focus boundary validation', 'candidate': 'transition_armor_freshhit', 'session': '/Users/aaln/Documents/Policy Loops/sessions/2026-09-20t19-10-35-082z64deb6', 'parent_disposition': '/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/cadence/admission-stopped.json'}.
 - BASIC SHA `801cabc6f999b979db9d277647de21e62d0f3e936d610d57c0d482083c675d21`; IR SHA `571b16edbe2664bbe7c9646827d4d662ba402502db6ba1f0720c038b9e9422e1`. Runtime: published GOTA BASIC host .5, no container/run override.
 - State: unvalidated; inert upload. Evidence: `/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/fresh-hit/candidates/transition_armor_freshhit`.
+
+
+## 2026-09-20 transition/scout/Ranger-focus completed — rejected
+Final standard a6efb84f-575a-4267-9775-8579509dd446 (07de1de1) and armor223695ba-813b-4613-bf21-5ffcb48a64b7 (801cabc6) each Richard135 red0W40L, blue40W; baseline red0W36L4D,blue40W. User-authorized unchanged standard Alex/Jordan check failed: Alex red2W24L14D/blue0W40L; Jordan0W40L each. All400hosted/108local games valid and preserved. No promotion. Earlier cadence uploads remain superseded with zero candidate XP. Measured seven-layer IR feedback compiles to exact tested bytes;7pairs reproduced from/tmp. Full evidence: /Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-transition-20260920/results.json.
+
+
+## Half-win deployment decision 2026-09-20
+
+- User: deploy the policy to league that can beat richard's v135 even half the time to both players. it's important even while we work that we start beating him
+- Explicit user-authorized interim deployment to both Aaron and Coach: formation3600 won40/80 Richard v135 games, blue40W0L0D/red0W14L26D, all80 full replay/ten-VM audits. Repeated trajectories; no independent-trial significance or future50% guarantee. Original both-color Richard gate failed; Alex/Jordan/field unqualified. New user half-win scope supersedes prior conditional deployment scope, not research acceptance.
+- Exact versions, evidence and rollback: `/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-half-deployment-20260920/decision.json`. Validation: qualified only for new user-authorized interim threshold.
+
+- Deployment verified 2026-09-20T20:59:08.024117+00:00: both active competing champions. Receipt `/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-half-deployment-20260920/deployment-verified.json`.
+
+- Submitted exact Aaron version `2c025f1e-a6f9-46ca-bab1-32dfaef6e9de` and byte-identical Coach version `b9eb629e-a429-45eb-9e7b-559095f78552`; BASIC `e9eac314c36c06be53af969b54be0eb42a9ee329b0c6d1874eebda489d645e4a`. Saved primary pair: `/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-half-deployment-20260920`. Post-deployment ranks Aaron7/Coach3; new league head-to-head outcomes pending.
+
+
+## aaron-gota-ir-formation-profile-pruned-0920:v1
+
+- ID `61148477-1928-43c6-a881-8daea0e8f6c2`; source c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4. Formation3600 observed-profile fork, inert upload only.
+- Native runtime admitted18410instructions; full8command-equivalent repair games and16original comparisons retained. Initial macro budget failure preserved.
+- Hosted400 frozen against exact Alexg002/Jordan268/Richard135 plus fresh formation3600 Alex/Jordan controls. Results pending; no deployment or accepted-state change. Plan: `/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-20260920/hosted-plan.json`.
+
+- Completed discovery400 and fresh confirmation240; all640 fully audited. Both stages Alex40/40 each color, Jordan40/40 each, Richardblue40/40/red0W40L. Fresh formation controls0/40 in allfourAlex/Jordancells. Frozen target gates passed; standard Richard-each-color/field gates unqualified. Most trajectories repeat; one new Alexblue confirmation stream.
+- Validated IR/source and frozen offline compiler saved in `examples/gods_of_the_arena/players/ir/forks/formation-adaptive-20260920`; source c708970d unchanged. No new league or accepted-state mutation. Both live players remain formation3600; no interactive XP pending.
+
+
+## Adaptive deployment registration 61148477-1928-43c6-a881-8daea0e8f6c2
+
+- aaron-gota-ir-formation-profile-pruned-0920:v1; aaron; 2026-09-20T22:40:27.605709+00:00.
+- BASIC c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4; byte-identical tested source.
+- Validation: validated for the user-approved bounded deployment; 640 hosted games audited.
+- Explicit user selection after reviewing the adaptive formation3600 fork. Discovery400 and unchanged confirmation240 fully audited: each stage Alex40/40each color, Jordan40/40each, Richardblue40/40/red0W40L. Fresh formation Alex/Jordan controls0/160. Repeated trajectories are correlated. Richard red and broad-field gates remain unqualified; the user-approved deployment does not advance formal research acceptance. Same tested source for Aaron and Coach under the existing two-player scope.
+
+
+## Adaptive deployment registration 2bb94c84-fc32-4a81-9e6d-46666bc0315f
+
+- aaron-gota-ir-formation-profile-pruned-0920-coach:v1; coach; 2026-09-20T22:40:28.538232+00:00.
+- BASIC c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4; byte-identical tested source.
+- Validation: validated for the user-approved bounded deployment; 640 hosted games audited.
+- Explicit user selection after reviewing the adaptive formation3600 fork. Discovery400 and unchanged confirmation240 fully audited: each stage Alex40/40each color, Jordan40/40each, Richardblue40/40/red0W40L. Fresh formation Alex/Jordan controls0/160. Repeated trajectories are correlated. Richard red and broad-field gates remain unqualified; the user-approved deployment does not advance formal research acceptance. Same tested source for Aaron and Coach under the existing two-player scope.
+
+
+## Adaptive league submission decision 2026-09-20
+
+- User: deploy the policy to latest on league
+- Explicit user selection after reviewing the adaptive formation3600 fork. Discovery400 and unchanged confirmation240 fully audited: each stage Alex40/40each color, Jordan40/40each, Richardblue40/40/red0W40L. Fresh formation Alex/Jordan controls0/160. Repeated trajectories are correlated. Richard red and broad-field gates remain unqualified; the user-approved deployment does not advance formal research acceptance. Same tested source for Aaron and Coach under the existing two-player scope.
+- Decision and rollback: `/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-deployment-20260920/decision.json`.
+
+
+## Adaptive deployment verified 2026-09-20
+
+- Both players active, competing and champion at 2026-09-20T22:41:34.027289+00:00.
+- Receipt: `/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/formation-adaptive-deployment-20260920/deployment-verified.json`.
+
+- Post-deployment live check 2026-09-20T22:42:24.093666+00:00 confirms both exact new active champions. Deployment/rollback bundle: `/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/formation-adaptive-deployment-20260920`. New exact-version league game results remain separate from hosted confirmation.

@@ -1,0 +1,429 @@
+{
+  "verified_at": "2026-09-20T22:41:34.025999+00:00",
+  "league": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+  "players": {
+    "ply_594ec24d-d7f3-4370-a000-468354ec41c9": {
+      "status": "competing",
+      "substatus": "active",
+      "is_champion": true,
+      "start_time": "2026-09-20T22:41:30.010603Z",
+      "end_time": null,
+      "notes": null,
+      "id": "lpm_b8154dc3-7185-4261-a4fb-f11e5fd112ea",
+      "league": {
+        "name": "Gods of the Arena",
+        "short_name": null,
+        "description": "Gods of the Arena league for submitted policies and recurring competition rounds.",
+        "commissioner_key": "platform",
+        "commissioner_config": {
+          "default_variant_id": "competition"
+        },
+        "commissioner_migration_version": null,
+        "rounds_paused_at": null,
+        "submissions_locked_at": null,
+        "settings": {
+          "ladder": {
+            "enabled": true,
+            "ranking": {
+              "k_factor": 8.0,
+              "algorithm": "elo",
+              "initial_rating": 1500.0,
+              "round_scoring_rule": "mean"
+            },
+            "divisions": [
+              {
+                "name": "Competition",
+                "division_id": "div_a4534073-c5d2-4193-a94a-93d9c5e2e443",
+                "disqualify_after_consecutive_failures": 3
+              }
+            ],
+            "scheduler": {
+              "strategy": "team_n",
+              "team_count": 2,
+              "matchmaking": "elo_softmax",
+              "team_layout": "blocks",
+              "num_episodes": 24,
+              "insufficient_players": "filler_policy"
+            },
+            "fulfillment": {
+              "retry_times": 2,
+              "allowed_failures": 0.1
+            }
+          },
+          "round_interval_minutes": 32
+        },
+        "filler_policy_version_ids": [
+          "8878f93e-dbee-4440-8ea3-0080e690954c"
+        ],
+        "seed_policy_version_ids": null,
+        "seed_policy_number": null,
+        "rules": {
+          "division_leaderboard": {
+            "aggregation": "score",
+            "source_score": "mean_round_score"
+          }
+        },
+        "public": true,
+        "hidden": false,
+        "is_game_of_week": true,
+        "disabled_at": null,
+        "notes": null,
+        "id": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+        "game": {
+          "name": "Gods Of The Arena",
+          "coworld_name": "Gods of the Arena",
+          "description": "Two teams of five BASIC heroes battle to slay the enemy god. Every hero on the winning team scores one win. A time limit without a god being slain gives everyone zero.",
+          "owner_user_id": "system",
+          "notes": null,
+          "id": "game_e6b33734-d7f4-40c9-be09-7967baf1c032",
+          "default_league_id": null,
+          "coworld_id": null,
+          "canonical_coworld_id": null,
+          "coworld_tags": [],
+          "created_at": "2026-09-09T19:22:39.991124Z"
+        },
+        "mod": null,
+        "created_at": "2026-09-09T19:22:40.020134Z",
+        "participation_url": "https://softmax.com/api/observatory/v2/leagues/league_3c60897b-25cf-4b37-9d1a-8554c1198f28.md",
+        "forum_markdown_url": "https://softmax.com/api/observatory/v2/forums/Gods%20of%20the%20Arena.md",
+        "wiki_markdown_url": "https://softmax.com/api/observatory/v2/wikis/Gods%20of%20the%20Arena/pages.md",
+        "logs_reporter_id": "rptr_3b2b7a6b-61d8-4530-92f3-5fa7822a7005",
+        "logs_source": "platform",
+        "handicaps": null,
+        "handicap_dynamic": null
+      },
+      "division": {
+        "id": "div_a4534073-c5d2-4193-a94a-93d9c5e2e443",
+        "name": "Competition",
+        "level": 1,
+        "type": "competition",
+        "description": null,
+        "hidden": false,
+        "archived_at": null,
+        "round_schedule": null,
+        "notes": null,
+        "league": {
+          "name": "Gods of the Arena",
+          "short_name": null,
+          "description": "Gods of the Arena league for submitted policies and recurring competition rounds.",
+          "commissioner_key": "platform",
+          "commissioner_config": {
+            "default_variant_id": "competition"
+          },
+          "commissioner_migration_version": null,
+          "rounds_paused_at": null,
+          "submissions_locked_at": null,
+          "settings": {
+            "ladder": {
+              "enabled": true,
+              "ranking": {
+                "k_factor": 8.0,
+                "algorithm": "elo",
+                "initial_rating": 1500.0,
+                "round_scoring_rule": "mean"
+              },
+              "divisions": [
+                {
+                  "name": "Competition",
+                  "division_id": "div_a4534073-c5d2-4193-a94a-93d9c5e2e443",
+                  "disqualify_after_consecutive_failures": 3
+                }
+              ],
+              "scheduler": {
+                "strategy": "team_n",
+                "team_count": 2,
+                "matchmaking": "elo_softmax",
+                "team_layout": "blocks",
+                "num_episodes": 24,
+                "insufficient_players": "filler_policy"
+              },
+              "fulfillment": {
+                "retry_times": 2,
+                "allowed_failures": 0.1
+              }
+            },
+            "round_interval_minutes": 32
+          },
+          "filler_policy_version_ids": [
+            "8878f93e-dbee-4440-8ea3-0080e690954c"
+          ],
+          "seed_policy_version_ids": null,
+          "seed_policy_number": null,
+          "rules": {
+            "division_leaderboard": {
+              "aggregation": "score",
+              "source_score": "mean_round_score"
+            }
+          },
+          "public": true,
+          "hidden": false,
+          "is_game_of_week": true,
+          "disabled_at": null,
+          "notes": null,
+          "id": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+          "game": {
+            "name": "Gods Of The Arena",
+            "coworld_name": "Gods of the Arena",
+            "description": "Two teams of five BASIC heroes battle to slay the enemy god. Every hero on the winning team scores one win. A time limit without a god being slain gives everyone zero.",
+            "owner_user_id": "system",
+            "notes": null,
+            "id": "game_e6b33734-d7f4-40c9-be09-7967baf1c032",
+            "default_league_id": null,
+            "coworld_id": null,
+            "canonical_coworld_id": null,
+            "coworld_tags": [],
+            "created_at": "2026-09-09T19:22:39.991124Z"
+          },
+          "mod": null,
+          "created_at": "2026-09-09T19:22:40.020134Z",
+          "participation_url": "https://softmax.com/api/observatory/v2/leagues/league_3c60897b-25cf-4b37-9d1a-8554c1198f28.md",
+          "forum_markdown_url": "https://softmax.com/api/observatory/v2/forums/Gods%20of%20the%20Arena.md",
+          "wiki_markdown_url": "https://softmax.com/api/observatory/v2/wikis/Gods%20of%20the%20Arena/pages.md",
+          "logs_reporter_id": "rptr_3b2b7a6b-61d8-4530-92f3-5fa7822a7005",
+          "logs_source": "platform",
+          "handicaps": null,
+          "handicap_dynamic": null
+        },
+        "created_at": "2026-09-09T19:22:40.453555Z",
+        "commissioner_description": null
+      },
+      "policy_version": {
+        "id": "2bb94c84-fc32-4a81-9e6d-46666bc0315f",
+        "policy": {
+          "id": "4c5bebbe-672b-4d77-a5f1-949f82bbc8c0",
+          "name": "aaron-gota-ir-formation-profile-pruned-0920-coach"
+        },
+        "version": 1,
+        "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "label": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1"
+      },
+      "player": {
+        "id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "name": "Aaron's Co-play Coach",
+        "avatar_url": null
+      },
+      "created_at": "2026-09-20T22:41:30.012204Z"
+    },
+    "ply_630a768f-d623-44b2-80fa-36968d6fa75a": {
+      "status": "competing",
+      "substatus": "active",
+      "is_champion": true,
+      "start_time": "2026-09-20T22:40:59.835614Z",
+      "end_time": null,
+      "notes": null,
+      "id": "lpm_bad3beed-50c6-4f23-ae26-58bbf064eaf5",
+      "league": {
+        "name": "Gods of the Arena",
+        "short_name": null,
+        "description": "Gods of the Arena league for submitted policies and recurring competition rounds.",
+        "commissioner_key": "platform",
+        "commissioner_config": {
+          "default_variant_id": "competition"
+        },
+        "commissioner_migration_version": null,
+        "rounds_paused_at": null,
+        "submissions_locked_at": null,
+        "settings": {
+          "ladder": {
+            "enabled": true,
+            "ranking": {
+              "k_factor": 8.0,
+              "algorithm": "elo",
+              "initial_rating": 1500.0,
+              "round_scoring_rule": "mean"
+            },
+            "divisions": [
+              {
+                "name": "Competition",
+                "division_id": "div_a4534073-c5d2-4193-a94a-93d9c5e2e443",
+                "disqualify_after_consecutive_failures": 3
+              }
+            ],
+            "scheduler": {
+              "strategy": "team_n",
+              "team_count": 2,
+              "matchmaking": "elo_softmax",
+              "team_layout": "blocks",
+              "num_episodes": 24,
+              "insufficient_players": "filler_policy"
+            },
+            "fulfillment": {
+              "retry_times": 2,
+              "allowed_failures": 0.1
+            }
+          },
+          "round_interval_minutes": 32
+        },
+        "filler_policy_version_ids": [
+          "8878f93e-dbee-4440-8ea3-0080e690954c"
+        ],
+        "seed_policy_version_ids": null,
+        "seed_policy_number": null,
+        "rules": {
+          "division_leaderboard": {
+            "aggregation": "score",
+            "source_score": "mean_round_score"
+          }
+        },
+        "public": true,
+        "hidden": false,
+        "is_game_of_week": true,
+        "disabled_at": null,
+        "notes": null,
+        "id": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+        "game": {
+          "name": "Gods Of The Arena",
+          "coworld_name": "Gods of the Arena",
+          "description": "Two teams of five BASIC heroes battle to slay the enemy god. Every hero on the winning team scores one win. A time limit without a god being slain gives everyone zero.",
+          "owner_user_id": "system",
+          "notes": null,
+          "id": "game_e6b33734-d7f4-40c9-be09-7967baf1c032",
+          "default_league_id": null,
+          "coworld_id": null,
+          "canonical_coworld_id": null,
+          "coworld_tags": [],
+          "created_at": "2026-09-09T19:22:39.991124Z"
+        },
+        "mod": null,
+        "created_at": "2026-09-09T19:22:40.020134Z",
+        "participation_url": "https://softmax.com/api/observatory/v2/leagues/league_3c60897b-25cf-4b37-9d1a-8554c1198f28.md",
+        "forum_markdown_url": "https://softmax.com/api/observatory/v2/forums/Gods%20of%20the%20Arena.md",
+        "wiki_markdown_url": "https://softmax.com/api/observatory/v2/wikis/Gods%20of%20the%20Arena/pages.md",
+        "logs_reporter_id": "rptr_3b2b7a6b-61d8-4530-92f3-5fa7822a7005",
+        "logs_source": "platform",
+        "handicaps": null,
+        "handicap_dynamic": null
+      },
+      "division": {
+        "id": "div_a4534073-c5d2-4193-a94a-93d9c5e2e443",
+        "name": "Competition",
+        "level": 1,
+        "type": "competition",
+        "description": null,
+        "hidden": false,
+        "archived_at": null,
+        "round_schedule": null,
+        "notes": null,
+        "league": {
+          "name": "Gods of the Arena",
+          "short_name": null,
+          "description": "Gods of the Arena league for submitted policies and recurring competition rounds.",
+          "commissioner_key": "platform",
+          "commissioner_config": {
+            "default_variant_id": "competition"
+          },
+          "commissioner_migration_version": null,
+          "rounds_paused_at": null,
+          "submissions_locked_at": null,
+          "settings": {
+            "ladder": {
+              "enabled": true,
+              "ranking": {
+                "k_factor": 8.0,
+                "algorithm": "elo",
+                "initial_rating": 1500.0,
+                "round_scoring_rule": "mean"
+              },
+              "divisions": [
+                {
+                  "name": "Competition",
+                  "division_id": "div_a4534073-c5d2-4193-a94a-93d9c5e2e443",
+                  "disqualify_after_consecutive_failures": 3
+                }
+              ],
+              "scheduler": {
+                "strategy": "team_n",
+                "team_count": 2,
+                "matchmaking": "elo_softmax",
+                "team_layout": "blocks",
+                "num_episodes": 24,
+                "insufficient_players": "filler_policy"
+              },
+              "fulfillment": {
+                "retry_times": 2,
+                "allowed_failures": 0.1
+              }
+            },
+            "round_interval_minutes": 32
+          },
+          "filler_policy_version_ids": [
+            "8878f93e-dbee-4440-8ea3-0080e690954c"
+          ],
+          "seed_policy_version_ids": null,
+          "seed_policy_number": null,
+          "rules": {
+            "division_leaderboard": {
+              "aggregation": "score",
+              "source_score": "mean_round_score"
+            }
+          },
+          "public": true,
+          "hidden": false,
+          "is_game_of_week": true,
+          "disabled_at": null,
+          "notes": null,
+          "id": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+          "game": {
+            "name": "Gods Of The Arena",
+            "coworld_name": "Gods of the Arena",
+            "description": "Two teams of five BASIC heroes battle to slay the enemy god. Every hero on the winning team scores one win. A time limit without a god being slain gives everyone zero.",
+            "owner_user_id": "system",
+            "notes": null,
+            "id": "game_e6b33734-d7f4-40c9-be09-7967baf1c032",
+            "default_league_id": null,
+            "coworld_id": null,
+            "canonical_coworld_id": null,
+            "coworld_tags": [],
+            "created_at": "2026-09-09T19:22:39.991124Z"
+          },
+          "mod": null,
+          "created_at": "2026-09-09T19:22:40.020134Z",
+          "participation_url": "https://softmax.com/api/observatory/v2/leagues/league_3c60897b-25cf-4b37-9d1a-8554c1198f28.md",
+          "forum_markdown_url": "https://softmax.com/api/observatory/v2/forums/Gods%20of%20the%20Arena.md",
+          "wiki_markdown_url": "https://softmax.com/api/observatory/v2/wikis/Gods%20of%20the%20Arena/pages.md",
+          "logs_reporter_id": "rptr_3b2b7a6b-61d8-4530-92f3-5fa7822a7005",
+          "logs_source": "platform",
+          "handicaps": null,
+          "handicap_dynamic": null
+        },
+        "created_at": "2026-09-09T19:22:40.453555Z",
+        "commissioner_description": null
+      },
+      "policy_version": {
+        "id": "61148477-1928-43c6-a881-8daea0e8f6c2",
+        "policy": {
+          "id": "c2176695-1c67-40aa-ac25-c621eabbc2f9",
+          "name": "aaron-gota-ir-formation-profile-pruned-0920"
+        },
+        "version": 1,
+        "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "label": "aaron-gota-ir-formation-profile-pruned-0920:v1"
+      },
+      "player": {
+        "id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "name": "Aaron",
+        "avatar_url": null
+      },
+      "created_at": "2026-09-20T22:40:59.837232Z"
+    }
+  },
+  "versions": {
+    "ply_630a768f-d623-44b2-80fa-36968d6fa75a": {
+      "id": "61148477-1928-43c6-a881-8daea0e8f6c2",
+      "name": "aaron-gota-ir-formation-profile-pruned-0920",
+      "version": 1,
+      "pools": null,
+      "submit_error": null
+    },
+    "ply_594ec24d-d7f3-4370-a000-468354ec41c9": {
+      "id": "2bb94c84-fc32-4a81-9e6d-46666bc0315f",
+      "name": "aaron-gota-ir-formation-profile-pruned-0920-coach",
+      "version": 1,
+      "pools": null,
+      "submit_error": null
+    }
+  },
+  "source_sha256": "c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4",
+  "state": "both_competing_active_champions",
+  "scope": "Explicit user selection after reviewing the adaptive formation3600 fork. Discovery400 and unchanged confirmation240 fully audited: each stage Alex40/40each color, Jordan40/40each, Richardblue40/40/red0W40L. Fresh formation Alex/Jordan controls0/160. Repeated trajectories are correlated. Richard red and broad-field gates remain unqualified; the user-approved deployment does not advance formal research acceptance. Same tested source for Aaron and Coach under the existing two-player scope."
+}
