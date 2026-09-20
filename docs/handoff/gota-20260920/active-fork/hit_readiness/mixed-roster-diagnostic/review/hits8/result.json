@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "level1_events": 0,
+  "reviews": [
+    {
+      "subject": "hits8",
+      "seed": 9720006,
+      "slot": 5,
+      "roster": "mixed_lanes",
+      "outcome": "win",
+      "events": 0,
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/mixed-roster-diagnostic/review/hits8/9720006-hits8",
+      "equivalence_sha256": "e939db4fe5c7d060beb3c0234b0b2762b39aa8b04dc6ffd621ccff8d3f856f03"
+    },
+    {
+      "subject": "suppression_reference",
+      "seed": 9720006,
+      "slot": 5,
+      "roster": "mixed_lanes",
+      "outcome": "win",
+      "events": 0,
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/mixed-roster-diagnostic/review/hits8/9720006-suppression_reference",
+      "equivalence_sha256": "a4525727371b3d6bac760b0d924a7331f07a9eeb1e97b5f0f3273543f935196c"
+    },
+    {
+      "subject": "hits8",
+      "seed": 9720002,
+      "slot": 5,
+      "roster": "weapon_pressure",
+      "outcome": "loss",
+      "events": 0,
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/mixed-roster-diagnostic/review/hits8/9720002-hits8",
+      "equivalence_sha256": "f9e319cbbd7eeef83230dd8584ae627152031ba439fdaa2291db966da3b8c2cd"
+    },
+    {
+      "subject": "suppression_reference",
+      "seed": 9720002,
+      "slot": 5,
+      "roster": "weapon_pressure",
+      "outcome": "loss",
+      "events": 0,
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/mixed-roster-diagnostic/review/hits8/9720002-suppression_reference",
+      "equivalence_sha256": "e1d24c9c1fb57a09483f5e8d1142f9bec3037dc2479345bbc9209cea93fa0ac4"
+    }
+  ],
+  "interpretation": "Original full games had ten reacting owned/public policies; only one hero uses the subject source. Complete traces replay the other nine recorded commands and verify every state hash, not a private-rival reacting alternative."
+}

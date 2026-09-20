@@ -1,0 +1,41 @@
+{
+  "schema": "gota-opponent-pair-artifacts/1",
+  "created_at": "2026-09-20T15:44:30.220448+00:00",
+  "models": [
+    {
+      "label": "richard-gods-of-the-arena:v135",
+      "version": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "python": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/opponents/richard_v135.py",
+      "python_sha256": "d0a58f5668198a0f6ab75efabcea6850b68a02ed79b107de4cc0ea03074d0fa2",
+      "report": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/richard-v135/opponent.ir.md",
+      "manifest": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/richard-v135/artifact-manifest.json",
+      "manifest_sha256": "5852d489260f8b48ba764b697fd201ec912149aa66d7fd6346a96ad74dc40221",
+      "compatibility": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/richard-v135/python-compatibility.json",
+      "heldout_predictions_reproduced": 923,
+      "proxy_usable": false,
+      "automatic_strategy_adoption": false
+    },
+    {
+      "label": "gota-g002:v1",
+      "version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "python": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/opponents/alex_g002_v1.py",
+      "python_sha256": "9517af6f1bc04127a7637de5605a1dd788326a9f8baa1951a0c030155bbf6454",
+      "report": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/alex-g002-v1/opponent.ir.md",
+      "manifest": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/alex-g002-v1/artifact-manifest.json",
+      "manifest_sha256": "0b454a8b177b27e62e6e989b953bfe52374e961f29095f4232fd0fc04a064cd8",
+      "compatibility": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/alex-g002-v1/python-compatibility.json",
+      "heldout_predictions_reproduced": 287,
+      "proxy_usable": false,
+      "automatic_strategy_adoption": false
+    }
+  ],
+  "files": {
+    "comparison.png": "fcdf407777318e3bae52d48652279f2b55770de7711ccc1ba44c603d13aa7fed",
+    "comparison.pdf": "a8b2da8ec7c2502ade8fcbd66a093c34c4f1b4b52ac2dfb0904b5ee9a3582f30",
+    "analysis.md": "906d2ef4c7e7a3c54cb1de64b6e1eb1ec71b4dfd2c57876a0f408a4fb774a7a8"
+  },
+  "record": {
+    "path": "games/gods_of_the_arena/experiments/2026-09-20-richard-alex-opponent-ir.md",
+    "sha256": "9551112e140cae719b2ed97b39cd20612da5324a7548ab265640959f9720d63c"
+  }
+}

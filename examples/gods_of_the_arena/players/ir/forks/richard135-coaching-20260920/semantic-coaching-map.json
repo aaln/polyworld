@@ -1,0 +1,23 @@
+{
+  "session": "/Users/aaln/Documents/Policy Loops/sessions/2026-09-20t17-21-56-307zf4f7b3",
+  "interpretation": "Numeric thresholds and three-entry perimeter approximation are authored implementation choices. Native scenario fidelity and competitive wins are distinct results.",
+  "situation": {
+    "allies_concentrated(radius,min_count=4)": "Four living allies with at least ready_hp within group_radius of group center. Later cohort variants trim a distant fifth ally from that center.",
+    "enemy_spread_out(dispersion_threshold)": "At least three currently observed living enemy heroes, bounding-box diagonal at least32 tiles. Unobserved enemies are unknown.",
+    "near_base_perimeter(target_base)": "Group center within60tiles of public enemy-core coordinate; objective-stage logic additionally checks whether the next exposed structure belongs to the inner approach."
+  },
+  "belief": {
+    "team_assault_readiness": "gaReady recomputed each decision from gaNear (BASIC alias defMates). Per-entry/probe/breach state persists in backdoor globals. Each hero has its own VM.",
+    "home_pressure": "V5 onward: positive observed alarm retains defUntil/defThreatX/Y for1200ticks through temporary fog. Memory is for navigation, not attacking an unseen target."
+  },
+  "goal": "G_group_siege links shared objective, group cohesion, gathered home defense and equipment funding; outcomes remain fort wins.",
+  "strategy": "Ordered observe, attack, consumables, equipment and fallback rules refer to the group goal; the observer arbitrates readiness, home emergency, approach, probe and breach.",
+  "skill": {
+    "GroupProbeAndCircleBase": "Composite observer + formation combat + formation route; not a separate API. Re-scores three approach entries every240ticks; probe480ticks; breach commitment240ticks renewed by opportunity or timeout.",
+    "fidelity_limit": "Three exterior approach points approximate circling; no continuous orbit or guaranteed tower-aggro exclusion is claimed."
+  },
+  "execution": "Versioned contracts lower the selected operators into BASIC; mutually exclusive red/blue branches share aliased scratch storage within256globals. Final version coordinates128object observation and64object coached combat fast path.",
+  "update": "Every saved pair records exact local/hosted outcomes and source evidence; contradicted competitive hypotheses are retained, not marked supported because a mechanism executes.",
+  "bindings": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/tooling/games/gods_of_the_arena/instruments/richard_coaching",
+  "validation": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/results.json"
+}

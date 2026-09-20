@@ -1,0 +1,45 @@
+{
+  "sources": {
+    "parent": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/parent/policy.bas",
+    "suppression_reference": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/suppression_reference/policy.bas",
+    "handoff": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/handoff/policy.bas",
+    "handoff_hits8": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/handoff_hits8/policy.bas"
+  },
+  "variants": [],
+  "actual_variants": [
+    "parent",
+    "suppression_reference",
+    "handoff",
+    "handoff_hits8"
+  ],
+  "opponents": {
+    "deployed_suppression": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/suppression_reference/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9700500,
+      "color": 0,
+      "opponent": "deployed_suppression"
+    },
+    {
+      "seed": 9700501,
+      "color": 1,
+      "opponent": "deployed_suppression"
+    }
+  ],
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/deployed-champion-control/config.json": "a80b7f5bb43cbd61039dd8c5675c2660ec6b7e77fac14cce97b4f27c3d14033b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/vm-proof.json": "c8f6380632f79d0370fedc8a403995b74e15759c52fb05bd5ee71fa0ce4a6cb2",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/parent/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/suppression_reference/policy.bas": "3043195d9c7e22930e24e255a369b14213538d3bfdad09f97592e1cd4623606b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/handoff/policy.bas": "18c501fa26c6e4cb3f0be3c3be5ed16c02a36984170f1e864d9843072198ed83",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/handoff_hits8/policy.bas": "ae167da3c6e3803f187cc6fb464f70c2f0196a36b4bcf395ad7c96e0e1d25cfc",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T033342Z-b4ca5b/handoff_champion_control.py": "bb747a33fd1586ad630ec318bd4d4ed7a90572250763143b420c5595396b15eb"
+  },
+  "custom_opponents": true,
+  "gates": null,
+  "decision_rule": "Supplemental two-color diagnostic adds the newly deployed champion as an actual opponent. No original screen case, comparator, gate, source or failed outcome is removed. Do not treat winning only versus the weaker accepted parent as demonstrated incremental improvement. This tiny supplementary matrix cannot qualify a candidate by itself.",
+  "interpretation": "Local reacting fixed-lineup diagnostic, one case per color/arm. No hosted or independent significance claim. Original 48-game screen and prospective confirmation unchanged."
+}

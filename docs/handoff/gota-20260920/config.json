@@ -1,0 +1,120 @@
+{
+  "workspace": "/Users/aaln/experiments/softmax/polyworld-gota-clean-20260916-r5",
+  "tooling": "/Users/aaln/experiments/softmax/polyworld-gota-clean-20260916-r5/examples/gods_of_the_arena/players/ir",
+  "codex": "/Users/aaln/.nvm/versions/node/v24.1.0/bin/codex",
+  "python": "/Users/aaln/experiments/softmax/metta/.venv/bin/python",
+  "dependencies": "/Users/aaln/experiments/softmax/gota-research-20260916/deps",
+  "game_version": "2026.9.16.5",
+  "engine_commit": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+  "target": {
+    "coworld_id": "cow_126f2fcb-80a0-4b6e-8166-eb6163576db5",
+    "variant_id": "competition"
+  },
+  "game_config": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  },
+  "auditor": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-hosted",
+  "auditor_sha256": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+  "cycle_timeout_seconds": 9600,
+  "between_cycles_seconds": 60,
+  "cycle_episode_limit": 400,
+  "daily_episode_limit": 100000,
+  "max_parallel_xp": 3,
+  "field_opponents": [
+    {
+      "name": "gota-g002:v1",
+      "id": "a30542cb-54de-4109-92e6-bcabca7db4d8"
+    },
+    {
+      "name": "relh-gods-of-the-arena:v154",
+      "id": "99ff8b49-8bb6-4ee2-9204-ff24a8efda4e"
+    },
+    {
+      "name": "black-kite:v16",
+      "id": "d10d7d74-40a7-4f6c-8838-e09729160349"
+    },
+    {
+      "name": "macromackie-gota:v4",
+      "id": "1a78a3f9-8112-4c2c-831a-f0ffee8dbacc"
+    },
+    {
+      "name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v254",
+      "id": "92958fa7-74b2-4a3e-b0d7-e885e68e32d3"
+    },
+    {
+      "name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "id": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2"
+    },
+    {
+      "name": "red-kite:v34",
+      "id": "a4590ed4-0b0c-4d86-8968-0844796f30e0"
+    },
+    {
+      "name": "gota-g003:v2",
+      "id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3"
+    },
+    {
+      "name": "richard-gods-of-the-arena:v78",
+      "id": "881a807d-68ab-4a62-9b6c-e98694cf0bc3"
+    },
+    {
+      "name": "richard-gods-of-the-arena:v99",
+      "id": "bc9b34d4-46f4-4f7f-aefd-f801b7dcd078"
+    },
+    {
+      "name": "richard-gods-of-the-arena:v127",
+      "id": "fce77b0c-c82f-42dc-8136-7c8131a009d4"
+    },
+    {
+      "name": "richard-gods-of-the-arena:v131",
+      "id": "8f846c0f-985f-42e4-9e0e-edda54405c68"
+    },
+    {
+      "name": "richard-gods-of-the-arena:v135",
+      "id": "7c370daf-3c5f-42f8-870b-54b79c495a44"
+    }
+  ],
+  "historical_opponents": [
+    {
+      "name": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+      "id": "b64f1ccb-02e1-4ad5-b75b-f374222e9e9a"
+    },
+    {
+      "name": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+      "id": "9cedf3ff-c7ce-4cff-897f-d48b44e049ad"
+    }
+  ],
+  "league_auto_deploy": true,
+  "league_deployment_authorization": {
+    "record": "/Users/aaln/experiments/softmax/gota-autoresearch/FOCUS.md",
+    "players": [
+      "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+      "ply_594ec24d-d7f3-4370-a000-468354ec41c9"
+    ],
+    "gates": "Frozen fresh target confirmation plus field preservation; no unvalidated deployment"
+  },
+  "league_check_interval_seconds": 10800,
+  "daily_episode_limit_override": {
+    "utc_day": "2026-09-20",
+    "normal_limit": 1600,
+    "authorization": "User 2026-09-20, microplay XP verification: 100000",
+    "record": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-xp-20260920/allowance-change.ir.json"
+  }
+}

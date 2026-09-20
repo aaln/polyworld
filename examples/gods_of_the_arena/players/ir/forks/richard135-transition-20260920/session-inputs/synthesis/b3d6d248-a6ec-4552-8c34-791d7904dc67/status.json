@@ -1,0 +1,57 @@
+{
+  "id": "b3d6d248-a6ec-4552-8c34-791d7904dc67",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "reference_id": "capture",
+  "status": "complete",
+  "started_at": "2026-09-20T19:12:24.124Z",
+  "phase": "checking_coverage",
+  "completed_at": "2026-09-20T19:13:04.840Z",
+  "artifacts": [
+    {
+      "file": "plan.json",
+      "sha256": "414f7975993f264b969e26c815a72968c71560f767163fd248d3cc47267addcd",
+      "bytes": 1038
+    },
+    {
+      "file": "context.json",
+      "sha256": "e90582e06c2cf45db888b17ebcfef35aac91c52544ec1480de713a7560be0fc8",
+      "bytes": 47332
+    },
+    {
+      "file": "request.json",
+      "sha256": "03b11bbfce70b7dd309187d54b55e8011afa837edaf14158a0f9391c5b9f5d67",
+      "bytes": 22240
+    },
+    {
+      "file": "result.json",
+      "sha256": "27d495146f1a3d804482dc900b92d6b2e736dc62a3877b434b5708b45a841dea",
+      "bytes": 88795
+    },
+    {
+      "file": "report.md",
+      "sha256": "82ca3e71e7391e04d438feaedc95a75f78672c474bf14357dda8523527aaaf63",
+      "bytes": 11764
+    },
+    {
+      "file": "initial-result.json",
+      "sha256": "012287b5fafa7fadc69339539b42e8c48805ee6eda0698872c311567b12e76da",
+      "bytes": 7271
+    },
+    {
+      "file": "coverage-context.json",
+      "sha256": "1c1adc80e4b064c3393486ff73ffa031b9f1ffdb07bebca2275be6f9587c3bcf",
+      "bytes": 53763
+    },
+    {
+      "file": "coverage-request.json",
+      "sha256": "45414be18cb36f0a9c009b87c96fbcd3d75c002fb45002b40bbb2ab0b14bce75",
+      "bytes": 23570
+    },
+    {
+      "file": "coverage-result.json",
+      "sha256": "f722ddd0331f82db2f25ef9062027260caab9409e387242748e45976989a2bc4",
+      "bytes": 5643
+    }
+  ]
+}

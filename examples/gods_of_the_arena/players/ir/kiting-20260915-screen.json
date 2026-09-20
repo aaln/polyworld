@@ -1,0 +1,104 @@
+{
+  "stage": "directional_local_screen",
+  "game_version": "2026.9.15.2",
+  "source_sha256": {
+    "parent": "c23c618705b74ec3154ba7614cdda6fd7bdc84e71ea55c3b0ef171438f0a91c3",
+    "candidate": "d42d2891cffb7523b356f4ebabb302f966c5e2d60e05122b72ef342ab0c684d5",
+    "baseline": "2b358e6e116d6445e38505aad6bbb00ab62004fa381fb9e433f3e8b7abd2a464"
+  },
+  "gates": {
+    "parent": {
+      "gain_wins": -5,
+      "passed": false
+    },
+    "baseline": {
+      "gain_wins": 0,
+      "passed": true
+    },
+    "survival": {
+      "death_ratio": 1.1794871794871795,
+      "hit_ratio": 0.9477958236658933,
+      "passed": false
+    }
+  },
+  "activation": {
+    "games": 27,
+    "classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "verified_bursts": 70,
+    "unverified_bursts": 7,
+    "landed_before_retreat_fraction": 0.9090909090909091
+  },
+  "passed": false,
+  "audited_games": 120,
+  "metrics": {
+    "parent": {
+      "wins": 7,
+      "games": 40,
+      "deaths": 78,
+      "deaths_per_game_minute": 0.10614962825893628,
+      "deaths_per_1000_alive_decisions": 0.0749077338393767,
+      "basic_hit_events": 862,
+      "hits_per_game_minute": 1.1730894815282447,
+      "mean_glory": -33.904513888888886,
+      "mean_xp": 600.0,
+      "timeouts": 33,
+      "total_ticks": 1058129,
+      "alive_decisions": 1041281,
+      "kite_bursts": 0,
+      "kite_escapes": 0
+    },
+    "candidate": {
+      "wins": 2,
+      "games": 40,
+      "deaths": 92,
+      "deaths_per_game_minute": 0.11750660353761577,
+      "deaths_per_1000_alive_decisions": 0.08306547726534003,
+      "basic_hit_events": 817,
+      "hits_per_game_minute": 1.043509729241653,
+      "mean_glory": -5.4618055555555545,
+      "mean_xp": 597.5,
+      "timeouts": 38,
+      "total_ticks": 1127426,
+      "alive_decisions": 1107560,
+      "kite_bursts": 198,
+      "kite_escapes": 121
+    },
+    "baseline": {
+      "wins": 2,
+      "games": 40,
+      "deaths": 546,
+      "deaths_per_game_minute": 0.7164720966449998,
+      "deaths_per_1000_alive_decisions": 0.5569598560472987,
+      "basic_hit_events": 2384,
+      "hits_per_game_minute": 3.1283323780250543,
+      "mean_glory": 1.3263888888888886,
+      "mean_xp": 2193.75,
+      "timeouts": 36,
+      "total_ticks": 1097377,
+      "alive_decisions": 980322,
+      "kite_bursts": 0,
+      "kite_escapes": 0
+    }
+  },
+  "death_pairs": {
+    "reduced": 10,
+    "increased": 15,
+    "one_sided_exact_p": 0.885238528251648
+  },
+  "regressions": {
+    "parent": [],
+    "baseline": []
+  },
+  "promotion_eligible": false,
+  "limits": "Local default field, 40 independent cases/class balanced. Survival and damage metrics are directional. Hosted incumbents untested; no league change from this screen."
+}

@@ -1,0 +1,198 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_base_v1",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "The source-derived baseline; no inferred hidden information. Independent host audit distinguishes frozen self data, live object/item queries, earlier inventory flags, and persistent engine intent; see B_observation_timing and B_action_effects."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Tower targets and enemy intentions are not exposed."
+    },
+    "claims": {
+      "B_independent_reconstruction": {
+        "claim": "An independently authored baseline IR/lowering matched the original full AST, 500 real-VM scenarios and all actions/state hashes on two complete seeds. This policy differs from that baseline in rules []. These are explicit strategy differences, not evidence of an unnoticed baseline translation bug. No win improvement follows from reconstruction parity.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+            "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+          }
+        ]
+      },
+      "B_observation_timing": {
+        "claim": "Actual-host probes distinguish decision-start self data from live item queries. After a potion was consumed, selfHp stayed at 1 while live HP rose; itemId immediately saw the empty slot. selfGold stayed 150 after a successful 70-gold purchase left 80 live gold, causing a subsequent 150-gold purchase to fail. Earlier inventory flags remained hasHeal=1 and emptySlot=0 after the last ration was consumed. Facts about query timing do not prove that changing replenishment timing improves wins.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+            "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+          }
+        ]
+      },
+      "B_action_effects": {
+        "claim": "An actual-host walkTo probe returned 0 but cleared attackObjectId (105 to 0); rejection is not universally atomic. A poison probe with policy-local bestId=999999 struck engine target 105. Policy-selected candidates, engine intent, accepted commands and realized effects are distinct. The failed-walk fixture intentionally began outside navigable terrain; it establishes API semantics, not ordinary-game frequency.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+            "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+          }
+        ]
+      },
+      "B_equipment_resources": {
+        "claim": "An actual-host 80-gold helmet purchase increased maximum HP by 50 and current HP from 1 to 51; selfHp/selfMaxHp stayed at their decision-start values. Engine stat refresh also adds maximum-mana increases to current mana. Capping equipment trades away immediate resource gain as well as permanent stats. This may inform later sustain experiments; competitive benefit remains untested.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+            "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Preserve nearest-enemy combat and center fallback from the bundled baseline. This is an interpretation of behavior, not recovered original author intent.",
+      "provenance": "interpretation"
+    },
+    "G_capacity": {
+      "preference": "Preserve baseline inventory and ordered spending semantics.",
+      "provenance": "interpretation"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "nearest_enemy",
+      "parameters": {}
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_consumables",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "walk_point",
+      "parameters": {
+        "x": 64,
+        "y": 64
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_base"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.10.1",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 2,
+    "parent": "a72c2a55eb7f38f818a579f353be53b9c0d174208ec6e52fcaad1b5009510469",
+    "change": {
+      "origin": "independent_ir_reconciliation",
+      "behavior_changed": false
+    },
+    "needs_review": [],
+    "evidence": [
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+        "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+      }
+    ]
+  }
+}

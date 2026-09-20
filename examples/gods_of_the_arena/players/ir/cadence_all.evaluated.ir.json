@@ -1,0 +1,444 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_cadence_cadence_all",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate_no_motion": "No observed attackable candidate and no accepted retreat movement in this decision."
+      }
+    },
+    "notes": "Published e127989/2026.9.15.3. Exact league v2 BASIC validated on40 current-release matched cases; kiting candidates require separate qualification."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions",
+        "escortId",
+        "kiteBursts",
+        "kiteEscapes",
+        "kiteMoveTicks",
+        "kiteSpellCasts",
+        "lastJoinTick",
+        "lastJoinX",
+        "lastJoinY",
+        "motionCompletions",
+        "motionFailures",
+        "motionLastHits",
+        "motionLastHp",
+        "motionLastTick",
+        "motionLoss",
+        "motionReady",
+        "motionStart",
+        "motionStartSeparation",
+        "motionThreat",
+        "motionUntil",
+        "motionX",
+        "motionY",
+        "recoverySteps",
+        "stalled",
+        "weaponStarts"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Visible object target IDs are exposed; zero can mean no target or a target outside visibility. Future enemy intentions remain unknown."
+    },
+    "claims": {
+      "B_wave": {
+        "claim": "Using an observed allied footman as the no-target movement anchor may increase productive lane presence and fort wins. This is not evidence that a footman shields a hero from towers.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/experiment-20260910.json",
+            "sha256": "36170fcaddbc1511737b8b2496b6ff002884477f5d50c7336e117542f5355a44"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          }
+        ]
+      },
+      "B_equipment": {
+        "claim": "Matched hosted games: sustain-only won 4/10 versus v1 2/10. Final equipment totaled 35 versus 16. These observations inform the equipment-saving hypothesis; broader strength remains unresolved.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-result-20260910.json",
+            "sha256": "9f2ab759b80e61a0199cde063b6e7afc4ecf146f8a4c333d351e5c1794237b78"
+          }
+        ]
+      },
+      "B_kiting_campaign": {
+        "claim": "Ten kiting candidates were evaluated with40 matched cases each and full replay verification. The current-release best win count was23/40 versus v2 22/40, but deaths135 versus134 failed preservation. A spell-casting variant reduced deaths to115 but won17/40. None passed both competitive and survival gates. These adaptive results do not rule out better kiting designs; retain the exact tested v2 executable.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/kiting-campaign-20260915.json",
+            "sha256": "123789fc191295116945a5506cf62e308f370682751d3828f451fff980ce977d"
+          }
+        ]
+      },
+      "B_replay_turn_cost": {
+        "claim": "Published .3 replay diagnosis: among 409 complete ten-tick hit-adjacent walk segments, median turning-only ticks=8, median moving ticks=2. Only 32/334 segments gained >0.25 tiles against the same initially nearest visible enemy still alive at the end. These correlated command-derived observations show a motion failure, not competitive superiority of a replacement.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_replay_tower_trap": {
+        "claim": "Two of forty v2 cases have >30-second no-movement/no-hit/no-active-offense stalls, with the first path waypoint inside friendly-tower collision clearance. The Arcanist stalls 344.7 seconds. At its verified tick1200 checkpoint, 24 nearby walk destinations fail; a diagnostic-only engine waypoint change produces4.60 tiles displacement. Accepted movement and terrainWalkable do not prove successful navigation. Target switches are not evidence of progress.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_replay_late_escape": {
+        "claim": "Across134 v2 deaths, the median final-six-second window contains one second of half-second samples below35%HP;18 deaths have no such sample. This supports investigating earlier escape decisions. It is a sampled opportunity measure, not proof of avoidable deaths or a validated threshold.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_motion_feedback_hypothesis": {
+        "claim": "Persistent retreat destinations and measured separation, with turn cost, enemy closing speed, safe re-engagement and earlier multi-attacker risk checks, may improve survival without losing fort wins. Preventive tower-clearance routing may avoid collision traps. These proposed behaviors are NOT implemented in the retained v2 executable and require fresh local and hosted validation.",
+        "status": "untested",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_candidate": {
+        "claim": "Current cadence candidate passed independent400-per-arm hosted confirmation and100game sampled-field guardrail, then was selected on Optimizer. Detailed evidence and scope are in B_cadence_confirmation400, B_cadence_field100 and B_current_deployment. Faster attack recovery is measured; safe escape movement and elimination of friendly-tower navigation stalls are not established.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/hosted-confirmation/result.json",
+            "sha256": "157d85d1bf0263b80255b1cf62867be1e04ddb14ab0b3214d21c8316a7fe4948"
+          },
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/field/result.json",
+            "sha256": "0105607b5daaf3ef78c561f4fe4ba88313ab90a2ee3f192fcef1bbdc3747cee5"
+          },
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/field/coverage.json",
+            "sha256": "ef6f730d9a4868a5a8081986300ecfab062f7e5c3d62bcaade617b13544a873b"
+          },
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/deployment/deployment-verified.json",
+            "sha256": "02d1dbd63069ba214a5ff26db03054945e490b321ed696d150716bb7000413b6"
+          }
+        ]
+      },
+      "B_motion_execution": {
+        "claim": "4508 normal retreats followed verified basic hits; 0 lacked that prerequisite. 76044 retreat ticks produced actual displacement; 3877 ended on the public separation/disappeared-threat condition. Explicit offensive casts during retreats: 901. These mechanism counts are correlated within episodes and are not independent win evidence.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/motion-campaign-20260915/confirmation-result.json",
+            "sha256": "8ec33ea53047ef871b0c0104d73a3506a485461e25ce7226fdcf36a3e51f425f"
+          }
+        ]
+      },
+      "B_hosted_100": {
+        "claim": "On published2026.9.15.3, two100-episode independent hosted cohorts with identical pinned incumbent versions and balanced seats yielded67candidate wins versus59v2 wins. All200full replays verified. One-sided Fisher p=.15263074; the frozen >=10pp/p<.05 win gate failed. Candidate deaths/alive-minute .376820 vs.509380, lifetime XP165100 vs150400 and mean Glory623.856 vs497.099. Equipment buying occurred inall200games. These data motivate a separate fixed600-per-arm confirmation; they do not establish win superiority.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/motion-campaign-20260915/hosted/comparison.json",
+            "sha256": "a468ee9cf3d8d3157f935b7b58fa3dd3e85f3a8e73007715e2df24bd44c49066"
+          }
+        ]
+      },
+      "B_selection_provenance": {
+        "claim": "The user explicitly requested deployment to Aaron's Optimizer after the200-game report. Softmax binds versions to players, so identical motion-weapon:v1 BASIC bytes were registered as motion-weapon:v2 for the optimizer. Both Aaron(v2waveguard) and Aaron's Optimizer(v2motion-weapon) are verified active competing champions. User selection is distinct from passing a statistical qualification gate.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/motion-campaign-20260915/deploy-optimizer/deployment-verified.json",
+            "sha256": "4aadb63b3ef85868c4e273e2e52eaf4347d9d46930710ee6970db2d6c4a3fca6"
+          }
+        ]
+      },
+      "B_motion_confirmation600": {
+        "claim": "Independent precommitted600-game-per-arm confirmation completed on published2026.9.15.3, excluding initial200: motion340/600 versus waveguard304/600; gain6pp, one-sided Fisherp=0.02135026. Death rate0.381195 versus0.488950; XP936825 versus860675; meanGlory484.82 versus358.89. Gear purchased inall600candidate games; all1200 full tapes/API scores/VM logs verified. Passed all frozen confirmation gates. This establishes an improvement on the pinned older roster; current-field transfer and broad-field guardrail remain unverified. Existing deployment is on Aaron's Optimizer, exact sameBASIC as motion-weapon:v1; no new league change from this feedback.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/motion-campaign-20260915/hosted-confirmation600/comparison.json",
+            "sha256": "5ae2dabafb572da6c69bd3fecb251f92fad0f6935077d679e880748a47960768"
+          }
+        ]
+      },
+      "B_current_field": {
+        "claim": "Current-field discovery,100games per selected policy, published2026.9.15.3 and refreshed top-nine pinned opponents: motion 54/100fort wins. Motion54/100vs waveguard52/100, one-sidedFisherp=.44369, inconclusivewin difference; not a promotion verdict. motion deathrate0.432511/alive-minute, XP106525, meanGlory353.8611, equipment100/100. All200complete replays, API scores and VM logs verified. Perclass groups contain10games and fixed teammates; do not infer a class's intrinsic weakness from this roster. Ongoing ten-cell economy screen is fixed and not tuned from these controls.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/hosted-discovery/controls-comparison.json",
+            "sha256": "4296a8ffb665e9fdd589f0b7bea5224769b6c7de2340b4b255d976d820f9bd71"
+          }
+        ]
+      },
+      "B_cadence_confirmation400": {
+        "claim": "Completed hosted confirmation against fixed current top-nine incumbents on 2026.9.15.3: 215/400 wins, v2 175/400, motion 176/400. Comparisons {'v2': {'gain': 0.1, 'p': 0.0028857634475454638, 'adverse_classes': [], 'passed': True}, 'motion': {'gain': 0.0975, 'p': 0.0035786486315362957, 'adverse_classes': [], 'passed': True}}; death rate 0.398004; XP 891200; meanGlory 989.375; class wins {'Arcanist': {'games': 40, 'wins': 11}, 'Berserker': {'games': 40, 'wins': 16}, 'Crossbowman': {'games': 40, 'wins': 29}, 'DeathKnight': {'games': 40, 'wins': 24}, 'DemonHunter': {'games': 40, 'wins': 21}, 'DruidWarden': {'games': 40, 'wins': 28}, 'Lich': {'games': 40, 'wins': 15}, 'Ranger': {'games': 40, 'wins': 32}, 'VanguardKnight': {'games': 40, 'wins': 15}, 'Warlock': {'games': 40, 'wins': 24}}. All artifacts and replay state sequences verified. Passed frozen stage gates. Fresh400/arm held-out verdict. Broad-field guardrail still required before deployment.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/hosted-confirmation/result.json",
+            "sha256": "157d85d1bf0263b80255b1cf62867be1e04ddb14ab0b3214d21c8316a7fe4948"
+          }
+        ]
+      },
+      "B_cadence_mechanism": {
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/cadence-diagnostics/result.json",
+            "sha256": "b6c54970d232fa3ba4ca8fa3cb026c96e65f3990f9f5775b2b1b6a29e9853de2"
+          }
+        ],
+        "claim": "Full replay diagnostics on all300 previously observed hosted discovery tapes: cadence21.2818 basic hits/alive-minute versus waveguard12.7807 and motion12.5764. All10 classes had a shorter dominant consecutive same-target hit interval; Crossbow17ticks versus36, Ranger9versus18, Vanguard11versus24. Of8789 post-hit walk bursts, median displacement was0, with789 moving ticks total. This supports attack-recovery timing, not effective escape movement or fresh competitive confirmation. Two candidate games had30second-plus pathing stalls at friendly tower23; navigation remains unresolved. Event samples are correlated within games; cohorts have independent seeds and fixed class/roster coupling."
+      },
+      "B_cadence_field100": {
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/field/result.json",
+            "sha256": "0105607b5daaf3ef78c561f4fe4ba88313ab90a2ee3f192fcef1bbdc3747cee5"
+          },
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/field/coverage.json",
+            "sha256": "ef6f730d9a4868a5a8081986300ecfab062f7e5c3d62bcaade617b13544a873b"
+          }
+        ],
+        "claim": "After passing the independent400-per-arm confirmation, this unchanged candidate completed100fresh sampled-current-champion games:58fort wins, deathrate0.376922/alive-minute, lifetimeXP236825, meanGlory924.685, gearin100/100. Thirteen other champion versions and59different opponent sets were represented; both owned players were excluded. Every full replay, VM, configuration, seed and score check passed. The frozen50win field guardrail passed. This is a descriptive transfer screen, not a second A/B or a guarantee of leaderboard rank."
+      },
+      "B_current_deployment": {
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/deployment/deployment-verified.json",
+            "sha256": "02d1dbd63069ba214a5ff26db03054945e490b321ed696d150716bb7000413b6"
+          }
+        ],
+        "claim": "User-authorized promotion after confirmation and field guards passed: aaron-gota-ir-cadence-all-0916:v1, immutablec5711f9d-6248-4843-ae39-bc13a4911b79, selected on Aaron's Optimizer. APIreadback verifies exactlytwo owned active competing champions: Optimizer on cadence, Aaron on waveguard-r4:v2. Future versions do not become champions automatically. League rank improvement has not yet been measured."
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Preserve the baseline visibility-filtered nearest-eligible-enemy observation and inventory accounting. Current combat and fallback intentions are specified separately; original baseline-author intent is not recovered.",
+      "provenance": "interpretation"
+    },
+    "G_capacity": {
+      "preference": "Keep baseline healing and mana support while preserving gold for persistent equipment growth. Stop buying poison in this isolated economy experiment.",
+      "provenance": "authored"
+    },
+    "G_wave": {
+      "preference": "When no observed combat target or active recovery movement exists, join an allied wave. Wave routing is retained while the combat controller is evaluated separately.",
+      "provenance": "authored"
+    },
+    "G_survival": {
+      "preference": "Preserve hero life through healing, equipment and combat decisions. Require measured deaths per alive minute to stay within the frozen evaluation guardrail. This candidate has no long emergency retreat, and one-tick recovery is not claimed to create safe separation.",
+      "provenance": "authored"
+    },
+    "G_glory": {
+      "preference": "Track win*(lifetime XP -100*simulated minutes) as a secondary objective; fort-win and survival qualification remain primary.",
+      "provenance": "authored"
+    },
+    "G_cadence": {
+      "preference": "After a confirmed basic hit, shorten attack recovery with one legal movement decision and resume attack. Seek more productive offense while preserving fort-win and survival qualification. A turn-only movement command does not satisfy an escape or separation goal.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "nearest_enemy",
+      "parameters": {}
+    },
+    "attack": {
+      "operator": "cadence_motion",
+      "parameters": {
+        "normal": 1,
+        "targeted": 0,
+        "risk_hp": 0,
+        "min_ticks": 12,
+        "max_ticks": 64,
+        "gain_tiles": 2,
+        "step_tiles": 3,
+        "threat_tiles": 7,
+        "support": 1,
+        "spells": 1,
+        "recovery_ticks": 1,
+        "all_classes": 1
+      }
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "ranged_weapon_start",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "join_wave",
+      "parameters": {
+        "fallback_x": 64,
+        "fallback_y": 64,
+        "offset_tiles": 0,
+        "stall_decisions": 48
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "always",
+      "skill": "attack",
+      "for": [
+        "G_fort",
+        "G_cadence",
+        "G_survival",
+        "G_glory"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity",
+        "G_survival"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity",
+        "G_survival"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity",
+        "G_glory"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate_no_motion",
+      "skill": "fallback",
+      "for": [
+        "G_wave"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.15.3",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 22,
+    "parent": "be14e2d1b61d552aed68016e620651792b78c8a8a74280d274df4754c9c3c739",
+    "change": "Close confirmed IR-to-BASIC-to-hosted-results-to-IR loop and record verified league deployment; behavior unchanged from evaluated upload.",
+    "needs_review": [
+      "belief/B_replay_tower_trap",
+      "goal/G_survival"
+    ],
+    "evidence": [
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-finding.json",
+        "sha256": "f4328a28d94ccaddfa214338ec9983da5ef057f9705d8d6af40c354ec821a482"
+      },
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/hosted-discovery/result.json",
+        "sha256": "bf5387486457b5047de108c4a187687af5a4345a7fa8a93e9617a694c050edef"
+      },
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/economy/screen-result.json",
+        "sha256": "b7c8ac674906d8268214dc7cbcb44f5001dddb2aceab58d5fab590a9bce8cf0d"
+      },
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/hosted-discovery/result.json",
+        "sha256": "38a5f430ee12ce6f03ec2ab3d8c7a2154575f6508a1c3af02a5681b42f91af23"
+      },
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/hosted-confirmation/result.json",
+        "sha256": "157d85d1bf0263b80255b1cf62867be1e04ddb14ab0b3214d21c8316a7fe4948"
+      },
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/cadence-diagnostics/aligned-feedback/policy.ir.json",
+        "sha256": "2c594142a9af89471c60713afb1e471a594970545fe9e2cebe4e6ada01697970"
+      },
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/field/result.json",
+        "sha256": "0105607b5daaf3ef78c561f4fe4ba88313ab90a2ee3f192fcef1bbdc3747cee5"
+      },
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/field/coverage.json",
+        "sha256": "ef6f730d9a4868a5a8081986300ecfab062f7e5c3d62bcaade617b13544a873b"
+      },
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/cadence-cycle/deployment/deployment-verified.json",
+        "sha256": "02d1dbd63069ba214a5ff26db03054945e490b321ed696d150716bb7000413b6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "summary": "The coach reviews match replay footage between 'Aaron's Co-play Coach' and 'richard' (richard-gods-of-the-arena-v135) to diagnose why Richard's policy consistently wins. The coach observes that Richard's units group together into a 4- to 5-unit formation, hover and circle around the perimeter of the enemy base looking for openings, and exploit opponent dispersion to execute high-strength collective assaults. The coach advises adopting coordinated team grouping, avoiding splitting up during critical phases, and committing to unified team attacks.",
+  "moments": [
+    {
+      "start_ms": 1230,
+      "end_ms": 12180,
+      "observation": "The coach reviews the episode scoreboard where Richard's policy defeated Aaron's policy 1-0, loads the replay, and establishes the goal of understanding Richard's strategic dominance.",
+      "coaching_intent": "Direct focus toward analyzing Richard's macro-strategy and coordination patterns across the match.",
+      "uncertainty": "The coach has not yet isolated specific mechanics or conditions, presenting an initial hypothesis.",
+      "evidence_ids": [
+        "speech-0",
+        "speech-1",
+        "input-6",
+        "input-211",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 26450,
+      "end_ms": 50630,
+      "observation": "In the replay, Richard's units assemble into a concentrated group outside the enemy base, circling the perimeter chokepoints together to probe for an entry rather than initiating isolated dives.",
+      "coaching_intent": "Encourage adopting a perimeter hovering and probing pattern where the entire team clusters and circles the base entrance together before pushing.",
+      "uncertainty": "Exact target selection and trigger thresholds for moving from probing to breaching the base perimeter are not explicitly quantified.",
+      "evidence_ids": [
+        "speech-4",
+        "speech-5",
+        "speech-6",
+        "speech-7",
+        "input-373",
+        "input-431",
+        "input-500",
+        "input-605",
+        "input-628",
+        "input-655",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 54850,
+      "end_ms": 72490,
+      "observation": "Richard's 4- to 5-player deathball repeatedly overwhelms opposing units who are caught isolated or spread across different areas of the map.",
+      "coaching_intent": "Advise against unit dispersion; emphasize that clustering all units concentrates combat strength and easily punishes spread-out defenders.",
+      "uncertainty": "Whether all unit roles are expected to cluster or whether vision/flanking roles exist is unstated.",
+      "evidence_ids": [
+        "speech-8",
+        "speech-9",
+        "speech-10",
+        "speech-11",
+        "input-757",
+        "input-779",
+        "input-864",
+        "input-895",
+        "input-906",
+        "input-964",
+        "input-968",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 72950,
+      "end_ms": 80030,
+      "observation": "The coach summarizes the primary tactical rule: units must not split up when executing late-game objectives, but instead gather together to deliver a decisive collective attack.",
+      "coaching_intent": "Formulate a policy rule disallowing splitting up during late-game attack timing and enforcing a synchronized team assault.",
+      "uncertainty": "The exact timing window ('when it's time') relies on game phase or tower/health criteria that must be verified in the game engine.",
+      "evidence_ids": [
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "input-999",
+        "input-1008",
+        "input-1030",
+        "input-1074",
+        "video"
+      ]
+    }
+  ],
+  "ir_proposals": [
+    {
+      "layer": "situation",
+      "change": "Define spatial predicates 'allies_concentrated(radius, min_count=4)', 'enemy_spread_out(dispersion_threshold)', and 'near_base_perimeter(target_base)'.",
+      "rationale": "The coach identifies that Richard's strategy succeeds because 4 to 5 units group up together and exploit the opponent's dispersion while circling the base perimeter.",
+      "verification": "Compute mutual Euclidean distances between all surviving friendly agents; verify 'allies_concentrated' evaluates to true when at least 4 units remain within the clustering radius.",
+      "evidence_ids": [
+        "speech-4",
+        "speech-6",
+        "speech-8",
+        "speech-9",
+        "video"
+      ]
+    },
+    {
+      "layer": "belief",
+      "change": "Maintain a belief state 'team_assault_readiness' that tracks whether the allied unit cluster is sufficiently gathered and ready for objective engagement versus currently scattered.",
+      "rationale": "Units should not commit to dangerous base approaches alone; they require a belief estimate indicating whether the full squad has assembled.",
+      "verification": "In replay simulations, check that 'team_assault_readiness' transitions to true only once 4-5 units converge near the staging area.",
+      "evidence_ids": [
+        "speech-8",
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "video"
+      ]
+    },
+    {
+      "layer": "skill",
+      "change": "Implement a collective skill 'GroupProbeAndCircleBase' that moves allied units around the exterior boundary of the enemy base in mutual proximity without penetrating defensive choke points alone.",
+      "rationale": "Richard's units do not immediately dive towers; they circle outside the base looking for entries while maintaining cohesive group formation.",
+      "verification": "Evaluate agent pathing when outside the enemy base; ensure agents navigate along waypoint rings around the base perimeter while maintaining inter-unit distances below the scatter threshold.",
+      "evidence_ids": [
+        "speech-4",
+        "speech-5",
+        "speech-6",
+        "speech-7",
+        "video"
+      ]
+    },
+    {
+      "layer": "skill",
+      "change": "Implement 'SynchronizedTeamAssault' skill initiating simultaneous advance into the enemy base toward towers and core structures once gathered.",
+      "rationale": "The coach specifies that when it is time to attack, all units must come together to make a unified final attack rather than attacking sequentially.",
+      "verification": "Verify that attack commands are dispatched synchronously to all grouped agents when entering the base, terminating only upon target destruction, retreat trigger, or unit loss.",
+      "evidence_ids": [
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "video"
+      ]
+    },
+    {
+      "layer": "strategy",
+      "change": "Add strategy rule: WHEN near_base_perimeter AND NOT allies_concentrated PREFER RallyToTeam; WHEN near_base_perimeter AND allies_concentrated AND NOT ready_for_breach PREFER GroupProbeAndCircleBase; WHEN near_base_perimeter AND allies_concentrated AND ready_for_breach PREFER SynchronizedTeamAssault.",
+      "rationale": "Prevents individual agents from splitting off or diving solo, enforcing the team-wide grouping and coordinated assault behavior observed in Richard's policy.",
+      "verification": "Run ablation experiments comparing the policy with and without the grouping constraint; verify zero solo base breaches occur when allies are dispersed.",
+      "evidence_ids": [
+        "speech-8",
+        "speech-9",
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "video"
+      ]
+    },
+    {
+      "layer": "execution",
+      "change": "Enforce a formation tether in the low-level movement controller that restricts agent departure velocities if distance to the team centroid exceeds the allowable grouping radius.",
+      "rationale": "Ensures agents do not wander off or split up during navigation and perimeter circling.",
+      "verification": "Measure inter-agent distance variance during transit; confirm agents slow or redirect toward the group centroid if separation exceeds threshold.",
+      "evidence_ids": [
+        "speech-4",
+        "speech-13",
+        "video"
+      ]
+    }
+  ],
+  "questions": [
+    "What specific radius or distance metric defines whether 4 to 5 units are considered sufficiently grouped in this arena environment?",
+    "What specific trigger indicates that 'it's time' for the probing behavior to convert into the final base attack (e.g., enemy unit pick-off, minion wave arrival, or health advantage)?"
+  ]
+}

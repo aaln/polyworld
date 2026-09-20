@@ -1,0 +1,529 @@
+{
+  "schema": "gota-repair-ledger/1",
+  "as_of": "2026-09-20T17:22:40.912431+00:00",
+  "deployed_basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+  "exact_richard_version": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+  "exact_alex_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+  "current_richard_control": {
+    "red": {
+      "n": 40,
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "request": "xreq_ec588afb-b51a-42ea-8d73-a29bc9008371",
+      "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-counter-20260920/hosted/baseline/parent/red/result.json",
+      "evidence_sha256": "2ae36034cb7db43b07caab345f0617340a2b1ecfaf7612ad5877e12024ecafb7"
+    },
+    "blue": {
+      "n": 40,
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "request": "xreq_ddd8c797-b23b-4756-9c78-70523473d3b0",
+      "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-counter-20260920/hosted/baseline/parent/blue/result.json",
+      "evidence_sha256": "a60f9a1e1d4bbd4dc0c52c08dcce729b70705ed119247f6de4a90692535a888e"
+    }
+  },
+  "repairs": [
+    {
+      "repair": "40-tile critical recall",
+      "hosted": {
+        "red": {
+          "n": 4,
+          "wins": 0,
+          "losses": 4,
+          "draws": 0,
+          "request": "xreq_9e50f4d8-6b10-4e4c-b9dd-badb7036201b",
+          "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-counter-20260920/hosted/screen/critical40/red/result.json",
+          "evidence_sha256": "c71c47233ff4f5348aaef30c097d9734b387b044f8c8fe98cab2b77ea65d8b20"
+        },
+        "blue": {
+          "n": 4,
+          "wins": 2,
+          "losses": 2,
+          "draws": 0,
+          "request": "xreq_552b65bb-41fc-4e02-9538-e02de5ec9745",
+          "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-counter-20260920/hosted/screen/critical40/blue/result.json",
+          "evidence_sha256": "c2102c0e2744827cb525d6628d35666e9801d2eed527b28801361ff7526f67f3"
+        }
+      },
+      "verdict": "Small Richard screen: red 0/4, blue 2/4. Insufficient; no promotion."
+    },
+    {
+      "repair": "60-tile critical recall",
+      "hosted": {
+        "red": {
+          "n": 4,
+          "wins": 0,
+          "losses": 4,
+          "draws": 0,
+          "request": "xreq_6df54983-d6d2-46e8-a246-f716ab53b3cf",
+          "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-counter-20260920/hosted/screen/critical60/red/result.json",
+          "evidence_sha256": "e408378d6508b317c5abed0809b938fdfc3157bd60d8e74e9326ff002f952bae"
+        },
+        "blue": {
+          "n": 4,
+          "wins": 4,
+          "losses": 0,
+          "draws": 0,
+          "request": "xreq_f9304a60-ca10-4843-bb32-e91dd70fde89",
+          "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-counter-20260920/hosted/screen/critical60/blue/result.json",
+          "evidence_sha256": "eb8cecdfa16e496bd9ac04bb8431560fc0782f5f159ab3b9c20b8dd0b55d3938"
+        }
+      },
+      "local": {
+        "metrics": {
+          "deployed": {
+            "games": 12,
+            "wins": 6,
+            "deaths": 61,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.4238870792616721,
+            "opponents": {
+              "accepted": 1,
+              "default": 2,
+              "blue_repair": 1,
+              "support_anchor": 1,
+              "deployed": 1,
+              "center_proxy": 0
+            },
+            "colors": {
+              "0": 1,
+              "1": 5
+            }
+          },
+          "critical60": {
+            "games": 12,
+            "wins": 1,
+            "deaths": 329,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.5009564232624978,
+            "opponents": {
+              "accepted": 0,
+              "default": 1,
+              "blue_repair": 0,
+              "support_anchor": 0,
+              "deployed": 0,
+              "center_proxy": 0
+            },
+            "colors": {
+              "0": 0,
+              "1": 1
+            }
+          },
+          "middle_warlock": {
+            "games": 12,
+            "wins": 1,
+            "deaths": 310,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.5114913685831551,
+            "opponents": {
+              "accepted": 0,
+              "default": 1,
+              "blue_repair": 0,
+              "support_anchor": 0,
+              "deployed": 0,
+              "center_proxy": 0
+            },
+            "colors": {
+              "0": 0,
+              "1": 1
+            }
+          }
+        },
+        "evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/screen/result.json",
+        "evidence_sha256": "61c5f8a2ac916fd7b483ea524808c40211291a69f2fa571812468f83f0aada2d",
+        "scope": "Owned-program local games only; no Richard or Alex transfer claim."
+      },
+      "verdict": "Richard blue 4/4, red 0/4; local 1/12 versus deployed 6/12, deaths 329 versus 61. Reject this broad variant."
+    },
+    {
+      "repair": "Red weapon-first equipment",
+      "hosted": {
+        "red": {
+          "n": 4,
+          "wins": 0,
+          "losses": 4,
+          "draws": 0,
+          "request": "xreq_62315980-8e75-4052-a1a6-d8bd74fed7fe",
+          "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-counter-20260920/hosted/screen/weapon/red/result.json",
+          "evidence_sha256": "d7c313aaf873afe3b0ceae19122caefc6eaf98df395da43dbf0104d506ebb23f"
+        }
+      },
+      "verdict": "Richard red 0/4. No gain in this screen; no promotion."
+    },
+    {
+      "repair": "Static middle Warlock plus critical recall",
+      "local": {
+        "metrics": {
+          "deployed": {
+            "games": 12,
+            "wins": 6,
+            "deaths": 61,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.4238870792616721,
+            "opponents": {
+              "accepted": 1,
+              "default": 2,
+              "blue_repair": 1,
+              "support_anchor": 1,
+              "deployed": 1,
+              "center_proxy": 0
+            },
+            "colors": {
+              "0": 1,
+              "1": 5
+            }
+          },
+          "critical60": {
+            "games": 12,
+            "wins": 1,
+            "deaths": 329,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.5009564232624978,
+            "opponents": {
+              "accepted": 0,
+              "default": 1,
+              "blue_repair": 0,
+              "support_anchor": 0,
+              "deployed": 0,
+              "center_proxy": 0
+            },
+            "colors": {
+              "0": 0,
+              "1": 1
+            }
+          },
+          "middle_warlock": {
+            "games": 12,
+            "wins": 1,
+            "deaths": 310,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.5114913685831551,
+            "opponents": {
+              "accepted": 0,
+              "default": 1,
+              "blue_repair": 0,
+              "support_anchor": 0,
+              "deployed": 0,
+              "center_proxy": 0
+            },
+            "colors": {
+              "0": 0,
+              "1": 1
+            }
+          }
+        },
+        "evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/screen/result.json",
+        "evidence_sha256": "61c5f8a2ac916fd7b483ea524808c40211291a69f2fa571812468f83f0aada2d",
+        "scope": "Owned-program local games only; no Richard or Alex transfer claim."
+      },
+      "verdict": "1/12 local wins versus 6/12 deployed, deaths 310 versus 61. Reject the exact combination."
+    },
+    {
+      "repair": "One-time red caster transit",
+      "local": {
+        "metrics": {
+          "deployed": {
+            "games": 32,
+            "wins": 16,
+            "deaths": 206,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.4937153813378781,
+            "opponents": {
+              "accepted": 2,
+              "default": 4,
+              "blue_repair": 2,
+              "support_anchor": 2,
+              "deployed": 2,
+              "center_proxy": 0,
+              "sentry_inward": 2,
+              "readiness": 2
+            },
+            "colors": {
+              "0": 2,
+              "1": 14
+            }
+          },
+          "casters": {
+            "games": 32,
+            "wins": 30,
+            "deaths": 190,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.5196739122176552,
+            "opponents": {
+              "accepted": 4,
+              "default": 4,
+              "blue_repair": 4,
+              "support_anchor": 4,
+              "deployed": 4,
+              "center_proxy": 2,
+              "sentry_inward": 4,
+              "readiness": 4
+            },
+            "colors": {
+              "0": 16,
+              "1": 14
+            }
+          }
+        },
+        "evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/confirmation/result.json",
+        "evidence_sha256": "cb861ccee67aade1fb8193c05a96372176944c80348d4a2e6a3f620334000348",
+        "scope": "Owned-program local games only; no Richard or Alex transfer claim."
+      },
+      "hosted": {
+        "parent-red": {
+          "n": 40,
+          "wins": 40,
+          "losses": 0,
+          "draws": 0,
+          "request": "xreq_a6b132f3-9ca3-4967-82b2-f7d2ebe35ebd",
+          "evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/parent-red/result.json",
+          "evidence_sha256": "f1f5b17ff45a7778d1099d5947d2a03bea334dc674f62a1b2cd8e5af84bca320"
+        },
+        "parent-blue": {
+          "n": 40,
+          "wins": 40,
+          "losses": 0,
+          "draws": 0,
+          "request": "xreq_64893c9d-661a-4c5e-ab6c-474992e58263",
+          "evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/parent-blue/result.json",
+          "evidence_sha256": "2649785670657e5cc6ed3ea500a734e2e5e03ccd49d2f5d6a164b0396acc77dc"
+        },
+        "richard135-red": {
+          "n": 40,
+          "wins": 0,
+          "losses": 40,
+          "draws": 0,
+          "request": "xreq_4454b448-18af-483d-874f-f8dc0cd3e378",
+          "evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/richard135-red/result.json",
+          "evidence_sha256": "53d3df1e397137de500db4b366b8b4f7b506e422500f4a2ad61151aae34967d4"
+        }
+      },
+      "verdict": "Local 30/32 versus 16/32; hosted accepted-ancestor 40/40 both colors, Richard135 red 0/40. Useful local component; insufficient target repair."
+    },
+    {
+      "repair": "Transit plus 240-tick blue response",
+      "local": {
+        "metrics": {
+          "deployed": {
+            "games": 16,
+            "wins": 8,
+            "deaths": 103,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.4937153813378781,
+            "opponents": {
+              "accepted": 1,
+              "default": 2,
+              "blue_repair": 1,
+              "support_anchor": 1,
+              "deployed": 1,
+              "center_proxy": 0,
+              "sentry_inward": 1,
+              "readiness": 1
+            },
+            "colors": {
+              "0": 1,
+              "1": 7
+            }
+          },
+          "transit_reference": {
+            "games": 16,
+            "wins": 15,
+            "deaths": 96,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.5252618900156925,
+            "opponents": {
+              "accepted": 2,
+              "default": 2,
+              "blue_repair": 2,
+              "support_anchor": 2,
+              "deployed": 2,
+              "center_proxy": 1,
+              "sentry_inward": 2,
+              "readiness": 2
+            },
+            "colors": {
+              "0": 8,
+              "1": 7
+            }
+          },
+          "pair240": {
+            "games": 16,
+            "wins": 9,
+            "deaths": 193,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.8171233682229802,
+            "opponents": {
+              "accepted": 1,
+              "default": 2,
+              "blue_repair": 1,
+              "support_anchor": 1,
+              "deployed": 1,
+              "center_proxy": 1,
+              "sentry_inward": 1,
+              "readiness": 1
+            },
+            "colors": {
+              "0": 8,
+              "1": 1
+            }
+          },
+          "pair720": {
+            "games": 16,
+            "wins": 9,
+            "deaths": 261,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.915976954347381,
+            "opponents": {
+              "accepted": 1,
+              "default": 2,
+              "blue_repair": 1,
+              "support_anchor": 1,
+              "deployed": 1,
+              "center_proxy": 1,
+              "sentry_inward": 1,
+              "readiness": 1
+            },
+            "colors": {
+              "0": 8,
+              "1": 1
+            }
+          }
+        },
+        "evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/scoped_core_response_v3/screen/result.json",
+        "evidence_sha256": "321d85178c851854da7be77ffbeb6e9b796712b41599a8f46b1f8314ff14bb4b",
+        "scope": "Owned-program local games only; no Richard or Alex transfer claim."
+      },
+      "verdict": "9/16 versus transit 15/16; blue 1/8 versus 7/8 and deaths 193 versus deployed 103. Reject."
+    },
+    {
+      "repair": "Transit plus 720-tick blue response",
+      "local": {
+        "metrics": {
+          "deployed": {
+            "games": 16,
+            "wins": 8,
+            "deaths": 103,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.4937153813378781,
+            "opponents": {
+              "accepted": 1,
+              "default": 2,
+              "blue_repair": 1,
+              "support_anchor": 1,
+              "deployed": 1,
+              "center_proxy": 0,
+              "sentry_inward": 1,
+              "readiness": 1
+            },
+            "colors": {
+              "0": 1,
+              "1": 7
+            }
+          },
+          "transit_reference": {
+            "games": 16,
+            "wins": 15,
+            "deaths": 96,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.5252618900156925,
+            "opponents": {
+              "accepted": 2,
+              "default": 2,
+              "blue_repair": 2,
+              "support_anchor": 2,
+              "deployed": 2,
+              "center_proxy": 1,
+              "sentry_inward": 2,
+              "readiness": 2
+            },
+            "colors": {
+              "0": 8,
+              "1": 7
+            }
+          },
+          "pair240": {
+            "games": 16,
+            "wins": 9,
+            "deaths": 193,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.8171233682229802,
+            "opponents": {
+              "accepted": 1,
+              "default": 2,
+              "blue_repair": 1,
+              "support_anchor": 1,
+              "deployed": 1,
+              "center_proxy": 1,
+              "sentry_inward": 1,
+              "readiness": 1
+            },
+            "colors": {
+              "0": 8,
+              "1": 1
+            }
+          },
+          "pair720": {
+            "games": 16,
+            "wins": 9,
+            "deaths": 261,
+            "all_gear": true,
+            "deaths_per_live_decision_minute": 0.915976954347381,
+            "opponents": {
+              "accepted": 1,
+              "default": 2,
+              "blue_repair": 1,
+              "support_anchor": 1,
+              "deployed": 1,
+              "center_proxy": 1,
+              "sentry_inward": 1,
+              "readiness": 1
+            },
+            "colors": {
+              "0": 8,
+              "1": 1
+            }
+          }
+        },
+        "evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/scoped_core_response_v3/screen/result.json",
+        "evidence_sha256": "321d85178c851854da7be77ffbeb6e9b796712b41599a8f46b1f8314ff14bb4b",
+        "scope": "Owned-program local games only; no Richard or Alex transfer claim."
+      },
+      "verdict": "9/16 versus transit 15/16; blue 1/8 versus 7/8 and deaths 261 versus deployed 103. Reject."
+    },
+    {
+      "repair": "Restore anchored idle caster support",
+      "local_metrics": {
+        "games": 6,
+        "wins": 3,
+        "red_wins": 0,
+        "blue_wins": 3,
+        "deaths": 25,
+        "all_gear": true
+      },
+      "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/REPORT.md",
+      "verdict": "3/6, matching deployed; every game command identical. No expanded support in all three red games. Reject standalone restoration."
+    },
+    {
+      "repair": "Restore unanchored idle caster support",
+      "local_metrics": {
+        "games": 6,
+        "wins": 3,
+        "red_wins": 0,
+        "blue_wins": 3,
+        "deaths": 25,
+        "all_gear": true
+      },
+      "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/REPORT.md",
+      "verdict": "3/6, matching deployed; every game command identical. No expanded support in all three red games. Reject standalone restoration."
+    }
+  ],
+  "jointly_qualified_repair": null,
+  "limitations": [
+    "Local opponents are owned references, not private target policies.",
+    "Four-game screens are directional only.",
+    "The 40 Richard transit losses share one complete command trajectory.",
+    "None of these repairs has fresh joint Richard/Alex/Jordan and field qualification."
+  ]
+}

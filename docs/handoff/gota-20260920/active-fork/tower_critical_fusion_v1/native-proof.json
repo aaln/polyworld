@@ -1,0 +1,603 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "name": "component/focus/0/0/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/0/0/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/0/0",
+      "passed": true
+    },
+    {
+      "name": "component/focus/0/1/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/0/1/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/0/1",
+      "passed": true
+    },
+    {
+      "name": "component/focus/0/2/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/0/2/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/0/2",
+      "passed": true
+    },
+    {
+      "name": "component/focus/0/3/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/0/3/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/0/3",
+      "passed": true
+    },
+    {
+      "name": "component/focus/0/4/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/0/4/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/0/4",
+      "passed": true
+    },
+    {
+      "name": "component/focus/1/0/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/1/0/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/1/0",
+      "passed": false
+    },
+    {
+      "name": "component/focus/1/1/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/1/1/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/1/1",
+      "passed": false
+    },
+    {
+      "name": "component/focus/1/2/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/1/2/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/1/2",
+      "passed": false
+    },
+    {
+      "name": "component/focus/1/3/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/1/3/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/1/3",
+      "passed": false
+    },
+    {
+      "name": "component/focus/1/4/32",
+      "passed": true
+    },
+    {
+      "name": "component/focus/1/4/240",
+      "passed": true
+    },
+    {
+      "name": "component/dense-no-tower/1/4",
+      "passed": false
+    },
+    {
+      "name": "component/healthy",
+      "passed": true
+    },
+    {
+      "name": "component/near-finish",
+      "passed": true
+    },
+    {
+      "name": "component/target-other",
+      "passed": true
+    },
+    {
+      "name": "component/dead-tower",
+      "passed": true
+    },
+    {
+      "name": "component/no-creep",
+      "passed": true
+    },
+    {
+      "name": "component/late-creep",
+      "passed": true
+    },
+    {
+      "name": "component/no-walkable",
+      "passed": true
+    },
+    {
+      "name": "component/target-handoff",
+      "passed": true
+    },
+    {
+      "name": "component/missing-tower",
+      "passed": true
+    },
+    {
+      "name": "component/failed-walk",
+      "passed": true
+    },
+    {
+      "name": "component/deadline",
+      "passed": true
+    },
+    {
+      "name": "component/decision-gap",
+      "passed": true
+    },
+    {
+      "name": "component/persistent-destination",
+      "passed": true
+    },
+    {
+      "name": "alarm-equivalence/0/0",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/0/0",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/0/0",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/0/0",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/0/0",
+      "passed": true
+    },
+    {
+      "name": "far-actions/0/0",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/0/0",
+      "passed": true
+    },
+    {
+      "name": "alarm-equivalence/0/1",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/0/1",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/0/1",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/0/1",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/0/1",
+      "passed": true
+    },
+    {
+      "name": "far-actions/0/1",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/0/1",
+      "passed": true
+    },
+    {
+      "name": "alarm-equivalence/0/2",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/0/2",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/0/2",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/0/2",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/0/2",
+      "passed": true
+    },
+    {
+      "name": "far-actions/0/2",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/0/2",
+      "passed": true
+    },
+    {
+      "name": "alarm-equivalence/0/3",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/0/3",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/0/3",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/0/3",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/0/3",
+      "passed": true
+    },
+    {
+      "name": "far-actions/0/3",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/0/3",
+      "passed": true
+    },
+    {
+      "name": "alarm-equivalence/0/4",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/0/4",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/0/4",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/0/4",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/0/4",
+      "passed": true
+    },
+    {
+      "name": "far-actions/0/4",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/0/4",
+      "passed": true
+    },
+    {
+      "name": "alarm-equivalence/1/0",
+      "passed": true
+    },
+    {
+      "name": "positive/0",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/1/0",
+      "passed": true
+    },
+    {
+      "name": "negative/absent/0",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/1/0",
+      "passed": true
+    },
+    {
+      "name": "negative/dead/0",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/1/0",
+      "passed": true
+    },
+    {
+      "name": "negative/friendly/0",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/1/0",
+      "passed": true
+    },
+    {
+      "name": "negative/unanchored/0",
+      "passed": true
+    },
+    {
+      "name": "far-actions/1/0",
+      "passed": true
+    },
+    {
+      "name": "negative/far/0",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/1/0",
+      "passed": true
+    },
+    {
+      "name": "expiry/0",
+      "passed": true
+    },
+    {
+      "name": "alarm-equivalence/1/1",
+      "passed": true
+    },
+    {
+      "name": "positive/1",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/1/1",
+      "passed": true
+    },
+    {
+      "name": "negative/absent/1",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/1/1",
+      "passed": true
+    },
+    {
+      "name": "negative/dead/1",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/1/1",
+      "passed": true
+    },
+    {
+      "name": "negative/friendly/1",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/1/1",
+      "passed": true
+    },
+    {
+      "name": "negative/unanchored/1",
+      "passed": true
+    },
+    {
+      "name": "far-actions/1/1",
+      "passed": true
+    },
+    {
+      "name": "negative/far/1",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/1/1",
+      "passed": true
+    },
+    {
+      "name": "expiry/1",
+      "passed": false
+    },
+    {
+      "name": "alarm-equivalence/1/2",
+      "passed": true
+    },
+    {
+      "name": "positive/2",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/1/2",
+      "passed": true
+    },
+    {
+      "name": "negative/absent/2",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/1/2",
+      "passed": true
+    },
+    {
+      "name": "negative/dead/2",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/1/2",
+      "passed": true
+    },
+    {
+      "name": "negative/friendly/2",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/1/2",
+      "passed": true
+    },
+    {
+      "name": "negative/unanchored/2",
+      "passed": true
+    },
+    {
+      "name": "far-actions/1/2",
+      "passed": true
+    },
+    {
+      "name": "negative/far/2",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/1/2",
+      "passed": true
+    },
+    {
+      "name": "expiry/2",
+      "passed": true
+    },
+    {
+      "name": "alarm-equivalence/1/3",
+      "passed": true
+    },
+    {
+      "name": "positive/3",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/1/3",
+      "passed": true
+    },
+    {
+      "name": "negative/absent/3",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/1/3",
+      "passed": true
+    },
+    {
+      "name": "negative/dead/3",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/1/3",
+      "passed": true
+    },
+    {
+      "name": "negative/friendly/3",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/1/3",
+      "passed": true
+    },
+    {
+      "name": "negative/unanchored/3",
+      "passed": true
+    },
+    {
+      "name": "far-actions/1/3",
+      "passed": true
+    },
+    {
+      "name": "negative/far/3",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/1/3",
+      "passed": true
+    },
+    {
+      "name": "expiry/3",
+      "passed": true
+    },
+    {
+      "name": "alarm-equivalence/1/4",
+      "passed": true
+    },
+    {
+      "name": "positive/4",
+      "passed": true
+    },
+    {
+      "name": "absent-actions/1/4",
+      "passed": true
+    },
+    {
+      "name": "negative/absent/4",
+      "passed": true
+    },
+    {
+      "name": "dead-actions/1/4",
+      "passed": true
+    },
+    {
+      "name": "negative/dead/4",
+      "passed": true
+    },
+    {
+      "name": "friendly-actions/1/4",
+      "passed": true
+    },
+    {
+      "name": "negative/friendly/4",
+      "passed": true
+    },
+    {
+      "name": "unanchored-actions/1/4",
+      "passed": true
+    },
+    {
+      "name": "negative/unanchored/4",
+      "passed": true
+    },
+    {
+      "name": "far-actions/1/4",
+      "passed": true
+    },
+    {
+      "name": "negative/far/4",
+      "passed": true
+    },
+    {
+      "name": "dense-actions/1/4",
+      "passed": true
+    },
+    {
+      "name": "expiry/4",
+      "passed": false
+    }
+  ],
+  "completed_decisions": 12529,
+  "max_instructions": 19145,
+  "max_work": 30906,
+  "captures_sha256": "95a21df1e653a0e2f072b8854407599fc466a26730d0c3d3c840f9dc1c51f367",
+  "vm_sha256": "9cd47c5cd8477b4c2ef372e3c6f28a01b9c09d36abd8b952b18eac2a991ab4a6",
+  "scope": "Native component commands, critical alarm boundaries and runtime; not gameplay qualification."
+}

@@ -1,0 +1,257 @@
+{
+  "frozen_at": "2026-09-20T04:02:30.957942+00:00",
+  "parameters": {
+    "minimum_segment_ticks": 6,
+    "opportunity_radius_tiles": 12,
+    "low_hp_absolute": 100,
+    "motion_min_world_units": 1000,
+    "radial_cosine_threshold": 0.35,
+    "local_route_check_tiles": 2
+  },
+  "models": {
+    "train": {
+      "contexts": {
+        "mask_1_low_0": {
+          "target_hero": 387,
+          "advance": 24,
+          "hold": 184,
+          "withdraw": 37
+        },
+        "mask_1_low_1": {
+          "target_hero": 14,
+          "hold": 1,
+          "lateral": 3,
+          "advance": 2
+        },
+        "mask_2_low_0": {
+          "target_creep": 518,
+          "advance": 6,
+          "hold": 26,
+          "withdraw": 5
+        },
+        "mask_2_low_1": {
+          "target_creep": 2
+        },
+        "mask_3_low_0": {
+          "target_hero": 219,
+          "hold": 146,
+          "withdraw": 64,
+          "target_creep": 118,
+          "advance": 6
+        },
+        "mask_3_low_1": {
+          "target_hero": 17,
+          "hold": 20,
+          "withdraw": 32,
+          "advance": 5,
+          "target_creep": 1
+        },
+        "mask_4_low_0": {
+          "target_structure": 18,
+          "advance": 17,
+          "hold": 18,
+          "lateral": 1
+        },
+        "mask_4_low_1": {
+          "lateral": 2,
+          "hold": 11
+        },
+        "mask_5_low_0": {
+          "target_hero": 649,
+          "target_structure": 228,
+          "hold": 313,
+          "withdraw": 72,
+          "advance": 68,
+          "lateral": 27
+        },
+        "mask_5_low_1": {
+          "hold": 31,
+          "withdraw": 22,
+          "target_hero": 24,
+          "target_structure": 3,
+          "lateral": 1,
+          "advance": 1
+        },
+        "mask_6_low_0": {
+          "target_creep": 201,
+          "hold": 31,
+          "target_structure": 14,
+          "withdraw": 16,
+          "advance": 5
+        },
+        "mask_7_low_0": {
+          "target_creep": 136,
+          "target_hero": 360,
+          "target_structure": 37,
+          "hold": 93,
+          "withdraw": 30,
+          "lateral": 6,
+          "advance": 15
+        },
+        "mask_7_low_1": {
+          "target_structure": 4,
+          "target_hero": 1,
+          "withdraw": 5,
+          "lateral": 2,
+          "advance": 1,
+          "hold": 1
+        }
+      },
+      "global": {
+        "target_creep": 976,
+        "target_hero": 1671,
+        "target_structure": 304,
+        "hold": 875,
+        "withdraw": 283,
+        "advance": 150,
+        "lateral": 42
+      },
+      "smoothing": "Laplace +1 over estimated available skills; context backs off globally if n<8"
+    },
+    "population": {
+      "contexts": {
+        "mask_0_low_0": {
+          "advance": 4
+        },
+        "mask_1_low_0": {
+          "advance": 51,
+          "target_hero": 345,
+          "withdraw": 10,
+          "lateral": 19,
+          "hold": 31
+        },
+        "mask_1_low_1": {
+          "lateral": 7,
+          "target_hero": 17,
+          "hold": 12,
+          "withdraw": 10,
+          "advance": 3
+        },
+        "mask_2_low_0": {
+          "target_creep": 1107,
+          "hold": 3,
+          "advance": 5
+        },
+        "mask_2_low_1": {
+          "target_creep": 17
+        },
+        "mask_3_low_0": {
+          "target_creep": 970,
+          "target_hero": 502,
+          "hold": 13,
+          "withdraw": 9,
+          "lateral": 6,
+          "advance": 24
+        },
+        "mask_3_low_1": {
+          "target_creep": 35,
+          "target_hero": 21,
+          "withdraw": 2,
+          "hold": 4,
+          "advance": 7
+        },
+        "mask_4_low_0": {
+          "target_structure": 137,
+          "hold": 31,
+          "withdraw": 6,
+          "advance": 8,
+          "lateral": 2
+        },
+        "mask_5_low_0": {
+          "target_structure": 42,
+          "target_hero": 263,
+          "hold": 19,
+          "withdraw": 6,
+          "lateral": 1,
+          "advance": 7
+        },
+        "mask_5_low_1": {
+          "advance": 4,
+          "hold": 3,
+          "target_hero": 9,
+          "target_structure": 2,
+          "withdraw": 8
+        },
+        "mask_6_low_0": {
+          "target_structure": 104,
+          "target_creep": 435,
+          "hold": 10,
+          "withdraw": 4,
+          "advance": 3
+        },
+        "mask_6_low_1": {
+          "target_creep": 1
+        },
+        "mask_7_low_0": {
+          "target_creep": 171,
+          "target_hero": 81,
+          "target_structure": 21,
+          "hold": 6,
+          "advance": 3,
+          "withdraw": 2,
+          "lateral": 3
+        },
+        "mask_7_low_1": {
+          "target_hero": 9,
+          "hold": 6,
+          "advance": 3,
+          "target_creep": 13,
+          "lateral": 1,
+          "withdraw": 2
+        }
+      },
+      "global": {
+        "target_creep": 2749,
+        "target_hero": 1247,
+        "target_structure": 306,
+        "advance": 122,
+        "hold": 138,
+        "withdraw": 59,
+        "lateral": 39
+      },
+      "smoothing": "Laplace +1 over estimated available skills; context backs off globally if n<8"
+    }
+  },
+  "training_episode_ids": [
+    "ereq_354100a3-f8be-435e-bde3-d7be87494b0f",
+    "ereq_3a830277-104c-47df-b45f-475f84adcbba",
+    "ereq_c2933955-7e74-446e-944b-ef5c0ecdde47",
+    "ereq_e7b7f449-8e52-4d27-be42-261fad9163c6",
+    "ereq_975636fd-c5ad-487c-b47a-dbc39dfbb70e",
+    "ereq_07b5c418-f0ce-4348-bd40-8e91e5edcf4f",
+    "ereq_904838da-3238-4764-9fc2-9e912246dd62",
+    "ereq_3a7eea10-dea5-4b06-84dc-be73bab020df",
+    "ereq_14ec8ca3-a9df-4e18-acad-14163acec3c7",
+    "ereq_e3bf4a52-1935-4b75-b94f-6029e4147b3f",
+    "ereq_66edaa67-cd21-4285-b307-138a47fdfa0b",
+    "ereq_e1244430-5891-46d5-9b54-b00a6614bc00",
+    "ereq_4765ba8a-5b2d-41a3-b201-bceb14fe834a",
+    "ereq_0220487d-49f6-4b09-b232-f94a83ccc39e",
+    "ereq_28ab1bf0-cfda-4dba-b485-0873cb40baaf",
+    "ereq_58054ba6-4178-4c0e-89f0-6029601a3675",
+    "ereq_38cc5db7-f8a8-4ba2-8433-42f3247cf50c",
+    "ereq_5cf577c7-ee4b-462b-9d96-9b4add399e42",
+    "ereq_4635aa31-fcfd-4040-a29b-f60b867acf5a",
+    "ereq_c261a5f1-3196-4237-ae2f-17acce71d1ce",
+    "ereq_420c55d9-9b17-4337-8b2f-5586f90790a1",
+    "ereq_0cd68346-eccf-46f6-aaa6-f74e67a6ecd0",
+    "ereq_1c614d62-c43c-48f3-a333-1952209990ad",
+    "ereq_2a68bcf1-91fa-465d-80c5-08b5bc01a252",
+    "ereq_24751d80-288c-486e-938e-7e4516decf16",
+    "ereq_7c5d2590-7451-44be-91c0-0fa466ac7a15",
+    "ereq_fdb5b4e9-3da8-4994-8208-303b2281632a",
+    "ereq_a0aa29ec-2ac2-48f8-a788-7e12708840a3",
+    "ereq_ec129a0d-b046-4cbf-b4c8-8a37c531e65c",
+    "ereq_ed937886-1075-4c52-a876-1ec765195df3",
+    "ereq_fe1d9249-de66-461b-ada4-55567473a1d0",
+    "ereq_4d3260d2-64fe-4bd4-9d37-1dc9105778bf"
+  ],
+  "source_sha256": {
+    "fetch.py": "362b4cce523532504fb3c44306e2ae8db5b8f6a5a9da65fa19a8b43236f71471",
+    "fit.py": "93c38947f7fad630a1cc45732d35cc01a84756cf05d77377ab0c200e161b703c",
+    "semantics.py": "7a179c2e5ffc2745b7e11e7078920d6f72ad756a87b0548dffea7e771e5708ee",
+    "segment.py": "ef04e05be87009576a8aa66768d6326d2188009ea24675c514c18866ca116e6e",
+    "decode.py": "c4780fd39b1e584c4ae5943c472bc8a36cd91154d17efe65ffeff2eea4aeb2fb"
+  },
+  "notes": "Heldout has not been decoded. Parameters/segmentation and predictor are frozen. Training and population use one episode per exact observer trajectory. Predictions are conditional on retrospective motif starts, not predictions of event timing."
+}

@@ -1,0 +1,107 @@
+{
+  "sources": {
+    "parent": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/parent/policy.bas",
+    "suppression_reference": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/suppression_reference/policy.bas",
+    "handoff": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/handoff/policy.bas",
+    "handoff_hits8": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/handoff_hits8/policy.bas"
+  },
+  "variants": [],
+  "actual_variants": [
+    "parent",
+    "suppression_reference",
+    "handoff",
+    "handoff_hits8"
+  ],
+  "opponents": {
+    "parent": "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+    "default": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas",
+    "blue_repair": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+    "support_anchor": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+    "WeaponAll": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+    "role64": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9700000,
+      "color": 0,
+      "opponent": "parent"
+    },
+    {
+      "seed": 9700001,
+      "color": 1,
+      "opponent": "parent"
+    },
+    {
+      "seed": 9700002,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9700003,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9700004,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9700005,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9700006,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9700007,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9700008,
+      "color": 0,
+      "opponent": "WeaponAll"
+    },
+    {
+      "seed": 9700009,
+      "color": 1,
+      "opponent": "WeaponAll"
+    },
+    {
+      "seed": 9700010,
+      "color": 0,
+      "opponent": "role64"
+    },
+    {
+      "seed": 9700011,
+      "color": 1,
+      "opponent": "role64"
+    }
+  ],
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/screen/config.json": "a80b7f5bb43cbd61039dd8c5675c2660ec6b7e77fac14cce97b4f27c3d14033b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/prospective.json": "31219ecb68e23a99d13a3ba3b9d8e5590784876f5548d3d6e3344916e18ec23b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/vm-proof.json": "c8f6380632f79d0370fedc8a403995b74e15759c52fb05bd5ee71fa0ce4a6cb2",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/parent/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/suppression_reference/policy.bas": "3043195d9c7e22930e24e255a369b14213538d3bfdad09f97592e1cd4623606b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/handoff/policy.bas": "18c501fa26c6e4cb3f0be3c3be5ed16c02a36984170f1e864d9843072198ed83",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/target_handoff/candidates/handoff_hits8/policy.bas": "ae167da3c6e3803f187cc6fb464f70c2f0196a36b4bcf395ad7c96e0e1d25cfc",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas": "781f97d93836e3bdf0b16304fa140b1bb18f2d56c169ce6788e0e8b9545f9d34",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas": "f8fba2fa812f9d88f156a928daecc5ea5509c0388187e2ee9f324f12cd6899e2",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas": "406973b340dd5a24e70c6c62eb3ce0b60dec66711af38742344d825a47a97fcd",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas": "59892e45faa3a7b9521b1a0ebf547625679a3286faf775d20713d45698d84858",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T033342Z-b4ca5b/handoff_local.py": "3a70ca88f830b187bceff53b4d4fa0b0f13c8eb441fda2d74e1129b8a49228f0"
+  },
+  "custom_opponents": true,
+  "gates": null,
+  "decision_rule": "All48 native full games required against parent,default,blue_repair,support_anchor,WeaponAll,role64 onbothcolors. Candidate retains every parent AND suppression_reference opponent/color fort win, >=60% actual fortwins vsparent onEACHcolor, >=1added red nondefault win vsparent, allfiveequipped everygame; deaths<=max(parent*1.25,parent+5) AND <=max(suppression_reference*1.15,suppression_reference+5). Atleastone full reactive game must demonstrate the new nonhero attack handoff; no claim of benefit from nativefixtures alone. Draws0. Among passers ranktotalfortwins descending, deathsascending, thenprefer handoff withouttheadditionalhitfallback; confirmonlyfirst.",
+  "interpretation": "Prospectively fixed local matrix against six exact owned/public policies, both colors and every class. All ten native agents react. Complete replay and equipment audits; draw scores zero. Explicit variants=[] disables old evaluator selection; actual_variants contains every arm. No hosted generalization or statistical independence claim."
+}

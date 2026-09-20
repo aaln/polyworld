@@ -1,0 +1,123 @@
+[
+  {
+    "candidate": "waveclear",
+    "id": "gota_jordan268_waveclear",
+    "parent_candidate": "primary",
+    "source_ir_sha256": "2a56b6830c5068d76c333b32ad5bd9e4d161b5895143039b4ad70ea17816ecdb",
+    "parent_ir_sha256": "8e4eb95f2cd8a9dd2702a5b4e13a7ceb541db803e04c70cea11b33bf5839ce37",
+    "basic_sha256": "8a1550da9f65a5f04a8741d2de6a2a82f13a7240e5fd74ff448601fbbc4648bd",
+    "uploaded_version": "bd1bb4f2-358c-4165-be2e-91ff1b757615",
+    "change": {
+      "origin": "Jordan268 opponent IR-guided fork",
+      "experiment": "2026-09-19-jordan268-waveclear",
+      "lever": "defense target-kind priority",
+      "changed_parameters": [
+        "observe.creep_first",
+        "observe.redbranch_creep_first"
+      ]
+    },
+    "executable_diff": [
+      {
+        "path": "/skill/observe/parameters/creep_first",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "path": "/skill/observe/parameters/redbranch_creep_first",
+        "before": 0,
+        "after": 1
+      }
+    ]
+  },
+  {
+    "candidate": "assembly",
+    "id": "gota_jordan268_assembly",
+    "parent_candidate": "waveclear",
+    "source_ir_sha256": "557ffe1ae692971ae42aa9ec6b8ff4d06e8d94eb26b461cb6aea9aa5e30b1738",
+    "parent_ir_sha256": "2a56b6830c5068d76c333b32ad5bd9e4d161b5895143039b4ad70ea17816ecdb",
+    "basic_sha256": "7a5e6116819388ca0c577400bde81636209054f89a78dccfbc084f52a0449e2b",
+    "uploaded_version": "15ba2827-f589-41e0-a8f4-5af2d4093a32",
+    "change": {
+      "origin": "Jordan268 opponent IR and blue-loss replay",
+      "experiment": "2026-09-19-jordan268-assembly",
+      "lever": "blue opening formation",
+      "parent_candidate": "waveclear"
+    },
+    "executable_diff": [
+      {
+        "path": "/skill/fallback/operator",
+        "before": "lineup_perimeter_route",
+        "after": "lineup_j268_opening_assembly"
+      },
+      {
+        "path": "/skill/fallback/parameters/assembly_ticks",
+        "before": null,
+        "after": 1200
+      },
+      {
+        "path": "/skill/fallback/parameters/assembly_x",
+        "before": null,
+        "after": 91
+      },
+      {
+        "path": "/skill/fallback/parameters/assembly_y",
+        "before": null,
+        "after": 104
+      }
+    ]
+  },
+  {
+    "candidate": "counterrace",
+    "id": "gota_jordan268_counterrace",
+    "parent_candidate": "waveclear",
+    "source_ir_sha256": "60074fa2f84c8bd34dd01e6d41a134f615ff8df84b67cae1483bd7eca8fe9db4",
+    "parent_ir_sha256": "2a56b6830c5068d76c333b32ad5bd9e4d161b5895143039b4ad70ea17816ecdb",
+    "basic_sha256": "2e8b563d4811fef029e4dececdb5bc31803615a3700befcaff3b70a9c4e04ebd",
+    "uploaded_version": "961edad6-cad7-45e3-b155-6b5196b4ed1d",
+    "change": {
+      "origin": "Jordan268 IR-guided counterpressure after failed assembly",
+      "experiment": "2026-09-19-jordan268-counterrace",
+      "lever": "blue remote recall eligibility",
+      "parent_candidate": "waveclear"
+    },
+    "executable_diff": [
+      {
+        "path": "/skill/observe/operator",
+        "before": "lineup_paired_legacy",
+        "after": "lineup_j268_local_recall"
+      },
+      {
+        "path": "/skill/observe/parameters/recall_radius",
+        "before": null,
+        "after": 28
+      }
+    ]
+  },
+  {
+    "candidate": "redrace",
+    "id": "gota_jordan268_redrace",
+    "parent_candidate": "counterrace",
+    "source_ir_sha256": "8f9888996c2a22135cae5033f3c76a8fb58aee2948b043d75bfc08bc1f2b3765",
+    "parent_ir_sha256": "60074fa2f84c8bd34dd01e6d41a134f615ff8df84b67cae1483bd7eca8fe9db4",
+    "basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "uploaded_version": "00cd9483-0309-4613-bf61-89f3f4a33d01",
+    "change": {
+      "origin": "Audited counterrace confirmation and Jordan268 IR",
+      "experiment": "2026-09-19-jordan268-redrace",
+      "lever": "red remote recall eligibility",
+      "parent_candidate": "counterrace"
+    },
+    "executable_diff": [
+      {
+        "path": "/skill/observe/operator",
+        "before": "lineup_j268_local_recall",
+        "after": "lineup_j268_both_local_recall"
+      },
+      {
+        "path": "/skill/observe/parameters/red_recall_radius",
+        "before": null,
+        "after": 28
+      }
+    ]
+  }
+]

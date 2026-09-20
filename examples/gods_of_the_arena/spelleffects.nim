@@ -267,6 +267,37 @@ proc matches(area: AreaMesh, spell: SpellCast): bool =
     area.ability == spell.ability and area.position == spell.position and
     area.direction == spell.direction
 
+proc drawSpellPreview*(
+    effects: var SpellRenderer,
+    hero: Hero,
+    slot: HeroAbilitySlot,
+    aim: WorldPoint,
+    viewProjection: Mat4
+) =
+  ## Draws a translucent ground telegraph for the ability the player is aiming.
+  let spec = heroAbility(hero.class, slot).abilitySpec
+  var
+    settings = spec.area.footprintSettings()
+    position = spellPoint(aim)
+    angle = arctan2(hero.facing.x.float32, hero.facing.z.float32)
+  if spec.casting == SelfCast:
+    position = spellPoint(hero.position)
+  elif spec.casting == MeleeCast:
+    position = spellPoint(hero.position)
+    let offset = WorldPoint(x: aim.x - hero.position.x, z: aim.z - hero.position.z)
+    if offset.x != 0 or offset.z != 0:
+      angle = arctan2(offset.x.float32, offset.z.float32)
+  position.y = mapHeight(position) + 0.10
+  settings.startColor = vec4(1.0, 0.92, 0.45, 0.28)
+  settings.endColor = settings.startColor
+  settings.fadeIn = 0
+  settings.fadeOut = 0
+  effects.renderer.uploadFxMesh(settings)
+  effects.renderer.drawFxMesh(
+    settings, viewProjection, translate(position) * rotateY(angle), 0, 1,
+    sizeScale = 1
+  )
+
 proc drawSpells*(
     effects: var SpellRenderer,
     world: World,

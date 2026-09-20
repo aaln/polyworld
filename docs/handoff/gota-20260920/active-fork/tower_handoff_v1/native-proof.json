@@ -1,0 +1,813 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "label": "runtime/transit_handoff/0/0/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/0/32",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/0/32",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/0/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/0/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/0/0/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/0/240",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/0/240",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/0/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/0/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/0/0",
+      "passed": false
+    },
+    {
+      "label": "runtime/transit_handoff/0/1/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/1/32",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/1/32",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/1/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/1/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/0/1/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/1/240",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/1/240",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/1/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/1/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/0/1",
+      "passed": false
+    },
+    {
+      "label": "runtime/transit_handoff/0/2/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/2/32",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/2/32",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/2/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/2/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/0/2/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/2/240",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/2/240",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/2/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/2/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/0/2",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/0/3/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/3/32",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/3/32",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/3/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/3/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/0/3/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/3/240",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/3/240",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/3/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/3/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/0/3",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/0/4/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/4/32",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/4/32",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/4/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/4/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/0/4/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/0/4/240",
+      "passed": false
+    },
+    {
+      "label": "last-walk/transit_handoff/4/240",
+      "passed": true
+    },
+    {
+      "label": "outside-range/transit_handoff/4/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/0/4/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/0/4",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/1/0/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/0/32",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/0/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/0/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/1/0/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/0/240",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/0/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/0/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/1/0",
+      "passed": false
+    },
+    {
+      "label": "runtime/transit_handoff/1/1/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/1/32",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/1/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/1/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/1/1/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/1/240",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/1/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/1/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/1/1",
+      "passed": false
+    },
+    {
+      "label": "runtime/transit_handoff/1/2/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/2/32",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/2/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/2/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/1/2/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/2/240",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/2/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/2/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/1/2",
+      "passed": false
+    },
+    {
+      "label": "runtime/transit_handoff/1/3/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/3/32",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/3/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/3/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/1/3/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/3/240",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/3/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/3/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/1/3",
+      "passed": false
+    },
+    {
+      "label": "runtime/transit_handoff/1/4/32",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/4/32",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/4/32",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/4/32",
+      "passed": true
+    },
+    {
+      "label": "runtime/transit_handoff/1/4/240",
+      "passed": true
+    },
+    {
+      "label": "initiate/transit_handoff/1/4/240",
+      "passed": true
+    },
+    {
+      "label": "blue-unchanged/transit_handoff/4/240",
+      "passed": true
+    },
+    {
+      "label": "equipment/transit_handoff/1/4/240",
+      "passed": true
+    },
+    {
+      "label": "no-tower-unchanged/transit_handoff/1/4",
+      "passed": false
+    },
+    {
+      "label": "boundary/transit_handoff/healthy",
+      "passed": true
+    },
+    {
+      "label": "boundary/transit_handoff/near-finish",
+      "passed": true
+    },
+    {
+      "label": "boundary/transit_handoff/target-other",
+      "passed": true
+    },
+    {
+      "label": "boundary/transit_handoff/dead-tower",
+      "passed": true
+    },
+    {
+      "label": "boundary/transit_handoff/no-creep",
+      "passed": true
+    },
+    {
+      "label": "boundary/transit_handoff/late-creep",
+      "passed": true
+    },
+    {
+      "label": "boundary/transit_handoff/no-walkable",
+      "passed": true
+    },
+    {
+      "label": "end/transit_handoff/target-handoff",
+      "passed": false
+    },
+    {
+      "label": "end/transit_handoff/missing-tower",
+      "passed": false
+    },
+    {
+      "label": "end/transit_handoff/failed-walk",
+      "passed": false
+    },
+    {
+      "label": "end/transit_handoff/deadline",
+      "passed": false
+    },
+    {
+      "label": "end/transit_handoff/decision-gap",
+      "passed": false
+    },
+    {
+      "label": "persistent/transit_handoff",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/0/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/0/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/0/0",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/1/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/1/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/0/1",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/2/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/2/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/0/2",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/3/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/3/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/0/3",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/4/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/0/4/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/0/4",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/0/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/0/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/1/0",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/1/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/1/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/1/1",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/2/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/2/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/1/2",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/3/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/3/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/1/3",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/4/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_handoff/1/4/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_handoff/1/4",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_handoff/healthy",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_handoff/near-finish",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_handoff/target-other",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_handoff/dead-tower",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_handoff/no-creep",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_handoff/late-creep",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_handoff/no-walkable",
+      "passed": false
+    },
+    {
+      "label": "end/combined_handoff/target-handoff",
+      "passed": false
+    },
+    {
+      "label": "end/combined_handoff/missing-tower",
+      "passed": false
+    },
+    {
+      "label": "end/combined_handoff/failed-walk",
+      "passed": false
+    },
+    {
+      "label": "end/combined_handoff/deadline",
+      "passed": false
+    },
+    {
+      "label": "end/combined_handoff/decision-gap",
+      "passed": false
+    },
+    {
+      "label": "persistent/combined_handoff",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/0/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/0/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/0/0",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/1/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/1/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/0/1",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/2/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/2/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/0/2",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/3/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/3/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/0/3",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/4/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/0/4/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/0/4",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/0/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/0/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/1/0",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/1/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/1/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/1/1",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/2/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/2/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/1/2",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/3/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/3/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/1/3",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/4/32",
+      "passed": false
+    },
+    {
+      "label": "runtime/combined_release/1/4/240",
+      "passed": false
+    },
+    {
+      "label": "no-tower-unchanged/combined_release/1/4",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_release/healthy",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_release/near-finish",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_release/target-other",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_release/dead-tower",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_release/no-creep",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_release/late-creep",
+      "passed": false
+    },
+    {
+      "label": "boundary/combined_release/no-walkable",
+      "passed": false
+    },
+    {
+      "label": "end/combined_release/target-handoff",
+      "passed": false
+    },
+    {
+      "label": "end/combined_release/missing-tower",
+      "passed": false
+    },
+    {
+      "label": "end/combined_release/failed-walk",
+      "passed": false
+    },
+    {
+      "label": "end/combined_release/deadline",
+      "passed": false
+    },
+    {
+      "label": "end/combined_release/decision-gap",
+      "passed": false
+    },
+    {
+      "label": "persistent/combined_release",
+      "passed": false
+    }
+  ],
+  "decisions": 268,
+  "max_instructions": 19993,
+  "max_work": 31443,
+  "captures_sha256": "516b6672f34f122434066eea4129844a026dcbb3e7033a7ea07e96b0fc4345c0",
+  "vm_sha256": "9cd47c5cd8477b4c2ef372e3c6f28a01b9c09d36abd8b952b18eac2a991ab4a6",
+  "limits": {
+    "instructions": 20000,
+    "work": 50000,
+    "globals": 256,
+    "source_bytes": 65536
+  },
+  "scope": "Native finite runtime and mechanism tests, not gameplay benefit."
+}

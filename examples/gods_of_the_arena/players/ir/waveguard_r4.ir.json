@@ -1,0 +1,171 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_waveguard_r4_v1",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "The source-derived baseline; no inferred hidden information."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions",
+        "escortId",
+        "lastJoinTick",
+        "lastJoinX",
+        "lastJoinY",
+        "stalled"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Tower targets and enemy intentions are not exposed."
+    },
+    "claims": {
+      "B_wave": {
+        "claim": "Using an observed allied footman as the no-target movement anchor may increase productive lane presence and fort wins. This is not evidence that a footman shields a hero from towers.",
+        "status": "untested",
+        "evidence": []
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Preserve nearest-enemy combat and center fallback from the bundled baseline. This is an interpretation of behavior, not recovered original author intent.",
+      "provenance": "interpretation"
+    },
+    "G_capacity": {
+      "preference": "Preserve baseline inventory and ordered spending semantics.",
+      "provenance": "interpretation"
+    },
+    "G_wave": {
+      "preference": "When there is no observed combat target, join an allied wave instead of walking unconditionally to center. Combat and economy keep baseline behavior.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "nearest_enemy",
+      "parameters": {}
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_consumables",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "join_wave",
+      "parameters": {
+        "offset_tiles": 2,
+        "stall_decisions": 48,
+        "fallback_x": 64,
+        "fallback_y": 64
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_wave"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.10.1",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 2,
+    "parent": "4ce521e9104db361e742e6aade67fedb85da9eda9f5071d69d1ccba6913ce760",
+    "change": {
+      "origin": "verified_compatible_game_release",
+      "previous_game_version": "2026.9.9.4",
+      "published_source_commit": "93f97d06f6fedcce379c06f7fd84b135c2d2174e",
+      "game_and_shared_runtime_trees_identical": true
+    },
+    "needs_review": [],
+    "evidence": []
+  }
+}

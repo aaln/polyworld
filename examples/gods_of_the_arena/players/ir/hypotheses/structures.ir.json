@@ -1,0 +1,274 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_duelist_structures",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "Hosted replay evidence uses published game 2026.9.10.3. Hidden state reconstructed for offline diagnosis is not available to the policy."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Tower targets and enemy intentions are not exposed."
+    },
+    "claims": {
+      "B_equipment": {
+        "claim": "Ancestor Duelist evidence; not evidence for this new candidate. Removing poison purchases may improve persistent equipment growth. The sustain-only center configuration failed its local validation (112/240 wins versus baseline 115/240); equipment growth alone has not demonstrated better fort wins. This targeting revision must be evaluated separately.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-sustain-result-20260910.json",
+            "sha256": "63f465d85d38cc2af47651d8f5af00f774f6c7200a7ab4e89118861d82f0f98d"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+            "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32"
+          }
+        ]
+      },
+      "B_duel": {
+        "claim": "Ancestor Duelist evidence; not evidence for this new candidate. Hero kills grant 150 XP and 100 gold, versus 25 XP and 15 gold for footmen. A distance-weighted hero preference may accelerate growth and reduce enemy pressure; it can also cause dangerous pursuit.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/sim.nim",
+            "sha256": "0c879609cd41d9617a82ec8fef359e4dc6c47aac43375eabb21c438dcef8be95"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+            "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-diagnostics-20260910.json",
+            "sha256": "c01ba9c144d81ce810041890b46d7c85d56a67999d88843b189aac86f1e36555"
+          }
+        ]
+      },
+      "B_local_gate": {
+        "claim": "Ancestor Duelist evidence; not evidence for this new candidate. Frozen BASIC 7247acb6fe63d5f0eb40dd21efe8e27263af06705bb7161faba362cc3d0e13f3 failed_local_gate: 123/240 candidate wins versus 100/240 matched baseline wins, across 24 independent seeds with all ten seats tested separately. Paired gain +0.0958; seed sign-test p=0.179642, alpha=0.025, required gain=0.1. This measures the complete configuration among nine default policies. It does not isolate individual changes or establish wider-field strength.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+            "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32"
+          }
+        ]
+      },
+      "B_stalemate": {
+        "claim": "Ancestor Duelist evidence; not evidence for this new candidate. Post hoc validation diagnosis: 18/40 candidate wins versus 0/40 baseline wins occurred on four seeds whose baseline control timed out. On the other seeds the candidate won 105/200 versus 100/200. Most observed gain came from games that baseline failed to finish; stronger hero dueling or equipment growth is not established as the cause. This split does not change the failed local superiority gate.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-diagnostics-20260910.json",
+            "sha256": "c01ba9c144d81ce810041890b46d7c85d56a67999d88843b189aac86f1e36555"
+          }
+        ]
+      },
+      "B_structure": {
+        "claim": "Hero preference can divert attention from nearby exposed objectives. Equal structure priority may convert pressure into fort wins, but can increase tower exposure.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/hypotheses-20260910-result.json",
+            "sha256": "f82da4a2f319abf45c0c6184733fe0f639dd32d98b876d828824a86745e0405e"
+          }
+        ]
+      },
+      "B_study_result": {
+        "claim": "Local discovery, six independent seed clusters with all ten seats: 25/60 wins versus matched Duelist 35/60. Predeclared activation proxy: {\"candidate_rate\": 0.0728352161579232, \"control_rate\": 0.0446383256050015, \"observed\": true}. Discovery is exploratory and cannot establish superiority. This candidate did not qualify for the single fresh-seed confirmation. No hosted field superiority follows from these local games.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/hypotheses-20260910-result.json",
+            "sha256": "f82da4a2f319abf45c0c6184733fe0f639dd32d98b876d828824a86745e0405e"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Maintain baseline decision accounting; combat, economy, and fallback objectives are specified by their own rules.",
+      "provenance": "authored"
+    },
+    "G_capacity": {
+      "preference": "Keep baseline healing and mana support while preserving gold for persistent equipment growth by omitting poison purchases.",
+      "provenance": "authored"
+    },
+    "G_center": {
+      "preference": "Return to the baseline central destination when no eligible enemy is observed.",
+      "provenance": "authored"
+    },
+    "G_duel": {
+      "preference": "Prefer nearby enemy heroes over footmen to gain the larger hero kill rewards and remove enemy damage. Distance still bounds the preference.",
+      "provenance": "authored"
+    },
+    "G_structure": {
+      "preference": "Set exposed-structure distance weight to 1, equal to heroes, while footmen retain weight 4.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "weighted_enemy",
+      "parameters": {
+        "hero_weight": 1,
+        "footman_weight": 4,
+        "structure_weight": 1
+      }
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "walk_point",
+      "parameters": {
+        "x": 64,
+        "y": 64
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_duel",
+        "G_structure"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_duel"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_center"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.10.3",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 13,
+    "parent": "aece37c49eb5edebcfedc5828c2fbd3fbb905d603129b11f04a1f2ea5f937b73",
+    "change": {
+      "origin": "hypothesis_study_feedback",
+      "hypothesis": "structures",
+      "verdict": "discovery_inconclusive"
+    },
+    "needs_review": [
+      "belief/B_equipment",
+      "belief/B_duel",
+      "belief/B_local_gate",
+      "belief/B_stalemate",
+      "belief/B_structure"
+    ],
+    "evidence": [
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+        "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/local-sustain-result-20260910.json",
+        "sha256": "63f465d85d38cc2af47651d8f5af00f774f6c7200a7ab4e89118861d82f0f98d"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+        "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-diagnostics-20260910.json",
+        "sha256": "c01ba9c144d81ce810041890b46d7c85d56a67999d88843b189aac86f1e36555"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/hypotheses-20260910-result.json",
+        "sha256": "f82da4a2f319abf45c0c6184733fe0f639dd32d98b876d828824a86745e0405e"
+      }
+    ]
+  }
+}

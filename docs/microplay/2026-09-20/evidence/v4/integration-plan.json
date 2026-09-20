@@ -1,0 +1,114 @@
+{
+  "schema": "gota-microplay-integration/1",
+  "purpose": "Full-game activation, VM limits, and exact replay; no win gate.",
+  "binary_sha256": "78d312a3d83e900b6d71cfd5c134c43325ebafea229501068fecec8fbe151ec8",
+  "instrument_sha256": "6321dbbca5e99515a24f6fc605f91eebc61e0fb19e97285d874ee849a61a26c1",
+  "nim_sha256": "70b8f4e17ddb2447d0facacfe0cdc1f4190f81c3b06443e50a7974f1a207e835",
+  "policies": {
+    "parent": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "finish": "899c856ec2c80220c55239d4d6c084bc62f7dd345f12f75d7db447cb95334cc8",
+    "combined": "46fd4396b5ee50e8817f1eed9c280dbaf5aa8adbb01cba06ba1da3fd30cd7fbc"
+  },
+  "jobs": [
+    {
+      "id": "920101-parent",
+      "arm": "parent",
+      "side": null,
+      "seed": 920101,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas"
+      ]
+    },
+    {
+      "id": "920101-finish-0",
+      "arm": "finish",
+      "side": 0,
+      "seed": 920101,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/finish.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas"
+      ]
+    },
+    {
+      "id": "920101-finish-1",
+      "arm": "finish",
+      "side": 1,
+      "seed": 920101,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/finish.bas"
+      ]
+    },
+    {
+      "id": "920101-combined-0",
+      "arm": "combined",
+      "side": 0,
+      "seed": 920101,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/combined.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas"
+      ]
+    },
+    {
+      "id": "920101-combined-1",
+      "arm": "combined",
+      "side": 1,
+      "seed": 920101,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/combined.bas"
+      ]
+    },
+    {
+      "id": "920102-parent",
+      "arm": "parent",
+      "side": null,
+      "seed": 920102,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas"
+      ]
+    },
+    {
+      "id": "920102-finish-0",
+      "arm": "finish",
+      "side": 0,
+      "seed": 920102,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/finish.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas"
+      ]
+    },
+    {
+      "id": "920102-finish-1",
+      "arm": "finish",
+      "side": 1,
+      "seed": 920102,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/finish.bas"
+      ]
+    },
+    {
+      "id": "920102-combined-0",
+      "arm": "combined",
+      "side": 0,
+      "seed": 920102,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/combined.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas"
+      ]
+    },
+    {
+      "id": "920102-combined-1",
+      "arm": "combined",
+      "side": 1,
+      "seed": 920102,
+      "roster": [
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/parent.bas",
+        "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v4-20260920/policies/combined.bas"
+      ]
+    }
+  ]
+}

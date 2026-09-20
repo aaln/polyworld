@@ -1,0 +1,76 @@
+{
+  "schema": "gota-microplay-budget-diagnosis/1",
+  "situation": {
+    "engine_version": "2026.9.16.5",
+    "instruction_limit_per_decision": 20000,
+    "work_limit_per_decision": 50000,
+    "budgets_reset_per_decision": true
+  },
+  "observation": {
+    "hosted_games": 120,
+    "hosted_vm_failures": 0,
+    "instruction_peaks": {
+      "parent": 17860,
+      "finish": 17867,
+      "combined": 17867
+    },
+    "work_peaks": {
+      "parent": 28897,
+      "finish": 28908,
+      "combined": 28908
+    },
+    "combined_gate_skipped_fraction": 0.8729414324118534,
+    "prior_v2_fixture_stress_cases": 240,
+    "prior_v2_fixture_stress_failures": 0,
+    "prior_v2_peak_instructions": 18139
+  },
+  "belief": {
+    "need_higher_budget": {
+      "status": "not_established",
+      "claim": "The120recent microplay games did not exhaust the VM budget. This is scoped evidence only: prior native and hosted policies repeatedly hit the hard limit. The exact increase needed versus implementation optimization remains unmeasured."
+    },
+    "cost_mechanism": {
+      "status": "source_supported_not_block_profiled",
+      "claim": "Existing controller repeats visible-object scans across defense, target selection, movement and abilities. Microplay adds two bounded passes. BASIC expressions and loops expand into metered VM instructions, while host queries and actions also charge separate weighted work units."
+    },
+    "historical_budget_exhaustion": {
+      "status": "supported",
+      "claim": "The parent B_scan_budget claim,40/40hosted formation failures, and three native failure suites establish repeated earlier hard-limit exhaustion.",
+      "evidence": [
+        {
+          "artifact": "docs/microplay/2026-09-20-hosted/budget-failure-history.ir.json",
+          "sha256": "11d9fff33e2c6341899073a8b1142a22a43b78861812721af30732fa18d62709"
+        }
+      ]
+    }
+  },
+  "goal": "Recover useful microplay within the current execution limits before requesting a larger limit.",
+  "strategy": [
+    "Measure executed cost by semantic rule on the same hosted observations.",
+    "Share observation summaries across IR skills and avoid repeated scans/queries.",
+    "Evaluate changing the48-object gate with VM validity and actual refinement activation measured."
+  ],
+  "update": {
+    "policy_or_engine_changed": false,
+    "instruction_budget_changed": false,
+    "xp_allowance_is_separate": true,
+    "scope_correction": {
+      "reason": "User directed inspection of prior-session IR; earlier explanation omitted existing failure history.",
+      "history": {
+        "artifact": "docs/microplay/2026-09-20-hosted/budget-failure-history.ir.json",
+        "sha256": "11d9fff33e2c6341899073a8b1142a22a43b78861812721af30732fa18d62709"
+      },
+      "creator_discussion": "Justified by reproducible failures; do not imply that recent passing policies prove the general budget sufficient."
+    }
+  },
+  "evidence": [
+    {
+      "artifact": "docs/microplay/2026-09-20-hosted/research.ir.json",
+      "sha256": "82476d1909f4bf8890636aee61a889fdfd62033f7523ea62b6437d07dfa8a58c"
+    },
+    {
+      "artifact": "docs/microplay/2026-09-20/evidence/v2/budget-stress.json",
+      "sha256": "eb1f5bb03d71d047957af3b9debc32fafe3cec82e1aad77b06d6d22c1259fc33"
+    }
+  ]
+}

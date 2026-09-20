@@ -1,0 +1,474 @@
+{
+  "at": "2026-09-20T17:19:46.725337+00:00",
+  "verdict": "Richard135-red target-transfer rejected; ancestor discovery thresholds passed",
+  "source_sha256": "cd925baf36baed38b1ec19657f34966bd7b55c314b92b015b34b96466d96ddc3",
+  "games": 120,
+  "counts": {
+    "parent-red": {
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "all_gear": true
+    },
+    "parent-blue": {
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "all_gear": true
+    },
+    "richard135-red": {
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "all_gear": true
+    }
+  },
+  "command_diversity": {
+    "parent-red": {
+      "games": 40,
+      "wins": 40,
+      "unique_commands": 2,
+      "group_sizes": [
+        31,
+        9
+      ]
+    },
+    "parent-blue": {
+      "games": 40,
+      "wins": 40,
+      "unique_commands": 1,
+      "group_sizes": [
+        40
+      ]
+    },
+    "richard135-red": {
+      "games": 40,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        40
+      ]
+    }
+  },
+  "reviews": {
+    "parent-red-win": {
+      "ticks": 3274,
+      "slots": {
+        "0": {
+          "class": 5,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 1143,
+            "xy": [
+              104,
+              77
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "1": {
+          "class": 6,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 1349,
+            "xy": [
+              19,
+              18
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "2": {
+          "class": 7,
+          "transit_active": 822,
+          "first_done": {
+            "tick": 823,
+            "xy": [
+              59,
+              51
+            ],
+            "level": 1,
+            "hits": 0
+          },
+          "first_hit": {
+            "tick": 978,
+            "xy": [
+              53,
+              64
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": {
+            "tick": 823,
+            "action": {
+              "tick": 823,
+              "heroId": 102,
+              "kind": 2,
+              "first": 1024,
+              "second": 0
+            },
+            "selected_public": {
+              "id": 1024,
+              "kind": 3,
+              "hp": 24,
+              "alive": true,
+              "x": 57,
+              "y": 59
+            }
+          }
+        },
+        "3": {
+          "class": 8,
+          "transit_active": 826,
+          "first_done": {
+            "tick": 827,
+            "xy": [
+              60,
+              51
+            ],
+            "level": 1,
+            "hits": 0
+          },
+          "first_hit": {
+            "tick": 1042,
+            "xy": [
+              53,
+              68
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": {
+            "tick": 827,
+            "action": {
+              "tick": 827,
+              "heroId": 103,
+              "kind": 2,
+              "first": 1024,
+              "second": 0
+            },
+            "selected_public": {
+              "id": 1024,
+              "kind": 3,
+              "hp": 24,
+              "alive": true,
+              "x": 57,
+              "y": 59
+            }
+          }
+        },
+        "4": {
+          "class": 9,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 884,
+            "xy": [
+              15,
+              14
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        }
+      }
+    },
+    "parent-blue-win": {
+      "ticks": 3763,
+      "slots": {
+        "5": {
+          "class": 0,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 1348,
+            "xy": [
+              14,
+              14
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "6": {
+          "class": 1,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 826,
+            "xy": [
+              96,
+              102
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "7": {
+          "class": 2,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 916,
+            "xy": [
+              12,
+              19
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "8": {
+          "class": 3,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 898,
+            "xy": [
+              12,
+              18
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "9": {
+          "class": 4,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 2066,
+            "xy": [
+              58,
+              56
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        }
+      }
+    },
+    "richard135-red-loss": {
+      "ticks": 6871,
+      "slots": {
+        "2": {
+          "class": 7,
+          "transit_active": 867,
+          "first_done": {
+            "tick": 868,
+            "xy": [
+              61,
+              51
+            ],
+            "level": 1,
+            "hits": 3
+          },
+          "first_hit": {
+            "tick": 787,
+            "xy": [
+              61,
+              46
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": {
+            "tick": 868,
+            "action": {
+              "tick": 868,
+              "heroId": 102,
+              "kind": 2,
+              "first": 108,
+              "second": 0
+            },
+            "selected_public": {
+              "id": 108,
+              "kind": 2,
+              "hp": 250,
+              "alive": true,
+              "x": 62,
+              "y": 56
+            }
+          }
+        },
+        "3": {
+          "class": 8,
+          "transit_active": 863,
+          "first_done": {
+            "tick": 864,
+            "xy": [
+              61,
+              51
+            ],
+            "level": 1,
+            "hits": 3
+          },
+          "first_hit": {
+            "tick": 792,
+            "xy": [
+              61,
+              46
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": {
+            "tick": 864,
+            "action": {
+              "tick": 864,
+              "heroId": 103,
+              "kind": 2,
+              "first": 108,
+              "second": 0
+            },
+            "selected_public": {
+              "id": 108,
+              "kind": 2,
+              "hp": 250,
+              "alive": true,
+              "x": 62,
+              "y": 57
+            }
+          }
+        },
+        "4": {
+          "class": 9,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 884,
+            "xy": [
+              15,
+              14
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "0": {
+          "class": 5,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 1098,
+            "xy": [
+              97,
+              102
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "1": {
+          "class": 6,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 1140,
+            "xy": [
+              10,
+              26
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        }
+      }
+    },
+    "prior-deployed-richard135-red": {
+      "ticks": 8517,
+      "slots": {
+        "4": {
+          "class": 9,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 884,
+            "xy": [
+              15,
+              14
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "0": {
+          "class": 5,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 1107,
+            "xy": [
+              97,
+              102
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "1": {
+          "class": 6,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 1129,
+            "xy": [
+              10,
+              26
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "2": {
+          "class": 7,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 944,
+            "xy": [
+              102,
+              96
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        },
+        "3": {
+          "class": 8,
+          "transit_active": 0,
+          "first_done": null,
+          "first_hit": {
+            "tick": 1009,
+            "xy": [
+              100,
+              101
+            ],
+            "hits": 1
+          },
+          "first_post_done_attack": null
+        }
+      }
+    }
+  },
+  "parent_nomination": true,
+  "richard_nomination": false,
+  "accepted": false,
+  "deployed": false,
+  "scope": "Uniform5v5 generated seeds, fourcanonicalcommandstreams total. No freshdeployed controls, no new Alex/Jordan or ten-distinct-playercoverage. Prior Richard deployed comparison matches release/config/rival, but not generatedseed and is not a fresh-control effect estimate. No isolated decision-quality claim.",
+  "finding": "Redcasters execute transit and attack afterarrival in both a hosted ancestor win and Richardloss. AgainstRichard Lich/Warlock arrive868/864afterlandinghits787/792 and attack publichero108; despite activation team loses at6871ticks with19deaths. Earlier local successes and fewer historicalbaseline deaths do not override zero fortwins or establish generalization.",
+  "evidence_sha256": {
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/plan.json": "8c57228d904a7fbdb5a5a17de382ccc75fb60a00e7403d7d5eea3ad4983d2804",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/result.json": "53a104b4f9819ab03a31a444a34c6e7b4ad0bfaf0305841e7dda3cb8b6693909",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/command-diversity-v1/result.json": "4f23f8e3ce74e46917d5778b43cc1d9ba1fa904123f9aeb66211d909b4445d32",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/review/parent-red-win/mechanism.json": "3ca463c1717d53f6db9a77ab2e9768c8dd455d46ab4dcc720ea0982169a8749b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/review/parent-red-win/equivalence.json": "be3d0bd1f6595dd431891f78299834608e1bba9f73a650f5faa25c32494a5b77",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/review/parent-blue-win/mechanism.json": "40ce44be464e80477fd213e29891fdff08d18e31245e8721c01598250907583c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/review/parent-blue-win/equivalence.json": "f225ea7ecbb737f3188847e6fa666ca6caae1942f50ddb2381026e98345ea413",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/review/richard135-red-loss/mechanism.json": "8ac6db35ab066d58d44d29dd4793b1645086e1aaaa23b26449efe284b4f3b74d",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/review/richard135-red-loss/equivalence.json": "8801edd25c271c285ade6a959129ec95cd2a4e32180c41f846735fde49567e2b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/review/prior-deployed-richard135-red/mechanism.json": "54b4c6af4ff77d1073d546c527d981ba8da2b670d8ab14ecb9fd0aa350f2d48b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/hosted-discovery/review/prior-deployed-richard135-red/equivalence.json": "918d7a39ec146ca369b01f777b4258960724eb14c49ec6441373ca510fe61c9c"
+  }
+}

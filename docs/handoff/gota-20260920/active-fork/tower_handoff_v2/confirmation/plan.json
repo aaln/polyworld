@@ -1,0 +1,294 @@
+{
+  "sources": {
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/candidates/deployed/policy.bas",
+    "transit_reference": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/candidates/transit_reference/policy.bas",
+    "transit_handoff": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/candidates/transit_handoff/policy.bas"
+  },
+  "variants": [],
+  "actual_variants": [
+    "deployed",
+    "transit_reference",
+    "transit_handoff"
+  ],
+  "opponents": {
+    "accepted": "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+    "default": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas",
+    "blue_repair": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+    "support_anchor": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas",
+    "center_proxy": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas",
+    "sentry_inward": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/relay_fused/policy.bas",
+    "readiness": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/candidates/first_level/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9920000,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9920001,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9920002,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9920003,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9920004,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9920005,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9920006,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9920007,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9920008,
+      "color": 0,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9920009,
+      "color": 1,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9920010,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9920011,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9920012,
+      "color": 0,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9920013,
+      "color": 1,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9920014,
+      "color": 0,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9920015,
+      "color": 1,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9920016,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9920017,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9920018,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9920019,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9920020,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9920021,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9920022,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9920023,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9920024,
+      "color": 0,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9920025,
+      "color": 1,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9920026,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9920027,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9920028,
+      "color": 0,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9920029,
+      "color": 1,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9920030,
+      "color": 0,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9920031,
+      "color": 1,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9920032,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9920033,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9920034,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9920035,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9920036,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9920037,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9920038,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9920039,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9920040,
+      "color": 0,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9920041,
+      "color": 1,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9920042,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9920043,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9920044,
+      "color": 0,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9920045,
+      "color": 1,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9920046,
+      "color": 0,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9920047,
+      "color": 1,
+      "opponent": "readiness"
+    }
+  ],
+  "custom_opponents": true,
+  "gates": null,
+  "decision_rule": {
+    "win": "Retain every matched fresh deployed, transit and direct-base win. Draw zero. At least60%eachcolor vs accepted.",
+    "survival": "Fewer team deaths than direct base and <=max(1.15*deployed,deployed+5).",
+    "validity": "Every replay/VM/auditor/input/source/gear valid. Full release win/failure review and all-class accounting.",
+    "selection": "The one source nominated by original full screen; no substitution or tuning.",
+    "additional_control": "Include fresh transit reference even for combined variants, preserving the original screen comparison in the expanded matrix."
+  },
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/confirmation/config.json": "a80b7f5bb43cbd61039dd8c5675c2660ec6b7e77fac14cce97b4f27c3d14033b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/prospective.json": "f143865663f4f76998fd0705ac80e23aea779791e230aa61562525597e3210ed",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/screen/final-qualification.json": "1d0006a8f77c34bb655e779041c2b8c9df60f01ffd41e9913c27539c7b2f9993",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T180014Z-078cc0/confirm_tower_handoff_v2.py": "55494aefbbc70ce796f8e5a9fce2e82e410c7337fc8781fc29cd807e64148bf1",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/candidates/deployed/policy.bas": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/candidates/transit_reference/policy.bas": "cd925baf36baed38b1ec19657f34966bd7b55c314b92b015b34b96466d96ddc3",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/candidates/transit_handoff/policy.bas": "7c2b843b8dbfd98f2e46cb3ba2b7f4b40f7ee6f2ad4c5575adfe771e09978b7b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas": "781f97d93836e3bdf0b16304fa140b1bb18f2d56c169ce6788e0e8b9545f9d34",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas": "f8fba2fa812f9d88f156a928daecc5ea5509c0388187e2ee9f324f12cd6899e2",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas": "9d08e68910a1b095ca5c171f6394dee0bc7384245dbc9d6f491c109c206198d0",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/relay_fused/policy.bas": "194959d2601d3c931145b42990b41ebfeb8ce79a9f80ac48d88b240313dcb694",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/candidates/first_level/policy.bas": "0db261ce253e53269039ef558d0c4452a34a370c3008125a966104cb34fb671b"
+  },
+  "interpretation": "Fresh local qualification only, never hosted generalization or acceptance."
+}

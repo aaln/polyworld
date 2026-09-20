@@ -1,0 +1,266 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_kite_early_all",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "Pinned published e127989. Use public lifetime basic-hit counter and cooldown; no hidden state or inferred stationary timing."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions",
+        "escortId",
+        "kiteBursts",
+        "kiteEscapes",
+        "kiteLastHits",
+        "kiteLastHp",
+        "kiteLastTick",
+        "kiteMoveTicks",
+        "kiteReady",
+        "kiteUntil",
+        "lastJoinTick",
+        "lastJoinX",
+        "lastJoinY",
+        "stalled"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Visible object target IDs are exposed; zero can mean no target or a target outside visibility. Future enemy intentions remain unknown."
+    },
+    "claims": {
+      "B_wave": {
+        "claim": "Using an observed allied footman as the no-target movement anchor may increase productive lane presence and fort wins. This is not evidence that a footman shields a hero from towers.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/experiment-20260910.json",
+            "sha256": "36170fcaddbc1511737b8b2496b6ff002884477f5d50c7336e117542f5355a44"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          }
+        ]
+      },
+      "B_equipment": {
+        "claim": "Matched hosted games: sustain-only won 4/10 versus v1 2/10. Final equipment totaled 35 versus 16. These observations inform the equipment-saving hypothesis; broader strength remains unresolved.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-result-20260910.json",
+            "sha256": "9f2ab759b80e61a0199cde063b6e7afc4ecf146f8a4c333d351e5c1794237b78"
+          }
+        ]
+      },
+      "B_kite": {
+        "claim": "Completed 40-case local screen: 12 wins versus v2 22 and default 18; deaths 125 versus v2 134; basic-hit events 2153 versus 2321. Preregistered screen failed. Live-field superiority unestablished.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/hit-kiting-20260915-screen.json",
+            "sha256": "69a8d95c244f22275db3dabfec8543ade979eed0065c63e44608db8cb34095ee"
+          }
+        ]
+      },
+      "B_kite_timing": {
+        "claim": "Replay-observed basic hit within1tick before 153/153 normal retreats; displacement observed in 39/40 games. The published lifetime hit counter drives normal retreats; emergency escapes are separate. All120 complete action/state replays verified.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/hit-kiting-20260915-screen.json",
+            "sha256": "69a8d95c244f22275db3dabfec8543ade979eed0065c63e44608db8cb34095ee"
+          }
+        ]
+      },
+      "B_component": {
+        "claim": "Completed adaptive component screen: 20/40 wins versus prior controller12/40 and exactv222/40; candidate deaths136 versusv2134. Gate failed. All120 matching tapes verified;40new games. Fresh confirmation and hosted validation remain required.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/kiting-component-no_escape-20260915.json",
+            "sha256": "7e5e21453beda581fc15d101c6233e2e901b9a5119a17623b6f89af6bf5b8807"
+          }
+        ]
+      },
+      "B_range": {
+        "claim": "A3-tile trigger may start kiting too late for ranged heroes. Testing5tiles and observed-aggro filtering in a2x2 adaptive discovery matrix, with emergency escapes disabled. Competitive benefit untested.",
+        "status": "untested",
+        "evidence": []
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Keep v2 nearest-enemy target selection; combat execution follows G_kite.",
+      "provenance": "interpretation"
+    },
+    "G_capacity": {
+      "preference": "Keep baseline healing and mana support while preserving gold for persistent equipment growth. Stop buying poison in this isolated economy experiment.",
+      "provenance": "authored"
+    },
+    "G_wave": {
+      "preference": "When no observed target exists, retain v2 allied-wave following. Combat execution is specified separately by G_kite.",
+      "provenance": "authored"
+    },
+    "G_kite": {
+      "preference": "Preserve survival and fort wins through confirmed-hit kiting, subject to the isolated G_component intervention.",
+      "provenance": "authored"
+    },
+    "G_glory": {
+      "preference": "Track lifetime-XP-minus-duration Glory on fort wins as a secondary measure; preserving fort wins and reducing deaths gates kiting changes.",
+      "provenance": "authored"
+    },
+    "G_component": {
+      "preference": "Disable emergency attack interruptions; kite only after a confirmed hit. Test whether beginning at a wider distance and requiring visible enemy attack intent improves survival.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "nearest_enemy",
+      "parameters": {}
+    },
+    "attack": {
+      "operator": "confirmed_hit_kite",
+      "parameters": {
+        "retreat_ticks": 10,
+        "critical_percent": 0,
+        "threat_tiles": 5,
+        "step_tiles": 3,
+        "escape_rearm_ticks": 18
+      }
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "join_wave",
+      "parameters": {
+        "fallback_x": 64,
+        "fallback_y": 64,
+        "offset_tiles": 0,
+        "stall_decisions": 48
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "always",
+      "skill": "attack",
+      "for": [
+        "G_kite",
+        "G_fort",
+        "G_glory",
+        "G_component"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_wave"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.15.3",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 12,
+    "parent": "a971fbff7e6b0ac43b9f00969db6f9c299a5413f098bd996e8c2cdb92c947d6f",
+    "change": {
+      "origin": "preregistered_early_kiting_matrix",
+      "cell": "early_all"
+    },
+    "needs_review": [
+      "belief/B_range"
+    ],
+    "evidence": [
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/hit-kiting-20260915-screen.json",
+        "sha256": "69a8d95c244f22275db3dabfec8543ade979eed0065c63e44608db8cb34095ee"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/kiting-component-no_escape-20260915.json",
+        "sha256": "7e5e21453beda581fc15d101c6233e2e901b9a5119a17623b6f89af6bf5b8807"
+      }
+    ]
+  }
+}

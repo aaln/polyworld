@@ -1,0 +1,238 @@
+{
+  "schema": "gota-experiment-ir/1",
+  "id": "microplay-v2-20260920",
+  "situation": {
+    "encounters": "matched six-second encounter, same layout/classes/resources/seed/opponent controller",
+    "scope": [
+      "Constructed encounters, not randomly sampled competitive games.",
+      "Hero classes may be placed on either color to separate class from side.",
+      "Non-subject fixed controllers expose a known attack intent; they are not learned opponent replicas.",
+      "Automatic and manual spells are separate strata; manual spells isolate basic mechanics.",
+      "Pinned historical release; no claim that this is the current hosted release.",
+      "Initial state is constructed; audit is deterministic fixture replay, not a normal hosted replay."
+    ]
+  },
+  "belief": {
+    "hypotheses": "Improve local individual play and allied combat; no fort-win selection gate.",
+    "measured_results": {
+      "holdout-result.json": {
+        "schema": "gota-microplay-result/1",
+        "partition": "holdout",
+        "totals": {
+          "parent": {
+            "enemy_deaths": 239,
+            "ally_deaths": 60,
+            "enemy_hp_loss": 65548,
+            "ally_hp_loss": 33968,
+            "basic_hits": 1011,
+            "refined_decisions": 0,
+            "encounters": 160,
+            "max_instructions": 4371
+          },
+          "finish": {
+            "enemy_deaths": 245,
+            "ally_deaths": 56,
+            "enemy_hp_loss": 65932,
+            "ally_hp_loss": 33860,
+            "basic_hits": 1021,
+            "refined_decisions": 218,
+            "encounters": 160,
+            "max_instructions": 4922
+          }
+        },
+        "gates": {
+          "finish": {
+            "more_enemy_deaths": true,
+            "no_added_ally_deaths": true,
+            "spell_strata_survival": true,
+            "duel_control_parity": true
+          }
+        },
+        "selected": "finish",
+        "plan_sha256": "a58c291178d67f0a2fa8bed3e6d62f643d0d31439f90ba8c3c8f6f716d7a6e89",
+        "scope": "Constructed short encounters on pinned release; no full-game/league inference."
+      },
+      "discovery-result.json": {
+        "schema": "gota-microplay-result/1",
+        "partition": "discovery",
+        "totals": {
+          "parent": {
+            "enemy_deaths": 94,
+            "ally_deaths": 34,
+            "enemy_hp_loss": 26100,
+            "ally_hp_loss": 13382,
+            "basic_hits": 376,
+            "refined_decisions": 0,
+            "encounters": 64,
+            "max_instructions": 4362
+          },
+          "finish": {
+            "enemy_deaths": 100,
+            "ally_deaths": 30,
+            "enemy_hp_loss": 26444,
+            "ally_hp_loss": 13070,
+            "basic_hits": 379,
+            "refined_decisions": 168,
+            "encounters": 64,
+            "max_instructions": 4901
+          },
+          "assist": {
+            "enemy_deaths": 94,
+            "ally_deaths": 28,
+            "enemy_hp_loss": 25862,
+            "ally_hp_loss": 12998,
+            "basic_hits": 372,
+            "refined_decisions": 475,
+            "encounters": 64,
+            "max_instructions": 5064
+          },
+          "combined": {
+            "enemy_deaths": 100,
+            "ally_deaths": 26,
+            "enemy_hp_loss": 26178,
+            "ally_hp_loss": 12680,
+            "basic_hits": 375,
+            "refined_decisions": 583,
+            "encounters": 64,
+            "max_instructions": 5064
+          }
+        },
+        "gates": {
+          "finish": {
+            "more_enemy_deaths": true,
+            "no_added_ally_deaths": true,
+            "spell_strata_survival": true,
+            "duel_control_parity": true
+          },
+          "assist": {
+            "more_enemy_deaths": false,
+            "no_added_ally_deaths": true,
+            "spell_strata_survival": true,
+            "duel_control_parity": true
+          },
+          "combined": {
+            "more_enemy_deaths": true,
+            "no_added_ally_deaths": true,
+            "spell_strata_survival": true,
+            "duel_control_parity": true
+          }
+        },
+        "selected": "finish",
+        "plan_sha256": "a58c291178d67f0a2fa8bed3e6d62f643d0d31439f90ba8c3c8f6f716d7a6e89",
+        "scope": "Constructed short encounters on pinned release; no full-game/league inference."
+      }
+    }
+  },
+  "goal": {
+    "primary": "Improve local individual play and allied combat; no fort-win selection gate.",
+    "metrics": {
+      "enemy_deaths": "All active enemy first deaths during the encounter; no respawn within 144ticks.",
+      "ally_deaths": "Deaths of every active allied participant, including fixed-controller helpers.",
+      "enemy_hp_loss": "Sum max(previous_HP-current_HP,0) per tick. A net damage proxy; simultaneous healing can mask damage.",
+      "ally_hp_loss": "Same net HP loss proxy for all allied participants.",
+      "basic_hits": "Actual subject selfAttacksLanded increments; engine counter, not command count.",
+      "target_switches": "Changes between nonzero engine target intents, not cancelled swings.",
+      "instruction_budget": "Real host maxInstructions=20000; work<=50000; failures invalidate experiment."
+    }
+  },
+  "skill": {
+    "arms": {
+      "parent": {
+        "ir_sha256": "fc2dfa33dce067542c9ca2391246a19051bf000ca4209d60b0dd2a099ba5ed37",
+        "basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+        "roundtrip": true
+      },
+      "finish": {
+        "ir_sha256": "13ceb5e442a85ad6da57b3f23744905d58a9de793c328348aeb8b293c368ad11",
+        "basic_sha256": "3baa924261072bb8f5af5c12565367186382fc36a4cb715ac674f462e6c26d4d",
+        "roundtrip": true
+      },
+      "assist": {
+        "ir_sha256": "ba30b5ba4179773ab28fe5556698c60aee6d24d039aa88122b791e4f392526eb",
+        "basic_sha256": "3c053516652e67d29982ac3ce8b243dd59f3c83f28d0d484786b0c99fabaaa38",
+        "roundtrip": true
+      },
+      "combined": {
+        "ir_sha256": "8bc8a9269a61c897dae72433e8a285b171da938f6460039458d7fc6cff50d540",
+        "basic_sha256": "1132ae8adbbca488616f1dec5fedea5010a156a1349ce7e701e5ffff58210780",
+        "roundtrip": true
+      }
+    }
+  },
+  "strategy": {
+    "prospective_gates": {
+      "priority": [
+        "no additional allied deaths overall or in either spell-mode stratum",
+        "strictly more enemy deaths",
+        "higher enemy net HP loss as tie break"
+      ],
+      "control": "duel_control must have identical complete state-hash sequences",
+      "holdout": "Freeze at most one discovery winner; require same gates on untouched holdout.",
+      "no_promotion": "This evaluates a local skill module, not full-game or league superiority."
+    }
+  },
+  "execution": {
+    "plan": {
+      "artifact": "docs/microplay/2026-09-20/evidence/v2/plan.json",
+      "sha256": "a58c291178d67f0a2fa8bed3e6d62f643d0d31439f90ba8c3c8f6f716d7a6e89"
+    },
+    "runtime": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+    "artifacts": [
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/budget-stress.json",
+        "sha256": "eb1f5bb03d71d047957af3b9debc32fafe3cec82e1aad77b06d6d22c1259fc33"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/discovery-audit-summary.json",
+        "sha256": "cefed06334f548974f3da3993a0f8da0e442ad0a35807313d83e1fd4e53bc705"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/discovery-audit.json",
+        "sha256": "da1098c3d03fe52b25a0dcb9acb56ec6b6a3f4af5bd1c9ad24550373065b8544"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/discovery-result.json",
+        "sha256": "0c1d013a64c50d2e0d464f8d9599e9a759fa843a789e460e2859c74c6374fcbc"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/discovery-summary.json",
+        "sha256": "cefed06334f548974f3da3993a0f8da0e442ad0a35807313d83e1fd4e53bc705"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/discovery.jsonl.gz",
+        "sha256": "c50920fb564a9da1e5e857a1e50f81dc8ba0b2eadd2b799acf1b7ebc5e6125e9"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/holdout-audit-summary.json",
+        "sha256": "00b250c8492ef19044aa96558bb9fe9589a743d6bc4719490659b701b733ceae"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/holdout-audit.json",
+        "sha256": "fdf8840363b2c971292db0a28ea8323edc2eed1b1948c689a900fe2098059b3b"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/holdout-result.json",
+        "sha256": "070b0a2867e7cd4f526fae95144acb930fd619499e802654b8dbba00675e6177"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/holdout-summary.json",
+        "sha256": "00b250c8492ef19044aa96558bb9fe9589a743d6bc4719490659b701b733ceae"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/holdout.jsonl.gz",
+        "sha256": "558d7facca3c130248f60dbe8ba89b68a297453a1438377326900794fe62b986"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v2/plan.json",
+        "sha256": "a58c291178d67f0a2fa8bed3e6d62f643d0d31439f90ba8c3c8f6f716d7a6e89"
+      }
+    ]
+  },
+  "update": {
+    "parent": {
+      "study": "microplay-20260920",
+      "outcome": "No target refinements in256encounters; no qualifier."
+    },
+    "evidence_status": "retained_including_failures"
+  }
+}

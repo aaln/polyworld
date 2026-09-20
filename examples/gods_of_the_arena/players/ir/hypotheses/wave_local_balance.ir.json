@@ -1,0 +1,219 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_wave_local_balance_20260915",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "Restrict combat to observed enemies within six tiles of a retained living allied footman. No escort means rejoin movement. Prospective simulation uses only the four announced balance edits on exact published5422fb0; actual new release remains pending."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions",
+        "escortId",
+        "lastJoinTick",
+        "lastJoinX",
+        "lastJoinY",
+        "stalled"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Tower targets and enemy intentions are not exposed."
+    },
+    "claims": {
+      "B_wave": {
+        "claim": "Historical evidence on the older game; current performance requires re-evaluation. Using an observed allied footman as the no-target movement anchor may increase productive lane presence and fort wins. This is not evidence that a footman shields a hero from towers.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/experiment-20260910.json",
+            "sha256": "36170fcaddbc1511737b8b2496b6ff002884477f5d50c7336e117542f5355a44"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          }
+        ]
+      },
+      "B_equipment": {
+        "claim": "Historical evidence on the older game; current performance requires re-evaluation. Matched hosted games: sustain-only won 4/10 versus v1 2/10. Final equipment totaled 35 versus 16. These observations inform the equipment-saving hypothesis; broader strength remains unresolved.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-result-20260910.json",
+            "sha256": "9f2ab759b80e61a0199cde063b6e7afc4ecf146f8a4c333d351e5c1794237b78"
+          }
+        ]
+      },
+      "B_current_contract": {
+        "claim": "Current game supports the original BASIC operations plus explicit spells and terrain. Poison range/protection and map/combat mechanics changed. See the pinned source review and three matched hosted replay audits.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/upgrade-20260915-mechanics.json",
+            "sha256": "b18fe8475e1d9856936f3c354a142e236ec7a8cc63e8c26cc44ae6078f8ce1f6"
+          }
+        ]
+      },
+      "B_wave_local": {
+        "claim": "Nearest-enemy combat overrides wave movement in v2 whenever any enemy is visible. Restricting combat to a six-tile region around a retained allied footman may increase rejoin movement and productive lane presence on the newly weakened defenses. It may also ignore attackers near self or follow a remote surviving escort after respawn. The earlier wave-following-only result did not test this restriction; supported siege changed too few targeting opportunities to improve wins.",
+        "status": "untested",
+        "evidence": []
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Preserve nearest-enemy combat and center fallback from the bundled baseline. This is an interpretation of behavior, not recovered original author intent.",
+      "provenance": "interpretation"
+    },
+    "G_capacity": {
+      "preference": "Keep baseline healing and mana support while preserving gold for persistent equipment growth. Stop buying poison in this isolated economy experiment.",
+      "provenance": "authored"
+    },
+    "G_wave": {
+      "preference": "When there is no observed combat target, join an allied wave instead of walking unconditionally to center. Combat and economy keep baseline behavior.",
+      "provenance": "authored"
+    },
+    "G_wave_local": {
+      "preference": "Keep combat local to an allied wave so visible enemies outside that area do not continually divert the hero from lane progress. Prefer footmen, then heroes, then exposed structures in that local area.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "wave_enemy",
+      "parameters": {
+        "radius_tiles": 6
+      }
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "join_wave",
+      "parameters": {
+        "fallback_x": 64,
+        "fallback_y": 64,
+        "offset_tiles": 0,
+        "stall_decisions": 48
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_wave_local",
+        "G_fort"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_wave"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.15.1",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 8,
+    "parent": "50b31726a020b348b2c87e5eaa48bc6f988942c951c0c638aaaf0bf19aba8181",
+    "change": {
+      "origin": "preregistered_hypothesis",
+      "changed_rule": "R1",
+      "hypothesis": "wave_local_balance"
+    },
+    "needs_review": [
+      "belief/B_wave_local",
+      "belief/B_wave",
+      "belief/B_equipment"
+    ],
+    "evidence": []
+  }
+}

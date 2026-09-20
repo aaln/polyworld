@@ -1,0 +1,219 @@
+{
+  "schema": "gota-experiment-ir/1",
+  "id": "microplay-team-20260920",
+  "situation": {
+    "encounters": "matched six-second encounter, same layout/classes/resources/seed/opponent controller",
+    "scope": [
+      "Constructed encounters, not randomly sampled competitive games.",
+      "Hero classes may be placed on either color to separate class from side.",
+      "Non-subject fixed controllers expose a known attack intent; they are not learned opponent replicas.",
+      "Automatic and manual spells are separate strata; manual spells isolate basic mechanics.",
+      "Pinned historical release; no claim that this is the current hosted release.",
+      "Initial state is constructed; audit is deterministic fixture replay, not a normal hosted replay."
+    ]
+  },
+  "belief": {
+    "hypotheses": "Test whether assistance reduces allied deaths beyond finishing alone.",
+    "measured_results": {
+      "cooperation-result.json": {
+        "schema": "gota-microplay-result/1",
+        "partition": "cooperation_confirmation",
+        "totals": {
+          "parent": {
+            "enemy_deaths": 180,
+            "ally_deaths": 48,
+            "enemy_hp_loss": 52446,
+            "ally_hp_loss": 26425,
+            "basic_hits": 833,
+            "refined_decisions": 0,
+            "encounters": 120,
+            "max_instructions": 4101
+          },
+          "finish": {
+            "enemy_deaths": 180,
+            "ally_deaths": 46,
+            "enemy_hp_loss": 52374,
+            "ally_hp_loss": 26431,
+            "basic_hits": 833,
+            "refined_decisions": 83,
+            "encounters": 120,
+            "max_instructions": 4636
+          },
+          "combined": {
+            "enemy_deaths": 180,
+            "ally_deaths": 42,
+            "enemy_hp_loss": 52180,
+            "ally_hp_loss": 26089,
+            "basic_hits": 845,
+            "refined_decisions": 762,
+            "encounters": 120,
+            "max_instructions": 4799
+          }
+        },
+        "gates": {
+          "parent": {
+            "fewer_ally_deaths": true,
+            "no_fewer_enemy_deaths": true,
+            "spell_strata_survival": true
+          },
+          "finish": {
+            "fewer_ally_deaths": true,
+            "no_fewer_enemy_deaths": true,
+            "spell_strata_survival": false
+          },
+          "duel_control_parity": true
+        },
+        "selected": null,
+        "plan_sha256": "4075c0024589485b9423de516e0339f955f2b420851e054179cdfbbef327006c",
+        "scope": "Constructed short encounters on pinned release; no full-game/league inference."
+      },
+      "discovery-result.json": {
+        "schema": "gota-microplay-result/1",
+        "partition": "discovery",
+        "totals": {
+          "parent": {
+            "enemy_deaths": 180,
+            "ally_deaths": 48,
+            "enemy_hp_loss": 52446,
+            "ally_hp_loss": 26425,
+            "basic_hits": 833,
+            "refined_decisions": 0,
+            "encounters": 120,
+            "max_instructions": 4101
+          },
+          "finish": {
+            "enemy_deaths": 180,
+            "ally_deaths": 46,
+            "enemy_hp_loss": 52374,
+            "ally_hp_loss": 26431,
+            "basic_hits": 833,
+            "refined_decisions": 83,
+            "encounters": 120,
+            "max_instructions": 4636
+          },
+          "combined": {
+            "enemy_deaths": 180,
+            "ally_deaths": 42,
+            "enemy_hp_loss": 52180,
+            "ally_hp_loss": 26089,
+            "basic_hits": 845,
+            "refined_decisions": 762,
+            "encounters": 120,
+            "max_instructions": 4799
+          }
+        },
+        "gates": {
+          "finish": {
+            "more_enemy_deaths": false,
+            "no_added_ally_deaths": true,
+            "spell_strata_survival": true,
+            "duel_control_parity": true
+          },
+          "combined": {
+            "more_enemy_deaths": false,
+            "no_added_ally_deaths": true,
+            "spell_strata_survival": true,
+            "duel_control_parity": true
+          }
+        },
+        "selected": null,
+        "plan_sha256": "4075c0024589485b9423de516e0339f955f2b420851e054179cdfbbef327006c",
+        "scope": "Constructed short encounters on pinned release; no full-game/league inference."
+      }
+    }
+  },
+  "goal": {
+    "primary": "Test whether assistance reduces allied deaths beyond finishing alone.",
+    "metrics": {
+      "enemy_deaths": "All active enemy first deaths during the encounter; no respawn within 144ticks.",
+      "ally_deaths": "Deaths of every active allied participant, including fixed-controller helpers.",
+      "enemy_hp_loss": "Sum max(previous_HP-current_HP,0) per tick. A net damage proxy; simultaneous healing can mask damage.",
+      "ally_hp_loss": "Same net HP loss proxy for all allied participants.",
+      "basic_hits": "Actual subject selfAttacksLanded increments; engine counter, not command count.",
+      "target_switches": "Changes between nonzero engine target intents, not cancelled swings.",
+      "instruction_budget": "Real host maxInstructions=20000; work<=50000; failures invalidate experiment."
+    }
+  },
+  "skill": {
+    "arms": {
+      "parent": {
+        "ir_sha256": "fc2dfa33dce067542c9ca2391246a19051bf000ca4209d60b0dd2a099ba5ed37",
+        "basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+        "roundtrip": true
+      },
+      "finish": {
+        "ir_sha256": "13ceb5e442a85ad6da57b3f23744905d58a9de793c328348aeb8b293c368ad11",
+        "basic_sha256": "3baa924261072bb8f5af5c12565367186382fc36a4cb715ac674f462e6c26d4d",
+        "roundtrip": true
+      },
+      "assist": {
+        "ir_sha256": "ba30b5ba4179773ab28fe5556698c60aee6d24d039aa88122b791e4f392526eb",
+        "basic_sha256": "3c053516652e67d29982ac3ce8b243dd59f3c83f28d0d484786b0c99fabaaa38",
+        "roundtrip": true
+      },
+      "combined": {
+        "ir_sha256": "8bc8a9269a61c897dae72433e8a285b171da938f6460039458d7fc6cff50d540",
+        "basic_sha256": "1132ae8adbbca488616f1dec5fedea5010a156a1349ce7e701e5ffff58210780",
+        "roundtrip": true
+      }
+    }
+  },
+  "strategy": {
+    "prospective_gates": {
+      "candidate": "combined",
+      "control": "finish",
+      "reference": "parent",
+      "requirements": [
+        "strictly fewer allied deaths than finish and parent",
+        "no fewer enemy deaths than finish or parent",
+        "no additional allied deaths per spell mode relative to finish or parent",
+        "identical duel-control state hashes versus parent"
+      ],
+      "scope": "Local cooperative skill only; no league promotion."
+    }
+  },
+  "execution": {
+    "plan": {
+      "artifact": "docs/microplay/2026-09-20/evidence/team/plan.json",
+      "sha256": "4075c0024589485b9423de516e0339f955f2b420851e054179cdfbbef327006c"
+    },
+    "runtime": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+    "artifacts": [
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/team/cooperation-result.json",
+        "sha256": "e40cf946fbc3fcb77e8de0418de060caf4f4a952c1c22a1faf35663c7fd3c34d"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/team/discovery-audit-summary.json",
+        "sha256": "61420e649cc4bb84b355d7efa629592b10185fe856d1e14c04eca9207d40974b"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/team/discovery-audit.json",
+        "sha256": "6148cde4745c16bff578f9041d674530bfd05f7f107f5dac0f46cd0059274a21"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/team/discovery-result.json",
+        "sha256": "126deed63e75d1883fd820a6894cc529b73c91bc69ac2583a21d31698f58421d"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/team/discovery-summary.json",
+        "sha256": "61420e649cc4bb84b355d7efa629592b10185fe856d1e14c04eca9207d40974b"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/team/discovery.jsonl.gz",
+        "sha256": "918e6badedfad1d34fad405b31ca845464482b68e8d1e4936ee973104e0b27f8"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/team/plan.json",
+        "sha256": "4075c0024589485b9423de516e0339f955f2b420851e054179cdfbbef327006c"
+      }
+    ]
+  },
+  "update": {
+    "parent": {
+      "study": "microplay-20260920",
+      "outcome": "No target refinements in256encounters; no qualifier."
+    },
+    "evidence_status": "retained_including_failures"
+  }
+}

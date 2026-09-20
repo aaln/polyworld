@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-20T17:09:27.664273+00:00",
+  "hypothesis": "Restoring the exact idle anchored caster-assist decision block on the current observer starts publicly supported red defense attacks earlier and improves complete fort outcomes without losing current deployed or transit wins. This is isolated from response timers and tested both with and without the red transit component. Historical anchor remains an exact reference, not the parent or a promotion candidate.",
+  "mechanism": "Visible leading threat within22tiles; own HP>=25%; nearby12tile living allyHP>=120 publicly targets it; standing friendly14tile defense anchor; actual redclasses7/8; no existing target replacement. No extra recall, blue response, wait or frontline-only restriction.",
+  "decision_rule": "Complete all60games; compare each restoration against its own source-matched control by case. Require all paired control wins retained, at least one extra actual fort win, all gear, and deaths<=max(1.15*deployed deaths,deployed deaths+5). Drawszero. Historical reference is descriptive and cannot qualify. Native budget/mechanism tests and blue full-command equivalence precede local games. Full win/failure mechanism review and fresh confirmation required before upload or XP. No threshold changes after outcomes.",
+  "matrix": "Five sources x6owned opponents xbothcolors, seeds9860000..9860011; all10classes. Not private-rival evidence or ten-distinct-player evidence.",
+  "variants": [
+    "deployed",
+    "transit_reference",
+    "anchor_restore",
+    "transit_anchor",
+    "historical_anchor"
+  ],
+  "source_parent": "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T060430Z-2c1b16/deployed-branch-capture/deployed",
+  "deployed_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+  "accepted_snapshot": "0000-b2693715459d",
+  "historical_reference": {
+    "name": "anchor",
+    "policy_version": "9cedf3ff-c7ce-4cff-897f-d48b44e049ad",
+    "origin": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/local/candidates/anchor",
+    "copy": "/Users/aaln/experiments/softmax/gota-autoresearch/historical-richard-review-20260920/references/anchor",
+    "hashes": {
+      "policy.ir.json": "1994426aad69999615c57c552ea2bc36e9d0b0c81abaae45d77ffc79d66b1552",
+      "policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+      "manifest.json": "009e0a1630ca2b93c3c9ad191ee63199a8223f6f8a182c5580de63fd0384079a"
+    },
+    "compile_equal": true,
+    "extraction_equal": true
+  },
+  "archive_sha256": "eeb6bb92b5de56c95592512f19678e5678610ae427844dd7537c2a8f9d0325fd",
+  "focus_sha256": "d5848054cd1976e7c7a64add842f70be59a54ce6233cfc5da0f75c70512825e2",
+  "league_checked_at": "2026-09-20T15:23:19.385545+00:00"
+}

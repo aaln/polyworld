@@ -1,0 +1,37 @@
+{
+  "schema": "gota-autoresearch-opponent-models/1",
+  "ready_at": "2026-09-20T15:44:30.220448+00:00",
+  "summary": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/richard-alex-20260920/analysis.md",
+  "models": [
+    {
+      "label": "richard-gods-of-the-arena:v135",
+      "version": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "python": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/opponents/richard_v135.py",
+      "python_sha256": "d0a58f5668198a0f6ab75efabcea6850b68a02ed79b107de4cc0ea03074d0fa2",
+      "report": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/richard-v135/opponent.ir.md",
+      "manifest": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/richard-v135/artifact-manifest.json",
+      "manifest_sha256": "5852d489260f8b48ba764b697fd201ec912149aa66d7fd6346a96ad74dc40221",
+      "compatibility": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/richard-v135/python-compatibility.json",
+      "heldout_predictions_reproduced": 923,
+      "proxy_usable": false,
+      "automatic_strategy_adoption": false
+    },
+    {
+      "label": "gota-g002:v1",
+      "version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "python": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/opponents/alex_g002_v1.py",
+      "python_sha256": "9517af6f1bc04127a7637de5605a1dd788326a9f8baa1951a0c030155bbf6454",
+      "report": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/alex-g002-v1/opponent.ir.md",
+      "manifest": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/alex-g002-v1/artifact-manifest.json",
+      "manifest_sha256": "0b454a8b177b27e62e6e989b953bfe52374e961f29095f4232fd0fc04a064cd8",
+      "compatibility": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/alex-g002-v1/python-compatibility.json",
+      "heldout_predictions_reproduced": 287,
+      "proxy_usable": false,
+      "automatic_strategy_adoption": false
+    }
+  ],
+  "own_basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+  "feedback": "/Users/aaln/experiments/softmax/gota-autoresearch/OPPONENT_IR_FEEDBACK.md",
+  "no_new_xp": true,
+  "no_live_policy_changes": true
+}

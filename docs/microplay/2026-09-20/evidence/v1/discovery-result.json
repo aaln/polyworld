@@ -1,0 +1,69 @@
+{
+  "schema": "gota-microplay-result/1",
+  "partition": "discovery",
+  "totals": {
+    "parent": {
+      "enemy_deaths": 91,
+      "ally_deaths": 31,
+      "enemy_hp_loss": 25277,
+      "ally_hp_loss": 12961,
+      "basic_hits": 469,
+      "refined_decisions": 0,
+      "encounters": 64,
+      "max_instructions": 4368
+    },
+    "finish": {
+      "enemy_deaths": 91,
+      "ally_deaths": 31,
+      "enemy_hp_loss": 25277,
+      "ally_hp_loss": 12961,
+      "basic_hits": 469,
+      "refined_decisions": 0,
+      "encounters": 64,
+      "max_instructions": 4847
+    },
+    "assist": {
+      "enemy_deaths": 91,
+      "ally_deaths": 31,
+      "enemy_hp_loss": 25277,
+      "ally_hp_loss": 12961,
+      "basic_hits": 469,
+      "refined_decisions": 0,
+      "encounters": 64,
+      "max_instructions": 5014
+    },
+    "combined": {
+      "enemy_deaths": 91,
+      "ally_deaths": 31,
+      "enemy_hp_loss": 25277,
+      "ally_hp_loss": 12961,
+      "basic_hits": 469,
+      "refined_decisions": 0,
+      "encounters": 64,
+      "max_instructions": 5014
+    }
+  },
+  "gates": {
+    "finish": {
+      "more_enemy_deaths": false,
+      "no_added_ally_deaths": true,
+      "spell_strata_survival": true,
+      "duel_control_parity": true
+    },
+    "assist": {
+      "more_enemy_deaths": false,
+      "no_added_ally_deaths": true,
+      "spell_strata_survival": true,
+      "duel_control_parity": true
+    },
+    "combined": {
+      "more_enemy_deaths": false,
+      "no_added_ally_deaths": true,
+      "spell_strata_survival": true,
+      "duel_control_parity": true
+    }
+  },
+  "selected": null,
+  "plan_sha256": "33339354281726747dfc2758ba068f64a80737d52892965dcbc1cbdaa4235d4c",
+  "scope": "Constructed short encounters on pinned release; no full-game/league inference."
+}

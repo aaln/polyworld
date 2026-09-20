@@ -1,0 +1,1473 @@
+{
+  "schema": "gota-experiment-ir/1",
+  "id": "microplay-v3-20260920",
+  "situation": {
+    "encounters": "matched six-second encounter, same layout/classes/resources/seed/opponent controller",
+    "scope": [
+      "Constructed encounters, not randomly sampled competitive games.",
+      "Hero classes may be placed on either color to separate class from side.",
+      "Non-subject fixed controllers expose a known attack intent; they are not learned opponent replicas.",
+      "Automatic and manual spells are separate strata; manual spells isolate basic mechanics.",
+      "Pinned historical release; no claim that this is the current hosted release.",
+      "Initial state is constructed; audit is deterministic fixture replay, not a normal hosted replay."
+    ]
+  },
+  "belief": {
+    "hypotheses": "Improve local individual play and allied combat; no fort-win selection gate.",
+    "measured_results": {
+      "holdout-result.json": {
+        "schema": "gota-microplay-result/1",
+        "partition": "holdout",
+        "totals": {
+          "parent": {
+            "enemy_deaths": 239,
+            "ally_deaths": 60,
+            "enemy_hp_loss": 65598,
+            "ally_hp_loss": 34488,
+            "basic_hits": 1024,
+            "refined_decisions": 0,
+            "encounters": 160,
+            "max_instructions": 4176
+          },
+          "finish": {
+            "enemy_deaths": 243,
+            "ally_deaths": 56,
+            "enemy_hp_loss": 65644,
+            "ally_hp_loss": 34541,
+            "basic_hits": 1037,
+            "refined_decisions": 216,
+            "encounters": 160,
+            "max_instructions": 4727
+          },
+          "combined": {
+            "enemy_deaths": 243,
+            "ally_deaths": 50,
+            "enemy_hp_loss": 65428,
+            "ally_hp_loss": 34319,
+            "basic_hits": 1033,
+            "refined_decisions": 416,
+            "encounters": 160,
+            "max_instructions": 4886
+          }
+        },
+        "gates": {
+          "parent": {
+            "fewer_ally_deaths": true,
+            "no_fewer_enemy_deaths": true,
+            "spell_strata_survival": true
+          },
+          "finish": {
+            "fewer_ally_deaths": true,
+            "no_fewer_enemy_deaths": true,
+            "spell_strata_survival": true
+          },
+          "duel_control_parity": true
+        },
+        "selected": "combined",
+        "plan_sha256": "00e006204fc6feeba7aab572b1c2e3a437598bd5561df61ea214808ac3444a7b",
+        "scope": "Constructed short encounters on pinned release; no full-game/league inference."
+      },
+      "discovery-result.json": {
+        "schema": "gota-microplay-result/1",
+        "partition": "discovery",
+        "totals": {
+          "parent": {
+            "enemy_deaths": 92,
+            "ally_deaths": 35,
+            "enemy_hp_loss": 26097,
+            "ally_hp_loss": 13405,
+            "basic_hits": 374,
+            "refined_decisions": 0,
+            "encounters": 64,
+            "max_instructions": 4168
+          },
+          "finish": {
+            "enemy_deaths": 98,
+            "ally_deaths": 31,
+            "enemy_hp_loss": 26461,
+            "ally_hp_loss": 13061,
+            "basic_hits": 377,
+            "refined_decisions": 170,
+            "encounters": 64,
+            "max_instructions": 4722
+          },
+          "combined": {
+            "enemy_deaths": 98,
+            "ally_deaths": 25,
+            "enemy_hp_loss": 26145,
+            "ally_hp_loss": 12761,
+            "basic_hits": 365,
+            "refined_decisions": 330,
+            "encounters": 64,
+            "max_instructions": 4885
+          }
+        },
+        "gates": {
+          "parent": {
+            "fewer_ally_deaths": true,
+            "no_fewer_enemy_deaths": true,
+            "spell_strata_survival": true
+          },
+          "finish": {
+            "fewer_ally_deaths": true,
+            "no_fewer_enemy_deaths": true,
+            "spell_strata_survival": true
+          },
+          "duel_control_parity": true
+        },
+        "selected": "combined",
+        "plan_sha256": "00e006204fc6feeba7aab572b1c2e3a437598bd5561df61ea214808ac3444a7b",
+        "scope": "Constructed short encounters on pinned release; no full-game/league inference."
+      },
+      "integration-result.json": {
+        "complete_games": 10,
+        "all_replays_exact": true,
+        "games": [
+          {
+            "id": "920101-parent",
+            "arm": "parent",
+            "side": null,
+            "seed": 920101,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "716043304",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16541,
+                  "max_work": 26895
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 17540,
+                  "max_work": 28286
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 15823,
+                  "max_work": 25605
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16516,
+                  "max_work": 26831
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 16526,
+                  "max_work": 26574
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17325,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 17697,
+                  "max_work": 28663
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17324,
+                  "max_work": 28258
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17320,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 17700,
+                  "max_work": 28681
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "04052bbb222a07ac1c8600d3bdb07c12dcb2d17ad4f1b2f33d403b2686ce4df2"
+          },
+          {
+            "id": "920101-finish-0",
+            "arm": "finish",
+            "side": 0,
+            "seed": 920101,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/finish.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "716043304",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 17977,
+                  "max_work": 29109
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 18976,
+                  "max_work": 30500
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 18532,
+                  "max_work": 29077
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 19363,
+                  "max_work": 30566
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 17962,
+                  "max_work": 28788
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17325,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 17697,
+                  "max_work": 28663
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17324,
+                  "max_work": 28258
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17320,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 17700,
+                  "max_work": 28681
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "9a08bfdde60d1315de332b1d8c7f061886c95470d527f8a124f45d3a5bad1064"
+          },
+          {
+            "id": "920101-finish-1",
+            "arm": "finish",
+            "side": 1,
+            "seed": 920101,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/finish.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "716043304",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16541,
+                  "max_work": 26895
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 17540,
+                  "max_work": 28286
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 15823,
+                  "max_work": 25605
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16516,
+                  "max_work": 26831
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 16526,
+                  "max_work": 26574
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 18946,
+                  "max_work": 30461
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 19284,
+                  "max_work": 30877
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 18940,
+                  "max_work": 30472
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 18756,
+                  "max_work": 30461
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 19136,
+                  "max_work": 30895
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "c64c9a593e7183642c0117b85edebfef383a78f63c881dda15abb250d57a04df"
+          },
+          {
+            "id": "920101-combined-0",
+            "arm": "combined",
+            "side": 0,
+            "seed": 920101,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/combined.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "716043304",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 18213,
+                  "max_work": 29543
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 19218,
+                  "max_work": 30924
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 18808,
+                  "max_work": 29615
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 19639,
+                  "max_work": 31104
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 18204,
+                  "max_work": 29212
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17325,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 17697,
+                  "max_work": 28663
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17324,
+                  "max_work": 28258
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17320,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 17700,
+                  "max_work": 28681
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "6268c4adf6299a85982b07e6ab8b3bc8e95ab9b69d41409be5e83038719eff99"
+          },
+          {
+            "id": "920101-combined-1",
+            "arm": "combined",
+            "side": 1,
+            "seed": 920101,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/combined.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "716043304",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16541,
+                  "max_work": 26895
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 17540,
+                  "max_work": 28286
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 15823,
+                  "max_work": 25605
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16516,
+                  "max_work": 26831
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 16526,
+                  "max_work": 26574
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 19168,
+                  "max_work": 30870
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 19486,
+                  "max_work": 31276
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 19161,
+                  "max_work": 30881
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 18999,
+                  "max_work": 30870
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 19365,
+                  "max_work": 31294
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "df9580b78d85c7b46dab1d2bab7a29c06bf4fdaffdc76e75cd2267614ae12d52"
+          },
+          {
+            "id": "920102-parent",
+            "arm": "parent",
+            "side": null,
+            "seed": 920102,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "2850700809",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16541,
+                  "max_work": 26895
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 17540,
+                  "max_work": 28286
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 15823,
+                  "max_work": 25605
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16516,
+                  "max_work": 26831
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 16526,
+                  "max_work": 26574
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17325,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 17697,
+                  "max_work": 28663
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17324,
+                  "max_work": 28258
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17320,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 17700,
+                  "max_work": 28681
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "94bfca917214c68c4c77dd1a457cdcd7cb649b49ef1e3e3b27b344471c6554a1"
+          },
+          {
+            "id": "920102-finish-0",
+            "arm": "finish",
+            "side": 0,
+            "seed": 920102,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/finish.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "2850700809",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 17977,
+                  "max_work": 29109
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 18976,
+                  "max_work": 30500
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 18532,
+                  "max_work": 29077
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 19363,
+                  "max_work": 30566
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 17962,
+                  "max_work": 28788
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17325,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 17697,
+                  "max_work": 28663
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17324,
+                  "max_work": 28258
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17320,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 17700,
+                  "max_work": 28681
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "f52e8414ae52f0f20b8f9d4273809a2f5321dbc79572082445801d08dc8da8de"
+          },
+          {
+            "id": "920102-finish-1",
+            "arm": "finish",
+            "side": 1,
+            "seed": 920102,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/finish.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "2850700809",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16541,
+                  "max_work": 26895
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 17540,
+                  "max_work": 28286
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 15823,
+                  "max_work": 25605
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16516,
+                  "max_work": 26831
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 16526,
+                  "max_work": 26574
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 18946,
+                  "max_work": 30461
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 19284,
+                  "max_work": 30877
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 18940,
+                  "max_work": 30472
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 18756,
+                  "max_work": 30461
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 19136,
+                  "max_work": 30895
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "cd3a152e6af834a18df7f934ae6e7f2c1be9086c01cbc09c5097bd0db34dcf2e"
+          },
+          {
+            "id": "920102-combined-0",
+            "arm": "combined",
+            "side": 0,
+            "seed": 920102,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/combined.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "2850700809",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 18213,
+                  "max_work": 29543
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 19218,
+                  "max_work": 30924
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 18808,
+                  "max_work": 29615
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 19639,
+                  "max_work": 31104
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 18204,
+                  "max_work": 29212
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17325,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 17697,
+                  "max_work": 28663
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17324,
+                  "max_work": 28258
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 17320,
+                  "max_work": 28247
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 17700,
+                  "max_work": 28681
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "ede935a424b80d123b171dde004108e291967ee504bec99801c13d1f9a29914b"
+          },
+          {
+            "id": "920102-combined-1",
+            "arm": "combined",
+            "side": 1,
+            "seed": 920102,
+            "roster": [
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/parent.bas",
+              "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-v3-20260920/policies/combined.bas"
+            ],
+            "result": {
+              "ticks": 3763,
+              "complete": true,
+              "game_over": true,
+              "winner": 1,
+              "replay": false,
+              "state_hash": "2850700809",
+              "hash_mismatches": 0,
+              "heroes": [
+                {
+                  "slot": 0,
+                  "class": "DeathKnight",
+                  "deaths": 1,
+                  "hits": 39,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16541,
+                  "max_work": 26895
+                },
+                {
+                  "slot": 1,
+                  "class": "Crossbowman",
+                  "deaths": 1,
+                  "hits": 33,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 17540,
+                  "max_work": 28286
+                },
+                {
+                  "slot": 2,
+                  "class": "Lich",
+                  "deaths": 1,
+                  "hits": 42,
+                  "refinements": 0,
+                  "decisions": 3562,
+                  "max_instructions": 15823,
+                  "max_work": 25605
+                },
+                {
+                  "slot": 3,
+                  "class": "Warlock",
+                  "deaths": 1,
+                  "hits": 65,
+                  "refinements": 0,
+                  "decisions": 3547,
+                  "max_instructions": 16516,
+                  "max_work": 26831
+                },
+                {
+                  "slot": 4,
+                  "class": "Berserker",
+                  "deaths": 2,
+                  "hits": 4,
+                  "refinements": 0,
+                  "decisions": 3331,
+                  "max_instructions": 16526,
+                  "max_work": 26574
+                },
+                {
+                  "slot": 5,
+                  "class": "VanguardKnight",
+                  "deaths": 0,
+                  "hits": 69,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 19168,
+                  "max_work": 30870
+                },
+                {
+                  "slot": 6,
+                  "class": "Ranger",
+                  "deaths": 3,
+                  "hits": 45,
+                  "refinements": 0,
+                  "decisions": 3115,
+                  "max_instructions": 19486,
+                  "max_work": 31276
+                },
+                {
+                  "slot": 7,
+                  "class": "Arcanist",
+                  "deaths": 0,
+                  "hits": 70,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 19161,
+                  "max_work": 30881
+                },
+                {
+                  "slot": 8,
+                  "class": "DruidWarden",
+                  "deaths": 0,
+                  "hits": 89,
+                  "refinements": 0,
+                  "decisions": 3763,
+                  "max_instructions": 18999,
+                  "max_work": 30870
+                },
+                {
+                  "slot": 9,
+                  "class": "DemonHunter",
+                  "deaths": 4,
+                  "hits": 15,
+                  "refinements": 0,
+                  "decisions": 2899,
+                  "max_instructions": 19365,
+                  "max_work": 31294
+                }
+              ]
+            },
+            "replay_exact": true,
+            "replay_sha256": "068ab623243dba38058e85e504d03098a677c87e16cd0e119e0846f79d2b1c87"
+          }
+        ],
+        "max_instructions": 19639,
+        "refinements": 0
+      }
+    }
+  },
+  "goal": {
+    "primary": "Improve local individual play and allied combat; no fort-win selection gate.",
+    "metrics": {
+      "enemy_deaths": "All active enemy first deaths during the encounter; no respawn within 144ticks.",
+      "ally_deaths": "Deaths of every active allied participant, including fixed-controller helpers.",
+      "enemy_hp_loss": "Sum max(previous_HP-current_HP,0) per tick. A net damage proxy; simultaneous healing can mask damage.",
+      "ally_hp_loss": "Same net HP loss proxy for all allied participants.",
+      "basic_hits": "Actual subject selfAttacksLanded increments; engine counter, not command count.",
+      "target_switches": "Changes between nonzero engine target intents, not cancelled swings.",
+      "instruction_budget": "Real host maxInstructions=20000; work<=50000; failures invalidate experiment."
+    }
+  },
+  "skill": {
+    "arms": {
+      "parent": {
+        "ir_sha256": "fc2dfa33dce067542c9ca2391246a19051bf000ca4209d60b0dd2a099ba5ed37",
+        "basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+        "roundtrip": true
+      },
+      "finish": {
+        "ir_sha256": "13ceb5e442a85ad6da57b3f23744905d58a9de793c328348aeb8b293c368ad11",
+        "basic_sha256": "3baa924261072bb8f5af5c12565367186382fc36a4cb715ac674f462e6c26d4d",
+        "roundtrip": true
+      },
+      "combined": {
+        "ir_sha256": "d2f9d7463b5c5ce5c7163f356b88d4abf922cfdb5f42d727cd7d8d6eaead9eac",
+        "basic_sha256": "ffd2fd8da6551f2c19636a3b6293e3b6c6ef5db658cf673eb167792dfe77ce84",
+        "roundtrip": true
+      }
+    }
+  },
+  "strategy": {
+    "prospective_gates": {
+      "candidate": "combined",
+      "control": "finish",
+      "reference": "parent",
+      "requirements": [
+        "strictly fewer allied deaths than finish and parent",
+        "no fewer enemy deaths than either control",
+        "no additional allied deaths in either spell mode",
+        "identical duel-control state hashes"
+      ],
+      "holdout": "Run only if discovery passes; same gates, no parameter changes.",
+      "scope": "Local cooperative skill; no league promotion."
+    }
+  },
+  "execution": {
+    "plan": {
+      "artifact": "docs/microplay/2026-09-20/evidence/v3/plan.json",
+      "sha256": "00e006204fc6feeba7aab572b1c2e3a437598bd5561df61ea214808ac3444a7b"
+    },
+    "runtime": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+    "artifacts": [
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/discovery-audit-summary.json",
+        "sha256": "9ee5ceb25e582f324ba5531b1b499217df7ee6e28f988bd57334b5f9962e7978"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/discovery-audit.json",
+        "sha256": "abd3d6b16285c03b85431194c32ae4eae768b983d83028bc4853c649abe0f402"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/discovery-result.json",
+        "sha256": "ef0923a56c6843ca4261fea08a2c9c9b6ac277a752f9098bda150beb3e40b870"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/discovery-summary.json",
+        "sha256": "9ee5ceb25e582f324ba5531b1b499217df7ee6e28f988bd57334b5f9962e7978"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/discovery.jsonl.gz",
+        "sha256": "64a6ec203c5cbd929492456c57850ca81f069b1282b05da966ca79ad72123854"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/holdout-audit-summary.json",
+        "sha256": "8316e7669ca38848a8afaecba11ec1b0ba9665bdebb3978432e0200714056011"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/holdout-audit.json",
+        "sha256": "d34cd5b437ac687cca17dcdc75fa80525d4325da81c66868f5f12c5d40853a94"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/holdout-result.json",
+        "sha256": "b32d11b36b265e0108734e2494ada0b0b79660086a036bbd83c62d76ef41a909"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/holdout-summary.json",
+        "sha256": "8316e7669ca38848a8afaecba11ec1b0ba9665bdebb3978432e0200714056011"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/holdout.jsonl.gz",
+        "sha256": "bd666f9d180bc11124f24faa707395d2b93f3ab0196d6e536e51e1483e8ed5a0"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/integration-plan.json",
+        "sha256": "f7609e2968606873714371d5877fb2c46da8088c761e3bc7b2e901e783bdbc41"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/integration-result.json",
+        "sha256": "d6b04ab21d29319a6d6a1c37293bb7687b6ce2902029ebe37b965c9679f4bb68"
+      },
+      {
+        "artifact": "docs/microplay/2026-09-20/evidence/v3/plan.json",
+        "sha256": "00e006204fc6feeba7aab572b1c2e3a437598bd5561df61ea214808ac3444a7b"
+      }
+    ]
+  },
+  "update": {
+    "parent": "Combined v2 failed cooperation confirmation: automatic-spell deaths36 vs finish34.",
+    "evidence_status": "retained_including_failures"
+  }
+}

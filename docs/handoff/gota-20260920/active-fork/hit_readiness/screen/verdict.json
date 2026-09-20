@@ -1,0 +1,195 @@
+{
+  "status": "inconclusive incremental effect; original local screen unqualified",
+  "qualification": {
+    "qualified": [],
+    "selected": [],
+    "numeric_pass": [
+      "hits8",
+      "hits16"
+    ],
+    "checks": {
+      "hits8": {
+        "gear": true,
+        "cells": {
+          "parent/parent/0": true,
+          "parent/parent/1": true,
+          "parent/default/0": true,
+          "parent/default/1": true,
+          "parent/blue_repair/0": true,
+          "parent/blue_repair/1": true,
+          "parent/support_anchor/0": true,
+          "parent/support_anchor/1": true,
+          "parent/WeaponAll/0": true,
+          "parent/WeaponAll/1": true,
+          "parent/deployed_suppression/0": true,
+          "parent/deployed_suppression/1": true,
+          "parent/role64/0": true,
+          "parent/role64/1": true,
+          "suppression_reference/parent/0": true,
+          "suppression_reference/parent/1": true,
+          "suppression_reference/default/0": true,
+          "suppression_reference/default/1": true,
+          "suppression_reference/blue_repair/0": true,
+          "suppression_reference/blue_repair/1": true,
+          "suppression_reference/support_anchor/0": true,
+          "suppression_reference/support_anchor/1": true,
+          "suppression_reference/WeaponAll/0": true,
+          "suppression_reference/WeaponAll/1": true,
+          "suppression_reference/deployed_suppression/0": true,
+          "suppression_reference/deployed_suppression/1": true,
+          "suppression_reference/role64/0": true,
+          "suppression_reference/role64/1": true
+        },
+        "parent_fort_win_floor": {
+          "0": true,
+          "1": true
+        },
+        "red_gain_over_parent": true,
+        "survival_parent": true,
+        "survival_suppression": true,
+        "numeric_pass": true,
+        "complete_reacting_game_fallback_observed": false,
+        "incremental_fort_gain_over_suppression": false
+      },
+      "hits16": {
+        "gear": true,
+        "cells": {
+          "parent/parent/0": true,
+          "parent/parent/1": true,
+          "parent/default/0": true,
+          "parent/default/1": true,
+          "parent/blue_repair/0": true,
+          "parent/blue_repair/1": true,
+          "parent/support_anchor/0": true,
+          "parent/support_anchor/1": true,
+          "parent/WeaponAll/0": true,
+          "parent/WeaponAll/1": true,
+          "parent/deployed_suppression/0": true,
+          "parent/deployed_suppression/1": true,
+          "parent/role64/0": true,
+          "parent/role64/1": true,
+          "suppression_reference/parent/0": true,
+          "suppression_reference/parent/1": true,
+          "suppression_reference/default/0": true,
+          "suppression_reference/default/1": true,
+          "suppression_reference/blue_repair/0": true,
+          "suppression_reference/blue_repair/1": true,
+          "suppression_reference/support_anchor/0": true,
+          "suppression_reference/support_anchor/1": true,
+          "suppression_reference/WeaponAll/0": true,
+          "suppression_reference/WeaponAll/1": true,
+          "suppression_reference/deployed_suppression/0": true,
+          "suppression_reference/deployed_suppression/1": true,
+          "suppression_reference/role64/0": true,
+          "suppression_reference/role64/1": true
+        },
+        "parent_fort_win_floor": {
+          "0": true,
+          "1": true
+        },
+        "red_gain_over_parent": true,
+        "survival_parent": true,
+        "survival_suppression": true,
+        "numeric_pass": true,
+        "complete_reacting_game_fallback_observed": false,
+        "incremental_fort_gain_over_suppression": false
+      }
+    },
+    "metrics": {
+      "parent": {
+        "games": 14,
+        "wins": 5,
+        "deaths": 165,
+        "all_gear": true,
+        "deaths_per_live_decision_minute": 0.5224722436620555,
+        "opponents": {
+          "parent": 1,
+          "default": 2,
+          "blue_repair": 1,
+          "support_anchor": 1,
+          "WeaponAll": 0,
+          "deployed_suppression": 0,
+          "role64": 0
+        },
+        "colors": {
+          "0": 1,
+          "1": 4
+        }
+      },
+      "suppression_reference": {
+        "games": 14,
+        "wins": 11,
+        "deaths": 146,
+        "all_gear": true,
+        "deaths_per_live_decision_minute": 0.44807515659399794,
+        "opponents": {
+          "parent": 2,
+          "default": 2,
+          "blue_repair": 2,
+          "support_anchor": 2,
+          "WeaponAll": 1,
+          "deployed_suppression": 1,
+          "role64": 1
+        },
+        "colors": {
+          "0": 7,
+          "1": 4
+        }
+      },
+      "hits8": {
+        "games": 14,
+        "wins": 11,
+        "deaths": 146,
+        "all_gear": true,
+        "deaths_per_live_decision_minute": 0.44807515659399794,
+        "opponents": {
+          "parent": 2,
+          "default": 2,
+          "blue_repair": 2,
+          "support_anchor": 2,
+          "WeaponAll": 1,
+          "deployed_suppression": 1,
+          "role64": 1
+        },
+        "colors": {
+          "0": 7,
+          "1": 4
+        }
+      },
+      "hits16": {
+        "games": 14,
+        "wins": 11,
+        "deaths": 146,
+        "all_gear": true,
+        "deaths_per_live_decision_minute": 0.44807515659399794,
+        "opponents": {
+          "parent": 2,
+          "default": 2,
+          "blue_repair": 2,
+          "support_anchor": 2,
+          "WeaponAll": 1,
+          "deployed_suppression": 1,
+          "role64": 1
+        },
+        "colors": {
+          "0": 7,
+          "1": 4
+        }
+      }
+    },
+    "prospective": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/prospective.json",
+    "prospective_sha256": "65b34574b8a86d7ef11500ac35dbd8000d06c5e8bf5929bb242fda2aca446fd8",
+    "interpretation": "Local only. New candidates have not been tested against exact Jordan268. Draws zero; comparator cells retained; full reacting source games, no statistical independence claim. Incremental fort benefit unproven unless separately demonstrated."
+  },
+  "unmet_rule": "At least one complete reacting game must demonstrate the new level1 fallback.",
+  "numeric_gates_passed": true,
+  "no_incremental_fort_gain_observed": true,
+  "source_hashes": {
+    "hits8": "da1afb222d8455397ef4dd76128526156a5b8b9dccaff0d6794c577ff8e9f3ef",
+    "hits16": "d076bb5ae3432b79a8e5a1bc321db5dcdfa3ee86fcc64fab32126bfc3d400320"
+  },
+  "candidate_only_target_scope": "Both candidates reconstruct the entire secondJordan268 blue discovery loss unchanged; this is not newhosted gameplay. The other loss contains potential newpublic readiness intents, notqualityevidence.",
+  "mixed_diagnostic": "Separate prospectivelyfixed mixed-roster48-game diagnostic must retain its own outcomes andreviews; cannot silently substitute for the originalscreen orconfirmation.",
+  "formal_acceptance": false,
+  "uploaded": false
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#edf0e7">
+  <title>Emberwatch · Hold the light</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23273e35'/%3E%3Cpath d='M34 8C40 25 50 28 49 40C48 60 16 61 15 40C14 30 24 19 24 19C22 34 29 34 34 8Z' fill='%23eeb271'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Emberwatch home"><span class="brand-mark">♜</span><span>EMBERWATCH<small>A COOPERATIVE TOWER DEFENSE</small></span></a>
+    <div class="expedition-label"><span class="live-dot"></span> TWO WARDENS. ONE LAST LIGHT.</div>
+    <nav aria-label="Game controls">
+      <button class="quiet" id="help-button">How to play <span class="key">?</span></button>
+      <button class="icon-button" id="sound-button" aria-label="Enable sound" title="Sound off">♪</button>
+      <button class="icon-button" id="settings-button" aria-label="Expedition settings" title="Expedition settings">⚙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="statusbar" aria-label="Expedition status">
+      <div class="location"><span class="eyebrow">EXPEDITION <span id="seed-label">2026</span></span><h1>The Verdant Reach<span class="difficulty-label" id="difficulty-label">Veteran</span></h1></div>
+      <div class="stat core-stat"><span class="stat-icon">◇</span><div><span class="eyebrow">CORE INTEGRITY</span><strong><span id="core">30</span><small> / 30</small></strong></div><div class="health-track"><i id="health-fill"></i></div></div>
+      <div class="stat"><span class="stat-icon amber">✦</span><div><span class="eyebrow">YOUR EMBERS</span><strong id="gold">240</strong></div></div>
+      <div class="stat"><span class="stat-icon violet">ϟ</span><div><span class="eyebrow">YOUR ENERGY</span><strong id="energy">100</strong></div></div>
+      <div class="stat wave-stat"><div><span class="eyebrow">WAVE</span><strong><span id="wave">01</span><small> / 12</small></strong></div></div>
+    </section>
+
+    <div class="game-layout">
+      <div class="battle-column">
+        <section class="arena" aria-label="Battlefield">
+          <canvas id="battlefield" tabindex="0" aria-label="Isometric battlefield. Choose a tower, then click grass to build. Arrow keys move the tile cursor; Enter places or selects. Press H for help."></canvas>
+          <div class="field-heading"><span class="eyebrow" id="phase-label">PREPARE YOUR DEFENSE</span><h2 id="field-title">Hold the light.</h2><p id="field-subtitle">Build along the paths. Your partner has the other flank.</p></div>
+          <div class="field-top-right"><span class="weather-icon">☀</span> DAYBREAK <span class="separator">/</span> <span id="clock">00:00</span></div>
+          <div class="field-bottom-left"><span><i class="legend-dot north"></i> NORTH APPROACH</span><span><i class="legend-dot south"></i> SOUTH APPROACH</span></div>
+          <div class="field-tools"><button id="ping-button" class="field-button" title="Ping a location for your partner (P)">⌖ <span>Ping</span><kbd>P</kbd></button><button id="pause-button" class="field-button" aria-label="Pause game" title="Pause or resume (Space)">Ⅱ</button><button id="speed-button" class="field-button" aria-label="Change simulation speed">1×</button></div>
+          <div id="placement-hint" class="placement-hint" hidden></div>
+          <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+          <div id="end-card" class="end-card" hidden><span class="eyebrow" id="end-eyebrow"></span><h2 id="end-title"></h2><p id="end-copy"></p><div class="end-stats" id="end-stats"></div><div class="end-actions"><button class="primary" id="again-button">Another expedition ↗</button><button class="secondary" id="end-export">Save replay ↓</button></div></div>
+          <div id="paused-label" class="paused-label" hidden>TACTICAL PAUSE <small>Take a breath. You can still build.</small></div>
+        </section>
+
+        <section class="build-dock" aria-label="Build towers and use abilities">
+          <div class="dock-section"><div class="dock-label"><span>BUILD YOUR DEFENSE</span><span class="muted">Select a tower, then a tile</span></div><div id="tower-buttons" class="tower-buttons"></div></div>
+          <div class="abilities-section"><div class="dock-label">WARDEN ABILITIES</div><div class="ability-buttons"><button class="ability" id="overdrive-button" title="Double nearby towers' fire rate for 5 seconds. Costs 45 energy."><kbd>Q</kbd><span class="ability-symbol">ϟ</span><strong>Overdrive</strong><small>45 energy</small></button><button class="ability" id="freeze-button" title="Freeze an area for 2 seconds, then slow it. Costs 60 energy."><kbd>E</kbd><span class="ability-symbol frost">❄</span><strong>Cold snap</strong><small>60 energy</small></button></div></div>
+        </section>
+        <div class="bottom-note"><span><i class="tiny-diamond"></i> Stronger together. Nearby towers from different wardens deal <b>15% more damage.</b></span><button id="export-button" class="text-button">Save replay ↓</button></div>
+      </div>
+
+      <aside class="sidebar" aria-label="Strategy panel">
+        <section class="wave-panel"><div class="panel-eyebrow"><span id="forecast-label">UP NEXT · WAVE 01</span><span class="pill" id="wave-count">16 ENEMIES</span></div><h2 id="wave-name">First embers</h2><p id="wave-advice">A gentle beginning. Cover both approaches with damage.</p><div id="enemy-roster" class="enemy-roster"></div><div class="wave-progress" id="wave-progress"><i id="wave-progress-fill"></i></div><button class="primary start-wave" id="ready-button">Ready for wave 01 <span>↗</span></button><div class="ready-caption" id="ready-caption">Start when both wardens are ready.</div></section>
+
+        <section class="partner-panel"><div class="panel-eyebrow"><span>YOUR OTHER HALF</span><span class="online"><i></i> <span id="partner-type">AI PARTNER</span></span></div><div class="partner-identity"><div class="portrait" id="partner-avatar">♜</div><div><h3 id="partner-name">Moss</h3><span id="partner-role">Adaptive support warden</span></div><span class="partner-gold">✦ <b id="partner-gold">240</b></span></div><p class="partner-speech" id="partner-speech">“I’ll cover the gaps. Let’s keep this light burning.”</p><label class="order-label" for="partner-order">ASSIGN A PRIORITY</label><select id="partner-order"><option value="2">Adapt to our defenses</option><option value="0">Cover the north approach</option><option value="1">Cover the south approach</option></select><div class="partner-actions"><button class="secondary" id="gift-button">Share 50 ✦</button><button class="secondary" id="takeover-button">Take control ⇄</button></div></section>
+
+        <section class="intel-panel" id="intel-panel"><div class="panel-eyebrow"><span>FIELD NOTES</span><span>01 / 03</span></div><h3>Set up a chain reaction.</h3><p>Frost slows the crowd. Arc hits up to three enemies, dealing <b>80% more damage</b> to chilled targets.</p><div class="combo"><span class="combo-icon">❄</span><span>+</span><span class="combo-icon">ϟ</span><span class="combo-arrow">→</span><span class="combo-result">A very bad day<br>for cinderlings.</span></div><div class="intel-footer">SELECT A TOWER TO INSPECT IT</div></section>
+        <section class="selection-panel" id="selection-panel" hidden></section>
+      </aside>
+    </div>
+    <footer><span>EMBERWATCH <span class="footer-slash">/</span> A POLYWORLD EXPEDITION</span><span id="controller-label">YOU + MOSS <i class="live-dot"></i> COOPERATIVE</span></footer>
+  </main>
+
+  <dialog id="help-dialog"><form method="dialog"><button class="close-dialog" aria-label="Close instructions">×</button></form><span class="eyebrow">WELCOME, WARDEN</span><h2>Two wardens.<br>One last light.</h2><p>Keep the core alive through 12 waves. You command the amber towers; Moss, your AI partner, commands the teal ones. Every kill rewards both of you.</p><div class="help-grid"><article><span>01</span><h3>Build a crossfire</h3><p>Select a tower below, then click grass beside a path. Range previews show what it can reach. Build near your partner for a 15% damage bonus.</p></article><article><span>02</span><h3>Read the wave</h3><p>Runners need slows. Ironclads shrug off Bolt and Arc; Mortars pierce their armor. Menders heal crowds, so set a tower to “Strongest” or freeze the group.</p></article><article><span>03</span><h3>Make the moment count</h3><p>Overdrive doubles fire rate in an area. Cold snap stops enemies and enables Arc combos. Both use your energy and share an 8-second cooldown.</p></article><article><span>04</span><h3>Coordinate & specialize</h3><p>Ping an area to ask Moss for support. Share 50 embers for a key upgrade. Level 3 towers choose extra power or longer reach. Selling returns 75%.</p></article></div><p class="help-controls"><b>1–5</b> Build · <b>Q / E</b> Abilities · <b>P</b> Ping · <b>Space</b> Ready / pause · <b>Esc</b> Cancel · <b>Arrows + Enter</b> Tile cursor</p><form method="dialog"><button class="primary">Keep the light burning ↗</button></form></dialog>
+
+  <dialog id="settings-dialog"><form method="dialog"><button class="close-dialog" aria-label="Close settings">×</button></form><span class="eyebrow">A FRESH START</span><h2>Your expedition.</h2><p>Same seed, same challenge. Find a strategy worth repeating.</p><label for="seed-input">EXPEDITION SEED</label><input id="seed-input" type="number" min="0" max="1000000" value="2026"><label for="difficulty-input">DIFFICULTY</label><select id="difficulty-input"><option value="0">Scout · room to experiment</option><option value="1" selected>Veteran · hold your ground</option><option value="2">Ordeal · every decision matters</option></select><label for="mode-input">WHO’S ON WATCH?</label><select id="mode-input"><option value="partner">You + Moss · AI co-op</option><option value="local">Two humans · pass and play</option><option value="watch">Moss + Fern · watch the AI</option></select><button id="new-game-button" class="primary">Begin expedition ↗</button><div class="replay-import"><label for="replay-file">OR WATCH A SAVED REPLAY</label><input id="replay-file" type="file" accept=".json,application/json"></div><p class="settings-footnote">New expeditions replace the current game. Save a replay first to keep it.</p></dialog>
+  <script src="core.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

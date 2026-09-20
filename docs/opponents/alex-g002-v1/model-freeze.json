@@ -1,0 +1,209 @@
+{
+  "frozen_at": "2026-09-20T15:23:26.095118+00:00",
+  "parameters": {
+    "minimum_segment_ticks": 6,
+    "opportunity_radius_tiles": 12,
+    "low_hp_absolute": 100,
+    "motion_min_world_units": 1000,
+    "radial_cosine_threshold": 0.35,
+    "local_route_check_tiles": 2
+  },
+  "models": {
+    "train": {
+      "contexts": {
+        "mask_2_low_0": {
+          "target_creep": 139
+        },
+        "mask_3_low_0": {
+          "target_hero": 12
+        },
+        "mask_4_low_0": {
+          "target_structure": 126,
+          "advance": 72,
+          "hold": 18,
+          "lateral": 6,
+          "withdraw": 12
+        },
+        "mask_5_low_0": {
+          "target_structure": 25,
+          "hold": 6,
+          "target_hero": 2
+        },
+        "mask_6_low_0": {
+          "target_structure": 117,
+          "target_creep": 294,
+          "hold": 6,
+          "withdraw": 6
+        },
+        "mask_7_low_0": {
+          "target_hero": 50,
+          "target_structure": 19
+        }
+      },
+      "global": {
+        "target_creep": 433,
+        "target_structure": 287,
+        "advance": 72,
+        "hold": 30,
+        "target_hero": 64,
+        "lateral": 6,
+        "withdraw": 18
+      },
+      "smoothing": "Laplace +1 over estimated available skills; context backs off globally if n<8"
+    },
+    "population": {
+      "contexts": {
+        "mask_1_low_0": {
+          "target_hero": 81,
+          "advance": 62,
+          "hold": 111,
+          "withdraw": 29,
+          "lateral": 24
+        },
+        "mask_1_low_1": {
+          "withdraw": 20,
+          "hold": 34,
+          "advance": 5,
+          "lateral": 2
+        },
+        "mask_2_low_0": {
+          "target_creep": 327,
+          "advance": 2,
+          "hold": 4,
+          "withdraw": 1
+        },
+        "mask_2_low_1": {
+          "target_creep": 2,
+          "withdraw": 1
+        },
+        "mask_3_low_0": {
+          "target_creep": 562,
+          "target_hero": 137,
+          "hold": 193,
+          "withdraw": 61,
+          "advance": 26,
+          "lateral": 49
+        },
+        "mask_3_low_1": {
+          "target_creep": 15,
+          "target_hero": 5,
+          "hold": 30,
+          "advance": 10,
+          "lateral": 1,
+          "withdraw": 7
+        },
+        "mask_4_low_0": {
+          "target_structure": 126,
+          "advance": 26,
+          "hold": 62,
+          "withdraw": 7,
+          "lateral": 1
+        },
+        "mask_4_low_1": {
+          "target_structure": 5,
+          "withdraw": 3,
+          "hold": 33,
+          "advance": 1
+        },
+        "mask_5_low_0": {
+          "target_structure": 33,
+          "target_hero": 50,
+          "hold": 31,
+          "advance": 3,
+          "withdraw": 2,
+          "lateral": 3
+        },
+        "mask_5_low_1": {
+          "target_structure": 1,
+          "target_hero": 2,
+          "hold": 5,
+          "withdraw": 1
+        },
+        "mask_6_low_0": {
+          "target_creep": 270,
+          "target_structure": 60,
+          "lateral": 4,
+          "hold": 19,
+          "advance": 12,
+          "withdraw": 6
+        },
+        "mask_6_low_1": {
+          "target_creep": 6,
+          "target_structure": 4,
+          "hold": 4
+        },
+        "mask_7_low_0": {
+          "target_structure": 15,
+          "target_hero": 28,
+          "target_creep": 29,
+          "hold": 6,
+          "advance": 1,
+          "withdraw": 3,
+          "lateral": 2
+        },
+        "mask_7_low_1": {
+          "target_structure": 3,
+          "target_creep": 4,
+          "target_hero": 4,
+          "hold": 3,
+          "withdraw": 2
+        }
+      },
+      "global": {
+        "target_creep": 1215,
+        "target_hero": 307,
+        "target_structure": 247,
+        "hold": 535,
+        "withdraw": 143,
+        "advance": 148,
+        "lateral": 86
+      },
+      "smoothing": "Laplace +1 over estimated available skills; context backs off globally if n<8"
+    }
+  },
+  "training_episode_ids": [
+    "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002",
+    "ereq_d79c3904-1962-4bf9-baef-246cccbe6c17",
+    "ereq_ab17782d-44c9-4a10-9b8c-c7764afc88c4",
+    "ereq_87ba2957-57de-4aac-8867-1cf86b06d5f4",
+    "ereq_0e7a53dc-0e61-471f-a885-c5c0e4862099",
+    "ereq_b2234f67-1d36-4c31-825b-09551474a6f0",
+    "ereq_0dfea382-21eb-4746-ab1d-f9dca400692f",
+    "ereq_e15c0bbb-478e-4ac3-9658-5972654f596e",
+    "ereq_f1f1e89b-2626-4767-810a-de580832917b",
+    "ereq_1db2a887-6854-45d4-accc-e3f0d32d3fc3",
+    "ereq_38049079-023c-40e5-8a1c-6881ce343817",
+    "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad",
+    "ereq_01d0d934-9556-43fe-8f09-2f6617e4852b",
+    "ereq_ad6983d3-3de3-4c23-ac24-9f130b1e1fc4",
+    "ereq_8a7515f1-77c8-44d6-9076-91ec4020a849",
+    "ereq_3853474b-50ba-437c-b2d5-10ed31669268",
+    "ereq_779910ab-9e1a-4960-9e97-04acd606490c",
+    "ereq_188c0e6e-da7c-479d-8de6-9d7926ae8564",
+    "ereq_73a40836-1338-4ea5-9b83-d4908b2ac893",
+    "ereq_77bce129-45e3-4fe8-9df2-7b19c398c269",
+    "ereq_602d7a0b-6359-484a-a76a-b370908525b2",
+    "ereq_f66ea8af-07db-478e-aa9f-8009d0c2a162",
+    "ereq_566b97ad-41e2-4d53-820b-f7f929266fc3",
+    "ereq_79f848e2-41f8-4b95-a8b8-63f91142989b",
+    "ereq_03d642e0-9655-43ba-9bf7-f37c6c0ded5d",
+    "ereq_afa63af7-0c73-4d67-8da4-5b280ec295eb"
+  ],
+  "source_sha256": {
+    "fetch.py": "362b4cce523532504fb3c44306e2ae8db5b8f6a5a9da65fa19a8b43236f71471",
+    "build.py": "fae4bea4f9447e476c2d2019dc95753c69e8e3fbb307a4cac90616cc2f9a0a13",
+    "plot.py": "8ab998adb453d9515144a38cbfd03f25450638563b9e300e09ae5bb41339e5be",
+    "prepare_pair.py": "80e2617785a89a037881b94f9d8d5f915e86244106fabf24dac7f388ccddc691",
+    "fit.py": "93c38947f7fad630a1cc45732d35cc01a84756cf05d77377ab0c200e161b703c",
+    "run_target.py": "b21b5935d4b8fd8fb8ab672386f05a4bfa98e6fd6ae7bb92b2e5fcf2dd2268a6",
+    "semantics.py": "7a179c2e5ffc2745b7e11e7078920d6f72ad756a87b0548dffea7e771e5708ee",
+    "evaluate_target.py": "e4b5205556eee93734df27ae302a82f8f97351f986d30856ee9873beac4f6476",
+    "evaluate.py": "ac0e417132a0c835255276149af9769b76c89cbb4834ecf8dbe0c9c4c3a2c7cf",
+    "inspect_pair.py": "e7f0bf4df35a0f7676a0d8a31ccb5c93ce0a57c964c78835844ab9201a354ee3",
+    "segment.py": "ef04e05be87009576a8aa66768d6326d2188009ea24675c514c18866ca116e6e",
+    "verify.py": "846fcbedaf4736c446854e941252574df5f43f4b3f42c9831d014112c06ff9b9",
+    "decode.py": "c4780fd39b1e584c4ae5943c472bc8a36cd91154d17efe65ffeff2eea4aeb2fb",
+    "test_opponent_ir.py": "1cf72ad8334460b970c58cb97f81aa7d0b7ca5590f401d8d5ddf66d88a8481e3"
+  },
+  "notes": "Heldout has not been decoded. Parameters/segmentation and predictor are frozen. Training and population use one episode per exact observer trajectory. Predictions are conditional on retrospective motif starts, not predictions of event timing."
+}

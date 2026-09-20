@@ -1,0 +1,79 @@
+{
+  "source_bytes_sha256": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+  "ir_bytes_sha256": "7030610727902f3fb7ae74325261a791dd98c5db3404574cfc5122014c11ac42",
+  "ir_canonical_sha256": "8e4eb95f2cd8a9dd2702a5b4e13a7ceb541db803e04c70cea11b33bf5839ce37",
+  "compile_exact": true,
+  "reverse_executable_exact": true,
+  "rules": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_base",
+        "G_defense"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "always",
+      "skill": "attack",
+      "for": [
+        "G_fort",
+        "G_cadence",
+        "G_survival",
+        "G_glory",
+        "G_defense"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity",
+        "G_survival"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity",
+        "G_survival"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity",
+        "G_glory"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate_no_motion",
+      "skill": "fallback",
+      "for": [
+        "G_wave",
+        "G_defense"
+      ]
+    }
+  ],
+  "glossary": {
+    "always": "Every host decision.",
+    "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+    "no_candidate_no_motion": "No observed attackable candidate and no accepted retreat movement in this decision."
+  }
+}

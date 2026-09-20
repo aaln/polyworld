@@ -1,0 +1,70 @@
+{
+  "frozen_at": "2026-09-20T17:10:04.585058+00:00",
+  "sources": {
+    "deployed": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/deployed/policy.bas",
+    "anchored": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/anchored/policy.bas",
+    "unanchored": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/unanchored/policy.bas",
+    "historical_anchor": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/historical_anchor/policy.bas"
+  },
+  "opponents": {
+    "default": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas",
+    "deployed": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/deployed/policy.bas",
+    "historical_anchor": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/historical_anchor/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9860000,
+      "opponent": "default",
+      "side": 0
+    },
+    {
+      "seed": 9860001,
+      "opponent": "default",
+      "side": 1
+    },
+    {
+      "seed": 9860002,
+      "opponent": "deployed",
+      "side": 0
+    },
+    {
+      "seed": 9860003,
+      "opponent": "deployed",
+      "side": 1
+    },
+    {
+      "seed": 9860004,
+      "opponent": "historical_anchor",
+      "side": 0
+    },
+    {
+      "seed": 9860005,
+      "opponent": "historical_anchor",
+      "side": 1
+    }
+  ],
+  "game_version": "2026.9.16.5",
+  "engine_commit": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+  "gate": {
+    "retain_each_deployed_win": true,
+    "minimum_red_win_gain": 1,
+    "max_deaths": "max(1.15 * deployed deaths, deployed deaths + 5)",
+    "all_equipment": true,
+    "native_budgets_and_replay": true,
+    "support_activation": true
+  },
+  "inputs_sha256": {
+    "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/deployed/policy.bas": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas": "781f97d93836e3bdf0b16304fa140b1bb18f2d56c169ce6788e0e8b9545f9d34",
+    "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/anchored/policy.bas": "53e26d4c84afd7d5f93a5d92904db52c314d2aff657545d0569c6959f4a63a0a",
+    "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/unanchored/policy.bas": "0a09dfc406069b26ff4d8d86c688dfedcd5366e8a09d561e84abf4a0fd5606d4",
+    "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/candidates/historical_anchor/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/config.json": "835bbeb883ea4db55d7ac89a3de23544d9728ef01d46a2be29e8aa10d3b91c16",
+    "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/support-repairs-20260920/prospective.md": "9d226901bf3ba3d9d213386d7310f597fe54a479f1843aa4cdf344914f370fd0",
+    "/Users/aaln/experiments/softmax/polyworld/games/gods_of_the_arena/instruments/support_repairs/prepare.py": "bed07e25134ee83380113fef9786cf497ec7538070a40c916f4bc5cc81bef817",
+    "/Users/aaln/experiments/softmax/polyworld/games/gods_of_the_arena/instruments/support_repairs/contracts.py": "04ca9e408c1b73cf032d27fbef43f8f2c42e37c62497bc6530b802a1d6ef7e51",
+    "/Users/aaln/experiments/softmax/polyworld-gota-clean-20260916-r5/examples/gods_of_the_arena/players/ir/ally_assist_contract.py": "11267bda531d36aeaf33c7c53ed29e7dde4c8ecd95e97338423c3cd7a1e547f4",
+    "/Users/aaln/experiments/softmax/polyworld-gota-clean-20260916-r5/examples/gods_of_the_arena/players/ir/anchored_support_contract.py": "304421a8ed3b57eaed97390f8ac61c1f9c39a07a9d36d74c0990a2309ca563b4"
+  },
+  "scope": "24 complete local mechanism/regression games; no private rival or competitive evidence."
+}

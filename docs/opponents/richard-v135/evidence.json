@@ -1,0 +1,1401 @@
+{
+  "schema": "gota-opponent-validation/1",
+  "model_freeze_sha256": "ec816aa512b666ffe2365198465a68485cb173072122cc298d3cdb3efd1ce93d",
+  "all_replays_verified": true,
+  "models": {
+    "train": {
+      "contexts": {
+        "mask_1_low_0": {
+          "target_hero": 357
+        },
+        "mask_1_low_1": {
+          "target_hero": 8
+        },
+        "mask_2_low_0": {
+          "target_creep": 270,
+          "lateral": 8,
+          "hold": 21,
+          "withdraw": 14,
+          "advance": 21
+        },
+        "mask_2_low_1": {
+          "hold": 7
+        },
+        "mask_3_low_0": {
+          "target_creep": 339,
+          "target_hero": 314
+        },
+        "mask_4_low_0": {
+          "target_structure": 564,
+          "advance": 14
+        },
+        "mask_5_low_0": {
+          "target_hero": 67,
+          "target_structure": 15
+        },
+        "mask_6_low_0": {
+          "target_creep": 238,
+          "target_structure": 338,
+          "advance": 7
+        },
+        "mask_7_low_0": {
+          "target_hero": 14,
+          "hold": 4,
+          "advance": 4
+        }
+      },
+      "global": {
+        "target_creep": 847,
+        "target_structure": 917,
+        "target_hero": 760,
+        "lateral": 8,
+        "hold": 32,
+        "advance": 46,
+        "withdraw": 14
+      },
+      "smoothing": "Laplace +1 over estimated available skills; context backs off globally if n<8"
+    },
+    "population": {
+      "contexts": {
+        "mask_1_low_0": {
+          "target_hero": 81,
+          "advance": 62,
+          "hold": 111,
+          "withdraw": 29,
+          "lateral": 24
+        },
+        "mask_1_low_1": {
+          "withdraw": 20,
+          "hold": 34,
+          "advance": 5,
+          "lateral": 2
+        },
+        "mask_2_low_0": {
+          "target_creep": 327,
+          "advance": 2,
+          "hold": 4,
+          "withdraw": 1
+        },
+        "mask_2_low_1": {
+          "target_creep": 2,
+          "withdraw": 1
+        },
+        "mask_3_low_0": {
+          "target_creep": 562,
+          "target_hero": 137,
+          "hold": 193,
+          "withdraw": 61,
+          "advance": 26,
+          "lateral": 49
+        },
+        "mask_3_low_1": {
+          "target_creep": 15,
+          "target_hero": 5,
+          "hold": 30,
+          "advance": 10,
+          "lateral": 1,
+          "withdraw": 7
+        },
+        "mask_4_low_0": {
+          "target_structure": 126,
+          "advance": 26,
+          "hold": 62,
+          "withdraw": 7,
+          "lateral": 1
+        },
+        "mask_4_low_1": {
+          "target_structure": 5,
+          "withdraw": 3,
+          "hold": 33,
+          "advance": 1
+        },
+        "mask_5_low_0": {
+          "target_structure": 33,
+          "target_hero": 50,
+          "hold": 31,
+          "advance": 3,
+          "withdraw": 2,
+          "lateral": 3
+        },
+        "mask_5_low_1": {
+          "target_structure": 1,
+          "target_hero": 2,
+          "hold": 5,
+          "withdraw": 1
+        },
+        "mask_6_low_0": {
+          "target_creep": 270,
+          "target_structure": 60,
+          "lateral": 4,
+          "hold": 19,
+          "advance": 12,
+          "withdraw": 6
+        },
+        "mask_6_low_1": {
+          "target_creep": 6,
+          "target_structure": 4,
+          "hold": 4
+        },
+        "mask_7_low_0": {
+          "target_structure": 15,
+          "target_hero": 28,
+          "target_creep": 29,
+          "hold": 6,
+          "advance": 1,
+          "withdraw": 3,
+          "lateral": 2
+        },
+        "mask_7_low_1": {
+          "target_structure": 3,
+          "target_creep": 4,
+          "target_hero": 4,
+          "hold": 3,
+          "withdraw": 2
+        }
+      },
+      "global": {
+        "target_creep": 1215,
+        "target_hero": 307,
+        "target_structure": 247,
+        "hold": 535,
+        "withdraw": 143,
+        "advance": 148,
+        "lateral": 86
+      },
+      "smoothing": "Laplace +1 over estimated available skills; context backs off globally if n<8"
+    }
+  },
+  "training_episode_ids": [
+    "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686",
+    "ereq_e257144c-f78b-42b2-a1c2-91f72688e149",
+    "ereq_e766eb57-1ad0-4546-80a5-bdd686a83c94",
+    "ereq_63a9c85f-e010-4dfc-ab10-132d7851a6b3",
+    "ereq_a722338b-035d-490f-afff-c84c6d068a2f",
+    "ereq_63b9dc35-3a06-4cb0-bec9-2714e5a8497e",
+    "ereq_a1d89da2-92f0-4f99-8c7a-f6d2f78f2456",
+    "ereq_98733159-21b5-4368-9438-c9a06f44afe5",
+    "ereq_a8957880-c86e-4554-b5eb-5b42f212a6d9",
+    "ereq_0f8bc91a-ca6c-4790-bde9-53c5a33a8f0e",
+    "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2"
+  ],
+  "population_episode_ids": [
+    "ereq_01d0d934-9556-43fe-8f09-2f6617e4852b",
+    "ereq_ad6983d3-3de3-4c23-ac24-9f130b1e1fc4",
+    "ereq_8a7515f1-77c8-44d6-9076-91ec4020a849",
+    "ereq_3853474b-50ba-437c-b2d5-10ed31669268",
+    "ereq_779910ab-9e1a-4960-9e97-04acd606490c",
+    "ereq_188c0e6e-da7c-479d-8de6-9d7926ae8564",
+    "ereq_73a40836-1338-4ea5-9b83-d4908b2ac893",
+    "ereq_77bce129-45e3-4fe8-9df2-7b19c398c269",
+    "ereq_602d7a0b-6359-484a-a76a-b370908525b2",
+    "ereq_f66ea8af-07db-478e-aa9f-8009d0c2a162",
+    "ereq_566b97ad-41e2-4d53-820b-f7f929266fc3",
+    "ereq_79f848e2-41f8-4b95-a8b8-63f91142989b",
+    "ereq_03d642e0-9655-43ba-9bf7-f37c6c0ded5d",
+    "ereq_afa63af7-0c73-4d67-8da4-5b280ec295eb"
+  ],
+  "heldout_episode_ids": [
+    "ereq_38c2dfb5-a988-4ac1-81ef-2226fa9b205a",
+    "ereq_74cd8109-1bf0-4eed-b095-0345eb0a774c",
+    "ereq_5cb288d2-608c-4ad5-aec9-22c5eedfaed0",
+    "ereq_c2cfaf27-ac5d-4efb-8f2c-e929db3432d9"
+  ],
+  "unique_training_trajectories": 11,
+  "unique_heldout_trajectories": 3,
+  "heldout_matches_training": {
+    "ereq_38c2dfb5-a988-4ac1-81ef-2226fa9b205a": [
+      "ereq_63a9c85f-e010-4dfc-ab10-132d7851a6b3"
+    ],
+    "ereq_74cd8109-1bf0-4eed-b095-0345eb0a774c": [],
+    "ereq_5cb288d2-608c-4ad5-aec9-22c5eedfaed0": [
+      "ereq_e257144c-f78b-42b2-a1c2-91f72688e149"
+    ],
+    "ereq_c2cfaf27-ac5d-4efb-8f2c-e929db3432d9": []
+  },
+  "observability": {
+    "all_target": {
+      "episodes": 20,
+      "ticks": 132344,
+      "living_opponent_ticks": 600830,
+      "visible_living_opponent_ticks": 110180,
+      "fraction": 0.1833796581395736,
+      "all_scheduled_hero_tick_fraction": 0.16650547059179108,
+      "observer_dead_fraction": 0.1463005500816055,
+      "residual_fraction": 0.10024505354873843,
+      "segments": 5552,
+      "eligible": 4678,
+      "exclusions": {
+        "left_censored": 820,
+        "selected_skill_not_established_by_prior_affordances": 54
+      }
+    },
+    "distinct_train": {
+      "episodes": 11,
+      "ticks": 74689,
+      "living_opponent_ticks": 340309,
+      "visible_living_opponent_ticks": 62328,
+      "fraction": 0.18315119494341908,
+      "all_scheduled_hero_tick_fraction": 0.1669000789942294,
+      "observer_dead_fraction": 0.15257936242284673,
+      "residual_fraction": 0.1007733281992042,
+      "segments": 3116,
+      "eligible": 2624,
+      "exclusions": {
+        "left_censored": 461,
+        "selected_skill_not_established_by_prior_affordances": 31
+      }
+    },
+    "heldout": {
+      "episodes": 4,
+      "ticks": 25926,
+      "living_opponent_ticks": 117351,
+      "visible_living_opponent_ticks": 21542,
+      "fraction": 0.18356895126586054,
+      "all_scheduled_hero_tick_fraction": 0.16618066805523413,
+      "observer_dead_fraction": 0.14113245390727455,
+      "residual_fraction": 0.10045492526227834,
+      "segments": 1095,
+      "eligible": 923,
+      "exclusions": {
+        "left_censored": 161,
+        "selected_skill_not_established_by_prior_affordances": 11
+      }
+    },
+    "population": {
+      "episodes": 14,
+      "ticks": 60331,
+      "living_opponent_ticks": 276614,
+      "visible_living_opponent_ticks": 93560,
+      "fraction": 0.33823306123334324,
+      "all_scheduled_hero_tick_fraction": 0.31015564137839585,
+      "observer_dead_fraction": 0.04654323647875885,
+      "residual_fraction": 0.07752244548952544,
+      "segments": 3262,
+      "eligible": 2681,
+      "exclusions": {
+        "left_censored": 514,
+        "selected_skill_not_established_by_prior_affordances": 67
+      }
+    }
+  },
+  "outcomes": {
+    "opponent_win": 20
+  },
+  "heldout": {
+    "n": 923,
+    "correct": 694,
+    "accuracy": 0.7518959913326111,
+    "population_correct": 502,
+    "population_accuracy": 0.5438786565547129,
+    "persistence_accuracy": 0.1570964247020585,
+    "uniform_expected_accuracy": 0.18545374812980447,
+    "cluster_uncertainty": {
+      "clusters": 3,
+      "lift_95pct": [
+        0.09375,
+        0.26066350710900477
+      ],
+      "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+    },
+    "novel_trajectories": {
+      "n": 422,
+      "correct": 322,
+      "accuracy": 0.7630331753554502,
+      "population_correct": 212,
+      "population_accuracy": 0.5023696682464455,
+      "persistence_accuracy": 0.14691943127962084,
+      "uniform_expected_accuracy": 0.18428120063191153
+    },
+    "novel_episode_ids": [
+      "ereq_74cd8109-1bf0-4eed-b095-0345eb0a774c",
+      "ereq_c2cfaf27-ac5d-4efb-8f2c-e929db3432d9"
+    ],
+    "robustness_baselines": {
+      "class": {
+        "correct": 461,
+        "n": 923,
+        "accuracy": 0.49945828819068255,
+        "by_context": {
+          "mask_2_low_1": {
+            "correct": 0,
+            "n": 3
+          },
+          "mask_6_low_0": {
+            "correct": 83,
+            "n": 226
+          },
+          "mask_7_low_0": {
+            "correct": 0,
+            "n": 6
+          },
+          "mask_5_low_0": {
+            "correct": 15,
+            "n": 21
+          },
+          "mask_4_low_0": {
+            "correct": 137,
+            "n": 207
+          },
+          "mask_2_low_0": {
+            "correct": 80,
+            "n": 106
+          },
+          "mask_1_low_0": {
+            "correct": 19,
+            "n": 128
+          },
+          "mask_1_low_1": {
+            "correct": 0,
+            "n": 3
+          },
+          "mask_3_low_0": {
+            "correct": 127,
+            "n": 223
+          }
+        }
+      },
+      "side": {
+        "correct": 597,
+        "n": 923,
+        "accuracy": 0.6468039003250271,
+        "by_context": {
+          "mask_2_low_1": {
+            "correct": 0,
+            "n": 3
+          },
+          "mask_6_low_0": {
+            "correct": 83,
+            "n": 226
+          },
+          "mask_7_low_0": {
+            "correct": 0,
+            "n": 6
+          },
+          "mask_5_low_0": {
+            "correct": 17,
+            "n": 21
+          },
+          "mask_4_low_0": {
+            "correct": 201,
+            "n": 207
+          },
+          "mask_2_low_0": {
+            "correct": 80,
+            "n": 106
+          },
+          "mask_1_low_0": {
+            "correct": 95,
+            "n": 128
+          },
+          "mask_1_low_1": {
+            "correct": 0,
+            "n": 3
+          },
+          "mask_3_low_0": {
+            "correct": 121,
+            "n": 223
+          }
+        }
+      }
+    },
+    "by_episode": {
+      "ereq_38c2dfb5-a988-4ac1-81ef-2226fa9b205a": {
+        "n": 213,
+        "correct": 164,
+        "accuracy": 0.7699530516431925,
+        "population_correct": 109,
+        "population_accuracy": 0.5117370892018779,
+        "persistence_accuracy": 0.1596244131455399,
+        "uniform_expected_accuracy": 0.18427230046948356
+      },
+      "ereq_74cd8109-1bf0-4eed-b095-0345eb0a774c": {
+        "n": 211,
+        "correct": 161,
+        "accuracy": 0.7630331753554502,
+        "population_correct": 106,
+        "population_accuracy": 0.5023696682464455,
+        "persistence_accuracy": 0.14691943127962084,
+        "uniform_expected_accuracy": 0.18428120063191153
+      },
+      "ereq_5cb288d2-608c-4ad5-aec9-22c5eedfaed0": {
+        "n": 288,
+        "correct": 208,
+        "accuracy": 0.7222222222222222,
+        "population_correct": 181,
+        "population_accuracy": 0.6284722222222222,
+        "persistence_accuracy": 0.1701388888888889,
+        "uniform_expected_accuracy": 0.18804563492063492
+      },
+      "ereq_c2cfaf27-ac5d-4efb-8f2c-e929db3432d9": {
+        "n": 211,
+        "correct": 161,
+        "accuracy": 0.7630331753554502,
+        "population_correct": 106,
+        "population_accuracy": 0.5023696682464455,
+        "persistence_accuracy": 0.14691943127962084,
+        "uniform_expected_accuracy": 0.18428120063191153
+      }
+    },
+    "by_observer_side": {
+      "0": {
+        "n": 288,
+        "correct": 208,
+        "accuracy": 0.7222222222222222,
+        "population_correct": 181,
+        "population_accuracy": 0.6284722222222222,
+        "persistence_accuracy": 0.1701388888888889,
+        "uniform_expected_accuracy": 0.18804563492063492
+      },
+      "5": {
+        "n": 635,
+        "correct": 486,
+        "accuracy": 0.7653543307086614,
+        "population_correct": 321,
+        "population_accuracy": 0.5055118110236221,
+        "persistence_accuracy": 0.15118110236220472,
+        "uniform_expected_accuracy": 0.18427821522309712
+      }
+    }
+  },
+  "preferences": [
+    {
+      "id": "Richard135_I_O03",
+      "when": "mask_1_low_0",
+      "skill": "target_hero",
+      "over": "hold",
+      "n": 357,
+      "chosen_count": 357,
+      "rate": 1.0,
+      "context_n": 357,
+      "confidence": 0.9972144846796658,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 307,
+        "chosen_count": 81,
+        "rate": 0.26384364820846906
+      },
+      "status": "supported",
+      "level": "individual",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h105.t7070",
+      "predictions": {
+        "n": 128,
+        "correct": 128,
+        "accuracy": 1.0,
+        "population_correct": 0,
+        "population_accuracy": 0.0,
+        "persistence_accuracy": 0.0625,
+        "uniform_expected_accuracy": 0.20716145833333335
+      },
+      "prediction_interval": {
+        "clusters": 3,
+        "lift_95pct": [
+          1.0,
+          1.0
+        ],
+        "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+      },
+      "supporting_episodes": 11,
+      "examples": [
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1386",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1395",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1404"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "Richard135_I_O04",
+      "when": "mask_1_low_1",
+      "skill": "target_hero",
+      "over": "hold",
+      "n": 8,
+      "chosen_count": 8,
+      "rate": 1.0,
+      "context_n": 8,
+      "confidence": 0.9,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 61,
+        "chosen_count": 0,
+        "rate": 0.0
+      },
+      "status": "supported",
+      "level": "individual",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h108.t4815",
+      "predictions": {
+        "n": 3,
+        "correct": 3,
+        "accuracy": 1.0,
+        "population_correct": 0,
+        "population_accuracy": 0.0,
+        "persistence_accuracy": 0.0,
+        "uniform_expected_accuracy": 0.20000000000000004
+      },
+      "prediction_interval": {
+        "clusters": 1,
+        "lift_95pct": null,
+        "note": "Too few distinct observable trajectories"
+      },
+      "supporting_episodes": 4,
+      "examples": [
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1422",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h108.t4815",
+        "ereq_e257144c-f78b-42b2-a1c2-91f72688e149.h106.t1414"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "Richard135_I_O05",
+      "when": "mask_2_low_0",
+      "skill": "target_creep",
+      "over": "hold",
+      "n": 334,
+      "chosen_count": 270,
+      "rate": 0.8083832335329342,
+      "context_n": 334,
+      "confidence": 0.8065476190476191,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 334,
+        "chosen_count": 327,
+        "rate": 0.9790419161676647
+      },
+      "status": "provisional",
+      "level": "individual",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h109.t6728",
+      "predictions": {
+        "n": 106,
+        "correct": 80,
+        "accuracy": 0.7547169811320755,
+        "population_correct": 80,
+        "population_accuracy": 0.7547169811320755,
+        "persistence_accuracy": 0.3490566037735849,
+        "uniform_expected_accuracy": 0.20754716981132076
+      },
+      "prediction_interval": {
+        "clusters": 3,
+        "lift_95pct": [
+          0.0,
+          0.0
+        ],
+        "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+      },
+      "supporting_episodes": 11,
+      "examples": [
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t624",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t637",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t657"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "Richard135_I_O06",
+      "when": "mask_2_low_1",
+      "skill": "hold",
+      "over": "target_creep",
+      "n": 7,
+      "chosen_count": 7,
+      "rate": 1.0,
+      "context_n": 7,
+      "confidence": 0.8888888888888888,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 3,
+        "chosen_count": 0,
+        "rate": 0.0
+      },
+      "status": "provisional",
+      "level": "individual",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "last_observed": "ereq_a8957880-c86e-4554-b5eb-5b42f212a6d9.h102.t2888",
+      "predictions": {
+        "n": 3,
+        "correct": 0,
+        "accuracy": 0.0,
+        "population_correct": 0,
+        "population_accuracy": 0.0,
+        "persistence_accuracy": 0.0,
+        "uniform_expected_accuracy": 0.20000000000000004
+      },
+      "prediction_interval": {
+        "clusters": 2,
+        "lift_95pct": [
+          0.0,
+          0.0
+        ],
+        "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+      },
+      "supporting_episodes": 7,
+      "examples": [
+        "ereq_e766eb57-1ad0-4546-80a5-bdd686a83c94.h102.t2888",
+        "ereq_63a9c85f-e010-4dfc-ab10-132d7851a6b3.h102.t2888",
+        "ereq_a722338b-035d-490f-afff-c84c6d068a2f.h102.t2888"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "Richard135_I_O07",
+      "when": "mask_3_low_0",
+      "skill": "target_creep",
+      "over": "hold",
+      "n": 653,
+      "chosen_count": 339,
+      "rate": 0.5191424196018377,
+      "context_n": 653,
+      "confidence": 0.5190839694656488,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 1028,
+        "chosen_count": 562,
+        "rate": 0.546692607003891
+      },
+      "status": "provisional",
+      "level": "individual",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h107.t7046",
+      "predictions": {
+        "n": 223,
+        "correct": 121,
+        "accuracy": 0.5426008968609866,
+        "population_correct": 121,
+        "population_accuracy": 0.5426008968609866,
+        "persistence_accuracy": 0.2825112107623318,
+        "uniform_expected_accuracy": 0.16973094170403588
+      },
+      "prediction_interval": {
+        "clusters": 3,
+        "lift_95pct": [
+          0.0,
+          0.0
+        ],
+        "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+      },
+      "supporting_episodes": 11,
+      "examples": [
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1373",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h108.t2233",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h108.t2245"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "Richard135_I_O09",
+      "when": "mask_4_low_0",
+      "skill": "target_structure",
+      "over": "hold",
+      "n": 578,
+      "chosen_count": 564,
+      "rate": 0.9757785467128027,
+      "context_n": 578,
+      "confidence": 0.9741379310344828,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 222,
+        "chosen_count": 126,
+        "rate": 0.5675675675675675
+      },
+      "status": "provisional",
+      "level": "individual",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h107.t8244",
+      "predictions": {
+        "n": 207,
+        "correct": 201,
+        "accuracy": 0.9710144927536232,
+        "population_correct": 201,
+        "population_accuracy": 0.9710144927536232,
+        "persistence_accuracy": 0.014492753623188406,
+        "uniform_expected_accuracy": 0.2002415458937198
+      },
+      "prediction_interval": {
+        "clusters": 3,
+        "lift_95pct": [
+          0.0,
+          0.0
+        ],
+        "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+      },
+      "supporting_episodes": 11,
+      "examples": [
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1048",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1056",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1064"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "Richard135_I_O11",
+      "when": "mask_5_low_0",
+      "skill": "target_hero",
+      "over": "target_structure",
+      "n": 82,
+      "chosen_count": 67,
+      "rate": 0.8170731707317073,
+      "context_n": 82,
+      "confidence": 0.8095238095238095,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 122,
+        "chosen_count": 50,
+        "rate": 0.4098360655737705
+      },
+      "status": "provisional",
+      "level": "individual",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h107.t8308",
+      "predictions": {
+        "n": 21,
+        "correct": 17,
+        "accuracy": 0.8095238095238095,
+        "population_correct": 17,
+        "population_accuracy": 0.8095238095238095,
+        "persistence_accuracy": 0.047619047619047616,
+        "uniform_expected_accuracy": 0.16825396825396824
+      },
+      "prediction_interval": {
+        "clusters": 1,
+        "lift_95pct": null,
+        "note": "Too few distinct observable trajectories"
+      },
+      "supporting_episodes": 4,
+      "examples": [
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t7521",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h108.t7521",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h107.t7543"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "Richard135_I_O13",
+      "when": "mask_6_low_0",
+      "skill": "target_structure",
+      "over": "target_creep",
+      "n": 583,
+      "chosen_count": 338,
+      "rate": 0.5797598627787307,
+      "context_n": 583,
+      "confidence": 0.5794871794871795,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 371,
+        "chosen_count": 60,
+        "rate": 0.16172506738544473
+      },
+      "status": "supported",
+      "level": "individual",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h106.t8227",
+      "predictions": {
+        "n": 226,
+        "correct": 140,
+        "accuracy": 0.6194690265486725,
+        "population_correct": 83,
+        "population_accuracy": 0.3672566371681416,
+        "persistence_accuracy": 0.14601769911504425,
+        "uniform_expected_accuracy": 0.16710914454277287
+      },
+      "prediction_interval": {
+        "clusters": 3,
+        "lift_95pct": [
+          -0.3939393939393939,
+          0.36923076923076925
+        ],
+        "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+      },
+      "supporting_episodes": 11,
+      "examples": [
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t976",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1001",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1008"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "Richard135_I_O15",
+      "when": "mask_7_low_0",
+      "skill": "target_hero",
+      "over": "target_creep",
+      "n": 22,
+      "chosen_count": 14,
+      "rate": 0.6363636363636364,
+      "context_n": 22,
+      "confidence": 0.625,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 84,
+        "chosen_count": 28,
+        "rate": 0.3333333333333333
+      },
+      "status": "supported",
+      "level": "individual",
+      "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h106.t7868",
+      "predictions": {
+        "n": 6,
+        "correct": 4,
+        "accuracy": 0.6666666666666666,
+        "population_correct": 0,
+        "population_accuracy": 0.0,
+        "persistence_accuracy": 0.0,
+        "uniform_expected_accuracy": 0.14285714285714285
+      },
+      "prediction_interval": {
+        "clusters": 1,
+        "lift_95pct": null,
+        "note": "Too few distinct observable trajectories"
+      },
+      "supporting_episodes": 4,
+      "examples": [
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h107.t7777",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t7789",
+        "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t7798"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    }
+  ],
+  "skills": {
+    "target_hero": {
+      "n": 893,
+      "episodes": 11,
+      "ticks": 15472,
+      "initiation_contexts": {
+        "mask_3_low_0": 392,
+        "mask_1_low_0": 388,
+        "mask_1_low_1": 12,
+        "mask_2_low_0": 12,
+        "mask_5_low_0": 73,
+        "mask_7_low_0": 16
+      },
+      "termination": {
+        "visible_target_change": 813,
+        "visibility_lost_or_not_alive": 52,
+        "observer_dead": 28
+      },
+      "left_censored": 121,
+      "median_duration_ticks": 12,
+      "outcome_hp_change_median": 0,
+      "concurrent_movement_ticks": {
+        "advance": 5645,
+        "lateral": 791,
+        "hold": 8702,
+        "withdraw": 334
+      },
+      "prediction": {
+        "actual_n": 254,
+        "predicted_n": 158,
+        "recall": 0.5984251968503937,
+        "precision": 0.9620253164556962
+      },
+      "example": "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1364"
+    },
+    "target_creep": {
+      "n": 1052,
+      "episodes": 11,
+      "ticks": 13725,
+      "initiation_contexts": {
+        "mask_2_low_0": 391,
+        "mask_6_low_0": 267,
+        "mask_3_low_0": 392,
+        "mask_2_low_1": 2
+      },
+      "termination": {
+        "visible_target_change": 916,
+        "visibility_lost_or_not_alive": 136
+      },
+      "left_censored": 205,
+      "median_duration_ticks": 11.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "advance": 5223,
+        "hold": 6719,
+        "lateral": 918,
+        "withdraw": 865
+      },
+      "prediction": {
+        "actual_n": 284,
+        "predicted_n": 332,
+        "recall": 0.7077464788732394,
+        "precision": 0.6054216867469879
+      },
+      "example": "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t624"
+    },
+    "target_structure": {
+      "n": 978,
+      "episodes": 11,
+      "ticks": 15261,
+      "initiation_contexts": {
+        "mask_6_low_0": 338,
+        "mask_4_low_0": 602,
+        "mask_5_low_0": 27,
+        "mask_2_low_0": 11
+      },
+      "termination": {
+        "visible_target_change": 891,
+        "visibility_lost_or_not_alive": 69,
+        "observer_dead": 4,
+        "episode_end": 14
+      },
+      "left_censored": 50,
+      "median_duration_ticks": 10.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "hold": 10271,
+        "advance": 4321,
+        "lateral": 474,
+        "withdraw": 195
+      },
+      "prediction": {
+        "actual_n": 345,
+        "predicted_n": 433,
+        "recall": 0.9884057971014493,
+        "precision": 0.7875288683602771
+      },
+      "example": "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1039"
+    },
+    "advance": {
+      "n": 132,
+      "episodes": 11,
+      "ticks": 9410,
+      "initiation_contexts": {
+        "mask_2_low_0": 100,
+        "mask_7_low_0": 4,
+        "mask_6_low_0": 14,
+        "mask_4_low_0": 14
+      },
+      "termination": {
+        "movement_character_change": 29,
+        "visible_target_change": 77,
+        "visibility_lost_or_not_alive": 26
+      },
+      "left_censored": 78,
+      "median_duration_ticks": 52.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "advance": 9410
+      },
+      "prediction": {
+        "actual_n": 19,
+        "predicted_n": 0,
+        "recall": 0.0,
+        "precision": null
+      },
+      "example": "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h105.t4561"
+    },
+    "withdraw": {
+      "n": 14,
+      "episodes": 7,
+      "ticks": 406,
+      "initiation_contexts": {
+        "mask_2_low_0": 14
+      },
+      "termination": {
+        "visibility_lost_or_not_alive": 14
+      },
+      "left_censored": 0,
+      "median_duration_ticks": 29.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "withdraw": 406
+      },
+      "prediction": {
+        "actual_n": 6,
+        "predicted_n": 0,
+        "recall": 0.0,
+        "precision": null
+      },
+      "example": "ereq_e766eb57-1ad0-4546-80a5-bdd686a83c94.h103.t1660"
+    },
+    "lateral": {
+      "n": 15,
+      "episodes": 11,
+      "ticks": 1162,
+      "initiation_contexts": {
+        "mask_2_low_0": 15
+      },
+      "termination": {
+        "movement_character_change": 8,
+        "observer_dead": 7
+      },
+      "left_censored": 7,
+      "median_duration_ticks": 104,
+      "outcome_hp_change_median": 0,
+      "concurrent_movement_ticks": {
+        "lateral": 1162
+      },
+      "prediction": {
+        "actual_n": 2,
+        "predicted_n": 0,
+        "recall": 0.0,
+        "precision": null
+      },
+      "example": "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h105.t4653"
+    },
+    "hold": {
+      "n": 32,
+      "episodes": 11,
+      "ticks": 611,
+      "initiation_contexts": {
+        "mask_7_low_0": 4,
+        "mask_2_low_0": 21,
+        "mask_2_low_1": 7
+      },
+      "termination": {
+        "movement_character_change": 25,
+        "visibility_lost_or_not_alive": 7
+      },
+      "left_censored": 0,
+      "median_duration_ticks": 8.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "hold": 611
+      },
+      "prediction": {
+        "actual_n": 13,
+        "predicted_n": 0,
+        "recall": 0.0,
+        "precision": null
+      },
+      "example": "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t7862"
+    }
+  },
+  "adaptation": [
+    {
+      "preference": "Richard135_I_O03",
+      "within_early": {
+        "n": 212,
+        "selected": 212,
+        "rate": 1.0
+      },
+      "within_late": {
+        "n": 145,
+        "selected": 145,
+        "rate": 1.0
+      },
+      "chronological_early": {
+        "n": 160,
+        "selected": 160,
+        "rate": 1.0
+      },
+      "chronological_late": {
+        "n": 197,
+        "selected": 197,
+        "rate": 1.0
+      },
+      "our_pressure_present": {
+        "n": 207,
+        "selected": 207,
+        "rate": 1.0
+      },
+      "our_pressure_absent": {
+        "n": 150,
+        "selected": 150,
+        "rate": 1.0
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "Richard135_I_O04",
+      "within_early": {
+        "n": 5,
+        "selected": 5,
+        "rate": 1.0
+      },
+      "within_late": {
+        "n": 3,
+        "selected": 3,
+        "rate": 1.0
+      },
+      "chronological_early": {
+        "n": 5,
+        "selected": 5,
+        "rate": 1.0
+      },
+      "chronological_late": {
+        "n": 3,
+        "selected": 3,
+        "rate": 1.0
+      },
+      "our_pressure_present": {
+        "n": 8,
+        "selected": 8,
+        "rate": 1.0
+      },
+      "our_pressure_absent": {
+        "n": 0,
+        "selected": 0,
+        "rate": null
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "Richard135_I_O05",
+      "within_early": {
+        "n": 165,
+        "selected": 130,
+        "rate": 0.7878787878787878
+      },
+      "within_late": {
+        "n": 169,
+        "selected": 140,
+        "rate": 0.8284023668639053
+      },
+      "chronological_early": {
+        "n": 159,
+        "selected": 131,
+        "rate": 0.8238993710691824
+      },
+      "chronological_late": {
+        "n": 175,
+        "selected": 139,
+        "rate": 0.7942857142857143
+      },
+      "our_pressure_present": {
+        "n": 164,
+        "selected": 132,
+        "rate": 0.8048780487804879
+      },
+      "our_pressure_absent": {
+        "n": 170,
+        "selected": 138,
+        "rate": 0.8117647058823529
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "Richard135_I_O06",
+      "within_early": {
+        "n": 7,
+        "selected": 7,
+        "rate": 1.0
+      },
+      "within_late": {
+        "n": 0,
+        "selected": 0,
+        "rate": null
+      },
+      "chronological_early": {
+        "n": 3,
+        "selected": 3,
+        "rate": 1.0
+      },
+      "chronological_late": {
+        "n": 4,
+        "selected": 4,
+        "rate": 1.0
+      },
+      "our_pressure_present": {
+        "n": 7,
+        "selected": 7,
+        "rate": 1.0
+      },
+      "our_pressure_absent": {
+        "n": 0,
+        "selected": 0,
+        "rate": null
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "Richard135_I_O07",
+      "within_early": {
+        "n": 329,
+        "selected": 150,
+        "rate": 0.45592705167173253
+      },
+      "within_late": {
+        "n": 324,
+        "selected": 189,
+        "rate": 0.5833333333333334
+      },
+      "chronological_early": {
+        "n": 303,
+        "selected": 155,
+        "rate": 0.5115511551155115
+      },
+      "chronological_late": {
+        "n": 350,
+        "selected": 184,
+        "rate": 0.5257142857142857
+      },
+      "our_pressure_present": {
+        "n": 330,
+        "selected": 143,
+        "rate": 0.43333333333333335
+      },
+      "our_pressure_absent": {
+        "n": 323,
+        "selected": 196,
+        "rate": 0.6068111455108359
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "Richard135_I_O09",
+      "within_early": {
+        "n": 167,
+        "selected": 167,
+        "rate": 1.0
+      },
+      "within_late": {
+        "n": 411,
+        "selected": 397,
+        "rate": 0.9659367396593674
+      },
+      "chronological_early": {
+        "n": 264,
+        "selected": 258,
+        "rate": 0.9772727272727273
+      },
+      "chronological_late": {
+        "n": 314,
+        "selected": 306,
+        "rate": 0.9745222929936306
+      },
+      "our_pressure_present": {
+        "n": 285,
+        "selected": 285,
+        "rate": 1.0
+      },
+      "our_pressure_absent": {
+        "n": 293,
+        "selected": 279,
+        "rate": 0.9522184300341296
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "Richard135_I_O11",
+      "within_early": {
+        "n": 0,
+        "selected": 0,
+        "rate": null
+      },
+      "within_late": {
+        "n": 82,
+        "selected": 67,
+        "rate": 0.8170731707317073
+      },
+      "chronological_early": {
+        "n": 41,
+        "selected": 33,
+        "rate": 0.8048780487804879
+      },
+      "chronological_late": {
+        "n": 41,
+        "selected": 34,
+        "rate": 0.8292682926829268
+      },
+      "our_pressure_present": {
+        "n": 22,
+        "selected": 18,
+        "rate": 0.8181818181818182
+      },
+      "our_pressure_absent": {
+        "n": 60,
+        "selected": 49,
+        "rate": 0.8166666666666667
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "Richard135_I_O13",
+      "within_early": {
+        "n": 64,
+        "selected": 6,
+        "rate": 0.09375
+      },
+      "within_late": {
+        "n": 519,
+        "selected": 332,
+        "rate": 0.6396917148362236
+      },
+      "chronological_early": {
+        "n": 265,
+        "selected": 153,
+        "rate": 0.5773584905660377
+      },
+      "chronological_late": {
+        "n": 318,
+        "selected": 185,
+        "rate": 0.5817610062893082
+      },
+      "our_pressure_present": {
+        "n": 340,
+        "selected": 223,
+        "rate": 0.6558823529411765
+      },
+      "our_pressure_absent": {
+        "n": 243,
+        "selected": 115,
+        "rate": 0.4732510288065844
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "Richard135_I_O15",
+      "within_early": {
+        "n": 0,
+        "selected": 0,
+        "rate": null
+      },
+      "within_late": {
+        "n": 22,
+        "selected": 14,
+        "rate": 0.6363636363636364
+      },
+      "chronological_early": {
+        "n": 11,
+        "selected": 7,
+        "rate": 0.6363636363636364
+      },
+      "chronological_late": {
+        "n": 11,
+        "selected": 7,
+        "rate": 0.6363636363636364
+      },
+      "our_pressure_present": {
+        "n": 4,
+        "selected": 4,
+        "rate": 1.0
+      },
+      "our_pressure_absent": {
+        "n": 18,
+        "selected": 10,
+        "rate": 0.5555555555555556
+      },
+      "causal_adaptation_established": false
+    }
+  ],
+  "proxy": {
+    "usable": false,
+    "rollouts": 0,
+    "divergence": null,
+    "reason": "No executable skill controller or rollout validation. Boundary-conditional prediction alone cannot qualify a proxy.",
+    "proposed_gate": {
+      "skill_frequency_total_variation_max": 0.1,
+      "position_histogram_total_variation_max": 0.15,
+      "win_rate_absolute_gap_max": 0.1,
+      "note": "Proposed future gate on novel seeds, both sides; not tested or a certification."
+    }
+  }
+}

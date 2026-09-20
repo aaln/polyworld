@@ -1,0 +1,3699 @@
+{
+  "scope": "Descriptive discovery-only macro counts on distinct training observer streams. Added after the targeting predictor froze; not prediction features or heldout-validated macro rules.",
+  "n": 12,
+  "rows": [
+    {
+      "episode": "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002",
+      "observer_slot": 5,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 963,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            102,
+            104
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              12,
+              20
+            ],
+            "106": [
+              104,
+              94
+            ],
+            "107": [
+              13,
+              16
+            ],
+            "108": [
+              14,
+              15
+            ],
+            "109": [
+              104,
+              94
+            ]
+          },
+          "visible_enemy_positions": {
+            "102": [
+              55,
+              67
+            ],
+            "104": [
+              54,
+              67
+            ]
+          }
+        },
+        "40": {
+          "tick": 1568,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            103,
+            104
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              53,
+              14
+            ],
+            "106": [
+              108,
+              49
+            ],
+            "107": [
+              52,
+              14
+            ],
+            "108": [
+              53,
+              14
+            ],
+            "109": [
+              108,
+              48
+            ]
+          },
+          "visible_enemy_positions": {
+            "103": [
+              39,
+              82
+            ],
+            "104": [
+              38,
+              83
+            ]
+          }
+        },
+        "24": {
+          "tick": 1977,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within24": [
+            101,
+            103,
+            104
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              72,
+              11
+            ],
+            "106": [
+              107,
+              35
+            ],
+            "107": [
+              71,
+              11
+            ],
+            "108": [
+              72,
+              10
+            ],
+            "109": [
+              109,
+              32
+            ]
+          },
+          "visible_enemy_positions": {
+            "101": [
+              28,
+              91
+            ],
+            "103": [
+              28,
+              91
+            ],
+            "104": [
+              27,
+              91
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 3108,
+        "our_god_hp": 356,
+        "visible_enemy_ids": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within40": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within24": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 1,
+        "friendly_farther28": 4,
+        "friendly_positions": {
+          "105": [
+            96,
+            6
+          ],
+          "106": [
+            108,
+            23
+          ],
+          "107": [
+            93,
+            6
+          ],
+          "108": [
+            94,
+            7
+          ],
+          "109": [
+            9,
+            107
+          ]
+        },
+        "visible_enemy_positions": {
+          "100": [
+            20,
+            92
+          ],
+          "101": [
+            13,
+            102
+          ],
+          "102": [
+            13,
+            101
+          ],
+          "103": [
+            13,
+            102
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 3107,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "104": {
+          "tick": 689,
+          "class": 9,
+          "hp": 300,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "102": {
+          "tick": 963,
+          "class": 7,
+          "hp": 185,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "103": {
+          "tick": 964,
+          "class": 8,
+          "hp": 240,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "101": {
+          "tick": 968,
+          "class": 6,
+          "hp": 230,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "100": {
+          "tick": 976,
+          "class": 5,
+          "hp": 350,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 685,
+        "tower": 4827,
+        "no_valid_visible_target": 433,
+        "hero": 429,
+        "god": 126
+      },
+      "visible_opponent_ticks": 6500,
+      "source_sha256": "61f49dd80d1a3702fe275651a8e22137e8da685e79cb789481f9209502529816"
+    },
+    {
+      "episode": "ereq_d79c3904-1962-4bf9-baef-246cccbe6c17",
+      "observer_slot": 0,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 825,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              106,
+              81
+            ],
+            "101": [
+              30,
+              13
+            ],
+            "102": [
+              106,
+              86
+            ],
+            "103": [
+              106,
+              86
+            ],
+            "104": [
+              18,
+              13
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              62,
+              48
+            ],
+            "109": [
+              62,
+              48
+            ]
+          }
+        },
+        "40": {
+          "tick": 1206,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            108,
+            109
+          ],
+          "visible_enemies_within40": [
+            108,
+            109
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              91,
+              102
+            ],
+            "101": [
+              11,
+              17
+            ],
+            "102": [
+              94,
+              102
+            ],
+            "103": [
+              94,
+              102
+            ],
+            "104": [
+              9,
+              35
+            ]
+          },
+          "visible_enemy_positions": {
+            "108": [
+              74,
+              35
+            ],
+            "109": [
+              75,
+              34
+            ]
+          }
+        },
+        "24": {
+          "tick": 1727,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [
+            106,
+            109
+          ],
+          "visible_enemies_within24": [
+            106,
+            109
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              49,
+              103
+            ],
+            "101": [
+              8,
+              57
+            ],
+            "102": [
+              52,
+              102
+            ],
+            "103": [
+              52,
+              102
+            ],
+            "104": [
+              8,
+              62
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              90,
+              24
+            ],
+            "109": [
+              91,
+              23
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 2533,
+        "our_god_hp": 375,
+        "visible_enemy_ids": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within40": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within24": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 0,
+        "friendly_farther28": 5,
+        "friendly_positions": {
+          "100": [
+            29,
+            111
+          ],
+          "101": [
+            10,
+            79
+          ],
+          "102": [
+            32,
+            105
+          ],
+          "103": [
+            31,
+            105
+          ],
+          "104": [
+            6,
+            85
+          ]
+        },
+        "visible_enemy_positions": {
+          "105": [
+            103,
+            14
+          ],
+          "106": [
+            100,
+            14
+          ],
+          "107": [
+            101,
+            14
+          ],
+          "108": [
+            100,
+            16
+          ],
+          "109": [
+            104,
+            15
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 2532,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "106": {
+          "tick": 557,
+          "class": 1,
+          "hp": 200,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "109": {
+          "tick": 564,
+          "class": 4,
+          "hp": 220,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "108": {
+          "tick": 833,
+          "class": 3,
+          "hp": 250,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "107": {
+          "tick": 838,
+          "class": 2,
+          "hp": 190,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "105": {
+          "tick": 845,
+          "class": 0,
+          "hp": 330,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 709,
+        "no_valid_visible_target": 339,
+        "tower": 4542,
+        "god": 255
+      },
+      "visible_opponent_ticks": 5845,
+      "source_sha256": "5c50c87c0bf84a213c2c67faf6561ce43a7fcd699e40e51db25257af11117017"
+    },
+    {
+      "episode": "ereq_ab17782d-44c9-4a10-9b8c-c7764afc88c4",
+      "observer_slot": 5,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 963,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            102,
+            104
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              12,
+              20
+            ],
+            "106": [
+              104,
+              94
+            ],
+            "107": [
+              13,
+              16
+            ],
+            "108": [
+              14,
+              15
+            ],
+            "109": [
+              104,
+              94
+            ]
+          },
+          "visible_enemy_positions": {
+            "102": [
+              55,
+              67
+            ],
+            "104": [
+              54,
+              67
+            ]
+          }
+        },
+        "40": {
+          "tick": 1568,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            103,
+            104
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              53,
+              14
+            ],
+            "106": [
+              108,
+              49
+            ],
+            "107": [
+              52,
+              14
+            ],
+            "108": [
+              53,
+              14
+            ],
+            "109": [
+              108,
+              48
+            ]
+          },
+          "visible_enemy_positions": {
+            "103": [
+              39,
+              82
+            ],
+            "104": [
+              38,
+              83
+            ]
+          }
+        },
+        "24": {
+          "tick": 1977,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within24": [
+            101,
+            103,
+            104
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              72,
+              11
+            ],
+            "106": [
+              107,
+              35
+            ],
+            "107": [
+              71,
+              11
+            ],
+            "108": [
+              72,
+              10
+            ],
+            "109": [
+              109,
+              32
+            ]
+          },
+          "visible_enemy_positions": {
+            "101": [
+              28,
+              91
+            ],
+            "103": [
+              28,
+              91
+            ],
+            "104": [
+              27,
+              91
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 3108,
+        "our_god_hp": 356,
+        "visible_enemy_ids": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within40": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within24": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 1,
+        "friendly_farther28": 4,
+        "friendly_positions": {
+          "105": [
+            96,
+            6
+          ],
+          "106": [
+            108,
+            23
+          ],
+          "107": [
+            93,
+            6
+          ],
+          "108": [
+            94,
+            7
+          ],
+          "109": [
+            9,
+            107
+          ]
+        },
+        "visible_enemy_positions": {
+          "100": [
+            20,
+            92
+          ],
+          "101": [
+            13,
+            102
+          ],
+          "102": [
+            13,
+            101
+          ],
+          "103": [
+            13,
+            102
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 3107,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "104": {
+          "tick": 689,
+          "class": 9,
+          "hp": 300,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "102": {
+          "tick": 963,
+          "class": 7,
+          "hp": 185,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "103": {
+          "tick": 964,
+          "class": 8,
+          "hp": 240,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "101": {
+          "tick": 968,
+          "class": 6,
+          "hp": 230,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "100": {
+          "tick": 976,
+          "class": 5,
+          "hp": 350,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 683,
+        "no_valid_visible_target": 429,
+        "tower": 4832,
+        "hero": 429,
+        "god": 127
+      },
+      "visible_opponent_ticks": 6500,
+      "source_sha256": "c795a15b57f4d09fccd3ac148da1413eb0474d629bc0726edfae335c71978c8a"
+    },
+    {
+      "episode": "ereq_87ba2957-57de-4aac-8867-1cf86b06d5f4",
+      "observer_slot": 0,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 825,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              106,
+              81
+            ],
+            "101": [
+              30,
+              13
+            ],
+            "102": [
+              106,
+              86
+            ],
+            "103": [
+              106,
+              86
+            ],
+            "104": [
+              18,
+              13
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              62,
+              48
+            ],
+            "109": [
+              62,
+              48
+            ]
+          }
+        },
+        "40": {
+          "tick": 1206,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            108,
+            109
+          ],
+          "visible_enemies_within40": [
+            108,
+            109
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              91,
+              102
+            ],
+            "101": [
+              11,
+              17
+            ],
+            "102": [
+              94,
+              102
+            ],
+            "103": [
+              94,
+              102
+            ],
+            "104": [
+              9,
+              35
+            ]
+          },
+          "visible_enemy_positions": {
+            "108": [
+              74,
+              35
+            ],
+            "109": [
+              75,
+              34
+            ]
+          }
+        },
+        "24": {
+          "tick": 1727,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [
+            106,
+            109
+          ],
+          "visible_enemies_within24": [
+            106,
+            109
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              49,
+              103
+            ],
+            "101": [
+              8,
+              57
+            ],
+            "102": [
+              52,
+              102
+            ],
+            "103": [
+              52,
+              102
+            ],
+            "104": [
+              8,
+              62
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              90,
+              24
+            ],
+            "109": [
+              91,
+              23
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 2533,
+        "our_god_hp": 375,
+        "visible_enemy_ids": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within40": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within24": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 0,
+        "friendly_farther28": 5,
+        "friendly_positions": {
+          "100": [
+            29,
+            111
+          ],
+          "101": [
+            10,
+            79
+          ],
+          "102": [
+            32,
+            105
+          ],
+          "103": [
+            31,
+            105
+          ],
+          "104": [
+            6,
+            85
+          ]
+        },
+        "visible_enemy_positions": {
+          "105": [
+            103,
+            14
+          ],
+          "106": [
+            100,
+            14
+          ],
+          "107": [
+            101,
+            14
+          ],
+          "108": [
+            100,
+            16
+          ],
+          "109": [
+            104,
+            15
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 2532,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "106": {
+          "tick": 557,
+          "class": 1,
+          "hp": 200,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "109": {
+          "tick": 564,
+          "class": 4,
+          "hp": 220,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "108": {
+          "tick": 833,
+          "class": 3,
+          "hp": 250,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "107": {
+          "tick": 838,
+          "class": 2,
+          "hp": 190,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "105": {
+          "tick": 845,
+          "class": 0,
+          "hp": 330,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 712,
+        "no_valid_visible_target": 332,
+        "tower": 4546,
+        "god": 255
+      },
+      "visible_opponent_ticks": 5845,
+      "source_sha256": "659185ccc95548c8263acca4f3b0c98fbef07735b2d45b6f1619ef30a5b8414a"
+    },
+    {
+      "episode": "ereq_0e7a53dc-0e61-471f-a885-c5c0e4862099",
+      "observer_slot": 5,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 963,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            102,
+            104
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              12,
+              20
+            ],
+            "106": [
+              104,
+              94
+            ],
+            "107": [
+              13,
+              16
+            ],
+            "108": [
+              14,
+              15
+            ],
+            "109": [
+              104,
+              94
+            ]
+          },
+          "visible_enemy_positions": {
+            "102": [
+              55,
+              67
+            ],
+            "104": [
+              54,
+              67
+            ]
+          }
+        },
+        "40": {
+          "tick": 1568,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            103,
+            104
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              53,
+              14
+            ],
+            "106": [
+              108,
+              49
+            ],
+            "107": [
+              52,
+              14
+            ],
+            "108": [
+              53,
+              14
+            ],
+            "109": [
+              108,
+              48
+            ]
+          },
+          "visible_enemy_positions": {
+            "103": [
+              39,
+              82
+            ],
+            "104": [
+              38,
+              83
+            ]
+          }
+        },
+        "24": {
+          "tick": 1977,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within24": [
+            101,
+            103,
+            104
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              72,
+              11
+            ],
+            "106": [
+              107,
+              35
+            ],
+            "107": [
+              71,
+              11
+            ],
+            "108": [
+              72,
+              10
+            ],
+            "109": [
+              109,
+              32
+            ]
+          },
+          "visible_enemy_positions": {
+            "101": [
+              28,
+              91
+            ],
+            "103": [
+              28,
+              91
+            ],
+            "104": [
+              27,
+              91
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 3108,
+        "our_god_hp": 356,
+        "visible_enemy_ids": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within40": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within24": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 1,
+        "friendly_farther28": 4,
+        "friendly_positions": {
+          "105": [
+            96,
+            6
+          ],
+          "106": [
+            108,
+            23
+          ],
+          "107": [
+            93,
+            6
+          ],
+          "108": [
+            94,
+            7
+          ],
+          "109": [
+            9,
+            107
+          ]
+        },
+        "visible_enemy_positions": {
+          "100": [
+            20,
+            92
+          ],
+          "101": [
+            13,
+            102
+          ],
+          "102": [
+            13,
+            101
+          ],
+          "103": [
+            13,
+            102
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 3107,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "104": {
+          "tick": 689,
+          "class": 9,
+          "hp": 300,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "102": {
+          "tick": 963,
+          "class": 7,
+          "hp": 185,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "103": {
+          "tick": 964,
+          "class": 8,
+          "hp": 240,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "101": {
+          "tick": 968,
+          "class": 6,
+          "hp": 230,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "100": {
+          "tick": 976,
+          "class": 5,
+          "hp": 350,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 688,
+        "tower": 4828,
+        "no_valid_visible_target": 429,
+        "hero": 430,
+        "god": 125
+      },
+      "visible_opponent_ticks": 6500,
+      "source_sha256": "c58cfc8472a220fba462e7f232ac388df2c13ed2e236631f639456f41c434842"
+    },
+    {
+      "episode": "ereq_b2234f67-1d36-4c31-825b-09551474a6f0",
+      "observer_slot": 0,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 825,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              106,
+              81
+            ],
+            "101": [
+              30,
+              13
+            ],
+            "102": [
+              106,
+              86
+            ],
+            "103": [
+              106,
+              86
+            ],
+            "104": [
+              18,
+              13
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              62,
+              48
+            ],
+            "109": [
+              62,
+              48
+            ]
+          }
+        },
+        "40": {
+          "tick": 1206,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            108,
+            109
+          ],
+          "visible_enemies_within40": [
+            108,
+            109
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              91,
+              102
+            ],
+            "101": [
+              11,
+              17
+            ],
+            "102": [
+              94,
+              102
+            ],
+            "103": [
+              94,
+              102
+            ],
+            "104": [
+              9,
+              35
+            ]
+          },
+          "visible_enemy_positions": {
+            "108": [
+              74,
+              35
+            ],
+            "109": [
+              75,
+              34
+            ]
+          }
+        },
+        "24": {
+          "tick": 1727,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [
+            106,
+            109
+          ],
+          "visible_enemies_within24": [
+            106,
+            109
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              49,
+              103
+            ],
+            "101": [
+              8,
+              57
+            ],
+            "102": [
+              52,
+              102
+            ],
+            "103": [
+              52,
+              102
+            ],
+            "104": [
+              8,
+              62
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              90,
+              24
+            ],
+            "109": [
+              91,
+              23
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 2533,
+        "our_god_hp": 375,
+        "visible_enemy_ids": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within40": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within24": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 0,
+        "friendly_farther28": 5,
+        "friendly_positions": {
+          "100": [
+            29,
+            111
+          ],
+          "101": [
+            10,
+            79
+          ],
+          "102": [
+            32,
+            105
+          ],
+          "103": [
+            31,
+            105
+          ],
+          "104": [
+            6,
+            85
+          ]
+        },
+        "visible_enemy_positions": {
+          "105": [
+            103,
+            14
+          ],
+          "106": [
+            100,
+            14
+          ],
+          "107": [
+            101,
+            14
+          ],
+          "108": [
+            100,
+            16
+          ],
+          "109": [
+            104,
+            15
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 2532,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "106": {
+          "tick": 557,
+          "class": 1,
+          "hp": 200,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "109": {
+          "tick": 564,
+          "class": 4,
+          "hp": 220,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "108": {
+          "tick": 833,
+          "class": 3,
+          "hp": 250,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "107": {
+          "tick": 838,
+          "class": 2,
+          "hp": 190,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "105": {
+          "tick": 845,
+          "class": 0,
+          "hp": 330,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 703,
+        "no_valid_visible_target": 341,
+        "tower": 4546,
+        "god": 255
+      },
+      "visible_opponent_ticks": 5845,
+      "source_sha256": "0f21273e2693bf6f995638038d6280012dcd1365b1f13de5e6c84e6bb937efc6"
+    },
+    {
+      "episode": "ereq_0dfea382-21eb-4746-ab1d-f9dca400692f",
+      "observer_slot": 0,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 825,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              106,
+              81
+            ],
+            "101": [
+              30,
+              13
+            ],
+            "102": [
+              106,
+              86
+            ],
+            "103": [
+              106,
+              86
+            ],
+            "104": [
+              18,
+              13
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              62,
+              48
+            ],
+            "109": [
+              62,
+              48
+            ]
+          }
+        },
+        "40": {
+          "tick": 1206,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            108,
+            109
+          ],
+          "visible_enemies_within40": [
+            108,
+            109
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              91,
+              102
+            ],
+            "101": [
+              11,
+              17
+            ],
+            "102": [
+              94,
+              102
+            ],
+            "103": [
+              94,
+              102
+            ],
+            "104": [
+              9,
+              35
+            ]
+          },
+          "visible_enemy_positions": {
+            "108": [
+              74,
+              35
+            ],
+            "109": [
+              75,
+              34
+            ]
+          }
+        },
+        "24": {
+          "tick": 1727,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [
+            106,
+            109
+          ],
+          "visible_enemies_within24": [
+            106,
+            109
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              49,
+              103
+            ],
+            "101": [
+              8,
+              57
+            ],
+            "102": [
+              52,
+              102
+            ],
+            "103": [
+              52,
+              102
+            ],
+            "104": [
+              8,
+              62
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              90,
+              24
+            ],
+            "109": [
+              91,
+              23
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 2533,
+        "our_god_hp": 375,
+        "visible_enemy_ids": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within40": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within24": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 0,
+        "friendly_farther28": 5,
+        "friendly_positions": {
+          "100": [
+            29,
+            111
+          ],
+          "101": [
+            10,
+            79
+          ],
+          "102": [
+            32,
+            105
+          ],
+          "103": [
+            31,
+            105
+          ],
+          "104": [
+            6,
+            85
+          ]
+        },
+        "visible_enemy_positions": {
+          "105": [
+            103,
+            14
+          ],
+          "106": [
+            100,
+            14
+          ],
+          "107": [
+            101,
+            14
+          ],
+          "108": [
+            100,
+            16
+          ],
+          "109": [
+            104,
+            15
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 2532,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "106": {
+          "tick": 557,
+          "class": 1,
+          "hp": 200,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "109": {
+          "tick": 564,
+          "class": 4,
+          "hp": 220,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "108": {
+          "tick": 833,
+          "class": 3,
+          "hp": 250,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "107": {
+          "tick": 838,
+          "class": 2,
+          "hp": 190,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "105": {
+          "tick": 845,
+          "class": 0,
+          "hp": 330,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 704,
+        "no_valid_visible_target": 345,
+        "tower": 4543,
+        "god": 253
+      },
+      "visible_opponent_ticks": 5845,
+      "source_sha256": "b7ad0d94d18b7618cf791f09e224e156a65ebc3a56aa1d16c6963f48a479a6fb"
+    },
+    {
+      "episode": "ereq_e15c0bbb-478e-4ac3-9658-5972654f596e",
+      "observer_slot": 5,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 963,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            102,
+            104
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              12,
+              20
+            ],
+            "106": [
+              104,
+              94
+            ],
+            "107": [
+              13,
+              16
+            ],
+            "108": [
+              14,
+              15
+            ],
+            "109": [
+              104,
+              94
+            ]
+          },
+          "visible_enemy_positions": {
+            "102": [
+              55,
+              67
+            ],
+            "104": [
+              54,
+              67
+            ]
+          }
+        },
+        "40": {
+          "tick": 1568,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            103,
+            104
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              53,
+              14
+            ],
+            "106": [
+              108,
+              49
+            ],
+            "107": [
+              52,
+              14
+            ],
+            "108": [
+              53,
+              14
+            ],
+            "109": [
+              108,
+              48
+            ]
+          },
+          "visible_enemy_positions": {
+            "103": [
+              39,
+              82
+            ],
+            "104": [
+              38,
+              83
+            ]
+          }
+        },
+        "24": {
+          "tick": 1977,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within24": [
+            101,
+            103,
+            104
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              72,
+              11
+            ],
+            "106": [
+              107,
+              35
+            ],
+            "107": [
+              71,
+              11
+            ],
+            "108": [
+              72,
+              10
+            ],
+            "109": [
+              109,
+              32
+            ]
+          },
+          "visible_enemy_positions": {
+            "101": [
+              28,
+              91
+            ],
+            "103": [
+              28,
+              91
+            ],
+            "104": [
+              27,
+              91
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 3108,
+        "our_god_hp": 356,
+        "visible_enemy_ids": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within40": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within24": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 1,
+        "friendly_farther28": 4,
+        "friendly_positions": {
+          "105": [
+            96,
+            6
+          ],
+          "106": [
+            108,
+            23
+          ],
+          "107": [
+            93,
+            6
+          ],
+          "108": [
+            94,
+            7
+          ],
+          "109": [
+            9,
+            107
+          ]
+        },
+        "visible_enemy_positions": {
+          "100": [
+            20,
+            92
+          ],
+          "101": [
+            13,
+            102
+          ],
+          "102": [
+            13,
+            101
+          ],
+          "103": [
+            13,
+            102
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 3107,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "104": {
+          "tick": 689,
+          "class": 9,
+          "hp": 300,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "102": {
+          "tick": 963,
+          "class": 7,
+          "hp": 185,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "103": {
+          "tick": 964,
+          "class": 8,
+          "hp": 240,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "101": {
+          "tick": 968,
+          "class": 6,
+          "hp": 230,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "100": {
+          "tick": 976,
+          "class": 5,
+          "hp": 350,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 689,
+        "tower": 4825,
+        "no_valid_visible_target": 428,
+        "hero": 431,
+        "god": 127
+      },
+      "visible_opponent_ticks": 6500,
+      "source_sha256": "ded5f30bae5fedd5b0875f892469ea79b57c7d290e184be89970827e28379537"
+    },
+    {
+      "episode": "ereq_f1f1e89b-2626-4767-810a-de580832917b",
+      "observer_slot": 5,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 963,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            102,
+            104
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              12,
+              20
+            ],
+            "106": [
+              104,
+              94
+            ],
+            "107": [
+              13,
+              16
+            ],
+            "108": [
+              14,
+              15
+            ],
+            "109": [
+              104,
+              94
+            ]
+          },
+          "visible_enemy_positions": {
+            "102": [
+              55,
+              67
+            ],
+            "104": [
+              54,
+              67
+            ]
+          }
+        },
+        "40": {
+          "tick": 1568,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            103,
+            104
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              53,
+              14
+            ],
+            "106": [
+              108,
+              49
+            ],
+            "107": [
+              52,
+              14
+            ],
+            "108": [
+              53,
+              14
+            ],
+            "109": [
+              108,
+              48
+            ]
+          },
+          "visible_enemy_positions": {
+            "103": [
+              39,
+              82
+            ],
+            "104": [
+              38,
+              83
+            ]
+          }
+        },
+        "24": {
+          "tick": 1977,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within24": [
+            101,
+            103,
+            104
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              72,
+              11
+            ],
+            "106": [
+              107,
+              35
+            ],
+            "107": [
+              71,
+              11
+            ],
+            "108": [
+              72,
+              10
+            ],
+            "109": [
+              109,
+              32
+            ]
+          },
+          "visible_enemy_positions": {
+            "101": [
+              28,
+              91
+            ],
+            "103": [
+              28,
+              91
+            ],
+            "104": [
+              27,
+              91
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 3108,
+        "our_god_hp": 356,
+        "visible_enemy_ids": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within40": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within24": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 1,
+        "friendly_farther28": 4,
+        "friendly_positions": {
+          "105": [
+            96,
+            6
+          ],
+          "106": [
+            108,
+            23
+          ],
+          "107": [
+            93,
+            6
+          ],
+          "108": [
+            94,
+            7
+          ],
+          "109": [
+            9,
+            107
+          ]
+        },
+        "visible_enemy_positions": {
+          "100": [
+            20,
+            92
+          ],
+          "101": [
+            13,
+            102
+          ],
+          "102": [
+            13,
+            101
+          ],
+          "103": [
+            13,
+            102
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 3107,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "104": {
+          "tick": 689,
+          "class": 9,
+          "hp": 300,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "102": {
+          "tick": 963,
+          "class": 7,
+          "hp": 185,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "103": {
+          "tick": 964,
+          "class": 8,
+          "hp": 240,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "101": {
+          "tick": 968,
+          "class": 6,
+          "hp": 230,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "100": {
+          "tick": 976,
+          "class": 5,
+          "hp": 350,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 688,
+        "tower": 4834,
+        "no_valid_visible_target": 423,
+        "hero": 431,
+        "god": 124
+      },
+      "visible_opponent_ticks": 6500,
+      "source_sha256": "53c539a3c6d648bb22dca4376139213f186bbe267cbae5436a6abd619686ca4f"
+    },
+    {
+      "episode": "ereq_1db2a887-6854-45d4-accc-e3f0d32d3fc3",
+      "observer_slot": 0,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 825,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              106,
+              81
+            ],
+            "101": [
+              30,
+              13
+            ],
+            "102": [
+              106,
+              86
+            ],
+            "103": [
+              106,
+              86
+            ],
+            "104": [
+              18,
+              13
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              62,
+              48
+            ],
+            "109": [
+              62,
+              48
+            ]
+          }
+        },
+        "40": {
+          "tick": 1206,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            108,
+            109
+          ],
+          "visible_enemies_within40": [
+            108,
+            109
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              91,
+              102
+            ],
+            "101": [
+              11,
+              17
+            ],
+            "102": [
+              94,
+              102
+            ],
+            "103": [
+              94,
+              102
+            ],
+            "104": [
+              9,
+              35
+            ]
+          },
+          "visible_enemy_positions": {
+            "108": [
+              74,
+              35
+            ],
+            "109": [
+              75,
+              34
+            ]
+          }
+        },
+        "24": {
+          "tick": 1727,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [
+            106,
+            109
+          ],
+          "visible_enemies_within24": [
+            106,
+            109
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              49,
+              103
+            ],
+            "101": [
+              8,
+              57
+            ],
+            "102": [
+              52,
+              102
+            ],
+            "103": [
+              52,
+              102
+            ],
+            "104": [
+              8,
+              62
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              90,
+              24
+            ],
+            "109": [
+              91,
+              23
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 2533,
+        "our_god_hp": 375,
+        "visible_enemy_ids": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within40": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within24": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 0,
+        "friendly_farther28": 5,
+        "friendly_positions": {
+          "100": [
+            29,
+            111
+          ],
+          "101": [
+            10,
+            79
+          ],
+          "102": [
+            32,
+            105
+          ],
+          "103": [
+            31,
+            105
+          ],
+          "104": [
+            6,
+            85
+          ]
+        },
+        "visible_enemy_positions": {
+          "105": [
+            103,
+            14
+          ],
+          "106": [
+            100,
+            14
+          ],
+          "107": [
+            101,
+            14
+          ],
+          "108": [
+            100,
+            16
+          ],
+          "109": [
+            104,
+            15
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 2532,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "106": {
+          "tick": 557,
+          "class": 1,
+          "hp": 200,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "109": {
+          "tick": 564,
+          "class": 4,
+          "hp": 220,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "108": {
+          "tick": 833,
+          "class": 3,
+          "hp": 250,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "107": {
+          "tick": 838,
+          "class": 2,
+          "hp": 190,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "105": {
+          "tick": 845,
+          "class": 0,
+          "hp": 330,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 699,
+        "no_valid_visible_target": 349,
+        "tower": 4547,
+        "god": 250
+      },
+      "visible_opponent_ticks": 5845,
+      "source_sha256": "dfa9349f0a0bcf0955acffbf289ba4023ec646073cab582a68bc3b0033ae4a3a"
+    },
+    {
+      "episode": "ereq_38049079-023c-40e5-8a1c-6881ce343817",
+      "observer_slot": 0,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 825,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              106,
+              81
+            ],
+            "101": [
+              30,
+              13
+            ],
+            "102": [
+              106,
+              86
+            ],
+            "103": [
+              106,
+              86
+            ],
+            "104": [
+              18,
+              13
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              62,
+              48
+            ],
+            "109": [
+              62,
+              48
+            ]
+          }
+        },
+        "40": {
+          "tick": 1206,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            108,
+            109
+          ],
+          "visible_enemies_within40": [
+            108,
+            109
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              91,
+              102
+            ],
+            "101": [
+              11,
+              17
+            ],
+            "102": [
+              94,
+              102
+            ],
+            "103": [
+              94,
+              102
+            ],
+            "104": [
+              9,
+              35
+            ]
+          },
+          "visible_enemy_positions": {
+            "108": [
+              74,
+              35
+            ],
+            "109": [
+              75,
+              34
+            ]
+          }
+        },
+        "24": {
+          "tick": 1727,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            106,
+            109
+          ],
+          "visible_enemies_within40": [
+            106,
+            109
+          ],
+          "visible_enemies_within24": [
+            106,
+            109
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "100": [
+              49,
+              103
+            ],
+            "101": [
+              8,
+              57
+            ],
+            "102": [
+              52,
+              102
+            ],
+            "103": [
+              52,
+              102
+            ],
+            "104": [
+              8,
+              62
+            ]
+          },
+          "visible_enemy_positions": {
+            "106": [
+              90,
+              24
+            ],
+            "109": [
+              91,
+              23
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 2533,
+        "our_god_hp": 375,
+        "visible_enemy_ids": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within40": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within24": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 0,
+        "friendly_farther28": 5,
+        "friendly_positions": {
+          "100": [
+            29,
+            111
+          ],
+          "101": [
+            10,
+            79
+          ],
+          "102": [
+            32,
+            105
+          ],
+          "103": [
+            31,
+            105
+          ],
+          "104": [
+            6,
+            85
+          ]
+        },
+        "visible_enemy_positions": {
+          "105": [
+            103,
+            14
+          ],
+          "106": [
+            100,
+            14
+          ],
+          "107": [
+            101,
+            14
+          ],
+          "108": [
+            100,
+            16
+          ],
+          "109": [
+            104,
+            15
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 2532,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "106": {
+          "tick": 557,
+          "class": 1,
+          "hp": 200,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "109": {
+          "tick": 564,
+          "class": 4,
+          "hp": 220,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "108": {
+          "tick": 833,
+          "class": 3,
+          "hp": 250,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "107": {
+          "tick": 838,
+          "class": 2,
+          "hp": 190,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "105": {
+          "tick": 845,
+          "class": 0,
+          "hp": 330,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 710,
+        "tower": 4540,
+        "no_valid_visible_target": 341,
+        "god": 254
+      },
+      "visible_opponent_ticks": 5845,
+      "source_sha256": "955dcb50b334df80c035d46e6b6d1321517280d4dcd5d313540022c909637fcd"
+    },
+    {
+      "episode": "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad",
+      "observer_slot": 5,
+      "first_visible_pair_near_own_god": {
+        "60": {
+          "tick": 963,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            102,
+            104
+          ],
+          "visible_enemies_within40": [],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              12,
+              20
+            ],
+            "106": [
+              104,
+              94
+            ],
+            "107": [
+              13,
+              16
+            ],
+            "108": [
+              14,
+              15
+            ],
+            "109": [
+              104,
+              94
+            ]
+          },
+          "visible_enemy_positions": {
+            "102": [
+              55,
+              67
+            ],
+            "104": [
+              54,
+              67
+            ]
+          }
+        },
+        "40": {
+          "tick": 1568,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            103,
+            104
+          ],
+          "visible_enemies_within24": [],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              53,
+              14
+            ],
+            "106": [
+              108,
+              49
+            ],
+            "107": [
+              52,
+              14
+            ],
+            "108": [
+              53,
+              14
+            ],
+            "109": [
+              108,
+              48
+            ]
+          },
+          "visible_enemy_positions": {
+            "103": [
+              39,
+              82
+            ],
+            "104": [
+              38,
+              83
+            ]
+          }
+        },
+        "24": {
+          "tick": 1977,
+          "our_god_hp": 400,
+          "visible_enemy_ids": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within40": [
+            101,
+            103,
+            104
+          ],
+          "visible_enemies_within24": [
+            101,
+            103,
+            104
+          ],
+          "friendly_alive_visible": 5,
+          "friendly_within28": 0,
+          "friendly_farther28": 5,
+          "friendly_positions": {
+            "105": [
+              72,
+              11
+            ],
+            "106": [
+              107,
+              35
+            ],
+            "107": [
+              71,
+              11
+            ],
+            "108": [
+              72,
+              10
+            ],
+            "109": [
+              109,
+              32
+            ]
+          },
+          "visible_enemy_positions": {
+            "101": [
+              28,
+              91
+            ],
+            "103": [
+              28,
+              91
+            ],
+            "104": [
+              27,
+              91
+            ]
+          }
+        }
+      },
+      "first_observed_god_damage": {
+        "tick": 3108,
+        "our_god_hp": 356,
+        "visible_enemy_ids": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within40": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within24": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 1,
+        "friendly_farther28": 4,
+        "friendly_positions": {
+          "105": [
+            96,
+            6
+          ],
+          "106": [
+            108,
+            23
+          ],
+          "107": [
+            93,
+            6
+          ],
+          "108": [
+            94,
+            7
+          ],
+          "109": [
+            9,
+            107
+          ]
+        },
+        "visible_enemy_positions": {
+          "100": [
+            20,
+            92
+          ],
+          "101": [
+            13,
+            102
+          ],
+          "102": [
+            13,
+            101
+          ],
+          "103": [
+            13,
+            102
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 3107,
+        "continuous_previous_snapshot": true
+      },
+      "first_visible_inventory": {
+        "104": {
+          "tick": 689,
+          "class": 9,
+          "hp": 300,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "102": {
+          "tick": 963,
+          "class": 7,
+          "hp": 185,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "103": {
+          "tick": 964,
+          "class": 8,
+          "hp": 240,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "101": {
+          "tick": 968,
+          "class": 6,
+          "hp": 230,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        },
+        "100": {
+          "tick": 976,
+          "class": 5,
+          "hp": 350,
+          "inventory": [
+            "VitalityElixir",
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "note": "First visible inventory, not first purchase or inferred gold."
+        }
+      },
+      "visible_target_ticks": {
+        "creep": 686,
+        "tower": 4827,
+        "no_valid_visible_target": 436,
+        "hero": 425,
+        "god": 126
+      },
+      "visible_opponent_ticks": 6500,
+      "source_sha256": "2739788090c34cff96c2fb5a73ddae8848eaa15e4e3090c672e0ee30852e1e33"
+    }
+  ],
+  "visible_target_ticks": {
+    "creep": 8356,
+    "tower": 56237,
+    "no_valid_visible_target": 4625,
+    "hero": 2575,
+    "god": 2277
+  },
+  "radius60": {
+    "observed_pair_episodes": 12,
+    "zero_friendly_within28": 12,
+    "all_five_friendly_alive_and_distant": 12
+  },
+  "radius40": {
+    "observed_pair_episodes": 12,
+    "zero_friendly_within28": 12,
+    "all_five_friendly_alive_and_distant": 12
+  },
+  "radius24": {
+    "observed_pair_episodes": 12,
+    "zero_friendly_within28": 12,
+    "all_five_friendly_alive_and_distant": 12
+  },
+  "first_god_damage": {
+    "observed_episodes": 12,
+    "zero_friendly_within28": 6,
+    "continuous_onset_episodes": 12
+  }
+}

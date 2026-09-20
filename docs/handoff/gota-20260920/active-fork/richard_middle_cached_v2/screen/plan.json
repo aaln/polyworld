@@ -1,0 +1,103 @@
+{
+  "sources": {
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/candidates/deployed/policy.bas",
+    "critical60": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/candidates/critical60/policy.bas",
+    "middle_warlock": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/candidates/middle_warlock/policy.bas"
+  },
+  "variants": [],
+  "actual_variants": [
+    "deployed",
+    "critical60",
+    "middle_warlock"
+  ],
+  "opponents": {
+    "accepted": "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+    "default": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas",
+    "blue_repair": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+    "support_anchor": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/candidates/deployed/policy.bas",
+    "center_proxy": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9820000,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9820001,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9820002,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9820003,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9820004,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9820005,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9820006,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9820007,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9820008,
+      "color": 0,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9820009,
+      "color": 1,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9820010,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9820011,
+      "color": 1,
+      "opponent": "center_proxy"
+    }
+  ],
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/screen/config.json": "a80b7f5bb43cbd61039dd8c5675c2660ec6b7e77fac14cce97b4f27c3d14033b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/prospective.json": "8345c051b0f94a90ab7c06c7909e6ca326dc8848647e154ced85f95d4eb35f40",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/native-proof.json": "11e771c7b57ec3f2340b6e109fc386f1e99d8fe151e7ddfc6b96dd58c7789746",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/candidates/deployed/policy.bas": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/candidates/critical60/policy.bas": "f748e8f1775bb6956412b578dae102cb6216e24478e88af6ae8dbfe29b21b490",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/richard_middle_cached_v2/candidates/middle_warlock/policy.bas": "b60897349b19ec26d458286879a8e85373484417989466653574dfc2cf16f3d4",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas": "781f97d93836e3bdf0b16304fa140b1bb18f2d56c169ce6788e0e8b9545f9d34",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas": "f8fba2fa812f9d88f156a928daecc5ea5509c0388187e2ee9f324f12cd6899e2",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas": "9d08e68910a1b095ca5c171f6394dee0bc7384245dbc9d6f491c109c206198d0",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T060430Z-2c1b16/middle_cached_local_v2.py": "b93f761e2e75c2ec0e2417765bf7d8591a743e8e47b6526130d680d7fa515cad"
+  },
+  "custom_opponents": true,
+  "gates": null,
+  "decision_rule": "All36complete locally audited games required. No lost fort-win cell versus either deployed orcritical60; all5ownedclasses equipment; totaldeaths <=max(1.15*deployed,deployed+5) and <=max(1.15*critical60,critical60+5). At leastone added redfortwin overcritical60 OR >=10%reddeath reduction without redfortregression. Full win/loss mechanism trace, exact7layer compile/extract, valid nativeclass/defense/deadline tests, unchangedVMlimits required. A pass only nominates furtherfreshlocalconfirmation, never upload orpromotion directly.",
+  "interpretation": "Prospective local reacting fixed-team matrix, complete replay and VM audits. Private Richard source unavailable; not Richard/Jordan hosted evidence. Draws zero; all classes and both colors included."
+}

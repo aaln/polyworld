@@ -1,0 +1,49 @@
+[
+  {
+    "id": "Richard135_I_C01",
+    "status": "proposed_test_only",
+    "adopted": false,
+    "rule": {
+      "id": "Richard135_I_C01",
+      "when": "visible_core_pressure_and_distant_defenders",
+      "skill": "observe",
+      "for": [
+        "G_defense"
+      ]
+    },
+    "predicate_proposal": "Visible living enemy pair near a standing friendly defense anchor and own god; keep spatial and time-to-return evidence, never opponent label or hidden state.",
+    "mechanism": "Allow a bounded critical-defense commitment to override the 28-tile distant-recall cancellation; evaluate earlier warning distance and assigned responder travel.",
+    "opponent_preference_ids": [
+      "Richard135_I_O13"
+    ],
+    "macro_evidence": {
+      "n": 11,
+      "pair_within24": {
+        "observed_pair_episodes": 11,
+        "zero_friendly_within28": 7,
+        "all_five_friendly_alive_and_distant": 7
+      },
+      "scope": "Descriptive training observations; not heldout macro validation"
+    },
+    "existing_intervention": "Critical60 blue 4W0L, Critical40 blue 2W2L; both red 0W4L. Directional screens only.",
+    "test": "Fresh pinned Richard135 AND Alexg002 candidate/control 40 per color, >=30/40 each target/color; retain Jordan268 >=38/40 each and original field guard. Full source, VM and replay audits. Draws count zero."
+  },
+  {
+    "id": "Richard135_I_C02",
+    "status": "diagnostic_proposal",
+    "adopted": false,
+    "rule": {
+      "id": "Richard135_I_C02",
+      "when": "local_defense_fails_after_response",
+      "skill": "attack",
+      "for": [
+        "G_defense",
+        "G_survival"
+      ]
+    },
+    "predicate_proposal": "Observed response occurred but the core still fell; require a trace of actual defender arrival and target choice.",
+    "mechanism": "Repair red combat/economy after timely response. Test support and wave participation; the existing red equipment-only screen 0/4 already refutes sufficiency of that tested variant.",
+    "evidence": "own-decision-analysis.json plus macro-observations.json; diagnostic inference, not an adopted opponent preference.",
+    "test": "Record arrival time, enemy structure-target duration, friendly survival and actual fort wins. Use real reacting opponent; the observational model is not a rollout controller."
+  }
+]

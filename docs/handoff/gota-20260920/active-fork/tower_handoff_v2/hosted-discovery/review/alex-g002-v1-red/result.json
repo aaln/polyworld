@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "arm": "alex-g002-v1-red",
+      "episode": "ereq_008e1662-7f29-4958-ab7e-0e4d603a231a",
+      "win": 1,
+      "loss": 0,
+      "draw": 0,
+      "starts": 3,
+      "observed_target_changes": 3,
+      "violations": [],
+      "equivalence": {
+        "type": "summary",
+        "controlled_slots": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticks": 3611,
+        "owned_commands_matched": 18910,
+        "owned_decisions": 15827,
+        "all_state_hashes_equal": true,
+        "all_actions_consumed": true
+      },
+      "mechanism_sha256": "0c0816950d7566517553a0e0b52a50571c65a730cc73d19e6e0e58d41785ec42",
+      "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/review/alex-g002-v1-red/ereq_008e1662-7f29-4958-ab7e-0e4d603a231a"
+    }
+  ],
+  "scope": "First episode ID in each available win/failure category, complete all controlled commands/state hashes. Recorded private rival actions only; no alternative-quality verdict."
+}

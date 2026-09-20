@@ -1,0 +1,29 @@
+{
+  "tests_passed": 34,
+  "real_vm_cases": 500,
+  "engine_probes_passed": [
+    "snapshot",
+    "inventory",
+    "walk_failure",
+    "poison_target",
+    "equipment_health"
+  ],
+  "full_game_pairs": 2,
+  "identical_action_positions": 269409,
+  "identical_tick_states": 29407,
+  "report_visually_inspected": true,
+  "behavior_changed": false,
+  "files": {
+    "examples/gods_of_the_arena/players/ir/independent_ir.py": "2b79f4333571cb37b999de00adcee4e0755733da6516ee6e84d3688e468be241",
+    "examples/gods_of_the_arena/players/ir/independent_review.py": "1f0bef5e77a0a5ca054043c6b8e952026d21307be40b03b030017f93f6a10d19",
+    "examples/gods_of_the_arena/players/ir/policy_ir.py": "a42f81044bf96fba676d4fb9702fc6c962c25a0aea3305e168e5910962504a03",
+    "examples/gods_of_the_arena/players/ir/temporal_probe.nim": "1867718048749776044786ac433e853ef80d6d1247dadf210805a6edd27a8d98",
+    "examples/gods_of_the_arena/players/ir/test_independent_ir.py": "d1d084914ac99c92c81f3edbbf181b77b5d4a2f63215188ce0399d6043e4b435",
+    "examples/gods_of_the_arena/players/ir/independent/base.ir.json": "1c3da7fb9d1df644f40f5aabb91f17b5f3bd0409af69bc562e5be0dd89b36a52",
+    "examples/gods_of_the_arena/players/ir/independent/base.generated.bas": "7209728b08c9d85ab76fcb338d5b0a53f87ff56712887aa607f35a76f8cd23fa",
+    "examples/gods_of_the_arena/players/ir/independent-20260910-result.json": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5",
+    "examples/gods_of_the_arena/players/ir/independent-20260910-reconciliation.json": "c083786d12984955fed655734b0ec83bbdcd2f340ec1d51557ae509b25ba8586",
+    "examples/gods_of_the_arena/players/ir/independent-20260910-report.html": "cdbb2e2fdbfe291f1ecd52053d71b90a66e05c31396323d1b448ad8d7d536c78",
+    "tmp/gota-ir/independent-final-tests.log": "8196e2bea60feb8a21bdbc12df27513718c1f8bfa672ce082dc675b5ac703546"
+  }
+}

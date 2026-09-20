@@ -1,0 +1,248 @@
+{
+  "at": "2026-09-20T05:28:22.262163+00:00",
+  "hypothesis": "Five-copy lineups can conceal how individual hero readiness interacts with allied kill allocation and different opposing behaviors. Before reading primary screen outcomes, add three fixed reacting owned-policy roster patterns with one tested hero, two physical subject classes per color. Test whether level1 hit fallback actually activates and preserves fort wins; no assumption of benefit.",
+  "sources": {
+    "parent": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/parent/policy.bas",
+    "suppression_reference": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+    "hits8": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/hits8/policy.bas",
+    "hits16": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/hits16/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9720000,
+      "color": 0,
+      "slot": 0,
+      "roster": "weapon_pressure",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720001,
+      "color": 0,
+      "slot": 1,
+      "roster": "weapon_pressure",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720002,
+      "color": 1,
+      "slot": 5,
+      "roster": "weapon_pressure",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720003,
+      "color": 1,
+      "slot": 6,
+      "roster": "weapon_pressure",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720004,
+      "color": 0,
+      "slot": 0,
+      "roster": "mixed_lanes",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720005,
+      "color": 0,
+      "slot": 1,
+      "roster": "mixed_lanes",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720006,
+      "color": 1,
+      "slot": 5,
+      "roster": "mixed_lanes",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720007,
+      "color": 1,
+      "slot": 6,
+      "roster": "mixed_lanes",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720008,
+      "color": 0,
+      "slot": 0,
+      "roster": "split_support",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720009,
+      "color": 0,
+      "slot": 1,
+      "roster": "split_support",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720010,
+      "color": 1,
+      "slot": 5,
+      "roster": "split_support",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas"
+      ]
+    },
+    {
+      "seed": 9720011,
+      "color": 1,
+      "slot": 6,
+      "roster": "split_support",
+      "bots": [
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas",
+        "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas"
+      ]
+    }
+  ],
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/mixed-roster-diagnostic/config.json": "a80b7f5bb43cbd61039dd8c5675c2660ec6b7e77fac14cce97b4f27c3d14033b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/vm-proof.json": "08b752cf63f79d62a360d1d7e209e535e7d336c368a494a67c4f5d76393b0730",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/prospective.json": "65b34574b8a86d7ef11500ac35dbd8000d06c5e8bf5929bb242fda2aca446fd8",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T033342Z-b4ca5b/readiness_mixed_rosters.py": "259ade38d97f710c265de3f51bff0b0cfabc4a9e60d16e314738e749074df72d",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/parent/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/suppression_reference/policy.bas": "3043195d9c7e22930e24e255a369b14213538d3bfdad09f97592e1cd4623606b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/hits8/policy.bas": "da1afb222d8455397ef4dd76128526156a5b8b9dccaff0d6794c577ff8e9f3ef",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/candidates/hits16/policy.bas": "d076bb5ae3432b79a8e5a1bc321db5dcdfa3ee86fcc64fab32126bfc3d400320",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas": "781f97d93836e3bdf0b16304fa140b1bb18f2d56c169ce6788e0e8b9545f9d34",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas": "f8fba2fa812f9d88f156a928daecc5ea5509c0388187e2ee9f324f12cd6899e2",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/weapon_dense/candidates/weapon_all/policy.bas": "406973b340dd5a24e70c6c62eb3ce0b60dec66711af38742344d825a47a97fcd",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_022654_d61958/role_raid/qualification-feedback/role64/policy.bas": "59892e45faa3a7b9521b1a0ebf547625679a3286faf775d20713d45698d84858"
+  },
+  "decision_rule": "All48complete games and ten-VM execution/audits required. Keep every parent and suppression_reference case win, alltenheroes equipped, subjectdeaths<=max(parent*1.25,parent+2) and<=max(reference*1.15,reference+2). Atleastone extra fortwin versus suppression plus an observed level1 fallback is needed to call this supplemental diagnostic promising. Draws0. This cannot substitute for the original screen or prospective56-case confirmation, exactJordan fresh controls or formalacceptance.",
+  "interpretation": "Local only, each policy file is owned/public. One tested hero per game, four fixed subject slots across three lineups. Multiple slots may share a policy; these are not hosted ten-distinct-actual-player games. No private Jordan implementation, opponent/seed policy logic, runtime/config changes or isolated-action quality claim."
+}

@@ -1,0 +1,206 @@
+{
+  "confirmed": "legacy",
+  "promotion_ready": true,
+  "scope": "Validated relh-gods-of-the-arena:v154 repair (legacy): 40/40 blue in discovery, then 40/40 red and 40/40 blue in fresh confirmation: 120/120 against relh. The deployed control won 40/40 red and 0/40 blue. Required blue-side preservation checks won 40/40 each against g002 v1, black-kite v16, macromackie v4, and Jordan v254. All 280 selected-candidate hosted games won and passed full replay, runtime, roster, release, and equipment audits. Behavior: a blue side-tower alarm after 150 HP of damage, with the original commitment and release rules. Red execution is unchanged, verified through the lowered source and six complete games with identical actions and state hashes. Local results were 12/12, matching the deployed policy. Real-VM middle-lane commands and release timing also match the deployed policy. The semantic IR reflects these results and compiles to the exact tested BASIC, with reverse extraction verified. The first, broader candidate also beat relh 120/120 but produced five Jordan draws and was not promoted. This followup passed the original preservation requirements. Controls were reused, seeds differ, and repeated fixed-lineup games are correlated. These results do not establish independent-trial significance, guaranteed future wins, or mixed ten-player performance. The separate stale red rally issue and red-side weakness against black-kite remain outside this change.",
+  "evidence": [
+    {
+      "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/prospective.json",
+      "sha256": "d29ba3c457ac393c2ab4efe454d2d54013d7175b22ed412e7500c4da6450a187"
+    },
+    {
+      "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/vm-proof.json",
+      "sha256": "60ce6f7af7a723783608112cf8e4f2ad47cf2cd9838df3ee4af69b93c7567763"
+    },
+    {
+      "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/vm-budget.json",
+      "sha256": "df3c4221b364c377f7544bb8e4b6f77f8c861cc6d92337c73464fd13c23b8485"
+    },
+    {
+      "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/local/qualification.json",
+      "sha256": "578a76a0444323b1b8d189eae4bd96c659bc8bdae99df5a5a7ebac043b56dbcd"
+    },
+    {
+      "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/hosted-result.json",
+      "sha256": "25d5c6b6c0989408eeb8d7a0e40dc4e23bec801482fb5af449054437c37484cc"
+    },
+    {
+      "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/confirmation/result.json",
+      "sha256": "1b540ad1b76236f7d89e562019e01f0b2b0c04e6880f746aeb6a99d47804ad82"
+    },
+    {
+      "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/hosted/legacy/review/decisions.json",
+      "sha256": "b9ceafea66a74e516cec5fef1d93fa639ef23658ad4c885bb30437bf03140086"
+    }
+  ],
+  "source_sha256": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+  "relh154": {
+    "prior_red": 40,
+    "prior_blue": 0,
+    "discovery_blue": 40,
+    "fresh_red": 40,
+    "fresh_blue": 40,
+    "candidate_games": 120
+  },
+  "preservation": {
+    "g002v1": 40,
+    "black-kitev16": 40,
+    "macromackie4": 40,
+    "Jordan254": 40
+  },
+  "candidate_games": 280,
+  "candidate_wins": 280,
+  "first_recalls": {
+    "5": {
+      "tick": 922,
+      "memory": {
+        "bestId": 0,
+        "defActive": 1,
+        "defUntil": 8122,
+        "defHoldTicks": 7200,
+        "defFront": 100,
+        "defCount": 3,
+        "defAnchor": 25,
+        "defPointX": 91,
+        "defPointY": 104,
+        "defThreatX": 99,
+        "defThreatY": 102,
+        "defNavX": 89,
+        "defNavY": 104,
+        "defMoveAccepted": 1,
+        "perimeterAnchor": 25,
+        "perimeterX": 95,
+        "perimeterY": 104,
+        "perimeterLastCombat": 921,
+        "perimeterEnabled": 1,
+        "backdoorActive": 0,
+        "coreId": 0,
+        "middleRush": 0,
+        "pairedRush": 1,
+        "pairAnchorHp": 790,
+        "pairMaxHp": 950
+      }
+    },
+    "6": {
+      "tick": 922,
+      "memory": {
+        "bestId": 100,
+        "defActive": 1,
+        "defUntil": 2122,
+        "defHoldTicks": 1200,
+        "defFront": 100,
+        "defCount": 3,
+        "defAnchor": 25,
+        "defPointX": 91,
+        "defPointY": 104,
+        "defThreatX": 99,
+        "defThreatY": 102,
+        "defNavX": 0,
+        "defNavY": 0,
+        "defMoveAccepted": 0,
+        "perimeterAnchor": 25,
+        "perimeterX": 95,
+        "perimeterY": 104,
+        "perimeterLastCombat": 922,
+        "perimeterEnabled": 1,
+        "backdoorActive": 0,
+        "coreId": 0,
+        "middleRush": 0,
+        "pairedRush": 1,
+        "pairAnchorHp": 790,
+        "pairMaxHp": 950
+      }
+    },
+    "7": {
+      "tick": 922,
+      "memory": {
+        "bestId": 0,
+        "defActive": 1,
+        "defUntil": 8122,
+        "defHoldTicks": 7200,
+        "defFront": 100,
+        "defCount": 3,
+        "defAnchor": 25,
+        "defPointX": 91,
+        "defPointY": 104,
+        "defThreatX": 99,
+        "defThreatY": 102,
+        "defNavX": 91,
+        "defNavY": 102,
+        "defMoveAccepted": 1,
+        "perimeterAnchor": 25,
+        "perimeterX": 95,
+        "perimeterY": 104,
+        "perimeterLastCombat": 921,
+        "perimeterEnabled": 1,
+        "backdoorActive": 0,
+        "coreId": 0,
+        "middleRush": 0,
+        "pairedRush": 1,
+        "pairAnchorHp": 790,
+        "pairMaxHp": 950
+      }
+    },
+    "8": {
+      "tick": 922,
+      "memory": {
+        "bestId": 0,
+        "defActive": 1,
+        "defUntil": 8122,
+        "defHoldTicks": 7200,
+        "defFront": 100,
+        "defCount": 3,
+        "defAnchor": 25,
+        "defPointX": 91,
+        "defPointY": 104,
+        "defThreatX": 99,
+        "defThreatY": 102,
+        "defNavX": 91,
+        "defNavY": 106,
+        "defMoveAccepted": 1,
+        "perimeterAnchor": 25,
+        "perimeterX": 95,
+        "perimeterY": 104,
+        "perimeterLastCombat": 921,
+        "perimeterEnabled": 1,
+        "backdoorActive": 0,
+        "coreId": 0,
+        "middleRush": 0,
+        "pairedRush": 1,
+        "pairAnchorHp": 790,
+        "pairMaxHp": 950
+      }
+    },
+    "9": {
+      "tick": 1064,
+      "memory": {
+        "bestId": 0,
+        "defActive": 1,
+        "defUntil": 2264,
+        "defHoldTicks": 1200,
+        "defFront": 100,
+        "defCount": 3,
+        "defAnchor": 25,
+        "defPointX": 91,
+        "defPointY": 104,
+        "defThreatX": 97,
+        "defThreatY": 103,
+        "defNavX": 91,
+        "defNavY": 104,
+        "defMoveAccepted": 1,
+        "perimeterAnchor": 25,
+        "perimeterX": 95,
+        "perimeterY": 104,
+        "perimeterLastCombat": 847,
+        "perimeterEnabled": 1,
+        "backdoorActive": 0,
+        "coreId": 0,
+        "middleRush": 0,
+        "pairedRush": 1,
+        "pairAnchorHp": 59,
+        "pairMaxHp": 950
+      }
+    }
+  },
+  "prior_broad_candidate_rejected": true,
+  "general_stale_rally_fixed": false
+}

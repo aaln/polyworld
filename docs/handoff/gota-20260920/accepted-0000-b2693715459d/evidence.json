@@ -1,0 +1,25 @@
+{
+  "kind": "existing validated incumbent; not a new self-play qualification",
+  "original_bundle": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/final-feedback",
+  "league_source_sha256": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+  "active_policy": {
+    "players": [
+      {
+        "player": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+        "label": "aaron-gota-ir-relh154-legacy-0916:v1",
+        "policy": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/final-feedback/policy.bas",
+        "semantic_ir": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/final-feedback/policy.ir.json"
+      },
+      {
+        "player": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "version": "eae99cdd-b2a9-4426-aa20-289d8637fa54",
+        "label": "aaron-gota-ir-relh154-legacy-0916-aaron:v1",
+        "policy": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/final-feedback/policy.bas",
+        "semantic_ir": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/final-feedback/policy.ir.json"
+      }
+    ],
+    "deployment_receipt": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/deployment-pair/deployment-verified.json",
+    "scope": "Validated relh-gods-of-the-arena:v154 repair (legacy): 40/40 blue in discovery, then 40/40 red and 40/40 blue in fresh confirmation: 120/120 against relh. The deployed control won 40/40 red and 0/40 blue. Required blue-side preservation checks won 40/40 each against g002 v1, black-kite v16, macromackie v4, and Jordan v254. All 280 selected-candidate hosted games won and passed full replay, runtime, roster, release, and equipment audits. Behavior: a blue side-tower alarm after 150 HP of damage, with the original commitment and release rules. Red execution is unchanged, verified through the lowered source and six complete games with identical actions and state hashes. Local results were 12/12, matching the deployed policy. Real-VM middle-lane commands and release timing also match the deployed policy. The semantic IR reflects these results and compiles to the exact tested BASIC, with reverse extraction verified. The first, broader candidate also beat relh 120/120 but produced five Jordan draws and was not promoted. This followup passed the original preservation requirements. Controls were reused, seeds differ, and repeated fixed-lineup games are correlated. These results do not establish independent-trial significance, guaranteed future wins, or mixed ten-player performance. The separate stale red rally issue and red-side weakness against black-kite remain outside this change."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "assembly": {
+    "smoke": {
+      "ticks": 2400,
+      "hero_vms": 10,
+      "max_instructions": 17029
+    },
+    "red_parity": {
+      "type": "summary",
+      "controlled_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ticks": 8798,
+      "owned_commands_matched": 39935,
+      "owned_decisions": 38499,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true
+    }
+  },
+  "counterrace": {
+    "smoke": {
+      "ticks": 2400,
+      "hero_vms": 10,
+      "max_instructions": 17540
+    },
+    "red_parity": {
+      "type": "summary",
+      "controlled_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ticks": 8798,
+      "owned_commands_matched": 39935,
+      "owned_decisions": 38499,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true
+    }
+  },
+  "redrace": {
+    "smoke": {
+      "ticks": 2400,
+      "hero_vms": 10,
+      "max_instructions": 17540
+    },
+    "blue_parity": {
+      "type": "summary",
+      "controlled_slots": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ticks": 3408,
+      "owned_commands_matched": 16024,
+      "owned_decisions": 15744,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true
+    },
+    "red_owned_replay": {
+      "type": "summary",
+      "controlled_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ticks": 3350,
+      "owned_commands_matched": 15926,
+      "owned_decisions": 15462,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true
+    }
+  }
+}

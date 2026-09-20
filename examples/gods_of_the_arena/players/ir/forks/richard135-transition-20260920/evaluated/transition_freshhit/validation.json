@@ -1,0 +1,74 @@
+{
+  "name": "transition_freshhit",
+  "pair": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-transition-20260920/evaluated/transition_freshhit",
+  "source_sha256": "07de1de1261223895e7560206b62beb5887eea76ef75666f352301958dc1dfe0",
+  "tested_ir_sha256": "9dc87dc356c3175e16ad78bf18e6df642a1767ee3deb5a130856c71cc3d24fe3",
+  "evaluated_ir_sha256": "2b954729779cac58a920325b8aaa3729bb32879e224d9ea3483c4eb6e6c4bccd",
+  "local": {
+    "games": 12,
+    "wins": 4,
+    "deaths": 258,
+    "max_instructions": 18367,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/fresh-hit/local-results.json",
+      "sha256": "0ac00d7290dc25abae3ca88ea63a3cad3a4695bf13f560172ebe226ab94d19ee"
+    }
+  },
+  "local_control": {
+    "games": 12,
+    "wins": 6,
+    "deaths": 342,
+    "max_instructions": 17982,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/fresh-hit/local-results.json",
+      "sha256": "0ac00d7290dc25abae3ca88ea63a3cad3a4695bf13f560172ebe226ab94d19ee"
+    }
+  },
+  "Richard": {
+    "red": {
+      "games": 40,
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "deaths": 921,
+      "request": "xreq_fbbc2878-2ebf-4b5c-85c3-cdbbe924a745",
+      "distinct_complete_command_streams": 10,
+      "evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/fresh-hit/hosted/transition_freshhit/red/arm-result.json",
+        "sha256": "8e0c09e2f7512bb1a10a4e405d21f1555bc16eb09b74f0673ddafc3504dc1765"
+      },
+      "correlation_evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/fresh-hit/hosted/transition_freshhit/red/trajectory-correlation.json",
+        "sha256": "5dc58d442478a04d2b8856f4b8dce2d2b2bd17f6ac0214a54da80364ece3b900"
+      }
+    },
+    "blue": {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "deaths": 160,
+      "request": "xreq_589151e6-2cd9-45cc-9de7-531250489cf8",
+      "distinct_complete_command_streams": 5,
+      "evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/fresh-hit/hosted/transition_freshhit/blue/arm-result.json",
+        "sha256": "b1c456f7c3c36ffc755ac62f00a9e8a9144fd5ad13510e0da08ab556cc82ad6d"
+      },
+      "correlation_evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/fresh-hit/hosted/transition_freshhit/blue/trajectory-correlation.json",
+        "sha256": "411bbde3b609be06755793fe734b0127aa896069100e3d882a0cacbda707abe4"
+      }
+    }
+  },
+  "Richard_both_color_gate_passed": false,
+  "field_qualified": false,
+  "user_conditional_promotion_gate_passed": false,
+  "compile_extract_exact_parity": true,
+  "uploaded_version": {
+    "id": "a6efb84f-575a-4267-9775-8579509dd446",
+    "name": "aaron-gota-ir-richard135-transition-freshhit-0920",
+    "version": 1,
+    "pools": null,
+    "submit_error": null
+  }
+}

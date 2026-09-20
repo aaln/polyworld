@@ -1,0 +1,25 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "policy_sha256": "5958092d7ecf730e3edd4222ae5de6fc60b765b5fed8a36381ddf796f570ab6b",
+  "executable_sha256": "eabeccba3310d7f0d8230359bd88ed3d203b727c83e36085d74499148a723e28",
+  "source_sha256": "0a09dfc406069b26ff4d8d86c688dfedcd5366e8a09d561e84abf4a0fd5606d4",
+  "structural_parity": true,
+  "intent_parity": "authored claims require scenario and episode evidence; not inferred from BASIC",
+  "dependencies": {
+    "examples/gods_of_the_arena/players/ir/binding.py": "47f5f3760df5cf0847952fdc719ff67ad40e7b13ab46cd4f2b94cbb38dd1f815",
+    "examples/gods_of_the_arena/players/ir/basic_syntax.py": "3636db2cf7884d79c87e1a468eacd1f054313e4fbab8ee02a3b18b7f01318aea",
+    "examples/gods_of_the_arena/players/ir/policy_ir.py": "a215b437a4064985b5c891db2b38d35f767dc07b3a28042fecfe5ea5245001eb",
+    "examples/gods_of_the_arena/players/ir/independent_ir.py": "c1a2965cdb88621a949ab691bd9c2ac807e79d09b7c02365b3c41a552b4cc073",
+    "examples/gods_of_the_arena/bots.nim": "a37ef2cb3a84469c31342a6edafd3156d65e2436600ab43a66cdf74586ee93af",
+    "examples/gods_of_the_arena/sim.nim": "49e9b019b57dae3473f0bb306a66a65dd6478092ffc8773d0a387c129e5dc1eb",
+    "examples/gods_of_the_arena/content.nim": "1c7bdfb8b03f6a760858bf4b41a1a3b0aa65fadde4c379848a4a9f032c7ed35d",
+    "src/polyworld/basic.nim": "13fd4727eda25eb1ac748d4b3eaa6a5be5e752baf487be80cacaca9996b97289",
+    "coworld/dependencies.lock": "efa2ddd0c3f2639ca8dc6c4b11ef951f890c9d816b811559af0834c065e3f413"
+  },
+  "artifacts": {
+    "extracted.ir.json": "3fbfb9fe95562943a9383ae431edc51666e4f189e0cd7116719f26da1d5a32f2",
+    "policy.bas": "0a09dfc406069b26ff4d8d86c688dfedcd5366e8a09d561e84abf4a0fd5606d4",
+    "policy.ir.json": "38c3c1315058750a85b7090f49b069213fcb2993ebf99f875d636d7413b4cfab",
+    "semantics.json": "5716ee54119948fdc90368ac66e60cfd21c493898f49bc95eefa6fd4a792cce1"
+  }
+}

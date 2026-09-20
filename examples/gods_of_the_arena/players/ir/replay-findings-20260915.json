@@ -1,0 +1,1185 @@
+{
+  "created_at": "2026-09-16T01:01:04.179166+00:00",
+  "game_version": "2026.9.15.3",
+  "published_source": "e1279894d10a7684f303e7a9f1ea2f84c1d14253",
+  "selected_policy": "aaron-gota-ir-waveguard-r4:v2",
+  "policy_sha256": "c23c618705b74ec3154ba7614cdda6fd7bdc84e71ea55c3b0ef171438f0a91c3",
+  "design": "Descriptive re-analysis of 160 complete replays: the same 40 seeds/slots across four arms; adaptive discovery data, not 160 independent cases or new validation.",
+  "limits": [
+    "Nine default teammates/opponents; no new incumbent XP or leaderboard-strength claim.",
+    "Walk segments are identified from action tapes; the nearest visible enemy is not necessarily the damaging attacker.",
+    "Separation comparisons exclude enemies dead or missing at the segment end. Event samples are correlated within games.",
+    "Low-HP timing is sampled every 12 ticks and totals samples in the final six seconds, not exact continuous warning time.",
+    "DamageMetric is never populated by this published source; zero was NOT interpreted as zero damage. Inactivity excludes basic hits and active offensive spell effects.",
+    "Native graphics could not load missing local courtyard texture. The viewer renders authoritative positions, visible objects and paths schematically.",
+    "Counterfactual probes retain peers\u2019 recorded commands and last only 96 ticks. The waypoint-changing arm is engine-only and cannot be uploaded as a policy."
+  ],
+  "arms": {
+    "v2": {
+      "games": 40,
+      "wins": 22,
+      "deaths": 134,
+      "alive_ticks": 393850,
+      "stationary_no_hit_no_active_offense_ticks_in_runs_ge72": 11935,
+      "long_stalls_ge30sec": [
+        {
+          "case": "seed-721001-slot-3",
+          "score": 0,
+          "start": 3949,
+          "end": 5834,
+          "ticks": 1885,
+          "position": [
+            81.90005,
+            29.162933333333335
+          ],
+          "start_target": 1114,
+          "end_target": 1248,
+          "start_hp": 286,
+          "end_hp": 286,
+          "target_distance": 44.09880445579311,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            81.5,
+            29.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 17,
+            "team": 0,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8299973535767716
+          },
+          "damage_metric_unavailable": true
+        },
+        {
+          "case": "seed-721023-slot-7",
+          "score": 0,
+          "start": 698,
+          "end": 8970,
+          "ticks": 8272,
+          "position": [
+            7.699433333333332,
+            77.15801666666667
+          ],
+          "start_target": 101,
+          "end_target": 102,
+          "start_hp": 190,
+          "end_hp": 190,
+          "target_distance": 6.897882184913312,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            7.5,
+            77.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 14,
+            "team": 1,
+            "waypoint_distance": 0.4341388746703064,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8300255421103351
+          },
+          "damage_metric_unavailable": true
+        }
+      ],
+      "remote_target_alive_fraction": 0.5393246159705471,
+      "out_of_attack_range_alive_fraction": 0.7764885108543862,
+      "median_low_hp_sample_seconds_in_final6sec": 1.0,
+      "deaths_without_low_hp_sample": 18,
+      "deaths_with_enemy_mobile_targeting_in_final6sec": 132,
+      "deaths_with_tower_targeting_in_final6sec": 25,
+      "deaths_with_enemy_count_ge_allies_plus3_in_final6sec": 65
+    },
+    "default": {
+      "games": 40,
+      "wins": 18,
+      "deaths": 154,
+      "alive_ticks": 404526,
+      "stationary_no_hit_no_active_offense_ticks_in_runs_ge72": 11615,
+      "long_stalls_ge30sec": [
+        {
+          "case": "seed-721001-slot-3",
+          "score": 0,
+          "start": 7043,
+          "end": 9083,
+          "ticks": 2040,
+          "position": [
+            81.98283333333333,
+            29.456166666666668
+          ],
+          "start_target": 1321,
+          "end_target": 1381,
+          "start_hp": 424,
+          "end_hp": 424,
+          "target_distance": 4.932288133930449,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            81.5,
+            29.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 17,
+            "team": 0,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8299864540393951
+          },
+          "damage_metric_unavailable": true
+        },
+        {
+          "case": "seed-721017-slot-2",
+          "score": 0,
+          "start": 3198,
+          "end": 5585,
+          "ticks": 2387,
+          "position": [
+            81.98285,
+            29.456216666666666
+          ],
+          "start_target": 1105,
+          "end_target": 1174,
+          "start_hp": 241,
+          "end_hp": 241,
+          "target_distance": 22.22047197639175,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            81.5,
+            29.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 17,
+            "team": 0,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8299985307885256
+          },
+          "damage_metric_unavailable": true
+        },
+        {
+          "case": "seed-721029-slot-6",
+          "score": 1,
+          "start": 1534,
+          "end": 4405,
+          "ticks": 2871,
+          "position": [
+            34.01716666666667,
+            86.54401666666666
+          ],
+          "start_target": 16,
+          "end_target": 1170,
+          "start_hp": 200,
+          "end_hp": 200,
+          "target_distance": 37.9773692970198,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            34.5,
+            86.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 20,
+            "team": 1,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8300030590639745
+          },
+          "damage_metric_unavailable": true
+        },
+        {
+          "case": "seed-721029-slot-6",
+          "score": 1,
+          "start": 4502,
+          "end": 5410,
+          "ticks": 908,
+          "position": [
+            34.04245,
+            86.25233333333333
+          ],
+          "start_target": 1170,
+          "end_target": 1194,
+          "start_hp": 200,
+          "end_hp": 200,
+          "target_distance": 7.9458447287630225,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            34.5,
+            86.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 20,
+            "team": 1,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8300107611417524
+          },
+          "damage_metric_unavailable": true
+        },
+        {
+          "case": "seed-721037-slot-6",
+          "score": 1,
+          "start": 1452,
+          "end": 4579,
+          "ticks": 3127,
+          "position": [
+            34.01716666666667,
+            86.54401666666666
+          ],
+          "start_target": 1015,
+          "end_target": 1120,
+          "start_hp": 200,
+          "end_hp": 200,
+          "target_distance": 27.466545681372903,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            34.5,
+            86.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 20,
+            "team": 1,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8300030590639745
+          },
+          "damage_metric_unavailable": true
+        }
+      ],
+      "remote_target_alive_fraction": 0.547547005631282,
+      "out_of_attack_range_alive_fraction": 0.7967992168612154,
+      "median_low_hp_sample_seconds_in_final6sec": 0.75,
+      "deaths_without_low_hp_sample": 27,
+      "deaths_with_enemy_mobile_targeting_in_final6sec": 147,
+      "deaths_with_tower_targeting_in_final6sec": 28,
+      "deaths_with_enemy_count_ge_allies_plus3_in_final6sec": 37
+    },
+    "spell_short": {
+      "games": 40,
+      "wins": 17,
+      "deaths": 115,
+      "alive_ticks": 361328,
+      "stationary_no_hit_no_active_offense_ticks_in_runs_ge72": 15090,
+      "long_stalls_ge30sec": [
+        {
+          "case": "seed-721014-slot-7",
+          "score": 1,
+          "start": 5174,
+          "end": 6103,
+          "ticks": 929,
+          "position": [
+            34.01716666666667,
+            86.54383333333334
+          ],
+          "start_target": 1231,
+          "end_target": 1254,
+          "start_hp": 500,
+          "end_hp": 500,
+          "target_distance": 38.503483479838835,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            34.5,
+            86.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 20,
+            "team": 1,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8299864540393951
+          },
+          "damage_metric_unavailable": true
+        },
+        {
+          "case": "seed-721019-slot-6",
+          "score": 0,
+          "start": 1991,
+          "end": 3928,
+          "ticks": 1937,
+          "position": [
+            34.01716666666667,
+            86.54401666666666
+          ],
+          "start_target": 103,
+          "end_target": 1122,
+          "start_hp": 200,
+          "end_hp": 200,
+          "target_distance": 7.917821640732029,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            34.5,
+            86.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 20,
+            "team": 1,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8300030590639745
+          },
+          "damage_metric_unavailable": true
+        },
+        {
+          "case": "seed-721019-slot-6",
+          "score": 0,
+          "start": 4202,
+          "end": 6287,
+          "ticks": 2085,
+          "position": [
+            34.01716666666667,
+            86.54401666666666
+          ],
+          "start_target": 1145,
+          "end_target": 101,
+          "start_hp": 238,
+          "end_hp": 238,
+          "target_distance": 7.91592971111978,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            34.5,
+            86.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 20,
+            "team": 1,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8300030590639745
+          },
+          "damage_metric_unavailable": true
+        },
+        {
+          "case": "seed-721019-slot-6",
+          "score": 0,
+          "start": 6760,
+          "end": 8064,
+          "ticks": 1304,
+          "position": [
+            34.01716666666667,
+            86.54401666666666
+          ],
+          "start_target": 101,
+          "end_target": 100,
+          "start_hp": 238,
+          "end_hp": 238,
+          "target_distance": 7.930274932339988,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            34.5,
+            86.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 20,
+            "team": 1,
+            "waypoint_distance": 0.3451675317871019,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8300030590639745
+          },
+          "damage_metric_unavailable": true
+        },
+        {
+          "case": "seed-721023-slot-7",
+          "score": 0,
+          "start": 698,
+          "end": 8970,
+          "ticks": 8272,
+          "position": [
+            7.699433333333332,
+            77.15801666666667
+          ],
+          "start_target": 101,
+          "end_target": 102,
+          "start_hp": 190,
+          "end_hp": 190,
+          "target_distance": 6.897882184913312,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            7.5,
+            77.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 14,
+            "team": 1,
+            "waypoint_distance": 0.4341388746703064,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8300255421103351
+          },
+          "damage_metric_unavailable": true
+        }
+      ],
+      "remote_target_alive_fraction": 0.5348353850241332,
+      "out_of_attack_range_alive_fraction": 0.7771138688393925,
+      "median_low_hp_sample_seconds_in_final6sec": 1.0,
+      "deaths_without_low_hp_sample": 14,
+      "deaths_with_enemy_mobile_targeting_in_final6sec": 113,
+      "deaths_with_tower_targeting_in_final6sec": 18,
+      "deaths_with_enemy_count_ge_allies_plus3_in_final6sec": 55,
+      "retreat_segments": {
+        "definition": "Consecutive recorded walk orders immediately after a basic hit, lasting exactly the configured retreat duration; nearest initially visible enemy within 7 real tiles. A command-derived proxy, not recovered private VM state.",
+        "duration_ticks": 10,
+        "segments": 409,
+        "living_tracked_enemy_at_end": 334,
+        "enemy_missing_or_dead_at_end": 75,
+        "median_turn_only_ticks": 8,
+        "median_moved_ticks": 2,
+        "median_displacement_tiles": 0.21330499942049597,
+        "separation_gain_gt_quarter_tile": 32,
+        "separation_loss_gt_quarter_tile": 108,
+        "median_separation_change_tiles": -0.0005298506629740629
+      }
+    },
+    "long_bare": {
+      "games": 40,
+      "wins": 23,
+      "deaths": 135,
+      "alive_ticks": 422165,
+      "stationary_no_hit_no_active_offense_ticks_in_runs_ge72": 8272,
+      "long_stalls_ge30sec": [
+        {
+          "case": "seed-721023-slot-7",
+          "score": 0,
+          "start": 698,
+          "end": 8970,
+          "ticks": 8272,
+          "position": [
+            7.699433333333332,
+            77.15801666666667
+          ],
+          "start_target": 101,
+          "end_target": 102,
+          "start_hp": 190,
+          "end_hp": 190,
+          "target_distance": 6.897882184913312,
+          "target_layer": 0,
+          "hero_layer": 0,
+          "first_waypoint": [
+            7.5,
+            77.5
+          ],
+          "waypoint_tower_overlap": {
+            "id": 14,
+            "team": 1,
+            "waypoint_distance": 0.4341388746703064,
+            "clearance_required": 0.8300000000000001,
+            "hero_distance": 0.8300255421103351
+          },
+          "damage_metric_unavailable": true
+        }
+      ],
+      "remote_target_alive_fraction": 0.5223407909229804,
+      "out_of_attack_range_alive_fraction": 0.7626828372792629,
+      "median_low_hp_sample_seconds_in_final6sec": 1.0,
+      "deaths_without_low_hp_sample": 13,
+      "deaths_with_enemy_mobile_targeting_in_final6sec": 134,
+      "deaths_with_tower_targeting_in_final6sec": 17,
+      "deaths_with_enemy_count_ge_allies_plus3_in_final6sec": 68,
+      "retreat_segments": {
+        "definition": "Consecutive recorded walk orders immediately after a basic hit, lasting exactly the configured retreat duration; nearest initially visible enemy within 7 real tiles. A command-derived proxy, not recovered private VM state.",
+        "duration_ticks": 32,
+        "segments": 444,
+        "living_tracked_enemy_at_end": 309,
+        "enemy_missing_or_dead_at_end": 135,
+        "median_turn_only_ticks": 12.0,
+        "median_moved_ticks": 20.0,
+        "median_displacement_tiles": 1.9520687387109104,
+        "separation_gain_gt_quarter_tile": 206,
+        "separation_loss_gt_quarter_tile": 65,
+        "median_separation_change_tiles": 0.891659453152934
+      }
+    }
+  },
+  "inventory_at_death": {
+    "deaths": 134,
+    "full_inventory": 4
+  },
+  "probes": {
+    "escape-probe": {
+      "replay": "tmp/gota-ir/hit-kite-20260915/screen/parent/seed-721023-slot-7/episode.replay",
+      "checkpoint_tick": 1200,
+      "checkpoint_prefix_verified": true,
+      "slot": 7,
+      "trials": [
+        {
+          "arm": "recorded_control",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 0
+        },
+        {
+          "arm": "walk_1_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_1_1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-1_1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-1_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-1_-1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_-1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_1_-1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_2_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_2_2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-2_2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-2_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-2_-2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_-2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_2_-2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_4_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_4_4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-4_4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-4_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-4_-4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_-4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_4_-4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.0,
+          "max_displacement_tiles": 0.0,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "ENGINE_ONLY_skip_blocked_first_waypoint",
+          "ticks": 96,
+          "end_displacement_tiles": 4.603467502298916,
+          "max_displacement_tiles": 4.603467502298916,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        }
+      ],
+      "limits": "96-tick open-loop counterfactuals; peers keep recorded actions; no win-rate inference. Engine-only arm is not a policy candidate."
+    },
+    "prevention-probe": {
+      "replay": "tmp/gota-ir/hit-kite-20260915/screen/parent/seed-721023-slot-7/episode.replay",
+      "checkpoint_tick": 650,
+      "checkpoint_prefix_verified": true,
+      "slot": 7,
+      "trials": [
+        {
+          "arm": "recorded_control",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 0
+        },
+        {
+          "arm": "walk_1_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_1_1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-1_1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-1_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-1_-1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_-1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_1_-1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_2_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_2_2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-2_2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-2_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-2_-2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_-2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_2_-2",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_4_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_4_4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-4_4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-4_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-4_-4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_-4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_4_-4",
+          "ticks": 96,
+          "end_displacement_tiles": 0.2153894695919722,
+          "max_displacement_tiles": 0.2153894695919722,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "ENGINE_ONLY_skip_blocked_first_waypoint",
+          "ticks": 96,
+          "end_displacement_tiles": 7.905587213360912,
+          "max_displacement_tiles": 7.905587213360912,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        }
+      ],
+      "limits": "96-tick open-loop counterfactuals; peers keep recorded actions; no win-rate inference. Engine-only arm is not a policy candidate."
+    },
+    "early-prevention-probe": {
+      "replay": "tmp/gota-ir/hit-kite-20260915/screen/parent/seed-721023-slot-7/episode.replay",
+      "checkpoint_tick": 500,
+      "checkpoint_prefix_verified": true,
+      "slot": 7,
+      "trials": [
+        {
+          "arm": "recorded_control",
+          "ticks": 96,
+          "end_displacement_tiles": 5.072287329011987,
+          "max_displacement_tiles": 5.072287329011987,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 0
+        },
+        {
+          "arm": "walk_1_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.5166749561162973,
+          "max_displacement_tiles": 0.5166749561162973,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_1_1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.8266471948311579,
+          "max_displacement_tiles": 0.8266471948311579,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.5166656827947622,
+          "max_displacement_tiles": 0.5166656827947622,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-1_1",
+          "ticks": 96,
+          "end_displacement_tiles": 1.1366812312116747,
+          "max_displacement_tiles": 1.1366812312116747,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-1_0",
+          "ticks": 96,
+          "end_displacement_tiles": 0.9299808674853955,
+          "max_displacement_tiles": 0.9299808674853955,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-1_-1",
+          "ticks": 96,
+          "end_displacement_tiles": 1.4466777020508443,
+          "max_displacement_tiles": 1.4466777020508443,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_-1",
+          "ticks": 96,
+          "end_displacement_tiles": 0.9300368003471691,
+          "max_displacement_tiles": 0.9300368003471691,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_1_-1",
+          "ticks": 96,
+          "end_displacement_tiles": 1.1367137126138862,
+          "max_displacement_tiles": 1.1367137126138862,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_2_0",
+          "ticks": 96,
+          "end_displacement_tiles": 1.4466313177324914,
+          "max_displacement_tiles": 1.4466313177324914,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_2_2",
+          "ticks": 96,
+          "end_displacement_tiles": 2.169983230349949,
+          "max_displacement_tiles": 2.169983230349949,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_2",
+          "ticks": 96,
+          "end_displacement_tiles": 1.5500075759671486,
+          "max_displacement_tiles": 1.5500075759671486,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-2_2",
+          "ticks": 96,
+          "end_displacement_tiles": 2.5831833507536994,
+          "max_displacement_tiles": 2.5831833507536994,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-2_0",
+          "ticks": 96,
+          "end_displacement_tiles": 1.9633581721688536,
+          "max_displacement_tiles": 1.9633581721688536,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-2_-2",
+          "ticks": 96,
+          "end_displacement_tiles": 2.9181674512630544,
+          "max_displacement_tiles": 2.9181674512630544,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_-2",
+          "ticks": 96,
+          "end_displacement_tiles": 1.9634035284565308,
+          "max_displacement_tiles": 1.9634035284565308,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_2_-2",
+          "ticks": 96,
+          "end_displacement_tiles": 2.5833094881157557,
+          "max_displacement_tiles": 2.5833094881157557,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_4_0",
+          "ticks": 96,
+          "end_displacement_tiles": 3.5132518270115507,
+          "max_displacement_tiles": 3.5132518270115507,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_4_4",
+          "ticks": 96,
+          "end_displacement_tiles": 5.0113762821315975,
+          "max_displacement_tiles": 5.0113762821315975,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_4",
+          "ticks": 96,
+          "end_displacement_tiles": 3.513381930166748,
+          "max_displacement_tiles": 3.513381930166748,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-4_4",
+          "ticks": 96,
+          "end_displacement_tiles": 5.409917002469734,
+          "max_displacement_tiles": 5.409917002469734,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-4_0",
+          "ticks": 96,
+          "end_displacement_tiles": 3.9264684133950305,
+          "max_displacement_tiles": 3.9264684133950305,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_-4_-4",
+          "ticks": 96,
+          "end_displacement_tiles": 5.749838647035623,
+          "max_displacement_tiles": 5.749838647035623,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_0_-4",
+          "ticks": 96,
+          "end_displacement_tiles": 3.9265156804588073,
+          "max_displacement_tiles": 3.9265156804588073,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "walk_4_-4",
+          "ticks": 96,
+          "end_displacement_tiles": 5.373188818827957,
+          "max_displacement_tiles": 5.373188818827957,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 96
+        },
+        {
+          "arm": "ENGINE_ONLY_skip_blocked_first_waypoint",
+          "ticks": 96,
+          "end_displacement_tiles": 5.072287329011987,
+          "max_displacement_tiles": 5.072287329011987,
+          "end_hp": 190,
+          "post_intervention_hash_mismatches": 5
+        }
+      ],
+      "limits": "96-tick open-loop counterfactuals; peers keep recorded actions; no win-rate inference. Engine-only arm is not a policy candidate."
+    }
+  },
+  "inputs": {
+    "tmp/gota-ir/replay-diagnosis-20260915/cohort-v2/results.json": "bf60081e95f9a1d5c1b8e989e5e38c0b23b24b82ac20313815aa9b6b814bbd10",
+    "tmp/gota-ir/replay-diagnosis-20260915/diagnostics-v2": "e14e60796189b0827fec937f1ac60d73f8e623c5163321fe7acc3ec92ea3585c",
+    "tmp/gota-ir/replay-diagnosis-20260915/escape-probe": "ea7fc852bd873c6a96b93ed3a676718afe242186076332e07bca8dd796a15ff5",
+    "examples/gods_of_the_arena/players/ir/replay_diagnostics.nim": "f35089c5187ffd71c42d3b28e6b2e3bc2d032c0970c5db8b8683d0065a326367",
+    "examples/gods_of_the_arena/players/ir/replay_escape_probe.nim": "8ae84ad0b4ea99a13fe3bcffb9973712020e72726e8e0992613b2b9a83ba96b3",
+    "examples/gods_of_the_arena/players/ir/replay_review.py": "37fa4dd45725dd3e17a598b160f45401edd10962b6c8ce16efa1fb1ff874ed11",
+    "examples/gods_of_the_arena/players/ir/replay_findings.py": "de72d8d17b395e7aa04cbfbc0095a660a9547ab7a730ff18ab0bcd1ac5e34bb6"
+  },
+  "next_hypotheses": [
+    {
+      "id": "H_motion_feedback",
+      "status": "untested",
+      "change": "Replace fixed ten-tick retreat completion with persistent destination and measured separation/movement, accounting for turn cost and enemy closing speed. Keep a bounded maximum, offensive spell opportunities, and a safe re-engagement condition.",
+      "validation": "Scenario checks for completed windup, turn delay, retreat displacement and failure exits; new balanced local cohort vs exact v2/default; preserve wins and reduce deaths; then one N-episode hosted request per arm."
+    },
+    {
+      "id": "H_tower_clearance",
+      "status": "untested",
+      "change": "Avoid standing tower clearance before crossing a collision boundary. Add target-independent progress monitoring. Do not assume terrainWalkable or accepted walkTo means a reachable route.",
+      "validation": "Reproduce the exact tower traps, confirm preventive routing before contact, then independent full-game cases. Simple nearby movement retries are already disproved in the trapped checkpoint."
+    },
+    {
+      "id": "H_early_survival",
+      "status": "untested",
+      "change": "Assess damage trend, multiple attackers, visible spell warnings, allied cover and escape time before HP is critical. Choose an escape corridor, not merely a vector away from the nearest object.",
+      "validation": "Compare HP/damage context and actual separation at retreat initiation; fort wins and deaths on fresh balanced cases. Do not repeat the rejected unconditional 35%-HP controller."
+    }
+  ]
+}

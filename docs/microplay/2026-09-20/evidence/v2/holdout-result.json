@@ -1,0 +1,37 @@
+{
+  "schema": "gota-microplay-result/1",
+  "partition": "holdout",
+  "totals": {
+    "parent": {
+      "enemy_deaths": 239,
+      "ally_deaths": 60,
+      "enemy_hp_loss": 65548,
+      "ally_hp_loss": 33968,
+      "basic_hits": 1011,
+      "refined_decisions": 0,
+      "encounters": 160,
+      "max_instructions": 4371
+    },
+    "finish": {
+      "enemy_deaths": 245,
+      "ally_deaths": 56,
+      "enemy_hp_loss": 65932,
+      "ally_hp_loss": 33860,
+      "basic_hits": 1021,
+      "refined_decisions": 218,
+      "encounters": 160,
+      "max_instructions": 4922
+    }
+  },
+  "gates": {
+    "finish": {
+      "more_enemy_deaths": true,
+      "no_added_ally_deaths": true,
+      "spell_strata_survival": true,
+      "duel_control_parity": true
+    }
+  },
+  "selected": "finish",
+  "plan_sha256": "a58c291178d67f0a2fa8bed3e6d62f643d0d31439f90ba8c3c8f6f716d7a6e89",
+  "scope": "Constructed short encounters on pinned release; no full-game/league inference."
+}

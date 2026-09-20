@@ -1,0 +1,108 @@
+{
+  "sources": {
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas",
+    "warlock": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/warlock/policy.bas",
+    "lich": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/lich/policy.bas",
+    "casters": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/casters/policy.bas"
+  },
+  "variants": [],
+  "actual_variants": [
+    "deployed",
+    "warlock",
+    "lich",
+    "casters"
+  ],
+  "opponents": {
+    "accepted": "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+    "default": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas",
+    "blue_repair": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+    "support_anchor": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas",
+    "center_proxy": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9830000,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9830001,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9830002,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9830003,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9830004,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9830005,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9830006,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9830007,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9830008,
+      "color": 0,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9830009,
+      "color": 1,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9830010,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9830011,
+      "color": 1,
+      "opponent": "center_proxy"
+    }
+  ],
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/screen/config.json": "a80b7f5bb43cbd61039dd8c5675c2660ec6b7e77fac14cce97b4f27c3d14033b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/prospective.json": "21eb9736c3e98ec1e7664ff6c17ceddacd02e7062affd9865dd818d2596ba70e",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/native-proof.json": "ecfbcfe1a443bb455e3d2cfe01d26fe96b8736bdf11d1fd307d85e182d396f4e",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/source-equivalence.json": "6a4b6ce35a2bc3b62cbcf4a9fa31708c73865e965cd47ac7034e2e6176a88700",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/compiler-capture-manifest.json": "e443f42644f99cb92e84ae00dd3e9afad600f6a94f1af745d0449a3dd824ac86",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/warlock/policy.bas": "4dc89ebd8ad621f2475ec4105930a90230e0725dd799a4bacd99b95ba480fb25",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/lich/policy.bas": "c2f1bfa87ce1f763fd7198460bddbe05060df8438c63cc41ec8893224836b58b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/casters/policy.bas": "cd925baf36baed38b1ec19657f34966bd7b55c314b92b015b34b96466d96ddc3",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas": "781f97d93836e3bdf0b16304fa140b1bb18f2d56c169ce6788e0e8b9545f9d34",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas": "f8fba2fa812f9d88f156a928daecc5ea5509c0388187e2ee9f324f12cd6899e2",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas": "9d08e68910a1b095ca5c171f6394dee0bc7384245dbc9d6f491c109c206198d0",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T152212Z-628823/local_middle_transit_v2.py": "f8e6627618f2719677eaa07925561bea6a012207a21d63330e8c3841f2129e24"
+  },
+  "custom_opponents": true,
+  "gates": null,
+  "decision_rule": "Complete all48audited games. Eachcandidate mustretain everydeployed winning opponent/colorcell, equipallclasses, totaldeaths<=max(1.15*deployed,deployed+5), and addatleastoneredfortwin orreduce reddeaths>=10%withnonregressing redwins. Must observe completionoftransit andsubsequentnormalplay in fullwin/lossreviews ifavailable. This onlynominates fresh expandedlocalconfirmation, neverhostedqualification directly. Draws0;invalid/incompletequarantine.",
+  "interpretation": "Prospective complete local reacting fixed-team screen on published release. Four sources, six owned opponents, both colors/all classes. Draws zero; no private rival policies or ten-distinct-player hosted coverage."
+}

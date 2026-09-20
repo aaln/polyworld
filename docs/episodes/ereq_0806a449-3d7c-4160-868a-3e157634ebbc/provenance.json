@@ -1,0 +1,93 @@
+{
+  "episode_request_id": "ereq_0806a449-3d7c-4160-868a-3e157634ebbc",
+  "episode_id": "f7ede3be-c505-4f11-a973-7dedca5a7e11",
+  "reconstruction": true,
+  "primary_slot": 0,
+  "owned_slots_equivalence_checked": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "game_version": "2026.9.16.5",
+  "source_commit": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+  "policy_version_id": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+  "policy_id": "df3daddb-adce-4bf3-81ce-f66af73c1101",
+  "ir_canonical_sha256": "8e4eb95f2cd8a9dd2702a5b4e13a7ceb541db803e04c70cea11b33bf5839ce37",
+  "ir_bytes_sha256": "7030610727902f3fb7ae74325261a791dd98c5db3404574cfc5122014c11ac42",
+  "basic_sha256": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+  "effective_seed": 1354549052,
+  "requested_seed": 2026,
+  "map_seed": 54,
+  "guide": {
+    "filename": "guide-episode-semantic-ir (1).md",
+    "sha256": "425b55d6a0d55b3ad4d18ad74bc355cf92bf5905e8d3b008b41447fdbaf2103e",
+    "section_11_applied": true
+  },
+  "counterfactual_seeds": [],
+  "live_opponent_rollouts": false,
+  "equivalence": {
+    "type": "summary",
+    "controlled_slots": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "ticks": 13557,
+    "owned_commands_matched": 67929,
+    "owned_decisions": 61089,
+    "all_state_hashes_equal": true,
+    "all_actions_consumed": true
+  },
+  "global_count": 227,
+  "viewing": "Existing five-frame schematic of the coached interval inspected; no native viewer playback claimed. No game-specific replay-inspection skill binding was found; repository-native probes were used.",
+  "sources": [
+    {
+      "path": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/semantic-episode-20260918/reconstructed-instrumented.jsonl",
+      "sha256": "835aedd219b97b8b3ac50dba7ffad954e63b7fda3a109223241b6c1360aadd9d"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/semantic-episode-20260918/reconstructed-final.jsonl",
+      "sha256": "90d56c739ca1dd5406defedf660faaa8e10ba5dad00d37f9940711c822f308f6"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-coach-split-0918/user-episode/ereq_0806a449-3d7c-4160-868a-3e157634ebbc/replay.bin",
+      "sha256": "394a50da9669408cf62d0a76f621a968bdefb068626841dbd0d399754a2a3be8"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-coach-split-0918/user-episode/ereq_0806a449-3d7c-4160-868a-3e157634ebbc/owned.jsonl",
+      "sha256": "5e7a011bf0c2dd9136f903cb15d40debac59276ab0bfd4c7370e71780f6d326f"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-coach-split-0918/user-episode/ereq_0806a449-3d7c-4160-868a-3e157634ebbc/decoded.jsonl",
+      "sha256": "6429eace89ec2cfdc0f5b6f5d3811b546dcbe557b3e41101eeb2bdc0df71b6ea"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-coach-split-0918/user-episode/ereq_0806a449-3d7c-4160-868a-3e157634ebbc/audit.json",
+      "sha256": "546a7b49b878d5a06e191f0e462a0d766d561aac6cbbb76d71c2cde83fa2d409"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/semantic-episode-20260918/replay-semantic-probe",
+      "sha256": "a48684ab2cc9406dacf9b879e7b946d7212770044083525054ee7430ad9fc89e"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/polyworld/tools/episode_semantic_ir.py",
+      "sha256": "b38a7340739f90fd1c68d6a7ce3db4ec2869f497abffa7b6f482135c4bae217b"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/semantic-episode-20260918/requested-episode.json",
+      "sha256": "d9fcf99e0a21a90949ccc77d2a3c9f326dc12519c6f27371cd3187e91a953fc5"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-coach-split-0918/user-episode/ereq_0806a449-3d7c-4160-868a-3e157634ebbc/game.log",
+      "sha256": "9e9d448af2c0fb47d37744b267ce23d09979686bfa5923ed1a805a00fe8bd2a5"
+    },
+    {
+      "path": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/deployment-pair/deployment-verified.json",
+      "sha256": "81ad11989b7a44ef17ca0d77ba94032c414ffd3ce32dd89084bf4c681a5cb888"
+    }
+  ]
+}

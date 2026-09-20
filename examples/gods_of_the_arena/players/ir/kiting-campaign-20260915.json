@@ -1,0 +1,538 @@
+{
+  "date": "2026-09-15",
+  "decision": "retain_exact_league_v2",
+  "league_policy_version": "6d0ff780-652f-47a8-82b3-336cb7a10a56",
+  "league_basic_sha256": "c23c618705b74ec3154ba7614cdda6fd7bdc84e71ea55c3b0ef171438f0a91c3",
+  "candidates": [
+    {
+      "name": "Timed firing + emergency escape",
+      "policy": "burst_kite",
+      "game_version": "2026.9.15.2",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 2,
+          "deaths": 92,
+          "deaths_per_minute": 0.11750660353761577,
+          "hits": 817,
+          "xp": 23900,
+          "mean_glory": -5.4618055555555545
+        },
+        "parent": {
+          "wins": 7,
+          "deaths": 78,
+          "deaths_per_minute": 0.10614962825893628,
+          "hits": 862,
+          "xp": 24000,
+          "mean_glory": -33.904513888888886
+        },
+        "baseline": {
+          "wins": 2,
+          "deaths": 546,
+          "deaths_per_minute": 0.7164720966449998,
+          "hits": 2384,
+          "xp": 87750,
+          "mean_glory": 1.3263888888888886
+        }
+      },
+      "activation": {
+        "games": 27,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "verified_bursts": 70,
+        "unverified_bursts": 7,
+        "landed_before_retreat_fraction": 0.9090909090909091
+      },
+      "passed": false,
+      "source_sha256": "d42d2891cffb7523b356f4ebabb302f966c5e2d60e05122b72ef342ab0c684d5",
+      "run": "tmp/gota-ir/kiting-20260915",
+      "ir": "hypotheses/burst_kite.evaluated.ir.json",
+      "basic": "hypotheses/burst_kite.evaluated.bas"
+    },
+    {
+      "name": "Confirmed hit + emergency escape",
+      "policy": "confirmed_hit_kite",
+      "game_version": "2026.9.15.3",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 12,
+          "deaths": 125,
+          "deaths_per_minute": 0.432708950344244,
+          "hits": 2153,
+          "xp": 50800,
+          "mean_glory": 236.36805555555557
+        },
+        "parent": {
+          "wins": 22,
+          "deaths": 134,
+          "deaths_per_minute": 0.45710928597994455,
+          "hits": 2321,
+          "xp": 49600,
+          "mean_glory": 474.5347222222222
+        },
+        "baseline": {
+          "wins": 18,
+          "deaths": 154,
+          "deaths_per_minute": 0.506944888945785,
+          "hits": 2084,
+          "xp": 49750,
+          "mean_glory": 277.15625
+        }
+      },
+      "activation": {
+        "games": 39,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "verified_bursts": 153,
+        "unverified_bursts": 0,
+        "landed_before_retreat_fraction": 1.0
+      },
+      "passed": false,
+      "source_sha256": "731d3ee21e4e6eaa2bd77bc0a3b4702c17146c9a9195170d9dc0ccda616f28e2",
+      "run": "tmp/gota-ir/hit-kite-20260915",
+      "ir": "hypotheses/confirmed_hit_kite.evaluated.ir.json",
+      "basic": "hypotheses/confirmed_hit_kite.evaluated.bas"
+    },
+    {
+      "name": "Confirmed hit, no emergency escape",
+      "policy": "hit_no_escape",
+      "game_version": "2026.9.15.3",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 20,
+          "deaths": 136,
+          "deaths_per_minute": 0.45035183737294765,
+          "hits": 2403,
+          "xp": 51025,
+          "mean_glory": 357.46354166666663
+        },
+        "parent": {
+          "wins": 22,
+          "deaths": 134,
+          "deaths_per_minute": 0.45710928597994455,
+          "hits": 2321,
+          "xp": 49600,
+          "mean_glory": 474.5347222222222
+        },
+        "baseline": {
+          "wins": 18,
+          "deaths": 154,
+          "deaths_per_minute": 0.506944888945785,
+          "hits": 2084,
+          "xp": 49750,
+          "mean_glory": 277.15625
+        }
+      },
+      "activation": {
+        "games": 22,
+        "classes": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "verified_bursts": 155,
+        "unverified_bursts": 0,
+        "landed_before_retreat_fraction": 1.0
+      },
+      "passed": false,
+      "source_sha256": "9ce882d6febfff38a6e8beb4fb246f24672b42827d80e8aa7d9d106b49a01e0d",
+      "run": "tmp/gota-ir/kiting-ablations-20260915/no_escape",
+      "ir": "hypotheses/hit_no_escape.evaluated.ir.json",
+      "basic": "hypotheses/hit_no_escape.evaluated.bas"
+    },
+    {
+      "name": "Target-aware, with emergency escape",
+      "policy": "hit_targeted",
+      "game_version": "2026.9.15.3",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 16,
+          "deaths": 137,
+          "deaths_per_minute": 0.44937780035398067,
+          "hits": 2147,
+          "xp": 47700,
+          "mean_glory": 238.83333333333334
+        },
+        "parent": {
+          "wins": 22,
+          "deaths": 134,
+          "deaths_per_minute": 0.45710928597994455,
+          "hits": 2321,
+          "xp": 49600,
+          "mean_glory": 474.5347222222222
+        },
+        "baseline": {
+          "wins": 18,
+          "deaths": 154,
+          "deaths_per_minute": 0.506944888945785,
+          "hits": 2084,
+          "xp": 49750,
+          "mean_glory": 277.15625
+        }
+      },
+      "activation": {
+        "games": 39,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "verified_bursts": 82,
+        "unverified_bursts": 0,
+        "landed_before_retreat_fraction": 1.0
+      },
+      "passed": false,
+      "source_sha256": "f9af7744ad598c129cd5fa7d5e50519908da8e664cbc1c50ae2e5eda2bb14927",
+      "run": "tmp/gota-ir/kiting-ablations-20260915/targeted",
+      "ir": "hypotheses/hit_targeted.evaluated.ir.json",
+      "basic": "hypotheses/hit_targeted.evaluated.bas"
+    },
+    {
+      "name": "Earlier retreat",
+      "policy": "early_all",
+      "game_version": "2026.9.15.3",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 17,
+          "deaths": 124,
+          "deaths_per_minute": 0.4448031566675635,
+          "hits": 2255,
+          "xp": 50725,
+          "mean_glory": 506.609375
+        },
+        "parent": {
+          "wins": 22,
+          "deaths": 134,
+          "deaths_per_minute": 0.45710928597994455,
+          "hits": 2321,
+          "xp": 49600,
+          "mean_glory": 474.5347222222222
+        },
+        "baseline": {
+          "wins": 18,
+          "deaths": 154,
+          "deaths_per_minute": 0.506944888945785,
+          "hits": 2084,
+          "xp": 49750,
+          "mean_glory": 277.15625
+        }
+      },
+      "activation": {
+        "games": 23,
+        "classes": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "verified_bursts": 476,
+        "unverified_bursts": 0,
+        "landed_before_retreat_fraction": 1.0
+      },
+      "passed": false,
+      "source_sha256": "ce9c1a42417545886dd15dccddc285cd3353f587a16ed7b60e6b932f17ccb5ca",
+      "run": "tmp/gota-ir/kiting-range-20260915/early_all",
+      "ir": "hypotheses/early_all.evaluated.ir.json",
+      "basic": "hypotheses/early_all.evaluated.bas"
+    },
+    {
+      "name": "Target-aware, no emergency escape",
+      "policy": "targeted_only",
+      "game_version": "2026.9.15.3",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 20,
+          "deaths": 137,
+          "deaths_per_minute": 0.4545328872791617,
+          "hits": 2451,
+          "xp": 54850,
+          "mean_glory": 553.1961805555555
+        },
+        "parent": {
+          "wins": 22,
+          "deaths": 134,
+          "deaths_per_minute": 0.45710928597994455,
+          "hits": 2321,
+          "xp": 49600,
+          "mean_glory": 474.5347222222222
+        },
+        "baseline": {
+          "wins": 18,
+          "deaths": 154,
+          "deaths_per_minute": 0.506944888945785,
+          "hits": 2084,
+          "xp": 49750,
+          "mean_glory": 277.15625
+        }
+      },
+      "activation": {
+        "games": 21,
+        "classes": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "verified_bursts": 140,
+        "unverified_bursts": 0,
+        "landed_before_retreat_fraction": 1.0
+      },
+      "passed": false,
+      "source_sha256": "90d9e5e88e1286e1bf634b1b9d9651db1b6c1bdbf0414f93fbf7c6ca5028dd44",
+      "run": "tmp/gota-ir/kiting-range-20260915/targeted_only",
+      "ir": "hypotheses/targeted_only.evaluated.ir.json",
+      "basic": "hypotheses/targeted_only.evaluated.bas"
+    },
+    {
+      "name": "Earlier target-aware retreat",
+      "policy": "early_targeted",
+      "game_version": "2026.9.15.3",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 19,
+          "deaths": 141,
+          "deaths_per_minute": 0.4754478398314015,
+          "hits": 2596,
+          "xp": 57950,
+          "mean_glory": 557.3420138888889
+        },
+        "parent": {
+          "wins": 22,
+          "deaths": 134,
+          "deaths_per_minute": 0.45710928597994455,
+          "hits": 2321,
+          "xp": 49600,
+          "mean_glory": 474.5347222222222
+        },
+        "baseline": {
+          "wins": 18,
+          "deaths": 154,
+          "deaths_per_minute": 0.506944888945785,
+          "hits": 2084,
+          "xp": 49750,
+          "mean_glory": 277.15625
+        }
+      },
+      "activation": {
+        "games": 22,
+        "classes": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "verified_bursts": 348,
+        "unverified_bursts": 0,
+        "landed_before_retreat_fraction": 1.0
+      },
+      "passed": false,
+      "source_sha256": "8a49df73c4f1004278a5f4a2f8ae9601bb29bbee623a130c6b731ce4fdfb2869",
+      "run": "tmp/gota-ir/kiting-range-20260915/early_targeted",
+      "ir": "hypotheses/early_targeted.evaluated.ir.json",
+      "basic": "hypotheses/early_targeted.evaluated.bas"
+    },
+    {
+      "name": "Short retreat + offensive spells",
+      "policy": "spell_short",
+      "game_version": "2026.9.15.3",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 17,
+          "deaths": 115,
+          "deaths_per_minute": 0.4292835682382006,
+          "hits": 2107,
+          "xp": 47975,
+          "mean_glory": 466.48611111111114
+        },
+        "parent": {
+          "wins": 22,
+          "deaths": 134,
+          "deaths_per_minute": 0.45710928597994455,
+          "hits": 2321,
+          "xp": 49600,
+          "mean_glory": 474.5347222222222
+        },
+        "baseline": {
+          "wins": 18,
+          "deaths": 154,
+          "deaths_per_minute": 0.506944888945785,
+          "hits": 2084,
+          "xp": 49750,
+          "mean_glory": 277.15625
+        }
+      },
+      "activation": {
+        "games": 23,
+        "classes": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "verified_bursts": 432,
+        "unverified_bursts": 0,
+        "landed_before_retreat_fraction": 1.0,
+        "spell_casts": 39,
+        "spell_games": 18
+      },
+      "passed": false,
+      "source_sha256": "1e7f748768f0b192b569f1f469139b1b2ddcf118b394400b81cf44273d814ee2",
+      "run": "tmp/gota-ir/kiting-spells-20260915/spell_short",
+      "ir": "hypotheses/spell_short.evaluated.ir.json",
+      "basic": "hypotheses/spell_short.evaluated.bas"
+    },
+    {
+      "name": "Long retreat",
+      "policy": "long_bare",
+      "game_version": "2026.9.15.3",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 23,
+          "deaths": 135,
+          "deaths_per_minute": 0.43111477765654527,
+          "hits": 2447,
+          "xp": 58000,
+          "mean_glory": 533.8454861111111
+        },
+        "parent": {
+          "wins": 22,
+          "deaths": 134,
+          "deaths_per_minute": 0.45710928597994455,
+          "hits": 2321,
+          "xp": 49600,
+          "mean_glory": 474.5347222222222
+        },
+        "baseline": {
+          "wins": 18,
+          "deaths": 154,
+          "deaths_per_minute": 0.506944888945785,
+          "hits": 2084,
+          "xp": 49750,
+          "mean_glory": 277.15625
+        }
+      },
+      "activation": {
+        "games": 24,
+        "classes": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "verified_bursts": 561,
+        "unverified_bursts": 0,
+        "landed_before_retreat_fraction": 1.0,
+        "spell_casts": 0,
+        "spell_games": 0
+      },
+      "passed": false,
+      "source_sha256": "b2d7112aa3a7a9e39676a3c938b63bec428e02b0ab437d4475fb369324b7a440",
+      "run": "tmp/gota-ir/kiting-spells-20260915/long_bare",
+      "ir": "hypotheses/long_bare.evaluated.ir.json",
+      "basic": "hypotheses/long_bare.evaluated.bas"
+    },
+    {
+      "name": "Long retreat + offensive spells",
+      "policy": "spell_long",
+      "game_version": "2026.9.15.3",
+      "n": 40,
+      "values": {
+        "candidate": {
+          "wins": 20,
+          "deaths": 138,
+          "deaths_per_minute": 0.444102765809093,
+          "hits": 2401,
+          "xp": 55775,
+          "mean_glory": 450.4496527777778
+        },
+        "parent": {
+          "wins": 22,
+          "deaths": 134,
+          "deaths_per_minute": 0.45710928597994455,
+          "hits": 2321,
+          "xp": 49600,
+          "mean_glory": 474.5347222222222
+        },
+        "baseline": {
+          "wins": 18,
+          "deaths": 154,
+          "deaths_per_minute": 0.506944888945785,
+          "hits": 2084,
+          "xp": 49750,
+          "mean_glory": 277.15625
+        }
+      },
+      "activation": {
+        "games": 24,
+        "classes": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "verified_bursts": 531,
+        "unverified_bursts": 0,
+        "landed_before_retreat_fraction": 1.0,
+        "spell_casts": 84,
+        "spell_games": 21
+      },
+      "passed": false,
+      "source_sha256": "f4c5f7943de9d948f5fe7dc45fe6fc54050379683c8bb39bc2ee7dccb6114332",
+      "run": "tmp/gota-ir/kiting-spells-20260915/spell_long",
+      "ir": "hypotheses/spell_long.evaluated.ir.json",
+      "basic": "hypotheses/spell_long.evaluated.bas"
+    }
+  ],
+  "tests_passed": 67,
+  "promotion_eligible": false,
+  "limits": "Each candidate has40 completed matched cases; current-release variants reuse the same40 cases adaptively. These are correlated discovery results, not400 independent samples or independent confirmation. The earlier timed candidate used a different release and40other seeds. All complete tapes verify. Spell-matrix qualification used XP instead of the previous raw-basic-hit floor; no previous result was reclassified. No new candidate was uploaded or promoted."
+}

@@ -1,0 +1,38 @@
+{
+  "source_and_trace_hash_checks": 120,
+  "state_hash_audited_games": 120,
+  "invalid_games_scored": 0,
+  "tests_passed": 30,
+  "validation_seeds_unobserved": true,
+  "totals": {
+    "parent": {
+      "ticks": 769610,
+      "decisions": 692142,
+      "actions": 7087580,
+      "timeouts": 4,
+      "max_work": 4936,
+      "max_instructions": 2837
+    },
+    "candidate": {
+      "ticks": 781057,
+      "decisions": 702807,
+      "actions": 7071456,
+      "timeouts": 3,
+      "max_work": 5088,
+      "max_instructions": 2897
+    }
+  },
+  "source_sha256": "964e8a4fd5dbe3da7c2fae1788389d7562e2caf80e773f937f753ad59744dd78",
+  "ir_sha256": "35b410d3fd185fdf3e920fb316d62f7218e7987f89c2c9a41e3b7b8d219609c0",
+  "structural_parity": true,
+  "artifacts": {
+    "examples/gods_of_the_arena/players/ir/binding.py": "43d48b61b9928beb714f7a23e2939e062f1eef99571aca7ff0c2dddfb81d2c2b",
+    "examples/gods_of_the_arena/players/ir/reserve_study.py": "89a47f7257372d1dd541c64f450362fac30a7d2eb12daffabef1265ddb141f55",
+    "examples/gods_of_the_arena/players/ir/test_hypotheses.py": "c5d8d2b5aea906c1c797d399dbedcf60eb289e7c115491170b767deb59c58d3e",
+    "examples/gods_of_the_arena/players/ir/reserve-20260910-result.json": "a4f08050c0482459ce13124009ec90a71d5e442880c2bd93f04e4d226f30a196",
+    "tmp/gota-ir/reserve-tests.log": "f31cce2809c7d9241d446b4c23e618d85c323c392b7305ec0c2cf4b09c9a2f23",
+    "examples/gods_of_the_arena/players/ir/reserve-20260910-report.html": "340b45280218697c1e51e70f1fcf1b2aefea388cc58e83dc0b8c73609dc51bea",
+    "examples/gods_of_the_arena/players/ir/experiments/2026-09-10-reserve-consumables.md": "efc76368623a3a3f00459ebb10ac09f34d33e21c6f2e460ca2ca349c913f09ae"
+  },
+  "report_visually_inspected": true
+}

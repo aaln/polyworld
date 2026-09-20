@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-09-10T20:14:38.343655+00:00",
+  "policy_label": "aaron-gota-ir-waveguard-r4:v1",
+  "policy_version_id": "7b5f3065-85b0-4abf-882e-a4ab95a136fe",
+  "player": {
+    "id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+    "name": "Aaron",
+    "avatar_url": null
+  },
+  "league_id": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+  "division_id": "div_a4534073-c5d2-4193-a94a-93d9c5e2e443",
+  "division_name": "Competition",
+  "submission_id": "sub_2a0f3879-4f8f-408d-aa05-afb4bb77de1b",
+  "submission_status": "placed",
+  "membership_id": "lpm_17d8ec87-f001-4d9f-80c2-24f55f91b510",
+  "membership_status": "competing",
+  "membership_substatus": "active",
+  "is_champion": true,
+  "auto_champion": "never",
+  "policy_url": "https://softmax.com/observatory/v2?tab=uploads&detail=policy-version:7b5f3065-85b0-4abf-882e-a4ab95a136fe",
+  "league_url": "https://softmax.com/observatory/v2?tab=coworlds&detail=league:league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+  "source_file": "waveguard_r4.evaluated.bas",
+  "source_sha256": "992f9f20ffb110cd74dc44602aac9a6441b42b63f23dbabab071dfa699f5d84e",
+  "source_size_bytes": 5211,
+  "ir_file": "waveguard_r4.evaluated.ir.json",
+  "ir_sha256": "c57c498dd5a175247a276a1bb8dfe3642c7eca05addee5f903eeb26f6e0c2858",
+  "game_version": "2026.9.10.1",
+  "local_validation": {
+    "passed": true,
+    "source_sha256": "992f9f20ffb110cd74dc44602aac9a6441b42b63f23dbabab071dfa699f5d84e",
+    "bytes": 5211,
+    "ticks": 16016,
+    "actions": 145869,
+    "state_hash": "000000004C2A7EDB",
+    "replay_sha256": "215a8337f277de4ef3a80b44cec80152aa2b164c1b0923c2ca8678dc2d3e0921",
+    "trace_sha256": "f0040d6d020573802c156b480f6be13f11fc076febd957422f73fbf9d1a4ca57",
+    "comparison": "Complete replay, trace, runtime metrics and outcome match evaluated candidate. Generated headers and file paths differ."
+  },
+  "evaluation_reference": "experiment-20260910.json",
+  "evaluation_note": "offset0; held-out 12/20 vs baseline 10/20; selection 9/20 vs 10/20; experimental",
+  "hosted_episodes_completed_at_check": 0,
+  "evidence_directory": "tmp/gota-ir/submission-20260910",
+  "upload_verification": "Server completed the file upload, then the identical content-hash/size/metadata request resolved to the same immutable policy version. Public stats readback redacts file hash and size.",
+  "placement_snapshot": {
+    "checked_at": "2026-09-10T19:51:39.862703+00:00",
+    "membership_status": "competing",
+    "membership_substatus": null,
+    "is_champion": false,
+    "hosted_episodes_completed_at_check": 0
+  },
+  "champion_selection": {
+    "selected_at": "2026-09-10T20:14:38.343655+00:00",
+    "reason": "Corrected incomplete league entry: the scheduler and roster require a selected champion. Initial auto_champion=never left the uploaded policy out of rounds.",
+    "mode": "one-time selection of existing v1; future auto_champion remains never",
+    "verified_in_champions_roster": true,
+    "leaderboard_entry_at_check": false,
+    "evidence_directory": "tmp/gota-ir/visibility-check-20260910"
+  }
+}

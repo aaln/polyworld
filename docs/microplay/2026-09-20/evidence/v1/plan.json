@@ -1,0 +1,8469 @@
+{
+  "schema": "gota-microplay-study/1",
+  "created_at": "2026-09-20T15:34:32Z",
+  "objective": "Improve local individual play and allied combat; no fort-win selection gate.",
+  "game_version": "2026.9.16.5",
+  "source": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+  "runtime_root": "/Users/aaln/experiments/softmax/polyworld-gota-clean-20260916-r5",
+  "parent_basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+  "policies": {
+    "parent": {
+      "ir_sha256": "fc2dfa33dce067542c9ca2391246a19051bf000ca4209d60b0dd2a099ba5ed37",
+      "basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+      "roundtrip": true
+    },
+    "finish": {
+      "ir_sha256": "bff544ea2740e93a4b99ac039b5853f6d2dc1a9f3a55d5613db3e95d7d379845",
+      "basic_sha256": "13ac7a77bbde61ee927ed84ffe917178d524530414c7ad71de6ebbd4f90744aa",
+      "roundtrip": true
+    },
+    "assist": {
+      "ir_sha256": "18e88738896f312584040f4b0e0419f00e3d5c7f571a6b2d968829ac2bc78cdd",
+      "basic_sha256": "6921e8ef75ac448e8e0ae5317e0a515952f4c4a3b4fb4fbaa44443911cb6a4be",
+      "roundtrip": true
+    },
+    "combined": {
+      "ir_sha256": "c7b957c1418a5a1afbe86ee6346631e485127f37db2e636399375ce0bbd8ac74",
+      "basic_sha256": "76005f8edcd410292e884243734ababd00f8f00aa7ed5d58511419d5cd498411",
+      "roundtrip": true
+    }
+  },
+  "instrument_sha256": {
+    "ir.py": "0481a4703ab458987166af932113852d52776455596c4718a722c5c2c57d2bef",
+    "study.py": "383cd3a1956be0301fb72e99c608cb54a8f58ceb87fc62f2dbc4a143c8baca64",
+    "encounter.nim": "b1d6c268e2b762c2c47bf4246b360481d67d4ca699b71e8738ba696efe41bd8a"
+  },
+  "binary_sha256": "1929655e7a6bdcf21ade22aaaf573ce2eabe5103855f2bc2c8621d9918f75eff",
+  "unit": "matched six-second encounter, same layout/classes/resources/seed/opponent controller",
+  "discovery": [
+    {
+      "id": "discovery/finish_window/class1/side0/spells0",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910000,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 59,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class1/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910001,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 58,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 90
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class1/side0/spells0",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910002,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class1/side0/spells0",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910003,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class1/side0/spells1",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910004,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 59,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class1/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910005,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 58,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 90
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class1/side0/spells1",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910006,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class1/side0/spells1",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910007,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class1/side1/spells0",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910008,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 53,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class1/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910009,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 54,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 90
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class1/side1/spells0",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910010,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class1/side1/spells0",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910011,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class1/side1/spells1",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910012,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 53,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class1/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910013,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 54,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 90
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class1/side1/spells1",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910014,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class1/side1/spells1",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910015,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class2/side0/spells0",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910016,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 59,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class2/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910017,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 58,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 90
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class2/side0/spells0",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910018,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class2/side0/spells0",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910019,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class2/side0/spells1",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910020,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 59,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class2/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910021,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 58,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 90
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class2/side0/spells1",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910022,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class2/side0/spells1",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910023,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class2/side1/spells0",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910024,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 53,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class2/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910025,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 54,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 90
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class2/side1/spells0",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910026,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class2/side1/spells0",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910027,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class2/side1/spells1",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910028,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 53,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class2/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910029,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 54,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 90
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class2/side1/spells1",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910030,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class2/side1/spells1",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910031,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class6/side0/spells0",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910032,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 59,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class6/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910033,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 58,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 90
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class6/side0/spells0",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910034,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class6/side0/spells0",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910035,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class6/side0/spells1",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910036,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 59,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class6/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910037,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 58,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 90
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class6/side0/spells1",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910038,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class6/side0/spells1",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910039,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class6/side1/spells0",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910040,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 53,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class6/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910041,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 54,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 90
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class6/side1/spells0",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910042,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class6/side1/spells0",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910043,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class6/side1/spells1",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910044,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 53,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class6/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910045,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 54,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 90
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class6/side1/spells1",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910046,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class6/side1/spells1",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910047,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class8/side0/spells0",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910048,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 59,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class8/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910049,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 58,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 90
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class8/side0/spells0",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910050,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class8/side0/spells0",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 910051,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class8/side0/spells1",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910052,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 59,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class8/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910053,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 58,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 90
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class8/side0/spells1",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910054,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 58,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class8/side0/spells1",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 910055,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 58,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 59,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class8/side1/spells0",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910056,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 53,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class8/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910057,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 54,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 90
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class8/side1/spells0",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910058,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class8/side1/spells0",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 910059,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "discovery/finish_window/class8/side1/spells1",
+      "family": "finish_window",
+      "partition": "discovery",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910060,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 53,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 14
+        }
+      ]
+    },
+    {
+      "id": "discovery/ally_rescue/class8/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "discovery",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910061,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 54,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 90
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 100
+        }
+      ]
+    },
+    {
+      "id": "discovery/duel_control/class8/side1/spells1",
+      "family": "duel_control",
+      "partition": "discovery",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910062,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 54,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "discovery/crossfire/class8/side1/spells1",
+      "family": "crossfire",
+      "partition": "discovery",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 910063,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 56,
+          "y": 18,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 56,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 54,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 53,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    }
+  ],
+  "holdout": [
+    {
+      "id": "holdout/finish_window/class0/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911000,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class0/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911001,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class0/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911002,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class0/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911003,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class0/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911004,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class0/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911005,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class0/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911006,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class0/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911007,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class0/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911008,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class0/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911009,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class0/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911010,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class0/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911011,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class0/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911012,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class0/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911013,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class0/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911014,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class0/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911015,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class1/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911016,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class1/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911017,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class1/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911018,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class1/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911019,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class1/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911020,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class1/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911021,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class1/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911022,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class1/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911023,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class1/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911024,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class1/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911025,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class1/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911026,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class1/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911027,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class1/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911028,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class1/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911029,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class1/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911030,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class1/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911031,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class2/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911032,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class2/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911033,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class2/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911034,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class2/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911035,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class2/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911036,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class2/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911037,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class2/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911038,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class2/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911039,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class2/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911040,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class2/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911041,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class2/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911042,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class2/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911043,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class2/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911044,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class2/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911045,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class2/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911046,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class2/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911047,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class3/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911048,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class3/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911049,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class3/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911050,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class3/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911051,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class3/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911052,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class3/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911053,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class3/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911054,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class3/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911055,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class3/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911056,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class3/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911057,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class3/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911058,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class3/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911059,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class3/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911060,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class3/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911061,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class3/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911062,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class3/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911063,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class4/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911064,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class4/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911065,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class4/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911066,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class4/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911067,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class4/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911068,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class4/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911069,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class4/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911070,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class4/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911071,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class4/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911072,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class4/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911073,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class4/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911074,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class4/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911075,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class4/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911076,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class4/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911077,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class4/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911078,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class4/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911079,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class5/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911080,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class5/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911081,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class5/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911082,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class5/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911083,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class5/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911084,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class5/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911085,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class5/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911086,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class5/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911087,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class5/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911088,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class5/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911089,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class5/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911090,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class5/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911091,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class5/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911092,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class5/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911093,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class5/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911094,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class5/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911095,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class6/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911096,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class6/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911097,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class6/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911098,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class6/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911099,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class6/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911100,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class6/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911101,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class6/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911102,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class6/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911103,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class6/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911104,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class6/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911105,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class6/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911106,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class6/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911107,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class6/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911108,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class6/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911109,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class6/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911110,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class6/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911111,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class7/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911112,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class7/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911113,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class7/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911114,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class7/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911115,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class7/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911116,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class7/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911117,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class7/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911118,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class7/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911119,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class7/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911120,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class7/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911121,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class7/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911122,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class7/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911123,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class7/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911124,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class7/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911125,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class7/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911126,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class7/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911127,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class8/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911128,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class8/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911129,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class8/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911130,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class8/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911131,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class8/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911132,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class8/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911133,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class8/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911134,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class8/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911135,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class8/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911136,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class8/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911137,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class8/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911138,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class8/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911139,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class8/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911140,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class8/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911141,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class8/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911142,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class8/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911143,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class9/side0/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911144,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class9/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911145,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class9/side0/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911146,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class9/side0/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 911147,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class9/side0/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911148,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 65,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class9/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911149,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 64,
+          "y": 17,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 110
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class9/side0/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911150,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 64,
+          "y": 18,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class9/side0/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 911151,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 64,
+          "y": 19,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 65,
+          "y": 17,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class9/side1/spells0",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911152,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class9/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911153,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class9/side1/spells0",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911154,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class9/side1/spells0",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 911155,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "holdout/finish_window/class9/side1/spells1",
+      "family": "finish_window",
+      "partition": "holdout",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911156,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 59,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 19
+        }
+      ]
+    },
+    {
+      "id": "holdout/ally_rescue/class9/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "holdout",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911157,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 60,
+          "y": 17,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 110
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 125
+        }
+      ]
+    },
+    {
+      "id": "holdout/duel_control/class9/side1/spells1",
+      "family": "duel_control",
+      "partition": "holdout",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911158,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 60,
+          "y": 18,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "holdout/crossfire/class9/side1/spells1",
+      "family": "crossfire",
+      "partition": "holdout",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 911159,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 62,
+          "y": 19,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 62,
+          "y": 17,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 60,
+          "y": 19,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 59,
+          "y": 17,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "priority": [
+      "no additional allied deaths overall or in either spell-mode stratum",
+      "strictly more enemy deaths",
+      "higher enemy net HP loss as tie break"
+    ],
+    "control": "duel_control must have identical complete state-hash sequences",
+    "holdout": "Freeze at most one discovery winner; require same gates on untouched holdout.",
+    "no_promotion": "This evaluates a local skill module, not full-game or league superiority."
+  },
+  "metrics": {
+    "enemy_deaths": "All active enemy first deaths during the encounter; no respawn within 144ticks.",
+    "ally_deaths": "Deaths of every active allied participant, including fixed-controller helpers.",
+    "enemy_hp_loss": "Sum max(previous_HP-current_HP,0) per tick. A net damage proxy; simultaneous healing can mask damage.",
+    "ally_hp_loss": "Same net HP loss proxy for all allied participants.",
+    "basic_hits": "Actual subject selfAttacksLanded increments; engine counter, not command count.",
+    "target_switches": "Changes between nonzero engine target intents, not cancelled swings.",
+    "instruction_budget": "Real host maxInstructions=20000; work<=50000; failures invalidate experiment."
+  },
+  "limits": [
+    "Constructed encounters, not randomly sampled competitive games.",
+    "Hero classes may be placed on either color to separate class from side.",
+    "Non-subject fixed controllers expose a known attack intent; they are not learned opponent replicas.",
+    "Automatic and manual spells are separate strata; manual spells isolate basic mechanics.",
+    "Pinned historical release; no claim that this is the current hosted release.",
+    "Initial state is constructed; audit is deterministic fixture replay, not a normal hosted replay."
+  ]
+}

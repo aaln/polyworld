@@ -1,0 +1,4423 @@
+{
+  "plan": {
+    "created_at": "2026-09-10T21:55:04.423553+00:00",
+    "published_commit": "27a8fd51eadf48d2f69591cca4287074e9058e8f",
+    "game_version": "2026.9.10.3",
+    "binary_sha256": "7b761f4fbbd0d67f1340d68f09da62b614a8d67c27cc720639caf594481650d8",
+    "auditor_sha256": "6891f0d3e81c6c7eaa1dffc82d474d8d7130bb2afe1a9f615af7bfec64959688",
+    "baseline_sha256": "6af2a79e0c7815b41a00e824de897b1ab2a2f3057798c6c5395778e59d734ae9",
+    "sources": {
+      "parent": "7247acb6fe63d5f0eb40dd21efe8e27263af06705bb7161faba362cc3d0e13f3",
+      "candidate": "964e8a4fd5dbe3da7c2fae1788389d7562e2caf80e773f937f753ad59744dd78"
+    },
+    "selection_cases": [
+      {
+        "seed": 63000,
+        "slot": 0
+      },
+      {
+        "seed": 63000,
+        "slot": 1
+      },
+      {
+        "seed": 63000,
+        "slot": 2
+      },
+      {
+        "seed": 63000,
+        "slot": 3
+      },
+      {
+        "seed": 63000,
+        "slot": 4
+      },
+      {
+        "seed": 63000,
+        "slot": 5
+      },
+      {
+        "seed": 63000,
+        "slot": 6
+      },
+      {
+        "seed": 63000,
+        "slot": 7
+      },
+      {
+        "seed": 63000,
+        "slot": 8
+      },
+      {
+        "seed": 63000,
+        "slot": 9
+      },
+      {
+        "seed": 63001,
+        "slot": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 1
+      },
+      {
+        "seed": 63001,
+        "slot": 2
+      },
+      {
+        "seed": 63001,
+        "slot": 3
+      },
+      {
+        "seed": 63001,
+        "slot": 4
+      },
+      {
+        "seed": 63001,
+        "slot": 5
+      },
+      {
+        "seed": 63001,
+        "slot": 6
+      },
+      {
+        "seed": 63001,
+        "slot": 7
+      },
+      {
+        "seed": 63001,
+        "slot": 8
+      },
+      {
+        "seed": 63001,
+        "slot": 9
+      },
+      {
+        "seed": 63002,
+        "slot": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 1
+      },
+      {
+        "seed": 63002,
+        "slot": 2
+      },
+      {
+        "seed": 63002,
+        "slot": 3
+      },
+      {
+        "seed": 63002,
+        "slot": 4
+      },
+      {
+        "seed": 63002,
+        "slot": 5
+      },
+      {
+        "seed": 63002,
+        "slot": 6
+      },
+      {
+        "seed": 63002,
+        "slot": 7
+      },
+      {
+        "seed": 63002,
+        "slot": 8
+      },
+      {
+        "seed": 63002,
+        "slot": 9
+      },
+      {
+        "seed": 63003,
+        "slot": 0
+      },
+      {
+        "seed": 63003,
+        "slot": 1
+      },
+      {
+        "seed": 63003,
+        "slot": 2
+      },
+      {
+        "seed": 63003,
+        "slot": 3
+      },
+      {
+        "seed": 63003,
+        "slot": 4
+      },
+      {
+        "seed": 63003,
+        "slot": 5
+      },
+      {
+        "seed": 63003,
+        "slot": 6
+      },
+      {
+        "seed": 63003,
+        "slot": 7
+      },
+      {
+        "seed": 63003,
+        "slot": 8
+      },
+      {
+        "seed": 63003,
+        "slot": 9
+      },
+      {
+        "seed": 63004,
+        "slot": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 1
+      },
+      {
+        "seed": 63004,
+        "slot": 2
+      },
+      {
+        "seed": 63004,
+        "slot": 3
+      },
+      {
+        "seed": 63004,
+        "slot": 4
+      },
+      {
+        "seed": 63004,
+        "slot": 5
+      },
+      {
+        "seed": 63004,
+        "slot": 6
+      },
+      {
+        "seed": 63004,
+        "slot": 7
+      },
+      {
+        "seed": 63004,
+        "slot": 8
+      },
+      {
+        "seed": 63004,
+        "slot": 9
+      },
+      {
+        "seed": 63005,
+        "slot": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 1
+      },
+      {
+        "seed": 63005,
+        "slot": 2
+      },
+      {
+        "seed": 63005,
+        "slot": 3
+      },
+      {
+        "seed": 63005,
+        "slot": 4
+      },
+      {
+        "seed": 63005,
+        "slot": 5
+      },
+      {
+        "seed": 63005,
+        "slot": 6
+      },
+      {
+        "seed": 63005,
+        "slot": 7
+      },
+      {
+        "seed": 63005,
+        "slot": 8
+      },
+      {
+        "seed": 63005,
+        "slot": 9
+      }
+    ],
+    "validation_cases": [
+      {
+        "seed": 64000,
+        "slot": 7
+      },
+      {
+        "seed": 64001,
+        "slot": 1
+      },
+      {
+        "seed": 64002,
+        "slot": 1
+      },
+      {
+        "seed": 64003,
+        "slot": 4
+      },
+      {
+        "seed": 64004,
+        "slot": 4
+      },
+      {
+        "seed": 64005,
+        "slot": 6
+      },
+      {
+        "seed": 64006,
+        "slot": 8
+      },
+      {
+        "seed": 64007,
+        "slot": 1
+      },
+      {
+        "seed": 64008,
+        "slot": 6
+      },
+      {
+        "seed": 64009,
+        "slot": 9
+      },
+      {
+        "seed": 64010,
+        "slot": 7
+      },
+      {
+        "seed": 64011,
+        "slot": 9
+      },
+      {
+        "seed": 64012,
+        "slot": 7
+      },
+      {
+        "seed": 64013,
+        "slot": 8
+      },
+      {
+        "seed": 64014,
+        "slot": 9
+      },
+      {
+        "seed": 64015,
+        "slot": 0
+      },
+      {
+        "seed": 64016,
+        "slot": 6
+      },
+      {
+        "seed": 64017,
+        "slot": 8
+      },
+      {
+        "seed": 64018,
+        "slot": 0
+      },
+      {
+        "seed": 64019,
+        "slot": 6
+      },
+      {
+        "seed": 64020,
+        "slot": 4
+      },
+      {
+        "seed": 64021,
+        "slot": 0
+      },
+      {
+        "seed": 64022,
+        "slot": 9
+      },
+      {
+        "seed": 64023,
+        "slot": 9
+      },
+      {
+        "seed": 64024,
+        "slot": 7
+      },
+      {
+        "seed": 64025,
+        "slot": 1
+      },
+      {
+        "seed": 64026,
+        "slot": 3
+      },
+      {
+        "seed": 64027,
+        "slot": 3
+      },
+      {
+        "seed": 64028,
+        "slot": 5
+      },
+      {
+        "seed": 64029,
+        "slot": 6
+      },
+      {
+        "seed": 64030,
+        "slot": 4
+      },
+      {
+        "seed": 64031,
+        "slot": 6
+      },
+      {
+        "seed": 64032,
+        "slot": 6
+      },
+      {
+        "seed": 64033,
+        "slot": 2
+      },
+      {
+        "seed": 64034,
+        "slot": 1
+      },
+      {
+        "seed": 64035,
+        "slot": 7
+      },
+      {
+        "seed": 64036,
+        "slot": 2
+      },
+      {
+        "seed": 64037,
+        "slot": 6
+      },
+      {
+        "seed": 64038,
+        "slot": 5
+      },
+      {
+        "seed": 64039,
+        "slot": 3
+      },
+      {
+        "seed": 64040,
+        "slot": 2
+      },
+      {
+        "seed": 64041,
+        "slot": 0
+      },
+      {
+        "seed": 64042,
+        "slot": 1
+      },
+      {
+        "seed": 64043,
+        "slot": 3
+      },
+      {
+        "seed": 64044,
+        "slot": 3
+      },
+      {
+        "seed": 64045,
+        "slot": 8
+      },
+      {
+        "seed": 64046,
+        "slot": 8
+      },
+      {
+        "seed": 64047,
+        "slot": 9
+      },
+      {
+        "seed": 64048,
+        "slot": 8
+      },
+      {
+        "seed": 64049,
+        "slot": 7
+      },
+      {
+        "seed": 64050,
+        "slot": 9
+      },
+      {
+        "seed": 64051,
+        "slot": 4
+      },
+      {
+        "seed": 64052,
+        "slot": 2
+      },
+      {
+        "seed": 64053,
+        "slot": 2
+      },
+      {
+        "seed": 64054,
+        "slot": 5
+      },
+      {
+        "seed": 64055,
+        "slot": 3
+      },
+      {
+        "seed": 64056,
+        "slot": 6
+      },
+      {
+        "seed": 64057,
+        "slot": 1
+      },
+      {
+        "seed": 64058,
+        "slot": 7
+      },
+      {
+        "seed": 64059,
+        "slot": 7
+      },
+      {
+        "seed": 64060,
+        "slot": 7
+      },
+      {
+        "seed": 64061,
+        "slot": 8
+      },
+      {
+        "seed": 64062,
+        "slot": 1
+      },
+      {
+        "seed": 64063,
+        "slot": 0
+      },
+      {
+        "seed": 64064,
+        "slot": 9
+      },
+      {
+        "seed": 64065,
+        "slot": 4
+      },
+      {
+        "seed": 64066,
+        "slot": 0
+      },
+      {
+        "seed": 64067,
+        "slot": 1
+      },
+      {
+        "seed": 64068,
+        "slot": 8
+      },
+      {
+        "seed": 64069,
+        "slot": 0
+      },
+      {
+        "seed": 64070,
+        "slot": 4
+      },
+      {
+        "seed": 64071,
+        "slot": 0
+      },
+      {
+        "seed": 64072,
+        "slot": 4
+      },
+      {
+        "seed": 64073,
+        "slot": 3
+      },
+      {
+        "seed": 64074,
+        "slot": 2
+      },
+      {
+        "seed": 64075,
+        "slot": 3
+      },
+      {
+        "seed": 64076,
+        "slot": 2
+      },
+      {
+        "seed": 64077,
+        "slot": 3
+      },
+      {
+        "seed": 64078,
+        "slot": 3
+      },
+      {
+        "seed": 64079,
+        "slot": 4
+      },
+      {
+        "seed": 64080,
+        "slot": 2
+      },
+      {
+        "seed": 64081,
+        "slot": 1
+      },
+      {
+        "seed": 64082,
+        "slot": 8
+      },
+      {
+        "seed": 64083,
+        "slot": 4
+      },
+      {
+        "seed": 64084,
+        "slot": 9
+      },
+      {
+        "seed": 64085,
+        "slot": 5
+      },
+      {
+        "seed": 64086,
+        "slot": 2
+      },
+      {
+        "seed": 64087,
+        "slot": 8
+      },
+      {
+        "seed": 64088,
+        "slot": 6
+      },
+      {
+        "seed": 64089,
+        "slot": 0
+      },
+      {
+        "seed": 64090,
+        "slot": 4
+      },
+      {
+        "seed": 64091,
+        "slot": 5
+      },
+      {
+        "seed": 64092,
+        "slot": 5
+      },
+      {
+        "seed": 64093,
+        "slot": 5
+      },
+      {
+        "seed": 64094,
+        "slot": 4
+      },
+      {
+        "seed": 64095,
+        "slot": 7
+      },
+      {
+        "seed": 64096,
+        "slot": 9
+      },
+      {
+        "seed": 64097,
+        "slot": 8
+      },
+      {
+        "seed": 64098,
+        "slot": 1
+      },
+      {
+        "seed": 64099,
+        "slot": 1
+      },
+      {
+        "seed": 64100,
+        "slot": 8
+      },
+      {
+        "seed": 64101,
+        "slot": 5
+      },
+      {
+        "seed": 64102,
+        "slot": 5
+      },
+      {
+        "seed": 64103,
+        "slot": 7
+      },
+      {
+        "seed": 64104,
+        "slot": 5
+      },
+      {
+        "seed": 64105,
+        "slot": 0
+      },
+      {
+        "seed": 64106,
+        "slot": 9
+      },
+      {
+        "seed": 64107,
+        "slot": 3
+      },
+      {
+        "seed": 64108,
+        "slot": 0
+      },
+      {
+        "seed": 64109,
+        "slot": 5
+      },
+      {
+        "seed": 64110,
+        "slot": 2
+      },
+      {
+        "seed": 64111,
+        "slot": 7
+      },
+      {
+        "seed": 64112,
+        "slot": 5
+      },
+      {
+        "seed": 64113,
+        "slot": 2
+      },
+      {
+        "seed": 64114,
+        "slot": 6
+      },
+      {
+        "seed": 64115,
+        "slot": 9
+      },
+      {
+        "seed": 64116,
+        "slot": 3
+      },
+      {
+        "seed": 64117,
+        "slot": 6
+      },
+      {
+        "seed": 64118,
+        "slot": 2
+      },
+      {
+        "seed": 64119,
+        "slot": 0
+      }
+    ],
+    "discovery_rule": "At least four added wins/60, with parent exceeding four gear in at least three classes and candidate never exceeding four. Audit every discovery replay for accepted purchases and every state hash.",
+    "validation_rule": "120 independent seeds, 12/class. Gain>=.05 over Duelist and >=.10 over default, paired exact p<.025 each. No adverse Bonferroni flag for win, timeout, death rate or level overall/by class; equipment reduction is the intended tradeoff and reported separately.",
+    "stop_rule": "No validation unless discovery qualifies; freeze one cap=4 candidate. No early stopping, additional candidates, reused seeds or changed thresholds. Hosted field comparison required before league promotion.",
+    "authorization": "User 2026-09-10: update the policy on softmax league when ready; local-first preference persists."
+  },
+  "discovery": {
+    "cases": 60,
+    "wins": 27,
+    "control_wins": 24,
+    "gain": 0.05,
+    "pairs": [
+      {
+        "seed": 63000,
+        "slot": 0,
+        "class": 5,
+        "team": 0,
+        "control": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 1,
+          "decisions": 21177,
+          "fallback_decisions": 1611,
+          "deaths": 7,
+          "level": 10,
+          "gold": 135,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            1611,
+            59,
+            7802,
+            11345,
+            360
+          ],
+          "target_switches": 875,
+          "stationary_target_ticks": 17319,
+          "double_heal_attempt_ticks": 13,
+          "recovery_activations": null,
+          "max_work": 3336,
+          "max_instructions": 1824,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 1,
+          "decisions": 13496,
+          "fallback_decisions": 1088,
+          "deaths": 5,
+          "level": 8,
+          "gold": 25,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1088,
+            91,
+            4625,
+            7317,
+            375
+          ],
+          "target_switches": 515,
+          "stationary_target_ticks": 11012,
+          "double_heal_attempt_ticks": 8,
+          "recovery_activations": null,
+          "max_work": 3468,
+          "max_instructions": 1879,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63000,
+        "slot": 1,
+        "class": 6,
+        "team": 0,
+        "control": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 0,
+          "decisions": 9473,
+          "fallback_decisions": 737,
+          "deaths": 6,
+          "level": 7,
+          "gold": 10,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            737,
+            1,
+            3532,
+            4519,
+            684
+          ],
+          "target_switches": 389,
+          "stationary_target_ticks": 7776,
+          "double_heal_attempt_ticks": 5,
+          "recovery_activations": null,
+          "max_work": 3341,
+          "max_instructions": 1815,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 0,
+          "decisions": 9473,
+          "fallback_decisions": 737,
+          "deaths": 6,
+          "level": 7,
+          "gold": 10,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            737,
+            1,
+            3532,
+            4519,
+            684
+          ],
+          "target_switches": 389,
+          "stationary_target_ticks": 7776,
+          "double_heal_attempt_ticks": 5,
+          "recovery_activations": null,
+          "max_work": 3469,
+          "max_instructions": 1869,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63000,
+        "slot": 2,
+        "class": 7,
+        "team": 0,
+        "control": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 0,
+          "decisions": 9662,
+          "fallback_decisions": 632,
+          "deaths": 3,
+          "level": 6,
+          "gold": 5,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            632,
+            0,
+            3554,
+            5118,
+            358
+          ],
+          "target_switches": 435,
+          "stationary_target_ticks": 7958,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3327,
+          "max_instructions": 1828,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 0,
+          "decisions": 9662,
+          "fallback_decisions": 632,
+          "deaths": 3,
+          "level": 6,
+          "gold": 5,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            632,
+            0,
+            3554,
+            5118,
+            358
+          ],
+          "target_switches": 435,
+          "stationary_target_ticks": 7958,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3451,
+          "max_instructions": 1881,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63000,
+        "slot": 3,
+        "class": 8,
+        "team": 0,
+        "control": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 0,
+          "decisions": 13008,
+          "fallback_decisions": 918,
+          "deaths": 4,
+          "level": 9,
+          "gold": 980,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            918,
+            0,
+            4119,
+            7634,
+            337
+          ],
+          "target_switches": 582,
+          "stationary_target_ticks": 10598,
+          "double_heal_attempt_ticks": 2885,
+          "recovery_activations": null,
+          "max_work": 3338,
+          "max_instructions": 1774,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 1,
+          "decisions": 10397,
+          "fallback_decisions": 805,
+          "deaths": 8,
+          "level": 7,
+          "gold": 15,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            805,
+            0,
+            4082,
+            5115,
+            395
+          ],
+          "target_switches": 380,
+          "stationary_target_ticks": 8529,
+          "double_heal_attempt_ticks": 12,
+          "recovery_activations": null,
+          "max_work": 3420,
+          "max_instructions": 1832,
+          "timeout": false
+        },
+        "delta": 1
+      },
+      {
+        "seed": 63000,
+        "slot": 4,
+        "class": 9,
+        "team": 0,
+        "control": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 0,
+          "decisions": 10189,
+          "fallback_decisions": 681,
+          "deaths": 5,
+          "level": 6,
+          "gold": 0,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            681,
+            0,
+            3450,
+            5799,
+            259
+          ],
+          "target_switches": 379,
+          "stationary_target_ticks": 8356,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3295,
+          "max_instructions": 1802,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 0,
+          "decisions": 10189,
+          "fallback_decisions": 681,
+          "deaths": 5,
+          "level": 6,
+          "gold": 210,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            681,
+            0,
+            3450,
+            5799,
+            259
+          ],
+          "target_switches": 379,
+          "stationary_target_ticks": 8356,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3419,
+          "max_instructions": 1855,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63000,
+        "slot": 5,
+        "class": 0,
+        "team": 1,
+        "control": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 5464,
+          "fallback_decisions": 565,
+          "deaths": 9,
+          "level": 1,
+          "gold": 0,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            565,
+            0,
+            2938,
+            1932,
+            29
+          ],
+          "target_switches": 176,
+          "stationary_target_ticks": 4363,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 2834,
+          "max_instructions": 1553,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 5464,
+          "fallback_decisions": 565,
+          "deaths": 9,
+          "level": 1,
+          "gold": 0,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            565,
+            0,
+            2938,
+            1932,
+            29
+          ],
+          "target_switches": 176,
+          "stationary_target_ticks": 4363,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 2958,
+          "max_instructions": 1606,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63000,
+        "slot": 6,
+        "class": 1,
+        "team": 1,
+        "control": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 1,
+          "decisions": 14289,
+          "fallback_decisions": 931,
+          "deaths": 7,
+          "level": 8,
+          "gold": 20,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            931,
+            0,
+            4464,
+            8310,
+            584
+          ],
+          "target_switches": 562,
+          "stationary_target_ticks": 11567,
+          "double_heal_attempt_ticks": 5,
+          "recovery_activations": null,
+          "max_work": 3164,
+          "max_instructions": 1721,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 1,
+          "decisions": 14289,
+          "fallback_decisions": 931,
+          "deaths": 7,
+          "level": 8,
+          "gold": 20,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            931,
+            0,
+            4464,
+            8310,
+            584
+          ],
+          "target_switches": 562,
+          "stationary_target_ticks": 11567,
+          "double_heal_attempt_ticks": 5,
+          "recovery_activations": null,
+          "max_work": 3292,
+          "max_instructions": 1775,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63000,
+        "slot": 7,
+        "class": 2,
+        "team": 1,
+        "control": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 8710,
+          "fallback_decisions": 695,
+          "deaths": 11,
+          "level": 6,
+          "gold": 40,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            695,
+            0,
+            2865,
+            4864,
+            286
+          ],
+          "target_switches": 361,
+          "stationary_target_ticks": 7047,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 2903,
+          "max_instructions": 1600,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 8710,
+          "fallback_decisions": 695,
+          "deaths": 11,
+          "level": 6,
+          "gold": 40,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            695,
+            0,
+            2865,
+            4864,
+            286
+          ],
+          "target_switches": 361,
+          "stationary_target_ticks": 7047,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3023,
+          "max_instructions": 1652,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63000,
+        "slot": 8,
+        "class": 3,
+        "team": 1,
+        "control": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 26424,
+          "fallback_decisions": 2195,
+          "deaths": 11,
+          "level": 6,
+          "gold": 20,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            2195,
+            0,
+            8480,
+            15353,
+            396
+          ],
+          "target_switches": 1118,
+          "stationary_target_ticks": 21238,
+          "double_heal_attempt_ticks": 1,
+          "recovery_activations": null,
+          "max_work": 3169,
+          "max_instructions": 1726,
+          "timeout": true
+        },
+        "candidate": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 26424,
+          "fallback_decisions": 2047,
+          "deaths": 11,
+          "level": 6,
+          "gold": 85,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            2047,
+            0,
+            8436,
+            15545,
+            396
+          ],
+          "target_switches": 1088,
+          "stationary_target_ticks": 21404,
+          "double_heal_attempt_ticks": 6,
+          "recovery_activations": null,
+          "max_work": 3301,
+          "max_instructions": 1781,
+          "timeout": true
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63000,
+        "slot": 9,
+        "class": 4,
+        "team": 1,
+        "control": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 6665,
+          "fallback_decisions": 750,
+          "deaths": 3,
+          "level": 4,
+          "gold": 25,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            750,
+            0,
+            1849,
+            3621,
+            445
+          ],
+          "target_switches": 267,
+          "stationary_target_ticks": 5073,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3034,
+          "max_instructions": 1677,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 6665,
+          "fallback_decisions": 750,
+          "deaths": 3,
+          "level": 4,
+          "gold": 25,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            750,
+            0,
+            1849,
+            3621,
+            445
+          ],
+          "target_switches": 267,
+          "stationary_target_ticks": 5073,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3158,
+          "max_instructions": 1730,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 0,
+        "class": 5,
+        "team": 0,
+        "control": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 0,
+          "decisions": 22878,
+          "fallback_decisions": 1287,
+          "deaths": 20,
+          "level": 7,
+          "gold": 0,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1287,
+            0,
+            7138,
+            13654,
+            799
+          ],
+          "target_switches": 960,
+          "stationary_target_ticks": 19021,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 3352,
+          "max_instructions": 1841,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 0,
+          "decisions": 22878,
+          "fallback_decisions": 1287,
+          "deaths": 20,
+          "level": 7,
+          "gold": 0,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1287,
+            0,
+            7138,
+            13654,
+            799
+          ],
+          "target_switches": 960,
+          "stationary_target_ticks": 19021,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 3476,
+          "max_instructions": 1894,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 1,
+        "class": 6,
+        "team": 0,
+        "control": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 1,
+          "decisions": 12664,
+          "fallback_decisions": 874,
+          "deaths": 5,
+          "level": 10,
+          "gold": 265,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            874,
+            0,
+            5515,
+            5967,
+            308
+          ],
+          "target_switches": 489,
+          "stationary_target_ticks": 10487,
+          "double_heal_attempt_ticks": 113,
+          "recovery_activations": null,
+          "max_work": 3443,
+          "max_instructions": 1880,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 1,
+          "decisions": 13374,
+          "fallback_decisions": 840,
+          "deaths": 5,
+          "level": 10,
+          "gold": 10,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            840,
+            0,
+            5669,
+            6549,
+            316
+          ],
+          "target_switches": 508,
+          "stationary_target_ticks": 11196,
+          "double_heal_attempt_ticks": 13,
+          "recovery_activations": null,
+          "max_work": 3571,
+          "max_instructions": 1934,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 2,
+        "class": 7,
+        "team": 0,
+        "control": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 0,
+          "decisions": 10945,
+          "fallback_decisions": 964,
+          "deaths": 7,
+          "level": 7,
+          "gold": 0,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            964,
+            0,
+            4104,
+            5161,
+            716
+          ],
+          "target_switches": 456,
+          "stationary_target_ticks": 8890,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3184,
+          "max_instructions": 1735,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 0,
+          "decisions": 10945,
+          "fallback_decisions": 964,
+          "deaths": 7,
+          "level": 7,
+          "gold": 0,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            964,
+            0,
+            4104,
+            5161,
+            716
+          ],
+          "target_switches": 456,
+          "stationary_target_ticks": 8890,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3308,
+          "max_instructions": 1788,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 3,
+        "class": 8,
+        "team": 0,
+        "control": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 1,
+          "decisions": 14140,
+          "fallback_decisions": 954,
+          "deaths": 5,
+          "level": 7,
+          "gold": 155,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            954,
+            97,
+            4715,
+            7829,
+            545
+          ],
+          "target_switches": 574,
+          "stationary_target_ticks": 11666,
+          "double_heal_attempt_ticks": 7,
+          "recovery_activations": null,
+          "max_work": 3165,
+          "max_instructions": 1719,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 1,
+          "decisions": 14140,
+          "fallback_decisions": 954,
+          "deaths": 5,
+          "level": 7,
+          "gold": 155,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            954,
+            97,
+            4715,
+            7829,
+            545
+          ],
+          "target_switches": 574,
+          "stationary_target_ticks": 11666,
+          "double_heal_attempt_ticks": 7,
+          "recovery_activations": null,
+          "max_work": 3297,
+          "max_instructions": 1771,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 4,
+        "class": 9,
+        "team": 0,
+        "control": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 1,
+          "decisions": 23232,
+          "fallback_decisions": 1592,
+          "deaths": 11,
+          "level": 11,
+          "gold": 2025,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            1592,
+            13,
+            5301,
+            15466,
+            860
+          ],
+          "target_switches": 1003,
+          "stationary_target_ticks": 18723,
+          "double_heal_attempt_ticks": 741,
+          "recovery_activations": null,
+          "max_work": 3497,
+          "max_instructions": 1910,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 1,
+          "decisions": 10601,
+          "fallback_decisions": 863,
+          "deaths": 4,
+          "level": 8,
+          "gold": 25,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            863,
+            122,
+            3016,
+            5755,
+            845
+          ],
+          "target_switches": 413,
+          "stationary_target_ticks": 8579,
+          "double_heal_attempt_ticks": 13,
+          "recovery_activations": null,
+          "max_work": 3629,
+          "max_instructions": 1965,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 5,
+        "class": 0,
+        "team": 1,
+        "control": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 8170,
+          "fallback_decisions": 722,
+          "deaths": 3,
+          "level": 4,
+          "gold": 0,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            722,
+            0,
+            2971,
+            4223,
+            254
+          ],
+          "target_switches": 286,
+          "stationary_target_ticks": 6594,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 2986,
+          "max_instructions": 1641,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 8170,
+          "fallback_decisions": 722,
+          "deaths": 3,
+          "level": 4,
+          "gold": 0,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            722,
+            0,
+            2971,
+            4223,
+            254
+          ],
+          "target_switches": 286,
+          "stationary_target_ticks": 6594,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3110,
+          "max_instructions": 1694,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 6,
+        "class": 1,
+        "team": 1,
+        "control": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 1,
+          "decisions": 11047,
+          "fallback_decisions": 1006,
+          "deaths": 8,
+          "level": 9,
+          "gold": 40,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            1006,
+            37,
+            4011,
+            5464,
+            529
+          ],
+          "target_switches": 468,
+          "stationary_target_ticks": 8749,
+          "double_heal_attempt_ticks": 6,
+          "recovery_activations": null,
+          "max_work": 3356,
+          "max_instructions": 1840,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 1,
+          "decisions": 11047,
+          "fallback_decisions": 1006,
+          "deaths": 8,
+          "level": 9,
+          "gold": 40,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            1006,
+            37,
+            4011,
+            5464,
+            529
+          ],
+          "target_switches": 468,
+          "stationary_target_ticks": 8749,
+          "double_heal_attempt_ticks": 6,
+          "recovery_activations": null,
+          "max_work": 3484,
+          "max_instructions": 1894,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 7,
+        "class": 2,
+        "team": 1,
+        "control": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 8055,
+          "fallback_decisions": 657,
+          "deaths": 5,
+          "level": 6,
+          "gold": 15,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            657,
+            0,
+            3104,
+            3969,
+            325
+          ],
+          "target_switches": 288,
+          "stationary_target_ticks": 6518,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 2880,
+          "max_instructions": 1567,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 8055,
+          "fallback_decisions": 657,
+          "deaths": 5,
+          "level": 6,
+          "gold": 185,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            657,
+            0,
+            3104,
+            3969,
+            325
+          ],
+          "target_switches": 288,
+          "stationary_target_ticks": 6518,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3000,
+          "max_instructions": 1619,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 8,
+        "class": 3,
+        "team": 1,
+        "control": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 1,
+          "decisions": 6838,
+          "fallback_decisions": 620,
+          "deaths": 3,
+          "level": 2,
+          "gold": 85,
+          "equipment_count": 1,
+          "target_kinds_after_tick": [
+            620,
+            150,
+            1641,
+            3908,
+            519
+          ],
+          "target_switches": 280,
+          "stationary_target_ticks": 5443,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3135,
+          "max_instructions": 1710,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 1,
+          "decisions": 6838,
+          "fallback_decisions": 620,
+          "deaths": 3,
+          "level": 2,
+          "gold": 85,
+          "equipment_count": 1,
+          "target_kinds_after_tick": [
+            620,
+            150,
+            1641,
+            3908,
+            519
+          ],
+          "target_switches": 280,
+          "stationary_target_ticks": 5443,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3255,
+          "max_instructions": 1762,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63001,
+        "slot": 9,
+        "class": 4,
+        "team": 1,
+        "control": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 4944,
+          "fallback_decisions": 585,
+          "deaths": 3,
+          "level": 5,
+          "gold": 75,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            585,
+            0,
+            2355,
+            1834,
+            170
+          ],
+          "target_switches": 137,
+          "stationary_target_ticks": 3821,
+          "double_heal_attempt_ticks": 1,
+          "recovery_activations": null,
+          "max_work": 3097,
+          "max_instructions": 1700,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 4944,
+          "fallback_decisions": 585,
+          "deaths": 3,
+          "level": 5,
+          "gold": 75,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            585,
+            0,
+            2355,
+            1834,
+            170
+          ],
+          "target_switches": 137,
+          "stationary_target_ticks": 3821,
+          "double_heal_attempt_ticks": 1,
+          "recovery_activations": null,
+          "max_work": 3221,
+          "max_instructions": 1753,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 0,
+        "class": 5,
+        "team": 0,
+        "control": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 1,
+          "decisions": 9630,
+          "fallback_decisions": 765,
+          "deaths": 3,
+          "level": 6,
+          "gold": 0,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            765,
+            113,
+            2829,
+            4716,
+            1207
+          ],
+          "target_switches": 338,
+          "stationary_target_ticks": 7922,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3500,
+          "max_instructions": 1919,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 1,
+          "decisions": 9630,
+          "fallback_decisions": 765,
+          "deaths": 3,
+          "level": 6,
+          "gold": 0,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            765,
+            113,
+            2829,
+            4716,
+            1207
+          ],
+          "target_switches": 338,
+          "stationary_target_ticks": 7922,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3632,
+          "max_instructions": 1974,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 1,
+        "class": 6,
+        "team": 0,
+        "control": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 1,
+          "decisions": 5056,
+          "fallback_decisions": 524,
+          "deaths": 1,
+          "level": 6,
+          "gold": 10,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            524,
+            85,
+            1494,
+            2505,
+            448
+          ],
+          "target_switches": 208,
+          "stationary_target_ticks": 4063,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3615,
+          "max_instructions": 1986,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 1,
+          "decisions": 5056,
+          "fallback_decisions": 524,
+          "deaths": 1,
+          "level": 6,
+          "gold": 10,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            524,
+            85,
+            1494,
+            2505,
+            448
+          ],
+          "target_switches": 208,
+          "stationary_target_ticks": 4063,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3739,
+          "max_instructions": 2039,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 2,
+        "class": 7,
+        "team": 0,
+        "control": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 1,
+          "decisions": 13669,
+          "fallback_decisions": 920,
+          "deaths": 5,
+          "level": 10,
+          "gold": 45,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            920,
+            0,
+            5660,
+            6465,
+            624
+          ],
+          "target_switches": 537,
+          "stationary_target_ticks": 11391,
+          "double_heal_attempt_ticks": 9,
+          "recovery_activations": null,
+          "max_work": 3459,
+          "max_instructions": 1897,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 1,
+          "decisions": 13669,
+          "fallback_decisions": 920,
+          "deaths": 5,
+          "level": 10,
+          "gold": 45,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            920,
+            0,
+            5660,
+            6465,
+            624
+          ],
+          "target_switches": 537,
+          "stationary_target_ticks": 11391,
+          "double_heal_attempt_ticks": 9,
+          "recovery_activations": null,
+          "max_work": 3591,
+          "max_instructions": 1952,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 3,
+        "class": 8,
+        "team": 0,
+        "control": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 1,
+          "decisions": 10046,
+          "fallback_decisions": 762,
+          "deaths": 5,
+          "level": 7,
+          "gold": 5,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            762,
+            0,
+            4046,
+            4492,
+            746
+          ],
+          "target_switches": 454,
+          "stationary_target_ticks": 8180,
+          "double_heal_attempt_ticks": 6,
+          "recovery_activations": null,
+          "max_work": 3513,
+          "max_instructions": 1922,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 1,
+          "decisions": 11010,
+          "fallback_decisions": 871,
+          "deaths": 3,
+          "level": 8,
+          "gold": 25,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            871,
+            102,
+            4384,
+            4844,
+            809
+          ],
+          "target_switches": 452,
+          "stationary_target_ticks": 9018,
+          "double_heal_attempt_ticks": 16,
+          "recovery_activations": null,
+          "max_work": 3667,
+          "max_instructions": 1977,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 4,
+        "class": 9,
+        "team": 0,
+        "control": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 1,
+          "decisions": 3869,
+          "fallback_decisions": 539,
+          "deaths": 6,
+          "level": 3,
+          "gold": 10,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            539,
+            0,
+            1293,
+            1519,
+            518
+          ],
+          "target_switches": 127,
+          "stationary_target_ticks": 2905,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3853,
+          "max_instructions": 2118,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 1,
+          "decisions": 3869,
+          "fallback_decisions": 539,
+          "deaths": 6,
+          "level": 3,
+          "gold": 10,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            539,
+            0,
+            1293,
+            1519,
+            518
+          ],
+          "target_switches": 127,
+          "stationary_target_ticks": 2905,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3977,
+          "max_instructions": 2171,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 5,
+        "class": 0,
+        "team": 1,
+        "control": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 4499,
+          "fallback_decisions": 589,
+          "deaths": 2,
+          "level": 3,
+          "gold": 40,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            589,
+            0,
+            1769,
+            1953,
+            188
+          ],
+          "target_switches": 156,
+          "stationary_target_ticks": 3428,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 2797,
+          "max_instructions": 1534,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 4499,
+          "fallback_decisions": 589,
+          "deaths": 2,
+          "level": 3,
+          "gold": 40,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            589,
+            0,
+            1769,
+            1953,
+            188
+          ],
+          "target_switches": 156,
+          "stationary_target_ticks": 3428,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 2921,
+          "max_instructions": 1587,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 6,
+        "class": 1,
+        "team": 1,
+        "control": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 0,
+          "decisions": 11622,
+          "fallback_decisions": 972,
+          "deaths": 10,
+          "level": 8,
+          "gold": 45,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            972,
+            0,
+            3860,
+            6514,
+            276
+          ],
+          "target_switches": 479,
+          "stationary_target_ticks": 9223,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3083,
+          "max_instructions": 1708,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 0,
+          "decisions": 11622,
+          "fallback_decisions": 972,
+          "deaths": 10,
+          "level": 8,
+          "gold": 45,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            972,
+            0,
+            3860,
+            6514,
+            276
+          ],
+          "target_switches": 479,
+          "stationary_target_ticks": 9223,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3211,
+          "max_instructions": 1762,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 7,
+        "class": 2,
+        "team": 1,
+        "control": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 5094,
+          "fallback_decisions": 692,
+          "deaths": 4,
+          "level": 4,
+          "gold": 75,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            692,
+            0,
+            2218,
+            2184,
+            0
+          ],
+          "target_switches": 191,
+          "stationary_target_ticks": 3866,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 2850,
+          "max_instructions": 1569,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 5094,
+          "fallback_decisions": 692,
+          "deaths": 4,
+          "level": 4,
+          "gold": 75,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            692,
+            0,
+            2218,
+            2184,
+            0
+          ],
+          "target_switches": 191,
+          "stationary_target_ticks": 3866,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 2970,
+          "max_instructions": 1621,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 8,
+        "class": 3,
+        "team": 1,
+        "control": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 5009,
+          "fallback_decisions": 509,
+          "deaths": 3,
+          "level": 3,
+          "gold": 75,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            509,
+            0,
+            2165,
+            2223,
+            112
+          ],
+          "target_switches": 187,
+          "stationary_target_ticks": 3979,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 2775,
+          "max_instructions": 1497,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 5009,
+          "fallback_decisions": 509,
+          "deaths": 3,
+          "level": 3,
+          "gold": 75,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            509,
+            0,
+            2165,
+            2223,
+            112
+          ],
+          "target_switches": 187,
+          "stationary_target_ticks": 3979,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 2895,
+          "max_instructions": 1549,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63002,
+        "slot": 9,
+        "class": 4,
+        "team": 1,
+        "control": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 10583,
+          "fallback_decisions": 764,
+          "deaths": 5,
+          "level": 7,
+          "gold": 40,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            764,
+            0,
+            3355,
+            6127,
+            337
+          ],
+          "target_switches": 440,
+          "stationary_target_ticks": 8403,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3336,
+          "max_instructions": 1827,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 10583,
+          "fallback_decisions": 764,
+          "deaths": 5,
+          "level": 7,
+          "gold": 160,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            764,
+            0,
+            3355,
+            6127,
+            337
+          ],
+          "target_switches": 440,
+          "stationary_target_ticks": 8403,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3464,
+          "max_instructions": 1881,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63003,
+        "slot": 0,
+        "class": 5,
+        "team": 0,
+        "control": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 1,
+          "decisions": 13243,
+          "fallback_decisions": 1134,
+          "deaths": 3,
+          "level": 7,
+          "gold": 10,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            1134,
+            77,
+            4225,
+            7249,
+            558
+          ],
+          "target_switches": 536,
+          "stationary_target_ticks": 10737,
+          "double_heal_attempt_ticks": 7,
+          "recovery_activations": null,
+          "max_work": 4344,
+          "max_instructions": 2374,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 1,
+          "decisions": 26297,
+          "fallback_decisions": 1999,
+          "deaths": 7,
+          "level": 9,
+          "gold": 20,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1999,
+            90,
+            9327,
+            14352,
+            529
+          ],
+          "target_switches": 1095,
+          "stationary_target_ticks": 21404,
+          "double_heal_attempt_ticks": 12,
+          "recovery_activations": null,
+          "max_work": 4765,
+          "max_instructions": 2441,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63003,
+        "slot": 1,
+        "class": 6,
+        "team": 0,
+        "control": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 1,
+          "decisions": 11413,
+          "fallback_decisions": 567,
+          "deaths": 6,
+          "level": 9,
+          "gold": 35,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            567,
+            56,
+            3601,
+            6976,
+            213
+          ],
+          "target_switches": 460,
+          "stationary_target_ticks": 9643,
+          "double_heal_attempt_ticks": 6,
+          "recovery_activations": null,
+          "max_work": 3398,
+          "max_instructions": 1807,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 1,
+          "decisions": 11413,
+          "fallback_decisions": 567,
+          "deaths": 6,
+          "level": 9,
+          "gold": 35,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            567,
+            56,
+            3601,
+            6976,
+            213
+          ],
+          "target_switches": 460,
+          "stationary_target_ticks": 9643,
+          "double_heal_attempt_ticks": 6,
+          "recovery_activations": null,
+          "max_work": 3530,
+          "max_instructions": 1862,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63003,
+        "slot": 2,
+        "class": 7,
+        "team": 0,
+        "control": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 1,
+          "decisions": 4911,
+          "fallback_decisions": 534,
+          "deaths": 3,
+          "level": 4,
+          "gold": 0,
+          "equipment_count": 1,
+          "target_kinds_after_tick": [
+            534,
+            0,
+            1710,
+            2242,
+            425
+          ],
+          "target_switches": 180,
+          "stationary_target_ticks": 3904,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 3119,
+          "max_instructions": 1664,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 1,
+          "decisions": 4911,
+          "fallback_decisions": 534,
+          "deaths": 3,
+          "level": 4,
+          "gold": 0,
+          "equipment_count": 1,
+          "target_kinds_after_tick": [
+            534,
+            0,
+            1710,
+            2242,
+            425
+          ],
+          "target_switches": 180,
+          "stationary_target_ticks": 3904,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 3239,
+          "max_instructions": 1716,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63003,
+        "slot": 3,
+        "class": 8,
+        "team": 0,
+        "control": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 0,
+          "decisions": 27072,
+          "fallback_decisions": 1555,
+          "deaths": 8,
+          "level": 11,
+          "gold": 2045,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            1555,
+            0,
+            9109,
+            15638,
+            770
+          ],
+          "target_switches": 1246,
+          "stationary_target_ticks": 22352,
+          "double_heal_attempt_ticks": 12206,
+          "recovery_activations": null,
+          "max_work": 3809,
+          "max_instructions": 1930,
+          "timeout": true
+        },
+        "candidate": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 1,
+          "decisions": 23491,
+          "fallback_decisions": 1648,
+          "deaths": 4,
+          "level": 12,
+          "gold": 30,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1648,
+            73,
+            8503,
+            12225,
+            1042
+          ],
+          "target_switches": 1088,
+          "stationary_target_ticks": 19241,
+          "double_heal_attempt_ticks": 47,
+          "recovery_activations": null,
+          "max_work": 4382,
+          "max_instructions": 2326,
+          "timeout": false
+        },
+        "delta": 1
+      },
+      {
+        "seed": 63003,
+        "slot": 4,
+        "class": 9,
+        "team": 0,
+        "control": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 1,
+          "decisions": 13153,
+          "fallback_decisions": 820,
+          "deaths": 5,
+          "level": 10,
+          "gold": 1585,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            820,
+            78,
+            3406,
+            7952,
+            897
+          ],
+          "target_switches": 513,
+          "stationary_target_ticks": 10811,
+          "double_heal_attempt_ticks": 5322,
+          "recovery_activations": null,
+          "max_work": 3986,
+          "max_instructions": 2102,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 0,
+          "decisions": 9390,
+          "fallback_decisions": 667,
+          "deaths": 3,
+          "level": 8,
+          "gold": 165,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            667,
+            0,
+            2406,
+            5325,
+            992
+          ],
+          "target_switches": 352,
+          "stationary_target_ticks": 7666,
+          "double_heal_attempt_ticks": 12,
+          "recovery_activations": null,
+          "max_work": 3613,
+          "max_instructions": 1937,
+          "timeout": false
+        },
+        "delta": -1
+      },
+      {
+        "seed": 63003,
+        "slot": 5,
+        "class": 0,
+        "team": 1,
+        "control": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 24459,
+          "fallback_decisions": 1931,
+          "deaths": 21,
+          "level": 5,
+          "gold": 15,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            1931,
+            0,
+            10247,
+            12126,
+            155
+          ],
+          "target_switches": 856,
+          "stationary_target_ticks": 19980,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 4559,
+          "max_instructions": 2568,
+          "timeout": true
+        },
+        "candidate": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 24459,
+          "fallback_decisions": 1931,
+          "deaths": 21,
+          "level": 5,
+          "gold": 15,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            1931,
+            0,
+            10247,
+            12126,
+            155
+          ],
+          "target_switches": 856,
+          "stationary_target_ticks": 19980,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 4683,
+          "max_instructions": 2621,
+          "timeout": true
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63003,
+        "slot": 6,
+        "class": 1,
+        "team": 1,
+        "control": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 0,
+          "decisions": 26424,
+          "fallback_decisions": 2254,
+          "deaths": 11,
+          "level": 15,
+          "gold": 120,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            2254,
+            0,
+            8570,
+            14944,
+            656
+          ],
+          "target_switches": 1131,
+          "stationary_target_ticks": 20962,
+          "double_heal_attempt_ticks": 142,
+          "recovery_activations": null,
+          "max_work": 4715,
+          "max_instructions": 2658,
+          "timeout": true
+        },
+        "candidate": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 1,
+          "decisions": 21158,
+          "fallback_decisions": 2027,
+          "deaths": 6,
+          "level": 13,
+          "gold": 615,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            2027,
+            74,
+            6902,
+            11499,
+            656
+          ],
+          "target_switches": 892,
+          "stationary_target_ticks": 16690,
+          "double_heal_attempt_ticks": 8,
+          "recovery_activations": null,
+          "max_work": 4856,
+          "max_instructions": 2711,
+          "timeout": false
+        },
+        "delta": 1
+      },
+      {
+        "seed": 63003,
+        "slot": 7,
+        "class": 2,
+        "team": 1,
+        "control": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 13231,
+          "fallback_decisions": 835,
+          "deaths": 12,
+          "level": 10,
+          "gold": 85,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            835,
+            0,
+            6275,
+            5926,
+            195
+          ],
+          "target_switches": 488,
+          "stationary_target_ticks": 11071,
+          "double_heal_attempt_ticks": 20,
+          "recovery_activations": null,
+          "max_work": 4936,
+          "max_instructions": 2837,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 13231,
+          "fallback_decisions": 835,
+          "deaths": 12,
+          "level": 10,
+          "gold": 255,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            835,
+            0,
+            6275,
+            5926,
+            195
+          ],
+          "target_switches": 488,
+          "stationary_target_ticks": 11071,
+          "double_heal_attempt_ticks": 20,
+          "recovery_activations": null,
+          "max_work": 5088,
+          "max_instructions": 2897,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63003,
+        "slot": 8,
+        "class": 3,
+        "team": 1,
+        "control": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 10697,
+          "fallback_decisions": 769,
+          "deaths": 6,
+          "level": 3,
+          "gold": 35,
+          "equipment_count": 1,
+          "target_kinds_after_tick": [
+            769,
+            0,
+            3459,
+            6106,
+            363
+          ],
+          "target_switches": 428,
+          "stationary_target_ticks": 8720,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3064,
+          "max_instructions": 1683,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 10697,
+          "fallback_decisions": 769,
+          "deaths": 6,
+          "level": 3,
+          "gold": 35,
+          "equipment_count": 1,
+          "target_kinds_after_tick": [
+            769,
+            0,
+            3459,
+            6106,
+            363
+          ],
+          "target_switches": 428,
+          "stationary_target_ticks": 8720,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3184,
+          "max_instructions": 1735,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63003,
+        "slot": 9,
+        "class": 4,
+        "team": 1,
+        "control": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 19415,
+          "fallback_decisions": 1517,
+          "deaths": 12,
+          "level": 10,
+          "gold": 820,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            1517,
+            0,
+            5520,
+            11940,
+            438
+          ],
+          "target_switches": 696,
+          "stationary_target_ticks": 15336,
+          "double_heal_attempt_ticks": 124,
+          "recovery_activations": null,
+          "max_work": 3451,
+          "max_instructions": 1888,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 21338,
+          "fallback_decisions": 1359,
+          "deaths": 14,
+          "level": 12,
+          "gold": 300,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1359,
+            0,
+            7861,
+            11520,
+            598
+          ],
+          "target_switches": 795,
+          "stationary_target_ticks": 17136,
+          "double_heal_attempt_ticks": 23,
+          "recovery_activations": null,
+          "max_work": 3431,
+          "max_instructions": 1861,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 0,
+        "class": 5,
+        "team": 0,
+        "control": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 1,
+          "decisions": 8187,
+          "fallback_decisions": 664,
+          "deaths": 2,
+          "level": 5,
+          "gold": 130,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            664,
+            29,
+            2571,
+            4153,
+            770
+          ],
+          "target_switches": 279,
+          "stationary_target_ticks": 6693,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3202,
+          "max_instructions": 1699,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 1,
+          "decisions": 8187,
+          "fallback_decisions": 664,
+          "deaths": 2,
+          "level": 5,
+          "gold": 250,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            664,
+            29,
+            2571,
+            4153,
+            770
+          ],
+          "target_switches": 279,
+          "stationary_target_ticks": 6693,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3314,
+          "max_instructions": 1756,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 1,
+        "class": 6,
+        "team": 0,
+        "control": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 0,
+          "decisions": 11214,
+          "fallback_decisions": 808,
+          "deaths": 2,
+          "level": 9,
+          "gold": 190,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            808,
+            0,
+            4148,
+            5739,
+            519
+          ],
+          "target_switches": 427,
+          "stationary_target_ticks": 9221,
+          "double_heal_attempt_ticks": 6,
+          "recovery_activations": null,
+          "max_work": 3350,
+          "max_instructions": 1759,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 0,
+          "decisions": 11217,
+          "fallback_decisions": 808,
+          "deaths": 2,
+          "level": 9,
+          "gold": 300,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            808,
+            0,
+            4258,
+            5668,
+            483
+          ],
+          "target_switches": 422,
+          "stationary_target_ticks": 9225,
+          "double_heal_attempt_ticks": 6,
+          "recovery_activations": null,
+          "max_work": 3478,
+          "max_instructions": 1813,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 2,
+        "class": 7,
+        "team": 0,
+        "control": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 1,
+          "decisions": 8195,
+          "fallback_decisions": 625,
+          "deaths": 2,
+          "level": 6,
+          "gold": 35,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            625,
+            89,
+            2552,
+            3976,
+            953
+          ],
+          "target_switches": 318,
+          "stationary_target_ticks": 6746,
+          "double_heal_attempt_ticks": 1,
+          "recovery_activations": null,
+          "max_work": 3267,
+          "max_instructions": 1777,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 1,
+          "decisions": 8195,
+          "fallback_decisions": 625,
+          "deaths": 2,
+          "level": 6,
+          "gold": 35,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            625,
+            89,
+            2552,
+            3976,
+            953
+          ],
+          "target_switches": 318,
+          "stationary_target_ticks": 6746,
+          "double_heal_attempt_ticks": 1,
+          "recovery_activations": null,
+          "max_work": 3399,
+          "max_instructions": 1832,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 3,
+        "class": 8,
+        "team": 0,
+        "control": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 1,
+          "decisions": 6235,
+          "fallback_decisions": 659,
+          "deaths": 2,
+          "level": 5,
+          "gold": 10,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            659,
+            35,
+            1921,
+            2932,
+            688
+          ],
+          "target_switches": 259,
+          "stationary_target_ticks": 4950,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 3390,
+          "max_instructions": 1851,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 1,
+          "decisions": 6235,
+          "fallback_decisions": 659,
+          "deaths": 2,
+          "level": 5,
+          "gold": 130,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            659,
+            35,
+            1921,
+            2932,
+            688
+          ],
+          "target_switches": 259,
+          "stationary_target_ticks": 4950,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 3518,
+          "max_instructions": 1905,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 4,
+        "class": 9,
+        "team": 0,
+        "control": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 1,
+          "decisions": 10861,
+          "fallback_decisions": 928,
+          "deaths": 7,
+          "level": 7,
+          "gold": 10,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            928,
+            48,
+            3299,
+            5698,
+            888
+          ],
+          "target_switches": 428,
+          "stationary_target_ticks": 8746,
+          "double_heal_attempt_ticks": 34,
+          "recovery_activations": null,
+          "max_work": 3247,
+          "max_instructions": 1737,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 1,
+          "decisions": 10868,
+          "fallback_decisions": 928,
+          "deaths": 7,
+          "level": 7,
+          "gold": 20,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            928,
+            48,
+            3306,
+            5698,
+            888
+          ],
+          "target_switches": 428,
+          "stationary_target_ticks": 8752,
+          "double_heal_attempt_ticks": 9,
+          "recovery_activations": null,
+          "max_work": 3379,
+          "max_instructions": 1792,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 5,
+        "class": 0,
+        "team": 1,
+        "control": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 13967,
+          "fallback_decisions": 1214,
+          "deaths": 7,
+          "level": 6,
+          "gold": 25,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1214,
+            11,
+            5146,
+            7262,
+            334
+          ],
+          "target_switches": 554,
+          "stationary_target_ticks": 11276,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3192,
+          "max_instructions": 1655,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 13967,
+          "fallback_decisions": 1214,
+          "deaths": 7,
+          "level": 6,
+          "gold": 25,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1214,
+            11,
+            5146,
+            7262,
+            334
+          ],
+          "target_switches": 554,
+          "stationary_target_ticks": 11276,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 3315,
+          "max_instructions": 1710,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 6,
+        "class": 1,
+        "team": 1,
+        "control": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 0,
+          "decisions": 4647,
+          "fallback_decisions": 591,
+          "deaths": 5,
+          "level": 2,
+          "gold": 15,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            591,
+            0,
+            2207,
+            1849,
+            0
+          ],
+          "target_switches": 139,
+          "stationary_target_ticks": 3520,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 2894,
+          "max_instructions": 1600,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 0,
+          "decisions": 4647,
+          "fallback_decisions": 591,
+          "deaths": 5,
+          "level": 2,
+          "gold": 15,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            591,
+            0,
+            2207,
+            1849,
+            0
+          ],
+          "target_switches": 139,
+          "stationary_target_ticks": 3520,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3014,
+          "max_instructions": 1652,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 7,
+        "class": 2,
+        "team": 1,
+        "control": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 13571,
+          "fallback_decisions": 593,
+          "deaths": 6,
+          "level": 9,
+          "gold": 745,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            593,
+            0,
+            6642,
+            6213,
+            123
+          ],
+          "target_switches": 417,
+          "stationary_target_ticks": 11573,
+          "double_heal_attempt_ticks": 1845,
+          "recovery_activations": null,
+          "max_work": 2968,
+          "max_instructions": 1570,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 1,
+          "decisions": 26351,
+          "fallback_decisions": 1355,
+          "deaths": 11,
+          "level": 14,
+          "gold": 140,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1355,
+            75,
+            10386,
+            14131,
+            404
+          ],
+          "target_switches": 998,
+          "stationary_target_ticks": 22160,
+          "double_heal_attempt_ticks": 48,
+          "recovery_activations": null,
+          "max_work": 3794,
+          "max_instructions": 2036,
+          "timeout": false
+        },
+        "delta": 1
+      },
+      {
+        "seed": 63004,
+        "slot": 8,
+        "class": 3,
+        "team": 1,
+        "control": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 8046,
+          "fallback_decisions": 702,
+          "deaths": 7,
+          "level": 5,
+          "gold": 0,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            702,
+            0,
+            3389,
+            3955,
+            0
+          ],
+          "target_switches": 276,
+          "stationary_target_ticks": 6513,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 2913,
+          "max_instructions": 1494,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 8046,
+          "fallback_decisions": 702,
+          "deaths": 7,
+          "level": 5,
+          "gold": 0,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            702,
+            0,
+            3389,
+            3955,
+            0
+          ],
+          "target_switches": 276,
+          "stationary_target_ticks": 6513,
+          "double_heal_attempt_ticks": 3,
+          "recovery_activations": null,
+          "max_work": 3045,
+          "max_instructions": 1547,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63004,
+        "slot": 9,
+        "class": 4,
+        "team": 1,
+        "control": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 4589,
+          "fallback_decisions": 519,
+          "deaths": 3,
+          "level": 4,
+          "gold": 40,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            519,
+            0,
+            1718,
+            2226,
+            126
+          ],
+          "target_switches": 143,
+          "stationary_target_ticks": 3553,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 2856,
+          "max_instructions": 1547,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 0,
+          "decisions": 4589,
+          "fallback_decisions": 519,
+          "deaths": 3,
+          "level": 4,
+          "gold": 40,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            519,
+            0,
+            1718,
+            2226,
+            126
+          ],
+          "target_switches": 143,
+          "stationary_target_ticks": 3553,
+          "double_heal_attempt_ticks": 2,
+          "recovery_activations": null,
+          "max_work": 2980,
+          "max_instructions": 1600,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 0,
+        "class": 5,
+        "team": 0,
+        "control": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 0,
+          "decisions": 11302,
+          "fallback_decisions": 731,
+          "deaths": 4,
+          "level": 4,
+          "gold": 5,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            731,
+            0,
+            4280,
+            5491,
+            800
+          ],
+          "target_switches": 451,
+          "stationary_target_ticks": 9400,
+          "double_heal_attempt_ticks": 1,
+          "recovery_activations": null,
+          "max_work": 3391,
+          "max_instructions": 1840,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 0,
+          "team": 0,
+          "class": 5,
+          "score": 0,
+          "decisions": 11302,
+          "fallback_decisions": 731,
+          "deaths": 4,
+          "level": 4,
+          "gold": 5,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            731,
+            0,
+            4280,
+            5491,
+            800
+          ],
+          "target_switches": 451,
+          "stationary_target_ticks": 9400,
+          "double_heal_attempt_ticks": 1,
+          "recovery_activations": null,
+          "max_work": 3515,
+          "max_instructions": 1893,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 1,
+        "class": 6,
+        "team": 0,
+        "control": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 1,
+          "decisions": 15391,
+          "fallback_decisions": 911,
+          "deaths": 5,
+          "level": 9,
+          "gold": 35,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            911,
+            6,
+            6128,
+            7742,
+            604
+          ],
+          "target_switches": 699,
+          "stationary_target_ticks": 12745,
+          "double_heal_attempt_ticks": 8,
+          "recovery_activations": null,
+          "max_work": 3374,
+          "max_instructions": 1833,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 1,
+          "team": 0,
+          "class": 6,
+          "score": 1,
+          "decisions": 15391,
+          "fallback_decisions": 911,
+          "deaths": 5,
+          "level": 9,
+          "gold": 35,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            911,
+            6,
+            6128,
+            7742,
+            604
+          ],
+          "target_switches": 699,
+          "stationary_target_ticks": 12745,
+          "double_heal_attempt_ticks": 8,
+          "recovery_activations": null,
+          "max_work": 3502,
+          "max_instructions": 1887,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 2,
+        "class": 7,
+        "team": 0,
+        "control": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 1,
+          "decisions": 8866,
+          "fallback_decisions": 734,
+          "deaths": 2,
+          "level": 7,
+          "gold": 100,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            734,
+            0,
+            4038,
+            3694,
+            400
+          ],
+          "target_switches": 352,
+          "stationary_target_ticks": 7220,
+          "double_heal_attempt_ticks": 5,
+          "recovery_activations": null,
+          "max_work": 3395,
+          "max_instructions": 1842,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 2,
+          "team": 0,
+          "class": 7,
+          "score": 1,
+          "decisions": 8866,
+          "fallback_decisions": 734,
+          "deaths": 2,
+          "level": 7,
+          "gold": 100,
+          "equipment_count": 3,
+          "target_kinds_after_tick": [
+            734,
+            0,
+            4038,
+            3694,
+            400
+          ],
+          "target_switches": 352,
+          "stationary_target_ticks": 7220,
+          "double_heal_attempt_ticks": 5,
+          "recovery_activations": null,
+          "max_work": 3519,
+          "max_instructions": 1895,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 3,
+        "class": 8,
+        "team": 0,
+        "control": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 0,
+          "decisions": 9386,
+          "fallback_decisions": 601,
+          "deaths": 2,
+          "level": 6,
+          "gold": 55,
+          "equipment_count": 5,
+          "target_kinds_after_tick": [
+            601,
+            0,
+            3861,
+            4573,
+            351
+          ],
+          "target_switches": 381,
+          "stationary_target_ticks": 7765,
+          "double_heal_attempt_ticks": 6,
+          "recovery_activations": null,
+          "max_work": 3127,
+          "max_instructions": 1702,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 3,
+          "team": 0,
+          "class": 8,
+          "score": 0,
+          "decisions": 9386,
+          "fallback_decisions": 601,
+          "deaths": 2,
+          "level": 6,
+          "gold": 75,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            601,
+            0,
+            3861,
+            4573,
+            351
+          ],
+          "target_switches": 381,
+          "stationary_target_ticks": 7765,
+          "double_heal_attempt_ticks": 5,
+          "recovery_activations": null,
+          "max_work": 3259,
+          "max_instructions": 1757,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 4,
+        "class": 9,
+        "team": 0,
+        "control": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 1,
+          "decisions": 11789,
+          "fallback_decisions": 690,
+          "deaths": 6,
+          "level": 7,
+          "gold": 180,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            690,
+            9,
+            3709,
+            6577,
+            804
+          ],
+          "target_switches": 477,
+          "stationary_target_ticks": 9710,
+          "double_heal_attempt_ticks": 998,
+          "recovery_activations": null,
+          "max_work": 3522,
+          "max_instructions": 1888,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 4,
+          "team": 0,
+          "class": 9,
+          "score": 1,
+          "decisions": 11867,
+          "fallback_decisions": 698,
+          "deaths": 5,
+          "level": 8,
+          "gold": 240,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            698,
+            104,
+            3791,
+            6516,
+            758
+          ],
+          "target_switches": 470,
+          "stationary_target_ticks": 9760,
+          "double_heal_attempt_ticks": 9,
+          "recovery_activations": null,
+          "max_work": 3531,
+          "max_instructions": 1802,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 5,
+        "class": 0,
+        "team": 1,
+        "control": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 11560,
+          "fallback_decisions": 785,
+          "deaths": 6,
+          "level": 3,
+          "gold": 5,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            785,
+            0,
+            4975,
+            5726,
+            74
+          ],
+          "target_switches": 443,
+          "stationary_target_ticks": 9515,
+          "double_heal_attempt_ticks": 1,
+          "recovery_activations": null,
+          "max_work": 2997,
+          "max_instructions": 1658,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "score": 0,
+          "decisions": 11560,
+          "fallback_decisions": 785,
+          "deaths": 6,
+          "level": 3,
+          "gold": 5,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            785,
+            0,
+            4975,
+            5726,
+            74
+          ],
+          "target_switches": 443,
+          "stationary_target_ticks": 9515,
+          "double_heal_attempt_ticks": 1,
+          "recovery_activations": null,
+          "max_work": 3121,
+          "max_instructions": 1711,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 6,
+        "class": 1,
+        "team": 1,
+        "control": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 0,
+          "decisions": 8216,
+          "fallback_decisions": 723,
+          "deaths": 6,
+          "level": 4,
+          "gold": 15,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            723,
+            0,
+            2681,
+            4565,
+            247
+          ],
+          "target_switches": 322,
+          "stationary_target_ticks": 6440,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3192,
+          "max_instructions": 1746,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "score": 0,
+          "decisions": 8216,
+          "fallback_decisions": 723,
+          "deaths": 6,
+          "level": 4,
+          "gold": 15,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            723,
+            0,
+            2681,
+            4565,
+            247
+          ],
+          "target_switches": 322,
+          "stationary_target_ticks": 6440,
+          "double_heal_attempt_ticks": 0,
+          "recovery_activations": null,
+          "max_work": 3312,
+          "max_instructions": 1798,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 7,
+        "class": 2,
+        "team": 1,
+        "control": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 8881,
+          "fallback_decisions": 918,
+          "deaths": 3,
+          "level": 8,
+          "gold": 505,
+          "equipment_count": 6,
+          "target_kinds_after_tick": [
+            918,
+            0,
+            3616,
+            4191,
+            156
+          ],
+          "target_switches": 373,
+          "stationary_target_ticks": 7024,
+          "double_heal_attempt_ticks": 3161,
+          "recovery_activations": null,
+          "max_work": 3170,
+          "max_instructions": 1705,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 7,
+          "team": 1,
+          "class": 2,
+          "score": 0,
+          "decisions": 25560,
+          "fallback_decisions": 1716,
+          "deaths": 15,
+          "level": 12,
+          "gold": 15,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1716,
+            0,
+            9961,
+            13559,
+            324
+          ],
+          "target_switches": 1070,
+          "stationary_target_ticks": 21015,
+          "double_heal_attempt_ticks": 38,
+          "recovery_activations": null,
+          "max_work": 3447,
+          "max_instructions": 1872,
+          "timeout": true
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 8,
+        "class": 3,
+        "team": 1,
+        "control": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 21392,
+          "fallback_decisions": 1249,
+          "deaths": 13,
+          "level": 6,
+          "gold": 15,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1249,
+            0,
+            8416,
+            11232,
+            495
+          ],
+          "target_switches": 826,
+          "stationary_target_ticks": 17800,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3282,
+          "max_instructions": 1803,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 8,
+          "team": 1,
+          "class": 3,
+          "score": 0,
+          "decisions": 21392,
+          "fallback_decisions": 1249,
+          "deaths": 13,
+          "level": 6,
+          "gold": 15,
+          "equipment_count": 4,
+          "target_kinds_after_tick": [
+            1249,
+            0,
+            8416,
+            11232,
+            495
+          ],
+          "target_switches": 826,
+          "stationary_target_ticks": 17800,
+          "double_heal_attempt_ticks": 4,
+          "recovery_activations": null,
+          "max_work": 3410,
+          "max_instructions": 1857,
+          "timeout": false
+        },
+        "delta": 0
+      },
+      {
+        "seed": 63005,
+        "slot": 9,
+        "class": 4,
+        "team": 1,
+        "control": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 1,
+          "decisions": 4778,
+          "fallback_decisions": 504,
+          "deaths": 6,
+          "level": 5,
+          "gold": 10,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            504,
+            0,
+            2497,
+            1471,
+            306
+          ],
+          "target_switches": 166,
+          "stationary_target_ticks": 3717,
+          "double_heal_attempt_ticks": 5,
+          "recovery_activations": null,
+          "max_work": 3541,
+          "max_instructions": 1941,
+          "timeout": false
+        },
+        "candidate": {
+          "slot": 9,
+          "team": 1,
+          "class": 4,
+          "score": 1,
+          "decisions": 4778,
+          "fallback_decisions": 504,
+          "deaths": 6,
+          "level": 5,
+          "gold": 10,
+          "equipment_count": 2,
+          "target_kinds_after_tick": [
+            504,
+            0,
+            2497,
+            1471,
+            306
+          ],
+          "target_switches": 166,
+          "stationary_target_ticks": 3717,
+          "double_heal_attempt_ticks": 5,
+          "recovery_activations": null,
+          "max_work": 3665,
+          "max_instructions": 1994,
+          "timeout": false
+        },
+        "delta": 0
+      }
+    ]
+  },
+  "by_class": [
+    {
+      "class": "Vanguard Knight",
+      "n": 6,
+      "control_wins": 0,
+      "wins": 0,
+      "control_deaths": 48,
+      "deaths": 48,
+      "control_equipment": 16,
+      "equipment": 16
+    },
+    {
+      "class": "Ranger",
+      "n": 6,
+      "control_wins": 2,
+      "wins": 3,
+      "control_deaths": 47,
+      "deaths": 42,
+      "control_equipment": 18,
+      "equipment": 17
+    },
+    {
+      "class": "Arcanist",
+      "n": 6,
+      "control_wins": 0,
+      "wins": 1,
+      "control_deaths": 41,
+      "deaths": 58,
+      "control_equipment": 28,
+      "equipment": 22
+    },
+    {
+      "class": "Druid Warden",
+      "n": 6,
+      "control_wins": 1,
+      "wins": 1,
+      "control_deaths": 43,
+      "deaths": 43,
+      "control_equipment": 17,
+      "equipment": 16
+    },
+    {
+      "class": "Demon Hunter",
+      "n": 6,
+      "control_wins": 1,
+      "wins": 1,
+      "control_deaths": 32,
+      "deaths": 34,
+      "control_equipment": 21,
+      "equipment": 18
+    },
+    {
+      "class": "Death Knight",
+      "n": 6,
+      "control_wins": 4,
+      "wins": 4,
+      "control_deaths": 39,
+      "deaths": 41,
+      "control_equipment": 27,
+      "equipment": 23
+    },
+    {
+      "class": "Crossbowman",
+      "n": 6,
+      "control_wins": 4,
+      "wins": 4,
+      "control_deaths": 25,
+      "deaths": 25,
+      "control_equipment": 24,
+      "equipment": 22
+    },
+    {
+      "class": "Lich",
+      "n": 6,
+      "control_wins": 4,
+      "wins": 4,
+      "control_deaths": 22,
+      "deaths": 22,
+      "control_equipment": 18,
+      "equipment": 18
+    },
+    {
+      "class": "Warlock",
+      "n": 6,
+      "control_wins": 3,
+      "wins": 5,
+      "control_deaths": 26,
+      "deaths": 24,
+      "control_equipment": 31,
+      "equipment": 24
+    },
+    {
+      "class": "Berserker",
+      "n": 6,
+      "control_wins": 5,
+      "wins": 4,
+      "control_deaths": 40,
+      "deaths": 30,
+      "control_equipment": 31,
+      "equipment": 22
+    }
+  ],
+  "purchases": {
+    "parent": {
+      "healing_rejected_no_space": 55580,
+      "healing_purchases": 588,
+      "healing_gold": 23060,
+      "equipment_purchases": 231
+    },
+    "candidate": {
+      "healing_rejected_no_space": 99,
+      "healing_purchases": 884,
+      "healing_gold": 34920,
+      "equipment_purchases": 198
+    }
+  },
+  "activated_classes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "qualifies": false,
+  "validation": null,
+  "hosted_evaluation_eligible": false,
+  "completed_games": 120,
+  "invalid_games_scored": 0,
+  "state_hash_audited_games": 120,
+  "verdict": "discovery_inconclusive"
+}

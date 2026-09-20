@@ -1,0 +1,398 @@
+{
+  "rows": [
+    {
+      "candidate": "deployed",
+      "seed": 9860000,
+      "stream_sha256": "e0603664182fff6f8257b392d496ff7d1f9a0ecfae341f353a2bc390b5fb8dc0",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3264,
+        "actions_consumed": 34511,
+        "groups": 32640,
+        "bytes": 805812,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "anchored",
+      "seed": 9860000,
+      "stream_sha256": "e0603664182fff6f8257b392d496ff7d1f9a0ecfae341f353a2bc390b5fb8dc0",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3264,
+        "actions_consumed": 34511,
+        "groups": 32640,
+        "bytes": 805812,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "unanchored",
+      "seed": 9860000,
+      "stream_sha256": "e0603664182fff6f8257b392d496ff7d1f9a0ecfae341f353a2bc390b5fb8dc0",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3264,
+        "actions_consumed": 34511,
+        "groups": 32640,
+        "bytes": 805812,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "historical_anchor",
+      "seed": 9860000,
+      "stream_sha256": "33f4cb9e67927f64d9fb9a2c445b7834aba9f09eb9ab9520916a928589931f09",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 11124,
+        "actions_consumed": 112709,
+        "groups": 103927,
+        "bytes": 2599632,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "deployed",
+      "seed": 9860001,
+      "stream_sha256": "e2a26bcb2f41f7066545f8b016e1b004f04e723426a76c87485df0e41ddf4233",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2954,
+        "actions_consumed": 31060,
+        "groups": 29540,
+        "bytes": 727200,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "anchored",
+      "seed": 9860001,
+      "stream_sha256": "e2a26bcb2f41f7066545f8b016e1b004f04e723426a76c87485df0e41ddf4233",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2954,
+        "actions_consumed": 31060,
+        "groups": 29540,
+        "bytes": 727200,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "unanchored",
+      "seed": 9860001,
+      "stream_sha256": "e2a26bcb2f41f7066545f8b016e1b004f04e723426a76c87485df0e41ddf4233",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2954,
+        "actions_consumed": 31060,
+        "groups": 29540,
+        "bytes": 727200,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "historical_anchor",
+      "seed": 9860001,
+      "stream_sha256": "37a38a8cd6d3cae4fa88184416de8afb8eccdb4dacc4fcaf07e9981d1a2836d1",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 7653,
+        "actions_consumed": 79670,
+        "groups": 74154,
+        "bytes": 1845888,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "deployed",
+      "seed": 9860002,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "anchored",
+      "seed": 9860002,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "unanchored",
+      "seed": 9860002,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "historical_anchor",
+      "seed": 9860002,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "deployed",
+      "seed": 9860003,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "anchored",
+      "seed": 9860003,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "unanchored",
+      "seed": 9860003,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "historical_anchor",
+      "seed": 9860003,
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3509,
+        "actions_consumed": 34726,
+        "groups": 33525,
+        "bytes": 819012,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "deployed",
+      "seed": 9860004,
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3509,
+        "actions_consumed": 34726,
+        "groups": 33525,
+        "bytes": 819012,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "anchored",
+      "seed": 9860004,
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3509,
+        "actions_consumed": 34726,
+        "groups": 33525,
+        "bytes": 819012,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "unanchored",
+      "seed": 9860004,
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3509,
+        "actions_consumed": 34726,
+        "groups": 33525,
+        "bytes": 819012,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "historical_anchor",
+      "seed": 9860004,
+      "stream_sha256": "a96088b0b7fafedabaaf91229c57342838bf823cb171103a0b92c67b688cd555",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3596,
+        "actions_consumed": 34888,
+        "groups": 33953,
+        "bytes": 826092,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "deployed",
+      "seed": 9860005,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "anchored",
+      "seed": 9860005,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "unanchored",
+      "seed": 9860005,
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "candidate": "historical_anchor",
+      "seed": 9860005,
+      "stream_sha256": "a9b812289e9709aaa22272c2286a70ccf2837c9a91707bf1ca025381e2f42cb7",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3596,
+        "actions_consumed": 34888,
+        "groups": 33953,
+        "bytes": 826092,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    }
+  ],
+  "comparisons": {
+    "anchored": [
+      {
+        "seed": 9860000,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860001,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860002,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860003,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860004,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860005,
+        "all10_commands_equal_to_deployed": true
+      }
+    ],
+    "unanchored": [
+      {
+        "seed": 9860000,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860001,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860002,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860003,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860004,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860005,
+        "all10_commands_equal_to_deployed": true
+      }
+    ],
+    "historical_anchor": [
+      {
+        "seed": 9860000,
+        "all10_commands_equal_to_deployed": false
+      },
+      {
+        "seed": 9860001,
+        "all10_commands_equal_to_deployed": false
+      },
+      {
+        "seed": 9860002,
+        "all10_commands_equal_to_deployed": true
+      },
+      {
+        "seed": 9860003,
+        "all10_commands_equal_to_deployed": false
+      },
+      {
+        "seed": 9860004,
+        "all10_commands_equal_to_deployed": false
+      },
+      {
+        "seed": 9860005,
+        "all10_commands_equal_to_deployed": false
+      }
+    ]
+  },
+  "calibration_sha256": "56f7854a86462bc24fd12b869a05780c4595ee80f2d99cd1e70297139616d79f",
+  "scope": "Canonical all10hero commands after complete independent native replay audit. Seed diversity is not trial independence."
+}

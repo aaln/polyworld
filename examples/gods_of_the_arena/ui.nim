@@ -5,7 +5,8 @@ import
   chroma, pixie, silky, vmath, windy,
   polyworld/[stats, metrics, actioncam, chrome, configs, gameuis, inputs, pathing, player, rtscameras,
     stackpanels],
-  content, sim, game, controls, layouts, shops, maps
+  content, sim, game, controls, layouts, shops, maps, playui
+from keybinds import abilityKeyLabel, controlPreset, MouseKeyControls
 
 const
   ## Icons draw at power-of-two sizes so the 128 and 256 px source art
@@ -94,7 +95,7 @@ proc currentLayout*(window: Window): GameUiLayout =
   ## Returns the nine-region HUD layout in Silky layout space.
   initGameUiLayout(
     vec2(window.size.x.float32, window.size.y.float32) /
-      gameUiScale(window),
+      gotaUiScale(window),
     TransportHeight
   )
 
@@ -157,7 +158,8 @@ proc mouseOverUi*(
     primaryId = 0'i32
 ): bool =
   ## Returns whether the pointer is over a visible game UI panel.
-  if shopOpen or window.statsContains(mouse) or mouseOverDebugMenu(mouse):
+  if shopOpen or window.statsContains(mouse) or mouseOverDebugMenu(mouse) or
+      playUiContains(mouse, currentLayout(window).size):
     return true
   let chrome = currentChrome(window)
   if primaryId == 0:
@@ -200,6 +202,15 @@ proc teamHudColor*(team: Team): ColorRGBX =
     rgbx(224, 80, 83, 255)
   else:
     rgbx(76, 128, 232, 255)
+
+proc unitHealthColor*(unitTeam: Team): ColorRGBX =
+  ## Friendly green / enemy red in human play; faction colors otherwise.
+  if options.playerSlot > 0 and not run.replayMode:
+    let viewer = run.world.heroes[options.playerSlot - 1].team
+    if unitTeam == viewer:
+      return rgbx(72, 201, 92, 255)
+    return rgbx(220, 62, 54, 255)
+  teamHudColor(unitTeam)
 
 proc classLabel(style: HeroAttackStyle): string =
   ## Returns the compact class word shown under a hero name.
@@ -407,6 +418,26 @@ proc selectHeroCard(
   primaryId = id
   followSelection = true
 
+proc liveMousePressed*(window: Window, button: Button): bool =
+  ## WASD / QWER seats must not treat A/S/D as mouse buttons. Spectator and
+  ## MouseKey still use those aliases.
+  if isHumanGame() and controlPreset != MouseKeyControls:
+    window.buttonPressed[button]
+  else:
+    window.mousePressed(button)
+
+proc liveMouseDown*(window: Window, button: Button): bool =
+  if isHumanGame() and controlPreset != MouseKeyControls:
+    window.buttonDown[button]
+  else:
+    window.mouseDown(button)
+
+proc liveMouseReleased*(window: Window, button: Button): bool =
+  if isHumanGame() and controlPreset != MouseKeyControls:
+    window.buttonReleased[button]
+  else:
+    window.mouseReleased(button)
+
 proc minimapMap(panel: GameUiPanel): GameUiPanel =
   ## Returns the map rectangle inside the minimap plate's frame.
   panel.inset(8)
@@ -425,10 +456,11 @@ proc updateMinimapCamera*(
   let
     chrome = currentChrome(window)
     area = chrome.minimap.minimapMap()
-  if window.mousePressed(MouseLeft) and area.contains(mouse):
+  if liveMousePressed(window, MouseLeft) and area.contains(mouse):
     minimapPanning = true
     followSelection = false
-  if not window.mouseDown(MouseLeft):
+    followPlayer = false
+  if not liveMouseDown(window, MouseLeft):
     minimapPanning = false
   if minimapPanning:
     let point = minimapWorldPoint(
@@ -639,7 +671,7 @@ proc drawHeroMeters(
     hpBar.size,
     hero.hp.float32,
     hero.maxHp.float32,
-    teamHudColor(hero.team)
+    unitHealthColor(hero.team)
   )
   sk.drawBar(
     manaBar.origin,
@@ -721,6 +753,7 @@ proc drawUi*(
     focusPlayerHero: var bool
 ) =
   ## Draws every Silky HUD panel for the current frame.
+  tooltipAbility = -1
   if shopOpen and options.playerSlot > 0 and not run.replayMode:
     sk.drawShop(window, run.world, run.world.heroes[options.playerSlot - 1],
       currentLayout(window).size, transport.playing)
@@ -947,16 +980,22 @@ proc drawUi*(
       )
       for slot in HeroAbilitySlot:
         let
+          bar =
+            if isHumanGame(): selectedUnit(humanHero().id, viewMode)
+            else: selection
           i = slot.ord
           well = details.abilities[i]
-          spec = selection.abilities[slot].abilitySpec
-          empty = selection.charges[slot] == 0
+        if bar == nil:
+          continue
+        let
+          spec = bar.abilities[slot].abilitySpec
+          empty = bar.charges[slot] == 0
           remaining =
-            if empty: max(selection.cooldowns[slot], selection.recharges[slot])
-            else: selection.cooldowns[slot]
+            if empty: max(bar.cooldowns[slot], bar.recharges[slot])
+            else: bar.cooldowns[slot]
         sk.drawAbilityIcon(
           well,
-          abilityIconKey(selection.abilities[slot]),
+          abilityIconKey(bar.abilities[slot]),
           if remaining > 0:
             rgbx(150, 150, 158, 255)
           else:
@@ -965,10 +1004,12 @@ proc drawUi*(
         sk.drawCooldownSweep(
           well, remaining, if empty: spec.rechargeTicks else: spec.cooldownTicks
         )
-        if options.playerSlot > 0 and not run.replayMode and
-          selection.id == run.world.heroes[options.playerSlot - 1].id:
+        if isHumanGame() and bar.id == humanHero().id:
             if window.hudClicked(sk, well):
-              armedAbility = slot.ord.int32
+              hudAbilityRequest = slot.ord.int32
+            if sk.hovered(well):
+              tooltipAbility = slot.ord
+              tooltipAnchor = well
             if armedAbility == slot.ord.int32:
               let color = rgbx(255, 223, 133, 255)
               sk.drawRect(well.origin, vec2(well.size.x, 3), color)
@@ -1096,14 +1137,17 @@ proc drawUi*(
       )
     for i in 0 .. 5:
       let well = details.abilities[i]
-      if i < 4 and selection.kind == SelectedHero:
+      let bar =
+        if isHumanGame(): selectedUnit(humanHero().id, viewMode)
+        else: selection
+      if i < 4 and bar != nil:
         let
           slot = HeroAbilitySlot(i)
           remaining =
-            if selection.charges[slot] == 0:
-              max(selection.cooldowns[slot], selection.recharges[slot])
+            if bar.charges[slot] == 0:
+              max(bar.cooldowns[slot], bar.recharges[slot])
             else:
-              selection.cooldowns[slot]
+              bar.cooldowns[slot]
         if remaining > 0:
           sk.drawLabel(
             $cooldownSeconds(remaining),
@@ -1114,19 +1158,19 @@ proc drawUi*(
             CenterAlign
           )
         let
-          spec = selection.abilities[slot].abilitySpec
+          spec = bar.abilities[slot].abilitySpec
           badge = well.origin + vec2(3, 2)
         sk.drawRect(badge, vec2(28, 20), rgbx(0, 0, 0, 190))
         sk.drawLabel(
-          $selection.charges[slot] & "/" & $spec.charges,
+          $bar.charges[slot] & "/" & $spec.charges,
           badge,
           vec2(28, 20),
           rgbx(255, 255, 255, 255),
           "Small",
           CenterAlign
         )
-        if selection.recharges[slot] > 0:
-          let progress = 1 - selection.recharges[slot].float32 /
+        if bar.recharges[slot] > 0:
+          let progress = 1 - bar.recharges[slot].float32 /
             max(1, spec.rechargeTicks).float32
           sk.drawRect(
             well.origin + vec2(3, well.size.y - 5),
@@ -1144,7 +1188,7 @@ proc drawUi*(
             "Hud",
             CenterAlign
           )
-      sk.drawAbilityKey(well, AbilityKeys[i])
+      sk.drawAbilityKey(well, if isHumanGame() and i < 4: abilityKeyLabel(i) else: AbilityKeys[i])
 
   if inventoryHero != nil:
     for slot in 0 ..< InventorySlots:

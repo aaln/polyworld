@@ -1,0 +1,4638 @@
+{
+  "schema": "gota-microplay-study/1",
+  "created_at": "2026-09-20T15:39:38Z",
+  "objective": "Test whether assistance reduces allied deaths beyond finishing alone.",
+  "game_version": "2026.9.16.5",
+  "source": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+  "runtime_root": "/Users/aaln/experiments/softmax/polyworld-gota-clean-20260916-r5",
+  "parent_basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+  "policies": {
+    "parent": {
+      "ir_sha256": "fc2dfa33dce067542c9ca2391246a19051bf000ca4209d60b0dd2a099ba5ed37",
+      "basic_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+      "roundtrip": true
+    },
+    "finish": {
+      "ir_sha256": "13ceb5e442a85ad6da57b3f23744905d58a9de793c328348aeb8b293c368ad11",
+      "basic_sha256": "3baa924261072bb8f5af5c12565367186382fc36a4cb715ac674f462e6c26d4d",
+      "roundtrip": true
+    },
+    "assist": {
+      "ir_sha256": "ba30b5ba4179773ab28fe5556698c60aee6d24d039aa88122b791e4f392526eb",
+      "basic_sha256": "3c053516652e67d29982ac3ce8b243dd59f3c83f28d0d484786b0c99fabaaa38",
+      "roundtrip": true
+    },
+    "combined": {
+      "ir_sha256": "8bc8a9269a61c897dae72433e8a285b171da938f6460039458d7fc6cff50d540",
+      "basic_sha256": "1132ae8adbbca488616f1dec5fedea5010a156a1349ce7e701e5ffff58210780",
+      "roundtrip": true
+    }
+  },
+  "instrument_sha256": {
+    "ir.py": "0481a4703ab458987166af932113852d52776455596c4718a722c5c2c57d2bef",
+    "study.py": "383cd3a1956be0301fb72e99c608cb54a8f58ceb87fc62f2dbc4a143c8baca64",
+    "encounter.nim": "b1d6c268e2b762c2c47bf4246b360481d67d4ca699b71e8738ba696efe41bd8a",
+    "ir_v2.py": "d11ae70c6fe83ce8d491b96c85f73d669571aa1eceaaa8840c7c46d070453842",
+    "study_v2.py": "3d31a96bdf504035e7b3fbfc2b1a15de07b131ac23e4b3f29bbb341894402d2b",
+    "team_confirmation.py": "182cd442b45f5ecd1ec999a9cf4a9278e6e9897f50913db6b222e675749d900f"
+  },
+  "binary_sha256": "1929655e7a6bdcf21ade22aaaf573ce2eabe5103855f2bc2c8621d9918f75eff",
+  "unit": "matched six-second encounter, same layout/classes/resources/seed/opponent controller",
+  "discovery": [
+    {
+      "id": "cooperation/fresh/ally_rescue/class0/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914001,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class0/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914002,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class0/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914003,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class0/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914005,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class0/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914006,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class0/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914007,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class0/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914009,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class0/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914010,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class0/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914011,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class0/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914013,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class0/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914014,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class0/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 0,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914015,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 0,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class1/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914017,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class1/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914018,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class1/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914019,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class1/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914021,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class1/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914022,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class1/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914023,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class1/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914025,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class1/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914026,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class1/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914027,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class1/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914029,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class1/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914030,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class1/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 1,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914031,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 1,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class2/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914033,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class2/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914034,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class2/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914035,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class2/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914037,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class2/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914038,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class2/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914039,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class2/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914041,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class2/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914042,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class2/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914043,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class2/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914045,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class2/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914046,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class2/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 2,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914047,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 2,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class3/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914049,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class3/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914050,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class3/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914051,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class3/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914053,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class3/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914054,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class3/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914055,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class3/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914057,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class3/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914058,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class3/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914059,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class3/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914061,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class3/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914062,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class3/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 3,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914063,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 3,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class4/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914065,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class4/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914066,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class4/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914067,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class4/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914069,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class4/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914070,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class4/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914071,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class4/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914073,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class4/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914074,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class4/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914075,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class4/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914077,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class4/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914078,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class4/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 4,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914079,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class5/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914081,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class5/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914082,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class5/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914083,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class5/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914085,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class5/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914086,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class5/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914087,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class5/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914089,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class5/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914090,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class5/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914091,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class5/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914093,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class5/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914094,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class5/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 5,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914095,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 5,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class6/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914097,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class6/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914098,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class6/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914099,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class6/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914101,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class6/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914102,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class6/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914103,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class6/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914105,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class6/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914106,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class6/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914107,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class6/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914109,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class6/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914110,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class6/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 6,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914111,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class7/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914113,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class7/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914114,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class7/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914115,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class7/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914117,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class7/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914118,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class7/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914119,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class7/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914121,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class7/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914122,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class7/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914123,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class7/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914125,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class7/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914126,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class7/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 7,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914127,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 7,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class8/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914129,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class8/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914130,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class8/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914131,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class8/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914133,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class8/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914134,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class8/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914135,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class8/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914137,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class8/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914138,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class8/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914139,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class8/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914141,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class8/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914142,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class8/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 8,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914143,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 8,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class9/side0/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914145,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class9/side0/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914146,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class9/side0/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": false,
+      "seed": 914147,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class9/side0/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914149,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 6,
+          "hp": 125
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 4,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class9/side0/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914150,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class9/side0/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 0,
+      "automatic_spells": true,
+      "seed": 914151,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 1,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 4,
+          "x": 67,
+          "y": 21,
+          "controller": "fixed",
+          "target": 1
+        },
+        {
+          "slot": 6,
+          "class": 6,
+          "x": 67,
+          "y": 20,
+          "controller": "fixed",
+          "target": 0
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class9/side1/spells0",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914153,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class9/side1/spells0",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914154,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class9/side1/spells0",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": false,
+      "seed": 914155,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/ally_rescue/class9/side1/spells1",
+      "family": "ally_rescue",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914157,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 0,
+          "x": 66,
+          "y": 20,
+          "controller": "fixed",
+          "target": 1,
+          "hp": 125
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 4,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5,
+          "hp": 140
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/duel_control/class9/side1/spells1",
+      "family": "duel_control",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914158,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 0,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": "cooperation/fresh/crossfire/class9/side1/spells1",
+      "family": "crossfire",
+      "partition": "cooperation",
+      "class": 9,
+      "side": 1,
+      "automatic_spells": true,
+      "seed": 914159,
+      "ticks": 144,
+      "actors": [
+        {
+          "slot": 6,
+          "class": 9,
+          "x": 66,
+          "y": 21,
+          "controller": "subject"
+        },
+        {
+          "slot": 5,
+          "class": 1,
+          "x": 66,
+          "y": 20,
+          "controller": "subject"
+        },
+        {
+          "slot": 0,
+          "class": 4,
+          "x": 65,
+          "y": 21,
+          "controller": "fixed",
+          "target": 6
+        },
+        {
+          "slot": 1,
+          "class": 6,
+          "x": 65,
+          "y": 20,
+          "controller": "fixed",
+          "target": 5
+        }
+      ]
+    }
+  ],
+  "holdout": [],
+  "selection": {
+    "candidate": "combined",
+    "control": "finish",
+    "reference": "parent",
+    "requirements": [
+      "strictly fewer allied deaths than finish and parent",
+      "no fewer enemy deaths than finish or parent",
+      "no additional allied deaths per spell mode relative to finish or parent",
+      "identical duel-control state hashes versus parent"
+    ],
+    "scope": "Local cooperative skill only; no league promotion."
+  },
+  "metrics": {
+    "enemy_deaths": "All active enemy first deaths during the encounter; no respawn within 144ticks.",
+    "ally_deaths": "Deaths of every active allied participant, including fixed-controller helpers.",
+    "enemy_hp_loss": "Sum max(previous_HP-current_HP,0) per tick. A net damage proxy; simultaneous healing can mask damage.",
+    "ally_hp_loss": "Same net HP loss proxy for all allied participants.",
+    "basic_hits": "Actual subject selfAttacksLanded increments; engine counter, not command count.",
+    "target_switches": "Changes between nonzero engine target intents, not cancelled swings.",
+    "instruction_budget": "Real host maxInstructions=20000; work<=50000; failures invalidate experiment."
+  },
+  "limits": [
+    "Constructed encounters, not randomly sampled competitive games.",
+    "Hero classes may be placed on either color to separate class from side.",
+    "Non-subject fixed controllers expose a known attack intent; they are not learned opponent replicas.",
+    "Automatic and manual spells are separate strata; manual spells isolate basic mechanics.",
+    "Pinned historical release; no claim that this is the current hosted release.",
+    "Initial state is constructed; audit is deterministic fixture replay, not a normal hosted replay."
+  ],
+  "predecessor": {
+    "study": "microplay-20260920",
+    "outcome": "No target refinements in256encounters; no qualifier."
+  },
+  "prior_discovery_sha256": "0c1d013a64c50d2e0d464f8d9599e9a759fa843a789e460e2859c74c6374fcbc"
+}

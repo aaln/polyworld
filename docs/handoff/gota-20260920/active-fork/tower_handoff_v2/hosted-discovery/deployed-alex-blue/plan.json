@@ -1,0 +1,57 @@
+{
+  "name": "deployed-alex-blue",
+  "subject": "00cd9483-0309-4613-bf61-89f3f4a33d01",
+  "rival": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+  "color": 1,
+  "games": 40,
+  "role": "fresh-deployed-control",
+  "policy_version": "00cd9483-0309-4613-bf61-89f3f4a33d01",
+  "rival_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+  "own_slots": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "roster": [
+    "a30542cb-54de-4109-92e6-bcabca7db4d8",
+    "a30542cb-54de-4109-92e6-bcabca7db4d8",
+    "a30542cb-54de-4109-92e6-bcabca7db4d8",
+    "a30542cb-54de-4109-92e6-bcabca7db4d8",
+    "a30542cb-54de-4109-92e6-bcabca7db4d8",
+    "00cd9483-0309-4613-bf61-89f3f4a33d01",
+    "00cd9483-0309-4613-bf61-89f3f4a33d01",
+    "00cd9483-0309-4613-bf61-89f3f4a33d01",
+    "00cd9483-0309-4613-bf61-89f3f4a33d01",
+    "00cd9483-0309-4613-bf61-89f3f4a33d01"
+  ],
+  "target": {
+    "coworld_id": "cow_126f2fcb-80a0-4b6e-8166-eb6163576db5",
+    "variant_id": "competition"
+  },
+  "config": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  },
+  "game_version": "2026.9.16.5",
+  "auditor": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-hosted",
+  "auditor_sha256": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+  "parent_plan_sha256": "94693afb7d98ae222414c22772de47e13a087db0a0ac954cc581b32b47256ca6"
+}

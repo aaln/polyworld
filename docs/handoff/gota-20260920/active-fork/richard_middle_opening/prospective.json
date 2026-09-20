@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-20T08:02:01.571625+00:00",
+  "parent_snapshot": "0000-b2693715459d",
+  "fork": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b",
+  "behavior_parent": "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T060430Z-2c1b16/deployed-branch-capture/critical60",
+  "deployed_control": "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T060430Z-2c1b16/deployed-branch-capture/deployed",
+  "hypothesis": "Complete Richard red losses show no middle-lane defender at early single-hero tower pressure: first attack alarm opportunity1039 has every hero56+tiles away. Both pair radii wait until6987; three healthy carries travel home but never attack before8036fortloss. A single red Warlock early middle sentry, only in no-target/no-motion/no-defense fallback, may contest early middle pressure and preserve later offensive race. Use the first standing friendly middle tower16/17/18 and existing4tile inward rally; stop after1800ticks. Blue remains critical60 exactly. This is lane coverage based on public structures and class role, not a private rival or seed. Does not claim a local40tile response could save the already collapsing tower.",
+  "eligible_variants": [
+    "middle_warlock"
+  ],
+  "screen": {
+    "seed": 9820000,
+    "cases_per_source": 12,
+    "sources": [
+      "deployed",
+      "critical60",
+      "middle_warlock"
+    ],
+    "opponents": [
+      "accepted",
+      "default",
+      "blue_repair",
+      "support_anchor",
+      "deployed",
+      "center_proxy"
+    ],
+    "decision_rule": "All36complete locally audited games required. No lost fort-win cell versus either deployed orcritical60; all5ownedclasses equipment; totaldeaths <=max(1.15*deployed,deployed+5) and <=max(1.15*critical60,critical60+5). At leastone added redfortwin overcritical60 OR >=10%reddeath reduction without redfortregression. Full win/loss mechanism trace, exact7layer compile/extract, valid nativeclass/defense/deadline tests, unchangedVMlimits required. A pass only nominates furtherfreshlocalconfirmation, never upload orpromotion directly."
+  },
+  "confirmation": "Only after screen passes, freeze fresh expanded local confirmation and mixed-roster controls; then Richard and Jordan bothcolors via researcher.pyxp-create40minimum. No new hostedrequests inthisstudy until localqualification. Existingformal andtarget-specificgatesunchanged.",
+  "known_failures": "All-role inwardrally, broad damaged-pair alarms, near40/64 andquietrelease failures retained. This tests one early middlecoverage role before tower damage, not those repeated alarm variants. Critical60blue4/4in2trajectories is directional only; red0/4.",
+  "evidence": [
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T060430Z-2c1b16/richard-solo-pressure-opportunity.json",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T060430Z-2c1b16/richard-recall-paths.json"
+  ],
+  "status": "prospective-before-source-edit"
+}

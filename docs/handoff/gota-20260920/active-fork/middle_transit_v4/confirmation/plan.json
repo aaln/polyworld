@@ -1,0 +1,204 @@
+{
+  "sources": {
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas",
+    "casters": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/casters/policy.bas"
+  },
+  "variants": [],
+  "actual_variants": [
+    "deployed",
+    "casters"
+  ],
+  "opponents": {
+    "accepted": "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+    "default": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas",
+    "blue_repair": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+    "support_anchor": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas",
+    "center_proxy": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas",
+    "sentry_inward": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/relay_fused/policy.bas",
+    "readiness": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/candidates/first_level/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9840000,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9840001,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9840002,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9840003,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9840004,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9840005,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9840006,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9840007,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9840008,
+      "color": 0,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9840009,
+      "color": 1,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9840010,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9840011,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9840012,
+      "color": 0,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9840013,
+      "color": 1,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9840014,
+      "color": 0,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9840015,
+      "color": 1,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9840016,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9840017,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9840018,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9840019,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9840020,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9840021,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9840022,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9840023,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9840024,
+      "color": 0,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9840025,
+      "color": 1,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9840026,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9840027,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9840028,
+      "color": 0,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9840029,
+      "color": 1,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9840030,
+      "color": 0,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9840031,
+      "color": 1,
+      "opponent": "readiness"
+    }
+  ],
+  "custom_opponents": true,
+  "gates": null,
+  "decision_rule": "All64 full native games valid and all classes equipped. Retain every paired deployed winning case. No aggregate or per-color fort win regression. Total team deaths <= max(1.15*deployed,deployed+5). Add at least one red fort win or reduce red team deaths by at least10% without red win regression. Complete exact whole-source win and failure/draw review when available, including a new-opponent case; new command diversity report. Only a local qualification for hosted discovery, never acceptance or deployment.",
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/confirmation/config.json": "a80b7f5bb43cbd61039dd8c5675c2660ec6b7e77fac14cce97b4f27c3d14033b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/confirmation-prospective.json": "03d746820934536d900e07f51172bd4de6367f48f149ae8b085c9ea03039d2f0",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/screen/mechanism-qualification.json": "ddd28abdb96ae1b2623d6d8e974bf8a89b5b23b890a5cbf27050add6766e89b6",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T152212Z-628823/confirm_transit.py": "263a644cb320ba64a264edf8936f0f881e347ddfc29a355f7ca2ac258b189e2e",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/casters/policy.bas": "cd925baf36baed38b1ec19657f34966bd7b55c314b92b015b34b96466d96ddc3",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas": "781f97d93836e3bdf0b16304fa140b1bb18f2d56c169ce6788e0e8b9545f9d34",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas": "f8fba2fa812f9d88f156a928daecc5ea5509c0388187e2ee9f324f12cd6899e2",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas": "9d08e68910a1b095ca5c171f6394dee0bc7384245dbc9d6f491c109c206198d0",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/relay_fused/policy.bas": "194959d2601d3c931145b42990b41ebfeb8ce79a9f80ac48d88b240313dcb694",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/candidates/first_level/policy.bas": "0db261ce253e53269039ef558d0c4452a34a370c3008125a966104cb34fb671b"
+  },
+  "interpretation": "Fresh expanded complete local fixed-team confirmation,32 games per source against8 owned opponents,2seeds per color/opponent. All classes present; deterministic repeats are correlated; no hosted target qualification."
+}

@@ -1,0 +1,46 @@
+{
+  "game_version": "2026.9.15.1",
+  "published_source": "5422fb0c4b230ca7bfa57a69e450a369da2dabe9",
+  "source_files": {
+    "tmp/gota-ir/runtime-2026.9.15.1/examples/gods_of_the_arena/bots.nim": "3ed22312995465a89fd752de70960af498e555e40a63ea430e32723fa7b889c3",
+    "tmp/gota-ir/runtime-2026.9.15.1/examples/gods_of_the_arena/sim.nim": "d7514c0f3a13b00a45cdb0de5385a52b23d99940c5423e64640e5863ead400dd",
+    "tmp/gota-ir/runtime-2026.9.15.1/examples/gods_of_the_arena/content.nim": "cc8d643437b38060f0e43499a2892e62752584aa148d96d9c5ef8039831a32d4",
+    "tmp/gota-ir/runtime-2026.9.15.1/examples/gods_of_the_arena/maps.nim": "335c4a06bcd349d99a0226a8108504c7685d3249d8c5571c9b6e95324dc237e1",
+    "tmp/gota-ir/runtime-2026.9.15.1/examples/gods_of_the_arena/replays.nim": "671f3c4b39ce4f0819ff0add36d9a59f7af0fdedcca979d354c73327ae4fc1a1"
+  },
+  "verified_hosted_replays": [
+    {
+      "episode_request_id": "ereq_093cf2be-e3d2-4f76-adfb-5c0e5b7fda88",
+      "ticks": 17315,
+      "actions": 162620,
+      "audit_sha256": "83ab81a558163d13dd0b728a3bd1eaf9317c623db4a5d8142521b1f8c27f6a39",
+      "replay_sha256": "ddde7312a7a4080039fcca02c7c87a8a7a3a032ac7b8706383bcc186933b64cc"
+    },
+    {
+      "episode_request_id": "ereq_1c8ba923-6a3d-4914-a4b8-da5ed2ec2982",
+      "ticks": 22008,
+      "actions": 215600,
+      "audit_sha256": "f7e7f832b7db36671c64118c76aaf28aad436c38cb304f3b0b97b269063741e0",
+      "replay_sha256": "dc45b973d9a08e3daa91f642f0f8d3c2a6539aaf84bc76eafd93e5375bf77003"
+    },
+    {
+      "episode_request_id": "ereq_6b286adb-8caf-4f49-b316-fe7fd248704c",
+      "ticks": 19716,
+      "actions": 185722,
+      "audit_sha256": "0073c0c3e4679b9ce353bb26562ec6cadb96e229b0651a4c70330caf1a5789d4",
+      "replay_sha256": "c4bdca3824527dd100e9da68a6c81836fccf73af8964e035ce1e912650f6189c"
+    }
+  ],
+  "mechanics": [
+    "Explicit castTarget/castPoint and live ability charge/cooldown queries are available; automatic bot spells remain enabled.",
+    "Poison now checks ordinary attack range and exposure; the old unrestricted poison probe does not apply.",
+    "Every class has a mana-free basic attack whose damage includes every equipped damage bonus; equipment is not class-locked.",
+    "Five different ordered equipment items can preserve one permanent slot for consumables. Six live slots, no sell, duplicate equipment rejected.",
+    "Competition map preset has fixed map seed 54 and resolution 116. Match seed independently changes simulation randomness.",
+    "API game-config artifact retains seed 2026 while completed results and replay carry the effective randomized seed; match comparisons must use the latter."
+  ],
+  "limitations": [
+    "Source parity and three exact hosted replay reconstructions establish correspondence on those episodes; the local binary is not the hosted container.",
+    "Public replay inventory and actions describe incumbent behavior, not its private source or intentions."
+  ]
+}

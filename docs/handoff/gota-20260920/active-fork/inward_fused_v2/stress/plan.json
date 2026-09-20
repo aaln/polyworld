@@ -1,0 +1,94 @@
+{
+  "sources": {
+    "parent": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/parent/policy.bas",
+    "suppression_reference": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/suppression_reference/policy.bas",
+    "relay_fused": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/relay_fused/policy.bas"
+  },
+  "variants": [],
+  "actual_variants": [
+    "parent",
+    "suppression_reference",
+    "relay_fused"
+  ],
+  "opponents": {
+    "center_proxy": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9810000,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810001,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810002,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810003,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810004,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810005,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810006,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810007,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810008,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810009,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810010,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9810011,
+      "color": 1,
+      "opponent": "center_proxy"
+    }
+  ],
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/stress-prospective.json": "17a3df1fd65813fdf03539bb3d053b94d9f95ca6b92cd93b5ee0b53722f116fb",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/confirmation/qualification.json": "5a6a84f8350dd6888e868f8d638ff095853d46612f309cb7580de3b4db24be23",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T060430Z-2c1b16/fused_v2_stress.py": "997b636f295b7ff40d5d53c85ea52e2d40c59233d57aaa7e539d5d863789f604",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/stress/config.json": "835bbeb883ea4db55d7ac89a3de23544d9728ef01d46a2be29e8aa10d3b91c16",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/parent/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/suppression_reference/policy.bas": "3043195d9c7e22930e24e255a369b14213538d3bfdad09f97592e1cd4623606b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/relay_fused/policy.bas": "194959d2601d3c931145b42990b41ebfeb8ce79a9f80ac48d88b240313dcb694",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas": "9d08e68910a1b095ca5c171f6394dee0bc7384245dbc9d6f491c109c206198d0"
+  },
+  "custom_opponents": true,
+  "gates": null,
+  "decision_rule": "Every complete game must pass replay, VM and equipment checks. Candidate actual fort-win counts must be no lower than each control on each color. Candidate total deaths <= max(parent total * 1.25, parent total + 5) and <= max(suppression total * 1.15, suppression total + 5). Draws zero. A failure rejects unchanged local advancement; no aggregate rescue or threshold revision.",
+  "interpretation": "This implements the prospectively required extra center stress stage. Local evidence only; six games per color and correlated deterministic trajectories do not establish hosted generalization. Owned historical five-hero middle-lane push; not private rival code."
+}

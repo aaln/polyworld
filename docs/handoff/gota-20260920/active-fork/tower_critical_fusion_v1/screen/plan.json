@@ -1,0 +1,219 @@
+{
+  "sources": {
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/candidates/deployed/policy.bas",
+    "handoff": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/candidates/handoff/policy.bas",
+    "critical60": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/candidates/critical60/policy.bas",
+    "fusion": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/candidates/fusion/policy.bas"
+  },
+  "variants": [],
+  "actual_variants": [
+    "deployed",
+    "handoff",
+    "critical60",
+    "fusion"
+  ],
+  "opponents": {
+    "accepted": "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+    "default": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas",
+    "blue_repair": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+    "support_anchor": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas",
+    "center_proxy": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas",
+    "sentry_inward": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/relay_fused/policy.bas",
+    "readiness": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/candidates/first_level/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9930000,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9930001,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9930002,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9930003,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9930004,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9930005,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9930006,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9930007,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9930008,
+      "color": 0,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9930009,
+      "color": 1,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9930010,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9930011,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9930012,
+      "color": 0,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9930013,
+      "color": 1,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9930014,
+      "color": 0,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9930015,
+      "color": 1,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9930016,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9930017,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9930018,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9930019,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9930020,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9930021,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9930022,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9930023,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9930024,
+      "color": 0,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9930025,
+      "color": 1,
+      "opponent": "deployed"
+    },
+    {
+      "seed": 9930026,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9930027,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9930028,
+      "color": 0,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9930029,
+      "color": 1,
+      "opponent": "sentry_inward"
+    },
+    {
+      "seed": 9930030,
+      "color": 0,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9930031,
+      "color": 1,
+      "opponent": "readiness"
+    }
+  ],
+  "custom_opponents": true,
+  "gates": null,
+  "decision_rule": {
+    "native": "All ten actual classes, both colors, <=20000instructions/50000work,<=256globals/65536source bytes. Red actions preserve handoff; blue actions preserve critical60 on shared fixtures. Actual alarm activation, absent/dead/friendly/unanchored/far negatives,1200tickexpiry.",
+    "component_equivalence": "Full red Alexwin and full blue Richardwin must reproduce every controlled command and state hash with the new executable. Recorded rivals only; this is exact trajectory preservation, not fresh hosted games.",
+    "local": "128 complete games: deployed,handoff,critical60,fusion,32 cases each (2seeds per8opponents/color). All gear/allVM/replay checks. Retain every handoff red win, every critical60 blue win, and every deployed win. Total deaths <=max(1.15*deployed,deployed+5). >=60percent wins percolor vsaccepted. No thresholds changed after outcomes.",
+    "outcome": "If all pass, locally qualified integration only. Richardred remains0/40 in unchanged red component. No upload, acceptance or deployment from this study; cycle XP exhausted."
+  },
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/screen/config.json": "a80b7f5bb43cbd61039dd8c5675c2660ec6b7e77fac14cce97b4f27c3d14033b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/prospective.json": "0ed0877eb1e976f2cf1b922c219bc20e64c140a1b3963aa0f47251463ca90372",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/native-proof.json": "dfd25fe31eb2485cd532b8483a3b00e258981cbc1ff0a76cc08e4859d62d7455",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/native-repair-proof-v4.json": "75f8d267f831275a15877e3a8bb4c0b393c9eeea8a5b7f0ec1d42faab9c9ed20",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/validation-repair-plan-v4.json": "7faddc31eb2fbec85c436be58213a8ced087515555a68a7daa44e2c09e83fbd5",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/equivalence.json": "8901d84a3e3e1f9c1fe6ca483a0520dfcc714a4b4baaa22c7c1747606d4f0389",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T180014Z-078cc0/local_tower_critical_fusion_v3.py": "1cef4f3be1f44a0acad5b085a3fd6a9ef934c56bff252f3f3ae90042cced1d18",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/candidates/deployed/policy.bas": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/candidates/handoff/policy.bas": "7c2b843b8dbfd98f2e46cb3ba2b7f4b40f7ee6f2ad4c5575adfe771e09978b7b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/candidates/critical60/policy.bas": "d157d54aef9dc47f9d1a75a4f7216a76a3b63bb89688232b8ab6640a6b2f7140",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_critical_fusion_v1/candidates/fusion/policy.bas": "857a7dfe65f81e5e702b10183c5237b6dc9ff4fc0d8beb3c8a199f9cd69372a8",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas": "781f97d93836e3bdf0b16304fa140b1bb18f2d56c169ce6788e0e8b9545f9d34",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas": "f8fba2fa812f9d88f156a928daecc5ea5509c0388187e2ee9f324f12cd6899e2",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/candidates/deployed/policy.bas": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas": "9d08e68910a1b095ca5c171f6394dee0bc7384245dbc9d6f491c109c206198d0",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/candidates/relay_fused/policy.bas": "194959d2601d3c931145b42990b41ebfeb8ce79a9f80ac48d88b240313dcb694",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/candidates/first_level/policy.bas": "0db261ce253e53269039ef558d0c4452a34a370c3008125a966104cb34fb671b"
+  },
+  "interpretation": "Local integration against eight owned policies on bothcolors/allclasses. No new hosted games and known Richardred weakness remains."
+}

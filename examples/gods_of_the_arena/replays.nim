@@ -21,6 +21,9 @@ const
   ActionCastTarget* = 6'u8
   ActionCastPoint* = 10'u8
   ActionManualSpells* = 14'u8
+  ActionStop* = 15'u8
+  ActionPing* = 16'u8
+  ActionLastPing* = 19'u8
   MaxReplayBytes* = 64 * 1024 * 1024
   MaxReplayActions* = 10_000_000
   MaxReplayHashes* = 100_000_000
@@ -95,7 +98,9 @@ proc record*(recorder: ReplayRecorder, action: ReplayAction) =
       action.kind != ActionAttackMove and
       action.kind != ActionCastTarget and
       action.kind != ActionCastPoint and
-      action.kind != ActionManualSpells:
+      action.kind != ActionManualSpells and
+      action.kind != ActionStop and
+      action.kind notin ActionPing .. ActionLastPing:
     fail("replay action kind is invalid")
   recorder.data.actions.appendAction(action, MaxReplayActions)
 
@@ -250,7 +255,9 @@ proc validate*(data: ReplayData) =
         action.kind != ActionAttackMove and
         action.kind != ActionCastTarget and
         action.kind != ActionCastPoint and
-        action.kind != ActionManualSpells:
+        action.kind != ActionManualSpells and
+        action.kind != ActionStop and
+        action.kind notin ActionPing .. ActionLastPing:
       fail("replay action kind is invalid")
     var knownHero = false
     for hero in setup.heroes:

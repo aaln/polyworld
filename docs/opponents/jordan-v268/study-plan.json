@@ -1,0 +1,380 @@
+{
+  "schema": "gota-opponent-study/1",
+  "frozen_at": "2026-09-20T03:51:20.111096+00:00",
+  "target_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+  "selection": "All exact-version Jordan vs our two pinned policy versions in latest 20 completed rounds; outcomes ignored. Population: earliest episode per non-Jordan opponent-version and observer side before heldout cutoff.",
+  "holdout": "Chronologically last 4/20 Jordan episodes; no behavioral inspection until feature/model freeze.",
+  "observation": "One real policy instance (slot 0 or 5); predecision visibility only; no pooling teammate sensor views. Enemy VM commands excluded.",
+  "validation": "Skill starts inferred from visible targets/velocity; lagged preselection features. Report censored selections, residual, per-statement n and heldout accuracy vs conditional population and persistence. n<8 or heldout accuracy <= population => provisional. Duplicate observable trajectories are not independent evidence. Proxy unusable without rollout validation.",
+  "episodes": [
+    {
+      "id": "ereq_354100a3-f8be-435e-bde3-d7be87494b0f",
+      "created_at": "2026-09-19T17:17:58.226136Z",
+      "observer_slot": 0,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_3a830277-104c-47df-b45f-475f84adcbba",
+      "created_at": "2026-09-19T17:17:58.359664Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_c2933955-7e74-446e-944b-ef5c0ecdde47",
+      "created_at": "2026-09-19T18:21:59.031819Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_e7b7f449-8e52-4d27-be42-261fad9163c6",
+      "created_at": "2026-09-19T18:53:58.492150Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_975636fd-c5ad-487c-b47a-dbc39dfbb70e",
+      "created_at": "2026-09-19T19:57:59.060732Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_07b5c418-f0ce-4348-bd40-8e91e5edcf4f",
+      "created_at": "2026-09-19T19:57:59.293423Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_904838da-3238-4764-9fc2-9e912246dd62",
+      "created_at": "2026-09-19T20:30:40.782143Z",
+      "observer_slot": 0,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_3a7eea10-dea5-4b06-84dc-be73bab020df",
+      "created_at": "2026-09-19T20:30:41.204703Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_14ec8ca3-a9df-4e18-acad-14163acec3c7",
+      "created_at": "2026-09-19T21:01:58.194884Z",
+      "observer_slot": 0,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_730976eb-c0a7-4124-a467-86329d51be70",
+      "created_at": "2026-09-19T22:05:58.226011Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_e5ef9923-2c86-4e08-88a7-96fedaf06469",
+      "created_at": "2026-09-19T22:37:58.026816Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_e3bf4a52-1935-4b75-b94f-6029e4147b3f",
+      "created_at": "2026-09-19T23:09:58.413644Z",
+      "observer_slot": 0,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_2f7d925b-e88b-4da0-93ab-f0367802d6b1",
+      "created_at": "2026-09-19T23:41:58.214649Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_5ae032db-6be0-4b0f-99d1-dfb468c2bc05",
+      "created_at": "2026-09-20T00:13:58.237146Z",
+      "observer_slot": 0,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_031ab445-6df4-4d98-b915-6ff9044678f4",
+      "created_at": "2026-09-20T00:45:58.109873Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_66edaa67-cd21-4285-b307-138a47fdfa0b",
+      "created_at": "2026-09-20T01:17:58.278559Z",
+      "observer_slot": 5,
+      "split": "train",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_20fc56c5-3ea4-4945-89ff-4d32587a9dec",
+      "created_at": "2026-09-20T02:21:58.175873Z",
+      "observer_slot": 5,
+      "split": "heldout",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_fa77ce60-00ed-448b-8bf0-30528c340b82",
+      "created_at": "2026-09-20T02:21:58.238885Z",
+      "observer_slot": 0,
+      "split": "heldout",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_033c22c8-e976-4b7c-b05d-65b2e0ce6064",
+      "created_at": "2026-09-20T02:53:57.938282Z",
+      "observer_slot": 5,
+      "split": "heldout",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_09fd9a45-9a05-4188-ae85-8a0db7690b69",
+      "created_at": "2026-09-20T03:27:04.723772Z",
+      "observer_slot": 5,
+      "split": "heldout",
+      "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "opponent_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_e1244430-5891-46d5-9b54-b00a6614bc00",
+      "created_at": "2026-09-19T17:17:58.186983Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "99ff8b49-8bb6-4ee2-9204-ff24a8efda4e",
+      "opponent_label": "relh-gods-of-the-arena:v154",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_4765ba8a-5b2d-41a3-b201-bceb14fe834a",
+      "created_at": "2026-09-19T17:17:58.212814Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "opponent_label": "gota-g002:v1",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_0220487d-49f6-4b09-b232-f94a83ccc39e",
+      "created_at": "2026-09-19T17:17:58.348850Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "2777766f-4931-4fd9-83f2-44a3f509ede1",
+      "opponent_label": "nancy-goa:v2",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_28ab1bf0-cfda-4dba-b485-0873cb40baaf",
+      "created_at": "2026-09-19T18:21:59.055803Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "1a78a3f9-8112-4c2c-831a-f0ffee8dbacc",
+      "opponent_label": "macromackie-gota:v4",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_58054ba6-4178-4c0e-89f0-6029601a3675",
+      "created_at": "2026-09-19T18:53:58.376352Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "99ff8b49-8bb6-4ee2-9204-ff24a8efda4e",
+      "opponent_label": "relh-gods-of-the-arena:v154",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_38cc5db7-f8a8-4ba2-8433-42f3247cf50c",
+      "created_at": "2026-09-19T18:53:58.402589Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "d10d7d74-40a7-4f6c-8838-e09729160349",
+      "opponent_label": "black-kite:v16",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_5cf577c7-ee4b-462b-9d96-9b4add399e42",
+      "created_at": "2026-09-19T18:53:58.437175Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "2777766f-4931-4fd9-83f2-44a3f509ede1",
+      "opponent_label": "nancy-goa:v2",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_4635aa31-fcfd-4040-a29b-f60b867acf5a",
+      "created_at": "2026-09-19T18:53:58.517631Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "a7551ee6-ef55-48f0-81bc-d1ba68ca54c2",
+      "opponent_label": "gota-codex-side-aware-team-secondary-20260917:v1",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_c261a5f1-3196-4237-ae2f-17acce71d1ce",
+      "created_at": "2026-09-19T19:25:58.374391Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+      "opponent_label": "khors:v1",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_420c55d9-9b17-4337-8b2f-5586f90790a1",
+      "created_at": "2026-09-19T19:25:58.407218Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "c26dab11-7d46-48f4-bb60-c0655d0bd55f",
+      "opponent_label": "richard-gods-of-the-arena:v93",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_0cd68346-eccf-46f6-aaa6-f74e67a6ecd0",
+      "created_at": "2026-09-19T19:57:59.153596Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "opponent_label": "gota-g002:v1",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_1c614d62-c43c-48f3-a333-1952209990ad",
+      "created_at": "2026-09-19T19:57:59.340900Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "a4590ed4-0b0c-4d86-8968-0844796f30e0",
+      "opponent_label": "red-kite:v34",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_2a68bcf1-91fa-465d-80c5-08b5bc01a252",
+      "created_at": "2026-09-19T20:30:40.771064Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "bc9b34d4-46f4-4f7f-aefd-f801b7dcd078",
+      "opponent_label": "richard-gods-of-the-arena:v99",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_24751d80-288c-486e-938e-7e4516decf16",
+      "created_at": "2026-09-19T21:33:58.721505Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+      "opponent_label": "gota-g003:v2",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_7c5d2590-7451-44be-91c0-0fa466ac7a15",
+      "created_at": "2026-09-19T22:05:58.086149Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "e8aed568-d03c-49bf-beaf-68c731f05d26",
+      "opponent_label": "Polyworld GOTA base.bas:v1",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_fdb5b4e9-3da8-4994-8208-303b2281632a",
+      "created_at": "2026-09-19T22:37:58.204629Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "3ccd4955-3d9c-4c79-a243-e5dc12d650ad",
+      "opponent_label": "gota-vanguard-rally-hold:v1",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_a0aa29ec-2ac2-48f8-a788-7e12708840a3",
+      "created_at": "2026-09-19T22:37:58.250141Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "70de2983-7f5f-4fbf-b722-cf783bda4953",
+      "opponent_label": "richard-gods-of-the-arena:v113",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_ec129a0d-b046-4cbf-b4c8-8a37c531e65c",
+      "created_at": "2026-09-19T23:09:58.462702Z",
+      "observer_slot": 5,
+      "split": "population",
+      "opponent_version": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+      "opponent_label": "gota-g003:v2",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_ed937886-1075-4c52-a876-1ec765195df3",
+      "created_at": "2026-09-19T23:41:57.952954Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "a88f1afe-0cfd-491e-87aa-c16df4662e89",
+      "opponent_label": "richard-gods-of-the-arena:v115",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_fe1d9249-de66-461b-ada4-55567473a1d0",
+      "created_at": "2026-09-20T01:17:58.040891Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "d10d7d74-40a7-4f6c-8838-e09729160349",
+      "opponent_label": "black-kite:v16",
+      "version": "2026.9.16.5"
+    },
+    {
+      "id": "ereq_4d3260d2-64fe-4bd4-9d37-1dc9105778bf",
+      "created_at": "2026-09-20T02:21:58.021686Z",
+      "observer_slot": 0,
+      "split": "population",
+      "opponent_version": "a4590ed4-0b0c-4d86-8968-0844796f30e0",
+      "opponent_label": "red-kite:v34",
+      "version": "2026.9.16.5"
+    }
+  ]
+}

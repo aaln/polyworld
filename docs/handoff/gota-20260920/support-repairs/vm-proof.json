@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "activation": [
+    {
+      "candidate": "anchored",
+      "class": 7,
+      "target": 106,
+      "baseline_target": 0,
+      "committed": 1
+    },
+    {
+      "candidate": "unanchored",
+      "class": 7,
+      "target": 106,
+      "baseline_target": 0,
+      "committed": 1
+    },
+    {
+      "candidate": "anchored",
+      "class": 8,
+      "target": 106,
+      "baseline_target": 0,
+      "committed": 1
+    },
+    {
+      "candidate": "unanchored",
+      "class": 8,
+      "target": 106,
+      "baseline_target": 0,
+      "committed": 1
+    }
+  ],
+  "dense_decisions": 60,
+  "negative_cases_per_caster_candidate": 4,
+  "blue_and_noncaster_action_parity": true,
+  "max_instructions": 15909,
+  "max_fixture_work": 24491,
+  "vm_sha256": "b343132ca0af08549a1c490ccefb5fcb79b1e142567d0b7886fea23faffc9d62",
+  "scope": "Native scenario VM correctness/budget check; full game budgets and outcomes still required."
+}

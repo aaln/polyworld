@@ -1,0 +1,201 @@
+id: gods-of-the-arena-neural-siege-counter-20260920
+game: gods_of_the_arena
+status: promoted
+parent: gods-of-the-arena-neural-group-departure-20260920
+target_lane: richard
+protected_lane: relhalpha
+hypothesis: >
+  During neural tower-siege actions2/8 with the nearest objective within
+  squared300 tiles, answer a visible enemy hero targeting self from within
+  basic-attack range, selecting lowest HP among eligible attackers. Keep
+  retreat/regroup actions, fort finishing, home-defense and recovery priorities.
+  Do not chase enemies beyond attack range or infer a role from a slot.
+build:
+  source_paths:
+  - players/users/relh/co-gas/polyworld-basic/gods_of_the_arena_neural_siege_counter.bas
+  source_sha256: f48bb0057aeaf2ff939035324340183e34f8f9544e03226edfe62e78faad5a30
+  parent_policy_version_id: 6e0091d0-529d-44d5-ba91-521fce3e5655
+  protected_policy_version_id: 99ff8b49-8bb6-4ee2-9204-ff24a8efda4e
+  environment_snapshot: /Users/relh/Code/co-gas/.runtime/gota-round466-review-20260919/siege-counter-environment.json
+  coworld_id: cow_126f2fcb-80a0-4b6e-8166-eb6163576db5
+  coworld_version: 2026.9.16.5
+hosted:
+  policy_version_id: 7c370daf-3c5f-42f8-870b-54b79c495a44
+  version: 135
+  source_commit: fcdc915074115e772469c50daa61dc06b3ef8975
+  submitted: true
+  submission_id: sub_33ce8ac7-4458-4373-b642-201e18b0881f
+  membership_id: lpm_abca2b73-174b-42ed-9179-d02f9b2fadb2
+  membership_status: competing/active/champion
+  submission_receipt: .runtime/gota-round466-review-20260919/v135-submit.json
+  upload_receipt: .runtime/gota-round466-review-20260919/siege-counter-no-submit.json
+  initial_xp:
+    seed: 149816340
+    roster: fixed five-versus-five clones, mirrored teams
+    requests:
+      jordan_blue: xreq_c29e0f49-7b8c-4fcb-98cb-daa5c51a1c47
+      jordan_red: xreq_d5ce5e79-7d51-4680-97b4-073d9efd786d
+      redkite_blue: xreq_4d3f19c5-c082-4d10-9f9a-6b1e49a7ef71
+      redkite_red: xreq_8683c46d-a4f9-45cf-ba91-da73b3ae2e28
+      incumbent_blue: xreq_7c96e6de-7aa9-4879-b913-3f98cb93b01b
+      incumbent_red: xreq_e31a3f17-f992-40e3-8396-3496fd53b695
+    decision: Fully audited 5 wins / 1 loss; Jordan timeout converted to win. Broader preservation pending.
+  preservation_xp:
+    receipts: .runtime/gota-round466-review-20260919/xp-v135-preserve-*.json
+    requests:
+      aaron_blue: xreq_2629c0f4-e9b3-4d1d-96ef-549cac563d36
+      aaron_red: xreq_f33a1440-d89b-44d5-a429-24f1d45c6a2b
+      coach_blue: xreq_98cfb94e-2042-47b6-94ed-1b25cf3018cb
+      coach_red: xreq_893bbe7b-fa4d-4fc0-be44-5102277e370b
+      jordan_blue: xreq_3c317095-8fc7-4642-83e0-47314b2e9253
+      jordan_red: xreq_f1c0dec0-0b31-4a70-b381-356565265ddb
+      redkite_blue: xreq_a4b637ec-13b3-4a10-8cc7-7daf4ef0e03d
+      redkite_red: xreq_9a535f04-632f-4a36-ad7e-3f2da0069444
+      v154_blue: xreq_13cadb4c-53c3-4397-93f7-8e599c11e0cf
+      v154_red: xreq_add7bbe7-f37c-4bfd-9679-c9e699d8bb36
+evidence:
+- source: hosted
+  artifacts:
+  - .runtime/gota-round466-review-20260919/v135-coverage-manifest.json
+  - .runtime/gota-round466-review-20260919/v135-coverage-audit.json
+  notes: >
+    All six coverage requests and episodes completed:6W0L, full native hashes
+    zero, exact clone identities/teams/seeds/scores and36 logs verified.
+    Alex blue8876/red6065, BlackKite blue7273/red5471, Daveey2 blue6726/red10803.
+    All preserve parent wins; Daveey red ownfort133 (parent157), others400.
+    Candidate selected total25W1L across26 matches,176 logs, plus two incumbent
+    controls12 logs. This is selected coverage, not an unbiased win rate.
+    No further promotion: v135 remains active Richard champion; relh154 protected.
+- source: hosted
+  artifacts:
+  - .runtime/gota-round466-review-20260919/xp-v135-coverage-alex-blue.json
+  - .runtime/gota-round466-review-20260919/xp-v135-coverage-alex-red.json
+  - .runtime/gota-round466-review-20260919/xp-v135-coverage-blackkite-blue.json
+  - .runtime/gota-round466-review-20260919/xp-v135-coverage-blackkite-red.json
+  - .runtime/gota-round466-review-20260919/xp-v135-coverage-daveey-blue.json
+  - .runtime/gota-round466-review-20260919/xp-v135-coverage-daveey-red.json
+  notes: >
+    Post-promotion preservation coverage against BlackKite seed2021980287,
+    Alex and Daveey2 seed1821418976, mirrored fixed clone teams. These exact
+    fixtures were wins for parent v133. Environment reverified unchanged;
+    latest round504 still predates promotion, ranks relh4/Richard5.
+    Six requests verified running, not result evidence:
+    Alex blue xreq_c77cf5db-8af7-4292-ba88-f1575a912e63;
+    Alex red xreq_0deab95d-66a3-4dd8-82a2-1f8a1b9b2759;
+    BlackKite blue xreq_1c965662-8ab5-4c02-8dfb-69b238fcfdc2;
+    BlackKite red xreq_15699a89-7051-430b-9f87-ddb015e90478;
+    Daveey blue xreq_30c87404-268a-4479-8e5c-d29439b8b157;
+    Daveey red xreq_abe2eaca-f507-492b-94c0-6c94b4893d9b.
+- source: hosted
+  artifacts:
+  - .runtime/gota-round466-review-20260919/round504-relh-coach-terminal.json
+  - .runtime/gota-round466-review-20260919/xp-v135-round504-coach-blue.json
+  - .runtime/gota-round466-review-20260919/xp-v135-round504-coach-red.json
+  - .runtime/gota-round466-review-20260919/v135-round504-coach-manifest.json
+  - .runtime/gota-round466-review-20260919/v135-round504-coach-audit.json
+  notes: >
+    Post-promotion coverage: current Coach exact relh-blue ranked loss seed
+    1985970326. Native ranked replay10407 ticks, all hashes zero; terminal
+    samples show defenders108/109 target nearby creeps while visible enemy101
+    attacks fort2. Protected legacy v154's wave guard overrides nearest target
+    without fort-attacker priority. This is a whole-family comparison, not
+    a causal single-rule ablation. Mirrored active-v135 requests completed:
+    blue xreq_3e8ce3c1-3d59-46e1-a98b-e08f36c44796;
+    red xreq_f2338d89-663d-439d-9d64-11a40750bb12. Both win5529/11164,
+    ownfort400; full native hashes zero, rosters/seed/scores and12 clean logs
+    verified. Candidate total19W1L,140 logs, plus two incumbent controls12 logs.
+    No new champion changes; protected relh remains v154.
+- source: hosted
+  artifacts:
+  - .runtime/gota-round466-review-20260919/v135-current-coach-manifest.json
+  - .runtime/gota-round466-review-20260919/v135-current-coach-audit.json
+  notes: >
+    Current Coach matched panel completed and fully audited: v135 wins
+    blue5529/red11164, incumbent v133 wins blue7104/red11175. All four
+    full native hashes zero, identities/teams/seed/scores agree,24 logs clean.
+    Candidate total17W1L across18 selected matches (128 logs), plus two
+    matched incumbent controls (12 logs). Exact Jordan timeout is an added
+    win, all preservation outcomes retained, direct incumbent matchup split.
+    Current environment and committed source SHA reverified; Richard remains
+    lower lane5, relh4 protected. Evidence supports replacing Richard v133
+    with this exact uploaded v135; retain v133 as rollback.
+- source: hosted
+  artifacts:
+  - .runtime/gota-round466-review-20260919/v135-preserve-manifest.json
+  - .runtime/gota-round466-review-20260919/v135-preserve-audit.json
+  notes: >
+    All ten preservation requests and episodes completed; ten wins, zero
+    native hash mismatches, exact identities/teams/seeds/scores and70 logs
+    verified. Aaron8470/5803, historical Coach8470/5803, RedKite7273/5471,
+    Jordan10329/26291, protected v1545846/7694 (blue/red ticks). Each win
+    finishes ownfort400. Jordan slower than parent9705/20032 but no result
+    regression. Total initial plus preservation15W1L,116 audited logs.
+    Current round504 Coach is a1661ebb-7c77-4b7d-94ee-f5dbb27064ba, not the
+    historical53f15b12-2198-41d1-bb99-df4bdb1ff7fd tested above. Do not label
+    the historical fixture current top-three coverage. Matched698480638
+    current-Coach tests requested for both candidate and incumbent, each side:
+    v135 blue xreq_76a63710-3568-47d2-a6a6-4689c65e2fd9;
+    v135 red xreq_82537970-c7e4-49e2-afc1-9350e7fc4cd9;
+    v133 blue xreq_f11c60bc-f1f8-4127-a40f-29f03248ef28;
+    v133 red xreq_b82da0ae-b734-4a0e-b7e8-d81c288048fd.
+    All four verified running; promotion held pending their artifact audit.
+- source: hosted
+  artifacts:
+  - .runtime/gota-round466-review-20260919/v135-status.json
+  - .runtime/gota-round466-review-20260919/v135-manifest.json
+  - .runtime/gota-round466-review-20260919/v135-audit.json
+  - .runtime/gota-round466-review-20260919/v135-jordan-divergence.json
+  - .runtime/gota-round466-review-20260919/v135-jordan-first-counter.json
+  notes: >
+    All six request and episode rows completed; full native hashes zero,
+    clone rosters, teams, seed149816340, scores and46 logs verified.
+    Jordan blue6250/red16293 wins (parent red timeout28800 converted to win);
+    Red Kite blue7273/red5552 wins. Direct v133 blue win/red loss6292.
+    Jordan red common hash prefix9561: at9562 Warlock10325,94 switches from
+    structure21 to enemy10621,92 actively targeting103; enemyHP662 to579 by9563.
+    This is earlier than the9975 isolated Crossbow probe, so do not attribute
+    the hosted win solely to saving that later Crossbow. Guard30 dies by14000,
+    guard31 and fort die by16293, ownfort400. Preservation tests use prior
+    Aaron816360009, Coach698480638, RedKite1588898691, Jordan/v1541821418976,
+    mirrored clone teams. No promotion until those artifacts are audited.
+- source: replay
+  artifacts:
+  - .runtime/gota-round466-review-20260919/v133-fresh-top3-audit.json
+  - .runtime/gota-round466-review-20260919/v133-jordan-siege-departure.json
+  - .runtime/gota-round466-review-20260919/v133-jordan-siege-decision.json
+  notes: >
+    Exact Jordan red timeout ereq_f93187aa-d4cb-4cc9-ae27-eb9f7de5f10f,
+    seed149816340, full28800 hashes zero; actual clone identities audited.
+    At9975 Crossbow10120,99 has434HP and285gold, while Mage10716,101 has310HP
+    and targets it. Fresh decision confirms combat2, objective31/distance65,
+    selectedTarget31. It spends healing gold, damages guard to924, switches
+    to barracks50 and dies by10150. Guard31 stays924 through timeout.
+- source: local
+  artifacts:
+  - .runtime/gota-round466-review-20260919/siege-counter-candidate-detail.json
+  - .runtime/gota-round466-review-20260919/siege-counter-parent-detail.json
+  - .runtime/gota-round466-review-20260919/siege-counter-quiet-candidate.json
+  - .runtime/gota-round466-review-20260919/siege-counter-quiet-parent.json
+  - .runtime/gota-round466-review-20260919/siege-counter-smoke.json
+  notes: >
+    Exact9975 prefix with zero mismatches, one fresh persistent Crossbow VM
+    for240ticks, all other hero orders held. Candidate selects107 versus
+    parent31. Both kill Mage107(-32HP) and survive; candidate370HP/4075XP
+    versus parent216HP/4225XP. Candidate guard31 ends240HP versus parent924;
+    barracks50 remains195 versus parent destroyed(-31). Thus154HP and684 more
+    guard damage, with150 less XP; not proof historical death or timeout is fixed.
+    Quiet1000-prefix24tick outputs match exactly.1000tick smoke passes.
+decision:
+- >
+  Promotion completed: exact v135 membership competing/active/champion.
+  Submission receipt has pending submission status but independently resolved
+  active champion membership. Preserve protected relh v154; rollback v133.
+- >
+  Promote exact Richard v135 after completed current-Coach controls and full
+  artifact audit; source-backed UUID7c370daf-3c5f-42f8-870b-54b79c495a44.
+  Protect relh v154. Membership readback required; selected tests do not prove
+  top-two leaderboard completion or an unbiased win rate.
+- >
+  Upload without submission on lower-ranked Richard5; protect relh4/v154.
+  Test exact Jordan timeout both sides, incumbent v133, and Red Kite before
+  broader preservation. No promotion from bounded results alone.

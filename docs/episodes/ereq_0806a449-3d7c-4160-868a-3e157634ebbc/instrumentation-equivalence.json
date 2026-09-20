@@ -1,0 +1,23 @@
+{
+  "unmodified_vs_instrumented_rows_equal_excluding_rule_events": true,
+  "comparison_scope": "all captured observations, all 227 global values before and after each subject decision, all projected ground-truth frames, commands, summary",
+  "counts": {
+    "decisions": 12261,
+    "ground_truth_ticks": 13557
+  },
+  "replay_equivalence": {
+    "type": "summary",
+    "controlled_slots": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "ticks": 13557,
+    "owned_commands_matched": 67929,
+    "owned_decisions": 61089,
+    "all_state_hashes_equal": true,
+    "all_actions_consumed": true
+  }
+}

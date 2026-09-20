@@ -1,0 +1,116 @@
+{
+  "summary": "The coach reviews a match replay where the coached team (Red) played entirely defensively against opponent Richard (Blue). Although Red defended successfully against multiple minion waves, the team failed to push outward, scout missing enemies, or convert defensive holds into offensive counter-attacks. Consequently, Blue charged late in the match, where a single high-damage Ranger eliminated Red's defending champions and base tower. The coach emphasizes transitioning from purely reactive defense to proactive scouting and offensive pushes, as well as investigating and countering the Ranger's build and combat effectiveness.",
+  "moments": [
+    {
+      "start_ms": 10230,
+      "end_ms": 29020,
+      "observation": "Red team remains huddled near base towers, clearing incoming creep waves reactively and holding defensive posture without advancing across the lane after neutralizing threats.",
+      "coaching_intent": "Address excessive passivity in the team policy; defending incoming waves alone cannot win the match without transitioning into offensive pushes.",
+      "uncertainty": "It is unclear whether the passive positioning was driven by an explicit defense trigger threshold or an absence of safe-lane advance affordances.",
+      "evidence_ids": [
+        "speech-1",
+        "speech-2",
+        "speech-3",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 29020,
+      "end_ms": 45000,
+      "observation": "Red champions wait near their fortified perimeter while the enemy positions are hidden in fog of war, making no attempt to scout forward or send a champion into neutral territory.",
+      "coaching_intent": "Direct the policy to proactively send a hero out to scout and locate enemy champions when enemy whereabouts are unknown, rather than idling in base.",
+      "uncertainty": "The specific hero designated for scouting duty (e.g., Crossbow, Vanguard) is not specified by the coach.",
+      "evidence_ids": [
+        "speech-4",
+        "speech-5",
+        "speech-6",
+        "speech-7",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 57070,
+      "end_ms": 78740,
+      "observation": "Blue initiates an end-game assault. A single surviving Blue Ranger eliminates Red's remaining defenders and demolishes the final tower solo while taking minimal effective counter-damage.",
+      "coaching_intent": "Highlight the catastrophic loss condition and instruct that allowing an enemy Ranger to free-fire against the tower and wipe defending heroes must be actively prevented.",
+      "uncertainty": "Whether the wipe occurred due to stat/item disparity, lack of focus fire on the Ranger, or poor range management against ranged attacks.",
+      "evidence_ids": [
+        "speech-9",
+        "speech-10",
+        "speech-11",
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "speech-15",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 81700,
+      "end_ms": 90300,
+      "observation": "The coach inspects the post-game summary and champion loadout to understand why the enemy Ranger achieved overwhelming combat performance.",
+      "coaching_intent": "Identify the mechanics, items, or skills that make the Ranger character exceptionally powerful so Red's policy can either counter it or emulate comparable offensive capabilities.",
+      "uncertainty": "The coach poses this as an analytical goal without concluding on specific build modifications during the clip.",
+      "evidence_ids": [
+        "speech-16",
+        "speech-17",
+        "video"
+      ]
+    }
+  ],
+  "ir_proposals": [
+    {
+      "layer": "strategy",
+      "change": "Add an offensive transition rule: WHEN all immediate enemy lane waves at the friendly base are cleared AND no immediate structural threat is present, PREFER offensive lane pushing and objective pressure over remaining in defensive idling.",
+      "rationale": "The coach noted that the current policy plays defensively all the time ('we're just defending wave after wave and that's our policy... but then never ends up attacking and that's a problem'). Pure defense guarantees attrition and eventual defeat without pushing.",
+      "verification": "In self-play or scripted matches, verify that champions initiate lane advances toward enemy towers once incoming waves are cleared rather than pacing behind friendly perimeter towers.",
+      "evidence_ids": [
+        "speech-1",
+        "speech-2",
+        "speech-3",
+        "speech-6",
+        "speech-7"
+      ]
+    },
+    {
+      "layer": "skill",
+      "change": "Introduce a proactive scouting skill for high-mobility or ranged units: WHEN enemy champion positions are unobserved in the fog of war, dispatch a designated scout to check lane chokepoints and neutral areas while maintaining safe escape vectors.",
+      "rationale": "The coach explicitly criticized the team for idling when enemy positions are unknown ('we don't know where the enemy is but we're not proactively going at or sending a player out. We need to do so').",
+      "verification": "Evaluate vision coverage in test episodes; confirm that at least one hero advances beyond base sightlines during lulls between enemy wave encounters.",
+      "evidence_ids": [
+        "speech-4",
+        "speech-5",
+        "video"
+      ]
+    },
+    {
+      "layer": "belief",
+      "change": "Update threat appraisal to assign top target priority to high-DPS ranged carries (such as the enemy Ranger) during base defenses, flagging them as primary targets for crowd control and coordinated focus fire.",
+      "rationale": "The match ended in defeat because a single enemy Ranger wiped out Red's heroes and the tower unhindered ('this character single-handedly takes down us the tower and all of our other characters. And so we have to avoid this happening').",
+      "verification": "Present simulated defensive scenarios with mixed enemy units including an enemy Ranger; verify that defensive targeting prioritizes the Ranger over frontline minions or tank units.",
+      "evidence_ids": [
+        "speech-10",
+        "speech-11",
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "speech-15"
+      ]
+    },
+    {
+      "layer": "goal",
+      "change": "Rebalance global objective utilities to weight enemy structure destruction higher relative to zero-risk personal preservation, preventing endless defensive turtling.",
+      "rationale": "The team repeatedly defended waves successfully but failed to win because defense does not satisfy the victory condition of destroying the enemy core/towers ('even though we defend very well not attacking so we're not winning').",
+      "verification": "Compare policy evaluation metrics across episodes to verify that offensive objective damage increases without an unforced surge in catastrophic team wipes.",
+      "evidence_ids": [
+        "speech-6",
+        "speech-7",
+        "speech-15"
+      ]
+    }
+  ],
+  "questions": [
+    "Which hero archetype on the coached team is intended to lead proactive scouting when enemies are off the map?",
+    "Did the enemy Ranger gain a dominant level or item advantage during the extended turtling phase, or was the loss purely caused by target prioritization and positioning errors during the final fight?"
+  ]
+}

@@ -1,0 +1,942 @@
+{
+  "complete": true,
+  "games": 60,
+  "unique_commands": 23,
+  "cells": {
+    "deployed/0": {
+      "games": 6,
+      "unique_commands": 5,
+      "group_sizes": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "deployed/1": {
+      "games": 6,
+      "unique_commands": 4,
+      "group_sizes": [
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    "transit_reference/0": {
+      "games": 6,
+      "unique_commands": 5,
+      "group_sizes": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "transit_reference/1": {
+      "games": 6,
+      "unique_commands": 4,
+      "group_sizes": [
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    "anchor_restore/0": {
+      "games": 6,
+      "unique_commands": 5,
+      "group_sizes": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "anchor_restore/1": {
+      "games": 6,
+      "unique_commands": 4,
+      "group_sizes": [
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    "transit_anchor/0": {
+      "games": 6,
+      "unique_commands": 5,
+      "group_sizes": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "transit_anchor/1": {
+      "games": 6,
+      "unique_commands": 4,
+      "group_sizes": [
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    "historical_anchor/0": {
+      "games": 6,
+      "unique_commands": 6,
+      "group_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "historical_anchor/1": {
+      "games": 6,
+      "unique_commands": 5,
+      "group_sizes": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "pairs": {
+    "transit_reference": {
+      "control": "deployed",
+      "colors": {
+        "0": {
+          "cases": 6,
+          "identical_command_cases": 0
+        },
+        "1": {
+          "cases": 6,
+          "identical_command_cases": 6
+        }
+      }
+    },
+    "anchor_restore": {
+      "control": "deployed",
+      "colors": {
+        "0": {
+          "cases": 6,
+          "identical_command_cases": 6
+        },
+        "1": {
+          "cases": 6,
+          "identical_command_cases": 6
+        }
+      }
+    },
+    "transit_anchor": {
+      "control": "transit_reference",
+      "colors": {
+        "0": {
+          "cases": 6,
+          "identical_command_cases": 6
+        },
+        "1": {
+          "cases": 6,
+          "identical_command_cases": 6
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "name": "transit_anchor",
+      "seed": 9860000,
+      "color": 0,
+      "opponent": "accepted",
+      "win": 1,
+      "ticks": 3274,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 14960,
+      "replay_sha256": "428a31e968bc85300e1504e420bdba18f4f5fcd70f28a57ba19df9fe9e973b37",
+      "stream_sha256": "2f7511819568f83ec5a14076e444192327c7ed628f3229b54c09423bbccb9a82"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860000,
+      "color": 0,
+      "opponent": "accepted",
+      "win": 1,
+      "ticks": 3274,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 14960,
+      "replay_sha256": "f5ae6dca0a7c079e24a4d6791e41ef19aeb855bd6281c4c408432282f787f3bc",
+      "stream_sha256": "2f7511819568f83ec5a14076e444192327c7ed628f3229b54c09423bbccb9a82"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860000,
+      "color": 0,
+      "opponent": "accepted",
+      "win": 0,
+      "ticks": 6572,
+      "deaths": 14,
+      "gear_heroes": 5,
+      "live_decision_ticks": 30032,
+      "replay_sha256": "352f807ceac5a5cdcf6512c699e27f012e42b6a3e71b1c1c25464a502e7f0943",
+      "stream_sha256": "a41b3e96c34dc346d5dad0bd5f02a8151364bcda35e094f70e81d3dc41006074"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860000,
+      "color": 0,
+      "opponent": "accepted",
+      "win": 0,
+      "ticks": 6572,
+      "deaths": 14,
+      "gear_heroes": 5,
+      "live_decision_ticks": 30032,
+      "replay_sha256": "56c8a7132d7266c925fe67f67bc1c282451b6db0b58cfc7729cdf2023baae3e0",
+      "stream_sha256": "a41b3e96c34dc346d5dad0bd5f02a8151364bcda35e094f70e81d3dc41006074"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860001,
+      "color": 1,
+      "opponent": "accepted",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "7472f43cc9a665e40483a37a8c38ea9ec67d4977ba3a31309471687021880de5",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860000,
+      "color": 0,
+      "opponent": "accepted",
+      "win": 0,
+      "ticks": 6572,
+      "deaths": 14,
+      "gear_heroes": 5,
+      "live_decision_ticks": 30032,
+      "replay_sha256": "b79f1c3a3887fb2bf4f4cf538e58c595b78f5a87b37a76dc4fc51fcf724f2603",
+      "stream_sha256": "a41b3e96c34dc346d5dad0bd5f02a8151364bcda35e094f70e81d3dc41006074"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860001,
+      "color": 1,
+      "opponent": "accepted",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "83e7e622cdf946afbdcda370737013bc727df91ea7a1fc37d152e40b8f845d3b",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860001,
+      "color": 1,
+      "opponent": "accepted",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "a9c9584d5dcc5d39b8277994677451fb6bcd87af425effac0c254cc2b26e2b4a",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860001,
+      "color": 1,
+      "opponent": "accepted",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "12b3e8785fdfc0aa7501bc73436a7534fb53fa500950494cf92b32ef3e5b81cf",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860002,
+      "color": 0,
+      "opponent": "default",
+      "win": 0,
+      "ticks": 3259,
+      "deaths": 0,
+      "gear_heroes": 5,
+      "live_decision_ticks": 16295,
+      "replay_sha256": "297e78b51b9d4d5aa9ff2ae43c04a94f26c3aed675d2b94bb238bec54b8f5de5",
+      "stream_sha256": "8398b1adca931936acfb9e45379159c6b7c5fcdab52f44d449998af99d0ba29b"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860001,
+      "color": 1,
+      "opponent": "accepted",
+      "win": 1,
+      "ticks": 3596,
+      "deaths": 3,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17332,
+      "replay_sha256": "75d69bb7261242bff0b7100d37783b1705d8c306884b2911aacad27f22817273",
+      "stream_sha256": "bb827da837d9e353054d31fe817769a08a0780582982d917d26301d5fb855700"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860002,
+      "color": 0,
+      "opponent": "default",
+      "win": 0,
+      "ticks": 3259,
+      "deaths": 0,
+      "gear_heroes": 5,
+      "live_decision_ticks": 16295,
+      "replay_sha256": "a41fb9764fcfdba4a84580573261acf33fdd11ee56d0359efbaeed6691b924f5",
+      "stream_sha256": "8398b1adca931936acfb9e45379159c6b7c5fcdab52f44d449998af99d0ba29b"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860002,
+      "color": 0,
+      "opponent": "default",
+      "win": 1,
+      "ticks": 5095,
+      "deaths": 5,
+      "gear_heroes": 5,
+      "live_decision_ticks": 24395,
+      "replay_sha256": "117c36b5f0f199703b7724209a182596b4ccea9b7e89c8795fbd05211c35a06d",
+      "stream_sha256": "14d3804dbe0bab8a36d11d1e6a77597d5deb366551dd0f768b69749a42143ac8"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860003,
+      "color": 1,
+      "opponent": "default",
+      "win": 1,
+      "ticks": 3100,
+      "deaths": 2,
+      "gear_heroes": 5,
+      "live_decision_ticks": 15068,
+      "replay_sha256": "87adf6c85de57c9f48285fffeba105a882922345684b704a97f440bab90d5a22",
+      "stream_sha256": "2c6c66c8b0974ee63306d6669ab47ca2e9404197be2c913143bc8a7031149517"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860002,
+      "color": 0,
+      "opponent": "default",
+      "win": 1,
+      "ticks": 5095,
+      "deaths": 5,
+      "gear_heroes": 5,
+      "live_decision_ticks": 24395,
+      "replay_sha256": "f5a3fc31e6f14a400a8474ce2bcd371c7b0d60ff07be7585563014b931f7297f",
+      "stream_sha256": "14d3804dbe0bab8a36d11d1e6a77597d5deb366551dd0f768b69749a42143ac8"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860003,
+      "color": 1,
+      "opponent": "default",
+      "win": 1,
+      "ticks": 3100,
+      "deaths": 2,
+      "gear_heroes": 5,
+      "live_decision_ticks": 15068,
+      "replay_sha256": "82ad166eacd920404309954f20c34a64da8d12a6e0228fa3079c9e7525582354",
+      "stream_sha256": "2c6c66c8b0974ee63306d6669ab47ca2e9404197be2c913143bc8a7031149517"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860003,
+      "color": 1,
+      "opponent": "default",
+      "win": 1,
+      "ticks": 3100,
+      "deaths": 2,
+      "gear_heroes": 5,
+      "live_decision_ticks": 15068,
+      "replay_sha256": "acc3aaf3a1704a7f79e09e02908db4b5a6c4999bc95c5bb810f881a174b3f6a4",
+      "stream_sha256": "2c6c66c8b0974ee63306d6669ab47ca2e9404197be2c913143bc8a7031149517"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860002,
+      "color": 0,
+      "opponent": "default",
+      "win": 1,
+      "ticks": 7254,
+      "deaths": 10,
+      "gear_heroes": 5,
+      "live_decision_ticks": 34110,
+      "replay_sha256": "18ff65582d1f31da0f51c71fa2c859eb5a8e7999d38e84a85cbe4b24784b17f0",
+      "stream_sha256": "9d088ce4ff88fabf4370e98daf5d0a212f4157c1e13dd23e8b8fc03100f753a8"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860003,
+      "color": 1,
+      "opponent": "default",
+      "win": 1,
+      "ticks": 3100,
+      "deaths": 2,
+      "gear_heroes": 5,
+      "live_decision_ticks": 15068,
+      "replay_sha256": "637a1165b1f070b6a8f48e8a2dc6b85ad49e82db0fd432d28f588a384bcfab59",
+      "stream_sha256": "2c6c66c8b0974ee63306d6669ab47ca2e9404197be2c913143bc8a7031149517"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860003,
+      "color": 1,
+      "opponent": "default",
+      "win": 0,
+      "ticks": 3469,
+      "deaths": 0,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17345,
+      "replay_sha256": "613bac2007567326b969608e8d35ad0327b17fa8f430b8b858c561d170a9d9dd",
+      "stream_sha256": "fc27931842f11071930dd590bf6c215caa4b00820214b179274a6e3e9f96fd6f"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860004,
+      "color": 0,
+      "opponent": "blue_repair",
+      "win": 1,
+      "ticks": 3259,
+      "deaths": 6,
+      "gear_heroes": 5,
+      "live_decision_ticks": 14999,
+      "replay_sha256": "e87fbcce78f9245ea1d1c503f1666d062196d148ddbf53355abb0368e2312448",
+      "stream_sha256": "0ced16b7284650514aff76330e777c9caeed66f5f44d15849834f3811fd17fe5"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860004,
+      "color": 0,
+      "opponent": "blue_repair",
+      "win": 0,
+      "ticks": 3509,
+      "deaths": 5,
+      "gear_heroes": 5,
+      "live_decision_ticks": 16465,
+      "replay_sha256": "3d14c2056801c19c5f36bf823c1529541bd9e5ca1423c2fd8c16d0e74d453892",
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860004,
+      "color": 0,
+      "opponent": "blue_repair",
+      "win": 0,
+      "ticks": 3509,
+      "deaths": 5,
+      "gear_heroes": 5,
+      "live_decision_ticks": 16465,
+      "replay_sha256": "2511499158e8f11a63e59bdb4de1e855ae9fbe9de78c39a076df5e29f531aa0a",
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860004,
+      "color": 0,
+      "opponent": "blue_repair",
+      "win": 1,
+      "ticks": 3259,
+      "deaths": 6,
+      "gear_heroes": 5,
+      "live_decision_ticks": 14999,
+      "replay_sha256": "7569b7dcd15f3c1dba96ed0f0c41dcf91620aff8662673e6ec36a6bd3977f5c6",
+      "stream_sha256": "0ced16b7284650514aff76330e777c9caeed66f5f44d15849834f3811fd17fe5"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860004,
+      "color": 0,
+      "opponent": "blue_repair",
+      "win": 0,
+      "ticks": 3596,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 16621,
+      "replay_sha256": "39c3855fdb66ccb3c7e5fc8fdb77f2e474e75dd3a3aa9cc98c10db45fb215d95",
+      "stream_sha256": "a96088b0b7fafedabaaf91229c57342838bf823cb171103a0b92c67b688cd555"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860005,
+      "color": 1,
+      "opponent": "blue_repair",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "952a98ad6cb24d0fcaefe6a5d470975f5b717643b6855bb5cadcad27e6e46ed2",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860005,
+      "color": 1,
+      "opponent": "blue_repair",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "5f993260263ea6ffa0e94192dc7ed4b149447444e3cce3dc2bb4fbb1d09c6484",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860005,
+      "color": 1,
+      "opponent": "blue_repair",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "d18a8ed2d04f5c2c4f5a063fe9c64cdecaa15f796b60e85c1fb23d1765706455",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860005,
+      "color": 1,
+      "opponent": "blue_repair",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "a36593bd07a48c2be4d4ba2db415701a21def53beabe4436d3eb22831e5b79ac",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860005,
+      "color": 1,
+      "opponent": "blue_repair",
+      "win": 1,
+      "ticks": 3596,
+      "deaths": 3,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17332,
+      "replay_sha256": "aaa53b92cdcc40d5937d97601e9f7f87d700975cd5b3a79948cff54157e8c8f8",
+      "stream_sha256": "a9b812289e9709aaa22272c2286a70ccf2837c9a91707bf1ca025381e2f42cb7"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860006,
+      "color": 0,
+      "opponent": "support_anchor",
+      "win": 1,
+      "ticks": 3259,
+      "deaths": 6,
+      "gear_heroes": 5,
+      "live_decision_ticks": 14999,
+      "replay_sha256": "f7069eb345860004a2a3fb862a7369c9374de7a47c9b69679a19f07ea16c9c3e",
+      "stream_sha256": "0ced16b7284650514aff76330e777c9caeed66f5f44d15849834f3811fd17fe5"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860006,
+      "color": 0,
+      "opponent": "support_anchor",
+      "win": 0,
+      "ticks": 3509,
+      "deaths": 5,
+      "gear_heroes": 5,
+      "live_decision_ticks": 16465,
+      "replay_sha256": "107a35ab8564c31296bba3ccce2242445cc618d4aaf2a813e7133249b4ed227b",
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860006,
+      "color": 0,
+      "opponent": "support_anchor",
+      "win": 1,
+      "ticks": 3259,
+      "deaths": 6,
+      "gear_heroes": 5,
+      "live_decision_ticks": 14999,
+      "replay_sha256": "7f53a9ea3d385b65136c2403c9dfd27794cf3f023cebd5e990e71a8ddacba790",
+      "stream_sha256": "0ced16b7284650514aff76330e777c9caeed66f5f44d15849834f3811fd17fe5"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860006,
+      "color": 0,
+      "opponent": "support_anchor",
+      "win": 0,
+      "ticks": 3509,
+      "deaths": 5,
+      "gear_heroes": 5,
+      "live_decision_ticks": 16465,
+      "replay_sha256": "33d63946b64316b12d90b79f804e86247b2d4a10f439322f6337584a2dc85042",
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860006,
+      "color": 0,
+      "opponent": "support_anchor",
+      "win": 0,
+      "ticks": 3596,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 16621,
+      "replay_sha256": "4dadd6df0fd631d0d08d5236c0fd46107f2104e5932840aad3cb4f15a9a90729",
+      "stream_sha256": "63b524c69952f2128ec7d264303ee119bc0d5037dfa42d9935dea9ed47bd4452"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860007,
+      "color": 1,
+      "opponent": "support_anchor",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "ddc9263c6e6b345e7c77a5520399e5bfc87f06baad2a0ddc9fd736b054c9b1ac",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860007,
+      "color": 1,
+      "opponent": "support_anchor",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "8371189eb243d0ca6f8100d8fd5355f0aa41667065b2cf700524a2a1e5c06874",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860007,
+      "color": 1,
+      "opponent": "support_anchor",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "33d68de857f5309e7397f570189ba9422d22e4cf9d3e46d8ac049c364bbf5073",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860007,
+      "color": 1,
+      "opponent": "support_anchor",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "86e52992db18872abe1170b23466c657581bdff7346af3c8507c413bc3f20aa7",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860007,
+      "color": 1,
+      "opponent": "support_anchor",
+      "win": 1,
+      "ticks": 3596,
+      "deaths": 3,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17332,
+      "replay_sha256": "847c96ec16115fb5870c68eddc259f9c5197ac76622ef0ee2893ed5d7f38d85c",
+      "stream_sha256": "a9b812289e9709aaa22272c2286a70ccf2837c9a91707bf1ca025381e2f42cb7"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860008,
+      "color": 0,
+      "opponent": "center_proxy",
+      "win": 0,
+      "ticks": 2543,
+      "deaths": 0,
+      "gear_heroes": 5,
+      "live_decision_ticks": 12715,
+      "replay_sha256": "9fe16aacc79f050f174c7965b86d9cab77240f04d690d1148155f6206976c1d4",
+      "stream_sha256": "9b9725c6fa75240637cf61d2d399751de05535c4f2c8acce8c773e81b0f47b02"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860008,
+      "color": 0,
+      "opponent": "center_proxy",
+      "win": 0,
+      "ticks": 2543,
+      "deaths": 0,
+      "gear_heroes": 5,
+      "live_decision_ticks": 12715,
+      "replay_sha256": "e9bc5729280f9bcce25da413a68db63bd3b8b7bbf2321e1886133783fe9d826b",
+      "stream_sha256": "9b9725c6fa75240637cf61d2d399751de05535c4f2c8acce8c773e81b0f47b02"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860008,
+      "color": 0,
+      "opponent": "center_proxy",
+      "win": 1,
+      "ticks": 3387,
+      "deaths": 5,
+      "gear_heroes": 5,
+      "live_decision_ticks": 15855,
+      "replay_sha256": "e6ac489b6a1403d4be6c5d37c51f7e72b2297d80260e2adcdd2c714f01839a7f",
+      "stream_sha256": "a0dba7a09b907b16554f280bf7951745280cdc7454da510b4d33556d69418fed"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860008,
+      "color": 0,
+      "opponent": "center_proxy",
+      "win": 1,
+      "ticks": 3387,
+      "deaths": 5,
+      "gear_heroes": 5,
+      "live_decision_ticks": 15855,
+      "replay_sha256": "2746389b3ca326e5b308d6b30ae119ecb75be292d236301f0ae98ec65896b12f",
+      "stream_sha256": "a0dba7a09b907b16554f280bf7951745280cdc7454da510b4d33556d69418fed"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860009,
+      "color": 1,
+      "opponent": "center_proxy",
+      "win": 0,
+      "ticks": 2828,
+      "deaths": 3,
+      "gear_heroes": 5,
+      "live_decision_ticks": 13627,
+      "replay_sha256": "a902fa5c63711bdeac5ba9bb5f932857dffa5268cb97f635d3dbde483ef1c1fb",
+      "stream_sha256": "64bff44dc85fd0bd6902962b441e074383d422ba9f6aa0ba84825ee305ee5c12"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860009,
+      "color": 1,
+      "opponent": "center_proxy",
+      "win": 0,
+      "ticks": 2828,
+      "deaths": 3,
+      "gear_heroes": 5,
+      "live_decision_ticks": 13627,
+      "replay_sha256": "280bec068b03f0bede4597f3e906016f813206f342663f5536f381b5e7646b71",
+      "stream_sha256": "64bff44dc85fd0bd6902962b441e074383d422ba9f6aa0ba84825ee305ee5c12"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860009,
+      "color": 1,
+      "opponent": "center_proxy",
+      "win": 0,
+      "ticks": 2828,
+      "deaths": 3,
+      "gear_heroes": 5,
+      "live_decision_ticks": 13627,
+      "replay_sha256": "7f82e3c410a551cb27dd2d9534f68565ced83540ab660fed7de0895931db6c69",
+      "stream_sha256": "64bff44dc85fd0bd6902962b441e074383d422ba9f6aa0ba84825ee305ee5c12"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860009,
+      "color": 1,
+      "opponent": "center_proxy",
+      "win": 0,
+      "ticks": 2828,
+      "deaths": 3,
+      "gear_heroes": 5,
+      "live_decision_ticks": 13627,
+      "replay_sha256": "2ae641cea883b23ad5f311e16909decb83103eeac4bf4d7c09bf0245661bd418",
+      "stream_sha256": "64bff44dc85fd0bd6902962b441e074383d422ba9f6aa0ba84825ee305ee5c12"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860008,
+      "color": 0,
+      "opponent": "center_proxy",
+      "win": 1,
+      "ticks": 10133,
+      "deaths": 14,
+      "gear_heroes": 5,
+      "live_decision_ticks": 47641,
+      "replay_sha256": "63a6cbb3402b0fa7360fe9965310057585561df5f5c61ded94985b4d9b70b6d6",
+      "stream_sha256": "4627f2b1cd8c62112c0a9023115114dca0515da5bf31db60ac51f06287622753"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860009,
+      "color": 1,
+      "opponent": "center_proxy",
+      "win": 1,
+      "ticks": 6314,
+      "deaths": 8,
+      "gear_heroes": 5,
+      "live_decision_ticks": 29842,
+      "replay_sha256": "a879df5a074da73b2aa972fa556e825f7c213b4e6e10c9935775b6ad43a24699",
+      "stream_sha256": "24df3b50f6d673fb2d053fc21023f21997475cda617ee5c561271fb56e1ba3b5"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860010,
+      "color": 0,
+      "opponent": "readiness",
+      "win": 1,
+      "ticks": 3270,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 14948,
+      "replay_sha256": "d91d34631c59479efcf17efc7bf3859e86b716406ace4915ca2b7ca8f19aad8c",
+      "stream_sha256": "df24d41d4413d9add409140b6e764d3475b52106d686c6b11a8c84339c90b533"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860010,
+      "color": 0,
+      "opponent": "readiness",
+      "win": 0,
+      "ticks": 6513,
+      "deaths": 14,
+      "gear_heroes": 5,
+      "live_decision_ticks": 29681,
+      "replay_sha256": "2c588e4b24ff07e3c0ca25d1d0624780acf0119a3dc5455697e7ed5927ac5daa",
+      "stream_sha256": "5163a6e44ac7ed039b2ab3bb5c4843ffb6276243ebd10a2662901e4fe6b46e61"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860010,
+      "color": 0,
+      "opponent": "readiness",
+      "win": 1,
+      "ticks": 3270,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 14948,
+      "replay_sha256": "fbc52765ce28eb3538ba23d88f650eb790a202a96d7f89b7f0fa1165de02b677",
+      "stream_sha256": "df24d41d4413d9add409140b6e764d3475b52106d686c6b11a8c84339c90b533"
+    },
+    {
+      "name": "deployed",
+      "seed": 9860011,
+      "color": 1,
+      "opponent": "readiness",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "c9b7b37c609e48d6f495f649d211aade5cd98980875fefb8405cc64c28550fe8",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860010,
+      "color": 0,
+      "opponent": "readiness",
+      "win": 0,
+      "ticks": 6513,
+      "deaths": 14,
+      "gear_heroes": 5,
+      "live_decision_ticks": 29681,
+      "replay_sha256": "9e32afcb221906b7b5ac14c6274ce185fe703785e41974478e27dcda77455809",
+      "stream_sha256": "5163a6e44ac7ed039b2ab3bb5c4843ffb6276243ebd10a2662901e4fe6b46e61"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860010,
+      "color": 0,
+      "opponent": "readiness",
+      "win": 0,
+      "ticks": 6513,
+      "deaths": 14,
+      "gear_heroes": 5,
+      "live_decision_ticks": 29681,
+      "replay_sha256": "bc88c9d725bd73d7ac61df21214c4f1c38e36e40b4c50ce1da743acd232394ec",
+      "stream_sha256": "5163a6e44ac7ed039b2ab3bb5c4843ffb6276243ebd10a2662901e4fe6b46e61"
+    },
+    {
+      "name": "transit_reference",
+      "seed": 9860011,
+      "color": 1,
+      "opponent": "readiness",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "82201f0a3f56d5bdee5b627d945bfc1fec8b5c90a9832955fe39a1cb9888bf77",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb"
+    },
+    {
+      "name": "anchor_restore",
+      "seed": 9860011,
+      "color": 1,
+      "opponent": "readiness",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "dcb1456e3523cd97b6408191c105fb7186f8732f47fc6dd8508ce46f0483fbec",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb"
+    },
+    {
+      "name": "transit_anchor",
+      "seed": 9860011,
+      "color": 1,
+      "opponent": "readiness",
+      "win": 1,
+      "ticks": 3763,
+      "deaths": 7,
+      "gear_heroes": 5,
+      "live_decision_ticks": 17303,
+      "replay_sha256": "ff9e71f45c5f698f7db94e47cf76ae85dd5496c73dba1e7aeb554293ebb9e05e",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb"
+    },
+    {
+      "name": "historical_anchor",
+      "seed": 9860011,
+      "color": 1,
+      "opponent": "readiness",
+      "win": 0,
+      "ticks": 7459,
+      "deaths": 19,
+      "gear_heroes": 5,
+      "live_decision_ticks": 33191,
+      "replay_sha256": "50386efcb2c731b508d1fb170ad0221bf457dc778a8a11e63f26b5601cbb7e70",
+      "stream_sha256": "fd53da94ade636b264f1889053408053617e44043c0703a87638974d8561bc44"
+    }
+  ],
+  "result_sha256": "c20d61c62445b65bd40706ddf87f03723bcea761578127e50a3a68df85cfdea3",
+  "calibration_sha256": "56f7854a86462bc24fd12b869a05780c4595ee80f2d99cd1e70297139616d79f",
+  "binary_sha256": "aaad321a1604465c5a7f0e36c37a7e9156195b68aae47c4724dbb16fdc67d882",
+  "script_sha256": "450c7cf57f88a37e6c1dbce848043ae65b2c805a71d2ba213a75b627e8e4a9a1",
+  "scope": "Independent replay audits required beforeencoding; all10slots commands. Distinctseeds/streams do not establish statisticalindependence; comparisons explicitlyname controls."
+}

@@ -1,0 +1,140 @@
+{
+  "at": "2026-09-20T19:22:41.468643+00:00",
+  "stage": "adaptive-discovery-not-holdout",
+  "candidate": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+  "source_sha256": "7c2b843b8dbfd98f2e46cb3ba2b7f4b40f7ee6f2ad4c5575adfe771e09978b7b",
+  "parent_snapshot": "0000-b2693715459d",
+  "parent_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+  "arms": [
+    {
+      "name": "richard135-red",
+      "subject": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "rival": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "color": 0,
+      "games": 40,
+      "role": "candidate"
+    },
+    {
+      "name": "richard135-blue",
+      "subject": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "rival": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "color": 1,
+      "games": 40,
+      "role": "candidate"
+    },
+    {
+      "name": "alex-g002-v1-red",
+      "subject": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "rival": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "color": 0,
+      "games": 40,
+      "role": "candidate"
+    },
+    {
+      "name": "alex-g002-v1-blue",
+      "subject": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "rival": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "color": 1,
+      "games": 40,
+      "role": "candidate"
+    },
+    {
+      "name": "jordan268-red",
+      "subject": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "rival": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "color": 0,
+      "games": 40,
+      "role": "candidate"
+    },
+    {
+      "name": "jordan268-blue",
+      "subject": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "rival": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "color": 1,
+      "games": 40,
+      "role": "candidate"
+    },
+    {
+      "name": "accepted-parent-red",
+      "subject": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "rival": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "color": 0,
+      "games": 40,
+      "role": "candidate"
+    },
+    {
+      "name": "accepted-parent-blue",
+      "subject": "17db3a9d-b5eb-4f5a-b5aa-10654e9555bd",
+      "rival": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "color": 1,
+      "games": 40,
+      "role": "candidate"
+    },
+    {
+      "name": "deployed-alex-red",
+      "subject": "00cd9483-0309-4613-bf61-89f3f4a33d01",
+      "rival": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "color": 0,
+      "games": 40,
+      "role": "fresh-deployed-control"
+    },
+    {
+      "name": "deployed-alex-blue",
+      "subject": "00cd9483-0309-4613-bf61-89f3f4a33d01",
+      "rival": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "color": 1,
+      "games": 40,
+      "role": "fresh-deployed-control"
+    }
+  ],
+  "episodes": 400,
+  "hypothesis": "Conditional red tower release with a positive live creep witness preserves local fort wins and slightly improves survival. Test the same fixed executable against all three exact requested champions on both colors, accepted ancestor on both colors, and fresh deployed Alex controls. Blue remains inherited and unqualified for current targets.",
+  "decision_rule": {
+    "Richard_and_Alex": "At least30/40actualfortwins on eachcolor for target nomination.",
+    "Jordan": "At least38/40eachcolor.",
+    "parent": "At least24/40eachcolor discovery nomination.",
+    "Alex_controls": "Candidate wins must not regress against the fresh deployed control on eithercolor.",
+    "validity": "All40episodes per arm present and valid; all10VMexits, full actions/state hashes, release/config/roster/source/equipment. Drawzero; invalid episodes invalidate cohort and are not gameplay losses.",
+    "promotion": "None from this study. Full fresh deployed/field/historical/ten-distinct-player frozen holdout gates remain mandatory. Richard/Jordan fresh deployed controls are not supplied by this matrix; older audited receipts are contextual only."
+  },
+  "budget": "400 new episodes maximum this cycle, in ten batches40, at most3concurrent. All creation through researcher.py xp-create. Preserve and harvest every purchased episode even if earlier arms fail.",
+  "limitations": "Uniform5v5 programs, not ten distinct actual players or one controlled hero. Distinct seeds may repeat command streams; no independent statistical significance. Local nomination is not hosted generalization.",
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/local-qualification.json": "02e9e3f221d0097bf7b139c13047eac4a2466d7b3e42e042cd4543be39fc35cf",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/local-feedback/policy.py": "a05f5ff14cef84735e99a0d406d6e4fa5e8271ec4c61d33eb7f9d2b48f263bc9",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/local-feedback/policy.ir.json": "34d8cb16ea536f254c5f804538d8fd78feaefc360158338cae7e4278deaf7b17",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/local-feedback/policy.bas": "7c2b843b8dbfd98f2e46cb3ba2b7f4b40f7ee6f2ad4c5575adfe771e09978b7b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/local-feedback/parity.json": "44350e14896d08f689b21331b00fb66b338dddf3471c516e1282dcf00dd27d36",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/inert-upload/verification.json": "62794e1ef62cbdea1f4273eca0349fa64b2f501fec8cc5b5d23f2a08df88518b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/snapshot.json": "dd3512253f472ecacb06ccf16f3fb73b1a4dfbb435764b36db59d97035655052",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-hosted": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T180014Z-078cc0/tower_discovery.py": "da6f1cbeaa8aa8a3afbffd2779ba328f6cc88c1cef9ad46df6409f236b58cd35"
+  },
+  "focus_sha256": "d58af007e806c1177fc77a3c0fd6fbd363110bd17cf0bf4ce48d4c1d2248bfba",
+  "league_checked_at": "2026-09-20T19:22:14.139143+00:00",
+  "game_version": "2026.9.16.5",
+  "target": {
+    "coworld_id": "cow_126f2fcb-80a0-4b6e-8166-eb6163576db5",
+    "variant_id": "competition"
+  },
+  "config": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_waveguard_sustain_xp_r1",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "Hosted replay evidence uses published game 2026.9.10.3. Hidden state reconstructed for offline diagnosis is not available to the policy."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions",
+        "escortId",
+        "lastJoinTick",
+        "lastJoinX",
+        "lastJoinY",
+        "stalled"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Tower targets and enemy intentions are not exposed."
+    },
+    "claims": {
+      "B_wave": {
+        "claim": "Using an observed allied footman as the no-target movement anchor may increase productive lane presence and fort wins. This is not evidence that a footman shields a hero from towers.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/experiment-20260910.json",
+            "sha256": "36170fcaddbc1511737b8b2496b6ff002884477f5d50c7336e117542f5355a44"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          }
+        ]
+      },
+      "B_equipment": {
+        "claim": "The hosted v1 diagnostic ended with only one or two equipment items per hero and repeated poison purchase attempts. Removing poison purchases may allow equipment growth and improve fort wins; healing/mana spending may still limit saving.",
+        "status": "untested",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Preserve nearest-enemy combat and center fallback from the bundled baseline. This is an interpretation of behavior, not recovered original author intent.",
+      "provenance": "interpretation"
+    },
+    "G_capacity": {
+      "preference": "Keep baseline healing and mana support while preserving gold for persistent equipment growth. Stop buying poison in this isolated economy experiment.",
+      "provenance": "authored"
+    },
+    "G_wave": {
+      "preference": "When there is no observed combat target, join an allied wave instead of walking unconditionally to center. Combat and economy keep baseline behavior.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "nearest_enemy",
+      "parameters": {}
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "join_wave",
+      "parameters": {
+        "fallback_x": 64,
+        "fallback_y": 64,
+        "offset_tiles": 0,
+        "stall_decisions": 48
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_wave"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.10.3",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 5,
+    "parent": "169efb16897acaea8a0fdb2991d23d90fd4786aa78db5d9b62a46eb96515e2ed",
+    "change": {
+      "origin": "hosted_xp_diagnosis",
+      "rule": "E1",
+      "operator_before": "buy_consumables",
+      "operator_after": "buy_sustain_only",
+      "hypothesis": "Save poison spending for equipment while preserving healing, mana, combat and wave-following."
+    },
+    "needs_review": [
+      "belief/B_wave",
+      "belief/B_equipment"
+    ],
+    "evidence": [
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+        "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+      }
+    ]
+  }
+}

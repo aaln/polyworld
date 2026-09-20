@@ -1,0 +1,530 @@
+{
+  "source": "Exact deployed Jordan268 counter",
+  "opponent_private_vm_inspected": false,
+  "cases": [
+    {
+      "episode": "ereq_d79c3904-1962-4bf9-baef-246cccbe6c17",
+      "own_color": "red",
+      "reference_event": "first_observed_god_damage",
+      "event": {
+        "tick": 2533,
+        "our_god_hp": 375,
+        "visible_enemy_ids": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within40": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "visible_enemies_within24": [
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 0,
+        "friendly_farther28": 5,
+        "friendly_positions": {
+          "100": [
+            29,
+            111
+          ],
+          "101": [
+            10,
+            79
+          ],
+          "102": [
+            32,
+            105
+          ],
+          "103": [
+            31,
+            105
+          ],
+          "104": [
+            6,
+            85
+          ]
+        },
+        "visible_enemy_positions": {
+          "105": [
+            103,
+            14
+          ],
+          "106": [
+            100,
+            14
+          ],
+          "107": [
+            101,
+            14
+          ],
+          "108": [
+            100,
+            16
+          ],
+          "109": [
+            104,
+            15
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 2532,
+        "continuous_previous_snapshot": true
+      },
+      "preceding_sampled_decisions": [
+        {
+          "type": "decision",
+          "tick": 2520,
+          "slot": 0,
+          "memory": {
+            "bestId": 46,
+            "defActive": 0,
+            "defUntil": 0,
+            "defHoldTicks": 7200,
+            "defFront": 109,
+            "defCount": 5,
+            "defAnchor": 1,
+            "defPointX": 109,
+            "defPointY": 14,
+            "defThreatX": 104,
+            "defThreatY": 14,
+            "defNavX": 0,
+            "defNavY": 0,
+            "defMoveAccepted": 0,
+            "perimeterAnchor": 0,
+            "perimeterX": 0,
+            "perimeterY": 0,
+            "perimeterLastCombat": 0,
+            "perimeterEnabled": 0,
+            "backdoorActive": 0,
+            "coreId": 0
+          },
+          "actions": [
+            {
+              "tick": 2520,
+              "heroId": 100,
+              "kind": 2,
+              "first": 46,
+              "second": 0
+            }
+          ]
+        },
+        {
+          "type": "decision",
+          "tick": 2520,
+          "slot": 1,
+          "memory": {
+            "bestId": 15,
+            "defActive": 0,
+            "defUntil": 0,
+            "defHoldTicks": 1440,
+            "defFront": 109,
+            "defCount": 5,
+            "defAnchor": 1,
+            "defPointX": 109,
+            "defPointY": 14,
+            "defThreatX": 104,
+            "defThreatY": 14,
+            "defNavX": 0,
+            "defNavY": 0,
+            "defMoveAccepted": 0,
+            "perimeterAnchor": 0,
+            "perimeterX": 0,
+            "perimeterY": 0,
+            "perimeterLastCombat": 0,
+            "perimeterEnabled": 0,
+            "backdoorActive": 0,
+            "coreId": 0
+          },
+          "actions": [
+            {
+              "tick": 2520,
+              "heroId": 101,
+              "kind": 2,
+              "first": 15,
+              "second": 0
+            }
+          ]
+        },
+        {
+          "type": "decision",
+          "tick": 2520,
+          "slot": 2,
+          "memory": {
+            "bestId": 44,
+            "defActive": 0,
+            "defUntil": 0,
+            "defHoldTicks": 7200,
+            "defFront": 109,
+            "defCount": 5,
+            "defAnchor": 1,
+            "defPointX": 109,
+            "defPointY": 14,
+            "defThreatX": 104,
+            "defThreatY": 14,
+            "defNavX": 0,
+            "defNavY": 0,
+            "defMoveAccepted": 0,
+            "perimeterAnchor": 0,
+            "perimeterX": 0,
+            "perimeterY": 0,
+            "perimeterLastCombat": 0,
+            "perimeterEnabled": 0,
+            "backdoorActive": 0,
+            "coreId": 0
+          },
+          "actions": [
+            {
+              "tick": 2520,
+              "heroId": 102,
+              "kind": 2,
+              "first": 44,
+              "second": 0
+            }
+          ]
+        },
+        {
+          "type": "decision",
+          "tick": 2520,
+          "slot": 3,
+          "memory": {
+            "bestId": 44,
+            "defActive": 0,
+            "defUntil": 0,
+            "defHoldTicks": 7200,
+            "defFront": 109,
+            "defCount": 5,
+            "defAnchor": 1,
+            "defPointX": 109,
+            "defPointY": 14,
+            "defThreatX": 104,
+            "defThreatY": 14,
+            "defNavX": 0,
+            "defNavY": 0,
+            "defMoveAccepted": 0,
+            "perimeterAnchor": 0,
+            "perimeterX": 0,
+            "perimeterY": 0,
+            "perimeterLastCombat": 0,
+            "perimeterEnabled": 0,
+            "backdoorActive": 0,
+            "coreId": 0
+          },
+          "actions": [
+            {
+              "tick": 2520,
+              "heroId": 103,
+              "kind": 2,
+              "first": 44,
+              "second": 0
+            }
+          ]
+        },
+        {
+          "type": "decision",
+          "tick": 2520,
+          "slot": 4,
+          "memory": {
+            "bestId": 15,
+            "defActive": 0,
+            "defUntil": 0,
+            "defHoldTicks": 1440,
+            "defFront": 109,
+            "defCount": 5,
+            "defAnchor": 1,
+            "defPointX": 109,
+            "defPointY": 14,
+            "defThreatX": 104,
+            "defThreatY": 14,
+            "defNavX": 0,
+            "defNavY": 0,
+            "defMoveAccepted": 0,
+            "perimeterAnchor": 0,
+            "perimeterX": 0,
+            "perimeterY": 0,
+            "perimeterLastCombat": 0,
+            "perimeterEnabled": 0,
+            "backdoorActive": 0,
+            "coreId": 0
+          },
+          "actions": [
+            {
+              "tick": 2520,
+              "heroId": 104,
+              "kind": 2,
+              "first": 15,
+              "second": 0
+            }
+          ]
+        }
+      ],
+      "sampling_note": "Actual own VM memory sampled every120ticks. No interpolation and no assumption these samples are the exact damage tick.",
+      "complete_own_command_proof": {
+        "type": "summary",
+        "controlled_slots": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticks": 2583,
+        "owned_commands_matched": 13973,
+        "owned_decisions": 12915,
+        "all_state_hashes_equal": true,
+        "all_actions_consumed": true
+      },
+      "decision_trace_sha256": "a8906c3a4fed75535fc00324e93d0e41892529df5dc9919d9133db0e349045b8"
+    },
+    {
+      "episode": "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002",
+      "own_color": "blue",
+      "reference_event": "first_observed_god_damage",
+      "event": {
+        "tick": 3108,
+        "our_god_hp": 356,
+        "visible_enemy_ids": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within40": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "visible_enemies_within24": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "friendly_alive_visible": 5,
+        "friendly_within28": 1,
+        "friendly_farther28": 4,
+        "friendly_positions": {
+          "105": [
+            96,
+            6
+          ],
+          "106": [
+            108,
+            23
+          ],
+          "107": [
+            93,
+            6
+          ],
+          "108": [
+            94,
+            7
+          ],
+          "109": [
+            9,
+            107
+          ]
+        },
+        "visible_enemy_positions": {
+          "100": [
+            20,
+            92
+          ],
+          "101": [
+            13,
+            102
+          ],
+          "102": [
+            13,
+            101
+          ],
+          "103": [
+            13,
+            102
+          ]
+        },
+        "previous_observed_hp": 400,
+        "previous_observed_tick": 3107,
+        "continuous_previous_snapshot": true
+      },
+      "preceding_sampled_decisions": [
+        {
+          "type": "decision",
+          "tick": 3000,
+          "slot": 5,
+          "memory": {
+            "bestId": 29,
+            "defActive": 0,
+            "defUntil": 0,
+            "defHoldTicks": 7200,
+            "defFront": 103,
+            "defCount": 4,
+            "defAnchor": 31,
+            "defPointX": 12,
+            "defPointY": 106,
+            "defThreatX": 13,
+            "defThreatY": 102,
+            "defNavX": 0,
+            "defNavY": 0,
+            "defMoveAccepted": 0,
+            "perimeterAnchor": 31,
+            "perimeterX": 16,
+            "perimeterY": 106,
+            "perimeterLastCombat": 3000,
+            "perimeterEnabled": 1,
+            "backdoorActive": 0,
+            "coreId": 0
+          },
+          "actions": [
+            {
+              "tick": 3000,
+              "heroId": 105,
+              "kind": 2,
+              "first": 29,
+              "second": 0
+            }
+          ]
+        },
+        {
+          "type": "decision",
+          "tick": 3000,
+          "slot": 6,
+          "memory": {
+            "bestId": 28,
+            "defActive": 0,
+            "defUntil": 0,
+            "defHoldTicks": 1200,
+            "defFront": 103,
+            "defCount": 4,
+            "defAnchor": 31,
+            "defPointX": 12,
+            "defPointY": 106,
+            "defThreatX": 13,
+            "defThreatY": 102,
+            "defNavX": 0,
+            "defNavY": 0,
+            "defMoveAccepted": 0,
+            "perimeterAnchor": 31,
+            "perimeterX": 16,
+            "perimeterY": 106,
+            "perimeterLastCombat": 3000,
+            "perimeterEnabled": 1,
+            "backdoorActive": 0,
+            "coreId": 0
+          },
+          "actions": [
+            {
+              "tick": 3000,
+              "heroId": 106,
+              "kind": 2,
+              "first": 28,
+              "second": 0
+            }
+          ]
+        },
+        {
+          "type": "decision",
+          "tick": 3000,
+          "slot": 7,
+          "memory": {
+            "bestId": 29,
+            "defActive": 0,
+            "defUntil": 0,
+            "defHoldTicks": 7200,
+            "defFront": 103,
+            "defCount": 4,
+            "defAnchor": 31,
+            "defPointX": 12,
+            "defPointY": 106,
+            "defThreatX": 13,
+            "defThreatY": 102,
+            "defNavX": 0,
+            "defNavY": 0,
+            "defMoveAccepted": 0,
+            "perimeterAnchor": 31,
+            "perimeterX": 16,
+            "perimeterY": 106,
+            "perimeterLastCombat": 3000,
+            "perimeterEnabled": 1,
+            "backdoorActive": 0,
+            "coreId": 0
+          },
+          "actions": [
+            {
+              "tick": 3000,
+              "heroId": 107,
+              "kind": 2,
+              "first": 29,
+              "second": 0
+            }
+          ]
+        },
+        {
+          "type": "decision",
+          "tick": 3000,
+          "slot": 8,
+          "memory": {
+            "bestId": 29,
+            "defActive": 0,
+            "defUntil": 0,
+            "defHoldTicks": 7200,
+            "defFront": 103,
+            "defCount": 4,
+            "defAnchor": 31,
+            "defPointX": 12,
+            "defPointY": 106,
+            "defThreatX": 13,
+            "defThreatY": 102,
+            "defNavX": 0,
+            "defNavY": 0,
+            "defMoveAccepted": 0,
+            "perimeterAnchor": 31,
+            "perimeterX": 16,
+            "perimeterY": 106,
+            "perimeterLastCombat": 3000,
+            "perimeterEnabled": 1,
+            "backdoorActive": 0,
+            "coreId": 0
+          },
+          "actions": [
+            {
+              "tick": 3000,
+              "heroId": 108,
+              "kind": 2,
+              "first": 29,
+              "second": 0
+            }
+          ]
+        }
+      ],
+      "sampling_note": "Actual own VM memory sampled every120ticks. No interpolation and no assumption these samples are the exact damage tick.",
+      "complete_own_command_proof": {
+        "type": "summary",
+        "controlled_slots": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "ticks": 3126,
+        "owned_commands_matched": 15125,
+        "owned_decisions": 14982,
+        "all_state_hashes_equal": true,
+        "all_actions_consumed": true
+      },
+      "decision_trace_sha256": "b99b51d4b28068bab79c738b12618ab72899b7c557346336610c7437de95d673"
+    }
+  ]
+}

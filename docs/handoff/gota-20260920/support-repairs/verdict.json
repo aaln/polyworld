@@ -1,0 +1,250 @@
+{
+  "closed_at": "2026-09-20T17:19:03.978405+00:00",
+  "metrics": {
+    "deployed": {
+      "games": 6,
+      "wins": 3,
+      "red_wins": 0,
+      "blue_wins": 3,
+      "deaths": 25,
+      "all_gear": true
+    },
+    "anchored": {
+      "games": 6,
+      "wins": 3,
+      "red_wins": 0,
+      "blue_wins": 3,
+      "deaths": 25,
+      "all_gear": true
+    },
+    "unanchored": {
+      "games": 6,
+      "wins": 3,
+      "red_wins": 0,
+      "blue_wins": 3,
+      "deaths": 25,
+      "all_gear": true
+    },
+    "historical_anchor": {
+      "games": 6,
+      "wins": 4,
+      "red_wins": 1,
+      "blue_wins": 3,
+      "deaths": 39,
+      "all_gear": true
+    }
+  },
+  "max_deaths": 30,
+  "verdicts": {
+    "anchored": {
+      "checks": {
+        "retain_deployed_wins": true,
+        "extra_red_win": false,
+        "all_gear": true,
+        "survival": true,
+        "expanded_assistance_in_full_red_game": false
+      },
+      "advances": false,
+      "all_six_command_streams_equal_to_control": true,
+      "verdict": "Rejected for advancement: no extra red win and no expanded assistance in sampled games."
+    },
+    "unanchored": {
+      "checks": {
+        "retain_deployed_wins": true,
+        "extra_red_win": false,
+        "all_gear": true,
+        "survival": true,
+        "expanded_assistance_in_full_red_game": false
+      },
+      "advances": false,
+      "all_six_command_streams_equal_to_control": true,
+      "verdict": "Rejected for advancement: no extra red win and no expanded assistance in sampled games."
+    }
+  },
+  "red_source_proofs": [
+    {
+      "candidate": "anchored",
+      "seed": 9860000,
+      "type": "summary",
+      "controlled_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ticks": 3264,
+      "expanded_assist_decisions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "owned_commands_matched": 17087,
+      "owned_decisions": 16320,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "trace_sha256": "2d48e67fc69d5af75d83b7a3ea6648fb532fb7dcf5703dfd5ff87204896244fa"
+    },
+    {
+      "candidate": "anchored",
+      "seed": 9860002,
+      "type": "summary",
+      "controlled_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ticks": 3763,
+      "expanded_assist_decisions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "owned_commands_matched": 19989,
+      "owned_decisions": 17534,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "trace_sha256": "f408b51dd70a24ab633f3faf6dd02f640ef0fb604d1ebde83c78164134f83de8"
+    },
+    {
+      "candidate": "anchored",
+      "seed": 9860004,
+      "type": "summary",
+      "controlled_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ticks": 3509,
+      "expanded_assist_decisions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "owned_commands_matched": 17393,
+      "owned_decisions": 16465,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "trace_sha256": "9bdb5bf92d369dc303d2b54ff4e60197d9b86d80f88eb6100d612b9f6a2bdbf2"
+    },
+    {
+      "candidate": "unanchored",
+      "seed": 9860000,
+      "type": "summary",
+      "controlled_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ticks": 3264,
+      "expanded_assist_decisions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "owned_commands_matched": 17087,
+      "owned_decisions": 16320,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "trace_sha256": "2d48e67fc69d5af75d83b7a3ea6648fb532fb7dcf5703dfd5ff87204896244fa"
+    },
+    {
+      "candidate": "unanchored",
+      "seed": 9860002,
+      "type": "summary",
+      "controlled_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ticks": 3763,
+      "expanded_assist_decisions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "owned_commands_matched": 19989,
+      "owned_decisions": 17534,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "trace_sha256": "f408b51dd70a24ab633f3faf6dd02f640ef0fb604d1ebde83c78164134f83de8"
+    },
+    {
+      "candidate": "unanchored",
+      "seed": 9860004,
+      "type": "summary",
+      "controlled_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ticks": 3509,
+      "expanded_assist_decisions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "owned_commands_matched": 17393,
+      "owned_decisions": 16465,
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "trace_sha256": "9bdb5bf92d369dc303d2b54ff4e60197d9b86d80f88eb6100d612b9f6a2bdbf2"
+    }
+  ],
+  "owned_commands_matched": 108938,
+  "scope": "Complete frozen local screen; no new Richard/Alex/Jordan competitive claim.",
+  "new_hosted_requests": 0,
+  "live_policy_changed": false
+}

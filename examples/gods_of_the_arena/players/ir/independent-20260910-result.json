@@ -1,0 +1,209 @@
+{
+  "plan": {
+    "purpose": "semantic reconstruction and engine-contract fidelity, not a win-rate experiment",
+    "independence": "Fresh semantic derivation and lowering from raw baseline+engine; shared AST parser; same agent/session, not blind. No existing IR or lowering imported by independent_ir.py.",
+    "source_hashes": {
+      "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/independent/base.ir.json": "1c3da7fb9d1df644f40f5aabb91f17b5f3bd0409af69bc562e5be0dd89b36a52",
+      "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/independent/base.generated.bas": "7209728b08c9d85ab76fcb338d5b0a53f87ff56712887aa607f35a76f8cd23fa",
+      "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/independent_ir.py": "2b79f4333571cb37b999de00adcee4e0755733da6516ee6e84d3688e468be241",
+      "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/base.bas": "6af2a79e0c7815b41a00e824de897b1ab2a2f3057798c6c5395778e59d734ae9"
+    },
+    "full_game_cases": [
+      65000,
+      65001
+    ],
+    "roster": "all ten seats use original baseline or independent regeneration, paired by seed",
+    "acceptance": "Exact whole-program AST equality; 500 randomized real-VM cases; full action/state tapes identical on both complete seeds; controlled real-engine temporal probes pass. No competitive claim or league update from an equivalent reconstruction.",
+    "amendment": {
+      "reason": "Added source-grounded immediate equipment HP/mana effect and a fifth controlled probe; corrected initial fixture to preserve the class maximum HP. No behavior, full-game seed, parity threshold or win criterion changed.",
+      "initial_plan_sha256": "1d01aa4ebeab81fd22276062ae86275501ecd37ba5b81de34aa02671ab20ca29",
+      "initial_ir_sha256": "eb9612d414cceef8840493e07a128abfc68365d39f2415091a3513f34d2beca2",
+      "basic_bytes_unchanged": true
+    }
+  },
+  "full_games": [
+    {
+      "seed": 65000,
+      "ticks": 14814,
+      "actions": 134693,
+      "replay_sha256": "ba348cd921285fcdc3f4e8d2d8a1615b83c42d7d01993019ffbe5c156ac48daa",
+      "identical_full_tape": true
+    },
+    {
+      "seed": 65001,
+      "ticks": 14593,
+      "actions": 134716,
+      "replay_sha256": "21e53f2039f9afdc0b13296dc45e4baada0e5f21c921a14e4a4813a0d78a77c6",
+      "identical_full_tape": true
+    }
+  ],
+  "full_games_run": 4,
+  "probes": {
+    "snapshot": {
+      "mode": "snapshot",
+      "memory": {
+        "beforeHp": 1,
+        "afterHp": 1,
+        "beforeItem": 1,
+        "afterItem": 0,
+        "bought": 1,
+        "rejectedBuy": 0,
+        "afterBuyGold": 150,
+        "afterBuyItem": 7,
+        "used": 1
+      },
+      "live_hp": 41,
+      "live_max_hp": 350,
+      "live_gold": 80,
+      "live_inventory": [
+        "LeatherGauntlets",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "attack_before": 0,
+      "attack_after": 0,
+      "enemy_hp_before": 330,
+      "enemy_hp_after": 330
+    },
+    "inventory": {
+      "mode": "inventory",
+      "memory": {
+        "hasHeal": 1,
+        "emptySlot": 0,
+        "bestId": 0
+      },
+      "live_hp": 41,
+      "live_max_hp": 350,
+      "live_gold": 10000,
+      "live_inventory": [
+        "NoItem",
+        "SteelHelmet",
+        "LeatherGauntlets",
+        "SteelBuckler",
+        "RangerBoots",
+        "PoisonPotion"
+      ],
+      "attack_before": 0,
+      "attack_after": 0,
+      "enemy_hp_before": 330,
+      "enemy_hp_after": 330
+    },
+    "walk_failure": {
+      "mode": "walk_failure",
+      "memory": {
+        "walkAccepted": 0
+      },
+      "live_hp": 350,
+      "live_max_hp": 350,
+      "live_gold": 150,
+      "live_inventory": [
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "attack_before": 105,
+      "attack_after": 0,
+      "enemy_hp_before": 330,
+      "enemy_hp_after": 330
+    },
+    "poison_target": {
+      "mode": "poison_target",
+      "memory": {
+        "used": 1,
+        "bestId": 999999
+      },
+      "live_hp": 1,
+      "live_max_hp": 350,
+      "live_gold": 150,
+      "live_inventory": [
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "attack_before": 105,
+      "attack_after": 105,
+      "enemy_hp_before": 330,
+      "enemy_hp_after": 295
+    },
+    "equipment_health": {
+      "mode": "equipment_health",
+      "memory": {
+        "beforeHp": 1,
+        "afterHp": 1,
+        "beforeMaxHp": 350,
+        "afterMaxHp": 350,
+        "bought": 1
+      },
+      "live_hp": 51,
+      "live_max_hp": 400,
+      "live_gold": 70,
+      "live_inventory": [
+        "SteelHelmet",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "attack_before": 0,
+      "attack_after": 0,
+      "enemy_hp_before": 330,
+      "enemy_hp_after": 330
+    }
+  },
+  "comparison": {
+    "base": {
+      "changed_rules_vs_independent_base": [],
+      "source_sha256": "1f7b5511db0ebb8a3be0be2230a54039cd127a2fb2e0f3d6ff821f024db8f6ba",
+      "prior_ir": "tmp/gota-ir/independent-20260910/before/base.ir.json",
+      "prior_ir_sha256": "602ab7ae1e2440e9e93dda4bf796a1009755727df26690fcc9f2c63b004796a8"
+    },
+    "duelist": {
+      "changed_rules_vs_independent_base": [
+        "R1",
+        "E1"
+      ],
+      "source_sha256": "7247acb6fe63d5f0eb40dd21efe8e27263af06705bb7161faba362cc3d0e13f3",
+      "prior_ir": "tmp/gota-ir/independent-20260910/before/duelist.ir.json",
+      "prior_ir_sha256": "a2d983db520024cee285cedc34b7be7bbf3ec031054a19a1e8b850efc3f48b0c"
+    },
+    "reserve": {
+      "changed_rules_vs_independent_base": [
+        "R1",
+        "E1",
+        "E2"
+      ],
+      "source_sha256": "964e8a4fd5dbe3da7c2fae1788389d7562e2caf80e773f937f753ad59744dd78",
+      "prior_ir": "tmp/gota-ir/independent-20260910/before/reserve.ir.json",
+      "prior_ir_sha256": "35b410d3fd185fdf3e920fb316d62f7218e7987f89c2c9a41e3b7b8d219609c0"
+    }
+  },
+  "full_ast_parity": true,
+  "parent_free_extraction": true,
+  "scenario_cases": 500,
+  "tests_passed": 34,
+  "runtime_sha256": "7b761f4fbbd0d67f1340d68f09da62b614a8d67c27cc720639caf594481650d8",
+  "probe_binary_sha256": "216b850ef80352b615e52ee3182b0f892e437c2dadb0704f3526bc99a86bfd4e",
+  "temporal_facts": {
+    "self_data": "self* and worldTick are set once before each hero's VM decision; use/buy do not refresh them.",
+    "queries": "object* and item* query current engine state at the call; visibility still filters objects.",
+    "inventory_flags": "Presence and empty-slot flags accumulate before useItem for each slot. They are earlier observations, not current post-use/post-buy inventory.",
+    "gold": "All affordability guards read starting selfGold; each buyItem checks and spends the remaining live balance.",
+    "equipment": "Successful purchases refresh stats: increases in maximum HP/mana also add that increase to current HP/mana. Resource gear therefore has immediate sustain effects as well as permanent capacity.",
+    "attack": "attackTarget stores an engine pursuit target if valid; accepted does not prove path reachability or damage.",
+    "walk": "walkTo clears attack intent before pathfinding, including when pathfinding subsequently returns false.",
+    "poison": "useItem on poison strikes the engine's current attackObjectId, not a policy-local bestId variable.",
+    "failures": "A command return of zero does not universally mean no state changed. Failed walkTo can clear attack intent.",
+    "memory": "Policy globals persist; baseline resets its decision-local scan variables. Engine attack/movement intent is separate persistent state."
+  },
+  "conclusion": "The independent IR is behaviorally equivalent to baseline. Existing baseline IR was faithful; current variants differ in explicit tested choices. Richer temporal/effect semantics and parent-free baseline lifting are incorporated; no strength improvement is claimed."
+}

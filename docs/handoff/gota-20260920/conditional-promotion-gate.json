@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-20T19:53:48.035457+00:00",
+  "user_authorization": "let's push the policy as is if we can beat alex and jordan policies.since atleast we are beeating richard sometimes",
+  "interpretation": "Conditional authorization to promote the stronger already-built fresh-hit candidate after beating both current Alex and Jordan on each color. Do not require both-color Richard qualification for this user-directed promotion; report that criterion separately and honestly. No further policy code changes.",
+  "league": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+  "targets": {
+    "Jordan": {
+      "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+      "policy_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+      "membership": "lpm_4f03062a-cac8-46fb-ab80-f284eb44822f"
+    },
+    "Alex Smith": {
+      "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+      "policy_version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "label": "gota-g002:v1",
+      "membership": "lpm_95111745-cd7e-4d32-b50c-434c6a086724"
+    }
+  },
+  "selection_rule": "Compare the two already-built final fresh-hit candidates on completed audited Richard135 results: descending red wins, descending total wins, ascending total subject deaths, then descending local wins, then lexical name. Freeze the selected exact source/version before Alex/Jordan games.",
+  "gate": "Selected exact source must win >=30/40 per color against EACH Alex and Jordan, all160games fully audited including all10VMs. Draws score0; any invalid cohort blocks promotion. Generated seeds differ and correlated trajectories are descriptive. Current league/opponent/source readbacks required before applying.",
+  "candidate_names": [
+    "transition_freshhit",
+    "transition_armor_freshhit"
+  ],
+  "promotion_player": {
+    "id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+    "name": "Aaron's Co-play Coach",
+    "reason": "Persisted user preference: keep one incumbent and promote the stronger challenger on Coach; Aaron remains the incumbent unless separately instructed."
+  }
+}

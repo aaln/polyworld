@@ -1,0 +1,166 @@
+{
+  "campaign_plan": {
+    "artifact": "examples/gods_of_the_arena/players/ir/campaign-20260910-plan.json",
+    "sha256": "cad4c2e17ef0c5910114ec4df650a2097a43ad39f0782b194a5ee2fe5f12b4eb"
+  },
+  "discovery_seeds": [
+    41000,
+    41001,
+    41002,
+    41003,
+    41004,
+    41005
+  ],
+  "discovery": [
+    {
+      "policy": "waveguard_v1",
+      "phase": "discovery",
+      "source_sha256": "992f9f20ffb110cd74dc44602aac9a6441b42b63f23dbabab071dfa699f5d84e",
+      "wins": 28,
+      "control_wins": 30,
+      "episodes": 60
+    },
+    {
+      "policy": "sustain_wave",
+      "phase": "discovery",
+      "source_sha256": "c23c618705b74ec3154ba7614cdda6fd7bdc84e71ea55c3b0ef171438f0a91c3",
+      "wins": 32,
+      "control_wins": 30,
+      "episodes": 60
+    },
+    {
+      "policy": "sustain_center",
+      "phase": "discovery",
+      "source_sha256": "b32ca7b56d081017bfd253601c292e0823869fcf94e5f0dd1328171d15f78cdd",
+      "wins": 36,
+      "control_wins": 30,
+      "episodes": 60
+    },
+    {
+      "policy": "hero_priority_4",
+      "phase": "discovery",
+      "source_sha256": "7247acb6fe63d5f0eb40dd21efe8e27263af06705bb7161faba362cc3d0e13f3",
+      "wins": 37,
+      "control_wins": 30,
+      "episodes": 60
+    },
+    {
+      "policy": "hero_priority_16",
+      "phase": "discovery",
+      "source_sha256": "12749eb219999848ed47fcab214c33e44bf62905b5570c2c01b02341d4151c5b",
+      "wins": 35,
+      "control_wins": 30,
+      "episodes": 60
+    }
+  ],
+  "first_gate": {
+    "artifact": "examples/gods_of_the_arena/players/ir/local-sustain-result-20260910.json",
+    "sha256": "63f465d85d38cc2af47651d8f5af00f774f6c7200a7ab4e89118861d82f0f98d"
+  },
+  "second_gate": {
+    "state": "complete",
+    "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+    "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32",
+    "gate": {
+      "seed_clusters": 24,
+      "seed_deltas": {
+        "53000": 0.7,
+        "53001": -0.1,
+        "53002": 0.1,
+        "53003": 0.1,
+        "53004": 0.3,
+        "53005": 0.0,
+        "53006": -0.1,
+        "53007": -0.1,
+        "53008": -0.1,
+        "53009": 0.2,
+        "53010": -0.1,
+        "53011": 0.0,
+        "53012": 0.3,
+        "53013": 0.0,
+        "53014": 0.3,
+        "53015": 0.1,
+        "53016": 0.5,
+        "53017": 0.0,
+        "53018": -0.1,
+        "53019": 0.2,
+        "53020": 0.1,
+        "53021": 0.1,
+        "53022": -0.1,
+        "53023": 0.0
+      },
+      "positive_seeds": 12,
+      "negative_seeds": 7,
+      "tied_seeds": 5,
+      "one_sided_sign_test_p": 0.1796417236328125,
+      "mean_paired_gain": 0.09583333333333334,
+      "minimum_gain": 0.1,
+      "alpha": 0.025,
+      "passed": false,
+      "interpretation": "Sign test of positive versus negative independent seed deltas; ties excluded. The practical gate additionally requires at least 10 percentage points mean gain. This establishes baseline-roster evidence, not wider-field superiority."
+    },
+    "candidate_ir": "examples/gods_of_the_arena/players/ir/duelist.ir.json",
+    "candidate_ir_sha256": "a2d983db520024cee285cedc34b7be7bbf3ec031054a19a1e8b850efc3f48b0c",
+    "source_sha256": "7247acb6fe63d5f0eb40dd21efe8e27263af06705bb7161faba362cc3d0e13f3",
+    "post_hoc_diagnostics": {
+      "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-diagnostics-20260910.json",
+      "sha256": "c01ba9c144d81ce810041890b46d7c85d56a67999d88843b189aac86f1e36555"
+    }
+  },
+  "replay_audit": {
+    "artifact": "tmp/gota-ir/target-screen-20260910/replay-audit.json",
+    "sha256": "8e752af2cbf2f6661a9da5762ee273c42dcd4e4ebfa6c174a80039f9ba90ad4b",
+    "actions_consumed": 112804,
+    "hash_mismatches": 0
+  },
+  "runtime": {
+    "game_version": "2026.9.10.3",
+    "source_commit": "27a8fd51eadf48d2f69591cca4287074e9058e8f",
+    "local_commit": "76c477e5b88f04d82fa11444cdb196b6ec554573",
+    "identical_sources": {
+      "examples/gods_of_the_arena/bots.nim": "10a1e78a1fdae40095b7f4eebbd365335d9fd2cc4dc538525ae7606ababd67bf",
+      "examples/gods_of_the_arena/content.nim": "2f2844e766010f4dab0d7dcb9a4c3cca49bbc0f86883632c454d2b503da748b4",
+      "src/polyworld/basic.nim": "13fd4727eda25eb1ac748d4b3eaa6a5be5e752baf487be80cacaca9996b97289",
+      "coworld/dependencies.lock": "efa2ddd0c3f2639ca8dc6c4b11ef951f890c9d816b811559af0834c065e3f413"
+    },
+    "changes": "Game/replay configuration metadata and rendering. sim.nim only adds config accessor; combat logic unchanged. Replay format changed from 3/14 to 5/16, so hosted audit is compiled against the exact published commit.",
+    "sim_diff": "diff --git a/examples/gods_of_the_arena/sim.nim b/examples/gods_of_the_arena/sim.nim\nindex 65814c6..69d638c 100644\n--- a/examples/gods_of_the_arena/sim.nim\n+++ b/examples/gods_of_the_arena/sim.nim\n@@ -231,6 +231,13 @@ const\n   TowerAttackTicks* = TickRate\n   TowerSiegeRange* = 105_000'i32\n \n+proc config*(game: Game): GameConfig =\n+  ## Reads the match configuration owned by the live or loaded replay.\n+  if game.recorder != nil:\n+    game.recorder.data.config\n+  else:\n+    game.replayData.config\n+\n proc worldPoint(point: PathPoint): WorldPoint =\n   ## Converts one exact 1/32-tile path point into integer world units.\n   const PathUnit = WorldScale div PathUnitsPerTile\n"
+  },
+  "tests": {
+    "count": 22,
+    "passed": true,
+    "artifact": "tmp/gota-ir/campaign-final-tests.log",
+    "sha256": "31edac98cf1c31c8889a365f21cddd68fece2424e422bd4db995e60fa9b2283a"
+  },
+  "state": "complete",
+  "local_artifact_audit": {
+    "episodes": 834,
+    "total_actions": 103630848,
+    "all_source_replay_and_trace_hashes_match": true,
+    "all_games_have_ten_classes": true,
+    "maximum_work": 10183,
+    "maximum_instructions": 5332,
+    "limits": {
+      "work": 50000,
+      "instructions": 20000
+    },
+    "artifact": "tmp/gota-ir/local-campaign-audit-20260910.json",
+    "sha256": "8ee786a198a9b24b0b65b4e517e59abad1831e1c528756c9095e0705d68ba52b"
+  },
+  "verdict": "promising_targeting_gain_but_neither_local_gate_passed",
+  "hosted_evaluation_eligible": false,
+  "further_xp_requests_created": [],
+  "league_promotion_performed": false,
+  "limitations": [
+    "The two validation attempts used distinct seed sets; their raw win rates are not directly comparable to each other.",
+    "Individual class/seat games within a seed are correlated; the sign test uses independent seed clusters.",
+    "A failed superiority gate is not proof of no effect.",
+    "The observed targeting gain does not establish wider-field superiority or isolate targeting from the economy change.",
+    "This campaign does not compare IR-based research with direct BASIC research."
+  ],
+  "final_bundle": {
+    "path": "tmp/gota-ir/local-gate-20260910-r2/diagnosed",
+    "manifest_sha256": "03b81ea019ef13c07d3dc49f22f57b8fa2931c0bc44faa3d70d2bdaf1e450f85",
+    "structural_parity": true
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "verified_games": 8,
+  "metrics": {
+    "parent": {
+      "games": 2,
+      "wins": 0,
+      "deaths": 27,
+      "all_gear": true,
+      "deaths_per_live_decision_minute": 0.6989285971093694,
+      "opponents": {
+        "deployed_suppression": 0
+      },
+      "colors": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "suppression_reference": {
+      "games": 2,
+      "wins": 1,
+      "deaths": 23,
+      "all_gear": true,
+      "deaths_per_live_decision_minute": 0.6307009692837964,
+      "opponents": {
+        "deployed_suppression": 1
+      },
+      "colors": {
+        "0": 1,
+        "1": 0
+      }
+    },
+    "handoff": {
+      "games": 2,
+      "wins": 0,
+      "deaths": 26,
+      "all_gear": true,
+      "deaths_per_live_decision_minute": 0.6713407089960373,
+      "opponents": {
+        "deployed_suppression": 0
+      },
+      "colors": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "handoff_hits8": {
+      "games": 2,
+      "wins": 0,
+      "deaths": 26,
+      "all_gear": true,
+      "deaths_per_live_decision_minute": 0.6713407089960373,
+      "opponents": {
+        "deployed_suppression": 0
+      },
+      "colors": {
+        "0": 0,
+        "1": 0
+      }
+    }
+  },
+  "selected": [],
+  "rows": [
+    {
+      "name": "suppression_reference",
+      "seed": 9700500,
+      "color": 0,
+      "opponent": "deployed_suppression",
+      "win": 1,
+      "ticks": 5720,
+      "deaths": 10,
+      "gear_heroes": 5,
+      "live_decision_ticks": 26566,
+      "replay_sha256": "9d08541658f23d0486f20f59471d777c9a8c00d09c148e3ba5c1b5099c160d15"
+    },
+    {
+      "name": "handoff_hits8",
+      "seed": 9700500,
+      "color": 0,
+      "opponent": "deployed_suppression",
+      "win": 0,
+      "ticks": 6526,
+      "deaths": 13,
+      "gear_heroes": 5,
+      "live_decision_ticks": 29822,
+      "replay_sha256": "5933030b2e9150ae5d918a393ba063fd7b5b7cd85c957dcf67540d168880f56b"
+    },
+    {
+      "name": "handoff",
+      "seed": 9700500,
+      "color": 0,
+      "opponent": "deployed_suppression",
+      "win": 0,
+      "ticks": 6526,
+      "deaths": 13,
+      "gear_heroes": 5,
+      "live_decision_ticks": 29822,
+      "replay_sha256": "5933030b2e9150ae5d918a393ba063fd7b5b7cd85c957dcf67540d168880f56b"
+    },
+    {
+      "name": "parent",
+      "seed": 9700500,
+      "color": 0,
+      "opponent": "deployed_suppression",
+      "win": 0,
+      "ticks": 6513,
+      "deaths": 14,
+      "gear_heroes": 5,
+      "live_decision_ticks": 29681,
+      "replay_sha256": "fe1ab199f96eeed3a4e782d3b5536f10fc6c990f60486d2d285f2f662cfa9a3f"
+    },
+    {
+      "name": "parent",
+      "seed": 9700501,
+      "color": 1,
+      "opponent": "deployed_suppression",
+      "win": 0,
+      "ticks": 5720,
+      "deaths": 13,
+      "gear_heroes": 5,
+      "live_decision_ticks": 25947,
+      "replay_sha256": "ff31e393a847bc1eb6d93891299d940af4d0ca17a4c767bea67027f5ad934f51"
+    },
+    {
+      "name": "suppression_reference",
+      "seed": 9700501,
+      "color": 1,
+      "opponent": "deployed_suppression",
+      "win": 0,
+      "ticks": 5720,
+      "deaths": 13,
+      "gear_heroes": 5,
+      "live_decision_ticks": 25947,
+      "replay_sha256": "8d0c1a43b4d5e788b60532fb761018aceb91614eaf61320a629c35f57b6aec49"
+    },
+    {
+      "name": "handoff",
+      "seed": 9700501,
+      "color": 1,
+      "opponent": "deployed_suppression",
+      "win": 0,
+      "ticks": 5720,
+      "deaths": 13,
+      "gear_heroes": 5,
+      "live_decision_ticks": 25947,
+      "replay_sha256": "7d7fc9e502d8ff275b3d4f52d92be06e3230d111539c6126c402ce0ec4b9b50d"
+    },
+    {
+      "name": "handoff_hits8",
+      "seed": 9700501,
+      "color": 1,
+      "opponent": "deployed_suppression",
+      "win": 0,
+      "ticks": 5720,
+      "deaths": 13,
+      "gear_heroes": 5,
+      "live_decision_ticks": 25947,
+      "replay_sha256": "7d7fc9e502d8ff275b3d4f52d92be06e3230d111539c6126c402ce0ec4b9b50d"
+    }
+  ],
+  "interpretation": "Local reacting fixed-lineup diagnostic, one case per color/arm. No hosted or independent significance claim. Original 48-game screen and prospective confirmation unchanged."
+}

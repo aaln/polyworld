@@ -1,0 +1,124 @@
+{
+  "schema": "gota-microplay-hosted-experiment/1",
+  "id": "interactive-microplay-xp-20260920",
+  "target": {
+    "coworld_id": "cow_126f2fcb-80a0-4b6e-8166-eb6163576db5",
+    "variant_id": "competition"
+  },
+  "config": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  },
+  "game_version": "2026.9.16.5",
+  "engine_commit": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+  "subject_player": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+  "arms": {
+    "parent": {
+      "version": "4cdbbf36-3d70-4ea3-8aed-c92ee0e024be",
+      "source_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+      "ir_sha256": "fc2dfa33dce067542c9ca2391246a19051bf000ca4209d60b0dd2a099ba5ed37"
+    },
+    "finish": {
+      "version": "8d5c21f9-31ea-4396-989d-0652f153fa10",
+      "source_sha256": "899c856ec2c80220c55239d4d6c084bc62f7dd345f12f75d7db447cb95334cc8",
+      "ir_sha256": "2d1d57dbf66cee705908460374c6f4e2d81ab06f65fc161021ffb064a7d07596"
+    },
+    "combined": {
+      "version": "3b0da26f-1eb3-4c70-887f-dc1867c4595c",
+      "source_sha256": "46fd4396b5ee50e8817f1eed9c280dbaf5aa8adbb01cba06ba1da3fd30cd7fbc",
+      "ir_sha256": "68a8f1fe065eada21248f949e3731b12b13a5782625bfe4ba83f9a6fc86f2e5d"
+    }
+  },
+  "other_players": [
+    {
+      "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+      "name": "richard",
+      "version": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "label": "richard-gods-of-the-arena:v135"
+    },
+    {
+      "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+      "name": "Jordan",
+      "version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+      "label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268"
+    },
+    {
+      "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+      "name": "Alex Smith",
+      "version": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "label": "gota-g002:v1"
+    },
+    {
+      "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+      "name": "relh",
+      "version": "99ff8b49-8bb6-4ee2-9204-ff24a8efda4e",
+      "label": "relh-gods-of-the-arena:v154"
+    },
+    {
+      "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+      "name": "macromackie",
+      "version": "1a78a3f9-8112-4c2c-831a-f0ffee8dbacc",
+      "label": "macromackie-gota:v4"
+    },
+    {
+      "player_id": "ply_0f9ea7d3-fa48-4586-9df3-123e9ee21f1c",
+      "name": "Andrew Brower B",
+      "version": "d10d7d74-40a7-4f6c-8838-e09729160349",
+      "label": "black-kite:v16"
+    },
+    {
+      "player_id": "ply_ac7e5318-5781-4ed6-8fc9-d9f66d6b1637",
+      "name": "Andrew Brower",
+      "version": "a4590ed4-0b0c-4d86-8968-0844796f30e0",
+      "label": "red-kite:v34"
+    },
+    {
+      "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+      "name": "Scott Smith",
+      "version": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+      "label": "gota-g003:v2"
+    },
+    {
+      "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+      "name": "daveey",
+      "version": "3ccd4955-3d9c-4c79-a243-e5dc12d650ad",
+      "label": "gota-vanguard-rally-hold:v1"
+    }
+  ],
+  "episodes_per_arm": 40,
+  "interventions": {
+    "finish_minus_parent": "Low-HP enemy hero priority",
+    "combined_minus_finish": "Guarded lower-ID ally assistance"
+  },
+  "primary_checks": [
+    "All ten VMs finish successfully",
+    "All replay ticks and actions match",
+    "Exact subject VM reconstructs hosted commands",
+    "Measure refinements and actual attack commands after refinement",
+    "Compare subject deaths/basic hits and allied deaths per exposure"
+  ],
+  "interpretation": {
+    "activation_required": true,
+    "superiority_claim": "Not established by small unpaired cohort alone",
+    "seeds": "Independently generated across requests; not seed-paired",
+    "roster": "Frozen nine other players, subject rotates through ten seats",
+    "macro": "Wins are diagnostic only",
+    "promotion": false
+  }
+}

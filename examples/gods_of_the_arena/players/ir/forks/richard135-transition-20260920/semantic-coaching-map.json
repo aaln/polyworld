@@ -1,0 +1,97 @@
+{
+  "session": "/Users/aaln/Documents/Policy Loops/sessions/2026-09-20t19-10-35-082z64deb6",
+  "mapping": [
+    {
+      "layer": "situation",
+      "coaching": "PerimeterCleared; HostilesUnobserved",
+      "implementation": "observe/richard_transition_observe_v2",
+      "semantics_and_limits": "Public complete <=128object scan: zero hostile heroes/creeps within36tiles; no visible enemy heroes for240ticks. Incomplete scans are unknown. Numeric durations and radii are authored, not quoted.",
+      "evidence_ids": [
+        "speech-2",
+        "speech-3",
+        "speech-4",
+        "speech-5"
+      ]
+    },
+    {
+      "layer": "strategy",
+      "coaching": "Leave cleared defense for objective pressure",
+      "implementation": "observe plus fallback, R1/R4",
+      "semantics_and_limits": "Positive alarm lasts360ticks without renewal; complete observed clearance for72ticks releases it. Inherited group objective route resumes. Earlier code renewed on old damage; new code requires a new HP decrease.",
+      "evidence_ids": [
+        "speech-1",
+        "speech-2",
+        "speech-3",
+        "speech-6",
+        "speech-7"
+      ]
+    },
+    {
+      "layer": "skill",
+      "coaching": "Designated proactive scout",
+      "implementation": "observe/richard_transition_observe_v2 plus route",
+      "semantics_and_limits": "Healthy Crossbowman leads from group center toward center map, bounded offset10/-10. Low HP, observed heroes or home hostiles cancel. No invented ward API or guaranteed safe escape.",
+      "evidence_ids": [
+        "speech-4",
+        "speech-5"
+      ]
+    },
+    {
+      "layer": "belief",
+      "coaching": "Dominant ranged carry threat",
+      "implementation": "shared Ranger class cue in observe",
+      "semantics_and_limits": "Visible Ranger within40tiles of home and22tiles of group center wins shared targeting. Bypasses four-ready/tether attack block. Cue does not identify Richard or measure unseen DPS.",
+      "evidence_ids": [
+        "speech-10",
+        "speech-11",
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "speech-15"
+      ]
+    },
+    {
+      "layer": "goal",
+      "coaching": "Win through enemy structure destruction",
+      "implementation": "G_group_siege/G_defense/G_fort plus observe/attack/fallback",
+      "semantics_and_limits": "Coupled offense, bounded defense, grouping and focus objectives. Lower defense occupancy is not a competitive success by itself.",
+      "evidence_ids": [
+        "speech-6",
+        "speech-7",
+        "speech-15"
+      ]
+    },
+    {
+      "layer": "execution",
+      "coaching": "Synchronized engagement against Ranger",
+      "implementation": "attack/richard_transition_focus_v3",
+      "semantics_and_limits": "Each VM uses public shared selection and attempts legal class strike/attack; no dash/stun exists in these selected strikes. One legal recovery move only follows a new hit on a consecutive decision. Cold entry and decision gaps use ordinary attack.",
+      "evidence_ids": [
+        "speech-10",
+        "speech-11",
+        "speech-12",
+        "speech-13",
+        "speech-14"
+      ]
+    },
+    {
+      "layer": "update",
+      "coaching": "Compare power progression and itemization",
+      "implementation": "metrics.py; optional equipment/richard_transition_equipment_v1; measured IR feedback",
+      "semantics_and_limits": "Armor version buys KnightArmor third thenBattleAxe andArcaneSpellbook. Whole40game cohorts measure XP/level, held equipment cost, damage/HP, deaths and hits. Held shop cost is not net worth. The unreviewed level9/range410 claim is corrected to native finallevel10/range330000. Crossbow attack155 exceeded Ranger123, so damage-per-hit alone does not explain the wipe.",
+      "evidence_ids": [
+        "speech-16",
+        "speech-17"
+      ]
+    }
+  ],
+  "proofs": [
+    "fresh-hit/vm-proof.json",
+    "fresh-hit/focus-proof.json",
+    "fresh-hit/boundary-proof.json",
+    "fresh-hit/mechanism-local/comparison.json",
+    "diagnosis.json",
+    "ranger-cadence-evidence.json"
+  ],
+  "evaluation": "Complete coordinated bundles, not an isolated edit gain requirement. Scenario command acceptance is scripted; combat/fort outcomes come only from fully audited real episodes."
+}

@@ -1,0 +1,188 @@
+{
+  "cell": "early_all",
+  "design": "adaptive2x2 range/aggro matrix; same40 inspected cases; no independent confirmation",
+  "game_version": "2026.9.15.3",
+  "wins": 17,
+  "parent_wins": 22,
+  "default_wins": 18,
+  "previous_pure_kite_wins": 20,
+  "metrics": {
+    "parent": {
+      "deaths": 134,
+      "hits": 2321,
+      "xp": 49600
+    },
+    "candidate": {
+      "deaths": 124,
+      "hits": 2255,
+      "xp": 50725
+    },
+    "baseline": {
+      "deaths": 154,
+      "hits": 2084,
+      "xp": 49750
+    }
+  },
+  "deaths_per_game_minute": 0.4448031566675635,
+  "hits_per_game_minute": 8.088960631333514,
+  "mean_glory": 506.609375,
+  "gates": {
+    "parent": {
+      "gain_wins": -5,
+      "passed": false
+    },
+    "baseline": {
+      "gain_wins": -1,
+      "passed": false
+    },
+    "survival": {
+      "death_ratio": 0.9253731343283582,
+      "hit_ratio": 0.9715639810426541,
+      "passed": false
+    }
+  },
+  "activation": {
+    "games": 23,
+    "classes": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8
+    ],
+    "verified_bursts": 476,
+    "unverified_bursts": 0,
+    "landed_before_retreat_fraction": 1.0
+  },
+  "passed": false,
+  "audited_games": 120,
+  "new_games": 40,
+  "promotion_eligible": false,
+  "by_class": {
+    "parent": [
+      {
+        "class": 0,
+        "n": 4,
+        "control_wins": 3,
+        "candidate_wins": 3
+      },
+      {
+        "class": 1,
+        "n": 4,
+        "control_wins": 3,
+        "candidate_wins": 2
+      },
+      {
+        "class": 2,
+        "n": 4,
+        "control_wins": 3,
+        "candidate_wins": 1
+      },
+      {
+        "class": 3,
+        "n": 4,
+        "control_wins": 3,
+        "candidate_wins": 1
+      },
+      {
+        "class": 4,
+        "n": 4,
+        "control_wins": 3,
+        "candidate_wins": 3
+      },
+      {
+        "class": 5,
+        "n": 4,
+        "control_wins": 2,
+        "candidate_wins": 2
+      },
+      {
+        "class": 6,
+        "n": 4,
+        "control_wins": 2,
+        "candidate_wins": 3
+      },
+      {
+        "class": 7,
+        "n": 4,
+        "control_wins": 1,
+        "candidate_wins": 1
+      },
+      {
+        "class": 8,
+        "n": 4,
+        "control_wins": 1,
+        "candidate_wins": 0
+      },
+      {
+        "class": 9,
+        "n": 4,
+        "control_wins": 1,
+        "candidate_wins": 1
+      }
+    ],
+    "baseline": [
+      {
+        "class": 0,
+        "n": 4,
+        "control_wins": 2,
+        "candidate_wins": 3
+      },
+      {
+        "class": 1,
+        "n": 4,
+        "control_wins": 3,
+        "candidate_wins": 2
+      },
+      {
+        "class": 2,
+        "n": 4,
+        "control_wins": 4,
+        "candidate_wins": 1
+      },
+      {
+        "class": 3,
+        "n": 4,
+        "control_wins": 2,
+        "candidate_wins": 1
+      },
+      {
+        "class": 4,
+        "n": 4,
+        "control_wins": 2,
+        "candidate_wins": 3
+      },
+      {
+        "class": 5,
+        "n": 4,
+        "control_wins": 0,
+        "candidate_wins": 2
+      },
+      {
+        "class": 6,
+        "n": 4,
+        "control_wins": 0,
+        "candidate_wins": 3
+      },
+      {
+        "class": 7,
+        "n": 4,
+        "control_wins": 1,
+        "candidate_wins": 1
+      },
+      {
+        "class": 8,
+        "n": 4,
+        "control_wins": 1,
+        "candidate_wins": 0
+      },
+      {
+        "class": 9,
+        "n": 4,
+        "control_wins": 3,
+        "candidate_wins": 1
+      }
+    ]
+  }
+}

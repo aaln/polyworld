@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "selection": {
+    "seed": 9800044,
+    "color": 0,
+    "opponent": "default",
+    "same_commands": false,
+    "candidate_win": 1,
+    "suppression_win": 1
+  },
+  "reviews": [
+    {
+      "name": "candidate",
+      "source_sha256": "194959d2601d3c931145b42990b41ebfeb8ce79a9f80ac48d88b240313dcb694",
+      "replay_sha256": "69cd241c8496c4e9697367741671a8524523fb2b2c8cb11ed8f0c5d37a2ad99b",
+      "equivalence_sha256": "453adebd46a2771292a0d8e7fb47c2b9ef38a83e994468da8d8b9c773fa22d6b",
+      "inward_rally_decisions": 483,
+      "first": {
+        "0": 5054,
+        "2": 5054,
+        "3": 5054
+      },
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/confirmation/red-changed-review/candidate"
+    },
+    {
+      "name": "suppression",
+      "source_sha256": "3043195d9c7e22930e24e255a369b14213538d3bfdad09f97592e1cd4623606b",
+      "replay_sha256": "9d67fc70d11eca8b98eafca5df9da030666c0c95736e6eb8d319cd92eddb6821",
+      "equivalence_sha256": "059388d9252e727d7f88f6b119bca217320b47f17569a1350b97a0045a7cb597",
+      "inward_rally_decisions": 0,
+      "first": {},
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/confirmation/red-changed-review/suppression"
+    },
+    {
+      "name": "raw-source-equivalence",
+      "source_sha256": "b115c72bd19c30ddc52854b5a78500edfbd8cc6b70d38b00ee36cfffac4d01df",
+      "replay_sha256": "69cd241c8496c4e9697367741671a8524523fb2b2c8cb11ed8f0c5d37a2ad99b",
+      "equivalence_sha256": "4bc0e6b8ad95eeae306ec679ed56693a0827bed6ce77d7aa70229a7a15e9419d",
+      "inward_rally_decisions": 483,
+      "first": {
+        "0": 5054,
+        "2": 5054,
+        "3": 5054
+      },
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_fused_v2/confirmation/red-changed-review/raw-source-equivalence"
+    }
+  ],
+  "interpretation": "Only changed red confirmation case, both win. Complete own commands and all state hashes checked. Raw sentry source equivalence verifies this change is rally gameplay rather than fused-loop drift on this case. Raw reuse is not a new outcome; whole-policy decision quality not isolated."
+}

@@ -1,0 +1,1455 @@
+{
+  "episodes_per_arm": 10,
+  "seed_clusters": 1,
+  "control_wins": 2,
+  "candidate_wins": 4,
+  "paired_win_delta": 0.2,
+  "control_equipment_items": 16,
+  "candidate_equipment_items": 35,
+  "control_deaths": 39,
+  "candidate_deaths": 35,
+  "control_timeouts": 0,
+  "candidate_timeouts": 0,
+  "verdict": "directionally_promising",
+  "limitations": [
+    "Rotated seats sharing a seed are correlated.",
+    "No established verdict sample floor for GOTA; results are directional.",
+    "Final equipment and death totals also depend on episode length.",
+    "This experiment does not isolate wave following or compare IR research with direct-code research."
+  ],
+  "pairs": [
+    {
+      "seed": 60610,
+      "slot": 0,
+      "control": {
+        "episode_request_id": "ereq_43301c66-f59d-40c0-ba11-371c31e89957",
+        "slot": 0,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 0,
+        "ticks": 11168,
+        "timeout": false,
+        "deaths": 4,
+        "equipment_count": 2,
+        "poison_purchase_attempts": 7,
+        "artifact_hashes": {
+          "episode.json": "2be467a2b6bcf7b83ff67738e4025eccf692a4b64654a42a7e84a496da637654",
+          "results.json": "cf7231fb668a211e171b4d838c9e887cce86cb4a393e1be448890adc258f8d29",
+          "audit.json": "9f1f70a0110dea9ea390857506cae2f51372e8fb028be775b8e0a76b3aeb0faf",
+          "replay.bin": "565e9a9ee737c86b03305f5019c1d691cb0db1d521b4142a2ea81b3ae69c1f82",
+          "game.log": "e4cb99c3fa35dc3cc00d4788f473a30e301399c766c3657523dabbbdf0e1e4b1"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_19321067-5f7e-4154-afe7-4563fd90a499",
+        "slot": 0,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 0,
+        "ticks": 20079,
+        "timeout": false,
+        "deaths": 8,
+        "equipment_count": 4,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "d8322da842de3bc5f096cce1cbb381593c9c5376bb0ecf7c980524d2bfa371b5",
+          "results.json": "2e7ec94142bed11e78abc3fd1e3069825d28761cced5f1787ce4a1de8e6a62ea",
+          "audit.json": "300788b1f2ab68381f4b28a327725e5a0737e02db420ba4461fa4317498fd88f",
+          "replay.bin": "b5929fb34a358fba56724942728acb08f7f6d8fc02fe8cd078695ce750767125",
+          "game.log": "4522d692e099489396536ae005c1feb31f15649352ea3b63a0fa5ad855a4757b"
+        }
+      },
+      "score_delta": 0
+    },
+    {
+      "seed": 60610,
+      "slot": 1,
+      "control": {
+        "episode_request_id": "ereq_85d40ba6-9584-4742-a109-6e6d3c9f0ac2",
+        "slot": 1,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 0,
+        "ticks": 9456,
+        "timeout": false,
+        "deaths": 2,
+        "equipment_count": 1,
+        "poison_purchase_attempts": 17,
+        "artifact_hashes": {
+          "episode.json": "e47c8885960e0d6b20b6740394b88514da161de5e33d869aa2e9c9d3a18085dc",
+          "results.json": "43bb91acd2d858cb4d67b97dece7a85e3de4249994b7d86aca597fee7c5f3076",
+          "audit.json": "153be5a5cee927451a2a967b669c077bb5dbf282ed989a61af7c74fdcfff1c1a",
+          "replay.bin": "c7cf210078fb871e6fa87bc178695c99cf793ed19eb79aa1e835090b2c7e1fc4",
+          "game.log": "6e9090c92fd38ae76cb7a29040df0c4c4e9cf2cbc97ab21f738a38875a5d8210"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_6f55d3db-3436-4b1a-bff4-74eab5588990",
+        "slot": 1,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 1,
+        "ticks": 6569,
+        "timeout": false,
+        "deaths": 1,
+        "equipment_count": 2,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "46418e64c38a63390e9eee929d589e9525efb302b8ef86114cc740ff0e24650c",
+          "results.json": "d43d350facc5a2bacb0e4e247109e894ec1c086f486ef3865f87feb0ad55a5b1",
+          "audit.json": "1da765fe7c6348306fdce3fe50d53fb3d62471777af8ae66e1b44ea0ba09cc7a",
+          "replay.bin": "97be31327bdf92512e77f11a4d407f12950c1fbcfce43e35d6f2f9369e77018b",
+          "game.log": "adda734156b1d3e5f4fb02348c9a3d76ac49ed7a20aefc7f0d06583eb4df19f7"
+        }
+      },
+      "score_delta": 1
+    },
+    {
+      "seed": 60610,
+      "slot": 2,
+      "control": {
+        "episode_request_id": "ereq_2ff43bfd-1f03-4d62-b7f8-ef739f9d9453",
+        "slot": 2,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66"
+        ],
+        "score": 0,
+        "ticks": 10881,
+        "timeout": false,
+        "deaths": 3,
+        "equipment_count": 1,
+        "poison_purchase_attempts": 17,
+        "artifact_hashes": {
+          "episode.json": "77a1abc8b95df852d5ab01cb55946ba8d1c817e6ea86bb92aa1dfded02341995",
+          "results.json": "bd9efea54b4f4f12b07dc103f95ac9cc3727073f7c1a9751583030584a1aeb7c",
+          "audit.json": "903fab0dd4aa40a7de674b6e0015652c70da51d76d18da5c1a4f3bce6262111f",
+          "replay.bin": "ebe512b8e52d5c18d10b625aefbbf3923af00fd86703935b01819d23dfab2578",
+          "game.log": "6a36316efc1f58aef5084d0145bcec20cde1833530a6b228331dbda19530c7d6"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_2d319fbb-7a99-473b-860a-20203dd6f5c5",
+        "slot": 2,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66"
+        ],
+        "score": 1,
+        "ticks": 7272,
+        "timeout": false,
+        "deaths": 2,
+        "equipment_count": 1,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "ae5f3eef6c8da78c28a2405baa211eaad9db4c815890ad7a6306d2f81b622b61",
+          "results.json": "33928adac653d081d2565149414f347275aa453255c72cd1f7ea0097c6e362d9",
+          "audit.json": "c16be49631185c40c3e9db49d9aab00804b37ae7f47856b05a7f14061305c209",
+          "replay.bin": "8dddcbc6e1263138fe7f382e74265c22fabf55d174c2f355ec423d4b9a959ef0",
+          "game.log": "f21b988d34b8db07e92b21d46a7fd116030a84c7931ae1787356b0a5614d9e34"
+        }
+      },
+      "score_delta": 1
+    },
+    {
+      "seed": 60610,
+      "slot": 3,
+      "control": {
+        "episode_request_id": "ereq_c2f66c24-915b-4679-a80c-6bd20b9a2084",
+        "slot": 3,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 0,
+        "ticks": 15188,
+        "timeout": false,
+        "deaths": 10,
+        "equipment_count": 2,
+        "poison_purchase_attempts": 23,
+        "artifact_hashes": {
+          "episode.json": "fae8aa9ecf93e9902aefaf0438007491a60e3a89e2d280c39fc2a07e893bffe4",
+          "results.json": "99f7e9c8b5b1ceb7f8f3062d5ecd3a8822bb158f8fc123fdd5ad6e2baf439f50",
+          "audit.json": "1617e022647c9fe63bdd21a7dba6dbec897c78d1fd4cbc76c3190a4da0ea6e01",
+          "replay.bin": "e29b47dcf92af321dc68ce87655523b5abe7a336530018f967ff6f9e57665b33",
+          "game.log": "918e7bffd32ae3abea6edf734bff01260246d1b13d841ac7e5fdc97eb8f1ef51"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_66584e6a-199b-4c9f-8aa7-039f3f9ba92b",
+        "slot": 3,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 0,
+        "ticks": 8705,
+        "timeout": false,
+        "deaths": 8,
+        "equipment_count": 2,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "c38d5600b7a342f840c50118e8102d40ca901f98cff59be3a3941cfc91779256",
+          "results.json": "b2a8a1127622b3b2ccf827eafe47646339fad746a7ce6bbe5a40224e7de9da8c",
+          "audit.json": "ae18ad2e7f49a3d6c94c90a3eb6f55397b7b0e8ec7d0052d2391922529670f2c",
+          "replay.bin": "ed5683e3adc659375590fca909597e934d36dfb61b2709ce9caf6d1187dfc29d",
+          "game.log": "ff65d3375acaed41faa2e03e18fca5a18eb4c84ee077e75ea5a5863b72b266a4"
+        }
+      },
+      "score_delta": 0
+    },
+    {
+      "seed": 60610,
+      "slot": 4,
+      "control": {
+        "episode_request_id": "ereq_b70c6e6b-77fb-496e-aad0-3dc024ba2658",
+        "slot": 4,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb"
+        ],
+        "score": 0,
+        "ticks": 5740,
+        "timeout": false,
+        "deaths": 1,
+        "equipment_count": 2,
+        "poison_purchase_attempts": 18,
+        "artifact_hashes": {
+          "episode.json": "15343ea7d098f8192e596414647553c2daf0ea55f6ac66d991c47cb42c890115",
+          "results.json": "0bf25b5a95053e0140066e42448572971ffe894c2531e9bc663a672958aa8779",
+          "audit.json": "41150bfecbf91326eab353a3069e65a48d8fecdf5f5571da39696953c38820e4",
+          "replay.bin": "c94593c14b7286e743a7cffe59dfd8472fe387316b21129ac2166eb2750703b0",
+          "game.log": "3c5230a44f5ef39ca194186bdd684ecc361a7643517d7231d144ae156efd6ba1"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_ebefa44e-4006-42a3-a72b-e1fe9a6a6863",
+        "slot": 4,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb"
+        ],
+        "score": 0,
+        "ticks": 6627,
+        "timeout": false,
+        "deaths": 1,
+        "equipment_count": 6,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "91b6412d62e4d44847422bd15ceb78cd9c5d5561a90bede031a1e05aaf474807",
+          "results.json": "bb8d9ac490781c9afd1a087fdece6a693755f803dc33d485927ca7c2ed43c973",
+          "audit.json": "c9dbed277a331ef9f419dcb3ab6e159300502ea95857b111b70d38e640f42b73",
+          "replay.bin": "8dd5df09a15d07674de369fd9301617253208ebd04e89d95a6760a23a91a4b29",
+          "game.log": "dac957f8887c417bfa4466c4c79b4ed678a410bd25166a35bab2b13c8898cfec"
+        }
+      },
+      "score_delta": 0
+    },
+    {
+      "seed": 60610,
+      "slot": 5,
+      "control": {
+        "episode_request_id": "ereq_4e0f669f-144a-4937-b9ed-9e763b6978c8",
+        "slot": 5,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f"
+        ],
+        "score": 0,
+        "ticks": 6735,
+        "timeout": false,
+        "deaths": 3,
+        "equipment_count": 2,
+        "poison_purchase_attempts": 3,
+        "artifact_hashes": {
+          "episode.json": "1567b1c68d75a19109774683ff6e1352df51174912ad802931b5cf1da26d9648",
+          "results.json": "d94a64269c9718c169d6662a680b8be5b7a977d630a655d344fe8da957a293ae",
+          "audit.json": "27bdec971e22db3ac42ef9e4b6ae77be74343330cd69d386523f7857f14c19b3",
+          "replay.bin": "1cace4a510379196cefd9b6192de17b95bbd8b469493ee59b178b8d247892035",
+          "game.log": "7d8abce45eb7a50f718efd028b30d793e9bd7b6848f2564627fad56afae988ce"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_1d511864-ed70-41b4-a4fb-f5dd909af533",
+        "slot": 5,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f"
+        ],
+        "score": 0,
+        "ticks": 6735,
+        "timeout": false,
+        "deaths": 3,
+        "equipment_count": 2,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "8cf7fba78b3b78ff897023a812818ed80d2bb790d504bb1a76a1f4e431a1cc73",
+          "results.json": "d94a64269c9718c169d6662a680b8be5b7a977d630a655d344fe8da957a293ae",
+          "audit.json": "123dd1e49e52658ed32b8f4f32023cb250a7a651f824919e772a1c5090888fb9",
+          "replay.bin": "769d62f46988677174e590a8036ef118ebc016007ce42731ee091854764ae83e",
+          "game.log": "230adb07b0845e66b70fac1e1cd4e4e8621193052a696a1e8129c1eef22f58b7"
+        }
+      },
+      "score_delta": 0
+    },
+    {
+      "seed": 60610,
+      "slot": 6,
+      "control": {
+        "episode_request_id": "ereq_1ea3a7f4-16be-44b7-881f-75efe9300626",
+        "slot": 6,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 1,
+        "ticks": 8281,
+        "timeout": false,
+        "deaths": 2,
+        "equipment_count": 1,
+        "poison_purchase_attempts": 18,
+        "artifact_hashes": {
+          "episode.json": "800d0f3528aa0228c006df24c5af1df6325200f7ac8636179b9dd62df307341c",
+          "results.json": "11e68a9181a7580a7645b8bc8f294e1c14485938ce890a568c05c6449ff6418d",
+          "audit.json": "8a146cbdc10196e2baec8bb16c65449080969565100da8a777f8586374d12f7c",
+          "replay.bin": "7ec1c8a6ab3096c882a72b27e71296f057781d36f9f47a4a580b5f211de6f618",
+          "game.log": "35722aa799c0f0a9d9e5fe9c3639c9d439b065be753cc7c43890976eadc2ebc2"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_124c4216-0521-46b2-ad16-c47f3d17c446",
+        "slot": 6,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 1,
+        "ticks": 3967,
+        "timeout": false,
+        "deaths": 1,
+        "equipment_count": 3,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "670ace73d8ff15f1ecf3bb37c5809b0b2f3546531117a1040bec81fddedf6a69",
+          "results.json": "98aa05e8338acdc281bad7241328e80d3e9b845062a44e27ad90a5cb9182bfe7",
+          "audit.json": "aac480305d4d6cd72ff91be981583984a10d7d04797d2c63edcc5fdd31611045",
+          "replay.bin": "593e9cbf86c0e4a7dc8e5b4141e0f596dc6a49bc7f137ad6159ea39ab78ffe18",
+          "game.log": "036592e5619e65403e3bd4cff18b318aacb366a1863c0fd48d9b70ad3f9a0835"
+        }
+      },
+      "score_delta": 0
+    },
+    {
+      "seed": 60610,
+      "slot": 7,
+      "control": {
+        "episode_request_id": "ereq_1907713a-a6a7-4414-a384-bd9f6433cf3e",
+        "slot": 7,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161"
+        ],
+        "score": 0,
+        "ticks": 22236,
+        "timeout": false,
+        "deaths": 10,
+        "equipment_count": 2,
+        "poison_purchase_attempts": 60,
+        "artifact_hashes": {
+          "episode.json": "f07c6a6fc39cb41588c84804ee9869a60fba6030a146b4dff86cd1059fd59994",
+          "results.json": "20991f7b2a0f95362ac3baf9ec2a7a69fd206bd3bead66e29e7ba3d9abaab514",
+          "audit.json": "43da9253272689f4693bbaf1f4968671eb493ec7a9e2eb783ed37697620599c9",
+          "replay.bin": "7612f9ff24f0007255edddb1cec84e594960cdba6af3cc8b5e5ec2466aadb139",
+          "game.log": "a772f80515b1d506b936c657c2d699019a80e0efd66e039aa00a6cfee9cc800c"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_54a04d61-eb94-4a1e-88ab-ddc2d01cdf60",
+        "slot": 7,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161"
+        ],
+        "score": 0,
+        "ticks": 13810,
+        "timeout": false,
+        "deaths": 6,
+        "equipment_count": 6,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "df530f856dcabe03ab0b72dadda70adcc437444809a9a1dcc7aa46a3160a1baf",
+          "results.json": "9b94a7ea712af8ad65ddea4bd02b87959bef0218b4030c3ac1fefa72208ee143",
+          "audit.json": "b9d7be83711846f02f989c71bcb727e0b5cf360c27784a47be6e48387210607b",
+          "replay.bin": "f74955290721102e88004b74773121094aca0967981ea1d898fb745e68a9aaf6",
+          "game.log": "f50ea233e615edd692e74fe1bd336d8976d3129889d38dd06cc27e3cfe226a27"
+        }
+      },
+      "score_delta": 0
+    },
+    {
+      "seed": 60610,
+      "slot": 8,
+      "control": {
+        "episode_request_id": "ereq_dcfdedaa-afc2-496d-bd9f-ae3921899f79",
+        "slot": 8,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 1,
+        "ticks": 6868,
+        "timeout": false,
+        "deaths": 2,
+        "equipment_count": 1,
+        "poison_purchase_attempts": 5,
+        "artifact_hashes": {
+          "episode.json": "e14c8fedbe6c0743e19524850be8e0893fd806e730e5207fa62954ac91b1b0bf",
+          "results.json": "7276a335228d73e363c6ccf0ef0ec979f217a422af131c4e6650e47d6db42b47",
+          "audit.json": "a18df2f98881d0324228ccba083fc9df321829698b3a0ad6826c4e60b44c6987",
+          "replay.bin": "5ac0df1fb1849eb78580651a6fa944a0eac83741388dbdc09dfd4c97c14596de",
+          "game.log": "df27b935091804b817d054b87fc333fc7049426a7bb17c6a052010d702ee4ea1"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_29deb2bb-52ca-4c71-a54c-5022cc112b4c",
+        "slot": 8,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26"
+        ],
+        "score": 1,
+        "ticks": 9023,
+        "timeout": false,
+        "deaths": 3,
+        "equipment_count": 5,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "6f4853cdcc44c995869dc3a7827518d11494d004b590bf14008c129fa203eda5",
+          "results.json": "87eea848204f1066d9b0313b51e651368b125c39eb43fe0bb12c0bb969cdbffc",
+          "audit.json": "f836b48dc1d5b27647d1acf4f65ba15f48bbd86a2dbdcf4046ec5f5baff02ddf",
+          "replay.bin": "2723742aa14f20c6a0f71a150d0c576c09d17652722af9b5b03cdaf52341f9c6",
+          "game.log": "b40a56d71277f0c0c90ca6f3248474f6988015e5cb011ecd685b3166db0c560d"
+        }
+      },
+      "score_delta": 0
+    },
+    {
+      "seed": 60610,
+      "slot": 9,
+      "control": {
+        "episode_request_id": "ereq_b5e972c6-bde9-42e8-8d34-423ee278d8c8",
+        "slot": 9,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>"
+        ],
+        "score": 0,
+        "ticks": 5735,
+        "timeout": false,
+        "deaths": 2,
+        "equipment_count": 2,
+        "poison_purchase_attempts": 14,
+        "artifact_hashes": {
+          "episode.json": "65cdd0cabc97f4938c2a99ea50f817ff2981e3deba21ae163fca31e8cde5b21f",
+          "results.json": "2b6984a4c575567cd413a4fa04c17dedcf0d7067700e2ca353ebe557bca48128",
+          "audit.json": "f6321bc764592a336be99c1164e69f698cfc0826ed293d5848abe3d91ccbb024",
+          "replay.bin": "c866be3f23e5c27527857b68fc5298dc3949ec2c64498d72aba9da90ccab8a38",
+          "game.log": "62d69d08ba317d1840e9d9d1dd010329db9fdacf28dbf68385cc5d02b66477ce"
+        }
+      },
+      "candidate": {
+        "episode_request_id": "ereq_c53c6cb8-56ca-4557-bdfc-ca0ecb335ab1",
+        "slot": 9,
+        "seed": 60610,
+        "coworld_id": "cow_8186b473-d616-487f-8d42-386c0114f4b5",
+        "game_version": "2026.9.10.3",
+        "game_config": {
+          "seed": 60610,
+          "players": [
+            {
+              "name": "Player 1"
+            },
+            {
+              "name": "Player 2"
+            },
+            {
+              "name": "Player 3"
+            },
+            {
+              "name": "Player 4"
+            },
+            {
+              "name": "Player 5"
+            },
+            {
+              "name": "Player 6"
+            },
+            {
+              "name": "Player 7"
+            },
+            {
+              "name": "Player 8"
+            },
+            {
+              "name": "Player 9"
+            },
+            {
+              "name": "Player 10"
+            }
+          ],
+          "max_ticks": 28800,
+          "spawn_interval_ticks": 240
+        },
+        "roster": [
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "d96659bb-42c9-4be3-8905-8de74fee6161",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "fa00903c-0ba4-4eec-b20f-4c082550d80f",
+          "2bba59ef-ef42-495b-8364-61aeaa1477bb",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "38845b6f-2b80-45cb-aafb-a0c4c8be4b66",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "e8aed568-d03c-49bf-beaf-68c731f05d26",
+          "<candidate>"
+        ],
+        "score": 0,
+        "ticks": 5901,
+        "timeout": false,
+        "deaths": 2,
+        "equipment_count": 4,
+        "poison_purchase_attempts": 0,
+        "artifact_hashes": {
+          "episode.json": "a8a0bcf49db657c95507c0b07afffe9d6018f453f12993502d942b8709c4b87e",
+          "results.json": "c61a5017a6d15bf696b692a3c554936d3593e13147ccb5128b49ada3f3058d19",
+          "audit.json": "257040e4c7387cc9b1f1d76d4398f4228adfd3d0124b1817686f220dc11907ed",
+          "replay.bin": "47be5ccee4bd438278dd912639ddaa3a97629e7da765a1c7883fab100f4b70f2",
+          "game.log": "5500c5cbd12e91ddeccb5e3491eded59aebc5fcb587f8378c0157a339a895346"
+        }
+      },
+      "score_delta": 0
+    }
+  ],
+  "control_policy_version_id": "7b5f3065-85b0-4abf-882e-a4ab95a136fe",
+  "candidate_policy_version_id": "6d0ff780-652f-47a8-82b3-336cb7a10a56",
+  "candidate_source_sha256": "c23c618705b74ec3154ba7614cdda6fd7bdc84e71ea55c3b0ef171438f0a91c3"
+}

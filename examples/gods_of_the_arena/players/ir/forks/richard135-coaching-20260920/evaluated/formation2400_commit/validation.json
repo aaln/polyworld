@@ -1,0 +1,74 @@
+{
+  "name": "formation2400_commit",
+  "pair": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/evaluated/formation2400_commit",
+  "source_sha256": "9cc0d0c1a881a5b213c2a6cf7e9b9813d1ef2d2442e29dc0712cc92ef74cab2c",
+  "evaluated_ir_sha256": "7f9fc5365a3cba0a0d1228e52abf2ebdd393423d1263843b35beef5c9f2fae30",
+  "tested_ir_sha256": "411f908f90d354fc31a23ccfe58fa91df58abc14b74cd54e08c4e1c60e88e404",
+  "local": {
+    "games": 12,
+    "wins": 2,
+    "deaths": 267,
+    "all_runtime_and_replay_audits_passed": true,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/committed-return/local-results.json",
+      "sha256": "8f8fb828750d8d3161996cb984a164f82b41780094ee2e15a2730f7c73c7116a"
+    }
+  },
+  "local_control": {
+    "games": 12,
+    "wins": 8,
+    "deaths": 50,
+    "all_runtime_and_replay_audits_passed": true,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/committed-return/local-results.json",
+      "sha256": "8f8fb828750d8d3161996cb984a164f82b41780094ee2e15a2730f7c73c7116a"
+    }
+  },
+  "Richard": {
+    "red": {
+      "games": 40,
+      "wins": 0,
+      "losses": 34,
+      "draws": 6,
+      "deaths": 1121,
+      "request": "xreq_76307561-60dc-4693-9af0-9375fb1025a6",
+      "distinct_complete_command_streams": 10,
+      "evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/committed-return/hosted/formation2400_commit/red/arm-result.json",
+        "sha256": "75769671c59154c5749c264b2d3492ae045c4dec7495ea9f548492241c6cd01a"
+      },
+      "correlation_evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/committed-return/hosted/formation2400_commit/red/trajectory-correlation.json",
+        "sha256": "c9d9ba254e23cb95c8310f195093f47dd5f474d3e3ef4cb8f8f5b6a4b9710c06"
+      }
+    },
+    "blue": {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "deaths": 160,
+      "request": "xreq_56a18688-7b48-49e8-a976-c37aa49f8a21",
+      "distinct_complete_command_streams": 5,
+      "evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/committed-return/hosted/formation2400_commit/blue/arm-result.json",
+        "sha256": "9a3c9c4bec9b2b58261ddc9853e8af946a82ebfee49dea15dfc8d230e9746d38"
+      },
+      "correlation_evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/committed-return/hosted/formation2400_commit/blue/trajectory-correlation.json",
+        "sha256": "d68b42041a73e4ab73acbe0471541a86b4a949337d4ccd8ec37163cccac0a683"
+      }
+    }
+  },
+  "Richard_both_color_gate_passed": false,
+  "field_qualified": false,
+  "captured_inputs_preserved": true,
+  "compile_extract_exact_parity": true,
+  "uploaded_version": {
+    "id": "ebc444ba-d61a-4c55-97f4-bfa90b93f83d",
+    "name": "aaron-gota-ir-richard135-formation2400-commit-0920",
+    "version": 1,
+    "pools": null,
+    "submit_error": null
+  }
+}

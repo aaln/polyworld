@@ -1,0 +1,71 @@
+{
+  "at": "2026-09-20T16:58:20.319477+00:00",
+  "stage": "adaptive component discovery, not holdout",
+  "candidate": "0f526aa3-aa95-43bd-b75d-c0e1be3178d0",
+  "source_sha256": "cd925baf36baed38b1ec19657f34966bd7b55c314b92b015b34b96466d96ddc3",
+  "parent_snapshot": "0000-b2693715459d",
+  "parent_version": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+  "arms": [
+    {
+      "name": "parent-red",
+      "rival": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "color": 0,
+      "games": 40
+    },
+    {
+      "name": "parent-blue",
+      "rival": "53f15b12-2198-41d1-bb99-df4bdb1ff7fd",
+      "color": 1,
+      "games": 40
+    },
+    {
+      "name": "richard135-red",
+      "rival": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "color": 0,
+      "games": 40
+    }
+  ],
+  "hypothesis": "One-time red caster transit that won16/16 fresh local red games improves fort outcomes beyond the accepted ancestor and transfers to exact Richard135 red. Blue is an unchanged behavioral component with known deployed Richard losses; a separate scoped-response candidate remains local-only.",
+  "decision_rule": "Harvest all120games and fully audit all10VMs/commands/hashes/roster/release/config/equipment. Parent discovery nomination requires>=24/40actualfortwins on EACHcolor; Richard red target-transfer nomination requires>=30/40. Any failure blocks the corresponding nomination; draws0. Neither is acceptance. Fresh deployed controls, bothcolors all3targets, broadfield and formalholdout remain mandatory for a final executable. Do not tune against a purported holdout: this study is discovery.",
+  "limitations": "Uniform5v5 repeated programs; not ten distinct actual players and not single-hero coverage. No fresh deployed controls or new Alex/Jordan outcome in this allocation. Prior known Richard0/40red is contextual, not a fresh-control improvement test. Generated seeds may share deterministic trajectories; report diversity, no independent-trial significance.",
+  "budget": "120 new episodes of152remaining; all requests40 through researcher xp-create; no threshold/limit/config changes. All purchased work must be harvested even if an early arm loses.",
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/local-qualification.json": "941307a96df0400aaec4b87f9832f83d9879084573c27acc03db3a848f2dbd8a",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/local-feedback/policy.py": "69fd2952ca0441b9defc8e79ebabd79752200fdbd23ccf077659929a2729a76f",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/local-feedback/policy.ir.json": "13dd7f217489f543614bdcee9bf24143aff431ebaefe7ca89218230fbc39eadf",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/local-feedback/policy.bas": "cd925baf36baed38b1ec19657f34966bd7b55c314b92b015b34b96466d96ddc3",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/local-feedback/parity.json": "46ddce636e7699fda466cc0004a6bfff00e7113e7f83c153cb8b0e0f992cc3b5",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/middle_transit_v4/inert-upload/verification.json": "5674eaca8993783dfce3fb113aaab14664bc8e13321eacecc211889f574e9a42",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/config.json": "a52fcc47cd2979a239cd1af89c6f70ead90c7d56f09eaf73c35de5c1bae5314d",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/snapshot.json": "dd3512253f472ecacb06ccf16f3fb73b1a4dfbb435764b36db59d97035655052",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-hosted": "0e97a3173b2c8521e330ae9094f51ec6130ce4414a56f4fe2430dbb8680cf501",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T152212Z-628823/transit_discovery.py": "c3cc12f253bdd8a218328590ba4b529e60700ac29cae8b54e1bc25e8a8e697ee"
+  },
+  "focus_sha256": "497445e43a56dfcfb7e7ff761493ad9d247be8229ccef0b6bae6c4500fc41a6a",
+  "league_checked_at": "2026-09-20T15:23:19.385545+00:00",
+  "game_version": "2026.9.16.5",
+  "target": {
+    "coworld_id": "cow_126f2fcb-80a0-4b6e-8166-eb6163576db5",
+    "variant_id": "competition"
+  },
+  "config": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  }
+}

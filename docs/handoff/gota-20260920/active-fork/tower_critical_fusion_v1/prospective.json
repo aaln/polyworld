@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-20T19:52:29.844345+00:00",
+  "hypothesis": "Blue anchored critical recall may preserve Richard-blue behavior while red keeps the measured transit/tower handoff. This is color-scoped composition of general public alarms, not a rival label switch. Red Richard remains a known failure; no joint candidate promotion or new hosted games this cycle.",
+  "parent_snapshot": "0000-b2693715459d",
+  "working_fork": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b",
+  "branch_parent": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/local-feedback",
+  "component_blue": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/validated-blue-component",
+  "inputs": {
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/local-feedback/policy.py": "a05f5ff14cef84735e99a0d406d6e4fa5e8271ec4c61d33eb7f9d2b48f263bc9",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/local-feedback/policy.bas": "7c2b843b8dbfd98f2e46cb3ba2b7f4b40f7ee6f2ad4c5575adfe771e09978b7b",
+    "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/validated-blue-component/policy.py": "c496a6e15ee5f30665558e26f1457cb62c7784a01dd98e1d1bad99e56d4f5916",
+    "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/validated-blue-component/policy.bas": "d157d54aef9dc47f9d1a75a4f7216a76a3b63bb89688232b8ab6640a6b2f7140",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/adaptive-opponent-20260920/critical-blue-confirmation/critical60/arm-result.json": "498f269d1130e9b1851b1de3b1402c135ba459c3d935af4dddb34baf98401ce8",
+    "/Users/aaln/experiments/softmax/polyworld-gota-clean-20260916-r5/examples/gods_of_the_arena/players/ir/autoresearch_tower_blue_critical_v1.py": "3bbf2dfb558e5a36e8f89549a6fd38a267f4b1e89034fd86f3a01565b536cb82"
+  },
+  "focus_sha256": "d58af007e806c1177fc77a3c0fd6fbd363110bd17cf0bf4ce48d4c1d2248bfba",
+  "league_checked_at": "2026-09-20T19:22:14.139143+00:00",
+  "decision_rule": {
+    "native": "All ten actual classes, both colors, <=20000instructions/50000work,<=256globals/65536source bytes. Red actions preserve handoff; blue actions preserve critical60 on shared fixtures. Actual alarm activation, absent/dead/friendly/unanchored/far negatives,1200tickexpiry.",
+    "component_equivalence": "Full red Alexwin and full blue Richardwin must reproduce every controlled command and state hash with the new executable. Recorded rivals only; this is exact trajectory preservation, not fresh hosted games.",
+    "local": "128 complete games: deployed,handoff,critical60,fusion,32 cases each (2seeds per8opponents/color). All gear/allVM/replay checks. Retain every handoff red win, every critical60 blue win, and every deployed win. Total deaths <=max(1.15*deployed,deployed+5). >=60percent wins percolor vsaccepted. No thresholds changed after outcomes.",
+    "outcome": "If all pass, locally qualified integration only. Richardred remains0/40 in unchanged red component. No upload, acceptance or deployment from this study; cycle XP exhausted."
+  },
+  "known_failures": [
+    "Unchanged red handoff Richard0/40",
+    "Inherited blue handoff Richard0/40 andAlex0/40",
+    "Current-three duty survivalfailure; not reused",
+    "Interactive red transition/scout/rangedcarry retains its owner; not duplicated"
+  ],
+  "local_seed_start": 9930000
+}

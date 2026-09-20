@@ -138,6 +138,7 @@ type
     hasMoveTarget*: bool
     moveRevision*: int32
     stuckTicks*: int32
+    holding*: bool
     inventory*: array[InventorySlots, Item]
     itemCounts*: array[InventorySlots, int32]
     cooldowns*: array[HeroAbilitySlot, int32]
@@ -203,6 +204,16 @@ type
     ends*: int32
     resolved*: bool
 
+  PingKind* = enum
+    AssistPing, AttackPing, RetreatPing, DefendPing
+  TeamPing* = object
+    byId*, responderId*: int32
+    x*, y*: int32
+    kind*: PingKind
+    tick*: int32
+  SpellPreview* = object
+    reason*: string
+
   World* = ref object
     when defined(replayEvents):
       events*: seq[GameEvent]
@@ -236,6 +247,7 @@ type
     scriptObjectCount: int
     scriptObjectsHeroId: int32
     scriptObjectsTick: int32
+    teamPings*: array[2, TeamPing]
   Game* = ref object
     ## One match session. World is the hashable sim; everything else is
     ## tape, map, and agents.
@@ -390,7 +402,8 @@ const
   HeroMeleeAttackMoveRange* = 480_000'i32
     ## Attack-move melee chase radius, much larger than idle aggro.
   HeroLanes = [0, 0, 1, 2, 2]
-  HeroRespawnTicks = 8 * TickRate
+  HeroRespawnTicks* = 8 * TickRate
+  TeamPingTicks* = 5 * TickRate
   HeroMaxLevel* = 20
   FootmanXpReward = 25
   FootmanGoldReward = 15
@@ -412,7 +425,7 @@ const
   UnitCap = 120 * CreepsPerBarracks
   CorpseLingerTicks = 60'i32
   FootmanDeathTicks = 24'i32
-  HeroDeathTicks = 24'i32
+  HeroDeathTicks* = 24'i32
   FortHp* = 400'i32
 
 proc startingForts(map: MapData): array[2, Fort] =
@@ -1645,6 +1658,28 @@ proc mapCoordinate*(value: int32): int32 =
     mapTiles() - 1
   ))
 
+proc secondsLabel*(ticks: int32): string =
+  ## Formats a tick count as a whole number of seconds for HUD copy.
+  $((max(ticks, 0'i32) + TickRate - 1) div TickRate) & "s"
+
+proc respawnTicks*(hero: Hero): int32 =
+  ## Remaining ticks before a fallen hero returns at spawn.
+  max(0'i32, HeroDeathTicks + HeroRespawnTicks - hero.deathTicks)
+
+proc spellAimPoint*(hero: Hero, mapX, mapY: int32): WorldPoint =
+  ## Returns the integer ground point at the center of a map tile.
+  result = WorldPoint(
+    x: (mapX - mapTiles().int32 div 2) * WorldScale + WorldScale div 2,
+    z: (mapY - mapTiles().int32 div 2) * WorldScale + WorldScale div 2
+  )
+  result.y = fixedSurfaceHeightNear(result, hero.position.y)
+
+proc activeTeamPing*(world: World, team: Team): TeamPing =
+  ## Returns the team's live call, or an empty ping once it has expired.
+  let ping = world.teamPings[team.ord]
+  if ping.byId != 0 and world.tick - ping.tick < TeamPingTicks:
+    result = ping
+
 proc rawWorldObjectCount(world: World): int =
   ## Returns the total number of stable script-addressable objects.
   world.forts.len + world.buildings.len + world.heroes.len + world.footmen.len
@@ -2063,6 +2098,7 @@ proc applyWalkTo*(world: World, heroId, mapX, mapY: int32): bool =
     )
   world.heroes[index].attackObjectId = 0
   world.heroes[index].attackMoving = false
+  world.heroes[index].holding = false
   world.heroes[index].targetFootmanId = 0
   world.heroes[index].targetHeroId = 0
   world.heroes[index].targetBuildingId = 0
@@ -2097,6 +2133,7 @@ proc applyAttackMove*(world: World, heroId, mapX, mapY: int32): bool =
     )
   world.heroes[index].attackObjectId = 0
   world.heroes[index].attackMoving = true
+  world.heroes[index].holding = false
   world.heroes[index].targetFootmanId = 0
   world.heroes[index].targetHeroId = 0
   world.heroes[index].targetBuildingId = 0
@@ -2175,10 +2212,60 @@ proc applyAttackTarget*(world: World, heroId, targetId: int32): bool =
       ActionTargetUnavailable
     )
   world.heroes[index].attackMoving = false
+  world.heroes[index].holding = false
   if world.heroes[index].attackObjectId != targetId:
     world.heroes[index].hasMoveTarget = false
   world.heroes[index].attackObjectId = targetId
   world.finishAction(heroId, ActionAttackTarget, 0, targetId, 0, NoActionError)
+
+proc applyStop*(world: World, heroId: int32): bool =
+  ## Cancels a hero's current path and attack without choosing a new target.
+  let index = heroIndex(world, heroId)
+  if index < 0 or world.heroes[index].state == Dying:
+    return false
+  world.heroes[index].attackObjectId = 0
+  world.heroes[index].attackMoving = false
+  world.heroes[index].targetFootmanId = 0
+  world.heroes[index].targetHeroId = 0
+  world.heroes[index].targetBuildingId = 0
+  world.heroes[index].attackingFort = false
+  world.heroes[index].stopHeroPath()
+  world.heroes[index].holding = true
+  true
+
+proc applyTeamPing*(
+    world: World, heroId, mapX, mapY: int32, kind: PingKind
+): bool =
+  ## Records one team call. A living teammate may answer it on their think tick.
+  let index = heroIndex(world, heroId)
+  if index < 0:
+    return false
+  let hero = world.heroes[index]
+  if world.activeTeamPing(hero.team).byId != 0:
+    return false
+  if mapX < 0 or mapY < 0 or mapX >= mapTiles() or mapY >= mapTiles():
+    return false
+  var
+    responderId = 0'i32
+    best = int64.high
+  for other in world.heroes:
+    if other.id == hero.id or other.team != hero.team:
+      continue
+    if other.hp <= 0 or other.state == Dying:
+      continue
+    let distance = distanceSquared(hero.position, other.position)
+    if distance < best or (distance == best and other.id < responderId):
+      best = distance
+      responderId = other.id
+  world.teamPings[hero.team.ord] = TeamPing(
+    byId: hero.id,
+    responderId: responderId,
+    x: mapX,
+    y: mapY,
+    kind: kind,
+    tick: world.tick
+  )
+  true
 
 proc purchaseError(world: World, heroId, itemId: int32): ActionError =
   ## Returns the first failing purchase check without allocating a string.
@@ -2542,6 +2629,7 @@ proc respawn(world: World, hero: Hero) =
   hero.attackObjectId = 0
   hero.attackMoving = false
   hero.hasMoveTarget = false
+  hero.holding = false
   hero.movePath.setLen(0)
   hero.movePathIndex = 0
   hero.swingTicks = -1
@@ -3237,25 +3325,41 @@ proc spellTarget*(world: World, id: int32, value: var WorldObject): bool =
   let hero = heroIndex(world, id)
   if hero >= 0:
     let target = world.heroes[hero]
-    value = WorldObject(id: id, team: target.team, position: target.position,
-      hp: target.hp, alive: target.hp > 0 and target.state != Dying)
+    value = WorldObject(
+      id: id, kind: HeroObjectKind, class: int32(target.class.ord),
+      team: target.team, position: target.position,
+      hp: target.hp, maxHp: target.maxHp,
+      alive: target.hp > 0 and target.state != Dying
+    )
     return true
   let footman = footmanIndex(world, id)
   if footman >= 0:
     let target = world.footmen[footman]
-    value = WorldObject(id: id, team: target.team, position: target.position,
-      hp: target.hp, alive: target.hp > 0 and target.state != Dying)
+    value = WorldObject(
+      id: id, kind: FootmanObjectKind, class: -1,
+      team: target.team, position: target.position,
+      hp: target.hp, maxHp: FootmanHp,
+      alive: target.hp > 0 and target.state != Dying
+    )
     return true
   let tower = towerIndex(world, id)
   if tower >= 0:
     let target = world.towers[tower]
-    value = WorldObject(id: id, team: target.team, position: target.position,
-      hp: target.hp, alive: world.towerExposed(target))
+    value = WorldObject(
+      id: id, kind: TowerObjectKind, class: -1,
+      team: target.team, position: target.position,
+      hp: target.hp, maxHp: target.maxHp,
+      alive: world.towerExposed(target)
+    )
     return true
   for fort in world.forts:
     if fort.id == id:
-      value = WorldObject(id: id, team: fort.team, position: fort.center,
-        hp: fort.hp, alive: fort.hp > 0 and world.fortExposed(fort.team))
+      value = WorldObject(
+        id: id, kind: FortObjectKind, class: -1,
+        team: fort.team, position: fort.center,
+        hp: fort.hp, maxHp: FortHp,
+        alive: fort.hp > 0 and world.fortExposed(fort.team)
+      )
       return true
   false
 
@@ -3534,6 +3638,60 @@ proc applyCastPoint*(
   point.y = fixedSurfaceHeightNear(point, hero.position.y)
   world.castAbility(hero, HeroAbilitySlot(slotId), 0, point)
 
+proc abilityReadyReason*(world: World, hero: Hero, slot: HeroAbilitySlot): string =
+  ## Explains why an ability cannot fire, or returns an empty string.
+  discard world
+  if hero.id == 0:
+    return "Hero unavailable"
+  if hero.hp <= 0 or hero.state == Dying:
+    return "Respawning in " & hero.respawnTicks.secondsLabel
+  let spec = heroAbility(hero.class, slot).abilitySpec
+  if hero.cooldowns[slot] > 0:
+    return "Ready in " & hero.cooldowns[slot].secondsLabel
+  if hero.charges[slot] <= 0:
+    return "Next charge in " & hero.recharges[slot].secondsLabel
+  if hero.mana < spec.manaCost:
+    return "Not enough mana"
+
+proc previewSpell*(
+    world: World,
+    hero: Hero,
+    slot: HeroAbilitySlot,
+    targetId: int32,
+    aim: WorldPoint
+): SpellPreview =
+  ## Validates a cast using the same rules as `castAbility` without mutating.
+  result.reason = world.abilityReadyReason(hero, slot)
+  if result.reason.len > 0:
+    return
+  let spec = heroAbility(hero.class, slot).abilitySpec
+  if spec.casting == SelfCast:
+    if spec.kind == Heal and hero.hp >= hero.maxHp:
+      result.reason = "Health is full"
+    elif spec.kind == Restore and hero.mana >= hero.maxMana:
+      result.reason = "Mana is full"
+    return
+  var point = aim
+  if targetId != 0:
+    var target: WorldObject
+    if not world.spellTarget(targetId, target) or not target.alive:
+      result.reason = "Target unavailable or protected"
+      return
+    if not world.visible(hero.team, target.position):
+      result.reason = "Target is in fog"
+      return
+    if (spec.kind == Strike and target.team == hero.team) or
+        (spec.kind != Strike and target.team != hero.team):
+      result.reason = "Choose a valid target"
+      return
+    if spec.casting == MeleeCast and
+        not within(hero.position, target.position, spec.range):
+      result.reason = "Out of range"
+      return
+    point = target.position
+  if not world.visible(hero.team, point):
+    result.reason = "That ground is in fog"
+
 proc applyReplayAction(world: World, action: ReplayAction): bool {.discardable.} =
   ## Applies one recorded bot command without requiring its private VM.
   case action.kind
@@ -3560,6 +3718,13 @@ proc applyReplayAction(world: World, action: ReplayAction): bool {.discardable.}
     if index >= 0:
       world.heroes[index].manualSpells = action.first != 0
     false
+  of ActionStop:
+    applyStop(world, action.heroId)
+  of ActionPing .. ActionLastPing:
+    applyTeamPing(
+      world, action.heroId, action.first, action.second,
+      PingKind(action.kind - ActionPing)
+    )
   else:
     raise newException(ReplayError, "replay action kind is invalid")
 
@@ -3696,6 +3861,8 @@ proc nearestEnemy(
 
 proc acquireRadius(world: World, hero: Hero): int32 =
   ## Returns the search radius for idle or attack-move acquisition.
+  if hero.holding:
+    return 0
   if hero.attackMoving:
     if hero.class.heroSpec.attackStyle == MeleeAttack:
       return HeroMeleeAttackMoveRange
@@ -4045,6 +4212,7 @@ proc stateHash*(game: Game): uint64 =
     hash.addHashy(hero.moveTileX)
     hash.addHashy(hero.moveTileY)
     hash.addHashy(hero.hasMoveTarget)
+    hash.addHashy(hero.holding)
     for slot in 0 ..< InventorySlots:
       hash.addHashy(hero.inventory[slot].ord)
       hash.addHashy(hero.itemCounts[slot])

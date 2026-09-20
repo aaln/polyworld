@@ -1,0 +1,259 @@
+{
+  "situation": {
+    "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+    "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+    "predicates": {
+      "always": "Every host decision.",
+      "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+      "no_candidate_no_motion": "No observed attackable candidate and no accepted retreat movement in this decision."
+    }
+  },
+  "belief": {
+    "memory": [
+      "backdoorCommitted",
+      "backdoorFirstSeen",
+      "backdoorGroupUntil",
+      "backdoorLastSeen",
+      "backdoorUntil",
+      "backdoorWatched",
+      "criticalUntil",
+      "decisions",
+      "defLastTick",
+      "defPointX",
+      "defPointY",
+      "defThreatX",
+      "defThreatY",
+      "defUntil",
+      "defenseDecisions",
+      "defenseRefreshes",
+      "escortId",
+      "kiteBursts",
+      "kiteEscapes",
+      "kiteMoveTicks",
+      "kiteSpellCasts",
+      "lastJoinTick",
+      "lastJoinX",
+      "lastJoinY",
+      "loadoutPurchases",
+      "motionCompletions",
+      "motionFailures",
+      "motionLastHits",
+      "motionLastHp",
+      "motionLastTick",
+      "motionLoss",
+      "motionReady",
+      "motionStart",
+      "motionStartSeparation",
+      "motionThreat",
+      "motionUntil",
+      "motionX",
+      "motionY",
+      "perimeterAnchor",
+      "perimeterLastCombat",
+      "perimeterLastTick",
+      "perimeterX",
+      "perimeterY",
+      "recoverySteps",
+      "stalled",
+      "weaponStarts"
+    ],
+    "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+    "uncertainty": "Unseen enemies are unobserved. Visible object target IDs are exposed; zero can mean no target or a target outside visibility. Future enemy intentions remain unknown."
+  },
+  "skills": {
+    "count": {
+      "meaning": "Increment a diagnostic counter; it does not influence actions.",
+      "parameters": {},
+      "actions": []
+    },
+    "observe": {
+      "meaning": "Red after phase_tick replaces split-lane selection with a shared centroid of observed living friendly heroes. Four heroes with at least ready_hp within group_radius establish team_assault_readiness. Select one visible nearby hero by centroid distance/HP, else an exposed structure. At the enemy base exterior, choose among three public-map staging entries every240ticks using centroid distance and visible defender HP, penalizing the previous entry to continue probing. Breach when two nearby allied creeps, observed dispersion of at least three enemies, or bounded probe time supplies a trigger; never infer dispersion from absent enemies. Losing readiness cancels breach. A home alarm of two visible heroes within home_radius or damaged friendly god redirects the gathered team to defense. An actor farther than tether_radius from the centroid must regroup. Only current public observations are used. No player identity or hidden intent. Blue and early red retain exact critical-recall parent behavior. V2 supersedes phase/arbitration: exposed outer objectives are approached as a team before perimeter probing; the chosen exposed structure must be within32tiles of the enemy god to enter perimeter mode. When four ready allies have nearby creep support or positive observed enemy dispersion, commit to the shared exposed structure ahead of distant hero chasing. An unready team facing a home emergency gathers halfway between the observed front and friendly god; suppress remote-centroid tether during that rendezvous, while still disallowing unready objective assaults. V3 visibility completion: if no exposed enemy objective is currently visible, a ready group moves toward the public enemy-base coordinate to obtain new vision; it does not commit to an absent target or remain at the old staging point. Local combat and the cohesion tether remain active. A visible enemy attacking a map structure within home_radius counts as two home threats, enabling a gathered interception before multiple enemies reach the god. This uses observed objectTarget and fixed structure IDs, never hidden enemy positions.",
+      "parameters": {
+        "phase_tick": 2400,
+        "home_radius": 60,
+        "ready_hp": 120,
+        "group_radius": 14,
+        "probe_ticks": 480,
+        "tether_radius": 20,
+        "redbranch_group_size": 4,
+        "redbranch_hold_ticks": 1440,
+        "redbranch_continue_home": 48,
+        "redbranch_blue_group": 4,
+        "redbranch_blue_hold": 1200,
+        "redbranch_blue_continue": 24,
+        "redbranch_red_sentry": 3,
+        "redbranch_blue_sentry": 3,
+        "redbranch_sentry_hold": 7200,
+        "redbranch_home_tiles": 100,
+        "redbranch_tower_tiles": 14,
+        "redbranch_cluster_tiles": 12,
+        "critical_radius": 60,
+        "critical_group": 2,
+        "critical_hold": 1200,
+        "redbranch_behind_tiles": 4,
+        "red_recall_radius": 28,
+        "redbranch_intercept_tiles": 10,
+        "redbranch_hp_weight": 1,
+        "redbranch_creep_first": 1,
+        "redbranch_gather_heroes": 0,
+        "redbranch_plain_class": 9,
+        "redbranch_extra_class": 7,
+        "redbranch_unit_weight": 1,
+        "redbranch_edge_tiles": 2,
+        "redbranch_building_weight": 1,
+        "redbranch_fort_tiles": 4,
+        "redbranch_pursuit_tiles": 12,
+        "perimeter_tiles": 24,
+        "response_reach": 32,
+        "perimeter_team": 2,
+        "group_size": 4,
+        "hold_ticks": 1440,
+        "continue_home": 48,
+        "blue_group": 4,
+        "blue_hold": 1200,
+        "blue_continue": 24,
+        "red_sentry": 3,
+        "blue_sentry": 3,
+        "sentry_hold": 7200,
+        "home_tiles": 100,
+        "tower_tiles": 14,
+        "cluster_tiles": 12,
+        "middle_opening_ticks": 1800,
+        "middle_group": 3,
+        "pair_opening": 3600,
+        "pair_damage": 150,
+        "behind_tiles": 4,
+        "isolated_max": 1,
+        "backdoor_tiles": 24,
+        "near_response": 28,
+        "response_stagger": 96,
+        "backdoor_hold": 480,
+        "core_response_tiles": 24,
+        "intercept_tiles": 10,
+        "core_radius": 14,
+        "recall_radius": 28,
+        "hp_weight": 1,
+        "creep_first": 1,
+        "gather_heroes": 0,
+        "plain_class": 9,
+        "extra_class": 7,
+        "unit_weight": 1,
+        "edge_tiles": 2,
+        "building_weight": 1,
+        "fort_tiles": 4,
+        "pursuit_tiles": 12,
+        "release_mode": 1,
+        "idle_ticks": 480
+      },
+      "actions": []
+    },
+    "attack": {
+      "meaning": "After a newly observed basic hit, issue a short terrain-checked movement order for recovery_ticks before resuming attack. Optionally include melee classes. This attempts to shorten attack recovery; brief commands may only turn and are not effective kiting by themselves. Independently, configured recent-damage/low-HP danger triggers retain the full min_ticks/max_ticks separation-based retreat. Preserve the parent controller's destination selection, failed-move attack fallback, explicit offensive spell attempt, respawn-event reset and no-target arbitration. Source-derived cadence benefit is not a guarantee of damage, survival or wins. Disable normal post-hit recovery for plain_class; retain its ordinary attackTarget and automatic abilities. Other classes keep the parent controller. Optional emergency retreat remains separate (disabled in this experiment). This class exception needs fresh evidence. Above motion_object_limit observed objects, skip the expensive recovery scan and issue an ordinary attack; clear per-decision motionActive. On resuming, the existing decision-gap reset invalidates stale recovery memory. This bounds combat-controller work, not the host object count. During active shared defense, use defense_motion_limit instead of the ordinary motion scan limit to reserve VM capacity for regrouping. Outside defense the parent combat controller is unchanged. Formation tether supersedes inherited recovery/attack movement while rejoining.",
+      "parameters": {
+        "motion_object_limit": 80,
+        "defense_motion_limit": 40,
+        "targeted": 0,
+        "min_ticks": 12,
+        "gain_tiles": 2,
+        "risk_hp": 0,
+        "normal": 1,
+        "plain_class": 9,
+        "threat_tiles": 7,
+        "all_classes": 1,
+        "max_ticks": 64,
+        "recovery_ticks": 1,
+        "step_tiles": 3,
+        "support": 1,
+        "spells": 1
+      },
+      "actions": [
+        "walkTo",
+        "attackTarget",
+        "castTarget"
+      ]
+    },
+    "consume": {
+      "meaning": "Scan slots in order, set presence before use, consume below strict HP/mana ratios or poison with a candidate. Self snapshots and earlier presence flags are not refreshed; ignore returns.",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      },
+      "actions": [
+        "useItem"
+      ]
+    },
+    "sustain": {
+      "meaning": "Buy healing below half HP and mana below half mana, using baseline order and snapshot flags. Make no poison purchase attempt, leaving that spending available for later equipment. Engine checks live balances; equipment acquisition and improved wins are hypotheses, not guarantees.",
+      "parameters": {},
+      "actions": [
+        "buyItem"
+      ]
+    },
+    "equipment": {
+      "meaning": "Blue team (classes Vanguard, Ranger, Arcanist, Druid Warden, Demon Hunter) uses the explicit ordered equipment progression. If red_loadout=1, red Death Knight, Crossbowman and Berserker also use it. Other red heroes retain the exact baseline equipment logic. This is a declared lineup-specific hypothesis, not a guarantee of superiority. Ordered branch: Scan live inventory; buy only the first missing item in the five-item ordered equipment plan, when an empty slot and enough starting gold exist. At most one equipment attempt per decision; the host enforces the remaining balance after earlier purchases. No class restriction. Five planned equipment items leave one slot for consumables; earlier consumables may still block gear. Baseline branch: Ranger and Crossbowman start with Crimson Dagger when affordable, trading initial boot speed for +8 basic damage to improve last hits and growth. Then retain existing class equipment purchases. Other classes and consumables are unchanged. Host return values establish accepted purchases.",
+      "parameters": {
+        "red_loadout": 0,
+        "first_item": 11,
+        "second_item": 13,
+        "third_item": 18,
+        "fourth_item": 19,
+        "fifth_item": 16
+      },
+      "actions": [
+        "buyItem"
+      ]
+    },
+    "fallback": {
+      "meaning": "When coached formation is active, route to the group rendezvous, selected perimeter entry, shared exposed objective or home defense point. Terrain-check the point and eight nearby alternatives; use centroid on rejected movement. Otherwise retain the entire parent route.",
+      "parameters": {
+        "redbranch_fallback_x": 64,
+        "redbranch_fallback_y": 64,
+        "redbranch_offset_tiles": 0,
+        "redbranch_stall_decisions": 48,
+        "forward_rally": 0,
+        "rally_spacing": 2,
+        "fallback_x": 64,
+        "fallback_y": 64,
+        "offset_tiles": 0,
+        "stall_decisions": 48
+      },
+      "actions": [
+        "walkTo"
+      ]
+    }
+  },
+  "temporal_execution": {
+    "facts": {
+      "self_data": "self* and worldTick are set once before each hero's VM decision; use/buy do not refresh them.",
+      "queries": "Self data and visible object fields are fixed for one VM decision. Inventory and ability queries read live state; spell queries can include casts appended during the decision.",
+      "inventory_flags": "Presence and empty-slot flags accumulate before useItem for each slot. They are earlier observations, not current post-use/post-buy inventory.",
+      "gold": "All affordability guards read starting selfGold; each buyItem checks and spends the remaining live balance.",
+      "equipment": "Successful purchases refresh stats: increases in maximum HP/mana also add that increase to current HP/mana. Resource gear therefore has immediate sustain effects as well as permanent capacity.",
+      "attack": "attackTarget stores an engine pursuit target if valid; accepted does not prove path reachability or damage.",
+      "walk": "walkTo clears attack intent before pathfinding, including when pathfinding subsequently returns false.",
+      "poison": "Poison uses the current engine attackObjectId and checks normal attack range, visibility and structure exposure before consumption.",
+      "failures": "A command return of zero does not universally mean no state changed. Failed walkTo can clear attack intent.",
+      "memory": "Policy globals persist; baseline resets its decision-local scan variables. Engine attack/movement intent is separate persistent state.",
+      "spells": "Explicit castTarget/castPoint inspect live mana, charges and cooldowns. Bot automatic spells remain enabled; explicit casts share the same resources.",
+      "terrain": "terrainWalkable includes team-known living building footprints. Destroyed buildings release occupied tiles after observation; attack range is measured from building footprint edges.",
+      "combat_timing": "selfAttacksLanded counts successful basic hits for the lifetime of this hero, across respawns. selfAttackCooldown is ticks to next basic hit assuming uninterrupted range, including windup/recovery; movement can cancel the swing.",
+      "combat_units": "selfAttackRange and selfMoveSpeed use world units; one tile is60000 units. Object targets and velocities are visibility-filtered.",
+      "waves": "Each surviving barracks spawns three creeps, six per lane every480ticks at24Hz. Barracks are objectKind5 and become exposed after lane towers fall.",
+      "balance": "TowerHP950/1300/1950; DKheal36; Warlockmana30; Crossbow46+9/lvl; Berserker38+8/lvl; LichIceSpear48/range400000. Values verified at5c701f9; barracksHP950 in source, despite docs still saying900.",
+      "objective": "Clearing any lane exposes two god guard towers, IDs28/29 forred and30/31 forblue. Both enemyguards mustfall before the god isexposed. Guards use gate-tower HP/range/damage. Barracks are optional for heroes, but creeps prioritize lane barracks beforeguards.",
+      "attack_move": "attackMove(x,y) is now available to BASIC and records the same action as human attack-move."
+    },
+    "rule_order": [
+      "R0",
+      "R1",
+      "R2",
+      "E0",
+      "E1",
+      "E2",
+      "R4"
+    ],
+    "action_arbitration": "Rules execute in order; multiple commands can affect shared engine state during one decision."
+  }
+}

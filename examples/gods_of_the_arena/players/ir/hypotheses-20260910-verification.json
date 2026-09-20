@@ -1,0 +1,44 @@
+{
+  "tests": {
+    "passed": 28,
+    "log": "tmp/gota-ir/hypotheses-full-tests.log",
+    "sha256": "a6dd2616778350a80edea9882184299b2afb1d1657162c16bf6678657ed5907c"
+  },
+  "variants": {
+    "recovery": {
+      "source_sha256": "3062007a125dd9f524dbf4b204f5258ee82770fe63634d4785a4d9dbfe0811ff",
+      "ir_file_sha256": "23807829c1a0cf1be894ed3de73f77fc26e9d2ac6f89e3ae091e1ac4603d89f5",
+      "structural_parity": true,
+      "tested_bytes_preserved": true
+    },
+    "structures": {
+      "source_sha256": "2431d3359b558659c1c97983cf55b0c548c60b35683c93480534cb3e333f869d",
+      "ir_file_sha256": "1d533c532077ea1bc3fa6507763432849edabf3ec77d34d7e4c088b639e90008",
+      "structural_parity": true,
+      "tested_bytes_preserved": true
+    },
+    "single_heal": {
+      "source_sha256": "48c1b7fffbe4d4dc3063ac4b059f68215d269a0784a2faa7ff0531eb5ebf1185",
+      "ir_file_sha256": "4e9a09859566b00311eed277fb90909f2f1b80a345d05a4b975d47e43004bfbf",
+      "structural_parity": true,
+      "tested_bytes_preserved": true
+    }
+  },
+  "parent_unchanged": true,
+  "confirmation_seeds_unobserved": true,
+  "report": {
+    "file": "examples/gods_of_the_arena/players/ir/hypotheses-20260910-report.html",
+    "sha256": "0a9709a862edaffa93c6201bd7a0a609a867f8980e9b812cbc2ed9bf489cbfea",
+    "visually_inspected_screenshot": "tmp/gota-ir/hypotheses-report.png"
+  },
+  "skills": {
+    "upstream": "https://github.com/Metta-AI/optimizer-seed",
+    "commit": "7ebea87334331e8410f4c0f2ccf5e2376d81cd1f",
+    "local_copies_verified_identical_to_upstream": [
+      "diagnose",
+      "experiment",
+      "ab-compare"
+    ]
+  },
+  "no_xp_or_league_mutation": true
+}

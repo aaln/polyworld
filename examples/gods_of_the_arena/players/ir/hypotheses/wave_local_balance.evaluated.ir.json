@@ -1,0 +1,325 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_wave_local_balance_20260915",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "Restrict combat to observed enemies within six tiles of a retained living allied footman. No escort means rejoin movement. Prospective simulation uses only the four announced balance edits on exact published5422fb0; actual new release remains pending."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions",
+        "escortId",
+        "lastJoinTick",
+        "lastJoinX",
+        "lastJoinY",
+        "stalled"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Tower targets and enemy intentions are not exposed."
+    },
+    "claims": {
+      "B_wave": {
+        "claim": "Historical evidence on the older game; current performance requires re-evaluation. Using an observed allied footman as the no-target movement anchor may increase productive lane presence and fort wins. This is not evidence that a footman shields a hero from towers.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/experiment-20260910.json",
+            "sha256": "36170fcaddbc1511737b8b2496b6ff002884477f5d50c7336e117542f5355a44"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          }
+        ]
+      },
+      "B_equipment": {
+        "claim": "Historical evidence on the older game; current performance requires re-evaluation. Matched hosted games: sustain-only won 4/10 versus v1 2/10. Final equipment totaled 35 versus 16. These observations inform the equipment-saving hypothesis; broader strength remains unresolved.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-result-20260910.json",
+            "sha256": "9f2ab759b80e61a0199cde063b6e7afc4ecf146f8a4c333d351e5c1794237b78"
+          }
+        ]
+      },
+      "B_current_contract": {
+        "claim": "Current game supports the original BASIC operations plus explicit spells and terrain. Poison range/protection and map/combat mechanics changed. See the pinned source review and three matched hosted replay audits.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/upgrade-20260915-mechanics.json",
+            "sha256": "b18fe8475e1d9856936f3c354a142e236ec7a8cc63e8c26cc44ae6078f8ce1f6"
+          }
+        ]
+      },
+      "B_wave_local": {
+        "claim": "On announced-balance-20260915-on-5422fb0, validation failed the fixed local gate: candidate 68/120, unchanged v2 57, default 60. The mechanism diagnostic changed in 120 cases. All 360 full replays matched. This is an announcement-based simulation; published-release and hosted incumbent superiority remain unconfirmed. These results alone do not qualify the policy for promotion.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/wave-local-20260915-validation.json",
+            "sha256": "ea0f2c82ea9b0d7feb474d37698742e50768eb35ba054ffe62082b84912cd257"
+          }
+        ]
+      },
+      "B_item_execution": {
+        "claim": "The generated policy bought equipment for all ten hero classes in a complete 28800-tick game on repo1d7eb72. Accepted purchase events deducted gold, and replay verification matched every state. E0/E1/E2 match v2 and survive the full IR/BASIC round trip. This proves buying executes; it does not prove the item choices maximize wins.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/item-buying-20260915.json",
+            "sha256": "ad46f6d764f5879de47b908ca8b6dbffc2e6dd758e44f103e3ea6ee0569e6f43"
+          }
+        ]
+      },
+      "B_glory_contract": {
+        "claim": "The repository tournament Glory metric is win*(total_xp -100*ticks/1440), preserving fractional minutes and negative winning values. Defeats/draws score zero. The hosted league currently uses binary fort-win scores and Elo. The Python evaluator matches the game\u2019s Nim gameValues on300 fixtures. Lifetime XP is an evaluation result, not an exposed BASIC self observation.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/glory-contract-20260915.json",
+            "sha256": "189eacde039d34591068e6ff26827d3a4a05ac7070ad47e137ce5ffc9edbe329"
+          }
+        ]
+      },
+      "B_glory_efficiency": {
+        "claim": "Wave-local combat may improve winning lifetime XP and reduce time penalty by staying near productive creep fights and avoiding distant diversions. Current targeting, movement and equipment rules are candidate mechanisms, not validated Glory optimizations; verify mean Glory with fort wins as the primary gate.",
+        "status": "untested",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/glory-contract-20260915.json",
+            "sha256": "189eacde039d34591068e6ff26827d3a4a05ac7070ad47e137ce5ffc9edbe329"
+          }
+        ]
+      },
+      "B_wave_hosted": {
+        "claim": "On published 2026.9.15.1, forty matched independent incumbent games yielded 4 candidate fort wins versus 7 unchanged v2 wins. All80 replay state sequences matched. This is directional evidence on one frozen roster; superiority is unconfirmed.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/wave-local-hosted-20260915.json",
+            "sha256": "b7adbc57818c3b89bff1096d0d65d29cfe0a5a7a2e711282f54feb3208cd5054"
+          }
+        ]
+      },
+      "B_glory_measured": {
+        "claim": "Exploratory Glory on forty verified hosted pairs: candidate mean-26.26, v2 mean113.74, paired delta-140.00. All lifetime XP values matched full replays. This secondary analysis does not change the original fort-win gate or establish superiority.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/glory-hosted-20260915.json",
+            "sha256": "4774e01faf3ca6ff9097c559dd9d0edb6cb4192b33e448eab3e282cdda8b6f5f"
+          }
+        ]
+      },
+      "B_field_batch": {
+        "claim": "Separate40-episode batch on2026.9.15.1 yielded6/40 wins,26 timeouts,meanGlory61.764. All40 fullreplays,scorearrays and lifetimeXP verified. This independent field cohort has no matched control and is not a promotion qualification.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/xp-batched-20260915/audited-result.json",
+            "sha256": "475a103cd1f821574a8ef56732a36c820a6a5b55d52a780dd15b1a2fbe0452e8"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Preserve nearest-enemy combat and center fallback from the bundled baseline. This is an interpretation of behavior, not recovered original author intent.",
+      "provenance": "interpretation"
+    },
+    "G_capacity": {
+      "preference": "Keep baseline healing and mana support while preserving gold for persistent equipment growth. Stop buying poison in this isolated economy experiment.",
+      "provenance": "authored"
+    },
+    "G_wave": {
+      "preference": "When there is no observed combat target, join an allied wave instead of walking unconditionally to center. Combat and economy keep baseline behavior.",
+      "provenance": "authored"
+    },
+    "G_wave_local": {
+      "preference": "Keep combat local to an allied wave so visible enemies outside that area do not continually divert the hero from lane progress. Prefer footmen, then heroes, then exposed structures in that local area.",
+      "provenance": "authored"
+    },
+    "G_glory": {
+      "preference": "Preserve the primary fort-win qualification, then maximize mean Glory across all appearances: win*(lifetime XP -100*simulated minutes). Seek productive last hits and timely victories. Do not trade a failed win-rate gate for XP farming, draws, or Glory alone.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "wave_enemy",
+      "parameters": {
+        "radius_tiles": 6
+      }
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "join_wave",
+      "parameters": {
+        "fallback_x": 64,
+        "fallback_y": 64,
+        "offset_tiles": 0,
+        "stall_decisions": 48
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_wave_local",
+        "G_fort",
+        "G_glory"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_base",
+        "G_glory"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity",
+        "G_glory"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_wave",
+        "G_glory"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.15.1",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 16,
+    "parent": "4632e0d44676a4f44df4ece1aced7d130ff39605c979fa6dbc405dd10bae3f0e",
+    "change": {
+      "origin": "completed_batched_field_feedback",
+      "verdict": "directional_only"
+    },
+    "needs_review": [
+      "belief/B_wave_local",
+      "belief/B_wave",
+      "belief/B_equipment",
+      "belief/B_glory_efficiency"
+    ],
+    "evidence": [
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/wave-local-20260915-screen.json",
+        "sha256": "ff9d2a02a1dea837bf69ab7937f20ae93423bd047ee93196a9260767b06281a6"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/item-buying-20260915.json",
+        "sha256": "ad46f6d764f5879de47b908ca8b6dbffc2e6dd758e44f103e3ea6ee0569e6f43"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/wave-local-20260915-screen.json",
+        "sha256": "ff9d2a02a1dea837bf69ab7937f20ae93423bd047ee93196a9260767b06281a6"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/glory-contract-20260915.json",
+        "sha256": "189eacde039d34591068e6ff26827d3a4a05ac7070ad47e137ce5ffc9edbe329"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/wave-local-20260915-validation.json",
+        "sha256": "ea0f2c82ea9b0d7feb474d37698742e50768eb35ba054ffe62082b84912cd257"
+      },
+      {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/wave-local-hosted-20260915.json",
+        "sha256": "b7adbc57818c3b89bff1096d0d65d29cfe0a5a7a2e711282f54feb3208cd5054"
+      },
+      {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/glory-hosted-20260915.json",
+        "sha256": "4774e01faf3ca6ff9097c559dd9d0edb6cb4192b33e448eab3e282cdda8b6f5f"
+      },
+      {
+        "artifact": "tmp/gota-ir/xp-batched-20260915/audited-result.json",
+        "sha256": "475a103cd1f821574a8ef56732a36c820a6a5b55d52a780dd15b1a2fbe0452e8"
+      }
+    ]
+  }
+}

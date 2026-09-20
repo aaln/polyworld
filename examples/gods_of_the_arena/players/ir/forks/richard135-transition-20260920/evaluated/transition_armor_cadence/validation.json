@@ -1,0 +1,39 @@
+{
+  "name": "transition_armor_cadence",
+  "pair": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-transition-20260920/evaluated/transition_armor_cadence",
+  "source_sha256": "0000d3d391c9d6a0c82957b5c4102bb33c9e2e3fe2254541e27f442ea7d278a8",
+  "tested_ir_sha256": "66e7b47645be82024fb7d2e05aeea51a619008f17a6d8beedf98dea2afcbc3ca",
+  "evaluated_ir_sha256": "66ae3dba0b1dcd44577f6e38b0f91c0e1400ec2aa9675e7945258be8ddf3162c",
+  "local": {
+    "games": 12,
+    "wins": 5,
+    "deaths": 223,
+    "max_instructions": 18367,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/cadence/local-results.json",
+      "sha256": "248a7a0763667b3662a3e679c49b27cb34a6dc680414fa4fc80c00ca4abb591d"
+    }
+  },
+  "local_control": {
+    "games": 12,
+    "wins": 7,
+    "deaths": 270,
+    "max_instructions": 17899,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-transition-20260920/cadence/local-results.json",
+      "sha256": "248a7a0763667b3662a3e679c49b27cb34a6dc680414fa4fc80c00ca4abb591d"
+    }
+  },
+  "Richard": null,
+  "Richard_both_color_gate_passed": false,
+  "field_qualified": false,
+  "user_conditional_promotion_gate_passed": false,
+  "compile_extract_exact_parity": true,
+  "uploaded_version": {
+    "id": "b3fc4566-aaa2-4533-a305-f03ca4f3dd06",
+    "name": "aaron-gota-ir-richard135-transition-armor-cadence-0920",
+    "version": 1,
+    "pools": null,
+    "submit_error": null
+  }
+}

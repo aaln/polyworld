@@ -1,0 +1,43 @@
+{
+  "schema": "gota-microplay-bundle/1",
+  "policies": {
+    "policy": {
+      "ir_sha256": "68a8f1fe065eada21248f949e3731b12b13a5782625bfe4ba83f9a6fc86f2e5d",
+      "basic_sha256": "46fd4396b5ee50e8817f1eed9c280dbaf5aa8adbb01cba06ba1da3fd30cd7fbc",
+      "roundtrip": true,
+      "tested_basic_unchanged": true
+    },
+    "finish": {
+      "ir_sha256": "2d1d57dbf66cee705908460374c6f4e2d81ab06f65fc161021ffb064a7d07596",
+      "basic_sha256": "899c856ec2c80220c55239d4d6c084bc62f7dd345f12f75d7db447cb95334cc8",
+      "roundtrip": true,
+      "tested_basic_unchanged": true
+    }
+  },
+  "research": {
+    "artifact": "docs/microplay/2026-09-20/research.ir.json",
+    "sha256": "a6b16482917d0da00e93cfcdc7610148b134458af385ed8405df1e1bd8360df1"
+  },
+  "compiler_parent": {
+    "artifact": "examples/gods_of_the_arena/players/ir/forks/jordan268/compiler.zip",
+    "sha256": "61851e783715ed55baee968ed1983fc8a4af5b454b5ea58d92695bd495ae1109"
+  },
+  "contracts": [
+    {
+      "artifact": "games/gods_of_the_arena/instruments/microplay/ir.py",
+      "sha256": "0481a4703ab458987166af932113852d52776455596c4718a722c5c2c57d2bef"
+    },
+    {
+      "artifact": "games/gods_of_the_arena/instruments/microplay/ir_v2.py",
+      "sha256": "d11ae70c6fe83ce8d491b96c85f73d669571aa1eceaaa8840c7c46d070453842"
+    },
+    {
+      "artifact": "games/gods_of_the_arena/instruments/microplay/ir_v3.py",
+      "sha256": "ebcb9cae8c19a5e3cb0bd656385c373df741fad047657950bd3f6930a012f26a"
+    },
+    {
+      "artifact": "games/gods_of_the_arena/instruments/microplay/ir_v4.py",
+      "sha256": "2f7bebfe3f0aa21d613128cd2a6f003497c9b8ed3158f05ba4e2eb8444205af2"
+    }
+  ]
+}

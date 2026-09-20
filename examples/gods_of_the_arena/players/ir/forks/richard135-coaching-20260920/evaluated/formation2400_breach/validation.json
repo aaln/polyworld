@@ -1,0 +1,32 @@
+{
+  "name": "formation2400_breach",
+  "pair": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/evaluated/formation2400_breach",
+  "source_sha256": "c01111048a36187c2b7d0010960c71da6b523edd9c5aae6b0f06db0cd2167fef",
+  "evaluated_ir_sha256": "3d2a32331bda611c4a38c01d1f2ea6f504c1aa4924be55ea0c8fe8ad3a3113db",
+  "tested_ir_sha256": "4ff018396051bfc7e22b9b8d26cbd40a280bac0f2a92fbb70bec22bbd6cbb1db",
+  "local": {
+    "games": 12,
+    "wins": 2,
+    "deaths": 348,
+    "all_runtime_and_replay_audits_passed": true,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/refined-breach/local-results.json",
+      "sha256": "df72cc9231cee69b7864d74a617729c74ff3f9f80cf5f142bed530e2a5d65c6b"
+    }
+  },
+  "local_control": {
+    "games": 12,
+    "wins": 7,
+    "deaths": 50,
+    "all_runtime_and_replay_audits_passed": true,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/refined-breach/local-results.json",
+      "sha256": "df72cc9231cee69b7864d74a617729c74ff3f9f80cf5f142bed530e2a5d65c6b"
+    }
+  },
+  "Richard": null,
+  "Richard_both_color_gate_passed": false,
+  "field_qualified": false,
+  "captured_inputs_preserved": true,
+  "compile_extract_exact_parity": true
+}

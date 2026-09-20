@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-09-10T20:43:49.535539+00:00",
+  "objective": "Improve IR-generated GOTA policy against default baseline locally, then confirm against fixed Softmax field rosters.",
+  "early_xp": "Two 10-game XP arms were already running when local-first steering arrived; their inspected results are exploratory only. No further XP until local gate.",
+  "selection_seeds": [
+    41000,
+    41001,
+    41002,
+    41003,
+    41004,
+    41005
+  ],
+  "validation_attempts": [
+    {
+      "candidate": "Frozen sustain-only center from initial 3-way screen",
+      "seeds": [
+        52000,
+        52001,
+        52002,
+        52003,
+        52004,
+        52005,
+        52006,
+        52007,
+        52008,
+        52009,
+        52010,
+        52011,
+        52012,
+        52013,
+        52014,
+        52015,
+        52016,
+        52017,
+        52018,
+        52019,
+        52020,
+        52021,
+        52022,
+        52023
+      ],
+      "alpha": 0.025,
+      "minimum_win_gain": 0.1
+    },
+    {
+      "candidate": "Only if hero-priority targeting exceeds 36/60 screen wins; choose best weight by wins, tie prefer4",
+      "seeds": [
+        53000,
+        53001,
+        53002,
+        53003,
+        53004,
+        53005,
+        53006,
+        53007,
+        53008,
+        53009,
+        53010,
+        53011,
+        53012,
+        53013,
+        53014,
+        53015,
+        53016,
+        53017,
+        53018,
+        53019,
+        53020,
+        53021,
+        53022,
+        53023
+      ],
+      "alpha": 0.025,
+      "minimum_win_gain": 0.1
+    }
+  ],
+  "familywise_local_alpha": 0.05,
+  "amendment": "Before any first-gate outcome inspection or completed aggregate, tighten eligibility from p<0.05 to p<0.025 to allow at most two independent validation attempts. The in-flight raw result retains its original alpha; campaign eligibility is recomputed at0.025.",
+  "fresh_validation_rule": "Do not tune on either validation seed set or reuse a failed set for another version.",
+  "hosted_followup": "Only a locally eligible frozen version gets additional XP. Match actual per-episode seed, class/seat, Coworld version and opponent versions; use independent seed-level inference.",
+  "production_policy": "Current champion v1 remains selected while candidates are measured."
+}

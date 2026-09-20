@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seesaw</title>
+  <style>
+    @font-face {
+      font-family: Rubik;
+      src: url("../../../../polyworld_data/fonts/Rubik-Regular.ttf") format("truetype");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: Rubik;
+      src: url("../../../../polyworld_data/fonts/Rubik-Bold.ttf") format("truetype");
+      font-weight: 700;
+    }
+    :root {
+      --bg: #10161c;
+      --well: #141c24;
+      --sky: #5c94d6;
+      --wood: #b07a48;
+      --cream: #efe6c8;
+      --tomato: #e26c5c;
+      --text: #eef3f8;
+      --muted: #a9b4c0;
+      --line: rgba(92, 148, 214, 0.24);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Rubik, sans-serif;
+    }
+    body {
+      background:
+        radial-gradient(1100px 560px at 0% -60px, rgba(92, 148, 214, 0.22), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(226, 108, 92, 0.14), transparent 50%),
+        var(--bg);
+    }
+    a { color: var(--sky); text-decoration: none; }
+    img { display: block; }
+    .wrap { width: min(1100px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 60px; }
+    .kicker {
+      color: var(--sky); letter-spacing: 0.28em; font-size: 12px;
+      font-weight: 700; margin: 0 0 8px; text-align: center;
+    }
+    .lede {
+      max-width: 780px; margin: 0 auto 30px; color: #dce4ed;
+      line-height: 1.6; text-align: center;
+    }
+    .facts { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 0 0 36px; }
+    .fact, .panel {
+      background: linear-gradient(180deg, #1a2430, #141c24);
+      border: 1px solid var(--line); border-radius: 16px;
+    }
+    .fact { padding: 16px 18px; text-align: center; }
+    .fact b { display: block; font-size: 24px; color: var(--cream); }
+    .fact span { color: var(--muted); font-size: 12px; letter-spacing: 0.06em; }
+    h2 { margin: 0 0 14px; font-size: 26px; letter-spacing: 0.04em; }
+    .panel { padding: 22px; margin-bottom: 24px; }
+    p, li { line-height: 1.6; color: #dce4ed; }
+    .rule { color: var(--cream); font-weight: 700; }
+    .riders { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 420px; margin: 16px auto 0; }
+    .rider { text-align: center; }
+    .rider img {
+      width: 100%; border-radius: 12px; border: 1px solid var(--line);
+      background: var(--well);
+    }
+    .rider span { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); }
+    pre {
+      background: var(--well); border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px; padding: 14px 16px; overflow-x: auto;
+      color: var(--cream); font-size: 13px; line-height: 1.6;
+    }
+    footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 30px; }
+    @media (max-width: 900px) {
+      .facts { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="kicker">A POLYWORLD COWORLD</p>
+    <h1 style="text-align:center; margin: 0 0 12px; letter-spacing: 0.06em;">Seesaw</h1>
+    <p class="lede">
+      Two children, one board, five minutes. Have fun together without making
+      the other sick. The only language is a face: smile, frown, or a generated
+      expression. The pair score is the same on both seats.
+    </p>
+
+    <div class="facts">
+      <div class="fact"><b>2</b><span>RIDERS</span></div>
+      <div class="fact"><b>5 MIN</b><span>THE BELL</span></div>
+      <div class="fact"><b>16</b><span>FACES</span></div>
+      <div class="fact"><b>0</b><span>WORDS</span></div>
+      <div class="fact"><b>1</b><span>PAIR SCORE</span></div>
+    </div>
+
+    <div class="panel">
+      <h2>The playground</h2>
+      <p>
+        Lila sits west, Nico east. Pumping adds weight on the way down and
+        lightens on the way up. Every seed hides weather (wind, wet, heat)
+        and two inner lives (tired, nauseous, hungry, wired, &hellip;). Riders
+        see coarse weather bands and the partner's lean, pump, and face.
+        They never see the partner's fun, nausea, or preferred intensity.
+      </p>
+      <ul>
+        <li><span class="rule">Fun:</span> comfort when the ride sits near
+          your hidden sweet-spot. Both-comfortable ticks pay extra.</li>
+        <li><span class="rule">Breaks:</span> <code>rest()</code> hops off
+          and walks to a bench. Nausea fades faster there. Lean or pump
+          walks you back onto your seat.</li>
+        <li><span class="rule">Score:</span> <code>2 * min(fun) + sum/4</code>.
+          Making the other child miserable cannot win.</li>
+      </ul>
+      <div class="riders">
+        <div class="rider"><img src="../../../../polyworld_data/characters/modular_chars/character.preset_6.profile.png" alt=""><span>Lila</span></div>
+        <div class="rider"><img src="../../../../polyworld_data/characters/modular_chars/character.preset_5.profile.png" alt=""><span>Nico</span></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>The bots</h2>
+      <p>
+        Each rider is one BASIC program deciding eight ticks at a time:
+        lean, pump, rest, express. The cooperative rider pumps in rhythm,
+        gets off when queasy, and eases off on a frown. The selfish rider
+        ignores the partner.
+      </p>
+      <pre>nim r examples/seesaw/seesaw.nim --bot examples/seesaw/players/base.bas:2
+
+nim r -d:headless examples/seesaw/seesaw.nim --seed 1988 \
+  --bot examples/seesaw/players/base.bas:2 \
+  --record examples/seesaw/replays/demo.replay
+
+nim r examples/seesaw/seesaw.nim --replay examples/seesaw/replays/demo.replay</pre>
+    </div>
+
+    <footer>
+      Every game is deterministic: same seed, same bots, same five minutes
+      &mdash; recorded to a replay that verifies bit-exactly on playback.
+    </footer>
+  </div>
+</body>
+</html>

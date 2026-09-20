@@ -1,0 +1,119 @@
+{
+  "schema": "gota-source-ranger-economy/1",
+  "class_id": 1,
+  "games": 6,
+  "distinct_published_ranger_traces": 1,
+  "representative_episode": "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686",
+  "source_model_mechanisms": [
+    "Richard135_M06",
+    "Richard135_M10"
+  ],
+  "first_reward_tick": 1384,
+  "accepted_first_item_ticks": {
+    "CrimsonDagger": 1,
+    "VitalityElixir": 1413,
+    "IronrootRation": 1868,
+    "SunsteelLongsword": 3824,
+    "KnightArmor": 5056,
+    "BattleAxe": 5719,
+    "ArcaneSpellbook": 6558
+  },
+  "level_transitions": [
+    {
+      "tick": 1876,
+      "level": 2
+    },
+    {
+      "tick": 3809,
+      "level": 3
+    },
+    {
+      "tick": 5044,
+      "level": 4
+    },
+    {
+      "tick": 5097,
+      "level": 5
+    },
+    {
+      "tick": 5718,
+      "level": 6
+    },
+    {
+      "tick": 6419,
+      "level": 7
+    },
+    {
+      "tick": 7689,
+      "level": 8
+    },
+    {
+      "tick": 7978,
+      "level": 9
+    },
+    {
+      "tick": 8313,
+      "level": 10
+    }
+  ],
+  "xp_by_source": {
+    "creep": 1175,
+    "hero": 2550,
+    "building": 300
+  },
+  "reward_counts": {
+    "creep": 47,
+    "hero": 17,
+    "building": 3
+  },
+  "final": {
+    "id": 106,
+    "team": 1,
+    "class": "Ranger",
+    "level": 10,
+    "xp": 425,
+    "total_xp": 4025,
+    "gold": 640,
+    "hp": 413,
+    "max_hp": 662,
+    "damage": 123,
+    "attacks_landed": 170,
+    "inventory": [
+      "CrimsonDagger",
+      "SunsteelLongsword",
+      "KnightArmor",
+      "BattleAxe",
+      "ArcaneSpellbook",
+      "NoItem"
+    ],
+    "item_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "x": 102,
+    "y": 14
+  },
+  "deaths": 2,
+  "hero_basic_interval_histogram": {
+    "9": 58,
+    "27": 1,
+    "45": 1,
+    "1167": 1,
+    "1517": 1
+  },
+  "interval_scope": "Consecutive hero-target basic hits on same target; not continuously in-range opportunity counts",
+  "richard_accepted_purchase_counts": {
+    "CrimsonDagger": 100,
+    "VitalityElixir": 666,
+    "IronrootRation": 456,
+    "SunsteelLongsword": 72,
+    "KnightArmor": 52,
+    "BattleAxe": 32,
+    "ArcaneSpellbook": 32
+  },
+  "interpretation": "One repeated Ranger trace: delayed initial income, later hero-kill XP majority, observed nine-tick cadence. No counter-policy experiment yet."
+}

@@ -1,0 +1,181 @@
+{
+  "schema": "gota-source-informed-counter-hypotheses/1",
+  "opponent_uuid": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+  "source_sha256": "f48bb0057aeaf2ff939035324340183e34f8f9544e03226edfe62e78faad5a30",
+  "created_from": "source_model_and_archived_counter_results",
+  "execution": {
+    "binding": "proposals-only",
+    "compilable": false,
+    "deployed": false,
+    "new_xp_requests": 0,
+    "all_new_counter_effects_require_responsive_tests": true
+  },
+  "strategy": [
+    {
+      "id": "Richard135_C01",
+      "when": "Friendly defense commitment or unsupported red engagement observed",
+      "skill": "preserve_blue_and_repair_red_engagement",
+      "for": [
+        "improve_individual_and_team_play",
+        "win_both_colors"
+      ],
+      "status": "blue_prior_validated_red_repair_proposed",
+      "source_mechanisms": [
+        "Richard135_M04",
+        "Richard135_M09"
+      ],
+      "intervention": "Preserve validated blue critical defense; test one bounded red entry/support change",
+      "metrics": [
+        "contributing allies",
+        "damage conversion",
+        "avoidable deaths",
+        "defender arrival",
+        "per-color wins"
+      ],
+      "reject_if": "Same deaths delayed, defense stall, or regression to blue/field",
+      "observability": "own-policy public host fields and permitted memory; no private Richard mode input"
+    },
+    {
+      "id": "Richard135_C02",
+      "when": "Visible Richard hero sieging exposed friendly tower; own healthy actor can attack within Richard range",
+      "skill": "coordinated_tower_siege_attractor",
+      "for": [
+        "improve_individual_and_team_play",
+        "win_both_colors"
+      ],
+      "status": "opponent_branch_fixture_verified_counter_proposed",
+      "source_mechanisms": [
+        "Richard135_M08"
+      ],
+      "intervention": "One healthy actor attracts retaliation with allied damage support",
+      "metrics": [
+        "guard opportunities",
+        "observed retargets",
+        "tower damage prevented",
+        "attractor deaths",
+        "per-color wins"
+      ],
+      "reject_if": "Rare activation, attacker killed faster, or no tower/match benefit",
+      "observability": "own-policy public host fields and permitted memory; no private Richard mode input"
+    },
+    {
+      "id": "Richard135_C03",
+      "when": "Public Richard home-guard loss/critical state and visible intruder opportunity",
+      "skill": "home_defender_diversion",
+      "for": [
+        "improve_individual_and_team_play",
+        "win_both_colors"
+      ],
+      "status": "opponent_branch_fixture_verified_counter_proposed",
+      "source_mechanisms": [
+        "Richard135_M09"
+      ],
+      "intervention": "Compare timed second-angle pressure during an observed nearest-defender return",
+      "metrics": [
+        "defender allocation",
+        "return time",
+        "fort damage",
+        "own core exposure",
+        "wins"
+      ],
+      "reject_if": "Diversion consolidates defense or costs more resources than it gains",
+      "observability": "own-policy public host fields and permitted memory; no private Richard mode input"
+    },
+    {
+      "id": "Richard135_C04",
+      "when": "Visible hit/cast/approach events in a losing engagement",
+      "skill": "measure_before_timing_exploitation",
+      "for": [
+        "improve_individual_and_team_play",
+        "win_both_colors"
+      ],
+      "status": "diagnostic_only",
+      "source_mechanisms": [
+        "Richard135_M02",
+        "Richard135_M05",
+        "Richard135_M10"
+      ],
+      "intervention": "Measure cadence and ring impacts before changing approach or recovery",
+      "metrics": [
+        "hit intervals",
+        "range uptime",
+        "accepted spell effects",
+        "damage taken",
+        "survival"
+      ],
+      "reject_if": "No actual exploitable window or movement cancels own windups",
+      "observability": "own-policy public host fields and permitted memory; no private Richard mode input"
+    },
+    {
+      "id": "Richard135_C05",
+      "when": "Visible early Ranger with limited equipment and a supported engagement opportunity",
+      "skill": "prevent_ranger_hero_kill_snowball",
+      "for": [
+        "improve_individual_and_team_play",
+        "win_both_colors"
+      ],
+      "status": "source_and_replay_diagnosis_counter_proposed",
+      "source_mechanisms": [
+        "Richard135_M06",
+        "Richard135_M10"
+      ],
+      "intervention": "Test bounded coordinated pressure and fewer repeated isolated hero deaths",
+      "metrics": [
+        "accepted purchases",
+        "kill-reward sources",
+        "level milestones",
+        "potion spending",
+        "actual basic cadence",
+        "own XP",
+        "terminal wins"
+      ],
+      "reject_if": "Early XP gain disappears, own farm/core sacrificed, or Ranger catches up and wins",
+      "observability": "own-policy public host fields and permitted memory; no private Richard mode input"
+    }
+  ],
+  "prior_evidence": {
+    "blue_component": {
+      "wins": 40,
+      "games": 40,
+      "source_sha256": "d157d54aef9dc47f9d1a75a4f7216a76a3b63bb89688232b8ab6640a6b2f7140"
+    },
+    "red_combined_final": {
+      "wins": 0,
+      "games": 40,
+      "losses": 39,
+      "draws": 1
+    },
+    "cohort_invalid_red_games": 40,
+    "bounded_candidate_instruction_gate_failure": 19105
+  },
+  "validation_plan": {
+    "local": "exact authentic Richard source with all ten VMs responding",
+    "hosted": "fresh candidate/control XP, exact UUID, both colors; preserve already frozen session gates",
+    "historical_gate": {
+      "richard_min_wins_per_40_each_color": 30,
+      "combined_win_gain": 8,
+      "jordan_min_wins_per_40_each_color": 38,
+      "field_opponents": [
+        "relh154",
+        "g002v1",
+        "black-kite16",
+        "macro4",
+        "red-kite34",
+        "vanguard1"
+      ],
+      "field_screen_per_color": 8
+    },
+    "runtime": {
+      "max_instructions": 20000,
+      "max_work": 50000,
+      "historical_local_instruction_margin_gate": 19000
+    },
+    "independence": "report distinct trajectories; repeated fixed-roster games are not independent trials"
+  },
+  "evidence": [
+    "counter-policy-guide.md",
+    "ranger-economy.md",
+    "economy-audit.ir.json",
+    "discriminating-fixtures.ir.json"
+  ]
+}

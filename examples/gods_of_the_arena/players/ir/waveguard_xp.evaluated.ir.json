@@ -1,0 +1,286 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_waveguard_sustain_xp_r1",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "Published e127989/2026.9.15.3. Exact league v2 BASIC validated on40 current-release matched cases; kiting candidates require separate qualification."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions",
+        "escortId",
+        "lastJoinTick",
+        "lastJoinX",
+        "lastJoinY",
+        "stalled"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Visible object target IDs are exposed; zero can mean no target or a target outside visibility. Future enemy intentions remain unknown."
+    },
+    "claims": {
+      "B_wave": {
+        "claim": "Using an observed allied footman as the no-target movement anchor may increase productive lane presence and fort wins. This is not evidence that a footman shields a hero from towers.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/experiment-20260910.json",
+            "sha256": "36170fcaddbc1511737b8b2496b6ff002884477f5d50c7336e117542f5355a44"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          }
+        ]
+      },
+      "B_equipment": {
+        "claim": "Matched hosted games: sustain-only won 4/10 versus v1 2/10. Final equipment totaled 35 versus 16. These observations inform the equipment-saving hypothesis; broader strength remains unresolved.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-result-20260910.json",
+            "sha256": "9f2ab759b80e61a0199cde063b6e7afc4ecf146f8a4c333d351e5c1794237b78"
+          }
+        ]
+      },
+      "B_kiting_campaign": {
+        "claim": "Ten kiting candidates were evaluated with40 matched cases each and full replay verification. The current-release best win count was23/40 versus v2 22/40, but deaths135 versus134 failed preservation. A spell-casting variant reduced deaths to115 but won17/40. None passed both competitive and survival gates. These adaptive results do not rule out better kiting designs; retain the exact tested v2 executable.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/kiting-campaign-20260915.json",
+            "sha256": "123789fc191295116945a5506cf62e308f370682751d3828f451fff980ce977d"
+          }
+        ]
+      },
+      "B_replay_turn_cost": {
+        "claim": "Published .3 replay diagnosis: among 409 complete ten-tick hit-adjacent walk segments, median turning-only ticks=8, median moving ticks=2. Only 32/334 segments gained >0.25 tiles against the same initially nearest visible enemy still alive at the end. These correlated command-derived observations show a motion failure, not competitive superiority of a replacement.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_replay_tower_trap": {
+        "claim": "Two of forty v2 cases have >30-second no-movement/no-hit/no-active-offense stalls, with the first path waypoint inside friendly-tower collision clearance. The Arcanist stalls 344.7 seconds. At its verified tick1200 checkpoint, 24 nearby walk destinations fail; a diagnostic-only engine waypoint change produces4.60 tiles displacement. Accepted movement and terrainWalkable do not prove successful navigation. Target switches are not evidence of progress.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_replay_late_escape": {
+        "claim": "Across134 v2 deaths, the median final-six-second window contains one second of half-second samples below35%HP;18 deaths have no such sample. This supports investigating earlier escape decisions. It is a sampled opportunity measure, not proof of avoidable deaths or a validated threshold.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_motion_feedback_hypothesis": {
+        "claim": "Persistent retreat destinations and measured separation, with turn cost, enemy closing speed, safe re-engagement and earlier multi-attacker risk checks, may improve survival without losing fort wins. Preventive tower-clearance routing may avoid collision traps. These proposed behaviors are NOT implemented in the retained v2 executable and require fresh local and hosted validation.",
+        "status": "untested",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_candidate": {
+        "claim": "Current-field discovery,100games per selected policy, published2026.9.15.3 and refreshed top-nine pinned opponents: v2 52/100fort wins. Motion54/100vs waveguard52/100, one-sidedFisherp=.44369, inconclusivewin difference; not a promotion verdict. v2 deathrate0.573301/alive-minute, XP93650, meanGlory274.2403, equipment100/100. All200complete replays, API scores and VM logs verified. Perclass groups contain10games and fixed teammates; do not infer a class's intrinsic weakness from this roster. Ongoing ten-cell economy screen is fixed and not tuned from these controls.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "tmp/gota-ir/autoresearch-20260916/hosted-discovery/controls-comparison.json",
+            "sha256": "4296a8ffb665e9fdd589f0b7bea5224769b6c7de2340b4b255d976d820f9bd71"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Preserve nearest-enemy combat and center fallback from the bundled baseline. This is an interpretation of behavior, not recovered original author intent.",
+      "provenance": "interpretation"
+    },
+    "G_capacity": {
+      "preference": "Keep baseline healing and mana support while preserving gold for persistent equipment growth. Stop buying poison in this isolated economy experiment.",
+      "provenance": "authored"
+    },
+    "G_wave": {
+      "preference": "When there is no observed combat target, join an allied wave instead of walking unconditionally to center. Combat and economy keep baseline behavior.",
+      "provenance": "authored"
+    },
+    "G_survival": {
+      "preference": "Preserve hero life through healing and combat decisions; qualify retreat behavior against survival, actual offense and fort wins.",
+      "provenance": "authored"
+    },
+    "G_glory": {
+      "preference": "Track win*(lifetime XP -100*simulated minutes) as a secondary objective; fort-win and survival qualification remain primary.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "nearest_enemy",
+      "parameters": {}
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "join_wave",
+      "parameters": {
+        "fallback_x": 64,
+        "fallback_y": 64,
+        "offset_tiles": 0,
+        "stall_decisions": 48
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_base",
+        "G_glory"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity",
+        "G_survival"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity",
+        "G_survival"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity",
+        "G_glory"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_wave"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.15.3",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 9,
+    "parent": "cb7a52d65981091e874ad4ea97bd3c3b8fd1259d4429be303e2abc012245a2e6",
+    "change": "Complete measured feedback; exact tested behavior retained.",
+    "needs_review": [
+      "belief/B_candidate",
+      "goal/G_fort",
+      "goal/G_survival"
+    ],
+    "evidence": [
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+        "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/xp-result-20260910.json",
+        "sha256": "9f2ab759b80e61a0199cde063b6e7afc4ecf146f8a4c333d351e5c1794237b78"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/kiting-campaign-20260915.json",
+        "sha256": "123789fc191295116945a5506cf62e308f370682751d3828f451fff980ce977d"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+        "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+      },
+      {
+        "artifact": "tmp/gota-ir/autoresearch-20260916/hosted-discovery/controls-comparison.json",
+        "sha256": "4296a8ffb665e9fdd589f0b7bea5224769b6c7de2340b4b255d976d820f9bd71"
+      }
+    ]
+  }
+}

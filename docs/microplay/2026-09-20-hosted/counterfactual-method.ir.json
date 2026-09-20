@@ -1,0 +1,19 @@
+{
+  "schema": "gota-hosted-counterfactual-method/1",
+  "stage": "defined before any probe result",
+  "subjects": "All 40 combined-arm hosted tapes, unselected",
+  "interventions": [
+    "replace subject with original parent",
+    "replace subject with finishing only"
+  ],
+  "held_fixed": [
+    "seed",
+    "initial world",
+    "nine real other-player versions",
+    "their recorded commands up to first divergence",
+    "subject seat",
+    "map and engine configuration"
+  ],
+  "mechanism": "Rerun complete exact subject VM; compare every command in cyclic turn order and every world-state hash. Stop immediately at first differing command.",
+  "interpretation": "Complete equality establishes behavioral equivalence on that realized trajectory. Divergence establishes a changed command, not an improved counterfactual outcome. No replay outcome after a divergent intervention is used."
+}

@@ -4,7 +4,7 @@ import
   std/[math, tables, times],
   bumpy, chroma, opengl, pixie, silky, vmath,
   assets, brushes, content, groves, landscapes, sim, game, maps, replays, ui, walls,
-  controls, spelleffects,
+  controls, spelleffects, humaninput, playui,
   polyworld/actioncam, polyworld/assets, polyworld/characters,
   polyworld/clickmarks,
   polyworld/common, polyworld/pathing,
@@ -16,6 +16,12 @@ import
   polyworld/terrainsurfaces,
   polyworld/[chrome, inputs, rtscameras, selectionoutlines, shapes, viewers,
     visions, worldbars, worldtexts]
+
+from keybinds import
+  installBrowserKeys, setControlPreset, loadPlayKeys, capturePlayPress,
+  capturePlayRelease, playKey, pressedPlayButtons, pollBrowserKeys,
+  beginPlayInputFrame, MouseControls, WasdControls, MouseKeyControls,
+  CenterHero, FollowHero
 
 when defined(takeScreenshot):
   import std/[os, strutils]
@@ -128,6 +134,19 @@ proc runGraphics*() =
       options.vsync,
       msaa = msaa4x
     )
+  installBrowserKeys()
+  if pendingControlPreset.len > 0:
+    case pendingControlPreset
+    of "mouse", "Mouse":
+      setControlPreset(MouseControls)
+    of "wasd", "WASD", "Wasd":
+      setControlPreset(WasdControls)
+    of "mousekeys", "mousekey", "MouseKeyControls":
+      setControlPreset(MouseKeyControls)
+    else:
+      discard
+  if pendingKeysPath.len > 0:
+    loadPlayKeys(pendingKeysPath)
   let splash = startSplash(sk, window)
   profileBlock "terrain":
     amplitude = 2.8'f
@@ -594,7 +613,7 @@ proc runGraphics*() =
             maximum: maximumHealth,
             delayedValue: delayedHealth,
             height: 0.16'f * HeroWorldBarScale,
-            color: teamHudColor(hero.team),
+            color: unitHealthColor(hero.team),
             showDamageTrail: true
           ),
           WorldResourceBar(
@@ -631,7 +650,7 @@ proc runGraphics*() =
           maximum: maximumHealth,
           delayedValue: delayedHealth,
           height: 0.14'f32,
-          color: teamHudColor(tower.team),
+          color: unitHealthColor(tower.team),
           showDamageTrail: true
         )]
       renderer.addResourceBars(anchor, TowerWorldBarWidth, bars)
@@ -674,7 +693,7 @@ proc runGraphics*() =
             maximum: maximumHealth,
             delayedValue: delayedHealth,
             height: 0.1'f32,
-            color: teamHudColor(footman.team),
+            color: unitHealthColor(footman.team),
             showDamageTrail: true
           )]
         renderer.addResourceBars(anchor, FootmanWorldBarWidth, bars)
@@ -803,10 +822,11 @@ proc runGraphics*() =
     rightOrderStarted = false
     selectionStarted = false
     selectionAdditive = false
-    attackMoveArmed = false
     followSelection = false
     cameraEase: CameraEase
     focusPlayerHero = false
+    humanInput: HumanInputState
+    combatBefore = snapshotCombat(run.world)
     groupCameraScale = 1.0'f32
     viewingDt = 0.0'f
     viewingSeeking = false
@@ -834,17 +854,38 @@ proc runGraphics*() =
     )
 
   window.onButtonPress = proc(button: Button) =
+    if not capturePlayPress(button):
+      return
     if options.playerSlot > 0 and not run.replayMode:
       if button == KeyB:
         shopOpen = not shopOpen
-        armedAbility = -1
+        cancelPlayerAim()
         return
       if button == KeyEscape:
-        shopOpen = false
-        armedAbility = -1
-        attackMoveArmed = false
+        if armedAbility >= 0 or attackMoveArmed or shopOpen:
+          shopOpen = false
+          cancelPlayerAim()
+          return
+        if not setupOpen:
+          controlsOpen = not controlsOpen
+          if controlsOpen:
+            resumeAfterMenu = transport.playing
+            transport.pause()
+            resetPlayerCommands()
+          elif resumeAfterMenu:
+            transport.playing = true
+          return
+      if button == KeyF6:
+        historyOpen = not historyOpen
+        if historyOpen:
+          transport.pause()
+        else:
+          resetPlayerCommands()
+          transport.seekTo(transport.recordedTicks)
         return
       if shopOpen and button != KeySpace:
+        return
+      if setupOpen or controlsOpen:
         return
     if handleChromeKey(button):
       return
@@ -856,13 +897,9 @@ proc runGraphics*() =
       scene.toggleShading()
     elif button == KeyO:
       showOccludedCharacters = not showOccludedCharacters
-    elif (button == KeyF or button == KeyG) and
-        options.playerSlot > 0 and
-        not run.replayMode:
-      queueUseItem(
-        run.world.heroes[options.playerSlot - 1].id,
-        int32(if button == KeyF: 0 else: 1)
-      )
+
+  window.onButtonRelease = proc(button: Button) =
+    capturePlayRelease(button)
 
   proc objectTeam(id: int32): int32 =
     ## Returns 1 for red, 2 for blue, or 0 when the id is unknown.
@@ -1284,6 +1321,15 @@ proc runGraphics*() =
       rightOrderStarted = false
       minimapPanning = false
       return
+    if setupOpen or controlsOpen:
+      selectionStarted = false
+      rightOrderStarted = false
+      minimapPanning = false
+      return
+    if focusPlayerRequested:
+      focusPlayerRequested = false
+      followPlayer = true
+      focusPlayerHero = true
     if focusPlayerHero:
       focusPlayerHero = false
       startCameraEase(cameraEase, cameraTarget)
@@ -1302,24 +1348,24 @@ proc runGraphics*() =
         (window.buttonDown[KeyLeftControl] or
           window.buttonDown[KeyRightControl]):
       selectAllHeroes()
-    elif window.mousePressed(MouseLeft) and not overUi:
+    elif liveMousePressed(window, MouseLeft) and not overUi:
       selectionPressPosition = window.mousePos.vec2
       selectionStarted = true
       selectionAdditive =
         window.buttonDown[KeyLeftShift] or
         window.buttonDown[KeyRightShift]
-    if window.mousePressed(MouseRight) and not overUi:
+    if liveMousePressed(window, MouseRight) and not overUi:
       rightPressPosition = window.mousePos.vec2
       rightOrderStarted = true
-    if window.mousePressed(MouseMiddle) and
-        (not overUi or window.buttonPressed[MouseMiddleKey]):
+    if liveMousePressed(window, MouseMiddle) and
+        (not overUi or (not playerMode() and window.buttonPressed[MouseMiddleKey])):
       if not playerMode():
         followSelection = false
         actionCam.takeManual()
       cancelCameraEase(cameraEase)
     panning =
-      window.mouseDown(MouseMiddle) and
-        (not overUi or window.buttonDown[MouseMiddleKey]) or
+      liveMouseDown(window, MouseMiddle) and
+        (not overUi or (not playerMode() and window.buttonDown[MouseMiddleKey])) or
       (not playerMode() and not overUi and window.mouseDown(MouseRight))
 
     let delta = window.mouseDelta.vec2
@@ -1335,6 +1381,7 @@ proc runGraphics*() =
           400.0'f32
         )
       if panning:
+        followPlayer = false
         cancelCameraEase(cameraEase)
         let panSpeed = cameraDistance * 0.0015
         cameraTarget.x -= delta.x * panSpeed
@@ -1348,7 +1395,14 @@ proc runGraphics*() =
           cameraDistance,
           mapHalfSize()
         ):
+        followPlayer = false
         cancelCameraEase(cameraEase)
+      elif followPlayer:
+        cameraTarget = mix(
+          cameraTarget,
+          playerHeroFrame(),
+          damping(5.0'f32, dt)
+        )
       else:
         discard advanceCameraEase(
           cameraEase,
@@ -1453,41 +1507,59 @@ proc runGraphics*() =
     selectEntity(heroId)
     clickMarks.emitClickMark(tileCenter(walk.layer, walk.x, walk.z))
 
-  proc updatePlayerSpells(viewProjection: Mat4) =
-    ## Casts quick actions and current targets, or selects an aimed ability.
-    if not playerMode() or shopOpen:
+  proc playerAimAt(viewProjection: Mat4): PlayerAim =
+    ## Reads the walkable tile and object under the pointer.
+    if mouseOverUi(window, sk.mousePos, primaryId):
       return
-    for slot, key in [KeyQ, KeyW, KeyE, KeyR]:
-      if window.buttonPressed[key]:
-        let hero = heroById(run.world, playerHeroId())
-        var
-          aimX = mapCoordinate(hero.position.x + hero.facing.x)
-          aimY = mapCoordinate(hero.position.z + hero.facing.z)
-        if not mouseOverUi(window, sk.mousePos, primaryId):
-          let
-            (origin, direction) = mouseRay(
-              window.mousePos.vec2, window.size.vec2, viewProjection
-            )
-            ground = pickWalkableTile(origin, direction)
-          if ground.hit:
-            aimX = int32(layers[ground.layer].originX + ground.x - mapOrigin())
-            aimY = int32(layers[ground.layer].originZ + ground.z - mapOrigin())
-        attackMoveArmed = false
-        if not activatePlayerAbility(
-          run.world, hero.id, slot.int32, primaryId, aimX, aimY
-        ):
-          selectEntity(hero.id)
+    result.pickedId = pickEntity(viewProjection)
+    let
+      (origin, direction) = mouseRay(
+        window.mousePos.vec2, window.size.vec2, viewProjection
+      )
+      ground = pickWalkableTile(origin, direction)
+    if ground.hit:
+      result.onMap = true
+      result.x = int32(layers[ground.layer].originX + ground.x - mapOrigin())
+      result.y = int32(layers[ground.layer].originZ + ground.z - mapOrigin())
+
+  proc updatePlayerSpells(viewProjection: Mat4) =
+    ## Applies this frame's human keys through the shared input handler.
+    if not playerMode() or shopOpen or setupOpen or controlsOpen:
+      if setupOpen or controlsOpen:
+        resetPlayerCommands()
+      return
+    let aim = playerAimAt(viewProjection)
+    let accepts = transport.playing and not historyOpen and
+      not run.world.gameOver and run.world.tick < options.maximumTicks
+    if not accepts:
+      resetPlayerCommands()
+    humanInput.handlePlayerKeys(
+      window, run.world, playerHeroId(), primaryId, aim, accepts
+    )
+    if playKey(CenterHero) in pressedPlayButtons:
+      followPlayer = true
+      focusPlayerRequested = true
+    if playKey(FollowHero) in pressedPlayButtons:
+      followPlayer = not followPlayer
+      focusPlayerRequested = followPlayer
 
   proc updateWorldSelection(viewProjection: Mat4) =
     ## Selects a clicked world unit, or attacks it in player mode.
-    if not window.mouseReleased(MouseLeft):
+    if not liveMouseReleased(window, MouseLeft):
+      return
+    if setupOpen or controlsOpen:
       return
     if selectionStarted and
         (window.mousePos.vec2 - selectionPressPosition).length <=
           6.0'f32 and
         not mouseOverUi(window, sk.mousePos, primaryId):
       let picked = pickEntity(viewProjection)
-      if playerMode() and attackMoveArmed:
+      if playerMode() and armedAbility >= 0:
+        let aim = playerAimAt(viewProjection)
+        discard confirmPlayerAbility(
+          run.world, playerHeroId(), armedAbility, picked, aim.x, aim.y
+        )
+      elif playerMode() and attackMoveArmed:
         let heroId = playerHeroId()
         if picked != 0 and objectTeam(picked) != objectTeam(heroId):
           queueAttackTarget(heroId, picked)
@@ -1506,7 +1578,9 @@ proc runGraphics*() =
     ## Turns a right-click into a walk, attack-move, or chase attack.
     if not playerMode():
       return
-    if not window.mouseReleased(MouseRight):
+    if setupOpen or controlsOpen:
+      return
+    if not liveMouseReleased(window, MouseRight):
       return
     if not rightOrderStarted:
       return
@@ -1838,8 +1912,46 @@ proc runGraphics*() =
       if cameraSeekSerial != transport.seekSerial:
         actionCam.resetDirector(transport.automaticSeek)
         cameraSeekSerial = transport.seekSerial
-      sk.uiScale = gameUiScale(window)
+      sk.uiScale = gotaUiScale(window)
       sk.mousePos = window.mousePos.vec2 / sk.uiScale
+      pollBrowserKeys(window)
+      beginPlayInputFrame()
+      if startRequested:
+        startRequested = false
+        restartHumanGame(menuSlot)
+        resetPlayFeedback()
+        combatBefore = snapshotCombat(run.world)
+        transport = initPlayer(
+          live = true,
+          durationTicks = options.maximumTicks,
+          playing = true,
+          speed = options.speed,
+          repeating = true
+        )
+        primaryId = playerHeroId()
+        selectedIds = @[primaryId]
+        followSelection = false
+        followPlayer = true
+        focusPlayerRequested = true
+        cameraTarget = playerHeroFrame()
+      if restartRequested:
+        restartRequested = false
+        restartHumanGame(options.playerSlot)
+        resetPlayFeedback()
+        combatBefore = snapshotCombat(run.world)
+        transport = initPlayer(
+          live = true,
+          durationTicks = options.maximumTicks,
+          playing = true,
+          speed = options.speed,
+          repeating = true
+        )
+        primaryId = playerHeroId()
+        selectedIds = @[primaryId]
+        followSelection = false
+        followPlayer = true
+        focusPlayerRequested = true
+        cameraTarget = playerHeroFrame()
       profileBlock "camera":
         updateCamera(dt)
       let recorded =
@@ -1868,6 +1980,9 @@ proc runGraphics*() =
             if run.recorder != nil: int32(run.recorder.data.hashes.len)
             else: int32(run.replayPlayer.data.hashes.len)
           transport.sync(int32(run.world.tick), recordedNow, run.world.gameOver)
+        if isHumanGame() and not historyOpen:
+          observeCombat(combatBefore, run.world, playerHeroId())
+          combatBefore = snapshotCombat(run.world)
       let active = simulationActive(transport)
       if active:
         renderAlpha = clamp(
@@ -2051,6 +2166,15 @@ proc runGraphics*() =
         spellEffects.drawSpells(
           run.world, viewProjection, animationAlpha, viewMode
         )
+        if playerMode() and armedAbility >= 0:
+          let
+            hero = heroById(run.world, playerHeroId())
+            aim = playerAimAt(viewProjection)
+          if hero.id != 0 and aim.onMap:
+            spellEffects.drawSpellPreview(
+              hero, HeroAbilitySlot(armedAbility),
+              hero.spellAimPoint(aim.x, aim.y), viewProjection
+            )
         clickMarks.drawClickMarks(viewProjection)
         if showPaths:
           worldShapes.clear()
@@ -2107,6 +2231,7 @@ proc runGraphics*() =
             actionCam,
             focusPlayerHero
           )
+          sk.drawPlayUi(window, transport, primaryId, viewProjection)
           sk.endUi()
           drawStatsOverlay(sk, window)
       when defined(takeScreenshot):
@@ -2131,6 +2256,7 @@ proc runGraphics*() =
 
   if not run.replayMode:
     saveRecording()
+  closePlayAudio()
   particles.closeParticles()
   spellEffects.closeSpellRenderer()
   selectionOutline.closeSelectionOutline()

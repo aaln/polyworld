@@ -1,0 +1,999 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_microplay_finish_v4",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate_no_motion": "No observed attackable candidate and no accepted retreat movement in this decision."
+      }
+    },
+    "notes": "Published2026.9.16.5, exact clean source f2ab9598d8f8001b6beae3e66404e341770c803f. Enemy god is protected by two guard towers. Current executable revalidated in180hostedgames. Coaching session inputs preserved separately; captured PudgeWars source was not used as GotA baseline."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "backdoorCommitted",
+        "backdoorFirstSeen",
+        "backdoorGroupUntil",
+        "backdoorLastSeen",
+        "backdoorUntil",
+        "backdoorWatched",
+        "decisions",
+        "defLastTick",
+        "defPointX",
+        "defPointY",
+        "defThreatX",
+        "defThreatY",
+        "defUntil",
+        "defenseDecisions",
+        "defenseRefreshes",
+        "escortId",
+        "kiteBursts",
+        "kiteEscapes",
+        "kiteMoveTicks",
+        "kiteSpellCasts",
+        "lastJoinTick",
+        "lastJoinX",
+        "lastJoinY",
+        "loadoutPurchases",
+        "motionCompletions",
+        "motionFailures",
+        "motionLastHits",
+        "motionLastHp",
+        "motionLastTick",
+        "motionLoss",
+        "motionReady",
+        "motionStart",
+        "motionStartSeparation",
+        "motionThreat",
+        "motionUntil",
+        "motionX",
+        "motionY",
+        "perimeterAnchor",
+        "perimeterLastCombat",
+        "perimeterLastTick",
+        "perimeterX",
+        "perimeterY",
+        "recoverySteps",
+        "stalled",
+        "weaponStarts"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Visible object target IDs are exposed; zero can mean no target or a target outside visibility. Future enemy intentions remain unknown."
+    },
+    "claims": {
+      "B_wave": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Using an observed allied footman as the no-target movement anchor may increase productive lane presence and fort wins. This is not evidence that a footman shields a hero from towers.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/experiment-20260910.json",
+            "sha256": "36170fcaddbc1511737b8b2496b6ff002884477f5d50c7336e117542f5355a44"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          }
+        ]
+      },
+      "B_equipment": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Matched hosted games: sustain-only won 4/10 versus v1 2/10. Final equipment totaled 35 versus 16. These observations inform the equipment-saving hypothesis; broader strength remains unresolved.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/xp-result-20260910.json",
+            "sha256": "9f2ab759b80e61a0199cde063b6e7afc4ecf146f8a4c333d351e5c1794237b78"
+          }
+        ]
+      },
+      "B_kiting_campaign": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Ten kiting candidates were evaluated with40 matched cases each and full replay verification. The current-release best win count was23/40 versus v2 22/40, but deaths135 versus134 failed preservation. A spell-casting variant reduced deaths to115 but won17/40. None passed both competitive and survival gates. These adaptive results do not rule out better kiting designs; retain the exact tested v2 executable.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/kiting-campaign-20260915.json",
+            "sha256": "123789fc191295116945a5506cf62e308f370682751d3828f451fff980ce977d"
+          }
+        ]
+      },
+      "B_replay_turn_cost": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Published .3 replay diagnosis: among 409 complete ten-tick hit-adjacent walk segments, median turning-only ticks=8, median moving ticks=2. Only 32/334 segments gained >0.25 tiles against the same initially nearest visible enemy still alive at the end. These correlated command-derived observations show a motion failure, not competitive superiority of a replacement.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_replay_tower_trap": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Two of forty v2 cases have >30-second no-movement/no-hit/no-active-offense stalls, with the first path waypoint inside friendly-tower collision clearance. The Arcanist stalls 344.7 seconds. At its verified tick1200 checkpoint, 24 nearby walk destinations fail; a diagnostic-only engine waypoint change produces4.60 tiles displacement. Accepted movement and terrainWalkable do not prove successful navigation. Target switches are not evidence of progress.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_replay_late_escape": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Across134 v2 deaths, the median final-six-second window contains one second of half-second samples below35%HP;18 deaths have no such sample. This supports investigating earlier escape decisions. It is a sampled opportunity measure, not proof of avoidable deaths or a validated threshold.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_motion_feedback_hypothesis": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Persistent retreat destinations and measured separation, with turn cost, enemy closing speed, safe re-engagement and earlier multi-attacker risk checks, may improve survival without losing fort wins. Preventive tower-clearance routing may avoid collision traps. These proposed behaviors are NOT implemented in the retained v2 executable and require fresh local and hosted validation.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/replay-findings-20260915.json",
+            "sha256": "13a3156b7c8908e1c5c0ad4ffc4cb8f335d4734638bfccfa00c980501cbaf1a7"
+          }
+        ]
+      },
+      "B_candidate": {
+        "status": "requires_review",
+        "claim": "Validated relh-gods-of-the-arena:v154 repair (legacy): 40/40 blue in discovery, then 40/40 red and 40/40 blue in fresh confirmation: 120/120 against relh. The deployed control won 40/40 red and 0/40 blue. Required blue-side preservation checks won 40/40 each against g002 v1, black-kite v16, macromackie v4, and Jordan v254. All 280 selected-candidate hosted games won and passed full replay, runtime, roster, release, and equipment audits. Behavior: a blue side-tower alarm after 150 HP of damage, with the original commitment and release rules. Red execution is unchanged, verified through the lowered source and six complete games with identical actions and state hashes. Local results were 12/12, matching the deployed policy. Real-VM middle-lane commands and release timing also match the deployed policy. The semantic IR reflects these results and compiles to the exact tested BASIC, with reverse extraction verified. The first, broader candidate also beat relh 120/120 but produced five Jordan draws and was not promoted. This followup passed the original preservation requirements. Controls were reused, seeds differ, and repeated fixed-lineup games are correlated. These results do not establish independent-trial significance, guaranteed future wins, or mixed ten-player performance. The separate stale red rally issue and red-side weakness against black-kite remain outside this change.",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/prospective.json",
+            "sha256": "d29ba3c457ac393c2ab4efe454d2d54013d7175b22ed412e7500c4da6450a187"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/vm-proof.json",
+            "sha256": "60ce6f7af7a723783608112cf8e4f2ad47cf2cd9838df3ee4af69b93c7567763"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/vm-budget.json",
+            "sha256": "df3c4221b364c377f7544bb8e4b6f77f8c861cc6d92337c73464fd13c23b8485"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/local/qualification.json",
+            "sha256": "578a76a0444323b1b8d189eae4bd96c659bc8bdae99df5a5a7ebac043b56dbcd"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/hosted-result.json",
+            "sha256": "25d5c6b6c0989408eeb8d7a0e40dc4e23bec801482fb5af449054437c37484cc"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/confirmation/result.json",
+            "sha256": "1b540ad1b76236f7d89e562019e01f0b2b0c04e6880f746aeb6a99d47804ad82"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/hosted/legacy/review/decisions.json",
+            "sha256": "b9ceafea66a74e516cec5fef1d93fa639ef23658ad4c885bb30437bf03140086"
+          }
+        ]
+      },
+      "B_motion_execution": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. 4508 normal retreats followed verified basic hits; 0 lacked that prerequisite. 76044 retreat ticks produced actual displacement; 3877 ended on the public separation/disappeared-threat condition. Explicit offensive casts during retreats: 901. These mechanism counts are correlated within episodes and are not independent win evidence.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/motion-campaign-20260915/confirmation-result.json",
+            "sha256": "8ec33ea53047ef871b0c0104d73a3506a485461e25ce7226fdcf36a3e51f425f"
+          }
+        ]
+      },
+      "B_hosted_100": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. On published2026.9.15.3, two100-episode independent hosted cohorts with identical pinned incumbent versions and balanced seats yielded67candidate wins versus59v2 wins. All200full replays verified. One-sided Fisher p=.15263074; the frozen >=10pp/p<.05 win gate failed. Candidate deaths/alive-minute .376820 vs.509380, lifetime XP165100 vs150400 and mean Glory623.856 vs497.099. Equipment buying occurred inall200games. These data motivate a separate fixed600-per-arm confirmation; they do not establish win superiority.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/motion-campaign-20260915/hosted/comparison.json",
+            "sha256": "a468ee9cf3d8d3157f935b7b58fa3dd3e85f3a8e73007715e2df24bd44c49066"
+          }
+        ]
+      },
+      "B_selection_provenance": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. The user explicitly requested deployment to Aaron's Optimizer after the200-game report. Softmax binds versions to players, so identical motion-weapon:v1 BASIC bytes were registered as motion-weapon:v2 for the optimizer. Both Aaron(v2waveguard) and Aaron's Optimizer(v2motion-weapon) are verified active competing champions. User selection is distinct from passing a statistical qualification gate.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/motion-campaign-20260915/deploy-optimizer/deployment-verified.json",
+            "sha256": "4aadb63b3ef85868c4e273e2e52eaf4347d9d46930710ee6970db2d6c4a3fca6"
+          }
+        ]
+      },
+      "B_motion_confirmation600": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Independent precommitted600-game-per-arm confirmation completed on published2026.9.15.3, excluding initial200: motion340/600 versus waveguard304/600; gain6pp, one-sided Fisherp=0.02135026. Death rate0.381195 versus0.488950; XP936825 versus860675; meanGlory484.82 versus358.89. Gear purchased inall600candidate games; all1200 full tapes/API scores/VM logs verified. Passed all frozen confirmation gates. This establishes an improvement on the pinned older roster; current-field transfer and broad-field guardrail remain unverified. Existing deployment is on Aaron's Optimizer, exact sameBASIC as motion-weapon:v1; no new league change from this feedback.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/motion-campaign-20260915/hosted-confirmation600/comparison.json",
+            "sha256": "5ae2dabafb572da6c69bd3fecb251f92fad0f6935077d679e880748a47960768"
+          }
+        ]
+      },
+      "B_current_field": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Current-field discovery,100games per selected policy, published2026.9.15.3 and refreshed top-nine pinned opponents: motion 54/100fort wins. Motion54/100vs waveguard52/100, one-sidedFisherp=.44369, inconclusivewin difference; not a promotion verdict. motion deathrate0.432511/alive-minute, XP106525, meanGlory353.8611, equipment100/100. All200complete replays, API scores and VM logs verified. Perclass groups contain10games and fixed teammates; do not infer a class's intrinsic weakness from this roster. Ongoing ten-cell economy screen is fixed and not tuned from these controls.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/autoresearch-20260916/hosted-discovery/controls-comparison.json",
+            "sha256": "4296a8ffb665e9fdd589f0b7bea5224769b6c7de2340b4b255d976d820f9bd71"
+          }
+        ]
+      },
+      "B_cadence_confirmation400": {
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Completed hosted confirmation against fixed current top-nine incumbents on 2026.9.15.3: 215/400 wins, v2 175/400, motion 176/400. Comparisons {'v2': {'gain': 0.1, 'p': 0.0028857634475454638, 'adverse_classes': [], 'passed': True}, 'motion': {'gain': 0.0975, 'p': 0.0035786486315362957, 'adverse_classes': [], 'passed': True}}; death rate 0.398004; XP 891200; meanGlory 989.375; class wins {'Arcanist': {'games': 40, 'wins': 11}, 'Berserker': {'games': 40, 'wins': 16}, 'Crossbowman': {'games': 40, 'wins': 29}, 'DeathKnight': {'games': 40, 'wins': 24}, 'DemonHunter': {'games': 40, 'wins': 21}, 'DruidWarden': {'games': 40, 'wins': 28}, 'Lich': {'games': 40, 'wins': 15}, 'Ranger': {'games': 40, 'wins': 32}, 'VanguardKnight': {'games': 40, 'wins': 15}, 'Warlock': {'games': 40, 'wins': 24}}. All artifacts and replay state sequences verified. Passed frozen stage gates. Fresh400/arm held-out verdict. Broad-field guardrail still required before deployment.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/autoresearch-20260916/cadence-cycle/hosted-confirmation/result.json",
+            "sha256": "157d85d1bf0263b80255b1cf62867be1e04ddb14ab0b3214d21c8316a7fe4948"
+          }
+        ]
+      },
+      "B_cadence_mechanism": {
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/autoresearch-20260916/cadence-cycle/cadence-diagnostics/result.json",
+            "sha256": "b6c54970d232fa3ba4ca8fa3cb026c96e65f3990f9f5775b2b1b6a29e9853de2"
+          }
+        ],
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. Full replay diagnostics on all300 previously observed hosted discovery tapes: cadence21.2818 basic hits/alive-minute versus waveguard12.7807 and motion12.5764. All10 classes had a shorter dominant consecutive same-target hit interval; Crossbow17ticks versus36, Ranger9versus18, Vanguard11versus24. Of8789 post-hit walk bursts, median displacement was0, with789 moving ticks total. This supports attack-recovery timing, not effective escape movement or fresh competitive confirmation. Two candidate games had30second-plus pathing stalls at friendly tower23; navigation remains unresolved. Event samples are correlated within games; cohorts have independent seeds and fixed class/roster coupling."
+      },
+      "B_cadence_field100": {
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/autoresearch-20260916/cadence-cycle/field/result.json",
+            "sha256": "0105607b5daaf3ef78c561f4fe4ba88313ab90a2ee3f192fcef1bbdc3747cee5"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/autoresearch-20260916/cadence-cycle/field/coverage.json",
+            "sha256": "ef6f730d9a4868a5a8081986300ecfab062f7e5c3d62bcaade617b13544a873b"
+          }
+        ],
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. After passing the independent400-per-arm confirmation, this unchanged candidate completed100fresh sampled-current-champion games:58fort wins, deathrate0.376922/alive-minute, lifetimeXP236825, meanGlory924.685, gearin100/100. Thirteen other champion versions and59different opponent sets were represented; both owned players were excluded. Every full replay, VM, configuration, seed and score check passed. The frozen50win field guardrail passed. This is a descriptive transfer screen, not a second A/B or a guarantee of leaderboard rank."
+      },
+      "B_current_deployment": {
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/autoresearch-20260916/cadence-cycle/deployment/deployment-verified.json",
+            "sha256": "02d1dbd63069ba214a5ff26db03054945e490b321ed696d150716bb7000413b6"
+          }
+        ],
+        "claim": "Inherited historical observation about the earlier policy/version or experiment named below; this is not a measurement of the new release candidate. User-authorized promotion after confirmation and field guards passed: aaron-gota-ir-cadence-all-0916:v1, immutablec5711f9d-6248-4843-ae39-bc13a4911b79, selected on Aaron's Optimizer. APIreadback verifies exactlytwo owned active competing champions: Optimizer on cadence, Aaron on waveguard-r4:v2. Future versions do not become champions automatically. League rank improvement has not yet been measured."
+      },
+      "B_release": {
+        "claim": "Source and live manifest agree on the announced wave, building/pathing and hero changes. Existing nearest-enemy accepts barracks through host exposure predicates. Existing item buying and automatic class abilities use live game rules. Earlier win and survival evidence is scoped to its recorded release, not evidence of competitive strength on this release.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/live-before/coworld.json",
+            "sha256": "3fa76eefa8b76d6dc2437f2f22f6ba07a2fd61054dd5140fb352d5ca795c3b9b"
+          }
+        ]
+      },
+      "B_macro": {
+        "claim": "Rejecting the selected mobile target beyond 12 tiles, retaining wave navigation and class combat, with the separately declared dense-object recovery fallback, improved measured fort wins in the completed study. The results do not isolate the pursuit bound from that fallback. Published 2026.9.16.3, completed fresh held-out confirmation: 333/400 fort wins versus current deployed Lich 225/400, gain 27.00 percentage points, one-sided Fisher p=3.6220376e-17 under ten pinned role rotations. Mean subject hero deaths/game 2.5525 versus 3.6700; deaths/alive-minute 0.5364 versus 0.5386. All 400 candidate games purchased equipment; no adverse class guard failed. Separate 100-game sampled-current-field check: 60/100 wins, all equipment and validity checks passed. All requested episodes retained and fully replay-audited. Conditional roster results do not establish rank #1 or arbitrary-opponent superiority.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/local/screen-result.json",
+            "sha256": "22cb12d12f31a429fd7fc0b1b19d0cef79dfa9e59b287be41bd1974475a5a3d0"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/hosted-discovery/result.json",
+            "sha256": "4ac5161bf2a5ee6a69497663f1eb80e14fc4c2ce11508a49a340c7e0b8962d6f"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/hosted-confirmation/result.json",
+            "sha256": "d69361b901f1c0fbc1cd6e86255586e9e1b93e637dc7262e151b1301d4584a6a"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/field/result.json",
+            "sha256": "b5054c1d9dcbfbebd6db7c9df4ddff4cd7988bbbdd9167bcd880b130386b75c1"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/rival-matchups/result.json",
+            "sha256": "f6dc47ff49f51ec8f7a5aaa0d6df82b7ca06c74c6f8ee504d579ebb77362f8d0"
+          }
+        ]
+      },
+      "B_release_evaluation": {
+        "claim": "Published 2026.9.16.3, completed fresh held-out confirmation: 333/400 fort wins versus current deployed Lich 225/400, gain 27.00 percentage points, one-sided Fisher p=3.6220376e-17 under ten pinned role rotations. Mean subject hero deaths/game 2.5525 versus 3.6700; deaths/alive-minute 0.5364 versus 0.5386. All 400 candidate games purchased equipment; no adverse class guard failed. Separate 100-game sampled-current-field check: 60/100 wins, all equipment and validity checks passed. All requested episodes retained and fully replay-audited. Conditional roster results do not establish rank #1 or arbitrary-opponent superiority.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/local/screen-result.json",
+            "sha256": "22cb12d12f31a429fd7fc0b1b19d0cef79dfa9e59b287be41bd1974475a5a3d0"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/hosted-discovery/result.json",
+            "sha256": "4ac5161bf2a5ee6a69497663f1eb80e14fc4c2ce11508a49a340c7e0b8962d6f"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/hosted-confirmation/result.json",
+            "sha256": "d69361b901f1c0fbc1cd6e86255586e9e1b93e637dc7262e151b1301d4584a6a"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/field/result.json",
+            "sha256": "b5054c1d9dcbfbebd6db7c9df4ddff4cd7988bbbdd9167bcd880b130386b75c1"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/rival-matchups/result.json",
+            "sha256": "f6dc47ff49f51ec8f7a5aaa0d6df82b7ca06c74c6f8ee504d579ebb77362f8d0"
+          }
+        ]
+      },
+      "B_named_rivals": {
+        "claim": "richard-gods-of-the-arena:v50: 80/80 wins, red 40/40, blue 40/40; gota-codex-objective-lanes-20260915:v1: 80/80 wins, red 40/40, blue 40/40. Five policy copies per team, two fixed tactical lineups per rival. Seeded repeats can reproduce identical behavior; no broad significance claim.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/rival-matchups/result.json",
+            "sha256": "f6dc47ff49f51ec8f7a5aaa0d6df82b7ca06c74c6f8ee504d579ebb77362f8d0"
+          }
+        ]
+      },
+      "B_lane_coverage": {
+        "claim": "Remaining follow-up hypothesis: class-specific lane coverage may improve Druid Warden outcomes. Completed discovery: bounded 0/10 Druid wins versus full lane routing 7/10, but full lane routing failed overall survival. A reviewed bounded loss ended at 3:03 with one Druid death while its undefended lane collapsed; a different-seed lane win lasted 7:49 with six Druid deaths. These anecdotes do not establish a causal effect, and this evaluated executable has not incorporated that proposed route change. In the separate sampled-current-field check Druid won 5/10, so this gap is roster-dependent.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/hosted-discovery/result.json",
+            "sha256": "4ac5161bf2a5ee6a69497663f1eb80e14fc4c2ce11508a49a340c7e0b8962d6f"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/field/result.json",
+            "sha256": "b5054c1d9dcbfbebd6db7c9df4ddff4cd7988bbbdd9167bcd880b130386b75c1"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/win-first-study/review/druid-review-manifest.json",
+            "sha256": "3d37d919204bb59c4ff48cacee49589ff17113c2847dccfe386a204788677989"
+          }
+        ]
+      },
+      "B_r5_current": {
+        "claim": "Exact deployed BASIC beat currentpublicJordanv175 80/80 across40red and40blue games on live2026.9.16.5. Every fullreplay, alltenVMs, scores, XP, roster andrelease verified. Only two distinct commandtapes: evidence for two team lineups, not broad league superiority. Coached replacements tested so far failed either defaultwin or survival screens; preserve baseline behavior while measuring mixedteams.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/hosted/current/result.json",
+            "sha256": "f43ccf0b9f6f9c3181eb4759f9fdb532e045905d684a71bb133bc911d706c141"
+          }
+        ]
+      },
+      "B_r5_field": {
+        "claim": "Live2026.9.16.5: exact deployed bounded executable won80/80 versusJordanv175 with40games/color and two distinct team commandtapes. Separate100sampled mixed-team fieldgames yielded75wins, all100boughtgear, alltenVMs/fullreplays valid. FieldLich3/10 suggests further diagnosis; class samples are small and rosters differ. No broad superiority or rank1 claim. Tested wholesale lane-rush replacements failed local gates; retain this executable.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/hosted/current/result.json",
+            "sha256": "f43ccf0b9f6f9c3181eb4759f9fdb532e045905d684a71bb133bc911d706c141"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-current-field/result.json",
+            "sha256": "20e49c67dc73d1f843149cc1e7a0d3a8435daeb5bb4d16aa7132451f89b11b9b"
+          }
+        ]
+      },
+      "B_loadout_coaching": {
+        "claim": "The lane-focused combat variant beat bounded in all four local matches but lost one of four default matchups and suffered many deaths. None qualified. Test an explicit damage/armor progression with both the successful deployed navigation and the coached center push; changing item and macro components jointly may alter the tower race. Current source item stats ground the proposal, but this candidate has no validated competitive improvement.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-pressure/screen/result.json",
+            "sha256": "d04670ee0784da16f3282fd5c43b1e8c058bd6a4f411a916d19fbbfb3845ebde"
+          }
+        ]
+      },
+      "B_asymmetric": {
+        "claim": "The universal damage plan won37/40 versus deployed29/40, including20/20 direct matches, but failed the unchanged default gate with17/20 versuscontrol19/20. Red accounts for all three default losses; blue won every matchup. Reject universal deployment. Test preserving red equipment while applying the ordered plan to blue, optionally extending to red non-magic heroes. This is a new hypothesis requiring fresh cases, not a relaxed gate.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-loadout/local/result.json",
+            "sha256": "08404a755f69c34d575c9eaf49c72e31ad5e42f5cc70ff603d11957cc4ab3a91"
+          }
+        ]
+      },
+      "B_rush_defense": {
+        "claim": "Exact current-release khors:v1 replay: five blue heroes were visible attacking middle tower by40s. Our red heroes split3/2 across outer lanes and the god died at3008ticks(125.33s), with no hero deaths on either side. Shared vision makes the threat observable. Test coordinated rally, creep-support removal, and optional retreat. User also identifies red-kite:v20 and gota-g001:v1. Blue-loadout mixed-team evidence alone cannot validate this two-player mode.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/khors-defense/review-summary.json",
+            "sha256": "fd9a1586f54337e1babc7c1137b2d4039f53dcc0a2ea99071c5cbe2c79b8590d"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/khors-defense/rush-rivals.json",
+            "sha256": "4fd2ad1395e1353b794daf39f9318151a6eb2d660b3791c534f49dfa7a974b65"
+          }
+        ]
+      },
+      "B_persistent_defense": {
+        "claim": "All five previous six-case candidates failed local gates. Rally stopped the blue proxy once but lost red: sampled replay shows most attackers dead by80s, two survivors remaining near our base, and defenders returning to split offense by100s. A later rush then wins. Test continuation for surviving deep invaders, tighter combat radius, creep focus, and regrouping before attack. Replays also show late and staggered initial arrival. These coordinated changes remain unvalidated.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-rush-defense/screen-v2/result.json",
+            "sha256": "c40eb4c6d5cabc3f587a005754967d5ff06da8f1e6c799f0471c642ba8a23ea6"
+          }
+        ]
+      },
+      "B_lineup_defense": {
+        "claim": "Previous six-case screens show opposing color responses: shorter simple rally won blue vs center proxy; survivor-persistent defense won red. Neither qualified overall. Both also changed ordinary combat cost limits. Test the combination with original combat preserved outside defense, plus four/five-hero detection thresholds. Color-specific behavior is a hypothesis, not a validated improvement.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-rush-defense/screen-v2/result.json",
+            "sha256": "c40eb4c6d5cabc3f587a005754967d5ff06da8f1e6c799f0471c642ba8a23ea6"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-rush-defense/screen-v3/result.json",
+            "sha256": "727cba94b1d1728ecc980aeef0054dcdc1d45b9df45153fdc64a257f6413f1d7"
+          }
+        ]
+      },
+      "B_parent_mixed_context": {
+        "claim": "Parent gear-only policy failed its frozen800game mixed-team gate despite allied wins 110/160 versus 93/160. Checks: {'allied_gain': True, 'allied_roster_breadth': True, 'allied_context_sign': True, 'survival': True, 'equipment': True, 'classes': False, 'opposed_draws': False}. The new defense behavior has not inherited mixed-team validation and requires its own comparison. Parent source and known failure are retained; this is not a claim that defense fixes them.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-live-league/result.json",
+            "sha256": "082a0e1b43206ce36d61a0cf143983581fcfb69000d9730f099beae065277fd9"
+          }
+        ]
+      },
+      "B_second_wave": {
+        "claim": "In a fully decoded blue loss to red-kite20, the first rush was repelled but all five defenders left after their short commitment expired. At220seconds the next five-hero wave attacked the surviving gate while every defender was far away; the god fell at242.7seconds. In the sampled win, three defenders occupied the attackers while Ranger and Demon finished the enemy base. Test retaining two or three sentries after observed rushes while the other heroes resume pressure. These are two selected replay examples, not causal proof or a prediction of unseen enemies. Overdefending may reduce wins.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-rush-defense/candidate-red-kite-review/loss.review.json",
+            "sha256": "665b8fa12065ddd2ced6bc8e3fe41843ba83675eff5c470384b084217beff7cc"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-rush-defense/candidate-red-kite-review/win.review.json",
+            "sha256": "70098cbeea7a01cbc7109399639cae27b7fddf2887fef1b647eb53ae064f6f03"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-rush-defense/hosted/blue_memory/result.json",
+            "sha256": "d861f59bb1a1b1784dfd239be09ef5482de3acb2ff9780cf7ad936e3450a8689"
+          }
+        ]
+      },
+      "B_deploy_now": {
+        "claim": "Full1120head-to-head plus200ten-player suite remains in progress. User explicitly requested league deployment now. Pending hosted criteria are not marked passed; no leaderboard superiority is asserted.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-rush-sentries/deployment-requested/decision.json",
+            "sha256": "d293cb236ea98d77d3efba46f2f33e0fd596dce139ae47a5becdf5427416cf67"
+          }
+        ]
+      },
+      "B_rally_and_core": {
+        "claim": "User-reported league loss ereq_6226f76f is actually against relh133, on the latest deployed sentry policy. Full source-matched replay shows repeated identical walk destinations for multiple defenders; at720seconds three sentries remain near(90,5), while six visible enemy creeps near(102,13) attack the own god, which has52HP. It dies at721.17seconds. This shows stale rally/target selection; the screenshot alone cannot establish collision physics as sole cause. Test separate hero rally points and a visible core-wave emergency override together and separately. Keep current deployed tests frozen. Richard69 and relh133 are prioritized named-opponent tests; no claim of improvement yet.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-richard-unblock/analysis.json",
+            "sha256": "d2e6adb47fed01ff06d9204ec83fb4eaf4fe679627621d19c85fec7db3a61d3c"
+          }
+        ]
+      },
+      "B_scan_budget": {
+        "claim": "The first nearby-core repair exceeded the VM instruction budget in seed762025, slot9. It is invalid and cannot be uploaded. Fuse emergency detection into the existing active-defense enemy scan; inactive defense stays unchanged. Only visible god attackers/units within6tiles qualify, and only defenders within24tiles respond. Scope is stale sentries after an observed rush, not universal base recall. New whole-game confirmation remains required.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-richard-unblock/local/games/near_core/762025/stderr.log",
+            "sha256": "2fb319f6652eae2628d696903b9c860ff15b478f202a83581f1e2d526c4415e4"
+          }
+        ]
+      },
+      "B_lone_base_attacker": {
+        "claim": "Command-level correction to the selected replay diagnosis: Ranger issued 22attack-target orders toward Jordan in the sample interval after200seconds and48after220seconds. It did not remain a sustained defender. At265and280seconds all living allies were outside28tiles of home and neither surviving owned hero ordered an interception. The failure is loss of sustained coverage and backup, not a total absence of Ranger targeting. These are post-tick samples joined to next-interval orders, not a reconstruction of historical VM beliefs. Local qualification does not establish hosted mixed-team benefit.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-mixed-backdoor/response-audit.json",
+            "sha256": "56df6428abb87e9010ef21ca34ca63fdb25d18e256eaa4f29ea4d6e05b15963b"
+          }
+        ]
+      },
+      "B_assign_response": {
+        "claim": "The first local screen rejected recalling all remote heroes: solo20won3/6 and solo40won4/6 versus both parents6/6. Keep the solo structure-attack detector, but prioritize nearby responders and stagger remote backups by distance rank. A remote hero stays on offense when another ally actually targets the intruder; an ignored threat eventually recalls a backup. Do not assume unrelated teammate policies will cooperate.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-mixed-backdoor/screen/result.json",
+            "sha256": "4e0af590348e0ece4738ef3f0c44499b77cee5375aa43366f53f947fb13e929c"
+          }
+        ]
+      },
+      "B_preserve_group_duty": {
+        "claim": "Earlier solo-response experiments could cap an existing five-hero-rush commitment to20seconds when attackers dwindled. This violated the intended preservation of long group defense. Retain the established group deadline before considering a shorter solo duty. Test all-role, staggered-backup, and nearby-only scopes together. Prior local failures remain evidence, not successful candidates. Nearby-only cannot solve a fully unattended base.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-mixed-backdoor/screen-assigned/result.json",
+            "sha256": "7a09b5c6c4f47b0bf168158f6a9f353a7ef02690d2b921c64a826aaed20711c8"
+          }
+        ]
+      },
+      "B_isolate_target_override": {
+        "claim": "The previous nearby response won51/60 versus deployed55/60 and fused58/60; it failed qualification. Code inspection found the lone-attacker target override also ran during full groups. Gate the complete added trigger by visible cluster size, retaining parent group targeting. Test global recall, assigned backup and nearby-only together. The suspected causal explanation requires combined evaluation, not code inspection alone.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-mixed-backdoor/local/comparison.json",
+            "sha256": "d2e4c752846fe13486bf51ebc86f9603e7ea4532d4203cf37d8a34b4d0a86763"
+          }
+        ]
+      },
+      "B_lineup_scope": {
+        "claim": "In the isolated screen, assigned4and8 won10/12: blue6/6, red4/6; both parents won12/12. Red losses were against the center-rush proxy. Test blue-only assigned response and verify red action parity with the fused parent. This adaptation follows observed failures, not independent confirmation. The reported hosted episode had our Ranger and Arcanist on blue. Its mixed-roster improvement and unattended red defense remain unproven.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-mixed-isolated/screen/result.json",
+            "sha256": "afc1c9ad95f3416fb8cf43430064d96f46d343cd861a622854364461924a3714"
+          }
+        ]
+      },
+      "B_objective_dead_zone": {
+        "claim": "Exact own policy reconstruction matched78022commands and16513state hashes in Jordan186 blue loss ereq_2103ec78. At16440 four defenders reject visible Warlock103 outside self-centred10tile radius and repeat a rear rally; Vanguard attacks. God dies73ticks later. Persistent rally orders/target filtering, not collision physics alone, explain the clump. New objective-relative selection and optional quiet release/forward rally are untested hypotheses; evaluate coordinated effects and retained mixed response.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-root/diagnosis.json",
+            "sha256": "73ed6b6b5ede093470e28d35e59c075b77e385563be8f5b6dd63980f490b8ffc"
+          }
+        ]
+      },
+      "B_lineup_interaction": {
+        "claim": "The full80game Jordan186 repair trial won40/40blue and0/40red, versus deployed 0/40blue and40/40red. It is rejected as a both-color replacement. Exact reconstruction of supplied red regression confirms51441commands and9634hashes: three sentries retain long passive duty while two attackers leave. Preserve the deployed red execution and repaired blue execution as explicit separately parameterized branches. Require entirelocalgame action/statehash parity to their respective parents plus fresh80hosted Jordan games; combined win rate is not established by joining old scores.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-root/hosted/release20/jordan-result.json",
+            "sha256": "87609cb093dce57a1515bf96916bfbac4ced70ef83dcc0cdd9b71aa687f5bed0"
+          }
+        ]
+      },
+      "B_early_middle_rush": {
+        "status": "requires_review",
+        "claim": "Early middle rush: on blue during first1800ticks, three visible clustered enemy heroes at standing friendly middle towers19/20/21 initiate recall. Other locations/times use parent four threshold. No opponent labels. Fresh local12/arm, actual-class VM/dense/IR checks and redparity before complete40red40blue versus exactmacromackie-v4. Targeted32blue38red, source-verified earlyrecall required. No automatic promotion.",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-macromackie-v4/color-analysis.json",
+            "sha256": "3a9fd4bb346fa7e4315120bc6e7b345f7735ba83398cfda7f585dc6ff5ab2ee6"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-macromackie-visible-rush/local/qualification.json",
+            "sha256": "56d18869b4bc7c551eae9b38f8738d78d8cf2b3f1ed70d35a5f4d7c441811815"
+          }
+        ]
+      },
+      "B_outer_warning": {
+        "status": "requires_review",
+        "claim": "Observed outer-lane pressure now triggers red recall 586ticks earlier in the reconstructed representative Jordan254 win; 40red/40blue wins in the fixed-lineup study. Scope and limitations in B_candidate.",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan254/warning-followup/prospective.json",
+            "sha256": "9e0a85afb3b2a5bb0eccc9e7590c625022101245fd15d790bb984fbce85f9836"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan254/warning-followup/local/qualification.json",
+            "sha256": "4d25a4a1ba9c857779ae64771b3f970de515cde7e7b5dbd2f26ff567cba3b6b5"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan254/warning-followup/hosted-result.json",
+            "sha256": "40cf5ee16c4452935fa1132d89d8b320db8448a2fbb33345199a938773c55e32"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan254/warning-followup/hosted/warning100/review/decisions.json",
+            "sha256": "9602856721e681520e69f1bacd846ce2ab183632def1e4f57be56f48a5201483"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan254/warning-followup/guards/result.json",
+            "sha256": "db13d4c1ed41cf5fca7862f954a05c881f2f9f6266218fc74aad2ccf02ea545f"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan254/warning-followup/relh-preservation/result.json",
+            "sha256": "395811ab34afa1a54df8b7eae7ce9d00d0c75410c0a56302e466a5c04e9a283e"
+          }
+        ]
+      },
+      "B_stale_rally": {
+        "status": "requires_review",
+        "claim": "In user episode77d700dd red DK/Lich/Warlock continue walking to73,11 after protected tower11 is destroyed. Their defUntil17672 outlasts the13872tick loss. This candidate does not repair stale rally expiry.",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan254/user-stall-77d700dd/owned-proof.json",
+            "sha256": "f99d64724440679e38aa6d45d105946f3b80ff73841475b0261de931529c9713"
+          }
+        ]
+      },
+      "B_relh_warning": {
+        "status": "requires_review",
+        "claim": "a blue side-tower alarm after 150 HP of damage, with the original commitment and release rules. Exact relh v154: 120/120, including fresh 40/40 on each side. First recalls in the reconstructed blue win: {'5': 922, '6': 922, '7': 922, '8': 922, '9': 1064}. All four required blue preservation checks were 40/40. Evidence supports the selected implementation on these tested matchups.",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/prospective.json",
+            "sha256": "d29ba3c457ac393c2ab4efe454d2d54013d7175b22ed412e7500c4da6450a187"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/vm-proof.json",
+            "sha256": "60ce6f7af7a723783608112cf8e4f2ad47cf2cd9838df3ee4af69b93c7567763"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/vm-budget.json",
+            "sha256": "df3c4221b364c377f7544bb8e4b6f77f8c861cc6d92337c73464fd13c23b8485"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/local/qualification.json",
+            "sha256": "578a76a0444323b1b8d189eae4bd96c659bc8bdae99df5a5a7ebac043b56dbcd"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/hosted-result.json",
+            "sha256": "25d5c6b6c0989408eeb8d7a0e40dc4e23bec801482fb5af449054437c37484cc"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/confirmation/result.json",
+            "sha256": "1b540ad1b76236f7d89e562019e01f0b2b0c04e6880f746aeb6a99d47804ad82"
+          },
+          {
+            "artifact": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-relh154/scoped-followup/hosted/legacy/review/decisions.json",
+            "sha256": "b9ceafea66a74e516cec5fef1d93fa639ef23658ad4c885bb30437bf03140086"
+          }
+        ]
+      },
+      "Jordan268_I_O15": {
+        "claim": "The observed Jordan268 O15 hero-over-creep tendency motivated the fork. Waveclear alone screened red3/4 and blue0/4; its red branch later confirmed14/40. The benefit of retaining waveclear inside the final recall policy has not been isolated by an ablation. Keep opponent prediction support separate from counter-strategy causality.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "/Users/aaln/experiments/softmax/polyworld/docs/opponents/jordan-v268/evidence.json",
+            "sha256": "51d086ede82d6fbaecdc757d84583201b8176c2b2062769af13cd1b57f4b556a",
+            "preference_id": "Jordan268_I_O15",
+            "opponent_version": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2"
+          }
+        ]
+      },
+      "Jordan268_counterpressure": {
+        "claim": "Nearby-only blue recall in the counterrace parent confirmed 40/40 wins against exact Jordan268; the waveclear blue screen was0/4. This supports the counterpressure response in the fixed lineup, with repeated trajectory signatures and unmatched cohorts. It does not establish Jordan's private intent.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "evaluation.json",
+            "sha256": "3b2b48470a769721cba4409f15f7e7999d284fbbbacf36afbcbd66da8518b266"
+          }
+        ]
+      },
+      "Jordan268_red_counterpressure": {
+        "claim": "Nearby-only recall on red and blue confirmed 40/40 red and 40/40 blue wins against exact Jordan268. The immediate parent confirmed14/40 red and40/40 blue. Supports the response on these fixed lineups; replay signatures repeat and cohorts were not seed-matched.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "evaluation.json",
+            "sha256": "3b2b48470a769721cba4409f15f7e7999d284fbbbacf36afbcbd66da8518b266"
+          }
+        ]
+      },
+      "Jordan268_fork_evaluation": {
+        "claim": "Exact real Jordan v268, fixed five-versus-five on release.5: confirmation blue 40/40; confirmation red 40/40; screen red 4/4. Meets the precommitted scoped 30/40-per-color criterion. Generated seeds, repeated trajectory signatures and a narrow roster limit generalization; the opponent IR is a behavioral guide, not an executable Jordan proxy.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "evaluation.json",
+            "sha256": "3b2b48470a769721cba4409f15f7e7999d284fbbbacf36afbcbd66da8518b266"
+          }
+        ]
+      },
+      "B_microplay": {
+        "claim": "Qualified in constructed six-second encounters only. Final v4 reproduces v3 state/outcome sequences. Full-game benefit unproven; integration activated zero refinements.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "docs/microplay/2026-09-20/research.ir.json",
+            "sha256": "a6b16482917d0da00e93cfcdc7610148b134458af385ed8405df1e1bd8360df1"
+          },
+          {
+            "artifact": "docs/microplay/2026-09-20/evidence/v4/equivalence.json",
+            "sha256": "05500a8e6bd38abd6534b291798ddfc1e2f5f9ebc3473a41addfc3550981a38e"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Preserve bounded pursuit, existing wave escort, and class combat. Blue heroes use Crimson Dagger, Sunsteel Longsword, Battle Axe, Rune Crossbow, then Knight Armor. Red heroes use the validated class loadout except the explicitly configured non-magic red branch. Preserve purchasing and consumables while winning the structure race.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "React to an observed coordinated rush before ordinary offensive target selection; preserve inventory and class combat arbitration.",
+      "provenance": "interpretation"
+    },
+    "G_capacity": {
+      "preference": "Preserve HP/mana support and class equipment purchases; retain gold for persistent combat strength.",
+      "provenance": "authored"
+    },
+    "G_wave": {
+      "preference": "When no observed combat target or active recovery movement exists, join an allied wave. Wave routing is retained while the combat controller is evaluated separately.",
+      "provenance": "authored"
+    },
+    "G_survival": {
+      "preference": "Limit totalhero deaths percompletedgame relative to currentpolicy; report death intensity peralive-minute separately because game duration changes.",
+      "provenance": "authored"
+    },
+    "G_glory": {
+      "preference": "Track the current local tournament diagnostic win*(lifetime XP -200*simulated minutes) separately from historical100-rate records. The Softmax league objective remains binary fort wins; survival qualification remains a deployment guard.",
+      "provenance": "authored"
+    },
+    "G_cadence": {
+      "preference": "After a confirmed basic hit, shorten attack recovery with one legal movement decision and resume attack. Seek more productive offense while preserving fort-win and survival qualification. A turn-only movement command does not satisfy an escape or separation goal. Berserker is explicitly exempt from normal recovery movement.",
+      "provenance": "authored"
+    },
+    "G_defense": {
+      "preference": "On red retain the exact deployed long_three observer and defense/wave navigation. On blue use the validated release20 perimeter observer and class-separated rally: protect structures within24tiles, bounded32tile response, keep three sentries and release the two attacking roles after20quietseconds. Retain blue solo-backdoor response and nearby core emergencies. No claim that all idle duty is eliminated. All other skills are identical between both parents. During the first75seconds on blue, three visible clustered enemy heroes near a standing friendly middle-lane tower signal a possible concentrated rush and initiate existing recall. Side lanes and later play retain the four-hero trigger. Preserve red execution and existing defensive lifetimes. Observe strategy from gameplay; opponent identity is unavailable. On red, detect observed enemy groups near outer side-lane towers up to100tiles from home; require existing group and standing-anchor evidence. This is shared visible pressure, not hidden enemy prediction. Blue: include standing outer side towers within100tiles of home. Before3600ticks, at leasttwo living visible heroes near a standing side tower missing150HP can initiate recall. Use the original1200tick carryhold and quiet-release rules for every alarm; no additional arrival protection. Experimental Jordan268 fork: in the existing active defense region, prefer living visible enemy creeps over heroes. Test whether clearing their cover improves the fort race against the observed hero-target preference. On blue, preserve offensive pressure when farther than28tiles from home; only nearby heroes accept defense recall. Apply the nearby-only recall eligibility to red as well, preserving distant offensive groups.",
+      "provenance": "authored"
+    },
+    "G_microplay": {
+      "preference": "Improve individual damage conversion and local allied combat survival in matched short encounters. Fort wins are not the experiment selection objective.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "lineup_j268_both_local_recall",
+      "parameters": {
+        "redbranch_edge_tiles": 2,
+        "redbranch_fort_tiles": 4,
+        "redbranch_unit_weight": 1,
+        "redbranch_building_weight": 1,
+        "redbranch_plain_class": 9,
+        "redbranch_extra_class": 7,
+        "redbranch_pursuit_tiles": 12,
+        "redbranch_group_size": 4,
+        "redbranch_home_tiles": 100,
+        "redbranch_tower_tiles": 14,
+        "redbranch_cluster_tiles": 12,
+        "redbranch_hold_ticks": 1440,
+        "redbranch_behind_tiles": 4,
+        "redbranch_intercept_tiles": 10,
+        "redbranch_creep_first": 1,
+        "redbranch_hp_weight": 1,
+        "redbranch_continue_home": 48,
+        "redbranch_gather_heroes": 0,
+        "redbranch_blue_group": 4,
+        "redbranch_blue_hold": 1200,
+        "redbranch_blue_continue": 24,
+        "redbranch_red_sentry": 3,
+        "redbranch_blue_sentry": 3,
+        "redbranch_sentry_hold": 7200,
+        "edge_tiles": 2,
+        "fort_tiles": 4,
+        "unit_weight": 1,
+        "building_weight": 1,
+        "plain_class": 9,
+        "extra_class": 7,
+        "pursuit_tiles": 12,
+        "group_size": 4,
+        "home_tiles": 100,
+        "tower_tiles": 14,
+        "cluster_tiles": 12,
+        "hold_ticks": 1440,
+        "behind_tiles": 4,
+        "intercept_tiles": 10,
+        "creep_first": 1,
+        "hp_weight": 1,
+        "continue_home": 48,
+        "gather_heroes": 0,
+        "blue_group": 4,
+        "blue_hold": 1200,
+        "blue_continue": 24,
+        "red_sentry": 3,
+        "blue_sentry": 3,
+        "sentry_hold": 7200,
+        "core_response_tiles": 24,
+        "core_radius": 14,
+        "backdoor_tiles": 24,
+        "backdoor_hold": 480,
+        "near_response": 28,
+        "response_stagger": 96,
+        "isolated_max": 1,
+        "perimeter_team": 2,
+        "perimeter_tiles": 24,
+        "response_reach": 32,
+        "release_mode": 1,
+        "idle_ticks": 480,
+        "middle_group": 3,
+        "middle_opening_ticks": 1800,
+        "pair_damage": 150,
+        "pair_opening": 3600,
+        "recall_radius": 28,
+        "red_recall_radius": 28
+      }
+    },
+    "attack": {
+      "operator": "defense_cadence",
+      "parameters": {
+        "normal": 1,
+        "targeted": 0,
+        "risk_hp": 0,
+        "min_ticks": 12,
+        "max_ticks": 64,
+        "gain_tiles": 2,
+        "step_tiles": 3,
+        "threat_tiles": 7,
+        "support": 1,
+        "spells": 1,
+        "recovery_ticks": 1,
+        "all_classes": 1,
+        "plain_class": 9,
+        "motion_object_limit": 80,
+        "defense_motion_limit": 40
+      }
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "selective_loadout",
+      "parameters": {
+        "first_item": 11,
+        "second_item": 13,
+        "third_item": 18,
+        "fourth_item": 19,
+        "fifth_item": 16,
+        "red_loadout": 0
+      }
+    },
+    "fallback": {
+      "operator": "lineup_perimeter_route",
+      "parameters": {
+        "redbranch_fallback_x": 64,
+        "redbranch_fallback_y": 64,
+        "redbranch_offset_tiles": 0,
+        "redbranch_stall_decisions": 48,
+        "offset_tiles": 0,
+        "stall_decisions": 48,
+        "fallback_x": 64,
+        "fallback_y": 64,
+        "rally_spacing": 2,
+        "forward_rally": 0
+      }
+    },
+    "microplay": {
+      "operator": "microplay_local_target_v4",
+      "parameters": {
+        "finish": 1,
+        "assist": 0,
+        "ally_tiles": 8,
+        "range_percent": 60,
+        "object_limit": 48
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_base",
+        "G_defense"
+      ]
+    },
+    {
+      "id": "M0",
+      "when": "always",
+      "skill": "microplay",
+      "for": [
+        "G_microplay"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "always",
+      "skill": "attack",
+      "for": [
+        "G_fort",
+        "G_cadence",
+        "G_survival",
+        "G_glory",
+        "G_defense"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity",
+        "G_survival"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity",
+        "G_survival"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity",
+        "G_glory"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate_no_motion",
+      "skill": "fallback",
+      "for": [
+        "G_wave",
+        "G_defense"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.16.5",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 99,
+    "parent": "fc2dfa33dce067542c9ca2391246a19051bf000ca4209d60b0dd2a099ba5ed37",
+    "change": "Isolated local target refinement; microplay objective. Axis-wise integer-cell reach bound v2. Explicit 60percent reach and48object VM budget gate; units corrected.",
+    "needs_review": [
+      "Live generalization and natural opportunity coverage remain untested."
+    ],
+    "evidence": [
+      {
+        "artifact": "docs/microplay/2026-09-20/research.ir.json",
+        "sha256": "a6b16482917d0da00e93cfcdc7610148b134458af385ed8405df1e1bd8360df1"
+      }
+    ]
+  }
+}

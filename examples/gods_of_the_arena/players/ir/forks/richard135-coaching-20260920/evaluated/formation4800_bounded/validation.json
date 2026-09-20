@@ -1,0 +1,32 @@
+{
+  "name": "formation4800_bounded",
+  "pair": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/evaluated/formation4800_bounded",
+  "source_sha256": "1487d8a6b786e303aa03f008d20e0faf5a3b70f88e8adecfa972f92a2dd445b2",
+  "evaluated_ir_sha256": "0506fc775e52c3c0c8814ca6bca800b31688ba75ddbf67cbdfc3565fb4be6389",
+  "tested_ir_sha256": "93af7ad2fc174fa967350031087c3400e7722d9f56728ed59b0b9b730f1e4860",
+  "local": {
+    "games": 12,
+    "wins": 3,
+    "deaths": 346,
+    "all_runtime_and_replay_audits_passed": true,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/bounded-cohort/local-results.json",
+      "sha256": "0858e0994423dcd8c015ebaa5b54bbc7c2825c3a7071ad8bd9cb58b23867129b"
+    }
+  },
+  "local_control": {
+    "games": 12,
+    "wins": 8,
+    "deaths": 50,
+    "all_runtime_and_replay_audits_passed": true,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/bounded-cohort/local-results.json",
+      "sha256": "0858e0994423dcd8c015ebaa5b54bbc7c2825c3a7071ad8bd9cb58b23867129b"
+    }
+  },
+  "Richard": null,
+  "Richard_both_color_gate_passed": false,
+  "field_qualified": false,
+  "captured_inputs_preserved": true,
+  "compile_extract_exact_parity": true
+}

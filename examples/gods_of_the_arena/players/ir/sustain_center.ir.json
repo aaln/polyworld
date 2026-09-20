@@ -1,0 +1,193 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_sustain_center",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "Hosted replay evidence uses published game 2026.9.10.3. Hidden state reconstructed for offline diagnosis is not available to the policy."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Tower targets and enemy intentions are not exposed."
+    },
+    "claims": {
+      "B_equipment": {
+        "claim": "The hosted v1 diagnostic ended with only one or two equipment items per hero and repeated poison purchase attempts. Removing poison purchases may allow equipment growth and improve fort wins; healing/mana spending may still limit saving.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-sustain-result-20260910.json",
+            "sha256": "63f465d85d38cc2af47651d8f5af00f774f6c7200a7ab4e89118861d82f0f98d"
+          }
+        ]
+      },
+      "B_local_gate": {
+        "claim": "Frozen BASIC b32ca7b56d081017bfd253601c292e0823869fcf94e5f0dd1328171d15f78cdd failed_local_gate: 112/240 candidate wins versus 115/240 matched baseline wins, across 24 independent seeds with all ten seats tested separately. Paired gain -0.0125; seed sign-test p=0.820358, alpha=0.025, required gain=0.1. This measures the complete configuration among nine default policies. It does not isolate individual changes or establish wider-field strength.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-sustain-result-20260910.json",
+            "sha256": "63f465d85d38cc2af47651d8f5af00f774f6c7200a7ab4e89118861d82f0f98d"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Count decisions and attack the nearest observed eligible enemy. Separate rules specify fallback movement and spending.",
+      "provenance": "authored"
+    },
+    "G_capacity": {
+      "preference": "Keep baseline healing and mana support while preserving gold for persistent equipment growth by omitting poison purchases.",
+      "provenance": "authored"
+    },
+    "G_center": {
+      "preference": "Return to the baseline central destination when no eligible enemy is observed.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "nearest_enemy",
+      "parameters": {}
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "walk_point",
+      "parameters": {
+        "x": 64,
+        "y": 64
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_center"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.10.3",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 9,
+    "parent": "f29b11317bf7d33d4a18bd6bfafca6ac923a767f6af92436bcde21e5a1481573",
+    "change": {
+      "origin": "rationale_alignment",
+      "description": "Scope active beliefs and goals to the frozen configuration. Historical wave hypotheses remain in ancestor artifacts. BASIC unchanged."
+    },
+    "needs_review": [
+      "belief/B_equipment",
+      "belief/B_local_gate"
+    ],
+    "evidence": [
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+        "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/local-sustain-result-20260910.json",
+        "sha256": "63f465d85d38cc2af47651d8f5af00f774f6c7200a7ab4e89118861d82f0f98d"
+      }
+    ]
+  }
+}

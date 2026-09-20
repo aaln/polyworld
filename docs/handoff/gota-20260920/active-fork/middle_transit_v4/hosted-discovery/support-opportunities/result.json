@@ -1,0 +1,1720 @@
+{
+  "results": {
+    "transit": {
+      "counts": {
+        "2": {
+          "living_decisions": 6220,
+          "no_defense": 6220,
+          "visible_front": 2529,
+          "front_in22": 128,
+          "in22_and_healthy": 126,
+          "healthy_idle_in22": 10
+        },
+        "3": {
+          "living_decisions": 5786,
+          "no_defense": 5786,
+          "visible_front": 2314,
+          "front_in22": 660,
+          "in22_and_healthy": 643,
+          "healthy_idle_in22": 61,
+          "healthy_idle_in22_current_anchor": 31
+        }
+      },
+      "first_examples": [],
+      "equivalence_sha256": "7fd81bd90c1d706dda3fd18d4b5463bbaf4ef108a0519fea3698f2beedb9a7fe",
+      "scope": "Exactpredecision publicself/visibleallytargets/visibleenemy/ownanchor. Countsdescribeeligibility, not decisionquality, damagebenefit or a testedchangedpolicy. All recordedcommands and every statehash reconstruct."
+    },
+    "deployed": {
+      "counts": {
+        "2": {
+          "living_decisions": 7179,
+          "no_defense": 6570,
+          "visible_front": 3253,
+          "front_in22": 1070,
+          "in22_and_healthy": 1012,
+          "healthy_idle_in22": 318,
+          "healthy_idle_in22_current_anchor": 168,
+          "all_support_conditions": 32,
+          "all_conditions_outside_defense": 0
+        },
+        "3": {
+          "living_decisions": 6824,
+          "no_defense": 6237,
+          "visible_front": 3082,
+          "front_in22": 1435,
+          "in22_and_healthy": 1354,
+          "healthy_idle_in22": 440,
+          "healthy_idle_in22_current_anchor": 190,
+          "all_support_conditions": 47,
+          "all_conditions_outside_defense": 40
+        }
+      },
+      "first_examples": [
+        {
+          "tick": 2410,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 67,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 107,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 104,
+              "y": 73,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2411,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 67,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 107,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 104,
+              "y": 73,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2412,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 67,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 107,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2413,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 67,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 107,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2414,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 67,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 107,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2415,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 67,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 107,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2416,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 67,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 107,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2417,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 67,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2418,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 67,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2419,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 68,
+            "facing": {
+              "x": -2579,
+              "z": 59945
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 82,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2420,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 68,
+            "facing": {
+              "x": 18132,
+              "z": 57194
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2421,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 68,
+            "facing": {
+              "x": 36644,
+              "z": 47509
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 74,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2422,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 68,
+            "facing": {
+              "x": 47058,
+              "z": 37222
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2423,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 68,
+            "facing": {
+              "x": 35428,
+              "z": 48424
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2424,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 68,
+            "facing": {
+              "x": 35428,
+              "z": 48424
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2425,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 104,
+            "y": 68,
+            "facing": {
+              "x": 35428,
+              "z": 48424
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2426,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 105,
+            "y": 68,
+            "facing": {
+              "x": 35428,
+              "z": 48424
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 250,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2427,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 105,
+            "y": 68,
+            "facing": {
+              "x": 35429,
+              "z": 48423
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 202,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2428,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 105,
+            "y": 68,
+            "facing": {
+              "x": 35428,
+              "z": 48424
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 202,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        },
+        {
+          "tick": 2429,
+          "slot": 3,
+          "self": {
+            "class": 8,
+            "level": 2,
+            "hp": 286,
+            "maxHp": 286,
+            "mana": 206,
+            "x": 105,
+            "y": 68,
+            "facing": {
+              "x": 35428,
+              "z": 48424
+            },
+            "hits": 14,
+            "attack_cooldown": 12,
+            "attack_target": 0,
+            "charges": [
+              1,
+              3,
+              1,
+              1
+            ],
+            "cooldowns": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "recharges": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "front": {
+            "id": 107,
+            "kind": 2,
+            "team": 1,
+            "hp": 188,
+            "alive": true,
+            "x": 106,
+            "y": 81,
+            "target": 102
+          },
+          "anchor": {
+            "id": 22,
+            "kind": 4,
+            "team": 0,
+            "hp": 950,
+            "alive": true,
+            "x": 108,
+            "y": 69,
+            "target": 0
+          },
+          "committing_allies": [
+            {
+              "index": 18,
+              "id": 100,
+              "class": 5,
+              "team": 0,
+              "hp": 400,
+              "alive": true,
+              "x": 105,
+              "y": 75,
+              "target": 107
+            },
+            {
+              "index": 20,
+              "id": 102,
+              "class": 7,
+              "team": 0,
+              "hp": 241,
+              "alive": true,
+              "x": 105,
+              "y": 76,
+              "target": 107
+            }
+          ],
+          "defActive": 0
+        }
+      ],
+      "equivalence_sha256": "c0f8b2dcefd5431242e5f264fa1e580c68216a1d3b3262c6e7cb9583e5f8a6a9",
+      "scope": "Exactpredecision publicself/visibleallytargets/visibleenemy/ownanchor. Countsdescribeeligibility, not decisionquality, damagebenefit or a testedchangedpolicy. All recordedcommands and every statehash reconstruct."
+    }
+  },
+  "plan_sha256": "dd9bc47514b53a3dd751d81960cb763f4a42d55bf4566026ba6ba108d5e03ef2",
+  "interpretation": "Public context narrows next mechanism; changing the idle support block alone has no observed fortwin gain. Any new response/targeting policy still needs native budgets, complete reacting own-policygames and allfreshhostedtargetgates."
+}

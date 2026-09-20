@@ -1,0 +1,613 @@
+{
+  "schema": "gota-opponent-source-comparison/1",
+  "observation_model_sha256": "d0a58f5668198a0f6ab75efabcea6850b68a02ed79b107de4cc0ea03074d0fa2",
+  "source_sha256": "f48bb0057aeaf2ff939035324340183e34f8f9544e03226edfe62e78faad5a30",
+  "claim_comparisons": [
+    {
+      "id": "Richard135_I_O03",
+      "original_rule": {
+        "id": "Richard135_I_O03",
+        "when": "mask_1_low_0",
+        "skill": "target_hero",
+        "for": [
+          "hero_pressure"
+        ]
+      },
+      "original_preference": {
+        "id": "Richard135_I_O03",
+        "when": "mask_1_low_0",
+        "skill": "target_hero",
+        "over": "hold",
+        "n": 357,
+        "chosen_count": 357,
+        "rate": 1.0,
+        "context_n": 357,
+        "confidence": 0.9972144846796658,
+        "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+        "base_rate": {
+          "source": "14-trajectory population prior, same context and paired affordances",
+          "n": 307,
+          "chosen_count": 81,
+          "rate": 0.26384364820846906
+        },
+        "status": "supported",
+        "level": "individual",
+        "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h105.t7070",
+        "predictions": {
+          "n": 128,
+          "correct": 128,
+          "accuracy": 1.0,
+          "population_correct": 0,
+          "population_accuracy": 0.0,
+          "persistence_accuracy": 0.0625,
+          "uniform_expected_accuracy": 0.20716145833333335
+        },
+        "prediction_interval": {
+          "clusters": 3,
+          "lift_95pct": [
+            1.0,
+            1.0
+          ],
+          "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+        },
+        "supporting_episodes": 11,
+        "examples": [
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1386",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1395",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1404"
+        ],
+        "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+        "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+      },
+      "audit_status": "compatible_coarse_forecast",
+      "source_mechanisms": [
+        "Richard135_M04",
+        "Richard135_M07",
+        "Richard135_M09"
+      ],
+      "reason": "Nearest target and mode/defense selection can explain contact; not a global hero preference.",
+      "original_status_changed": false
+    },
+    {
+      "id": "Richard135_I_O04",
+      "original_rule": {
+        "id": "Richard135_I_O04",
+        "when": "mask_1_low_1",
+        "skill": "target_hero",
+        "for": [
+          "hero_pressure"
+        ]
+      },
+      "original_preference": {
+        "id": "Richard135_I_O04",
+        "when": "mask_1_low_1",
+        "skill": "target_hero",
+        "over": "hold",
+        "n": 8,
+        "chosen_count": 8,
+        "rate": 1.0,
+        "context_n": 8,
+        "confidence": 0.9,
+        "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+        "base_rate": {
+          "source": "14-trajectory population prior, same context and paired affordances",
+          "n": 61,
+          "chosen_count": 0,
+          "rate": 0.0
+        },
+        "status": "supported",
+        "level": "individual",
+        "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h108.t4815",
+        "predictions": {
+          "n": 3,
+          "correct": 3,
+          "accuracy": 1.0,
+          "population_correct": 0,
+          "population_accuracy": 0.0,
+          "persistence_accuracy": 0.0,
+          "uniform_expected_accuracy": 0.20000000000000004
+        },
+        "prediction_interval": {
+          "clusters": 1,
+          "lift_95pct": null,
+          "note": "Too few distinct observable trajectories"
+        },
+        "supporting_episodes": 4,
+        "examples": [
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1422",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h108.t4815",
+          "ereq_e257144c-f78b-42b2-a1c2-91f72688e149.h106.t1414"
+        ],
+        "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+        "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+      },
+      "audit_status": "compatible_sparse_forecast",
+      "source_mechanisms": [
+        "Richard135_M02",
+        "Richard135_M06",
+        "Richard135_M07"
+      ],
+      "reason": "Absolute HP<=100 is not the source health threshold; 3 heldout events do not identify low-HP intent.",
+      "original_status_changed": false
+    },
+    {
+      "id": "Richard135_I_O05",
+      "original_rule": {
+        "id": "Richard135_I_O05",
+        "when": "mask_2_low_0",
+        "skill": "target_creep",
+        "for": [
+          "creep_contact"
+        ]
+      },
+      "original_preference": {
+        "id": "Richard135_I_O05",
+        "when": "mask_2_low_0",
+        "skill": "target_creep",
+        "over": "hold",
+        "n": 334,
+        "chosen_count": 270,
+        "rate": 0.8083832335329342,
+        "context_n": 334,
+        "confidence": 0.8065476190476191,
+        "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+        "base_rate": {
+          "source": "14-trajectory population prior, same context and paired affordances",
+          "n": 334,
+          "chosen_count": 327,
+          "rate": 0.9790419161676647
+        },
+        "status": "provisional",
+        "level": "individual",
+        "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h109.t6728",
+        "predictions": {
+          "n": 106,
+          "correct": 80,
+          "accuracy": 0.7547169811320755,
+          "population_correct": 80,
+          "population_accuracy": 0.7547169811320755,
+          "persistence_accuracy": 0.3490566037735849,
+          "uniform_expected_accuracy": 0.20754716981132076
+        },
+        "prediction_interval": {
+          "clusters": 3,
+          "lift_95pct": [
+            0.0,
+            0.0
+          ],
+          "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+        },
+        "supporting_episodes": 11,
+        "examples": [
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t624",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t637",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t657"
+        ],
+        "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+        "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+      },
+      "audit_status": "compatible_without_goal_identification",
+      "source_mechanisms": [
+        "Richard135_M04",
+        "Richard135_M07"
+      ],
+      "reason": "Generic nearest-creep contact does not identify farming or last-hit optimization.",
+      "original_status_changed": false
+    },
+    {
+      "id": "Richard135_I_O06",
+      "original_rule": {
+        "id": "Richard135_I_O06",
+        "when": "mask_2_low_1",
+        "skill": "hold",
+        "for": [
+          "unresolved"
+        ]
+      },
+      "original_preference": {
+        "id": "Richard135_I_O06",
+        "when": "mask_2_low_1",
+        "skill": "hold",
+        "over": "target_creep",
+        "n": 7,
+        "chosen_count": 7,
+        "rate": 1.0,
+        "context_n": 7,
+        "confidence": 0.8888888888888888,
+        "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+        "base_rate": {
+          "source": "14-trajectory population prior, same context and paired affordances",
+          "n": 3,
+          "chosen_count": 0,
+          "rate": 0.0
+        },
+        "status": "provisional",
+        "level": "individual",
+        "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "last_observed": "ereq_a8957880-c86e-4554-b5eb-5b42f212a6d9.h102.t2888",
+        "predictions": {
+          "n": 3,
+          "correct": 0,
+          "accuracy": 0.0,
+          "population_correct": 0,
+          "population_accuracy": 0.0,
+          "persistence_accuracy": 0.0,
+          "uniform_expected_accuracy": 0.20000000000000004
+        },
+        "prediction_interval": {
+          "clusters": 2,
+          "lift_95pct": [
+            0.0,
+            0.0
+          ],
+          "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+        },
+        "supporting_episodes": 7,
+        "examples": [
+          "ereq_e766eb57-1ad0-4546-80a5-bdd686a83c94.h102.t2888",
+          "ereq_63a9c85f-e010-4dfc-ab10-132d7851a6b3.h102.t2888",
+          "ereq_a722338b-035d-490f-afff-c84c6d068a2f.h102.t2888"
+        ],
+        "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+        "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+      },
+      "audit_status": "unsupported_holding_mechanism",
+      "source_mechanisms": [
+        "Richard135_M02",
+        "Richard135_M06",
+        "Richard135_M10"
+      ],
+      "reason": "0/3 heldout; no absolute-HP-100 hold rule. Source does not prove voluntary holding.",
+      "original_status_changed": false
+    },
+    {
+      "id": "Richard135_I_O07",
+      "original_rule": {
+        "id": "Richard135_I_O07",
+        "when": "mask_3_low_0",
+        "skill": "target_creep",
+        "for": [
+          "creep_contact"
+        ]
+      },
+      "original_preference": {
+        "id": "Richard135_I_O07",
+        "when": "mask_3_low_0",
+        "skill": "target_creep",
+        "over": "hold",
+        "n": 653,
+        "chosen_count": 339,
+        "rate": 0.5191424196018377,
+        "context_n": 653,
+        "confidence": 0.5190839694656488,
+        "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+        "base_rate": {
+          "source": "14-trajectory population prior, same context and paired affordances",
+          "n": 1028,
+          "chosen_count": 562,
+          "rate": 0.546692607003891
+        },
+        "status": "provisional",
+        "level": "individual",
+        "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h107.t7046",
+        "predictions": {
+          "n": 223,
+          "correct": 121,
+          "accuracy": 0.5426008968609866,
+          "population_correct": 121,
+          "population_accuracy": 0.5426008968609866,
+          "persistence_accuracy": 0.2825112107623318,
+          "uniform_expected_accuracy": 0.16973094170403588
+        },
+        "prediction_interval": {
+          "clusters": 3,
+          "lift_95pct": [
+            0.0,
+            0.0
+          ],
+          "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+        },
+        "supporting_episodes": 11,
+        "examples": [
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t1373",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h108.t2233",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h108.t2245"
+        ],
+        "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+        "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+      },
+      "audit_status": "compatible_without_goal_identification",
+      "source_mechanisms": [
+        "Richard135_M04",
+        "Richard135_M09"
+      ],
+      "reason": "Generic nearest selection or direct fort-attacker priority can select a creep; no global preference.",
+      "original_status_changed": false
+    },
+    {
+      "id": "Richard135_I_O09",
+      "original_rule": {
+        "id": "Richard135_I_O09",
+        "when": "mask_4_low_0",
+        "skill": "target_structure",
+        "for": [
+          "structure_pressure"
+        ]
+      },
+      "original_preference": {
+        "id": "Richard135_I_O09",
+        "when": "mask_4_low_0",
+        "skill": "target_structure",
+        "over": "hold",
+        "n": 578,
+        "chosen_count": 564,
+        "rate": 0.9757785467128027,
+        "context_n": 578,
+        "confidence": 0.9741379310344828,
+        "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+        "base_rate": {
+          "source": "14-trajectory population prior, same context and paired affordances",
+          "n": 222,
+          "chosen_count": 126,
+          "rate": 0.5675675675675675
+        },
+        "status": "provisional",
+        "level": "individual",
+        "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h107.t8244",
+        "predictions": {
+          "n": 207,
+          "correct": 201,
+          "accuracy": 0.9710144927536232,
+          "population_correct": 201,
+          "population_accuracy": 0.9710144927536232,
+          "persistence_accuracy": 0.014492753623188406,
+          "uniform_expected_accuracy": 0.2002415458937198
+        },
+        "prediction_interval": {
+          "clusters": 3,
+          "lift_95pct": [
+            0.0,
+            0.0
+          ],
+          "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+        },
+        "supporting_episodes": 11,
+        "examples": [
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1048",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1056",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1064"
+        ],
+        "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+        "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+      },
+      "audit_status": "compatible_without_individual_lift",
+      "source_mechanisms": [
+        "Richard135_M04",
+        "Richard135_M07"
+      ],
+      "reason": "Both generic and objective selection can produce the behavior; preserve provisional status.",
+      "original_status_changed": false
+    },
+    {
+      "id": "Richard135_I_O11",
+      "original_rule": {
+        "id": "Richard135_I_O11",
+        "when": "mask_5_low_0",
+        "skill": "target_hero",
+        "for": [
+          "hero_pressure"
+        ]
+      },
+      "original_preference": {
+        "id": "Richard135_I_O11",
+        "when": "mask_5_low_0",
+        "skill": "target_hero",
+        "over": "target_structure",
+        "n": 82,
+        "chosen_count": 67,
+        "rate": 0.8170731707317073,
+        "context_n": 82,
+        "confidence": 0.8095238095238095,
+        "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+        "base_rate": {
+          "source": "14-trajectory population prior, same context and paired affordances",
+          "n": 122,
+          "chosen_count": 50,
+          "rate": 0.4098360655737705
+        },
+        "status": "provisional",
+        "level": "individual",
+        "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h107.t8308",
+        "predictions": {
+          "n": 21,
+          "correct": 17,
+          "accuracy": 0.8095238095238095,
+          "population_correct": 17,
+          "population_accuracy": 0.8095238095238095,
+          "persistence_accuracy": 0.047619047619047616,
+          "uniform_expected_accuracy": 0.16825396825396824
+        },
+        "prediction_interval": {
+          "clusters": 1,
+          "lift_95pct": null,
+          "note": "Too few distinct observable trajectories"
+        },
+        "supporting_episodes": 4,
+        "examples": [
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t7521",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h108.t7521",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h107.t7543"
+        ],
+        "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+        "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+      },
+      "audit_status": "coarse_context_mechanistically_insufficient",
+      "source_mechanisms": [
+        "Richard135_M07",
+        "Richard135_M08",
+        "Richard135_M09"
+      ],
+      "reason": "Hero-versus-structure priority depends on missing guards and mode; no lift over population.",
+      "original_status_changed": false
+    },
+    {
+      "id": "Richard135_I_O13",
+      "original_rule": {
+        "id": "Richard135_I_O13",
+        "when": "mask_6_low_0",
+        "skill": "target_structure",
+        "for": [
+          "structure_pressure"
+        ]
+      },
+      "original_preference": {
+        "id": "Richard135_I_O13",
+        "when": "mask_6_low_0",
+        "skill": "target_structure",
+        "over": "target_creep",
+        "n": 583,
+        "chosen_count": 338,
+        "rate": 0.5797598627787307,
+        "context_n": 583,
+        "confidence": 0.5794871794871795,
+        "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+        "base_rate": {
+          "source": "14-trajectory population prior, same context and paired affordances",
+          "n": 371,
+          "chosen_count": 60,
+          "rate": 0.16172506738544473
+        },
+        "status": "supported",
+        "level": "individual",
+        "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h106.t8227",
+        "predictions": {
+          "n": 226,
+          "correct": 140,
+          "accuracy": 0.6194690265486725,
+          "population_correct": 83,
+          "population_accuracy": 0.3672566371681416,
+          "persistence_accuracy": 0.14601769911504425,
+          "uniform_expected_accuracy": 0.16710914454277287
+        },
+        "prediction_interval": {
+          "clusters": 3,
+          "lift_95pct": [
+            -0.3939393939393939,
+            0.36923076923076925
+          ],
+          "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+        },
+        "supporting_episodes": 11,
+        "examples": [
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t976",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1001",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h109.t1008"
+        ],
+        "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+        "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+      },
+      "audit_status": "compatible_but_structure_kind_overbroad",
+      "source_mechanisms": [
+        "Richard135_M01",
+        "Richard135_M07"
+      ],
+      "reason": "Tower/god objective selection excludes barracks; mask-6 tower and barracks fixtures diverge.",
+      "original_status_changed": false
+    },
+    {
+      "id": "Richard135_I_O15",
+      "original_rule": {
+        "id": "Richard135_I_O15",
+        "when": "mask_7_low_0",
+        "skill": "target_hero",
+        "for": [
+          "hero_pressure"
+        ]
+      },
+      "original_preference": {
+        "id": "Richard135_I_O15",
+        "when": "mask_7_low_0",
+        "skill": "target_hero",
+        "over": "target_creep",
+        "n": 22,
+        "chosen_count": 14,
+        "rate": 0.6363636363636364,
+        "context_n": 22,
+        "confidence": 0.625,
+        "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+        "base_rate": {
+          "source": "14-trajectory population prior, same context and paired affordances",
+          "n": 84,
+          "chosen_count": 28,
+          "rate": 0.3333333333333333
+        },
+        "status": "supported",
+        "level": "individual",
+        "opponent": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+        "last_observed": "ereq_a9613a4f-0d0f-493a-a9c3-785cff47b7d2.h106.t7868",
+        "predictions": {
+          "n": 6,
+          "correct": 4,
+          "accuracy": 0.6666666666666666,
+          "population_correct": 0,
+          "population_accuracy": 0.0,
+          "persistence_accuracy": 0.0,
+          "uniform_expected_accuracy": 0.14285714285714285
+        },
+        "prediction_interval": {
+          "clusters": 1,
+          "lift_95pct": null,
+          "note": "Too few distinct observable trajectories"
+        },
+        "supporting_episodes": 4,
+        "examples": [
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h107.t7777",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t7789",
+          "ereq_5d8a6d43-f7c2-41d5-bc07-cf02cf763686.h106.t7798"
+        ],
+        "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+        "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+      },
+      "audit_status": "coarse_context_mechanistically_insufficient",
+      "source_mechanisms": [
+        "Richard135_M07",
+        "Richard135_M08",
+        "Richard135_M09"
+      ],
+      "reason": "Paired mask-7 scenes keep old context fixed but change terminal target with attacker target.",
+      "original_status_changed": false
+    }
+  ],
+  "original_forecast": {
+    "individual": [
+      694,
+      923
+    ],
+    "population": [
+      502,
+      923
+    ],
+    "target": "motif at retrospectively known >=6-tick starts",
+    "heldout_stream_clusters": 3
+  },
+  "new_discriminators": "discriminating-fixtures.ir.json",
+  "source_runtime": "runtime-audit.ir.json",
+  "identified_omissions": [
+    "four-decision neural mode cache",
+    "ordered multi-command composition",
+    "structure-kind distinction",
+    "tower-only self-attacker correction",
+    "group departure latch",
+    "nearest home defender with ties",
+    "post-hit recovery",
+    "accepted purchases and automatic kill-reward leveling"
+  ],
+  "main_limit": "Coarse observable forecast remains useful; mechanism and counterfactual fidelity were not established."
+}

@@ -12,6 +12,7 @@ if dependencyRoot.len > 0:
       continue
     let directory = dependencyRoot / name
     switch("path", if dirExists(directory / "src"): directory / "src" else: directory)
+  switch("path", currentSourcePath().parentDir / "../openal/src")
 else:
   switch("path", getEnv("SILKY_PATH", "../silky/src"))
   --path:"../shady/src"
@@ -19,6 +20,7 @@ else:
   --path:"../windy/src"
   --path:"../gltf/src"
   --path:"../vmath/src"
+  --path:"../openal/src"
   when defined(coworld):
     --path:"../mummy/src"
 

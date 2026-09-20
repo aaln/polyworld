@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "arm": "richard135-blue",
+      "episode": "ereq_1106df65-3a87-4a6c-968b-7c5546095149",
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "starts": 0,
+      "observed_target_changes": 0,
+      "violations": [],
+      "equivalence": {
+        "type": "summary",
+        "controlled_slots": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "ticks": 5803,
+        "owned_commands_matched": 27098,
+        "owned_decisions": 26823,
+        "all_state_hashes_equal": true,
+        "all_actions_consumed": true
+      },
+      "mechanism_sha256": "3ab763ee5d4dda5579db68d7d8a9409521dd7017f99c2199df6ad9f9fd828e06",
+      "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/review/richard135-blue/ereq_1106df65-3a87-4a6c-968b-7c5546095149"
+    }
+  ],
+  "scope": "First episode ID in each available win/failure category, complete all controlled commands/state hashes. Recorded private rival actions only; no alternative-quality verdict."
+}

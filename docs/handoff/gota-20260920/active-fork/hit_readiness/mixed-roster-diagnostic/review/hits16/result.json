@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "level1_events": 0,
+  "reviews": [
+    {
+      "subject": "hits16",
+      "seed": 9720006,
+      "slot": 5,
+      "roster": "mixed_lanes",
+      "outcome": "win",
+      "events": 0,
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/mixed-roster-diagnostic/review/hits16/9720006-hits16",
+      "equivalence_sha256": "5e9f910b40cce87b5f869846be3db8326376f8c7a7b5cc6bcdfb5888e406f220"
+    },
+    {
+      "subject": "suppression_reference",
+      "seed": 9720006,
+      "slot": 5,
+      "roster": "mixed_lanes",
+      "outcome": "win",
+      "events": 0,
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/mixed-roster-diagnostic/review/hits16/9720006-suppression_reference",
+      "equivalence_sha256": "a4525727371b3d6bac760b0d924a7331f07a9eeb1e97b5f0f3273543f935196c"
+    },
+    {
+      "subject": "hits16",
+      "seed": 9720002,
+      "slot": 5,
+      "roster": "weapon_pressure",
+      "outcome": "loss",
+      "events": 0,
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/mixed-roster-diagnostic/review/hits16/9720002-hits16",
+      "equivalence_sha256": "46744452d1aae78c5fc99d86523246002c968b89c59d25e7cb082ebc9b66cd8a"
+    },
+    {
+      "subject": "suppression_reference",
+      "seed": 9720002,
+      "slot": 5,
+      "roster": "weapon_pressure",
+      "outcome": "loss",
+      "events": 0,
+      "directory": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/hit_readiness/mixed-roster-diagnostic/review/hits16/9720002-suppression_reference",
+      "equivalence_sha256": "e1d24c9c1fb57a09483f5e8d1142f9bec3037dc2479345bbc9209cea93fa0ac4"
+    }
+  ],
+  "interpretation": "Original full games had ten reacting owned/public policies; only one hero uses the subject source. Complete traces replay the other nine recorded commands and verify every state hash, not a private-rival reacting alternative."
+}

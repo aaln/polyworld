@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "arm": "jordan268-red",
+      "episode": "ereq_11ee7e39-b79a-44dd-ab94-2705cb7e6777",
+      "win": 1,
+      "loss": 0,
+      "draw": 0,
+      "starts": 1,
+      "observed_target_changes": 1,
+      "violations": [],
+      "equivalence": {
+        "type": "summary",
+        "controlled_slots": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "ticks": 3521,
+        "owned_commands_matched": 20314,
+        "owned_decisions": 16957,
+        "all_state_hashes_equal": true,
+        "all_actions_consumed": true
+      },
+      "mechanism_sha256": "b7fbed14d8f8ec11f52028ccad0168b08bbdb52ce0a4cf24028669198df2a14f",
+      "path": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/tower_handoff_v2/hosted-discovery/review/jordan268-red/ereq_11ee7e39-b79a-44dd-ab94-2705cb7e6777"
+    }
+  ],
+  "scope": "First episode ID in each available win/failure category, complete all controlled commands/state hashes. Recorded private rival actions only; no alternative-quality verdict."
+}

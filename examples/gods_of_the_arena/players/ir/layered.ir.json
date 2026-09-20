@@ -1,0 +1,186 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_layered_v1",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "Ontology: Hero, Footman, Tower, Fort, Item, WaveEscort, WaveThreat. A WaveEscort is one retained living allied footman. A WaveThreat is an attackable enemy inside a 6-tile Euclidean disk around that escort (squared tile distance <= 36). enemy.near_escort affords attack; enemy.visible_but_far affords ignore-and-rejoin; no_escort affords regroup. Predicates are regions over observed integer tiles, not path reachability. Protected towers (standing, objectAlive=0) are not WaveThreats."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions",
+        "escortId",
+        "lastJoinTick",
+        "lastJoinX",
+        "lastJoinY",
+        "stalled"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Tower targets and enemy intentions are not exposed."
+    },
+    "claims": {
+      "B_wave_local": {
+        "claim": "R4 wave-following alone did not stop chasing: any visible enemy still pulled the hero off the lane. Restricting combat to enemies near the current escort may keep pressure on a lane and open the fort; it can also ignore a hero who is attacking us away from the wave. Untested on complete games.",
+        "status": "untested",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/closed_levers.md",
+            "sha256": "d9a23e2474e50f60e2d814c431e4f4c5e7392411058e02847a21e4cc9446b9ec"
+          }
+        ]
+      },
+      "B_wave_follow": {
+        "claim": "Using an observed allied footman as the no-target movement anchor did not demonstrate fort-win superiority (28/60 discovery vs baseline 30/60). That result measured nearest-enemy combat plus join-wave movement. It does not refute wave-local targeting.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/closed_levers.md",
+            "sha256": "d9a23e2474e50f60e2d814c431e4f4c5e7392411058e02847a21e4cc9446b9ec"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_wave": {
+      "preference": "Keep productive presence on an allied wave. Prefer fighting what threatens that wave over chasing a distant visible hero. When nothing local is attackable, walk with the escort rather than to map center.",
+      "provenance": "authored"
+    },
+    "G_capacity": {
+      "preference": "Preserve baseline inventory use and ordered spending so this revision isolates targeting and movement.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Keep decision accounting and attack/economy command contracts from the baseline family.",
+      "provenance": "interpretation"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "wave_enemy",
+      "parameters": {
+        "radius_tiles": 6
+      }
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_consumables",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "join_wave",
+      "parameters": {
+        "offset_tiles": 2,
+        "stall_decisions": 48,
+        "fallback_x": 64,
+        "fallback_y": 64
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_wave"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_wave"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_wave"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.10.3",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 0,
+    "parent": "f2d353186de9645b9589f934be635482ffeb83f1d7af8fae254370fc5d48c2c4",
+    "change": {
+      "origin": "authored",
+      "behavior": "Replace nearest-enemy observation with wave-local targeting (6-tile escort disk). Join-wave movement and baseline economy unchanged."
+    },
+    "needs_review": [],
+    "evidence": []
+  }
+}

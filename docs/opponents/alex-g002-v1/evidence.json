@@ -1,0 +1,1115 @@
+{
+  "schema": "gota-opponent-validation/1",
+  "model_freeze_sha256": "36aa6e70e3c81948d04b353c2f855002a436dc6e2f2579bf398f055c35c71476",
+  "all_replays_verified": true,
+  "models": {
+    "train": {
+      "contexts": {
+        "mask_2_low_0": {
+          "target_creep": 139
+        },
+        "mask_3_low_0": {
+          "target_hero": 12
+        },
+        "mask_4_low_0": {
+          "target_structure": 126,
+          "advance": 72,
+          "hold": 18,
+          "lateral": 6,
+          "withdraw": 12
+        },
+        "mask_5_low_0": {
+          "target_structure": 25,
+          "hold": 6,
+          "target_hero": 2
+        },
+        "mask_6_low_0": {
+          "target_structure": 117,
+          "target_creep": 294,
+          "hold": 6,
+          "withdraw": 6
+        },
+        "mask_7_low_0": {
+          "target_hero": 50,
+          "target_structure": 19
+        }
+      },
+      "global": {
+        "target_creep": 433,
+        "target_structure": 287,
+        "advance": 72,
+        "hold": 30,
+        "target_hero": 64,
+        "lateral": 6,
+        "withdraw": 18
+      },
+      "smoothing": "Laplace +1 over estimated available skills; context backs off globally if n<8"
+    },
+    "population": {
+      "contexts": {
+        "mask_1_low_0": {
+          "target_hero": 81,
+          "advance": 62,
+          "hold": 111,
+          "withdraw": 29,
+          "lateral": 24
+        },
+        "mask_1_low_1": {
+          "withdraw": 20,
+          "hold": 34,
+          "advance": 5,
+          "lateral": 2
+        },
+        "mask_2_low_0": {
+          "target_creep": 327,
+          "advance": 2,
+          "hold": 4,
+          "withdraw": 1
+        },
+        "mask_2_low_1": {
+          "target_creep": 2,
+          "withdraw": 1
+        },
+        "mask_3_low_0": {
+          "target_creep": 562,
+          "target_hero": 137,
+          "hold": 193,
+          "withdraw": 61,
+          "advance": 26,
+          "lateral": 49
+        },
+        "mask_3_low_1": {
+          "target_creep": 15,
+          "target_hero": 5,
+          "hold": 30,
+          "advance": 10,
+          "lateral": 1,
+          "withdraw": 7
+        },
+        "mask_4_low_0": {
+          "target_structure": 126,
+          "advance": 26,
+          "hold": 62,
+          "withdraw": 7,
+          "lateral": 1
+        },
+        "mask_4_low_1": {
+          "target_structure": 5,
+          "withdraw": 3,
+          "hold": 33,
+          "advance": 1
+        },
+        "mask_5_low_0": {
+          "target_structure": 33,
+          "target_hero": 50,
+          "hold": 31,
+          "advance": 3,
+          "withdraw": 2,
+          "lateral": 3
+        },
+        "mask_5_low_1": {
+          "target_structure": 1,
+          "target_hero": 2,
+          "hold": 5,
+          "withdraw": 1
+        },
+        "mask_6_low_0": {
+          "target_creep": 270,
+          "target_structure": 60,
+          "lateral": 4,
+          "hold": 19,
+          "advance": 12,
+          "withdraw": 6
+        },
+        "mask_6_low_1": {
+          "target_creep": 6,
+          "target_structure": 4,
+          "hold": 4
+        },
+        "mask_7_low_0": {
+          "target_structure": 15,
+          "target_hero": 28,
+          "target_creep": 29,
+          "hold": 6,
+          "advance": 1,
+          "withdraw": 3,
+          "lateral": 2
+        },
+        "mask_7_low_1": {
+          "target_structure": 3,
+          "target_creep": 4,
+          "target_hero": 4,
+          "hold": 3,
+          "withdraw": 2
+        }
+      },
+      "global": {
+        "target_creep": 1215,
+        "target_hero": 307,
+        "target_structure": 247,
+        "hold": 535,
+        "withdraw": 143,
+        "advance": 148,
+        "lateral": 86
+      },
+      "smoothing": "Laplace +1 over estimated available skills; context backs off globally if n<8"
+    }
+  },
+  "training_episode_ids": [
+    "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002",
+    "ereq_d79c3904-1962-4bf9-baef-246cccbe6c17",
+    "ereq_ab17782d-44c9-4a10-9b8c-c7764afc88c4",
+    "ereq_87ba2957-57de-4aac-8867-1cf86b06d5f4",
+    "ereq_0e7a53dc-0e61-471f-a885-c5c0e4862099",
+    "ereq_b2234f67-1d36-4c31-825b-09551474a6f0",
+    "ereq_0dfea382-21eb-4746-ab1d-f9dca400692f",
+    "ereq_e15c0bbb-478e-4ac3-9658-5972654f596e",
+    "ereq_f1f1e89b-2626-4767-810a-de580832917b",
+    "ereq_1db2a887-6854-45d4-accc-e3f0d32d3fc3",
+    "ereq_38049079-023c-40e5-8a1c-6881ce343817",
+    "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad"
+  ],
+  "population_episode_ids": [
+    "ereq_01d0d934-9556-43fe-8f09-2f6617e4852b",
+    "ereq_ad6983d3-3de3-4c23-ac24-9f130b1e1fc4",
+    "ereq_8a7515f1-77c8-44d6-9076-91ec4020a849",
+    "ereq_3853474b-50ba-437c-b2d5-10ed31669268",
+    "ereq_779910ab-9e1a-4960-9e97-04acd606490c",
+    "ereq_188c0e6e-da7c-479d-8de6-9d7926ae8564",
+    "ereq_73a40836-1338-4ea5-9b83-d4908b2ac893",
+    "ereq_77bce129-45e3-4fe8-9df2-7b19c398c269",
+    "ereq_602d7a0b-6359-484a-a76a-b370908525b2",
+    "ereq_f66ea8af-07db-478e-aa9f-8009d0c2a162",
+    "ereq_566b97ad-41e2-4d53-820b-f7f929266fc3",
+    "ereq_79f848e2-41f8-4b95-a8b8-63f91142989b",
+    "ereq_03d642e0-9655-43ba-9bf7-f37c6c0ded5d",
+    "ereq_afa63af7-0c73-4d67-8da4-5b280ec295eb"
+  ],
+  "heldout_episode_ids": [
+    "ereq_4f7e1a91-1c8c-4491-a68b-2542cc199310",
+    "ereq_35302c57-b5cf-42aa-ad0c-b99ab2859a25",
+    "ereq_50eb06e1-c98a-4d16-bf07-fe5d6ce4f80c",
+    "ereq_5af9a53a-af97-4cfe-9fb2-e997497424cb"
+  ],
+  "unique_training_trajectories": 12,
+  "unique_heldout_trajectories": 3,
+  "heldout_matches_training": {
+    "ereq_4f7e1a91-1c8c-4491-a68b-2542cc199310": [
+      "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad"
+    ],
+    "ereq_35302c57-b5cf-42aa-ad0c-b99ab2859a25": [
+      "ereq_b2234f67-1d36-4c31-825b-09551474a6f0"
+    ],
+    "ereq_50eb06e1-c98a-4d16-bf07-fe5d6ce4f80c": [
+      "ereq_d79c3904-1962-4bf9-baef-246cccbe6c17"
+    ],
+    "ereq_5af9a53a-af97-4cfe-9fb2-e997497424cb": [
+      "ereq_b2234f67-1d36-4c31-825b-09551474a6f0"
+    ]
+  },
+  "observability": {
+    "all_target": {
+      "episodes": 20,
+      "ticks": 56547,
+      "living_opponent_ticks": 278829,
+      "visible_living_opponent_ticks": 122795,
+      "fraction": 0.44039536777021043,
+      "all_scheduled_hero_tick_fraction": 0.4343112808813907,
+      "observer_dead_fraction": 0.0,
+      "residual_fraction": 0.030261818477951057,
+      "segments": 2039,
+      "eligible": 1500,
+      "exclusions": {
+        "left_censored": 530,
+        "selected_skill_not_established_by_prior_affordances": 9
+      }
+    },
+    "distinct_train": {
+      "episodes": 12,
+      "ticks": 34254,
+      "living_opponent_ticks": 168666,
+      "visible_living_opponent_ticks": 74070,
+      "fraction": 0.43915193340685144,
+      "all_scheduled_hero_tick_fraction": 0.4324750394114556,
+      "observer_dead_fraction": 0.0,
+      "residual_fraction": 0.030538679627379505,
+      "segments": 1228,
+      "eligible": 910,
+      "exclusions": {
+        "left_censored": 312,
+        "selected_skill_not_established_by_prior_affordances": 6
+      }
+    },
+    "heldout": {
+      "episodes": 4,
+      "ticks": 10875,
+      "living_opponent_ticks": 53941,
+      "visible_living_opponent_ticks": 24035,
+      "fraction": 0.44557942937654105,
+      "all_scheduled_hero_tick_fraction": 0.4420229885057471,
+      "observer_dead_fraction": 0.0,
+      "residual_fraction": 0.028832951945080093,
+      "segments": 402,
+      "eligible": 287,
+      "exclusions": {
+        "left_censored": 114,
+        "selected_skill_not_established_by_prior_affordances": 1
+      }
+    },
+    "population": {
+      "episodes": 14,
+      "ticks": 60331,
+      "living_opponent_ticks": 276614,
+      "visible_living_opponent_ticks": 93560,
+      "fraction": 0.33823306123334324,
+      "all_scheduled_hero_tick_fraction": 0.31015564137839585,
+      "observer_dead_fraction": 0.04654323647875885,
+      "residual_fraction": 0.07752244548952544,
+      "segments": 3262,
+      "eligible": 2681,
+      "exclusions": {
+        "left_censored": 514,
+        "selected_skill_not_established_by_prior_affordances": 67
+      }
+    }
+  },
+  "outcomes": {
+    "opponent_win": 20
+  },
+  "heldout": {
+    "n": 287,
+    "correct": 210,
+    "accuracy": 0.7317073170731707,
+    "population_correct": 195,
+    "population_accuracy": 0.6794425087108014,
+    "persistence_accuracy": 0.4808362369337979,
+    "uniform_expected_accuracy": 0.1796747967479675,
+    "cluster_uncertainty": {
+      "clusters": 3,
+      "lift_95pct": [
+        0.0,
+        0.1875
+      ],
+      "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+    },
+    "novel_trajectories": {
+      "n": 0,
+      "correct": 0,
+      "accuracy": null,
+      "population_correct": 0,
+      "population_accuracy": null,
+      "persistence_accuracy": null,
+      "uniform_expected_accuracy": null
+    },
+    "novel_episode_ids": [],
+    "robustness_baselines": {
+      "class": {
+        "correct": 190,
+        "n": 287,
+        "accuracy": 0.662020905923345,
+        "by_context": {
+          "mask_2_low_0": {
+            "correct": 40,
+            "n": 40
+          },
+          "mask_7_low_0": {
+            "correct": 2,
+            "n": 14
+          },
+          "mask_4_low_0": {
+            "correct": 40,
+            "n": 81
+          },
+          "mask_6_low_0": {
+            "correct": 108,
+            "n": 144
+          },
+          "mask_3_low_0": {
+            "correct": 0,
+            "n": 2
+          },
+          "mask_5_low_0": {
+            "correct": 0,
+            "n": 6
+          }
+        }
+      },
+      "side": {
+        "correct": 200,
+        "n": 287,
+        "accuracy": 0.6968641114982579,
+        "by_context": {
+          "mask_2_low_0": {
+            "correct": 40,
+            "n": 40
+          },
+          "mask_7_low_0": {
+            "correct": 5,
+            "n": 14
+          },
+          "mask_4_low_0": {
+            "correct": 47,
+            "n": 81
+          },
+          "mask_6_low_0": {
+            "correct": 108,
+            "n": 144
+          },
+          "mask_3_low_0": {
+            "correct": 0,
+            "n": 2
+          },
+          "mask_5_low_0": {
+            "correct": 0,
+            "n": 6
+          }
+        }
+      }
+    },
+    "by_episode": {
+      "ereq_4f7e1a91-1c8c-4491-a68b-2542cc199310": {
+        "n": 80,
+        "correct": 54,
+        "accuracy": 0.675,
+        "population_correct": 39,
+        "population_accuracy": 0.4875,
+        "persistence_accuracy": 0.25,
+        "uniform_expected_accuracy": 0.17583333333333334
+      },
+      "ereq_35302c57-b5cf-42aa-ad0c-b99ab2859a25": {
+        "n": 70,
+        "correct": 52,
+        "accuracy": 0.7428571428571429,
+        "population_correct": 52,
+        "population_accuracy": 0.7428571428571429,
+        "persistence_accuracy": 0.5857142857142857,
+        "uniform_expected_accuracy": 0.18047619047619046
+      },
+      "ereq_50eb06e1-c98a-4d16-bf07-fe5d6ce4f80c": {
+        "n": 67,
+        "correct": 52,
+        "accuracy": 0.7761194029850746,
+        "population_correct": 52,
+        "population_accuracy": 0.7761194029850746,
+        "persistence_accuracy": 0.5373134328358209,
+        "uniform_expected_accuracy": 0.1825870646766169
+      },
+      "ereq_5af9a53a-af97-4cfe-9fb2-e997497424cb": {
+        "n": 70,
+        "correct": 52,
+        "accuracy": 0.7428571428571429,
+        "population_correct": 52,
+        "population_accuracy": 0.7428571428571429,
+        "persistence_accuracy": 0.5857142857142857,
+        "uniform_expected_accuracy": 0.18047619047619046
+      }
+    },
+    "by_observer_side": {
+      "0": {
+        "n": 207,
+        "correct": 156,
+        "accuracy": 0.7536231884057971,
+        "population_correct": 156,
+        "population_accuracy": 0.7536231884057971,
+        "persistence_accuracy": 0.5700483091787439,
+        "uniform_expected_accuracy": 0.18115942028985507
+      },
+      "5": {
+        "n": 80,
+        "correct": 54,
+        "accuracy": 0.675,
+        "population_correct": 39,
+        "population_accuracy": 0.4875,
+        "persistence_accuracy": 0.25,
+        "uniform_expected_accuracy": 0.17583333333333334
+      }
+    }
+  },
+  "preferences": [
+    {
+      "id": "AlexG002v1_I_O05",
+      "when": "mask_2_low_0",
+      "skill": "target_creep",
+      "over": "hold",
+      "n": 139,
+      "chosen_count": 139,
+      "rate": 1.0,
+      "context_n": 139,
+      "confidence": 0.9929078014184397,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 334,
+        "chosen_count": 327,
+        "rate": 0.9790419161676647
+      },
+      "status": "provisional",
+      "level": "individual",
+      "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "last_observed": "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad.h100.t1336",
+      "predictions": {
+        "n": 40,
+        "correct": 40,
+        "accuracy": 1.0,
+        "population_correct": 40,
+        "population_accuracy": 1.0,
+        "persistence_accuracy": 0.7,
+        "uniform_expected_accuracy": 0.2
+      },
+      "prediction_interval": {
+        "clusters": 3,
+        "lift_95pct": [
+          0.0,
+          0.0
+        ],
+        "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+      },
+      "supporting_episodes": 12,
+      "examples": [
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h104.t718",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h104.t737",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h100.t1307"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "AlexG002v1_I_O07",
+      "when": "mask_3_low_0",
+      "skill": "target_hero",
+      "over": "target_creep",
+      "n": 12,
+      "chosen_count": 12,
+      "rate": 1.0,
+      "context_n": 12,
+      "confidence": 0.9285714285714286,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 1028,
+        "chosen_count": 137,
+        "rate": 0.13326848249027237
+      },
+      "status": "supported",
+      "level": "individual",
+      "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "last_observed": "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad.h104.t2823",
+      "predictions": {
+        "n": 2,
+        "correct": 2,
+        "accuracy": 1.0,
+        "population_correct": 0,
+        "population_accuracy": 0.0,
+        "persistence_accuracy": 1.0,
+        "uniform_expected_accuracy": 0.16666666666666666
+      },
+      "prediction_interval": {
+        "clusters": 1,
+        "lift_95pct": null,
+        "note": "Too few distinct observable trajectories"
+      },
+      "supporting_episodes": 6,
+      "examples": [
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h104.t2814",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h104.t2824",
+        "ereq_ab17782d-44c9-4a10-9b8c-c7764afc88c4.h104.t2814"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "AlexG002v1_I_O09",
+      "when": "mask_4_low_0",
+      "skill": "target_structure",
+      "over": "hold",
+      "n": 234,
+      "chosen_count": 126,
+      "rate": 0.5384615384615384,
+      "context_n": 234,
+      "confidence": 0.538135593220339,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 222,
+        "chosen_count": 126,
+        "rate": 0.5675675675675675
+      },
+      "status": "provisional",
+      "level": "individual",
+      "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "last_observed": "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad.h100.t2864",
+      "predictions": {
+        "n": 81,
+        "correct": 47,
+        "accuracy": 0.5802469135802469,
+        "population_correct": 47,
+        "population_accuracy": 0.5802469135802469,
+        "persistence_accuracy": 0.19753086419753085,
+        "uniform_expected_accuracy": 0.19999999999999998
+      },
+      "prediction_interval": {
+        "clusters": 3,
+        "lift_95pct": [
+          0.0,
+          0.0
+        ],
+        "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+      },
+      "supporting_episodes": 12,
+      "examples": [
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h100.t2013",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h103.t2013",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h100.t2253"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "AlexG002v1_I_O11",
+      "when": "mask_5_low_0",
+      "skill": "target_structure",
+      "over": "target_hero",
+      "n": 33,
+      "chosen_count": 25,
+      "rate": 0.7575757575757576,
+      "context_n": 33,
+      "confidence": 0.7428571428571429,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 122,
+        "chosen_count": 33,
+        "rate": 0.27049180327868855
+      },
+      "status": "supported",
+      "level": "individual",
+      "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "last_observed": "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad.h103.t3116",
+      "predictions": {
+        "n": 6,
+        "correct": 4,
+        "accuracy": 0.6666666666666666,
+        "population_correct": 0,
+        "population_accuracy": 0.0,
+        "persistence_accuracy": 0.3333333333333333,
+        "uniform_expected_accuracy": 0.16666666666666666
+      },
+      "prediction_interval": {
+        "clusters": 1,
+        "lift_95pct": null,
+        "note": "Too few distinct observable trajectories"
+      },
+      "supporting_episodes": 6,
+      "examples": [
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h103.t2837",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h101.t3089",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h102.t3089"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "AlexG002v1_I_O13",
+      "when": "mask_6_low_0",
+      "skill": "target_creep",
+      "over": "target_structure",
+      "n": 423,
+      "chosen_count": 294,
+      "rate": 0.6950354609929078,
+      "context_n": 423,
+      "confidence": 0.6941176470588235,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 371,
+        "chosen_count": 270,
+        "rate": 0.7277628032345014
+      },
+      "status": "provisional",
+      "level": "individual",
+      "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "last_observed": "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad.h100.t3089",
+      "predictions": {
+        "n": 144,
+        "correct": 108,
+        "accuracy": 0.75,
+        "population_correct": 108,
+        "population_accuracy": 0.75,
+        "persistence_accuracy": 0.625,
+        "uniform_expected_accuracy": 0.16689814814814813
+      },
+      "prediction_interval": {
+        "clusters": 3,
+        "lift_95pct": [
+          0.0,
+          0.0
+        ],
+        "method": "2000 bootstrap resamples of distinct full observer trajectories; descriptive with few clusters"
+      },
+      "supporting_episodes": 12,
+      "examples": [
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h100.t995",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h102.t995",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h103.t995"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    },
+    {
+      "id": "AlexG002v1_I_O15",
+      "when": "mask_7_low_0",
+      "skill": "target_hero",
+      "over": "target_creep",
+      "n": 69,
+      "chosen_count": 50,
+      "rate": 0.7246376811594203,
+      "context_n": 69,
+      "confidence": 0.7183098591549296,
+      "confidence_meaning": "Laplace-smoothed observed selection probability, not probability of hidden intent; correlated segments",
+      "base_rate": {
+        "source": "14-trajectory population prior, same context and paired affordances",
+        "n": 84,
+        "chosen_count": 28,
+        "rate": 0.3333333333333333
+      },
+      "status": "supported",
+      "level": "individual",
+      "opponent": "a30542cb-54de-4109-92e6-bcabca7db4d8",
+      "last_observed": "ereq_a74b5621-ccf6-4c05-8735-d6cb37e2ecad.h101.t2837",
+      "predictions": {
+        "n": 14,
+        "correct": 9,
+        "accuracy": 0.6428571428571429,
+        "population_correct": 0,
+        "population_accuracy": 0.0,
+        "persistence_accuracy": 0.0,
+        "uniform_expected_accuracy": 0.14285714285714285
+      },
+      "prediction_interval": {
+        "clusters": 1,
+        "lift_95pct": null,
+        "note": "Too few distinct observable trajectories"
+      },
+      "supporting_episodes": 6,
+      "examples": [
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h102.t2485",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h103.t2485",
+        "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h104.t2485"
+      ],
+      "unresolved_constraints": "Enemy cooldowns/private memory and full route execution unavailable. Hold can be turning/collision; always provisional.",
+      "counterstrategy_status": "proposed_test_only; no exploitation attempt or validated rollout proxy"
+    }
+  ],
+  "skills": {
+    "target_hero": {
+      "n": 68,
+      "episodes": 6,
+      "ticks": 2521,
+      "initiation_contexts": {
+        "mask_6_low_0": 4,
+        "mask_7_low_0": 50,
+        "mask_3_low_0": 12,
+        "mask_5_low_0": 2
+      },
+      "termination": {
+        "visible_target_change": 56,
+        "visibility_lost_or_not_alive": 12
+      },
+      "left_censored": 0,
+      "median_duration_ticks": 36.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "hold": 992,
+        "advance": 1529
+      },
+      "prediction": {
+        "actual_n": 11,
+        "predicted_n": 16,
+        "recall": 1.0,
+        "precision": 0.6875
+      },
+      "example": "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h101.t2485"
+    },
+    "target_creep": {
+      "n": 561,
+      "episodes": 12,
+      "ticks": 7129,
+      "initiation_contexts": {
+        "mask_2_low_0": 265,
+        "mask_6_low_0": 294,
+        "mask_4_low_0": 2
+      },
+      "termination": {
+        "visible_target_change": 442,
+        "visibility_lost_or_not_alive": 119
+      },
+      "left_censored": 126,
+      "median_duration_ticks": 9,
+      "outcome_hp_change_median": 0,
+      "concurrent_movement_ticks": {
+        "advance": 2181,
+        "hold": 3909,
+        "withdraw": 1000,
+        "lateral": 39
+      },
+      "prediction": {
+        "actual_n": 148,
+        "predicted_n": 184,
+        "recall": 1.0,
+        "precision": 0.8043478260869565
+      },
+      "example": "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h104.t689"
+    },
+    "target_structure": {
+      "n": 473,
+      "episodes": 12,
+      "ticks": 58455,
+      "initiation_contexts": {
+        "mask_6_low_0": 261,
+        "mask_4_low_0": 168,
+        "mask_7_low_0": 19,
+        "mask_5_low_0": 25
+      },
+      "termination": {
+        "visible_target_change": 335,
+        "visibility_lost_or_not_alive": 84,
+        "episode_end": 54
+      },
+      "left_censored": 186,
+      "median_duration_ticks": 97,
+      "outcome_hp_change_median": 0,
+      "concurrent_movement_ticks": {
+        "advance": 9905,
+        "hold": 47652,
+        "lateral": 686,
+        "withdraw": 212
+      },
+      "prediction": {
+        "actual_n": 86,
+        "predicted_n": 87,
+        "recall": 0.5930232558139535,
+        "precision": 0.5862068965517241
+      },
+      "example": "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h104.t957"
+    },
+    "advance": {
+      "n": 72,
+      "episodes": 12,
+      "ticks": 2855,
+      "initiation_contexts": {
+        "mask_4_low_0": 72
+      },
+      "termination": {
+        "movement_character_change": 60,
+        "visible_target_change": 12
+      },
+      "left_censored": 0,
+      "median_duration_ticks": 49.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "advance": 2855
+      },
+      "prediction": {
+        "actual_n": 24,
+        "predicted_n": 0,
+        "recall": 0.0,
+        "precision": null
+      },
+      "example": "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h100.t2253"
+    },
+    "withdraw": {
+      "n": 18,
+      "episodes": 12,
+      "ticks": 371,
+      "initiation_contexts": {
+        "mask_4_low_0": 12,
+        "mask_6_low_0": 6
+      },
+      "termination": {
+        "visible_target_change": 18
+      },
+      "left_censored": 0,
+      "median_duration_ticks": 16.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "withdraw": 371
+      },
+      "prediction": {
+        "actual_n": 7,
+        "predicted_n": 0,
+        "recall": 0.0,
+        "precision": null
+      },
+      "example": "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h100.t2864"
+    },
+    "lateral": {
+      "n": 6,
+      "episodes": 6,
+      "ticks": 108,
+      "initiation_contexts": {
+        "mask_4_low_0": 6
+      },
+      "termination": {
+        "movement_character_change": 6
+      },
+      "left_censored": 0,
+      "median_duration_ticks": 18.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "lateral": 108
+      },
+      "prediction": {
+        "actual_n": 1,
+        "predicted_n": 0,
+        "recall": 0.0,
+        "precision": null
+      },
+      "example": "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h100.t2846"
+    },
+    "hold": {
+      "n": 30,
+      "episodes": 12,
+      "ticks": 369,
+      "initiation_contexts": {
+        "mask_4_low_0": 18,
+        "mask_5_low_0": 6,
+        "mask_6_low_0": 6
+      },
+      "termination": {
+        "movement_character_change": 24,
+        "visible_target_change": 6
+      },
+      "left_censored": 0,
+      "median_duration_ticks": 9.0,
+      "outcome_hp_change_median": 0.0,
+      "concurrent_movement_ticks": {
+        "hold": 369
+      },
+      "prediction": {
+        "actual_n": 10,
+        "predicted_n": 0,
+        "recall": 0.0,
+        "precision": null
+      },
+      "example": "ereq_4e73477b-e9b3-457b-b02c-91b7f08ae002.h100.t2280"
+    }
+  },
+  "adaptation": [
+    {
+      "preference": "AlexG002v1_I_O05",
+      "within_early": {
+        "n": 90,
+        "selected": 90,
+        "rate": 1.0
+      },
+      "within_late": {
+        "n": 49,
+        "selected": 49,
+        "rate": 1.0
+      },
+      "chronological_early": {
+        "n": 70,
+        "selected": 70,
+        "rate": 1.0
+      },
+      "chronological_late": {
+        "n": 69,
+        "selected": 69,
+        "rate": 1.0
+      },
+      "our_pressure_present": {
+        "n": 34,
+        "selected": 34,
+        "rate": 1.0
+      },
+      "our_pressure_absent": {
+        "n": 105,
+        "selected": 105,
+        "rate": 1.0
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "AlexG002v1_I_O07",
+      "within_early": {
+        "n": 0,
+        "selected": 0,
+        "rate": null
+      },
+      "within_late": {
+        "n": 12,
+        "selected": 12,
+        "rate": 1.0
+      },
+      "chronological_early": {
+        "n": 6,
+        "selected": 6,
+        "rate": 1.0
+      },
+      "chronological_late": {
+        "n": 6,
+        "selected": 6,
+        "rate": 1.0
+      },
+      "our_pressure_present": {
+        "n": 0,
+        "selected": 0,
+        "rate": null
+      },
+      "our_pressure_absent": {
+        "n": 12,
+        "selected": 12,
+        "rate": 1.0
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "AlexG002v1_I_O09",
+      "within_early": {
+        "n": 12,
+        "selected": 12,
+        "rate": 1.0
+      },
+      "within_late": {
+        "n": 222,
+        "selected": 114,
+        "rate": 0.5135135135135135
+      },
+      "chronological_early": {
+        "n": 118,
+        "selected": 64,
+        "rate": 0.5423728813559322
+      },
+      "chronological_late": {
+        "n": 116,
+        "selected": 62,
+        "rate": 0.5344827586206896
+      },
+      "our_pressure_present": {
+        "n": 27,
+        "selected": 14,
+        "rate": 0.5185185185185185
+      },
+      "our_pressure_absent": {
+        "n": 207,
+        "selected": 112,
+        "rate": 0.5410628019323671
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "AlexG002v1_I_O11",
+      "within_early": {
+        "n": 0,
+        "selected": 0,
+        "rate": null
+      },
+      "within_late": {
+        "n": 33,
+        "selected": 25,
+        "rate": 0.7575757575757576
+      },
+      "chronological_early": {
+        "n": 16,
+        "selected": 12,
+        "rate": 0.75
+      },
+      "chronological_late": {
+        "n": 17,
+        "selected": 13,
+        "rate": 0.7647058823529411
+      },
+      "our_pressure_present": {
+        "n": 9,
+        "selected": 2,
+        "rate": 0.2222222222222222
+      },
+      "our_pressure_absent": {
+        "n": 24,
+        "selected": 23,
+        "rate": 0.9583333333333334
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "AlexG002v1_I_O13",
+      "within_early": {
+        "n": 89,
+        "selected": 54,
+        "rate": 0.6067415730337079
+      },
+      "within_late": {
+        "n": 334,
+        "selected": 240,
+        "rate": 0.718562874251497
+      },
+      "chronological_early": {
+        "n": 218,
+        "selected": 151,
+        "rate": 0.6926605504587156
+      },
+      "chronological_late": {
+        "n": 205,
+        "selected": 143,
+        "rate": 0.697560975609756
+      },
+      "our_pressure_present": {
+        "n": 102,
+        "selected": 87,
+        "rate": 0.8529411764705882
+      },
+      "our_pressure_absent": {
+        "n": 321,
+        "selected": 207,
+        "rate": 0.6448598130841121
+      },
+      "causal_adaptation_established": false
+    },
+    {
+      "preference": "AlexG002v1_I_O15",
+      "within_early": {
+        "n": 0,
+        "selected": 0,
+        "rate": null
+      },
+      "within_late": {
+        "n": 69,
+        "selected": 50,
+        "rate": 0.7246376811594203
+      },
+      "chronological_early": {
+        "n": 32,
+        "selected": 25,
+        "rate": 0.78125
+      },
+      "chronological_late": {
+        "n": 37,
+        "selected": 25,
+        "rate": 0.6756756756756757
+      },
+      "our_pressure_present": {
+        "n": 12,
+        "selected": 12,
+        "rate": 1.0
+      },
+      "our_pressure_absent": {
+        "n": 57,
+        "selected": 38,
+        "rate": 0.6666666666666666
+      },
+      "causal_adaptation_established": false
+    }
+  ],
+  "proxy": {
+    "usable": false,
+    "rollouts": 0,
+    "divergence": null,
+    "reason": "No executable skill controller or rollout validation. Boundary-conditional prediction alone cannot qualify a proxy.",
+    "proposed_gate": {
+      "skill_frequency_total_variation_max": 0.1,
+      "position_histogram_total_variation_max": 0.15,
+      "win_rate_absolute_gap_max": 0.1,
+      "note": "Proposed future gate on novel seeds, both sides; not tested or a certification."
+    }
+  }
+}

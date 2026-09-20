@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-09-15T20:25:13.405807+00:00",
+  "repository_source": "1d7eb72382be596aa169acc942dc049516db2c2f",
+  "published_game_version": "2026.9.15.1",
+  "metric": "glory",
+  "formula": "win * (total_xp - 100 * ticks / 1440)",
+  "tick_rate": 24,
+  "required_results_fields": [
+    "scores",
+    "total_xp",
+    "ticks",
+    "outcome"
+  ],
+  "lifetime_xp_not_level_progress": true,
+  "fractional_minutes": true,
+  "negative_winning_values_preserved": true,
+  "loss_and_timeout_value": 0,
+  "aggregation": "Average all policy appearances, including losses/draws; average a repeated policy\u2019s hero seats within each game before averaging games.",
+  "league_ranking": {
+    "k_factor": 4.0,
+    "algorithm": "elo",
+    "initial_rating": 1500.0,
+    "round_scoring_rule": "mean"
+  },
+  "optimization": {
+    "primary": "fort_win_rate",
+    "secondary": "mean_glory_per_appearance",
+    "selection": "Require the existing predeclared fort-win gate first; among qualified candidates prefer higher Glory. Adding this secondary metric does not alter existing experiment gates.",
+    "runtime_observability": "The BASIC host exposes selfLevel and worldTick, but not selfTotalXp or final outcome. Glory is an evaluation objective, not an invented runtime observation."
+  },
+  "reward_last_hits": {
+    "footman_xp": 25,
+    "hero_xp": 150,
+    "tower_xp": 100,
+    "footman_seconds_of_penalty": 15,
+    "hero_seconds_of_penalty": 90,
+    "tower_seconds_of_penalty": 60,
+    "mechanism": "XP is credited to the hero delivering the finishing hit; proximity and assists do not grant these kill rewards."
+  },
+  "validation": {
+    "fixtures": 300,
+    "oracle": "tools/tournaments.nim::gameValues from exact pulled1d7eb72",
+    "mixed_and_mono_and_cross_team_averaging": true,
+    "all_outcomes_and_fractional_minutes": true,
+    "maximum_absolute_difference": 9.094947017729282e-13,
+    "calculator_sha256": "b507c53a2111c2a8bb60cca79b3303b0ae4bb9a4c1a8836716e3981597dc9eee",
+    "oracle_sha256": "3234fe15c4578982189b87ab0492ab0a9b77e9eb6ffc2bbc23b03ffd8a9f7f59"
+  },
+  "source_hashes": {
+    "examples/gods_of_the_arena/tools/tournaments.nim": "5dd285196094c5c653625136d829ca78c44f4254765a0744d003f6e12affc710",
+    "examples/gods_of_the_arena/tools/USAGE.md": "edfd8f4abe5a245f4a3c861c4cbec5683d6577dd55592284beba77d34fbfea40",
+    "examples/gods_of_the_arena/sim.nim": "ece21108c8191cc32721120049aa0d6adcab999414af0e64c477f3db34ce21ad",
+    "examples/gods_of_the_arena/bots.nim": "3ed22312995465a89fd752de70960af498e555e40a63ea430e32723fa7b889c3",
+    "tmp/gota-ir/glory-20260915/meta/league.json": "388bf14367e8b4164ed4ae9509974fb4441fa41dc7c60bc025ce1c10cde595a0"
+  }
+}

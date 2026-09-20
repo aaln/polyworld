@@ -2,6 +2,7 @@
 ## on the simulation.
 
 import
+  std/os,
   polyworld/[metrics, basic, bodies, cli, controllers, fixed, pathing,
     profiles, tapes],
   content,
@@ -34,7 +35,11 @@ type
     DataSelfAttackDamage,
     DataSelfTarget,
     DataSelfAttackCooldown,
-    DataSelfAttacksLanded
+    DataSelfAttacksLanded,
+    DataAllyPingX,
+    DataAllyPingY,
+    DataAllyPingKind,
+    DataAllyPingBy
   ObjectField = enum
     ObjectLevel, ObjectMana, ObjectItemId, ObjectItemCount,
     ObjectFacingX, ObjectFacingY, ObjectTarget, ObjectVelX, ObjectVelY
@@ -61,11 +66,16 @@ const
     "selfAttackDamage",
     "selfTarget",
     "selfAttackCooldown",
-    "selfAttacksLanded"
+    "selfAttacksLanded",
+    "allyPingX",
+    "allyPingY",
+    "allyPingKind",
+    "allyPingBy"
   ]
 
 var
   activeGame: Game
+  practiceEnemyTeam* = -1
   heroDataIds: array[HeroDataSlot, int32]
 
 proc bindHeroData(program: Program) =
@@ -352,6 +362,31 @@ proc initHeroHost(heroId: int32): Host =
         heroIndex(activeGame.world, heroId), activeGame.world.tick
       )
     int32(accepted)
+  let attackMoveProc: HostProc = proc(
+      arguments: openArray[int32]
+  ): int32 =
+    try:
+      if activeGame.recorder != nil:
+        activeGame.recorder.recordAttackMove(
+          uint32(activeGame.world.tick),
+          heroId,
+          arguments[0],
+          arguments[1]
+        )
+    except ReplayError as error:
+      activeGame.recordingError = error.msg
+      raise newException(
+        BasicError,
+        "replay recording failed: " & error.msg
+      )
+    let accepted = applyAttackMove(
+      activeGame.world, heroId, arguments[0], arguments[1]
+    )
+    if accepted:
+      activeGame.metrics.command(
+        heroIndex(activeGame.world, heroId), activeGame.world.tick
+      )
+    int32(accepted)
   let itemIdProc: HostProc = proc(
       arguments: openArray[int32]
   ): int32 =
@@ -527,6 +562,7 @@ proc initHeroHost(heroId: int32): Host =
   discard result.addFunction("walkTo", 2, walkToProc, 800)
   discard result.addFunction("attackMove", 2, attackMoveProc, 800)
   discard result.addFunction("attackTarget", 1, attackTargetProc, 20)
+  discard result.addFunction("attackMove", 2, attackMoveProc, 800)
   discard result.addFunction("itemId", 1, itemIdProc, 4)
   discard result.addFunction("itemCount", 1, itemCountProc, 4)
   discard result.addFunction("buyItem", 1, buyItemProc, 20)
@@ -545,6 +581,12 @@ proc initHeroHost(heroId: int32): Host =
       32
     )
 
+proc resolveBotPath(path: string): string =
+  ## Maps bundled aliases onto files next to this module.
+  if path == "@baseline":
+    return currentSourcePath().parentDir / "players" / "baseline.bas"
+  path
+
 proc loadBots*(
     game: Game,
     groups: openArray[BotGroup],
@@ -552,11 +594,14 @@ proc loadBots*(
 ) =
   ## Loads bot files into every hero slot except the optional human slot.
   activeGame = game
+  var resolved: seq[BotGroup]
+  for group in groups:
+    resolved.add BotGroup(path: resolveBotPath(group.path), count: group.count)
   let
     limits = heroVmLimits()
     schema = initHeroHost(0)
     kinds = controllerKinds(game.world.heroes.len, playerSlot)
-    sources = groups.expandBotSources(kinds)
+    sources = resolved.expandBotSources(kinds)
   game.heroVms.setLen(game.world.heroes.len)
   var bound = false
   for i in 0 ..< game.world.heroes.len:
@@ -591,6 +636,9 @@ proc runHeroScript(game: Game, index: int) =
     hero = game.world.heroes[index]
     vm = game.heroVms[index]
   if vm == nil or vm.failed or hero.state == Dying:
+    return
+  if practiceEnemyTeam >= 0 and hero.team.ord == practiceEnemyTeam and
+      game.world.tick mod 12 != 0:
     return
   vm.runtime.restart()
   try:
@@ -627,6 +675,17 @@ proc runHeroScript(game: Game, index: int) =
       game.world.heroAttackCooldown(hero)
     )
     vm.runtime.setData(heroDataIds[DataSelfAttacksLanded], hero.attacksLanded)
+    let ping = game.world.activeTeamPing(hero.team)
+    if ping.responderId == hero.id and ping.byId != 0:
+      vm.runtime.setData(heroDataIds[DataAllyPingX], ping.x)
+      vm.runtime.setData(heroDataIds[DataAllyPingY], ping.y)
+      vm.runtime.setData(heroDataIds[DataAllyPingKind], int32(ping.kind.ord))
+      vm.runtime.setData(heroDataIds[DataAllyPingBy], ping.byId)
+    else:
+      vm.runtime.setData(heroDataIds[DataAllyPingX], -1)
+      vm.runtime.setData(heroDataIds[DataAllyPingY], -1)
+      vm.runtime.setData(heroDataIds[DataAllyPingKind], -1)
+      vm.runtime.setData(heroDataIds[DataAllyPingBy], 0)
     discard vm.runtime.run(vm.output)
     inc vm.decisions
   except BasicError as error:

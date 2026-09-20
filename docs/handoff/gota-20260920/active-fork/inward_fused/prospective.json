@@ -1,0 +1,28 @@
+{
+  "parent_snapshot": "0000-b2693715459d",
+  "fork": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b",
+  "hypothesis": "Preserve the sentry-only inward-rally gameplay that won14/14 vs suppression11/14 in the first local screen while removing redundant object passes. Cache the identical friendly-wave selection during nondefense target observation and skip target-validation scans when bestId=0. No truncation, new enemy priority, limits, mechanics or dependency changes. Require exact full-command/every-state equivalence to raw relay on the original14 local games before treating this as an implementation repair; fresh new-source games still required.",
+  "prior_rally_prospective": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_rally/prospective.json",
+  "prior_rally_result": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_rally/screen/result.json",
+  "budget_evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/inward_rally/budget-diagnostic/fused-v1/result.json",
+  "eligible_variants": [
+    "relay_fused"
+  ],
+  "screen": {
+    "first_seed": 9760000,
+    "games_per_arm": 14,
+    "decision_rule": "Exact native compile/extract and targeted public inputs including dense240 no-enemy, equipment and budget checks. Complete audited games; no lost fort wins versus parent or suppression in any rival/color cell; >=60% each color against parent; total deaths <=max(1.25*parent,parent+5), <=max(1.15*suppression,suppression+5); changed rally behavior measured in complete reacting games. No runtime failures or missing episodes counted as losses. Must finish source equivalence to original14 raw-relay games before advancing."
+  },
+  "confirmation": {
+    "first_seed": 9770000,
+    "games_per_arm": 56,
+    "decision_rule": "Fresh56cases/source, seven exact opponents both colors, four cases/cell. Same nonregression/gear/survival/parent-fort and observed-mechanism checks; at least one added win vs suppression in screen or confirmation. No change after results."
+  },
+  "stress": {
+    "first_seed": 9780000,
+    "games_per_arm": 12,
+    "decision_rule": "Fresh central owned opponents on both colors with same cellwise preservation and survival rules. Local only; retain all failures."
+  },
+  "hosted": "Only after local qualification. Prospective exactJordan268 bothcolors, candidate/accepted parent/deployed suppression40eachcell=240 games; then g002red andmacro4red candidate/freshparent40each=160. Further colors/mandatoryfield/archive remain prospectively required acrosscycles before generalization. All XP through researcher.py xp-create. No formalholdout before freeze; no acceptance gate edits.",
+  "old_variants": "relay_all lost3 blue parent/archive cells and remains rejected; compact-wave predicate and target-scan-only optimizations didnot fix240-object fixture and are preserved. The raw sentry source has only local evidence and inherited limit concern; no hosted version."
+}

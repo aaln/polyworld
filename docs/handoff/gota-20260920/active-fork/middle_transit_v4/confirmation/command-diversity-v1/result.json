@@ -1,0 +1,1749 @@
+{
+  "complete": true,
+  "games": 64,
+  "result_sha256": "cb861ccee67aade1fb8193c05a96372176944c80348d4a2e6a3f620334000348",
+  "calibration_sha256": "56f7854a86462bc24fd12b869a05780c4595ee80f2d99cd1e70297139616d79f",
+  "binary_sha256": "aaad321a1604465c5a7f0e36c37a7e9156195b68aae47c4724dbb16fdc67d882",
+  "script_sha256": "c0efee60f1b2b4e19764e30eb878adb0c6556028615346ff761bc1e9fab50484",
+  "cells": {
+    "casters/accepted/0": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 2,
+      "group_sizes": [
+        1,
+        1
+      ]
+    },
+    "casters/accepted/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/blue_repair/0": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/blue_repair/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/center_proxy/0": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/center_proxy/1": {
+      "games": 2,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/default/0": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 2,
+      "group_sizes": [
+        1,
+        1
+      ]
+    },
+    "casters/default/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 2,
+      "group_sizes": [
+        1,
+        1
+      ]
+    },
+    "casters/deployed/0": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/deployed/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/readiness/0": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/readiness/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/sentry_inward/0": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/sentry_inward/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "casters/support_anchor/0": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 2,
+      "group_sizes": [
+        1,
+        1
+      ]
+    },
+    "casters/support_anchor/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/accepted/0": {
+      "games": 2,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/accepted/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/blue_repair/0": {
+      "games": 2,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/blue_repair/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/center_proxy/0": {
+      "games": 2,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/center_proxy/1": {
+      "games": 2,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/default/0": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 2,
+      "group_sizes": [
+        1,
+        1
+      ]
+    },
+    "deployed/default/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 2,
+      "group_sizes": [
+        1,
+        1
+      ]
+    },
+    "deployed/deployed/0": {
+      "games": 2,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/deployed/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/readiness/0": {
+      "games": 2,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/readiness/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/sentry_inward/0": {
+      "games": 2,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/sentry_inward/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/support_anchor/0": {
+      "games": 2,
+      "wins": 0,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    },
+    "deployed/support_anchor/1": {
+      "games": 2,
+      "wins": 2,
+      "unique_commands": 1,
+      "group_sizes": [
+        2
+      ]
+    }
+  },
+  "shared_with_parent": {
+    "casters/accepted/0": {
+      "candidate_set": 2,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/accepted/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/blue_repair/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/blue_repair/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/center_proxy/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/center_proxy/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/default/0": {
+      "candidate_set": 2,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/default/1": {
+      "candidate_set": 2,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/deployed/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/deployed/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/readiness/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/readiness/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/sentry_inward/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/sentry_inward/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/support_anchor/0": {
+      "candidate_set": 2,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "casters/support_anchor/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/accepted/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/accepted/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/blue_repair/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/blue_repair/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/center_proxy/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/center_proxy/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/default/0": {
+      "candidate_set": 2,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/default/1": {
+      "candidate_set": 2,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/deployed/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/deployed/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/readiness/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/readiness/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/sentry_inward/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/sentry_inward/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/support_anchor/0": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    },
+    "deployed/support_anchor/1": {
+      "candidate_set": 1,
+      "parent_set": 0,
+      "shared": 0,
+      "identical_observed_sets": false
+    }
+  },
+  "rows": [
+    {
+      "name": "casters",
+      "seed": 9840000,
+      "key": "9840000",
+      "opponent": "accepted",
+      "color": 0,
+      "win": 1,
+      "ticks": 3259,
+      "replay_sha256": "445039abcb1358f1435a34abe12f3d546194d8bf2c15262882481b65ef5fb96d",
+      "audit_sha256": "94107af2ce83967eac5ed94704691d5097ca55278286969bd5dc7883bedbe49a",
+      "stream_sha256": "0ced16b7284650514aff76330e777c9caeed66f5f44d15849834f3811fd17fe5",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3259,
+        "actions_consumed": 31199,
+        "groups": 30201,
+        "bytes": 736800,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840001,
+      "key": "9840001",
+      "opponent": "accepted",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "7afc238ac24a476e86a122fb745471c8620d87dc713ace5ca46d0559a53b4c45",
+      "audit_sha256": "a85656da87e241aa0a9b7db8e5e42e3ae125d9a882197091109818a5b8c3ffcb",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840001,
+      "key": "9840001",
+      "opponent": "accepted",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "183fc9b78a7daf1c994131e75aa5eea5e718a22ebcd9db6b24703980b2b640d5",
+      "audit_sha256": "a85656da87e241aa0a9b7db8e5e42e3ae125d9a882197091109818a5b8c3ffcb",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840002,
+      "key": "9840002",
+      "opponent": "default",
+      "color": 0,
+      "win": 1,
+      "ticks": 3281,
+      "replay_sha256": "18c883a7814a4444e6a6204096eb1312846036057d0e54b37b2ffaa15f9b8857",
+      "audit_sha256": "b30162f03163db914fc23622916cd297056f03119c96287bea78f5979904b5a2",
+      "stream_sha256": "55a63842ad9f99f139cdacd24f704c33b63337aede3defe4e7e30c469350dd93",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3281,
+        "actions_consumed": 34824,
+        "groups": 32810,
+        "bytes": 811608,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840003,
+      "key": "9840003",
+      "opponent": "default",
+      "color": 1,
+      "win": 1,
+      "ticks": 2954,
+      "replay_sha256": "e7074c646a1ad771c6f7fadf0daa1a23a09430a5bed8d1a6cb7605cb1e5d1b27",
+      "audit_sha256": "10c459256ba0bd82543729f38e3967ff10ffb9567cfc4ca8a84b4436e54a8c57",
+      "stream_sha256": "e2a26bcb2f41f7066545f8b016e1b004f04e723426a76c87485df0e41ddf4233",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2954,
+        "actions_consumed": 31060,
+        "groups": 29540,
+        "bytes": 727200,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840000,
+      "key": "9840000",
+      "opponent": "accepted",
+      "color": 0,
+      "win": 0,
+      "ticks": 6572,
+      "replay_sha256": "f2a8810546f874f7dd82de0570925592abc9a955a6577186332e318c8cf32603",
+      "audit_sha256": "2a57f727a19e7ad7def1b318392e815b814713659553690db7396040298d3640",
+      "stream_sha256": "a41b3e96c34dc346d5dad0bd5f02a8151364bcda35e094f70e81d3dc41006074",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 6572,
+        "actions_consumed": 63668,
+        "groups": 61365,
+        "bytes": 1500396,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840002,
+      "key": "9840002",
+      "opponent": "default",
+      "color": 0,
+      "win": 1,
+      "ticks": 5095,
+      "replay_sha256": "c1924ecd33857fe81313c2d9528cb87124dbbaef6554b8b5d7ca77b51a25d6be",
+      "audit_sha256": "1ac0b7efcea1105c87c1656e3a7d305ce9cf82535d588ecaab4acf0cd3a99f00",
+      "stream_sha256": "f36f594219ff6318c993da6328dce2ea0dd51fea3447ea0da0e4eed1b427207e",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 5095,
+        "actions_consumed": 53472,
+        "groups": 47928,
+        "bytes": 1216800,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840003,
+      "key": "9840003",
+      "opponent": "default",
+      "color": 1,
+      "win": 1,
+      "ticks": 2954,
+      "replay_sha256": "d4ac783dfae1d90e927b6c54106f01ac918aa9f9e02742600ad475d1e1e44106",
+      "audit_sha256": "10c459256ba0bd82543729f38e3967ff10ffb9567cfc4ca8a84b4436e54a8c57",
+      "stream_sha256": "e2a26bcb2f41f7066545f8b016e1b004f04e723426a76c87485df0e41ddf4233",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2954,
+        "actions_consumed": 31060,
+        "groups": 29540,
+        "bytes": 727200,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840004,
+      "key": "9840004",
+      "opponent": "blue_repair",
+      "color": 0,
+      "win": 1,
+      "ticks": 3274,
+      "replay_sha256": "fe0c01923df6ecc947b0e1b98c837fb20333e65f742fb2ba48107158c0c5a177",
+      "audit_sha256": "e4573da1065ac684d0fdbc5d63d7f21fd23f134499c9d4b0bce36c2ec6ee9415",
+      "stream_sha256": "2f7511819568f83ec5a14076e444192327c7ed628f3229b54c09423bbccb9a82",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3274,
+        "actions_consumed": 31325,
+        "groups": 30209,
+        "bytes": 738408,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840004,
+      "key": "9840004",
+      "opponent": "blue_repair",
+      "color": 0,
+      "win": 0,
+      "ticks": 3509,
+      "replay_sha256": "f922b9afbeec44f052277d21854fd0c0db6917480153ad487e7736abf65f51d7",
+      "audit_sha256": "7c8bc0ab0e814f0e30f89b6442af9c1aad3976aeac27a279f87ecc24f7d7ec3d",
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3509,
+        "actions_consumed": 34726,
+        "groups": 33525,
+        "bytes": 819012,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840005,
+      "key": "9840005",
+      "opponent": "blue_repair",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "3f2ebc77bc675211884f98c259a60646e0279af52f4eef2276ac17b684624fcc",
+      "audit_sha256": "a8f93205ac7bad00391cf7111965bc628e9833265c887cd6748f089d404baaeb",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840005,
+      "key": "9840005",
+      "opponent": "blue_repair",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "7393707f025f83cf9335bc7c43198b9a504e505d6c236e37fc0f6dac7b02aa1f",
+      "audit_sha256": "a8f93205ac7bad00391cf7111965bc628e9833265c887cd6748f089d404baaeb",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840006,
+      "key": "9840006",
+      "opponent": "support_anchor",
+      "color": 0,
+      "win": 1,
+      "ticks": 3274,
+      "replay_sha256": "fb7854653e4e7f310ae44fcef1886519a69497881c134edd232a1b8eedd4e6c8",
+      "audit_sha256": "2473b6b2644c58d750d7b11857eed1375321772e27131a3bf110ee7497a9569d",
+      "stream_sha256": "2f7511819568f83ec5a14076e444192327c7ed628f3229b54c09423bbccb9a82",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3274,
+        "actions_consumed": 31325,
+        "groups": 30209,
+        "bytes": 738408,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840006,
+      "key": "9840006",
+      "opponent": "support_anchor",
+      "color": 0,
+      "win": 0,
+      "ticks": 3509,
+      "replay_sha256": "adc503bccc0f1321c5be51abe64f6a3e1e11604c45b15b20fe7a37e88883e735",
+      "audit_sha256": "8f85403cbc12da77fa38e8a800350073321585cb9c5315ca5a16733b0eb3f5fc",
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3509,
+        "actions_consumed": 34726,
+        "groups": 33525,
+        "bytes": 819012,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840007,
+      "key": "9840007",
+      "opponent": "support_anchor",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "8ae2dabeab75ec0510ef742477ff50139f60edf5f018fa9d09529c49c373de89",
+      "audit_sha256": "eea040125b6b3c70acef24b3c42e858d6745b0695082994343006a1fde6943b5",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840007,
+      "key": "9840007",
+      "opponent": "support_anchor",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "b373441a667d6ae5a24d293f1cb58c44e302d93a42dc79d202a9500da5c6cc61",
+      "audit_sha256": "eea040125b6b3c70acef24b3c42e858d6745b0695082994343006a1fde6943b5",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840008,
+      "key": "9840008",
+      "opponent": "deployed",
+      "color": 0,
+      "win": 1,
+      "ticks": 3438,
+      "replay_sha256": "7da62944e700f602f2822bc04b7d7c7d8f608443553c49c2538dfa6e391bdba0",
+      "audit_sha256": "1680aff3d185a22bf35f88170fe2877323ed1e335342d9867aceb04379d393eb",
+      "stream_sha256": "2cd645b676edc4e43bbc0fc1f930a2d3b80c5b1fcde8d0abb6831e9ec0be49ee",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3438,
+        "actions_consumed": 32483,
+        "groups": 31770,
+        "bytes": 771036,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840008,
+      "key": "9840008",
+      "opponent": "deployed",
+      "color": 0,
+      "win": 0,
+      "ticks": 3763,
+      "replay_sha256": "5a28fd63ca4b3681891f6dda253d2edba699b8f0166016dfc1d3ce7e302dc1d4",
+      "audit_sha256": "80e25c08572db4b9ad09eece56dd256c4d9d5c0fbd075c2c9f325b999d204cb6",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840010,
+      "key": "9840010",
+      "opponent": "center_proxy",
+      "color": 0,
+      "win": 0,
+      "ticks": 2543,
+      "replay_sha256": "1295ea995d8116dd7eeb29bff4bfe8544d9d98f9f01328c4a72b06aa8a7921cd",
+      "audit_sha256": "a3b4da12e373c37fa23f688c061082e4927fab7504cb95c0a034ddcce4e1b1c2",
+      "stream_sha256": "9b9725c6fa75240637cf61d2d399751de05535c4f2c8acce8c773e81b0f47b02",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2543,
+        "actions_consumed": 26304,
+        "groups": 25430,
+        "bytes": 620808,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840009,
+      "key": "9840009",
+      "opponent": "deployed",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "0c23b35939084de39678b054467cd98a13a79281317a6b6e40f9f3ff8763e760",
+      "audit_sha256": "dc1220dbc832ff17d999f08fbffa7bda449fd53d30d1192cf87b2a648068c354",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840009,
+      "key": "9840009",
+      "opponent": "deployed",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "893be52fcfeeb60c4c7715784b07dcd4df553a0f47b49dd67f30938f6f9ff72f",
+      "audit_sha256": "dc1220dbc832ff17d999f08fbffa7bda449fd53d30d1192cf87b2a648068c354",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840010,
+      "key": "9840010",
+      "opponent": "center_proxy",
+      "color": 0,
+      "win": 1,
+      "ticks": 3387,
+      "replay_sha256": "13143f7a80205915963ea28e73f9ec83ef611da7b8f6fda42e2aca96a72b8c61",
+      "audit_sha256": "93b0419821fcf51e7b21f132019f22e0176efd86c76412c40ac4f130bb123aa2",
+      "stream_sha256": "a0dba7a09b907b16554f280bf7951745280cdc7454da510b4d33556d69418fed",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3387,
+        "actions_consumed": 34773,
+        "groups": 31278,
+        "bytes": 792612,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840011,
+      "key": "9840011",
+      "opponent": "center_proxy",
+      "color": 1,
+      "win": 0,
+      "ticks": 2828,
+      "replay_sha256": "d59b13673921d713c88e61f415e1bf48841ef47adaf6340d7e4c87bdf781ef91",
+      "audit_sha256": "f51c046750273ee4f032629fd8991d73cedd612f47fa82a1e3d47dd1b4c706c8",
+      "stream_sha256": "64bff44dc85fd0bd6902962b441e074383d422ba9f6aa0ba84825ee305ee5c12",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2828,
+        "actions_consumed": 28913,
+        "groups": 27767,
+        "bytes": 680160,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840011,
+      "key": "9840011",
+      "opponent": "center_proxy",
+      "color": 1,
+      "win": 0,
+      "ticks": 2828,
+      "replay_sha256": "403575677fd53b09bafcae795b1ad9a981b49b5b9b8d164cbeac45a8f60aa08e",
+      "audit_sha256": "f51c046750273ee4f032629fd8991d73cedd612f47fa82a1e3d47dd1b4c706c8",
+      "stream_sha256": "64bff44dc85fd0bd6902962b441e074383d422ba9f6aa0ba84825ee305ee5c12",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2828,
+        "actions_consumed": 28913,
+        "groups": 27767,
+        "bytes": 680160,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840012,
+      "key": "9840012",
+      "opponent": "sentry_inward",
+      "color": 0,
+      "win": 1,
+      "ticks": 3283,
+      "replay_sha256": "a6fa153b46c053d1e8c14277a7152d529f8d138c5c67205bae8f245d955d5e4f",
+      "audit_sha256": "07ad7bc1a847c45c35d2f66dda72e1dc398e15f74f8e385270719e86468e9585",
+      "stream_sha256": "6dca3a5500b387c1ec18e630310670fee28499f7e89a00efe4368cafc99f6cd9",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3283,
+        "actions_consumed": 31037,
+        "groups": 30074,
+        "bytes": 733332,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840013,
+      "key": "9840013",
+      "opponent": "sentry_inward",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "ca4142975e3dd4e87b8021d5effc85d782840902d8134eab102f25423e56f361",
+      "audit_sha256": "11c064d20c0e855ad5f133c3e859badbb2340bd5bfbb7ce8395080655682a673",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37051,
+        "groups": 34836,
+        "bytes": 862644,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840013,
+      "key": "9840013",
+      "opponent": "sentry_inward",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "9b8f97c0701ec5c9c7a5566892a87c787e33913c0e93c01b726f90d19dbd3b06",
+      "audit_sha256": "11c064d20c0e855ad5f133c3e859badbb2340bd5bfbb7ce8395080655682a673",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37051,
+        "groups": 34836,
+        "bytes": 862644,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840012,
+      "key": "9840012",
+      "opponent": "sentry_inward",
+      "color": 0,
+      "win": 0,
+      "ticks": 6356,
+      "replay_sha256": "d05af27e32399fdb5e5798b38dd1a2170aa61e8fab93e9aa3a5d031290846fd8",
+      "audit_sha256": "46e09a94b1ac39caf2a2e76ccd55e664be1e7052c40ac25272dfb5553c2945c7",
+      "stream_sha256": "68ab41b09f7476054fd54fd8447ebd7c10ac15deb4f143e3724fc2222053f364",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 6356,
+        "actions_consumed": 62596,
+        "groups": 59689,
+        "bytes": 1467420,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840014,
+      "key": "9840014",
+      "opponent": "readiness",
+      "color": 0,
+      "win": 1,
+      "ticks": 3270,
+      "replay_sha256": "269cdc96829423bf59a98c116010ba62bda331c6a618e08932a5a8a7f65c50b0",
+      "audit_sha256": "55b725b9792db9c3ca4d6f87f242d9424fb8edd73eb724b47d7383042706bd33",
+      "stream_sha256": "df24d41d4413d9add409140b6e764d3475b52106d686c6b11a8c84339c90b533",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3270,
+        "actions_consumed": 31053,
+        "groups": 29963,
+        "bytes": 732192,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840015,
+      "key": "9840015",
+      "opponent": "readiness",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "4cab32fa25295c9470f617702afc57ff45b576eeada6fb931f54d6b960d9823d",
+      "audit_sha256": "2c77f307a88b28d365609b5b6b5db963c7a5df9382a26e76a54c8a42817aa603",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37051,
+        "groups": 34836,
+        "bytes": 862644,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840015,
+      "key": "9840015",
+      "opponent": "readiness",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "13e8701fc5abfe46189fb9d84a5aa3743e991c8f64841c881161ae301805a798",
+      "audit_sha256": "2c77f307a88b28d365609b5b6b5db963c7a5df9382a26e76a54c8a42817aa603",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37051,
+        "groups": 34836,
+        "bytes": 862644,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840014,
+      "key": "9840014",
+      "opponent": "readiness",
+      "color": 0,
+      "win": 0,
+      "ticks": 6513,
+      "replay_sha256": "a0d0b09db785ca35bc3a2c53ec8b3418c9c39e1831962a7377a3d0e2a621b45c",
+      "audit_sha256": "946b08c949da0350bb1f48edfc46dd80ba92fb58f7df05e9866a7d9fef16163d",
+      "stream_sha256": "5163a6e44ac7ed039b2ab3bb5c4843ffb6276243ebd10a2662901e4fe6b46e61",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 6513,
+        "actions_consumed": 62910,
+        "groups": 60734,
+        "bytes": 1483728,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840016,
+      "key": "9840016",
+      "opponent": "accepted",
+      "color": 0,
+      "win": 1,
+      "ticks": 3274,
+      "replay_sha256": "7b1f569b18361ee39438a0bbb7e313ca44973afe03ea3a2ed036b44dfdd90501",
+      "audit_sha256": "1ec1ce8ed0d277f06c81d8753809b1753739801ab518db87c7ec56c71c158e8c",
+      "stream_sha256": "2f7511819568f83ec5a14076e444192327c7ed628f3229b54c09423bbccb9a82",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3274,
+        "actions_consumed": 31325,
+        "groups": 30209,
+        "bytes": 738408,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840017,
+      "key": "9840017",
+      "opponent": "accepted",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "412bc75e2b963b6bf9a8acac9934fe71385bb6568dfc7c6b19eb788d1c812256",
+      "audit_sha256": "5f0b2674c4e46fbf79fe26c58cd56b1e6a7732f7b7d1d18bea66037ff2110295",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840017,
+      "key": "9840017",
+      "opponent": "accepted",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "ee1a3afcb805a63ff6cdd9e26f9c2661900bc5fdd60a7d2be4d3b3141a7b8635",
+      "audit_sha256": "5f0b2674c4e46fbf79fe26c58cd56b1e6a7732f7b7d1d18bea66037ff2110295",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840016,
+      "key": "9840016",
+      "opponent": "accepted",
+      "color": 0,
+      "win": 0,
+      "ticks": 6572,
+      "replay_sha256": "0e87c1596e39251f34c8f3ba7b778bbced222cf908b93e9690f63734d333550f",
+      "audit_sha256": "40bea3c3d71fc76643f00b018100c5c8814faecfacb5b41754ef843f964fd95e",
+      "stream_sha256": "a41b3e96c34dc346d5dad0bd5f02a8151364bcda35e094f70e81d3dc41006074",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 6572,
+        "actions_consumed": 63668,
+        "groups": 61365,
+        "bytes": 1500396,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840018,
+      "key": "9840018",
+      "opponent": "default",
+      "color": 0,
+      "win": 1,
+      "ticks": 3281,
+      "replay_sha256": "5655ac6436b737b30ac5956b23a8469c3544aa4ae627dab2c13efa9bd6f10ef6",
+      "audit_sha256": "56b06e3f325bf95f492f3b4418a5a12674d8dc2f0eaa850281c540d7efe9115b",
+      "stream_sha256": "97081f53f8dd164d900d3165ae5347bf6cb67662e5f871416f3b3961977b3de0",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3281,
+        "actions_consumed": 34824,
+        "groups": 32810,
+        "bytes": 811608,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840019,
+      "key": "9840019",
+      "opponent": "default",
+      "color": 1,
+      "win": 1,
+      "ticks": 2954,
+      "replay_sha256": "e6009c6867be1289d0a015ecf3886a35ef86b9ea87a91db729189c80116b2769",
+      "audit_sha256": "17851f86610c5764b6de857971f46958ad6af021dd0db1210eb320e69ed71c11",
+      "stream_sha256": "1cd1931684822e7dd720a29f1b6b82cdb2d2eeaddd9de346b01571079940b61d",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2954,
+        "actions_consumed": 31060,
+        "groups": 29540,
+        "bytes": 727200,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840018,
+      "key": "9840018",
+      "opponent": "default",
+      "color": 0,
+      "win": 1,
+      "ticks": 5103,
+      "replay_sha256": "9bf49e4517a0bd3be40dede38d1907cf1627d7c7e22112c20e9670c2896c0033",
+      "audit_sha256": "c5603ea84a659d44abd4f6a923f87e281bbe158fa3b317142c222782a58cc4f9",
+      "stream_sha256": "859b33143bb5b8431b11ca72f8c6275305470cc8b6a0ddad846dede6d6cb9145",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 5103,
+        "actions_consumed": 52652,
+        "groups": 47994,
+        "bytes": 1207752,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840019,
+      "key": "9840019",
+      "opponent": "default",
+      "color": 1,
+      "win": 1,
+      "ticks": 2954,
+      "replay_sha256": "1349011226835ad8314b48f39fbabf11402be0abe59b2e1f720216dfceeac584",
+      "audit_sha256": "17851f86610c5764b6de857971f46958ad6af021dd0db1210eb320e69ed71c11",
+      "stream_sha256": "1cd1931684822e7dd720a29f1b6b82cdb2d2eeaddd9de346b01571079940b61d",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2954,
+        "actions_consumed": 31060,
+        "groups": 29540,
+        "bytes": 727200,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840020,
+      "key": "9840020",
+      "opponent": "blue_repair",
+      "color": 0,
+      "win": 0,
+      "ticks": 3509,
+      "replay_sha256": "b27c69e62161351e769a1869d12d893f190acc4c71a174ca98fdd82163773fcc",
+      "audit_sha256": "4b2cc5855fb4592cbd2de20378ef6e7b135fe50905f1970564b04d561bc1ad88",
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3509,
+        "actions_consumed": 34726,
+        "groups": 33525,
+        "bytes": 819012,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840020,
+      "key": "9840020",
+      "opponent": "blue_repair",
+      "color": 0,
+      "win": 1,
+      "ticks": 3274,
+      "replay_sha256": "461cb981e1cfe4f1a08ed3d47b4c2a45b782aa05c88987daf3d1d7f37a0b25de",
+      "audit_sha256": "298cef1d272e088b1b363cd89c35b3c022819b858c3eabe873d09cea20565cd8",
+      "stream_sha256": "2f7511819568f83ec5a14076e444192327c7ed628f3229b54c09423bbccb9a82",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3274,
+        "actions_consumed": 31325,
+        "groups": 30209,
+        "bytes": 738408,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840021,
+      "key": "9840021",
+      "opponent": "blue_repair",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "d403902abcc1492a583c17399f75f48105defa876f3aea3c76c3314804d1bda4",
+      "audit_sha256": "3e7594add1edcef1aa2679f2cde7fec3ddfc44ff5eb11f14dfb2b7b6b03f04bf",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840021,
+      "key": "9840021",
+      "opponent": "blue_repair",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "3f2511a14aa73f223cf864b0cc4ace0e93cd340aab3eb3eaeefa27d97e63a1c5",
+      "audit_sha256": "3e7594add1edcef1aa2679f2cde7fec3ddfc44ff5eb11f14dfb2b7b6b03f04bf",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840022,
+      "key": "9840022",
+      "opponent": "support_anchor",
+      "color": 0,
+      "win": 1,
+      "ticks": 3259,
+      "replay_sha256": "cd8410f48f643fa7521d27d616d50eb220c40931e60c4ea26ada4b73d98c1249",
+      "audit_sha256": "36ac7326144b81f252d347a30ebd12b82b243150c71e4bec8ce94c2869f3c149",
+      "stream_sha256": "0ced16b7284650514aff76330e777c9caeed66f5f44d15849834f3811fd17fe5",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3259,
+        "actions_consumed": 31199,
+        "groups": 30201,
+        "bytes": 736800,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840022,
+      "key": "9840022",
+      "opponent": "support_anchor",
+      "color": 0,
+      "win": 0,
+      "ticks": 3509,
+      "replay_sha256": "2a3e685305840301e9f02866d5fb431a413292c4588c17f2568a888d15c4eb4c",
+      "audit_sha256": "51bd8ca6d57bda40f14d2044f4263d0012445c67fada13c995e40219694dc6a1",
+      "stream_sha256": "b13904927bddb959670fbe2b3087c6f85882c6ce95f5e10c880c9065b298a12f",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3509,
+        "actions_consumed": 34726,
+        "groups": 33525,
+        "bytes": 819012,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840023,
+      "key": "9840023",
+      "opponent": "support_anchor",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "81066898c4bafa16d47dbaee71d010f2850cd2508ea83371eb9c3ace90f40ed9",
+      "audit_sha256": "ece8ff060c63d8530acd83690543b779c93122d8376e2660186b7981447a7712",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840023,
+      "key": "9840023",
+      "opponent": "support_anchor",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "b1c7c801c88038ee38179bff720878d25e0d85ee07743685528cbb3f0bcaaa5a",
+      "audit_sha256": "ece8ff060c63d8530acd83690543b779c93122d8376e2660186b7981447a7712",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840024,
+      "key": "9840024",
+      "opponent": "deployed",
+      "color": 0,
+      "win": 1,
+      "ticks": 3438,
+      "replay_sha256": "6bfb6a390a45a55c0358a88a2f320dd6aa88a25c2875e753d8916c63078d058f",
+      "audit_sha256": "f4c9633cd7838f3df6ba4883fdf3c12168149d244bf510435bf0667d7e87d495",
+      "stream_sha256": "2cd645b676edc4e43bbc0fc1f930a2d3b80c5b1fcde8d0abb6831e9ec0be49ee",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3438,
+        "actions_consumed": 32483,
+        "groups": 31770,
+        "bytes": 771036,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840024,
+      "key": "9840024",
+      "opponent": "deployed",
+      "color": 0,
+      "win": 0,
+      "ticks": 3763,
+      "replay_sha256": "1b9f110b1753fb012d660a420fe1872f1dca43a5568ea57f95988614ccbd21da",
+      "audit_sha256": "6b0c248e3c1a57770db19b826cb2c32f73ad7f331b8dec40cbba4139ca731086",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840026,
+      "key": "9840026",
+      "opponent": "center_proxy",
+      "color": 0,
+      "win": 0,
+      "ticks": 2543,
+      "replay_sha256": "e9c3fc115623c82b8e28d090dbed193e67eaeb2d49b2b1de320d6d0a9d3a95b1",
+      "audit_sha256": "c900dbca6954f22e91b641d5069b8b7e02c19b309b4e45d2ac278720e284b4cd",
+      "stream_sha256": "9b9725c6fa75240637cf61d2d399751de05535c4f2c8acce8c773e81b0f47b02",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2543,
+        "actions_consumed": 26304,
+        "groups": 25430,
+        "bytes": 620808,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840025,
+      "key": "9840025",
+      "opponent": "deployed",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "9fba3ef98427d1a86adc070f1584683eb78493c77f7eb62f0a1420a33c90ea18",
+      "audit_sha256": "d8f362a21d704bf6d06039bd6694efdb55c234479d7567a52c7eb32864f5989f",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840025,
+      "key": "9840025",
+      "opponent": "deployed",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "9d6e0523b89902f562e8dd282dc429c2c1536d0722ddbed7ee386ed0bc874941",
+      "audit_sha256": "d8f362a21d704bf6d06039bd6694efdb55c234479d7567a52c7eb32864f5989f",
+      "stream_sha256": "8c166403aedca7f36e3e8361f0c5a4e4419b4289d7ace4fa372d8bb8c8abac36",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37579,
+        "groups": 34837,
+        "bytes": 868992,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840026,
+      "key": "9840026",
+      "opponent": "center_proxy",
+      "color": 0,
+      "win": 1,
+      "ticks": 3387,
+      "replay_sha256": "f47ea938e9822fec4676948ad5ab1d02e2991bb48ae5f879261c5d72f4cbd336",
+      "audit_sha256": "bf5e100c7176e817a89fdf74b7ff276cc83ac06196a5d5626276b69d022d0acd",
+      "stream_sha256": "a0dba7a09b907b16554f280bf7951745280cdc7454da510b4d33556d69418fed",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3387,
+        "actions_consumed": 34773,
+        "groups": 31278,
+        "bytes": 792612,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840027,
+      "key": "9840027",
+      "opponent": "center_proxy",
+      "color": 1,
+      "win": 0,
+      "ticks": 2828,
+      "replay_sha256": "f264d66d9ffbb01601c7d6b0393bbb7a7eea8439d9fac9326dc916e4572ef85d",
+      "audit_sha256": "137065b88894df3a49fc5b5294ebb89dae1914bd4fc3c417e0bb190966d43604",
+      "stream_sha256": "64bff44dc85fd0bd6902962b441e074383d422ba9f6aa0ba84825ee305ee5c12",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2828,
+        "actions_consumed": 28913,
+        "groups": 27767,
+        "bytes": 680160,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840027,
+      "key": "9840027",
+      "opponent": "center_proxy",
+      "color": 1,
+      "win": 0,
+      "ticks": 2828,
+      "replay_sha256": "0c53347697033e91a338f055a78bb554a0ccdbb45e034dc480915b493d86540d",
+      "audit_sha256": "137065b88894df3a49fc5b5294ebb89dae1914bd4fc3c417e0bb190966d43604",
+      "stream_sha256": "64bff44dc85fd0bd6902962b441e074383d422ba9f6aa0ba84825ee305ee5c12",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 2828,
+        "actions_consumed": 28913,
+        "groups": 27767,
+        "bytes": 680160,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840028,
+      "key": "9840028",
+      "opponent": "sentry_inward",
+      "color": 0,
+      "win": 1,
+      "ticks": 3283,
+      "replay_sha256": "e410e8a31a2b229554e39e479bb93412d59b6c0baaa70b31bf70a06196a51c1b",
+      "audit_sha256": "781acdc9abae19e69da0f159a53955eac70f4f17f268781ce7b7dbb85fce2f54",
+      "stream_sha256": "6dca3a5500b387c1ec18e630310670fee28499f7e89a00efe4368cafc99f6cd9",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3283,
+        "actions_consumed": 31037,
+        "groups": 30074,
+        "bytes": 733332,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840029,
+      "key": "9840029",
+      "opponent": "sentry_inward",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "724292d1326579a9cf8160fc76e9d1720da2ae83a2869b6e76fd89a7608c77c9",
+      "audit_sha256": "b20449b4fd9379ff12c8df4f2b0cc7d54cea78fc4e7e0ab8fa234e94bccf9706",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37051,
+        "groups": 34836,
+        "bytes": 862644,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840028,
+      "key": "9840028",
+      "opponent": "sentry_inward",
+      "color": 0,
+      "win": 0,
+      "ticks": 6356,
+      "replay_sha256": "26c6c137f4d9cbd033d84183a7d49858ffe541d48ae9870b2a7fab21e7580a28",
+      "audit_sha256": "0acecc795b80ca6e339f4c5f7f3577ea0842a971feb47d44d81043d653e64326",
+      "stream_sha256": "68ab41b09f7476054fd54fd8447ebd7c10ac15deb4f143e3724fc2222053f364",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 6356,
+        "actions_consumed": 62596,
+        "groups": 59689,
+        "bytes": 1467420,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840029,
+      "key": "9840029",
+      "opponent": "sentry_inward",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "52b06a5bda449804d76766eeb7730aa703375b3d0755f5fdb5ca0226b580721d",
+      "audit_sha256": "b20449b4fd9379ff12c8df4f2b0cc7d54cea78fc4e7e0ab8fa234e94bccf9706",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37051,
+        "groups": 34836,
+        "bytes": 862644,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840030,
+      "key": "9840030",
+      "opponent": "readiness",
+      "color": 0,
+      "win": 1,
+      "ticks": 3270,
+      "replay_sha256": "6f976023630b47a3d785a82d26fd9e3e4413dfdd9cc09108f9427be59f930476",
+      "audit_sha256": "38829584cfeedb910a9dc298a6acc421957db86a979b477ba34f8ad06d995903",
+      "stream_sha256": "df24d41d4413d9add409140b6e764d3475b52106d686c6b11a8c84339c90b533",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3270,
+        "actions_consumed": 31053,
+        "groups": 29963,
+        "bytes": 732192,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840030,
+      "key": "9840030",
+      "opponent": "readiness",
+      "color": 0,
+      "win": 0,
+      "ticks": 6513,
+      "replay_sha256": "50e3df0fb25a3f9e06a1180112baa9da396055657097e6dab7ed502884dd7763",
+      "audit_sha256": "200698007fe6f27fe56e5b32d9a37edee6bf078d0fe1bf4aa31647774c439ae1",
+      "stream_sha256": "5163a6e44ac7ed039b2ab3bb5c4843ffb6276243ebd10a2662901e4fe6b46e61",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 6513,
+        "actions_consumed": 62910,
+        "groups": 60734,
+        "bytes": 1483728,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "casters",
+      "seed": 9840031,
+      "key": "9840031",
+      "opponent": "readiness",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "b99922e715ac74b50fa2cce843829e267eed3a53691d3d39b0a19cc6d3ba5ce2",
+      "audit_sha256": "914052c06792b30c919a21044834867a16250be5d3b9a376a847840ca5f81edc",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37051,
+        "groups": 34836,
+        "bytes": 862644,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    },
+    {
+      "name": "deployed",
+      "seed": 9840031,
+      "key": "9840031",
+      "opponent": "readiness",
+      "color": 1,
+      "win": 1,
+      "ticks": 3763,
+      "replay_sha256": "f72b81dfc32861588852217a1aea1b661a3598fe76225c40a22a3bd41a6f3690",
+      "audit_sha256": "914052c06792b30c919a21044834867a16250be5d3b9a376a847840ca5f81edc",
+      "stream_sha256": "6a96ff884c29b17bc1f4bebb67ad59ec1566385d06376df983e98414a85743cb",
+      "summary": {
+        "schema": "gota-full-command-stream/1",
+        "ticks": 3763,
+        "actions_consumed": 37051,
+        "groups": 34836,
+        "bytes": 862644,
+        "encoding": "little-endian u32 tick,slot,command_count; then u32 kind,i32 first,i32 second for every command. Groups sorted by tick then slot; original within-group order retained."
+      }
+    }
+  ],
+  "interpretation": "Complete command diversity using a calibrated, versioned native stream encoder.\n\nRequires independently completed replay audits. This encoder never substitutes\nfor simulation re-auditing and does not establish statistical independence.\n Canonical format preserves all within-hero/tick command order while normalizing cross-hero serialization. Every original action remains represented. Distinct seeds, bytes or command sets do not imply independent samples."
+}

@@ -1,0 +1,78 @@
+{
+  "name": "formation4800_cohort",
+  "pair": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/richard135-coaching-20260920/evaluated/formation4800_cohort",
+  "source_sha256": "e5eb6467afe0a23adeca47d90c69a81abd19ec1418ed8ec65358517623fb13f3",
+  "evaluated_ir_sha256": "cf13204e524973b88146c19ee3ef8b6be857bb30c0c3db4f8de9cd77ac7c6840",
+  "tested_ir_sha256": "40b09b793d08aba191658e411bad702b34a772236ee15b062807bfdd65522a15",
+  "local": {
+    "games": 12,
+    "wins": 3,
+    "deaths": 345,
+    "all_runtime_and_replay_audits_passed": true,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/late-cohort/local-results.json",
+      "sha256": "088c6b06a2b59944bb03c54b8a911a2763751af5733cb80e41bebf82e3075a52"
+    }
+  },
+  "local_control": {
+    "games": 12,
+    "wins": 7,
+    "deaths": 50,
+    "all_runtime_and_replay_audits_passed": true,
+    "evidence": {
+      "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/late-cohort/local-results.json",
+      "sha256": "088c6b06a2b59944bb03c54b8a911a2763751af5733cb80e41bebf82e3075a52"
+    }
+  },
+  "Richard": {
+    "red": {
+      "games": 40,
+      "wins": null,
+      "losses": null,
+      "draws": null,
+      "deaths": null,
+      "invalid_games": 40,
+      "valid_games": 0,
+      "valid_outcomes": {
+        "wins": 0,
+        "losses": 0,
+        "draws": 0
+      },
+      "cohort_eligible": false,
+      "request": "xreq_e36bff62-6226-4877-a1c7-09a50b34a833",
+      "distinct_complete_command_streams": null,
+      "evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/late-cohort/hosted/formation4800_cohort/red/arm-invalid-result.json",
+        "sha256": "babe5b353b4900408a6e3c4a2e6a4a35de141e8aeaee71cb6b922597d4b8857a"
+      }
+    },
+    "blue": {
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "deaths": 160,
+      "request": "xreq_3fb07b30-dbc6-400f-bdda-59fe12625385",
+      "distinct_complete_command_streams": 5,
+      "evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/late-cohort/hosted/formation4800_cohort/blue/arm-result.json",
+        "sha256": "8baef6129e0b3904323ba2d4e3a282c4e4992525de750f8f78873267d0022293"
+      },
+      "correlation_evidence": {
+        "artifact": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/richard-coaching-20260920/late-cohort/hosted/formation4800_cohort/blue/trajectory-correlation.json",
+        "sha256": "0ae3d3049555bbd176ea4f9b143ce46f22c67b55bc99b1026420eaeb488a1e7e"
+      }
+    }
+  },
+  "Richard_both_color_gate_passed": false,
+  "field_qualified": false,
+  "captured_inputs_preserved": true,
+  "compile_extract_exact_parity": true,
+  "uploaded_version": {
+    "id": "5f5949c5-e65d-4296-9944-af6ca4def967",
+    "name": "aaron-gota-ir-richard135-formation4800-cohort-0920",
+    "version": 1,
+    "pools": null,
+    "submit_error": null
+  }
+}

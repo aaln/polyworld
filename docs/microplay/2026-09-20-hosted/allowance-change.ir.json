@@ -1,0 +1,21 @@
+{
+  "schema": "gota-xp-authorization/1",
+  "scope": "shared daily episode allowance",
+  "before": 1600,
+  "after": 100000,
+  "user_instruction": "100000",
+  "time": "2026-09-20T17:03:11.288486+00:00",
+  "cycle_episode_limit": 400,
+  "reconciliation": {
+    "time": "2026-09-20T17:15:32.991329+00:00",
+    "observed_limit": 10000,
+    "observed_override": {
+      "utc_day": "2026-09-20",
+      "normal_limit": 1600,
+      "authorization": "User 2026-09-20, microplay XP verification: 100000",
+      "record": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-ir/microplay-xp-20260920/allowance-change.ir.json"
+    },
+    "resolved_limit": 100000,
+    "basis": "Direct user reply in this session: 100000. Preserve concurrent today-only expiry and other settings."
+  }
+}

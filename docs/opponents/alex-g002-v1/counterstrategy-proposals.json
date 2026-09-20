@@ -1,0 +1,50 @@
+[
+  {
+    "id": "AlexG002v1_I_C01",
+    "status": "proposed_test_only",
+    "adopted": false,
+    "rule": {
+      "id": "AlexG002v1_I_C01",
+      "when": "visible_core_pressure_and_distant_defenders",
+      "skill": "observe",
+      "for": [
+        "G_defense"
+      ]
+    },
+    "predicate_proposal": "Visible living enemy pair near a standing friendly defense anchor and own god; keep spatial and time-to-return evidence, never opponent label or hidden state.",
+    "mechanism": "Allow a bounded critical-defense commitment to override the 28-tile distant-recall cancellation; evaluate earlier warning distance and assigned responder travel.",
+    "opponent_preference_ids": [
+      "AlexG002v1_I_O11",
+      "AlexG002v1_I_O15"
+    ],
+    "macro_evidence": {
+      "n": 12,
+      "pair_within24": {
+        "observed_pair_episodes": 12,
+        "zero_friendly_within28": 12,
+        "all_five_friendly_alive_and_distant": 12
+      },
+      "scope": "Descriptive training observations; not heldout macro validation"
+    },
+    "existing_intervention": "No controlled current-policy-versus-Alex intervention has yet validated this proposed repair.",
+    "test": "Fresh pinned Richard135 AND Alexg002 candidate/control 40 per color, >=30/40 each target/color; retain Jordan268 >=38/40 each and original field guard. Full source, VM and replay audits. Draws count zero."
+  },
+  {
+    "id": "AlexG002v1_I_C02",
+    "status": "diagnostic_proposal",
+    "adopted": false,
+    "rule": {
+      "id": "AlexG002v1_I_C02",
+      "when": "local_defense_fails_after_response",
+      "skill": "attack",
+      "for": [
+        "G_defense",
+        "G_survival"
+      ]
+    },
+    "predicate_proposal": "Observed response occurred but the core still fell; require a trace of actual defender arrival and target choice.",
+    "mechanism": "Test interception at the threatened inner structure, before the god becomes the active target. Visible late god burn leaves very little travel time; a defender who only chases heroes can still allow structure pressure.",
+    "evidence": "own-decision-analysis.json plus macro-observations.json; diagnostic inference, not an adopted opponent preference.",
+    "test": "Record arrival time, enemy structure-target duration, friendly survival and actual fort wins. Use real reacting opponent; the observational model is not a rollout controller."
+  }
+]

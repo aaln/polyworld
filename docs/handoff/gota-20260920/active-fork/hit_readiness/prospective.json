@@ -1,0 +1,46 @@
+{
+  "status": "Prospective isolated hit-readiness sibling plan pinned before source authoring; old draft and separate handoff study preserved.",
+  "at": "2026-09-20T05:13:31.141195+00:00",
+  "parent_snapshot": "0000-b2693715459d",
+  "target": "207ffaf9-0d1e-4d92-a15d-4352f1bddec2",
+  "hypothesis": "In a complete suppression discovery blue loss, Vanguard lands26 basic hits but remainslevel1, so level-based dense recovery never activates. A fallback after8 or16observed lifetime basic hits may restore useful post-hit attack timing for an XP-starved physical hero, while retaining the level gate on its first encounter and the toward-target suppression guard. Both colors and all published physical classes; no opponent label, seed branch, hidden state or game changes.",
+  "variants": [
+    "parent",
+    "suppression_reference",
+    "hits8",
+    "hits16"
+  ],
+  "eligible_variants": [
+    "hits8",
+    "hits16"
+  ],
+  "screen": {
+    "games_per_arm": 14,
+    "first_seed": 9710000,
+    "decision_rule": "All56 native full games required against parent,default,blue_repair,support_anchor,WeaponAll,role64,deployed_suppression onbothcolors. Candidate retains every parent AND suppression_reference opponent/color fort win, >=60% actual fortwins vsparent onEACHcolor, >=1added red nondefault win vsparent, allfiveequipped everygame; deaths<=max(parent*1.25,parent+5) AND <=max(suppression_reference*1.15,suppression_reference+5). Atleastone full reactive game must demonstrate the new level1 fallback; no claim of benefit from nativefixtures alone. Draws0. Among passers ranktotalfortwins descending, deathsascending, thenhigher hitthreshold; confirmonlyfirst."
+  },
+  "confirmation": {
+    "games_per_arm": 56,
+    "first_seed": 9711000,
+    "decision_rule": "Fresh56cases/arm acrosssame7opponents, bothcolors; chosenchild plusparent andsuppression_reference. Retain every comparator cellwin, >=60% vsparent eachcolor, allgear, same survivalcaps. New level1 fallback mustoccurincomplete reacting gameplay, inspectcompletewin/failure/drawifavailable. Local qualification only; if no incremental fort gain vsreference, explicitly call the fallback effect unproven. No newhostedepisodes this cycle after assigned400; futurestudyrequires exactJordan268 bothcolors plusfreshparentcontrols andretainedfield."
+  },
+  "mechanism_predictions": {
+    "if_true": "Aftera newbasic hit onconsecutive livingdecisions, an otherwise eligible physicalhero atlevel1 can use the existing direction-guarded recovery once its observed hitcount reachesN; no change beforeN, atlevel2+, forcasters/Berserker, withouta newhit, outsidecrowding, or aftergaps. Full-game survival/fortconversion preserve controls.",
+    "if_false": "Late level1 movement still losesrange or has insufficientdamage/health; earlier WeaponAll failure may recur. Onlynativefixtureactivation or identicalfullgamebehavior is not evidence of usefulgameplay."
+  },
+  "known_failures": [
+    "WeaponAll g002red0/40 vsparent28/40; blanketlevel1 recoveryremainsrejected.",
+    "Level2-only readiness g002red9/40 vsparent30/40 andJordan254failures.",
+    "Suppression exactJordan268confirmation40/40red34/40blue, butg002red20/40vsfreshparent28/40; strictfieldpreservationfails.",
+    "Toward-target reversal g0027/40 andJordan25417/40red33/40blue vsparent40/40each. Do notretryreversal unchanged.",
+    "Suppression macro4-red8/40 vs historical unchanged-red parent40/40.",
+    "Separate nonhero handoff siblings both lost first red local parent case where suppression won. Finish all48 original cases; do not transfer that rejection to the isolated hit fallback without testing."
+  ],
+  "interpretation": "Newhypothesis uses discoverytraces only. Unchanged suppression confirmation/urgentdeployment remain separate. No tuning its source fromconfirmation. A changedcandidate mustearn newconfirmation; fullcampaignacceptance gatesunchanged. PrivateJordan source is unavailable, so no isolated decision-quality verdict. Lifetimehits persist acrossrespawn; this is an explicit publicheuristic, not actuallevel or safety. Explicitly isolate the previously drafted hit fallback without nonhero handoff. New deployed suppression is both a comparator and an actual opponent. Parent lineage remains snapshot0000. A pending confirmation may resume next cycle under exact input hashes; no premature local qualification.",
+  "evidence": {
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T033342Z-b4ca5b/arbitration-discovery/blue-loss/arbitration.json": "a4fe1387ed4b3591f1b74a0bd559b3bc63b3f8910e3ef40bbe29ee2b8b8e8854",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T033342Z-b4ca5b/arbitration-discovery/blue-win/arbitration.json": "f948b474e610d194e0d209a4b122cdaf04695ebbfd8f471f74258959ffb04a2f",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T033342Z-b4ca5b/suppression-known-field-failure.json": "4a3bb508a5091288907ed8e4af48646b3fedf183cc0c6709a4115a6b901bc71b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T033342Z-b4ca5b/verified-hit-readiness-draft.json": "54ac4d0ac57309636024725340fa2ddd30443ad5f1270b8e0b97b7584d423e11"
+  }
+}

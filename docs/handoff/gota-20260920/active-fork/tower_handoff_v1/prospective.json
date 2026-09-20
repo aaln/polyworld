@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-20T18:27:52.943273+00:00",
+  "formal_parent_snapshot": "0000-b2693715459d",
+  "working_fork": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b",
+  "behavior_parent": "deployed be6affd3 via unaccepted transit and current-duty3 branches",
+  "hypothesis": "A standing observed enemy tower keeps its hero target until invalid/out of range. A red hero belowhalfHP that continues attacking such a tower may die before converting it, even when allied creeps arrive. Briefly move outside tower range to shed the target, then resume normal play immediately when the observed tower changes target; preserve near-finished towers. Guarded handoff requires a living allied creep witness within4 public tiles of that tower. Test standalone red handoff and coordinated handoff/current-three-defender blue behavior; test unguarded red release separately as a combined variant.",
+  "evidence": "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T180014Z-078cc0/tower-focus-observation/result.json",
+  "observed_counterexample": "Local winning DeathKnight also tanks atlowHP with no nearby creep, so blanket escape is not presumed good. Broad danger escapes failed older studies. Currentduty3 16/16local fails119>118.45survival; this is a changed candidate, not a relaxed gate.",
+  "variants": {
+    "transit_handoff": {
+      "base": "transit_reference",
+      "require_creep": 1
+    },
+    "combined_handoff": {
+      "base": "duty3_reference",
+      "require_creep": 1
+    },
+    "combined_release": {
+      "base": "duty3_reference",
+      "require_creep": 0
+    }
+  },
+  "contract": "Redonly last command channel. Start only when bestId is a standing observed enemy tower targeting self, selfHP<=50%, and towerHP>max(2*selfAttackDamage,150). Optional allied living creep within4 integer-coordinate tiles. Search at most64 public object entries for a positive creep witness; no witness means do not intervene, not absence. Retain one legal walk destination outside7-tile center distance for at most144ticks; stop as soon as tower target changes, tower dies/disappears, or deadline. Use only public coordinates/targets/HP and terrain legality; no rival IDs, seeds or private state. Prevent immediate new burst for48ticks after expiry.",
+  "native_rule": "Actual native VM for alltenclasses ordinary/dense/lowHPdense; named tower focus initiation, creep-witness negative/positive, highHP, wrongtarget, nearfinish, nolegal destination, disappearing tower, targethandoff, deadline and respawn gap. Work<=50000/instructions<=20000/globals<=256. Everyfailedinput preserved, versionnewcontractrepairs. Unchangedblue fullcommand/state parity against exactcorresponding base.",
+  "local_rule": "96complete local games: deployed,transit_reference,duty3_reference,transit_handoff,combined_handoff,combined_release; eight currentownedopponents eachcolor, seeds9910000..9910015. All candidates retain everytransit/deployed winningcase; combined variants also retain everyduty3 winningcase. Allgear/fullVM/replay audits. Deaths<=max(1.15*deployed,deployed+5); fewer deaths than their direct changed-behavior base. Atleastone actualreleasing episode and fullwin/failure review ifavailable. Winner selection: eligibility then moretotalfortwins, fewerteamdeaths, name. Only nominatedsource gets fresh48cases againstall8opponents and freshdeployed/directbase controls; same win/survival rules, plus >=60%eachcolor vsaccepted. NoXPbeforequalification.",
+  "if_true": "Creep-guarded red release changes real orders, sheds towerfocus, preserves fortwins and reduces team deaths; coupled blue currentduty remains effective.",
+  "if_false": "Noactivation, long stalling, lostrequiredwins, survivalfailure or nativeoverflow rejects unchangedcandidate. Repeatedstreams do not establish independent significance.",
+  "critique": "Tower focus also occurs in wins. Retreat can waste lethal damage or expose a hero to another threat, sparse creep search can miss support, integer terrain goals are not arrivalproof. Test complete reacting ownedopponents before actualRichard/Alex/Jordan. Private Richard counterfactual quality unresolvable.",
+  "ownership": "Worker allocation/survival work only, no changes to interactive formation/probe/microplay source or hostedrequests.",
+  "focus_sha256": "4e812a98df8ab457b9a523ffa3c3fa16375b179fcf265d8d3b4276c7c71df252",
+  "league_checked_at": "2026-09-20T17:22:38.713330+00:00"
+}

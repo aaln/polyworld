@@ -1,0 +1,625 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "label": "anchor_restore/positive/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/activation/2",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/positive/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/activation/2",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/no_anchor/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/preserve/no_anchor/2",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/no_anchor/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/preserve/no_anchor/2",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/no_committer/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/preserve/no_committer/2",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/no_committer/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/preserve/no_committer/2",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/low_hp/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/preserve/low_hp/2",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/low_hp/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/preserve/low_hp/2",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/existing_target/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/preserve/existing_target/2",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/existing_target/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/preserve/existing_target/2",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/positive/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/activation/3",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/positive/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/activation/3",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/no_anchor/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/preserve/no_anchor/3",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/no_anchor/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/preserve/no_anchor/3",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/no_committer/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/preserve/no_committer/3",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/no_committer/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/preserve/no_committer/3",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/low_hp/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/preserve/low_hp/3",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/low_hp/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/preserve/low_hp/3",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/existing_target/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/preserve/existing_target/3",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/existing_target/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/preserve/existing_target/3",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/0/0/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/0/0/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/0/0",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/0/0/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/0/0/parity",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/0/0",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/0/0/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/0/0/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/dense/0/0/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/0/0/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/0/0/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/mixed/0/0/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/0/1/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/0/1/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/0/1",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/0/1/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/0/1/parity",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/0/1",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/0/1/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/0/1/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/dense/0/1/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/0/1/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/0/1/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/mixed/0/1/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/0/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/0/2",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/0/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/0/2",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/0/2/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/0/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/0/2/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/0/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/0/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/0/3",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/0/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/0/3",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/0/3/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/0/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/0/3/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/0/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/0/4/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/0/4/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/0/4",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/0/4/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/0/4/parity",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/0/4",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/0/4/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/0/4/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/dense/0/4/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/0/4/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/0/4/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/mixed/0/4/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/0/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/0/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/1/0",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/0/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/0/parity",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/1/0",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/1/0/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/1/0/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/dense/1/0/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/1/0/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/1/0/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/mixed/1/0/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/1/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/1/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/1/1",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/1/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/1/parity",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/1/1",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/1/1/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/1/1/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/dense/1/1/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/1/1/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/1/1/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/mixed/1/1/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/2/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/1/2",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/2/parity",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/1/2",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/1/2/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/1/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/dense/1/2/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/1/2/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/1/2/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/mixed/1/2/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/3/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/1/3",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/3/parity",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/1/3",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/1/3/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/1/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/dense/1/3/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/1/3/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/1/3/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/mixed/1/3/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/4/runtime",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/ordinary/1/4/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/equipment/1/4",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/4/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/ordinary/1/4/parity",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/equipment/1/4",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/dense/1/4/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/dense/1/4/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/dense/1/4/parity",
+      "passed": true
+    },
+    {
+      "label": "anchor_restore/mixed/1/4/runtime",
+      "passed": false
+    },
+    {
+      "label": "transit_anchor/mixed/1/4/runtime",
+      "passed": true
+    },
+    {
+      "label": "transit_anchor/mixed/1/4/parity",
+      "passed": true
+    }
+  ],
+  "decisions": 152,
+  "captures_sha256": "fd6bf5275a7b304996dff07b6d9c0215562862f4cdbcb74ff174fc02fc376e89",
+  "vm_sha256": "9cd47c5cd8477b4c2ef372e3c6f28a01b9c09d36abd8b952b18eac2a991ab4a6",
+  "max_instructions": 19577,
+  "max_work": 30735,
+  "limits": {
+    "globals": 256,
+    "instructions": 20000,
+    "work": 50000,
+    "source_bytes": 65536
+  },
+  "scope": "Native current-source fixtures: actual red caster activation, missing anchor/ally, lowHP, existing targets, allclass equipment and240object budgets. Every captured failure retained; no live rival claim."
+}

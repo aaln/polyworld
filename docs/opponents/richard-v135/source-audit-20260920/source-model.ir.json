@@ -1,0 +1,750 @@
+{
+  "schema": "gota-source-policy-audit/1",
+  "id": "richard_v135_source_reveal_20260920",
+  "situation": {
+    "grounded": {
+      "version": "7c370daf-3c5f-42f8-870b-54b79c495a44",
+      "perspective": "each Richard VM host-visible observation",
+      "coordinates": "integer map tiles; squared distances; world scale 60000 per tile",
+      "object_kinds": {
+        "god": 1,
+        "hero": 2,
+        "creep": 3,
+        "tower": 4,
+        "barracks": 5
+      },
+      "structures": "objectAlive means exposed; positive HP means standing",
+      "range_comparison": "distance2*3600 <= (selfAttackRange/1000)^2",
+      "observability": "source audit sees private VM memory retrospectively; own deployed policy cannot read it"
+    }
+  },
+  "belief": {
+    "grounded": {
+      "evidence_regime": "source_revealed",
+      "source_sha256": "f48bb0057aeaf2ff939035324340183e34f8f9544e03226edfe62e78faad5a30",
+      "original_observation_model_unchanged": true,
+      "learned_modes_observed": {
+        "0": 318972,
+        "2": 219316,
+        "6": 62762
+      },
+      "equipment_modes_observed": {
+        "1": 601050
+      },
+      "unexercised_defining_patch": "Richard135_M08"
+    },
+    "claims": {
+      "Richard135_M01": {
+        "claim": "scan_and_encode",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              1,
+              126
+            ],
+            "runtime_count": 601050,
+            "fixture_ids": []
+          }
+        ]
+      },
+      "Richard135_M02": {
+        "claim": "select_cached_neural_mode",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              127,
+              293
+            ],
+            "runtime_count": 150308,
+            "fixture_ids": [
+              "neural_four_decision_clock"
+            ]
+          }
+        ]
+      },
+      "Richard135_M03": {
+        "claim": "latch_group_departure",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              295,
+              309
+            ],
+            "runtime_count": null,
+            "fixture_ids": []
+          }
+        ]
+      },
+      "Richard135_M04": {
+        "claim": "base_attack_or_route",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              311,
+              352
+            ],
+            "runtime_count": null,
+            "fixture_ids": []
+          }
+        ]
+      },
+      "Richard135_M05": {
+        "claim": "lich_midpoint_ring",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              354,
+              359
+            ],
+            "runtime_count": 780,
+            "fixture_ids": []
+          }
+        ]
+      },
+      "Richard135_M06": {
+        "claim": "consume_and_purchase",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              361,
+              516
+            ],
+            "runtime_count": 2116,
+            "fixture_ids": []
+          }
+        ]
+      },
+      "Richard135_M07": {
+        "claim": "apply_mode_override",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              517,
+              564
+            ],
+            "runtime_count": null,
+            "fixture_ids": [
+              "structure_context_tower",
+              "structure_context_barracks"
+            ]
+          }
+        ]
+      },
+      "Richard135_M08": {
+        "claim": "answer_siege_attacker",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              566,
+              570
+            ],
+            "runtime_count": 0,
+            "fixture_ids": [
+              "siege_quiet",
+              "siege_attacker_targets_self",
+              "siege_attacker_targets_other_ally",
+              "siege_attacker_outside_range",
+              "siege_god_is_not_tower",
+              "siege_lowest_hp_eligible_attacker"
+            ]
+          }
+        ]
+      },
+      "Richard135_M09": {
+        "claim": "reserve_home_defender",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              572,
+              659
+            ],
+            "runtime_count": 21686,
+            "fixture_ids": [
+              "home_direct_creep_over_hero",
+              "home_closer_ally_removes_self_reservation"
+            ]
+          }
+        ]
+      },
+      "Richard135_M10": {
+        "claim": "end_post_hit_recovery",
+        "status": "source_verified",
+        "evidence": [
+          {
+            "lines": [
+              661,
+              666
+            ],
+            "runtime_count": 6266,
+            "fixture_ids": [
+              "one_decision_hit_recovery_pulse"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "perception": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "mode_selection_unknown_objective": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "coordinated_departure_hypothesis": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "contact_hypothesis": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "objective_pressure_hypothesis": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "intercept_hypothesis": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "survival_hypothesis": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "damage_growth_hypothesis": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "self_preservation_hypothesis": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "home_preservation_hypothesis": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    },
+    "attack_cadence_hypothesis": {
+      "provenance": "purpose hypothesis; source/runtime establish operations, not optimality"
+    }
+  },
+  "skill": {
+    "scan_and_encode": {
+      "id": "Richard135_M01",
+      "source_lines": [
+        1,
+        126
+      ],
+      "skill": "scan_and_encode",
+      "effects": {
+        "nearest_generic": "living/exposed hostile any kind; strict distance tie",
+        "nearest_objective_kinds": [
+          1,
+          4
+        ],
+        "nearest_hero_kind": 2,
+        "siege_threat": "lowest HP visible hero targeting self within self basic range",
+        "ally_geometry": [
+          "centroid",
+          "maximum squared self distance",
+          "opening rally count"
+        ],
+        "features": {
+          "count": 25,
+          "clamp": [
+            -100,
+            100
+          ],
+          "inputs": [
+            "self HP percent",
+            "self mana percent",
+            "max ally squared distance / 100",
+            "level * 5",
+            "ally and nearest enemy offsets mirrored on blue",
+            "nearest enemy HP / 10",
+            "nearest enemy kind * 25",
+            "worldTick / 288",
+            "four ability charges * 25",
+            "ten class indicators * 100"
+          ]
+        }
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": 601050,
+      "fixture_ids": []
+    },
+    "select_cached_neural_mode": {
+      "id": "Richard135_M02",
+      "source_lines": [
+        127,
+        293
+      ],
+      "skill": "select_cached_neural_mode",
+      "effects": {
+        "network": {
+          "inputs": 25,
+          "hidden_relu": 16,
+          "outputs": 18,
+          "selection": "argmax with strict > updates"
+        },
+        "clock": {
+          "unit": "living VM decisions",
+          "period": 4,
+          "reset_value": 4
+        },
+        "decode": {
+          "combat": "decision mod 9",
+          "equipment": "int(decision >= 9)"
+        },
+        "weights": {
+          "artifact": "v135.bas",
+          "sha256": "f48bb0057aeaf2ff939035324340183e34f8f9544e03226edfe62e78faad5a30"
+        }
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": 150308,
+      "fixture_ids": [
+        "neural_four_decision_clock"
+      ]
+    },
+    "latch_group_departure": {
+      "id": "Richard135_M03",
+      "source_lines": [
+        295,
+        309
+      ],
+      "skill": "latch_group_departure",
+      "effects": {
+        "groupDeparture": 1,
+        "reset": "no explicit source reset",
+        "routeFallback": "(combat==2 OR (combat==8 AND bestId==0)) AND no objective at squared distance<=300 AND no hero at squared distance<=700",
+        "rally": {
+          "red": [
+            71,
+            12
+          ],
+          "blue": [
+            45,
+            104
+          ]
+        }
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": null,
+      "fixture_ids": []
+    },
+    "base_attack_or_route": {
+      "id": "Richard135_M04",
+      "source_lines": [
+        311,
+        352
+      ],
+      "skill": "base_attack_or_route",
+      "effects": {
+        "mode8": [
+          "nearest objective if distance2<=300",
+          "nearest hero if distance2<=700",
+          "nearest generic enemy",
+          "route"
+        ],
+        "other_modes": [
+          "nearest generic enemy",
+          "walkTo(64,64)"
+        ],
+        "route": {
+          "before_3500_unlatched": {
+            "red": [
+              71,
+              12
+            ],
+            "blue": [
+              45,
+              104
+            ]
+          },
+          "before_4500_otherwise": {
+            "red": [
+              9,
+              33
+            ],
+            "blue": [
+              107,
+              83
+            ]
+          },
+          "later": {
+            "red": [
+              11,
+              106
+            ],
+            "blue": [
+              105,
+              10
+            ]
+          }
+        }
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": null,
+      "fixture_ids": []
+    },
+    "lich_midpoint_ring": {
+      "id": "Richard135_M05",
+      "source_lines": [
+        354,
+        359
+      ],
+      "skill": "lich_midpoint_ring",
+      "effects": {
+        "request": "castPoint(3, midpoint(self,nearestHero))",
+        "success": "host-dependent; no explicit charge guard"
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": 780,
+      "fixture_ids": []
+    },
+    "consume_and_purchase": {
+      "id": "Richard135_M06",
+      "source_lines": [
+        361,
+        516
+      ],
+      "skill": "consume_and_purchase",
+      "effects": {
+        "heal_use_below_hp_fraction": 0.6,
+        "heal_buy_below_hp_fraction": 0.5,
+        "heal_purchase_attempt_order": [
+          {
+            "item": 2,
+            "cost": 50
+          },
+          {
+            "item": 1,
+            "cost": 30
+          }
+        ],
+        "objective_equipment": [
+          {
+            "item": 11,
+            "cost": 110
+          },
+          {
+            "item": 13,
+            "cost": 150
+          },
+          {
+            "item": 16,
+            "cost": 160
+          },
+          {
+            "item": 18,
+            "cost": 180
+          },
+          {
+            "item": 20,
+            "cost": 190
+          }
+        ],
+        "objective_equipment_class_filter": null,
+        "normal_ranged_classes": [
+          1,
+          6
+        ],
+        "normal_ranged_gear": [
+          8,
+          14,
+          19
+        ],
+        "normal_melee_classes": [
+          0,
+          4,
+          5,
+          9
+        ],
+        "normal_magic_classes": [
+          2,
+          3,
+          7,
+          8
+        ],
+        "normal_only": [
+          "mana potion use/purchase",
+          "poison use/purchase",
+          "class-specific equipment"
+        ],
+        "affordability": "source data is a predecision snapshot; each host call checks live gold/capacity",
+        "ordering": "multiple independent if checks; no guaranteed one-purchase limit or savings plan"
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": 2116,
+      "fixture_ids": []
+    },
+    "apply_mode_override": {
+      "id": "Richard135_M07",
+      "source_lines": [
+        517,
+        564
+      ],
+      "skill": "apply_mode_override",
+      "effects": {
+        "1": "walk home corner",
+        "2": "objective<=300 then hero<=700 else route; no generic-enemy fallback here",
+        "3..6": "castTarget(combat-3, bestId else selfId)",
+        "7": "walk ally centroid"
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": null,
+      "fixture_ids": [
+        "structure_context_tower",
+        "structure_context_barracks"
+      ]
+    },
+    "answer_siege_attacker": {
+      "id": "Richard135_M08",
+      "source_lines": [
+        566,
+        570
+      ],
+      "skill": "answer_siege_attacker",
+      "effects": {
+        "request": "attackTarget(siegeThreatId)",
+        "priority": "after mode override, before home defense/recovery"
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": 0,
+      "fixture_ids": [
+        "siege_quiet",
+        "siege_attacker_targets_self",
+        "siege_attacker_targets_other_ally",
+        "siege_attacker_outside_range",
+        "siege_god_is_not_tower",
+        "siege_lowest_hp_eligible_attacker"
+      ]
+    },
+    "reserve_home_defender": {
+      "id": "Richard135_M09",
+      "source_lines": [
+        572,
+        659
+      ],
+      "skill": "reserve_home_defender",
+      "effects": {
+        "guard_radius2": 100,
+        "intruder_radius2": 400,
+        "attack_if_self_home_distance2_at_most": 400,
+        "target_order": [
+          "direct fort attacker (hero or creep)",
+          "nearest enemy hero",
+          "nearest enemy hero or creep"
+        ],
+        "otherwise": "walkTo(home)",
+        "ties": "multiple equal-distance candidates may reserve",
+        "priority": "overrides siege/mode locomotion; can be followed by recovery walk"
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": 21686,
+      "fixture_ids": [
+        "home_direct_creep_over_hero",
+        "home_closer_ally_removes_self_reservation"
+      ]
+    },
+    "end_post_hit_recovery": {
+      "id": "Richard135_M10",
+      "source_lines": [
+        661,
+        666
+      ],
+      "skill": "end_post_hit_recovery",
+      "effects": {
+        "request": "walkTo(selfX,selfY)",
+        "update": "save hit count; initialized=1",
+        "priority": "last locomotion command",
+        "effect_scope": "after confirmed hit; not an unconditional per-tick movement"
+      },
+      "evidence_status": "source_verified",
+      "runtime_count": 6266,
+      "fixture_ids": [
+        "one_decision_hit_recovery_pulse"
+      ]
+    }
+  },
+  "strategy": [
+    {
+      "id": "Richard135_M01",
+      "when": "every living decision",
+      "skill": "scan_and_encode",
+      "for": [
+        "perception"
+      ],
+      "source_order": 0
+    },
+    {
+      "id": "Richard135_M02",
+      "when": "decrement countdown; recompute iff <= 0",
+      "skill": "select_cached_neural_mode",
+      "for": [
+        "mode_selection_unknown_objective"
+      ],
+      "source_order": 1
+    },
+    {
+      "id": "Richard135_M03",
+      "when": "tick < 3500 AND routeFallback AND allies_within_rally_radius4 >= 3 AND self_within_rally_radius4",
+      "skill": "latch_group_departure",
+      "for": [
+        "coordinated_departure_hypothesis"
+      ],
+      "source_order": 2
+    },
+    {
+      "id": "Richard135_M04",
+      "when": "every living decision",
+      "skill": "base_attack_or_route",
+      "for": [
+        "contact_hypothesis",
+        "objective_pressure_hypothesis"
+      ],
+      "source_order": 3
+    },
+    {
+      "id": "Richard135_M05",
+      "when": "class==7 AND nearest hero targets self AND 25<hero_distance2<=49",
+      "skill": "lich_midpoint_ring",
+      "for": [
+        "intercept_hypothesis"
+      ],
+      "source_order": 4
+    },
+    {
+      "id": "Richard135_M06",
+      "when": "every living decision; equipment requires observed empty slot",
+      "skill": "consume_and_purchase",
+      "for": [
+        "survival_hypothesis",
+        "damage_growth_hypothesis"
+      ],
+      "source_order": 5
+    },
+    {
+      "id": "Richard135_M07",
+      "when": "combat in 1..7",
+      "skill": "apply_mode_override",
+      "for": [
+        "mode_selection_unknown_objective"
+      ],
+      "source_order": 6
+    },
+    {
+      "id": "Richard135_M08",
+      "when": "combat in {2,8} AND objectiveKind==4 AND objectiveDistance2<=300 AND siegeThreatId!=0",
+      "skill": "answer_siege_attacker",
+      "for": [
+        "self_preservation_hypothesis"
+      ],
+      "source_order": 7
+    },
+    {
+      "id": "Richard135_M09",
+      "when": "home observed standing AND (guards<=1 OR (guardHP<=390 AND selfHomeDistance2<=900)) AND no strictly closer living ally AND NOT in-range one-hit enemy-fort finish",
+      "skill": "reserve_home_defender",
+      "for": [
+        "home_preservation_hypothesis"
+      ],
+      "source_order": 8
+    },
+    {
+      "id": "Richard135_M10",
+      "when": "initialized AND selfAttacksLanded > previous landed hits",
+      "skill": "end_post_hit_recovery",
+      "for": [
+        "attack_cadence_hypothesis"
+      ],
+      "source_order": 9
+    }
+  ],
+  "execution": {
+    "binding": "gota-source-audit-description/1",
+    "compilable": false,
+    "semantic_reimplementation_validated": false,
+    "authentic_source": "v135.bas",
+    "command_composition": "ordered requests across locomotion, spells and inventory; host applies acceptance live",
+    "control_edges": [
+      {
+        "earlier": "Richard135_M04",
+        "later": "Richard135_M07",
+        "meaning": "later locomotion request can supersede earlier attack/movement"
+      },
+      {
+        "earlier": "Richard135_M07",
+        "later": "Richard135_M08",
+        "meaning": "later locomotion request can supersede earlier attack/movement"
+      },
+      {
+        "earlier": "Richard135_M08",
+        "later": "Richard135_M09",
+        "meaning": "later locomotion request can supersede earlier attack/movement"
+      },
+      {
+        "earlier": "Richard135_M09",
+        "later": "Richard135_M10",
+        "meaning": "later locomotion request can supersede earlier attack/movement"
+      }
+    ],
+    "persistent_state": [
+      "decision",
+      "neuralActionCountdown",
+      "groupDeparture",
+      "recoveryInitialized",
+      "recoveryLastHit"
+    ],
+    "xp_mechanics": {
+      "source": "pinned simulator, not opponent command",
+      "kill_rewards": {
+        "creep": [
+          25,
+          15
+        ],
+        "hero": [
+          150,
+          100
+        ],
+        "building": [
+          100,
+          75
+        ]
+      },
+      "reward_pair_units": [
+        "xp",
+        "gold"
+      ],
+      "level_threshold": "100+75*(current_level-1)",
+      "max_level": 20,
+      "explicit_level_up_command": false
+    },
+    "validation": {
+      "exact_replay_commands": 915098,
+      "games": 20,
+      "fixtures": 12,
+      "fixture_decisions": 21,
+      "new_counter_policy_games": 0,
+      "proxy_usable": false
+    }
+  },
+  "update": {
+    "revision": 1,
+    "parent": "richard_v135_observer_model",
+    "relation": "separate source audit; original model not revised",
+    "evidence": [
+      "provenance.ir.json",
+      "runtime-audit.ir.json",
+      "discriminating-fixtures.ir.json",
+      "economy-audit.ir.json"
+    ],
+    "limitations": [
+      "same-corpus reconstruction is not fresh prediction",
+      "guard counts can be suppressed by later commands",
+      "synthetic host acceptance is not combat efficacy",
+      "semantic description is not compiled equivalent source"
+    ]
+  }
+}

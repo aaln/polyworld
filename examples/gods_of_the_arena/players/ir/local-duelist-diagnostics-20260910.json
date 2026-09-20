@@ -1,0 +1,147 @@
+{
+  "source_sha256": "7247acb6fe63d5f0eb40dd21efe8e27263af06705bb7161faba362cc3d0e13f3",
+  "phase": "post_hoc_description_only",
+  "groups": {
+    "baseline_time_limit": {
+      "seeds": [
+        53000,
+        53004,
+        53014,
+        53016
+      ],
+      "pairs": 40,
+      "candidate_wins": 18,
+      "control_wins": 0
+    },
+    "baseline_decisive": {
+      "seeds": [
+        53001,
+        53002,
+        53003,
+        53005,
+        53006,
+        53007,
+        53008,
+        53009,
+        53010,
+        53011,
+        53012,
+        53013,
+        53015,
+        53017,
+        53018,
+        53019,
+        53020,
+        53021,
+        53022,
+        53023
+      ],
+      "pairs": 200,
+      "candidate_wins": 105,
+      "control_wins": 100
+    }
+  },
+  "controls": {
+    "53000": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53000/result.json",
+      "sha256": "3e691c8443ce7791f8bb9f4a27f95d4a719b6383ef67b389c80c4c5004ca83e4"
+    },
+    "53001": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53001/result.json",
+      "sha256": "26f87e536287ba831b2cbda454db10eb5182df3dec8c120649bd5a49eac75d88"
+    },
+    "53002": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53002/result.json",
+      "sha256": "8d4838495750820f738d8040e7b0d6c3f9ddaf046236a518326f50379a0413ee"
+    },
+    "53003": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53003/result.json",
+      "sha256": "6bae0c70d2c529768a403f002cacd9e1829f6ec55424e1acf5157eaa86264abd"
+    },
+    "53004": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53004/result.json",
+      "sha256": "82bcf914d4e02ede5cd8d94f85110f52e2fac465365fb17e7af24d54a50cdea0"
+    },
+    "53005": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53005/result.json",
+      "sha256": "5da8014a1fc3d8e3aef752869498d15450d7b998b01fc5f51ee3b04bf08bdf87"
+    },
+    "53006": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53006/result.json",
+      "sha256": "08e7cf85ad02efa5dc8c1deb790bb6a60c808a9b6d0fe23acec5861f1e58787b"
+    },
+    "53007": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53007/result.json",
+      "sha256": "c1c35db57933f09869aa9c8a04dbe72b556160bb22145b2f4600695546697bfb"
+    },
+    "53008": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53008/result.json",
+      "sha256": "33bd67dade7bf97649d00a5d83335c47c09a234b4ea534e14d128588a4a19f04"
+    },
+    "53009": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53009/result.json",
+      "sha256": "906a9393b858e92852d82549c8d56797217c79c435bb5a7a6945854f58c41125"
+    },
+    "53010": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53010/result.json",
+      "sha256": "401373daff5ff78d2988afbf98dc3d330d0e7abcc0abe4160b09dd5311844d1a"
+    },
+    "53011": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53011/result.json",
+      "sha256": "58ac8cb243ceb6bf8c62b78ee3864222e040204626f87e9094aec5d845904634"
+    },
+    "53012": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53012/result.json",
+      "sha256": "ea8970818b11a459cd9a39e881f1933edb6e7c05794405d6a99bd3943aba64d9"
+    },
+    "53013": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53013/result.json",
+      "sha256": "d0be9e7d584184564ba7256fd7ca698d1d521c27cdb8154ed0e56f2ee0b89567"
+    },
+    "53014": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53014/result.json",
+      "sha256": "b621b665f3c20d7a03d20e81103bf95032d91e2850f68e7a0eee930959c10241"
+    },
+    "53015": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53015/result.json",
+      "sha256": "a9dd66ea8205f747865d116ba5bd3bb29fa7320a2455b80a6ad61ce357f2d344"
+    },
+    "53016": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53016/result.json",
+      "sha256": "080f2fac8dc6336a4fa10a974ee2af3531445e2486b1f4d2593664d4af06115e"
+    },
+    "53017": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53017/result.json",
+      "sha256": "6fb90a9bd083a2870c70b9f6e33aa0942c5b16e94d729a100b81d8d1cb5a33ae"
+    },
+    "53018": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53018/result.json",
+      "sha256": "c33e775cd0786c8ffaa010bf2de0f65264efb4cf769bc5981243867ddb3dc135"
+    },
+    "53019": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53019/result.json",
+      "sha256": "1be424aa284677905ee58c540adc56daaec8ef8e82a0eb75c16b2faba6cc5e04"
+    },
+    "53020": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53020/result.json",
+      "sha256": "4490b8f1e0f9b3e6c242f2d28c9a390f06c304884e85e44e88a8bfe6802ad21f"
+    },
+    "53021": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53021/result.json",
+      "sha256": "e8cf126aaa98eaa3929a96088ad121ec5f2846ab3445a9781ccda3a17308f258"
+    },
+    "53022": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53022/result.json",
+      "sha256": "bb2da0588936b59507ccdeeca5b468e8a9db6dc0b4671e1b03435710afa1be7e"
+    },
+    "53023": {
+      "artifact": "tmp/gota-ir/local-gate-20260910-r2/control-53023/result.json",
+      "sha256": "ec90ac4a2ab253f215c56363ad13b8430d2140266a2071daf4a0a8e976418064"
+    }
+  },
+  "paired_report": {
+    "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+    "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32"
+  },
+  "interpretation": "18 of the 23 net added wins occurred in four seed clusters whose all-baseline control timed out. This descriptive split does not identify the causal combat or economy mechanism and does not change the failed preregistered gate."
+}

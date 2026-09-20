@@ -1,0 +1,25 @@
+{
+  "report": {
+    "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+    "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+  },
+  "policies": {
+    "base": {
+      "source_sha256": "1f7b5511db0ebb8a3be0be2230a54039cd127a2fb2e0f3d6ff821f024db8f6ba",
+      "policy_sha256": "c6fbfa4ed4e40a81599c61c9e51aaa2f6cb0ea2470eb62ee93c7defd89bc5092",
+      "structural_parity": true
+    },
+    "duelist": {
+      "source_sha256": "7247acb6fe63d5f0eb40dd21efe8e27263af06705bb7161faba362cc3d0e13f3",
+      "policy_sha256": "076cd4957cf93346db781429ad2d63aac5ac1cdb996c25f0e011a9cf98b11c33",
+      "structural_parity": true
+    },
+    "reserve": {
+      "source_sha256": "964e8a4fd5dbe3da7c2fae1788389d7562e2caf80e773f937f753ad59744dd78",
+      "policy_sha256": "5eec6aab9308c0af5fe324802d236811e97158eb402ac964b28be233e15bf338",
+      "structural_parity": true
+    }
+  },
+  "behavior_changed": false,
+  "league_mutated": false
+}

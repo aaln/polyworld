@@ -1,0 +1,111 @@
+{
+  "sources": {
+    "deployed": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/deployed/policy.bas",
+    "transit_reference": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/transit_reference/policy.bas",
+    "anchor_restore": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/anchor_restore/policy.bas",
+    "transit_anchor": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/transit_anchor/policy.bas",
+    "historical_anchor": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/historical_anchor/policy.bas"
+  },
+  "variants": [],
+  "actual_variants": [
+    "deployed",
+    "transit_reference",
+    "anchor_restore",
+    "transit_anchor",
+    "historical_anchor"
+  ],
+  "opponents": {
+    "accepted": "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas",
+    "default": "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas",
+    "blue_repair": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas",
+    "support_anchor": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas",
+    "center_proxy": "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas",
+    "readiness": "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/candidates/first_level/policy.bas"
+  },
+  "cases": [
+    {
+      "seed": 9860000,
+      "color": 0,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9860001,
+      "color": 1,
+      "opponent": "accepted"
+    },
+    {
+      "seed": 9860002,
+      "color": 0,
+      "opponent": "default"
+    },
+    {
+      "seed": 9860003,
+      "color": 1,
+      "opponent": "default"
+    },
+    {
+      "seed": 9860004,
+      "color": 0,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9860005,
+      "color": 1,
+      "opponent": "blue_repair"
+    },
+    {
+      "seed": 9860006,
+      "color": 0,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9860007,
+      "color": 1,
+      "opponent": "support_anchor"
+    },
+    {
+      "seed": 9860008,
+      "color": 0,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9860009,
+      "color": 1,
+      "opponent": "center_proxy"
+    },
+    {
+      "seed": 9860010,
+      "color": 0,
+      "opponent": "readiness"
+    },
+    {
+      "seed": 9860011,
+      "color": 1,
+      "opponent": "readiness"
+    }
+  ],
+  "custom_opponents": true,
+  "gates": null,
+  "decision_rule": "Complete all60games; compare each restoration against its own source-matched control by case. Require all paired control wins retained, at least one extra actual fort win, all gear, and deaths<=max(1.15*deployed deaths,deployed deaths+5). Drawszero. Historical reference is descriptive and cannot qualify. Native budget/mechanism tests and blue full-command equivalence precede local games. Full win/failure mechanism review and fresh confirmation required before upload or XP. No threshold changes after outcomes.",
+  "input_sha256": {
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/episode": "d1af7b20fd1a150dcdacd0184d5adbe48495c3cbaf61810ae1905e37eff665e7",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/fast/audit-local": "2e6d76a462f16f1cab06146a15d808c310c602f522b9cb3ee8296ebb3415a20c",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/screen/config.json": "a80b7f5bb43cbd61039dd8c5675c2660ec6b7e77fac14cce97b4f27c3d14033b",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/prospective.json": "4b3ef28f4f5bf441ad9534cf3d51843d12708c55f5476b098659c9ab1ee5bfd9",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/native-proof.json": "1e307cce264ed0ac92a65e36109fc40372250cc860f33975101270968614f3f7",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/blue-equivalence.json": "c291293e6daa7a1330785cd815ead5838ed5b87e636c2cdef1a405535bc51a9a",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T152212Z-628823/local_anchor_restore_v2.py": "d8fc340fafbe29674a3d1e90d0253d1ee850730851c8502b6ad752e3b8048734",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/deployed/policy.bas": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/transit_reference/policy.bas": "cd925baf36baed38b1ec19657f34966bd7b55c314b92b015b34b96466d96ddc3",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/anchor_restore/policy.bas": "af0884e4bf95866831def68ced2f38e26f733ba0ec1d3dbe3575a34a3949ba02",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/transit_anchor/policy.bas": "2af4045968f69910e9b3a33feb4cadeb356b847ae5027015a183e16aafa997f5",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260920_045449_29b23b/anchor_restore_v2/candidates/historical_anchor/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/snapshots/0000-b2693715459d/policy.bas": "b2693715459d0de7283ba6f45440c0084ea5c7781c2305e163976a6572246ca9",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/r5/default.bas": "781f97d93836e3bdf0b16304fa140b1bb18f2d56c169ce6788e0e8b9545f9d34",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-jordan-lineup/candidate/policy.bas": "f8fba2fa812f9d88f156a928daecc5ea5509c0388187e2ee9f324f12cd6899e2",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-anchored-support/hosted/anchor/tournament-portfolio/policy/policy.bas": "363ae27267d81a81086ee927c646e2090ee99da8d5ab3883b170e5a9472a3dfa",
+    "/Users/aaln/experiments/softmax/gota-research-20260916/coached-lanes/r5-convoy/screen/candidates/center/policy.bas": "9d08e68910a1b095ca5c171f6394dee0bc7384245dbc9d6f491c109c206198d0",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/forks/fork_20260919_102345_6fb224/readiness/candidates/first_level/policy.bas": "0db261ce253e53269039ef558d0c4452a34a370c3008125a966104cb34fb671b"
+  },
+  "interpretation": "Separable anchored restoration; exact historical reference. No private-rival or hosted evidence."
+}

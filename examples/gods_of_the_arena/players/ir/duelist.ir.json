@@ -1,0 +1,287 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_sustain_center_hero_priority_4",
+  "situation": {
+    "grounded": {
+      "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Every host decision.",
+        "candidate_exists": "The current scan selected an observed attackable enemy.",
+        "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+        "no_candidate": "No candidate was observed; no assertion about unseen enemies."
+      }
+    },
+    "notes": "Hosted replay evidence uses published game 2026.9.10.3. Hidden state reconstructed for offline diagnosis is not available to the policy. Independent host audit distinguishes frozen self data, live object/item queries, earlier inventory flags, and persistent engine intent; see B_observation_timing and B_action_effects."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "decisions"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+      "uncertainty": "Unseen enemies are unobserved. Tower targets and enemy intentions are not exposed."
+    },
+    "claims": {
+      "B_equipment": {
+        "claim": "Removing poison purchases may improve persistent equipment growth. The sustain-only center configuration failed its local validation (112/240 wins versus baseline 115/240); equipment growth alone has not demonstrated better fort wins. This targeting revision must be evaluated separately.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+            "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-sustain-result-20260910.json",
+            "sha256": "63f465d85d38cc2af47651d8f5af00f774f6c7200a7ab4e89118861d82f0f98d"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+            "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32"
+          }
+        ]
+      },
+      "B_duel": {
+        "claim": "Hero kills grant 150 XP and 100 gold, versus 25 XP and 15 gold for footmen. A distance-weighted hero preference may accelerate growth and reduce enemy pressure; it can also cause dangerous pursuit.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/sim.nim",
+            "sha256": "0c879609cd41d9617a82ec8fef359e4dc6c47aac43375eabb21c438dcef8be95"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+            "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32"
+          },
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-diagnostics-20260910.json",
+            "sha256": "c01ba9c144d81ce810041890b46d7c85d56a67999d88843b189aac86f1e36555"
+          }
+        ]
+      },
+      "B_local_gate": {
+        "claim": "Frozen BASIC 7247acb6fe63d5f0eb40dd21efe8e27263af06705bb7161faba362cc3d0e13f3 failed_local_gate: 123/240 candidate wins versus 100/240 matched baseline wins, across 24 independent seeds with all ten seats tested separately. Paired gain +0.0958; seed sign-test p=0.179642, alpha=0.025, required gain=0.1. This measures the complete configuration among nine default policies. It does not isolate individual changes or establish wider-field strength.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+            "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32"
+          }
+        ]
+      },
+      "B_stalemate": {
+        "claim": "Post hoc validation diagnosis: 18/40 candidate wins versus 0/40 baseline wins occurred on four seeds whose baseline control timed out. On the other seeds the candidate won 105/200 versus 100/200. Most observed gain came from games that baseline failed to finish; stronger hero dueling or equipment growth is not established as the cause. This split does not change the failed local superiority gate.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-diagnostics-20260910.json",
+            "sha256": "c01ba9c144d81ce810041890b46d7c85d56a67999d88843b189aac86f1e36555"
+          }
+        ]
+      },
+      "B_independent_reconstruction": {
+        "claim": "An independently authored baseline IR/lowering matched the original full AST, 500 real-VM scenarios and all actions/state hashes on two complete seeds. This policy differs from that baseline in rules [\"R1\", \"E1\"]. These are explicit strategy differences, not evidence of an unnoticed baseline translation bug. No win improvement follows from reconstruction parity.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+            "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+          }
+        ]
+      },
+      "B_observation_timing": {
+        "claim": "Actual-host probes distinguish decision-start self data from live item queries. After a potion was consumed, selfHp stayed at 1 while live HP rose; itemId immediately saw the empty slot. selfGold stayed 150 after a successful 70-gold purchase left 80 live gold, causing a subsequent 150-gold purchase to fail. Earlier inventory flags remained hasHeal=1 and emptySlot=0 after the last ration was consumed. Facts about query timing do not prove that changing replenishment timing improves wins.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+            "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+          }
+        ]
+      },
+      "B_action_effects": {
+        "claim": "An actual-host walkTo probe returned 0 but cleared attackObjectId (105 to 0); rejection is not universally atomic. A poison probe with policy-local bestId=999999 struck engine target 105. Policy-selected candidates, engine intent, accepted commands and realized effects are distinct. The failed-walk fixture intentionally began outside navigable terrain; it establishes API semantics, not ordinary-game frequency.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+            "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+          }
+        ]
+      },
+      "B_equipment_resources": {
+        "claim": "An actual-host 80-gold helmet purchase increased maximum HP by 50 and current HP from 1 to 51; selfHp/selfMaxHp stayed at their decision-start values. Engine stat refresh also adds maximum-mana increases to current mana. Capping equipment trades away immediate resource gain as well as permanent stats. This may inform later sustain experiments; competitive benefit remains untested.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+            "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "G_fort": {
+      "preference": "Team fort victory is the terminal evaluation objective. Timeouts score zero.",
+      "provenance": "authored"
+    },
+    "G_base": {
+      "preference": "Maintain baseline decision accounting; combat, economy, and fallback objectives are specified by their own rules.",
+      "provenance": "authored"
+    },
+    "G_capacity": {
+      "preference": "Keep baseline healing and mana support while preserving gold for persistent equipment growth by omitting poison purchases.",
+      "provenance": "authored"
+    },
+    "G_center": {
+      "preference": "Return to the baseline central destination when no eligible enemy is observed.",
+      "provenance": "authored"
+    },
+    "G_duel": {
+      "preference": "Prefer nearby enemy heroes over footmen to gain the larger hero kill rewards and remove enemy damage. Distance still bounds the preference.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "count": {
+      "operator": "count_decision",
+      "parameters": {}
+    },
+    "observe": {
+      "operator": "weighted_enemy",
+      "parameters": {
+        "hero_weight": 1,
+        "footman_weight": 4,
+        "structure_weight": 4
+      }
+    },
+    "attack": {
+      "operator": "attack_candidate",
+      "parameters": {}
+    },
+    "consume": {
+      "operator": "consume_inventory",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      }
+    },
+    "sustain": {
+      "operator": "buy_sustain_only",
+      "parameters": {}
+    },
+    "equipment": {
+      "operator": "buy_equipment",
+      "parameters": {}
+    },
+    "fallback": {
+      "operator": "walk_point",
+      "parameters": {
+        "x": 64,
+        "y": 64
+      }
+    }
+  },
+  "strategy": [
+    {
+      "id": "R0",
+      "when": "always",
+      "skill": "count",
+      "for": [
+        "G_base"
+      ]
+    },
+    {
+      "id": "R1",
+      "when": "always",
+      "skill": "observe",
+      "for": [
+        "G_duel"
+      ]
+    },
+    {
+      "id": "R2",
+      "when": "candidate_exists",
+      "skill": "attack",
+      "for": [
+        "G_duel"
+      ]
+    },
+    {
+      "id": "E0",
+      "when": "always",
+      "skill": "consume",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E1",
+      "when": "always",
+      "skill": "sustain",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "E2",
+      "when": "inventory_has_empty",
+      "skill": "equipment",
+      "for": [
+        "G_capacity"
+      ]
+    },
+    {
+      "id": "R4",
+      "when": "no_candidate",
+      "skill": "fallback",
+      "for": [
+        "G_center"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-basic/1",
+    "game_version": "2026.9.10.3",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 12,
+    "parent": "47af6688aa24eda3c461a3e248de375e5aeae5d00323438d1c6d8774e82d9020",
+    "change": {
+      "origin": "independent_ir_reconciliation",
+      "behavior_changed": false
+    },
+    "needs_review": [
+      "belief/B_duel",
+      "belief/B_equipment",
+      "belief/B_local_gate",
+      "belief/B_stalemate"
+    ],
+    "evidence": [
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/xp-control-20260910.json",
+        "sha256": "b3ce7c4121c2829b41a62806ac165b5810fb46d694e9bb1146424afada60259f"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/local-sustain-result-20260910.json",
+        "sha256": "63f465d85d38cc2af47651d8f5af00f774f6c7200a7ab4e89118861d82f0f98d"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-result-20260910.json",
+        "sha256": "aafd7ecaaafcad98d3a0786a4cec8c79d364d7140cbbbc9c17ca6fb826e3ae32"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/local-duelist-diagnostics-20260910.json",
+        "sha256": "c01ba9c144d81ce810041890b46d7c85d56a67999d88843b189aac86f1e36555"
+      },
+      {
+        "artifact": "examples/gods_of_the_arena/players/ir/independent-20260910-result.json",
+        "sha256": "feb100c0986023461b0d110411796431e1623bb53530b87fcd267f0e620c8ff5"
+      }
+    ]
+  }
+}

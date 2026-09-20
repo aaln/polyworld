@@ -1,0 +1,59 @@
+{
+  "at": "2026-09-20T15:33:30Z",
+  "parent_snapshot": "0000-b2693715459d",
+  "behavior_parent": "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T060430Z-2c1b16/deployed-branch-capture/deployed",
+  "deployed_sha256": "be6affd3b3b9516a15dc8b32687c29b728adc4aa367fc651ba5c0fcefb9cbf73",
+  "hypothesis": "Early red side-lane assignment leaves middle tower16 under a lone visible enemy109 attacking it by1039 with all deployed heroes56+tiles away. Fixed Warlock middle guard reaches(69,37)by654 but spends1763early decisions walkingto(68,38), no landedhituntil2037, and its package loses deployedwin cells. One authored caster, or the casterpair, traverses a public middle waypoint(58,56) once, immediately resumes ordinary targeting/creep escort upon arrivingwithin6tiles, and expiresat1800. Combat,motion,active localdefense retain priority. This replaces staticguarding with transit and tests coverage/farming together. It derives from current deployedpolicy, not broadcritical60; no opponentidentity orseedmatching.",
+  "variants": {
+    "warlock": {
+      "first": 8,
+      "second": 8
+    },
+    "lich": {
+      "first": 7,
+      "second": 7
+    },
+    "casters": {
+      "first": 7,
+      "second": 8
+    }
+  },
+  "waypoint": {
+    "x": 58,
+    "y": 56,
+    "arrival_radius": 6,
+    "deadline": 1800
+  },
+  "if_true": "Caster reaches middle, then leaves initialtransit and landsordinaryhits instead of idling while localfort andequipmentpreservation hold. Adds redwins or reducesreddeaths comparedwith deployed.",
+  "if_false": "No useful arrival, idlefarming persists, or lostdeployedfortcells/survivalregression rejectsvariant.",
+  "implementation": "Versioned equivalent selected-target/wavecache on currentdeployed observation; reuse old fallbackcache binding. Must match everyownedcommand/everyhash in complete redloss andbluewin before localcandidategames. No oldcontractedit.",
+  "native_rule": "All10classes; arrival persistence; deadline; combatsupersedestransit; activedefenseprecedence; equipment; dense240/noenemy andmixedobjects; unchanged256globals,65536bytes,20000instructions,50000work. Allcapturedinputs/errorsretained.",
+  "screen": {
+    "seed": 9830000,
+    "cases_per_source": 12,
+    "sources": [
+      "deployed",
+      "warlock",
+      "lich",
+      "casters"
+    ],
+    "opponents": [
+      "accepted",
+      "default",
+      "blue_repair",
+      "support_anchor",
+      "deployed",
+      "center_proxy"
+    ],
+    "decision_rule": "Complete all48audited games. Eachcandidate mustretain everydeployed winning opponent/colorcell, equipallclasses, totaldeaths<=max(1.15*deployed,deployed+5), and addatleastoneredfortwin orreduce reddeaths>=10%withnonregressing redwins. Must observe completionoftransit andsubsequentnormalplay in fullwin/lossreviews ifavailable. This onlynominates fresh expandedlocalconfirmation, neverhostedqualification directly. Draws0;invalid/incompletequarantine.",
+    "selection": "Among eligiblevariants choose higherredwins, then highertotalwins, then fewerteamdeaths, then fewerwinningticks, thenname; confirmfreshbeforeXP."
+  },
+  "critique": "PrivateRichard/Alex/Jordan sourcesunavailable; ownedreactinglocalcontrols cannotprove exacttargetrepair. Threevariantsadaptiveexploration, notholdout. Fixedmapandlineups correlated; reportdistinctcommandstreams. Initialdefenseopportunityfromexistingobservedtrace, notcounterfactualproof. No sourcechangesduringmatrix.",
+  "future_hosted": "Only after localconfirmation: normal40-200batches throughresearcher.pyxp-create, pinnedexactRichard135/Alexg002v1/Jordan268 andcurrentchampions. AllFOCUSfreshgatesretained; allsixfieldreferencesretained. No frozenholdoutornewXPnow.",
+  "evidence": [
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T060430Z-2c1b16/richard-solo-pressure-opportunity.json",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T152212Z-628823/middle-review/middle_warlock-9820000/equivalence.json",
+    "/Users/aaln/experiments/softmax/gota-autoresearch/cycles/20260920T152212Z-628823/middle-review/middle_warlock-9820000/mechanism.json"
+  ],
+  "known_failures": "Fixedmiddle+critical60packagehasalready lostrequired blueaccepted/reddefaultwins; matrixongoingandmustcomplete. Olderbroadcenterfarmingandallroleinwardrallyfailuresretained. This is a one-timeinitialassignment with deployedremote-recallpolicy andexplicitarrivaltermination, notunchangedretry."
+}

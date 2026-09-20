@@ -1,0 +1,28 @@
+{
+  "schema": "gota-microplay-hosted-bundle/1",
+  "research": {
+    "artifact": "docs/microplay/2026-09-20-hosted/research.ir.json",
+    "sha256": "82476d1909f4bf8890636aee61a889fdfd62033f7523ea62b6437d07dfa8a58c"
+  },
+  "policies": {
+    "finish": {
+      "semantic_digest": "f0f9a1b3113bd8f7292b4d3eaaf386b85421acd7031843d19c7f810b9beeb0be",
+      "source_sha256": "899c856ec2c80220c55239d4d6c084bc62f7dd345f12f75d7db447cb95334cc8",
+      "unchanged_source": true,
+      "roundtrip": true
+    },
+    "combined": {
+      "semantic_digest": "81182ebf29cfe7679b91860f4a482224fd4302892f042fd9bd6b4a3f5bf19d75",
+      "source_sha256": "46fd4396b5ee50e8817f1eed9c280dbaf5aa8adbb01cba06ba1da3fd30cd7fbc",
+      "unchanged_source": true,
+      "roundtrip": true
+    }
+  },
+  "instrument": {
+    "hosted.py": "1e23f34e2a899c8dc11c412f4989b2bd9c0774a102e34be55f462046bc0df952",
+    "hosted_probe.nim": "feab7633b7eeeb258d399cd45914ad9554424f2ec865265406daed9e68e195f1",
+    "hosted_report.py": "1847e808b240f03c9deb6c36fbce47a6a3e446f5ad8db0831f16617ef753e74d"
+  },
+  "probe_binary_sha256": "b2e3abfba6fb5943ad3a7b2d3fdb51e764dcc727f443a2290c207cf90ee3cf10",
+  "decisions_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+}
