@@ -1,0 +1,197 @@
+{
+  "situation": {
+    "observation": "Current host snapshots and visibility-filtered objects; integer tiles; six inventory slots.",
+    "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+    "predicates": {
+      "always": "Every host decision.",
+      "inventory_has_empty": "An empty slot was seen during the earlier inventory scan.",
+      "no_candidate_no_motion": "No observed attackable candidate and no accepted retreat movement in this decision."
+    }
+  },
+  "belief": {
+    "memory": [
+      "adMode",
+      "ap13",
+      "ap18",
+      "ap19",
+      "ap22",
+      "ap23",
+      "ap26",
+      "ap3",
+      "ap32",
+      "ap33",
+      "ap38",
+      "ap39",
+      "ap40",
+      "ap41",
+      "ap42",
+      "ap44",
+      "ap45",
+      "ap46",
+      "ap47",
+      "ap48",
+      "ap5",
+      "ap7",
+      "criticalUntil",
+      "decisions",
+      "defLastTick",
+      "defPointX",
+      "defPointY",
+      "defThreatX",
+      "defThreatY",
+      "defUntil",
+      "escortId",
+      "kiteBursts",
+      "kiteEscapes",
+      "kiteMoveTicks",
+      "kiteSpellCasts",
+      "lastJoinTick",
+      "lastJoinX",
+      "lastJoinY",
+      "loadoutPurchases",
+      "motionCompletions",
+      "motionFailures",
+      "motionLastHits",
+      "motionLastHp",
+      "motionLastTick",
+      "motionLoss",
+      "motionReady",
+      "motionStart",
+      "motionStartSeparation",
+      "motionThreat",
+      "motionUntil",
+      "motionX",
+      "motionY",
+      "recoverySteps",
+      "stalled",
+      "transitDone",
+      "weaponStarts"
+    ],
+    "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. join_wave revalidates an escort by observed living ID whenever selected.",
+    "uncertainty": "Unseen enemies are unobserved. Visible object target IDs are exposed; zero can mean no target or a target outside visibility. Future enemy intentions remain unknown."
+  },
+  "skills": {
+    "count": {
+      "meaning": "Increment a diagnostic counter; it does not influence actions.",
+      "parameters": {},
+      "actions": []
+    },
+    "observe": {
+      "meaning": "Sample the first64 public objects every24ticks through1800. Two distinct visible living enemies with exact boots+elixir, boots-only, or dagger-only inventories and no conflicting recognized profile latch adMode1,2,3 respectively. No identity, seed, enemy memory or hidden inventory is available. This is a provisional inventory profile, shared by other policies. Unknown/dagger retains60tile critical recall and late3600 red formation. Boots-only uses 28tile local recall. Boots+elixir restores historical blue remote defense and hero-first defense priority. Red ordinary observation uses the frozen caster-transit/tower-handoff reference; its complete early package is tested with the late conditional formation. Mode is episode-latched and retained through death; repeated frames add no evidence. All original parent alarms, targeting order and visibility semantics otherwise remain. Storage-only alias map: {'backdoorAccept': 'ap0', 'backdoorActive': 'ap1', 'backdoorAlly': 'ap2', 'backdoorCommitted': 'ap3', 'backdoorD': 'ap4', 'backdoorFirstSeen': 'ap5', 'backdoorGod': 'ap6', 'backdoorGroupUntil': 'ap7', 'backdoorGuardA': 'ap8', 'backdoorGuardB': 'ap9', 'backdoorHelpers': 'ap10', 'backdoorI': 'ap11', 'backdoorKind': 'ap12', 'backdoorLastSeen': 'ap13', 'backdoorNearer': 'ap14', 'backdoorSelfD': 'ap15', 'backdoorSelfX': 'ap16', 'backdoorSelfY': 'ap17', 'backdoorUntil': 'ap18', 'backdoorWatched': 'ap19', 'backdoorX': 'ap20', 'backdoorY': 'ap21', 'defenseDecisions': 'ap22', 'defenseRefreshes': 'ap23', 'observedObjectCount': 'ap24', 'perimeterAdmit': 'ap25', 'perimeterAnchor': 'ap26', 'perimeterBound': 'ap27', 'perimeterBoundSq': 'ap28', 'perimeterDx': 'ap29', 'perimeterDy': 'ap30', 'perimeterEnabled': 'ap31', 'perimeterLastCombat': 'ap32', 'perimeterLastTick': 'ap33', 'perimeterObjX': 'ap34', 'perimeterObjY': 'ap35', 'perimeterRadiusSq': 'ap36', 'perimeterReachSq': 'ap37', 'perimeterX': 'ap38', 'perimeterY': 'ap39', 'responseD': 'ap40', 'responseDx': 'ap41', 'responseDy': 'ap42', 'responseEligible': 'ap43', 'responseIndex': 'ap44', 'responseKind': 'ap45', 'responseMode': 'ap46', 'responseOwnD': 'ap47', 'responseUntil': 'ap48', 'transitDx': 'mDx', 'transitDy': 'mDy', 'transitObservedDefense': 'defActive', 'distanceKind': 'buildingWeight', 'macroIndex': 'index', 'gaReady': 'waveCached'}.",
+      "parameters": {},
+      "actions": []
+    },
+    "transit_state": {
+      "meaning": "Conditional component of the observed-profile formation fork. Track one initial public-map middle waypoint for the authored red classes. At each decision, independent of current combat, mark transit permanently complete when the observed own coordinates enter arrival_radius. The memory persists across respawns and never restarts after arrival. The route is eligible only before transit_deadline, before arrival and outside active defense. This skill issues no commands, selects no enemies and infers no hidden state. The fallback consumes eligibility only when normal strategy has no combat candidate and no accepted motion; after arrival it immediately uses normal creep escort. Blue and all other classes remain outside this opening. The defense input is the explicit alias from lineup_deployed_cached_v2; no second observation or hidden input is introduced. Storage-only alias map: {'backdoorAccept': 'ap0', 'backdoorActive': 'ap1', 'backdoorAlly': 'ap2', 'backdoorCommitted': 'ap3', 'backdoorD': 'ap4', 'backdoorFirstSeen': 'ap5', 'backdoorGod': 'ap6', 'backdoorGroupUntil': 'ap7', 'backdoorGuardA': 'ap8', 'backdoorGuardB': 'ap9', 'backdoorHelpers': 'ap10', 'backdoorI': 'ap11', 'backdoorKind': 'ap12', 'backdoorLastSeen': 'ap13', 'backdoorNearer': 'ap14', 'backdoorSelfD': 'ap15', 'backdoorSelfX': 'ap16', 'backdoorSelfY': 'ap17', 'backdoorUntil': 'ap18', 'backdoorWatched': 'ap19', 'backdoorX': 'ap20', 'backdoorY': 'ap21', 'defenseDecisions': 'ap22', 'defenseRefreshes': 'ap23', 'observedObjectCount': 'ap24', 'perimeterAdmit': 'ap25', 'perimeterAnchor': 'ap26', 'perimeterBound': 'ap27', 'perimeterBoundSq': 'ap28', 'perimeterDx': 'ap29', 'perimeterDy': 'ap30', 'perimeterEnabled': 'ap31', 'perimeterLastCombat': 'ap32', 'perimeterLastTick': 'ap33', 'perimeterObjX': 'ap34', 'perimeterObjY': 'ap35', 'perimeterRadiusSq': 'ap36', 'perimeterReachSq': 'ap37', 'perimeterX': 'ap38', 'perimeterY': 'ap39', 'responseD': 'ap40', 'responseDx': 'ap41', 'responseDy': 'ap42', 'responseEligible': 'ap43', 'responseIndex': 'ap44', 'responseKind': 'ap45', 'responseMode': 'ap46', 'responseOwnD': 'ap47', 'responseUntil': 'ap48', 'transitDx': 'mDx', 'transitDy': 'mDy', 'transitObservedDefense': 'defActive', 'distanceKind': 'buildingWeight', 'macroIndex': 'index', 'gaReady': 'waveCached'}.",
+      "parameters": {},
+      "actions": []
+    },
+    "attack": {
+      "meaning": "After a newly observed basic hit, issue a short terrain-checked movement order for recovery_ticks before resuming attack. Optionally include melee classes. This attempts to shorten attack recovery; brief commands may only turn and are not effective kiting by themselves. Independently, configured recent-damage/low-HP danger triggers retain the full min_ticks/max_ticks separation-based retreat. Preserve the parent controller's destination selection, failed-move attack fallback, explicit offensive spell attempt, respawn-event reset and no-target arbitration. Source-derived cadence benefit is not a guarantee of damage, survival or wins. Disable normal post-hit recovery for plain_class; retain its ordinary attackTarget and automatic abilities. Other classes keep the parent controller. Optional emergency retreat remains separate (disabled in this experiment). This class exception needs fresh evidence. Above motion_object_limit observed objects, skip the expensive recovery scan and issue an ordinary attack; clear per-decision motionActive. On resuming, the existing decision-gap reset invalidates stale recovery memory. This bounds combat-controller work, not the host object count. During active shared defense, use defense_motion_limit instead of the ordinary motion scan limit to reserve VM capacity for regrouping. Outside defense the parent combat controller is unchanged. Formation tether supersedes inherited recovery/attack movement while rejoining.",
+      "parameters": {
+        "motion_object_limit": 80,
+        "defense_motion_limit": 40,
+        "targeted": 0,
+        "min_ticks": 12,
+        "gain_tiles": 2,
+        "risk_hp": 0,
+        "normal": 1,
+        "plain_class": 9,
+        "threat_tiles": 7,
+        "all_classes": 1,
+        "max_ticks": 64,
+        "recovery_ticks": 1,
+        "step_tiles": 3,
+        "support": 1,
+        "spells": 1
+      },
+      "actions": [
+        "walkTo",
+        "attackTarget",
+        "castTarget"
+      ]
+    },
+    "consume": {
+      "meaning": "Scan slots in order, set presence before use, consume below strict HP/mana ratios or poison with a candidate. Self snapshots and earlier presence flags are not refreshed; ignore returns.",
+      "parameters": {
+        "heal_denominator": 5,
+        "heal_numerator": 3,
+        "mana_denominator": 5,
+        "mana_numerator": 2
+      },
+      "actions": [
+        "useItem"
+      ]
+    },
+    "sustain": {
+      "meaning": "Buy healing below half HP and mana below half mana, using baseline order and snapshot flags. Make no poison purchase attempt, leaving that spending available for later equipment. Engine checks live balances; equipment acquisition and improved wins are hypotheses, not guarantees.",
+      "parameters": {},
+      "actions": [
+        "buyItem"
+      ]
+    },
+    "equipment": {
+      "meaning": "Blue team (classes Vanguard, Ranger, Arcanist, Druid Warden, Demon Hunter) uses the explicit ordered equipment progression. If red_loadout=1, red Death Knight, Crossbowman and Berserker also use it. Other red heroes retain the exact baseline equipment logic. This is a declared lineup-specific hypothesis, not a guarantee of superiority. Ordered branch: Scan live inventory; buy only the first missing item in the five-item ordered equipment plan, when an empty slot and enough starting gold exist. At most one equipment attempt per decision; the host enforces the remaining balance after earlier purchases. No class restriction. Five planned equipment items leave one slot for consumables; earlier consumables may still block gear. Baseline branch: Ranger and Crossbowman start with Crimson Dagger when affordable, trading initial boot speed for +8 basic damage to improve last hits and growth. Then retain existing class equipment purchases. Other classes and consumables are unchanged. Host return values establish accepted purchases.",
+      "parameters": {
+        "red_loadout": 0,
+        "first_item": 11,
+        "second_item": 13,
+        "third_item": 18,
+        "fourth_item": 19,
+        "fifth_item": 16
+      },
+      "actions": [
+        "buyItem"
+      ]
+    },
+    "fallback": {
+      "meaning": "When coached formation is active, route to the group rendezvous, selected perimeter entry, shared exposed objective or home defense point. Terrain-check the point and eight nearby alternatives; use centroid on rejected movement. Otherwise retain the entire parent route. Outside active formation retain the frozen handoff caster-transit route. Storage-only alias map: {'backdoorAccept': 'ap0', 'backdoorActive': 'ap1', 'backdoorAlly': 'ap2', 'backdoorCommitted': 'ap3', 'backdoorD': 'ap4', 'backdoorFirstSeen': 'ap5', 'backdoorGod': 'ap6', 'backdoorGroupUntil': 'ap7', 'backdoorGuardA': 'ap8', 'backdoorGuardB': 'ap9', 'backdoorHelpers': 'ap10', 'backdoorI': 'ap11', 'backdoorKind': 'ap12', 'backdoorLastSeen': 'ap13', 'backdoorNearer': 'ap14', 'backdoorSelfD': 'ap15', 'backdoorSelfX': 'ap16', 'backdoorSelfY': 'ap17', 'backdoorUntil': 'ap18', 'backdoorWatched': 'ap19', 'backdoorX': 'ap20', 'backdoorY': 'ap21', 'defenseDecisions': 'ap22', 'defenseRefreshes': 'ap23', 'observedObjectCount': 'ap24', 'perimeterAdmit': 'ap25', 'perimeterAnchor': 'ap26', 'perimeterBound': 'ap27', 'perimeterBoundSq': 'ap28', 'perimeterDx': 'ap29', 'perimeterDy': 'ap30', 'perimeterEnabled': 'ap31', 'perimeterLastCombat': 'ap32', 'perimeterLastTick': 'ap33', 'perimeterObjX': 'ap34', 'perimeterObjY': 'ap35', 'perimeterRadiusSq': 'ap36', 'perimeterReachSq': 'ap37', 'perimeterX': 'ap38', 'perimeterY': 'ap39', 'responseD': 'ap40', 'responseDx': 'ap41', 'responseDy': 'ap42', 'responseEligible': 'ap43', 'responseIndex': 'ap44', 'responseKind': 'ap45', 'responseMode': 'ap46', 'responseOwnD': 'ap47', 'responseUntil': 'ap48', 'transitDx': 'mDx', 'transitDy': 'mDy', 'transitObservedDefense': 'defActive', 'distanceKind': 'buildingWeight', 'macroIndex': 'index', 'gaReady': 'waveCached'}. H-ESCORT-HOLD-01: the escort/route destination is issued with attackMove instead of walkTo so a hero following its wave auto-acquires enemies within melee attack-move range (8 tiles) or its ranged attack range; walkTo suppresses acquisition entirely (acquireRadius = 0 while moving). Cycle 11 showed a per-tick attackMove reissue clears the acquired target before any hit (red trajectory identical to parent, blue regressed); this variant issues the command only on branch entry and every 48 ticks (>= one full attack period of every class, max 36) so acquisition -> swing -> hit can complete. Hypothesis, not a validated gain: falsified if red still loses seeds 54/101/202 vs Richard v135 with no basic-hit increase, or blue/red regress vs the parent.",
+      "parameters": {},
+      "actions": [
+        "attackMove",
+        "walkTo"
+      ]
+    },
+    "tower_handoff": {
+      "meaning": "Conditional component of the observed-profile formation fork. Final red-only movement override after the ordinary strategy. Initiate only when the selected observed enemy tower is standing, publicly targets self, self HP is at most hp_percent, and tower HP exceeds finish_hp and twice selfAttackDamage. Optional positive support witness: a living public allied creep within creep_tiles integer-coordinate tiles of that tower among the first scan_limit public objects. A missed witness never establishes absence. Choose the closest terrain-walkable one of eight compass destinations at release_tiles from the tower center. Retain that destination for at most hold_ticks; end immediately if the tower disappears, dies, or changes target, on a skipped living decision, failed walk, or deadline. Wait retry_ticks after completion/expiry/failure before another release. This last walk supersedes earlier target or movement orders; earlier purchases are retained. Frozen self HP is the predecision value even after same-tick healing. Accepted movement is not proof of arrival or safety. Reuse only m* scratch after its original users; preserve all persistent motion* and defense state. No blue commands, private states, opponent labels or seed checks. Storage revision: use response* slots only on red, where the blue-only response observer never accesses them. Map: {'towerReleaseId': 'responseKind', 'towerReleaseX': 'responseDx', 'towerReleaseY': 'responseDy', 'towerReleaseUntil': 'responseUntil', 'towerReleaseReady': 'responseMode', 'towerReleaseLastTick': 'responseOwnD', 'towerReleaseStarts': 'responseD', 'towerReleaseMoves': 'responseIndex', 'towerReleaseActive': 'responseEligible'}. Blue branch and persistent blue response slots are untouched. Storage-only alias map: {'backdoorAccept': 'ap0', 'backdoorActive': 'ap1', 'backdoorAlly': 'ap2', 'backdoorCommitted': 'ap3', 'backdoorD': 'ap4', 'backdoorFirstSeen': 'ap5', 'backdoorGod': 'ap6', 'backdoorGroupUntil': 'ap7', 'backdoorGuardA': 'ap8', 'backdoorGuardB': 'ap9', 'backdoorHelpers': 'ap10', 'backdoorI': 'ap11', 'backdoorKind': 'ap12', 'backdoorLastSeen': 'ap13', 'backdoorNearer': 'ap14', 'backdoorSelfD': 'ap15', 'backdoorSelfX': 'ap16', 'backdoorSelfY': 'ap17', 'backdoorUntil': 'ap18', 'backdoorWatched': 'ap19', 'backdoorX': 'ap20', 'backdoorY': 'ap21', 'defenseDecisions': 'ap22', 'defenseRefreshes': 'ap23', 'observedObjectCount': 'ap24', 'perimeterAdmit': 'ap25', 'perimeterAnchor': 'ap26', 'perimeterBound': 'ap27', 'perimeterBoundSq': 'ap28', 'perimeterDx': 'ap29', 'perimeterDy': 'ap30', 'perimeterEnabled': 'ap31', 'perimeterLastCombat': 'ap32', 'perimeterLastTick': 'ap33', 'perimeterObjX': 'ap34', 'perimeterObjY': 'ap35', 'perimeterRadiusSq': 'ap36', 'perimeterReachSq': 'ap37', 'perimeterX': 'ap38', 'perimeterY': 'ap39', 'responseD': 'ap40', 'responseDx': 'ap41', 'responseDy': 'ap42', 'responseEligible': 'ap43', 'responseIndex': 'ap44', 'responseKind': 'ap45', 'responseMode': 'ap46', 'responseOwnD': 'ap47', 'responseUntil': 'ap48', 'transitDx': 'mDx', 'transitDy': 'mDy', 'transitObservedDefense': 'defActive', 'distanceKind': 'buildingWeight', 'macroIndex': 'index', 'gaReady': 'waveCached'}.",
+      "parameters": {},
+      "actions": [
+        "walkTo"
+      ]
+    }
+  },
+  "temporal_execution": {
+    "facts": {
+      "self_data": "self* and worldTick are set once before each hero's VM decision; use/buy do not refresh them.",
+      "queries": "Self data and visible object fields are fixed for one VM decision. Inventory and ability queries read live state; spell queries can include casts appended during the decision.",
+      "inventory_flags": "Presence and empty-slot flags accumulate before useItem for each slot. They are earlier observations, not current post-use/post-buy inventory.",
+      "gold": "All affordability guards read starting selfGold; each buyItem checks and spends the remaining live balance.",
+      "equipment": "Successful purchases refresh stats: increases in maximum HP/mana also add that increase to current HP/mana. Resource gear therefore has immediate sustain effects as well as permanent capacity.",
+      "attack": "attackTarget stores an engine pursuit target if valid; accepted does not prove path reachability or damage.",
+      "walk": "walkTo clears attack intent before pathfinding, including when pathfinding subsequently returns false.",
+      "poison": "Poison uses the current engine attackObjectId and checks normal attack range, visibility and structure exposure before consumption.",
+      "failures": "A command return of zero does not universally mean no state changed. Failed walkTo can clear attack intent.",
+      "memory": "Policy globals persist; baseline resets its decision-local scan variables. Engine attack/movement intent is separate persistent state.",
+      "spells": "Explicit castTarget/castPoint inspect live mana, charges and cooldowns. Bot automatic spells remain enabled; explicit casts share the same resources.",
+      "terrain": "terrainWalkable includes team-known living building footprints. Destroyed buildings release occupied tiles after observation; attack range is measured from building footprint edges.",
+      "combat_timing": "selfAttacksLanded counts successful basic hits for the lifetime of this hero, across respawns. selfAttackCooldown is ticks to next basic hit assuming uninterrupted range, including windup/recovery; movement can cancel the swing.",
+      "combat_units": "selfAttackRange and selfMoveSpeed use world units; one tile is60000 units. Object targets and velocities are visibility-filtered.",
+      "waves": "Each surviving barracks spawns three creeps, six per lane every480ticks at24Hz. Barracks are objectKind5 and become exposed after lane towers fall.",
+      "balance": "TowerHP950/1300/1950; DKheal36; Warlockmana30; Crossbow46+9/lvl; Berserker38+8/lvl; LichIceSpear48/range400000. Values verified at5c701f9; barracksHP950 in source, despite docs still saying900.",
+      "objective": "Clearing any lane exposes two god guard towers, IDs28/29 forred and30/31 forblue. Both enemyguards mustfall before the god isexposed. Guards use gate-tower HP/range/damage. Barracks are optional for heroes, but creeps prioritize lane barracks beforeguards.",
+      "attack_move": "attackMove(x,y) is now available to BASIC and records the same action as human attack-move."
+    },
+    "rule_order": [
+      "R0",
+      "R1",
+      "R_profile_transit",
+      "R2",
+      "E0",
+      "E1",
+      "E2",
+      "R4",
+      "R_profile_tower"
+    ],
+    "action_arbitration": "Rules execute in order; multiple commands can affect shared engine state during one decision."
+  }
+}

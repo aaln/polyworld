@@ -1,12 +1,12 @@
 {
- "cycle": 11,
+ "cycle": 12,
  "phase": "activation-confirmed-runtime-repair-pending",
  "focus": "Richard v135 red loss (hosted 0/40 red, 40/40 blue; locally reproduced 0/3 red, 3/3 blue)",
- "hypothesis_id": "H-ESCORT-ATKMOVE-01",
+ "hypothesis_id": "H-ESCORT-HOLD-01",
  "status": "null-result",
- "next_action": "H-ESCORT-HOLD-01: skip reissuing move while attackMoving to same tile so acquisition completes; gates red<5898 collapse, blue 3-0; no hosted spend until red beats parent locally",
- "last_result": "H-ESCORT-ATKMOVE-01 (bf7086ae): red vs Richard 0-3 hash-identical to parent (per-tick attackMove reissue resets acquisition), blue 0-3 (parent 3-0, regression), 0 invalid; falsified.",
- "checked_at": "2026-09-21T18:23:37.632280+00:00",
+ "next_action": "H-FARM-R2-01: trace R2 attackTarget selection/retarget cadence red-54 ticks 0-1500 vs Richard; test target-hold through windup; no hosted spend until red beats parent locally",
+ "last_result": "H-ESCORT-HOLD-01 (1d1b5c23): red vs Richard 0-3 (faster collapse, 3x deaths), blue 0-3 (parent 3-0), 0 invalid; falsified \u2014 attack-move escort pulls heroes into enemies.",
+ "checked_at": "2026-09-21T20:23:38.625392+00:00",
  "hypotheses": [
   {
    "id": "H-RED-TRANSIT-01",
@@ -74,6 +74,14 @@
    "variants": {
     "atkmove": "bf7086ae; red vs Richard 0-3 (identical to parent), blue 0-3 regression"
    }
+  },
+  {
+   "id": "H-ESCORT-HOLD-01",
+   "status": "falsified",
+   "cycle": 12,
+   "variants": {
+    "atkhold": "1d1b5c23; red vs Richard 0-3 (3x deaths), blue 0-3 regression"
+   }
   }
  ],
  "trigger": {
@@ -83,7 +91,7 @@
   "basis": "3 losses / 0 wins vs current Aaron+Coach versions across checks 00:23Z and 02:23Z (2 distinct streams: blue x1 identical stream, red x1); relh #2 above both of ours"
  },
  "next": [
-  "H-ESCORT-HOLD-01 (see CHECKPOINT cycle 11)",
+  "H-FARM-R2-01 (see CHECKPOINT cycle 12)",
   "Blue vs relh: scenario-vm single-tick trace of hero 108 @1418 (attempted!=effective retarget)"
  ]
 }
