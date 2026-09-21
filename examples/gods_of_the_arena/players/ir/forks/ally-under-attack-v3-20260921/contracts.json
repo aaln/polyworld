@@ -1,0 +1,450 @@
+{
+ "buy_sustain_only": {
+  "actions": [
+   "buyItem"
+  ],
+  "meaning": "Buy healing below half HP and mana below half mana, using baseline order and snapshot flags. Make no poison purchase attempt, leaving that spending available for later equipment. Engine checks live balances; equipment acquisition and improved wins are hypotheses, not guarantees.",
+  "memory": [],
+  "parameters": {},
+  "reads": [
+   "inventory"
+  ],
+  "template": "if selfHp * 2 < selfMaxHp then\n  if hasHeal = 0 then\n    if selfGold >= 50 then\n      buyItem(2)\n    end if\n    if selfGold >= 30 then\n      buyItem(1)\n    end if\n  end if\nend if\nif selfMaxMana > 0 then\n  if selfMana * 2 < selfMaxMana then\n    if hasMana = 0 then\n      if selfGold >= 45 then\n        buyItem(3)\n      end if\n    end if\n  end if\nend if",
+  "writes": []
+ },
+ "consume_inventory": {
+  "actions": [
+   "useItem"
+  ],
+  "meaning": "Scan slots in order, set presence before use, consume below strict HP/mana ratios or poison with a candidate. Self snapshots and earlier presence flags are not refreshed; ignore returns.",
+  "memory": [],
+  "parameters": {
+   "heal_denominator": [
+    5,
+    1,
+    100
+   ],
+   "heal_numerator": [
+    3,
+    0,
+    100
+   ],
+   "mana_denominator": [
+    5,
+    1,
+    100
+   ],
+   "mana_numerator": [
+    2,
+    0,
+    100
+   ]
+  },
+  "reads": [
+   "candidate"
+  ],
+  "template": "hasHeal = 0\nhasMana = 0\nhasPoison = 0\nhasGear = 0\nemptySlot = 0\nslot = 0\nwhile slot < 6\n  id = itemId(slot)\n  if id = 0 then\n    emptySlot = 1\n  end if\n  if id = 1 then\n    hasHeal = 1\n  end if\n  if id = 2 then\n    hasHeal = 1\n  end if\n  if id = 3 then\n    hasMana = 1\n  end if\n  if id = 4 then\n    hasPoison = 1\n  end if\n  if id > 4 then\n    hasGear = 1\n  end if\n  if id = 1 or id = 2 then\n    if selfHp * param_heal_denominator < selfMaxHp * param_heal_numerator then\n      useItem(slot)\n    end if\n  end if\n  if id = 3 then\n    if selfMana * param_mana_denominator < selfMaxMana * param_mana_numerator then\n      useItem(slot)\n    end if\n  end if\n  if id = 4 then\n    if bestId <> 0 then\n      useItem(slot)\n    end if\n  end if\n  slot = slot + 1\nwend",
+  "writes": [
+   "inventory"
+  ]
+ },
+ "count_decision": {
+  "actions": [],
+  "meaning": "Increment a diagnostic counter; it does not influence actions.",
+  "memory": [
+   "decisions"
+  ],
+  "parameters": {},
+  "reads": [],
+  "template": "decisions = decisions + 1",
+  "writes": []
+ },
+ "formation_profile_observe_v1_profile_pruned_v1": {
+  "actions": [],
+  "meaning": "Sample the first64 public objects every24ticks through1800. Two distinct visible living enemies with exact boots+elixir, boots-only, or dagger-only inventories and no conflicting recognized profile latch adMode1,2,3 respectively. No identity, seed, enemy memory or hidden inventory is available. This is a provisional inventory profile, shared by other policies. Unknown/dagger retains60tile critical recall and late3600 red formation. Boots-only uses 28tile local recall. Boots+elixir restores historical blue remote defense and hero-first defense priority. Red ordinary observation uses the frozen caster-transit/tower-handoff reference; its complete early package is tested with the late conditional formation. Mode is episode-latched and retained through death; repeated frames add no evidence. All original parent alarms, targeting order and visibility semantics otherwise remain. Storage-only alias map: {'backdoorAccept': 'ap0', 'backdoorActive': 'ap1', 'backdoorAlly': 'ap2', 'backdoorCommitted': 'ap3', 'backdoorD': 'ap4', 'backdoorFirstSeen': 'ap5', 'backdoorGod': 'ap6', 'backdoorGroupUntil': 'ap7', 'backdoorGuardA': 'ap8', 'backdoorGuardB': 'ap9', 'backdoorHelpers': 'ap10', 'backdoorI': 'ap11', 'backdoorKind': 'ap12', 'backdoorLastSeen': 'ap13', 'backdoorNearer': 'ap14', 'backdoorSelfD': 'ap15', 'backdoorSelfX': 'ap16', 'backdoorSelfY': 'ap17', 'backdoorUntil': 'ap18', 'backdoorWatched': 'ap19', 'backdoorX': 'ap20', 'backdoorY': 'ap21', 'defenseDecisions': 'ap22', 'defenseRefreshes': 'ap23', 'observedObjectCount': 'ap24', 'perimeterAdmit': 'ap25', 'perimeterAnchor': 'ap26', 'perimeterBound': 'ap27', 'perimeterBoundSq': 'ap28', 'perimeterDx': 'ap29', 'perimeterDy': 'ap30', 'perimeterEnabled': 'ap31', 'perimeterLastCombat': 'ap32', 'perimeterLastTick': 'ap33', 'perimeterObjX': 'ap34', 'perimeterObjY': 'ap35', 'perimeterRadiusSq': 'ap36', 'perimeterReachSq': 'ap37', 'perimeterX': 'ap38', 'perimeterY': 'ap39', 'responseD': 'ap40', 'responseDx': 'ap41', 'responseDy': 'ap42', 'responseEligible': 'ap43', 'responseIndex': 'ap44', 'responseKind': 'ap45', 'responseMode': 'ap46', 'responseOwnD': 'ap47', 'responseUntil': 'ap48', 'transitDx': 'mDx', 'transitDy': 'mDy', 'transitObservedDefense': 'defActive', 'distanceKind': 'buildingWeight', 'macroIndex': 'index', 'gaReady': 'waveCached'}.",
+  "memory": [
+   "defLastTick",
+   "defUntil",
+   "defThreatX",
+   "defThreatY",
+   "defPointX",
+   "defPointY",
+   "ap23",
+   "ap22",
+   "ap18",
+   "ap5",
+   "ap13",
+   "ap19",
+   "ap3",
+   "ap7",
+   "ap26",
+   "ap38",
+   "ap39",
+   "ap33",
+   "ap32",
+   "criticalUntil",
+   "adMode"
+  ],
+  "parameters": {},
+  "reads": [],
+  "template": "if adMode = 0 and worldTick <= 1800 and (worldTick / 24) * 24 = worldTick then\ndefCount = 0\ndefMates = 0\ndefSentry = 0\ndefI = 0\nwhile defI < objectCount() and defI < 64\nif objectKind(defI) = 2 and objectTeam(defI) <> selfTeam and objectAlive(defI) and objectHp(defI) > 0 then\ndefDx = 0\ndefDy = 0\ndefScore = 0\ndefFront = 0\ndefKind = 0\nwhile defKind < 6\ndefD = objectItemId(defI, defKind)\nif defD <> 0 then\ndefDx = defDx + 1\nend if\nif defD = 8 then\ndefDy = defDy + 1\nend if\nif defD = 2 then\ndefScore = defScore + 1\nend if\nif defD = 11 then\ndefFront = defFront + 1\nend if\ndefKind = defKind + 1\nwend\nif defDx = 2 and defDy = 1 and defScore = 1 then\ndefCount = defCount + 1\nend if\nif defDx = 1 and defDy = 1 then\ndefMates = defMates + 1\nend if\nif defDx = 1 and defFront = 1 then\ndefSentry = defSentry + 1\nend if\nend if\ndefI = defI + 1\nwend\nif defCount >= 2 and defMates = 0 and defSentry = 0 then\nadMode = 1\nend if\nif defMates >= 2 and defCount = 0 and defSentry = 0 then\nadMode = 2\nend if\nif defSentry >= 2 and defCount = 0 and defMates = 0 then\nadMode = 3\nend if\nend if\ngaActive = 0\nif selfTeam = 0 and worldTick >= 3600 and (adMode = 0 or adMode = 3) then\ngaActive = 1\ndefActive = 0\ndefUntil = 0\nbestId = 0\nbestDistance = 2147483647\nindex = objectCount()\ndefGroupSize = 0\ndefPointX = 0\ndefPointY = 0\ndefCount = 0\ncoreDx = 116\ncoreDy = 0\ncoreX = 116\ncoreY = 0\ncoreRespond = 0\ndefFrontD = 2147483647\ndefFrontX = 105\ndefFrontY = 11\ncoreValue = 400\ndefI = 0\nwhile defI < index and defI < 64\ndefKind = objectKind(defI)\ncoreTarget = objectTeam(defI)\npairAnchorHp = objectHp(defI)\nap34 = objectX(defI)\nap35 = objectY(defI)\nif defKind = 1 and coreTarget = selfTeam then\ncoreValue = pairAnchorHp\nend if\nif defKind = 2 and pairAnchorHp > 0 and objectAlive(defI) then\nif coreTarget = selfTeam then\ndefGroupSize = defGroupSize + 1\ndefPointX = defPointX + ap34\ndefPointY = defPointY + ap35\nelse\ndefCount = defCount + 1\nif ap34 < coreDx then\ncoreDx = ap34\nend if\nif ap34 > coreDy then\ncoreDy = ap34\nend if\nif ap35 < coreX then\ncoreX = ap35\nend if\nif ap35 > coreY then\ncoreY = ap35\nend if\ndefDx = ap34 - 105\ndefDy = ap35 - 11\ndefD = defDx * defDx + defDy * defDy\nif defD <= 50 * 50 then\ncoreRespond = coreRespond + 1\nend if\nif defD < defFrontD then\ndefFrontD = defD\ndefFrontX = ap34\ndefFrontY = ap35\nend if\nend if\nend if\ndefI = defI + 1\nwend\nif defGroupSize > 0 then\ndefPointX = defPointX / defGroupSize\ndefPointY = defPointY / defGroupSize\nelse\ndefPointX = selfX\ndefPointY = selfY\nend if\ndefMates = 0\ndefFront = 0\ndefScore = 2147483647\ncoreId = 0\ncoreD = 2147483647\nap20 = 28\nap21 = 79\nap10 = 0\nap2 = 0\nap4 = 2147483647\nap28 = (defPointX - 8) * (defPointX - 8) + (defPointY - 70) * (defPointY - 70)\nap36 = (defPointX - 28) * (defPointX - 28) + (defPointY - 79) * (defPointY - 79)\nap37 = (defPointX - 48) * (defPointX - 48) + (defPointY - 103) * (defPointY - 103)\ndefI = 0\nwhile defI < index and defI < 160\ndefKind = objectKind(defI)\ncoreTarget = objectTeam(defI)\npairAnchorHp = objectHp(defI)\nif pairAnchorHp > 0 and objectAlive(defI) then\nap34 = objectX(defI)\nap35 = objectY(defI)\ndefDx = ap34 - defPointX\ndefDy = ap35 - defPointY\ndefD = defDx * defDx + defDy * defDy\nif coreTarget = selfTeam then\nif defKind = 2 and pairAnchorHp >= 120 and defD <= 14 * 14 then\ndefMates = defMates + 1\nend if\nif defKind = 3 and defD <= 144 then\nap10 = ap10 + 1\nend if\nelse\nif defKind = 2 then\ncoreScore = defD * 4 + pairAnchorHp\nif defD <= 484 and coreScore < defScore then\ndefFront = objectId(defI)\ndefScore = coreScore\nend if\nif (ap34 - 8) * (ap34 - 8) + (ap35 - 70) * (ap35 - 70) <= 784 then\nap28 = ap28 + pairAnchorHp * 4\nend if\nif (ap34 - 28) * (ap34 - 28) + (ap35 - 79) * (ap35 - 79) <= 784 then\nap36 = ap36 + pairAnchorHp * 4\nend if\nif (ap34 - 48) * (ap34 - 48) + (ap35 - 103) * (ap35 - 103) <= 784 then\nap37 = ap37 + pairAnchorHp * 4\nend if\nend if\nif defKind = 1 or defKind = 4 then\nif defD < coreD then\ncoreId = objectId(defI)\ncoreD = defD\nap20 = ap34\nap21 = ap35\nend if\nend if\nif defKind = 2 or defKind = 3 then\nap16 = ap34 - selfX\nap17 = ap35 - selfY\nap15 = ap16 * ap16 + ap17 * ap17\nif ap15 <= 36 and ap15 < ap4 then\nap2 = objectId(defI)\nap4 = ap15\nend if\nend if\nend if\nend if\ndefI = defI + 1\nwend\nwaveCached = 0\nif defMates >= 4 then\nwaveCached = 1\nend if\npairedRush = 0\nif defCount >= 3 and ((coreDy - coreDx) * (coreDy - coreDx) + (coreY - coreX) * (coreY - coreX)) >= 1024 then\npairedRush = 1\nend if\nap27 = (defPointX - 11) * (defPointX - 11) + (defPointY - 105) * (defPointY - 105)\ndefSentry = 0\nif coreRespond >= 2 or coreValue < 400 then\ndefSentry = 1\nend if\nif worldTick <= ap13 or worldTick > ap13 + 1 then\nap7 = 0\nap5 = 0\nap3 = 0\nend if\nap13 = worldTick\ndefGoalX = defPointX\ndefGoalY = defPointY\ndefSentryRole = 1\nif waveCached then\nif defSentry then\ndefSentryRole = 4\ndefGoalX = defFrontX\ndefGoalY = defFrontY\nap5 = 0\nelse\ndefSentryRole = 2\ndefGoalX = ap20\ndefGoalY = ap21\nif ap27 <= 3600 then\nif ap5 = 0 then\nap5 = worldTick\nend if\nif worldTick >= ap7 then\nif ap7 > 0 then\nif ap19 = 0 then\nap28 = ap28 + 800\nend if\nif ap19 = 1 then\nap36 = ap36 + 800\nend if\nif ap19 = 2 then\nap37 = ap37 + 800\nend if\nend if\nap19 = 0\nap25 = ap28\nif ap36 < ap25 then\nap19 = 1\nap25 = ap36\nend if\nif ap37 < ap25 then\nap19 = 2\nend if\nap7 = (worldTick / 240 + 1) * 240\nend if\ndefGoalX = 8\ndefGoalY = 70\nif ap19 = 1 then\ndefGoalX = 28\ndefGoalY = 79\nend if\nif ap19 = 2 then\ndefGoalX = 48\ndefGoalY = 103\nend if\nif ap10 >= 2 or pairedRush or worldTick - ap5 >= 480 then\nap3 = worldTick + 240\nend if\nif worldTick < ap3 then\ndefSentryRole = 3\ndefGoalX = ap20\ndefGoalY = ap21\nend if\nelse\nap5 = 0\ndefSentryRole = 3\nend if\nend if\nif defFront <> 0 then\nbestId = defFront\nbestDistance = defScore\nelse\nif defSentryRole = 3 and coreD <= 784 then\nbestId = coreId\nbestDistance = coreD\nend if\nend if\nelse\nap3 = 0\nend if\nif bestId = 0 and ap2 <> 0 then\nbestId = ap2\nbestDistance = ap4\nend if\ndefDx = selfX - defPointX\ndefDy = selfY - defPointY\ngaTethered = 0\nif defDx * defDx + defDy * defDy > 20 * 20 then\nbestId = 0\ndefGoalX = defPointX\ndefGoalY = defPointY\ngaTethered = 1\nend if\nend if\nif gaActive = 0 then\nap24 = objectCount()\nwaveCached = 0\nif selfTeam = 0 then\ndefGroupSize = 4\ndefHoldTicks = 1440\ndefContinueHome = 48\nif selfTeam = 1 then\ndefGroupSize = 4\ndefHoldTicks = 1200\ndefContinueHome = 24\nend if\ndefSentryRole = 3\nif selfTeam = 1 then\ndefSentryRole = 3\nend if\ndefSentry = 0\nif defSentryRole >= 2 and (selfClass = 2 or selfClass = 3 or selfClass = 7 or selfClass = 8) then\ndefSentry = 1\nend if\nif (defSentryRole = 1 or defSentryRole = 3) and (selfClass = 0 or selfClass = 5) then\ndefSentry = 1\nend if\nif defSentry then\ndefHoldTicks = 7200\nend if\ndefActive = 0\nif worldTick <= defLastTick or (worldTick <> defLastTick + 1 and defSentry = 0) then\ndefUntil = 0\nend if\ndefLastTick = worldTick\ndefHomeX = 105\ndefHomeY = 11\nif selfTeam = 1 then\ndefHomeX = 11\ndefHomeY = 105\nend if\ndefI = 0\nwhile defI < ap24 and defI < 2\nif objectTeam(defI) = selfTeam and objectKind(defI) = 1 then\ndefHomeX = objectX(defI)\ndefHomeY = objectY(defI)\nend if\ndefI = defI + 1\nwend\ndefFront = 0\ndefFrontD = 100 * 100 + 1\ndefI = 0\nwhile defI < ap24 and defI < 64\nif objectKind(defI) = 3 then\ndefI = 64\nelse\nif objectKind(defI) = 2 then\nif objectTeam(defI) <> selfTeam and objectAlive(defI) and objectHp(defI) > 0 then\ndefDx = objectX(defI) - defHomeX\ndefDy = objectY(defI) - defHomeY\ndefD = defDx * defDx + defDy * defDy\nif defD < defFrontD then\ndefFront = objectId(defI)\ndefFrontD = defD\ndefFrontX = objectX(defI)\ndefFrontY = objectY(defI)\ndefFrontTarget = objectTarget(defI)\nend if\nend if\nend if\nend if\ndefI = defI + 1\nwend\nif defFront <> 0 then\ndefCount = 0\ndefAnchor = 0\ndefAnchorD = 14 * 14 + 1\ndefI = 0\nwhile defI < ap24 and defI < 64\ndefKind = objectKind(defI)\nif defKind = 3 then\ndefI = 64\nelse\nif objectHp(defI) > 0 then\ndefDx = objectX(defI) - defFrontX\ndefDy = objectY(defI) - defFrontY\ndefD = defDx * defDx + defDy * defDy\nif objectTeam(defI) <> selfTeam and defKind = 2 and objectAlive(defI) and defD <= 12 * 12 then\ndefCount = defCount + 1\nend if\nif objectTeam(defI) = selfTeam and (defKind = 4 or defKind = 1) and defD <= 14 * 14 then\nif objectId(defI) = defFrontTarget then\ndefD = -1\nend if\nif defD < defAnchorD then\ndefAnchor = objectId(defI)\ndefAnchorD = defD\ndefAnchorX = objectX(defI)\ndefAnchorY = objectY(defI)\nend if\nend if\nend if\nend if\ndefI = defI + 1\nwend\nif defAnchor <> 0 and (((adMode = 0 or adMode = 3) and defFrontD <= 3600 and defCount >= 2) or defCount >= defGroupSize or (worldTick < defUntil and defFrontD <= defContinueHome * defContinueHome)) then\ndefUntil = worldTick + defHoldTicks\nif (adMode = 0 or adMode = 3) and defFrontD <= 3600 and defCount >= 2 then\ncriticalUntil = worldTick + 1200\nend if\ndefThreatX = defFrontX\ndefThreatY = defFrontY\ndefDx = defHomeX - defAnchorX\ndefDy = defHomeY - defAnchorY\ndefAx = defDx\ndefAy = defDy\nif defAx < 0 then\ndefAx = -defAx\nend if\nif defAy < 0 then\ndefAy = -defAy\nend if\ndefScale = defAx\nif defAy > defScale then\ndefScale = defAy\nend if\nif defScale > 0 then\ndefPointX = defAnchorX + defDx * 4 / defScale\ndefPointY = defAnchorY + defDy * 4 / defScale\nelse\ndefPointX = defHomeX + 4\ndefPointY = defHomeY + 4\nif selfTeam = 1 then\ndefPointX = defHomeX - 4\ndefPointY = defHomeY - 4\nend if\nend if\nap23 = ap23 + 1\nend if\nend if\nif worldTick < defUntil then\ndefActive = 1\nend if\n\ndefDx = selfX - defHomeX\ndefDy = selfY - defHomeY\nif defDx * defDx + defDy * defDy > 28 * 28 and worldTick >= criticalUntil then\ndefActive = 0\ndefUntil = 0\nend if\n\nif defActive then\n\nbestId = 0\nbestDistance = 2147483647\ndefI = 0\nwhile defI < ap24\ndefKind = objectKind(defI)\nif (defKind = 2 or defKind = 3) and objectTeam(defI) <> selfTeam and objectAlive(defI) and objectHp(defI) > 0 then\ndefDx = objectX(defI) - selfX\ndefDy = objectY(defI) - selfY\ndefD = defDx * defDx + defDy * defDy\ndefGx = objectX(defI) - defThreatX\ndefGy = objectY(defI) - defThreatY\ndefGroupD = defGx * defGx + defGy * defGy\nif defD <= 10 * 10 and (defGroupD <= 400 or defD <= 9) then\ndefScore = defD * 10 + objectHp(defI) * 1\nif (1 = 1 and defKind = 3) or (1 = 0 and defKind = 2) then\ndefScore = defScore - 10000\nend if\nif defScore < bestDistance then\nbestDistance = defScore\nbestId = objectId(defI)\nend if\nend if\nend if\ndefI = defI + 1\nwend\n\ndefMates = 0\ndefI = 0\nwhile defI < ap24 and defI < 64\ndefKind = objectKind(defI)\nif defKind = 3 then\ndefI = 64\nelse\nif defKind = 2 then\nif objectTeam(defI) = selfTeam and objectHp(defI) > 0 and objectAlive(defI) then\ndefDx = objectX(defI) - selfX\ndefDy = objectY(defI) - selfY\nif defDx * defDx + defDy * defDy <= 196 then\ndefMates = defMates + 1\nend if\nend if\nend if\nend if\ndefI = defI + 1\nwend\nif defMates < 0 then\nbestId = 0\nend if\nap22 = ap22 + 1\nelse\nif selfClass = 9 or selfClass = 7 then\nbestId = 0\nbestDistance = 2147483647\nwaveCached = 1\nwaveChosen = 0\nwaveDistance = 2147483647\nwaveRetained = 0\nwaveHomeX = 64\nwaveHomeY = 64\ndefMates = 12 * 12 * 1\nindex = 0\nwhile index < ap24\nid = objectId(index)\nif objectTeam(index) <> selfTeam then\nif objectAlive(index) then\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\ndistance = dx * dx + dy * dy\nif distance < bestDistance then\nbestDistance = distance\nbestId = id\nmacroSelectedKind = objectKind(index)\nmacroSelectedX = objectX(index)\nmacroSelectedY = objectY(index)\nend if\nend if\nelse\nif bestId = 0 or bestDistance > defMates then\nif objectHp(index) > 0 and objectAlive(index) then\nwaveKind = objectKind(index)\nif waveKind = 1 then\nwaveHomeX = objectX(index)\nwaveHomeY = objectY(index)\nend if\nif waveKind = 3 then\nif id = escortId then\nwaveRetained = 1\nwaveChosen = id\nwaveX = objectX(index)\nwaveY = objectY(index)\ndx = waveX - selfX\ndy = waveY - selfY\nwaveDistance = dx * dx + dy * dy\nelse\nif waveRetained = 0 then\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\ndistance = dx * dx + dy * dy\nif distance < waveDistance or (distance = waveDistance and id < waveChosen) then\nwaveChosen = id\nwaveDistance = distance\nwaveX = objectX(index)\nwaveY = objectY(index)\nend if\nend if\nend if\nend if\nend if\nelse\nwaveCached = 0\nend if\nend if\nindex = index + 1\nwend\nelse\nbestId = 0\nbestDistance = 2147483647\nwaveCached = 1\nwaveChosen = 0\nwaveDistance = 2147483647\nwaveRetained = 0\nwaveHomeX = 64\nwaveHomeY = 64\ndefMates = 12 * 12 * 1\nindex = 0\nwhile index < ap24\nid = objectId(index)\nif objectTeam(index) <> selfTeam then\nif objectAlive(index) and objectHp(index) > 0 then\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\nbuildingWeight = objectKind(index)\nif buildingWeight = 1 or buildingWeight = 4 or buildingWeight = 5 then\nif dx < 0 then\ndx = -dx\nend if\nif dy < 0 then\ndy = -dy\nend if\nbuildingInset = 2\nif buildingWeight = 1 then\nbuildingInset = 4\nend if\ndx = dx - buildingInset\ndy = dy - buildingInset\nif dx < 0 then\ndx = 0\nend if\nif dy < 0 then\ndy = 0\nend if\ndistance = (dx * dx + dy * dy) * 1\nelse\ndistance = (dx * dx + dy * dy) * 1\nend if\nif distance < bestDistance then\nbestDistance = distance\nbestId = id\nmacroSelectedKind = objectKind(index)\nmacroSelectedX = objectX(index)\nmacroSelectedY = objectY(index)\nend if\nend if\nelse\nif bestId = 0 or bestDistance > defMates then\nif objectHp(index) > 0 and objectAlive(index) then\nwaveKind = objectKind(index)\nif waveKind = 1 then\nwaveHomeX = objectX(index)\nwaveHomeY = objectY(index)\nend if\nif waveKind = 3 then\nif id = escortId then\nwaveRetained = 1\nwaveChosen = id\nwaveX = objectX(index)\nwaveY = objectY(index)\ndx = waveX - selfX\ndy = waveY - selfY\nwaveDistance = dx * dx + dy * dy\nelse\nif waveRetained = 0 then\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\ndistance = dx * dx + dy * dy\nif distance < waveDistance or (distance = waveDistance and id < waveChosen) then\nwaveChosen = id\nwaveDistance = distance\nwaveX = objectX(index)\nwaveY = objectY(index)\nend if\nend if\nend if\nend if\nend if\nelse\nwaveCached = 0\nend if\nend if\nindex = index + 1\nwend\nend if\nif bestId <> 0 then\nif macroSelectedKind = 2 or macroSelectedKind = 3 then\nmacroDx = macroSelectedX - selfX\nmacroDy = macroSelectedY - selfY\nif macroDx * macroDx + macroDy * macroDy > 12 * 12 then\nbestId = 0\nend if\nend if\nend if\nend if\nelse\nap31 = 0\nap36 = 24 * 24\nap37 = 32 * 32\nif 2 = 2 or selfTeam = 2 then\nap31 = 1\nend if\ndefGroupSize = 4\ndefHoldTicks = 1440\ndefContinueHome = 48\nif selfTeam = 1 then\ndefGroupSize = 4\ndefHoldTicks = 1200\ndefContinueHome = 24\nend if\ndefSentryRole = 3\nif selfTeam = 1 then\ndefSentryRole = 3\nend if\ndefSentry = 0\nif defSentryRole >= 2 and (selfClass = 2 or selfClass = 3 or selfClass = 7 or selfClass = 8) then\ndefSentry = 1\nend if\nif (defSentryRole = 1 or defSentryRole = 3) and (selfClass = 0 or selfClass = 5) then\ndefSentry = 1\nend if\nif defSentry then\ndefHoldTicks = 7200\nend if\ndefActive = 0\nif worldTick <= defLastTick or (worldTick <> defLastTick + 1 and defSentry = 0) then\ndefUntil = 0\nap18 = 0\nap7 = 0\nap19 = 0\nap5 = 0\nap13 = 0\nap3 = 0\nend if\ndefLastTick = worldTick\ndefHomeX = 105\ndefHomeY = 11\nif selfTeam = 1 then\ndefHomeX = 11\ndefHomeY = 105\nend if\ndefI = 0\nwhile defI < ap24 and defI < 2\nif objectTeam(defI) = selfTeam and objectKind(defI) = 1 then\ndefHomeX = objectX(defI)\ndefHomeY = objectY(defI)\nend if\ndefI = defI + 1\nwend\ndefCount = 0\ndefFront = 0\ndefFrontD = 100 * 100 + 1\ndefI = 0\nwhile defI < ap24 and defI < 64\nif objectKind(defI) = 3 then\ndefI = 64\nelse\nif objectKind(defI) = 2 then\nif objectTeam(defI) <> selfTeam and objectAlive(defI) and objectHp(defI) > 0 then\ndefDx = objectX(defI) - defHomeX\ndefDy = objectY(defI) - defHomeY\ndefD = defDx * defDx + defDy * defDy\nif defD < defFrontD then\ndefFront = objectId(defI)\ndefFrontD = defD\ndefFrontX = objectX(defI)\ndefFrontY = objectY(defI)\ndefFrontTarget = objectTarget(defI)\nend if\nend if\nend if\nend if\ndefI = defI + 1\nwend\nif defFront <> 0 then\ndefCount = 0\ndefAnchor = 0\ndefAnchorD = 14 * 14 + 1\ndefI = 0\nwhile defI < ap24 and defI < 64\ndefKind = objectKind(defI)\nif defKind = 3 then\ndefI = 64\nelse\nif objectHp(defI) > 0 then\ndefDx = objectX(defI) - defFrontX\ndefDy = objectY(defI) - defFrontY\ndefD = defDx * defDx + defDy * defDy\nif objectTeam(defI) <> selfTeam and defKind = 2 and objectAlive(defI) and defD <= 12 * 12 then\ndefCount = defCount + 1\nend if\nif objectTeam(defI) = selfTeam and (defKind = 4 or defKind = 1) and defD <= 14 * 14 then\nif objectId(defI) = defFrontTarget then\ndefD = -1\nend if\nif defD < defAnchorD then\ndefAnchor = objectId(defI)\ndefAnchorD = defD\ndefAnchorX = objectX(defI)\ndefAnchorY = objectY(defI)\npairAnchorHp = objectHp(defI)\nend if\nend if\nend if\nend if\ndefI = defI + 1\nwend\nmiddleRush = 0\nif selfTeam = 1 and worldTick <= 1800 and defCount >= 3 then\nif defAnchor = 19 or defAnchor = 20 or defAnchor = 21 then\nmiddleRush = 1\nend if\nend if\npairedRush = 0\npairMaxHp = 0\nif defAnchor = 13 or defAnchor = 25 then\npairMaxHp = 950\nend if\nif defAnchor = 14 or defAnchor = 26 then\npairMaxHp = 1300\nend if\nif defAnchor = 15 or defAnchor = 27 then\npairMaxHp = 1950\nend if\nif selfTeam = 1 and worldTick <= 3600 and defCount >= 2 then\nif pairMaxHp > 0 and pairAnchorHp <= pairMaxHp - 150 then\npairedRush = 1\nend if\nend if\nif defAnchor <> 0 and (((adMode = 0 or adMode = 3) and defFrontD <= 3600 and defCount >= 2) or pairedRush or middleRush or defCount >= defGroupSize or (worldTick < defUntil and defFrontD <= defContinueHome * defContinueHome)) then\nap26 = defAnchor\nap38 = defAnchorX\nap39 = defAnchorY\ndefUntil = worldTick + defHoldTicks\nif (adMode = 0 or adMode = 3) and defFrontD <= 3600 and defCount >= 2 then\ncriticalUntil = worldTick + 1200\nend if\ndefThreatX = defFrontX\ndefThreatY = defFrontY\ndefDx = defHomeX - defAnchorX\ndefDy = defHomeY - defAnchorY\ndefAx = defDx\ndefAy = defDy\nif defAx < 0 then\ndefAx = -defAx\nend if\nif defAy < 0 then\ndefAy = -defAy\nend if\ndefScale = defAx\nif defAy > defScale then\ndefScale = defAy\nend if\nif defScale > 0 then\ndefPointX = defAnchorX + defDx * 4 / defScale\ndefPointY = defAnchorY + defDy * 4 / defScale\nelse\ndefPointX = defHomeX + 4\ndefPointY = defHomeY + 4\nif selfTeam = 1 then\ndefPointX = defHomeX - 4\ndefPointY = defHomeY - 4\nend if\nend if\nap23 = ap23 + 1\nend if\nend if\nap1 = 0\nif worldTick >= ap18 then\nap3 = 0\nend if\nap6 = 1\nap8 = 28\nap9 = 29\nif selfTeam = 1 then\nap6 = 2\nap8 = 30\nap9 = 31\nend if\nif defCount >= defGroupSize then\nap18 = 0\nap7 = defUntil\nend if\nif selfTeam = 1 and defCount <= 1 and defFront <> 0 and defFrontD <= 24 * 24 then\nif defAnchor = defFrontTarget and (defFrontTarget = ap6 or defFrontTarget = ap8 or defFrontTarget = ap9) then\nap16 = selfX - defHomeX\nap17 = selfY - defHomeY\nap15 = ap16 * ap16 + ap17 * ap17\nif ap19 <> defFront or worldTick > ap13 + 72 then\nap5 = worldTick\nend if\nap19 = defFront\nap13 = worldTick\nap14 = 0\nap10 = 0\nap11 = 0\nwhile ap11 < ap24 and ap11 < 64\nap12 = objectKind(ap11)\nif ap12 = 3 then\nap11 = 64\nelse\nif ap12 = 2 and objectTeam(ap11) = selfTeam and objectHp(ap11) > 0 and objectAlive(ap11) then\nap2 = objectId(ap11)\nif ap2 <> selfId then\nap20 = objectX(ap11) - defHomeX\nap21 = objectY(ap11) - defHomeY\nap4 = ap20 * ap20 + ap21 * ap21\nif ap4 < ap15 or (ap4 = ap15 and ap2 < selfId) then\nap14 = ap14 + 1\nend if\nif objectTarget(ap11) = defFront then\nap10 = ap10 + 1\nend if\nend if\nend if\nend if\nap11 = ap11 + 1\nwend\nap0 = 0\nif ap15 <= 28 * 28 or ap3 = defFront then\nap0 = 1\nend if\nif ap10 = 0 and worldTick >= ap5 + ap14 * 96 then\nap0 = 1\nend if\nif ap0 then\nap3 = defFront\nap1 = 1\ndefThreatX = defFrontX\ndefThreatY = defFrontY\ndefPointX = defFrontX\ndefPointY = defFrontY\nif defCount < defGroupSize and worldTick >= ap7 then\nap18 = worldTick + 480\nend if\nend if\nend if\nend if\nif ap18 > 0 then\ndefUntil = ap18\nend if\nif worldTick < defUntil then\ndefActive = 1\nend if\n\ncoreId = 0\ncoreScore = 2147483647\ncoreHomeId = 1\nif selfTeam = 1 then\ncoreHomeId = 2\nend if\ncoreDx = selfX - defHomeX\ncoreDy = selfY - defHomeY\ncoreRespond = 0\nif coreDx * coreDx + coreDy * coreDy <= 24 * 24 then\ncoreRespond = 1\nend if\nap27 = 32\nif 10 > ap27 then\nap27 = 10\nend if\nif coreRespond and 24 + 14 > ap27 then\nap27 = 24 + 14\nend if\nap28 = ap27 * ap27\nif ap26 = 0 then\nap26 = coreHomeId\nap38 = defHomeX\nap39 = defHomeY\nend if\nif selfTeam = 1 then\ndefDx = selfX - defHomeX\ndefDy = selfY - defHomeY\nif defDx * defDx + defDy * defDy > 28 * 28 and adMode <> 1 and worldTick >= criticalUntil then\ndefActive = 0\ndefUntil = 0\nap18 = 0\nap1 = 0\nend if\nend if\n\nif defActive then\n\nbestId = 0\nbestDistance = 2147483647\ndefI = 0\nwhile defI < ap24\ndefKind = objectKind(defI)\nif ap31 and (defKind = 1 or defKind = 4) then\nif objectId(defI) = ap26 and objectHp(defI) <= 0 then\nap26 = coreHomeId\nap38 = defHomeX\nap39 = defHomeY\nend if\nend if\nif defKind = 2 or defKind = 3 then\nif objectTeam(defI) <> selfTeam then\nap34 = objectX(defI)\nap35 = objectY(defI)\ndefDx = ap34 - selfX\ndefDy = ap35 - selfY\ndefD = defDx * defDx + defDy * defDy\nif defD <= ap28 then\nif objectAlive(defI) and objectHp(defI) > 0 then\nif coreRespond then\ncoreDx = ap34 - defHomeX\ncoreDy = ap35 - defHomeY\ncoreD = coreDx * coreDx + coreDy * coreDy\nif coreD <= 14 * 14 then\ncoreTarget = objectTarget(defI)\nif coreTarget = coreHomeId or coreD <= 36 then\ncoreValue = coreD * 100 + objectHp(defI)\nif coreTarget = coreHomeId then\ncoreValue = coreValue - 100000\nend if\nif coreValue < coreScore then\ncoreScore = coreValue\ncoreId = objectId(defI)\ncoreX = ap34\ncoreY = ap35\nend if\nend if\nend if\nend if\nap25 = 0\nif ap31 and defD <= ap37 then\nap29 = ap34 - ap38\nap30 = ap35 - ap39\nif ap29 * ap29 + ap30 * ap30 <= ap36 then\nap25 = 1\nend if\nend if\ndefGroupD = 0\nif ap25 = 0 then\ndefGx = ap34 - defThreatX\ndefGy = ap35 - defThreatY\ndefGroupD = defGx * defGx + defGy * defGy\nend if\nif ap25 or (defD <= 10 * 10 and (defGroupD <= 400 or defD <= 9)) then\ndefScore = defD * 10 + objectHp(defI) * 1\nif (adMode <> 1 and defKind = 3) or (adMode = 1 and defKind = 2) then\ndefScore = defScore - 10000\nend if\nif defScore < bestDistance then\nbestDistance = defScore\nbestId = objectId(defI)\nend if\nend if\nend if\nend if\nend if\nend if\ndefI = defI + 1\nwend\n\ndefMates = 0\ndefI = 0\nwhile defI < ap24 and defI < 64\ndefKind = objectKind(defI)\nif defKind = 3 then\ndefI = 64\nelse\nif defKind = 2 then\nif objectTeam(defI) = selfTeam and objectHp(defI) > 0 and objectAlive(defI) then\ndefDx = objectX(defI) - selfX\ndefDy = objectY(defI) - selfY\nif defDx * defDx + defDy * defDy <= 196 then\ndefMates = defMates + 1\nend if\nend if\nend if\nend if\ndefI = defI + 1\nwend\nif defMates < 0 then\nbestId = 0\nend if\nap22 = ap22 + 1\nelse\nif selfClass = 9 or selfClass = 7 then\nbestId = 0\nbestDistance = 2147483647\nwaveCached = 1\nwaveChosen = 0\nwaveDistance = 2147483647\nwaveRetained = 0\nwaveHomeX = 64\nwaveHomeY = 64\ndefMates = 12 * 12 * 1\nindex = 0\nwhile index < ap24\nid = objectId(index)\nif objectTeam(index) <> selfTeam then\nif objectAlive(index) then\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\ndistance = dx * dx + dy * dy\nif distance < bestDistance then\nbestDistance = distance\nbestId = id\nmacroSelectedKind = objectKind(index)\nmacroSelectedX = objectX(index)\nmacroSelectedY = objectY(index)\nend if\nend if\nelse\nif bestId = 0 or bestDistance > defMates then\nif objectHp(index) > 0 and objectAlive(index) then\nwaveKind = objectKind(index)\nif waveKind = 1 then\nwaveHomeX = objectX(index)\nwaveHomeY = objectY(index)\nend if\nif waveKind = 3 then\nif id = escortId then\nwaveRetained = 1\nwaveChosen = id\nwaveX = objectX(index)\nwaveY = objectY(index)\ndx = waveX - selfX\ndy = waveY - selfY\nwaveDistance = dx * dx + dy * dy\nelse\nif waveRetained = 0 then\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\ndistance = dx * dx + dy * dy\nif distance < waveDistance or (distance = waveDistance and id < waveChosen) then\nwaveChosen = id\nwaveDistance = distance\nwaveX = objectX(index)\nwaveY = objectY(index)\nend if\nend if\nend if\nend if\nend if\nelse\nwaveCached = 0\nend if\nend if\nindex = index + 1\nwend\nelse\nbestId = 0\nbestDistance = 2147483647\nwaveCached = 1\nwaveChosen = 0\nwaveDistance = 2147483647\nwaveRetained = 0\nwaveHomeX = 64\nwaveHomeY = 64\ndefMates = 12 * 12 * 1\nindex = 0\nwhile index < ap24\nid = objectId(index)\nif objectTeam(index) <> selfTeam then\nif objectAlive(index) and objectHp(index) > 0 then\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\nbuildingWeight = objectKind(index)\nif buildingWeight = 1 or buildingWeight = 4 or buildingWeight = 5 then\nif dx < 0 then\ndx = -dx\nend if\nif dy < 0 then\ndy = -dy\nend if\nbuildingInset = 2\nif buildingWeight = 1 then\nbuildingInset = 4\nend if\ndx = dx - buildingInset\ndy = dy - buildingInset\nif dx < 0 then\ndx = 0\nend if\nif dy < 0 then\ndy = 0\nend if\ndistance = (dx * dx + dy * dy) * 1\nelse\ndistance = (dx * dx + dy * dy) * 1\nend if\nif distance < bestDistance then\nbestDistance = distance\nbestId = id\nmacroSelectedKind = objectKind(index)\nmacroSelectedX = objectX(index)\nmacroSelectedY = objectY(index)\nend if\nend if\nelse\nif bestId = 0 or bestDistance > defMates then\nif objectHp(index) > 0 and objectAlive(index) then\nwaveKind = objectKind(index)\nif waveKind = 1 then\nwaveHomeX = objectX(index)\nwaveHomeY = objectY(index)\nend if\nif waveKind = 3 then\nif id = escortId then\nwaveRetained = 1\nwaveChosen = id\nwaveX = objectX(index)\nwaveY = objectY(index)\ndx = waveX - selfX\ndy = waveY - selfY\nwaveDistance = dx * dx + dy * dy\nelse\nif waveRetained = 0 then\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\ndistance = dx * dx + dy * dy\nif distance < waveDistance or (distance = waveDistance and id < waveChosen) then\nwaveChosen = id\nwaveDistance = distance\nwaveX = objectX(index)\nwaveY = objectY(index)\nend if\nend if\nend if\nend if\nend if\nelse\nwaveCached = 0\nend if\nend if\nindex = index + 1\nwend\nend if\nif bestId <> 0 then\nif macroSelectedKind = 2 or macroSelectedKind = 3 then\nmacroDx = macroSelectedX - selfX\nmacroDy = macroSelectedY - selfY\nif macroDx * macroDx + macroDy * macroDy > 12 * 12 then\nbestId = 0\nend if\nend if\nend if\nend if\nif coreId <> 0 then\nbestId = coreId\nbestDistance = coreScore\ndefPointX = coreX\ndefPointY = coreY\ndefThreatX = coreX\ndefThreatY = coreY\nend if\n\nif ap1 and coreId = 0 then\nbestId = defFront\nbestDistance = defFrontD\nend if\n\nif worldTick <= ap33 then\nap32 = 0\nend if\nap33 = worldTick\nif defActive = 0 or bestId <> 0 or ap32 = 0 then\nap32 = worldTick\nend if\nif ap31 and defActive and bestId = 0 and 1 > 0 then\nif 1 = 2 or defSentry = 0 then\nif worldTick - ap32 >= 480 then\ndefActive = 0\ndefUntil = 0\nap18 = 0\nap7 = 0\nend if\nend if\nend if\nend if\ndefActive = defActive\nend if",
+  "writes": [
+   "candidate",
+   "defense",
+   "formation",
+   "waveCached",
+   "waveChosen",
+   "waveDistance",
+   "waveRetained",
+   "waveHomeX",
+   "waveHomeY",
+   "waveX",
+   "waveY",
+   "macroSelectedKind",
+   "macroSelectedX",
+   "macroSelectedY",
+   "transitObservedDefense"
+  ]
+ },
+ "formation_profile_route_v1_profile_pruned_v1": {
+  "actions": [
+   "walkTo"
+  ],
+  "meaning": "When coached formation is active, route to the group rendezvous, selected perimeter entry, shared exposed objective or home defense point. Terrain-check the point and eight nearby alternatives; use centroid on rejected movement. Otherwise retain the entire parent route. Outside active formation retain the frozen handoff caster-transit route. Storage-only alias map: {'backdoorAccept': 'ap0', 'backdoorActive': 'ap1', 'backdoorAlly': 'ap2', 'backdoorCommitted': 'ap3', 'backdoorD': 'ap4', 'backdoorFirstSeen': 'ap5', 'backdoorGod': 'ap6', 'backdoorGroupUntil': 'ap7', 'backdoorGuardA': 'ap8', 'backdoorGuardB': 'ap9', 'backdoorHelpers': 'ap10', 'backdoorI': 'ap11', 'backdoorKind': 'ap12', 'backdoorLastSeen': 'ap13', 'backdoorNearer': 'ap14', 'backdoorSelfD': 'ap15', 'backdoorSelfX': 'ap16', 'backdoorSelfY': 'ap17', 'backdoorUntil': 'ap18', 'backdoorWatched': 'ap19', 'backdoorX': 'ap20', 'backdoorY': 'ap21', 'defenseDecisions': 'ap22', 'defenseRefreshes': 'ap23', 'observedObjectCount': 'ap24', 'perimeterAdmit': 'ap25', 'perimeterAnchor': 'ap26', 'perimeterBound': 'ap27', 'perimeterBoundSq': 'ap28', 'perimeterDx': 'ap29', 'perimeterDy': 'ap30', 'perimeterEnabled': 'ap31', 'perimeterLastCombat': 'ap32', 'perimeterLastTick': 'ap33', 'perimeterObjX': 'ap34', 'perimeterObjY': 'ap35', 'perimeterRadiusSq': 'ap36', 'perimeterReachSq': 'ap37', 'perimeterX': 'ap38', 'perimeterY': 'ap39', 'responseD': 'ap40', 'responseDx': 'ap41', 'responseDy': 'ap42', 'responseEligible': 'ap43', 'responseIndex': 'ap44', 'responseKind': 'ap45', 'responseMode': 'ap46', 'responseOwnD': 'ap47', 'responseUntil': 'ap48', 'transitDx': 'mDx', 'transitDy': 'mDy', 'transitObservedDefense': 'defActive', 'distanceKind': 'buildingWeight', 'macroIndex': 'index', 'gaReady': 'waveCached'}.",
+  "memory": [
+   "escortId",
+   "lastJoinX",
+   "lastJoinY",
+   "lastJoinTick",
+   "stalled"
+  ],
+  "parameters": {},
+  "reads": [
+   "defense",
+   "formation"
+  ],
+  "template": "if gaActive then\ndefNavX = defGoalX\ndefNavY = defGoalY\ndefNavFound = terrainWalkable(defNavX, defNavY)\ndefdirection = 0\nwhile defdirection < 8 and defNavFound = 0\ndefDirX = 0\ndefDirY = 0\nif defdirection = 0 or defdirection = 1 or defdirection = 7 then\ndefDirX = 3\nend if\nif defdirection = 3 or defdirection = 4 or defdirection = 5 then\ndefDirX = -3\nend if\nif defdirection = 1 or defdirection = 2 or defdirection = 3 then\ndefDirY = 3\nend if\nif defdirection = 5 or defdirection = 6 or defdirection = 7 then\ndefDirY = -3\nend if\ndefNavX = defGoalX + defDirX\ndefNavY = defGoalY + defDirY\ndefNavFound = terrainWalkable(defNavX, defNavY)\ndefdirection = defdirection + 1\nwend\ndefMoveAccepted = 0\nif defNavFound then\ndefMoveAccepted = walkTo(defNavX, defNavY)\nend if\nif defMoveAccepted = 0 then\ndefMoveAccepted = walkTo(defPointX, defPointY)\nend if\nelse\nif transitActive then\nmoveAccepted = walkTo(transitX, transitY)\nelse\nif selfTeam = 0 then\nif defActive then\n\ndefNavX = defPointX\ndefNavY = defPointY\ndefNavFound = terrainWalkable(defNavX, defNavY)\ndefdirection = 0\nwhile defdirection < 8 and defNavFound = 0\ndefDirX = 0\ndefDirY = 0\nif defdirection = 0 or defdirection = 1 or defdirection = 7 then\ndefDirX = 1\nend if\nif defdirection = 3 or defdirection = 4 or defdirection = 5 then\ndefDirX = -1\nend if\nif defdirection = 1 or defdirection = 2 or defdirection = 3 then\ndefDirY = 1\nend if\nif defdirection = 5 or defdirection = 6 or defdirection = 7 then\ndefDirY = -1\nend if\ndefNavX = defPointX + defDirX * 3\ndefNavY = defPointY + defDirY * 3\ndefNavFound = terrainWalkable(defNavX, defNavY)\ndefdirection = defdirection + 1\nwend\ndefMoveAccepted = 0\nif defNavFound then\ndefMoveAccepted = walkTo(defNavX, defNavY)\nend if\nif defMoveAccepted = 0 then\ndefMoveAccepted = walkTo(defThreatX, defThreatY)\nend if\nelse\nif waveCached then\nchosenId = waveChosen\nchosenDistance = waveDistance\nretained = waveRetained\nhomeX = waveHomeX\nhomeY = waveHomeY\nif chosenId <> 0 then\nescortX = waveX\nescortY = waveY\nend if\nelse\nchosenId = 0\nchosenDistance = 2147483647\nretained = 0\nhomeX = 64\nhomeY = 64\nindex = 0\nwhile index < objectCount()\nif objectTeam(index) = selfTeam and objectHp(index) > 0 and objectAlive(index) then\nif objectKind(index) = 1 then\nhomeX = objectX(index)\nhomeY = objectY(index)\nend if\nif objectKind(index) = 3 then\nid = objectId(index)\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\ndistance = dx * dx + dy * dy\nchoose = 0\nif id = escortId then\nchoose = 1\nretained = 1\nend if\nif retained = 0 then\nif distance < chosenDistance or (distance = chosenDistance and id < chosenId) then\nchoose = 1\nend if\nend if\nif choose then\nchosenId = id\nchosenDistance = distance\nescortX = objectX(index)\nescortY = objectY(index)\nend if\nend if\nend if\nindex = index + 1\nwend\nend if\nif selfX <> lastJoinX or selfY <> lastJoinY or worldTick <> lastJoinTick + 1 then\nstalled = 0\nend if\nif chosenId <> escortId then\nstalled = 0\nend if\nstalled = stalled + 1\nescortId = chosenId\nmoveX = 64\nmoveY = 64\nif escortId <> 0 then\ndx = homeX - escortX\ndy = homeY - escortY\nax = dx\nay = dy\nif ax < 0 then\nax = 0 - ax\nend if\nif ay < 0 then\nay = 0 - ay\nend if\nscale = ax\nif ay > scale then\nscale = ay\nend if\nmoveX = escortX\nmoveY = escortY\nif scale > 0 then\nmoveX = escortX + dx * 0 / scale\nmoveY = escortY + dy * 0 / scale\nelse\nmoveX = homeX\nmoveY = homeY\nend if\nend if\nif stalled >= 48 then\nescortId = 0\nstalled = 0\nmoveX = 64\nmoveY = 64\nend if\nmoveAccepted = walkTo(moveX, moveY)\nif moveAccepted = 0 then\nescortId = 0\nmoveAccepted = walkTo(64, 64)\nend if\nlastJoinX = selfX\nlastJoinY = selfY\nlastJoinTick = worldTick\nend if\nelse\nif defActive then\ndefGoalX = defPointX\ndefGoalY = defPointY\nif ap31 and 0 = 1 then\ndefGoalX = ap38\ndefGoalY = ap39\nif defThreatX > ap38 then\ndefGoalX = defGoalX + 3\nelse\ndefGoalX = defGoalX - 3\nend if\nif defThreatY > ap39 then\ndefGoalY = defGoalY + 3\nelse\ndefGoalY = defGoalY - 3\nend if\nend if\nif selfClass = 0 or selfClass = 5 then\ndefGoalX = defGoalX - 2\nend if\nif selfClass = 1 or selfClass = 6 then\ndefGoalX = defGoalX + 2\nend if\nif selfClass = 2 or selfClass = 7 then\ndefGoalY = defGoalY - 2\nend if\nif selfClass = 3 or selfClass = 8 then\ndefGoalY = defGoalY + 2\nend if\n\ndefNavX = defGoalX\ndefNavY = defGoalY\ndefNavFound = terrainWalkable(defNavX, defNavY)\ndefdirection = 0\nwhile defdirection < 8 and defNavFound = 0\ndefDirX = 0\ndefDirY = 0\nif defdirection = 0 or defdirection = 1 or defdirection = 7 then\ndefDirX = 1\nend if\nif defdirection = 3 or defdirection = 4 or defdirection = 5 then\ndefDirX = -1\nend if\nif defdirection = 1 or defdirection = 2 or defdirection = 3 then\ndefDirY = 1\nend if\nif defdirection = 5 or defdirection = 6 or defdirection = 7 then\ndefDirY = -1\nend if\ndefNavX = defGoalX + defDirX * 3\ndefNavY = defGoalY + defDirY * 3\ndefNavFound = terrainWalkable(defNavX, defNavY)\ndefdirection = defdirection + 1\nwend\ndefMoveAccepted = 0\nif defNavFound then\ndefMoveAccepted = walkTo(defNavX, defNavY)\nend if\nif defMoveAccepted = 0 then\ndefMoveAccepted = walkTo(defThreatX, defThreatY)\nend if\nelse\nif waveCached then\nchosenId = waveChosen\nchosenDistance = waveDistance\nretained = waveRetained\nhomeX = waveHomeX\nhomeY = waveHomeY\nif chosenId <> 0 then\nescortX = waveX\nescortY = waveY\nend if\nelse\nchosenId = 0\nchosenDistance = 2147483647\nretained = 0\nhomeX = 64\nhomeY = 64\nindex = 0\nwhile index < objectCount()\nif objectTeam(index) = selfTeam and objectHp(index) > 0 and objectAlive(index) then\nif objectKind(index) = 1 then\nhomeX = objectX(index)\nhomeY = objectY(index)\nend if\nif objectKind(index) = 3 then\nid = objectId(index)\ndx = objectX(index) - selfX\ndy = objectY(index) - selfY\ndistance = dx * dx + dy * dy\nchoose = 0\nif id = escortId then\nchoose = 1\nretained = 1\nend if\nif retained = 0 then\nif distance < chosenDistance or (distance = chosenDistance and id < chosenId) then\nchoose = 1\nend if\nend if\nif choose then\nchosenId = id\nchosenDistance = distance\nescortX = objectX(index)\nescortY = objectY(index)\nend if\nend if\nend if\nindex = index + 1\nwend\nend if\nif selfX <> lastJoinX or selfY <> lastJoinY or worldTick <> lastJoinTick + 1 then\nstalled = 0\nend if\nif chosenId <> escortId then\nstalled = 0\nend if\nstalled = stalled + 1\nescortId = chosenId\nmoveX = 64\nmoveY = 64\nif escortId <> 0 then\ndx = homeX - escortX\ndy = homeY - escortY\nax = dx\nay = dy\nif ax < 0 then\nax = 0 - ax\nend if\nif ay < 0 then\nay = 0 - ay\nend if\nscale = ax\nif ay > scale then\nscale = ay\nend if\nmoveX = escortX\nmoveY = escortY\nif scale > 0 then\nmoveX = escortX + dx * 0 / scale\nmoveY = escortY + dy * 0 / scale\nelse\nmoveX = homeX\nmoveY = homeY\nend if\nend if\nif stalled >= 48 then\nescortId = 0\nstalled = 0\nmoveX = 64\nmoveY = 64\nend if\nmoveAccepted = walkTo(moveX, moveY)\nif moveAccepted = 0 then\nescortId = 0\nmoveAccepted = walkTo(64, 64)\nend if\nlastJoinX = selfX\nlastJoinY = selfY\nlastJoinTick = worldTick\nend if\nend if\nend if\nend if",
+  "writes": []
+ },
+ "formation_profile_tower_handoff_v1_profile_pruned_v1": {
+  "actions": [
+   "walkTo"
+  ],
+  "meaning": "Conditional component of the observed-profile formation fork. Final red-only movement override after the ordinary strategy. Initiate only when the selected observed enemy tower is standing, publicly targets self, self HP is at most hp_percent, and tower HP exceeds finish_hp and twice selfAttackDamage. Optional positive support witness: a living public allied creep within creep_tiles integer-coordinate tiles of that tower among the first scan_limit public objects. A missed witness never establishes absence. Choose the closest terrain-walkable one of eight compass destinations at release_tiles from the tower center. Retain that destination for at most hold_ticks; end immediately if the tower disappears, dies, or changes target, on a skipped living decision, failed walk, or deadline. Wait retry_ticks after completion/expiry/failure before another release. This last walk supersedes earlier target or movement orders; earlier purchases are retained. Frozen self HP is the predecision value even after same-tick healing. Accepted movement is not proof of arrival or safety. Reuse only m* scratch after its original users; preserve all persistent motion* and defense state. No blue commands, private states, opponent labels or seed checks. Storage revision: use response* slots only on red, where the blue-only response observer never accesses them. Map: {'towerReleaseId': 'responseKind', 'towerReleaseX': 'responseDx', 'towerReleaseY': 'responseDy', 'towerReleaseUntil': 'responseUntil', 'towerReleaseReady': 'responseMode', 'towerReleaseLastTick': 'responseOwnD', 'towerReleaseStarts': 'responseD', 'towerReleaseMoves': 'responseIndex', 'towerReleaseActive': 'responseEligible'}. Blue branch and persistent blue response slots are untouched. Storage-only alias map: {'backdoorAccept': 'ap0', 'backdoorActive': 'ap1', 'backdoorAlly': 'ap2', 'backdoorCommitted': 'ap3', 'backdoorD': 'ap4', 'backdoorFirstSeen': 'ap5', 'backdoorGod': 'ap6', 'backdoorGroupUntil': 'ap7', 'backdoorGuardA': 'ap8', 'backdoorGuardB': 'ap9', 'backdoorHelpers': 'ap10', 'backdoorI': 'ap11', 'backdoorKind': 'ap12', 'backdoorLastSeen': 'ap13', 'backdoorNearer': 'ap14', 'backdoorSelfD': 'ap15', 'backdoorSelfX': 'ap16', 'backdoorSelfY': 'ap17', 'backdoorUntil': 'ap18', 'backdoorWatched': 'ap19', 'backdoorX': 'ap20', 'backdoorY': 'ap21', 'defenseDecisions': 'ap22', 'defenseRefreshes': 'ap23', 'observedObjectCount': 'ap24', 'perimeterAdmit': 'ap25', 'perimeterAnchor': 'ap26', 'perimeterBound': 'ap27', 'perimeterBoundSq': 'ap28', 'perimeterDx': 'ap29', 'perimeterDy': 'ap30', 'perimeterEnabled': 'ap31', 'perimeterLastCombat': 'ap32', 'perimeterLastTick': 'ap33', 'perimeterObjX': 'ap34', 'perimeterObjY': 'ap35', 'perimeterRadiusSq': 'ap36', 'perimeterReachSq': 'ap37', 'perimeterX': 'ap38', 'perimeterY': 'ap39', 'responseD': 'ap40', 'responseDx': 'ap41', 'responseDy': 'ap42', 'responseEligible': 'ap43', 'responseIndex': 'ap44', 'responseKind': 'ap45', 'responseMode': 'ap46', 'responseOwnD': 'ap47', 'responseUntil': 'ap48', 'transitDx': 'mDx', 'transitDy': 'mDy', 'transitObservedDefense': 'defActive', 'distanceKind': 'buildingWeight', 'macroIndex': 'index', 'gaReady': 'waveCached'}.",
+  "memory": [
+   "ap45",
+   "ap41",
+   "ap42",
+   "ap48",
+   "ap46",
+   "ap47",
+   "ap40",
+   "ap44"
+  ],
+  "parameters": {},
+  "reads": [
+   "candidate"
+  ],
+  "template": "if selfTeam = 0 and gaActive = 0 then\nif selfTeam = 0 then\nap43 = 0\nif worldTick <> ap47 + 1 then\nap48 = 0\nap46 = 0\nend if\nap47 = worldTick\nif ap48 > 0 and worldTick >= ap48 then\nap48 = 0\nap46 = worldTick + 48\nend if\nif worldTick < ap48 or (worldTick >= ap46 and bestId <> 0 and selfHp * 100 <= selfMaxHp * 50) then\nmThreat = bestId\nif worldTick < ap48 then\nmThreat = ap45\nend if\nmFound = 0\nmIndex = 0\nwhile mIndex < objectCount() and mIndex < 64 and mFound = 0\nif objectId(mIndex) = mThreat then\nif objectKind(mIndex) = 4 and objectTeam(mIndex) <> selfTeam and objectHp(mIndex) > 0 and objectTarget(mIndex) = selfId then\nif worldTick < ap48 or (objectHp(mIndex) > 150 and objectHp(mIndex) > selfAttackDamage * 2) then\nmFound = 1\nmThreatX = objectX(mIndex)\nmThreatY = objectY(mIndex)\nend if\nend if\nmIndex = 64\nend if\nmIndex = mIndex + 1\nwend\nif mFound = 0 then\nif worldTick < ap48 then\nap46 = worldTick + 48\nend if\nap48 = 0\nelse\nif worldTick >= ap48 then\nif 1 then\nmFound = 0\nmIndex = 0\nwhile mIndex < objectCount() and mIndex < 64 and mFound = 0\nif objectKind(mIndex) = 3 and objectTeam(mIndex) = selfTeam and objectAlive(mIndex) and objectHp(mIndex) > 0 then\nmDx = objectX(mIndex) - mThreatX\nmDy = objectY(mIndex) - mThreatY\nif mDx * mDx + mDy * mDy <= 4 * 4 then\nmFound = 1\nend if\nend if\nmIndex = mIndex + 1\nwend\nend if\nif mFound then\nmFound = 0\nmBestScore = 2147483647\nmdirection = 0\nwhile mdirection < 8\nmDirX = 0\nmDirY = 0\nif mdirection = 0 or mdirection = 1 or mdirection = 7 then\nmDirX = 1\nend if\nif mdirection = 3 or mdirection = 4 or mdirection = 5 then\nmDirX = -1\nend if\nif mdirection = 1 or mdirection = 2 or mdirection = 3 then\nmDirY = 1\nend if\nif mdirection = 5 or mdirection = 6 or mdirection = 7 then\nmDirY = -1\nend if\nmTryX = mThreatX + mDirX * 8\nmTryY = mThreatY + mDirY * 8\nif terrainWalkable(mTryX, mTryY) then\nmDx = mTryX - selfX\nmDy = mTryY - selfY\nmD = mDx * mDx + mDy * mDy\nif mD < mBestScore then\nmBestScore = mD\nap41 = mTryX\nap42 = mTryY\nmFound = 1\nend if\nend if\nmdirection = mdirection + 1\nwend\nif mFound then\nap45 = mThreat\nap48 = worldTick + 144\nap40 = ap40 + 1\nelse\nap46 = worldTick + 48\nend if\nend if\nend if\nif worldTick < ap48 then\nif walkTo(ap41, ap42) then\nap43 = 1\nap44 = ap44 + 1\nelse\nap48 = 0\nap46 = worldTick + 48\nend if\nend if\nend if\nend if\nend if\nend if",
+  "writes": [
+   "redTowerRelease"
+  ]
+ },
+ "formation_profile_transit_state_v1_profile_pruned_v1": {
+  "actions": [],
+  "meaning": "Conditional component of the observed-profile formation fork. Track one initial public-map middle waypoint for the authored red classes. At each decision, independent of current combat, mark transit permanently complete when the observed own coordinates enter arrival_radius. The memory persists across respawns and never restarts after arrival. The route is eligible only before transit_deadline, before arrival and outside active defense. This skill issues no commands, selects no enemies and infers no hidden state. The fallback consumes eligibility only when normal strategy has no combat candidate and no accepted motion; after arrival it immediately uses normal creep escort. Blue and all other classes remain outside this opening. The defense input is the explicit alias from lineup_deployed_cached_v2; no second observation or hidden input is introduced. Storage-only alias map: {'backdoorAccept': 'ap0', 'backdoorActive': 'ap1', 'backdoorAlly': 'ap2', 'backdoorCommitted': 'ap3', 'backdoorD': 'ap4', 'backdoorFirstSeen': 'ap5', 'backdoorGod': 'ap6', 'backdoorGroupUntil': 'ap7', 'backdoorGuardA': 'ap8', 'backdoorGuardB': 'ap9', 'backdoorHelpers': 'ap10', 'backdoorI': 'ap11', 'backdoorKind': 'ap12', 'backdoorLastSeen': 'ap13', 'backdoorNearer': 'ap14', 'backdoorSelfD': 'ap15', 'backdoorSelfX': 'ap16', 'backdoorSelfY': 'ap17', 'backdoorUntil': 'ap18', 'backdoorWatched': 'ap19', 'backdoorX': 'ap20', 'backdoorY': 'ap21', 'defenseDecisions': 'ap22', 'defenseRefreshes': 'ap23', 'observedObjectCount': 'ap24', 'perimeterAdmit': 'ap25', 'perimeterAnchor': 'ap26', 'perimeterBound': 'ap27', 'perimeterBoundSq': 'ap28', 'perimeterDx': 'ap29', 'perimeterDy': 'ap30', 'perimeterEnabled': 'ap31', 'perimeterLastCombat': 'ap32', 'perimeterLastTick': 'ap33', 'perimeterObjX': 'ap34', 'perimeterObjY': 'ap35', 'perimeterRadiusSq': 'ap36', 'perimeterReachSq': 'ap37', 'perimeterX': 'ap38', 'perimeterY': 'ap39', 'responseD': 'ap40', 'responseDx': 'ap41', 'responseDy': 'ap42', 'responseEligible': 'ap43', 'responseIndex': 'ap44', 'responseKind': 'ap45', 'responseMode': 'ap46', 'responseOwnD': 'ap47', 'responseUntil': 'ap48', 'transitDx': 'mDx', 'transitDy': 'mDy', 'transitObservedDefense': 'defActive', 'distanceKind': 'buildingWeight', 'macroIndex': 'index', 'gaReady': 'waveCached'}.",
+  "memory": [
+   "transitDone"
+  ],
+  "parameters": {},
+  "reads": [
+   "transitObservedDefense"
+  ],
+  "template": "transitActive = 0\nif selfTeam = 0 and gaActive = 0 and adMode <> 3 then\ntransitActive = 0\ntransitX = 58\ntransitY = 56\nif selfTeam = 0 and (selfClass = 7 or selfClass = 8) then\nif worldTick <= 1800 and transitDone = 0 then\nmDx = selfX - transitX\nmDy = selfY - transitY\nif mDx * mDx + mDy * mDy <= 6 * 6 then\ntransitDone = 1\nelse\nif defActive = 0 then\ntransitActive = 1\nend if\nend if\nend if\nend if\nend if",
+  "writes": [
+   "transitActive",
+   "transitX",
+   "transitY"
+  ]
+ },
+ "richard_formation_combat_ally_under_attack_v3": {
+  "actions": [
+   "walkTo",
+   "attackTarget",
+   "castTarget"
+  ],
+  "meaning": "After a newly observed basic hit, issue a short terrain-checked movement order for recovery_ticks before resuming attack. Optionally include melee classes. This attempts to shorten attack recovery; brief commands may only turn and are not effective kiting by themselves. Independently, configured recent-damage/low-HP danger triggers retain the full min_ticks/max_ticks separation-based retreat. Preserve the parent controller's destination selection, failed-move attack fallback, explicit offensive spell attempt, respawn-event reset and no-target arbitration. Source-derived cadence benefit is not a guarantee of damage, survival or wins. Disable normal post-hit recovery for plain_class; retain its ordinary attackTarget and automatic abilities. Other classes keep the parent controller. Optional emergency retreat remains separate (disabled in this experiment). This class exception needs fresh evidence. Above motion_object_limit observed objects, skip the expensive recovery scan and issue an ordinary attack; clear per-decision motionActive. On resuming, the existing decision-gap reset invalidates stale recovery memory. This bounds combat-controller work, not the host object count. During active shared defense, use defense_motion_limit instead of the ordinary motion scan limit to reserve VM capacity for regrouping. Outside defense the parent combat controller is unchanged. Formation tether supersedes inherited recovery/attack movement while rejoining. H-ALLY-UNDER-ATTACK-01: before the ordinary attack order, scan visible living enemy heroes (heroes precede creeps in the object list). If one within assist_tiles publicly targets a living allied hero other than self, focus the lowest-HP such enemy hero instead of the ordinary candidate while self keeps at least 25 percent HP. Public objectTarget only; no opponent identity, seed or hidden state is read. v3: detection is folded into the existing single object scan (no second traversal); the victim reference is the previous tick's nearest allied hero (scratch mTD) and the override applies only if that ally is still nearest and within 6 tiles, the ordinary candidate is absent or a creep (scratch mSepX holds its kind), and self keeps >= 25 percent HP. Scratch mTD/mTryX/mTryY/mSepX are reused because the parent sits at the 256 VM global cap; each is reassigned before any later read. v1 (any candidate, 8 tiles, second scan) regressed blue vs Richard v135 0W/3L; v2 (second scan) exceeded the VM instruction limit on red. Focus intent does not guarantee kills or ally survival; measure full games.",
+  "memory": [
+   "motionLastTick",
+   "motionLastHits",
+   "motionLastHp",
+   "motionLoss",
+   "motionStart",
+   "motionUntil",
+   "motionReady",
+   "motionThreat",
+   "motionStartSeparation",
+   "motionX",
+   "motionY",
+   "motionCompletions",
+   "motionFailures",
+   "kiteBursts",
+   "kiteEscapes",
+   "kiteMoveTicks",
+   "kiteSpellCasts",
+   "recoverySteps"
+  ],
+  "parameters": {
+   "all_classes": [
+    0,
+    0,
+    1
+   ],
+   "assist_tiles": [
+    6,
+    4,
+    12
+   ],
+   "defense_motion_limit": [
+    40,
+    20,
+    80
+   ],
+   "gain_tiles": [
+    2,
+    1,
+    4
+   ],
+   "max_ticks": [
+    64,
+    32,
+    120
+   ],
+   "min_ticks": [
+    12,
+    9,
+    32
+   ],
+   "motion_object_limit": [
+    80,
+    40,
+    120
+   ],
+   "normal": [
+    1,
+    0,
+    1
+   ],
+   "plain_class": [
+    9,
+    0,
+    9
+   ],
+   "recovery_ticks": [
+    1,
+    1,
+    8
+   ],
+   "risk_hp": [
+    0,
+    0,
+    80
+   ],
+   "spells": [
+    1,
+    0,
+    1
+   ],
+   "step_tiles": [
+    3,
+    2,
+    5
+   ],
+   "support": [
+    1,
+    0,
+    1
+   ],
+   "targeted": [
+    1,
+    0,
+    1
+   ],
+   "threat_tiles": [
+    5,
+    3,
+    7
+   ]
+  },
+  "reads": [
+   "candidate",
+   "defense",
+   "formation"
+  ],
+  "template": "if gaActive and gaTethered then\n  motionActive = 0\nelse\n  defMotionLimit = param_motion_object_limit\n  if defActive then\n    defMotionLimit = param_defense_motion_limit\n  end if\n  if objectCount() > defMotionLimit then\n    motionActive = 0\n    if bestId <> 0 then\n      attackTarget(bestId)\n    end if\n  else\n    motionActive = 0\n    kiteMoved = 0\n    kiteTrigger = 0\n    mNew = 0\n    if motionLastTick = 0 or worldTick <> motionLastTick + 1 then\n      motionUntil = 0\n      motionReady = 0\n      motionLastHits = selfAttacksLanded\n      motionLastHp = selfHp\n      motionLoss = 0\n    end if\n    motionLoss = motionLoss * 23 / 24\n    if selfHp < motionLastHp then\n      motionLoss = motionLoss + motionLastHp - selfHp\n    end if\n    mThreat = 0\n    mSecond = 0\n    mDistance = 2147483647\n    mSecondDistance = 2147483647\n    mTower = 0\n    mTowerDistance = 2147483647\n    mTD = mAlly\n    mTryX = 0\n    mTryY = 2147483647\n    mSepX = 0\n    mAlly = 0\n    mAllyDistance = 2147483647\n    mEnemies = 0\n    mAllies = 0\n    mAttackers = 0\n    mTracked = 0\n    mFacingX = 0\n    mFacingY = 0\n    mIndex = 0\n    while mIndex < objectCount()\n      mId = objectId(mIndex)\n      mKind = objectKind(mIndex)\n      mX = objectX(mIndex)\n      mY = objectY(mIndex)\n      mDx = mX - selfX\n      mDy = mY - selfY\n      mD = mDx * mDx + mDy * mDy\n      if mId = bestId then\n        mSepX = mKind\n      end if\n      if mId = selfId then\n        mFacingX = objectFacingX(mIndex)\n        mFacingY = objectFacingY(mIndex)\n      end if\n      if objectHp(mIndex) > 0 then\n        if mKind = 4 and mD < mTowerDistance then\n          mTower = mId\n          mTowerX = mX\n          mTowerY = mY\n          mTowerDistance = mD\n        end if\n        if objectTeam(mIndex) = selfTeam and mId <> selfId then\n          if mKind = 2 or mKind = 3 then\n            if mD <= 36 then\n              mAllies = mAllies + 1\n              if mKind = 2 then\n                mAllies = mAllies + 2\n              end if\n            end if\n            if mKind = 2 and mD < mAllyDistance then\n              mAlly = mId\n              mAllyX = mX\n              mAllyY = mY\n              mAllyDistance = mD\n            end if\n          end if\n        end if\n        if objectTeam(mIndex) <> selfTeam and (mKind = 2 or mKind = 3 or mKind = 4) then\n          if mD <= 36 then\n            mEnemies = mEnemies + 1\n            if mKind = 2 then\n              mEnemies = mEnemies + 2\n            end if\n            if objectTarget(mIndex) = selfId then\n              mAttackers = mAttackers + 1\n            end if\n          end if\n          if mKind = 2 and mD <= param_assist_tiles * param_assist_tiles and mTD <> 0 and objectTarget(mIndex) = mTD and objectHp(mIndex) < mTryY then\n            mTryX = mId\n            mTryY = objectHp(mIndex)\n          end if\n          if mId = motionThreat then\n            mTracked = 1\n            mTrackedX = mX\n            mTrackedY = mY\n          end if\n          if param_targeted = 0 or objectTarget(mIndex) = selfId then\n            if mD < mDistance then\n              mSecond = mThreat\n              mSecondX = mThreatX\n              mSecondY = mThreatY\n              mSecondDistance = mDistance\n              mThreat = mId\n              mThreatX = mX\n              mThreatY = mY\n              mDistance = mD\n            else\n              if mD < mSecondDistance then\n                mSecond = mId\n                mSecondX = mX\n                mSecondY = mY\n                mSecondDistance = mD\n              end if\n            end if\n          end if\n        end if\n      end if\n      mIndex = mIndex + 1\n    wend\n    if mTryX <> 0 and mAlly = mTD and mAllyDistance <= 36 and (bestId = 0 or mSepX = 3) and selfHp * 100 >= selfMaxHp * 25 then\n      bestId = mTryX\n    end if\n    if worldTick < motionUntil and worldTick >= motionStart + param_min_ticks then\n      mSepX = selfX - mTrackedX\n      mSepY = selfY - mTrackedY\n      if mSepX < 0 then\n        mSepX = -mSepX\n      end if\n      if mSepY < 0 then\n        mSepY = -mSepY\n      end if\n      if mTracked = 0 or mSepX + mSepY >= motionStartSeparation + param_gain_tiles then\n        motionUntil = 0\n        motionCompletions = motionCompletions + 1\n        motionReady = worldTick + 8\n      end if\n    end if\n    if worldTick >= motionUntil and worldTick >= motionReady and mThreat <> 0 then\n      if param_risk_hp > 0 and mAttackers > 0 and mDistance <= 36 then\n        if (selfHp * 100 < selfMaxHp * param_risk_hp and selfHp < motionLastHp) or selfHp < motionLoss * 3 then\n          kiteTrigger = 2\n        end if\n      end if\n      if kiteTrigger = 0 and param_normal = 1 and bestId <> 0 and selfClass <> param_plain_class and mDistance <= param_threat_tiles * param_threat_tiles then\n        if param_all_classes = 1 or selfClass = 1 or selfClass = 2 or selfClass = 3 or selfClass = 6 or selfClass = 7 or selfClass = 8 then\n          if selfAttacksLanded > motionLastHits and selfAttackCooldown > 0 then\n            kiteTrigger = 1\n          end if\n        end if\n      end if\n      if kiteTrigger > 0 then\n        motionStart = worldTick\n        motionUntil = worldTick + param_max_ticks\n        if kiteTrigger = 1 then\n          motionUntil = worldTick + param_recovery_ticks\n          recoverySteps = recoverySteps + 1\n        end if\n        motionThreat = mThreat\n        mSepX = selfX - mThreatX\n        mSepY = selfY - mThreatY\n        if mSepX < 0 then\n          mSepX = -mSepX\n        end if\n        if mSepY < 0 then\n          mSepY = -mSepY\n        end if\n        motionStartSeparation = mSepX + mSepY\n        mNew = 1\n        mBestScore = -2147483647\n        mFound = 0\n        mdirection = 0\n        while mdirection < 8\n            mDirX = 0\n    mDirY = 0\n    if mdirection = 0 or mdirection = 1 or mdirection = 7 then\n      mDirX = 1\n    end if\n    if mdirection = 3 or mdirection = 4 or mdirection = 5 then\n      mDirX = -1\n    end if\n    if mdirection = 1 or mdirection = 2 or mdirection = 3 then\n      mDirY = 1\n    end if\n    if mdirection = 5 or mdirection = 6 or mdirection = 7 then\n      mDirY = -1\n    end if\n          mLegal = 1\n          mStep = 1\n          while mStep <= param_step_tiles\n            mTryX = selfX + mDirX * mStep\n            mTryY = selfY + mDirY * mStep\n            if terrainWalkable(mTryX, mTryY) = 0 then\n              mLegal = 0\n            end if\n            if mTower <> 0 then\n              mDx = mTryX - mTowerX\n              mDy = mTryY - mTowerY\n              mTD = mDx * mDx + mDy * mDy\n              if mTD < 4 and mTD <= mTowerDistance then\n                mLegal = 0\n              end if\n            end if\n            mStep = mStep + 1\n          wend\n          if mLegal then\n            mDx = mTryX - mThreatX\n            mDy = mTryY - mThreatY\n            mMin = mDx * mDx + mDy * mDy\n            mSum = mMin\n            if mSecond <> 0 and mSecondDistance <= 64 then\n              mDx = mTryX - mSecondX\n              mDy = mTryY - mSecondY\n              mD = mDx * mDx + mDy * mDy\n              mSum = mSum + mD\n              if mD < mMin then\n                mMin = mD\n              end if\n            end if\n            mScore = mMin * 8 + mSum\n            mScore = mScore + (mDirX * mFacingX + mDirY * mFacingY) / 15000\n            if param_support = 1 and mAlly <> 0 and mAllyDistance <= 144 then\n              mDx = mTryX - mAllyX\n              mDy = mTryY - mAllyY\n              mScore = mScore - mDx * mDx - mDy * mDy\n            end if\n            if mScore > mBestScore then\n              mBestScore = mScore\n              motionX = mTryX\n              motionY = mTryY\n              mFound = 1\n            end if\n          end if\n          mdirection = mdirection + 1\n        wend\n        if mFound = 0 then\n          motionUntil = 0\n          motionFailures = motionFailures + 1\n        end if\n      end if\n    end if\n    if worldTick < motionUntil then\n      kiteMoved = walkTo(motionX, motionY)\n      if kiteMoved then\n        motionActive = 1\n        kiteMoveTicks = kiteMoveTicks + 1\n        if mNew then\n          kiteBursts = kiteBursts + 1\n          if kiteTrigger = 2 then\n            kiteEscapes = kiteEscapes + 1\n          end if\n        end if\n        if param_spells = 1 and bestId <> 0 then\n          mSpell = 3\n          mCast = 0\n          while mSpell >= 1 and mCast = 0\n            if selfClass <> 3 or mSpell = 3 then\n              if abilityCharges(mSpell) > 0 and abilityCooldown(mSpell) = 0 then\n                mCast = castTarget(mSpell, bestId)\n              end if\n            end if\n            mSpell = mSpell - 1\n          wend\n          if mCast then\n            kiteSpellCasts = kiteSpellCasts + 1\n          end if\n        end if\n      else\n        motionUntil = 0\n        motionFailures = motionFailures + 1\n      end if\n    end if\n    if motionActive = 0 and bestId <> 0 then\n      attackTarget(bestId)\n    end if\n    motionLastTick = worldTick\n    motionLastHits = selfAttacksLanded\n    motionLastHp = selfHp\n  end if\nend if",
+  "writes": [
+   "motion"
+  ]
+ },
+ "richard_formation_combat_v1": {
+  "actions": [
+   "walkTo",
+   "attackTarget",
+   "castTarget"
+  ],
+  "meaning": "After a newly observed basic hit, issue a short terrain-checked movement order for recovery_ticks before resuming attack. Optionally include melee classes. This attempts to shorten attack recovery; brief commands may only turn and are not effective kiting by themselves. Independently, configured recent-damage/low-HP danger triggers retain the full min_ticks/max_ticks separation-based retreat. Preserve the parent controller's destination selection, failed-move attack fallback, explicit offensive spell attempt, respawn-event reset and no-target arbitration. Source-derived cadence benefit is not a guarantee of damage, survival or wins. Disable normal post-hit recovery for plain_class; retain its ordinary attackTarget and automatic abilities. Other classes keep the parent controller. Optional emergency retreat remains separate (disabled in this experiment). This class exception needs fresh evidence. Above motion_object_limit observed objects, skip the expensive recovery scan and issue an ordinary attack; clear per-decision motionActive. On resuming, the existing decision-gap reset invalidates stale recovery memory. This bounds combat-controller work, not the host object count. During active shared defense, use defense_motion_limit instead of the ordinary motion scan limit to reserve VM capacity for regrouping. Outside defense the parent combat controller is unchanged. Formation tether supersedes inherited recovery/attack movement while rejoining.",
+  "memory": [
+   "motionLastTick",
+   "motionLastHits",
+   "motionLastHp",
+   "motionLoss",
+   "motionStart",
+   "motionUntil",
+   "motionReady",
+   "motionThreat",
+   "motionStartSeparation",
+   "motionX",
+   "motionY",
+   "motionCompletions",
+   "motionFailures",
+   "kiteBursts",
+   "kiteEscapes",
+   "kiteMoveTicks",
+   "kiteSpellCasts",
+   "recoverySteps"
+  ],
+  "parameters": {
+   "all_classes": [
+    0,
+    0,
+    1
+   ],
+   "defense_motion_limit": [
+    40,
+    20,
+    80
+   ],
+   "gain_tiles": [
+    2,
+    1,
+    4
+   ],
+   "max_ticks": [
+    64,
+    32,
+    120
+   ],
+   "min_ticks": [
+    12,
+    9,
+    32
+   ],
+   "motion_object_limit": [
+    80,
+    40,
+    120
+   ],
+   "normal": [
+    1,
+    0,
+    1
+   ],
+   "plain_class": [
+    9,
+    0,
+    9
+   ],
+   "recovery_ticks": [
+    1,
+    1,
+    8
+   ],
+   "risk_hp": [
+    0,
+    0,
+    80
+   ],
+   "spells": [
+    1,
+    0,
+    1
+   ],
+   "step_tiles": [
+    3,
+    2,
+    5
+   ],
+   "support": [
+    1,
+    0,
+    1
+   ],
+   "targeted": [
+    1,
+    0,
+    1
+   ],
+   "threat_tiles": [
+    5,
+    3,
+    7
+   ]
+  },
+  "reads": [
+   "candidate",
+   "defense",
+   "formation"
+  ],
+  "template": "if gaActive and gaTethered then\n  motionActive = 0\nelse\n  defMotionLimit = param_motion_object_limit\n  if defActive then\n    defMotionLimit = param_defense_motion_limit\n  end if\n  if objectCount() > defMotionLimit then\n    motionActive = 0\n    if bestId <> 0 then\n      attackTarget(bestId)\n    end if\n  else\n    motionActive = 0\n    kiteMoved = 0\n    kiteTrigger = 0\n    mNew = 0\n    if motionLastTick = 0 or worldTick <> motionLastTick + 1 then\n      motionUntil = 0\n      motionReady = 0\n      motionLastHits = selfAttacksLanded\n      motionLastHp = selfHp\n      motionLoss = 0\n    end if\n    motionLoss = motionLoss * 23 / 24\n    if selfHp < motionLastHp then\n      motionLoss = motionLoss + motionLastHp - selfHp\n    end if\n    mThreat = 0\n    mSecond = 0\n    mDistance = 2147483647\n    mSecondDistance = 2147483647\n    mTower = 0\n    mTowerDistance = 2147483647\n    mAlly = 0\n    mAllyDistance = 2147483647\n    mEnemies = 0\n    mAllies = 0\n    mAttackers = 0\n    mTracked = 0\n    mFacingX = 0\n    mFacingY = 0\n    mIndex = 0\n    while mIndex < objectCount()\n      mId = objectId(mIndex)\n      mKind = objectKind(mIndex)\n      mX = objectX(mIndex)\n      mY = objectY(mIndex)\n      mDx = mX - selfX\n      mDy = mY - selfY\n      mD = mDx * mDx + mDy * mDy\n      if mId = selfId then\n        mFacingX = objectFacingX(mIndex)\n        mFacingY = objectFacingY(mIndex)\n      end if\n      if objectHp(mIndex) > 0 then\n        if mKind = 4 and mD < mTowerDistance then\n          mTower = mId\n          mTowerX = mX\n          mTowerY = mY\n          mTowerDistance = mD\n        end if\n        if objectTeam(mIndex) = selfTeam and mId <> selfId then\n          if mKind = 2 or mKind = 3 then\n            if mD <= 36 then\n              mAllies = mAllies + 1\n              if mKind = 2 then\n                mAllies = mAllies + 2\n              end if\n            end if\n            if mKind = 2 and mD < mAllyDistance then\n              mAlly = mId\n              mAllyX = mX\n              mAllyY = mY\n              mAllyDistance = mD\n            end if\n          end if\n        end if\n        if objectTeam(mIndex) <> selfTeam and (mKind = 2 or mKind = 3 or mKind = 4) then\n          if mD <= 36 then\n            mEnemies = mEnemies + 1\n            if mKind = 2 then\n              mEnemies = mEnemies + 2\n            end if\n            if objectTarget(mIndex) = selfId then\n              mAttackers = mAttackers + 1\n            end if\n          end if\n          if mId = motionThreat then\n            mTracked = 1\n            mTrackedX = mX\n            mTrackedY = mY\n          end if\n          if param_targeted = 0 or objectTarget(mIndex) = selfId then\n            if mD < mDistance then\n              mSecond = mThreat\n              mSecondX = mThreatX\n              mSecondY = mThreatY\n              mSecondDistance = mDistance\n              mThreat = mId\n              mThreatX = mX\n              mThreatY = mY\n              mDistance = mD\n            else\n              if mD < mSecondDistance then\n                mSecond = mId\n                mSecondX = mX\n                mSecondY = mY\n                mSecondDistance = mD\n              end if\n            end if\n          end if\n        end if\n      end if\n      mIndex = mIndex + 1\n    wend\n    if worldTick < motionUntil and worldTick >= motionStart + param_min_ticks then\n      mSepX = selfX - mTrackedX\n      mSepY = selfY - mTrackedY\n      if mSepX < 0 then\n        mSepX = -mSepX\n      end if\n      if mSepY < 0 then\n        mSepY = -mSepY\n      end if\n      if mTracked = 0 or mSepX + mSepY >= motionStartSeparation + param_gain_tiles then\n        motionUntil = 0\n        motionCompletions = motionCompletions + 1\n        motionReady = worldTick + 8\n      end if\n    end if\n    if worldTick >= motionUntil and worldTick >= motionReady and mThreat <> 0 then\n      if param_risk_hp > 0 and mAttackers > 0 and mDistance <= 36 then\n        if (selfHp * 100 < selfMaxHp * param_risk_hp and selfHp < motionLastHp) or selfHp < motionLoss * 3 then\n          kiteTrigger = 2\n        end if\n      end if\n      if kiteTrigger = 0 and param_normal = 1 and bestId <> 0 and selfClass <> param_plain_class and mDistance <= param_threat_tiles * param_threat_tiles then\n        if param_all_classes = 1 or selfClass = 1 or selfClass = 2 or selfClass = 3 or selfClass = 6 or selfClass = 7 or selfClass = 8 then\n          if selfAttacksLanded > motionLastHits and selfAttackCooldown > 0 then\n            kiteTrigger = 1\n          end if\n        end if\n      end if\n      if kiteTrigger > 0 then\n        motionStart = worldTick\n        motionUntil = worldTick + param_max_ticks\n        if kiteTrigger = 1 then\n          motionUntil = worldTick + param_recovery_ticks\n          recoverySteps = recoverySteps + 1\n        end if\n        motionThreat = mThreat\n        mSepX = selfX - mThreatX\n        mSepY = selfY - mThreatY\n        if mSepX < 0 then\n          mSepX = -mSepX\n        end if\n        if mSepY < 0 then\n          mSepY = -mSepY\n        end if\n        motionStartSeparation = mSepX + mSepY\n        mNew = 1\n        mBestScore = -2147483647\n        mFound = 0\n        mdirection = 0\n        while mdirection < 8\n            mDirX = 0\n    mDirY = 0\n    if mdirection = 0 or mdirection = 1 or mdirection = 7 then\n      mDirX = 1\n    end if\n    if mdirection = 3 or mdirection = 4 or mdirection = 5 then\n      mDirX = -1\n    end if\n    if mdirection = 1 or mdirection = 2 or mdirection = 3 then\n      mDirY = 1\n    end if\n    if mdirection = 5 or mdirection = 6 or mdirection = 7 then\n      mDirY = -1\n    end if\n          mLegal = 1\n          mStep = 1\n          while mStep <= param_step_tiles\n            mTryX = selfX + mDirX * mStep\n            mTryY = selfY + mDirY * mStep\n            if terrainWalkable(mTryX, mTryY) = 0 then\n              mLegal = 0\n            end if\n            if mTower <> 0 then\n              mDx = mTryX - mTowerX\n              mDy = mTryY - mTowerY\n              mTD = mDx * mDx + mDy * mDy\n              if mTD < 4 and mTD <= mTowerDistance then\n                mLegal = 0\n              end if\n            end if\n            mStep = mStep + 1\n          wend\n          if mLegal then\n            mDx = mTryX - mThreatX\n            mDy = mTryY - mThreatY\n            mMin = mDx * mDx + mDy * mDy\n            mSum = mMin\n            if mSecond <> 0 and mSecondDistance <= 64 then\n              mDx = mTryX - mSecondX\n              mDy = mTryY - mSecondY\n              mD = mDx * mDx + mDy * mDy\n              mSum = mSum + mD\n              if mD < mMin then\n                mMin = mD\n              end if\n            end if\n            mScore = mMin * 8 + mSum\n            mScore = mScore + (mDirX * mFacingX + mDirY * mFacingY) / 15000\n            if param_support = 1 and mAlly <> 0 and mAllyDistance <= 144 then\n              mDx = mTryX - mAllyX\n              mDy = mTryY - mAllyY\n              mScore = mScore - mDx * mDx - mDy * mDy\n            end if\n            if mScore > mBestScore then\n              mBestScore = mScore\n              motionX = mTryX\n              motionY = mTryY\n              mFound = 1\n            end if\n          end if\n          mdirection = mdirection + 1\n        wend\n        if mFound = 0 then\n          motionUntil = 0\n          motionFailures = motionFailures + 1\n        end if\n      end if\n    end if\n    if worldTick < motionUntil then\n      kiteMoved = walkTo(motionX, motionY)\n      if kiteMoved then\n        motionActive = 1\n        kiteMoveTicks = kiteMoveTicks + 1\n        if mNew then\n          kiteBursts = kiteBursts + 1\n          if kiteTrigger = 2 then\n            kiteEscapes = kiteEscapes + 1\n          end if\n        end if\n        if param_spells = 1 and bestId <> 0 then\n          mSpell = 3\n          mCast = 0\n          while mSpell >= 1 and mCast = 0\n            if selfClass <> 3 or mSpell = 3 then\n              if abilityCharges(mSpell) > 0 and abilityCooldown(mSpell) = 0 then\n                mCast = castTarget(mSpell, bestId)\n              end if\n            end if\n            mSpell = mSpell - 1\n          wend\n          if mCast then\n            kiteSpellCasts = kiteSpellCasts + 1\n          end if\n        end if\n      else\n        motionUntil = 0\n        motionFailures = motionFailures + 1\n      end if\n    end if\n    if motionActive = 0 and bestId <> 0 then\n      attackTarget(bestId)\n    end if\n    motionLastTick = worldTick\n    motionLastHits = selfAttacksLanded\n    motionLastHp = selfHp\n  end if\nend if",
+  "writes": [
+   "motion"
+  ]
+ },
+ "selective_loadout": {
+  "actions": [
+   "buyItem"
+  ],
+  "meaning": "Blue team (classes Vanguard, Ranger, Arcanist, Druid Warden, Demon Hunter) uses the explicit ordered equipment progression. If red_loadout=1, red Death Knight, Crossbowman and Berserker also use it. Other red heroes retain the exact baseline equipment logic. This is a declared lineup-specific hypothesis, not a guarantee of superiority. Ordered branch: Scan live inventory; buy only the first missing item in the five-item ordered equipment plan, when an empty slot and enough starting gold exist. At most one equipment attempt per decision; the host enforces the remaining balance after earlier purchases. No class restriction. Five planned equipment items leave one slot for consumables; earlier consumables may still block gear. Baseline branch: Ranger and Crossbowman start with Crimson Dagger when affordable, trading initial boot speed for +8 basic damage to improve last hits and growth. Then retain existing class equipment purchases. Other classes and consumables are unchanged. Host return values establish accepted purchases.",
+  "memory": [
+   "loadoutPurchases",
+   "weaponStarts"
+  ],
+  "parameters": {
+   "fifth_item": [
+    20,
+    5,
+    20
+   ],
+   "first_item": [
+    11,
+    5,
+    20
+   ],
+   "fourth_item": [
+    18,
+    5,
+    20
+   ],
+   "red_loadout": [
+    0,
+    0,
+    1
+   ],
+   "second_item": [
+    13,
+    5,
+    20
+   ],
+   "third_item": [
+    16,
+    5,
+    20
+   ]
+  },
+  "reads": [
+   "inventory"
+  ],
+  "template": "if selfTeam = 1 or (param_red_loadout = 1 and selfClass <> 7 and selfClass <> 8) then\n  ownsfirst = 0\n  ownssecond = 0\n  ownsthird = 0\n  ownsfourth = 0\n  ownsfifth = 0\n  loadoutSpace = 0\n  loadoutSlot = 0\n  while loadoutSlot < 6\n    loadoutItem = itemId(loadoutSlot)\n    if loadoutItem = 0 then\n      loadoutSpace = 1\n    end if\n    if loadoutItem = param_first_item then\n      ownsfirst = 1\n    end if\n    if loadoutItem = param_second_item then\n      ownssecond = 1\n    end if\n    if loadoutItem = param_third_item then\n      ownsthird = 1\n    end if\n    if loadoutItem = param_fourth_item then\n      ownsfourth = 1\n    end if\n    if loadoutItem = param_fifth_item then\n      ownsfifth = 1\n    end if\n    loadoutSlot = loadoutSlot + 1\n  wend\n  loadoutNext = 0\n  if loadoutNext = 0 and ownsfirst = 0 then\n    loadoutNext = param_first_item\n  end if\n  if loadoutNext = 0 and ownssecond = 0 then\n    loadoutNext = param_second_item\n  end if\n  if loadoutNext = 0 and ownsthird = 0 then\n    loadoutNext = param_third_item\n  end if\n  if loadoutNext = 0 and ownsfourth = 0 then\n    loadoutNext = param_fourth_item\n  end if\n  if loadoutNext = 0 and ownsfifth = 0 then\n    loadoutNext = param_fifth_item\n  end if\n  loadoutPrice = 2147483647\n  if loadoutNext = 5 then\n    loadoutPrice = 80\n  end if\n  if loadoutNext = 6 then\n    loadoutPrice = 90\n  end if\n  if loadoutNext = 7 then\n    loadoutPrice = 70\n  end if\n  if loadoutNext = 8 then\n    loadoutPrice = 100\n  end if\n  if loadoutNext = 9 then\n    loadoutPrice = 120\n  end if\n  if loadoutNext = 10 then\n    loadoutPrice = 120\n  end if\n  if loadoutNext = 11 then\n    loadoutPrice = 110\n  end if\n  if loadoutNext = 12 then\n    loadoutPrice = 140\n  end if\n  if loadoutNext = 13 then\n    loadoutPrice = 150\n  end if\n  if loadoutNext = 14 then\n    loadoutPrice = 150\n  end if\n  if loadoutNext = 15 then\n    loadoutPrice = 140\n  end if\n  if loadoutNext = 16 then\n    loadoutPrice = 160\n  end if\n  if loadoutNext = 17 then\n    loadoutPrice = 170\n  end if\n  if loadoutNext = 18 then\n    loadoutPrice = 180\n  end if\n  if loadoutNext = 19 then\n    loadoutPrice = 180\n  end if\n  if loadoutNext = 20 then\n    loadoutPrice = 190\n  end if\n  if loadoutSpace <> 0 and selfGold >= loadoutPrice then\n    loadoutBought = buyItem(loadoutNext)\n    if loadoutBought <> 0 then\n      loadoutPurchases = loadoutPurchases + 1\n    end if\n  end if\nelse\n  if (selfClass = 1 or selfClass = 6) and hasGear = 0 and selfGold >= 110 then\n            weaponBought = buyItem(11)\n            if weaponBought then\n              hasGear = 1\n              weaponStarts = weaponStarts + 1\n            end if\n          end if\n      melee = 0\n  ranged = 0\n  magic = 0\n  if selfClass = 0 or selfClass = 4 or selfClass = 5 or selfClass = 9 then\n    melee = 1\n  end if\n  if selfClass = 1 or selfClass = 6 then\n    ranged = 1\n  end if\n  if selfClass = 2 or selfClass = 3 or selfClass = 7 or selfClass = 8 then\n    magic = 1\n  end if\n  if melee = 1 then\n    if hasGear = 0 then\n      if selfGold >= 70 then\n        buyItem(7)\n      end if\n    end if\n    if selfGold >= 80 then\n      buyItem(5)\n    end if\n    if selfGold >= 110 then\n      buyItem(11)\n    end if\n    if selfGold >= 150 then\n      buyItem(13)\n    end if\n    if selfGold >= 180 then\n      buyItem(18)\n    end if\n  end if\n  if ranged = 1 then\n    if hasGear = 0 then\n      if selfGold >= 100 then\n        buyItem(8)\n      end if\n    end if\n    if selfGold >= 150 then\n      buyItem(14)\n    end if\n    if selfGold >= 180 then\n      buyItem(19)\n    end if\n  end if\n  if magic = 1 then\n    if hasGear = 0 then\n      if selfGold >= 140 then\n        buyItem(12)\n      end if\n    end if\n    if selfGold >= 120 then\n      buyItem(10)\n    end if\n    if selfGold >= 170 then\n      buyItem(17)\n    end if\n    if selfGold >= 190 then\n      buyItem(20)\n    end if\n  end if\n  if selfGold >= 90 then\n    buyItem(6)\n  end if\n  if selfGold >= 120 then\n    buyItem(9)\n  end if\nend if",
+  "writes": []
+ }
+}
