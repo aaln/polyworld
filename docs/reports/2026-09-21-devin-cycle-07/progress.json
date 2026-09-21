@@ -1,12 +1,12 @@
 {
- "cycle": "20260921T0823Z-devin-06",
+ "cycle": 7,
  "phase": "activation-confirmed-runtime-repair-pending",
  "focus": "Richard v135 red loss (hosted 0/40 red, 40/40 blue; locally reproduced 0/3 red, 3/3 blue)",
- "hypothesis_id": "H-RED-OPEN-SPLIT-01",
- "status": "proposed; rule-level episode IR not yet extracted",
- "next_action": "v3: single-pass zero-new-globals fold of assist detection into main object scan; verify.py; local gates both colours vs Richard/parent; hosted A/B vs relh v159 via journal.",
- "last_result": "Ally-under-attack predicate activates in relh blue loss at the diagnosed window (offline replay test); v2 runtime cost invalid; parent at 256/256 globals.",
- "checked_at": "2026-09-21T06:23:45Z",
+ "hypothesis_id": "H-RED-TRANSIT-01",
+ "status": "null-result",
+ "next_action": "scenario-vm single-tick trace hero108@1418 (why v3 retarget not emitted); red lane-assignment probe on red-54 ticks 0-900",
+ "last_result": "H-RED-TRANSIT-01 off variant (69fac10f, ir 65ec8bb9) hosted red vs relh v159 0W/40L/0D/0INV; group variant == off locally (mAllies stale at guard). Falsified; incumbent retained.",
+ "checked_at": "2026-09-21T10:23:48.548673+00:00",
  "hypotheses": [
   {
    "id": "H-RED-TRANSIT-01",
@@ -30,6 +30,15 @@
     "source_sha256": "d60f9626c51d607fad99102e7bb52c50807853a0a98aefb77951fa97ee74532d",
     "policy_sha256": "e170dea48ebfdd640c2fd37c3bec30af9e3d850f69a016ea1503373e08223dbe",
     "hosted_version": "b507afaa-725d-4714-b988-3749bf8a13eb (inert, unvalidated, not in league)"
+   }
+  },
+  {
+   "id": "H-RED-TRANSIT-01",
+   "status": "falsified",
+   "cycle": 7,
+   "variants": {
+    "group": "8a20d1e4 (guard reads mAllies before scan; identical to off)",
+    "off": "08151739 / ir 65ec8bb9 / version 69fac10f inert; local red vs Richard 0-1-2, vs parent 0-3; hosted red vs relh 0-40 xreq_72487884"
    }
   }
  ],

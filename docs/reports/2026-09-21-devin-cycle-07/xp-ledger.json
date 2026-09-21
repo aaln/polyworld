@@ -1,9 +1,5 @@
 {
- "account_active_requests": {
-  "pending": 0,
-  "running": 0,
-  "submitted": 0
- },
+ "account_active_requests": 0,
  "account_readonly": {
   "active": {
    "pending": 0,
@@ -77,12 +73,13 @@
      "status": "created",
      "study": "gota-ab-transit-off-relh159-20260921"
     }
-   ]
+   ],
+   "episodes": 40
   }
  },
- "episodes_purchased_by_this_host": 160,
+ "episodes_purchased_by_this_host": 200,
  "host": "devin-58dc29146e95400ca86b1215ff93a5b9",
- "last_reconciled": "2026-09-21T00:26:44Z",
+ "last_reconciled": "2026-09-21T10:50Z",
  "latest_account_request_created_at": "2026-09-20T22:14:20.812841Z",
  "limits": {
   "max_active": 3,
@@ -94,7 +91,14 @@
   "xreq_04e46b7f-e6f4-42be-be21-318aaff98bb0",
   "xreq_2b5e1bbd-bf64-429d-af8b-8ccc10f1d855",
   "xreq_0bc7ca99-d0f9-44e7-8209-0df7985b6f14",
-  "xreq_72487884-3655-4518-bb40-e13c8339fc2e"
+  "xreq_72487884-3655-4518-bb40-e13c8339fc2e",
+  {
+   "cycle": 7,
+   "request_id": "xreq_72487884-3655-4518-bb40-e13c8339fc2e",
+   "episodes": 40,
+   "created_at": "2026-09-21T10:34Z",
+   "result": "0W/40L/0D/0INV"
+  }
  ],
  "schema": 1
 }
