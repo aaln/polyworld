@@ -1,12 +1,12 @@
 {
- "cycle": 10,
+ "cycle": 11,
  "phase": "activation-confirmed-runtime-repair-pending",
  "focus": "Richard v135 red loss (hosted 0/40 red, 40/40 blue; locally reproduced 0/3 red, 3/3 blue)",
- "hypothesis_id": "H-RED-DEFREL-01",
+ "hypothesis_id": "H-ESCORT-ATKMOVE-01",
  "status": "null-result",
- "next_action": "H-FARM-01: per-tick trace of red slot-0 attackTarget calls vs hits (ticks 0-1500), check R4 fallback override of R2; compare Richard cadence; no hosted spend until red beats parent locally",
- "last_result": "H-RED-DEFREL-01 (6ffbede7): red vs Richard 0-3 (5898 ticks; activated, same collapse), blue 3-0, vs parent red 0-2-1 blue 2-0-1, 0 invalid; falsified. Red defActive stickiness not the farm mechanism.",
- "checked_at": "2026-09-21T16:23:47.042305+00:00",
+ "next_action": "H-ESCORT-HOLD-01: skip reissuing move while attackMoving to same tile so acquisition completes; gates red<5898 collapse, blue 3-0; no hosted spend until red beats parent locally",
+ "last_result": "H-ESCORT-ATKMOVE-01 (bf7086ae): red vs Richard 0-3 hash-identical to parent (per-tick attackMove reissue resets acquisition), blue 0-3 (parent 3-0, regression), 0 invalid; falsified.",
+ "checked_at": "2026-09-21T18:23:37.632280+00:00",
  "hypotheses": [
   {
    "id": "H-RED-TRANSIT-01",
@@ -66,6 +66,14 @@
    "variants": {
     "defrel": "6ffbede7; red vs Richard 0-3, blue 3-0"
    }
+  },
+  {
+   "id": "H-ESCORT-ATKMOVE-01",
+   "status": "falsified",
+   "cycle": 11,
+   "variants": {
+    "atkmove": "bf7086ae; red vs Richard 0-3 (identical to parent), blue 0-3 regression"
+   }
   }
  ],
  "trigger": {
@@ -75,7 +83,7 @@
   "basis": "3 losses / 0 wins vs current Aaron+Coach versions across checks 00:23Z and 02:23Z (2 distinct streams: blue x1 identical stream, red x1); relh #2 above both of ours"
  },
  "next": [
-  "H-FARM-01 slot-0 attack cadence trace (see CHECKPOINT cycle 10)",
+  "H-ESCORT-HOLD-01 (see CHECKPOINT cycle 11)",
   "Blue vs relh: scenario-vm single-tick trace of hero 108 @1418 (attempted!=effective retarget)"
  ]
 }
