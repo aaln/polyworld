@@ -1,0 +1,7 @@
+## Cycle 03 — check 2026-09-21T02:23:39Z (engine 2026.9.16.5, no drift)
+Live: Richard #1 1941.5 `7c370daf`; **relh #2 1703.5 v159 `ce5bfbfa`**; Alex #3 1689.7; Coach #4 1673.1 `2bb94c84`; Aaron #5 1632.4 `61148477` (+3); Jordan #6.
+H2H current versions (completed since deploy): Coach 9W 3L 2D (L: relh blue, Richard red, Aaron red); Aaron 8W 5L 4D (L: relh blue, relh red, macromackie blue, Coach red x2). Invalid/incomplete: 3 (Aaron–Alex, Aaron–Richard, Coach–Richard, Coach–Jordan not completed).
+**TRIGGER MET: relh v159 — 3 losses/0 wins vs us over two checks, both colours, ranked above both our players.** Richard red loss is the known 0/40 pattern (no new information).
+Ownership: single-writer (this host); 0 active XP requests; spend today 0/1600. No hosted spend this cycle (no candidate yet).
+Diagnosis (3 hosted replays, all hash-validated): see docs/opponents/relh-v159/inferred-20260921/model.json. Blue-loss = ONE distinct stream (Aaron/Coach replays identical). Mechanism: relh focus-fires one hero at a time + caster burst; our other two stack members keep hitting creeps for ~60 ticks while the teammate dies (episode IR, ticks 1470-1560). Red-loss: relh 5-stack lane push vs our 1/2/2 dispersal.
+Coach hypothesis H-ALLY-UNDER-ATTACK-01 (progress.json). Next discriminating test: fork + activation test at ereq_ea546a70 tick 1470 + local screen vs Richard/Alex/Jordan, then hosted A/B vs relh v159.

@@ -1,0 +1,233 @@
+{
+ "schema": "gota-opponent-ir-inferred/1",
+ "kind": "inferred_model",
+ "NOT": "source audit; NOT a validated reactive proxy",
+ "target": {
+  "player": "relh",
+  "player_id": null,
+  "policy": "relh-gods-of-the-arena",
+  "version": 159,
+  "policy_version_id": "ce5bfbfa-4532-461e-adbb-017cdf6784f6"
+ },
+ "frozen_at": "2026-09-21T02:28:06Z",
+ "engine": "2026.9.16.5",
+ "observation": "Predecision host-visible history from one of our real slots (observer-probe, all state hashes equal, all actions consumed). Enemy VM commands not read.",
+ "episodes": {
+  "ereq_7fc140bc-ab73-4f5e-bda4-4e48763eb379": {
+   "created_at": "2026-09-21T00:13:58.115968Z",
+   "replay_sha256": "bc478aa02b47ed669100cc1412f72e3c2fcf500692810c7d9f354c9fdb08fe36",
+   "participants": [
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     0
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     1
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     2
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     3
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     4
+    ],
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     5
+    ],
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     6
+    ],
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     7
+    ],
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     8
+    ],
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     9
+    ]
+   ],
+   "summary": {
+    "type": "summary",
+    "ticks": 5706,
+    "hash_mismatches": 0,
+    "actions_consumed": 73527,
+    "winner": 0
+   }
+  },
+  "ereq_ea546a70-5373-4835-8d8a-14c1a7661332": {
+   "created_at": "2026-09-21T00:45:58.012341Z",
+   "replay_sha256": "0e01a9a27843450d9addc475920c1b5fc6ef43183ec58f7094b770fe99e4c0f0",
+   "participants": [
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     0
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     1
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     2
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     3
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     4
+    ],
+    [
+     "Aaron's Co-play Coach",
+     "2bb94c84-fc32-4a81-9e6d-46666bc0315f",
+     5
+    ],
+    [
+     "Aaron's Co-play Coach",
+     "2bb94c84-fc32-4a81-9e6d-46666bc0315f",
+     6
+    ],
+    [
+     "Aaron's Co-play Coach",
+     "2bb94c84-fc32-4a81-9e6d-46666bc0315f",
+     7
+    ],
+    [
+     "Aaron's Co-play Coach",
+     "2bb94c84-fc32-4a81-9e6d-46666bc0315f",
+     8
+    ],
+    [
+     "Aaron's Co-play Coach",
+     "2bb94c84-fc32-4a81-9e6d-46666bc0315f",
+     9
+    ]
+   ],
+   "summary": {
+    "type": "summary",
+    "ticks": 5706,
+    "hash_mismatches": 0,
+    "actions_consumed": 73527,
+    "winner": 0
+   }
+  },
+  "ereq_b551c346-a47a-4e9d-8874-fd9f6921ef2f": {
+   "created_at": "2026-09-21T01:49:58.058013Z",
+   "replay_sha256": "eefc70f85221894e1643ababf7a262771cd826fb395cb1950cdb4c57c75863cc",
+   "participants": [
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     0
+    ],
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     1
+    ],
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     2
+    ],
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     3
+    ],
+    [
+     "Aaron",
+     "61148477-1928-43c6-a881-8daea0e8f6c2",
+     4
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     5
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     6
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     7
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     8
+    ],
+    [
+     "relh",
+     "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+     9
+    ]
+   ],
+   "summary": {
+    "type": "summary",
+    "ticks": 2717,
+    "hash_mismatches": 0,
+    "actions_consumed": 33505,
+    "winner": 1
+   }
+  }
+ },
+ "distinct_streams": {
+  "blue_loss": 1,
+  "note": "ereq_7fc140bc (Aaron blue) and ereq_ea546a70 (Coach blue) are byte-identical outcomes (5706 ticks, 73527 actions) \u2014 same source, same seed \u2192 ONE distinct stream, not two independent losses."
+ },
+ "observed_behaviour": [
+  {
+   "claim": "Dagger-only early inventory (CrimsonDagger on all 5 by tick ~1200), so our profile observer latches adMode=3 (Richard/dagger response). Relh is NOT Richard; the dagger-profile response is mis-specialised.",
+   "coverage": "3/3 episodes",
+   "alternative": "shared cheap opening item across many policies"
+  },
+  {
+   "claim": "Blue relh (red-loss ereq_b551): 5-hero stack pushes right-edge lane top-down (x 104-110, y 88\u219211) from tick ~1600; kills 8 structures + fort by tick 2717 while our 5 red heroes are split 1/2/2 and never assemble to contest.",
+   "coverage": "1/1 red episode",
+   "alternative": "lane choice may be seed/side dependent"
+  },
+  {
+   "claim": "Red relh (blue-loss ereq_ea546): top-lane 3-stack (101,102,104) engages our 3-stack (105,107,108) at (42-48,15-16) ticks 1410-1560. Strict focus fire: all enemy targets = 105 until dead (t~1495), then all = 108 (dead t~1545), then all = 107 (dead ~1565). Caster 102 spends ~108 mana at 1470-1480 and again 1500-1520 (burst on the focused hero: 105 hp 310\u219293 in 10 ticks). 0 relh deaths.",
+   "coverage": "1 stream",
+   "alternative": "mana drop could be a non-damage spell; damage attribution inferred from hp deltas"
+  },
+  {
+   "claim": "Our heroes 107/108 kept targeting creeps (ids 1093/1094) from 1470 to 1520 while 105 was being killed 2 tiles away; they switched to a hero (104) only at ~1530 after 105 died. 105 stayed engaged at 93 HP instead of retreating.",
+   "coverage": "1 stream",
+   "note": "this is OUR behaviour (episode IR), listed for the repair hypothesis"
+  }
+ ],
+ "holdout": "none yet \u2014 only 3 episodes exist; treat all inferences as provisional (n<8)."
+}
