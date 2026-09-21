@@ -87,7 +87,7 @@ def bodies(study):
         ver = cand if ver == 'CANDIDATE' else ver
         if ver is None:
             raise ValueError('upload the candidate first')
-        for color in ('red', 'blue'):
+        for color in p.get('colors', ('red', 'blue')):
             own = range(5) if color == 'red' else range(5, 10)
             roster = [ver if s in own else p['rival_version'] for s in range(10)]
             key = 'gota-ab-' + sha(json.dumps([p['frozen_at'], arm, color, roster, p['episodes_per_color'], p['coworld_id']]).encode())[:20]
