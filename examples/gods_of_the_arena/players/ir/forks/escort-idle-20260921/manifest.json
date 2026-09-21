@@ -1,0 +1,31 @@
+{
+ "schema": "gota-semantic-policy/1",
+ "policy_sha256": "2fe1c0463d6b69baeadc52f727fc95cc7ba4f64fbc34b2d3f90bacc44aeeda0a",
+ "executable_sha256": "f0971ad4ececc1c49a8e368f76f5a6223473914b4171beb1ab19350a17196ed6",
+ "source_sha256": "f79b4f9a708db67a44ad1a47238d405d9c23105419e0c467469f06bc781e6579",
+ "structural_parity": true,
+ "intent_parity": "authored claims require scenario and episode evidence; not inferred from BASIC",
+ "dependencies": {
+  "examples/gods_of_the_arena/players/ir/binding.py": "47f5f3760df5cf0847952fdc719ff67ad40e7b13ab46cd4f2b94cbb38dd1f815",
+  "examples/gods_of_the_arena/players/ir/basic_syntax.py": "3636db2cf7884d79c87e1a468eacd1f054313e4fbab8ee02a3b18b7f01318aea",
+  "examples/gods_of_the_arena/players/ir/policy_ir.py": "a215b437a4064985b5c891db2b38d35f767dc07b3a28042fecfe5ea5245001eb",
+  "examples/gods_of_the_arena/players/ir/independent_ir.py": "c1a2965cdb88621a949ab691bd9c2ac807e79d09b7c02365b3c41a552b4cc073",
+  "examples/gods_of_the_arena/bots.nim": "a37ef2cb3a84469c31342a6edafd3156d65e2436600ab43a66cdf74586ee93af",
+  "examples/gods_of_the_arena/sim.nim": "49e9b019b57dae3473f0bb306a66a65dd6478092ffc8773d0a387c129e5dc1eb",
+  "examples/gods_of_the_arena/content.nim": "1c7bdfb8b03f6a760858bf4b41a1a3b0aa65fadde4c379848a4a9f032c7ed35d",
+  "src/polyworld/basic.nim": "13fd4727eda25eb1ac748d4b3eaa6a5be5e752baf487be80cacaca9996b97289",
+  "coworld/dependencies.lock": "efa2ddd0c3f2639ca8dc6c4b11ef951f890c9d816b811559af0834c065e3f413"
+ },
+ "artifacts": {
+  "build.py": "c412b28518d8885dc28125228cdcfaac7d4cd38c16cd45c4a7dba6ebbdbdf991",
+  "compiler-manifest.json": "d02b4b3504080f2ec8f1a0aa8107409ae58ea3d3b7212ea2a3f9b0abdd678171",
+  "compiler.zip": "304619db0f1944c1103c54a5d441d45fe4d7f2ee3405b5aeeb0f6f904fdf784c",
+  "contracts.json": "46085358b1c883d0db0b22d305ca4c72f8fcf2885cc163e6eef0ff8635b55dcb",
+  "extracted.ir.json": "6b949a35df7960d04bcb444d4e780258625f5f31178440edf56230d5ba10b0f5",
+  "policy.bas": "f79b4f9a708db67a44ad1a47238d405d9c23105419e0c467469f06bc781e6579",
+  "policy.ir.json": "6343a8ea6a3ece0673f464d461b27c78c5234d50796349351674afc1335e1f39",
+  "policy.py": "649f84572e9f3bb8d17863d9366d84d1b78dfe45dd6fc0aec84e264d9c3ebc55",
+  "semantics.json": "7a25578bba217259d9f25ee35e9293091a8c274fd4a8e150d943a7823f7485bd",
+  "verify.py": "817e29413446dd006ee43b9220881a3a09e02925142f8b03571a077cf7156208"
+ }
+}
