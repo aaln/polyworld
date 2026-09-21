@@ -1,12 +1,12 @@
 {
- "cycle": 9,
+ "cycle": 10,
  "phase": "activation-confirmed-runtime-repair-pending",
  "focus": "Richard v135 red loss (hosted 0/40 red, 40/40 blue; locally reproduced 0/3 red, 3/3 blue)",
- "hypothesis_id": "H-RED-LANE-01",
+ "hypothesis_id": "H-RED-DEFREL-01",
  "status": "null-result",
- "next_action": "H-FARM-01: instrumented red-54 trace of slot-0 attackTarget calls/hits to find why basic-hit rate is ~1/4 of Richard; one farm-rate fork; no hosted spend until red beats parent locally",
- "last_result": "H-RED-LANE-01 lane (07b4e383) and notransit (3a36dbbe): red vs Richard 0-3 both (6088/5282 ticks), blue 3-0, 0 invalid; falsified. Per-hero stats: Richard out-farms us on both colours (basic hits 38-117 vs 3-32); red slot 0 tank inert (3 hits/6088 ticks).",
- "checked_at": "2026-09-21T14:23:52.454837+00:00",
+ "next_action": "H-FARM-01: per-tick trace of red slot-0 attackTarget calls vs hits (ticks 0-1500), check R4 fallback override of R2; compare Richard cadence; no hosted spend until red beats parent locally",
+ "last_result": "H-RED-DEFREL-01 (6ffbede7): red vs Richard 0-3 (5898 ticks; activated, same collapse), blue 3-0, vs parent red 0-2-1 blue 2-0-1, 0 invalid; falsified. Red defActive stickiness not the farm mechanism.",
+ "checked_at": "2026-09-21T16:23:47.042305+00:00",
  "hypotheses": [
   {
    "id": "H-RED-TRANSIT-01",
@@ -58,6 +58,14 @@
     "lane": "07b4e383; red vs Richard 0-3, blue 3-0",
     "notransit": "3a36dbbe; red vs Richard 0-3, blue 3-0"
    }
+  },
+  {
+   "id": "H-RED-DEFREL-01",
+   "status": "falsified",
+   "cycle": 10,
+   "variants": {
+    "defrel": "6ffbede7; red vs Richard 0-3, blue 3-0"
+   }
   }
  ],
  "trigger": {
@@ -67,7 +75,7 @@
   "basis": "3 losses / 0 wins vs current Aaron+Coach versions across checks 00:23Z and 02:23Z (2 distinct streams: blue x1 identical stream, red x1); relh #2 above both of ours"
  },
  "next": [
-  "H-FARM-01 farm-rate probe (see CHECKPOINT cycle 09)",
+  "H-FARM-01 slot-0 attack cadence trace (see CHECKPOINT cycle 10)",
   "Blue vs relh: scenario-vm single-tick trace of hero 108 @1418 (attempted!=effective retarget)"
  ]
 }
