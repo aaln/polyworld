@@ -1,0 +1,64 @@
+{
+ "cycle": 8,
+ "phase": "activation-confirmed-runtime-repair-pending",
+ "focus": "Richard v135 red loss (hosted 0/40 red, 40/40 blue; locally reproduced 0/3 red, 3/3 blue)",
+ "hypothesis_id": "H-MOTION-GATE-01",
+ "status": "null-result",
+ "next_action": "red opening probe: matched rules on red-54 ticks 0-1200 for lane/formation split; Andrew Brower red-kite:v34 (red 0-4 vs Aaron) added to watch",
+ "last_result": "H-MOTION-GATE-01: def80 blue regression vs Richard (2-1 vs 3-0) falsified; mol120 blue 3-0 faster, red unchanged 0-3, max instr 19023/20000 too thin -> not qualified. relh now #1.",
+ "checked_at": "2026-09-21T12:23:43.314277+00:00",
+ "hypotheses": [
+  {
+   "id": "H-RED-TRANSIT-01",
+   "refines": "H-RED-OPEN-SPLIT-01",
+   "layer": "skill/strategy",
+   "rule": "R_profile_transit -> skill transit_state (formation_profile_transit_state_v1, red-only: selfTeam=0 and gaActive=0 and adMode<>3)",
+   "status": "proposed, untested",
+   "mechanism": "Red opening is a 1/2/2 dispersal: slot0 right lane, slots1+4 far-left (x 12-28,y 13), slots2+3 break off at tick ~450 toward centre (61,51), arrive ~850 alone, meet Richard 106/108/109 and die by 950. Blue opening (winning) is 3/2 along edges with no lone centre pair.",
+   "prediction": "Routing slots 2-3 with the left group (transit disabled or gated on >=3 allies within 8 tiles) yields <=1 red death by tick 1800 vs Richard v135 seed 54.",
+   "falsifier": "Grouped variant still loses seeds 54/101/202 on red with early deaths, OR regresses Alex g002/Jordan v268 red (transit was part of the tested Alex/Jordan red package).",
+   "runtime_cost": "<= +200 instructions (one ally-count predicate on the transit guard)",
+   "evidence": [
+    ".gota/cycles/20260920T2340Z-devin/local-richard/red-54.observer-slot2.jsonl",
+    ".gota/cycles/20260920T2340Z-devin/local-richard/blue-54.observer-slot7.jsonl"
+   ]
+  },
+  {
+   "id": "H-ALLY-UNDER-ATTACK-01",
+   "status": "falsified (v1 regression, v2 runtime-invalid, v3 no effective retarget: hosted candidate-blue trajectory vs relh v159 is hero-state identical to the parent loss apart from one target field at tick 805; deaths identical; 0/80 hosted)",
+   "candidate_v3": {
+    "source_sha256": "d60f9626c51d607fad99102e7bb52c50807853a0a98aefb77951fa97ee74532d",
+    "policy_sha256": "e170dea48ebfdd640c2fd37c3bec30af9e3d850f69a016ea1503373e08223dbe",
+    "hosted_version": "b507afaa-725d-4714-b988-3749bf8a13eb (inert, unvalidated, not in league)"
+   }
+  },
+  {
+   "id": "H-RED-TRANSIT-01",
+   "status": "falsified",
+   "cycle": 7,
+   "variants": {
+    "group": "8a20d1e4 (guard reads mAllies before scan; identical to off)",
+    "off": "08151739 / ir 65ec8bb9 / version 69fac10f inert; local red vs Richard 0-1-2, vs parent 0-3; hosted red vs relh 0-40 xreq_72487884"
+   }
+  },
+  {
+   "id": "H-MOTION-GATE-01",
+   "status": "falsified/not-qualified",
+   "cycle": 8,
+   "variants": {
+    "def80": "2305c0e9; blue vs Richard 2-1 (regression)",
+    "mol120": "f4ebc0ec; blue 3-0, red 0-3, max_instr 19023"
+   }
+  }
+ ],
+ "trigger": {
+  "met": true,
+  "at": "2026-09-21T02:28:06Z",
+  "rival": "relh v159 ce5bfbfa",
+  "basis": "3 losses / 0 wins vs current Aaron+Coach versions across checks 00:23Z and 02:23Z (2 distinct streams: blue x1 identical stream, red x1); relh #2 above both of ours"
+ },
+ "next": [
+  "H-RED-TRANSIT-01: red 1/2/2 dispersal shared by Richard red 0-3 and relh red 0-40/0-40 (control). Fork: gate caster transit on >=3 nearby allies, zero new globals; local red screen vs Richard/Alex/Jordan/parent; hosted only via hosted_ab.py with frozen plan.",
+  "Blue vs relh: v3 predicate is true at tick 1418 but the compiled attack branch did not emit an effective retarget (attempted!=effective). Next probe: scenario-vm single-tick trace of hero 108 at tick 1418 with the hosted observer snapshot to see which rule/controller actually fired."
+ ]
+}
