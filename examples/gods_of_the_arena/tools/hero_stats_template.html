@@ -56,8 +56,9 @@
     .thumb {width:39px;height:48px;border-radius:5px;object-fit:cover;border:1px solid #ffffff15}
     .hero-link small {display:block;color:var(--muted);margin-top:3px}
     .blue {color:var(--blue)} .red {color:var(--red)} .green {color:var(--green)} .gold {color:var(--gold)} .xp {color:var(--xp)}
+    .uncertainty {color:var(--muted);white-space:nowrap}
     .tinybar {height:3px;width:78px;background:#ffffff0c;margin:6px 0 0 auto;border-radius:3px;overflow:hidden}
-    .tinybar i {display:block;height:100%;background:var(--blue)} .tinybar.redbar i {background:var(--red)}
+    .tinybar i {display:block;height:100%;background:var(--blue)} .tinybar.redbar i {background:var(--red)} .tinybar.mixedbar i {background:var(--gold)}
     .table-note {padding:12px 16px;color:var(--muted);border-top:1px solid #ffffff06}
     .section-title {display:flex;justify-content:space-between;align-items:center;margin:28px 0 14px;gap:20px}
     .roster {display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
@@ -97,9 +98,21 @@
     .methods p {break-inside:avoid;margin:0 0 13px}
     footer {display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:20px 0 32px;color:var(--muted);gap:20px}
     .back {display:inline-block;margin-bottom:18px}
+    .spell-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+    .spell-card {overflow:hidden;min-width:0}
+    .spell-heading {display:flex;align-items:center;gap:14px;padding:18px 20px}
+    .spell-heading img {width:54px;height:54px;object-fit:contain;border:1px solid var(--line);border-radius:6px;background:var(--well)}
+    .spell-heading h3 {margin-top:4px}
+    .spell-key {color:var(--gold);font-weight:700;margin-right:8px}
+    .spell-card th,.spell-card td {padding:10px 16px}
+    .spell-card td:first-child {color:var(--gold)}
+    .spell-timing {display:flex;flex-wrap:wrap;gap:6px 18px;padding:14px 20px;border-top:1px solid var(--line);color:var(--muted)}
+    .spell-intro {max-width:950px}
+    .spell-intro code {color:var(--gold);white-space:nowrap}
     [hidden] {display:none!important}
     @media(max-width:1000px) {.wrap{width:calc(100% - 32px)}.roster{grid-template-columns:repeat(5,1fr)}.hero-banner .facts{grid-template-columns:repeat(2,1fr)}.detail-grid{grid-template-columns:1fr}.mast nav{gap:15px}.metric-grid{grid-template-columns:repeat(3,1fr)}}
     @media(max-width:660px) {.logo{width:160px}.mast nav{display:none}.heading{display:block;padding-top:24px}.heading .status{margin-top:12px}.facts{grid-template-columns:repeat(2,1fr)}.fact{padding:14px;gap:10px}.roster{grid-template-columns:repeat(2,1fr)}.hero-banner{padding:16px;gap:16px;align-items:flex-start}.large-portrait{width:94px;height:125px}.hero-banner .facts{grid-template-columns:repeat(2,1fr)}.hero-banner .fact{padding:8px}.metric-grid{grid-template-columns:repeat(2,1fr)}.scope{width:100%;justify-content:space-between}.methods{columns:1}.toolbar{align-items:flex-start}.controls{width:100%}.controls input{flex:1;min-width:120px}footer{display:block}.pad{padding:17px}}
+    @media(max-width:800px) {.spell-grid{grid-template-columns:1fr}.spell-heading{padding:16px}.spell-card th,.spell-card td{padding:10px}.spell-section .section-title{align-items:flex-start;flex-direction:column;gap:4px}}
     /* Five shared type styles keep labels and table text readable. */
     body,input,button,select,td,.outline,.controls,.rankline {
       font:var(--body);
@@ -147,9 +160,10 @@
     <div id="detail" hidden></div>
     <details id="methods"><summary>How to read these statistics</summary>
       <div class="methods">
+        <p><b>Mean uncertainty.</b> Level, lifetime XP, and earned gold show mean ± a 95% confidence margin, using Student t and game-clustered standard errors. Duplicate heroes within one match stay together. This estimates how precisely these games determine the average, not a typical game's range. It assumes independent games; repeated policies and draft choices can make uncertainty larger. Overlapping intervals alone do not test whether two heroes differ, and statistical differences are not proof of imbalance.</p>
         <p><b>Scope.</b> Retained GOTA competition rounds with match completion timestamps inside the displayed analysis window. A game counts once; each hero appearance contributes one final stat row. Only aggregate hero statistics are embedded. Open this page directly in a browser with its adjacent hero_assets folder. No server is needed.</p>
         <p><b>Verification.</b> Every included replay reproduces every recorded simulation hash, reaches the recorded final tick, and matches all league seat scores. Incomplete and unsupported replays do not contribute zero-valued observations.</p>
-        <p><b>Win rate.</b> Wins divided by appearances. Time-limit draws count as non-wins. Fixed faction lineups mean the same five heroes share each result. This measures faction outcomes, not the causal strength of individual heroes.</p>
+        <p><b>Win rate.</b> Wins divided by appearances. Draws count as non-wins. With fixed lineups, teammates share each result. With drafting, a hero can play on either team. Player skill and draft choices still affect hero win rates.</p>
         <p><b>Economy.</b> Level and XP are final values. XP is lifetime earned XP, not the remainder toward the next level. Gold earned is cumulative rewards, excluding starting gold and including gold already spent. GPM and XPM divide total rewards by total hero-minutes.</p>
         <p><b>Combat.</b> K/D/A are separate per-game averages. KDA ratio uses total kills plus assists divided by deaths, with a denominator of one if there are no deaths. Assists follow the game's ten-second damage window. Damage and healing are not instrumented and are not shown as zero.</p>
         <p><b>Interpretation.</b> Roles, player strength, repeated policies, game length, and team composition affect these numbers. Compare versions separately. Descriptive 95% Wilson intervals assume independent games; repeated matchups may make them too narrow. No hero tier or nerf verdict is inferred from faction win rate.</p>
@@ -167,11 +181,17 @@
     const number = (value, digits=0) => Number(value).toLocaleString('en-US',{minimumFractionDigits:digits,maximumFractionDigits:digits});
     const percent = value => number(value * 100,1) + '%';
     const teamName = team => team === 'RedTeam' ? 'Red faction' : team === 'BlueTeam' ? 'Blue faction' : 'Mixed factions';
-    const teamColor = team => team === 'RedTeam' ? 'red' : 'blue';
+    const teamColor = team => team === 'RedTeam' ? 'red' : team === 'BlueTeam' ? 'blue' : 'gold';
     const link = name => '#hero=' + data.catalog[name].slug;
     const date = value => new Date(value).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZone:'America/Los_Angeles'});
     const kda = row => [row.avg_kills,row.avg_deaths,row.avg_assists].map(v => number(v,1)).join(' / ');
     let sortKey = 'avg_xp', descending = true, query = '', faction = '';
+    function mean(row,key,digits=0) {
+      const value=number(row[key],digits), margin=row[key+'_margin95'], ci=row[key+'_ci95'];
+      if(margin==null)return value;
+      const label=`95% confidence interval for the mean: ${number(ci[0],digits)} to ${number(ci[1],digits)}. Sampling uncertainty, not individual game spread.`;
+      return `<span title="${escape(label)}">${value}<span class="uncertainty"> ± ${number(margin,digits)}</span></span>`;
+    }
     function scope() {
       return $('version').value === 'all' ? summary : summary.versions.find(v => v.version === $('version').value);
     }
@@ -186,17 +206,21 @@
       return `<div class="fact">${icon ? `<img src="${icon}" alt="">` : ''}<div><b>${value}</b><span class="label">${label}</span>${sub ? `<br><small>${sub}</small>` : ''}</div></div>`;
     }
     function insight() {
-      if (!summary.fixed_faction_lineups) return '';
+      if (!summary.fixed_faction_lineups) {
+        if(summary.versions.length<2)return '';
+        const latest=summary.versions.at(-1);
+        return `<div class="insight"><p><b>Compare versions separately.</b> The latest release has ${number(latest.games)} games. Earlier rounds use the previous simulation; pooled results do not measure the latest patch alone.</p></div>`;
+      }
       const recent = summary.versions.at(-1);
       return `<div class="insight"><span class="gold">◈</span><p><b>Faction results, individual performance.</b> Each faction uses a fixed set of five heroes, so teammates share a win rate. Use XP, economy, and K/D/A to investigate heroes. ${summary.versions.length > 1 ? `The latest version has <b>${number(recent.games)} games</b>; switch versions before drawing balance conclusions.` : ''}</p></div>`;
     }
     function overview() {
       const list = rows();
       const selected = scope();
-      $('overview').innerHTML = `<div class="facts">${fact(number(selected.games),'Matches analyzed','One result per game','@@kills@@')}${fact(number(list.length),'Heroes','Fixed faction lineups','@@hero@@')}${fact(number(list.reduce((count,row)=>count+row.appearances,0)),'Hero appearances','Final hero statistics','@@xp@@')}${fact(number(selected.avg_minutes,1)+' min','Average duration','Recorded game time','@@gold@@')}</div>${insight()}
-        <div class="toolbar"><div><h2>Hero performance</h2><p class="small">Final averages per appearance. Select a hero to explore its report.</p></div><div class="controls"><input id="search" aria-label="Search heroes" placeholder="Search heroes" value="${escape(query)}"><select id="faction" aria-label="Faction"><option value="">All factions</option><option value="BlueTeam">Blue faction</option><option value="RedTeam">Red faction</option></select><button class="outline" id="export">Export CSV ↓</button></div></div>
-        <div class="panel"><div class="scroll"><table id="hero-table"><thead></thead><tbody></tbody></table></div><div class="table-note">Gold earned excludes starting gold. K / D / A are separate averages. Click a column heading to sort.</div></div>
-        <div class="section-title"><h2>Explore the roster</h2><span class="label">10 individual hero reports</span></div><div class="roster">${list.map(row => `<a href="${link(row.hero)}"><img src="${data.catalog[row.hero].portrait}" alt="${escape(row.hero)}" loading="lazy"><span class="rate ${teamColor(row.team)}">${percent(row.win_rate)} WR</span><div class="caption"><strong>${escape(row.hero)}</strong><small>${number(row.avg_xp)} XP · ${number(row.avg_gold)} gold</small></div></a>`).join('')}</div>`;
+      $('overview').innerHTML = `<div class="facts">${fact(number(selected.games),'Matches analyzed','One result per game','@@kills@@')}${fact(number(list.length),'Heroes',summary.fixed_faction_lineups ? 'Fixed faction lineups' : 'Drafted lineups','@@hero@@')}${fact(number(list.reduce((count,row)=>count+row.appearances,0)),'Hero appearances','Final hero statistics','@@xp@@')}${fact(number(selected.avg_minutes,1)+' min','Average duration','Recorded game time','@@gold@@')}</div>${insight()}
+        <div class="toolbar"><div><h2>Hero performance</h2><p class="small">Final averages per appearance. Select a hero to explore its report.</p></div><div class="controls"><input id="search" aria-label="Search heroes" placeholder="Search heroes" value="${escape(query)}"><select id="faction" aria-label="Faction"><option value="">All factions</option>${[...new Set(list.map(row => row.team))].map(team => `<option value="${escape(team)}">${teamName(team)}</option>`).join('')}</select><button class="outline" id="export">Export CSV ↓</button></div></div>
+        <div class="panel"><div class="scroll"><table id="hero-table"><thead></thead><tbody></tbody></table></div><div class="table-note">Level, XP, and gold show mean ± 95% confidence margin. This estimates uncertainty in the average, not the range of individual games. Gold excludes starting gold. K / D / A are separate averages. Click a column heading to sort.</div></div>
+        <div class="section-title"><h2>Explore the roster</h2><span class="label">10 individual hero reports</span></div><div class="roster">${list.map(row => `<a href="${link(row.hero)}"><img src="${data.catalog[row.hero].portrait}" alt="${escape(row.hero)}" loading="lazy"><span class="rate ${teamColor(row.team)}">${percent(row.win_rate)} WR</span><div class="caption"><strong>${escape(row.hero)}</strong><small>${mean(row,'avg_xp')} XP · ${mean(row,'avg_gold')} gold</small></div></a>`).join('')}</div>`;
       $('faction').value = faction;
       $('search').addEventListener('input',event => {query=event.target.value;renderTable();});
       $('faction').addEventListener('change',event => {faction=event.target.value;renderTable();});
@@ -212,24 +236,50 @@
     function renderTable() {
       const columns = [['hero','Hero'],['games','Games'],['win_rate','Win rate'],['avg_level','Level'],['avg_xp','XP'],['avg_kills','K / D / A'],['avg_gold','Gold earned'],['gold_per_minute','GPM'],['xp_per_minute','XPM']];
       $('hero-table').querySelector('thead').innerHTML = '<tr>'+columns.map(([key,label]) => `<th scope="col" aria-sort="${key===sortKey ? (descending?'descending':'ascending'):'none'}"><button data-sort="${key}" class="${key===sortKey?'active':''}">${label} ${key===sortKey?(descending?'↓':'↑'):'↕'}</button></th>`).join('')+'</tr>';
-      $('hero-table').querySelector('tbody').innerHTML = filteredRows().map(row => `<tr><td><a class="hero-link" href="${link(row.hero)}"><img class="thumb" src="${data.catalog[row.hero].portrait}" alt=""><span>${escape(row.hero)}<small><span class="${teamColor(row.team)}">${teamName(row.team)}</span></small></span></a></td><td>${number(row.games)}</td><td><span class="${teamColor(row.team)}">${percent(row.win_rate)}</span><div class="tinybar ${row.team==='RedTeam'?'redbar':''}"><i style="width:${row.win_rate*100}%"></i></div></td><td>${number(row.avg_level,2)}</td><td class="xp">${number(row.avg_xp)}</td><td>${kda(row)}</td><td class="gold">${number(row.avg_gold)}</td><td>${number(row.gold_per_minute,1)}</td><td>${number(row.xp_per_minute,1)}</td></tr>`).join('') || '<tr><td colspan="9" class="empty">No heroes match these filters.</td></tr>';
+      $('hero-table').querySelector('tbody').innerHTML = filteredRows().map(row => `<tr><td><a class="hero-link" href="${link(row.hero)}"><img class="thumb" src="${data.catalog[row.hero].portrait}" alt=""><span>${escape(row.hero)}<small><span class="${teamColor(row.team)}">${teamName(row.team)}</span></small></span></a></td><td>${number(row.games)}</td><td><span class="${teamColor(row.team)}">${percent(row.win_rate)}</span><div class="tinybar ${row.team==='RedTeam'?'redbar':row.team==='Mixed'?'mixedbar':''}"><i style="width:${row.win_rate*100}%"></i></div></td><td>${mean(row,'avg_level',2)}</td><td class="xp">${mean(row,'avg_xp')}</td><td>${kda(row)}</td><td class="gold">${mean(row,'avg_gold')}</td><td>${number(row.gold_per_minute,1)}</td><td>${number(row.xp_per_minute,1)}</td></tr>`).join('') || '<tr><td colspan="9" class="empty">No heroes match these filters.</td></tr>';
       $('hero-table').querySelectorAll('[data-sort]').forEach(button => button.addEventListener('click',() => {descending=sortKey===button.dataset.sort?!descending:true;sortKey=button.dataset.sort;renderTable();}));
     }
     function metric(value,label,sub,color='') {
       return `<div class="metric"><span class="label">${label}</span><b class="${color}">${value}</b><small>${sub}</small></div>`;
     }
+    function spellLevels(hero) {
+      return `<section class="spell-section" aria-labelledby="spell-title">
+        <div class="section-title"><h2 id="spell-title">Spell levels</h2><span class="label">Current spell tuning</span></div>
+        <div class="spell-intro">
+          <p>All four spells start locked at rank 0. You receive one ability point at hero level 1 and one per level after that. Spend a point to unlock rank 1 or upgrade a learned spell. Meeting the hero-level requirement does not unlock it automatically.</p>
+          <p>Q, W, and E have four ranks at hero levels 1 / 3 / 5 / 7. R has three at 6 / 12 / 18. Each extra rank adds 50% of the rank-1 effect, rounded down. Values below are per affected target.</p>
+          <p class="small">Use Shift+Q/W/E/R, an ability's + button, or BASIC <code>levelAbility(slot)</code> with slots 0-3. Upgrading preserves charges and cooldowns. Pending casts keep their original rank, and learned ranks survive death.</p>
+          <p class="small">These are the current game rules. The match-version filter changes historical performance statistics, not this spell reference.</p>
+        </div>
+        <div class="spell-grid">${hero.abilities.map(ability => `
+          <article class="panel spell-card">
+            <header class="spell-heading">
+              <img src="${ability.icon}" alt="" loading="lazy">
+              <div><span class="spell-key">${ability.key}</span><span class="label">${ability.ultimate ? 'Ultimate' : 'Ability'} · ${ability.ranks.length} ranks</span><h3>${escape(ability.name)}</h3></div>
+            </header>
+            <div class="scroll"><table aria-label="${escape(ability.name)} spell levels">
+              <thead><tr><th scope="col">Spell rank</th><th scope="col">Hero level</th><th scope="col">${escape(ability.effect)}</th><th scope="col">Mana cost</th></tr></thead>
+              <tbody>${ability.ranks.map(rank => `<tr><td>${rank.rank}${rank.rank === 1 ? ' · Unlock' : ''}</td><td>${rank.required_level}</td><td>${number(rank.amount)}</td><td>${number(rank.mana_cost)}</td></tr>`).join('')}</tbody>
+            </table></div>
+            <div class="spell-timing small"><span><b>${ability.charges}</b> ${ability.charges === 1 ? 'charge' : 'charges'}</span><span><b>${number(ability.cooldown_seconds,1)}s</b> cast cooldown</span><span><b>${number(ability.recharge_seconds,1)}s</b> per charge</span></div>
+          </article>`).join('')}</div>
+      </section>`;
+    }
     function detail(hero) {
       const row = rows().find(r => r.hero === hero.name);
-      if (!row) {$('detail').innerHTML='<p class="empty">No verified appearances for this hero in the selected version.</p>';return;}
+      if (!row) {
+        $('detail').innerHTML=`<a class="back" href="#">← All hero statistics</a><h1>${escape(hero.name)}</h1><p class="empty">No verified appearances for this hero in the selected version.</p>${spellLevels(hero)}`;
+        return;
+      }
       const ci = row.win_rate_ci95;
-      $('detail').innerHTML = `<a class="back" href="#">← All hero statistics</a><div class="panel hero-banner"><img class="large-portrait" src="${hero.portrait}" alt="${escape(hero.name)}"><div class="hero-bio"><span class="kicker ${teamColor(row.team)}">${teamName(row.team)}</span><h1>${escape(hero.name)}</h1><p>${escape(hero.role)}</p><div class="facts">${fact(number(row.games),'Games','')}${fact(percent(row.win_rate),'Win rate',ci?`95% interval ${percent(ci[0])}–${percent(ci[1])}`:'')}${fact(number(row.avg_level,2),'Avg final level','')}${fact(number(row.avg_minutes,1)+' min','Avg duration','')}</div></div></div>${insight()}
-        <div id="hero-panel"></div>`;
+      $('detail').innerHTML = `<a class="back" href="#">← All hero statistics</a><div class="panel hero-banner"><img class="large-portrait" src="${hero.portrait}" alt="${escape(hero.name)}"><div class="hero-bio"><span class="kicker ${teamColor(row.team)}">${teamName(row.team)}</span><h1>${escape(hero.name)}</h1><p>${escape(hero.role)}</p><div class="facts">${fact(number(row.games),'Games','')}${fact(percent(row.win_rate),'Win rate',ci?`95% interval ${percent(ci[0])}–${percent(ci[1])}`:'')}${fact(mean(row,'avg_level',2),'Avg final level','')}${fact(number(row.avg_minutes,1)+' min','Avg duration','')}</div></div></div>${insight()}
+        ${spellLevels(hero)}<div class="section-title"><h2>Match statistics</h2><span class="label">Selected analysis window</span></div><div id="hero-panel"></div>`;
       const bins = row.level_bins;
       const maximum = Math.max(1,...bins);
       const rank = key => [...rows()].sort((a,b)=>b[key]-a[key]).findIndex(r=>r.hero===hero.name)+1;
-      $('hero-panel').innerHTML = `<div class="detail-grid"><div class="panel pad"><h2>Economy & combat</h2><p class="small">End-of-game averages across ${number(row.appearances)} appearances.</p><div class="metric-grid">${metric(number(row.avg_xp),'XP earned',number(row.xp_per_minute,1)+' XP / minute','xp')}${metric(number(row.avg_gold),'Gold earned',number(row.gold_per_minute,1)+' gold / minute','gold')}${metric(number(row.avg_banked_gold),'Unspent gold','Average final balance')}${metric(kda(row),'Kills / deaths / assists','Three per-game averages')}${metric(number(row.kda_ratio,2),'KDA ratio','(Total kills + assists) / deaths')}${metric(number(row.avg_minutes,1)+' min','Game duration','Average recorded match length')}</div><div class="section-title"><h3>Among the ten heroes</h3><span class="label">Descriptive ranks</span></div>${[['avg_xp','Lifetime XP','var(--xp)'],['avg_gold','Gold earned','var(--gold)'],['avg_kills','Hero kills','var(--red)']].map(([key,label,color])=>`<div class="rankline"><span>${label}</span><b>#${rank(key)} of ${rows().length} · ${number(row[key],1)}</b></div><div class="track"><i style="width:${row[key]/Math.max(1,...rows().map(r=>r[key]))*100}%;background:${color}"></i></div>`).join('')}<p class="small" style="margin-top:17px">Role and player skill influence these ranks. High farming or kill totals are leads for testing, not proof of excess strength.</p></div>
-        <div><div class="panel pad"><h2>Match outcomes</h2><div class="outcomes"><i class="win" style="width:${row.wins/row.appearances*100}%"></i><i class="loss" style="width:${row.losses/row.appearances*100}%"></i><i class="draw" style="width:${row.draws/row.appearances*100}%"></i></div><div class="legend"><span><b class="green">${row.wins}</b> wins</span><span><b class="red">${row.losses}</b> losses</span><span><b>${row.draws}</b> draws</span></div><p class="small">Win rate includes time-limit draws as non-wins.</p></div><div class="panel pad" style="margin-top:18px"><h2>Final level distribution</h2><p class="small">Number of appearances in each level range.</p><div class="bars">${bins.map((n,i)=>`<div class="hist-col" title="Levels ${i*2+1}–${i*2+2}: ${n} appearances"><b>${n||''}</b><i style="height:${n/maximum*108}px"></i><span>${i*2+1}–${i*2+2}</span></div>`).join('')}</div></div></div></div>
-        <div class="section-title"><h2>Performance by game version</h2><span class="label">Entire analysis window</span></div><div class="panel scroll"><table><thead><tr><th>Version</th><th>Games</th><th>Win rate</th><th>Level</th><th>XP</th><th>K / D / A</th><th>Gold earned</th></tr></thead><tbody>${summary.versions.map(v=>{const h=v.heroes.find(r=>r.hero===hero.name);return h?`<tr><td>${escape(v.version)}</td><td>${h.games}</td><td>${percent(h.win_rate)}</td><td>${number(h.avg_level,2)}</td><td class="xp">${number(h.avg_xp)}</td><td>${kda(h)}</td><td class="gold">${number(h.avg_gold)}</td></tr>`:'';}).join('')}</tbody></table></div>`;
+      $('hero-panel').innerHTML = `<div class="detail-grid"><div class="panel pad"><h2>Economy & combat</h2><p class="small">End-of-game averages across ${number(row.appearances)} appearances.</p><div class="metric-grid">${metric(mean(row,'avg_xp'),'XP earned',number(row.xp_per_minute,1)+' XP / minute','xp')}${metric(mean(row,'avg_gold'),'Gold earned',number(row.gold_per_minute,1)+' gold / minute','gold')}${metric(number(row.avg_banked_gold),'Unspent gold','Average final balance')}${metric(kda(row),'Kills / deaths / assists','Three per-game averages')}${metric(number(row.kda_ratio,2),'KDA ratio','(Total kills + assists) / deaths')}${metric(number(row.avg_minutes,1)+' min','Game duration','Average recorded match length')}</div><div class="section-title"><h3>Among the ten heroes</h3><span class="label">Descriptive ranks</span></div>${[['avg_xp','Lifetime XP','var(--xp)'],['avg_gold','Gold earned','var(--gold)'],['avg_kills','Hero kills','var(--red)']].map(([key,label,color])=>`<div class="rankline"><span>${label}</span><b>#${rank(key)} of ${rows().length} · ${number(row[key],1)}</b></div><div class="track"><i style="width:${row[key]/Math.max(1,...rows().map(r=>r[key]))*100}%;background:${color}"></i></div>`).join('')}<p class="small" style="margin-top:17px">Role and player skill influence these ranks. High farming or kill totals are leads for testing, not proof of excess strength.</p></div>
+        <div><div class="panel pad"><h2>Match outcomes</h2><div class="outcomes"><i class="win" style="width:${row.wins/row.appearances*100}%"></i><i class="loss" style="width:${row.losses/row.appearances*100}%"></i><i class="draw" style="width:${row.draws/row.appearances*100}%"></i></div><div class="legend"><span><b class="green">${row.wins}</b> wins</span><span><b class="red">${row.losses}</b> losses</span><span><b>${row.draws}</b> draws</span></div><p class="small">Win rate includes draws as non-wins.</p></div><div class="panel pad" style="margin-top:18px"><h2>Final level distribution</h2><p class="small">Number of appearances in each level range.</p><div class="bars">${bins.map((n,i)=>`<div class="hist-col" title="Levels ${i*2+1}–${i*2+2}: ${n} appearances"><b>${n||''}</b><i style="height:${n/maximum*108}px"></i><span>${i*2+1}–${i*2+2}</span></div>`).join('')}</div></div></div></div>
+        <div class="section-title"><h2>Performance by game version</h2><span class="label">Entire analysis window</span></div><div class="panel scroll"><table><thead><tr><th>Version</th><th>Games</th><th>Win rate</th><th>Level</th><th>XP</th><th>K / D / A</th><th>Gold earned</th></tr></thead><tbody>${summary.versions.map(v=>{const h=v.heroes.find(r=>r.hero===hero.name);return h?`<tr><td>${escape(v.version)}</td><td>${h.games}</td><td>${percent(h.win_rate)}</td><td>${mean(h,'avg_level',2)}</td><td class="xp">${mean(h,'avg_xp')}</td><td>${kda(h)}</td><td class="gold">${mean(h,'avg_gold')}</td></tr>`:'';}).join('')}</tbody></table></div>`;
     }
     function exportRows(rows,filename) {
       if(!rows.length)return;
@@ -250,7 +300,7 @@
     }
     $('version').innerHTML=`<option value="all">All versions · ${number(summary.verified_games)} games</option>`+[...summary.versions].reverse().map((v,i)=>`<option value="${escape(v.version)}">${escape(v.version)}${i===0?' · Latest':''} · ${number(v.games)} games</option>`).join('');
     $('version').addEventListener('change',render);
-    $('window').textContent=`${date(summary.start)} → ${date(summary.end)}, ${new Date(summary.end).getFullYear()} · America/Los_Angeles · Completed league games`;
+    $('window').textContent=`${summary.first_round ? `Rounds ${summary.first_round}–${summary.last_round} · ` : ''}${date(summary.start)} → ${date(summary.end)}, ${new Date(summary.end).getFullYear()} · America/Los_Angeles · Completed league games`;
     $('verification').querySelector('span').textContent=summary.excluded_count?`${number(summary.verified_games)} verified · ${number(summary.excluded_count)} excluded`:`All ${number(summary.verified_games)} replays verified`;
     if(summary.excluded_count)$('verification').style.color='var(--gold)';
     $('footer-stats').textContent=`${number(summary.verified_games)} verified matches · ${number(summary.hero_appearances)} hero appearances · ${number(summary.excluded_count)} excluded`;

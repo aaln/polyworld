@@ -1,0 +1,25 @@
+{
+  "upstream_commit": "5563868e066f82ba5180c03cd89ec8da5388e652",
+  "fork_before": "38ea61ceb477b665a05ff29ed3e1a81e9a9aec0a",
+  "upstream_tracked_files_matched": 536,
+  "exception": ".gitignore retains merged local research exclusions",
+  "fork_research_files_unchanged": 2868,
+  "archive_branch": "archive/gota-human-controls-20260922",
+  "unresolved_conflicts": 0,
+  "validation": {
+    "nim": "2.2.10",
+    "full_suite": "passed; default compile mode",
+    "headless_gota_build": "passed",
+    "focused_tests": [
+      "test_gota_scores",
+      "test_gota_gods",
+      "test_gota_movement"
+    ],
+    "initial_suite_attempt": "-d:headless stopped at expected graphical --player CLI restriction; corrected standard mode passed",
+    "logs": {
+      "suite.log": "cf16774d5b495b2ab2bcc7ce8b6ebd425077833ebcb2c10859ae41cebcc1072e",
+      "suite-standard.log": "a1396780e38b5a45f88ffbf24d0fac3847fb30f89aa8bb64487966d3e2b68c1d",
+      "gota-build.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -2,8 +2,8 @@ import
   std/[algorithm, json, math, os, sequtils, sets, strutils, times, uri],
   curly, jsony, zippy,
   polyworld/[metrics, tapes],
-  ../[content, maps, replays, sim],
-  heropages
+  ../[content, maps, replays, scores, sim],
+  confidences, heropages
 
 const
   StatsRoot* = currentSourcePath().parentDir.parentDir.parentDir.parentDir
@@ -180,27 +180,27 @@ proc inspectReplay*(path: string, metadata: JsonNode): JsonNode =
     requireStats(game.hashCheck.mismatches == 0, game.hashCheck.error)
   requireStats(game.replayPlayer.finished, "Unconsumed replay actions")
   let
-    scores = game.world.scores()
+    victories = game.world.scores()
+    seatScores = scores(game.world.totalXp(), int(game.world.tick))
     observed = metadata{"participant_scores"}
     players = metadata{"participants"}
-  requireStats(observed != nil and observed.len == scores.len,
+  requireStats(observed != nil and observed.len == seatScores.len,
     "Missing authoritative seat scores")
   var positions: HashSet[int]
   for score in observed:
     let slot = score{"position"}.getInt(-1)
-    requireStats(slot in 0 ..< scores.len and slot notin positions,
+    requireStats(slot in 0 ..< seatScores.len and slot notin positions,
       "Invalid or duplicate score position")
     positions.incl(slot)
-    requireStats(score["score"].getFloat == float64(scores[slot]),
-      "Replay outcome differs from the league seat scores")
+    requireStats(score["score"].getFloat == seatScores[slot].float64,
+      "Replay XP and duration differ from the league seat scores")
   result = %*{"schema": StatsSchema, "id": metadata["id"],
     "verified": true, "ticks": game.world.tick, "hash_mismatches": 0,
     "replay_version": data.header.gameVersion,
     "game_version": metadata{"coworld_version"}.getStr,
     "completed_at": metadata["completed_at"],
     "minutes": float64(game.world.tick) / float64(TickRate) / 60,
-    "outcome": (if game.world.gameOver: $game.world.winner
-      else: "time_limit"), "heroes": []}
+    "outcome": game.world.outcome(), "heroes": []}
   for slot, hero in game.world.heroes:
     var participant: JsonNode
     for player in players:
@@ -210,8 +210,8 @@ proc inspectReplay*(path: string, metadata: JsonNode): JsonNode =
     requireStats(participant != nil, "Missing participant for replay seat")
     let values = game.world.stats.values[slot]
     result["heroes"].add %*{"slot": slot, "hero": hero.class.heroSpec.name,
-      "class": hero.class.ord, "team": $hero.team, "win": scores[slot],
-      "draw": not game.world.gameOver, "level": hero.level,
+      "class": hero.class.ord, "team": $hero.team, "win": victories[slot],
+      "draw": not game.world.gameOver or game.world.draw, "level": hero.level,
       "xp": hero.totalXp, "xp_progress": hero.xp,
       "gold": values[GoldMetric], "banked_gold": hero.gold,
       "kills": values[KillsMetric], "deaths": values[LossesMetric],
@@ -245,16 +245,22 @@ proc aggregate*(records: seq[JsonNode], version = ""): JsonNode =
       appearances, wins, draws = 0
       minutes = 0.0
       totals: array[7, float64]
+      groupCounts: seq[int]
+      groupTotals: array[7, seq[float64]]
     const Fields = ["level", "xp", "kills", "deaths", "assists", "gold",
       "banked_gold"]
     for record in records:
       if not record{"verified"}.getBool or
         (version.len > 0 and record["game_version"].getStr != version):
           continue
+      var
+        groupCount = 0
+        groupTotal: array[7, float64]
       for hero in record["heroes"]:
         if hero["class"].getInt != class.ord:
           continue
         inc appearances
+        inc groupCount
         wins += hero["win"].getInt
         draws += int(hero["draw"].getBool)
         minutes += record["minutes"].getFloat
@@ -265,6 +271,11 @@ proc aggregate*(records: seq[JsonNode], version = ""): JsonNode =
         teams.incl(hero["team"].getStr)
         for i, field in Fields:
           totals[i] += hero[field].getFloat
+          groupTotal[i] += hero[field].getFloat
+      if groupCount > 0:
+        groupCounts.add(groupCount)
+        for i in 0 ..< Fields.len:
+          groupTotals[i].add(groupTotal[i])
     if appearances == 0:
       continue
     let row = %*{"hero": class.heroSpec.name, "games": games.len,
@@ -280,6 +291,17 @@ proc aggregate*(records: seq[JsonNode], version = ""): JsonNode =
       "team": (if teams.len == 1: toSeq(teams)[0] else: "Mixed")}
     for i, field in Fields:
       row["avg_" & field] = %(totals[i] / appearances.float64)
+      if field in ["level", "xp", "gold"]:
+        let key = "avg_" & field
+        if groupCounts.len < 2:
+          row[key & "_ci95"] = newJNull()
+          row[key & "_margin95"] = newJNull()
+        else:
+          let
+            margin = margin95(groupTotals[i], groupCounts)
+            mean = row[key].getFloat
+          row[key & "_ci95"] = %([mean - margin, mean + margin])
+          row[key & "_margin95"] = %margin
     if appearances == games.len:
       row["win_rate_ci95"] = %wilson(wins, games.len)
     else:
@@ -355,6 +377,7 @@ proc publishStats*(directory: string, manifest: JsonNode): JsonNode =
     if not record{"verified"}.getBool:
       exclusions.add(record)
       continue
+    record["round_number"] = match["round_number"]
     records.add(record)
     versions.incl(record["game_version"].getStr)
     var names: array[2, seq[string]]
@@ -380,6 +403,14 @@ proc publishStats*(directory: string, manifest: JsonNode): JsonNode =
     "failed_requests": failed, "missing_replays": missing,
     "pending": pending, "excluded": exclusions,
     "heroes": aggregate(records), "versions": [], "teams": []}
+  if records.len > 0:
+    var firstRound = high(int)
+    var lastRound = 0
+    for record in records:
+      firstRound = min(firstRound, record["round_number"].getInt)
+      lastRound = max(lastRound, record["round_number"].getInt)
+    result["first_round"] = %firstRound
+    result["last_round"] = %lastRound
   var versionNames = toSeq(versions)
   versionNames.sort()
   var report = "# GOTA hero statistics\n\nCompletion window: " &
@@ -404,7 +435,7 @@ proc publishStats*(directory: string, manifest: JsonNode): JsonNode =
     let team = if side == 0: "RedTeam" else: "BlueTeam"
     for record in records:
       wins += int(record["outcome"].getStr == team)
-      draws += int(record["outcome"].getStr == "time_limit")
+      draws += int(record["outcome"].getStr in ["time_limit", "draw"])
     result["teams"].add %*{"team": team, "games": records.len,
       "wins": wins, "draws": draws, "heroes": toSeq(sides[side]),
       "distinct_lineups": lineups[side].len,
@@ -434,6 +465,12 @@ proc publishStats*(directory: string, manifest: JsonNode): JsonNode =
     "and team composition confound causal balance conclusions. Wilson " &
     "intervals are descriptive and assume independent matches; repeated " &
     "matchups can make them too narrow.\n\n" &
+    "Level, XP, and gold means include 95% Student t confidence intervals " &
+    "with game-clustered standard errors. Multiple appearances of the same " &
+    "hero in a game are not treated as independent samples. The intervals " &
+    "estimate sampling uncertainty in the mean, not the spread of individual " &
+    "games or proof that heroes differ. Repeated policies across games and " &
+    "draft choices can still confound comparisons.\n\n" &
     "The window uses completed_at, not request creation or round time. " &
     "Only retained visible league rounds are enumerated. Failed completed " &
     "requests and missing artifacts are listed in summary.json. The " &
@@ -442,7 +479,9 @@ proc publishStats*(directory: string, manifest: JsonNode): JsonNode =
     "losses", "draws", "win_rate", "avg_level", "avg_xp", "avg_kills",
     "avg_deaths", "avg_assists", "avg_gold", "avg_banked_gold",
     "avg_minutes",
-    "xp_per_minute", "gold_per_minute", "kda_ratio", "players", "policies"]
+    "xp_per_minute", "gold_per_minute", "kda_ratio", "players", "policies",
+    "avg_level_margin95", "avg_xp_margin95", "avg_gold_margin95",
+    "avg_level_ci95", "avg_xp_ci95", "avg_gold_ci95"]
   saveStats(directory / "summary.json", result)
   saveStats(directory / "report.md", report)
   exportCsv(directory / "heroes.csv", result["heroes"], HeroFields)

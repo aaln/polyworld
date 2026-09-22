@@ -1,157 +1,183 @@
 import
-  polyworld/[bodies, fixed],
-  ../examples/gods_of_the_arena/[locomotion, maps, replays, sim]
+  std/algorithm,
+  fixxy,
+  polyworld/pathing,
+  ../examples/gods_of_the_arena/[content, maps, replays, sim]
 
-proc openGround(pos: FixedVec2): bool = true
-proc northWall(pos: FixedVec2): bool = pos.y <= 0.3'fx
+type Observer = enum CreepObserver, HeroObserver, TowerObserver
 
-const Speed = 0.08'fx
-
-echo "Testing immediate reversals and exact arrival without overshoot"
-block:
-  var hero = Body(pos: FixedVec2Zero, facing: FixedZero, radius: 0.28'fx)
-  doAssert walkAround(hero, fixedVec2(-2'fx, FixedZero), Speed, 0.35'fx,
-    [], openGround)
-  doAssert hero.pos.x < -0.07'fx, "walking waited for the model to turn"
-  let target = fixedVec2(0.33'fx, 0.17'fx)
-  for tick in 0 ..< 100:
-    discard walkAround(hero, target - hero.pos, Speed, 0.35'fx, [], openGround)
-  doAssert length(hero.pos - target) < 0.001'fx
-  let arrived = hero.pos
-  for tick in 0 ..< 20:
-    discard walkAround(hero, target - hero.pos, Speed, 0.35'fx, [], openGround)
-  doAssert hero.pos == arrived
-
-echo "Testing heroes walk around a stationary unit without pushing or jittering"
-for blockedSide in [false, true]:
-  var hero = Body(pos: fixedVec2(-2'fx, FixedZero), radius: 0.28'fx)
-  let
-    enemy = Body(pos: FixedVec2Zero, radius: 0.28'fx)
-    target = fixedVec2(2'fx, FixedZero)
-  var maximumDetour = FixedZero
-  for tick in 0 ..< 100:
-    let before = hero.pos
-    discard walkAround(hero, target - hero.pos, Speed, 0.35'fx, [enemy],
-      if blockedSide: northWall else: openGround)
-    doAssert length(hero.pos - enemy.pos) >= hero.radius + enemy.radius
-    doAssert length(hero.pos - before) <= Speed + 0.001'fx
-    doAssert hero.pos.x >= before.x - 0.005'fx, "avoidance reversed progress"
-    if blockedSide: doAssert northWall(hero.pos)
-    maximumDetour = max(maximumDetour, abs(hero.pos.y))
-  doAssert maximumDetour > 0.55'fx
-  doAssert length(hero.pos - target) < 0.01'fx, $blockedSide
-
-echo "Testing two oncoming units pass instead of blocking each other"
-block:
-  var
-    a = Body(pos: fixedVec2(-2'fx, FixedZero), radius: 0.28'fx)
-    b = Body(pos: fixedVec2(2'fx, FixedZero), radius: 0.28'fx)
-  for tick in 0 ..< 100:
-    discard walkAround(a, fixedVec2(2'fx, FixedZero) - a.pos,
-      Speed, 0.35'fx, [b], openGround)
-    discard walkAround(b, fixedVec2(-2'fx, FixedZero) - b.pos,
-      Speed, 0.35'fx, [a], openGround)
-    doAssert length(a.pos - b.pos) >= a.radius + b.radius
-  doAssert a.pos.x > 1.9'fx and b.pos.x < -1.9'fx
-
-echo "Testing a group of enemies can be passed without crossing their bodies"
-block:
-  var hero = Body(pos: fixedVec2(-2'fx, FixedZero), radius: 0.28'fx)
-  let
-    target = fixedVec2(2'fx, FixedZero)
-    enemies = [
-      Body(pos: fixedVec2(FixedZero, -0.6'fx), radius: 0.28'fx),
-      Body(pos: FixedVec2Zero, radius: 0.28'fx),
-      Body(pos: fixedVec2(FixedZero, 0.6'fx), radius: 0.28'fx)
-    ]
-  for tick in 0 ..< 160:
-    discard walkAround(hero, target - hero.pos, Speed, 0.35'fx, enemies, openGround)
-    for enemy in enemies:
-      doAssert length(hero.pos - enemy.pos) >= hero.radius + enemy.radius
-  doAssert length(hero.pos - target) < 0.01'fx
-
-echo "Testing an occupied destination settles without orbiting"
-block:
-  var hero = Body(pos: fixedVec2(-2'fx, FixedZero), radius: 0.28'fx)
-  let enemy = Body(pos: FixedVec2Zero, radius: 0.28'fx)
-  for tick in 0 ..< 100:
-    discard walkAround(hero, -hero.pos, Speed, 0.35'fx, [enemy], openGround)
-  let stopped = hero.pos
-  doAssert length(stopped) >= hero.radius + enemy.radius
-  for tick in 0 ..< 20:
-    doAssert not walkAround(hero, -hero.pos, Speed, 0.35'fx, [enemy], openGround)
-    doAssert hero.pos == stopped
-
-proc movementGame(): Game =
-  result = newGame(generateMap(2026), 240, 10, false, ReplayData())
+proc arena(): Game =
+  ## Creates an open lane with only explicitly enabled participants.
+  result = newGame(generateMap(7), 100_000, 10, false,
+    ReplayData(), drafting = false)
   result.world.spawnTimerTicks = 100_000
-  result.world.heroTurnTicks = 100_000
+  for building in result.world.buildings.mitems:
+    building.hp = 0
+  result.world.syncBuildings()
   for hero in result.world.heroes:
-    hero.manualSpells = true
-    hero.state = Dying
     hero.hp = 0
+    hero.state = Dying
     hero.deathTicks = -100_000
-  for tower in result.world.towers.mitems:
-    tower.hp = 0
-  let hero = result.world.heroes[0]
-  hero.state = Marching
-  hero.hp = hero.maxHp
-  hero.place(hero.spellAimPoint(56, 18))
+    hero.manualSpells = true
 
-echo "Testing click redirects start walking and can reverse without a new command delay"
+proc middle(): WorldPoint =
+  ## Reads a cell center on the actual middle lane.
+  let point = lanePathPoints[1][lanePathPoints[1].len div 2]
+  const Unit = WorldScale div PathUnitsPerTile
+  WorldPoint(x: point.x * Unit, y: point.y * Unit, z: point.z * Unit)
+
+proc crossing(kind: Observer, reverse, outward: bool): int32 =
+  ## Acquires from the starting positions while an enemy crosses the radius.
+  let
+    game = arena()
+    origin = middle()
+    bait = game.world.heroes[1]
+    radius =
+      case kind
+      of CreepObserver: FootmanSightRadius
+      of HeroObserver: heroAttackRange(Ranger)
+      of TowerObserver: TowerAttackRanges[OuterTower]
+    gap = if outward: -2000'i32 else: 2000'i32
+    start = WorldPoint(x: origin.x + radius + gap,
+      y: origin.y, z: origin.z)
+  bait.hp = bait.maxHp
+  bait.state = Marching
+  bait.stunnedUntil = 10_000
+  bait.place(WorldPoint(
+    x: origin.x + (if outward: radius + 4 * WorldScale else: 0),
+    y: origin.y, z: origin.z))
+  var enemy = Footman(id: 1001, team: BlueTeam, hp: FootmanHp, lane: 1,
+    targetHeroId: bait.id)
+  enemy.place(start)
+  enemy.body.facing = if outward: FixedZero else: FixedPi
+  enemy.facing = Heading(x: if outward: WorldScale else: -WorldScale)
+  case kind
+  of CreepObserver:
+    var observer = Footman(id: 1000, team: RedTeam, hp: FootmanHp, lane: 1)
+    observer.place(origin)
+    game.world.footmen.add observer
+  of HeroObserver:
+    let hero = game.world.heroes[0]
+    hero.class = Ranger
+    hero.refreshHeroStats()
+    hero.hp = hero.maxHp
+    hero.state = Marching
+    hero.place(origin)
+  of TowerObserver:
+    game.world.buildings = @[
+      Building(id: 10, team: RedTeam, kind: TowerBuilding, tier: OuterTower,
+        lane: 1, position: origin, hp: 1000, maxHp: 1000)
+    ]
+  game.world.footmen.add enemy
+  if reverse:
+    game.world.footmen.reverse()
+  game.tickWorld(nil)
+  let finish = game.world.footmanById(enemy.id).position
+  if outward:
+    doAssert finish.x > start.x, $kind
+  else:
+    doAssert finish.x < start.x, $kind
+  case kind
+  of CreepObserver: game.world.footmanById(1000).targetId
+  of HeroObserver: game.world.heroes[0].attackObjectId
+  of TowerObserver: game.world.buildings[0].targetId
+
+echo "Testing acquisition uses one position snapshot for every unit type"
+for kind in Observer:
+  for outward in [false, true]:
+    for reverse in [false, true]:
+      let expected = if outward: 1001'i32 else: 0'i32
+      doAssert crossing(kind, reverse, outward) == expected,
+        $kind & ", outward=" & $outward & ", reversed=" & $reverse
+
+echo "Testing respawns publish health and position together"
 block:
   let
-    game = movementGame()
-    hero = game.world.heroes[0]
-  var point = hero.position
-  point.x += 35_000
-  hero.place(point)
-  doAssert game.world.applyWalkTo(hero.id, 62, 18)
-  var movedEast = false
-  for tick in 0 ..< 40:
-    game.tickWorld(nil)
-    if hero.position.x > point.x:
-      movedEast = true
-  doAssert movedEast
-  doAssert mapCoordinate(hero.position.x) >= 56
-  let before = hero.position
-  doAssert game.world.applyWalkTo(hero.id, 54, 18)
-  var movedWest = false
-  for tick in 0 ..< 40:
-    game.tickWorld(nil)
-    if hero.position.x < before.x:
-      movedWest = true
-  doAssert movedWest, "right-click reversal never started walking west"
+    game = arena()
+    hero = game.world.heroes[5]
+  hero.deathTicks = 0
+  hero.deathTicks = hero.respawnTicks() - 1
+  var observer = Footman(id: 1000, team: RedTeam, hp: FootmanHp, lane: 1)
+  observer.place(WorldPoint(x: hero.spawnPosition.x + WorldScale,
+    y: hero.spawnPosition.y, z: hero.spawnPosition.z))
+  game.world.footmen.add observer
+  game.tickWorld(nil)
+  doAssert hero.hp == hero.maxHp and hero.state == Marching
+  doAssert within(hero.position, hero.spawnPosition, 2),
+    $hero.position & " != " & $hero.spawnPosition
+  doAssert game.world.footmen[0].targetHeroId == 0
+  game.tickWorld(nil)
+  doAssert game.world.footmen[0].targetHeroId == hero.id
 
-echo "Testing live navigation still reaches a clicked tile past other heroes"
-block:
+echo "Testing immediate automatic healing survives the unit commit"
+for reverse in [false, true]:
   let
-    game = movementGame()
-    hero = game.world.heroes[0]
-    enemy = game.world.heroes[5]
-    start = hero.position
-  enemy.place(hero.spellAimPoint(58, 18))
-  enemy.state = Marching
-  enemy.hp = enemy.maxHp
-  doAssert game.world.applyWalkTo(hero.id, 60, 18)
-  for tick in 0 ..< 120:
-    game.tickWorld(nil)
-  doAssert mapCoordinate(hero.position.x) == 60
-  doAssert abs(hero.position.x - start.x) > WorldScale
+    game = arena()
+    caster = game.world.heroes[0]
+    point = middle()
+  caster.class = VanguardKnight
+  caster.refreshHeroStats()
+  caster.place(point)
+  caster.state = Marching
+  caster.hp = caster.maxHp div 2
+  caster.mana = caster.maxMana
+  caster.manualSpells = false
+  caster.abilityLevels[PassiveAbility] = 1
+  caster.charges[PassiveAbility] = 1
+  caster.spellsReady = true
+  let hp = caster.hp
+  if reverse:
+    game.world.heroes.reverse()
+    for i, hero in game.world.heroes:
+      game.world.stats.teams[i] = hero.team.ord
+  game.tickWorld(nil)
+  doAssert caster.hp > hp
+  doAssert caster.hp <= caster.maxHp
 
-echo "Testing corpses and other floors do not block a walk command"
-for obstacleKind in [1, 2]:
+echo "GotA movement phases passed"
+
+proc crowded(order: array[3, int], reverseCreeps, fixed: bool):
+    seq[FixedVec2] =
+  ## Resolves the same mixed crowd under independent actor permutations.
   let
-    game = movementGame()
-    hero = game.world.heroes[0]
-    enemy = game.world.heroes[5]
-  enemy.place(hero.spellAimPoint(58, 18))
-  enemy.state = if obstacleKind == 1: Dying else: Marching
-  enemy.hp = if obstacleKind == 1: 0 else: enemy.maxHp
-  if obstacleKind == 2: enemy.navLayer += 1
-  doAssert game.world.applyWalkTo(hero.id, 60, 18)
-  for tick in 0 ..< 100:
-    game.tickWorld(nil)
-  doAssert mapCoordinate(hero.position.x) == 60
+    game = arena()
+    origin = middle()
+  var heroes: array[3, Hero]
+  for i in 0 ..< 3:
+    heroes[i] = game.world.heroes[i]
+    heroes[i].hp = heroes[i].maxHp
+    heroes[i].state = Marching
+    heroes[i].team = Team(i mod 2)
+    heroes[i].place(WorldPoint(x: origin.x + i.int32 * 8000,
+      y: origin.y, z: origin.z))
+  if fixed:
+    heroes[1].rootedUntil = 1000
+  let fixedPosition = heroes[1].body.pos
+  for i in 0 ..< 3:
+    game.world.heroes[i] = heroes[order[i]]
+  for i, hero in game.world.heroes:
+    game.world.stats.teams[i] = hero.team.ord
+  for i in 0 ..< 8:
+    var creep = Footman(id: 1000 + i.int32, team: Team(i mod 2),
+      hp: FootmanHp, lane: 1, swingTicks: -1)
+    creep.place(WorldPoint(x: origin.x + (i mod 3).int32 * 6000 + 4000,
+      y: origin.y, z: origin.z + (i div 3).int32 * 6000 + 5000))
+    creep.body.radius = 0.22'fx
+    game.world.footmen.add creep
+  if reverseCreeps:
+    game.world.footmen.reverse()
+  game.tickWorld(nil)
+  if fixed:
+    doAssert heroes[1].body.pos == fixedPosition
+  for hero in heroes:
+    result.add hero.body.pos
+  for id in 1000'i32 .. 1007'i32:
+    result.add game.world.footmanById(id).body.pos
 
-echo "GOTA movement tests passed"
+echo "Testing collision corrections commute under actor permutations"
+for fixed in [false, true]:
+  let expected = crowded([0, 1, 2], false, fixed)
+  for order in [[0, 1, 2], [0, 2, 1], [1, 0, 2],
+    [1, 2, 0], [2, 0, 1], [2, 1, 0]]:
+      for reverse in [false, true]:
+        doAssert crowded(order, reverse, fixed) == expected

@@ -92,7 +92,8 @@ recovery in that last ambiguous case still requires server-side deduplication.
 The player statistics table combines both formats, with one appearance per
 policy per completed game. Mono games average all five heroes before being
 combined with mixed games. Wins, losses and timeouts are separate counts.
-XP is lifetime earned XP without the ladder's time penalty. Gold is earned gold,
+XP is lifetime earned XP without the ladder's time penalty, including the
+500 XP per hero awarded when the enemy god dies. Gold is earned gold,
 excluding starting gold; unspent gold is the final balance. Levels, kills,
 deaths, assists, tower kills and footman last hits are per-appearance averages.
 KDA is the sum of hero-averaged kills and assists divided by
@@ -123,11 +124,17 @@ and 100 gold. Both remaining totals must give nonnegative integer kill counts.
 This accounting needs review when a later replay version changes rewards.
 
 Win/loss is average binary team victory, with no MMR adjustment. Score is lifetime
-XP minus 100 per simulated minute, including fractional minutes and negative
-scores. Glory gives winners that same time-adjusted XP and everyone else zero.
-Score keeps losing players' time-adjusted XP. Neither ladder clamps negative
-values. Mono policies average their five heroes first. Timeouts score zero for
+XP minus 200 per simulated minute, including fractional minutes, rounded down
+to whole points and clamped to zero for each hero before averaging. Glory gives winners that same time-adjusted XP
+and everyone else zero. Score keeps losing players' time-adjusted XP. Mono
+policies average their five heroes. Timeouts score zero for
 win/loss and glory, while Score retains their XP minus time.
+
+The live GotA ladder uses this same Score formula. It averages each player's
+scores within a round, then updates their standing with 15% of that round's
+average and 85% of their previous standing. The first scored round establishes
+the initial standing. Pairings are random and higher standings rank first.
+The tournament reports themselves show cumulative arithmetic averages.
 
 Each format shares its games across all three ladders. Every checkpoint compares
 cumulative displayed ranks. `stabilityScore` counts policies whose ranks changed;

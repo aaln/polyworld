@@ -3,6 +3,69 @@
 ' Attack visible, vulnerable enemies within 20 tiles; otherwise attack-move.
 ' Use this policy for all five heroes on a team. Automatic spells stay enabled.
 
+
+' Draft roles: 0 frontline, 1 carry, 2 mage, 3 support, 4 fighter.
+' Prefer roles missing from our team, independent of faction.
+sub chooseHero()
+  if draftTurnId <> selfId then
+    exit sub
+  end if
+  bestClass = -1
+  bestScore = -2147483647
+  candidate = 0
+  while candidate < 10
+    if heroAvailable(candidate) then
+      role = heroRole(candidate)
+      score = 100
+      player = 0
+      while player < draftPlayerCount()
+        if draftPlayerTeam(player) = selfTeam then
+          picked = draftedClass(draftPlayerId(player))
+          if picked >= 0 then
+            if heroRole(picked) = role then
+              score = score - 100
+            end if
+          end if
+        end if
+        player = player + 1
+      wend
+      if score > bestScore then
+        bestScore = score
+        bestClass = candidate
+      end if
+    end if
+    candidate = candidate + 1
+  wend
+  if bestClass >= 0 then
+    draftHero(bestClass)
+  end if
+end sub
+
+if drafting then
+  chooseHero()
+  end
+end if
+
+' Use the same team-relative coordinates for every spatial decision.
+side = 1 - selfTeam * 2
+originX = selfTeam * (mapWidth - 1)
+originY = selfTeam * (mapHeight - 1)
+myX = originX + side * selfX
+myY = originY + side * selfY
+
+' Spend points explicitly, prioritizing the ultimate and primary spell.
+for upgrade = 1 to 4
+  if canLevelAbility(3) then
+    levelAbility(3)
+  elseif canLevelAbility(1) then
+    levelAbility(1)
+  elseif canLevelAbility(2) then
+    levelAbility(2)
+  elseif canLevelAbility(0) then
+    levelAbility(0)
+  end if
+next upgrade
+
 dim allyX(9)
 dim allyY(9)
 
@@ -15,12 +78,12 @@ sub rush()
   while index < objects
     if objectTeam(index) = selfTeam then
       if objectKind(index) = 1 then
-        homeX = objectX(index)
-        homeY = objectY(index)
+        homeX = originX + side * objectX(index)
+        homeY = originY + side * objectY(index)
       end if
       if objectKind(index) = 2 and objectAlive(index) then
-        allyX(count) = objectX(index)
-        allyY(count) = objectY(index)
+        allyX(count) = originX + side * objectX(index)
+        allyY(count) = originY + side * objectY(index)
         sumX = sumX + allyX(count)
         sumY = sumY + allyY(count)
         count = count + 1
@@ -32,8 +95,8 @@ sub rush()
   if count = 0 then
     exit sub
   end if
-  centerX = sumX / count
-  centerY = sumY / count
+  centerX = sumX \ count
+  centerY = sumY \ count
   diameter = 0
   first = 0
   while first < count
@@ -56,7 +119,7 @@ sub rush()
     regroup = 0
   end if
   if regroup then
-    walkTo(centerX, centerY)
+    walkTo(originX + side * centerX, originY + side * centerY)
     exit sub
   end if
 
@@ -65,10 +128,10 @@ sub rush()
   index = 0
   while index < objects
     if objectTeam(index) <> selfTeam and objectAlive(index) then
-      x = objectX(index)
-      y = objectY(index)
-      dx = x - selfX
-      dy = y - selfY
+      x = originX + side * objectX(index)
+      y = originY + side * objectY(index)
+      dx = x - myX
+      dy = y - myY
       if dx * dx + dy * dy <= 400 then
         dx = x - centerX
         dy = y - centerY
@@ -87,22 +150,22 @@ sub rush()
   end if
 
   ' Pass through the middle before pushing onward to the enemy god.
-  middleX = mapWidth / 2
-  middleY = mapHeight / 2
-  dx = selfX - homeX
-  dy = selfY - homeY
+  middleX = mapWidth \ 2
+  middleY = mapHeight \ 2
+  dx = myX - homeX
+  dy = myY - homeY
   if dx * dx + dy * dy <= 100 then
     crossedMiddle = 0
   end if
-  dx = selfX - middleX
-  dy = selfY - middleY
+  dx = myX - middleX
+  dy = myY - middleY
   if dx * dx + dy * dy <= 36 then
     crossedMiddle = 1
   end if
   if crossedMiddle then
-    attackMove(mapWidth - 1 - homeX, mapHeight - 1 - homeY)
+    attackMove(originX + side * (mapWidth - 1 - homeX), originY + side * (mapHeight - 1 - homeY))
   else
-    attackMove(middleX, middleY)
+    attackMove(originX + side * middleX, originY + side * middleY)
   end if
 end sub
 
