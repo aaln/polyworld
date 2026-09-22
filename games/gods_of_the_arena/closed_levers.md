@@ -1,5 +1,16 @@
 # Closed GOTA experiment directions
 
+- 2026-09-22, engine **2026.9.21.5**: same-decision `walkTo` then
+  `attackTarget` is insufficient to reset basic-attack recovery. Actual-tick
+  stationary drills left Ranger at 20 hits/360 ticks for both the baseline and
+  initial timing fork. Moving for one physics tick before reacquisition reached
+  39 hits, with 9-tick intervals. The initial Crossbowman XP-proximity guard also
+  failed when an existing 24-tick navigation throttle delayed movement; the
+  corrected priority earns 15 instead of 0 XP at the 6.25-tile boundary on both
+  colors. These are bounded new-engine mechanisms, not claims about historical
+  v135 behavior or standalone match causality. Preserve initial forks; see
+  `experiments/2026-09-21-targets-microplay.md`.
+
 - 2026-09-19 Jordan268 opening assembly: `assembly` (waveclear parent), blue first1,200ticks rally(91,104), 0/4 wins vs waveclear0/4. Rejected from advancement; experiment `2026-09-19-jordan268-assembly.md`. Scope exact Jordan268 and release.5; not a universal refutation of grouping.
 
 - 2026-09-19 Waveclear as sufficient red counter: the unchanged red branch in counterrace confirmed14/40, below30/40 threshold after optimistic3/4 screen. Retain as an evaluated component, not a sufficient red solution. Blue nearby-only recall confirmed40/40 and is retained.

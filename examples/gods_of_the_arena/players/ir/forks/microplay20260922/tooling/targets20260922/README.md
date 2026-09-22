@@ -1,0 +1,61 @@
+# Microplay practice and target comparison
+
+Published engine: **2026.9.21.5**, commit
+`f776d5e55d439706a8d49878d17d7ba1f6a1f7ce`. Uses the exact runtime and
+dependency checkout from `../week20260921`, with a separate private study
+at `tmp/gota-targets-20260922`. The prior IR and captured inputs are immutable.
+
+## Conversion and practice
+
+`micro.py` preserves the first attempted timing, five-equipment and potion
+variants. `practiced.py` is the corrected versioned binding: a full physics tick
+between movement and attack reacquisition, plus XP proximity before navigation
+throttles. Both use the repository seven-layer compiler and require exact
+Python/JSON/BASIC round trips. Do not hand-edit a tested BASIC file and retain
+its old IR identity.
+
+```sh
+python3 games/gods_of_the_arena/instruments/targets20260922/practiced.py NEW_NAME --mode potions
+```
+
+The finalized `ir/forks/microplay20260922` bundle includes a standalone
+`convert.py` and `verify.py`. Its converter rejects unknown BASIC edits and
+marks beliefs for review when executable bytes change.
+
+Copy `practice.nim`, `scenarios.nim`, and `events.nim` into the pinned engine's
+`examples/gods_of_the_arena/tools/` directory. Build with Nim 2.2.10,
+`-d:headless -d:release`, the pinned `POLYWORLD_DEPS`, and for `events.nim` also
+`-d:replayEvents`. The first two accept the absolute source path in `WEEK_POLICY`.
+The event auditor accepts `--replay /absolute/path/replay.bin` and verifies
+every state hash, action consumption and XP-event reconciliation.
+
+The 126 scenario checks cover all classes/colors and runtime stress. Practice
+adds actual-tick attack cadence, contested last-hit gold/shared XP, the
+Crossbowman XP boundary, equipment allocation, and positive/negative defensive
+portal channels. `PRACTICE_TRACE=1` emits bounded diagnostic state to stderr.
+These controlled drills are not competitive proxies.
+
+## Hosted evidence
+
+`preflight.py` checks exact target-version VM health in existing games.
+`panel.py` freezes all slots and exact target UUIDs, runs 40 games per cell,
+streams artifacts, checks all ten VMs and fully resimulates replays.
+`confirm.py` admits the corrected source only after completed baseline,
+practice and native evidence, uploads an inert version, logs it, and starts the
+six-cell target panel. It does not select league memberships.
+
+Both completed research cycles share the existing global XP journal, creation
+lock, 400-per-cycle / 1600-per-UTC-day normal limits and paused-writer check.
+Do not run a writer while the background researcher owns the campaign; do not
+rerun a failed unchanged source with new keys or reset the budget journal.
+The archived September 20 allowance has expired.
+
+`review.py` reports fort outcomes, per-hero XP score, growth, draft classes,
+and distinct complete command streams. `inspect_events.py` selects one
+median-score replay per observed outcome per cell for retrospective diagnosis.
+`finalize.py` preserves the evidence and reflects validation back into IR while
+asserting the evaluated BASIC remains byte-identical. Generated seeds and
+different command streams are not independent statistical samples.
+
+Final results and limitations are in
+`../../experiments/2026-09-21-targets-microplay.md` and the saved policy bundle.

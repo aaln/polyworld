@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "name": "growth",
+      "seed": 922200,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/growth/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/baseline/policy.bas"
+    },
+    {
+      "name": "growth",
+      "seed": 922200,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/growth/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/baseline/policy.bas"
+    },
+    {
+      "name": "growth",
+      "seed": 922201,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/growth/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/baseline/policy.bas"
+    },
+    {
+      "name": "growth",
+      "seed": 922201,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/growth/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/baseline/policy.bas"
+    },
+    {
+      "name": "potions",
+      "seed": 922200,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/potions/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/baseline/policy.bas"
+    },
+    {
+      "name": "potions",
+      "seed": 922200,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/potions/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/baseline/policy.bas"
+    },
+    {
+      "name": "potions",
+      "seed": 922201,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/potions/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/baseline/policy.bas"
+    },
+    {
+      "name": "potions",
+      "seed": 922201,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/potions/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/baseline/policy.bas"
+    }
+  ],
+  "scope": "Native directional mechanism screen vs responsive baseline, not hosted qualification.",
+  "decision_rule": "Keep a bundle for hosted testing if no VM/audit failures, gains aggregate fort wins or score against baseline, and activates practiced skills. Preference to stronger score; never hide per-color regressions."
+}

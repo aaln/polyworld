@@ -11,6 +11,18 @@ fort wins are a separate diagnostic. The old runtime, acceptance records and
 deployment anchors below are historical and remain preserved. Read the new
 experiment and resolve live champions before continuing research.
 
+**September 22 microplay result:** the [practiced IR/BASIC pair](../../examples/gods_of_the_arena/players/ir/forks/microplay20260922/README.md)
+`b82c3799` / `aaron-gota-micro0922:v1` completed 480 audited baseline/candidate
+games on the new release. Candidate fort wins: relh161 **62/80**, Jordan306
+**80/80**, Richard153 **63/80**, versus baseline 3/80, 10/80 and 2/80.
+Own XP score improves in all six cells, but still trails relh and Richard on
+red; each-color/absolute-score qualification remains unmet. Same-tick
+walk+attack did not reset recovery in actual-tick drills; one physics tick
+between them did. The bundle preserves the exact compiler, practice results,
+all candidate sources and failed hypotheses. No league champion changed.
+Follow-up micropractice remains separate; read the current ownership checkpoint
+before any new hosted work.
+
 This is the operational entry point. The September 20 handoff preserves local research, including failed candidates. It does **not** assert that a jointly winning counter exists or that the Devin automation has already been enabled. Historical documents contain original Mac paths; use the portable entry points below for a new installation.
 
 ## 1. Give Devin this mission
