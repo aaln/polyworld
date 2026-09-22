@@ -1,0 +1,107 @@
+{
+  "game_version": "2026.9.22.2",
+  "engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+  "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+  "cycle": "interactive-portals-coaching-20260922",
+  "games": 160,
+  "arms": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "version": "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+      "source_sha256": "7631fa32fb7ef6725074ad6778f4f94fe1e18ac5018bece1eed40e32cbef9bb8",
+      "own_slots": [
+        0
+      ],
+      "rival_slot": 5,
+      "roster": [
+        "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "35c85505-1977-4bad-b4ea-f1473aaa79dc"
+      ],
+      "games": 40
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "version": "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+      "source_sha256": "7631fa32fb7ef6725074ad6778f4f94fe1e18ac5018bece1eed40e32cbef9bb8",
+      "own_slots": [
+        5
+      ],
+      "rival_slot": 0,
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "35c85505-1977-4bad-b4ea-f1473aaa79dc",
+        "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 40
+    },
+    {
+      "name": "candidate",
+      "side": 0,
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "own_slots": [
+        0
+      ],
+      "rival_slot": 5,
+      "roster": [
+        "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "35c85505-1977-4bad-b4ea-f1473aaa79dc"
+      ],
+      "games": 40
+    },
+    {
+      "name": "candidate",
+      "side": 1,
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "own_slots": [
+        5
+      ],
+      "rival_slot": 0,
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "35c85505-1977-4bad-b4ea-f1473aaa79dc",
+        "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 40
+    }
+  ],
+  "rule": "No invalid games; strict aggregate gain >=10% and each color >=95% fresh control. Separate khors claim requires >=10% individual mean-score lead on each color and positive 95% bootstrap lower bound of within-game score difference. Team wins diagnostic. Fixed first-pick mixed roster; no general league rank claim.",
+  "prepared_at": "2026-09-22T19:43:14.642302+00:00",
+  "revision": "User named khors:v114 before any new requests or outcome observation; old plan remains unlaunched.",
+  "khors_version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+  "khors_source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160",
+  "mechanism_plan": "Decode all 160 replays for portal starts/completions/interruptions, keep-to-home waste and low-health ready-scroll time. Report all, never select by outcomes."
+}

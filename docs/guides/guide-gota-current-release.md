@@ -45,7 +45,7 @@ score checks and 40 distinct command streams. All four coordinated mirrored
 alternatives failed the prospective replacement gate. Geometric symmetry alone
 was not retained as a gameplay improvement; blue score regressed.
 
-The selected reference is **`balance-draft20260922`**, source **7631fa32**, binding
+The previous reference is **`balance-draft20260922`**, source **7631fa32**, binding
 `gota-bassy/balance-draft-2026-09-22-r1`. It changes only draft priority to
 Crossbowman and retains the deployed post-draft controller. If Crossbowman is
 unavailable, it uses the existing public ranged-first fallback. A separate
@@ -89,23 +89,23 @@ record before taking the writer; the prior worker is paused during interactive
 work. The user's root checkout moved to upstream main and the old LaunchAgent
 script path is absent: do not blindly restart an obsolete or missing runner.
 
-Current live registrations are Aaron `0dc85085-cb5b-4de6-8d50-e8fd043d0b5f`
-and Coach `35c85505-1977-4bad-b4ea-f1473aaa79dc`, both **7631fa32**, verified
-competing/active/champion after normal `auto_champion=always` placement. The
-[deployment receipts](../../examples/gods_of_the_arena/players/ir/forks/balance-draft20260922-deployment/README.md)
+Current live registrations are Aaron `b65ccf7b-d7a1-4681-b57f-a55f5ace43c7`
+and Coach `088c0fed-b536-4777-9f7a-14abee21e5b8`, both **db71abb3**.
+Both were verified competing, active and champion through normal
+`auto_champion=always` placement. The [deployment receipts](../../examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-deployment/README.md)
 preserve source hashes, readback and rollback identities. Placement does not
 establish later league-round performance. Resolve live versions before new work.
 Manual champion selection previously returned HTTP500; normal placement worked.
 Do not retire a live champion before its replacement is verified.
 
-## Active portal coaching comparison
+## Current portal coaching reference
 
 The [portal coaching experiment](../../games/gods_of_the_arena/experiments/2026-09-22-portal-coaching.md)
-and [portable local pair](../../examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922/README.md)
+and [validated portable pair](../../examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-hosted/README.md)
 add safe field recall, a complete channel lock, scroll reserves and keep-local
 walking recovery. All 84 portal fixtures, 126 broader host checks and eight
 full native matches pass mechanism/runtime checks; native scores are mixed.
-The incumbent remains the deployed reference above until hosted qualification.
+The local snapshot remains preserved; the hosted-reviewed pair is now the deployed reference.
 
 Before any request was created, the user authorized 160 additional September 22
 games and named khors:v114 as a target. The revised A/B uses exact v114 in the
@@ -114,3 +114,28 @@ Jordan411 and Richard153 also oppose both colors. relh161 is a teammate, so this
 comparison cannot establish opposing relh superiority. The original unlaunched
 plan remains preserved. Primary score advancement and khors superiority are
 separate prospective tests; a fixed roster does not establish #1 league rank.
+
+All160 fresh-control games passed full audits. Source **db71abb3**, binding
+`gota-bassy/portals-2026-09-22-r3`, passes the prospective score gate: mean
+2472.84→2758.59 (+11.56%), red+27.46%, blue+0.60%. The95% bootstrap aggregate
+interval is[-7.75%,34.75%], so generalization remains uncertain. Candidate blue
+contains39 distinct command streams in40games; keep duplicate evidence visible.
+
+It outscores khors:v114 in21/40red and24/40blue, with positive mean gaps on both.
+Both difference intervals includezero, so confident khors superiority is still
+unqualified. Jordan411 is outscored73/80 and Richard15376/80 in this fixed
+roster. Fort outcomes are separate; candidate team wins27/80.
+
+Keep-origin home-directed portal starts fall107→1 in80games per source. The
+remaining event is a full-health21.4-tile hop to a near-home tower; preserve the
+classification and test destination utility separately. Candidate low-health
+field ticks increase, so the evidence does not show less overall low-health
+exposure. Safe recall timing and scoreboard gains are distinct measurements.
+
+The [player-statistics report](../reports/gota-player-stats-20260922/README.md)
+and its non-executable `optimization.ir.json` prioritize productive target
+selection, marginal XP above the200/minute time cost, spell reach/effectiveness
+and useful gold conversion. These are research hypotheses, not new accepted
+controller rules. The [khors descriptive IR](../opponents/khors-v114/replay-audit-20260922/README.md)
+is retrospective and not a validated proxy. Old source/engine tactics remain
+historical; none overrides current-version evidence.

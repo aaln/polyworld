@@ -1,0 +1,17 @@
+{
+  "engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+  "source_sha256": "59f8626cb8ced8af8d7585131ef8143750be1f852ebb8ab3f1b456080696325c",
+  "binary_sha256": "99a8f3802bac891a9414ff86069b1b84b89535ace3a58a5e7a5984108d5f8ac7",
+  "command": [
+    "/Users/aaln/.nimby/nim-2.2.10/bin/nim",
+    "c",
+    "-d:headless",
+    "-d:release",
+    "-d:replayEvents",
+    "--hints:off",
+    "--out:/Users/aaln/experiments/softmax/polyworld/tmp/gota-portals-20260922/bin/economy-v2",
+    "/Users/aaln/experiments/softmax/polyworld-gota-engine-20260922/examples/gods_of_the_arena/tools/portal_economy.nim"
+  ],
+  "dependencies": "../gota-balance-20260922/bootstrap-proof-v2.json",
+  "scope": "XP-by-victim expansion; preserve earlier economy.json and binary."
+}

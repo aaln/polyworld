@@ -1,0 +1,121 @@
+{
+  "schema": "gota-opponent-descriptive-ir/1",
+  "id": "khors_v114_replay_20260922",
+  "situation": {
+    "authority": "retrospective full replay and typed events, not our live observation",
+    "game_version": "2026.9.22.2",
+    "engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+    "policy_version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+    "source_sha256_from_host_specs": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160",
+    "selection": "First three completed current-engine episodes per color in the existing reverse-chronological API listing, frozen for VM preflight before economy measurements.",
+    "episodes": [
+      "ereq_154c54a1-e392-43fe-9c28-ad5c7b73dcd1",
+      "ereq_f1c7dc0e-9cce-464a-8e94-fbc982e16d59",
+      "ereq_f9c05d74-69fa-4c6b-9470-d85a0ec286d1",
+      "ereq_a3bebe8a-6f91-4998-8ed7-a0f01fbb729e",
+      "ereq_1fc7b7ec-2669-403b-8f91-bc2ffd2bea40",
+      "ereq_d12ffa83-6170-44dd-9156-d4e70195185d"
+    ],
+    "guide_sha256": "d236f3139259814951b8830cef79362cabaeec5adf80081d4650d1cfc4b160a4"
+  },
+  "belief": {
+    "observed": {
+      "episodes": 6,
+      "classes": {
+        "Ranger": 3,
+        "Crossbowman": 2,
+        "Arcanist": 1
+      },
+      "xp_sources": {
+        "creep": 18576,
+        "hero": 19350,
+        "structure_or_other": 100
+      },
+      "total_xp": 38026,
+      "hero_kills": 129,
+      "creep_last_hits": 1274,
+      "xp_from_failed_vms": 2250,
+      "all_six_have_failed_other_vms": true,
+      "scope": "Retrospective behavior only; no clean score-comparison, forecast, mechanism identification or validated proxy."
+    },
+    "claims": [
+      {
+        "id": "K_XP",
+        "status": "observed",
+        "claim": "This sample earns substantial XP from both creep proximity/last hits and hero kills; exact typed totals reconcile."
+      },
+      {
+        "id": "K_SHOP",
+        "status": "observed",
+        "claim": "All six start with item11 (dagger) plus item1 (health potion), and later acquire armor16, axe18 and spellbook19. Scroll21 purchases recur. Ordering and timing vary; the source priority graph is unknown."
+      },
+      {
+        "id": "K_FAILURES",
+        "status": "observed",
+        "claim": "Every sampled match has other failed VMs. XP earned from those hero slots is measured separately; scoring dominance in these games is not clean counter-policy evidence."
+      },
+      {
+        "id": "K_INTENT",
+        "status": "unidentified",
+        "claim": "Intentional farming of failed bots, exact target priority, timing, defensive transitions and draft priority cannot be identified from these aggregates."
+      }
+    ]
+  },
+  "goal": {
+    "xp_accumulation": {
+      "status": "hypothesis",
+      "evidence": [
+        "K_XP"
+      ],
+      "purpose": "Accumulate XP through farming and kills; does not identify objective ordering."
+    }
+  },
+  "skill": {
+    "ranged_combat": {
+      "observed_classes": [
+        "Ranger",
+        "Crossbowman",
+        "Arcanist"
+      ],
+      "initiation": "unknown",
+      "termination": "unknown"
+    },
+    "restock_at_keep": {
+      "observed": "Accepted purchase event sequences in economy-v2-summary.json",
+      "priority": "unknown"
+    }
+  },
+  "strategy": [
+    {
+      "id": "K_COUNTER_RECOVERY",
+      "when": "Our publicly observed hero is low on health outside the keep and a safe home portal is available",
+      "skill": "coached_field_recovery",
+      "for": [
+        "deny_hero_kill_xp",
+        "return_to_productive_play"
+      ],
+      "status": "counter_hypothesis; comparative result separate",
+      "priority_identified_for_opponent": false
+    }
+  ],
+  "execution": {
+    "binding": "retrospective-descriptive/1",
+    "proxy_usable": false,
+    "forecast_validated": false,
+    "heldout_forecast": null,
+    "source_available": false,
+    "public_policy_inputs_only": true,
+    "boundary": "No policy UUID, future command tape, failed-VM identity or hidden replay position is supplied to our live controller."
+  },
+  "update": {
+    "at": "2026-09-22T20:15:27.080584+00:00",
+    "kind": "Initial descriptive audit; not an observation-trained predictive model",
+    "next_discriminator": "Use the exact hosted opponent responding in the frozen 160-game portal/control comparison. Do not replay future opponent commands after changing our actions.",
+    "evidence": [
+      "economy-v2-summary.json",
+      "six-game-audit.json",
+      "preflight.json"
+    ],
+    "preserved_raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-portals-20260922/khors-discovery"
+  }
+}

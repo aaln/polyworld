@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-22t16-43-56-076z862811",
+  "project": null,
+  "project_name": "Coaching session",
+  "game": "",
+  "reference_status": "unbound",
+  "source": {
+    "id": "window:10337:0",
+    "name": "Gods Of The Arena",
+    "test": false,
+    "purpose": "gameplay",
+    "surface": "window"
+  },
+  "started_at": "2026-09-22T16:43:56.076Z",
+  "status": "complete",
+  "duration_ms": 21864,
+  "note_count": 0,
+  "experiment": {
+    "id": "",
+    "condition": "unassigned"
+  },
+  "context": "",
+  "pre_session_context": [],
+  "pauses": [],
+  "paused": false,
+  "input_git_commit": null,
+  "input_revision": null,
+  "input_had_uncommitted_changes": false,
+  "input_execution_verified": false,
+  "input_selection": "No policy attached. Resolve the game and policy from the recording and target repository.",
+  "ir_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "policy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "policy_extension": "txt",
+  "video": {
+    "file": "recording.webm",
+    "mime_type": "video/webm;codecs=vp8,opus",
+    "settings": {
+      "aspectRatio": 1.451505016722408,
+      "cursor": "always",
+      "deviceId": "window:10337:0",
+      "displaySurface": "window",
+      "frameRate": 10,
+      "height": 598,
+      "logicalSurface": true,
+      "resizeMode": "crop-and-scale",
+      "screenPixelRatio": 2,
+      "width": 868
+    },
+    "audio": {
+      "microphone": true,
+      "system": false
+    },
+    "encoding": {
+      "video_bits_per_second": 450000,
+      "audio_bits_per_second": 32000,
+      "profile": "compact-960-10fps"
+    },
+    "bytes": 634737,
+    "sha256": "545abe4f7d0a8e9795a18bb33f9041bde30f1f302cb3675b2edd98187f74b795",
+    "microphone_events": [
+      {
+        "at_ms": 2,
+        "state": "checking",
+        "label": "Default - AirPods (Bluetooth)",
+        "selection": "system-default",
+        "sample_rate": 48000,
+        "channels": 1
+      },
+      {
+        "at_ms": 688,
+        "state": "live",
+        "label": "Default - AirPods (Bluetooth)",
+        "selection": "system-default",
+        "sample_rate": 48000,
+        "channels": 1
+      }
+    ]
+  },
+  "feedback_file": "feedback.jsonl",
+  "timing": "Times are video-relative milliseconds, excluding pauses. at_ms is when feedback began; submitted_at_ms is when it was saved. Context defaults to the preceding 10 seconds. Notes while paused refer to the frozen video time.",
+  "research_brief": "Inspect each feedback event with its video context and the pinned input IR/policy. Make the coordinated changes needed to realize the coached behavior, across as many IR layers and policy components as necessary. Evaluate their combined effect; individual edits need not improve results alone. Regenerate the policy, test coaching fidelity, then run matched evaluations. This recording is human evidence, not an evaluation or an automatic policy update.",
+  "interaction_capture": {
+    "enabled": true,
+    "target": {
+      "pid": 95540,
+      "window_id": 10337,
+      "bundle_id": "com.brave.Browser"
+    },
+    "status": "saved",
+    "platform": "darwin",
+    "file": "interactions.jsonl",
+    "pointer_max_hz": 20,
+    "last_at_ms": 21864,
+    "last_status": "stopped",
+    "sha256": "c2eb33be1b5c64f9cc6643fc78efafe6282c6c1d4b7c7cca5f321fe506b21efa"
+  },
+  "ended_at": "2026-09-22T16:44:18.048Z",
+  "error": null,
+  "notes_file": "notes.md",
+  "notes_generation": "local-transcript-and-context-v2",
+  "enrichment": {
+    "status": "complete",
+    "local": true,
+    "error": null,
+    "completed_at": "2026-09-22T16:44:21.334Z",
+    "speech_segments": 5,
+    "frame_count": 12,
+    "processing_seconds": 2.717,
+    "index_sha256": "c52b281c9d93996d88b4829f6ab54888fae8381b018daac0603c2ea800e7daa3"
+  }
+}

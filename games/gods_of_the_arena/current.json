@@ -5,28 +5,27 @@
   "variant_id": "competition",
   "primary_metric": "mean per-hero max(0, lifetime XP * 1440 - 200 * world ticks) // 1440, including draft ticks",
   "fort_outcome": "diagnostic; not an advancement gate for new XP-score experiments",
-  "reference_pair": "examples/gods_of_the_arena/players/ir/forks/balance-draft20260922",
-  "reference_source_sha256": "7631fa32fb7ef6725074ad6778f4f94fe1e18ac5018bece1eed40e32cbef9bb8",
-  "binding": "gota-bassy/balance-draft-2026-09-22-r1",
+  "reference_pair": "examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-hosted",
+  "reference_source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+  "binding": "gota-bassy/portals-2026-09-22-r3",
   "current_guide": "docs/guides/guide-gota-current-release.md",
   "history": "docs/guides/devin-gota-autoresearch.md",
   "policy_inputs": "public current observations only; opponent versions and replay truth are evaluation metadata",
   "legacy_acceptance_applies": false,
   "budget": "Shared existing journal; 400 new hosted games/cycle, 1600/UTC day, maximum 3 active XP, 40-200/batch. Expired dated overrides do not apply.",
-  "reference_ir_sha256": "d811adf6984493daa316ddf203e259b9ec51d50048b23bf502949ab2620213e4",
-  "reference_evidence": "400-game mirrored hero screen rejected all four alternatives; subsequent 80-game Crossbowman draft-only follow-up passed with +22.3% mean integer XP score against reused current-engine controls. All 480 games source/VM/replay/XP/score audited; no late-draft or universal ranking claim.",
-  "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/balance-draft20260922-deployment",
+  "reference_ir_sha256": "ecd1f2a1aa3f06272084d3247e9b39219a8f463b9df3e3babfa7ab1f24e7e052",
+  "reference_evidence": "160 fresh-control hosted games: +11.56% mean score, red+27.46% and blue+0.60%; all source/VM/replay/XP/integer scores verified. Outscored khors:v11445/80; confidence intervals includezero. Keep-to-home starts107\u21921. Fixed roster, no #1 guarantee.",
+  "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-deployment",
   "live_versions": {
-    "coach": "35c85505-1977-4bad-b4ea-f1473aaa79dc",
-    "aaron": "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f"
+    "aaron": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+    "coach": "088c0fed-b536-4777-9f7a-14abee21e5b8"
   },
   "current_experiment": "games/gods_of_the_arena/experiments/2026-09-22-portal-coaching.md",
-  "deployment_status": "Both players verified competing, active and champion on the exact qualified source, 2026-09-22T17:14:35Z; normal auto_champion=always placement",
-  "research_candidate": {
-    "pair": "examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922",
-    "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
-    "ir_sha256": "a712c75bae747f361af3771f66304ffa6d40072c3d97beac839a04934b7772d1",
-    "status": "Mechanism validated; fresh160-game hosted baseline/candidate comparison against exact opposing khors:v114 running; not deployed",
-    "priority_opponent": "145c01e0-0cbf-4e1e-8120-11b437175b91"
+  "deployment_status": "Both players verified competing, active, champion on qualified exact source at 2026-09-22T20:25:30.054008+00:00",
+  "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
+  "priority_opponent": {
+    "label": "khors:v114",
+    "id": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+    "qualification": "Positive mean-score gap on both colors; 45/80 individual outscore count, confidence gate still unmet."
   }
 }

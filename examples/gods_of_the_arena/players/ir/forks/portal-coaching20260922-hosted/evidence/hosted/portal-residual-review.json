@@ -1,0 +1,33 @@
+{
+  "episode": "ereq_c934ffec-6a62-46d6-b0c5-829152b0df40",
+  "event": {
+    "tick": 29333,
+    "slot": 0,
+    "kind": "PortalStarted",
+    "class": 1,
+    "hp": 529,
+    "max_hp": 529,
+    "position": [
+      104,
+      31
+    ],
+    "destination": [
+      100,
+      10
+    ],
+    "home": [
+      111,
+      4
+    ],
+    "source_in_keep": true,
+    "source_in_spawn": false,
+    "distance_home": 27.505660006967453,
+    "destination_distance_home": 12.714301686180889,
+    "travel_tiles": 21.403100786321694,
+    "tower": 29
+  },
+  "finding": "Only one candidate keep-to-home-classified start: full529/529HP, outside spawn, 21.4-tile hop late in game. This is not a low-health fountain recall. The classifier still correctly counts its destination within15tiles of initial spawn; preserve count1 rather than erase the exception.",
+  "controller_review": "Only productive-advance branch permits a base-origin start; critical and defensive recall both guard inBase=0. Forward anchor selection can still choose a near-home tower after outer anchors are lost. Improve destination utility in a separate experiment; retain exact tested source.",
+  "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+  "limit": "Branch attribution is inference from public event state and the frozen code, not a recorded internal variable trace."
+}

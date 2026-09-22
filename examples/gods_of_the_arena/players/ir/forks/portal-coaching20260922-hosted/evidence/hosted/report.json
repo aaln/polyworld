@@ -1,0 +1,292 @@
+{
+  "complete": true,
+  "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+  "games": 160,
+  "score_gate_passed": true,
+  "khors_superiority_passed": false,
+  "aggregate_gain_percent": 11.555551062291801,
+  "aggregate_gain_ci95_percent": [
+    -7.754978877489438,
+    34.75494130922878
+  ],
+  "cells": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "games": 40,
+      "invalid": 0,
+      "score": 2017.4,
+      "xp": 5061.125,
+      "deaths": 6.475,
+      "khors_score": 2214.35,
+      "khors_score_delta": -196.95,
+      "picks": {
+        "1": 24,
+        "6": 16
+      },
+      "distinct_streams": 40,
+      "individual_score_wins": 16,
+      "team_wins": 13,
+      "portal": {
+        "portals_started": 338,
+        "completed": 333,
+        "interrupted": 5,
+        "home_portals_from_keep": 50,
+        "low_field_ticks": 29090,
+        "ready_low_field_ticks": 8087
+      },
+      "khors_difference_ci95": [
+        -612.275,
+        226.9
+      ],
+      "opponents": [
+        {
+          "opponent": "khors:v114",
+          "slot": 5,
+          "mean_score": 2214.35,
+          "own_minus_opponent": -196.95,
+          "difference_ci95": [
+            -612.275,
+            226.9
+          ],
+          "individual_score_wins": 16,
+          "ties": 0
+        },
+        {
+          "opponent": "Jordan:v411",
+          "slot": 6,
+          "mean_score": 712.575,
+          "own_minus_opponent": 1304.825,
+          "difference_ci95": [
+            892.65,
+            1742.775
+          ],
+          "individual_score_wins": 33,
+          "ties": 0
+        },
+        {
+          "opponent": "Richard:v153",
+          "slot": 7,
+          "mean_score": 355.825,
+          "own_minus_opponent": 1661.575,
+          "difference_ci95": [
+            1220.925,
+            2116.225
+          ],
+          "individual_score_wins": 36,
+          "ties": 0
+        }
+      ],
+      "khors_superiority_passed": false
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "games": 40,
+      "invalid": 0,
+      "score": 2928.275,
+      "xp": 5707.55,
+      "deaths": 5.625,
+      "khors_score": 2141.15,
+      "khors_score_delta": 787.125,
+      "picks": {
+        "6": 23,
+        "1": 17
+      },
+      "distinct_streams": 40,
+      "individual_score_wins": 23,
+      "team_wins": 5,
+      "portal": {
+        "portals_started": 340,
+        "completed": 335,
+        "interrupted": 2,
+        "home_portals_from_keep": 57,
+        "low_field_ticks": 23840,
+        "ready_low_field_ticks": 7165
+      },
+      "khors_difference_ci95": [
+        279.025,
+        1342.4
+      ],
+      "opponents": [
+        {
+          "opponent": "khors:v114",
+          "slot": 0,
+          "mean_score": 2141.15,
+          "own_minus_opponent": 787.125,
+          "difference_ci95": [
+            279.025,
+            1342.4
+          ],
+          "individual_score_wins": 23,
+          "ties": 0
+        },
+        {
+          "opponent": "Jordan:v411",
+          "slot": 1,
+          "mean_score": 569.325,
+          "own_minus_opponent": 2358.95,
+          "difference_ci95": [
+            1890.175,
+            2849.175
+          ],
+          "individual_score_wins": 39,
+          "ties": 0
+        },
+        {
+          "opponent": "Richard:v153",
+          "slot": 2,
+          "mean_score": 371.4,
+          "own_minus_opponent": 2556.875,
+          "difference_ci95": [
+            2072.625,
+            3062.075
+          ],
+          "individual_score_wins": 39,
+          "ties": 0
+        }
+      ],
+      "khors_superiority_passed": true
+    },
+    {
+      "name": "candidate",
+      "side": 0,
+      "games": 40,
+      "invalid": 0,
+      "score": 2571.4,
+      "xp": 5699.125,
+      "deaths": 6.125,
+      "khors_score": 2270.825,
+      "khors_score_delta": 300.575,
+      "picks": {
+        "1": 18,
+        "6": 22
+      },
+      "distinct_streams": 40,
+      "individual_score_wins": 21,
+      "team_wins": 14,
+      "portal": {
+        "portals_started": 327,
+        "completed": 321,
+        "interrupted": 6,
+        "home_portals_from_keep": 1,
+        "low_field_ticks": 35609,
+        "ready_low_field_ticks": 12137
+      },
+      "khors_difference_ci95": [
+        -347.725,
+        954.1
+      ],
+      "opponents": [
+        {
+          "opponent": "khors:v114",
+          "slot": 5,
+          "mean_score": 2270.825,
+          "own_minus_opponent": 300.575,
+          "difference_ci95": [
+            -347.725,
+            954.1
+          ],
+          "individual_score_wins": 21,
+          "ties": 0
+        },
+        {
+          "opponent": "Jordan:v411",
+          "slot": 6,
+          "mean_score": 798.025,
+          "own_minus_opponent": 1773.375,
+          "difference_ci95": [
+            1353.725,
+            2205.65
+          ],
+          "individual_score_wins": 36,
+          "ties": 1
+        },
+        {
+          "opponent": "Richard:v153",
+          "slot": 7,
+          "mean_score": 379.55,
+          "own_minus_opponent": 2191.85,
+          "difference_ci95": [
+            1685.675,
+            2705.7
+          ],
+          "individual_score_wins": 37,
+          "ties": 1
+        }
+      ],
+      "khors_superiority_passed": false
+    },
+    {
+      "name": "candidate",
+      "side": 1,
+      "games": 40,
+      "invalid": 0,
+      "score": 2945.775,
+      "xp": 5850.625,
+      "deaths": 5.4,
+      "khors_score": 2396.975,
+      "khors_score_delta": 548.8,
+      "picks": {
+        "6": 20,
+        "1": 20
+      },
+      "distinct_streams": 39,
+      "individual_score_wins": 24,
+      "team_wins": 13,
+      "portal": {
+        "portals_started": 312,
+        "completed": 306,
+        "interrupted": 3,
+        "home_portals_from_keep": 0,
+        "low_field_ticks": 28274,
+        "ready_low_field_ticks": 10790
+      },
+      "khors_difference_ci95": [
+        -122.65,
+        1256.425
+      ],
+      "opponents": [
+        {
+          "opponent": "khors:v114",
+          "slot": 0,
+          "mean_score": 2396.975,
+          "own_minus_opponent": 548.8,
+          "difference_ci95": [
+            -122.65,
+            1256.425
+          ],
+          "individual_score_wins": 24,
+          "ties": 0
+        },
+        {
+          "opponent": "Jordan:v411",
+          "slot": 1,
+          "mean_score": 726.175,
+          "own_minus_opponent": 2219.6,
+          "difference_ci95": [
+            1681.8,
+            2759.675
+          ],
+          "individual_score_wins": 37,
+          "ties": 0
+        },
+        {
+          "opponent": "Richard:v153",
+          "slot": 2,
+          "mean_score": 376,
+          "own_minus_opponent": 2569.775,
+          "difference_ci95": [
+            2023.925,
+            3147.875
+          ],
+          "individual_score_wins": 39,
+          "ties": 0
+        }
+      ],
+      "khors_superiority_passed": false
+    }
+  ],
+  "uncertainty": "Whole-game bootstrap, side-stratified independent control/candidate draws; within-game rival differences. Fixed rosters/first picks and repeated trajectories limit generalization. Portal counts are descriptive; total low-health time also depends on game duration.",
+  "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-portals-20260922/hosted-khors114/plan.json"
+}

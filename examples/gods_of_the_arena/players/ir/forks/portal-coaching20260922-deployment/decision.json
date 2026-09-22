@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-22T20:24:40.104760+00:00",
+  "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+  "authorization": "Prior explicit latest-league deployment to both Aaron and Coach; no new approval required",
+  "engine": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+  "game_version": "2026.9.22.2",
+  "evidence": "160-game fresh-control portal A/B against khors:v114; full report preserved",
+  "score": 2758.5875,
+  "control_score": 2472.8375,
+  "uplift_percent": 11.555551062291801,
+  "rollback_versions": {
+    "aaron": "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+    "coach": "35c85505-1977-4bad-b4ea-f1473aaa79dc"
+  },
+  "rollback_source_sha256": "7631fa32fb7ef6725074ad6778f4f94fe1e18ac5018bece1eed40e32cbef9bb8",
+  "rollback_source": "examples/gods_of_the_arena/players/ir/forks/balance-draft20260922/policy.bas",
+  "limits": "Fixed first-pick roster; wide uncertainty and one duplicate candidate-blue stream. Khors confident superiority remains unqualified; no #1 guarantee. Fresh controls, fully audited."
+}

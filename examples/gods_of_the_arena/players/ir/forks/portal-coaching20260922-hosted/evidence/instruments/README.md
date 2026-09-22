@@ -54,23 +54,5 @@ evidence. All 33 captured inputs are unchanged at original and copied paths.
 The user authorized exactly 160 additional games for September 22, increasing
 that UTC day's effective cap from 1600 to 1760. Normal cap remains 1600 on other
 days. The cap record and previous configuration are preserved in raw `budget/`.
-`deploy.py` selects both authorized players only after the frozen score gate
-passes and portable verification succeeds. It preserves rollback identities,
-checks for concurrent champion changes and verifies both active readbacks.
-Report khors superiority separately from passing the improvement gate.
-
-## Completed hosted result
-
-All160 games were valid and audited. Mean XP score rose11.56% (red27.46%,
-blue0.60%); the frozen improvement gate passed. Khors was outscored45/80games
-and on both color means, but both score-difference confidence intervals include
-zero: confident khors superiority remains unqualified. Keep-to-home-classified
-starts fell107→1; the residual is a full-health21.4-tile near-home tower hop.
-Total low-health field exposure increased, so a faster recovery benefit is not
-claimed from the aggregate trace.
-
-See the [hosted IR/policy pair](../../../../examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-hosted/README.md),
-[stats analysis](../../../../docs/reports/gota-player-stats-20260922/README.md),
-and [khors descriptive IR](../../../../docs/opponents/khors-v114/replay-audit-20260922/README.md).
-The stats-guided targeting/duration/cast/economy hypotheses remain separate
-from the exact portal source that was evaluated.
+No script here selects a league champion. Keep the incumbent until measured
+improvement passes the frozen score gate; report khors superiority separately.
