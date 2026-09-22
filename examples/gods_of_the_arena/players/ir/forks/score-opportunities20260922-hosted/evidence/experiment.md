@@ -1,6 +1,6 @@
 # Individual XP opportunity selection
 
-Status: complete; 160 fresh hosted games audited. Candidate rejected; deployed portal policy retained on both players. Earlier design and launch entries below preserve their original timing.
+Status: local development; no hosted request or deployment.
 
 User direction: individual score is the sole objective; improve hero-kill XP
 and account for elapsed time. Parent is deployed portal source db71abb3, on
@@ -96,90 +96,3 @@ Khors114,Jordan411,Richard167 oppose both colors;relh161 is a teammate.
 Hosted verdict pending. The completed historical portal cohort cannot replace
 fresh controls after the500XP rule changed. No new games requested and no
 league selection performed in this iteration.
-
-## Hosted authorization and launch
-
-User explicitly answered the prepared-comparison budget question: "raise cap
-to10000". At2026-09-22T21:11:52UTC the dated effective cap changed1760→10000,
-with the shared1760already reserved retained and the normal1600limit unchanged
-for later dates. Cycle400and at-most-three-active-request limits remain.
-Authorization and the prior config are preserved under raw budget/.
-
-The exact prepared160-game plan is now running; its original budget-pending
-text remains as a frozen preregistration. The current allowance is recorded
-separately. First request: xreq_785f2cfc-ce49-485e-a091-894e732047fb. Dashboard
-http://127.0.0.1:8852. No acceptance threshold or source changed.
-
-## Completed hosted result — reject candidate
-
-All four requests completed with 40 valid, distinct command streams each:
-
-| Arm | Color | Request |
-|---|---|---|
-| Baseline | Red | xreq_785f2cfc-ce49-485e-a091-894e732047fb |
-| Baseline | Blue | xreq_5a46e045-c27b-492c-be42-1548b241fcd3 |
-| Candidate | Red | xreq_4e44fd54-0dc9-4faf-b449-8ae5d81e6834 |
-| Candidate | Blue | xreq_20e206bb-3ae3-4ef0-a46b-30d354fe6f12 |
-
-Every game's ten source hashes and VM exits, complete replay hashes, XP-source
-sum and integer score passed. All 160 are included; no replacement seeds,
-invalid exclusions or reused historical controls. Both whole teams rotated.
-
-| Mean per subject | Baseline red | Baseline blue | Candidate red | Candidate blue |
-|---|---:|---:|---:|---:|
-| Score | 1955.20 | 2990.85 | 2155.25 | 2313.65 |
-| Total XP | 4871.375 | 5881.725 | 4997.725 | 5050.000 |
-| Hero XP | 1781.25 | 2242.50 | 1728.75 | 1695.00 |
-| Creep XP | 2587.625 | 2921.725 | 2876.475 | 2812.500 |
-| Building XP | 402.50 | 542.50 | 330.00 | 430.00 |
-| God XP | 100.00 | 175.00 | 62.50 | 112.50 |
-| Hero kills | 11.875 | 14.950 | 11.525 | 11.300 |
-| Deaths | 6.500 | 5.975 | 6.450 | 5.700 |
-| Level | 10.825 | 12.075 | 10.900 | 11.150 |
-| Minutes, including draft | 14.720 | 14.452 | 14.723 | 13.679 |
-
-Aggregate mean score **2473.025 → 2234.45 (−9.647%)**, with red **+10.232%**
-and blue **−22.642%**. The side-stratified, independent whole-game bootstrap
-95% gain interval is **[−25.649%, +9.743%]**. Neither the aggregate +10% gate
-nor blue's 95% retention gate passes. This exact candidate is **not deployed**.
-No claim of a universal negative effect follows from this fixed roster.
-
-Red's improvement comes mainly from +288.85 creep XP; hero XP fell 52.5.
-Blue lost 547.5 hero XP and 831.725 total XP. Its games were 0.773 minutes
-shorter, saving about 154.6 time-penalty points, which did not offset the lost
-XP. Fewer raw deaths and fewer out-of-range actions accompanied lower score;
-these are diagnostics, not substitute objectives. Team wins also fell, but do
-not determine this decision. XP and time means do not exactly reconstruct mean
-score because the final score is clipped at zero and rounded per game.
-
-Draft mix does not explain away blue's loss: Crossbowman picks rose 17→26 out
-of 40, yet within-class mean scores fell 27.72% for Crossbowman and 34.03% for
-Ranger. Descriptive standardization to pooled class frequencies gives blue
-−30.00%, red +11.40%. Small conditional cells and other seeded composition
-differences prevent causal attribution. This exploratory check does not change
-the preregistered unadjusted acceptance rule.
-
-The candidate outscored khors114 in 13/40 red and 20/40 blue (33/80), versus
-baseline 38/80. Candidate mean own-minus-khors gaps were −542 red and −399.4
-blue; both paired difference intervals cross zero. It outscored Jordan411 in
-67/80 and Richard167 in 53/80. Those counts do not override the failed score
-gate; relh161 was a teammate, so no opposing-relh claim is made.
-
-The reviewed pair is
-`examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted`:
-source f6a0dace unchanged, reviewed IR e3786265. CompetitiveGain is marked
-contradicted for this exact bundle; host-mechanism claims remain supported.
-Compile/extract round-trip, local evidence and all hosted result hashes are
-preserved. The prior local pair, failed r1/r2, original coaching inputs and
-baseline pair remain untouched. Both owned champions remain db71abb3.
-
-After the authorized 160 games, the shared September 22 journal records
-**1,920 / 10,000 reserved; 8,080 remaining**. No pending comparison request or
-league write remains. The inert candidate upload is retained for provenance.
-
-Next research should test a distinct mechanism that recovers reachable hero
-kills without losing farming or survival. Audit rejected hero opportunities,
-spell reach and realized damage, then freeze a new coordinated candidate and
-new prospective comparison. Red's result alone does not validate splicing this
-controller into a color-conditional policy. Preserve the current exact bundle
-as a failed experiment rather than rerunning it unchanged.

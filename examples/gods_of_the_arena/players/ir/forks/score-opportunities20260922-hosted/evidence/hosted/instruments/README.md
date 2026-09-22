@@ -23,26 +23,17 @@ replay hash plus XP and score; local outcomes are diagnostic only.
 four-cell160-game plan. It does not create experience requests or deploy.
 `hosted_score.py` executes the frozen plan only through the shared cap/journal,
 with global runner lock, paused-worker check, current-game verification and
-sequential requests plus streaming audits. **September 22 cap is authorized at 10,000; 1,920 are reserved after this study.**
-The dated override preserves the normal 1,600 limit for later dates. Before execution, reconcile the current UTC day, authorization,
+sequential requests plus streaming audits. **September22 cap1760 is exhausted.**
+Do not bypass it. Before execution, reconcile the current UTC day, authorization,
 pending requests and source/roster/game pins; launch a progress dashboard.
 
 After hosted completion, report confidence intervals, duplicates and exact
 hero/creep/building/god XP before any deployment. The existing economy decoder
 groups god XP under structure_or_other; split500perhero when that hero's enemy
 god is destroyed, using replay events/final fort state. Never call these
-postgame facts live policy features. `deploy.py` is a separate explicit operation guarded by the completed score gate;
-this candidate failed and must not be selected. It was not executed.
+postgame facts live policy features. No automatic deployment is implemented.
 
 `finalize.py` saves local results into the portable pair; `verify.py` is copied
-there and checks source/IR round-trip and evidence hashes. The original local pair keeps its requires_review competitive belief.
-`publish_hosted.py` creates a separate reviewed pair after `report.py` audits
-all 160 games and attributes XP; its competitive claim is contradicted.
-`draft_review.py` adds descriptive class analysis without changing the gate.
-`dashboard.py` serves read-only progress on localhost:8852. Parent session references are preserved in the pair;
+there and checks source/IR round-trip and evidence hashes. Competitive belief
+remains requires_review. Parent session references are preserved in the pair;
 none of the original recordings or inputs is edited.
-
-Completed result: −9.65% mean score, red +10.23%, blue −22.64%. All audits pass;
-the frozen replacement gate fails. Both live portal champions are retained.
-See the experiment record and `score-opportunities20260922-hosted` for the
-complete report, source/IR identities, uncertainty and hashed evidence.

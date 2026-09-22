@@ -1,5 +1,16 @@
 # Closed GOTA experiment directions
 
+- 2026-09-22, engine **2026.9.22.3 / 1b708944**: exact coordinated opportunity
+  source **f6a0dace** failed a fresh 160-game comparison. Mean score −9.65%,
+  red +10.23%, blue −22.64%; 95% aggregate gain interval [−25.65%, +9.74%].
+  All games/source/VM/replay/XP/integer-score checks passed, 40 distinct streams
+  per cell. Blue hero XP fell 24.4%; the loss persists descriptively within both
+  drafted classes. Passing 390 local fixtures and positive native scores did
+  not qualify a deployment. This closes this exact utility/threat bundle on
+  this fixed mixed roster, not hero fighting, farming or public threat appraisal
+  in general. Require a new mechanism and fresh validation before retesting.
+  See `experiments/2026-09-22-score-opportunities.md` and the hosted-reviewed IR.
+
 - 2026-09-22, engine **2026.9.22.2 / ffcedcd**: the coordinated team-relative
   movement controller with Ranger, Crossbowman, Warlock or Arcanist draft
   priority failed the preregistered replacement gate in a complete 400-game

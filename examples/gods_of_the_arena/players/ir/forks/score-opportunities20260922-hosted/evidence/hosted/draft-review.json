@@ -1,0 +1,133 @@
+{
+  "cells": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "by_class": [
+        {
+          "class": 1,
+          "games": 21,
+          "score": 1475.4285714285713,
+          "xp": 4132.857142857143,
+          "deaths": 7.333333333333333,
+          "level": 10,
+          "ticks": 19518.809523809523
+        },
+        {
+          "class": 6,
+          "games": 19,
+          "score": 2485.4736842105262,
+          "xp": 5687.631578947368,
+          "deaths": 5.578947368421052,
+          "level": 11.736842105263158,
+          "ticks": 23051.263157894737
+        }
+      ]
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "by_class": [
+        {
+          "class": 1,
+          "games": 23,
+          "score": 2452.478260869565,
+          "xp": 5269,
+          "deaths": 6.869565217391305,
+          "level": 11.391304347826088,
+          "ticks": 20275.695652173912
+        },
+        {
+          "class": 6,
+          "games": 17,
+          "score": 3719.235294117647,
+          "xp": 6710.705882352941,
+          "deaths": 4.764705882352941,
+          "level": 13,
+          "ticks": 21535.470588235294
+        }
+      ]
+    },
+    {
+      "name": "candidate",
+      "side": 0,
+      "by_class": [
+        {
+          "class": 1,
+          "games": 22,
+          "score": 1836.6818181818182,
+          "xp": 4643.772727272727,
+          "deaths": 7.5,
+          "level": 10.363636363636363,
+          "ticks": 21465.5
+        },
+        {
+          "class": 6,
+          "games": 18,
+          "score": 2544.6111111111113,
+          "xp": 5430.333333333333,
+          "deaths": 5.166666666666667,
+          "level": 11.555555555555555,
+          "ticks": 20876.555555555555
+        }
+      ]
+    },
+    {
+      "name": "candidate",
+      "side": 1,
+      "by_class": [
+        {
+          "class": 1,
+          "games": 14,
+          "score": 1618,
+          "xp": 4316.071428571428,
+          "deaths": 7.071428571428571,
+          "level": 10.214285714285714,
+          "ticks": 19422.428571428572
+        },
+        {
+          "class": 6,
+          "games": 26,
+          "score": 2688.230769230769,
+          "xp": 5445.192307692308,
+          "deaths": 4.961538461538462,
+          "level": 11.653846153846153,
+          "ticks": 19846.115384615383
+        }
+      ]
+    }
+  ],
+  "standardized": [
+    {
+      "side": 0,
+      "available": true,
+      "weights": {
+        "1": 0.5375,
+        "6": 0.4625
+      },
+      "baseline_score": 1942.5744360902254,
+      "candidate_score": 2164.099116161616,
+      "gain_percent": 11.403664948728975,
+      "within_class_gain_percent": {
+        "1": 24.484631363988463,
+        "6": 2.379322190223432
+      }
+    },
+    {
+      "side": 1,
+      "available": true,
+      "weights": {
+        "1": 0.4625,
+        "6": 0.5375
+      },
+      "baseline_score": 3133.360166240409,
+      "candidate_score": 2193.2490384615385,
+      "gain_percent": -30.003289692256207,
+      "within_class_gain_percent": {
+        "1": -34.025918768947115,
+        "6": -27.720873872043473
+      }
+    }
+  ],
+  "scope": "Secondary descriptive standardization to each side pooled class frequency. Class choice depends on seeded draft order/availability; small conditional cells and other composition differences prevent causal attribution. This analysis does not replace the preregistered unadjusted mean-score gate."
+}

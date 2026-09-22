@@ -148,17 +148,37 @@ controller rules. The [khors descriptive IR](../opponents/khors-v114/replay-audi
 is retrospective and not a validated proxy. Old source/engine tactics remain
 historical; none overrides current-version evidence.
 
-## Individual-score candidate awaiting hosted evaluation
+## Completed individual-score comparison
 
-The [portable score candidate](../../examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922/README.md)
-uses separate hero/creep/structure opportunities and public threat context.
-It favors reachable hero finishes and accounts for the new500XP god reward.
-Sourcef6a0dace/IR33182eea passes180target cases,84portal cases,126broad checks
-and8complete native games. Local score3321→4166.75 is diagnostic only; heroXP
-falls on red and rises on blue. Competitive belief remains requires_review.
+The [hosted score pair](../../examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted/README.md)
+records **rejection** of source f6a0dace, reviewed IR e3786265. All 160 fresh
+hosted games passed source, all-VM, full-replay, XP and integer-score audits;
+each 40-game cell has 40 distinct command streams. Mean score fell
+2473.025 → 2234.45 (**−9.65%**), red +10.23%, blue −22.64%. The 95% bootstrap
+gain interval is [−25.65%, +9.74%]. The frozen +10% aggregate / 95% each-color
+rule failed. **Both players retain the portal reference.**
 
-An inert versionba7be127 and schema-checked160-game comparison are prepared,
-with khors114/Jordan411/Richard167 opposing both colors. No games launched or
-champion changed. September22 budget1760/1760 is exhausted; additional160
-requires user authorization or the normal UTC reset. Use score20260922 tools
-and exact replay58 engine, not the old balance/portal launcher.
+This coordinated candidate separates hero/creep/structure opportunities,
+checks public threat context, favors reachable hero finishes and values a
+near-dead exposed god's 500 XP reward. Its 390 host fixtures and eight complete
+native games pass, but their positive native score did not predict competitive
+improvement. The original local pair and failed alternatives are preserved.
+
+Red gained creep XP while hero XP declined slightly. Blue hero XP fell
+2242.5 → 1695; shorter games saved about 155 score points but lost about 832 XP.
+Blue underperformed within both Ranger and Crossbowman groups despite more
+Crossbowman picks. This is descriptive, not per-component causal attribution.
+Do not rerun the exact failed bundle unchanged. Useful next hypotheses concern
+missed hero opportunities and realized spell damage, measured against productive
+creep income and survival on both colors.
+
+Khors114, Jordan411 and Richard167 opposed both colors; relh161 was a teammate.
+The candidate outscored them 33/80, 67/80 and 53/80 respectively. These counts
+neither pass the primary replacement rule nor establish #1 or general strength.
+
+The user authorized **10,000 hosted games for September 22 UTC**, superseding
+the earlier 1,760 cap. After this comparison the preserved shared journal has
+1,920 reserved, leaving 8,080. The dated override retains the normal 1,600 limit
+for later dates; cycle 400, parallel 3 and batch 40–200 limits remain. Do not
+reset the journal. The prior background researcher remains paused and its old
+game configuration must not be resumed unchanged. All four requests completed.

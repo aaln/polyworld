@@ -21,18 +21,49 @@
     "coach": "088c0fed-b536-4777-9f7a-14abee21e5b8"
   },
   "current_experiment": "games/gods_of_the_arena/experiments/2026-09-22-score-opportunities.md",
-  "deployment_status": "Both players verified competing, active, champion on qualified exact source at 2026-09-22T20:25:30.054008+00:00",
+  "deployment_status": "Both unchanged portal champions verified competing and active at 2026-09-22T21:38:06.362197+00:00; score candidate rejected, no league mutation.",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
     "label": "khors:v114",
     "id": "145c01e0-0cbf-4e1e-8120-11b437175b91",
-    "qualification": "Positive mean-score gap on both colors; 45/80 individual outscore count, confidence gate still unmet."
+    "qualification": "Historical portal study outscored khors114 in 45/80. Current 2026.9.22.3 controls outscore 38/80; rejected score candidate 33/80. Confident both-color superiority remains unmet."
   },
   "reference_validation_game_version": "2026.9.22.2",
   "reference_validation_engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Replay58 calibrated; candidate passes390host fixtures and8full native matches. Inert candidate ba7be127-2b88-44ca-a171-b83d63c1e4f3 and160fresh-control plan prepared. Hosted budget approval pending; no league change.",
-  "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922",
+  "research_status": "Completed 160 fresh games on 2026.9.22.3. Candidate f6a0dace rejected: mean score -9.65%, red +10.23%, blue -22.64%; all audits passed. Retain deployed portal policy on both players.",
+  "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
-  "candidate_ir_sha256": "33182eea497e84b8d43df3213e10aad72568a0e2b152ccacd3a140867e4bd40e"
+  "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
+  "budget_override": {
+    "utc_day": "2026-09-22",
+    "daily_limit": 10000,
+    "normal_limit": 1600,
+    "authorization": "raise cap to 10000",
+    "record": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-score-20260922/budget/authorization-10000.json",
+    "reserved_after_comparison": 1920,
+    "remaining_after_comparison": 8080
+  },
+  "candidate_evidence": {
+    "games": 160,
+    "score_gate_passed": false,
+    "baseline_score": 2473.025,
+    "candidate_score": 2234.45,
+    "aggregate_gain_percent": -9.647092124018164,
+    "per_color_gain_percent": [
+      10.231689852700487,
+      -22.642392630857444
+    ],
+    "gain_ci95_percent": [
+      -25.648884922507598,
+      9.742789896282611
+    ]
+  },
+  "current_engine_reference_control": {
+    "game_version": "2026.9.22.3",
+    "games": 80,
+    "red_score": 1955.2,
+    "blue_score": 2990.85,
+    "scope": "Fresh fixed first-pick mixed-roster controls in the score opportunity experiment; separate from original 2026.9.22.2 portal qualification."
+  }
 }
