@@ -17,7 +17,9 @@ BASELINE=old.BASELINE
 PARENT=ROOT/'examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-hosted'
 LABELS=['spell-targeting','spell-pressure']
 CONFIRM_SUBJECT=2
+GAMES=40
 REQUEST_PREFIX='gota-adaptive0922'
+RULE_OVERRIDE=BUDGET_OVERRIDE=NOTES_OVERRIDE=None
 
 def source(label):return (PARENT if label=='baseline' else STUDY/label)/'policy.bas'
 def upload(c,label):
@@ -78,10 +80,13 @@ def prepare(stage,candidate=None):
                 roster=list(template);roster[subject]=ident
                 if side:roster=roster[5:]+roster[:5]
                 digest=h.sha(source(label).read_bytes())
-                arm={'name':label,'side':side,'version':ident,'source_sha256':digest,'own_slots':[side*5+subject],'roster':roster,'games':40}
-                body={'idempotency_key':f'{REQUEST_PREFIX}-{stage}-{label}-{side}-{digest[:10]}','target':{'coworld_id':h.GAME,'variant_id':'competition'},'game_config_overrides':cfg(game),'num_episodes':40,'roster':[{'slot':i,'player':{'policy_ref':v}} for i,v in enumerate(roster)],'notes':'Adaptive individual-score research. Exact Richard167 and khors114 opposing both colors; public-only spell-targeting variants. Frozen>=10% aggregate score gain and>=95% each color, zero invalid/source/VM/replay/XP/integer failures. Screen selection requires fresh separate roster confirmation before deployment. No automatic league selection.'}
+                arm={'name':label,'side':side,'version':ident,'source_sha256':digest,'own_slots':[side*5+subject],'roster':roster,'games':GAMES}
+                body={'idempotency_key':f'{REQUEST_PREFIX}-{stage}-{label}-{side}-{digest[:10]}','target':{'coworld_id':h.GAME,'variant_id':'competition'},'game_config_overrides':cfg(game),'num_episodes':GAMES,'roster':[{'slot':i,'player':{'policy_ref':v}} for i,v in enumerate(roster)],'notes':'Adaptive individual-score research. Exact Richard167 and khors114 opposing both colors; public-only spell-targeting variants. Frozen>=10% aggregate score gain and>=95% each color, zero invalid/source/VM/replay/XP/integer failures. Screen selection requires fresh separate roster confirmation before deployment. No automatic league selection.'}
+                if NOTES_OVERRIDE:body['notes']=NOTES_OVERRIDE
                 folder=out/label/str(side);h.freeze(folder/'arm.json',arm);h.freeze(folder/'request.json',body);h.create(c,body,folder/'batch',dry_run=True);arms.append(arm)
-        plan={'stage':stage,'games':len(arms)*40,'engine_commit':h.COMMIT,'game_version':h.VERSION,'cycle':h.CYCLE,'arms':arms,'rule':'Zero invalid; strict aggregate mean score improvement>=10%; each color>=95% control. Screen choose highest qualifying aggregate (ties lexical), then independent160-game different-roster confirmation before deployment. No confirm if no candidate qualifies. Full10source/VM/replay/XP audits; independent per-color whole-game bootstrap, duplicates reported. Fixed opponent versions, no universal rank claim.','budget':f'Authorized Sep22 UTC10000; shared ledger/cycle400/parallel3/batch40 preserved.{(len(LABELS)+1)*80}screen+160conditionalconfirmation.'}
+        plan={'stage':stage,'games':len(arms)*GAMES,'engine_commit':h.COMMIT,'game_version':h.VERSION,'cycle':h.CYCLE,'arms':arms,'rule':'Zero invalid; strict aggregate mean score improvement>=10%; each color>=95% control. Screen choose highest qualifying aggregate (ties lexical), then independent160-game different-roster confirmation before deployment. No confirm if no candidate qualifies. Full10source/VM/replay/XP audits; independent per-color whole-game bootstrap, duplicates reported. Fixed opponent versions, no universal rank claim.','budget':f'Authorized Sep22 UTC10000; shared ledger/cycle400/parallel3/batch40 preserved.{(len(LABELS)+1)*80}screen+160conditionalconfirmation.'}
+        if RULE_OVERRIDE:plan['rule']=RULE_OVERRIDE
+        if BUDGET_OVERRIDE:plan['budget']=BUDGET_OVERRIDE
         h.freeze(out/'plan.json',plan)
         print(json.dumps({'prepared':stage,'games':plan['games'],'new_requests':0}),flush=True)
 
@@ -104,9 +109,9 @@ def run(stage):
                 episodes=h.episodes(c,ident);h.write(folder/'episodes.json',episodes)
                 done=[e for e in episodes if e['status'] in ('completed','failed','cancelled','error')]
                 with ThreadPoolExecutor(6) as pool:rows=list(pool.map(lambda e:audit.collect(c,arm,folder,e),done))
-                h.write(folder/'progress.json',{'audited':len(rows),'total':40,'rows':rows})
-                if len(rows)<40:remaining.append((arm,folder,ident));continue
-                cell={'name':arm['name'],'side':arm['side'],'invalid':sum(not r['valid'] for r in rows),'score':sum(r.get('score',0) for r in rows)/40,'picks':dict(Counter(r.get('class') for r in rows)),'distinct_streams':len({r.get('canonical_commands_sha1') for r in rows}),'rows':rows}
+                h.write(folder/'progress.json',{'audited':len(rows),'total':arm['games'],'rows':rows})
+                if len(rows)<arm['games']:remaining.append((arm,folder,ident));continue
+                cell={'name':arm['name'],'side':arm['side'],'invalid':sum(not r['valid'] for r in rows),'score':sum(r.get('score',0) for r in rows)/arm['games'],'picks':dict(Counter(r.get('class') for r in rows)),'distinct_streams':len({r.get('canonical_commands_sha1') for r in rows}),'rows':rows}
                 h.write(folder/'result.json',cell);print(json.dumps({k:v for k,v in cell.items() if k!='rows'}),flush=True)
             active=remaining
             if active:time.sleep(10)

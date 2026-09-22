@@ -52,3 +52,25 @@ requirement. A selected source is not a universal ranking guarantee, and new
 opponent versions invalidate any claim of having tested those newer versions.
 The user authorized10000hosted games for September22 UTC; ordinary1600later.
 Cycle400/parallel3limits and single-writer rules remain.
+
+The completed broad study failed independent confirmation. The separate
+`class_*` instruments test Crossbow-only behavior against fresh controls; that
+160-game screen also failed. Reviewed bundles preserve both outcomes.
+
+`finish_binding.py` and `build_finish.py` generate the narrow reward-finishing
+candidate. `finish_verify_local.py` checks 140 reward/target fixtures, inherited
+84 portal/126 broad cases, eight full native games and portable conversion.
+`finish_hosted.py --prepare` freezes a single 400-game held-out trial, 100 games
+per source/color; run without `--prepare` to resume its exact receipts.
+`finish_report.py --watch` adds the prospectively required positive lower 95%
+aggregate gain bound to the usual score/color conditions. `finish_effects.py
+--watch`, `finish_plot.py`, `finish_publish.py` and the guarded
+`finish_deploy.py` complete that workflow. Do not reinterpret the earlier
+screening studies under this different frozen rule.
+
+`field_watch.py --before PRIOR/snapshot.json --out NEW_DIRECTORY` captures a
+fresh field and produces a research queue: changed/new champions, then leading
+scores. Same-version score changes are descriptive, not predicted trends. This
+is read-only and does not restart the obsolete worker, spend games or select
+champions. Refresh exact-version cohorts as the field changes; never inject
+policy IDs or replay truth into live decisions.

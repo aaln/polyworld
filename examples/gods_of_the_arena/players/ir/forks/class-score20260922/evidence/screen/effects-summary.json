@@ -1,0 +1,1290 @@
+{
+  "plan": {
+    "selection": "First4 lexical episode UUIDs per cell after all cells complete; rule chosen before detailed effect decoding. Retrospective diagnostic subset, no independent holdout/competitive gate.",
+    "cases": [
+      {
+        "name": "baseline",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_09ba7583-7c09-4470-88b2-284a2952af4f",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_0f35bb39-4bdb-4ff1-ad98-0199699f6309",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_1c9f17bd-2bf0-40a4-b2c1-ede446d06404",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_21e38654-0fc7-4bb4-a513-509f89ca785f",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_077bfe88-0f3b-4bd5-afc4-c9dad5ce70e7",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_0dd6481a-f4f7-4be6-8948-863adfac042a",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_1b4b7f7b-9dff-4f2d-8f85-08b5b3c98963",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_1c96261b-9e95-4a66-b979-1ee73cf5681a",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "crossbow-only",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_00e30225-85e2-48e1-811d-da1ee0941918",
+        "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c"
+      },
+      {
+        "name": "crossbow-only",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_03153cd7-36c9-4c50-a4b3-02aa0d6d53ca",
+        "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c"
+      },
+      {
+        "name": "crossbow-only",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_0ad3472e-894e-49a6-af0e-0b65a9d8c82e",
+        "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c"
+      },
+      {
+        "name": "crossbow-only",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_11fc7013-d157-4fdf-a0b3-80cd1015f9cd",
+        "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c"
+      },
+      {
+        "name": "crossbow-only",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_025e2446-ff7a-4310-9da6-42448dcef45f",
+        "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c"
+      },
+      {
+        "name": "crossbow-only",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_0c778af3-df00-4c3a-a3d2-1f6da17fae13",
+        "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c"
+      },
+      {
+        "name": "crossbow-only",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_0e2723fc-c486-4a00-b5f5-f6cc6362a493",
+        "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c"
+      },
+      {
+        "name": "crossbow-only",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_1a2ddb71-da7c-4045-8bac-7314ef8d2abb",
+        "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c"
+      }
+    ],
+    "instrument_sha256": "8a3044802d68a274837aac8fddacc572258ef14411ceb4ef81b5305ff6ee3d83",
+    "binary_sha256": "0a37bdc929c7ef59293c54d4fbf2ce2ccd99d28c4938d7d4ae4324cbbf01096d"
+  },
+  "cells": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "n": 4,
+      "mean_totals": {
+        "alive_ticks": 15675.25,
+        "channel_ticks": 414,
+        "damage_basic_creep": 3887,
+        "damage_basic_hero": 3556.5,
+        "damage_basic_structure": 7852,
+        "damage_spell_creep": 3421.5,
+        "damage_spell_hero": 1857.5,
+        "damage_spell_structure": 471,
+        "damage_taken": 4782.5,
+        "field_ticks": 12566.75,
+        "gold_spent": 2387.5,
+        "keep_ticks": 3108.5,
+        "low_mana_ticks": 2348.25,
+        "rejected_ActionInsufficientMana": 3.75,
+        "rejected_ActionOutOfRange": 615.5,
+        "rejected_ActionTargetUnavailable": 1.5,
+        "xp_creep": 1738.5,
+        "xp_god": 125,
+        "xp_hero": 1237.5,
+        "xp_structure": 300
+      },
+      "classes": [
+        "Ranger",
+        "Ranger",
+        "Crossbowman",
+        "Crossbowman"
+      ]
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "n": 4,
+      "mean_totals": {
+        "alive_ticks": 20768.75,
+        "channel_ticks": 648,
+        "damage_basic_creep": 6244.75,
+        "damage_basic_hero": 5626,
+        "damage_basic_structure": 11978.75,
+        "damage_spell_creep": 6357.75,
+        "damage_spell_hero": 2573.25,
+        "damage_spell_structure": 444.25,
+        "damage_taken": 6033.25,
+        "field_ticks": 16862.5,
+        "gold_spent": 3022.5,
+        "keep_ticks": 3906.25,
+        "low_mana_ticks": 5877,
+        "rejected_ActionInsufficientMana": 11.75,
+        "rejected_ActionNoRoute": 3.5,
+        "rejected_ActionOutOfRange": 943,
+        "rejected_ActionTargetUnavailable": 1,
+        "xp_creep": 3327,
+        "xp_god": 125,
+        "xp_hero": 2250,
+        "xp_structure": 500
+      },
+      "classes": [
+        "Ranger",
+        "Crossbowman",
+        "Crossbowman",
+        "Crossbowman"
+      ]
+    },
+    {
+      "name": "crossbow-only",
+      "side": 0,
+      "n": 4,
+      "mean_totals": {
+        "alive_ticks": 18470.5,
+        "channel_ticks": 594,
+        "damage_basic_creep": 4436.75,
+        "damage_basic_hero": 6274,
+        "damage_basic_structure": 7371.25,
+        "damage_spell_creep": 4451.75,
+        "damage_spell_hero": 3220.5,
+        "damage_spell_structure": 503.5,
+        "damage_taken": 5090,
+        "field_ticks": 14407,
+        "gold_spent": 2370,
+        "keep_ticks": 4063.5,
+        "low_mana_ticks": 4064.5,
+        "rejected_ActionInsufficientMana": 5.5,
+        "rejected_ActionOutOfRange": 565.75,
+        "rejected_ActionTargetUnavailable": 1.5,
+        "xp_creep": 2109.25,
+        "xp_god": 125,
+        "xp_hero": 2137.5,
+        "xp_structure": 300
+      },
+      "classes": [
+        "Ranger",
+        "Crossbowman",
+        "Ranger",
+        "Crossbowman"
+      ]
+    },
+    {
+      "name": "crossbow-only",
+      "side": 1,
+      "n": 4,
+      "mean_totals": {
+        "alive_ticks": 20172.25,
+        "channel_ticks": 546.25,
+        "damage_basic_creep": 6815,
+        "damage_basic_hero": 6244.75,
+        "damage_basic_structure": 13669.75,
+        "damage_spell_creep": 6431,
+        "damage_spell_hero": 2936,
+        "damage_spell_structure": 437,
+        "damage_taken": 5751,
+        "field_ticks": 16840.75,
+        "gold_spent": 2567.5,
+        "keep_ticks": 3331.5,
+        "low_mana_ticks": 6260.5,
+        "rejected_ActionInsufficientMana": 3.75,
+        "rejected_ActionNoRoute": 1.5,
+        "rejected_ActionOutOfRange": 861,
+        "rejected_ActionTargetUnavailable": 2.25,
+        "xp_creep": 3272.75,
+        "xp_god": 125,
+        "xp_hero": 2212.5,
+        "xp_structure": 550
+      },
+      "classes": [
+        "Crossbowman",
+        "Ranger",
+        "Crossbowman",
+        "Ranger"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_09ba7583-7c09-4470-88b2-284a2952af4f",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 25702,
+      "hero": {
+        "slot": 0,
+        "class": "Ranger",
+        "xp": 5328,
+        "gold": 870,
+        "deaths": 10,
+        "level": 12,
+        "totals": {
+          "damage_spell_hero": 3164,
+          "low_mana_ticks": 4324,
+          "damage_basic_structure": 7497,
+          "alive_ticks": 20694,
+          "xp_creep": 2578,
+          "xp_hero": 2550,
+          "damage_basic_creep": 6238,
+          "rejected_ActionInsufficientMana": 2,
+          "channel_ticks": 648,
+          "damage_spell_creep": 5214,
+          "xp_structure": 200,
+          "gold_spent": 3950,
+          "field_ticks": 16174,
+          "damage_taken": 7677,
+          "keep_ticks": 4520,
+          "damage_spell_structure": 398,
+          "rejected_ActionOutOfRange": 835,
+          "damage_basic_hero": 6914,
+          "rejected_ActionTargetUnavailable": 5
+        },
+        "spells": {
+          "VerdantArrow": 67,
+          "DragonSight": 15,
+          "RicochetDisc": 42,
+          "StormEagle": 16
+        },
+        "spell_damage": {
+          "VerdantArrow": 3275,
+          "DragonSight": 240,
+          "RicochetDisc": 4171,
+          "StormEagle": 1090
+        },
+        "xp_by_minute": {
+          "14": 120,
+          "16": 150,
+          "3": 213,
+          "6": 263,
+          "12": 417,
+          "8": 158,
+          "7": 305,
+          "15": 495,
+          "11": 225,
+          "1": 258,
+          "2": 94,
+          "5": 675,
+          "9": 690,
+          "10": 755,
+          "4": 510
+        }
+      },
+      "audit_sha256": "36ddb1d2aea88e3b07a574820aee7a27b41fa013d012a0f0f0febb6d3e5f1057"
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_0f35bb39-4bdb-4ff1-ad98-0199699f6309",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 16291,
+      "hero": {
+        "slot": 0,
+        "class": "Ranger",
+        "xp": 2431,
+        "gold": 745,
+        "deaths": 4,
+        "level": 8,
+        "totals": {
+          "damage_spell_hero": 1323,
+          "low_mana_ticks": 1324,
+          "damage_basic_structure": 9538,
+          "alive_ticks": 13915,
+          "xp_creep": 1281,
+          "xp_hero": 750,
+          "damage_basic_creep": 3110,
+          "channel_ticks": 360,
+          "damage_spell_creep": 2720,
+          "xp_structure": 400,
+          "gold_spent": 1630,
+          "field_ticks": 11241,
+          "damage_taken": 3503,
+          "keep_ticks": 2674,
+          "damage_spell_structure": 526,
+          "rejected_ActionOutOfRange": 489,
+          "damage_basic_hero": 2853,
+          "rejected_ActionTargetUnavailable": 1
+        },
+        "spells": {
+          "VerdantArrow": 33,
+          "RicochetDisc": 25,
+          "StormEagle": 5
+        },
+        "spell_damage": {
+          "VerdantArrow": 1341,
+          "RicochetDisc": 2513,
+          "StormEagle": 715
+        },
+        "xp_by_minute": {
+          "3": 45,
+          "6": 273,
+          "8": 355,
+          "7": 538,
+          "11": 37,
+          "1": 259,
+          "2": 95,
+          "5": 549,
+          "9": 165,
+          "10": 115
+        }
+      },
+      "audit_sha256": "236864324074970975256f8724958060119abbd4a7f0c03d067286703c6e006c"
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_1c9f17bd-2bf0-40a4-b2c1-ede446d06404",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 22396,
+      "hero": {
+        "slot": 0,
+        "class": "Crossbowman",
+        "xp": 3839,
+        "gold": 295,
+        "deaths": 7,
+        "level": 10,
+        "totals": {
+          "damage_spell_hero": 2169,
+          "low_mana_ticks": 2497,
+          "damage_basic_structure": 11514,
+          "alive_ticks": 19082,
+          "xp_creep": 2089,
+          "xp_hero": 750,
+          "damage_basic_creep": 4079,
+          "xp_god": 500,
+          "rejected_ActionInsufficientMana": 10,
+          "channel_ticks": 504,
+          "damage_spell_creep": 3664,
+          "xp_structure": 500,
+          "gold_spent": 2860,
+          "field_ticks": 15371,
+          "damage_taken": 6047,
+          "keep_ticks": 3711,
+          "damage_spell_structure": 624,
+          "rejected_ActionOutOfRange": 957,
+          "damage_basic_hero": 2844
+        },
+        "spells": {
+          "ClockworkCharge": 7,
+          "LodestoneSurge": 25,
+          "SiegeScarab": 44
+        },
+        "spell_damage": {
+          "ClockworkCharge": 465,
+          "LodestoneSurge": 3413,
+          "SiegeScarab": 2579
+        },
+        "xp_by_minute": {
+          "14": 48,
+          "12": 150,
+          "8": 397,
+          "7": 300,
+          "15": 600,
+          "11": 440,
+          "1": 310,
+          "13": 150,
+          "2": 124,
+          "5": 155,
+          "9": 775,
+          "10": 390
+        }
+      },
+      "audit_sha256": "74e2d01555868f774c835c5777feabb36b7aa80cc27e66d1ed1dc97deb49193e"
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_21e38654-0fc7-4bb4-a513-509f89ca785f",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 10354,
+      "hero": {
+        "slot": 0,
+        "class": "Crossbowman",
+        "xp": 2006,
+        "gold": 885,
+        "deaths": 2,
+        "level": 7,
+        "totals": {
+          "damage_spell_hero": 774,
+          "low_mana_ticks": 1248,
+          "damage_basic_structure": 2859,
+          "alive_ticks": 9010,
+          "xp_creep": 1006,
+          "xp_hero": 900,
+          "damage_basic_creep": 2121,
+          "rejected_ActionInsufficientMana": 3,
+          "channel_ticks": 144,
+          "damage_spell_creep": 2088,
+          "xp_structure": 100,
+          "gold_spent": 1110,
+          "field_ticks": 7481,
+          "damage_taken": 1903,
+          "keep_ticks": 1529,
+          "damage_spell_structure": 336,
+          "rejected_ActionOutOfRange": 181,
+          "damage_basic_hero": 1615
+        },
+        "spells": {
+          "ClockworkCharge": 2,
+          "LodestoneSurge": 11,
+          "SiegeScarab": 24
+        },
+        "spell_damage": {
+          "ClockworkCharge": 115,
+          "LodestoneSurge": 1958,
+          "SiegeScarab": 1125
+        },
+        "xp_by_minute": {
+          "3": 223,
+          "6": 390,
+          "1": 340,
+          "2": 78,
+          "5": 300,
+          "4": 675
+        }
+      },
+      "audit_sha256": "7f3c5732ea129eefb5d228ff962805635ca261f0a23563443aae1978d97aa588"
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_077bfe88-0f3b-4bd5-afc4-c9dad5ce70e7",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 20447,
+      "hero": {
+        "slot": 5,
+        "class": "Ranger",
+        "xp": 5383,
+        "gold": 760,
+        "deaths": 7,
+        "level": 12,
+        "totals": {
+          "damage_spell_hero": 2762,
+          "low_mana_ticks": 3250,
+          "damage_basic_structure": 13364,
+          "alive_ticks": 18068,
+          "xp_creep": 1883,
+          "xp_hero": 2400,
+          "damage_basic_creep": 4079,
+          "xp_god": 500,
+          "rejected_ActionInsufficientMana": 1,
+          "channel_ticks": 576,
+          "damage_spell_creep": 5263,
+          "xp_structure": 600,
+          "gold_spent": 3810,
+          "field_ticks": 14452,
+          "damage_taken": 4873,
+          "keep_ticks": 3616,
+          "damage_spell_structure": 482,
+          "rejected_ActionOutOfRange": 844,
+          "damage_basic_hero": 6697,
+          "rejected_ActionTargetUnavailable": 3
+        },
+        "spells": {
+          "VerdantArrow": 58,
+          "DragonSight": 11,
+          "RicochetDisc": 38,
+          "StormEagle": 10
+        },
+        "spell_damage": {
+          "VerdantArrow": 2725,
+          "DragonSight": 160,
+          "RicochetDisc": 4822,
+          "StormEagle": 800
+        },
+        "xp_by_minute": {
+          "14": 750,
+          "3": 345,
+          "6": 645,
+          "12": 450,
+          "8": 307,
+          "7": 420,
+          "11": 75,
+          "1": 366,
+          "13": 360,
+          "2": 65,
+          "5": 150,
+          "9": 720,
+          "10": 265,
+          "4": 465
+        }
+      },
+      "audit_sha256": "e9f817299a82d520a6c0f22720f3fa5166d75e34ae0b3524afcc82687cf84098"
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_0dd6481a-f4f7-4be6-8948-863adfac042a",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 23744,
+      "hero": {
+        "slot": 5,
+        "class": "Crossbowman",
+        "xp": 5293,
+        "gold": 2570,
+        "deaths": 4,
+        "level": 12,
+        "totals": {
+          "damage_spell_hero": 1961,
+          "low_mana_ticks": 5255,
+          "damage_basic_structure": 12858,
+          "alive_ticks": 21368,
+          "xp_creep": 3093,
+          "xp_hero": 1800,
+          "damage_basic_creep": 6082,
+          "rejected_ActionInsufficientMana": 17,
+          "channel_ticks": 576,
+          "damage_spell_creep": 5206,
+          "xp_structure": 400,
+          "gold_spent": 2080,
+          "field_ticks": 17987,
+          "damage_taken": 5946,
+          "keep_ticks": 3381,
+          "damage_spell_structure": 306,
+          "rejected_ActionOutOfRange": 964,
+          "damage_basic_hero": 4441,
+          "rejected_ActionNoRoute": 4
+        },
+        "spells": {
+          "FinalMeasure": 16,
+          "ClockworkCharge": 8,
+          "LodestoneSurge": 25,
+          "SiegeScarab": 57
+        },
+        "spell_damage": {
+          "FinalMeasure": 388,
+          "ClockworkCharge": 461,
+          "LodestoneSurge": 3569,
+          "SiegeScarab": 3055
+        },
+        "xp_by_minute": {
+          "14": 135,
+          "16": 60,
+          "3": 251,
+          "6": 255,
+          "12": 415,
+          "8": 405,
+          "7": 315,
+          "11": 800,
+          "1": 520,
+          "2": 270,
+          "5": 776,
+          "9": 285,
+          "10": 225,
+          "4": 581
+        }
+      },
+      "audit_sha256": "da05103374a958781c2c757d61c5f115990d18c3c653fa07d3935abaeb662ef0"
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_1b4b7f7b-9dff-4f2d-8f85-08b5b3c98963",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 18424,
+      "hero": {
+        "slot": 5,
+        "class": "Crossbowman",
+        "xp": 4886,
+        "gold": 665,
+        "deaths": 7,
+        "level": 11,
+        "totals": {
+          "damage_spell_hero": 2886,
+          "low_mana_ticks": 3510,
+          "damage_basic_structure": 14666,
+          "alive_ticks": 16045,
+          "xp_creep": 2336,
+          "xp_hero": 1950,
+          "damage_basic_creep": 3944,
+          "rejected_ActionInsufficientMana": 10,
+          "channel_ticks": 504,
+          "damage_spell_creep": 4832,
+          "xp_structure": 600,
+          "gold_spent": 3530,
+          "field_ticks": 13965,
+          "damage_taken": 5675,
+          "keep_ticks": 2080,
+          "damage_spell_structure": 177,
+          "rejected_ActionOutOfRange": 952,
+          "damage_basic_hero": 5725,
+          "rejected_ActionNoRoute": 7,
+          "rejected_ActionTargetUnavailable": 1
+        },
+        "spells": {
+          "FinalMeasure": 9,
+          "ClockworkCharge": 6,
+          "LodestoneSurge": 22,
+          "SiegeScarab": 43
+        },
+        "spell_damage": {
+          "FinalMeasure": 220,
+          "ClockworkCharge": 345,
+          "LodestoneSurge": 4204,
+          "SiegeScarab": 3126
+        },
+        "xp_by_minute": {
+          "3": 625,
+          "6": 900,
+          "12": 180,
+          "8": 100,
+          "7": 615,
+          "11": 315,
+          "1": 420,
+          "2": 270,
+          "5": 460,
+          "10": 270,
+          "4": 731
+        }
+      },
+      "audit_sha256": "8620038260a53ef0762d4cd1232174f4bf248e3d57811c42d1b1dd9c209ea18a"
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_1c96261b-9e95-4a66-b979-1ee73cf5681a",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 29394,
+      "hero": {
+        "slot": 5,
+        "class": "Crossbowman",
+        "xp": 9246,
+        "gold": 5530,
+        "deaths": 3,
+        "level": 15,
+        "totals": {
+          "damage_spell_hero": 2684,
+          "low_mana_ticks": 11493,
+          "damage_basic_structure": 7027,
+          "alive_ticks": 27594,
+          "xp_creep": 5996,
+          "xp_hero": 2850,
+          "damage_basic_creep": 10874,
+          "rejected_ActionInsufficientMana": 19,
+          "channel_ticks": 936,
+          "damage_spell_creep": 10130,
+          "xp_structure": 400,
+          "gold_spent": 2670,
+          "field_ticks": 21046,
+          "damage_taken": 7639,
+          "keep_ticks": 6548,
+          "damage_spell_structure": 812,
+          "rejected_ActionOutOfRange": 1012,
+          "damage_basic_hero": 5641,
+          "rejected_ActionNoRoute": 3
+        },
+        "spells": {
+          "FinalMeasure": 41,
+          "ClockworkCharge": 11,
+          "LodestoneSurge": 40,
+          "SiegeScarab": 83
+        },
+        "spell_damage": {
+          "FinalMeasure": 1413,
+          "ClockworkCharge": 957,
+          "LodestoneSurge": 7332,
+          "SiegeScarab": 3924
+        },
+        "xp_by_minute": {
+          "18": 565,
+          "14": 650,
+          "20": 345,
+          "16": 525,
+          "3": 600,
+          "6": 730,
+          "12": 434,
+          "8": 270,
+          "7": 73,
+          "15": 385,
+          "19": 477,
+          "11": 210,
+          "1": 520,
+          "13": 343,
+          "17": 714,
+          "2": 90,
+          "5": 306,
+          "9": 600,
+          "10": 1083,
+          "4": 326
+        }
+      },
+      "audit_sha256": "cccf3ff545ae0fa7be3cb6a6acb56f82eb4d35b06a0d241306606ce62d651b71"
+    },
+    {
+      "name": "crossbow-only",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_00e30225-85e2-48e1-811d-da1ee0941918",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "ticks": 13446,
+      "hero": {
+        "slot": 0,
+        "class": "Ranger",
+        "xp": 2204,
+        "gold": 1065,
+        "deaths": 4,
+        "level": 7,
+        "totals": {
+          "damage_spell_hero": 448,
+          "low_mana_ticks": 1413,
+          "damage_basic_structure": 3299,
+          "alive_ticks": 11070,
+          "xp_creep": 1754,
+          "xp_hero": 450,
+          "damage_basic_creep": 4401,
+          "channel_ticks": 360,
+          "damage_spell_creep": 4269,
+          "gold_spent": 1410,
+          "field_ticks": 9248,
+          "damage_taken": 1910,
+          "keep_ticks": 1822,
+          "damage_spell_structure": 224,
+          "rejected_ActionOutOfRange": 263,
+          "damage_basic_hero": 1745
+        },
+        "spells": {
+          "VerdantArrow": 34,
+          "RicochetDisc": 25,
+          "StormEagle": 2
+        },
+        "spell_damage": {
+          "VerdantArrow": 1104,
+          "RicochetDisc": 3657,
+          "StormEagle": 180
+        },
+        "xp_by_minute": {
+          "3": 248,
+          "6": 30,
+          "8": 720,
+          "7": 420,
+          "1": 271,
+          "2": 75,
+          "5": 200,
+          "9": 150,
+          "4": 90
+        }
+      },
+      "audit_sha256": "c0a13a68c201e14c9ac18d1b121708eabe0631cea43a3ba3f78f265a4e73256c"
+    },
+    {
+      "name": "crossbow-only",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_03153cd7-36c9-4c50-a4b3-02aa0d6d53ca",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "ticks": 26616,
+      "hero": {
+        "slot": 0,
+        "class": "Crossbowman",
+        "xp": 9536,
+        "gold": 4560,
+        "deaths": 3,
+        "level": 16,
+        "totals": {
+          "damage_spell_hero": 6958,
+          "low_mana_ticks": 8498,
+          "damage_basic_structure": 12719,
+          "alive_ticks": 24816,
+          "xp_creep": 3086,
+          "xp_hero": 5250,
+          "damage_basic_creep": 6255,
+          "xp_god": 500,
+          "rejected_ActionInsufficientMana": 7,
+          "channel_ticks": 864,
+          "damage_spell_creep": 5576,
+          "xp_structure": 700,
+          "gold_spent": 2750,
+          "field_ticks": 20685,
+          "damage_taken": 8073,
+          "keep_ticks": 4131,
+          "damage_spell_structure": 715,
+          "rejected_ActionOutOfRange": 816,
+          "damage_basic_hero": 13792,
+          "rejected_ActionTargetUnavailable": 3
+        },
+        "spells": {
+          "FinalMeasure": 34,
+          "ClockworkCharge": 10,
+          "LodestoneSurge": 34,
+          "SiegeScarab": 74
+        },
+        "spell_damage": {
+          "FinalMeasure": 1116,
+          "ClockworkCharge": 1093,
+          "LodestoneSurge": 5557,
+          "SiegeScarab": 5483
+        },
+        "xp_by_minute": {
+          "18": 930,
+          "14": 450,
+          "16": 450,
+          "3": 560,
+          "6": 885,
+          "12": 667,
+          "8": 465,
+          "7": 611,
+          "15": 450,
+          "11": 1075,
+          "1": 333,
+          "13": 456,
+          "17": 450,
+          "2": 33,
+          "5": 740,
+          "9": 495,
+          "10": 345,
+          "4": 141
+        }
+      },
+      "audit_sha256": "3b96c7b0fb957947e6b8e4e648160cd8b89afc3322079fa2fdc09f338e9ec1e6"
+    },
+    {
+      "name": "crossbow-only",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_0ad3472e-894e-49a6-af0e-0b65a9d8c82e",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "ticks": 16102,
+      "hero": {
+        "slot": 0,
+        "class": "Ranger",
+        "xp": 2290,
+        "gold": 640,
+        "deaths": 6,
+        "level": 8,
+        "totals": {
+          "damage_spell_hero": 622,
+          "low_mana_ticks": 2303,
+          "damage_basic_structure": 10486,
+          "alive_ticks": 12909,
+          "xp_creep": 1590,
+          "xp_hero": 300,
+          "damage_basic_creep": 3253,
+          "channel_ticks": 288,
+          "damage_spell_creep": 3953,
+          "xp_structure": 400,
+          "gold_spent": 1840,
+          "field_ticks": 10764,
+          "damage_taken": 3085,
+          "keep_ticks": 2145,
+          "damage_spell_structure": 644,
+          "rejected_ActionOutOfRange": 527,
+          "damage_basic_hero": 1423,
+          "rejected_ActionTargetUnavailable": 3
+        },
+        "spells": {
+          "VerdantArrow": 29,
+          "RicochetDisc": 23,
+          "StormEagle": 5
+        },
+        "spell_damage": {
+          "VerdantArrow": 1056,
+          "RicochetDisc": 3603,
+          "StormEagle": 560
+        },
+        "xp_by_minute": {
+          "3": 60,
+          "6": 360,
+          "8": 30,
+          "7": 315,
+          "1": 580,
+          "2": 60,
+          "5": 510,
+          "9": 150,
+          "4": 225
+        }
+      },
+      "audit_sha256": "b33e7fd6384a52e9eaa682e5a14e3f84e0515d51a8313d678ae1fb4c837604d1"
+    },
+    {
+      "name": "crossbow-only",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_11fc7013-d157-4fdf-a0b3-80cd1015f9cd",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "ticks": 27465,
+      "hero": {
+        "slot": 0,
+        "class": "Crossbowman",
+        "xp": 4657,
+        "gold": 485,
+        "deaths": 6,
+        "level": 11,
+        "totals": {
+          "damage_spell_hero": 4854,
+          "low_mana_ticks": 4044,
+          "damage_basic_structure": 2981,
+          "alive_ticks": 25087,
+          "xp_creep": 2007,
+          "xp_hero": 2550,
+          "damage_basic_creep": 3838,
+          "rejected_ActionInsufficientMana": 15,
+          "channel_ticks": 864,
+          "damage_spell_creep": 4009,
+          "xp_structure": 100,
+          "gold_spent": 3480,
+          "field_ticks": 16931,
+          "damage_taken": 7292,
+          "keep_ticks": 8156,
+          "damage_spell_structure": 431,
+          "rejected_ActionOutOfRange": 657,
+          "damage_basic_hero": 8136
+        },
+        "spells": {
+          "FinalMeasure": 12,
+          "ClockworkCharge": 9,
+          "LodestoneSurge": 24,
+          "SiegeScarab": 59
+        },
+        "spell_damage": {
+          "FinalMeasure": 213,
+          "ClockworkCharge": 635,
+          "LodestoneSurge": 4195,
+          "SiegeScarab": 4251
+        },
+        "xp_by_minute": {
+          "18": 150,
+          "14": 315,
+          "16": 126,
+          "6": 453,
+          "12": 315,
+          "8": 150,
+          "15": 598,
+          "11": 309,
+          "1": 308,
+          "13": 375,
+          "17": 684,
+          "2": 124,
+          "5": 268,
+          "9": 332,
+          "10": 150
+        }
+      },
+      "audit_sha256": "de445ed73f815f0f9cb8aae9b1ea7aaa46edf423cc440658d3b472b780636e39"
+    },
+    {
+      "name": "crossbow-only",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_025e2446-ff7a-4310-9da6-42448dcef45f",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "ticks": 29067,
+      "hero": {
+        "slot": 5,
+        "class": "Crossbowman",
+        "xp": 9561,
+        "gold": 4805,
+        "deaths": 6,
+        "level": 16,
+        "totals": {
+          "damage_spell_hero": 4033,
+          "low_mana_ticks": 11493,
+          "damage_basic_structure": 16030,
+          "alive_ticks": 26689,
+          "xp_creep": 5911,
+          "xp_hero": 3150,
+          "damage_basic_creep": 12342,
+          "rejected_ActionInsufficientMana": 11,
+          "channel_ticks": 673,
+          "damage_spell_creep": 8688,
+          "xp_structure": 500,
+          "gold_spent": 3520,
+          "field_ticks": 22104,
+          "damage_taken": 8739,
+          "keep_ticks": 4585,
+          "damage_spell_structure": 645,
+          "rejected_ActionOutOfRange": 1283,
+          "damage_basic_hero": 8242,
+          "rejected_ActionNoRoute": 1,
+          "rejected_ActionTargetUnavailable": 2
+        },
+        "spells": {
+          "FinalMeasure": 40,
+          "ClockworkCharge": 10,
+          "LodestoneSurge": 39,
+          "SiegeScarab": 79
+        },
+        "spell_damage": {
+          "FinalMeasure": 1349,
+          "ClockworkCharge": 532,
+          "LodestoneSurge": 6352,
+          "SiegeScarab": 5133
+        },
+        "xp_by_minute": {
+          "18": 150,
+          "14": 405,
+          "16": 705,
+          "3": 30,
+          "6": 675,
+          "12": 975,
+          "8": 255,
+          "7": 795,
+          "15": 1046,
+          "19": 300,
+          "11": 630,
+          "1": 405,
+          "13": 765,
+          "17": 850,
+          "2": 270,
+          "5": 386,
+          "9": 488,
+          "10": 326,
+          "4": 105
+        }
+      },
+      "audit_sha256": "277b0b10a54f7bba5062f024226536d01dc1a7fde49b0de30e2fba453c34c5ee"
+    },
+    {
+      "name": "crossbow-only",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_0c778af3-df00-4c3a-a3d2-1f6da17fae13",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "ticks": 22534,
+      "hero": {
+        "slot": 5,
+        "class": "Ranger",
+        "xp": 5740,
+        "gold": 3235,
+        "deaths": 5,
+        "level": 12,
+        "totals": {
+          "damage_spell_hero": 2660,
+          "low_mana_ticks": 5319,
+          "damage_basic_structure": 15102,
+          "alive_ticks": 20157,
+          "xp_creep": 2890,
+          "xp_hero": 2250,
+          "damage_basic_creep": 6224,
+          "channel_ticks": 576,
+          "damage_spell_creep": 7871,
+          "xp_structure": 600,
+          "gold_spent": 2390,
+          "field_ticks": 16498,
+          "damage_taken": 5162,
+          "keep_ticks": 3659,
+          "damage_spell_structure": 543,
+          "rejected_ActionOutOfRange": 920,
+          "damage_basic_hero": 6770,
+          "rejected_ActionTargetUnavailable": 2
+        },
+        "spells": {
+          "VerdantArrow": 58,
+          "DragonSight": 16,
+          "RicochetDisc": 43,
+          "StormEagle": 10
+        },
+        "spell_damage": {
+          "VerdantArrow": 2808,
+          "DragonSight": 296,
+          "RicochetDisc": 7638,
+          "StormEagle": 332
+        },
+        "xp_by_minute": {
+          "14": 480,
+          "3": 15,
+          "6": 373,
+          "12": 180,
+          "8": 729,
+          "7": 441,
+          "15": 165,
+          "11": 250,
+          "1": 364,
+          "13": 150,
+          "2": 208,
+          "5": 955,
+          "9": 110,
+          "10": 585,
+          "4": 735
+        }
+      },
+      "audit_sha256": "1b657d1fcfe2110be87f8b44ea84cb2c9cabab9e4c653e99080b26f7d3054f10"
+    },
+    {
+      "name": "crossbow-only",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_0e2723fc-c486-4a00-b5f5-f6cc6362a493",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "ticks": 18568,
+      "hero": {
+        "slot": 5,
+        "class": "Crossbowman",
+        "xp": 4903,
+        "gold": 1575,
+        "deaths": 5,
+        "level": 11,
+        "totals": {
+          "damage_spell_hero": 2648,
+          "low_mana_ticks": 3848,
+          "damage_basic_structure": 14590,
+          "alive_ticks": 16191,
+          "xp_creep": 2003,
+          "xp_hero": 1800,
+          "damage_basic_creep": 3862,
+          "xp_god": 500,
+          "rejected_ActionInsufficientMana": 3,
+          "channel_ticks": 432,
+          "damage_spell_creep": 3494,
+          "xp_structure": 600,
+          "gold_spent": 2160,
+          "field_ticks": 14036,
+          "damage_taken": 5095,
+          "keep_ticks": 2155,
+          "damage_spell_structure": 200,
+          "rejected_ActionOutOfRange": 700,
+          "damage_basic_hero": 5232,
+          "rejected_ActionNoRoute": 5
+        },
+        "spells": {
+          "FinalMeasure": 6,
+          "ClockworkCharge": 7,
+          "LodestoneSurge": 20,
+          "SiegeScarab": 36
+        },
+        "spell_damage": {
+          "FinalMeasure": 120,
+          "ClockworkCharge": 345,
+          "LodestoneSurge": 3469,
+          "SiegeScarab": 2408
+        },
+        "xp_by_minute": {
+          "3": 527,
+          "6": 150,
+          "12": 750,
+          "8": 150,
+          "7": 115,
+          "11": 15,
+          "1": 520,
+          "2": 75,
+          "5": 815,
+          "9": 651,
+          "10": 270,
+          "4": 865
+        }
+      },
+      "audit_sha256": "627e91c5deedff0b8eb1f1c988425860749a423c87269400f0a1483f30e16955"
+    },
+    {
+      "name": "crossbow-only",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_1a2ddb71-da7c-4045-8bac-7314ef8d2abb",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "ticks": 20029,
+      "hero": {
+        "slot": 5,
+        "class": "Ranger",
+        "xp": 4437,
+        "gold": 2080,
+        "deaths": 5,
+        "level": 11,
+        "totals": {
+          "damage_spell_hero": 2403,
+          "low_mana_ticks": 4382,
+          "damage_basic_structure": 8957,
+          "alive_ticks": 17652,
+          "xp_creep": 2287,
+          "xp_hero": 1650,
+          "damage_basic_creep": 4832,
+          "rejected_ActionInsufficientMana": 1,
+          "channel_ticks": 504,
+          "damage_spell_creep": 5671,
+          "xp_structure": 500,
+          "gold_spent": 2200,
+          "field_ticks": 14725,
+          "damage_taken": 4008,
+          "keep_ticks": 2927,
+          "damage_spell_structure": 360,
+          "rejected_ActionOutOfRange": 541,
+          "damage_basic_hero": 4735,
+          "rejected_ActionTargetUnavailable": 5
+        },
+        "spells": {
+          "VerdantArrow": 49,
+          "DragonSight": 9,
+          "RicochetDisc": 36,
+          "StormEagle": 6
+        },
+        "spell_damage": {
+          "VerdantArrow": 2041,
+          "DragonSight": 128,
+          "RicochetDisc": 6075,
+          "StormEagle": 190
+        },
+        "xp_by_minute": {
+          "3": 135,
+          "12": 456,
+          "8": 1005,
+          "7": 640,
+          "11": 30,
+          "1": 366,
+          "13": 150,
+          "2": 65,
+          "5": 465,
+          "9": 565,
+          "10": 530,
+          "4": 30
+        }
+      },
+      "audit_sha256": "bd749c9d95ae38989ac7b80fc31207e9dfbd289e24dd835db7a80d9ae0b8ce8b"
+    }
+  ],
+  "scope": "Typed actual effects on mechanical16game subset; may differ in classes and scene mix. Full160game score gate remains separate; no component causality."
+}

@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "comparisons": 8,
+  "rows": [
+    {
+      "mode": "crossbow",
+      "side": 0,
+      "seed": 922610,
+      "class": 6,
+      "ticks": 10805,
+      "canonical_commands_sha1": "F26B560E44F671AF049F98C054AE87B373FAD8AD",
+      "state_hash": "00000000FBEF2C3E",
+      "passed": true,
+      "candidate": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native/crossbow-only/0-0/922610",
+      "reference": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-adaptive-score-20260922/native/spell-pressure/0/922610"
+    },
+    {
+      "mode": "fallback",
+      "side": 0,
+      "seed": 922610,
+      "class": 5,
+      "ticks": 28884,
+      "canonical_commands_sha1": "3AF2D5C37C749513BA53D8268F14CC4C3073A4CF",
+      "state_hash": "0000000073C93E1A",
+      "passed": true,
+      "candidate": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native-fallback/crossbow-only/0-2/922610",
+      "reference": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native-fallback/baseline/0-2/922610"
+    },
+    {
+      "mode": "crossbow",
+      "side": 0,
+      "seed": 922611,
+      "class": 6,
+      "ticks": 13921,
+      "canonical_commands_sha1": "BD4435F9E580BE56D7A98104F8D1B1C5F33F9FA6",
+      "state_hash": "0000000092B887DF",
+      "passed": true,
+      "candidate": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native/crossbow-only/0-0/922611",
+      "reference": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-adaptive-score-20260922/native/spell-pressure/0/922611"
+    },
+    {
+      "mode": "fallback",
+      "side": 0,
+      "seed": 922611,
+      "class": 3,
+      "ticks": 24473,
+      "canonical_commands_sha1": "E269621B3A89558DAA606419F7B6658B019B8A8B",
+      "state_hash": "00000000A3002893",
+      "passed": true,
+      "candidate": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native-fallback/crossbow-only/0-2/922611",
+      "reference": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native-fallback/baseline/0-2/922611"
+    },
+    {
+      "mode": "crossbow",
+      "side": 1,
+      "seed": 922610,
+      "class": 6,
+      "ticks": 8366,
+      "canonical_commands_sha1": "7D26C24CD63BE38580C9A556C2EC467B547557C3",
+      "state_hash": "00000000A05885EB",
+      "passed": true,
+      "candidate": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native/crossbow-only/1-0/922610",
+      "reference": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-adaptive-score-20260922/native/spell-pressure/1/922610"
+    },
+    {
+      "mode": "fallback",
+      "side": 1,
+      "seed": 922610,
+      "class": 3,
+      "ticks": 28884,
+      "canonical_commands_sha1": "3AF2D5C37C749513BA53D8268F14CC4C3073A4CF",
+      "state_hash": "0000000073C93E1A",
+      "passed": true,
+      "candidate": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native-fallback/crossbow-only/1-2/922610",
+      "reference": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native-fallback/baseline/1-2/922610"
+    },
+    {
+      "mode": "crossbow",
+      "side": 1,
+      "seed": 922611,
+      "class": 6,
+      "ticks": 15424,
+      "canonical_commands_sha1": "F8385C964D8785BE5C44795665F9BF7B6EB0E6BF",
+      "state_hash": "00000000125574D5",
+      "passed": true,
+      "candidate": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native/crossbow-only/1-0/922611",
+      "reference": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-adaptive-score-20260922/native/spell-pressure/1/922611"
+    },
+    {
+      "mode": "fallback",
+      "side": 1,
+      "seed": 922611,
+      "class": 5,
+      "ticks": 24473,
+      "canonical_commands_sha1": "E269621B3A89558DAA606419F7B6658B019B8A8B",
+      "state_hash": "00000000A3002893",
+      "passed": true,
+      "candidate": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native-fallback/crossbow-only/1-2/922611",
+      "reference": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-class-score-20260922/native-fallback/baseline/1-2/922611"
+    }
+  ],
+  "scope": "Full independent responsive native matches: Crossbow trajectory matches tested intervention; four late-draft trajectories match parent.160actual-tick conformance cases cover all10classes. No opponent-performance inference."
+}

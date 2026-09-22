@@ -1,0 +1,606 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "seat": 2,
+      "seed": 922610,
+      "valid": true,
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "replay_sha256": "5ecf67c65862260fca0a7a787c5537fc0b3e94f667c196fbc7ad78a782dee272",
+      "ticks": 9643,
+      "hero": {
+        "slot": 2,
+        "team": 0,
+        "class": 6,
+        "drafted": true,
+        "hp": 728,
+        "x": -2576351,
+        "z": 2777148,
+        "score": 2945,
+        "deaths": 1,
+        "xp": 4285,
+        "hits": 162,
+        "level": 10,
+        "gold": 1910,
+        "ranks": [
+          1,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow",
+          "HealthPotion"
+        ],
+        "item_counts": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "max_work": 16705,
+        "max_instructions": 11063
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "seat": 2,
+      "seed": 922611,
+      "valid": true,
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "replay_sha256": "3b3d9fe38a86d2767f08679511e2ff39805947377fd9818a18a7969eb9ae3972",
+      "ticks": 18753,
+      "hero": {
+        "slot": 2,
+        "team": 0,
+        "class": 6,
+        "drafted": true,
+        "hp": 385,
+        "x": -2598438,
+        "z": 2715413,
+        "score": 5445,
+        "deaths": 2,
+        "xp": 8050,
+        "hits": 295,
+        "level": 14,
+        "gold": 4635,
+        "ranks": [
+          4,
+          4,
+          4,
+          2
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow",
+          "NoItem"
+        ],
+        "item_counts": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        "max_work": 17037,
+        "max_instructions": 11484
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "seat": 2,
+      "seed": 922610,
+      "valid": true,
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "replay_sha256": "c701e6f1ff59c315a3b6286a8d035a5e755e0dbc883c19d597b3f7d5533464ff",
+      "ticks": 11789,
+      "hero": {
+        "slot": 7,
+        "team": 1,
+        "class": 6,
+        "drafted": true,
+        "hp": 420,
+        "x": 2947451,
+        "z": -2965898,
+        "score": 2534,
+        "deaths": 0,
+        "xp": 4172,
+        "hits": 174,
+        "level": 10,
+        "gold": 1865,
+        "ranks": [
+          1,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "NoItem",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow"
+        ],
+        "item_counts": [
+          1,
+          0,
+          1,
+          2,
+          1,
+          1
+        ],
+        "max_work": 16802,
+        "max_instructions": 11343
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "seat": 2,
+      "seed": 922611,
+      "valid": true,
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "replay_sha256": "29bf323a6adaa21c7fd9bb702a04523305f4d850000ff865c290c5deb07aaaca",
+      "ticks": 15004,
+      "hero": {
+        "slot": 7,
+        "team": 1,
+        "class": 6,
+        "drafted": true,
+        "hp": 587,
+        "x": 2986437,
+        "z": -2933543,
+        "score": 3153,
+        "deaths": 2,
+        "xp": 5237,
+        "hits": 237,
+        "level": 12,
+        "gold": 2705,
+        "ranks": [
+          2,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow",
+          "HealthPotion"
+        ],
+        "item_counts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_work": 16892,
+        "max_instructions": 11197
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "crossbow-only",
+      "side": 0,
+      "seat": 0,
+      "seed": 922610,
+      "valid": true,
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "replay_sha256": "f72d6202962b4bc61bc6b20bdbf949864333e44b5d0301335a0118e807ba2b6f",
+      "ticks": 10805,
+      "hero": {
+        "slot": 0,
+        "team": 0,
+        "class": 6,
+        "drafted": true,
+        "hp": 307,
+        "x": -2912429,
+        "z": 2685563,
+        "score": 1900,
+        "deaths": 2,
+        "xp": 3401,
+        "hits": 155,
+        "level": 9,
+        "gold": 1520,
+        "ranks": [
+          0,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "NoItem",
+          "RuneCrossbow"
+        ],
+        "item_counts": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "max_work": 16683,
+        "max_instructions": 11062
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "crossbow-only",
+      "side": 0,
+      "seat": 2,
+      "seed": 922610,
+      "valid": true,
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "replay_sha256": "948c81229ea808022b65ccf1f65215fc2bce0e6bc64e58441b35149602e82a0f",
+      "ticks": 10605,
+      "hero": {
+        "slot": 2,
+        "team": 0,
+        "class": 6,
+        "drafted": true,
+        "hp": 601,
+        "x": -2621061,
+        "z": 2787726,
+        "score": 2643,
+        "deaths": 0,
+        "xp": 4116,
+        "hits": 177,
+        "level": 10,
+        "gold": 1680,
+        "ranks": [
+          1,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "NoItem",
+          "RuneCrossbow"
+        ],
+        "item_counts": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          1
+        ],
+        "max_work": 17061,
+        "max_instructions": 11620
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "crossbow-only",
+      "side": 0,
+      "seat": 0,
+      "seed": 922611,
+      "valid": true,
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "replay_sha256": "b6dacc494620e5e3a3754407f0811d9de1791aa3b5d647a66529873fc16ef62b",
+      "ticks": 13921,
+      "hero": {
+        "slot": 0,
+        "team": 0,
+        "class": 6,
+        "drafted": true,
+        "hp": 542,
+        "x": -2707555,
+        "z": 2600779,
+        "score": 2383,
+        "deaths": 1,
+        "xp": 4317,
+        "hits": 209,
+        "level": 10,
+        "gold": 2485,
+        "ranks": [
+          1,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "NoItem",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow"
+        ],
+        "item_counts": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_work": 17364,
+        "max_instructions": 11636
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "crossbow-only",
+      "side": 0,
+      "seat": 2,
+      "seed": 922611,
+      "valid": true,
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "replay_sha256": "9c614414c7ff715c56fb2d2fc4a5c907b9b8efdb11126689357d4c94230af85e",
+      "ticks": 12015,
+      "hero": {
+        "slot": 2,
+        "team": 0,
+        "class": 6,
+        "drafted": true,
+        "hp": 728,
+        "x": -2600711,
+        "z": 2849935,
+        "score": 2462,
+        "deaths": 1,
+        "xp": 4131,
+        "hits": 210,
+        "level": 10,
+        "gold": 1945,
+        "ranks": [
+          1,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow",
+          "HealthPotion"
+        ],
+        "item_counts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_work": 17001,
+        "max_instructions": 11459
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "crossbow-only",
+      "side": 1,
+      "seat": 0,
+      "seed": 922610,
+      "valid": true,
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "replay_sha256": "b2527c4be091dc70e8d27bc40fdc765f760688e4a5c50d5ff6e07762203671df",
+      "ticks": 8366,
+      "hero": {
+        "slot": 5,
+        "team": 1,
+        "class": 6,
+        "drafted": true,
+        "hp": 728,
+        "x": 2963411,
+        "z": -2968875,
+        "score": 2452,
+        "deaths": 0,
+        "xp": 3614,
+        "hits": 167,
+        "level": 10,
+        "gold": 1690,
+        "ranks": [
+          0,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "HealthPotion",
+          "RuneCrossbow"
+        ],
+        "item_counts": [
+          1,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "max_work": 17289,
+        "max_instructions": 11901
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "crossbow-only",
+      "side": 1,
+      "seat": 2,
+      "seed": 922610,
+      "valid": true,
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "replay_sha256": "2e4cd892df6121775817cbc144de74e8631a309bb3422edd57b2325136df63be",
+      "ticks": 11422,
+      "hero": {
+        "slot": 7,
+        "team": 1,
+        "class": 6,
+        "drafted": true,
+        "hp": 457,
+        "x": 2667256,
+        "z": -2630011,
+        "score": 3202,
+        "deaths": 1,
+        "xp": 4789,
+        "hits": 219,
+        "level": 11,
+        "gold": 2535,
+        "ranks": [
+          1,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "NoItem",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow"
+        ],
+        "item_counts": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_work": 17347,
+        "max_instructions": 11645
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "crossbow-only",
+      "side": 1,
+      "seat": 0,
+      "seed": 922611,
+      "valid": true,
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "replay_sha256": "1b8c24e3c1f051f25e3b53b4e2e2b0c18d318f092104ec22c4d7b0dd351f96ed",
+      "ticks": 15424,
+      "hero": {
+        "slot": 5,
+        "team": 1,
+        "class": 6,
+        "drafted": true,
+        "hp": 812,
+        "x": 2672286,
+        "z": -2625176,
+        "score": 3824,
+        "deaths": 1,
+        "xp": 5967,
+        "hits": 229,
+        "level": 12,
+        "gold": 3105,
+        "ranks": [
+          2,
+          4,
+          4,
+          2
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "PortalScroll",
+          "KnightArmor",
+          "RuneCrossbow",
+          "BattleAxe",
+          "HealthPotion"
+        ],
+        "item_counts": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        "max_work": 16835,
+        "max_instructions": 11295
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "crossbow-only",
+      "side": 1,
+      "seat": 2,
+      "seed": 922611,
+      "valid": true,
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "replay_sha256": "a45188005fe396102f1a7a290f06fa5e7ebd8109b13922a2277cbc47ab4dce38",
+      "ticks": 15309,
+      "hero": {
+        "slot": 7,
+        "team": 1,
+        "class": 6,
+        "drafted": true,
+        "hp": 770,
+        "x": 2942533,
+        "z": -2758527,
+        "score": 3041,
+        "deaths": 1,
+        "xp": 5168,
+        "hits": 248,
+        "level": 11,
+        "gold": 2445,
+        "ranks": [
+          2,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow",
+          "HealthPotion"
+        ],
+        "item_counts": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "max_work": 17131,
+        "max_instructions": 11530
+      },
+      "all_hashes_equal": true
+    }
+  ],
+  "scope": "One subject, nine responsive native reference VMs. Mechanism/runtime, not rival-policy comparison."
+}

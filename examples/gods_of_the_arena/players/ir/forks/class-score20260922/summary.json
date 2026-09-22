@@ -1,0 +1,31 @@
+{
+  "screen": [
+    {
+      "name": "crossbow-only",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "score_gate_passed": false,
+      "baseline_score": 2776.2125,
+      "candidate_score": 2600.05,
+      "aggregate_gain_percent": -6.345425647352276,
+      "gain_ci95_percent": [
+        -23.501757972559766,
+        14.659776055124896
+      ],
+      "per_color_gain_percent": [
+        -31.94056754841138,
+        20.784484677598858
+      ]
+    }
+  ],
+  "confirmation": null,
+  "qualified": null,
+  "pairs": [
+    {
+      "verified": true,
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "ir_sha256": "d2f67c79ea25431dde5269f5b8105e75b654445865bf2459bf967fb44872f3dc",
+      "screen_passed": false,
+      "confirmation_passed": false
+    }
+  ]
+}

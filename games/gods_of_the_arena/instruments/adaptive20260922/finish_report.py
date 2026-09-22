@@ -1,7 +1,7 @@
 """All-source, full-replay XP decomposition and prospective multi-arm score decisions."""
 import argparse,json,random,statistics,subprocess,time
 from concurrent.futures import ThreadPoolExecutor
-import adaptive_hosted as study
+import finish_hosted as study
 h,STUDY=study.h,study.STUDY
 RIVALS={'khors:v114':'145c01e0-0cbf-4e1e-8120-11b437175b91','Richard:v167':'e811221e-c419-4f7b-9629-01f8722ab9f7','Jordan:v411':'a15665be-4edf-4857-b23b-2888b4b49868'}
 mean=statistics.mean
@@ -17,6 +17,7 @@ def decode(path):
 
 def build(stage):
     out=STUDY/stage;plan=h.read(out/'plan.json');verdict=h.read(out/'result.json')
+    assert stage=='trial' and plan['games']==400 and len(plan['arms'])==4 and all(a['games']==100 for a in plan['arms'])
     hashes={r['version']:r['source_sha256'] for r in h.read(STUDY/'preflight.json')['rows']}
     hashes.update({a['version']:a['source_sha256'] for a in plan['arms']})
     cells=[]
@@ -50,15 +51,15 @@ def build(stage):
             draw=[mean(rng.choices([r['score'] for r in c['rows']],k=len(c['rows']))) for c in before+after]
             b,n=mean(draw[:2]),mean(draw[2:]);gains.append((n/b-1)*100 if b else 0)
         gains.sort()
-        passed=all(c['invalid']==0 for c in before+after) and new>base and new>=1.1*base and all(n['means']['score']>=.95*b['means']['score'] for b,n in zip(before,after))
+        passed=gains[250]>0 and all(c['invalid']==0 for c in before+after) and new>base and new>=1.1*base and all(n['means']['score']>=.95*b['means']['score'] for b,n in zip(before,after))
         candidates.append({'name':name,'source_sha256':h.sha(study.source(name).read_bytes()),'score_gate_passed':passed,'baseline_score':base,'candidate_score':new,'aggregate_gain_percent':(new/base-1)*100,'gain_ci95_percent':[gains[250],gains[9750]],'per_color_gain_percent':[(n['means']['score']/b['means']['score']-1)*100 for b,n in zip(before,after)]})
     qualified=sorted([r for r in candidates if r['score_gate_passed']],key=lambda r:(-r['candidate_score'],r['name']))
     selected=qualified[0]['name'] if qualified else None
     changes=h.read(out/'field-changes.json')
-    result={'complete':True,'stage':stage,'games':plan['games'],'engine_commit':plan['engine_commit'],'game_version':plan['game_version'],'selected':selected,'candidates':candidates,'cells':[{k:v for k,v in c.items() if k!='rows'} for c in cells],'field_changes':changes,'deployment_qualified':stage=='confirmation' and selected is not None and not changes['game_changed'] and not changes['champion_changes'],'evidence_scope':'Fresh controls and unmatched random seeds, one subject, fixed mixed roster;10 source hashes/VM exits, full replay hashes, XP sources and integer scores checked. Side-stratified independent whole-game bootstrap; duplicate streams disclosed. Screen is selection, not independent confirmation. No universal rank or per-component causality.'}
+    result={'complete':True,'stage':stage,'games':plan['games'],'engine_commit':plan['engine_commit'],'game_version':plan['game_version'],'selected':selected,'candidates':candidates,'cells':[{k:v for k,v in c.items() if k!='rows'} for c in cells],'field_changes':changes,'deployment_qualified':stage=='trial' and selected is not None and not changes['game_changed'] and not changes['champion_changes'],'evidence_scope':'Fresh controls and unmatched random seeds, one subject, fixed mixed roster;10 source hashes/VM exits, full replay hashes, XP sources and integer scores checked. Side-stratified independent whole-game bootstrap; duplicate streams disclosed. One preselected source;400fresh held-out games with positive lower95%gain bound required. No universal rank or per-component causality.'}
     h.write(out/'report.json',result);print(json.dumps({k:v for k,v in result.items() if k!='cells'}),flush=True)
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--stage',choices=['screen','confirmation'],default='screen');p.add_argument('--watch',action='store_true');a=p.parse_args();out=STUDY/a.stage;total=h.read(out/'plan.json')['games']
+    p=argparse.ArgumentParser();p.add_argument('--stage',choices=['trial'],default='trial');p.add_argument('--watch',action='store_true');a=p.parse_args();out=STUDY/a.stage;total=h.read(out/'plan.json')['games']
     while True:
         files=list(out.glob('*/*/artifacts/*/result.json'));todo=[p for p in files if not (p.parent/'economy.json').exists()]
         with ThreadPoolExecutor(3) as pool:list(pool.map(decode,todo))
