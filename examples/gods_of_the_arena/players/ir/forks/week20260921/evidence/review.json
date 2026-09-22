@@ -1,0 +1,125 @@
+{
+  "cells": [
+    {
+      "name": "candidate",
+      "side": 0,
+      "games": 40,
+      "mean_score": 553.465138888889,
+      "invalid": 0,
+      "subject_invalid": 0,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "distinct_command_streams": 16,
+      "observed": {
+        "hero_games": 200,
+        "drafted_classes": {
+          "1": 40,
+          "7": 21,
+          "6": 40,
+          "5": 40,
+          "9": 21,
+          "2": 19,
+          "8": 19
+        },
+        "mean_terminal": {
+          "level": 8.095,
+          "xp": 2718.53,
+          "deaths": 4.2,
+          "gold": 918.725
+        },
+        "heroes_with_upgrades": 200
+      }
+    },
+    {
+      "name": "candidate",
+      "side": 1,
+      "games": 40,
+      "mean_score": 584.76125,
+      "invalid": 0,
+      "subject_invalid": 0,
+      "wins": 34,
+      "losses": 0,
+      "draws": 6,
+      "distinct_command_streams": 17,
+      "observed": {
+        "hero_games": 200,
+        "drafted_classes": {
+          "1": 40,
+          "2": 40,
+          "3": 40,
+          "0": 40,
+          "4": 40
+        },
+        "mean_terminal": {
+          "level": 8.735,
+          "xp": 3246.655,
+          "deaths": 6.99,
+          "gold": 1034.5
+        },
+        "heroes_with_upgrades": 200
+      }
+    },
+    {
+      "name": "incumbent",
+      "side": 0,
+      "games": 40,
+      "mean_score": 26.09333333333334,
+      "invalid": 0,
+      "subject_invalid": 0,
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "distinct_command_streams": 19,
+      "observed": {
+        "hero_games": 200,
+        "drafted_classes": {
+          "5": 40,
+          "6": 40,
+          "7": 40,
+          "8": 40,
+          "9": 40
+        },
+        "mean_terminal": {
+          "level": 6.39,
+          "xp": 1740.885,
+          "deaths": 3.83,
+          "gold": 520.275
+        },
+        "heroes_with_upgrades": 200
+      }
+    },
+    {
+      "name": "incumbent",
+      "side": 1,
+      "games": 40,
+      "mean_score": 90.31527777777777,
+      "invalid": 0,
+      "subject_invalid": 0,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "distinct_command_streams": 17,
+      "observed": {
+        "hero_games": 200,
+        "drafted_classes": {
+          "0": 40,
+          "1": 40,
+          "2": 40,
+          "3": 40,
+          "4": 40
+        },
+        "mean_terminal": {
+          "level": 4.85,
+          "xp": 1025.15,
+          "deaths": 3.2,
+          "gold": 417.0
+        },
+        "heroes_with_upgrades": 200
+      }
+    }
+  ],
+  "complete": true,
+  "score": "mean over five subject heroes: max(0, XP - 200 * elapsed world ticks / 1440)",
+  "limits": "Fixed rosters, correlated trajectories; universal leaderboard superiority not established."
+}

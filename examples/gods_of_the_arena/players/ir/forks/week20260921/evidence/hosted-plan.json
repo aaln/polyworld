@@ -1,0 +1,86 @@
+{
+  "game_version": "2026.9.21.5",
+  "engine": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+  "source_sha256": "ad3f1d5ca719491cc3e34a76a0bcdf7434aed45b4fb1a707a65ecdcf65f030f9",
+  "cycle": "interactive-week20260921-01",
+  "games": 160,
+  "arms": [
+    {
+      "name": "candidate",
+      "side": 0,
+      "version": "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+      "opponent": "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+      "roster": [
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169"
+      ],
+      "games": 40
+    },
+    {
+      "name": "candidate",
+      "side": 1,
+      "version": "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+      "opponent": "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+      "roster": [
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4"
+      ],
+      "games": 40
+    },
+    {
+      "name": "incumbent",
+      "side": 0,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "opponent": "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+      "roster": [
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169"
+      ],
+      "games": 40
+    },
+    {
+      "name": "incumbent",
+      "side": 1,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "opponent": "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+      "roster": [
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "6559c395-82f9-4fa4-8f7e-6f3481d9f169",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "c2785cd4-433b-46d1-a454-dd29147383ec"
+      ],
+      "games": 40
+    }
+  ],
+  "decision_rule": "Mean subject score >=1.10x incumbent on each color, >=1.20x overall; no subject VM failures; every replay/score audited. Repeated streams correlated; not mixed-team qualification."
+}

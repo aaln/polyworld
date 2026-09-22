@@ -1,0 +1,31 @@
+{
+  "game_version": "2026.9.21.5",
+  "upstream": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+  "source_sha256": "ad3f1d5ca719491cc3e34a76a0bcdf7434aed45b4fb1a707a65ecdcf65f030f9",
+  "ir_sha256": "693742d706be66b68adcf8a67e31855cf6ffbc5a5c2db28b7a666c6d27f45874",
+  "engine_files": {
+    "examples/gods_of_the_arena/bots.nim": "f20cafc9cd5c0fca83cd8f333ddccf30b22f8695f40caa24adb69e5769b106a1",
+    "examples/gods_of_the_arena/content.nim": "f54594038dcd21ffa7a4614889eafc9eb921743c1a5b28670a4a18cbc0a222ea",
+    "examples/gods_of_the_arena/sim.nim": "83b227152f5047f46ddc61d1f330e0eab3a7e9f3b3cb745feb7e0ec372b4e109",
+    "examples/gods_of_the_arena/game.nim": "73c48b03439a085c394574c1001599d65c1c1fb54ebb4fed8d20dbd2042f8752",
+    "examples/gods_of_the_arena/replays.nim": "54bcde1886d5e3c3976bb8e3e79fd508a277d3134f83d19e91bb1766102bb5c5",
+    "coworld/dependencies.lock": "b4074cf2ce3f1ab56e67f0cf28ccfdaba46b6ec4b2f17999f305ee2d9be32790"
+  },
+  "tooling": {
+    "games/gods_of_the_arena/instruments/week20260921/build.py": "f9773280ada7b7a64ce8241527b4c63e0e616430b9ed0a9896bb16b301dcf941",
+    "games/gods_of_the_arena/instruments/week20260921/compiler/basic_syntax.py": "a93c6647bf0c948416fe2452a8fe2828fdd2e32a76d0a4f7aaa9505d4c24188a",
+    "games/gods_of_the_arena/instruments/week20260921/compiler/binding.py": "c9f2a57c9b3d9fb2106e33528fe671965671447a9ce893afc86f127500bb3bb9",
+    "games/gods_of_the_arena/instruments/week20260921/compiler/independent_ir.py": "6ec16881a5e8e54e0746cf7f4f9c94b5c3b38c5786ec5e2af43a71c975c31b59",
+    "games/gods_of_the_arena/instruments/week20260921/compiler/policy_ir.py": "418dd552cd03ccf51fe1f9f8f6608a49747e9a1a5de7e3f3ab6ab764bffb7a61",
+    "games/gods_of_the_arena/instruments/week20260921/contracts.py": "58699ed7f024d068111e367755fbc5c7746aea818ac2e5338c43e7c5b4115e2f"
+  },
+  "artifacts": {
+    "extracted.ir.json": "12739866a81813123e97d6cee20f0ca3d670059cc1f5cf194af7e23543d7e183",
+    "policy.bas": "ad3f1d5ca719491cc3e34a76a0bcdf7434aed45b4fb1a707a65ecdcf65f030f9",
+    "policy.ir.json": "12739866a81813123e97d6cee20f0ca3d670059cc1f5cf194af7e23543d7e183",
+    "policy.py": "a7ed6b449c912bbaca7954c324b36f80552104e89ff891b7dffa4346676ecf66",
+    "semantics.json": "af5f51f93cf0c2f75b16d0c6ce0f94d981d18689f71801d3b807a3058fff4fa4"
+  },
+  "compile_extract_exact": true,
+  "validation": "unvalidated: awaiting actual VM and complete-game checks"
+}

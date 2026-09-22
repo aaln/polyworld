@@ -1,0 +1,91 @@
+{
+  "idempotency_key": "gota-week0921-field-incumbent-0-9fc7f72e",
+  "target": {
+    "coworld_id": "cow_e5445477-d55e-432d-ac38-bd1eae66e6d3",
+    "variant_id": "competition"
+  },
+  "game_config_overrides": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  },
+  "num_episodes": 40,
+  "roster": [
+    {
+      "slot": 0,
+      "player": {
+        "policy_ref": "840609fa-01da-4620-83db-aa8055f9531f"
+      }
+    },
+    {
+      "slot": 1,
+      "player": {
+        "policy_ref": "38d19828-0cef-422f-b900-ea4d63d433c4"
+      }
+    },
+    {
+      "slot": 2,
+      "player": {
+        "policy_ref": "c2785cd4-433b-46d1-a454-dd29147383ec"
+      }
+    },
+    {
+      "slot": 3,
+      "player": {
+        "policy_ref": "6b72f83b-6623-458c-add3-85ec0ef6e38b"
+      }
+    },
+    {
+      "slot": 4,
+      "player": {
+        "policy_ref": "b5569b62-bf41-4dec-912e-1254abd8e58d"
+      }
+    },
+    {
+      "slot": 5,
+      "player": {
+        "policy_ref": "0a41828a-5322-4715-b1a9-a3c3d6d0fdaf"
+      }
+    },
+    {
+      "slot": 6,
+      "player": {
+        "policy_ref": "fe665947-1bb5-446a-9654-6b71d0eb4520"
+      }
+    },
+    {
+      "slot": 7,
+      "player": {
+        "policy_ref": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3"
+      }
+    },
+    {
+      "slot": 8,
+      "player": {
+        "policy_ref": "e94a5377-a2bb-4663-bf69-e3db281f64d3"
+      }
+    },
+    {
+      "slot": 9,
+      "player": {
+        "policy_ref": "a4590ed4-0b0c-4d86-8968-0844796f30e0"
+      }
+    }
+  ],
+  "notes": "Prospective mixed-team score holdout, one subject seat, nine distinct frozen current players; candidate/control same roster per color. Score formula pinned; no league mutation."
+}

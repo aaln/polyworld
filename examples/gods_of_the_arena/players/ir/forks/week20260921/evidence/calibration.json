@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "color": "blue",
+      "episode": "ereq_321f4303-f2d9-4876-aa26-0e1bd215ac6b",
+      "ticks": 21736,
+      "actions": 215695,
+      "all_state_hashes_equal": true,
+      "all_xp_equal": true,
+      "all_scores_equal": true,
+      "replay_sha256": "ad6e796b465bd6b5c636977a8192db97b88449e08175d1a1730240fe516e07ef",
+      "results": {
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          364.1111111111113,
+          0.0,
+          2783.1111111111113,
+          0.0,
+          454.1111111111113,
+          0.0,
+          726.1111111111113
+        ],
+        "ticks": 21736,
+        "seed": 223226939,
+        "outcome": "BlueTeam",
+        "banked_gold": [],
+        "returned": [],
+        "total_xp": [
+          15,
+          697,
+          961,
+          3383,
+          1163,
+          5802,
+          119,
+          3473,
+          0,
+          3745
+        ]
+      },
+      "scope": "Calibrates replay and score, not policy quality; original field includes unrelated failed VMs."
+    },
+    {
+      "color": "red",
+      "episode": "ereq_56fd8e72-08da-4d13-8990-f473ee9dd2eb",
+      "ticks": 22464,
+      "actions": 288342,
+      "all_state_hashes_equal": true,
+      "all_xp_equal": true,
+      "all_scores_equal": true,
+      "replay_sha256": "de62642ae1c4f56bc64191b881ddda7204de4eaa2d3e8bfb562c0bc2b24760a3",
+      "results": {
+        "scores": [
+          2227.0,
+          0.0,
+          0.0,
+          0.0,
+          791.0,
+          0.0,
+          0.0,
+          1367.0,
+          0.0,
+          0.0
+        ],
+        "ticks": 22464,
+        "seed": 223226935,
+        "outcome": "RedTeam",
+        "banked_gold": [],
+        "returned": [],
+        "total_xp": [
+          5347,
+          1243,
+          2993,
+          444,
+          3911,
+          45,
+          608,
+          4487,
+          778,
+          925
+        ]
+      },
+      "scope": "Calibrates replay and score, not policy quality; original field includes unrelated failed VMs."
+    }
+  ]
+}

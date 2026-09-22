@@ -1,0 +1,127 @@
+{
+  "cells": [
+    {
+      "name": "candidate",
+      "side": 0,
+      "games": 40,
+      "mean_score_all": 389.6118055555556,
+      "mean_score_clean": 0.0,
+      "clean_games": 0,
+      "subject_invalid": 0,
+      "tainted": 40,
+      "distinct_command_streams": 40,
+      "observed": {
+        "hero_games": 40,
+        "drafted_classes": {
+          "2": 23,
+          "3": 13,
+          "5": 1,
+          "6": 3
+        },
+        "mean_terminal": {
+          "level": 6.725,
+          "xp": 1955.275,
+          "deaths": 0.6,
+          "gold": 756.0
+        },
+        "heroes_with_upgrades": 40
+      },
+      "failed_versions": {
+        "e94a5377-a2bb-4663-bf69-e3db281f64d3": 39,
+        "a4590ed4-0b0c-4d86-8968-0844796f30e0": 40
+      }
+    },
+    {
+      "name": "candidate",
+      "side": 1,
+      "games": 40,
+      "mean_score_all": 930.8631944444444,
+      "mean_score_clean": 0.0,
+      "clean_games": 0,
+      "subject_invalid": 0,
+      "tainted": 40,
+      "distinct_command_streams": 40,
+      "observed": {
+        "hero_games": 40,
+        "drafted_classes": {
+          "6": 8,
+          "2": 29,
+          "3": 3
+        },
+        "mean_terminal": {
+          "level": 8.625,
+          "xp": 3135.7,
+          "deaths": 4.475,
+          "gold": 1339.125
+        },
+        "heroes_with_upgrades": 40
+      },
+      "failed_versions": {
+        "e94a5377-a2bb-4663-bf69-e3db281f64d3": 40,
+        "a4590ed4-0b0c-4d86-8968-0844796f30e0": 40
+      }
+    },
+    {
+      "name": "incumbent",
+      "side": 0,
+      "games": 40,
+      "mean_score_all": 0.0,
+      "mean_score_clean": 0.0,
+      "clean_games": 0,
+      "subject_invalid": 0,
+      "tainted": 40,
+      "distinct_command_streams": 40,
+      "observed": {
+        "hero_games": 40,
+        "drafted_classes": {
+          "5": 32,
+          "8": 8
+        },
+        "mean_terminal": {
+          "level": 1.75,
+          "xp": 174.025,
+          "deaths": 0.925,
+          "gold": 66.25
+        },
+        "heroes_with_upgrades": 40
+      },
+      "failed_versions": {
+        "e94a5377-a2bb-4663-bf69-e3db281f64d3": 39,
+        "a4590ed4-0b0c-4d86-8968-0844796f30e0": 40
+      }
+    },
+    {
+      "name": "incumbent",
+      "side": 1,
+      "games": 40,
+      "mean_score_all": 173.77013888888888,
+      "mean_score_clean": 0.0,
+      "clean_games": 0,
+      "subject_invalid": 0,
+      "tainted": 40,
+      "distinct_command_streams": 40,
+      "observed": {
+        "hero_games": 40,
+        "drafted_classes": {
+          "2": 16,
+          "0": 16,
+          "3": 8
+        },
+        "mean_terminal": {
+          "level": 5.675,
+          "xp": 1552.725,
+          "deaths": 8.825,
+          "gold": 309.25
+        },
+        "heroes_with_upgrades": 40
+      },
+      "failed_versions": {
+        "e94a5377-a2bb-4663-bf69-e3db281f64d3": 40,
+        "a4590ed4-0b0c-4d86-8968-0844796f30e0": 40
+      }
+    }
+  ],
+  "complete": true,
+  "score": "one subject hero: max(0, XP - 200 * elapsed world ticks / 1440)",
+  "limits": "Fixed rosters, correlated trajectories; universal leaderboard superiority not established."
+}

@@ -1,0 +1,723 @@
+{
+  "arm": {
+    "name": "incumbent",
+    "side": 1,
+    "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+    "own_slots": [
+      7
+    ],
+    "roster": [
+      "840609fa-01da-4620-83db-aa8055f9531f",
+      "38d19828-0cef-422f-b900-ea4d63d433c4",
+      "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+      "b5569b62-bf41-4dec-912e-1254abd8e58d",
+      "0a41828a-5322-4715-b1a9-a3c3d6d0fdaf",
+      "fe665947-1bb5-446a-9654-6b71d0eb4520",
+      "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+      "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "e94a5377-a2bb-4663-bf69-e3db281f64d3",
+      "a4590ed4-0b0c-4d86-8968-0844796f30e0"
+    ],
+    "games": 40,
+    "kind": "mixed",
+    "names": [
+      "richard",
+      "Jordan",
+      "relh",
+      "Andre von Auto",
+      "daveey",
+      "daveey-2",
+      "Scott Smith",
+      "BeWellBot",
+      "Andrew Brower"
+    ]
+  },
+  "games": 40,
+  "mean_score_all": 173.77013888888888,
+  "clean_games": 0,
+  "mean_score_clean": 0.0,
+  "subject_invalid": 0,
+  "tainted": 40,
+  "rows": [
+    {
+      "episode": "ereq_ea83382f-968c-47fd-8303-fc804c683b77",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1549909990,
+      "ticks": 14734,
+      "replay_sha256": "c80b30461b349e75e81c99f365a0612797a2cb82e5f49aee738e28dbaf674304",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_71d6ad25-dc1c-4ede-8945-cdfa1c634771",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 650488392,
+      "ticks": 13731,
+      "replay_sha256": "ce83778775224db3974a08a6a768654172996e2d6d94b29b6710e3ea83533d1c",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_e8f7808b-1101-4463-8a3d-91c1839cec84",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 1108.9166666666665,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 30063256,
+      "ticks": 22875,
+      "replay_sha256": "396df81c07fd08a136a7a26eab44ad0e6bc3e69e37fa3c481660756c3000c5dc",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_74bb1816-a9a8-4be6-9850-848bb3000519",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 588379355,
+      "ticks": 18260,
+      "replay_sha256": "fd64d32aeab4f320bdd0f27ef8a163515487a5816fc1868a5503306f1e3e02bc",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_fdd6f470-b08c-4b55-a19b-906fe9eef360",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 48536840,
+      "ticks": 13892,
+      "replay_sha256": "1a5b5254ac45e3f96c113a6db9ad5bfe397bc7b02d76dc1a286b0d51340210da",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_5e71580d-4710-4f94-bd6b-b99984b02d88",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1541620842,
+      "ticks": 12475,
+      "replay_sha256": "1434560d1cec1f761860d993c2671e88801a7f3094205b99c43b3b02c603c6b7",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_501c6aa2-3c55-419e-bc7a-cc3deb0c14b4",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 1169.1944444444443,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1282250664,
+      "ticks": 18877,
+      "replay_sha256": "0f681af221482f5e8abab301363a0356044c4695150c4023aeb9654209bdcd97",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_91020c72-4cf7-4376-8bd1-d6529ea3acd7",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 2129962009,
+      "ticks": 11060,
+      "replay_sha256": "07f7733376e41d3d89436387bf0c1648b4d455a3dfc05eb76db525d6da278cb5",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_6bc17562-db05-4b76-9289-82efd7add7ee",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1851535310,
+      "ticks": 21260,
+      "replay_sha256": "70fb8bdb1fa358ca18d9c5d0ebb61048baa834747d550dde0b11a754f32e7584",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_64abe9ac-a063-490c-a638-644e1223f725",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 453466824,
+      "ticks": 15891,
+      "replay_sha256": "f262347aae3fe8fa520ec2577d9b6807234f93f35256089e9b672a91b85411bc",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_8d516a41-9e36-4e48-8ff7-a9dceb3f551e",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 958639771,
+      "ticks": 11883,
+      "replay_sha256": "e3f65e12e199c77a5672cd354f870c1e82db06872d33c24fdc4f568000f83c28",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_c409a2d9-5447-4381-9607-cc5ef9aac24f",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 541282486,
+      "ticks": 15367,
+      "replay_sha256": "823668bc5bff5a709583b02de7f1b7f8df04201aaa4e44523f0d2b30c2c2cbb4",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_093049a3-cdf1-4ff1-8f8f-2880f4ed1ed0",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1594819979,
+      "ticks": 11536,
+      "replay_sha256": "f0038b530ddc6b2109554eb4963d05436eeae23c1b21bd208a6151bbd30e51db",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_25d9bedf-98f1-47d9-9506-3281e0bd430d",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 1068.0277777777778,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 976586582,
+      "ticks": 21859,
+      "replay_sha256": "f6664ac588c9a3280101911b97b6d36bb12d585fbe163563fdb8b0afd8fb1013",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_1c5d201c-da3c-49bb-93c4-a8141def1475",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 2020129821,
+      "ticks": 12777,
+      "replay_sha256": "34b456343a8336aa020b677728db0dbf31fc50bcb82e7f20bcf7c545c721b865",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_f7e98f91-5807-4bb4-8adc-0e276c334a52",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1226273936,
+      "ticks": 14442,
+      "replay_sha256": "e76cd954da3b70a31bd37b64f1936f1a6508024318bca65b5e9fc67a489fd9ae",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_cfff724f-98d4-41cb-ace5-ca6b81c47e1b",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1736782159,
+      "ticks": 11561,
+      "replay_sha256": "c366a0160b6997d80516bb0e0ac011b173e6a2bcd8355f52dd9a0d7d4880cf37",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_c2a79701-075a-45db-8253-0c3543efd4ec",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 2130212080,
+      "ticks": 11825,
+      "replay_sha256": "12df864ece2020ff5396d0a6ba637560eed87e69ad502e2b6aab10bc9ed005c9",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_440f2787-788e-4178-ac1c-1230bd7a9aa7",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1709691505,
+      "ticks": 13008,
+      "replay_sha256": "a08ab9226ea128e7fb447a299cd53b24f4ec65c24a5a0a8ef7eb2bb157a01ee3",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_179522d3-0849-44c7-9c87-ecc782d7df8e",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 444704539,
+      "ticks": 10516,
+      "replay_sha256": "499431c665501d77417f9294ba2d3011ff7a97631283123021218cd5c7292578",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_9a357c13-7dfb-40fc-89e2-7d10b371fca1",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1471529697,
+      "ticks": 12821,
+      "replay_sha256": "404f081f03db979aa886ce494a74302634c334bf4802d41f1d472711c81f3574",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_43080adb-b292-4419-b808-eb4a3d0a07e6",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1661817498,
+      "ticks": 20206,
+      "replay_sha256": "e6a10f927cc14ba1db0036f167372877871fc620fddc8a3d7e3b9d6813666363",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_f4166901-3102-4b12-9587-9722e5c651ce",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 1459.5277777777774,
+      "win": 0,
+      "loss": 0,
+      "draw": 1,
+      "seed": 495201193,
+      "ticks": 30049,
+      "replay_sha256": "82904bbee0f5c8a11d208cf970a7ddad10adc232c28e6b8b128043a4dfec6b88",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_45b0ff70-2652-40cf-9db3-76569f67b0c4",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 651330944,
+      "ticks": 11318,
+      "replay_sha256": "e575f99423e5d38e3d33888fd9150b3af5c8f3b3bf24e9ed99fb7d921a0d8b97",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_965bad2e-bef4-45b6-9cb1-79c1ce9d4d64",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 139.58333333333348,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1008847043,
+      "ticks": 15519,
+      "replay_sha256": "52c5bc9c5b96f1b5ad7d35425eadaaa85bd3c934fca19adda8cc3d82638249aa",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_e4051687-f1b1-41e7-b450-6d6cb1590cb9",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1083791350,
+      "ticks": 17770,
+      "replay_sha256": "fbf8f670e7400ecab43e902f82061e40eadfab5044f2c2c8f26aacf4500a7c91",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_9d70cab4-002d-462f-88e3-e658d087b0b3",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1942221703,
+      "ticks": 9474,
+      "replay_sha256": "398cf404109d45395ba59bfcf36354546ade9b7dba425bd4c8ca92e73a77e2fc",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_59c2af72-f00a-4881-9195-f0a223ab7907",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1961069070,
+      "ticks": 10135,
+      "replay_sha256": "50fdfd89bec80182bc16b55f723a51c22f230f631b2bb9c50bd65c324892168b",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_f9c91faf-9b4a-4d25-87d8-a63e12cae841",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 97346847,
+      "ticks": 12423,
+      "replay_sha256": "7c9b6ac012609aa27a0fba7505f3ce50b312d7206325de0302e613815d7df8c5",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_c052efc9-a7bf-4533-b1dd-aa118b6a3150",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 353.44444444444434,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1134775480,
+      "ticks": 14800,
+      "replay_sha256": "9079d0122e9da28fee9cb8e28b69672c7baa03be257cd29f7ff0c55cee62988f",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_f7a3b112-3d1a-4b3a-bd60-02873cdce6de",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 777.1666666666665,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1914465731,
+      "ticks": 19410,
+      "replay_sha256": "aee057cacfc058ead325d45a090cf141d04533483d02e7e51649c8b8499ed167",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_729ee3ce-fcdb-4967-b562-819720291bd6",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1971064523,
+      "ticks": 10888,
+      "replay_sha256": "7c13438a1d60b8e085d9299c0068f788e63d4b4f158c983c6275c48fc8e67998",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_ca692d0d-542c-4e33-8aed-fffa4ff7e14f",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1496057253,
+      "ticks": 22811,
+      "replay_sha256": "1259a37e1c6d95ffdcd8e4b7050c12b8dbed9e7a492da95073192feb046a60c6",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_198ec88f-0779-43e9-8b50-758a4c45c815",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 74.83333333333348,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 175928515,
+      "ticks": 20442,
+      "replay_sha256": "32a7e62927a105b254b168951b90ff8b67e23d343d46aa51cdd5f76fe40e4a02",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_acf419db-ab1b-4ec5-9815-ab079eae17ee",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1553390426,
+      "ticks": 11520,
+      "replay_sha256": "34724b5e2d0e62a1718a650a45003bd0c9a8a0f694e044de4de32924a49a8f1f",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_22283dc9-2b80-4bfe-bb08-612daabd7004",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 800.1111111111113,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 689195908,
+      "ticks": 21052,
+      "replay_sha256": "7be6bdbfeb6da077beb838ba1faa7f2636f6432b934871e7773146c42982b33e",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_61b005a6-d5f5-44ac-b54c-498e4e0f62d8",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1219394565,
+      "ticks": 12246,
+      "replay_sha256": "0de6d3776deca5684ac3eb4a8ff1b24b7572ee1fd11844c865d514e766307224",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_9758a283-ce1b-4f8e-8fb3-634526dab21c",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 52168912,
+      "ticks": 16131,
+      "replay_sha256": "1e6e47adc4e4b97a89a9e9bf56a1740cf02570b762ebd332dfdd9b2b509f30aa",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_28a483f0-b541-458d-a439-118bb8819dcc",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 849563266,
+      "ticks": 12459,
+      "replay_sha256": "a9da99d85f094fdd5c7d1f722a6efee2e9735bbe8508fab811d6d3883480d61b",
+      "all_hashes_equal": true
+    },
+    {
+      "episode": "ereq_66c270ab-5b16-4872-a0a3-f09d61ca069b",
+      "valid": false,
+      "failed_slots": [
+        8,
+        9
+      ],
+      "subject_valid": true,
+      "score": 0.0,
+      "win": 0,
+      "loss": 1,
+      "draw": 0,
+      "seed": 1871004267,
+      "ticks": 24206,
+      "replay_sha256": "fc7c13fafa0d53cfffd65806532998e3a8633d9a9b802cb1882ffb44ae157084",
+      "all_hashes_equal": true
+    }
+  ]
+}

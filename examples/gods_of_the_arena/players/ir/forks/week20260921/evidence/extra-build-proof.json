@@ -1,0 +1,20 @@
+{
+  "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+  "game_version": "2026.9.21.5",
+  "dependencies_and_compiler": "build-proof.json",
+  "binary_sha256": {
+    "scenarios-extra": "30a17b600489a258918f95cdbaf153cc0d4713ce928e092b09217f5fe15aa0bc",
+    "command-hash": "5bb9b3f5a026ea4e49c8b2c2304c5182581f77a36c524c4f7324797b491be66c"
+  },
+  "sources_sha256": {
+    "scenarios.nim": "ee95227b31634ba9b0df01c37ac38558b117333f73c14f867d8f15eda380714c",
+    "command_hash.nim": "f19f68f79ab68460f92d971a9c9f4e16912e0f88afcda85825c227e238d55cc6"
+  },
+  "scenarios": {
+    "passed": true,
+    "checks": 126,
+    "max_instructions": 11960,
+    "max_work": 18684,
+    "scope": "All ten classes on both colors: real host upgrades, shop, portal guards, death/buyback, 600-creep stress; both-color finite defense release, observed-hit fractional movement and fog exclusion."
+  }
+}

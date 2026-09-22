@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "games": 160,
+  "clean_games": 0,
+  "subject_failures": 0,
+  "failures": [
+    {
+      "player": "BeWellBot",
+      "version": "e94a5377-a2bb-4663-bf69-e3db281f64d3",
+      "episodes": 158,
+      "reasons": [
+        "BASIC VM disabled"
+      ],
+      "example": {
+        "episode": "ereq_25e7a091-e3e0-4501-935f-60d777a1305c",
+        "slot": 8
+      }
+    },
+    {
+      "player": "Andrew Brower",
+      "version": "a4590ed4-0b0c-4d86-8968-0844796f30e0",
+      "episodes": 160,
+      "reasons": [
+        "BASIC VM disabled"
+      ],
+      "example": {
+        "episode": "ereq_25e7a091-e3e0-4501-935f-60d777a1305c",
+        "slot": 9
+      }
+    }
+  ],
+  "interpretation": "Insufficient clean games: mixed-team score hypothesis remains unresolved. Retain all results; do not relabel as passed."
+}

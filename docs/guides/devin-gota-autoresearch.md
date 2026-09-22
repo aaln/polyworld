@@ -2,6 +2,15 @@
 
 Repository: **https://github.com/aaln/polyworld**. Mission: improve our GotA policy against the current league, especially Richard, Alex Smith and Jordan, and attain and retain #1. Check every **three hours**. A rank or a small winning screen is evidence to investigate, not a guarantee of future wins.
 
+**September 21 release update:** the live game moved to **2026.9.21.5** at
+`f776d5e55d439706a8d49878d17d7ba1f6a1f7ce`. See the
+[new-week policy experiment](../../games/gods_of_the_arena/experiments/2026-09-21-week-policy.md)
+and its [isolated runtime](../../games/gods_of_the_arena/instruments/week20260921/README.md).
+The live score is now per-hero `max(0, lifetime XP - 200 * world ticks / 1440)`;
+fort wins are a separate diagnostic. The old runtime, acceptance records and
+deployment anchors below are historical and remain preserved. Read the new
+experiment and resolve live champions before continuing research.
+
 This is the operational entry point. The September 20 handoff preserves local research, including failed candidates. It does **not** assert that a jointly winning counter exists or that the Devin automation has already been enabled. Historical documents contain original Mac paths; use the portable entry points below for a new installation.
 
 ## 1. Give Devin this mission

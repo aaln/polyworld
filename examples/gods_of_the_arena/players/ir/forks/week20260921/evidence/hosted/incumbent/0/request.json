@@ -1,0 +1,91 @@
+{
+  "idempotency_key": "gota-week0921-incumbent-0-ad3f1d5ca719",
+  "target": {
+    "coworld_id": "cow_e5445477-d55e-432d-ac38-bd1eae66e6d3",
+    "variant_id": "competition"
+  },
+  "game_config_overrides": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  },
+  "num_episodes": 40,
+  "roster": [
+    {
+      "slot": 0,
+      "player": {
+        "policy_ref": "c2785cd4-433b-46d1-a454-dd29147383ec"
+      }
+    },
+    {
+      "slot": 1,
+      "player": {
+        "policy_ref": "c2785cd4-433b-46d1-a454-dd29147383ec"
+      }
+    },
+    {
+      "slot": 2,
+      "player": {
+        "policy_ref": "c2785cd4-433b-46d1-a454-dd29147383ec"
+      }
+    },
+    {
+      "slot": 3,
+      "player": {
+        "policy_ref": "c2785cd4-433b-46d1-a454-dd29147383ec"
+      }
+    },
+    {
+      "slot": 4,
+      "player": {
+        "policy_ref": "c2785cd4-433b-46d1-a454-dd29147383ec"
+      }
+    },
+    {
+      "slot": 5,
+      "player": {
+        "policy_ref": "6559c395-82f9-4fa4-8f7e-6f3481d9f169"
+      }
+    },
+    {
+      "slot": 6,
+      "player": {
+        "policy_ref": "6559c395-82f9-4fa4-8f7e-6f3481d9f169"
+      }
+    },
+    {
+      "slot": 7,
+      "player": {
+        "policy_ref": "6559c395-82f9-4fa4-8f7e-6f3481d9f169"
+      }
+    },
+    {
+      "slot": 8,
+      "player": {
+        "policy_ref": "6559c395-82f9-4fa4-8f7e-6f3481d9f169"
+      }
+    },
+    {
+      "slot": 9,
+      "player": {
+        "policy_ref": "6559c395-82f9-4fa4-8f7e-6f3481d9f169"
+      }
+    }
+  ],
+  "notes": "New-week score A/B. Fixed exact new baseline opponent; candidate versus live compatibility control, incumbent side 0. Score=max(0,XP-200*ticks/1440), full replay audit; no league selection."
+}
