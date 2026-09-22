@@ -17,9 +17,10 @@ def read(path):
 
 def data():
     result = []
-    for name in ('control', 'ranger', 'crossbow', 'warlock', 'arcanist'):
+    for name in ('control', 'ranger', 'crossbow', 'warlock', 'arcanist', 'crossbow draft only'):
         for side in (0, 1):
-            p = STUDY / 'hosted' / name / str(side)
+            p = (STUDY / 'draft-isolation' / str(side) if name == 'crossbow draft only'
+                 else STUDY / 'hosted' / name / str(side))
             eps = read(p / 'episodes.json') or []
             rows = [read(q) for q in (p / 'artifacts').glob('*/result.json')]
             result.append({'name': name, 'side': side,

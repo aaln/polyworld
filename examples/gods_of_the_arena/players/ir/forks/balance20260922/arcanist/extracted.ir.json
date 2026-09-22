@@ -1,0 +1,317 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_balance20260922_arcanist",
+  "situation": {
+    "grounded": {
+      "observation": "Bassy Q16.16 decimals for fractional action coordinates, integer snapshot tiles and IDs; six inventory slots; shared public hero draft.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Unconditional lifecycle phase",
+        "active": "Alive, battle started, decision due, not channeling or stunned"
+      }
+    },
+    "notes": "Public patched-host observations only. Experiment uses one subject seat and nine fixed distinct teammates/opponents. Hero preference can fall back when unavailable; realized-pick splits are descriptive. Spatial decisions use team coordinates before rounding; geometry plus draft preference was evaluated jointly."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "crossed",
+        "enemyX",
+        "enemyY",
+        "homeX",
+        "homeY",
+        "hurtTick",
+        "initialized",
+        "lane",
+        "moveTick",
+        "nextThink",
+        "previousHits",
+        "previousHp",
+        "restock",
+        "resumeTarget",
+        "retreat",
+        "scanOffset",
+        "spawnX",
+        "spawnY"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. The lifecycle binding explicitly resets initialization and retreat state after death.",
+      "uncertainty": "Unseen enemies are unknown. Visible targets may be masked. Only the draft roster, allied positions and visible opponents inform live choices."
+    },
+    "claims": {
+      "CurrentRuntime": {
+        "claim": "Exact source completed 80 games on 2026.9.22.2, both colors, with all source specs, VM status, replay hashes, lifetime XP and integer scores audited.",
+        "status": "supported",
+        "evidence": [
+          {
+            "artifact": "../evidence/result.json"
+          }
+        ]
+      },
+      "FrozenScoreGate": {
+        "claim": "This executable meets the prospectively frozen >=10% aggregate score improvement and >=95% per-color preservation against deployed control.",
+        "status": "contradicted",
+        "evidence": [
+          {
+            "artifact": "../evidence/review.json"
+          }
+        ]
+      },
+      "Generalization": {
+        "claim": "Universal hero strength, late-draft performance, new opponent versions and leaderboard #1 remain unestablished.",
+        "status": "requires_review",
+        "evidence": [
+          {
+            "artifact": "../evidence/experiment.md"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "Win": {
+      "preference": "Objective pressure supports XP production; fort outcomes are diagnostic, while current league XP score is primary.",
+      "provenance": "authored"
+    },
+    "Grow": {
+      "preference": "Earn shared XP and last-hit gold, spend legal skill points, and convert gold into durable combat strength.",
+      "provenance": "authored"
+    },
+    "Survive": {
+      "preference": "Avoid repeated feeding, recover efficiently, and promptly return to productive play.",
+      "provenance": "authored"
+    },
+    "Score": {
+      "preference": "Maximize the new live league score max(0, lifetime XP - 200 * elapsed world ticks / 1440); fort outcomes are a separate diagnostic.",
+      "provenance": "authored"
+    },
+    "Practice": {
+      "preference": "Secure feasible last hits and shared XP, buy useful permanent power, and use safe portals for urgent defense or productive recovery.",
+      "provenance": "authored"
+    }
+  },
+  "skill": {
+    "frame": {
+      "operator": "balance_frame",
+      "parameters": {}
+    },
+    "draft": {
+      "operator": "balance_draft",
+      "parameters": {
+        "think_ticks": 6,
+        "preferred_hero": 2
+      }
+    },
+    "timing": {
+      "operator": "balance_timing",
+      "parameters": {}
+    },
+    "lifecycle": {
+      "operator": "balance_lifecycle",
+      "parameters": {
+        "buyback_seconds": 25,
+        "buyback_reserve": 200
+      }
+    },
+    "observe": {
+      "operator": "balance_observe",
+      "parameters": {
+        "scan_limit": 96
+      }
+    },
+    "economy": {
+      "operator": "balance_economy",
+      "parameters": {
+        "shop_gold": 500
+      }
+    },
+    "home_portal": {
+      "operator": "balance_home_portal",
+      "parameters": {}
+    },
+    "recover": {
+      "operator": "balance_recover",
+      "parameters": {
+        "retreat_hp": 24
+      }
+    },
+    "tower_safety": {
+      "operator": "balance_tower_safety",
+      "parameters": {
+        "tower_hp": 65
+      }
+    },
+    "xp_close": {
+      "operator": "balance_xp_close",
+      "parameters": {}
+    },
+    "combat": {
+      "operator": "balance_combat",
+      "parameters": {
+        "reset_recovery": 1
+      }
+    },
+    "advance": {
+      "operator": "balance_advance",
+      "parameters": {}
+    }
+  },
+  "strategy": [
+    {
+      "id": "R_frame",
+      "when": "always",
+      "skill": "frame",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_draft",
+      "when": "always",
+      "skill": "draft",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_timing",
+      "when": "always",
+      "skill": "timing",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_lifecycle",
+      "when": "always",
+      "skill": "lifecycle",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_observe",
+      "when": "active",
+      "skill": "observe",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_economy",
+      "when": "active",
+      "skill": "economy",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_home_portal",
+      "when": "active",
+      "skill": "home_portal",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_recover",
+      "when": "active",
+      "skill": "recover",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_tower_safety",
+      "when": "active",
+      "skill": "tower_safety",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_xp_close",
+      "when": "active",
+      "skill": "xp_close",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_combat",
+      "when": "active",
+      "skill": "combat",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    },
+    {
+      "id": "R_advance",
+      "when": "active",
+      "skill": "advance",
+      "for": [
+        "Grow",
+        "Survive",
+        "Score",
+        "Practice"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-bassy/balance-2026-09-22-r1",
+    "game_version": "2026.9.22.2",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 2,
+    "parent": "48e93cab2012fb3f5f9f0e13cbfb8b6419525e6972b4e661103f0ed8086d754c",
+    "change": {
+      "origin": "User symmetry and hero-balance update; reflect completed current-engine evaluation without rewriting captured inputs",
+      "engine": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+      "selected": false
+    },
+    "needs_review": [
+      "belief/Generalization"
+    ],
+    "evidence": [
+      {
+        "artifact": "../evidence/experiment.md"
+      },
+      {
+        "artifact": "../evidence/review.json"
+      }
+    ]
+  }
+}

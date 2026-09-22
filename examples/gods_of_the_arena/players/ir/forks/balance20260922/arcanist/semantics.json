@@ -1,0 +1,177 @@
+{
+  "situation": {
+    "observation": "Bassy Q16.16 decimals for fractional action coordinates, integer snapshot tiles and IDs; six inventory slots; shared public hero draft.",
+    "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+    "predicates": {
+      "always": "Unconditional lifecycle phase",
+      "active": "Alive, battle started, decision due, not channeling or stunned"
+    }
+  },
+  "belief": {
+    "memory": [
+      "crossed",
+      "enemyX",
+      "enemyY",
+      "homeX",
+      "homeY",
+      "hurtTick",
+      "initialized",
+      "lane",
+      "moveTick",
+      "nextThink",
+      "previousHits",
+      "previousHp",
+      "restock",
+      "resumeTarget",
+      "retreat",
+      "scanOffset",
+      "spawnX",
+      "spawnY"
+    ],
+    "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. The lifecycle binding explicitly resets initialization and retreat state after death.",
+    "uncertainty": "Unseen enemies are unknown. Visible targets may be masked. Only the draft roster, allied positions and visible opponents inform live choices."
+  },
+  "skills": {
+    "frame": {
+      "meaning": "Reflect all public coordinates into the same team frame before integer division and movement offsets.",
+      "parameters": {},
+      "actions": []
+    },
+    "draft": {
+      "meaning": "Immediately choose the experimental preferred hero if available; otherwise use ranged-first public role-aware fallback. This preference is a hypothesis, not a hero tier claim.",
+      "parameters": {
+        "think_ticks": 6,
+        "preferred_hero": 2
+      },
+      "actions": [
+        "draftHero"
+      ]
+    },
+    "timing": {
+      "meaning": "After an observed landed hit, walk for one physics tick to clear recovery, then reacquire the remembered public target. Same-tick walk and attack does not reset the new engine swing. Never cancel unfinished windup or a portal channel; clear pending reacquisition after death. Spatial reasoning uses team coordinates.",
+      "parameters": {},
+      "actions": [
+        "walkTo",
+        "attackTarget"
+      ]
+    },
+    "lifecycle": {
+      "meaning": "Recover lifecycle state after death, conserve buyback gold during short respawns, and spend available legal ability ranks before combat. Spatial reasoning uses team coordinates.",
+      "parameters": {
+        "buyback_seconds": 25,
+        "buyback_reserve": 200
+      },
+      "actions": [
+        "buyback",
+        "levelAbility"
+      ]
+    },
+    "observe": {
+      "meaning": "Visible bounded scan: reward in-range last hits, count current keep attackers and defenders, and select an allied portal tower toward the assigned farming lane. Spatial reasoning uses team coordinates.",
+      "parameters": {
+        "scan_limit": 96
+      },
+      "actions": []
+    },
+    "economy": {
+      "meaning": "Reserve potion and portal slots; buy dagger, armor, axe and crossbow instead of low-impact boots. Safely return to shop when useful equipment remains missing and gold is banked. Spatial reasoning uses team coordinates.",
+      "parameters": {
+        "shop_gold": 500
+      },
+      "actions": [
+        "buyItem",
+        "useItem"
+      ]
+    },
+    "home_portal": {
+      "meaning": "At most the first two public team ordinals may safely channel home when visible enemy heroes threaten the keep and fewer than two allies already defend. Require health, distance, no recent damage and portal readiness; current threat disappearance releases defense. Spatial reasoning uses team coordinates.",
+      "parameters": {},
+      "actions": [
+        "useItemAt"
+      ]
+    },
+    "recover": {
+      "meaning": "Commit to recovery only at low health, finish rapid spawn restoration, preserve teleport channels, then release back to offense. Spatial reasoning uses team coordinates.",
+      "parameters": {
+        "retreat_hp": 24
+      },
+      "actions": [
+        "walkTo",
+        "useItemAt"
+      ]
+    },
+    "tower_safety": {
+      "meaning": "Leave doubled-tower aggro at a health threshold; do not enter an empty tower kill zone without allied creep cover. Spatial reasoning uses team coordinates.",
+      "parameters": {
+        "tower_hp": 65
+      },
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "xp_close": {
+      "meaning": "For safe Crossbowman creep farming, step inside the six-tile XP radius instead of stopping at its 6.5-tile attack range. Override stale navigation throttles before an out-of-range XP last hit; defer while tower safety or recovery owns movement. Spatial reasoning uses team coordinates.",
+      "parameters": {},
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "combat": {
+      "meaning": "Keep basic attacks connected, optionally shorten recovery only after observed hits, and cast learned damage or self-healing spells when useful. Auto-spells remain enabled. Spatial reasoning uses team coordinates.",
+      "parameters": {
+        "reset_recovery": 1
+      },
+      "actions": [
+        "walkTo",
+        "attackTarget",
+        "castTarget"
+      ]
+    },
+    "advance": {
+      "meaning": "Assign 2/2/1 lane farming by public team ordinal; push past the midpoint, defend only nearby present threats, and portal from recovery to a surviving forward tower. Spatial reasoning uses team coordinates.",
+      "parameters": {},
+      "actions": [
+        "attackMove",
+        "useItemAt"
+      ]
+    }
+  },
+  "temporal_execution": {
+    "facts": {
+      "self_data": "self* and worldTick are set once before each hero's VM decision; use/buy do not refresh them.",
+      "queries": "One frozen public object and warning frame per decision phase; own command results, inventory and ability costs update immediately.",
+      "inventory_flags": "Presence and empty-slot flags accumulate before useItem for each slot. They are earlier observations, not current post-use/post-buy inventory.",
+      "gold": "All affordability guards read starting selfGold; each buyItem checks and spends the remaining live balance.",
+      "equipment": "Successful purchases refresh stats: increases in maximum HP/mana also add that increase to current HP/mana. Resource gear therefore has immediate sustain effects as well as permanent capacity.",
+      "attack": "attackTarget stores an engine pursuit target if valid; accepted does not prove path reachability or damage.",
+      "walk": "walkTo clears attack intent before pathfinding, including when pathfinding subsequently returns false.",
+      "poison": "useItem on poison strikes the engine's current attackObjectId, not a policy-local bestId variable.",
+      "failures": "A command return of zero does not universally mean no state changed. Failed walkTo can clear attack intent.",
+      "memory": "Policy globals persist; baseline resets its decision-local scan variables. Engine attack/movement intent is separate persistent state.",
+      "numbers": "Integer observations; Q16.16 decimals only after safe scaling. Integer division uses backslash. Bitwise negation is never used for host flags.",
+      "abilities": "All abilities start locked; levelAbility explicitly unlocks/ranks them. Auto-casting uses learned ranks only.",
+      "shopping": "Only in own keep; successful purchases spend live gold. Potion and portal family cooldowns persist through death.",
+      "draft": "Shared ten-hero pool, alternating teams, ten seconds per pick. worldTick includes drafting; no class-color assumption.",
+      "rewards": "Creep XP within six tiles on same floor. Seed/tick/team-relative geometry and spawn determine simultaneous last hitter; no absolute ID advantage.",
+      "coordinates": "Global integer observed cells use complementary red/blue tile boundaries. Policy converts into team coordinates before rounding, then reverses action coordinates.",
+      "phases": "Shared starting actor state, simultaneous movement, collected damage then deaths/rewards; mutual kills and fort draws are legal.",
+      "scores": "Integer max(0, lifetime_xp * 1440 - 200 * world_ticks) div 1440; win outcome separate.",
+      "balance": "Ranger HP/level 19; Crossbowman base damage 69; Warlock Dread Totem base damage 87; no faction draft bonuses."
+    },
+    "rule_order": [
+      "R_frame",
+      "R_draft",
+      "R_timing",
+      "R_lifecycle",
+      "R_observe",
+      "R_economy",
+      "R_home_portal",
+      "R_recover",
+      "R_tower_safety",
+      "R_xp_close",
+      "R_combat",
+      "R_advance"
+    ],
+    "action_arbitration": "Rules execute in order; multiple commands can affect shared engine state during one decision."
+  }
+}

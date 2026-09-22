@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-22T17:13:51.080231+00:00",
+  "source_sha256": "7631fa32fb7ef6725074ad6778f4f94fe1e18ac5018bece1eed40e32cbef9bb8",
+  "authorization": "Prior explicit latest-league deployment to both Aaron and Coach; no new approval required",
+  "engine": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+  "game_version": "2026.9.22.2",
+  "evidence": "80-game draft-only follow-up and preceding 400-game screen",
+  "score": 3081.2375,
+  "control_score": 2519.6875,
+  "uplift_percent": 22.286493860845844,
+  "rollback_versions": {
+    "aaron": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+    "coach": "15b325b4-e9f3-487f-bd95-a059f92d20e2"
+  },
+  "rollback_source_sha256": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+  "rollback_source": "examples/gods_of_the_arena/players/ir/forks/balance20260922/control/policy.bas",
+  "limits": "Reused controls, fixed first-pick rosters; no independent or late-draft/#1 qualification. Automatic placement selection used; old manual champion endpoint returned500."
+}

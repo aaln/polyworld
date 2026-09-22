@@ -1,95 +1,99 @@
 # Current Gods of the Arena policy work
 
-Read `games/gods_of_the_arena/current.json` first. It routes current work to
-engine **2026.9.21.5 / f776d5e** and the tested **current20260922** IR/compiler
-pair (unchanged microplay executable, updated current evidence). Verify the live
-league's coworld and source before new hosted work.
-This guide supersedes historical runtime and advancement instructions for new
-experiments on this release. User instruction: old IR that no longer applies
-must not constrain progress on the updated game.
+Read `games/gods_of_the_arena/current.json`. The active engine is
+**2026.9.22.2 / ffcedcd866c4d31924361ed4baff2b7a6d3aba67**, published coworld
+`cow_2dd9158a-e22e-4000-9b2b-b060fffa7a9a`. Verify the live league's source,
+version and configuration before new hosted work. The research branch preserves
+older engine files and studies; build the exact pinned engine through
+`games/gods_of_the_arena/instruments/balance20260922/bootstrap.py`.
 
 ## Current contract
 
-- BASIC supports decimals and fractional action coordinates. Snapshot tile
-  coordinates and IDs remain integers. Use the current decimal-aware compiler.
-- Draft all heroes explicitly within the ten-second pick deadline. Public
-  draft choices are available; an old fixed-character roster assumption is not.
-- Spend skill points explicitly. Passive automatic leveling does not unlock
-  abilities. Check legal ranks, cooldowns, charges and mana.
-- Shopping requires the friendly keep; spawn recovery is fast. Inventory has
-  six slots, consumables stack, and the host has no sell or equipment-upgrade
-  operation. Plan purchases and reserves through actual supported actions.
-- Portals have a three-second channel and 60-second cooldown. Buyback is
-  supported and respawn is capped. Preserve channel and legal-action guards.
-- Waves contain three melee creeps and a caster per barracks; towers have the
-  updated health/damage. Use current engine values, not old tactical constants.
-- Creep XP requires same-floor proximity within six tiles. The 15% last-hitter
-  reserve is conditional on eligibility; the remaining 85% is shared nearby.
-  Crossbowman range exceeds the XP radius.
-- Same-decision walk+attack does not reset the new swing. A full physics tick
-  of movement before reacquisition does, as current practice demonstrates.
+- BASIC supports decimals and fractional action coordinates. Public position
+  observations are global integer cells with complementary team border rules.
+  Mirrored movement, navigation, vision, targeting and seeded last-hit ties are
+  implemented in the host. Both bundled reference policies use team coordinates;
+  that is a controller design, not a restriction on legal global-coordinate bots.
+- One shared object/warning frame is frozen for the decision phase. Accepted own
+  inventory and ability operations update immediately. Movement plans use the
+  same starting state, then move together; collected damage resolves before
+  deaths and rewards. Mutual kills and simultaneous fort draws are legal.
+- Faction draft bonuses are gone. Ranger HP growth is **19**, Crossbowman base
+  damage **69**, and Warlock Dread Totem damage **87**. Read actual stats, ability
+  ranks, costs and ranges from the host; do not import an old hero stat table.
+- Explicit draft picks and skill-point spending remain required. Keep the public
+  availability fallback and ten-second pick deadline. Abilities start locked.
+- Shopping requires the friendly keep. Inventory has six slots; consumables
+  stack. There is no sell/equipment-upgrade operation. Portals channel for three
+  seconds with a 60-second cooldown. Spawn recovery is fast; buyback exists.
+- Towers retain updated HP/damage; barracks waves have three melee and one caster.
+  Creep XP requires same-floor proximity within six tiles. An eligible last
+  hitter receives the 15% reserve; the remainder is shared. Crossbowman attacks
+  reach beyond this XP radius, so its practiced farming step remains relevant.
+- Fresh actual-engine practice still finds a full movement tick after a landed
+  hit shortens Ranger recovery to nine ticks. Same-decision walk+attack is not
+  equivalent. This mechanic does not establish a hero's competitive strength.
+- Primary league score is integer
+  `max(0, lifetime_xp * 1440 - 200 * world_ticks) // 1440`, including draft time.
+  Fort outcomes are separate diagnostics. Standings average scores, not win Elo.
 
-## IR and evidence boundaries
+## Current IR and completed evidence
 
-Use the seven-layer representation as an editing medium, with the current
-binding and host contract. Old strategy content, inferred v135 controller
-ordering, historical opponent IDs, integer-only tooling, and old parameter
-constraints are optional historical hypotheses. They are not defaults or
-mandatory constraints. Reintroduce one only with a current executable mechanism
-and current evidence. The current builder must start from the current pair,
-not the old formal accepted snapshot.
+The `balance20260922` bundle preserves the complete 400-game screen and all five
+IR/BASIC pairs. Every cell has 40 clean games, exact source/VM/replay/XP/integer
+score checks and 40 distinct command streams. All four coordinated mirrored
+alternatives failed the prospective replacement gate. Geometric symmetry alone
+was not retained as a gameplay improvement; blue score regressed.
 
-Preserve historical files and frozen results. Do not migrate an old supported
-claim merely by changing its game-version label. Current executable changes
-invalidate prior behavioral claims until tested. Never feed hidden replay
-truth or policy identity into the action policy.
+The selected reference is **`balance-draft20260922`**, source **7631fa32**, binding
+`gota-bassy/balance-draft-2026-09-22-r1`. It changes only draft priority to
+Crossbowman and retains the deployed post-draft controller. If Crossbowman is
+unavailable, it uses the existing public ranged-first fallback. A separate
+80-game follow-up scored **2888.975 red / 3273.5 blue**, versus the reused exact
+current-engine control's **2337.4 / 2701.975**: **+22.3%** overall, passing both
+frozen conditions. All 480 games were valid and fully audited.
 
-## New experiment decisions
+This is a fixed first-pick-roster result, not independent confirmation or a
+universal hero ranking. The follow-up reuses earlier controls explicitly.
+It outscored opposing relh on both colors and Jordan411/Richard153 on red;
+Jordan and Richard were teammates in the blue roster, so no opposing blue claim
+follows. Check newer opponent versions separately. The source-preserving
+current-engine control remains in `balance20260922/control` as rollback.
 
-The primary league metric is mean per-hero
-`max(0, lifetime XP - 200 * world ticks / 1440)`, including draft time.
-Fort wins/losses/draws remain useful diagnostics. Old 60%-win acceptance,
-30/40 or 38/40 fort thresholds, historical rival panels and binary-score
-assumptions do **not** gate a newly preregistered current-score experiment.
-The completed microplay panel retains its originally frozen gates; this update
-does not relabel its results.
+Do not force team-relative movement merely because it passes mirrored-action
+tests, and do not treat the retained global-coordinate behavior as permanently
+required. A future controller can change either approach with current evidence.
 
-Freeze exact candidate/control bytes, engine/configuration, current target
-UUIDs, sides and score rules before collecting their results. Compare native
-variants against same-color parent controls: candidate red versus parent blue
-alone can confuse policy effect with draft/color advantage. For the next
-attention experiment, research advancement requires zero invalid games/audit
-failures, at least 10% aggregate own-score gain, and no per-cell decrease beyond
-5% versus its matched current parent. Beating each target in XP score is a
-separate claim requiring own mean above that rival in every target/color cell.
-Mixed-team strength and rank need their own evidence. No automatic deployment
-follows from changing the research metric.
+Use IR as the editing medium. Change current host bindings and policy components
+as needed; old tactical rules, opponent v135 identities, old integer-only
+compilers and old win gates do not constrain new research. Preserve historical
+studies under their original engine and decision rules. Never relabel an old
+outcome as a new-engine result, or feed hidden replay truth/policy UUIDs into the
+live controller. Failed alternatives remain available with their evidence.
 
-Runtime validity, exact replay/XP/score checks, correlated-trajectory reporting,
-single-writer ownership and shared budgets continue to apply. Those safeguards
-are independent of obsolete tactical IR. The current `targets20260922` tools
-already run through the shared journal without the legacy win-only acceptance
-path. The old controller's formal accepted state remains historical; port its
-score gate before using it to judge current-release progress.
+## Evaluation and operations
 
-For ongoing operations, read the latest campaign `FOCUS.md`/ownership record.
-The previous researcher may be paused while an interactive experiment owns
-the writer. Do not duplicate its requests or change its in-progress files.
+Freeze exact executable bytes, IR, engine/configuration, opponent UUIDs, seats
+and prospective decisions. Use mixed teams and one subject seat for claims about
+this league. Compare matched side/roster controls. Default advancement requires
+zero invalid games/audit failures, strict aggregate score improvement of at
+least 10%, and each cell retaining at least 95% of control. Rival score
+superiority, late-draft strength and #1 rank are separate claims. A reused
+control cohort must be labeled explicitly; it is not fresh concurrent evidence.
 
-The current pair adds the user episode audit, real-host ranged-draft checks,
-rejected refinements and 320 clean mixed-team A/B/guardrail games. Both current
-score gates pass; no historical win gate was relabeled. The faster attention
-variant was rejected for a red score regression, so the source remains b82c3799.
-Fresh Jordan356 is untested; frozen mixed results used317. Read the separate
-deployment receipts for which registrations are live, rather than inferring
-league selection from an evidence bundle.
+Shared journal limits remain 400 new games/cycle, 1600/UTC day, at most three
+active requests, 40–200 games/request. Do not reset a ledger or change limits to
+make an experiment pass. Runtime, ownership and evidence safeguards remain even
+when historical tactical IR is obsolete. Read the campaign FOCUS/ownership
+record before taking the writer; the prior worker is paused during interactive
+work. The user's root checkout moved to upstream main and the old LaunchAgent
+script path is absent: do not blindly restart an obsolete or missing runner.
 
-Verified live at 08:38 UTC September22: Aaron `aaron-gota-micro0922:v1`
-(`f3f8baab-d02a-4f7f-8fc9-e1f050f967a7`) and Coach
-`aaron-gota-micro0922-coach:v1` (`15b325b4-e9f3-487f-bd95-a059f92d20e2`).
-Both use b82c3799 and are active competing champions. Full deployment evidence:
-`examples/gods_of_the_arena/players/ir/forks/current20260922-deployment`.
-Use these as live controls for new experiments; never overwrite a frozen plan.
-The direct champion endpoint returned500; documented automatic champion
-selection during normal placement succeeded. Do not misread the intentional
-retirement of the unselected first attempt as a policy-quality disqualification.
+Current live registrations are Aaron `0dc85085-cb5b-4de6-8d50-e8fd043d0b5f`
+and Coach `35c85505-1977-4bad-b4ea-f1473aaa79dc`, both **7631fa32**, verified
+competing/active/champion after normal `auto_champion=always` placement. The
+[deployment receipts](../../examples/gods_of_the_arena/players/ir/forks/balance-draft20260922-deployment/README.md)
+preserve source hashes, readback and rollback identities. Placement does not
+establish later league-round performance. Resolve live versions before new work.
+Manual champion selection previously returned HTTP500; normal placement worked.
+Do not retire a live champion before its replacement is verified.

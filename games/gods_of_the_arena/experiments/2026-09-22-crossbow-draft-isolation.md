@@ -1,6 +1,6 @@
 # Follow-up: isolate Crossbowman priority from geometry
 
-Status: designed, before follow-up results or requests. The 400-game mirrored
+Status: completed; qualified by the original decision rule. Original design below was recorded before follow-up results or requests. The 400-game mirrored
 hero study is still finishing its remaining arms; do not interrupt or relabel it.
 Only begin this distinct research cycle after all 400 games are completed and
 audited. Existing shared daily spending leaves 80 games; no limits are changed.
@@ -40,3 +40,20 @@ follow-up, not a fresh concurrent A/B or independent confirmation. Draft changes
 other heroes' available choices; evaluate the complete policy intervention.
 The hypothesis was selected using preceding data. Preserve and report that
 selection and all failed variants; uncertainty intervals remain descriptive.
+
+## Result and decision
+
+All 80 games completed, zero invalid VMs; every source hash, replay hash, lifetime XP and integer score verified. Crossbowman was drafted in all 80 subject seats; every cell has 40 distinct command streams.
+
+| Color | Control | Crossbow draft | Change | Deaths: control → candidate |
+|---|---:|---:|---:|---:|
+| Red | 2337.400 | 2888.975 | +23.6% | 4.175 → 4.000 |
+| Blue | 2701.975 | 3273.500 | +21.2% | 6.225 → 4.975 |
+
+Aggregate 3081.2375 versus 2519.6875, **+22.3%**. Both score conditions pass. All previous mirrored alternatives failed their gates, so this is the selected research reference. Preserve the exact `7631fa32...` executable and promote through the existing two-player authorization after pair verification. Rollback is b82c3799, retained in the current-engine control pair.
+
+This is a bounded fixed-roster result with reused controls, not an independent confirmation or universal class ranking. A same-seed native check finds identical red actions/state hashes between the mirrored and draft-only Crossbowman variants; red cohort differences are not evidence of a geometry effect. The blue change was the key discriminator.
+
+## Deployment
+
+The exact qualified source was selected for Aaron and Coach through normal automatic placement; both verified competing, active and champion at 2026-09-22T17:14:35Z. See the [deployment receipts](../../../examples/gods_of_the_arena/players/ir/forks/balance-draft20260922-deployment/README.md). Fresh readback retained relh161, Jordan411 and Richard153 as current opposing references. No post-deployment round result is inferred from placement.

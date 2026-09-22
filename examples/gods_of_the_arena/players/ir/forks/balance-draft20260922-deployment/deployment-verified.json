@@ -1,0 +1,68 @@
+{
+  "at": "2026-09-22T17:14:35.106635+00:00",
+  "source_sha256": "7631fa32fb7ef6725074ad6778f4f94fe1e18ac5018bece1eed40e32cbef9bb8",
+  "selected": {
+    "coach": {
+      "id": "lpm_b4cbe4a1-76a2-4c3d-8829-05b49bddb02d",
+      "status": "competing",
+      "substatus": "active",
+      "is_champion": true,
+      "start_time": "2026-09-22T17:14:01.058303Z",
+      "end_time": null,
+      "policy_version": {
+        "id": "35c85505-1977-4bad-b4ea-f1473aaa79dc",
+        "policy": {
+          "id": "40dfe18a-ecde-4567-8a04-399881335811",
+          "name": "aaron-gota-balance0922-coach"
+        },
+        "version": 1,
+        "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "label": "aaron-gota-balance0922-coach:v1"
+      },
+      "player": {
+        "id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "name": "Aaron's Co-play Coach",
+        "avatar_url": null
+      }
+    },
+    "aaron": {
+      "id": "lpm_e389bf69-ec4e-4b2a-9600-f1ded7db9c3b",
+      "status": "competing",
+      "substatus": "active",
+      "is_champion": true,
+      "start_time": "2026-09-22T17:14:30.475043Z",
+      "end_time": null,
+      "policy_version": {
+        "id": "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+        "policy": {
+          "id": "8cf7982c-1aa1-41b9-b323-879b0c898d88",
+          "name": "aaron-gota-balance0922-crossbow_draft"
+        },
+        "version": 1,
+        "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "label": "aaron-gota-balance0922-crossbow_draft:v1"
+      },
+      "player": {
+        "id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "name": "Aaron",
+        "avatar_url": null
+      }
+    }
+  },
+  "versions": {
+    "aaron": {
+      "id": "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+      "name": "aaron-gota-balance0922-crossbow_draft",
+      "version": 1,
+      "pools": null,
+      "submit_error": null
+    },
+    "coach": {
+      "id": "35c85505-1977-4bad-b4ea-f1473aaa79dc",
+      "name": "aaron-gota-balance0922-coach",
+      "version": 1,
+      "pools": null,
+      "submit_error": null
+    }
+  }
+}

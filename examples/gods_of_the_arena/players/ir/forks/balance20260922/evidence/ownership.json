@@ -1,0 +1,28 @@
+{
+  "owner": "interactive-balance-heroes-20260922",
+  "worktree": "/Users/aaln/experiments/softmax/polyworld-gota-balance-20260922",
+  "timestamp": "2026-09-22T16:35:03.722899+00:00",
+  "prior_handoff": "/Users/aaln/experiments/softmax/gota-autoresearch/interactive-current20260922-handoff.json",
+  "service_state": "paused",
+  "pause_preserved": true,
+  "shared_ledger": "/Users/aaln/experiments/softmax/gota-autoresearch/xp-ledger.json",
+  "initial_daily_reserved": 1120,
+  "planned_additional_games": 400,
+  "engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+  "root_worktree": "User switched root to main ffcedcd. Research branch retained separately; no root tracked files modified by this task.",
+  "prior_worker_paths": {
+    "/Users/aaln/experiments/softmax/polyworld/tools/gota_autoresearch/league_watch.py": {
+      "exists": false,
+      "sha256": null
+    },
+    "/Users/aaln/experiments/softmax/polyworld/tools/gota_autoresearch/researcher.py": {
+      "exists": false,
+      "sha256": null
+    },
+    "/Users/aaln/experiments/softmax/polyworld/tools/gota_autoresearch/test_researcher.py": {
+      "exists": false,
+      "sha256": null
+    }
+  },
+  "worker_restore_note": "Old launcher paths are absent after user root checkout. Do not resume stale release runner blindly. Research scripts preserved in isolated research branch."
+}

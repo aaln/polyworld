@@ -1,0 +1,5 @@
+Testing mirrored reference-policy actions and VM budgets
+fatal.nim(62)            sysFatal
+Error: unhandled exception: balance_policy_mirrors.nim(131, 11) `red.actions == blue.actions` /Users/aaln/experiments/softmax/polyworld-gota-balance-20260922/examples/gods_of_the_arena/players/ir/forks/current20260922/policy.bas, VanguardKnight, Farming, boundary=false
+red: @[(tick: 6, heroId: 100, kind: 16, offset: fixedVec2(0.00000, 0.00000), slot: 1, first: 0, second: 0), (tick: 6, heroId: 100, kind: 5, offset: fixedVec2(0.00000, 0.00000), slot: 0, first: 11, second: 11)]
+blue: @[(tick: 6, heroId: 100, kind: 16, offset: fixedVec2(0.00000, 0.00000), slot: 1, first: 0, second: 0), (tick: 6, heroId: 100, kind: 5, offset: fixedVec2(0.00000, 0.00000), slot: 0, first: 104, second: 104)] [AssertionDefect]

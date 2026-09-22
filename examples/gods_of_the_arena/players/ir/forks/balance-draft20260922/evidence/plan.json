@@ -1,0 +1,57 @@
+{
+  "game_version": "2026.9.22.2",
+  "engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+  "cycle": "interactive-crossbow-draft-isolation-20260922",
+  "games": 80,
+  "arms": [
+    {
+      "name": "crossbow_draft",
+      "side": 0,
+      "version": "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+      "source_sha256": "7631fa32fb7ef6725074ad6778f4f94fe1e18ac5018bece1eed40e32cbef9bb8",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+        "60243eaf-0bad-457e-9293-ced13d6895d5",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "15b325b4-e9f3-487f-bd95-a059f92d20e2"
+      ],
+      "background": "6aac0d32d48fa8c284382af4d7442caa0579d39b7510b339a9f1f8c9f21e19e9",
+      "games": 40
+    },
+    {
+      "name": "crossbow_draft",
+      "side": 1,
+      "version": "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+      "source_sha256": "7631fa32fb7ef6725074ad6778f4f94fe1e18ac5018bece1eed40e32cbef9bb8",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "60243eaf-0bad-457e-9293-ced13d6895d5",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "0dc85085-cb5b-4de6-8d50-e8fd043d0b5f",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "15b325b4-e9f3-487f-bd95-a059f92d20e2"
+      ],
+      "background": "338f51c5ae2b04b44e27f3ed2ab52ef72deffb9ffd6333343f4a4f48a4890909",
+      "games": 40
+    }
+  ],
+  "control_plan_sha256": "24cc0eb5e94de21aca679feb9b945c7bca5c66e44765b0335fc73d1678315b64",
+  "control_result_sha256": "3b1082bd0a220991b9cafaee992013dfd1230999d7c58a58b8741ceedd1b0e58",
+  "rule": "All clean; strict >=10% aggregate score gain and >=95% per-color preservation versus same frozen controls. Descriptive follow-up, no fresh concurrent controls or independent confirmation."
+}

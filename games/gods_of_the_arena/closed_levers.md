@@ -1,5 +1,19 @@
 # Closed GOTA experiment directions
 
+- 2026-09-22, engine **2026.9.22.2 / ffcedcd**: the coordinated team-relative
+  movement controller with Ranger, Crossbowman, Warlock or Arcanist draft
+  priority failed the preregistered replacement gate in a complete 400-game
+  screen (40 games per color per arm including control). Every alternative
+  regressed on blue. Exact mirrored-action tests passed but did not predict
+  stronger league XP scores. This closes those four exact bundles for this
+  fixed first-pick roster, not mirrored movement or the heroes universally.
+  A separate Crossbowman draft-only fork retaining deployed movement then
+  passed in 80 games, +22.3% against reused controls. Preserve the distinction:
+  red native trajectories of the two Crossbowman forks were identical on the
+  checked seed; differences between their red hosted cohorts do not establish
+  a geometry effect. See `experiments/2026-09-22-balance-heroes.md` and
+  `experiments/2026-09-22-crossbow-draft-isolation.md`.
+
 - 2026-09-22, engine **2026.9.21.5**: same-decision `walkTo` then
   `attackTarget` is insufficient to reset basic-attack recovery. Actual-tick
   stationary drills left Ranger at 20 hits/360 ticks for both the baseline and

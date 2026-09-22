@@ -9,6 +9,7 @@ Its historical win-only gates and old IR do not constrain new experiments on
 the current release. Preserve frozen prior experiments and their original rules.
 
 Use `aaln/polyworld` as the research fork. Preserve existing work and failed
-experiments. Main includes gameplay changes that differ from the published
-league engine; use the pinned research worktree for comparative policy tests.
+experiments. Verify main against the published manifest; the research branch
+can retain older engine files. Build the current JSON's exact engine commit in
+an isolated worktree for comparative tests, even when main presently matches it.
 Do not launch the archived Mac/Codex supervisor inside a Devin research session.
