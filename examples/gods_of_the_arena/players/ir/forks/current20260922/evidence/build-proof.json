@@ -1,0 +1,28 @@
+{
+  "game": "2026.9.21.5",
+  "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+  "nim": "Nim Compiler Version 2.2.10 [MacOSX: arm64]\nCompiled at 2026-08-23\nCopyright (c) 2006-2026 by Andreas Rumpf\n\ngit hash: bfeb3146d1638b39f69007a4ae5a23e23ae4e5ef\nactive boot switches: -d:release\n",
+  "compile_options": [
+    "-d:headless",
+    "-d:release"
+  ],
+  "dependencies": "engine-build-proof.json; exact same immutable dependency checkout and pinned engine",
+  "files": {
+    "games/gods_of_the_arena/instruments/targets20260922/practice.nim": "e1d59c741d6a6068f6319d26922daf34d86d72d562a9c385fd658711650875fd",
+    "games/gods_of_the_arena/instruments/targets20260922/scenarios.nim": "20aab38257ccbc05cab63d5fda0d02296a7ffa5c2e3a031b01f5f970b7192fe7",
+    "games/gods_of_the_arena/instruments/targets20260922/practiced.py": "e7461975f39d0bb8568c6b025a974d4f569cf129460fbd99e56ba0a0f289c9dd",
+    "games/gods_of_the_arena/instruments/targets20260922/micro.py": "05615249b9417f6620975e307716aad35125b6ce21cd32b8a26acc7109b09d62",
+    "tmp/gota-targets-20260922/bin/practice": "6ef463f2e37c11e07ebfd254b9052ec37240ddfe91db874e58b86ae5aad5c2fc",
+    "tmp/gota-targets-20260922/bin/scenarios": "de7fcedb35dbba5976a5f3261578a4a3effce2ccbf7f8d855de10bb4b204fa5d",
+    "tmp/gota-targets-20260922/bin/episode": "6da2df5abd07340afe602bda78b3c4ffb0a1844d396315bfb8a907983c3fa661",
+    "tmp/gota-targets-20260922/bin/command-hash": "5bb9b3f5a026ea4e49c8b2c2304c5182581f77a36c524c4f7324797b491be66c",
+    "tmp/gota-targets-20260922/bin/events": "e4718c5cea51712057d001f60f6f67ab96be3673fa7e66d4597fe48759232734",
+    "games/gods_of_the_arena/instruments/targets20260922/events.nim": "f9b36189853e8bdf671fbf609330210d2087b59e04e740dff7bd06fb327e992e"
+  },
+  "parity": "Every evaluated complete native and hosted replay is state-hash/command/XP/score audited with the pinned episode runner.",
+  "event_compile_options": [
+    "-d:headless",
+    "-d:release",
+    "-d:replayEvents"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "authorization_verbatim_prior_turns": [
+    "deploy the policy to latest on league",
+    "deploy the policy to league that can beat richard's v135 even half the time to both players. it's important even while we work that we start beating him"
+  ],
+  "source_sha256": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+  "evidence": "Same verified pair and 320-game comparison in decision.json",
+  "reason": "Manual selection returned HTTP500 twice; readback showed no switch. Use documented automatic champion selection during normal league placement.",
+  "reconciliation": "Coach has no submitted membership yet. Retire only the exact unselected Aaron research membership before resubmitting that version with auto_champion=always.",
+  "scope": "Only the same two owned players and exact tested bytes; no server/configuration or policy change."
+}

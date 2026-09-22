@@ -1,0 +1,105 @@
+{
+  "game_version": "2026.9.21.5",
+  "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+  "cycle": "interactive-current-draft-field-20260922",
+  "games": 160,
+  "arms": [
+    {
+      "name": "candidate",
+      "target": "mixed-third-pick",
+      "opponent": "2f8ffd3acfb964d3c36ac73af59b4bb7c01529c0762b31b30b706520d57bc7ab",
+      "side": 0,
+      "version": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+      "own_slots": [
+        2
+      ],
+      "roster": [
+        "b5569b62-bf41-4dec-912e-1254abd8e58d",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d7203ddb-24e7-4e7a-8c4b-95fa27424b61",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "7dcba95c-6966-4a86-b033-7ffcafa8991f"
+      ],
+      "games": 40
+    },
+    {
+      "name": "candidate",
+      "target": "mixed-third-pick",
+      "opponent": "96f6dec7188232d67258e549d63d20ef2aac67b2584b457601814db89e58f429",
+      "side": 1,
+      "version": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+      "own_slots": [
+        7
+      ],
+      "roster": [
+        "b5569b62-bf41-4dec-912e-1254abd8e58d",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d7203ddb-24e7-4e7a-8c4b-95fa27424b61",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "7dcba95c-6966-4a86-b033-7ffcafa8991f"
+      ],
+      "games": 40
+    },
+    {
+      "name": "control",
+      "target": "mixed-third-pick",
+      "opponent": "2f8ffd3acfb964d3c36ac73af59b4bb7c01529c0762b31b30b706520d57bc7ab",
+      "side": 0,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "own_slots": [
+        2
+      ],
+      "roster": [
+        "b5569b62-bf41-4dec-912e-1254abd8e58d",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d7203ddb-24e7-4e7a-8c4b-95fa27424b61",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "7dcba95c-6966-4a86-b033-7ffcafa8991f"
+      ],
+      "games": 40
+    },
+    {
+      "name": "control",
+      "target": "mixed-third-pick",
+      "opponent": "96f6dec7188232d67258e549d63d20ef2aac67b2584b457601814db89e58f429",
+      "side": 1,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "own_slots": [
+        7
+      ],
+      "roster": [
+        "b5569b62-bf41-4dec-912e-1254abd8e58d",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d7203ddb-24e7-4e7a-8c4b-95fa27424b61",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "7dcba95c-6966-4a86-b033-7ffcafa8991f"
+      ],
+      "games": 40
+    }
+  ],
+  "candidate_source_sha256": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+  "evaluator_sha256": "f7b3e1d1d24377e33a338563182584d21931fd377d610a57f8aa301337115d32",
+  "conditional_on": "healthy-field/result.json complete and research_improved; unchanged candidate bytes",
+  "rule": "All40games/cell clean and replay/score audited. Own-score preservation >=95% control each color and strict aggregate gain >=10%. Fort outcomes diagnostic. This later-draft guardrail does not guarantee every draft seat or every roster.",
+  "budget": "Same current-draft-field cycle:160first-pick+160third-pick=320, below400; shared daily journal unchanged."
+}

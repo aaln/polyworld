@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "name": "scan128",
+      "seed": 922210,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/scan128/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "scan128",
+      "seed": 922210,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/scan128/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "think3",
+      "seed": 922210,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/think3/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "think3",
+      "seed": 922210,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/think3/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "think3_scan128",
+      "seed": 922210,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/think3_scan128/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "think3_scan128",
+      "seed": 922210,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/think3_scan128/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    }
+  ],
+  "comparison": "Same-color practiced_self 922210 control from reserve-control-result.json",
+  "selection_rule": "Diagnostic parameter screen. Keep per-color options with no validity/runtime failure, score >= control and no fort-win loss, favor own score. Any composed/selected final bytes require fresh two-color native confirmation and hosted evaluation. One seed is directional, not qualification."
+}

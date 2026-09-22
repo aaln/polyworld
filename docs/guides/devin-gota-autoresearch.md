@@ -1,5 +1,11 @@
 # Devin: continuous GotA research with semantic IR
 
+**Routing:** [the current-release guide](guide-gota-current-release.md) and
+`games/gods_of_the_arena/current.json` are authoritative for new-game IR,
+mechanics and XP-score advancement. Historical win-only acceptance rules below
+remain attached to their original experiments; they do not gate new current
+release work. Ownership, provenance and the shared budget still apply.
+
 Repository: **https://github.com/aaln/polyworld**. Mission: improve our GotA policy against the current league, especially Richard, Alex Smith and Jordan, and attain and retain #1. Check every **three hours**. A rank or a small winning screen is evidence to investigate, not a guarantee of future wins.
 
 **September 21 release update:** the live game moved to **2026.9.21.5** at

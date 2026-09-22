@@ -1,9 +1,12 @@
 # Agent entry points
 
 For GotA policy research, monitoring, coaching or league upgrades, first read
-[the Devin autoresearch guide](docs/guides/devin-gota-autoresearch.md).
-It identifies the portable runtime, current handoff, semantic IR conventions,
-research evidence, single-writer transfer and promotion gates.
+[the current-release guide](docs/guides/guide-gota-current-release.md) and
+`games/gods_of_the_arena/current.json`. They define the active engine, IR and
+XP-score metric. Then read [the autoresearch history and operational
+guide](docs/guides/devin-gota-autoresearch.md) for ownership, budgets and evidence.
+Its historical win-only gates and old IR do not constrain new experiments on
+the current release. Preserve frozen prior experiments and their original rules.
 
 Use `aaln/polyworld` as the research fork. Preserve existing work and failed
 experiments. Main includes gameplay changes that differ from the published

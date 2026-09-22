@@ -1,0 +1,145 @@
+{
+  "at": "2026-09-22T08:30:58.456265+00:00",
+  "ready": true,
+  "authorization_verbatim_prior_turns": [
+    "deploy the policy to latest on league",
+    "deploy the policy to league that can beat richard's v135 even half the time to both players. it's important even while we work that we start beating him"
+  ],
+  "authorization_scope": "Continuing prior explicit latest-league and both-player deployment instructions; no new assent implied.",
+  "league": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+  "source_sha256": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+  "evidence": {
+    "healthy-field": {
+      "sha256": "5a46e1419c50971a624dba54b6c2e154e6ff0281ce383f33cf68f938db76d563",
+      "cells": [
+        {
+          "target": "mixed-first-pick",
+          "opponent": "040846546ead02a0c4a7cd93867f94b666646191ad37ae26d248bfb41a0e770e",
+          "side": 0,
+          "game_version": "2026.9.21.5",
+          "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+          "games": 40,
+          "invalid": 0,
+          "all_hashes_equal": true,
+          "own_score": 4081.6097222222224,
+          "opponent_score": 523.9008333333334,
+          "wins": 24,
+          "losses": 11,
+          "draws": 5
+        },
+        {
+          "target": "mixed-first-pick",
+          "opponent": "0a056862726427a0c8a464e756d79a6993af8a013eb76349c942236bb060cb09",
+          "side": 1,
+          "game_version": "2026.9.21.5",
+          "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+          "games": 40,
+          "invalid": 0,
+          "all_hashes_equal": true,
+          "own_score": 2511.8493055555555,
+          "opponent_score": 247.93097222222224,
+          "wins": 39,
+          "losses": 0,
+          "draws": 1
+        },
+        {
+          "target": "mixed-first-pick",
+          "opponent": "040846546ead02a0c4a7cd93867f94b666646191ad37ae26d248bfb41a0e770e",
+          "side": 0,
+          "game_version": "2026.9.21.5",
+          "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+          "games": 40,
+          "invalid": 0,
+          "all_hashes_equal": true,
+          "own_score": 0.0,
+          "opponent_score": 505.40666666666664,
+          "wins": 0,
+          "losses": 40,
+          "draws": 0
+        },
+        {
+          "target": "mixed-first-pick",
+          "opponent": "0a056862726427a0c8a464e756d79a6993af8a013eb76349c942236bb060cb09",
+          "side": 1,
+          "game_version": "2026.9.21.5",
+          "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+          "games": 40,
+          "invalid": 0,
+          "all_hashes_equal": true,
+          "own_score": 0.0,
+          "opponent_score": 703.1127777777778,
+          "wins": 29,
+          "losses": 3,
+          "draws": 8
+        }
+      ]
+    },
+    "middle-field": {
+      "sha256": "9e436bb26d19d7b0f9ad64416ae6b59f0bb09e5e318a694d65744b635e7d6364",
+      "cells": [
+        {
+          "target": "mixed-third-pick",
+          "opponent": "2f8ffd3acfb964d3c36ac73af59b4bb7c01529c0762b31b30b706520d57bc7ab",
+          "side": 0,
+          "game_version": "2026.9.21.5",
+          "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+          "games": 40,
+          "invalid": 0,
+          "all_hashes_equal": true,
+          "own_score": 1719.6791666666668,
+          "opponent_score": 522.9540277777778,
+          "wins": 12,
+          "losses": 26,
+          "draws": 2
+        },
+        {
+          "target": "mixed-third-pick",
+          "opponent": "96f6dec7188232d67258e549d63d20ef2aac67b2584b457601814db89e58f429",
+          "side": 1,
+          "game_version": "2026.9.21.5",
+          "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+          "games": 40,
+          "invalid": 0,
+          "all_hashes_equal": true,
+          "own_score": 1938.6472222222224,
+          "opponent_score": 553.5741666666667,
+          "wins": 38,
+          "losses": 0,
+          "draws": 2
+        },
+        {
+          "target": "mixed-third-pick",
+          "opponent": "2f8ffd3acfb964d3c36ac73af59b4bb7c01529c0762b31b30b706520d57bc7ab",
+          "side": 0,
+          "game_version": "2026.9.21.5",
+          "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+          "games": 40,
+          "invalid": 0,
+          "all_hashes_equal": true,
+          "own_score": 0.0,
+          "opponent_score": 547.5511111111111,
+          "wins": 0,
+          "losses": 39,
+          "draws": 1
+        },
+        {
+          "target": "mixed-third-pick",
+          "opponent": "96f6dec7188232d67258e549d63d20ef2aac67b2584b457601814db89e58f429",
+          "side": 1,
+          "game_version": "2026.9.21.5",
+          "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+          "games": 40,
+          "invalid": 0,
+          "all_hashes_equal": true,
+          "own_score": 581.2986111111111,
+          "opponent_score": 718.2891666666667,
+          "wins": 26,
+          "losses": 0,
+          "draws": 14
+        }
+      ]
+    }
+  },
+  "scope": "Current-game practiced policy: ranged-first public drafting, explicit skill points, actual-tick attack recovery, last-hit/XP positioning, equipment and purposeful portals. Exact BASIC passed current-engine both-color mixed A/B against deployed compat and later-draft guardrail, all VMs/replay/XP/score audited. Original target panel and its limitations remain preserved. Fixed rosters/correlated trajectories; no universal opponent, class or rank guarantee. Prior user league/latest and two-player authorization continues; this is not a new user approval or old-v135 qualification claim.",
+  "historical_accepted_state_changed": false
+}

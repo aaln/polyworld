@@ -1,0 +1,83 @@
+Hint: used config file '/Users/aaln/.nimby/nim-2.2.10/config/nim.cfg' [Conf]
+Hint: used config file '/Users/aaln/.nimby/nim-2.2.10/config/config.nims' [Conf]
+Hint: used config file '/Users/aaln/experiments/softmax/nim.cfg' [Conf]
+Hint: used config file '/Users/aaln/experiments/softmax/polyworld-gota-week-20260921/config.nims' [Conf]
+Hint: used config file '/Users/aaln/experiments/softmax/polyworld-gota-week-20260921/examples/gods_of_the_arena/config.nims' [Conf]
+Hint: used config file '/Users/aaln/experiments/softmax/polyworld-gota-week-20260921/examples/gods_of_the_arena/tools/config.nims' [Conf]
+................................................................................................................................................................................
+/Users/aaln/experiments/softmax/polyworld-gota-week-20260921/src/polyworld/pathing.nim(909, 6) Hint: 'searchPath' is declared but not used [XDeclaredButNotUsed]
+.............................
+/Users/aaln/experiments/softmax/polyworld-gota-week-20260921/examples/gods_of_the_arena/sim.nim(1602, 6) Hint: 'currentWaypointLayer' is declared but not used [XDeclaredButNotUsed]
+/Users/aaln/experiments/softmax/polyworld-gota-week-20260921/examples/gods_of_the_arena/sim.nim(1990, 6) Hint: 'worldObjectById' is declared but not used [XDeclaredButNotUsed]
+/Users/aaln/experiments/softmax/polyworld-gota-week-20260921/examples/gods_of_the_arena/sim.nim(41, 3) Hint: 'heroPathPoints' is declared but not used [XDeclaredButNotUsed]
+/Users/aaln/experiments/softmax/polyworld-gota-week-20260921/examples/gods_of_the_arena/sim.nim(4534, 6) Hint: 'settleSurface' is declared but not used [XDeclaredButNotUsed]
+.
+/Users/aaln/experiments/softmax/polyworld-gota-week-20260921/examples/gods_of_the_arena/tools/draft_practice.nim(4, 24) Warning: imported and not used: 'tapes' [UnusedImport]
+CC: system/exceptions.nim
+CC: std/private/digitsutils.nim
+CC: std/assertions.nim
+CC: std/private/dragonbox.nim
+CC: std/private/schubfach.nim
+CC: std/formatfloat.nim
+CC: std/objectdollar.nim
+CC: system/dollars.nim
+CC: std/syncio.nim
+CC: system.nim
+CC: parseutils.nim
+CC: math.nim
+CC: algorithm.nim
+CC: strutils.nim
+CC: posix.nim
+CC: times.nim
+CC: std/envvars.nim
+CC: std/cmdline.nim
+CC: hashes.nim
+CC: tables.nim
+CC: json.nim
+CC: fixxy.nim
+CC: bassy/numbers.nim
+CC: bassy/texts.nim
+CC: bassy.nim
+CC: polyworld/configs.nim
+CC: polyworld/cli.nim
+CC: heapqueue.nim
+CC: asyncfutures.nim
+CC: std/monotimes.nim
+CC: nativesockets.nim
+CC: asyncdispatch.nim
+CC: ../gota-research-20260916/deps/flatty/src/flatty.nim
+CC: polyworld/tapes.nim
+CC: polyworld/metrics.nim
+CC: polyworld/bodies.nim
+CC: polyworld/controllers.nim
+CC: ../gota-research-20260916/deps/vmath/src/vmath.nim
+CC: ../gota-research-20260916/deps/fluffy/src/fluffy/measure.nim
+CC: ../gota-research-20260916/deps/silky/src/silky/profiles.nim
+CC: cpuinfo.nim
+CC: polyworld/profiles.nim
+CC: polyworld/pathing.nim
+CC: polyworld/fxshapes.nim
+CC: ../content.nim
+CC: polyworld/hashes.nim
+CC: random.nim
+CC: ../gota-research-20260916/deps/chroma/src/chroma/colortypes.nim
+CC: ../generation/configs.nim
+CC: ../generation/routes.nim
+CC: ../generation/maps.nim
+CC: ../generation/meshes.nim
+CC: ../generation/tiles.nim
+CC: ../arenas.nim
+CC: ../maps.nim
+CC: polyworld/rngs.nim
+CC: polyworld/noises.nim
+CC: polyworld/visions.nim
+CC: ../events.nim
+CC: ../replays.nim
+CC: ../sim.nim
+CC: ../observations.nim
+CC: ../terrains.nim
+CC: ../bots.nim
+CC: draft_practice.nim
+Hint:  [Link]
+Hint: mm: orc; threads: on; opt: speed; options: -d:release
+174198 lines; 2.408s; 341.602MiB peakmem; proj: /Users/aaln/experiments/softmax/polyworld-gota-week-20260921/examples/gods_of_the_arena/tools/draft_practice.nim; out: /Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/bin/draft-practice [SuccessX]

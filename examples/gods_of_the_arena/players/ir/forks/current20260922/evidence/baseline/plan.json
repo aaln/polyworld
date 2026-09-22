@@ -1,0 +1,164 @@
+{
+  "label": "baseline",
+  "version": "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+  "source_sha256": "ad3f1d5ca719491cc3e34a76a0bcdf7434aed45b4fb1a707a65ecdcf65f030f9",
+  "source": "/Users/aaln/experiments/softmax/polyworld/examples/gods_of_the_arena/players/ir/forks/week20260921/policy.bas",
+  "game": "2026.9.21.5",
+  "engine": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+  "targets": {
+    "jordan": {
+      "id": "c51035c0-65f4-48cc-b8a7-23b743797110",
+      "policy": {
+        "id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+        "name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb"
+      },
+      "version": 306,
+      "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+      "label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v306"
+    },
+    "richard": {
+      "id": "d774f970-7699-4478-acb3-3fb99a6627cb",
+      "policy": {
+        "id": "cfced003-7272-4a82-9abf-3775963e9f06",
+        "name": "richard-gods-of-the-arena"
+      },
+      "version": 153,
+      "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+      "label": "richard-gods-of-the-arena:v153"
+    },
+    "relh": {
+      "id": "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+      "policy": {
+        "id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+        "name": "relh-gods-of-the-arena"
+      },
+      "version": 161,
+      "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+      "label": "relh-gods-of-the-arena:v161"
+    }
+  },
+  "games": 240,
+  "arms": [
+    {
+      "name": "baseline",
+      "target": "relh",
+      "side": 0,
+      "version": "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+      "opponent": "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+      "roster": [
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b"
+      ],
+      "games": 40
+    },
+    {
+      "name": "baseline",
+      "target": "relh",
+      "side": 1,
+      "version": "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+      "opponent": "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+      "roster": [
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4"
+      ],
+      "games": 40
+    },
+    {
+      "name": "baseline",
+      "target": "jordan",
+      "side": 0,
+      "version": "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+      "opponent": "c51035c0-65f4-48cc-b8a7-23b743797110",
+      "roster": [
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "c51035c0-65f4-48cc-b8a7-23b743797110",
+        "c51035c0-65f4-48cc-b8a7-23b743797110",
+        "c51035c0-65f4-48cc-b8a7-23b743797110",
+        "c51035c0-65f4-48cc-b8a7-23b743797110",
+        "c51035c0-65f4-48cc-b8a7-23b743797110"
+      ],
+      "games": 40
+    },
+    {
+      "name": "baseline",
+      "target": "jordan",
+      "side": 1,
+      "version": "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+      "opponent": "c51035c0-65f4-48cc-b8a7-23b743797110",
+      "roster": [
+        "c51035c0-65f4-48cc-b8a7-23b743797110",
+        "c51035c0-65f4-48cc-b8a7-23b743797110",
+        "c51035c0-65f4-48cc-b8a7-23b743797110",
+        "c51035c0-65f4-48cc-b8a7-23b743797110",
+        "c51035c0-65f4-48cc-b8a7-23b743797110",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4"
+      ],
+      "games": 40
+    },
+    {
+      "name": "baseline",
+      "target": "richard",
+      "side": 0,
+      "version": "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+      "opponent": "d774f970-7699-4478-acb3-3fb99a6627cb",
+      "roster": [
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "d774f970-7699-4478-acb3-3fb99a6627cb"
+      ],
+      "games": 40
+    },
+    {
+      "name": "baseline",
+      "target": "richard",
+      "side": 1,
+      "version": "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+      "opponent": "d774f970-7699-4478-acb3-3fb99a6627cb",
+      "roster": [
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4",
+        "9fc7f72e-0489-48f5-a5d3-c53fca44cff4"
+      ],
+      "games": 40
+    }
+  ],
+  "decision_rule": "No invalid VMs or audit failures. Fort qualification >=30/40 wins in all six cells. Score qualification own mean > opponent mean and >=1.10x in every cell. Report separately; no broad-field qualification."
+}

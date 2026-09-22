@@ -1,0 +1,78 @@
+{
+  "checked_at": "2026-09-22T08:25:05.889641+00:00",
+  "targets": [
+    {
+      "name": "relh",
+      "tested": {
+        "id": "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "policy": {
+          "id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "name": "relh-gods-of-the-arena"
+        },
+        "version": 161,
+        "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+        "label": "relh-gods-of-the-arena:v161"
+      },
+      "latest_observed": {
+        "id": "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "policy": {
+          "id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "name": "relh-gods-of-the-arena"
+        },
+        "version": 161,
+        "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+        "label": "relh-gods-of-the-arena:v161"
+      },
+      "unchanged": true
+    },
+    {
+      "name": "Jordan",
+      "tested": {
+        "id": "d7203ddb-24e7-4e7a-8c4b-95fa27424b61",
+        "policy": {
+          "id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb"
+        },
+        "version": 317,
+        "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+        "label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v317"
+      },
+      "latest_observed": {
+        "id": "a4be5384-ca46-4e96-9a14-cc4932a45903",
+        "policy": {
+          "id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb"
+        },
+        "version": 356,
+        "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+        "label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v356"
+      },
+      "unchanged": false
+    },
+    {
+      "name": "richard",
+      "tested": {
+        "id": "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "policy": {
+          "id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "name": "richard-gods-of-the-arena"
+        },
+        "version": 153,
+        "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+        "label": "richard-gods-of-the-arena:v153"
+      },
+      "latest_observed": {
+        "id": "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "policy": {
+          "id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "name": "richard-gods-of-the-arena"
+        },
+        "version": 153,
+        "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+        "label": "richard-gods-of-the-arena:v153"
+      },
+      "unchanged": true
+    }
+  ],
+  "interpretation": "Frozen A/B remains valid for pinned versions. Jordan356 is untested; do not claim current successor dominance. This does not erase source- and engine-matched improvements over live compat."
+}

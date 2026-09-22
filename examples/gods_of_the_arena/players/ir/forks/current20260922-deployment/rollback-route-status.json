@@ -1,0 +1,38 @@
+{
+  "prior_memberships": {
+    "ply_630a768f-d623-44b2-80fa-36968d6fa75a": {
+      "policy_version": {
+        "id": "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "policy": {
+          "id": "c2244dae-886f-45db-8154-ab11ee4ba143",
+          "name": "aaron-gota-compat-0921"
+        },
+        "version": 1,
+        "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "label": "aaron-gota-compat-0921:v1"
+      },
+      "membership": "lpm_d53b3844-343c-4ba2-b352-7af8cd5e3311",
+      "action": "POST /v2/league-policy-memberships/lpm_d53b3844-343c-4ba2-b352-7af8cd5e3311/champion",
+      "body": {},
+      "trigger": "Confirmed runtime failure or qualification rejection; normal stochastic losses are not a trigger."
+    },
+    "ply_594ec24d-d7f3-4370-a000-468354ec41c9": {
+      "policy_version": {
+        "id": "7dcba95c-6966-4a86-b033-7ffcafa8991f",
+        "policy": {
+          "id": "5256979e-f953-4671-8c47-0f955da39bf3",
+          "name": "aaron-gota-compat-0921-coach"
+        },
+        "version": 1,
+        "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "label": "aaron-gota-compat-0921-coach:v1"
+      },
+      "membership": "lpm_5c30f7c0-b217-44fe-9cb2-9961843be3aa",
+      "action": "POST /v2/league-policy-memberships/lpm_5c30f7c0-b217-44fe-9cb2-9961843be3aa/champion",
+      "body": {},
+      "trigger": "Confirmed runtime failure or qualification rejection; normal stochastic losses are not a trigger."
+    }
+  },
+  "manual_route": "Champion endpoint returned500 for new membership during this deployment; do not assume immediate manual rollback until service recovery.",
+  "alternative": "A newly registered copy of the prior executable can use automatic selection if needed, after retrieving it and verifying the saved content hash. No rollback was triggered."
+}

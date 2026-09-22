@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "name": "practiced_self",
+      "seed": 922210,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "practiced_self",
+      "seed": 922210,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "practiced_self",
+      "seed": 922211,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "practiced_self",
+      "seed": 922211,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    }
+  ],
+  "reason": "Both reserve variants fail earlier parent-relative red gates. Same-source controls test whether that outcome is confounded by color/draft. Earlier admission failures remain recorded.",
+  "new_comparison_rule": "Matched own-color native A/B vs exact practiced selfplay. For subsequent hosted consideration, require no validity failure, no own-color score regression, no own-color fort-win regression, >=10% aggregate own-score gain, plus activated shop mechanism. Native remains directional; report repeats."
+}

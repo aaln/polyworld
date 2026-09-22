@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "stage": "healthy-field",
+      "label": "candidate",
+      "side": 0,
+      "version": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+      "episode": "ereq_85d26077-0c6d-4ee1-aa0e-7f66c4d2840f",
+      "slot": 0,
+      "runnable": {
+        "type": "player-file",
+        "content_hash": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+        "size_bytes": 15107
+      },
+      "verified": true
+    },
+    {
+      "stage": "healthy-field",
+      "label": "candidate",
+      "side": 1,
+      "version": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+      "episode": "ereq_e6616154-4bd1-437d-8d3a-bf43968b0e24",
+      "slot": 5,
+      "runnable": {
+        "type": "player-file",
+        "content_hash": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+        "size_bytes": 15107
+      },
+      "verified": true
+    },
+    {
+      "stage": "healthy-field",
+      "label": "control",
+      "side": 0,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "episode": "ereq_9ca831bc-bcf5-4f7b-a518-6f2ba05dbbc7",
+      "slot": 0,
+      "runnable": {
+        "type": "player-file",
+        "content_hash": "983a3343eda0cba233e708a8ed13b136f39e4bfb5f16317a472fb14435d8ac4e",
+        "size_bytes": 51589
+      },
+      "verified": true
+    },
+    {
+      "stage": "healthy-field",
+      "label": "control",
+      "side": 1,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "episode": "ereq_78fbf218-0760-4db3-8ee4-127c0cd8cde3",
+      "slot": 5,
+      "runnable": {
+        "type": "player-file",
+        "content_hash": "983a3343eda0cba233e708a8ed13b136f39e4bfb5f16317a472fb14435d8ac4e",
+        "size_bytes": 51589
+      },
+      "verified": true
+    },
+    {
+      "stage": "middle-field",
+      "label": "candidate",
+      "side": 0,
+      "version": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+      "episode": "ereq_6447f3dc-b282-48fa-a4e8-794693907f3d",
+      "slot": 2,
+      "runnable": {
+        "type": "player-file",
+        "content_hash": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+        "size_bytes": 15107
+      },
+      "verified": true
+    },
+    {
+      "stage": "middle-field",
+      "label": "candidate",
+      "side": 1,
+      "version": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+      "episode": "ereq_22bb2a2d-0438-4953-aec2-d48e4b816d92",
+      "slot": 7,
+      "runnable": {
+        "type": "player-file",
+        "content_hash": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+        "size_bytes": 15107
+      },
+      "verified": true
+    },
+    {
+      "stage": "middle-field",
+      "label": "control",
+      "side": 0,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "episode": "ereq_3d847bd9-ac64-4168-80c3-83c023f9f380",
+      "slot": 2,
+      "runnable": {
+        "type": "player-file",
+        "content_hash": "983a3343eda0cba233e708a8ed13b136f39e4bfb5f16317a472fb14435d8ac4e",
+        "size_bytes": 51589
+      },
+      "verified": true
+    },
+    {
+      "stage": "middle-field",
+      "label": "control",
+      "side": 1,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "episode": "ereq_76478a5c-9717-4cb5-8123-660784ba207c",
+      "slot": 7,
+      "runnable": {
+        "type": "player-file",
+        "content_hash": "983a3343eda0cba233e708a8ed13b136f39e4bfb5f16317a472fb14435d8ac4e",
+        "size_bytes": 51589
+      },
+      "verified": true
+    }
+  ],
+  "scope": "One actual episode runnable per arm; every episode roster UUID is separately audited. Stats null fields are not used as proof."
+}

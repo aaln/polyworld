@@ -59,3 +59,25 @@ different command streams are not independent statistical samples.
 
 Final results and limitations are in
 `../../experiments/2026-09-21-targets-microplay.md` and the saved policy bundle.
+
+## Current-score follow-up
+
+`current.json` and `guide-gota-current-release.md` route new work to the current
+contract. `current_attention.py` starts from that pair and invalidates changed
+behavior claims. `current_score.py` compares exact current engine/opponent/color
+cells using XP score; its tests prevent old win-only acceptance from leaking
+into the new path. Preserve completed `panel.py` results and their frozen gates.
+
+`economy_practice.nim` checks scarce-gold purchases; `draft_practice.nim` tests
+the user's public opening on the real host. `focus_episode.nim` emits typed
+events and bounded post-tick public observations for the supplied episode's
+slots4/5. Those observations are not an internal decision/intent trace.
+
+`healthy_field.py` performs roster VM preflight and a160-game fixed mixed-team
+first-pick A/B against live compat. `guardrail_field.py` conditionally runs the
+unchanged pair from third-pick seats for another160games in the same budget
+cycle. `review_healthy_field.py` audits growth, correlation and representative
+typed events. `finalize_current.py` preserves a separate current semantic pair
+with unchanged validated BASIC; `deploy_current.py` requires both score gates,
+exact source/ownership and the existing two-player authorization, saves rollback
+receipts, and verifies active competing champions. It has a read-only default.

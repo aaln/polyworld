@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "name": "attention_current",
+      "seed": 922220,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/attention_current/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "attention_current",
+      "seed": 922220,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/attention_current/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "attention_current",
+      "seed": 922221,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/attention_current/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "attention_current",
+      "seed": 922221,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/attention_current/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "attention_control",
+      "seed": 922220,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "attention_control",
+      "seed": 922220,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "attention_control",
+      "seed": 922221,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "attention_control",
+      "seed": 922221,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    }
+  ],
+  "metric": "Current league mean per-hero XP score; fort outcomes diagnostic only",
+  "rule": "All valid with runtime margin. Matched native own-score mean >=0.95x control on each color and >=1.10x aggregate. No fort-win admission threshold. Four candidate and four same-color controls. Fresh bytes are cleaned of legacy inherited claims; original selection screens remain preserved."
+}

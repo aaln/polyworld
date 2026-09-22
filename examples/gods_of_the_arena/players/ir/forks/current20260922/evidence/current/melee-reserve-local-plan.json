@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "name": "melee_reserve",
+      "seed": 922210,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/melee_reserve/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "melee_reserve",
+      "seed": 922210,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/melee_reserve/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "melee_reserve",
+      "seed": 922211,
+      "side": 0,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/melee_reserve/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    },
+    {
+      "name": "melee_reserve",
+      "seed": 922211,
+      "side": 1,
+      "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/melee_reserve/policy.bas",
+      "opponent": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-targets-20260922/candidates/practiced/policy.bas"
+    }
+  ],
+  "parent": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+  "decision_rule": "Same native admission as broad reserve: no invalid/runtime failures; aggregate own score > parent, each-color own >=0.90x parent, >=2 fort wins/4 and <=1 loss/color. Controlled drill must preserve ranged behavior and accelerate melee armor. No hosted or general win claim from native alone."
+}

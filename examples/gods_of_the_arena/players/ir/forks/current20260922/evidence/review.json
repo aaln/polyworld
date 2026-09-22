@@ -1,0 +1,390 @@
+{
+  "complete": true,
+  "cells": [
+    {
+      "label": "baseline",
+      "target": "relh",
+      "side": 0,
+      "games": 40,
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "invalid": 0,
+      "own_score": 37.643472222222236,
+      "opponent_score": 569.0277777777778,
+      "fort_passed": false,
+      "score_passed": false,
+      "distinct_command_streams": 19,
+      "hero_games": 200,
+      "classes": {
+        "1": 40,
+        "2": 40,
+        "3": 40,
+        "0": 40,
+        "4": 40
+      },
+      "mean_terminal": {
+        "xp": 808.325,
+        "level": 4.0,
+        "deaths": 5.6,
+        "gold": 161.275
+      },
+      "heroes_with_upgrades": 200
+    },
+    {
+      "label": "baseline",
+      "target": "relh",
+      "side": 1,
+      "games": 40,
+      "wins": 3,
+      "losses": 37,
+      "draws": 0,
+      "invalid": 0,
+      "own_score": 155.835,
+      "opponent_score": 757.3656944444444,
+      "fort_passed": false,
+      "score_passed": false,
+      "distinct_command_streams": 19,
+      "hero_games": 200,
+      "classes": {
+        "1": 40,
+        "7": 23,
+        "6": 40,
+        "5": 40,
+        "9": 23,
+        "2": 17,
+        "8": 17
+      },
+      "mean_terminal": {
+        "xp": 2132.37,
+        "level": 7.01,
+        "deaths": 8.59,
+        "gold": 554.925
+      },
+      "heroes_with_upgrades": 200
+    },
+    {
+      "label": "baseline",
+      "target": "jordan",
+      "side": 0,
+      "games": 40,
+      "wins": 9,
+      "losses": 0,
+      "draws": 31,
+      "invalid": 0,
+      "own_score": 440.34208333333333,
+      "opponent_score": 1552.830138888889,
+      "fort_passed": false,
+      "score_passed": false,
+      "distinct_command_streams": 18,
+      "hero_games": 200,
+      "classes": {
+        "1": 18,
+        "2": 40,
+        "3": 40,
+        "5": 40,
+        "4": 40,
+        "6": 22
+      },
+      "mean_terminal": {
+        "xp": 3676.89,
+        "level": 9.47,
+        "deaths": 7.825,
+        "gold": 744.95
+      },
+      "heroes_with_upgrades": 200
+    },
+    {
+      "label": "baseline",
+      "target": "jordan",
+      "side": 1,
+      "games": 40,
+      "wins": 1,
+      "losses": 0,
+      "draws": 39,
+      "invalid": 0,
+      "own_score": 417.21375000000006,
+      "opponent_score": 1534.397638888889,
+      "fort_passed": false,
+      "score_passed": false,
+      "distinct_command_streams": 18,
+      "hero_games": 200,
+      "classes": {
+        "2": 40,
+        "6": 18,
+        "3": 40,
+        "5": 40,
+        "4": 40,
+        "1": 22
+      },
+      "mean_terminal": {
+        "xp": 3633.775,
+        "level": 9.3,
+        "deaths": 8.195,
+        "gold": 668.025
+      },
+      "heroes_with_upgrades": 200
+    },
+    {
+      "label": "baseline",
+      "target": "richard",
+      "side": 0,
+      "games": 40,
+      "wins": 0,
+      "losses": 40,
+      "draws": 0,
+      "invalid": 0,
+      "own_score": 39.43222222222223,
+      "opponent_score": 564.7111111111111,
+      "fort_passed": false,
+      "score_passed": false,
+      "distinct_command_streams": 17,
+      "hero_games": 200,
+      "classes": {
+        "1": 40,
+        "2": 40,
+        "3": 40,
+        "0": 40,
+        "4": 40
+      },
+      "mean_terminal": {
+        "xp": 812.6,
+        "level": 4.0,
+        "deaths": 5.6,
+        "gold": 163.6
+      },
+      "heroes_with_upgrades": 200
+    },
+    {
+      "label": "baseline",
+      "target": "richard",
+      "side": 1,
+      "games": 40,
+      "wins": 2,
+      "losses": 38,
+      "draws": 0,
+      "invalid": 0,
+      "own_score": 133.73111111111112,
+      "opponent_score": 618.9675,
+      "fort_passed": false,
+      "score_passed": false,
+      "distinct_command_streams": 15,
+      "hero_games": 200,
+      "classes": {
+        "1": 40,
+        "7": 16,
+        "6": 40,
+        "5": 40,
+        "9": 16,
+        "2": 24,
+        "8": 24
+      },
+      "mean_terminal": {
+        "xp": 1898.095,
+        "level": 6.605,
+        "deaths": 7.705,
+        "gold": 494.6
+      },
+      "heroes_with_upgrades": 200
+    },
+    {
+      "label": "practiced",
+      "target": "relh",
+      "side": 0,
+      "games": 40,
+      "wins": 33,
+      "losses": 7,
+      "draws": 0,
+      "invalid": 0,
+      "own_score": 322.4372222222222,
+      "opponent_score": 381.16055555555556,
+      "fort_passed": true,
+      "score_passed": false,
+      "distinct_command_streams": 18,
+      "hero_games": 200,
+      "classes": {
+        "1": 40,
+        "2": 40,
+        "3": 40,
+        "0": 40,
+        "4": 40
+      },
+      "mean_terminal": {
+        "xp": 1989.89,
+        "level": 6.525,
+        "deaths": 8.3,
+        "gold": 504.975
+      },
+      "heroes_with_upgrades": 200,
+      "score_delta": 284.79375,
+      "win_delta": 33
+    },
+    {
+      "label": "practiced",
+      "target": "relh",
+      "side": 1,
+      "games": 40,
+      "wins": 29,
+      "losses": 0,
+      "draws": 11,
+      "invalid": 0,
+      "own_score": 411.0229166666667,
+      "opponent_score": 310.2302777777778,
+      "fort_passed": false,
+      "score_passed": true,
+      "distinct_command_streams": 18,
+      "hero_games": 200,
+      "classes": {
+        "1": 40,
+        "2": 18,
+        "6": 40,
+        "5": 40,
+        "8": 18,
+        "7": 22,
+        "9": 22
+      },
+      "mean_terminal": {
+        "xp": 2609.22,
+        "level": 7.685,
+        "deaths": 8.05,
+        "gold": 454.625
+      },
+      "heroes_with_upgrades": 200,
+      "score_delta": 255.18791666666667,
+      "win_delta": 26
+    },
+    {
+      "label": "practiced",
+      "target": "jordan",
+      "side": 0,
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "invalid": 0,
+      "own_score": 781.6494444444445,
+      "opponent_score": 436.60027777777776,
+      "fort_passed": true,
+      "score_passed": true,
+      "distinct_command_streams": 15,
+      "hero_games": 200,
+      "classes": {
+        "2": 40,
+        "6": 23,
+        "3": 40,
+        "5": 40,
+        "4": 40,
+        "1": 17
+      },
+      "mean_terminal": {
+        "xp": 2627.77,
+        "level": 7.735,
+        "deaths": 3.765,
+        "gold": 886.275
+      },
+      "heroes_with_upgrades": 200,
+      "score_delta": 341.30736111111116,
+      "win_delta": 31
+    },
+    {
+      "label": "practiced",
+      "target": "jordan",
+      "side": 1,
+      "games": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "invalid": 0,
+      "own_score": 591.4315277777778,
+      "opponent_score": 278.6147222222222,
+      "fort_passed": true,
+      "score_passed": true,
+      "distinct_command_streams": 18,
+      "hero_games": 200,
+      "classes": {
+        "2": 40,
+        "6": 17,
+        "3": 40,
+        "5": 40,
+        "4": 40,
+        "1": 23
+      },
+      "mean_terminal": {
+        "xp": 2029.32,
+        "level": 6.735,
+        "deaths": 2.42,
+        "gold": 621.775
+      },
+      "heroes_with_upgrades": 200,
+      "score_delta": 174.2177777777777,
+      "win_delta": 39
+    },
+    {
+      "label": "practiced",
+      "target": "richard",
+      "side": 0,
+      "games": 40,
+      "wins": 29,
+      "losses": 11,
+      "draws": 0,
+      "invalid": 0,
+      "own_score": 327.9911111111111,
+      "opponent_score": 436.2575,
+      "fort_passed": false,
+      "score_passed": false,
+      "distinct_command_streams": 19,
+      "hero_games": 200,
+      "classes": {
+        "1": 40,
+        "2": 40,
+        "3": 40,
+        "0": 40,
+        "4": 40
+      },
+      "mean_terminal": {
+        "xp": 2069.42,
+        "level": 6.725,
+        "deaths": 8.83,
+        "gold": 507.525
+      },
+      "heroes_with_upgrades": 200,
+      "score_delta": 288.5588888888889,
+      "win_delta": 29
+    },
+    {
+      "label": "practiced",
+      "target": "richard",
+      "side": 1,
+      "games": 40,
+      "wins": 34,
+      "losses": 0,
+      "draws": 6,
+      "invalid": 0,
+      "own_score": 484.7009722222222,
+      "opponent_score": 237.27875000000003,
+      "fort_passed": true,
+      "score_passed": true,
+      "distinct_command_streams": 17,
+      "hero_games": 200,
+      "classes": {
+        "1": 40,
+        "2": 26,
+        "6": 40,
+        "5": 40,
+        "8": 26,
+        "7": 14,
+        "9": 14
+      },
+      "mean_terminal": {
+        "xp": 2487.28,
+        "level": 7.435,
+        "deaths": 6.92,
+        "gold": 478.125
+      },
+      "heroes_with_upgrades": 200,
+      "score_delta": 350.9698611111111,
+      "win_delta": 32
+    }
+  ],
+  "limits": "Uniform five-copy teams, one fixed map, unpaired generated seeds, correlated command streams. Separate XP score and fort outcomes; no mixed-team/rank claim."
+}

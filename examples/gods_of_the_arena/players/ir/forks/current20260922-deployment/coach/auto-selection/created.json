@@ -1,0 +1,111 @@
+{
+  "auto_champion": "always",
+  "preferences": null,
+  "notes": "Current-game practiced policy: ranged-first public drafting, explicit skill points, actual-tick attack recovery, last-hit/XP positioning, equipment and purposeful portals. Exact BASIC passed current-engine both-color mixed A/B against deployed compat and later-draft guardrail, all VMs/replay/XP/score audited. Original target panel and its limitations remain preserved. Fixed rosters/correlated trajectories; no universal opponent, class or rank guarantee. Prior user league/latest and two-player authorization continues; this is not a new user approval or old-v135 qualification claim. Supported automatic selection fallback after reconciled manual endpoint HTTP500; exact source/evidence unchanged.",
+  "id": "sub_4565ab37-9661-4ee8-960e-e9d2e238036e",
+  "status": "pending",
+  "league": {
+    "name": "Gods of the Arena",
+    "short_name": null,
+    "description": "Gods of the Arena league for submitted policies and recurring competition rounds.",
+    "commissioner_key": "platform",
+    "commissioner_config": {
+      "default_variant_id": "competition"
+    },
+    "commissioner_migration_version": null,
+    "rounds_paused_at": null,
+    "submissions_locked_at": null,
+    "settings": {
+      "ladder": {
+        "enabled": true,
+        "ranking": {
+          "rated_k": 0.15,
+          "algorithm": "score",
+          "direction": "maximize",
+          "win_gated_legs": false,
+          "initial_standing": 0.0,
+          "round_scoring_rule": "mean",
+          "season_leg_transform": "none",
+          "standing_aggregation": "rated"
+        },
+        "divisions": [
+          {
+            "name": "Competition",
+            "division_id": "div_a4534073-c5d2-4193-a94a-93d9c5e2e443",
+            "disqualify_after_consecutive_failures": 3
+          }
+        ],
+        "scheduler": {
+          "strategy": "team_n",
+          "team_count": 2,
+          "matchmaking": "random",
+          "team_layout": "blocks",
+          "num_episodes": 24,
+          "distinct_teammates": true,
+          "insufficient_players": "filler_policy"
+        },
+        "fulfillment": {
+          "retry_times": 2,
+          "allowed_failures": 0.1
+        }
+      },
+      "round_interval_minutes": 32
+    },
+    "filler_policy_version_ids": [
+      "5a71b33a-8749-437f-9fec-e12a092104e2"
+    ],
+    "seed_policy_version_ids": null,
+    "seed_policy_number": null,
+    "rules": {
+      "division_leaderboard": {
+        "aggregation": "score",
+        "source_score": "mean_round_score"
+      }
+    },
+    "public": true,
+    "hidden": false,
+    "is_game_of_week": true,
+    "disabled_at": null,
+    "notes": null,
+    "id": "league_3c60897b-25cf-4b37-9d1a-8554c1198f28",
+    "game": {
+      "name": "Gods Of The Arena",
+      "coworld_name": "Gods of the Arena",
+      "description": "Two teams of five BASIC heroes battle to slay the enemy god. Score is lifetime XP minus 200 per simulated minute, floored at zero. Random pairings and a moving average of round scores determine standings.",
+      "owner_user_id": "system",
+      "notes": null,
+      "id": "game_e6b33734-d7f4-40c9-be09-7967baf1c032",
+      "default_league_id": null,
+      "coworld_id": null,
+      "canonical_coworld_id": null,
+      "coworld_tags": [],
+      "created_at": "2026-09-09T19:22:39.991124Z"
+    },
+    "mod": null,
+    "created_at": "2026-09-09T19:22:40.020134Z",
+    "participation_url": "https://softmax.com/api/observatory/v2/leagues/league_3c60897b-25cf-4b37-9d1a-8554c1198f28.md",
+    "forum_markdown_url": "https://softmax.com/api/observatory/v2/forums/Gods%20of%20the%20Arena.md",
+    "wiki_markdown_url": "https://softmax.com/api/observatory/v2/wikis/Gods%20of%20the%20Arena/pages.md",
+    "logs_reporter_id": "rptr_3b2b7a6b-61d8-4530-92f3-5fa7822a7005",
+    "logs_source": "platform",
+    "handicaps": null,
+    "handicap_dynamic": null
+  },
+  "policy_version": {
+    "id": "15b325b4-e9f3-487f-bd95-a059f92d20e2",
+    "policy": {
+      "id": "3e8ee425-4d73-4a35-b357-3c105a8770ce",
+      "name": "aaron-gota-micro0922-coach"
+    },
+    "version": 1,
+    "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+    "label": "aaron-gota-micro0922-coach:v1"
+  },
+  "player": {
+    "id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+    "name": "Aaron's Co-play Coach",
+    "avatar_url": null
+  },
+  "league_policy_membership_id": null,
+  "created_at": "2026-09-22T08:36:29.676461Z"
+}

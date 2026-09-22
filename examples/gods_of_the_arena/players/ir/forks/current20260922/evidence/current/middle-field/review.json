@@ -1,0 +1,3116 @@
+{
+  "complete": true,
+  "cells": [
+    {
+      "label": "candidate",
+      "side": 0,
+      "games": 40,
+      "invalid": 0,
+      "own_score": 1719.6791666666668,
+      "opponent_score": 522.9540277777778,
+      "wins": 12,
+      "losses": 26,
+      "draws": 2,
+      "distinct_command_streams": 38,
+      "classes": {
+        "2": 35,
+        "3": 3,
+        "7": 2
+      },
+      "means": {
+        "xp": 4541.6,
+        "deaths": 6.0,
+        "level": 10.55,
+        "hits": 242.225
+      }
+    },
+    {
+      "label": "candidate",
+      "side": 1,
+      "games": 40,
+      "invalid": 0,
+      "own_score": 1938.6472222222224,
+      "opponent_score": 553.5741666666667,
+      "wins": 38,
+      "losses": 0,
+      "draws": 2,
+      "distinct_command_streams": 39,
+      "classes": {
+        "2": 33,
+        "7": 7
+      },
+      "means": {
+        "xp": 4808.95,
+        "deaths": 4.425,
+        "level": 10.95,
+        "hits": 249.35
+      }
+    },
+    {
+      "label": "control",
+      "side": 0,
+      "games": 40,
+      "invalid": 0,
+      "own_score": 0.0,
+      "opponent_score": 547.5511111111111,
+      "wins": 0,
+      "losses": 39,
+      "draws": 1,
+      "distinct_command_streams": 40,
+      "classes": {
+        "9": 7,
+        "8": 22,
+        "7": 11
+      },
+      "means": {
+        "xp": 867.75,
+        "deaths": 4.3,
+        "level": 4.325,
+        "hits": 46.075
+      }
+    },
+    {
+      "label": "control",
+      "side": 1,
+      "games": 40,
+      "invalid": 0,
+      "own_score": 581.2986111111111,
+      "opponent_score": 718.2891666666667,
+      "wins": 26,
+      "losses": 0,
+      "draws": 14,
+      "distinct_command_streams": 39,
+      "classes": {
+        "2": 34,
+        "0": 2,
+        "3": 4
+      },
+      "means": {
+        "xp": 3425.075,
+        "deaths": 8.675,
+        "level": 9.025,
+        "hits": 178.175
+      }
+    }
+  ],
+  "diagnostic_selection": "Median subject score within each observed outcome per cell; retrospective.",
+  "diagnostic_replays": [
+    {
+      "label": "candidate",
+      "side": 0,
+      "outcome": "win",
+      "episode": "ereq_007ef22e-c8f3-45b6-ac91-244c8f600dee",
+      "events": {
+        "heroes": [
+          {
+            "slot": 0,
+            "class": 6,
+            "xp": 3518,
+            "creep_xp": 2018,
+            "hero_xp": 1500,
+            "other_xp": 0,
+            "last_hit_gold": 2160,
+            "alive_ticks": 20217,
+            "shop_ticks": 3009,
+            "portals_started": 6,
+            "portals_completed": 5,
+            "portals_interrupted": 1,
+            "purchases": {
+              "21": 7,
+              "8": 1,
+              "19": 1,
+              "1": 11,
+              "2": 11,
+              "22": 12
+            },
+            "rejections": {
+              "5:ActionChanneling": 2,
+              "1:ActionChanneling": 3,
+              "6:ActionOutOfRange": 7,
+              "15:ActionChanneling": 4,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 85,
+            "inter_hit_ticks": 20175
+          },
+          {
+            "slot": 1,
+            "class": 4,
+            "xp": 539,
+            "creep_xp": 389,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 90,
+            "alive_ticks": 9629,
+            "shop_ticks": 3485,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "7": 1,
+              "5": 1,
+              "4": 4
+            },
+            "rejections": {
+              "2:ActionNotAlive": 10047,
+              "3:ActionNotAlive": 6983,
+              "1:ActionNotAlive": 1820,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 364,
+              "3:ActionAlreadyEquipped": 2,
+              "4:ActionTargetUnavailable": 594,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 8
+            },
+            "basic_damage_events": 39,
+            "inter_hit_ticks": 20514
+          },
+          {
+            "slot": 2,
+            "class": 2,
+            "xp": 4875,
+            "creep_xp": 2025,
+            "hero_xp": 1950,
+            "other_xp": 900,
+            "last_hit_gold": 2175,
+            "alive_ticks": 19906,
+            "shop_ticks": 2495,
+            "portals_started": 7,
+            "portals_completed": 7,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "21": 8,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "1": 13
+            },
+            "rejections": {
+              "5:ActionChanneling": 6,
+              "1:ActionChanneling": 1,
+              "6:ActionOutOfRange": 886,
+              "6:ActionInsufficientMana": 1,
+              "2:ActionTargetUnavailable": 94,
+              "4:ActionChanneling": 1
+            },
+            "basic_damage_events": 306,
+            "inter_hit_ticks": 20461
+          },
+          {
+            "slot": 3,
+            "class": 8,
+            "xp": 1247,
+            "creep_xp": 1097,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 600,
+            "alive_ticks": 17407,
+            "shop_ticks": 3460,
+            "portals_started": 3,
+            "portals_completed": 3,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 3,
+              "8": 1,
+              "1": 7,
+              "22": 3
+            },
+            "rejections": {
+              "5:ActionChanneling": 1,
+              "1:ActionChanneling": 2,
+              "6:ActionOutOfRange": 2,
+              "4:ActionChanneling": 3
+            },
+            "basic_damage_events": 118,
+            "inter_hit_ticks": 20368
+          },
+          {
+            "slot": 4,
+            "class": 9,
+            "xp": 1699,
+            "creep_xp": 1399,
+            "hero_xp": 300,
+            "other_xp": 0,
+            "last_hit_gold": 1260,
+            "alive_ticks": 9629,
+            "shop_ticks": 3741,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 12
+            },
+            "rejections": {
+              "2:ActionNotAlive": 9920,
+              "3:ActionNotAlive": 95283,
+              "1:ActionNotAlive": 11867,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 24164,
+              "3:ActionAlreadyEquipped": 266,
+              "4:ActionTargetUnavailable": 4310,
+              "3:ActionInventoryFull": 14,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 16
+            },
+            "basic_damage_events": 93,
+            "inter_hit_ticks": 18851
+          },
+          {
+            "slot": 5,
+            "class": 5,
+            "xp": 1271,
+            "creep_xp": 1121,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 915,
+            "alive_ticks": 16153,
+            "shop_ticks": 5361,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "7": 1,
+              "11": 1,
+              "1": 2,
+              "13": 1,
+              "2": 1,
+              "5": 1,
+              "22": 2,
+              "4": 13
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 2,
+              "6:ActionOutOfRange": 204,
+              "4:ActionTargetUnavailable": 1281,
+              "3:ActionInventoryFull": 1,
+              "3:ActionInsufficientGold": 25
+            },
+            "basic_damage_events": 67,
+            "inter_hit_ticks": 20130
+          },
+          {
+            "slot": 6,
+            "class": 1,
+            "xp": 5890,
+            "creep_xp": 3190,
+            "hero_xp": 2700,
+            "other_xp": 0,
+            "last_hit_gold": 3060,
+            "alive_ticks": 21155,
+            "shop_ticks": 2330,
+            "portals_started": 6,
+            "portals_completed": 6,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 8,
+              "8": 1,
+              "19": 1,
+              "1": 13,
+              "22": 15,
+              "4": 29
+            },
+            "rejections": {
+              "5:ActionChanneling": 4,
+              "1:ActionChanneling": 2,
+              "6:ActionOutOfRange": 3,
+              "4:ActionTargetUnavailable": 4,
+              "15:ActionChanneling": 4,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 185,
+            "inter_hit_ticks": 20576
+          },
+          {
+            "slot": 7,
+            "class": 7,
+            "xp": 4626,
+            "creep_xp": 2026,
+            "hero_xp": 1800,
+            "other_xp": 800,
+            "last_hit_gold": 1845,
+            "alive_ticks": 21481,
+            "shop_ticks": 3268,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "16": 1,
+              "12": 1,
+              "11": 1,
+              "13": 1,
+              "17": 1,
+              "2": 1,
+              "10": 1,
+              "22": 2,
+              "4": 2
+            },
+            "rejections": {
+              "10:ActionCooldown": 135,
+              "10:ActionInsufficientMana": 23,
+              "4:ActionTargetUnavailable": 6,
+              "10:ActionAbilityLocked": 16,
+              "3:ActionInventoryFull": 1168,
+              "3:ActionInsufficientGold": 8
+            },
+            "basic_damage_events": 277,
+            "inter_hit_ticks": 18999
+          },
+          {
+            "slot": 8,
+            "class": 3,
+            "xp": 1887,
+            "creep_xp": 1087,
+            "hero_xp": 600,
+            "other_xp": 200,
+            "last_hit_gold": 585,
+            "alive_ticks": 15909,
+            "shop_ticks": 2956,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "9": 1,
+              "10": 1
+            },
+            "rejections": {
+              "2:ActionNotAlive": 240,
+              "3:ActionNotAlive": 15673,
+              "1:ActionNotAlive": 3003,
+              "1:ActionNoRoute": 14,
+              "3:ActionOutsideKeep": 19172,
+              "3:ActionAlreadyEquipped": 3,
+              "5:ActionNotAlive": 2343,
+              "5:ActionDrafting": 20,
+              "3:ActionInventoryFull": 579,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 6
+            },
+            "basic_damage_events": 156,
+            "inter_hit_ticks": 20130
+          },
+          {
+            "slot": 9,
+            "class": 0,
+            "xp": 2115,
+            "creep_xp": 2115,
+            "hero_xp": 0,
+            "other_xp": 0,
+            "last_hit_gold": 1665,
+            "alive_ticks": 17677,
+            "shop_ticks": 9964,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "3": 10,
+              "11": 1,
+              "1": 4,
+              "13": 1,
+              "2": 3
+            },
+            "rejections": {
+              "6:ActionTargetUnavailable": 3,
+              "3:ActionOutsideKeep": 3477,
+              "6:ActionOutOfRange": 5,
+              "6:ActionInsufficientMana": 3,
+              "4:ActionCooldown": 614,
+              "3:ActionInsufficientGold": 458
+            },
+            "basic_damage_events": 104,
+            "inter_hit_ticks": 18541
+          }
+        ],
+        "ticks": 22288,
+        "hash_mismatches": 0,
+        "scope": "Retrospective typed events from an exact full replay, not live observations or an opponent proxy."
+      }
+    },
+    {
+      "label": "candidate",
+      "side": 0,
+      "outcome": "loss",
+      "episode": "ereq_d47bfd25-74a3-47e6-80f0-28edda6de66b",
+      "events": {
+        "heroes": [
+          {
+            "slot": 0,
+            "class": 6,
+            "xp": 4590,
+            "creep_xp": 3390,
+            "hero_xp": 1200,
+            "other_xp": 0,
+            "last_hit_gold": 3390,
+            "alive_ticks": 20886,
+            "shop_ticks": 3409,
+            "portals_started": 8,
+            "portals_completed": 8,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 10,
+              "8": 1,
+              "19": 1,
+              "1": 13,
+              "2": 12,
+              "22": 17,
+              "4": 1
+            },
+            "rejections": {
+              "5:ActionChanneling": 2,
+              "1:ActionChanneling": 6,
+              "6:ActionOutOfRange": 2,
+              "15:ActionChanneling": 5,
+              "4:ActionChanneling": 4
+            },
+            "basic_damage_events": 123,
+            "inter_hit_ticks": 20019
+          },
+          {
+            "slot": 1,
+            "class": 8,
+            "xp": 532,
+            "creep_xp": 232,
+            "hero_xp": 300,
+            "other_xp": 0,
+            "last_hit_gold": 30,
+            "alive_ticks": 12785,
+            "shop_ticks": 3625,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "12": 1,
+              "10": 1,
+              "4": 3
+            },
+            "rejections": {
+              "2:ActionNotAlive": 7856,
+              "3:ActionNotAlive": 8160,
+              "1:ActionNotAlive": 250,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 6157,
+              "4:ActionTargetUnavailable": 2605,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 7
+            },
+            "basic_damage_events": 45,
+            "inter_hit_ticks": 19525
+          },
+          {
+            "slot": 2,
+            "class": 2,
+            "xp": 4526,
+            "creep_xp": 3376,
+            "hero_xp": 1050,
+            "other_xp": 100,
+            "last_hit_gold": 3450,
+            "alive_ticks": 19304,
+            "shop_ticks": 3355,
+            "portals_started": 9,
+            "portals_completed": 8,
+            "portals_interrupted": 1,
+            "purchases": {
+              "18": 1,
+              "21": 10,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "1": 9
+            },
+            "rejections": {
+              "5:ActionChanneling": 5,
+              "1:ActionChanneling": 4,
+              "6:ActionOutOfRange": 529,
+              "2:ActionTargetUnavailable": 139
+            },
+            "basic_damage_events": 257,
+            "inter_hit_ticks": 19952
+          },
+          {
+            "slot": 3,
+            "class": 9,
+            "xp": 2855,
+            "creep_xp": 2105,
+            "hero_xp": 750,
+            "other_xp": 0,
+            "last_hit_gold": 1905,
+            "alive_ticks": 17189,
+            "shop_ticks": 5326,
+            "portals_started": 6,
+            "portals_completed": 6,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 8,
+              "16": 1,
+              "8": 1,
+              "1": 15,
+              "2": 10,
+              "22": 2
+            },
+            "rejections": {
+              "5:ActionChanneling": 3,
+              "1:ActionChanneling": 3,
+              "6:ActionOutOfRange": 18,
+              "15:ActionChanneling": 3,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 107,
+            "inter_hit_ticks": 16680
+          },
+          {
+            "slot": 4,
+            "class": 3,
+            "xp": 1875,
+            "creep_xp": 1425,
+            "hero_xp": 450,
+            "other_xp": 0,
+            "last_hit_gold": 1005,
+            "alive_ticks": 13501,
+            "shop_ticks": 3740,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "9": 1,
+              "10": 1,
+              "4": 12
+            },
+            "rejections": {
+              "2:ActionNotAlive": 7142,
+              "3:ActionNotAlive": 40649,
+              "1:ActionNotAlive": 7390,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 30792,
+              "3:ActionAlreadyEquipped": 7,
+              "4:ActionTargetUnavailable": 4338,
+              "3:ActionInventoryFull": 1,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 12
+            },
+            "basic_damage_events": 122,
+            "inter_hit_ticks": 18957
+          },
+          {
+            "slot": 5,
+            "class": 5,
+            "xp": 2126,
+            "creep_xp": 1876,
+            "hero_xp": 150,
+            "other_xp": 100,
+            "last_hit_gold": 1485,
+            "alive_ticks": 18344,
+            "shop_ticks": 2709,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 4
+            },
+            "rejections": {
+              "6:ActionTargetUnavailable": 2,
+              "3:ActionAlreadyEquipped": 8,
+              "6:ActionCooldown": 3,
+              "6:ActionOutOfRange": 110,
+              "4:ActionTargetUnavailable": 246,
+              "3:ActionInventoryFull": 1,
+              "3:ActionInsufficientGold": 14
+            },
+            "basic_damage_events": 90,
+            "inter_hit_ticks": 18940
+          },
+          {
+            "slot": 6,
+            "class": 1,
+            "xp": 4951,
+            "creep_xp": 4201,
+            "hero_xp": 750,
+            "other_xp": 0,
+            "last_hit_gold": 4035,
+            "alive_ticks": 20889,
+            "shop_ticks": 2129,
+            "portals_started": 9,
+            "portals_completed": 8,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 10,
+              "8": 1,
+              "19": 1,
+              "1": 17,
+              "22": 14,
+              "4": 12
+            },
+            "rejections": {
+              "5:ActionChanneling": 2,
+              "1:ActionChanneling": 6,
+              "6:ActionOutOfRange": 3,
+              "4:ActionTargetUnavailable": 2,
+              "15:ActionChanneling": 4,
+              "4:ActionChanneling": 1
+            },
+            "basic_damage_events": 238,
+            "inter_hit_ticks": 20172
+          },
+          {
+            "slot": 7,
+            "class": 7,
+            "xp": 5404,
+            "creep_xp": 2304,
+            "hero_xp": 2700,
+            "other_xp": 400,
+            "last_hit_gold": 2220,
+            "alive_ticks": 20885,
+            "shop_ticks": 1758,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "6": 1,
+              "12": 1,
+              "11": 1,
+              "17": 1,
+              "10": 1,
+              "4": 2
+            },
+            "rejections": {
+              "10:ActionCooldown": 140,
+              "10:ActionInsufficientMana": 48,
+              "3:ActionAlreadyEquipped": 2,
+              "4:ActionTargetUnavailable": 23,
+              "10:ActionAbilityLocked": 10,
+              "3:ActionInventoryFull": 9,
+              "3:ActionInsufficientGold": 6
+            },
+            "basic_damage_events": 215,
+            "inter_hit_ticks": 20074
+          },
+          {
+            "slot": 8,
+            "class": 0,
+            "xp": 1106,
+            "creep_xp": 656,
+            "hero_xp": 450,
+            "other_xp": 0,
+            "last_hit_gold": 420,
+            "alive_ticks": 13331,
+            "shop_ticks": 3325,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 3
+            },
+            "rejections": {
+              "2:ActionNotAlive": 277,
+              "3:ActionNotAlive": 35932,
+              "1:ActionNotAlive": 2872,
+              "3:ActionOutsideKeep": 15794,
+              "3:ActionAlreadyEquipped": 295,
+              "5:ActionNotAlive": 4412,
+              "5:ActionDrafting": 20,
+              "4:ActionTargetUnavailable": 191,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 13
+            },
+            "basic_damage_events": 89,
+            "inter_hit_ticks": 19902
+          },
+          {
+            "slot": 9,
+            "class": 4,
+            "xp": 2716,
+            "creep_xp": 1716,
+            "hero_xp": 600,
+            "other_xp": 400,
+            "last_hit_gold": 1485,
+            "alive_ticks": 14577,
+            "shop_ticks": 2377,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "13": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 7628,
+              "6:ActionOutOfRange": 41,
+              "6:ActionInsufficientMana": 12
+            },
+            "basic_damage_events": 201,
+            "inter_hit_ticks": 19916
+          }
+        ],
+        "ticks": 21684,
+        "hash_mismatches": 0,
+        "scope": "Retrospective typed events from an exact full replay, not live observations or an opponent proxy."
+      }
+    },
+    {
+      "label": "candidate",
+      "side": 0,
+      "outcome": "draw",
+      "episode": "ereq_4947f9cf-6370-43ec-9613-8242d6cd2624",
+      "events": {
+        "heroes": [
+          {
+            "slot": 0,
+            "class": 6,
+            "xp": 7551,
+            "creep_xp": 5451,
+            "hero_xp": 2100,
+            "other_xp": 0,
+            "last_hit_gold": 5115,
+            "alive_ticks": 27972,
+            "shop_ticks": 1963,
+            "portals_started": 10,
+            "portals_completed": 10,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 12,
+              "8": 1,
+              "19": 1,
+              "1": 14,
+              "2": 10,
+              "22": 15,
+              "4": 1
+            },
+            "rejections": {
+              "5:ActionChanneling": 7,
+              "1:ActionChanneling": 3,
+              "6:ActionOutOfRange": 3,
+              "15:ActionChanneling": 6,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 184,
+            "inter_hit_ticks": 27849
+          },
+          {
+            "slot": 1,
+            "class": 7,
+            "xp": 1867,
+            "creep_xp": 567,
+            "hero_xp": 1200,
+            "other_xp": 100,
+            "last_hit_gold": 120,
+            "alive_ticks": 20381,
+            "shop_ticks": 3522,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "10": 1,
+              "4": 9
+            },
+            "rejections": {
+              "2:ActionNotAlive": 7844,
+              "3:ActionNotAlive": 41810,
+              "1:ActionNotAlive": 575,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 49022,
+              "3:ActionAlreadyEquipped": 6,
+              "4:ActionTargetUnavailable": 7622,
+              "3:ActionInventoryFull": 1,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 16
+            },
+            "basic_damage_events": 89,
+            "inter_hit_ticks": 27106
+          },
+          {
+            "slot": 2,
+            "class": 2,
+            "xp": 7753,
+            "creep_xp": 3853,
+            "hero_xp": 3300,
+            "other_xp": 600,
+            "last_hit_gold": 3855,
+            "alive_ticks": 27213,
+            "shop_ticks": 4500,
+            "portals_started": 11,
+            "portals_completed": 11,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "21": 12,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "1": 21
+            },
+            "rejections": {
+              "5:ActionChanneling": 4,
+              "1:ActionChanneling": 7,
+              "6:ActionOutOfRange": 881,
+              "6:ActionInsufficientMana": 1,
+              "2:ActionTargetUnavailable": 177,
+              "4:ActionChanneling": 1
+            },
+            "basic_damage_events": 344,
+            "inter_hit_ticks": 27861
+          },
+          {
+            "slot": 3,
+            "class": 9,
+            "xp": 3484,
+            "creep_xp": 2634,
+            "hero_xp": 750,
+            "other_xp": 100,
+            "last_hit_gold": 2520,
+            "alive_ticks": 26249,
+            "shop_ticks": 4775,
+            "portals_started": 9,
+            "portals_completed": 9,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 9,
+              "16": 1,
+              "8": 1,
+              "1": 20,
+              "2": 12,
+              "22": 2
+            },
+            "rejections": {
+              "5:ActionChanneling": 4,
+              "1:ActionChanneling": 5,
+              "6:ActionOutOfRange": 16,
+              "15:ActionChanneling": 1,
+              "6:ActionChanneling": 2,
+              "2:ActionTargetUnavailable": 5,
+              "4:ActionChanneling": 5
+            },
+            "basic_damage_events": 146,
+            "inter_hit_ticks": 26766
+          },
+          {
+            "slot": 4,
+            "class": 3,
+            "xp": 2264,
+            "creep_xp": 2014,
+            "hero_xp": 150,
+            "other_xp": 100,
+            "last_hit_gold": 1500,
+            "alive_ticks": 19045,
+            "shop_ticks": 3635,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "9": 1,
+              "10": 1,
+              "4": 11
+            },
+            "rejections": {
+              "2:ActionNotAlive": 9257,
+              "3:ActionNotAlive": 63335,
+              "1:ActionNotAlive": 9755,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 41801,
+              "3:ActionAlreadyEquipped": 12,
+              "4:ActionTargetUnavailable": 8746,
+              "3:ActionInventoryFull": 2,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 17
+            },
+            "basic_damage_events": 167,
+            "inter_hit_ticks": 27231
+          },
+          {
+            "slot": 5,
+            "class": 5,
+            "xp": 2814,
+            "creep_xp": 2064,
+            "hero_xp": 750,
+            "other_xp": 0,
+            "last_hit_gold": 1920,
+            "alive_ticks": 17727,
+            "shop_ticks": 4950,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "22": 6,
+              "4": 11
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 24,
+              "6:ActionOutOfRange": 735,
+              "4:ActionTargetUnavailable": 95,
+              "3:ActionInventoryFull": 324,
+              "3:ActionInsufficientGold": 7
+            },
+            "basic_damage_events": 94,
+            "inter_hit_ticks": 27819
+          },
+          {
+            "slot": 6,
+            "class": 1,
+            "xp": 6727,
+            "creep_xp": 4177,
+            "hero_xp": 2550,
+            "other_xp": 0,
+            "last_hit_gold": 4230,
+            "alive_ticks": 24498,
+            "shop_ticks": 5758,
+            "portals_started": 12,
+            "portals_completed": 12,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 14,
+              "8": 1,
+              "19": 1,
+              "1": 21,
+              "22": 28,
+              "4": 22
+            },
+            "rejections": {
+              "5:ActionChanneling": 5,
+              "2:ActionChanneling": 1,
+              "1:ActionChanneling": 6,
+              "6:ActionOutOfRange": 5,
+              "4:ActionTargetUnavailable": 2,
+              "15:ActionChanneling": 7
+            },
+            "basic_damage_events": 223,
+            "inter_hit_ticks": 26813
+          },
+          {
+            "slot": 7,
+            "class": 8,
+            "xp": 2647,
+            "creep_xp": 1547,
+            "hero_xp": 900,
+            "other_xp": 200,
+            "last_hit_gold": 1170,
+            "alive_ticks": 16947,
+            "shop_ticks": 4268,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "12": 1,
+              "11": 1,
+              "13": 1,
+              "17": 1,
+              "10": 1,
+              "4": 4
+            },
+            "rejections": {
+              "6:ActionNoCharges": 20,
+              "6:ActionTargetUnavailable": 41,
+              "3:ActionAlreadyEquipped": 1,
+              "6:ActionCooldown": 29,
+              "6:ActionOutOfRange": 1281,
+              "4:ActionTargetUnavailable": 3,
+              "6:ActionAbilityLocked": 52,
+              "3:ActionInventoryFull": 80,
+              "3:ActionInsufficientGold": 5
+            },
+            "basic_damage_events": 181,
+            "inter_hit_ticks": 27382
+          },
+          {
+            "slot": 8,
+            "class": 0,
+            "xp": 1353,
+            "creep_xp": 1203,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 465,
+            "alive_ticks": 16943,
+            "shop_ticks": 4429,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "1": 1,
+              "5": 1,
+              "9": 1,
+              "4": 5
+            },
+            "rejections": {
+              "2:ActionNotAlive": 1124,
+              "3:ActionNotAlive": 23456,
+              "1:ActionNotAlive": 4277,
+              "3:ActionOutsideKeep": 17217,
+              "3:ActionAlreadyEquipped": 588,
+              "5:ActionNotAlive": 6457,
+              "5:ActionDrafting": 20,
+              "4:ActionTargetUnavailable": 430,
+              "2:ActionTargetUnavailable": 1,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 7
+            },
+            "basic_damage_events": 94,
+            "inter_hit_ticks": 27650
+          },
+          {
+            "slot": 9,
+            "class": 4,
+            "xp": 4767,
+            "creep_xp": 3367,
+            "hero_xp": 1200,
+            "other_xp": 200,
+            "last_hit_gold": 3210,
+            "alive_ticks": 17985,
+            "shop_ticks": 3587,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "16": 1,
+              "3": 1,
+              "19": 1,
+              "11": 1,
+              "13": 1,
+              "2": 3
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 11971,
+              "6:ActionOutOfRange": 53,
+              "6:ActionInsufficientMana": 72,
+              "3:ActionInventoryFull": 69,
+              "4:ActionCooldown": 287
+            },
+            "basic_damage_events": 250,
+            "inter_hit_ticks": 27469
+          }
+        ],
+        "ticks": 29593,
+        "hash_mismatches": 0,
+        "scope": "Retrospective typed events from an exact full replay, not live observations or an opponent proxy."
+      }
+    },
+    {
+      "label": "candidate",
+      "side": 1,
+      "outcome": "win",
+      "episode": "ereq_51ed26f2-56b7-4e67-8b78-125547f6bbb7",
+      "events": {
+        "heroes": [
+          {
+            "slot": 0,
+            "class": 6,
+            "xp": 2873,
+            "creep_xp": 2423,
+            "hero_xp": 450,
+            "other_xp": 0,
+            "last_hit_gold": 2505,
+            "alive_ticks": 14551,
+            "shop_ticks": 2925,
+            "portals_started": 4,
+            "portals_completed": 3,
+            "portals_interrupted": 1,
+            "purchases": {
+              "21": 4,
+              "8": 1,
+              "19": 1,
+              "1": 9,
+              "2": 1,
+              "22": 4,
+              "4": 2
+            },
+            "rejections": {
+              "5:ActionChanneling": 3,
+              "1:ActionChanneling": 1,
+              "6:ActionOutOfRange": 9,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 90,
+            "inter_hit_ticks": 15915
+          },
+          {
+            "slot": 1,
+            "class": 7,
+            "xp": 573,
+            "creep_xp": 423,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 195,
+            "alive_ticks": 12329,
+            "shop_ticks": 3111,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "12": 1,
+              "4": 5
+            },
+            "rejections": {
+              "2:ActionNotAlive": 4304,
+              "3:ActionNotAlive": 7013,
+              "1:ActionNotAlive": 231,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 5437,
+              "4:ActionTargetUnavailable": 1657,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 6
+            },
+            "basic_damage_events": 41,
+            "inter_hit_ticks": 15458
+          },
+          {
+            "slot": 2,
+            "class": 8,
+            "xp": 1949,
+            "creep_xp": 1849,
+            "hero_xp": 0,
+            "other_xp": 100,
+            "last_hit_gold": 1485,
+            "alive_ticks": 12826,
+            "shop_ticks": 3877,
+            "portals_started": 4,
+            "portals_completed": 4,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "21": 6,
+              "3": 2,
+              "8": 1,
+              "1": 11,
+              "22": 4
+            },
+            "rejections": {
+              "5:ActionChanneling": 2,
+              "1:ActionChanneling": 2,
+              "6:ActionOutOfRange": 3,
+              "15:ActionChanneling": 2,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 103,
+            "inter_hit_ticks": 16002
+          },
+          {
+            "slot": 3,
+            "class": 0,
+            "xp": 562,
+            "creep_xp": 562,
+            "hero_xp": 0,
+            "other_xp": 0,
+            "last_hit_gold": 165,
+            "alive_ticks": 9373,
+            "shop_ticks": 3057,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "7": 1,
+              "1": 1,
+              "5": 1,
+              "4": 3
+            },
+            "rejections": {
+              "2:ActionNotAlive": 7239,
+              "3:ActionNotAlive": 7282,
+              "1:ActionNotAlive": 7491,
+              "4:ActionNotAlive": 1996,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 2828,
+              "4:ActionTargetUnavailable": 2207,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 5
+            },
+            "basic_damage_events": 31,
+            "inter_hit_ticks": 13285
+          },
+          {
+            "slot": 4,
+            "class": 4,
+            "xp": 3531,
+            "creep_xp": 1881,
+            "hero_xp": 1650,
+            "other_xp": 0,
+            "last_hit_gold": 1875,
+            "alive_ticks": 12598,
+            "shop_ticks": 2335,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "16": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "22": 6,
+              "4": 9
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 5,
+              "6:ActionCooldown": 54,
+              "6:ActionOutOfRange": 160,
+              "4:ActionTargetUnavailable": 11,
+              "3:ActionInventoryFull": 368,
+              "3:ActionInsufficientGold": 21
+            },
+            "basic_damage_events": 129,
+            "inter_hit_ticks": 15418
+          },
+          {
+            "slot": 5,
+            "class": 1,
+            "xp": 4110,
+            "creep_xp": 3360,
+            "hero_xp": 750,
+            "other_xp": 0,
+            "last_hit_gold": 2820,
+            "alive_ticks": 16863,
+            "shop_ticks": 1603,
+            "portals_started": 6,
+            "portals_completed": 6,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 8,
+              "8": 1,
+              "19": 1,
+              "1": 10,
+              "22": 13,
+              "4": 8
+            },
+            "rejections": {
+              "5:ActionNoRoute": 1,
+              "5:ActionChanneling": 2,
+              "1:ActionChanneling": 4,
+              "6:ActionOutOfRange": 4,
+              "15:ActionChanneling": 3
+            },
+            "basic_damage_events": 154,
+            "inter_hit_ticks": 15620
+          },
+          {
+            "slot": 6,
+            "class": 5,
+            "xp": 2303,
+            "creep_xp": 1303,
+            "hero_xp": 900,
+            "other_xp": 100,
+            "last_hit_gold": 1155,
+            "alive_ticks": 14677,
+            "shop_ticks": 2333,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "9": 1,
+              "4": 2
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 14,
+              "4:ActionTargetUnavailable": 122,
+              "3:ActionInventoryFull": 1,
+              "3:ActionInsufficientGold": 11
+            },
+            "basic_damage_events": 121,
+            "inter_hit_ticks": 15495
+          },
+          {
+            "slot": 7,
+            "class": 2,
+            "xp": 4380,
+            "creep_xp": 1530,
+            "hero_xp": 2550,
+            "other_xp": 300,
+            "last_hit_gold": 1470,
+            "alive_ticks": 15855,
+            "shop_ticks": 1999,
+            "portals_started": 6,
+            "portals_completed": 5,
+            "portals_interrupted": 1,
+            "purchases": {
+              "18": 1,
+              "21": 7,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "1": 11
+            },
+            "rejections": {
+              "5:ActionChanneling": 3,
+              "1:ActionChanneling": 3,
+              "6:ActionOutOfRange": 502,
+              "6:ActionInsufficientMana": 1,
+              "2:ActionTargetUnavailable": 75
+            },
+            "basic_damage_events": 221,
+            "inter_hit_ticks": 14541
+          },
+          {
+            "slot": 8,
+            "class": 3,
+            "xp": 1616,
+            "creep_xp": 566,
+            "hero_xp": 750,
+            "other_xp": 300,
+            "last_hit_gold": 255,
+            "alive_ticks": 11777,
+            "shop_ticks": 2366,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "9": 1,
+              "10": 1
+            },
+            "rejections": {
+              "2:ActionNotAlive": 1041,
+              "3:ActionNotAlive": 19871,
+              "1:ActionNotAlive": 2384,
+              "3:ActionOutsideKeep": 12816,
+              "3:ActionAlreadyEquipped": 4,
+              "5:ActionNotAlive": 1663,
+              "5:ActionDrafting": 20,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 9
+            },
+            "basic_damage_events": 115,
+            "inter_hit_ticks": 14296
+          },
+          {
+            "slot": 9,
+            "class": 9,
+            "xp": 1534,
+            "creep_xp": 784,
+            "hero_xp": 750,
+            "other_xp": 0,
+            "last_hit_gold": 600,
+            "alive_ticks": 11635,
+            "shop_ticks": 2222,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "13": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 2547
+            },
+            "basic_damage_events": 100,
+            "inter_hit_ticks": 15804
+          }
+        ],
+        "ticks": 17657,
+        "hash_mismatches": 0,
+        "scope": "Retrospective typed events from an exact full replay, not live observations or an opponent proxy."
+      }
+    },
+    {
+      "label": "candidate",
+      "side": 1,
+      "outcome": "draw",
+      "episode": "ereq_f98fd435-cfd3-4a1c-b869-b09743df19f2",
+      "events": {
+        "heroes": [
+          {
+            "slot": 0,
+            "class": 6,
+            "xp": 8609,
+            "creep_xp": 6209,
+            "hero_xp": 2400,
+            "other_xp": 0,
+            "last_hit_gold": 5775,
+            "alive_ticks": 28790,
+            "shop_ticks": 1745,
+            "portals_started": 8,
+            "portals_completed": 7,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 9,
+              "8": 1,
+              "19": 1,
+              "1": 13,
+              "2": 13,
+              "22": 16,
+              "4": 1
+            },
+            "rejections": {
+              "5:ActionChanneling": 5,
+              "10:ActionTargetUnavailable": 1,
+              "1:ActionChanneling": 2,
+              "6:ActionOutOfRange": 9,
+              "15:ActionChanneling": 5
+            },
+            "basic_damage_events": 218,
+            "inter_hit_ticks": 27851
+          },
+          {
+            "slot": 1,
+            "class": 8,
+            "xp": 463,
+            "creep_xp": 313,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 60,
+            "alive_ticks": 15264,
+            "shop_ticks": 4687,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "12": 1,
+              "1": 1,
+              "4": 3
+            },
+            "rejections": {
+              "2:ActionNotAlive": 12471,
+              "3:ActionNotAlive": 2079,
+              "1:ActionNotAlive": 1065,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 191,
+              "4:ActionTargetUnavailable": 646,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 4
+            },
+            "basic_damage_events": 45,
+            "inter_hit_ticks": 27746
+          },
+          {
+            "slot": 2,
+            "class": 7,
+            "xp": 5149,
+            "creep_xp": 3699,
+            "hero_xp": 1350,
+            "other_xp": 100,
+            "last_hit_gold": 3960,
+            "alive_ticks": 26966,
+            "shop_ticks": 5658,
+            "portals_started": 11,
+            "portals_completed": 11,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "21": 12,
+              "3": 8,
+              "8": 1,
+              "1": 18,
+              "22": 25
+            },
+            "rejections": {
+              "5:ActionChanneling": 3,
+              "2:ActionChanneling": 1,
+              "1:ActionChanneling": 7,
+              "6:ActionOutOfRange": 22,
+              "15:ActionChanneling": 5,
+              "4:ActionChanneling": 4
+            },
+            "basic_damage_events": 162,
+            "inter_hit_ticks": 27561
+          },
+          {
+            "slot": 3,
+            "class": 9,
+            "xp": 1891,
+            "creep_xp": 1591,
+            "hero_xp": 300,
+            "other_xp": 0,
+            "last_hit_gold": 1335,
+            "alive_ticks": 13321,
+            "shop_ticks": 4718,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "2": 3,
+              "5": 1,
+              "4": 20
+            },
+            "rejections": {
+              "2:ActionNotAlive": 14469,
+              "3:ActionNotAlive": 78747,
+              "1:ActionNotAlive": 15479,
+              "4:ActionNotAlive": 7490,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 31475,
+              "3:ActionAlreadyEquipped": 49,
+              "4:ActionTargetUnavailable": 5972,
+              "3:ActionInventoryFull": 771,
+              "3:ActionDrafting": 40,
+              "4:ActionCooldown": 6,
+              "3:ActionInsufficientGold": 53
+            },
+            "basic_damage_events": 99,
+            "inter_hit_ticks": 25631
+          },
+          {
+            "slot": 4,
+            "class": 0,
+            "xp": 5896,
+            "creep_xp": 3396,
+            "hero_xp": 2400,
+            "other_xp": 100,
+            "last_hit_gold": 2655,
+            "alive_ticks": 24011,
+            "shop_ticks": 5858,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "16": 1,
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 7
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 13,
+              "4:ActionTargetUnavailable": 256,
+              "3:ActionInventoryFull": 1826,
+              "3:ActionInsufficientGold": 13
+            },
+            "basic_damage_events": 273,
+            "inter_hit_ticks": 27859
+          },
+          {
+            "slot": 5,
+            "class": 1,
+            "xp": 3942,
+            "creep_xp": 3342,
+            "hero_xp": 600,
+            "other_xp": 0,
+            "last_hit_gold": 2670,
+            "alive_ticks": 19819,
+            "shop_ticks": 5931,
+            "portals_started": 12,
+            "portals_completed": 12,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 13,
+              "8": 1,
+              "19": 1,
+              "1": 20,
+              "22": 14,
+              "4": 9
+            },
+            "rejections": {
+              "5:ActionChanneling": 8,
+              "1:ActionChanneling": 4,
+              "6:ActionOutOfRange": 5,
+              "4:ActionTargetUnavailable": 5,
+              "15:ActionChanneling": 6,
+              "4:ActionChanneling": 3
+            },
+            "basic_damage_events": 162,
+            "inter_hit_ticks": 27982
+          },
+          {
+            "slot": 6,
+            "class": 5,
+            "xp": 5107,
+            "creep_xp": 3107,
+            "hero_xp": 1800,
+            "other_xp": 200,
+            "last_hit_gold": 2880,
+            "alive_ticks": 24001,
+            "shop_ticks": 3609,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "16": 1,
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 5
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 11,
+              "4:ActionTargetUnavailable": 80,
+              "3:ActionInventoryFull": 14,
+              "3:ActionInsufficientGold": 14
+            },
+            "basic_damage_events": 197,
+            "inter_hit_ticks": 27193
+          },
+          {
+            "slot": 7,
+            "class": 2,
+            "xp": 7765,
+            "creep_xp": 2965,
+            "hero_xp": 3900,
+            "other_xp": 900,
+            "last_hit_gold": 2955,
+            "alive_ticks": 27212,
+            "shop_ticks": 3127,
+            "portals_started": 11,
+            "portals_completed": 10,
+            "portals_interrupted": 1,
+            "purchases": {
+              "18": 1,
+              "21": 12,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "1": 18
+            },
+            "rejections": {
+              "5:ActionChanneling": 6,
+              "1:ActionChanneling": 4,
+              "6:ActionOutOfRange": 879,
+              "2:ActionTargetUnavailable": 130
+            },
+            "basic_damage_events": 346,
+            "inter_hit_ticks": 27791
+          },
+          {
+            "slot": 8,
+            "class": 4,
+            "xp": 1471,
+            "creep_xp": 1071,
+            "hero_xp": 300,
+            "other_xp": 100,
+            "last_hit_gold": 750,
+            "alive_ticks": 18383,
+            "shop_ticks": 2884,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "9": 1
+            },
+            "rejections": {
+              "2:ActionNotAlive": 1016,
+              "3:ActionNotAlive": 33545,
+              "1:ActionNotAlive": 3692,
+              "1:ActionNoRoute": 73,
+              "3:ActionOutsideKeep": 27871,
+              "3:ActionAlreadyEquipped": 8,
+              "5:ActionNotAlive": 5710,
+              "5:ActionDrafting": 20,
+              "3:ActionInventoryFull": 91,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 10
+            },
+            "basic_damage_events": 111,
+            "inter_hit_ticks": 27524
+          },
+          {
+            "slot": 9,
+            "class": 3,
+            "xp": 628,
+            "creep_xp": 628,
+            "hero_xp": 0,
+            "other_xp": 0,
+            "last_hit_gold": 330,
+            "alive_ticks": 21239,
+            "shop_ticks": 9429,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "11": 1,
+              "1": 2,
+              "13": 1,
+              "2": 2
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 1413,
+              "4:ActionCooldown": 46,
+              "3:ActionInsufficientGold": 1
+            },
+            "basic_damage_events": 80,
+            "inter_hit_ticks": 27700
+          }
+        ],
+        "ticks": 29593,
+        "hash_mismatches": 0,
+        "scope": "Retrospective typed events from an exact full replay, not live observations or an opponent proxy."
+      }
+    },
+    {
+      "label": "control",
+      "side": 0,
+      "outcome": "loss",
+      "episode": "ereq_6a3ee214-9fda-4360-8abb-7f33549130a6",
+      "events": {
+        "heroes": [
+          {
+            "slot": 0,
+            "class": 6,
+            "xp": 3420,
+            "creep_xp": 2820,
+            "hero_xp": 600,
+            "other_xp": 0,
+            "last_hit_gold": 2670,
+            "alive_ticks": 15617,
+            "shop_ticks": 1743,
+            "portals_started": 4,
+            "portals_completed": 4,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 5,
+              "8": 1,
+              "19": 1,
+              "1": 6,
+              "2": 6,
+              "22": 7
+            },
+            "rejections": {
+              "5:ActionChanneling": 2,
+              "1:ActionChanneling": 2,
+              "6:ActionOutOfRange": 2,
+              "15:ActionChanneling": 3,
+              "6:ActionChanneling": 2,
+              "4:ActionChanneling": 2,
+              "10:ActionChanneling": 2
+            },
+            "basic_damage_events": 88,
+            "inter_hit_ticks": 15238
+          },
+          {
+            "slot": 1,
+            "class": 1,
+            "xp": 736,
+            "creep_xp": 286,
+            "hero_xp": 450,
+            "other_xp": 0,
+            "last_hit_gold": 15,
+            "alive_ticks": 8858,
+            "shop_ticks": 2627,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "8": 1,
+              "1": 1,
+              "4": 6
+            },
+            "rejections": {
+              "2:ActionNotAlive": 6625,
+              "3:ActionNotAlive": 6751,
+              "1:ActionNotAlive": 716,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 4155,
+              "4:ActionTargetUnavailable": 1441,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 7
+            },
+            "basic_damage_events": 80,
+            "inter_hit_ticks": 14426
+          },
+          {
+            "slot": 2,
+            "class": 7,
+            "xp": 600,
+            "creep_xp": 300,
+            "hero_xp": 300,
+            "other_xp": 0,
+            "last_hit_gold": 330,
+            "alive_ticks": 13916,
+            "shop_ticks": 1954,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "9": 1,
+              "10": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 13889,
+              "3:ActionAlreadyEquipped": 20,
+              "6:ActionOutOfRange": 1,
+              "3:ActionInsufficientGold": 8
+            },
+            "basic_damage_events": 29,
+            "inter_hit_ticks": 12771
+          },
+          {
+            "slot": 3,
+            "class": 9,
+            "xp": 2152,
+            "creep_xp": 2002,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 1920,
+            "alive_ticks": 14610,
+            "shop_ticks": 4125,
+            "portals_started": 5,
+            "portals_completed": 5,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 6,
+              "16": 1,
+              "8": 1,
+              "1": 15,
+              "2": 3,
+              "22": 2
+            },
+            "rejections": {
+              "5:ActionChanneling": 3,
+              "1:ActionChanneling": 2,
+              "6:ActionOutOfRange": 14,
+              "15:ActionChanneling": 2,
+              "4:ActionChanneling": 3
+            },
+            "basic_damage_events": 98,
+            "inter_hit_ticks": 14509
+          },
+          {
+            "slot": 4,
+            "class": 4,
+            "xp": 951,
+            "creep_xp": 801,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 585,
+            "alive_ticks": 7995,
+            "shop_ticks": 2896,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "1": 2,
+              "13": 1,
+              "5": 1,
+              "4": 6
+            },
+            "rejections": {
+              "2:ActionNotAlive": 7951,
+              "3:ActionNotAlive": 19210,
+              "1:ActionNotAlive": 8204,
+              "4:ActionNotAlive": 3011,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 9018,
+              "3:ActionAlreadyEquipped": 3,
+              "4:ActionTargetUnavailable": 2268,
+              "3:ActionDrafting": 40,
+              "4:ActionCooldown": 46,
+              "3:ActionInsufficientGold": 9
+            },
+            "basic_damage_events": 66,
+            "inter_hit_ticks": 14826
+          },
+          {
+            "slot": 5,
+            "class": 5,
+            "xp": 2666,
+            "creep_xp": 1066,
+            "hero_xp": 1200,
+            "other_xp": 400,
+            "last_hit_gold": 990,
+            "alive_ticks": 13652,
+            "shop_ticks": 2640,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "16": 1,
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 4
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 7,
+              "6:ActionCooldown": 3,
+              "6:ActionOutOfRange": 160,
+              "4:ActionTargetUnavailable": 446,
+              "3:ActionInventoryFull": 5,
+              "3:ActionInsufficientGold": 12
+            },
+            "basic_damage_events": 157,
+            "inter_hit_ticks": 15226
+          },
+          {
+            "slot": 6,
+            "class": 2,
+            "xp": 1770,
+            "creep_xp": 1470,
+            "hero_xp": 300,
+            "other_xp": 0,
+            "last_hit_gold": 1200,
+            "alive_ticks": 16199,
+            "shop_ticks": 1628,
+            "portals_started": 4,
+            "portals_completed": 4,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "21": 6,
+              "3": 1,
+              "8": 1,
+              "1": 7,
+              "22": 4
+            },
+            "rejections": {
+              "5:ActionChanneling": 2,
+              "1:ActionChanneling": 2,
+              "6:ActionOutOfRange": 1,
+              "15:ActionChanneling": 2,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 59,
+            "inter_hit_ticks": 14957
+          },
+          {
+            "slot": 7,
+            "class": 8,
+            "xp": 5611,
+            "creep_xp": 2061,
+            "hero_xp": 3150,
+            "other_xp": 400,
+            "last_hit_gold": 2085,
+            "alive_ticks": 16196,
+            "shop_ticks": 1402,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "6": 1,
+              "12": 1,
+              "11": 1,
+              "17": 1,
+              "10": 1,
+              "4": 1
+            },
+            "rejections": {
+              "6:ActionNoCharges": 24,
+              "6:ActionCooldown": 251,
+              "6:ActionOutOfRange": 218,
+              "4:ActionTargetUnavailable": 23,
+              "3:ActionInventoryFull": 5,
+              "3:ActionInsufficientGold": 3
+            },
+            "basic_damage_events": 331,
+            "inter_hit_ticks": 15457
+          },
+          {
+            "slot": 8,
+            "class": 3,
+            "xp": 301,
+            "creep_xp": 101,
+            "hero_xp": 0,
+            "other_xp": 200,
+            "last_hit_gold": 30,
+            "alive_ticks": 13102,
+            "shop_ticks": 2417,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "12": 1,
+              "2": 1
+            },
+            "rejections": {
+              "2:ActionNotAlive": 727,
+              "3:ActionNotAlive": 6623,
+              "1:ActionNotAlive": 1039,
+              "3:ActionOutsideKeep": 8136,
+              "5:ActionNotAlive": 1332,
+              "5:ActionDrafting": 20,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 4
+            },
+            "basic_damage_events": 73,
+            "inter_hit_ticks": 15421
+          },
+          {
+            "slot": 9,
+            "class": 0,
+            "xp": 939,
+            "creep_xp": 939,
+            "hero_xp": 0,
+            "other_xp": 0,
+            "last_hit_gold": 570,
+            "alive_ticks": 12381,
+            "shop_ticks": 2346,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "19": 1,
+              "11": 1,
+              "13": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 6666
+            },
+            "basic_damage_events": 99,
+            "inter_hit_ticks": 13509
+          }
+        ],
+        "ticks": 16992,
+        "hash_mismatches": 0,
+        "scope": "Retrospective typed events from an exact full replay, not live observations or an opponent proxy."
+      }
+    },
+    {
+      "label": "control",
+      "side": 0,
+      "outcome": "draw",
+      "episode": "ereq_e8e5f84c-d32a-4dca-9e0a-1b49e57b9345",
+      "events": {
+        "heroes": [
+          {
+            "slot": 0,
+            "class": 6,
+            "xp": 7106,
+            "creep_xp": 5356,
+            "hero_xp": 1650,
+            "other_xp": 100,
+            "last_hit_gold": 5205,
+            "alive_ticks": 28791,
+            "shop_ticks": 2631,
+            "portals_started": 8,
+            "portals_completed": 7,
+            "portals_interrupted": 1,
+            "purchases": {
+              "21": 10,
+              "8": 1,
+              "19": 1,
+              "1": 14,
+              "2": 13,
+              "22": 16,
+              "4": 1
+            },
+            "rejections": {
+              "5:ActionChanneling": 2,
+              "2:ActionChanneling": 1,
+              "1:ActionChanneling": 4,
+              "6:ActionOutOfRange": 5,
+              "4:ActionTargetUnavailable": 1,
+              "15:ActionChanneling": 5,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 179,
+            "inter_hit_ticks": 27892
+          },
+          {
+            "slot": 1,
+            "class": 0,
+            "xp": 391,
+            "creep_xp": 241,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 15,
+            "alive_ticks": 16221,
+            "shop_ticks": 5259,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "7": 1,
+              "5": 1
+            },
+            "rejections": {
+              "2:ActionNotAlive": 12314,
+              "3:ActionNotAlive": 4244,
+              "1:ActionNotAlive": 265,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 96,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 4
+            },
+            "basic_damage_events": 35,
+            "inter_hit_ticks": 27221
+          },
+          {
+            "slot": 2,
+            "class": 7,
+            "xp": 2864,
+            "creep_xp": 914,
+            "hero_xp": 1950,
+            "other_xp": 0,
+            "last_hit_gold": 1065,
+            "alive_ticks": 27761,
+            "shop_ticks": 2446,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "3": 1,
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "9": 1,
+              "10": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 62924,
+              "3:ActionAlreadyEquipped": 8,
+              "6:ActionOutOfRange": 5,
+              "6:ActionInsufficientMana": 4,
+              "3:ActionInventoryFull": 406,
+              "3:ActionInsufficientGold": 4
+            },
+            "basic_damage_events": 75,
+            "inter_hit_ticks": 27179
+          },
+          {
+            "slot": 3,
+            "class": 9,
+            "xp": 5996,
+            "creep_xp": 4796,
+            "hero_xp": 1200,
+            "other_xp": 0,
+            "last_hit_gold": 4485,
+            "alive_ticks": 27064,
+            "shop_ticks": 7475,
+            "portals_started": 11,
+            "portals_completed": 11,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 13,
+              "16": 1,
+              "8": 1,
+              "1": 34,
+              "2": 19,
+              "22": 2
+            },
+            "rejections": {
+              "5:ActionChanneling": 5,
+              "1:ActionChanneling": 6,
+              "6:ActionOutOfRange": 28,
+              "15:ActionChanneling": 6,
+              "6:ActionChanneling": 1,
+              "2:ActionTargetUnavailable": 1,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 229,
+            "inter_hit_ticks": 28075
+          },
+          {
+            "slot": 4,
+            "class": 2,
+            "xp": 2776,
+            "creep_xp": 2326,
+            "hero_xp": 450,
+            "other_xp": 0,
+            "last_hit_gold": 2040,
+            "alive_ticks": 16743,
+            "shop_ticks": 4848,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "2": 1,
+              "10": 1,
+              "4": 35
+            },
+            "rejections": {
+              "2:ActionNotAlive": 11792,
+              "3:ActionNotAlive": 61561,
+              "1:ActionNotAlive": 12057,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 39302,
+              "3:ActionAlreadyEquipped": 72,
+              "4:ActionTargetUnavailable": 4955,
+              "3:ActionInventoryFull": 19,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 23
+            },
+            "basic_damage_events": 141,
+            "inter_hit_ticks": 27816
+          },
+          {
+            "slot": 5,
+            "class": 5,
+            "xp": 4833,
+            "creep_xp": 2683,
+            "hero_xp": 1950,
+            "other_xp": 200,
+            "last_hit_gold": 2655,
+            "alive_ticks": 25623,
+            "shop_ticks": 3825,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 10
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 27,
+              "4:ActionTargetUnavailable": 381,
+              "3:ActionInventoryFull": 11,
+              "3:ActionInsufficientGold": 13
+            },
+            "basic_damage_events": 149,
+            "inter_hit_ticks": 27804
+          },
+          {
+            "slot": 6,
+            "class": 1,
+            "xp": 4194,
+            "creep_xp": 2394,
+            "hero_xp": 1800,
+            "other_xp": 0,
+            "last_hit_gold": 2190,
+            "alive_ticks": 27070,
+            "shop_ticks": 2917,
+            "portals_started": 9,
+            "portals_completed": 9,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 11,
+              "8": 1,
+              "19": 1,
+              "1": 17,
+              "22": 14,
+              "4": 14
+            },
+            "rejections": {
+              "5:ActionChanneling": 4,
+              "1:ActionChanneling": 5,
+              "6:ActionOutOfRange": 3,
+              "15:ActionChanneling": 7,
+              "4:ActionChanneling": 1
+            },
+            "basic_damage_events": 222,
+            "inter_hit_ticks": 28197
+          },
+          {
+            "slot": 7,
+            "class": 8,
+            "xp": 4589,
+            "creep_xp": 2939,
+            "hero_xp": 1350,
+            "other_xp": 300,
+            "last_hit_gold": 2475,
+            "alive_ticks": 24115,
+            "shop_ticks": 3219,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "16": 1,
+              "12": 1,
+              "11": 1,
+              "13": 1,
+              "10": 1,
+              "4": 6
+            },
+            "rejections": {
+              "6:ActionTargetUnavailable": 4,
+              "3:ActionAlreadyEquipped": 4,
+              "6:ActionCooldown": 59,
+              "6:ActionOutOfRange": 132,
+              "4:ActionTargetUnavailable": 44,
+              "6:ActionAbilityLocked": 208,
+              "6:ActionInsufficientMana": 20,
+              "3:ActionInventoryFull": 55,
+              "3:ActionInsufficientGold": 34
+            },
+            "basic_damage_events": 289,
+            "inter_hit_ticks": 28015
+          },
+          {
+            "slot": 8,
+            "class": 4,
+            "xp": 1945,
+            "creep_xp": 1045,
+            "hero_xp": 900,
+            "other_xp": 0,
+            "last_hit_gold": 975,
+            "alive_ticks": 15503,
+            "shop_ticks": 3233,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1
+            },
+            "rejections": {
+              "2:ActionNotAlive": 1348,
+              "3:ActionNotAlive": 35595,
+              "1:ActionNotAlive": 3411,
+              "3:ActionOutsideKeep": 17553,
+              "3:ActionAlreadyEquipped": 8,
+              "5:ActionNotAlive": 8539,
+              "5:ActionDrafting": 20,
+              "3:ActionInventoryFull": 1,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 8
+            },
+            "basic_damage_events": 153,
+            "inter_hit_ticks": 26488
+          },
+          {
+            "slot": 9,
+            "class": 3,
+            "xp": 966,
+            "creep_xp": 866,
+            "hero_xp": 0,
+            "other_xp": 100,
+            "last_hit_gold": 450,
+            "alive_ticks": 16943,
+            "shop_ticks": 3646,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "19": 1,
+              "11": 1,
+              "13": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 2339
+            },
+            "basic_damage_events": 138,
+            "inter_hit_ticks": 26281
+          }
+        ],
+        "ticks": 29593,
+        "hash_mismatches": 0,
+        "scope": "Retrospective typed events from an exact full replay, not live observations or an opponent proxy."
+      }
+    },
+    {
+      "label": "control",
+      "side": 1,
+      "outcome": "win",
+      "episode": "ereq_5b0d478c-5b16-42e5-a6c8-4b45114a6600",
+      "events": {
+        "heroes": [
+          {
+            "slot": 0,
+            "class": 6,
+            "xp": 3147,
+            "creep_xp": 2247,
+            "hero_xp": 900,
+            "other_xp": 0,
+            "last_hit_gold": 2475,
+            "alive_ticks": 16724,
+            "shop_ticks": 2645,
+            "portals_started": 3,
+            "portals_completed": 3,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 5,
+              "8": 1,
+              "19": 1,
+              "1": 8,
+              "2": 7,
+              "22": 11,
+              "4": 1
+            },
+            "rejections": {
+              "5:ActionChanneling": 1,
+              "1:ActionChanneling": 2,
+              "6:ActionOutOfRange": 7,
+              "15:ActionChanneling": 2,
+              "4:ActionChanneling": 2
+            },
+            "basic_damage_events": 104,
+            "inter_hit_ticks": 15512
+          },
+          {
+            "slot": 1,
+            "class": 3,
+            "xp": 327,
+            "creep_xp": 327,
+            "hero_xp": 0,
+            "other_xp": 0,
+            "last_hit_gold": 30,
+            "alive_ticks": 10457,
+            "shop_ticks": 3457,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "12": 1,
+              "4": 1
+            },
+            "rejections": {
+              "2:ActionNotAlive": 5939,
+              "3:ActionNotAlive": 1152,
+              "1:ActionNotAlive": 332,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 1804,
+              "4:ActionTargetUnavailable": 623,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 3
+            },
+            "basic_damage_events": 42,
+            "inter_hit_ticks": 14886
+          },
+          {
+            "slot": 2,
+            "class": 7,
+            "xp": 1550,
+            "creep_xp": 850,
+            "hero_xp": 600,
+            "other_xp": 100,
+            "last_hit_gold": 720,
+            "alive_ticks": 14176,
+            "shop_ticks": 2453,
+            "portals_started": 2,
+            "portals_completed": 2,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 3,
+              "3": 1,
+              "8": 1,
+              "1": 7,
+              "22": 5
+            },
+            "rejections": {
+              "5:ActionChanneling": 2,
+              "6:ActionOutOfRange": 3
+            },
+            "basic_damage_events": 76,
+            "inter_hit_ticks": 15691
+          },
+          {
+            "slot": 3,
+            "class": 4,
+            "xp": 1391,
+            "creep_xp": 1241,
+            "hero_xp": 150,
+            "other_xp": 0,
+            "last_hit_gold": 960,
+            "alive_ticks": 10455,
+            "shop_ticks": 2884,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "1": 1,
+              "13": 1,
+              "5": 1,
+              "4": 5
+            },
+            "rejections": {
+              "2:ActionNotAlive": 6174,
+              "3:ActionNotAlive": 28118,
+              "1:ActionNotAlive": 6273,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 31361,
+              "3:ActionAlreadyEquipped": 226,
+              "4:ActionTargetUnavailable": 2052,
+              "3:ActionInventoryFull": 1390,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 14
+            },
+            "basic_damage_events": 83,
+            "inter_hit_ticks": 15845
+          },
+          {
+            "slot": 4,
+            "class": 8,
+            "xp": 3773,
+            "creep_xp": 2173,
+            "hero_xp": 1500,
+            "other_xp": 100,
+            "last_hit_gold": 1845,
+            "alive_ticks": 15711,
+            "shop_ticks": 2545,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "12": 1,
+              "11": 1,
+              "13": 1,
+              "10": 1,
+              "4": 8
+            },
+            "rejections": {
+              "6:ActionNoCharges": 60,
+              "6:ActionTargetUnavailable": 3,
+              "6:ActionCooldown": 629,
+              "6:ActionOutOfRange": 1396,
+              "4:ActionTargetUnavailable": 40,
+              "6:ActionInsufficientMana": 128,
+              "3:ActionInsufficientGold": 13
+            },
+            "basic_damage_events": 204,
+            "inter_hit_ticks": 15549
+          },
+          {
+            "slot": 5,
+            "class": 1,
+            "xp": 3461,
+            "creep_xp": 2711,
+            "hero_xp": 750,
+            "other_xp": 0,
+            "last_hit_gold": 2460,
+            "alive_ticks": 16726,
+            "shop_ticks": 2179,
+            "portals_started": 6,
+            "portals_completed": 6,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 8,
+              "8": 1,
+              "19": 1,
+              "1": 10,
+              "22": 9,
+              "4": 9
+            },
+            "rejections": {
+              "5:ActionChanneling": 4,
+              "1:ActionChanneling": 2,
+              "6:ActionOutOfRange": 1,
+              "4:ActionTargetUnavailable": 3,
+              "15:ActionChanneling": 3,
+              "4:ActionChanneling": 1
+            },
+            "basic_damage_events": 158,
+            "inter_hit_ticks": 15068
+          },
+          {
+            "slot": 6,
+            "class": 5,
+            "xp": 3797,
+            "creep_xp": 1847,
+            "hero_xp": 1950,
+            "other_xp": 0,
+            "last_hit_gold": 1695,
+            "alive_ticks": 15784,
+            "shop_ticks": 2734,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "16": 1,
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 1
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 1,
+              "4:ActionTargetUnavailable": 32,
+              "3:ActionInventoryFull": 7,
+              "3:ActionInsufficientGold": 6
+            },
+            "basic_damage_events": 141,
+            "inter_hit_ticks": 14266
+          },
+          {
+            "slot": 7,
+            "class": 2,
+            "xp": 2508,
+            "creep_xp": 1308,
+            "hero_xp": 900,
+            "other_xp": 300,
+            "last_hit_gold": 1350,
+            "alive_ticks": 16026,
+            "shop_ticks": 1623,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "13": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 13579,
+              "6:ActionOutOfRange": 11
+            },
+            "basic_damage_events": 137,
+            "inter_hit_ticks": 15780
+          },
+          {
+            "slot": 8,
+            "class": 0,
+            "xp": 1287,
+            "creep_xp": 587,
+            "hero_xp": 600,
+            "other_xp": 100,
+            "last_hit_gold": 270,
+            "alive_ticks": 11723,
+            "shop_ticks": 2354,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1
+            },
+            "rejections": {
+              "2:ActionNotAlive": 941,
+              "3:ActionNotAlive": 23866,
+              "1:ActionNotAlive": 1860,
+              "3:ActionOutsideKeep": 10959,
+              "3:ActionAlreadyEquipped": 881,
+              "5:ActionNotAlive": 2203,
+              "5:ActionDrafting": 20,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 11
+            },
+            "basic_damage_events": 73,
+            "inter_hit_ticks": 14912
+          },
+          {
+            "slot": 9,
+            "class": 9,
+            "xp": 1664,
+            "creep_xp": 1164,
+            "hero_xp": 300,
+            "other_xp": 200,
+            "last_hit_gold": 900,
+            "alive_ticks": 12997,
+            "shop_ticks": 2128,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "13": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 4069
+            },
+            "basic_damage_events": 97,
+            "inter_hit_ticks": 15378
+          }
+        ],
+        "ticks": 17520,
+        "hash_mismatches": 0,
+        "scope": "Retrospective typed events from an exact full replay, not live observations or an opponent proxy."
+      }
+    },
+    {
+      "label": "control",
+      "side": 1,
+      "outcome": "draw",
+      "episode": "ereq_d3fc9de2-6696-43c4-b59f-d49d42f1f9d6",
+      "events": {
+        "heroes": [
+          {
+            "slot": 0,
+            "class": 6,
+            "xp": 7548,
+            "creep_xp": 5448,
+            "hero_xp": 2100,
+            "other_xp": 0,
+            "last_hit_gold": 5610,
+            "alive_ticks": 28457,
+            "shop_ticks": 2037,
+            "portals_started": 8,
+            "portals_completed": 7,
+            "portals_interrupted": 1,
+            "purchases": {
+              "21": 10,
+              "8": 1,
+              "19": 1,
+              "1": 15,
+              "2": 15,
+              "22": 16
+            },
+            "rejections": {
+              "5:ActionChanneling": 4,
+              "1:ActionChanneling": 3,
+              "6:ActionOutOfRange": 13,
+              "15:ActionChanneling": 5,
+              "6:ActionChanneling": 2
+            },
+            "basic_damage_events": 210,
+            "inter_hit_ticks": 27948
+          },
+          {
+            "slot": 1,
+            "class": 3,
+            "xp": 1894,
+            "creep_xp": 844,
+            "hero_xp": 1050,
+            "other_xp": 0,
+            "last_hit_gold": 150,
+            "alive_ticks": 22532,
+            "shop_ticks": 2902,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "9": 1,
+              "10": 1,
+              "4": 9
+            },
+            "rejections": {
+              "2:ActionNotAlive": 5948,
+              "3:ActionNotAlive": 31199,
+              "1:ActionNotAlive": 321,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 40763,
+              "3:ActionAlreadyEquipped": 261,
+              "4:ActionTargetUnavailable": 8391,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 16
+            },
+            "basic_damage_events": 76,
+            "inter_hit_ticks": 27336
+          },
+          {
+            "slot": 2,
+            "class": 7,
+            "xp": 6545,
+            "creep_xp": 3395,
+            "hero_xp": 3150,
+            "other_xp": 0,
+            "last_hit_gold": 3330,
+            "alive_ticks": 27883,
+            "shop_ticks": 5467,
+            "portals_started": 15,
+            "portals_completed": 15,
+            "portals_interrupted": 0,
+            "purchases": {
+              "20": 1,
+              "21": 17,
+              "3": 10,
+              "8": 1,
+              "1": 18,
+              "22": 25
+            },
+            "rejections": {
+              "5:ActionChanneling": 4,
+              "1:ActionChanneling": 11,
+              "6:ActionOutOfRange": 14,
+              "15:ActionChanneling": 5,
+              "6:ActionChanneling": 1,
+              "4:ActionChanneling": 6
+            },
+            "basic_damage_events": 154,
+            "inter_hit_ticks": 27317
+          },
+          {
+            "slot": 3,
+            "class": 8,
+            "xp": 2496,
+            "creep_xp": 2046,
+            "hero_xp": 450,
+            "other_xp": 0,
+            "last_hit_gold": 1635,
+            "alive_ticks": 21002,
+            "shop_ticks": 3444,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "12": 1,
+              "17": 1,
+              "9": 1,
+              "10": 1,
+              "4": 9
+            },
+            "rejections": {
+              "2:ActionNotAlive": 7631,
+              "3:ActionNotAlive": 45614,
+              "1:ActionNotAlive": 7798,
+              "1:ActionDrafting": 20,
+              "3:ActionOutsideKeep": 51834,
+              "3:ActionAlreadyEquipped": 13,
+              "4:ActionTargetUnavailable": 8565,
+              "3:ActionInventoryFull": 3,
+              "3:ActionDrafting": 40,
+              "3:ActionInsufficientGold": 8
+            },
+            "basic_damage_events": 150,
+            "inter_hit_ticks": 27664
+          },
+          {
+            "slot": 4,
+            "class": 9,
+            "xp": 4640,
+            "creep_xp": 2140,
+            "hero_xp": 2100,
+            "other_xp": 400,
+            "last_hit_gold": 2160,
+            "alive_ticks": 20917,
+            "shop_ticks": 3555,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "16": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 3
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 10,
+              "4:ActionTargetUnavailable": 18,
+              "3:ActionInventoryFull": 12,
+              "3:ActionInsufficientGold": 9
+            },
+            "basic_damage_events": 202,
+            "inter_hit_ticks": 27978
+          },
+          {
+            "slot": 5,
+            "class": 1,
+            "xp": 3418,
+            "creep_xp": 3118,
+            "hero_xp": 300,
+            "other_xp": 0,
+            "last_hit_gold": 2700,
+            "alive_ticks": 21694,
+            "shop_ticks": 5740,
+            "portals_started": 7,
+            "portals_completed": 7,
+            "portals_interrupted": 0,
+            "purchases": {
+              "21": 8,
+              "8": 1,
+              "1": 12,
+              "22": 9,
+              "4": 5
+            },
+            "rejections": {
+              "5:ActionChanneling": 6,
+              "1:ActionChanneling": 1,
+              "6:ActionOutOfRange": 17,
+              "4:ActionTargetUnavailable": 2,
+              "15:ActionChanneling": 2
+            },
+            "basic_damage_events": 135,
+            "inter_hit_ticks": 27907
+          },
+          {
+            "slot": 6,
+            "class": 5,
+            "xp": 5579,
+            "creep_xp": 2929,
+            "hero_xp": 2550,
+            "other_xp": 100,
+            "last_hit_gold": 2595,
+            "alive_ticks": 21229,
+            "shop_ticks": 4563,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "16": 1,
+              "6": 1,
+              "7": 1,
+              "11": 1,
+              "13": 1,
+              "5": 1,
+              "4": 3
+            },
+            "rejections": {
+              "3:ActionAlreadyEquipped": 66,
+              "6:ActionOutOfRange": 20,
+              "4:ActionTargetUnavailable": 71,
+              "3:ActionInventoryFull": 102,
+              "3:ActionInsufficientGold": 15
+            },
+            "basic_damage_events": 169,
+            "inter_hit_ticks": 27740
+          },
+          {
+            "slot": 7,
+            "class": 2,
+            "xp": 2969,
+            "creep_xp": 1769,
+            "hero_xp": 1200,
+            "other_xp": 0,
+            "last_hit_gold": 1800,
+            "alive_ticks": 20130,
+            "shop_ticks": 6690,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "16": 1,
+              "3": 3,
+              "19": 1,
+              "11": 1,
+              "13": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 10230,
+              "6:ActionOutOfRange": 1,
+              "6:ActionInsufficientMana": 3,
+              "3:ActionInventoryFull": 254
+            },
+            "basic_damage_events": 127,
+            "inter_hit_ticks": 27186
+          },
+          {
+            "slot": 8,
+            "class": 0,
+            "xp": 921,
+            "creep_xp": 921,
+            "hero_xp": 0,
+            "other_xp": 0,
+            "last_hit_gold": 300,
+            "alive_ticks": 14819,
+            "shop_ticks": 4477,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "6": 1,
+              "7": 1,
+              "1": 2,
+              "2": 1,
+              "5": 1,
+              "4": 1
+            },
+            "rejections": {
+              "2:ActionNotAlive": 724,
+              "3:ActionNotAlive": 9931,
+              "1:ActionNotAlive": 4799,
+              "3:ActionOutsideKeep": 8168,
+              "3:ActionAlreadyEquipped": 1,
+              "5:ActionNotAlive": 8458,
+              "5:ActionDrafting": 20,
+              "4:ActionTargetUnavailable": 57,
+              "3:ActionDrafting": 40,
+              "4:ActionCooldown": 240,
+              "3:ActionInsufficientGold": 8
+            },
+            "basic_damage_events": 58,
+            "inter_hit_ticks": 27239
+          },
+          {
+            "slot": 9,
+            "class": 4,
+            "xp": 3140,
+            "creep_xp": 2840,
+            "hero_xp": 0,
+            "other_xp": 300,
+            "last_hit_gold": 2505,
+            "alive_ticks": 15503,
+            "shop_ticks": 3629,
+            "portals_started": 0,
+            "portals_completed": 0,
+            "portals_interrupted": 0,
+            "purchases": {
+              "18": 1,
+              "16": 1,
+              "19": 1,
+              "11": 1,
+              "13": 1
+            },
+            "rejections": {
+              "3:ActionOutsideKeep": 10626,
+              "6:ActionOutOfRange": 33,
+              "6:ActionInsufficientMana": 54
+            },
+            "basic_damage_events": 194,
+            "inter_hit_ticks": 27625
+          }
+        ],
+        "ticks": 29593,
+        "hash_mismatches": 0,
+        "scope": "Retrospective typed events from an exact full replay, not live observations or an opponent proxy."
+      }
+    }
+  ],
+  "limits": "Two fixed mixed-team first-pick rosters, current exact versions, correlated trajectories. No late-draft, universal field or rank conclusion."
+}

@@ -1,0 +1,104 @@
+{
+  "game_version": "2026.9.21.5",
+  "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+  "cycle": "interactive-current-draft-field-20260922",
+  "games": 160,
+  "arms": [
+    {
+      "name": "candidate",
+      "target": "mixed-first-pick",
+      "opponent": "040846546ead02a0c4a7cd93867f94b666646191ad37ae26d248bfb41a0e770e",
+      "side": 0,
+      "version": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+        "b5569b62-bf41-4dec-912e-1254abd8e58d",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d7203ddb-24e7-4e7a-8c4b-95fa27424b61",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "7dcba95c-6966-4a86-b033-7ffcafa8991f"
+      ],
+      "games": 40
+    },
+    {
+      "name": "candidate",
+      "target": "mixed-first-pick",
+      "opponent": "0a056862726427a0c8a464e756d79a6993af8a013eb76349c942236bb060cb09",
+      "side": 1,
+      "version": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "b5569b62-bf41-4dec-912e-1254abd8e58d",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+        "d7203ddb-24e7-4e7a-8c4b-95fa27424b61",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "7dcba95c-6966-4a86-b033-7ffcafa8991f"
+      ],
+      "games": 40
+    },
+    {
+      "name": "control",
+      "target": "mixed-first-pick",
+      "opponent": "040846546ead02a0c4a7cd93867f94b666646191ad37ae26d248bfb41a0e770e",
+      "side": 0,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "b5569b62-bf41-4dec-912e-1254abd8e58d",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d7203ddb-24e7-4e7a-8c4b-95fa27424b61",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "7dcba95c-6966-4a86-b033-7ffcafa8991f"
+      ],
+      "games": 40
+    },
+    {
+      "name": "control",
+      "target": "mixed-first-pick",
+      "opponent": "0a056862726427a0c8a464e756d79a6993af8a013eb76349c942236bb060cb09",
+      "side": 1,
+      "version": "c2785cd4-433b-46d1-a454-dd29147383ec",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "b5569b62-bf41-4dec-912e-1254abd8e58d",
+        "58af3f96-f479-4fc3-b777-276e53f48b06",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "c2785cd4-433b-46d1-a454-dd29147383ec",
+        "d7203ddb-24e7-4e7a-8c4b-95fa27424b61",
+        "d774f970-7699-4478-acb3-3fb99a6627cb",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "7dcba95c-6966-4a86-b033-7ffcafa8991f"
+      ],
+      "games": 40
+    }
+  ],
+  "candidate_source_sha256": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+  "evaluator_sha256": "f7b3e1d1d24377e33a338563182584d21931fd377d610a57f8aa301337115d32",
+  "rule": "All 40 games/cell clean and hash/score audited. Candidate own XP score >=0.95 control each color, strict aggregate gain >=10%. Fort outcomes not a gate. Rival score superiority reported separately. Two fixed first-pick rosters only; not universal field strength.",
+  "reason": "User episode exposes old compat Vanguard choice and three failed teammates. Strong practiced version retained after further native refinements failed matched score gates. New mixed-roster question; not continuation of the finished target panel."
+}

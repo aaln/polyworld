@@ -1,0 +1,91 @@
+{
+  "idempotency_key": "gota-current-draft-field0922-control-0-04084654",
+  "target": {
+    "coworld_id": "cow_e5445477-d55e-432d-ac38-bd1eae66e6d3",
+    "variant_id": "competition"
+  },
+  "game_config_overrides": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  },
+  "num_episodes": 40,
+  "roster": [
+    {
+      "slot": 0,
+      "player": {
+        "policy_ref": "c2785cd4-433b-46d1-a454-dd29147383ec"
+      }
+    },
+    {
+      "slot": 1,
+      "player": {
+        "policy_ref": "b5569b62-bf41-4dec-912e-1254abd8e58d"
+      }
+    },
+    {
+      "slot": 2,
+      "player": {
+        "policy_ref": "58af3f96-f479-4fc3-b777-276e53f48b06"
+      }
+    },
+    {
+      "slot": 3,
+      "player": {
+        "policy_ref": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace"
+      }
+    },
+    {
+      "slot": 4,
+      "player": {
+        "policy_ref": "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      }
+    },
+    {
+      "slot": 5,
+      "player": {
+        "policy_ref": "6b72f83b-6623-458c-add3-85ec0ef6e38b"
+      }
+    },
+    {
+      "slot": 6,
+      "player": {
+        "policy_ref": "d7203ddb-24e7-4e7a-8c4b-95fa27424b61"
+      }
+    },
+    {
+      "slot": 7,
+      "player": {
+        "policy_ref": "d774f970-7699-4478-acb3-3fb99a6627cb"
+      }
+    },
+    {
+      "slot": 8,
+      "player": {
+        "policy_ref": "2777766f-4931-4fd9-83f2-44a3f509ede1"
+      }
+    },
+    {
+      "slot": 9,
+      "player": {
+        "policy_ref": "7dcba95c-6966-4a86-b033-7ffcafa8991f"
+      }
+    }
+  ],
+  "notes": "Current-release XP-score A/B: practiced policy versus live compat, one first-pick seat, nine distinct frozen healthy-preflight players. Both colors; all VMs, full replay and official scores audited. Fort outcomes diagnostic only. No league selection."
+}

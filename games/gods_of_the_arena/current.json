@@ -1,0 +1,23 @@
+{
+  "game_version": "2026.9.21.5",
+  "engine_commit": "f776d5e55d439706a8d49878d17d7ba1f6a1f7ce",
+  "coworld_id": "cow_e5445477-d55e-432d-ac38-bd1eae66e6d3",
+  "variant_id": "competition",
+  "primary_metric": "mean per-hero max(0, lifetime XP - 200 * world ticks / 1440), including draft ticks",
+  "fort_outcome": "diagnostic; not an advancement gate for new XP-score experiments",
+  "reference_pair": "examples/gods_of_the_arena/players/ir/forks/current20260922",
+  "reference_source_sha256": "b82c379953831b719776ba4faf3ab21a5ac2d1d383ed7f93c5f70df26fc81098",
+  "binding": "gota-bassy/microplay-2026-09-22-r2",
+  "current_guide": "docs/guides/guide-gota-current-release.md",
+  "history": "docs/guides/devin-gota-autoresearch.md",
+  "policy_inputs": "public current observations only; opponent versions and replay truth are evaluation metadata",
+  "legacy_acceptance_applies": false,
+  "budget": "Shared existing journal; 400 new hosted games/cycle, 1600/UTC day, maximum 3 active XP, 40-200/batch. Expired dated overrides do not apply.",
+  "reference_ir_sha256": "e9243120947b76baef8a6226b290ca6db08e0dc09c9058c2757d70217c31e6f3",
+  "reference_evidence": "480-game frozen target study plus 320-game current-score mixed A/B and later-draft guardrail; exact source unchanged. Jordan356 remains untested.",
+  "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/current20260922-deployment",
+  "live_versions": {
+    "aaron": "f3f8baab-d02a-4f7f-8fc9-e1f050f967a7",
+    "coach": "15b325b4-e9f3-487f-bd95-a059f92d20e2"
+  }
+}
