@@ -122,6 +122,17 @@ def build(name, hero):
     print(name, ir.digest(source.encode()))
 
 
+def configure_control():
+    """Port contract facts while retaining every byte of the deployed control."""
+    configure()
+    facts = ir.temporal_facts(VERSION)
+    practiced.configure('potions')
+    binding.GAME_VERSIONS = ir.GAME_VERSIONS = (VERSION,)
+    facts['coordinates'] = ('This retained control reasons in global observed tiles. It remains legal on the patched host, '
+                            'but lane rounding and quarter-tile offsets are not rotation equivariant. Mirroring is a separately evaluated intervention.')
+    ir.temporal_facts = lambda version: deepcopy(facts)
+
+
 if __name__ == '__main__':
     for name, hero in [('ranger', 1), ('crossbow', 6), ('warlock', 8), ('arcanist', 2)]:
         build(name, hero)
