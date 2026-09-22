@@ -1,0 +1,7 @@
+# spell-targeting
+
+Screen gain **+10.06%**, colors [8.198026259003166, 11.714278402838808]. Independent confirmation: **False**.
+
+See evidence for confidence intervals and exact roster/version scope. Practice validates mechanism/runtime; hosted individual score determines selection. Edited executable bytes invalidate this evidence.
+
+Run `python verify.py`, or `python convert.py compile --out /new/path` and `python convert.py extract --source policy.bas --out /another/new/path`. The local initial pair and prior portal/coaching inputs remain preserved.

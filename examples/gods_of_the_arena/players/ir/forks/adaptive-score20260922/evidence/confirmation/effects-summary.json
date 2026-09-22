@@ -1,0 +1,1169 @@
+{
+  "plan": {
+    "selection": "First4 lexical episode UUIDs per cell after all cells complete; rule chosen before detailed effect decoding. Retrospective diagnostic subset, no independent holdout/competitive gate.",
+    "cases": [
+      {
+        "name": "baseline",
+        "side": 0,
+        "slot": 2,
+        "episode": "ereq_18100f0b-321c-4ec5-b64f-dcec2a039377",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 0,
+        "slot": 2,
+        "episode": "ereq_1ada35cc-9c39-4da3-9d49-56ac588dd01f",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 0,
+        "slot": 2,
+        "episode": "ereq_297ca318-3a5b-42d7-acba-a1dc34be913c",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 0,
+        "slot": 2,
+        "episode": "ereq_2e35faec-fa1e-4d1d-aca9-55f00b578b33",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 1,
+        "slot": 7,
+        "episode": "ereq_0185a663-565b-4748-bc6e-af3be687a169",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 1,
+        "slot": 7,
+        "episode": "ereq_0e084979-9e51-4e46-aacc-cb3b7da74068",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 1,
+        "slot": 7,
+        "episode": "ereq_1a0ea836-cec9-4ad3-9590-262c6c5596f1",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "baseline",
+        "side": 1,
+        "slot": 7,
+        "episode": "ereq_1ea2a3e4-67de-4dab-be07-c3196516b5a4",
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520"
+      },
+      {
+        "name": "spell-pressure",
+        "side": 0,
+        "slot": 2,
+        "episode": "ereq_0806c558-fde1-4183-a90b-db57f883ca57",
+        "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297"
+      },
+      {
+        "name": "spell-pressure",
+        "side": 0,
+        "slot": 2,
+        "episode": "ereq_08f8df01-6d92-4a98-8306-a08daed55966",
+        "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297"
+      },
+      {
+        "name": "spell-pressure",
+        "side": 0,
+        "slot": 2,
+        "episode": "ereq_11099c0f-3f64-44c5-9c9c-fcdc15a6b78a",
+        "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297"
+      },
+      {
+        "name": "spell-pressure",
+        "side": 0,
+        "slot": 2,
+        "episode": "ereq_1ec48306-a4c7-4c38-9a67-0e1cf1e5a5a8",
+        "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297"
+      },
+      {
+        "name": "spell-pressure",
+        "side": 1,
+        "slot": 7,
+        "episode": "ereq_0067ccc5-bd64-42d5-87c0-b15e51affca8",
+        "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297"
+      },
+      {
+        "name": "spell-pressure",
+        "side": 1,
+        "slot": 7,
+        "episode": "ereq_08fb1b36-73c6-41f3-9922-46770f4978a4",
+        "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297"
+      },
+      {
+        "name": "spell-pressure",
+        "side": 1,
+        "slot": 7,
+        "episode": "ereq_0ce6288d-9843-4bbb-ab2e-3490b71ef3d1",
+        "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297"
+      },
+      {
+        "name": "spell-pressure",
+        "side": 1,
+        "slot": 7,
+        "episode": "ereq_0db86f09-1075-4584-8573-5c25215b82c5",
+        "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297"
+      }
+    ],
+    "instrument_sha256": "8a3044802d68a274837aac8fddacc572258ef14411ceb4ef81b5305ff6ee3d83",
+    "binary_sha256": "0a37bdc929c7ef59293c54d4fbf2ce2ccd99d28c4938d7d4ae4324cbbf01096d"
+  },
+  "cells": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "n": 4,
+      "mean_totals": {
+        "alive_ticks": 12654,
+        "channel_ticks": 288,
+        "damage_basic_creep": 4660.75,
+        "damage_basic_hero": 2180.25,
+        "damage_basic_structure": 3431.75,
+        "damage_spell_creep": 4192.75,
+        "damage_spell_hero": 1422.75,
+        "damage_spell_structure": 274.25,
+        "damage_taken": 3533,
+        "field_ticks": 9774,
+        "gold_spent": 1907.5,
+        "keep_ticks": 2880,
+        "low_mana_ticks": 3794,
+        "rejected_ActionInsufficientMana": 0.25,
+        "rejected_ActionOutOfRange": 478,
+        "rejected_ActionTargetUnavailable": 0.75,
+        "xp_creep": 2308.25,
+        "xp_hero": 937.5,
+        "xp_structure": 200
+      },
+      "classes": [
+        "Lich",
+        "Arcanist",
+        "Arcanist",
+        "Arcanist"
+      ]
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "n": 4,
+      "mean_totals": {
+        "alive_ticks": 10797.75,
+        "channel_ticks": 162,
+        "damage_basic_creep": 4039.25,
+        "damage_basic_hero": 2227,
+        "damage_basic_structure": 1395.25,
+        "damage_spell_creep": 3078.75,
+        "damage_spell_hero": 1500,
+        "damage_spell_structure": 50.25,
+        "damage_taken": 4813,
+        "field_ticks": 6363.75,
+        "gold_spent": 1592.5,
+        "keep_ticks": 4434,
+        "low_mana_ticks": 2173,
+        "rejected_ActionInsufficientMana": 0.25,
+        "rejected_ActionOutOfRange": 478,
+        "rejected_ActionTargetUnavailable": 1.75,
+        "xp_creep": 1980.5,
+        "xp_hero": 862.5,
+        "xp_structure": 50
+      },
+      "classes": [
+        "Arcanist",
+        "DruidWarden",
+        "Arcanist",
+        "Lich"
+      ]
+    },
+    {
+      "name": "spell-pressure",
+      "side": 0,
+      "n": 4,
+      "mean_totals": {
+        "alive_ticks": 10781.5,
+        "channel_ticks": 216,
+        "damage_basic_creep": 4001,
+        "damage_basic_hero": 1701,
+        "damage_basic_structure": 1786,
+        "damage_spell_creep": 3644.25,
+        "damage_spell_hero": 1874.75,
+        "damage_spell_structure": 105.5,
+        "damage_taken": 4030.75,
+        "field_ticks": 7969.5,
+        "gold_spent": 1945,
+        "keep_ticks": 2812,
+        "low_mana_ticks": 3068.25,
+        "rejected_ActionInsufficientMana": 0.75,
+        "rejected_ActionOutOfRange": 406,
+        "xp_creep": 2099.25,
+        "xp_hero": 675,
+        "xp_structure": 100
+      },
+      "classes": [
+        "Arcanist",
+        "Arcanist",
+        "Lich",
+        "Arcanist"
+      ]
+    },
+    {
+      "name": "spell-pressure",
+      "side": 1,
+      "n": 4,
+      "mean_totals": {
+        "alive_ticks": 12416,
+        "channel_ticks": 234,
+        "damage_basic_creep": 5013.5,
+        "damage_basic_hero": 2964.75,
+        "damage_basic_structure": 1541.5,
+        "damage_spell_creep": 3856.25,
+        "damage_spell_hero": 2161.75,
+        "damage_spell_structure": 178.5,
+        "damage_taken": 5303,
+        "field_ticks": 7958.25,
+        "gold_spent": 2355,
+        "keep_ticks": 4457.75,
+        "low_mana_ticks": 3092.75,
+        "rejected_ActionInsufficientMana": 0.5,
+        "rejected_ActionOutOfRange": 602.5,
+        "rejected_ActionTargetUnavailable": 0.5,
+        "xp_creep": 2256.25,
+        "xp_hero": 1050,
+        "xp_structure": 125
+      },
+      "classes": [
+        "Arcanist",
+        "Lich",
+        "Arcanist",
+        "Arcanist"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "slot": 2,
+      "episode": "ereq_18100f0b-321c-4ec5-b64f-dcec2a039377",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 21423,
+      "hero": {
+        "slot": 2,
+        "class": "Lich",
+        "xp": 4648,
+        "gold": 1000,
+        "deaths": 9,
+        "level": 11,
+        "totals": {
+          "damage_spell_hero": 2647,
+          "low_mana_ticks": 3652,
+          "damage_basic_structure": 3084,
+          "alive_ticks": 17350,
+          "xp_creep": 3398,
+          "xp_hero": 1050,
+          "damage_basic_creep": 5230,
+          "rejected_ActionInsufficientMana": 1,
+          "channel_ticks": 504,
+          "damage_spell_creep": 8140,
+          "xp_structure": 200,
+          "gold_spent": 3570,
+          "field_ticks": 13444,
+          "damage_taken": 5686,
+          "keep_ticks": 3906,
+          "damage_spell_structure": 324,
+          "rejected_ActionOutOfRange": 893,
+          "damage_basic_hero": 2694
+        },
+        "spells": {
+          "BoneMarionette": 26,
+          "FrostSigil": 9,
+          "IceSpear": 57,
+          "BoundVoid": 9
+        },
+        "spell_damage": {
+          "BoneMarionette": 6327,
+          "FrostSigil": 105,
+          "IceSpear": 3644,
+          "BoundVoid": 1035
+        },
+        "xp_by_minute": {
+          "14": 441,
+          "3": 205,
+          "6": 345,
+          "12": 390,
+          "8": 595,
+          "7": 360,
+          "11": 544,
+          "1": 62,
+          "13": 135,
+          "2": 405,
+          "5": 360,
+          "9": 131,
+          "10": 270,
+          "4": 405
+        }
+      },
+      "audit_sha256": "db3c07e536548063515cad0230a71bd086f48d8829fd841b547d209d47ed99e9"
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "slot": 2,
+      "episode": "ereq_1ada35cc-9c39-4da3-9d49-56ac588dd01f",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 16254,
+      "hero": {
+        "slot": 2,
+        "class": "Arcanist",
+        "xp": 4992,
+        "gold": 2940,
+        "deaths": 2,
+        "level": 11,
+        "totals": {
+          "damage_spell_hero": 2021,
+          "low_mana_ticks": 5790,
+          "damage_basic_structure": 8676,
+          "alive_ticks": 14910,
+          "xp_creep": 3242,
+          "xp_hero": 1350,
+          "damage_basic_creep": 6958,
+          "channel_ticks": 360,
+          "damage_spell_creep": 4701,
+          "xp_structure": 400,
+          "gold_spent": 1590,
+          "field_ticks": 11663,
+          "damage_taken": 3769,
+          "keep_ticks": 3247,
+          "damage_spell_structure": 668,
+          "rejected_ActionOutOfRange": 453,
+          "damage_basic_hero": 2549,
+          "rejected_ActionTargetUnavailable": 1
+        },
+        "spells": {
+          "ManaCrystal": 22,
+          "FrostLance": 46,
+          "MeteorStrike": 32,
+          "ArcaneMeteor": 9
+        },
+        "spell_damage": {
+          "FrostLance": 2678,
+          "MeteorStrike": 4112,
+          "ArcaneMeteor": 600
+        },
+        "xp_by_minute": {
+          "3": 460,
+          "6": 495,
+          "8": 625,
+          "7": 375,
+          "11": 310,
+          "1": 75,
+          "2": 445,
+          "5": 300,
+          "9": 480,
+          "10": 600,
+          "4": 827
+        }
+      },
+      "audit_sha256": "c17f41a2a5cc693d6c574f62380aa42177c77d5f2595d73076574f2b7f30ef36"
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "slot": 2,
+      "episode": "ereq_297ca318-3a5b-42d7-acba-a1dc34be913c",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 12798,
+      "hero": {
+        "slot": 2,
+        "class": "Arcanist",
+        "xp": 3214,
+        "gold": 1935,
+        "deaths": 4,
+        "level": 9,
+        "totals": {
+          "damage_spell_hero": 645,
+          "low_mana_ticks": 4243,
+          "damage_basic_structure": 1264,
+          "alive_ticks": 10422,
+          "xp_creep": 1914,
+          "xp_hero": 1200,
+          "damage_basic_creep": 4919,
+          "channel_ticks": 288,
+          "damage_spell_creep": 2898,
+          "xp_structure": 100,
+          "gold_spent": 1430,
+          "field_ticks": 7693,
+          "damage_taken": 3211,
+          "keep_ticks": 2729,
+          "rejected_ActionOutOfRange": 420,
+          "damage_basic_hero": 3119,
+          "rejected_ActionTargetUnavailable": 1
+        },
+        "spells": {
+          "FrostLance": 38,
+          "MeteorStrike": 22,
+          "ArcaneMeteor": 4
+        },
+        "spell_damage": {
+          "FrostLance": 1625,
+          "MeteorStrike": 1783,
+          "ArcaneMeteor": 135
+        },
+        "xp_by_minute": {
+          "3": 356,
+          "6": 634,
+          "8": 789,
+          "7": 255,
+          "1": 289,
+          "2": 179,
+          "5": 272,
+          "4": 440
+        }
+      },
+      "audit_sha256": "3d056d020ed4df7a00c7f96f9e3f237c3407e73abfe8faf2ca96dcc5e77531c0"
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "slot": 2,
+      "episode": "ereq_2e35faec-fa1e-4d1d-aca9-55f00b578b33",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 8902,
+      "hero": {
+        "slot": 2,
+        "class": "Arcanist",
+        "xp": 929,
+        "gold": 125,
+        "deaths": 1,
+        "level": 5,
+        "totals": {
+          "damage_spell_hero": 378,
+          "low_mana_ticks": 1491,
+          "damage_basic_structure": 703,
+          "alive_ticks": 7934,
+          "xp_creep": 679,
+          "xp_hero": 150,
+          "damage_basic_creep": 1536,
+          "damage_spell_creep": 1032,
+          "xp_structure": 100,
+          "gold_spent": 1040,
+          "field_ticks": 6296,
+          "damage_taken": 1466,
+          "keep_ticks": 1638,
+          "damage_spell_structure": 105,
+          "rejected_ActionOutOfRange": 146,
+          "damage_basic_hero": 359,
+          "rejected_ActionTargetUnavailable": 1
+        },
+        "spells": {
+          "FrostLance": 19,
+          "MeteorStrike": 9
+        },
+        "spell_damage": {
+          "FrostLance": 811,
+          "MeteorStrike": 704
+        },
+        "xp_by_minute": {
+          "3": 120,
+          "1": 53,
+          "2": 300,
+          "5": 67,
+          "4": 389
+        }
+      },
+      "audit_sha256": "a51973c18720d7a0e25227b0d26ac12364ee63e89b609518d114608f29194f0e"
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "slot": 7,
+      "episode": "ereq_0185a663-565b-4748-bc6e-af3be687a169",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 12791,
+      "hero": {
+        "slot": 7,
+        "class": "Arcanist",
+        "xp": 1501,
+        "gold": 830,
+        "deaths": 8,
+        "level": 6,
+        "totals": {
+          "damage_spell_hero": 1149,
+          "low_mana_ticks": 566,
+          "alive_ticks": 7577,
+          "xp_creep": 1201,
+          "xp_hero": 300,
+          "damage_basic_creep": 2618,
+          "channel_ticks": 72,
+          "damage_spell_creep": 2830,
+          "gold_spent": 1080,
+          "field_ticks": 3234,
+          "damage_taken": 4311,
+          "keep_ticks": 4343,
+          "rejected_ActionOutOfRange": 334,
+          "damage_basic_hero": 738
+        },
+        "spells": {
+          "FrostLance": 27,
+          "MeteorStrike": 16,
+          "ArcaneMeteor": 1
+        },
+        "spell_damage": {
+          "FrostLance": 1286,
+          "MeteorStrike": 2453,
+          "ArcaneMeteor": 240
+        },
+        "xp_by_minute": {
+          "3": 45,
+          "6": 98,
+          "8": 442,
+          "7": 99,
+          "1": 127,
+          "2": 585,
+          "5": 45,
+          "4": 60
+        }
+      },
+      "audit_sha256": "27191a30945ad58c9bf2fdd00d3ce5cc1469c2e72c426b71f518e1a11557c586"
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "slot": 7,
+      "episode": "ereq_0e084979-9e51-4e46-aacc-cb3b7da74068",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 12070,
+      "hero": {
+        "slot": 7,
+        "class": "DruidWarden",
+        "xp": 1512,
+        "gold": 40,
+        "deaths": 5,
+        "level": 6,
+        "totals": {
+          "low_mana_ticks": 478,
+          "damage_basic_structure": 414,
+          "alive_ticks": 9296,
+          "xp_creep": 1362,
+          "xp_hero": 150,
+          "damage_basic_creep": 3393,
+          "channel_ticks": 72,
+          "damage_spell_creep": 408,
+          "gold_spent": 1170,
+          "field_ticks": 4878,
+          "damage_taken": 6291,
+          "keep_ticks": 4418,
+          "damage_basic_hero": 1458,
+          "rejected_ActionOutOfRange": 75,
+          "rejected_ActionTargetUnavailable": 5
+        },
+        "spells": {
+          "HealingBloom": 33,
+          "GolemSeed": 2,
+          "KindredWisps": 21
+        },
+        "spell_damage": {
+          "GolemSeed": 408
+        },
+        "xp_by_minute": {
+          "3": 105,
+          "6": 345,
+          "8": 30,
+          "7": 133,
+          "1": 120,
+          "2": 350,
+          "5": 360,
+          "4": 69
+        }
+      },
+      "audit_sha256": "c11b2a972c3b339ae131b44a09b5de0f3b4773b378053e97de413bf828a99773"
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "slot": 7,
+      "episode": "ereq_1a0ea836-cec9-4ad3-9590-262c6c5596f1",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 14761,
+      "hero": {
+        "slot": 7,
+        "class": "Arcanist",
+        "xp": 3228,
+        "gold": 280,
+        "deaths": 7,
+        "level": 9,
+        "totals": {
+          "damage_spell_hero": 2459,
+          "low_mana_ticks": 3068,
+          "damage_basic_structure": 2667,
+          "alive_ticks": 11946,
+          "xp_creep": 1928,
+          "xp_hero": 1200,
+          "damage_basic_creep": 3960,
+          "channel_ticks": 216,
+          "damage_spell_creep": 2605,
+          "xp_structure": 100,
+          "gold_spent": 2620,
+          "field_ticks": 7498,
+          "damage_taken": 4708,
+          "keep_ticks": 4448,
+          "damage_spell_structure": 105,
+          "rejected_ActionOutOfRange": 644,
+          "damage_basic_hero": 2112
+        },
+        "spells": {
+          "FrostLance": 39,
+          "MeteorStrike": 19,
+          "ArcaneMeteor": 7
+        },
+        "spell_damage": {
+          "FrostLance": 2111,
+          "MeteorStrike": 2484,
+          "ArcaneMeteor": 574
+        },
+        "xp_by_minute": {
+          "3": 255,
+          "6": 580,
+          "8": 120,
+          "7": 225,
+          "1": 105,
+          "2": 91,
+          "5": 615,
+          "9": 442,
+          "4": 795
+        }
+      },
+      "audit_sha256": "da36756e96c24badbec4579e494a3887f98c343a5c596b6ab1a695742f853cf4"
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "slot": 7,
+      "episode": "ereq_1ea2a3e4-67de-4dab-be07-c3196516b5a4",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "ticks": 16748,
+      "hero": {
+        "slot": 7,
+        "class": "Lich",
+        "xp": 5331,
+        "gold": 3525,
+        "deaths": 4,
+        "level": 12,
+        "totals": {
+          "damage_spell_hero": 2392,
+          "low_mana_ticks": 4580,
+          "damage_basic_structure": 2500,
+          "alive_ticks": 14372,
+          "xp_creep": 3431,
+          "xp_hero": 1800,
+          "damage_basic_creep": 6186,
+          "rejected_ActionInsufficientMana": 1,
+          "channel_ticks": 288,
+          "damage_spell_creep": 6472,
+          "xp_structure": 100,
+          "gold_spent": 1500,
+          "field_ticks": 9845,
+          "damage_taken": 3942,
+          "keep_ticks": 4527,
+          "damage_spell_structure": 96,
+          "rejected_ActionOutOfRange": 859,
+          "damage_basic_hero": 4600,
+          "rejected_ActionTargetUnavailable": 2
+        },
+        "spells": {
+          "BoneMarionette": 24,
+          "FrostSigil": 12,
+          "IceSpear": 51,
+          "BoundVoid": 9
+        },
+        "spell_damage": {
+          "BoneMarionette": 5172,
+          "FrostSigil": 168,
+          "IceSpear": 2985,
+          "BoundVoid": 635
+        },
+        "xp_by_minute": {
+          "3": 420,
+          "6": 543,
+          "8": 308,
+          "7": 705,
+          "11": 495,
+          "1": 240,
+          "2": 457,
+          "5": 533,
+          "9": 540,
+          "10": 540,
+          "4": 550
+        }
+      },
+      "audit_sha256": "abffcba2b5253fdba12b754c9d86d31eea3c230cbda722146983e297cda93c2e"
+    },
+    {
+      "name": "spell-pressure",
+      "side": 0,
+      "slot": 2,
+      "episode": "ereq_0806c558-fde1-4183-a90b-db57f883ca57",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "ticks": 13024,
+      "hero": {
+        "slot": 2,
+        "class": "Arcanist",
+        "xp": 2209,
+        "gold": 925,
+        "deaths": 3,
+        "level": 7,
+        "totals": {
+          "damage_spell_hero": 854,
+          "low_mana_ticks": 2600,
+          "damage_basic_structure": 1192,
+          "alive_ticks": 11224,
+          "xp_creep": 1809,
+          "xp_hero": 300,
+          "damage_basic_creep": 3658,
+          "rejected_ActionInsufficientMana": 1,
+          "channel_ticks": 144,
+          "damage_spell_creep": 2726,
+          "xp_structure": 100,
+          "gold_spent": 1240,
+          "field_ticks": 8002,
+          "damage_taken": 2534,
+          "keep_ticks": 3222,
+          "damage_spell_structure": 84,
+          "rejected_ActionOutOfRange": 402,
+          "damage_basic_hero": 1039
+        },
+        "spells": {
+          "FrostLance": 36,
+          "MeteorStrike": 17,
+          "ArcaneMeteor": 1
+        },
+        "spell_damage": {
+          "FrostLance": 1586,
+          "MeteorStrike": 2078
+        },
+        "xp_by_minute": {
+          "3": 180,
+          "6": 330,
+          "8": 685,
+          "7": 364,
+          "1": 75,
+          "2": 165,
+          "5": 122,
+          "9": 30,
+          "4": 258
+        }
+      },
+      "audit_sha256": "38f6ae6c80cd9ca055cdea4a18f010f2da9fef9907b79f67f055a15458450ac5"
+    },
+    {
+      "name": "spell-pressure",
+      "side": 0,
+      "slot": 2,
+      "episode": "ereq_08f8df01-6d92-4a98-8306-a08daed55966",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "ticks": 8160,
+      "hero": {
+        "slot": 2,
+        "class": "Arcanist",
+        "xp": 1607,
+        "gold": 285,
+        "deaths": 2,
+        "level": 6,
+        "totals": {
+          "damage_spell_hero": 1422,
+          "low_mana_ticks": 1099,
+          "damage_basic_structure": 1204,
+          "alive_ticks": 6816,
+          "xp_creep": 907,
+          "xp_hero": 600,
+          "damage_basic_creep": 2062,
+          "channel_ticks": 144,
+          "damage_spell_creep": 1178,
+          "xp_structure": 100,
+          "gold_spent": 1240,
+          "field_ticks": 4664,
+          "damage_taken": 2878,
+          "keep_ticks": 2152,
+          "damage_spell_structure": 168,
+          "rejected_ActionOutOfRange": 233,
+          "damage_basic_hero": 854
+        },
+        "spells": {
+          "FrostLance": 20,
+          "MeteorStrike": 10,
+          "ArcaneMeteor": 3
+        },
+        "spell_damage": {
+          "FrostLance": 965,
+          "MeteorStrike": 1323,
+          "ArcaneMeteor": 480
+        },
+        "xp_by_minute": {
+          "3": 580,
+          "1": 75,
+          "2": 322,
+          "5": 150,
+          "4": 480
+        }
+      },
+      "audit_sha256": "7832de5e3c2c8cd080f376cbcfece2a5a2004b022576021959999518b12d9ebe"
+    },
+    {
+      "name": "spell-pressure",
+      "side": 0,
+      "slot": 2,
+      "episode": "ereq_11099c0f-3f64-44c5-9c9c-fcdc15a6b78a",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "ticks": 16793,
+      "hero": {
+        "slot": 2,
+        "class": "Lich",
+        "xp": 3750,
+        "gold": 1770,
+        "deaths": 7,
+        "level": 10,
+        "totals": {
+          "damage_spell_hero": 2106,
+          "low_mana_ticks": 3836,
+          "damage_basic_structure": 3308,
+          "alive_ticks": 12664,
+          "xp_creep": 2800,
+          "xp_hero": 750,
+          "damage_basic_creep": 4268,
+          "channel_ticks": 288,
+          "damage_spell_creep": 6504,
+          "xp_structure": 200,
+          "gold_spent": 1910,
+          "field_ticks": 9787,
+          "damage_taken": 3860,
+          "keep_ticks": 2877,
+          "damage_spell_structure": 100,
+          "rejected_ActionOutOfRange": 617,
+          "damage_basic_hero": 2681
+        },
+        "spells": {
+          "BoneMarionette": 23,
+          "FrostSigil": 1,
+          "IceSpear": 46,
+          "BoundVoid": 5
+        },
+        "spell_damage": {
+          "BoneMarionette": 4949,
+          "IceSpear": 2742,
+          "BoundVoid": 1019
+        },
+        "xp_by_minute": {
+          "3": 165,
+          "6": 555,
+          "8": 120,
+          "7": 300,
+          "11": 460,
+          "1": 120,
+          "2": 385,
+          "5": 315,
+          "9": 420,
+          "10": 608,
+          "4": 302
+        }
+      },
+      "audit_sha256": "b73101c430e298e28c024747c400b5a7699bb75da6821f529845a93e43cbaac8"
+    },
+    {
+      "name": "spell-pressure",
+      "side": 0,
+      "slot": 2,
+      "episode": "ereq_1ec48306-a4c7-4c38-9a67-0e1cf1e5a5a8",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "ticks": 16013,
+      "hero": {
+        "slot": 2,
+        "class": "Arcanist",
+        "xp": 3931,
+        "gold": 325,
+        "deaths": 9,
+        "level": 10,
+        "totals": {
+          "damage_spell_hero": 3117,
+          "low_mana_ticks": 4738,
+          "damage_basic_structure": 1440,
+          "alive_ticks": 12422,
+          "xp_creep": 2881,
+          "xp_hero": 1050,
+          "damage_basic_creep": 6016,
+          "rejected_ActionInsufficientMana": 2,
+          "channel_ticks": 288,
+          "damage_spell_creep": 4169,
+          "gold_spent": 3390,
+          "field_ticks": 9425,
+          "damage_taken": 6851,
+          "keep_ticks": 2997,
+          "damage_spell_structure": 70,
+          "rejected_ActionOutOfRange": 372,
+          "damage_basic_hero": 2230
+        },
+        "spells": {
+          "ManaCrystal": 9,
+          "FrostLance": 40,
+          "MeteorStrike": 29,
+          "ArcaneMeteor": 8
+        },
+        "spell_damage": {
+          "FrostLance": 2181,
+          "MeteorStrike": 4031,
+          "ArcaneMeteor": 1144
+        },
+        "xp_by_minute": {
+          "3": 180,
+          "6": 585,
+          "8": 289,
+          "7": 765,
+          "1": 75,
+          "2": 225,
+          "5": 510,
+          "9": 600,
+          "10": 150,
+          "4": 552
+        }
+      },
+      "audit_sha256": "9fa68942690ac0fc8e71c947928c62a8876aeb20ad2a14d3a6f3b89f60d65933"
+    },
+    {
+      "name": "spell-pressure",
+      "side": 1,
+      "slot": 7,
+      "episode": "ereq_0067ccc5-bd64-42d5-87c0-b15e51affca8",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "ticks": 18498,
+      "hero": {
+        "slot": 7,
+        "class": "Arcanist",
+        "xp": 5230,
+        "gold": 1355,
+        "deaths": 7,
+        "level": 12,
+        "totals": {
+          "damage_spell_hero": 3361,
+          "low_mana_ticks": 5125,
+          "damage_basic_structure": 2812,
+          "alive_ticks": 16119,
+          "xp_creep": 3230,
+          "xp_hero": 1800,
+          "damage_basic_creep": 7403,
+          "rejected_ActionInsufficientMana": 2,
+          "channel_ticks": 360,
+          "damage_spell_creep": 5696,
+          "xp_structure": 200,
+          "gold_spent": 3580,
+          "field_ticks": 12247,
+          "damage_taken": 7138,
+          "keep_ticks": 3872,
+          "damage_spell_structure": 294,
+          "rejected_ActionOutOfRange": 739,
+          "damage_basic_hero": 5109
+        },
+        "spells": {
+          "ManaCrystal": 30,
+          "FrostLance": 56,
+          "MeteorStrike": 35,
+          "ArcaneMeteor": 12
+        },
+        "spell_damage": {
+          "FrostLance": 3598,
+          "MeteorStrike": 5276,
+          "ArcaneMeteor": 477
+        },
+        "xp_by_minute": {
+          "3": 547,
+          "6": 700,
+          "12": 298,
+          "8": 600,
+          "7": 405,
+          "11": 386,
+          "1": 506,
+          "5": 408,
+          "9": 480,
+          "10": 600,
+          "4": 300
+        }
+      },
+      "audit_sha256": "afa10aeb3e2b1ab6b97891727d932019f2517de6dc4cc7755264e32f12645668"
+    },
+    {
+      "name": "spell-pressure",
+      "side": 1,
+      "slot": 7,
+      "episode": "ereq_08fb1b36-73c6-41f3-9922-46770f4978a4",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "ticks": 10096,
+      "hero": {
+        "slot": 7,
+        "class": "Lich",
+        "xp": 1731,
+        "gold": 615,
+        "deaths": 6,
+        "level": 7,
+        "totals": {
+          "damage_spell_hero": 906,
+          "low_mana_ticks": 136,
+          "damage_basic_structure": 1186,
+          "alive_ticks": 6208,
+          "xp_creep": 881,
+          "xp_hero": 750,
+          "damage_basic_creep": 1638,
+          "damage_spell_creep": 1462,
+          "xp_structure": 100,
+          "gold_spent": 950,
+          "field_ticks": 3748,
+          "damage_taken": 3708,
+          "keep_ticks": 2460,
+          "damage_spell_structure": 210,
+          "rejected_ActionOutOfRange": 472,
+          "damage_basic_hero": 1081,
+          "rejected_ActionTargetUnavailable": 1
+        },
+        "spells": {
+          "BoneMarionette": 7,
+          "IceSpear": 22,
+          "BoundVoid": 4
+        },
+        "spell_damage": {
+          "BoneMarionette": 1056,
+          "IceSpear": 1277,
+          "BoundVoid": 245
+        },
+        "xp_by_minute": {
+          "3": 246,
+          "1": 450,
+          "2": 205,
+          "5": 235,
+          "4": 595
+        }
+      },
+      "audit_sha256": "dd6df6c52cf0ffd6ffd1f751c8c98055ae7ee8288d2c6fbabad800b5a9c2df97"
+    },
+    {
+      "name": "spell-pressure",
+      "side": 1,
+      "slot": 7,
+      "episode": "ereq_0ce6288d-9843-4bbb-ab2e-3490b71ef3d1",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "ticks": 12016,
+      "hero": {
+        "slot": 7,
+        "class": "Arcanist",
+        "xp": 1850,
+        "gold": 735,
+        "deaths": 3,
+        "level": 7,
+        "totals": {
+          "damage_spell_hero": 770,
+          "low_mana_ticks": 2240,
+          "damage_basic_structure": 1778,
+          "alive_ticks": 10216,
+          "xp_creep": 1500,
+          "xp_hero": 150,
+          "damage_basic_creep": 3172,
+          "channel_ticks": 216,
+          "damage_spell_creep": 2394,
+          "xp_structure": 200,
+          "gold_spent": 1180,
+          "field_ticks": 7543,
+          "damage_taken": 2083,
+          "keep_ticks": 2673,
+          "damage_spell_structure": 210,
+          "rejected_ActionOutOfRange": 359,
+          "damage_basic_hero": 816
+        },
+        "spells": {
+          "FrostLance": 25,
+          "MeteorStrike": 14,
+          "ArcaneMeteor": 1
+        },
+        "spell_damage": {
+          "FrostLance": 1122,
+          "MeteorStrike": 2252
+        },
+        "xp_by_minute": {
+          "6": 120,
+          "8": 205,
+          "7": 444,
+          "1": 90,
+          "2": 75,
+          "5": 316,
+          "4": 600
+        }
+      },
+      "audit_sha256": "db6b7c6c241d2e0564c24477db8337382a7a3f9384c616eee4248ac5da0f0c50"
+    },
+    {
+      "name": "spell-pressure",
+      "side": 1,
+      "slot": 7,
+      "episode": "ereq_0db86f09-1075-4584-8573-5c25215b82c5",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "ticks": 20436,
+      "hero": {
+        "slot": 7,
+        "class": "Arcanist",
+        "xp": 4914,
+        "gold": 1190,
+        "deaths": 8,
+        "level": 11,
+        "totals": {
+          "damage_spell_hero": 3610,
+          "low_mana_ticks": 4870,
+          "damage_basic_structure": 390,
+          "alive_ticks": 17121,
+          "xp_creep": 3414,
+          "xp_hero": 1500,
+          "damage_basic_creep": 7841,
+          "channel_ticks": 360,
+          "damage_spell_creep": 5873,
+          "gold_spent": 3710,
+          "field_ticks": 8295,
+          "damage_taken": 8283,
+          "keep_ticks": 8826,
+          "rejected_ActionOutOfRange": 840,
+          "damage_basic_hero": 4853,
+          "rejected_ActionTargetUnavailable": 1
+        },
+        "spells": {
+          "ManaCrystal": 15,
+          "FrostLance": 61,
+          "MeteorStrike": 38,
+          "ArcaneMeteor": 10
+        },
+        "spell_damage": {
+          "FrostLance": 3131,
+          "MeteorStrike": 5212,
+          "ArcaneMeteor": 1140
+        },
+        "xp_by_minute": {
+          "14": 97,
+          "6": 898,
+          "12": 794,
+          "8": 152,
+          "7": 474,
+          "11": 43,
+          "1": 127,
+          "13": 1098,
+          "2": 129,
+          "5": 90,
+          "9": 555,
+          "10": 342,
+          "4": 115
+        }
+      },
+      "audit_sha256": "2bbe61213fa744b4f8df15d2504c18ed387a00bdfc22bd5696d6fe73a870e345"
+    }
+  ],
+  "scope": "Typed actual effects on mechanical16game subset; may differ in classes and scene mix. Full160game score gate remains separate; no component causality."
+}

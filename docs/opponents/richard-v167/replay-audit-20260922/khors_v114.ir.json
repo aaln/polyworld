@@ -1,0 +1,165 @@
+{
+  "schema": "gota-opponent-descriptive-ir/1",
+  "id": "khors_v114_current_score_20260922",
+  "situation": {
+    "authority": "Retrospective full replay truth and typed events; no opponent source or private VM memory",
+    "game_version": "2026.9.22.3",
+    "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+    "policy_version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+    "source_sha256_from_host_specs": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160",
+    "control_source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+    "selection": "All80 exact previous-study clean baseline games. Four lexical episode UUIDs per control color for deeper spell and position diagnosis.",
+    "guide_sha256": "d236f3139259814951b8830cef79362cabaeec5adf80081d4650d1cfc4b160a4",
+    "episodes": [
+      "ereq_e2affa6d-5ae4-4b1e-b941-2a2315774641",
+      "ereq_c893b889-05eb-422e-8deb-15d1c3100f13",
+      "ereq_a4c77796-ce76-4b81-99d5-5d947b05c567",
+      "ereq_e402aa3d-3690-4e67-9000-029f3748332e",
+      "ereq_f2a97f62-3b43-4653-8825-afe3f46ce11c",
+      "ereq_e72cb594-cd87-438e-97cd-266f9c8eec86",
+      "ereq_4c7767c8-3990-45e8-b37d-07138878ab8e",
+      "ereq_c07633b5-3e3f-46e5-ba95-158dd2fa28a7",
+      "ereq_c2f09def-2b1a-44a4-b302-50d635b7901b",
+      "ereq_4360aaa0-857a-487b-b506-e073641ece84",
+      "ereq_6765dc64-7b48-457f-8659-062bb5d79cca",
+      "ereq_afcfe15d-e75a-4abd-bfe4-61876d9c8fee",
+      "ereq_8fc62d55-3d0f-4aa9-ac4c-d8b12f06d9d4",
+      "ereq_308c28b7-a594-42f8-8b13-5d4e6451716b",
+      "ereq_ea1a33c3-063c-4f14-80cc-8c6bb21e6d11",
+      "ereq_41a33a71-263d-4f5e-b9f8-3d81a78861f4",
+      "ereq_8ac5a29b-8c11-49df-9661-2a47933f62b8",
+      "ereq_8a0b3458-18ae-42fc-8141-f0a718c44d3f",
+      "ereq_42f03847-c2de-4a70-9fc4-a30c9caf60bd",
+      "ereq_d17eb043-983f-4e3b-b291-e2b9e050455c",
+      "ereq_2dc58cd5-98f8-4ca1-ae6c-eab3c6606353",
+      "ereq_43453806-fb72-4358-9594-7295357d80b2",
+      "ereq_a467a2ac-545e-43bc-a99d-a6c685b8c4c2",
+      "ereq_736d1073-1334-4bde-b9e3-d9bea1d1a7a3",
+      "ereq_35a7ac35-ed41-41eb-a4e4-ab2f5e64bb97",
+      "ereq_208b2e04-1433-4e58-9098-a994a9055d6d",
+      "ereq_287d563d-e4ae-465c-ae84-585d2bd55262",
+      "ereq_f8ec005a-cfb1-4d44-860c-73db51190aaa",
+      "ereq_98b583a6-04df-4fcb-bc26-8d334e3e2392",
+      "ereq_1f6eda20-4c41-450a-9bb8-bd5cde369e80",
+      "ereq_45635273-9a61-480d-b0f3-8b14901895c6",
+      "ereq_26c4217d-eefc-4e93-9ef9-e549cce399a1",
+      "ereq_12de33c9-40d7-4332-8518-8efc140346cb",
+      "ereq_3ac47f52-f0dc-4eb6-be60-5d61080ee363",
+      "ereq_dfb39faa-ac7d-4030-9674-ef2a52362713",
+      "ereq_32f97e49-e5ac-460c-b5b8-e330e2978cb9",
+      "ereq_9c6d14d8-6894-4f94-8dd3-b25f6f5cff98",
+      "ereq_5f69216b-1e0b-44cb-963e-6cb52d16dde4",
+      "ereq_58aad575-fccc-4deb-8b84-d672bca1e440",
+      "ereq_cb7fc6e3-29f7-4a13-80b0-a011aadb3f9f",
+      "ereq_4e37cdd2-30f1-4a7d-9bb7-d0f5fac439eb",
+      "ereq_e4ee54fe-69a0-48e6-8aa9-e2ded9def4d9",
+      "ereq_10b08f3a-a166-4894-9da8-9a6695deda0d",
+      "ereq_01ad11ab-7bc1-49dc-909c-bdb426da3294",
+      "ereq_4e07f4dc-7c15-4ebf-9fca-2253aad8e7b2",
+      "ereq_9fca24f5-1a9b-4ce2-9acb-9fd2d9f87e29",
+      "ereq_7c5b2ec5-5dd0-43d1-9c6d-fcf03b0a45a1",
+      "ereq_a7e58a50-4d49-47de-b596-1e5a5aac9a12",
+      "ereq_201d9bd7-a477-43de-b664-c2e2f02a309b",
+      "ereq_d0f217e9-0f2f-4fe2-bebf-c0435814e251",
+      "ereq_bcd00a3b-c411-451e-a009-86b523a46d64",
+      "ereq_e6eba01d-b5f4-40d4-9677-0b1c023c3fa7",
+      "ereq_daa1059d-f5d7-4043-b9d4-4de6caca9a1f",
+      "ereq_3ecc34b9-b8da-46a5-a62a-317bac1f2770",
+      "ereq_adab1820-768d-4533-b942-193cbbedab4c",
+      "ereq_b90a4a81-cf8f-42d3-ace0-e0cf03bb6834",
+      "ereq_ac106f0c-1690-462f-9c53-45dd8ca34652",
+      "ereq_4978cf0c-8685-463c-b674-2cfdcdd43919",
+      "ereq_9f24f2f5-c1c0-47ef-a930-9d931f9a6bf6",
+      "ereq_6322d7eb-3156-4d46-b700-afc0ce208bb5",
+      "ereq_4a977bda-29d8-466f-8e1a-152bdf7893d9",
+      "ereq_7334a815-b316-4262-b681-3151f006b199",
+      "ereq_fe54d461-fdf4-46f5-bd0d-cdc0e4375650",
+      "ereq_80c767fb-ddf6-49bd-85a0-0bb2cabc6a99",
+      "ereq_d7e0f433-4bc5-4fe1-a43c-b3616d98ecfc",
+      "ereq_b9604308-771c-4f17-9d4b-a430ac97a6c4",
+      "ereq_4e3d64e1-a118-4d3a-a7cb-36c02342089d",
+      "ereq_c28b5bc0-a0cc-4fa9-9171-f2510afd5d74",
+      "ereq_7250ee8e-93ad-4d07-a292-50a87263a88a",
+      "ereq_c31bc211-1f61-491c-9dff-d05dc4f77f33",
+      "ereq_d009e3a5-36cc-4bde-a40d-04a193041b19",
+      "ereq_984f51f5-896c-4816-8d6e-9baba110265d",
+      "ereq_ee4fdc1d-2fab-4997-a6b2-057d233dca2d",
+      "ereq_e94cb7a1-7260-42aa-bca6-2cec9ef26a65",
+      "ereq_a4740650-11ce-4f99-a724-2880abe5ce49",
+      "ereq_329b7889-c472-459b-a9bc-7a125d8a2f9d",
+      "ereq_33f93d87-bb47-4245-8d4e-dba3458850cd",
+      "ereq_3973fc3f-9b98-4245-ad3d-56b2f2a224a5",
+      "ereq_ff0666c8-1efb-4df1-8698-d7505044ad8b",
+      "ereq_7231fcf9-789e-43c6-805c-a283d9c3363f"
+    ]
+  },
+  "belief": {
+    "observed": {
+      "classes": {
+        "Crossbowman": 44,
+        "Ranger": 36
+      },
+      "mean_hero_kills": 20.0125,
+      "mean_creep_last_hits": 153.2,
+      "mean_spells": 96.35,
+      "all_other_vms_clean": true
+    },
+    "claims": [
+      {
+        "id": "CURRENT_ARCHETYPE",
+        "status": "observed",
+        "claim": "Ranger/Crossbow80/80; approximately20 hero kills per game versus our13.4 despite fewer creep last hits and spell releases."
+      },
+      {
+        "id": "ORDER_UNKNOWN",
+        "status": "unidentified",
+        "claim": "Draft preference conditional on availability, exact target ordering, cast timing, escape guards and intent cannot be inferred from marginal aggregates."
+      }
+    ]
+  },
+  "goal": {
+    "individual_xp": {
+      "status": "hypothesis",
+      "purpose": "Accumulate individual score through XP-producing actions; actual internal priority graph unidentified."
+    }
+  },
+  "skill": {
+    "combat": {
+      "observed": "Typed actual damage and XP in economy-summary.json",
+      "initiation": "unidentified",
+      "termination": "unidentified"
+    },
+    "replenishment": {
+      "observed": "Accepted purchases and portals in detailed audit",
+      "priority": "unidentified"
+    }
+  },
+  "strategy": [
+    {
+      "id": "COUNTER_SPELL_OPPORTUNITY",
+      "when": "Our visible basic target differs from a nearby visible enemy hero; a damaging ability is ready",
+      "skill": "independent_public_spell_target",
+      "for": [
+        "individual_xp"
+      ],
+      "status": "counter hypothesis; actual source tested separately",
+      "priority_identified_for_opponent": false
+    }
+  ],
+  "execution": {
+    "binding": "retrospective-descriptive/1",
+    "source_available": false,
+    "proxy_usable": false,
+    "forecast_validated": false,
+    "heldout_forecast": null,
+    "boundary": "Use exact hosted responsive policy. No UUID/player name, future commands or hidden replay coordinates enter live control."
+  },
+  "update": {
+    "kind": "New game/version-aware descriptive record; preserve earlier opponent models and failed score study",
+    "evidence": [
+      "economy-summary.json"
+    ],
+    "preserved_raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-adaptive-score-20260922",
+    "next_discriminator": "Frozen responsive mixed-roster240game screen, followed by conditional independent160game confirmation. Repeat after field/version changes."
+  }
+}

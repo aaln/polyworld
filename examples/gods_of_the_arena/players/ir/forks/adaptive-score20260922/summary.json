@@ -1,0 +1,71 @@
+{
+  "screen": [
+    {
+      "name": "spell-targeting",
+      "source_sha256": "352b5d931b5dc369fc979c00bd8a0924ded35a2974e8be87d490888952255a3e",
+      "score_gate_passed": true,
+      "baseline_score": 2768.7749999999996,
+      "candidate_score": 3047.2875000000004,
+      "aggregate_gain_percent": 10.059051385540574,
+      "gain_ci95_percent": [
+        -7.494543532380737,
+        31.08764436396203
+      ],
+      "per_color_gain_percent": [
+        8.198026259003166,
+        11.714278402838808
+      ]
+    },
+    {
+      "name": "spell-pressure",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "score_gate_passed": true,
+      "baseline_score": 2768.7749999999996,
+      "candidate_score": 3154.2875000000004,
+      "aggregate_gain_percent": 13.923576310823416,
+      "gain_ci95_percent": [
+        -4.071071941137228,
+        35.05441423453497
+      ],
+      "per_color_gain_percent": [
+        19.16485244895416,
+        9.261897247362105
+      ]
+    }
+  ],
+  "confirmation": [
+    {
+      "name": "spell-pressure",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "score_gate_passed": false,
+      "baseline_score": 1161.7625,
+      "candidate_score": 1112.9250000000002,
+      "aggregate_gain_percent": -4.203742159004086,
+      "gain_ci95_percent": [
+        -26.426299670174338,
+        24.2239080057715
+      ],
+      "per_color_gain_percent": [
+        -13.349268001195092,
+        6.540153500561585
+      ]
+    }
+  ],
+  "qualified": null,
+  "pairs": [
+    {
+      "verified": true,
+      "source_sha256": "352b5d931b5dc369fc979c00bd8a0924ded35a2974e8be87d490888952255a3e",
+      "ir_sha256": "3d54fe22b803420b96de779a447c2096817b130f3002089c80bcb860c28d6f50",
+      "screen_passed": true,
+      "confirmation_passed": false
+    },
+    {
+      "verified": true,
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "ir_sha256": "3cee05fb268e6eee7e7e3a9a5ca98f95ea51c42541dbb33e21b9251a2a667233",
+      "screen_passed": true,
+      "confirmation_passed": false
+    }
+  ]
+}

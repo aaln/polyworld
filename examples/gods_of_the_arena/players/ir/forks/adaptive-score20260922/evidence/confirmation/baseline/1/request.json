@@ -1,0 +1,91 @@
+{
+  "idempotency_key": "gota-adaptive0922-confirmation-baseline-1-db71abb371",
+  "target": {
+    "coworld_id": "cow_2cb5d47d-c064-44af-8b44-cef246667920",
+    "variant_id": "competition"
+  },
+  "game_config_overrides": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  },
+  "num_episodes": 40,
+  "roster": [
+    {
+      "slot": 0,
+      "player": {
+        "policy_ref": "145c01e0-0cbf-4e1e-8120-11b437175b91"
+      }
+    },
+    {
+      "slot": 1,
+      "player": {
+        "policy_ref": "a15665be-4edf-4857-b23b-2888b4b49868"
+      }
+    },
+    {
+      "slot": 2,
+      "player": {
+        "policy_ref": "e811221e-c419-4f7b-9629-01f8722ab9f7"
+      }
+    },
+    {
+      "slot": 3,
+      "player": {
+        "policy_ref": "6b72f83b-6623-458c-add3-85ec0ef6e38b"
+      }
+    },
+    {
+      "slot": 4,
+      "player": {
+        "policy_ref": "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      }
+    },
+    {
+      "slot": 5,
+      "player": {
+        "policy_ref": "94a17c5a-480f-478e-ba25-60a5ecd70286"
+      }
+    },
+    {
+      "slot": 6,
+      "player": {
+        "policy_ref": "2777766f-4931-4fd9-83f2-44a3f509ede1"
+      }
+    },
+    {
+      "slot": 7,
+      "player": {
+        "policy_ref": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7"
+      }
+    },
+    {
+      "slot": 8,
+      "player": {
+        "policy_ref": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace"
+      }
+    },
+    {
+      "slot": 9,
+      "player": {
+        "policy_ref": "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      }
+    }
+  ],
+  "notes": "Adaptive individual-score research. Exact Richard167 and khors114 opposing both colors; public-only spell-targeting variants. Frozen>=10% aggregate score gain and>=95% each color, zero invalid/source/VM/replay/XP/integer failures. Screen selection requires fresh separate roster confirmation before deployment. No automatic league selection."
+}

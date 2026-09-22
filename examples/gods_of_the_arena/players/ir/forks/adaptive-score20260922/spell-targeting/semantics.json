@@ -1,0 +1,214 @@
+{
+  "situation": {
+    "observation": "Bassy Q16.16 decimals for fractional action coordinates, integer snapshot tiles and IDs; six inventory slots; shared public hero draft.",
+    "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+    "predicates": {
+      "always": "Unconditional lifecycle phase",
+      "low_health_in_field": "Below 30% health outside the friendly keep/spawn, alive and not channeling/stunned. Recovery takes priority over farming and attack reacquisition.",
+      "low_health_in_base": "Critical health inside own keep/spawn commits to walking and replenishment without a home portal.",
+      "active": "Alive, battle started, decision due, not channeling or stunned",
+      "in_base": "Host canShop identifies own keep or spawn; home recalls are disallowed here while useful outbound channels remain legal.",
+      "town_scroll_ready": "Committed field recovery with an actual ready scroll; safe channel checks must still pass.",
+      "recovery_remaining": "Recovery owns the decision and no successful channel/replenishment action has claimed it."
+    }
+  },
+  "belief": {
+    "memory": [
+      "crossed",
+      "enemyX",
+      "enemyY",
+      "homeX",
+      "homeY",
+      "hurtTick",
+      "initialized",
+      "lane",
+      "moveTick",
+      "nextThink",
+      "portalBusy",
+      "previousHits",
+      "previousHp",
+      "restock",
+      "resumeTarget",
+      "retreat",
+      "scanOffset",
+      "spawnX",
+      "spawnY"
+    ],
+    "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. The lifecycle binding explicitly resets initialization and retreat state after death.",
+    "uncertainty": "Unseen enemies are unknown. Visible targets may be masked. Only the draft roster, allied positions and visible opponents inform live choices."
+  },
+  "skills": {
+    "portal_state": {
+      "meaning": "Hold the channel lock through its zero-remaining-ticks completion boundary; release only when the host publishes cooldown (completed/interrupted) or death.",
+      "parameters": {},
+      "actions": []
+    },
+    "draft": {
+      "meaning": "Prefer available Crossbowman after the damage buff; retain the exact public ranged-first fallback and every post-draft controller rule.",
+      "parameters": {
+        "think_ticks": 6
+      },
+      "actions": [
+        "draftHero"
+      ]
+    },
+    "recovery_intent": {
+      "meaning": "Critical field health takes priority before post-hit attack reacquisition; commit to survive_and_replenish until recovered at spawn.",
+      "parameters": {},
+      "actions": []
+    },
+    "base_recovery_intent": {
+      "meaning": "Low health inside the keep still commits to walking toward the fountain; never leave base merely because field-only recall is ineligible.",
+      "parameters": {},
+      "actions": []
+    },
+    "timing": {
+      "meaning": "After an observed landed hit, walk for one physics tick to clear recovery, then reacquire the remembered public target. Same-tick walk and attack does not reset the new engine swing. Never cancel unfinished windup or a portal channel; clear pending reacquisition after death.",
+      "parameters": {},
+      "actions": [
+        "walkTo",
+        "attackTarget"
+      ]
+    },
+    "lifecycle": {
+      "meaning": "Recover lifecycle state after death, conserve buyback gold during short respawns, and spend available legal ability ranks before combat.",
+      "parameters": {
+        "buyback_seconds": 25,
+        "buyback_reserve": 200
+      },
+      "actions": [
+        "buyback",
+        "levelAbility"
+      ]
+    },
+    "observe": {
+      "meaning": "Visible bounded scan: reward in-range last hits, count current keep attackers and defenders, and select an allied portal tower toward the assigned farming lane. Separately measure public hero/creep gaps and require a living home-area tower for recall; never infer hidden enemies are absent. Also retain nearest publicly visible living enemy hero within9 integer-coordinate tiles as a spell candidate. This does not reveal hidden heroes or identify opponent policy versions. Hero basic-target bonus is an explicit80..480 parameter; all other target geometry, finishing and current-target preferences remain.",
+      "parameters": {
+        "scan_limit": 96,
+        "hero_priority_bonus": 80
+      },
+      "actions": []
+    },
+    "economy": {
+      "meaning": "Buy dagger and armor, then the first retreat scroll before axe/crossbow. Once all four core items are owned, maintain up to two stacked scrolls using live inventory/gold. Outward travel must leave one emergency scroll; no additional inventory slot required.",
+      "parameters": {
+        "shop_gold": 500
+      },
+      "actions": [
+        "buyItem",
+        "useItem"
+      ]
+    },
+    "portal_context": {
+      "meaning": "Re-read live inventory after purchases. Ready means an actual charge, zero shared/item cooldown, alive and free of root/stun/channel; in_base uses the host keep/spawn query.",
+      "parameters": {},
+      "actions": []
+    },
+    "replenish": {
+      "meaning": "Finish rapid fountain recovery until 90% HP and 80% mana, then release the retreat goal. Do not cast a home scroll inside the keep or spawn.",
+      "parameters": {},
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "channel_town_scroll": {
+      "meaning": "Prefer a safe field channel to walking home. Require a living home-area tower, useful travel distance, no damage for one second, no nearby heroes/creeps/towers or imminent public spell warning. Enemy uncertainty remains; this is a bounded safety heuristic, not guaranteed invulnerability.",
+      "parameters": {},
+      "actions": [
+        "useItemAt"
+      ]
+    },
+    "walk_to_base": {
+      "meaning": "When recall is unsafe/unavailable, or already inside the keep, walk toward spawn and reconsider on later decisions. Interrupted channels use live cooldown/root state; no retry loop spends extra charges.",
+      "parameters": {},
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "home_portal": {
+      "meaning": "At most the first two public team ordinals may safely channel home when visible enemy heroes threaten the keep and fewer than two allies already defend. Require health, distance, no recent damage and portal readiness; current threat disappearance releases defense. Never recall defensively from inside the keep; require a live home anchor and current item readiness.",
+      "parameters": {},
+      "actions": [
+        "useItemAt"
+      ]
+    },
+    "tower_safety": {
+      "meaning": "Leave doubled-tower aggro at a health threshold; do not enter an empty tower kill zone without allied creep cover.",
+      "parameters": {
+        "tower_hp": 65
+      },
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "xp_close": {
+      "meaning": "For safe Crossbowman creep farming, step inside the six-tile XP radius instead of stopping at its 6.5-tile attack range. Override stale navigation throttles before an out-of-range XP last hit; defer while tower safety or recovery owns movement.",
+      "parameters": {},
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "combat": {
+      "meaning": "Preserve basic targeting and post-hit timing. For each learned ready affordable ability: heal self when useful; restore mana when an entire restoration fits; otherwise attempt damage on the nearest public enemy hero within9 observation tiles. The actual host validates exact range, floor, visibility and target legality; only on rejected hero cast try the original basic target, retaining lethal-creep restriction. A rejected attempt spends no mana/charge. This is a heuristic, not inferred kill credit. Recovery, tower safety and complete portal-channel ownership precede combat unchanged.",
+      "parameters": {
+        "reset_recovery": 1
+      },
+      "actions": [
+        "walkTo",
+        "attackTarget",
+        "castTarget"
+      ]
+    },
+    "advance": {
+      "meaning": "Assign 2/2/1 lane farming by public team ordinal; push past the midpoint, defend only nearby present threats, and portal from recovery to a surviving forward tower. Outbound portals require two scrolls so one remains for field recovery after cooldown; home and outward channel purposes are distinct.",
+      "parameters": {},
+      "actions": [
+        "attackMove",
+        "useItemAt"
+      ]
+    }
+  },
+  "temporal_execution": {
+    "facts": {
+      "self_data": "self* and worldTick are set once before each hero's VM decision; use/buy do not refresh them.",
+      "queries": "One frozen public object and warning frame per decision phase; own command results, inventory and ability costs update immediately.",
+      "inventory_flags": "Presence and empty-slot flags accumulate before useItem for each slot. They are earlier observations, not current post-use/post-buy inventory.",
+      "gold": "All affordability guards read starting selfGold; each buyItem checks and spends the remaining live balance.",
+      "equipment": "Successful purchases refresh stats: increases in maximum HP/mana also add that increase to current HP/mana. Resource gear therefore has immediate sustain effects as well as permanent capacity.",
+      "attack": "attackTarget stores an engine pursuit target if valid; accepted does not prove path reachability or damage.",
+      "walk": "walkTo clears attack intent before pathfinding, including when pathfinding subsequently returns false.",
+      "poison": "useItem on poison strikes the engine's current attackObjectId, not a policy-local bestId variable.",
+      "failures": "A command return of zero does not universally mean no state changed. Failed walkTo can clear attack intent.",
+      "memory": "Policy globals persist; baseline resets its decision-local scan variables. Engine attack/movement intent is separate persistent state.",
+      "numbers": "Integer observations; Q16.16 decimals only after safe scaling. Integer division uses backslash. Bitwise negation is never used for host flags.",
+      "abilities": "All abilities start locked; levelAbility explicitly unlocks/ranks them. Auto-casting uses learned ranks only.",
+      "shopping": "Only in own keep; successful purchases spend live gold. Potion and portal family cooldowns persist through death.",
+      "draft": "Shared ten-hero pool, alternating teams, ten seconds per pick. worldTick includes drafting; no class-color assumption.",
+      "rewards": "Creep XP within six tiles on same floor. Seed/tick/team-relative geometry and spawn determine simultaneous last hitter; no absolute ID advantage. Enemy god destruction grants500XP once to every teammate including dead/distant heroes. Hero kill150XP; building100XP. Score charges200/minute including draft.",
+      "coordinates": "This retained control reasons in global observed tiles. It remains legal on the patched host, but lane rounding and quarter-tile offsets are not rotation equivariant. Mirroring is a separately evaluated intervention.",
+      "phases": "Shared starting actor state, simultaneous movement, collected damage then deaths/rewards; mutual kills and fort draws are legal.",
+      "scores": "Integer max(0, lifetime_xp * 1440 - 200 * world_ticks) div 1440; win outcome separate.",
+      "balance": "Ranger HP/level 19; Crossbowman base damage 69; Warlock Dread Totem base damage 87; no faction draft bonuses."
+    },
+    "rule_order": [
+      "R_portal_state",
+      "R_draft",
+      "R_recovery_intent",
+      "R_base_recovery_intent",
+      "R_timing",
+      "R_lifecycle",
+      "R_observe",
+      "R_economy",
+      "R_portal_context",
+      "R_replenish",
+      "R_channel_town_scroll",
+      "R_walk_to_base",
+      "R_home_portal",
+      "R_tower_safety",
+      "R_xp_close",
+      "R_combat",
+      "R_advance"
+    ],
+    "action_arbitration": "Rules execute in order; multiple commands can affect shared engine state during one decision."
+  }
+}

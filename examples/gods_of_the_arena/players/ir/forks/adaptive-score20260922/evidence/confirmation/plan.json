@@ -1,0 +1,99 @@
+{
+  "stage": "confirmation",
+  "games": 160,
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3",
+  "cycle": "interactive-adaptive-score-20260922",
+  "arms": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "own_slots": [
+        2
+      ],
+      "roster": [
+        "94a17c5a-480f-478e-ba25-60a5ecd70286",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "e811221e-c419-4f7b-9629-01f8722ab9f7",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 40
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "own_slots": [
+        7
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "e811221e-c419-4f7b-9629-01f8722ab9f7",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "94a17c5a-480f-478e-ba25-60a5ecd70286",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 40
+    },
+    {
+      "name": "spell-pressure",
+      "side": 0,
+      "version": "44cfc864-2571-4d0c-9eb3-7f25a15c27ff",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "own_slots": [
+        2
+      ],
+      "roster": [
+        "94a17c5a-480f-478e-ba25-60a5ecd70286",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "44cfc864-2571-4d0c-9eb3-7f25a15c27ff",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "e811221e-c419-4f7b-9629-01f8722ab9f7",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 40
+    },
+    {
+      "name": "spell-pressure",
+      "side": 1,
+      "version": "44cfc864-2571-4d0c-9eb3-7f25a15c27ff",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "own_slots": [
+        7
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "e811221e-c419-4f7b-9629-01f8722ab9f7",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "94a17c5a-480f-478e-ba25-60a5ecd70286",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "44cfc864-2571-4d0c-9eb3-7f25a15c27ff",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 40
+    }
+  ],
+  "rule": "Zero invalid; strict aggregate mean score improvement>=10%; each color>=95% control. Screen choose highest qualifying aggregate (ties lexical), then independent160-game different-roster confirmation before deployment. No confirm if no candidate qualifies. Full10source/VM/replay/XP audits; independent per-color whole-game bootstrap, duplicates reported. Fixed opponent versions, no universal rank claim.",
+  "budget": "Authorized Sep22 UTC10000; shared ledger/cycle400/parallel3/batch40 preserved.240screen+160conditionalconfirmation."
+}

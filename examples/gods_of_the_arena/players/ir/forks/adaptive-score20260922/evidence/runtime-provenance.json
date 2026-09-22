@@ -1,0 +1,59 @@
+{
+  "source": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-score-20260922/bootstrap58.json",
+  "reuse_verified": true,
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "replay_version": 58,
+  "nim": "Nim Compiler Version 2.2.10 [MacOSX: arm64]\nCompiled at 2026-08-23\nCopyright (c) 2006-2026 by Andreas Rumpf\n\ngit hash: bfeb3146d1638b39f69007a4ae5a23e23ae4e5ef\nactive boot switches: -d:release",
+  "dependencies": {
+    "bassy": "2be327cef714011e3fcafe006768b3d389726755",
+    "fixxy": "05e5446dffb70093056cebb0c57721a60deaf52a",
+    "silky": "fb9b13910edd66cf1751056784c2f7d2932a59fc",
+    "pixie": "87cecced5c4c6f311c658a5f3ca0c9b43edb6aa7",
+    "vmath": "1b6080f4dc8114d2becaeb5f0944694f7e45794f",
+    "chroma": "08b0d65590221bb964544fd9badf29a146b9091a",
+    "zippy": "cd562ba43ae8904a4d1ba55611b8a521ef4a179e",
+    "flatty": "9c3f14cc287890b742196b4f0f74f0b9faab29cb",
+    "nimsimd": "ba71ac4e2927ba61e6d1bf75d0d124eacc714d1c",
+    "bumpy": "93583f6f8056a6259aaa96c89f4c143ba55bc6f0",
+    "crunchy": "98eb6526982bb8aae8eec6e8781f4539fa19e049",
+    "shady": "b7999005f024504ebb86b00917c24c3a53554844",
+    "windy": "c9e19887b0ff143f382f5e99a0720ee01f9a9f51",
+    "opengl": "8e2e098f82dc5eefd874488c37b5830233cd18f4",
+    "urlly": "99784779f05649df25fd9c33003d8ef6de027345",
+    "ws": "c9c0c7b51e2e83cc9305a895a0b144a297b4bea8",
+    "dx12": "65049f4e2ec1acbbf1987bfa79817d472650c15e",
+    "vk14": "0bd91f6a841dfca3cefcdbab4dd7efd0574b3329",
+    "metal4": "e9ef085d38cdc7abf3d89670f3eae1754595b9f9",
+    "jsony": "c5874fb71435e3ced8ee0025822e15f5d0e8e622",
+    "fluffy": "535c5f234b41cd097b762203b5c216da1f4aeb1c",
+    "gltf": "00a49474dc84b1e6992c6650fc37f50acf30b9f2",
+    "webby": "fe515be4ab5d02695289f88fca0d27f703a05599",
+    "noisy": "9625ee0a9dbdae44c427df95a4f8de006c061150",
+    "benchy": "6425417b578dc54008285aad020625b4b4f61f7b",
+    "mummy": "01deb1ff694988635c7bf0f24f6088a0bdf6db5d"
+  },
+  "sources": {
+    "games/gods_of_the_arena/instruments/balance20260922/episode.nim": "e8ad0b4974ee97cbac4b32d6dd41bb9bb682c9033bac4814c28453c6f09c4ac9",
+    "games/gods_of_the_arena/instruments/score20260922/practice.nim": "8f07d2eaff629f4ee05d045433e213c455181ba5754712051d0c7eb5c71bd214",
+    "games/gods_of_the_arena/instruments/portals20260922/practice.nim": "e490367a5f6827540775a5c6be5c7b3bdff00354053abec5dc761707b6c32c6e",
+    "games/gods_of_the_arena/instruments/targets20260922/scenarios.nim": "20aab38257ccbc05cab63d5fda0d02296a7ffa5c2e3a031b01f5f970b7192fe7",
+    "games/gods_of_the_arena/instruments/portals20260922/economy.nim": "59f8626cb8ced8af8d7585131ef8143750be1f852ebb8ab3f1b456080696325c",
+    "games/gods_of_the_arena/instruments/week20260921/command_hash.nim": "f19f68f79ab68460f92d971a9c9f4e16912e0f88afcda85825c227e238d55cc6"
+  },
+  "binaries": {
+    "economy": "61dfddad864517badf32aac5c9c12f584c32732fff466500d4638b811a8bc5a8",
+    "command-hash": "fa0e57c90b68a6a6bd9025a7d11b99e56f7560ca64f8cd93476c5a4d599463d7",
+    "portals": "fed641cb1047c8689f8ce0ca23159cdf36d2548595c8095b7925ddce390774d0",
+    "scenarios": "cb1540b6e268df6ae72d1870eebc360619684a3c0138a75fe3a2ab2099183976",
+    "practice": "f4c92316f97370727591e5098e1d0a05c46bf23a072a421661f35990285eeae1",
+    "episode-v2": "71888f5472d5ee95538938fcbee9e2a7156cc4d2e070ca8995456bd7f74fb404"
+  },
+  "engine_files": {
+    "coworld/dependencies.lock": "b4074cf2ce3f1ab56e67f0cf28ccfdaba46b6ec4b2f17999f305ee2d9be32790",
+    "examples/gods_of_the_arena/sim.nim": "1e6d514073fad1517a5c88cd942b5501891d9443ac0756213ecc533565fe10d7",
+    "examples/gods_of_the_arena/content.nim": "ceb104245fe5cc3a45b8ef3d8a55a4c4624d4bcbf887bce3dbaedd96e8f5ff73",
+    "examples/gods_of_the_arena/bots.nim": "3acbd7e0722261ded597a2a2c16ceb20e8c5d55d696008026e2eb316b13da73d",
+    "examples/gods_of_the_arena/replays.nim": "6f8156f9dfd1f8d4c6cf8881e11724355fa36110e505cc3aa99aacab1952063c",
+    "examples/gods_of_the_arena/scores.nim": "9448dbf3eabe3a1f70bed2b0b759bd5082b1f6ad58985375b55e1f9cdd3f2141"
+  }
+}

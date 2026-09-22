@@ -1,0 +1,97 @@
+{
+  "rows": [
+    {
+      "name": "spell-targeting",
+      "rows": [
+        {
+          "side": 0,
+          "control": 2606.725,
+          "observed_candidate": 2820.425,
+          "control_class_mix_standardized_candidate": 2687.4917293233084,
+          "classes": {
+            "1": {
+              "control_n": 24,
+              "candidate_n": 19,
+              "control_score": 2482.2083333333335,
+              "candidate_score": 2262.1052631578946
+            },
+            "6": {
+              "control_n": 16,
+              "candidate_n": 21,
+              "control_score": 2793.5,
+              "candidate_score": 3325.5714285714284
+            }
+          }
+        },
+        {
+          "side": 1,
+          "control": 2930.825,
+          "observed_candidate": 3274.15,
+          "control_class_mix_standardized_candidate": 3137.4661616161616,
+          "classes": {
+            "1": {
+              "control_n": 22,
+              "candidate_n": 18,
+              "control_score": 2490.909090909091,
+              "candidate_score": 2522.3888888888887
+            },
+            "6": {
+              "control_n": 18,
+              "candidate_n": 22,
+              "control_score": 3468.5,
+              "candidate_score": 3889.2272727272725
+            }
+          }
+        }
+      ],
+      "standardized_gain_percent": 5.190163356348387
+    },
+    {
+      "name": "spell-pressure",
+      "rows": [
+        {
+          "side": 0,
+          "control": 2606.725,
+          "observed_candidate": 3106.3,
+          "control_class_mix_standardized_candidate": 2956.1032581453637,
+          "classes": {
+            "1": {
+              "control_n": 24,
+              "candidate_n": 19,
+              "control_score": 2482.2083333333335,
+              "candidate_score": 2475.4736842105262
+            },
+            "6": {
+              "control_n": 16,
+              "candidate_n": 21,
+              "control_score": 2793.5,
+              "candidate_score": 3677.0476190476193
+            }
+          }
+        },
+        {
+          "side": 1,
+          "control": 2930.825,
+          "observed_candidate": 3202.275,
+          "control_class_mix_standardized_candidate": 3029.265404040404,
+          "classes": {
+            "1": {
+              "control_n": 22,
+              "candidate_n": 18,
+              "control_score": 2490.909090909091,
+              "candidate_score": 2250.722222222222
+            },
+            "6": {
+              "control_n": 18,
+              "candidate_n": 22,
+              "control_score": 3468.5,
+              "candidate_score": 3980.818181818182
+            }
+          }
+        }
+      ],
+      "standardized_gain_percent": 8.086945710391213
+    }
+  ],
+  "scope": "Posthoc descriptive standardization to control class frequencies; not a replacement for the prospective score gate, randomized intervention or independent confirmation. Classes may correlate with other draft changes."
+}
