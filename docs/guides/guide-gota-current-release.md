@@ -97,3 +97,20 @@ preserve source hashes, readback and rollback identities. Placement does not
 establish later league-round performance. Resolve live versions before new work.
 Manual champion selection previously returned HTTP500; normal placement worked.
 Do not retire a live champion before its replacement is verified.
+
+## Active portal coaching comparison
+
+The [portal coaching experiment](../../games/gods_of_the_arena/experiments/2026-09-22-portal-coaching.md)
+and [portable local pair](../../examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922/README.md)
+add safe field recall, a complete channel lock, scroll reserves and keep-local
+walking recovery. All 84 portal fixtures, 126 broader host checks and eight
+full native matches pass mechanism/runtime checks; native scores are mixed.
+The incumbent remains the deployed reference above until hosted qualification.
+
+Before any request was created, the user authorized 160 additional September 22
+games and named khors:v114 as a target. The revised A/B uses exact v114 in the
+opposing first-pick seat on both colors, with whole teams rotated together.
+Jordan411 and Richard153 also oppose both colors. relh161 is a teammate, so this
+comparison cannot establish opposing relh superiority. The original unlaunched
+plan remains preserved. Primary score advancement and khors superiority are
+separate prospective tests; a fixed roster does not establish #1 league rank.
