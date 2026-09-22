@@ -1,0 +1,2596 @@
+{
+  "ticks": 10426,
+  "battle_ticks": 10317,
+  "draft_ticks": 109,
+  "seed": 922511,
+  "winner": 0,
+  "simultaneous_draw": false,
+  "fort_hp": [
+    400,
+    0
+  ],
+  "actions": 3784,
+  "hash_mismatches": 0,
+  "state_hash": "00000000C6D0A6B8",
+  "heroes": [
+    {
+      "slot": 0,
+      "team": 0,
+      "class": 6,
+      "drafted": true,
+      "hp": 480,
+      "x": -2968449,
+      "z": 2967214,
+      "score": 2778,
+      "deaths": 0,
+      "xp": 4227,
+      "hits": 199,
+      "level": 10,
+      "gold": 2060,
+      "ranks": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "item_counts": [
+        1,
+        1,
+        2,
+        1,
+        0,
+        1
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    },
+    {
+      "slot": 1,
+      "team": 0,
+      "class": 2,
+      "drafted": true,
+      "hp": 370,
+      "x": -2156952,
+      "z": 2325466,
+      "score": 455,
+      "deaths": 2,
+      "xp": 1904,
+      "hits": 53,
+      "level": 7,
+      "gold": 25,
+      "ranks": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "inventory": [
+        "RangerBoots",
+        "HealthPotion",
+        "NoItem",
+        "ManaPotion",
+        "ArcaneSpellbook",
+        "ManaElixir"
+      ],
+      "item_counts": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        2
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    },
+    {
+      "slot": 2,
+      "team": 0,
+      "class": 4,
+      "drafted": true,
+      "hp": 241,
+      "x": 2485860,
+      "z": -3120905,
+      "score": 171,
+      "deaths": 0,
+      "xp": 1620,
+      "hits": 90,
+      "level": 6,
+      "gold": 5,
+      "ranks": [
+        1,
+        3,
+        1,
+        0
+      ],
+      "inventory": [
+        "RangerBoots",
+        "NoItem",
+        "NoItem",
+        "ManaPotion",
+        "KnightArmor",
+        "NoItem"
+      ],
+      "item_counts": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    },
+    {
+      "slot": 3,
+      "team": 0,
+      "class": 5,
+      "drafted": true,
+      "hp": 478,
+      "x": 391495,
+      "z": -1195731,
+      "score": 0,
+      "deaths": 0,
+      "xp": 917,
+      "hits": 34,
+      "level": 5,
+      "gold": 20,
+      "ranks": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "inventory": [
+        "RangerBoots",
+        "NoItem",
+        "ManaPotion",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "item_counts": [
+        1,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    },
+    {
+      "slot": 4,
+      "team": 0,
+      "class": 8,
+      "drafted": true,
+      "hp": 249,
+      "x": 146596,
+      "z": 2646485,
+      "score": 306,
+      "deaths": 2,
+      "xp": 1755,
+      "hits": 68,
+      "level": 7,
+      "gold": 555,
+      "ranks": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "inventory": [
+        "RangerBoots",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "item_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    },
+    {
+      "slot": 5,
+      "team": 1,
+      "class": 0,
+      "drafted": true,
+      "hp": -28,
+      "x": -3260151,
+      "z": 3197918,
+      "score": 0,
+      "deaths": 5,
+      "xp": 494,
+      "hits": 35,
+      "level": 3,
+      "gold": 20,
+      "ranks": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "inventory": [
+        "RangerBoots",
+        "HealthPotion",
+        "ManaPotion",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "item_counts": [
+        1,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    },
+    {
+      "slot": 6,
+      "team": 1,
+      "class": 1,
+      "drafted": true,
+      "hp": -19,
+      "x": -3161422,
+      "z": 3214613,
+      "score": 0,
+      "deaths": 6,
+      "xp": 950,
+      "hits": 91,
+      "level": 5,
+      "gold": 25,
+      "ranks": [
+        1,
+        3,
+        1,
+        0
+      ],
+      "inventory": [
+        "RangerBoots",
+        "HealthPotion",
+        "NoItem",
+        "ManaPotion",
+        "PoisonPotion",
+        "NoItem"
+      ],
+      "item_counts": [
+        1,
+        2,
+        0,
+        2,
+        2,
+        0
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    },
+    {
+      "slot": 7,
+      "team": 1,
+      "class": 3,
+      "drafted": true,
+      "hp": -25,
+      "x": -3200677,
+      "z": 3200677,
+      "score": 0,
+      "deaths": 6,
+      "xp": 712,
+      "hits": 69,
+      "level": 4,
+      "gold": 35,
+      "ranks": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "inventory": [
+        "RangerBoots",
+        "HealthPotion",
+        "NoItem",
+        "ManaPotion",
+        "ManaElixir",
+        "NoItem"
+      ],
+      "item_counts": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        0
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    },
+    {
+      "slot": 8,
+      "team": 1,
+      "class": 7,
+      "drafted": true,
+      "hp": 217,
+      "x": 2931549,
+      "z": -1408067,
+      "score": 97,
+      "deaths": 3,
+      "xp": 1546,
+      "hits": 103,
+      "level": 6,
+      "gold": 845,
+      "ranks": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "inventory": [
+        "RangerBoots",
+        "HealthPotion",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "item_counts": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    },
+    {
+      "slot": 9,
+      "team": 1,
+      "class": 9,
+      "drafted": true,
+      "hp": -30,
+      "x": -3199475,
+      "z": 3256623,
+      "score": 0,
+      "deaths": 7,
+      "xp": 566,
+      "hits": 31,
+      "level": 4,
+      "gold": 5,
+      "ranks": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "inventory": [
+        "RangerBoots",
+        "HealthPotion",
+        "ManaPotion",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "item_counts": [
+        1,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "max_work": 0,
+      "max_instructions": 0
+    }
+  ],
+  "commands": [
+    [
+      0,
+      320,
+      373,
+      11,
+      4,
+      156,
+      414,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      10,
+      0,
+      1
+    ],
+    [
+      0,
+      61,
+      91,
+      17,
+      8,
+      111,
+      21,
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      2,
+      6,
+      1,
+      1
+    ],
+    [
+      0,
+      99,
+      114,
+      18,
+      15,
+      78,
+      10,
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      0,
+      1
+    ],
+    [
+      0,
+      99,
+      78,
+      9,
+      6,
+      88,
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1
+    ],
+    [
+      0,
+      80,
+      80,
+      9,
+      7,
+      119,
+      10,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      6,
+      1,
+      1
+    ],
+    [
+      0,
+      46,
+      61,
+      9,
+      4,
+      84,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1
+    ],
+    [
+      0,
+      63,
+      72,
+      19,
+      10,
+      70,
+      14,
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      2,
+      5,
+      0,
+      1
+    ],
+    [
+      0,
+      68,
+      62,
+      11,
+      4,
+      67,
+      17,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      4,
+      0,
+      1
+    ],
+    [
+      0,
+      34,
+      77,
+      13,
+      8,
+      70,
+      31,
+      0,
+      0,
+      0,
+      7,
+      0,
+      0,
+      0,
+      0,
+      3,
+      6,
+      1,
+      1
+    ],
+    [
+      0,
+      64,
+      73,
+      11,
+      6,
+      65,
+      9,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      1
+    ]
+  ],
+  "samples": [
+    {
+      "battle_tick": 0,
+      "heroes": [
+        {
+          "slot": 0,
+          "team": 0,
+          "class": 6,
+          "drafted": true,
+          "hp": 230,
+          "x": 3237731,
+          "z": -3180119,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 1,
+          "team": 0,
+          "class": 2,
+          "drafted": true,
+          "hp": 190,
+          "x": 3216019,
+          "z": -3273631,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 2,
+          "team": 0,
+          "class": 4,
+          "drafted": true,
+          "hp": 220,
+          "x": 3226875,
+          "z": -3226875,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 3,
+          "team": 0,
+          "class": 5,
+          "drafted": true,
+          "hp": 350,
+          "x": 3274760,
+          "z": -3223552,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 4,
+          "team": 0,
+          "class": 8,
+          "drafted": true,
+          "hp": 240,
+          "x": 3178990,
+          "z": -3230198,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "drafted": true,
+          "hp": 330,
+          "x": -3274760,
+          "z": 3223552,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "drafted": true,
+          "hp": 200,
+          "x": -3178990,
+          "z": 3230198,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 7,
+          "team": 1,
+          "class": 3,
+          "drafted": true,
+          "hp": 250,
+          "x": -3226875,
+          "z": 3226875,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 8,
+          "team": 1,
+          "class": 7,
+          "drafted": true,
+          "hp": 185,
+          "x": -3237731,
+          "z": 3180119,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 9,
+          "team": 1,
+          "class": 9,
+          "drafted": true,
+          "hp": 300,
+          "x": -3216019,
+          "z": 3273631,
+          "score": 0,
+          "deaths": 0,
+          "xp": 0,
+          "hits": 0,
+          "level": 1,
+          "gold": 150,
+          "ranks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "inventory": [
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        }
+      ]
+    },
+    {
+      "battle_tick": 2400,
+      "heroes": [
+        {
+          "slot": 0,
+          "team": 0,
+          "class": 6,
+          "drafted": true,
+          "hp": 276,
+          "x": -2910296,
+          "z": 761463,
+          "score": 48,
+          "deaths": 0,
+          "xp": 397,
+          "hits": 35,
+          "level": 3,
+          "gold": 410,
+          "ranks": [
+            0,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "CrimsonDagger",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 1,
+          "team": 0,
+          "class": 2,
+          "drafted": true,
+          "hp": 144,
+          "x": -2963432,
+          "z": 890748,
+          "score": 434,
+          "deaths": 0,
+          "xp": 783,
+          "hits": 32,
+          "level": 4,
+          "gold": 560,
+          "ranks": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 2,
+          "team": 0,
+          "class": 4,
+          "drafted": true,
+          "hp": 292,
+          "x": 208558,
+          "z": -493816,
+          "score": 161,
+          "deaths": 0,
+          "xp": 510,
+          "hits": 34,
+          "level": 3,
+          "gold": 125,
+          "ranks": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "ManaPotion",
+            "VitalityElixir",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 3,
+          "team": 0,
+          "class": 5,
+          "drafted": true,
+          "hp": 276,
+          "x": 1337864,
+          "z": -3070670,
+          "score": 0,
+          "deaths": 0,
+          "xp": 119,
+          "hits": 9,
+          "level": 2,
+          "gold": 110,
+          "ranks": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 4,
+          "team": 0,
+          "class": 8,
+          "drafted": true,
+          "hp": 240,
+          "x": 2875101,
+          "z": 977400,
+          "score": 0,
+          "deaths": 0,
+          "xp": 90,
+          "hits": 7,
+          "level": 1,
+          "gold": 5,
+          "ranks": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "drafted": true,
+          "hp": 330,
+          "x": 1805169,
+          "z": 2719216,
+          "score": 0,
+          "deaths": 1,
+          "xp": 40,
+          "hits": 2,
+          "level": 1,
+          "gold": 20,
+          "ranks": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "drafted": true,
+          "hp": 0,
+          "x": -3045530,
+          "z": 1050569,
+          "score": 0,
+          "deaths": 3,
+          "xp": 77,
+          "hits": 7,
+          "level": 1,
+          "gold": 5,
+          "ranks": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 7,
+          "team": 1,
+          "class": 3,
+          "drafted": true,
+          "hp": 250,
+          "x": -3087837,
+          "z": 2736561,
+          "score": 0,
+          "deaths": 2,
+          "xp": 57,
+          "hits": 12,
+          "level": 1,
+          "gold": 5,
+          "ranks": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 8,
+          "team": 1,
+          "class": 7,
+          "drafted": true,
+          "hp": 213,
+          "x": 2186759,
+          "z": 2667457,
+          "score": 0,
+          "deaths": 1,
+          "xp": 229,
+          "hits": 11,
+          "level": 2,
+          "gold": 70,
+          "ranks": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 9,
+          "team": 1,
+          "class": 9,
+          "drafted": true,
+          "hp": 234,
+          "x": -421731,
+          "z": 1525990,
+          "score": 0,
+          "deaths": 1,
+          "xp": 255,
+          "hits": 17,
+          "level": 2,
+          "gold": 125,
+          "ranks": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "NoItem",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        }
+      ]
+    },
+    {
+      "battle_tick": 4800,
+      "heroes": [
+        {
+          "slot": 0,
+          "team": 0,
+          "class": 6,
+          "drafted": true,
+          "hp": 434,
+          "x": 875115,
+          "z": -1647654,
+          "score": 0,
+          "deaths": 0,
+          "xp": 517,
+          "hits": 49,
+          "level": 3,
+          "gold": 0,
+          "ranks": [
+            0,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "CrimsonDagger",
+            "KnightArmor",
+            "PortalScroll",
+            "BattleAxe",
+            "HealthPotion",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 1,
+          "team": 0,
+          "class": 2,
+          "drafted": true,
+          "hp": 280,
+          "x": -1098817,
+          "z": 1418203,
+          "score": 156,
+          "deaths": 0,
+          "xp": 838,
+          "hits": 36,
+          "level": 4,
+          "gold": 30,
+          "ranks": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "ManaPotion",
+            "ArcaneSpellbook",
+            "ManaElixir"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            1,
+            1,
+            1
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 2,
+          "team": 0,
+          "class": 4,
+          "drafted": true,
+          "hp": 237,
+          "x": -1220160,
+          "z": 1620758,
+          "score": 309,
+          "deaths": 0,
+          "xp": 991,
+          "hits": 67,
+          "level": 5,
+          "gold": 325,
+          "ranks": [
+            1,
+            3,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "ManaPotion",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 3,
+          "team": 0,
+          "class": 5,
+          "drafted": true,
+          "hp": 358,
+          "x": 2408226,
+          "z": -3086275,
+          "score": 0,
+          "deaths": 0,
+          "xp": 357,
+          "hits": 23,
+          "level": 3,
+          "gold": 20,
+          "ranks": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 4,
+          "team": 0,
+          "class": 8,
+          "drafted": true,
+          "hp": 70,
+          "x": 2948925,
+          "z": -686157,
+          "score": 0,
+          "deaths": 0,
+          "xp": 180,
+          "hits": 12,
+          "level": 2,
+          "gold": 65,
+          "ranks": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "drafted": true,
+          "hp": 358,
+          "x": 2877196,
+          "z": 801307,
+          "score": 0,
+          "deaths": 2,
+          "xp": 172,
+          "hits": 11,
+          "level": 2,
+          "gold": 80,
+          "ranks": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "drafted": true,
+          "hp": 219,
+          "x": -2996808,
+          "z": 538482,
+          "score": 0,
+          "deaths": 3,
+          "xp": 272,
+          "hits": 20,
+          "level": 2,
+          "gold": 35,
+          "ranks": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 7,
+          "team": 1,
+          "class": 3,
+          "drafted": true,
+          "hp": -2,
+          "x": -3001571,
+          "z": 117448,
+          "score": 0,
+          "deaths": 4,
+          "xp": 162,
+          "hits": 24,
+          "level": 2,
+          "gold": 80,
+          "ranks": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 8,
+          "team": 1,
+          "class": 7,
+          "drafted": true,
+          "hp": 46,
+          "x": 2831841,
+          "z": 1314826,
+          "score": 0,
+          "deaths": 2,
+          "xp": 562,
+          "hits": 31,
+          "level": 4,
+          "gold": 225,
+          "ranks": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 9,
+          "team": 1,
+          "class": 9,
+          "drafted": true,
+          "hp": 410,
+          "x": -1405824,
+          "z": 1859372,
+          "score": 0,
+          "deaths": 1,
+          "xp": 345,
+          "hits": 28,
+          "level": 3,
+          "gold": 35,
+          "ranks": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        }
+      ]
+    },
+    {
+      "battle_tick": 7200,
+      "heroes": [
+        {
+          "slot": 0,
+          "team": 0,
+          "class": 6,
+          "drafted": true,
+          "hp": 488,
+          "x": -364277,
+          "z": 498582,
+          "score": 291,
+          "deaths": 0,
+          "xp": 1307,
+          "hits": 79,
+          "level": 6,
+          "gold": 220,
+          "ranks": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "inventory": [
+            "CrimsonDagger",
+            "KnightArmor",
+            "PortalScroll",
+            "BattleAxe",
+            "HealthPotion",
+            "RuneCrossbow"
+          ],
+          "item_counts": [
+            1,
+            1,
+            2,
+            1,
+            2,
+            1
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 1,
+          "team": 0,
+          "class": 2,
+          "drafted": true,
+          "hp": 310,
+          "x": -1395678,
+          "z": -2768562,
+          "score": 58,
+          "deaths": 2,
+          "xp": 1074,
+          "hits": 40,
+          "level": 5,
+          "gold": 35,
+          "ranks": [
+            1,
+            3,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "ManaPotion",
+            "ArcaneSpellbook",
+            "ManaElixir"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            2,
+            1,
+            1
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 2,
+          "team": 0,
+          "class": 4,
+          "drafted": true,
+          "hp": 98,
+          "x": -99784,
+          "z": -76668,
+          "score": 55,
+          "deaths": 0,
+          "xp": 1071,
+          "hits": 77,
+          "level": 5,
+          "gold": 35,
+          "ranks": [
+            1,
+            3,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "ManaPotion",
+            "KnightArmor",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 3,
+          "team": 0,
+          "class": 5,
+          "drafted": true,
+          "hp": 386,
+          "x": 718399,
+          "z": -2675036,
+          "score": 0,
+          "deaths": 0,
+          "xp": 417,
+          "hits": 25,
+          "level": 3,
+          "gold": 50,
+          "ranks": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "NoItem",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 4,
+          "team": 0,
+          "class": 8,
+          "drafted": true,
+          "hp": 332,
+          "x": 2844258,
+          "z": 452774,
+          "score": 0,
+          "deaths": 1,
+          "xp": 465,
+          "hits": 31,
+          "level": 3,
+          "gold": 25,
+          "ranks": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "drafted": true,
+          "hp": 245,
+          "x": -3081080,
+          "z": 3150823,
+          "score": 0,
+          "deaths": 2,
+          "xp": 364,
+          "hits": 27,
+          "level": 3,
+          "gold": 20,
+          "ranks": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "NoItem",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "drafted": true,
+          "hp": 257,
+          "x": 2405799,
+          "z": 2723735,
+          "score": 0,
+          "deaths": 4,
+          "xp": 712,
+          "hits": 57,
+          "level": 4,
+          "gold": 145,
+          "ranks": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 7,
+          "team": 1,
+          "class": 3,
+          "drafted": true,
+          "hp": 394,
+          "x": -2962216,
+          "z": 568439,
+          "score": 0,
+          "deaths": 4,
+          "xp": 607,
+          "hits": 57,
+          "level": 4,
+          "gold": 315,
+          "ranks": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 8,
+          "team": 1,
+          "class": 7,
+          "drafted": true,
+          "hp": -115,
+          "x": -458171,
+          "z": 677053,
+          "score": 0,
+          "deaths": 3,
+          "xp": 764,
+          "hits": 42,
+          "level": 4,
+          "gold": 230,
+          "ranks": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 9,
+          "team": 1,
+          "class": 9,
+          "drafted": true,
+          "hp": 150,
+          "x": -565578,
+          "z": 836345,
+          "score": 0,
+          "deaths": 3,
+          "xp": 506,
+          "hits": 30,
+          "level": 3,
+          "gold": 50,
+          "ranks": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        }
+      ]
+    },
+    {
+      "battle_tick": 9600,
+      "heroes": [
+        {
+          "slot": 0,
+          "team": 0,
+          "class": 6,
+          "drafted": true,
+          "hp": 566,
+          "x": -3064766,
+          "z": 2956185,
+          "score": 1578,
+          "deaths": 0,
+          "xp": 2927,
+          "hits": 163,
+          "level": 9,
+          "gold": 1510,
+          "ranks": [
+            0,
+            4,
+            4,
+            1
+          ],
+          "inventory": [
+            "CrimsonDagger",
+            "KnightArmor",
+            "PortalScroll",
+            "BattleAxe",
+            "NoItem",
+            "RuneCrossbow"
+          ],
+          "item_counts": [
+            1,
+            1,
+            2,
+            1,
+            0,
+            1
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 1,
+          "team": 0,
+          "class": 2,
+          "drafted": true,
+          "hp": 340,
+          "x": 1089430,
+          "z": -1641618,
+          "score": 55,
+          "deaths": 2,
+          "xp": 1404,
+          "hits": 53,
+          "level": 6,
+          "gold": 25,
+          "ranks": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "ManaPotion",
+            "ArcaneSpellbook",
+            "ManaElixir"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            2,
+            1,
+            2
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 2,
+          "team": 0,
+          "class": 4,
+          "drafted": true,
+          "hp": 102,
+          "x": -1070952,
+          "z": 1298162,
+          "score": 0,
+          "deaths": 0,
+          "xp": 1120,
+          "hits": 90,
+          "level": 5,
+          "gold": 35,
+          "ranks": [
+            1,
+            3,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "ManaPotion",
+            "KnightArmor",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 3,
+          "team": 0,
+          "class": 5,
+          "drafted": true,
+          "hp": 90,
+          "x": -2463262,
+          "z": 2299191,
+          "score": 0,
+          "deaths": 0,
+          "xp": 417,
+          "hits": 34,
+          "level": 3,
+          "gold": 20,
+          "ranks": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 4,
+          "team": 0,
+          "class": 8,
+          "drafted": true,
+          "hp": 397,
+          "x": 2458289,
+          "z": 2620656,
+          "score": 0,
+          "deaths": 2,
+          "xp": 1015,
+          "hits": 53,
+          "level": 5,
+          "gold": 315,
+          "ranks": [
+            1,
+            3,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 5,
+          "team": 1,
+          "class": 0,
+          "drafted": true,
+          "hp": -55,
+          "x": -3257149,
+          "z": 3194693,
+          "score": 0,
+          "deaths": 4,
+          "xp": 494,
+          "hits": 35,
+          "level": 3,
+          "gold": 20,
+          "ranks": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 6,
+          "team": 1,
+          "class": 1,
+          "drafted": true,
+          "hp": -13,
+          "x": -3066349,
+          "z": 3128614,
+          "score": 0,
+          "deaths": 5,
+          "xp": 950,
+          "hits": 91,
+          "level": 5,
+          "gold": 25,
+          "ranks": [
+            1,
+            3,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "ManaPotion",
+            "PoisonPotion",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            2,
+            2,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 7,
+          "team": 1,
+          "class": 3,
+          "drafted": true,
+          "hp": -67,
+          "x": -3200769,
+          "z": 3193933,
+          "score": 0,
+          "deaths": 5,
+          "xp": 712,
+          "hits": 69,
+          "level": 4,
+          "gold": 35,
+          "ranks": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "ManaPotion",
+            "ManaElixir",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            0,
+            2,
+            1,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 8,
+          "team": 1,
+          "class": 7,
+          "drafted": true,
+          "hp": 325,
+          "x": 2969168,
+          "z": -1375902,
+          "score": 0,
+          "deaths": 3,
+          "xp": 1321,
+          "hits": 81,
+          "level": 6,
+          "gold": 605,
+          "ranks": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        },
+        {
+          "slot": 9,
+          "team": 1,
+          "class": 9,
+          "drafted": true,
+          "hp": -52,
+          "x": -2376827,
+          "z": 2307059,
+          "score": 0,
+          "deaths": 6,
+          "xp": 566,
+          "hits": 31,
+          "level": 4,
+          "gold": 5,
+          "ranks": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "inventory": [
+            "RangerBoots",
+            "HealthPotion",
+            "ManaPotion",
+            "NoItem",
+            "NoItem",
+            "NoItem"
+          ],
+          "item_counts": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "max_work": 0,
+          "max_instructions": 0
+        }
+      ]
+    }
+  ]
+}

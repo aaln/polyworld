@@ -1,11 +1,19 @@
 # Current Gods of the Arena policy work
 
 Read `games/gods_of_the_arena/current.json`. The active engine is
-**2026.9.22.2 / ffcedcd866c4d31924361ed4baff2b7a6d3aba67**, published coworld
-`cow_2dd9158a-e22e-4000-9b2b-b060fffa7a9a`. Verify the live league's source,
+**2026.9.22.3 / 1b70894436b7ffdcd0d421b6b32c2415c9c8bfde**, published coworld
+`cow_2cb5d47d-c064-44af-8b44-cef246667920`. Verify the live league's source,
 version and configuration before new hosted work. The research branch preserves
 older engine files and studies; build the exact pinned engine through
-`games/gods_of_the_arena/instruments/balance20260922/bootstrap.py`.
+`games/gods_of_the_arena/instruments/score20260922/bootstrap.py`.
+
+The live game changed during individual-score research: replay version58 adds
+**500XP to every teammate when the enemy god is destroyed**, including dead
+and distant teammates, awarded once. Timeouts grant no god reward. The score
+formula is unchanged. All completed portal/balance hosted numbers below are
+from2026.9.22.2 and do not qualify a replacement under this patch. The deployed
+source remains the byte-exact reference; fresh controls are required. Preserve
+the old replay57 engine and datasets.
 
 ## Current contract
 
@@ -139,3 +147,18 @@ and useful gold conversion. These are research hypotheses, not new accepted
 controller rules. The [khors descriptive IR](../opponents/khors-v114/replay-audit-20260922/README.md)
 is retrospective and not a validated proxy. Old source/engine tactics remain
 historical; none overrides current-version evidence.
+
+## Individual-score candidate awaiting hosted evaluation
+
+The [portable score candidate](../../examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922/README.md)
+uses separate hero/creep/structure opportunities and public threat context.
+It favors reachable hero finishes and accounts for the new500XP god reward.
+Sourcef6a0dace/IR33182eea passes180target cases,84portal cases,126broad checks
+and8complete native games. Local score3321→4166.75 is diagnostic only; heroXP
+falls on red and rises on blue. Competitive belief remains requires_review.
+
+An inert versionba7be127 and schema-checked160-game comparison are prepared,
+with khors114/Jordan411/Richard167 opposing both colors. No games launched or
+champion changed. September22 budget1760/1760 is exhausted; additional160
+requires user authorization or the normal UTC reset. Use score20260922 tools
+and exact replay58 engine, not the old balance/portal launcher.

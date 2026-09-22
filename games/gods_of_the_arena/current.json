@@ -1,7 +1,7 @@
 {
-  "game_version": "2026.9.22.2",
-  "engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
-  "coworld_id": "cow_2dd9158a-e22e-4000-9b2b-b060fffa7a9a",
+  "game_version": "2026.9.22.3",
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "coworld_id": "cow_2cb5d47d-c064-44af-8b44-cef246667920",
   "variant_id": "competition",
   "primary_metric": "mean per-hero max(0, lifetime XP * 1440 - 200 * world ticks) // 1440, including draft ticks",
   "fort_outcome": "diagnostic; not an advancement gate for new XP-score experiments",
@@ -20,12 +20,19 @@
     "aaron": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
     "coach": "088c0fed-b536-4777-9f7a-14abee21e5b8"
   },
-  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-22-portal-coaching.md",
+  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-22-score-opportunities.md",
   "deployment_status": "Both players verified competing, active, champion on qualified exact source at 2026-09-22T20:25:30.054008+00:00",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
     "label": "khors:v114",
     "id": "145c01e0-0cbf-4e1e-8120-11b437175b91",
     "qualification": "Positive mean-score gap on both colors; 45/80 individual outscore count, confidence gate still unmet."
-  }
+  },
+  "reference_validation_game_version": "2026.9.22.2",
+  "reference_validation_engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+  "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
+  "research_status": "Replay58 calibrated; candidate passes390host fixtures and8full native matches. Inert candidate ba7be127-2b88-44ca-a171-b83d63c1e4f3 and160fresh-control plan prepared. Hosted budget approval pending; no league change.",
+  "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922",
+  "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
+  "candidate_ir_sha256": "33182eea497e84b8d43df3213e10aad72568a0e2b152ccacd3a140867e4bd40e"
 }
