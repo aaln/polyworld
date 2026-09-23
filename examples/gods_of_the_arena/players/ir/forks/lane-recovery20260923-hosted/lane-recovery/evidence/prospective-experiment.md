@@ -1,6 +1,6 @@
 # Lane healing with useful shopping returns
 
-Status: complete; rejected under the original score gate. Retain blue-center.
+Status: local development; no hosted games submitted.
 
 The user reports repeated unnecessary base trips and requests a simpler policy:
 stay in lane to heal, except when returning also buys useful items. Start from
@@ -69,55 +69,3 @@ until additional games are authorized or the budget resets. Legacy worker stays
 paused; journal every eventual request and preserve its idempotency key.
 
 Raw evidence: `polyworld/tmp/gota-lane-recovery-20260923`.
-
-## Local admission and hosted authorization
-
-Source `2878f3e9`, initial IR `b422a2bd`, locally reviewed IR `2dde8d84`, binding
-`gota-bassy/lane-recovery-2026-09-23-r1`. All 582 local checks pass: 92 recovery,
-100 opening, 180 buyback, 84 portal and 126 broad scenarios. All 16 complete
-native games pass their runtime/replay/XP audits. Maximum fixture use is 14,964
-instructions and 22,036 work. Portable compilation and extraction are exact.
-Both-color Druid fixtures recover from 135 to 297 of 466 HP and resume advance
-without homeward commands; a three-second cooldown is handled in lane.
-
-Initial fixture expectation errors are preserved: the baseline lacks new memory;
-a blue shopper reached the keep and correctly cleared its shopping flag; one
-120-HP potion cannot bring three higher-HP classes from 29% to 60%. Corrected
-assertions verify actual purchasing and bounded insufficient-heal fallback.
-The policy source was unchanged throughout these fixture corrections.
-
-Eight 40-game request bodies passed preparation and source/roster checks. The
-user then authorized "increase cap to 10000 more" at 2026-09-23 04:45 UTC.
-The effective September 23 cap is 11,600 (1,600 reserved plus 10,000 additional),
-with the normal limit, journal, cycle and concurrency rules preserved. The
-prepared 320-game comparison is running; the initial plan's pending-budget
-statement is historical. Both league champions retain blue-center pending the
-complete result and original acceptance criteria.
-
-
-## Completed result
-
-All 320 games pass source/VM/full-replay/XP/integer-score audits, with 40 distinct
-command streams in every cell and unchanged game/principal champions. Aggregate
-mean score is 1,948.769 → 1,846.338 (−5.256%; 95% gain interval −20.509% to
-+12.252%). Red lead −2.754%, blue lead −12.151%, red late +25.451%, blue late
-+25.349%. Pooled later-draft score improves 25.362%, with 66/71 Druid games.
-The blue early-draft floor and aggregate improvement gates fail. Do not deploy.
-
-Exploratory class means: blue Ranger 2,857.18 → 852.50 (n22/16), blue Crossbowman
-5,451.39 → 5,324.25 (n18/24), red Druid 102.03 → 120.24 (n31/33), blue Druid
-389.37 → 755.13 (n35/38). These unmatched class slices motivate a separately
-scoped test; they do not prove component causality or qualify a selected subset.
-
-All 32 planned diagnostic replay audits pass. Healthy homeward travel without an
-affordable missing core item falls from 159.75 to 0 ticks in red late and from
-521.5 to 70.5 in blue late. Purchased core items remain present. Four games per
-cell differ in class/scene mix, so these support the intended mechanism only.
-The diagnostic addendum preserves the old 500-gold metric and adds the actual
-item-affordability predicate; it never changes the competitive decision rule.
-
-The exact tested source and reviewed IR are sealed in
-`examples/gods_of_the_arena/players/ir/forks/lane-recovery20260923-hosted`.
-All original coaching captures remain preserved. Both champions retain the
-validated blue-center policy. Eight requests completed; full IDs in the capsule.
-September 23 UTC reserved total is 1,920 of the authorized 11,600.

@@ -1,0 +1,36 @@
+{
+  "status": "matched_and_source_verified",
+  "session": "2026-09-23t02-52-57-098ze03810",
+  "summary": "Coaching recording matched league episode4a6d182f-c2da-4f9d-a9cc-92c4e7cd57b2/requestereq_7ad01f93-5ee5-4eca-ba01-a9b7ee9ea658 by22358total ticks, roster, slot4redDruid and HUD sequence. Actual source67fdcd5d/core-buyback; all replay hashes match and own VM exits0. Automatic self-heals reach248/298HP at tick4273 and full298 at4441; still walks to spawn until about5364 (45.46s after75%recovery), resumes advance about5382. No new XP245 from4200through6498. Other VMs1/2/7fail, so this is mechanistic evidence only. Candidate is evaluated on separate all-ten-VM-clean fresh games; cannot claim the extra healing component alone improves score.",
+  "episode_id": "4a6d182f-c2da-4f9d-a9cc-92c4e7cd57b2",
+  "episode_request_id": "ereq_7ad01f93-5ee5-4eca-ba01-a9b7ee9ea658",
+  "url": "https://softmax.com/observatory/v2?tab=experience-requests&detail=episode-request:ereq_7ad01f93-5ee5-4eca-ba01-a9b7ee9ea658",
+  "game_version": "2026.9.22.3",
+  "policy_version": "30a0e469-8c2f-450c-b3bc-4a687a6c74e3",
+  "source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+  "slot": 4,
+  "class": "Druid",
+  "side": 0,
+  "replay_sha256": "f646768ea35afc09c9450ceb14a939084292fd8c68fd8423bca38c4a40378ec4",
+  "trace_sha256": "0c96673aff7175dd000bbcc82a7df5399e552897553a809500b9549b76ce09f0",
+  "source_metadata_sha256": "7513566fa78192872254c27a98193d84cd844c85a31d100ce354edbe834bb73b",
+  "failed_slots": [
+    1,
+    2,
+    7
+  ],
+  "own_vm_exit": 0,
+  "hash_mismatches": 0,
+  "milestones": {
+    "self_heal_75_percent_tick": 4273,
+    "hp_after": 248,
+    "max_hp": 298,
+    "fully_healed_tick": 4441,
+    "first_spawn_sample_tick": 5364,
+    "first_outbound_sample_tick": 5382,
+    "sample_interval_ticks": 6,
+    "tick_rate": 24
+  },
+  "correction_to_preview": "Actual maxHP298, not390; timer at top right is time of day, not elapsed match duration. Replay scrubbing makes recording time unsuitable for gameplay durations. Explicit self-cast commands absent4080..5350; typed self-heal events establish automatic healing already worked.",
+  "scope": "Observed old-source behavior only; no competitive or exact counterfactual effect claimed."
+}

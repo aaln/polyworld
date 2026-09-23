@@ -86,3 +86,16 @@ healing; its actual defect is the path latch. Do not rerun this bundle unchanged
 Post-hoc blueDruid improvement is only a narrower future hypothesis requiring
 fresh controls, not a qualification of a newly scoped policy.
 Evidence: examples/gods_of_the_arena/players/ir/forks/field-sustain20260923-hosted.
+
+
+## 2026-09-23 all-class lane recovery — not qualified
+
+Source `2878f3e9`, deployed parent `c02f8cb6`. Safe lane healing/potion tracking,
+12-second hold, 60% HP/20% mana release and useful shopping returns passed 582
+local checks and 16 native games. All 320 fresh hosted games were valid, but mean
+score fell 5.26% (95% interval −20.51% to +12.25%); blue lead fell 12.15%.
+Later-draft contexts improved about 25% on both colors. Reject the full bundle;
+no unchanged rerun or deployment from a favorable class slice. A new Druid-only
+source may be tested prospectively with fresh controls and demonstrably unchanged
+non-Druid commands. Recording this hypothesis does not validate it.
+Evidence: `experiments/2026-09-23-lane-recovery.md` and the hosted pair capsule.

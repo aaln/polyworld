@@ -1,0 +1,109 @@
+{
+  "stage": "trial",
+  "games": 400,
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3",
+  "cycle": "interactive-druid-lane-20260923",
+  "arms": [
+    {
+      "name": "baseline",
+      "cell": "red-late",
+      "side": 0,
+      "ordinal": 3,
+      "version": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+      "source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+      "own_slots": [
+        3
+      ],
+      "roster": [
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 100
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "side": 1,
+      "ordinal": 3,
+      "version": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+      "source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+      "own_slots": [
+        8
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "a25248bc-0013-4267-a12c-c55af87da30f"
+      ],
+      "games": 100
+    },
+    {
+      "name": "druid-lane",
+      "cell": "red-late",
+      "side": 0,
+      "ordinal": 3,
+      "version": "746ce41b-a738-498c-a062-2afd5627e613",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        3
+      ],
+      "roster": [
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "746ce41b-a738-498c-a062-2afd5627e613",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 100
+    },
+    {
+      "name": "druid-lane",
+      "cell": "blue-late",
+      "side": 1,
+      "ordinal": 3,
+      "version": "746ce41b-a738-498c-a062-2afd5627e613",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        8
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "746ce41b-a738-498c-a062-2afd5627e613",
+        "a25248bc-0013-4267-a12c-c55af87da30f"
+      ],
+      "games": 100
+    }
+  ],
+  "rule": "400 fresh games,100/source/color, natural later-draft ordinal3: red and blue. Zero10source/VM/full-replay/XP/integer failures;>=10percent pooled mean score gain,eachcolor>=95percentcontrol,positive lower95percent color-stratified independent whole-game bootstrap gain,>=20Druids/source. Non-Druid local complete command equivalence mandatory. Stable game/principal champions. New scoped source; no prior hosted control reuse or posthoc class filtering.",
+  "budget": "1920/11600 reserved before;400new in4x100, separate cycle,maximum3active. User authorized10000additional games September23UTC.",
+  "coaching_session": "2026-09-23t02-52-57-098ze03810",
+  "source_freeze": "Druid-only r1; all non-Druid commands preserve deployed blue-center; fresh controls; natural draft."
+}

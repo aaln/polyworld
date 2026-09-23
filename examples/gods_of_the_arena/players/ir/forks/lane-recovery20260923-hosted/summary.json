@@ -1,0 +1,30 @@
+{
+  "trial": {
+    "name": "lane-recovery",
+    "source_sha256": "2878f3e962b9b8ac28690a939317508c6df38a55545be292b9846c91095fef45",
+    "score_gate_passed": false,
+    "baseline_score": 1948.76875,
+    "candidate_score": 1846.3375,
+    "aggregate_gain_percent": -5.256203436143969,
+    "gain_ci95_percent": [
+      -20.508983749141674,
+      12.252202445486326
+    ],
+    "per_context_gain_percent": [
+      -2.7539774776579984,
+      -12.150972462930865,
+      25.450521656655066,
+      25.34946706272936
+    ],
+    "late_score_gain_percent": 25.361734791786606,
+    "druid_exposure": {
+      "baseline": 66,
+      "lane-recovery": 71
+    },
+    "blue_lead_mean_khors_gap": 1161,
+    "aggregate_gate_passed": false
+  },
+  "deployment_qualified": false,
+  "source_sha256": "2878f3e962b9b8ac28690a939317508c6df38a55545be292b9846c91095fef45",
+  "ir_sha256": "a6ce2a4bf793135ba4d2564b6ba41459a19d9b62b7506e01cbb462fb65e996e7"
+}

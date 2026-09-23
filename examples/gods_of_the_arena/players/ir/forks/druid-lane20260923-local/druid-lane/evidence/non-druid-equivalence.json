@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "pairs": [
+    {
+      "context": "red-lead",
+      "seed": 923040,
+      "class": 6,
+      "command_and_terminal_state_equal": true,
+      "canonical_command_hash": {
+        "canonical_commands_sha1": "1FF647D5C0D1010FA5CBDE0CABFC116F2BB73233",
+        "actions": 4231,
+        "ticks": 11746
+      }
+    },
+    {
+      "context": "red-lead",
+      "seed": 923041,
+      "class": 6,
+      "command_and_terminal_state_equal": true,
+      "canonical_command_hash": {
+        "canonical_commands_sha1": "F143D52C302601A9D2062F47910A83E4FC1606C8",
+        "actions": 4838,
+        "ticks": 12822
+      }
+    },
+    {
+      "context": "blue-lead",
+      "seed": 923040,
+      "class": 6,
+      "command_and_terminal_state_equal": true,
+      "canonical_command_hash": {
+        "canonical_commands_sha1": "C1D3BE17354518FA67381D8F77948CFD39DF8F56",
+        "actions": 4636,
+        "ticks": 12171
+      }
+    },
+    {
+      "context": "blue-lead",
+      "seed": 923041,
+      "class": 6,
+      "command_and_terminal_state_equal": true,
+      "canonical_command_hash": {
+        "canonical_commands_sha1": "C784C30DBF56BFB11C6CC0EC94F50CA7CE0B2CA0",
+        "actions": 5970,
+        "ticks": 17310
+      }
+    },
+    {
+      "context": "red-late",
+      "seed": 923040,
+      "class": 9,
+      "command_and_terminal_state_equal": true,
+      "canonical_command_hash": {
+        "canonical_commands_sha1": "D54DDF36F7193EC67FE7BFA786F7D6170C84BFC0",
+        "actions": 10220,
+        "ticks": 28909
+      }
+    },
+    {
+      "context": "red-late",
+      "seed": 923041,
+      "class": 8,
+      "command_and_terminal_state_equal": true,
+      "canonical_command_hash": {
+        "canonical_commands_sha1": "B604FA22A6A1DA5A4B524BB309985A570311C56F",
+        "actions": 10050,
+        "ticks": 28909
+      }
+    },
+    {
+      "context": "blue-late",
+      "seed": 923040,
+      "class": 8,
+      "command_and_terminal_state_equal": true,
+      "canonical_command_hash": {
+        "canonical_commands_sha1": "4D560E3C79182104B0653B979C936DAF8118AF6D",
+        "actions": 9618,
+        "ticks": 26467
+      }
+    },
+    {
+      "context": "blue-late",
+      "seed": 923041,
+      "class": 9,
+      "command_and_terminal_state_equal": true,
+      "canonical_command_hash": {
+        "canonical_commands_sha1": "BC2A9BDE3D9765D116412326D50C521DAB5EBA6C",
+        "actions": 10782,
+        "ticks": 28909
+      }
+    }
+  ],
+  "scope": "Eight fixed complete local games across both colors and lead/later positions; all subjects naturally non-Druid. Additional action guards prove only Druid runs lane recovery; hosted comparison is separate."
+}
