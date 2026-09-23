@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-22T23:33:01.688788+00:00",
+  "state": "reward_finish_trial_preparing",
+  "worktree": "/Users/aaln/experiments/softmax/polyworld-gota-adaptive-score-20260922",
+  "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-finish-score-20260922",
+  "prior_study": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-adaptive-score-20260922",
+  "prior_status": "400completed, broad source rejected, no deployment",
+  "game": "2026.9.22.3",
+  "engine": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "cycle": "interactive-reward-finish-20260922",
+  "reserved_today": 2480,
+  "cap": 10000,
+  "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
+  "resume": "finish_hosted.py resumes exact trial receipts; finish_report.py --watch; finish_effects.py --watch.400fresh trial, strict frozen score and positive lower95%bound. No old worker resume.",
+  "background_worker": "paused",
+  "baseline": "db71abb3 on both existing champions",
+  "authorization": "User Sep22UTC10000 cap; existing validated deployment permission, no new permission needed.",
+  "prior_studies": {
+    "adaptive": "400completed rejected",
+    "class": "160completed rejected"
+  }
+}

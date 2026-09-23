@@ -20,7 +20,7 @@
     "aaron": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
     "coach": "088c0fed-b536-4777-9f7a-14abee21e5b8"
   },
-  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-22-reward-finish.md",
+  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-22-reward-refresh.md",
   "deployment_status": "Both unchanged portal champions verified competing and active at 2026-09-22T21:38:06.362197+00:00; score candidate rejected, no league mutation.",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
@@ -31,7 +31,7 @@
   "reference_validation_game_version": "2026.9.22.2",
   "reference_validation_engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Broad400 and class160 studies rejected; both portal champions retained. Narrow reward-finisher passes350host cases and8native games; single400-game fresh held-out trial running, positive lower95%gain bound required.",
+  "research_status": "Reward-finisher400game scoregate passed+12.44%,CI[0.084,26.409],red+22.29%,blue+4.01%; original all-field gate failed after Julia updated. Fresh160current-background confirmation running, frozen score/principal-version gate. Both portal champions unchanged.",
   "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
   "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
@@ -41,8 +41,8 @@
     "normal_limit": 1600,
     "authorization": "raise cap to 10000",
     "record": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-score-20260922/budget/authorization-10000.json",
-    "reserved_after_comparison": 1920,
-    "remaining_after_comparison": 8080
+    "reserved_after_comparison": 2880,
+    "remaining_after_comparison": 7120
   },
   "candidate_evidence": {
     "games": 160,
@@ -79,19 +79,49 @@
     "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
     "ir_sha256": "928ded9658b2e9c1102d063e6a3577b327bf67e07adfcebeef43c86f78dbd5da",
     "local_pair": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-finish-score-20260922/reward-finisher",
-    "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-finish-score-20260922",
+    "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-finish-refresh-20260922",
     "binding": "gota-bassy/reward-finish-2026-09-22-r1",
-    "status": "hosted_trial_running"
+    "status": "hosted_refresh_running"
   },
   "class_score_study": {
     "status": "complete_rejected",
     "games": 160,
     "pair_bundle": "examples/gods_of_the_arena/players/ir/forks/class-score20260922",
-    "gain_percent": -6.345431579528172,
+    "gain_percent": -6.345425647352276,
     "per_color_gain_percent": [
-      -31.94056754876139,
-      20.78448467759886
+      -31.94056754841138,
+      20.784484677598858
     ]
   },
-  "field_watch": "games/gods_of_the_arena/instruments/adaptive20260922/field_watch.py"
+  "field_watch": "games/gods_of_the_arena/instruments/adaptive20260922/field_watch.py",
+  "reward_finish_study": {
+    "games": 400,
+    "status": "score_passed_field_changed",
+    "pair_bundle": "examples/gods_of_the_arena/players/ir/forks/reward-finish20260922",
+    "result": {
+      "name": "reward-finisher",
+      "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
+      "score_gate_passed": true,
+      "baseline_score": 2608.59,
+      "candidate_score": 2933.045,
+      "aggregate_gain_percent": 12.437945403455508,
+      "gain_ci95_percent": [
+        0.08367562863640376,
+        26.408517904675797
+      ],
+      "per_color_gain_percent": [
+        22.286992532472926,
+        4.014437608904364
+      ]
+    }
+  },
+  "live_league_snapshot": {
+    "at": "2026-09-23T00:02:29.924570+00:00",
+    "aaron_rank": 2,
+    "aaron_score": 1670.8027541678664,
+    "khors_rank": 1,
+    "khors_score": 1690.985455007314,
+    "rounds": 48,
+    "note": "Standings are time-stamped context, not a predictor. Exact capture in refresh/field-before/snapshot.json."
+  }
 }

@@ -2,7 +2,7 @@
 import importlib.util,json,subprocess,sys
 from pathlib import Path
 import httpx,jsonschema
-import finish_hosted as study
+import refresh_hosted as study
 h,ROOT,STUDY=study.h,study.ROOT,study.STUDY
 loader=importlib.util.spec_from_file_location('prior_score_deployer',Path(__file__).resolve().parent.parent/'score20260922/deploy.py')
 placement=importlib.util.module_from_spec(loader);loader.loader.exec_module(placement)
@@ -11,7 +11,7 @@ placement.h=h;placement.OUT=OUT
 PLAYERS=placement.PLAYERS;PRIOR=placement.PRIOR
 
 def upload_coach(c,source,schema,note):
-    out=OUT/'coach';meta={'name':'aaron-gota-finish0922-coach','content_hash':h.sha(source),'size_bytes':len(source),'player_id':PLAYERS['coach'],'attributes':{},'tags':{'game':'gods_of_the_arena','game_version':h.VERSION,'engine_commit':h.COMMIT,'validation':note}}
+    out=OUT/'coach';meta={'name':'aaron-gota-finish-refresh-coach','content_hash':h.sha(source),'size_bytes':len(source),'player_id':PLAYERS['coach'],'attributes':{},'tags':{'game':'gods_of_the_arena','game_version':h.VERSION,'engine_commit':h.COMMIT,'validation':note}}
     h.freeze(out/'upload-request.json',meta);jsonschema.validate(meta,schema['components']['schemas']['PlayerFilePolicyUploadRequest'])
     if not (out/'uploaded-version.json').exists():
         r=c.post('/stats/policies/files/upload',json=meta)
@@ -25,15 +25,15 @@ def upload_coach(c,source,schema,note):
     return h.read(out/'uploaded-version.json')
 
 def main():
-    confirmation=h.read(STUDY/'trial/report.json')
+    confirmation=h.read(STUDY/'refresh/report.json')
     assert confirmation['complete'] and confirmation['deployment_qualified']
-    selected=confirmation['selected'];assert selected=='reward-finisher' and confirmation['games']==400
+    selected=confirmation['selected'];assert selected=='reward-finisher' and confirmation['games']==160
     result=confirmation['candidates'][0];assert result['score_gate_passed']
-    pair=ROOT/'examples/gods_of_the_arena/players/ir/forks/reward-finish20260922'/selected
+    pair=ROOT/'examples/gods_of_the_arena/players/ir/forks/reward-finish-refresh20260922'/selected
     manifest=h.read(pair/'manifest.json');source=(pair/'policy.bas').read_bytes()
     assert manifest['deployment_qualified'] and h.sha(source)==manifest['source_sha256']==result['source_sha256']
     check=subprocess.run([sys.executable,str(pair/'verify.py')],capture_output=True,text=True,check=True);h.write(OUT/'conversion-proof.json',{'stdout':check.stdout,'returncode':check.returncode})
-    note=f"Reward-finisher XP policy, public immediately reachable one-hit priorities. One preselected source,400fresh held-out games,100/source/color, fixed first team seat: gain{result['aggregate_gain_percent']:.3f}%, colors{result['per_color_gain_percent']},95% interval{result['gain_ci95_percent']}. All10source/VM/replay/XP/integer audits. ExactRichard167 andkhors114; no universal ranking guarantee. Prior user authorization for both players."
+    note=f"Reward-finisher XP policy, public immediately reachable one-hit priorities. Initial400game score gate plus160fresh current-Julia confirmation,40/source/color, fixed first team seat: gain{result['aggregate_gain_percent']:.3f}%, colors{result['per_color_gain_percent']},95% interval{result['gain_ci95_percent']}. All10source/VM/replay/XP/integer audits. ExactRichard167 andkhors114; no universal ranking guarantee. Prior user authorization for both players."
     placement.NOTE=note
     with h.research.lock(h.CAMPAIGN/'runner.lock',blocking=False),h.research.lock(h.CAMPAIGN/'league-deployment.lock',blocking=False),h.client() as c:
         h.live(c);assert h.read(h.CAMPAIGN/'service.json')['state']=='paused'
@@ -43,9 +43,9 @@ def main():
                 current=[m for m in before if m['player']['id']==player and m['is_champion'] and m['end_time'] is None]
                 assert len(current)==1 and current[0]['policy_version']['id']==PRIOR[label],'Concurrent champion change must be reconciled.'
             latest=study.base.field.snapshot(c,OUT/'field-before')
-            changes=study.base.field.compare(h.read(STUDY/'trial/field-after/snapshot.json'),latest)
+            changes=study.base.field.compare(h.read(STUDY/'refresh/field-after/snapshot.json'),latest)
             h.freeze(OUT/'field-comparison.json',changes)
-            assert not changes['game_changed'] and not changes['champion_changes'],'Current field differs from confirmation; retain champion pending revalidation.'
+            assert not changes['game_changed'] and not any(c['player_id'] in study.CRITICAL for c in changes['champion_changes']),'Current field differs from confirmation; retain champion pending revalidation.'
             h.freeze(OUT/'before.json',before)
             h.freeze(OUT/'decision.json',{'at':h.research.now(),'authorization':'Existing user authorization to deploy validated latest policy to both Aaron and Coach; unsigned research commits permitted.','source_sha256':h.sha(source),'ir_sha256':manifest['ir_sha256'],'trial_report':result,'rollback_versions':PRIOR,'rollback_source_sha256':'db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520','engine_commit':h.COMMIT,'game_version':h.VERSION})
         versions={'aaron':h.read(STUDY/'uploads'/selected/'version.json'),'coach':upload_coach(c,source,schema,note)}

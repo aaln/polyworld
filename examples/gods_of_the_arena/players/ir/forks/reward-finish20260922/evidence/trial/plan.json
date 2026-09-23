@@ -1,0 +1,99 @@
+{
+  "stage": "trial",
+  "games": 400,
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3",
+  "cycle": "interactive-reward-finish-20260922",
+  "arms": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "94a17c5a-480f-478e-ba25-60a5ecd70286",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "e811221e-c419-4f7b-9629-01f8722ab9f7",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 100
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "e811221e-c419-4f7b-9629-01f8722ab9f7",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "94a17c5a-480f-478e-ba25-60a5ecd70286",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 100
+    },
+    {
+      "name": "reward-finisher",
+      "side": 0,
+      "version": "769869f7-9e36-4fd6-84ea-82ba507f51b6",
+      "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "769869f7-9e36-4fd6-84ea-82ba507f51b6",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "94a17c5a-480f-478e-ba25-60a5ecd70286",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "e811221e-c419-4f7b-9629-01f8722ab9f7",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 100
+    },
+    {
+      "name": "reward-finisher",
+      "side": 1,
+      "version": "769869f7-9e36-4fd6-84ea-82ba507f51b6",
+      "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "e811221e-c419-4f7b-9629-01f8722ab9f7",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "769869f7-9e36-4fd6-84ea-82ba507f51b6",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "94a17c5a-480f-478e-ba25-60a5ecd70286",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 100
+    }
+  ],
+  "rule": "One preselected source;400fresh games,100/source/color. Zero invalid and all10source/VM/replay/XP/integer audits; aggregate mean gain>=10%, each color>=95% control, positive lower95% side-stratified whole-game bootstrap gain bound. No screening/control reuse. Field must remain unchanged. Fixed first-seat mixed roster; no universal rank or late-draft claim.",
+  "budget": "Authorized Sep22UTC10000; shared ledger,one400-game cycle,parallel3,batch100. No additional stage."
+}

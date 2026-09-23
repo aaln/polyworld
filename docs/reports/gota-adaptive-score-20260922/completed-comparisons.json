@@ -1,0 +1,118 @@
+{
+  "complete_studies": [
+    {
+      "study": "gota-adaptive-score-20260922",
+      "stage": "screen",
+      "name": "spell-targeting",
+      "source_sha256": "352b5d931b5dc369fc979c00bd8a0924ded35a2974e8be87d490888952255a3e",
+      "score_gate_passed": true,
+      "baseline_score": 2768.7749999999996,
+      "candidate_score": 3047.2875000000004,
+      "aggregate_gain_percent": 10.059051385540574,
+      "gain_ci95_percent": [
+        -7.494543532380737,
+        31.08764436396203
+      ],
+      "per_color_gain_percent": [
+        8.198026259003166,
+        11.714278402838808
+      ]
+    },
+    {
+      "study": "gota-adaptive-score-20260922",
+      "stage": "screen",
+      "name": "spell-pressure",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "score_gate_passed": true,
+      "baseline_score": 2768.7749999999996,
+      "candidate_score": 3154.2875000000004,
+      "aggregate_gain_percent": 13.923576310823416,
+      "gain_ci95_percent": [
+        -4.071071941137228,
+        35.05441423453497
+      ],
+      "per_color_gain_percent": [
+        19.16485244895416,
+        9.261897247362105
+      ]
+    },
+    {
+      "study": "gota-adaptive-score-20260922",
+      "stage": "confirmation",
+      "name": "spell-pressure",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "score_gate_passed": false,
+      "baseline_score": 1161.7625,
+      "candidate_score": 1112.9250000000002,
+      "aggregate_gain_percent": -4.203742159004086,
+      "gain_ci95_percent": [
+        -26.426299670174338,
+        24.2239080057715
+      ],
+      "per_color_gain_percent": [
+        -13.349268001195092,
+        6.540153500561585
+      ]
+    },
+    {
+      "study": "gota-class-score-20260922",
+      "stage": "screen",
+      "name": "crossbow-only",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "score_gate_passed": false,
+      "baseline_score": 2776.2125,
+      "candidate_score": 2600.05,
+      "aggregate_gain_percent": -6.345425647352276,
+      "gain_ci95_percent": [
+        -23.501757972559766,
+        14.659776055124896
+      ],
+      "per_color_gain_percent": [
+        -31.94056754841138,
+        20.784484677598858
+      ]
+    },
+    {
+      "study": "gota-finish-score-20260922",
+      "stage": "trial",
+      "name": "reward-finisher",
+      "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
+      "score_gate_passed": true,
+      "baseline_score": 2608.59,
+      "candidate_score": 2933.045,
+      "aggregate_gain_percent": 12.437945403455508,
+      "gain_ci95_percent": [
+        0.08367562863640376,
+        26.408517904675797
+      ],
+      "per_color_gain_percent": [
+        22.286992532472926,
+        4.014437608904364
+      ],
+      "deployment_qualified": false,
+      "field_changes": {
+        "game_changed": false,
+        "champion_changes": [
+          {
+            "player_id": "ply_74ab20ef-cdf2-4250-b995-2b4f2cc96fc0",
+            "before": {
+              "player": "juliajerome",
+              "version": "3de9140d-ff89-461a-9e5b-b151694bc5fe",
+              "policy": "julia-gota-d2b-draftpen3",
+              "number": 1
+            },
+            "after": {
+              "player": "juliajerome",
+              "version": "df4d57bf-2dff-4a1b-997c-d79011e53dc7",
+              "policy": "julia-gota-L4-wave99",
+              "number": 1
+            }
+          }
+        ],
+        "action": "Revalidate changed opponents and refreshed mixed rosters. Frozen A/B results retain exact pinned-version scope; do not substitute versions or claim enduring rank."
+      }
+    }
+  ],
+  "pending": "160game refreshed-Julia confirmation",
+  "scope": "Different fresh control cohorts and draft/roster conditions; do not pool selected candidates or claim component causality."
+}

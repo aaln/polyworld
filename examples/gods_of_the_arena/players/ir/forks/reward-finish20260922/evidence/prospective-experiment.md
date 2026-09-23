@@ -1,32 +1,6 @@
 # Prefer immediately reachable high-XP finishes
 
-Status: 400-game trial complete. The source passes the score gate, but a
-background champion change prevents deployment under this trial's frozen rule.
-A separate fresh-roster confirmation is documented in
-[reward-refresh](2026-09-22-reward-refresh.md); this result remains unchanged.
-
-| Source | Red | Blue | Overall mean |
-| --- | ---: | ---: | ---: |
-| Fresh portal control | 2405.08 | 2812.10 | 2608.590 |
-| Reward-finisher | 2941.10 | 2924.99 | 2933.045 |
-
-Gain **+12.44%**, red **+22.29%**, blue **+4.01%**; the 95% bootstrap interval
-is **[+0.084%, +26.409%]**. All 400 games pass ten-source, all-VM, full-replay,
-XP and integer-score checks. Red candidate has 99 distinct command streams
-in 100 games; the other three cells have 100 each. Preserve the duplicate.
-
-The candidate outscores khors in 43/100 red and 50/100 blue, despite positive
-mean score gaps of 138.46 and 298.18. Both gap intervals include zero, so
-confident khors superiority is unproven. It outscores Richard167 in 149/200
-and Jordan411 in 174/200. These are individual point comparisons, not team wins.
-Red gains both hero and creep XP. Blue's hero XP declines slightly while
-creep and structure rewards increase. Deaths do not improve. These are
-descriptive full-policy effects, not proof of a single causal mechanism.
-
-Julia changed from d2b-draftpen3 to L4-wave99 during the trial. Game, Richard167
-and khors114 remained unchanged. Under the original all-field stability rule,
-the policy stays undeployed until separate revalidation. Captured inputs and
-the original prospective protocol are preserved in the raw study folder.
+Status: prospective held-out trial, not a validated replacement.
 
 Source `e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3`
 is generated from the portal controller through binding

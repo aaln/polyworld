@@ -41,8 +41,9 @@ are recorded in `runtime-provenance.json`. Policy inputs remain public.
 All Python API helpers share the established credential client and journal.
 The `/stats/policy-versions` metadata endpoint is owner-scoped; do not interpret
 its404 for a rival as retirement or attempt privileged bypass. Exact public
-membership IDs, episode specs/content hashes and dry-run roster resolution
-identify competitors. Raw artifacts live outside tracked source under
+membership IDs and episode specs/content hashes identify competitors. The
+request dry-run checks the live schema; actual hosted artifacts verify roster
+resolution. Raw artifacts live outside tracked source under
 `polyworld/tmp/gota-adaptive-score-20260922`; preserve them.
 
 The prospective score gate is>=10%aggregate mean gain with>=95%eachcolor and
@@ -74,3 +75,23 @@ scores. Same-version score changes are descriptive, not predicted trends. This
 is read-only and does not restart the obsolete worker, spend games or select
 champions. Refresh exact-version cohorts as the field changes; never inject
 policy IDs or replay truth into live decisions.
+
+The 400-game finisher trial passed its score conditions, but Julia changed
+champions. Its original all-field condition failed and remains recorded as
+such. `refresh_hosted.py --prepare` freezes a separate 160-game comparison
+using the current Julia champion, then runs without `--prepare` to resume it.
+`refresh_report.py --watch`, `refresh_effects.py --watch`, `refresh_plot.py`,
+`refresh_publish.py` and `refresh_deploy.py` finish that workflow. The new
+prospective gate requires the original score pass plus a fresh 10% aggregate
+gain, 95% each color and no game/principal-champion changes. Principal players
+are Aaron, Coach, khors, Richard, Jordan and relh. Other background updates are
+reported; neither study claims strength against untested future versions.
+
+The new Julia UUID lacked completed public episodes at admission. Its source
+fingerprint comes from the lowest job index in the first control request,
+without outcome selection, and every requested spec must match. All VM and
+replay checks still apply. Existing candidate UUID reuse is backed by completed
+hosted source hashes and authenticated owner/name checks; the optional stats
+API file-hash fields are null, so they cannot independently verify content.
+Preserve preparation errors and the abandoned first field capture. Neither
+created experience requests or league changes.

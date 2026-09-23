@@ -1,0 +1,6298 @@
+{
+  "scope": "All80 prior clean 2026.9.22.3 baseline games. Final inventory is not purchase order; commands include rejected attempts. No item or buyback causal superiority inferred. ReplayAction17 is ActionBuyback in exact pinned replays.nim. Original captures preserved.",
+  "summaries": [
+    {
+      "policy": "ours",
+      "games": 80,
+      "mean_final_gold": 1738.3125,
+      "mean_buyback_attempts": 1.775,
+      "final_equipped_counts": {
+        "CrimsonDagger": 80,
+        "KnightArmor": 80,
+        "PortalScroll": 80,
+        "BattleAxe": 80,
+        "HealthPotion": 61,
+        "RuneCrossbow": 80
+      }
+    },
+    {
+      "policy": "khors114",
+      "games": 80,
+      "mean_final_gold": 1162.5,
+      "mean_buyback_attempts": 2.0125,
+      "final_equipped_counts": {
+        "CrimsonDagger": 80,
+        "KnightArmor": 80,
+        "BattleAxe": 80,
+        "PortalScroll": 71,
+        "RuneCrossbow": 80,
+        "HealthPotion": 63
+      }
+    },
+    {
+      "policy": "richard167",
+      "games": 80,
+      "mean_final_gold": 594.0625,
+      "mean_buyback_attempts": 4.525,
+      "final_equipped_counts": {
+        "AmethystWand": 73,
+        "CrimsonDagger": 73,
+        "SapphireRing": 64,
+        "ThornwoodStaff": 54,
+        "ArcaneSpellbook": 35,
+        "SteelBuckler": 47,
+        "SunsteelLongsword": 47,
+        "KnightArmor": 24,
+        "PoisonPotion": 6,
+        "LeatherGauntlets": 7,
+        "SteelHelmet": 7,
+        "RubyAmulet": 4,
+        "BattleAxe": 10,
+        "VitalityElixir": 1,
+        "ManaPotion": 3
+      }
+    }
+  ],
+  "rows": [
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_e2affa6d-5ae4-4b1e-b941-2a2315774641",
+      "class": 1,
+      "gold": 815,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "a9433f017a1bfdf149e19cfa99f5a052727f6310cf1f5eade001647d27200797"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_e2affa6d-5ae4-4b1e-b941-2a2315774641",
+      "class": 6,
+      "gold": 1860,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "a9433f017a1bfdf149e19cfa99f5a052727f6310cf1f5eade001647d27200797"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_e2affa6d-5ae4-4b1e-b941-2a2315774641",
+      "class": 8,
+      "gold": 455,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "a9433f017a1bfdf149e19cfa99f5a052727f6310cf1f5eade001647d27200797"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_c893b889-05eb-422e-8deb-15d1c3100f13",
+      "class": 6,
+      "gold": 880,
+      "inventory": [
+        "CrimsonDagger",
+        "HealthPotion",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "c516203be9790a9c02e5ecca8b9d732f3f6960a539bd0f36418c0698714ef67c"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_c893b889-05eb-422e-8deb-15d1c3100f13",
+      "class": 1,
+      "gold": 1470,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "PortalScroll",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "c516203be9790a9c02e5ecca8b9d732f3f6960a539bd0f36418c0698714ef67c"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_c893b889-05eb-422e-8deb-15d1c3100f13",
+      "class": 8,
+      "gold": 1090,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 8,
+      "audit_sha256": "c516203be9790a9c02e5ecca8b9d732f3f6960a539bd0f36418c0698714ef67c"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_a4c77796-ce76-4b81-99d5-5d947b05c567",
+      "class": 1,
+      "gold": 1530,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "HealthPotion",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "cbfffb45d3683c7c507e95b5def991f023030d3bfc5e1d6d271f0af84803fa32"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_a4c77796-ce76-4b81-99d5-5d947b05c567",
+      "class": 6,
+      "gold": 820,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "cbfffb45d3683c7c507e95b5def991f023030d3bfc5e1d6d271f0af84803fa32"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_a4c77796-ce76-4b81-99d5-5d947b05c567",
+      "class": 8,
+      "gold": 1030,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "SapphireRing",
+        "ThornwoodStaff"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "cbfffb45d3683c7c507e95b5def991f023030d3bfc5e1d6d271f0af84803fa32"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_e402aa3d-3690-4e67-9000-029f3748332e",
+      "class": 6,
+      "gold": 490,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "HealthPotion",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "1eb1f3d040895f24930cc804f573813e5f672f09965354826d41b0d6a733ac2e"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_e402aa3d-3690-4e67-9000-029f3748332e",
+      "class": 1,
+      "gold": 1000,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "1eb1f3d040895f24930cc804f573813e5f672f09965354826d41b0d6a733ac2e"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_e402aa3d-3690-4e67-9000-029f3748332e",
+      "class": 8,
+      "gold": 770,
+      "inventory": [
+        "AmethystWand",
+        "NoItem",
+        "SapphireRing",
+        "SteelBuckler",
+        "ThornwoodStaff",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "1eb1f3d040895f24930cc804f573813e5f672f09965354826d41b0d6a733ac2e"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_f2a97f62-3b43-4653-8825-afe3f46ce11c",
+      "class": 6,
+      "gold": 365,
+      "inventory": [
+        "CrimsonDagger",
+        "HealthPotion",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "45ec6f7360c2360a94e98aae8c994f758ade4e839787944f2c7e4ade98030122"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_f2a97f62-3b43-4653-8825-afe3f46ce11c",
+      "class": 1,
+      "gold": 135,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "45ec6f7360c2360a94e98aae8c994f758ade4e839787944f2c7e4ade98030122"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_f2a97f62-3b43-4653-8825-afe3f46ce11c",
+      "class": 8,
+      "gold": 875,
+      "inventory": [
+        "AmethystWand",
+        "PoisonPotion",
+        "SapphireRing",
+        "SteelBuckler",
+        "CrimsonDagger",
+        "ThornwoodStaff"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "45ec6f7360c2360a94e98aae8c994f758ade4e839787944f2c7e4ade98030122"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_e72cb594-cd87-438e-97cd-266f9c8eec86",
+      "class": 6,
+      "gold": 2990,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "6bfaacd4cff65c32800e17a837690a7f48632818e63dcac246c9d85f92a5ef8b"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_e72cb594-cd87-438e-97cd-266f9c8eec86",
+      "class": 1,
+      "gold": 1070,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "6bfaacd4cff65c32800e17a837690a7f48632818e63dcac246c9d85f92a5ef8b"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_e72cb594-cd87-438e-97cd-266f9c8eec86",
+      "class": 8,
+      "gold": 1130,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "SteelBuckler",
+        "SunsteelLongsword",
+        "KnightArmor"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "6bfaacd4cff65c32800e17a837690a7f48632818e63dcac246c9d85f92a5ef8b"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_4c7767c8-3990-45e8-b37d-07138878ab8e",
+      "class": 6,
+      "gold": 5770,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "8815eaa04cdf1064001ecc24dd98c6f5c4a7e12ca06402450beb97570f176c6a"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_4c7767c8-3990-45e8-b37d-07138878ab8e",
+      "class": 1,
+      "gold": 340,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "NoItem",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "8815eaa04cdf1064001ecc24dd98c6f5c4a7e12ca06402450beb97570f176c6a"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_4c7767c8-3990-45e8-b37d-07138878ab8e",
+      "class": 8,
+      "gold": 440,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 8,
+      "audit_sha256": "8815eaa04cdf1064001ecc24dd98c6f5c4a7e12ca06402450beb97570f176c6a"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_c07633b5-3e3f-46e5-ba95-158dd2fa28a7",
+      "class": 1,
+      "gold": 740,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "88849df2d62245b19e3e846f0fb13923714462450263d2dac0b14223ac1c33ff"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_c07633b5-3e3f-46e5-ba95-158dd2fa28a7",
+      "class": 6,
+      "gold": 2765,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "88849df2d62245b19e3e846f0fb13923714462450263d2dac0b14223ac1c33ff"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_c07633b5-3e3f-46e5-ba95-158dd2fa28a7",
+      "class": 8,
+      "gold": 250,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "88849df2d62245b19e3e846f0fb13923714462450263d2dac0b14223ac1c33ff"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_c2f09def-2b1a-44a4-b302-50d635b7901b",
+      "class": 1,
+      "gold": 560,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "95a118cb032237c011f971b38b7479f727adefcd79cb824fe37518f3873c76af"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_c2f09def-2b1a-44a4-b302-50d635b7901b",
+      "class": 6,
+      "gold": 1415,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "95a118cb032237c011f971b38b7479f727adefcd79cb824fe37518f3873c76af"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_c2f09def-2b1a-44a4-b302-50d635b7901b",
+      "class": 8,
+      "gold": 305,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "95a118cb032237c011f971b38b7479f727adefcd79cb824fe37518f3873c76af"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_4360aaa0-857a-487b-b506-e073641ece84",
+      "class": 1,
+      "gold": 1815,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "8c204147307ca3075467aea57cab815cd7649f7062865d37c67cba0d94f26787"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_4360aaa0-857a-487b-b506-e073641ece84",
+      "class": 6,
+      "gold": 1290,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "8c204147307ca3075467aea57cab815cd7649f7062865d37c67cba0d94f26787"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_4360aaa0-857a-487b-b506-e073641ece84",
+      "class": 8,
+      "gold": 80,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 7,
+      "audit_sha256": "8c204147307ca3075467aea57cab815cd7649f7062865d37c67cba0d94f26787"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_6765dc64-7b48-457f-8659-062bb5d79cca",
+      "class": 1,
+      "gold": 2295,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "29a004a1e9ce862215432895acef3ee467eb59cb853e16e8155acf6bba8d5161"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_6765dc64-7b48-457f-8659-062bb5d79cca",
+      "class": 6,
+      "gold": 905,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "29a004a1e9ce862215432895acef3ee467eb59cb853e16e8155acf6bba8d5161"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_6765dc64-7b48-457f-8659-062bb5d79cca",
+      "class": 8,
+      "gold": 1205,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SunsteelLongsword",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "29a004a1e9ce862215432895acef3ee467eb59cb853e16e8155acf6bba8d5161"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_afcfe15d-e75a-4abd-bfe4-61876d9c8fee",
+      "class": 1,
+      "gold": 420,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "04a303636fb5d5dd21d85953cd8b5c912ff87217a60d6379716c46d2eec515f2"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_afcfe15d-e75a-4abd-bfe4-61876d9c8fee",
+      "class": 6,
+      "gold": 985,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "04a303636fb5d5dd21d85953cd8b5c912ff87217a60d6379716c46d2eec515f2"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_afcfe15d-e75a-4abd-bfe4-61876d9c8fee",
+      "class": 8,
+      "gold": 585,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 7,
+      "audit_sha256": "04a303636fb5d5dd21d85953cd8b5c912ff87217a60d6379716c46d2eec515f2"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_8fc62d55-3d0f-4aa9-ac4c-d8b12f06d9d4",
+      "class": 1,
+      "gold": 1685,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "5ced7c2729a94581164ec4a5dd37216e7f0909318490a995c72c040c6d71cf88"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_8fc62d55-3d0f-4aa9-ac4c-d8b12f06d9d4",
+      "class": 6,
+      "gold": 1120,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "5ced7c2729a94581164ec4a5dd37216e7f0909318490a995c72c040c6d71cf88"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_8fc62d55-3d0f-4aa9-ac4c-d8b12f06d9d4",
+      "class": 8,
+      "gold": 1650,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SunsteelLongsword",
+        "KnightArmor"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "5ced7c2729a94581164ec4a5dd37216e7f0909318490a995c72c040c6d71cf88"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_308c28b7-a594-42f8-8b13-5d4e6451716b",
+      "class": 1,
+      "gold": 395,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "HealthPotion",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "600d534c2505ab4dba13aafe0cdcb5a37ad43f5734216412776e5cfb30314877"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_308c28b7-a594-42f8-8b13-5d4e6451716b",
+      "class": 6,
+      "gold": 680,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "600d534c2505ab4dba13aafe0cdcb5a37ad43f5734216412776e5cfb30314877"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_308c28b7-a594-42f8-8b13-5d4e6451716b",
+      "class": 8,
+      "gold": 265,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SunsteelLongsword",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "600d534c2505ab4dba13aafe0cdcb5a37ad43f5734216412776e5cfb30314877"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_ea1a33c3-063c-4f14-80cc-8c6bb21e6d11",
+      "class": 6,
+      "gold": 585,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "126c99bde94b179d1ac75fd2f8ba25214fce1629340ca451de89eb4918541ded"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_ea1a33c3-063c-4f14-80cc-8c6bb21e6d11",
+      "class": 1,
+      "gold": 845,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "NoItem",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "126c99bde94b179d1ac75fd2f8ba25214fce1629340ca451de89eb4918541ded"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_ea1a33c3-063c-4f14-80cc-8c6bb21e6d11",
+      "class": 9,
+      "gold": 195,
+      "inventory": [
+        "LeatherGauntlets",
+        "SteelHelmet",
+        "PoisonPotion",
+        "SteelBuckler",
+        "CrimsonDagger",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "126c99bde94b179d1ac75fd2f8ba25214fce1629340ca451de89eb4918541ded"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_41a33a71-263d-4f5e-b9f8-3d81a78861f4",
+      "class": 1,
+      "gold": 190,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "36d18317a1ac5617dee759e98d443de73f7adb1247b12facf028d3772f614f55"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_41a33a71-263d-4f5e-b9f8-3d81a78861f4",
+      "class": 6,
+      "gold": 2985,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "36d18317a1ac5617dee759e98d443de73f7adb1247b12facf028d3772f614f55"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_41a33a71-263d-4f5e-b9f8-3d81a78861f4",
+      "class": 8,
+      "gold": 905,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "36d18317a1ac5617dee759e98d443de73f7adb1247b12facf028d3772f614f55"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_8ac5a29b-8c11-49df-9661-2a47933f62b8",
+      "class": 1,
+      "gold": 1930,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "6ad6311d1507e389e478053e67c17bf1785d4aeec22c1d64474b4d0b6e2e2af2"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_8ac5a29b-8c11-49df-9661-2a47933f62b8",
+      "class": 6,
+      "gold": 345,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "6ad6311d1507e389e478053e67c17bf1785d4aeec22c1d64474b4d0b6e2e2af2"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_8ac5a29b-8c11-49df-9661-2a47933f62b8",
+      "class": 8,
+      "gold": 180,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 7,
+      "audit_sha256": "6ad6311d1507e389e478053e67c17bf1785d4aeec22c1d64474b4d0b6e2e2af2"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_8a0b3458-18ae-42fc-8141-f0a718c44d3f",
+      "class": 6,
+      "gold": 1110,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "b5708451b6429433449f8f145927805611410befa6b53cd652ea2164565f6f93"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_8a0b3458-18ae-42fc-8141-f0a718c44d3f",
+      "class": 1,
+      "gold": 1095,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "b5708451b6429433449f8f145927805611410befa6b53cd652ea2164565f6f93"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_8a0b3458-18ae-42fc-8141-f0a718c44d3f",
+      "class": 8,
+      "gold": 545,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "b5708451b6429433449f8f145927805611410befa6b53cd652ea2164565f6f93"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_42f03847-c2de-4a70-9fc4-a30c9caf60bd",
+      "class": 6,
+      "gold": 3475,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "3bc3ae8dc09ad5bc42d71a9bfa34b9ced7187dc35961ac024aabd9471af63540"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_42f03847-c2de-4a70-9fc4-a30c9caf60bd",
+      "class": 1,
+      "gold": 940,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "3bc3ae8dc09ad5bc42d71a9bfa34b9ced7187dc35961ac024aabd9471af63540"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_42f03847-c2de-4a70-9fc4-a30c9caf60bd",
+      "class": 8,
+      "gold": 1435,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "RubyAmulet"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "3bc3ae8dc09ad5bc42d71a9bfa34b9ced7187dc35961ac024aabd9471af63540"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_d17eb043-983f-4e3b-b291-e2b9e050455c",
+      "class": 1,
+      "gold": 735,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "RuneCrossbow",
+        "BattleAxe",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "17d2854d2ee5756ca8eb3b3c4b2452760a204249e6b1a27a2c39aed680fd6e5a"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_d17eb043-983f-4e3b-b291-e2b9e050455c",
+      "class": 6,
+      "gold": 1010,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "17d2854d2ee5756ca8eb3b3c4b2452760a204249e6b1a27a2c39aed680fd6e5a"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_d17eb043-983f-4e3b-b291-e2b9e050455c",
+      "class": 8,
+      "gold": 635,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SunsteelLongsword",
+        "KnightArmor"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "17d2854d2ee5756ca8eb3b3c4b2452760a204249e6b1a27a2c39aed680fd6e5a"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_2dc58cd5-98f8-4ca1-ae6c-eab3c6606353",
+      "class": 1,
+      "gold": 585,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "RuneCrossbow",
+        "BattleAxe",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "14c83b3b8989b92deb75704a4b61bd36a5974baef4996f684b0d6f5b0bfd3d78"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_2dc58cd5-98f8-4ca1-ae6c-eab3c6606353",
+      "class": 6,
+      "gold": 1950,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "14c83b3b8989b92deb75704a4b61bd36a5974baef4996f684b0d6f5b0bfd3d78"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_2dc58cd5-98f8-4ca1-ae6c-eab3c6606353",
+      "class": 8,
+      "gold": 895,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SunsteelLongsword",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "14c83b3b8989b92deb75704a4b61bd36a5974baef4996f684b0d6f5b0bfd3d78"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_43453806-fb72-4358-9594-7295357d80b2",
+      "class": 1,
+      "gold": 395,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "495e9f42cf2ecc161b2b7fd098f6c791b3c6d19f6315ef0b534fc5ed7a6e2fdc"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_43453806-fb72-4358-9594-7295357d80b2",
+      "class": 6,
+      "gold": 2905,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "495e9f42cf2ecc161b2b7fd098f6c791b3c6d19f6315ef0b534fc5ed7a6e2fdc"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_43453806-fb72-4358-9594-7295357d80b2",
+      "class": 8,
+      "gold": 375,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "NoItem",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "495e9f42cf2ecc161b2b7fd098f6c791b3c6d19f6315ef0b534fc5ed7a6e2fdc"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_a467a2ac-545e-43bc-a99d-a6c685b8c4c2",
+      "class": 6,
+      "gold": 7010,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "NoItem",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "438f9ed92b0fd506dd9ac08fd689e56b68312b2610003bf9d0a314b38d9eab46"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_a467a2ac-545e-43bc-a99d-a6c685b8c4c2",
+      "class": 1,
+      "gold": 645,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "438f9ed92b0fd506dd9ac08fd689e56b68312b2610003bf9d0a314b38d9eab46"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_a467a2ac-545e-43bc-a99d-a6c685b8c4c2",
+      "class": 8,
+      "gold": 1215,
+      "inventory": [
+        "AmethystWand",
+        "RubyAmulet",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 8,
+      "audit_sha256": "438f9ed92b0fd506dd9ac08fd689e56b68312b2610003bf9d0a314b38d9eab46"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_736d1073-1334-4bde-b9e3-d9bea1d1a7a3",
+      "class": 1,
+      "gold": 410,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "543763820f27e906438ff69f7517d1d8aa409e423eb04fb5510382f3092be488"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_736d1073-1334-4bde-b9e3-d9bea1d1a7a3",
+      "class": 6,
+      "gold": 790,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "543763820f27e906438ff69f7517d1d8aa409e423eb04fb5510382f3092be488"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_736d1073-1334-4bde-b9e3-d9bea1d1a7a3",
+      "class": 8,
+      "gold": 660,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "RubyAmulet"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "543763820f27e906438ff69f7517d1d8aa409e423eb04fb5510382f3092be488"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_35a7ac35-ed41-41eb-a4e4-ab2f5e64bb97",
+      "class": 6,
+      "gold": 2850,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "HealthPotion",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "cbd410219569d31b78ed21f2034bfb6ffdec4432da98828183c5146830dcb78e"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_35a7ac35-ed41-41eb-a4e4-ab2f5e64bb97",
+      "class": 1,
+      "gold": 585,
+      "inventory": [
+        "CrimsonDagger",
+        "NoItem",
+        "KnightArmor",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "cbd410219569d31b78ed21f2034bfb6ffdec4432da98828183c5146830dcb78e"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_35a7ac35-ed41-41eb-a4e4-ab2f5e64bb97",
+      "class": 8,
+      "gold": 490,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "SapphireRing",
+        "SteelBuckler",
+        "KnightArmor"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "cbd410219569d31b78ed21f2034bfb6ffdec4432da98828183c5146830dcb78e"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_208b2e04-1433-4e58-9098-a994a9055d6d",
+      "class": 6,
+      "gold": 745,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "HealthPotion",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "991f665c6fa731d48e36f3d6cdf412c9c17158a2eb70be587d8c880ef7133e7d"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_208b2e04-1433-4e58-9098-a994a9055d6d",
+      "class": 1,
+      "gold": 445,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "991f665c6fa731d48e36f3d6cdf412c9c17158a2eb70be587d8c880ef7133e7d"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_208b2e04-1433-4e58-9098-a994a9055d6d",
+      "class": 9,
+      "gold": 215,
+      "inventory": [
+        "LeatherGauntlets",
+        "SteelHelmet",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "991f665c6fa731d48e36f3d6cdf412c9c17158a2eb70be587d8c880ef7133e7d"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_287d563d-e4ae-465c-ae84-585d2bd55262",
+      "class": 6,
+      "gold": 2760,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "NoItem",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "ea0a4e031ecf759525b0ddf54e6e84a112d2f3149fdac361240c2c6434d9ecef"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_287d563d-e4ae-465c-ae84-585d2bd55262",
+      "class": 1,
+      "gold": 780,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "ea0a4e031ecf759525b0ddf54e6e84a112d2f3149fdac361240c2c6434d9ecef"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_287d563d-e4ae-465c-ae84-585d2bd55262",
+      "class": 8,
+      "gold": 215,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "ea0a4e031ecf759525b0ddf54e6e84a112d2f3149fdac361240c2c6434d9ecef"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_f8ec005a-cfb1-4d44-860c-73db51190aaa",
+      "class": 1,
+      "gold": 390,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "2bba26e847a0880d964f2c581bb21c17a4bb83d9bb731e04871739a01c293256"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_f8ec005a-cfb1-4d44-860c-73db51190aaa",
+      "class": 6,
+      "gold": 3295,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "2bba26e847a0880d964f2c581bb21c17a4bb83d9bb731e04871739a01c293256"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_f8ec005a-cfb1-4d44-860c-73db51190aaa",
+      "class": 8,
+      "gold": 620,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "SteelBuckler",
+        "SunsteelLongsword",
+        "KnightArmor"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "2bba26e847a0880d964f2c581bb21c17a4bb83d9bb731e04871739a01c293256"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_98b583a6-04df-4fcb-bc26-8d334e3e2392",
+      "class": 1,
+      "gold": 395,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "d8f96dac9a14a36bfadf1a00cf6044f72889280a154b6552489907df704e871a"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_98b583a6-04df-4fcb-bc26-8d334e3e2392",
+      "class": 6,
+      "gold": 380,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "NoItem",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        2,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "d8f96dac9a14a36bfadf1a00cf6044f72889280a154b6552489907df704e871a"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_98b583a6-04df-4fcb-bc26-8d334e3e2392",
+      "class": 8,
+      "gold": 325,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "d8f96dac9a14a36bfadf1a00cf6044f72889280a154b6552489907df704e871a"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_1f6eda20-4c41-450a-9bb8-bd5cde369e80",
+      "class": 1,
+      "gold": 605,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "9753dd68333c1d507ce8bd3a2a98dfb1d83f4045b9ecaa9184ef50619402088a"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_1f6eda20-4c41-450a-9bb8-bd5cde369e80",
+      "class": 6,
+      "gold": 2085,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "9753dd68333c1d507ce8bd3a2a98dfb1d83f4045b9ecaa9184ef50619402088a"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_1f6eda20-4c41-450a-9bb8-bd5cde369e80",
+      "class": 8,
+      "gold": 1030,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "9753dd68333c1d507ce8bd3a2a98dfb1d83f4045b9ecaa9184ef50619402088a"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_45635273-9a61-480d-b0f3-8b14901895c6",
+      "class": 6,
+      "gold": 1260,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "06a78bb4e3651a7652950d730de2dd372f04a8cd9b903bee1e1694a66a49c0f5"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_45635273-9a61-480d-b0f3-8b14901895c6",
+      "class": 1,
+      "gold": 795,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "06a78bb4e3651a7652950d730de2dd372f04a8cd9b903bee1e1694a66a49c0f5"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_45635273-9a61-480d-b0f3-8b14901895c6",
+      "class": 8,
+      "gold": 380,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 8,
+      "audit_sha256": "06a78bb4e3651a7652950d730de2dd372f04a8cd9b903bee1e1694a66a49c0f5"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_26c4217d-eefc-4e93-9ef9-e549cce399a1",
+      "class": 6,
+      "gold": 3395,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "NoItem",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "b3c6f52de2bb318aacdd814d1ee18a2238429ba62d031ae24ad31494d5ec5e6c"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_26c4217d-eefc-4e93-9ef9-e549cce399a1",
+      "class": 1,
+      "gold": 815,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "b3c6f52de2bb318aacdd814d1ee18a2238429ba62d031ae24ad31494d5ec5e6c"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_26c4217d-eefc-4e93-9ef9-e549cce399a1",
+      "class": 9,
+      "gold": 500,
+      "inventory": [
+        "LeatherGauntlets",
+        "SteelHelmet",
+        "SunsteelLongsword",
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "b3c6f52de2bb318aacdd814d1ee18a2238429ba62d031ae24ad31494d5ec5e6c"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_12de33c9-40d7-4332-8518-8efc140346cb",
+      "class": 6,
+      "gold": 2305,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "e239ea5e027e31e65df3ddd0f1474778508dc6b72ba369600a575723936e46e0"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_12de33c9-40d7-4332-8518-8efc140346cb",
+      "class": 1,
+      "gold": 880,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "e239ea5e027e31e65df3ddd0f1474778508dc6b72ba369600a575723936e46e0"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_12de33c9-40d7-4332-8518-8efc140346cb",
+      "class": 8,
+      "gold": 600,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "BattleAxe",
+        "SapphireRing"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "e239ea5e027e31e65df3ddd0f1474778508dc6b72ba369600a575723936e46e0"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_3ac47f52-f0dc-4eb6-be60-5d61080ee363",
+      "class": 6,
+      "gold": 485,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "HealthPotion",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "66cfb246e90f838b766986f2930936286a33b1125cf15179380920e41c2690d5"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_3ac47f52-f0dc-4eb6-be60-5d61080ee363",
+      "class": 1,
+      "gold": 545,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "66cfb246e90f838b766986f2930936286a33b1125cf15179380920e41c2690d5"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_3ac47f52-f0dc-4eb6-be60-5d61080ee363",
+      "class": 8,
+      "gold": 590,
+      "inventory": [
+        "AmethystWand",
+        "PoisonPotion",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "66cfb246e90f838b766986f2930936286a33b1125cf15179380920e41c2690d5"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_dfb39faa-ac7d-4030-9674-ef2a52362713",
+      "class": 1,
+      "gold": 710,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "39b2306bbc1622ec5df0dda3f326ac7d7a241ce64d0c1ab1da0c81fdd538d086"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_dfb39faa-ac7d-4030-9674-ef2a52362713",
+      "class": 6,
+      "gold": 1715,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "39b2306bbc1622ec5df0dda3f326ac7d7a241ce64d0c1ab1da0c81fdd538d086"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_dfb39faa-ac7d-4030-9674-ef2a52362713",
+      "class": 8,
+      "gold": 485,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "39b2306bbc1622ec5df0dda3f326ac7d7a241ce64d0c1ab1da0c81fdd538d086"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_32f97e49-e5ac-460c-b5b8-e330e2978cb9",
+      "class": 1,
+      "gold": 645,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "98478e91331636566a527678b7bdafa3904bbc00d61d1eaf217c86a8ee9353b3"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_32f97e49-e5ac-460c-b5b8-e330e2978cb9",
+      "class": 6,
+      "gold": 250,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "98478e91331636566a527678b7bdafa3904bbc00d61d1eaf217c86a8ee9353b3"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_32f97e49-e5ac-460c-b5b8-e330e2978cb9",
+      "class": 8,
+      "gold": 915,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "98478e91331636566a527678b7bdafa3904bbc00d61d1eaf217c86a8ee9353b3"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_9c6d14d8-6894-4f94-8dd3-b25f6f5cff98",
+      "class": 6,
+      "gold": 1130,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "72425afe07e79d6bbcbb45ad9da6616082364e75bfa4fbbe75ba5ab65619e9f5"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_9c6d14d8-6894-4f94-8dd3-b25f6f5cff98",
+      "class": 1,
+      "gold": 575,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "72425afe07e79d6bbcbb45ad9da6616082364e75bfa4fbbe75ba5ab65619e9f5"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_9c6d14d8-6894-4f94-8dd3-b25f6f5cff98",
+      "class": 8,
+      "gold": 240,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "SteelBuckler",
+        "ThornwoodStaff",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "72425afe07e79d6bbcbb45ad9da6616082364e75bfa4fbbe75ba5ab65619e9f5"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_5f69216b-1e0b-44cb-963e-6cb52d16dde4",
+      "class": 6,
+      "gold": 655,
+      "inventory": [
+        "CrimsonDagger",
+        "HealthPotion",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "471fad08cc9a1ca3d5d104c9e1ba43e4095f57b9d1877c13a8994691b83cce8a"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_5f69216b-1e0b-44cb-963e-6cb52d16dde4",
+      "class": 1,
+      "gold": 735,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "471fad08cc9a1ca3d5d104c9e1ba43e4095f57b9d1877c13a8994691b83cce8a"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_5f69216b-1e0b-44cb-963e-6cb52d16dde4",
+      "class": 8,
+      "gold": 205,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "SteelBuckler",
+        "ThornwoodStaff",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 8,
+      "audit_sha256": "471fad08cc9a1ca3d5d104c9e1ba43e4095f57b9d1877c13a8994691b83cce8a"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_58aad575-fccc-4deb-8b84-d672bca1e440",
+      "class": 6,
+      "gold": 1285,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "04c1c9d00a5f1ad09d64b1363b362336134425792a55865e97320e78471f4dd6"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_58aad575-fccc-4deb-8b84-d672bca1e440",
+      "class": 1,
+      "gold": 515,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "04c1c9d00a5f1ad09d64b1363b362336134425792a55865e97320e78471f4dd6"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_58aad575-fccc-4deb-8b84-d672bca1e440",
+      "class": 9,
+      "gold": 955,
+      "inventory": [
+        "LeatherGauntlets",
+        "SteelHelmet",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "BattleAxe"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "04c1c9d00a5f1ad09d64b1363b362336134425792a55865e97320e78471f4dd6"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 0,
+      "episode": "ereq_cb7fc6e3-29f7-4a13-80b0-a011aadb3f9f",
+      "class": 1,
+      "gold": 1575,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "af0a3a2ef767af1c491ed9d7753ee950df74fa15341f7ba20542605bf7d2520e"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 1,
+      "episode": "ereq_cb7fc6e3-29f7-4a13-80b0-a011aadb3f9f",
+      "class": 6,
+      "gold": 1345,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "af0a3a2ef767af1c491ed9d7753ee950df74fa15341f7ba20542605bf7d2520e"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 1,
+      "episode": "ereq_cb7fc6e3-29f7-4a13-80b0-a011aadb3f9f",
+      "class": 8,
+      "gold": 225,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "NoItem",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "af0a3a2ef767af1c491ed9d7753ee950df74fa15341f7ba20542605bf7d2520e"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_4e37cdd2-30f1-4a7d-9bb7-d0f5fac439eb",
+      "class": 1,
+      "gold": 410,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "02383fe5caf91374d5e607e6b67b5f0150699a0c16390e4e4bb2f57ab8bee9c2"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_4e37cdd2-30f1-4a7d-9bb7-d0f5fac439eb",
+      "class": 6,
+      "gold": 565,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "02383fe5caf91374d5e607e6b67b5f0150699a0c16390e4e4bb2f57ab8bee9c2"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_4e37cdd2-30f1-4a7d-9bb7-d0f5fac439eb",
+      "class": 8,
+      "gold": 610,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "BattleAxe",
+        "PoisonPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "02383fe5caf91374d5e607e6b67b5f0150699a0c16390e4e4bb2f57ab8bee9c2"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_e4ee54fe-69a0-48e6-8aa9-e2ded9def4d9",
+      "class": 6,
+      "gold": 4220,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "b0fb5af2bb9b2088207d1fd110f29acc34d63b0c633c8912787b1961c43d9704"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_e4ee54fe-69a0-48e6-8aa9-e2ded9def4d9",
+      "class": 1,
+      "gold": 330,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "b0fb5af2bb9b2088207d1fd110f29acc34d63b0c633c8912787b1961c43d9704"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_e4ee54fe-69a0-48e6-8aa9-e2ded9def4d9",
+      "class": 8,
+      "gold": 700,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "SunsteelLongsword",
+        "ThornwoodStaff",
+        "PoisonPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "b0fb5af2bb9b2088207d1fd110f29acc34d63b0c633c8912787b1961c43d9704"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_10b08f3a-a166-4894-9da8-9a6695deda0d",
+      "class": 1,
+      "gold": 2150,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "318307552fab4c8266ae4f4ae0b30c74e25c396bdf92f74a3daecde0868fb5e1"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_10b08f3a-a166-4894-9da8-9a6695deda0d",
+      "class": 6,
+      "gold": 1115,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "318307552fab4c8266ae4f4ae0b30c74e25c396bdf92f74a3daecde0868fb5e1"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_10b08f3a-a166-4894-9da8-9a6695deda0d",
+      "class": 8,
+      "gold": 675,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 7,
+      "audit_sha256": "318307552fab4c8266ae4f4ae0b30c74e25c396bdf92f74a3daecde0868fb5e1"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_01ad11ab-7bc1-49dc-909c-bdb426da3294",
+      "class": 6,
+      "gold": 2045,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "4b92cfafa0f1f90acdf5dab4e6fc7924ec0cc0c1777b8e6c7e33232a2e092c0f"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_01ad11ab-7bc1-49dc-909c-bdb426da3294",
+      "class": 1,
+      "gold": 335,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "HealthPotion",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "4b92cfafa0f1f90acdf5dab4e6fc7924ec0cc0c1777b8e6c7e33232a2e092c0f"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_01ad11ab-7bc1-49dc-909c-bdb426da3294",
+      "class": 8,
+      "gold": 15,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "NoItem",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "4b92cfafa0f1f90acdf5dab4e6fc7924ec0cc0c1777b8e6c7e33232a2e092c0f"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_4e07f4dc-7c15-4ebf-9fca-2253aad8e7b2",
+      "class": 1,
+      "gold": 2880,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "f27597db64568392339bc3557a864497d1b2f6fcca96b084720fa9d84edf7e93"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_4e07f4dc-7c15-4ebf-9fca-2253aad8e7b2",
+      "class": 6,
+      "gold": 430,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "f27597db64568392339bc3557a864497d1b2f6fcca96b084720fa9d84edf7e93"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_4e07f4dc-7c15-4ebf-9fca-2253aad8e7b2",
+      "class": 8,
+      "gold": 1060,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "BattleAxe",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "f27597db64568392339bc3557a864497d1b2f6fcca96b084720fa9d84edf7e93"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_9fca24f5-1a9b-4ce2-9acb-9fd2d9f87e29",
+      "class": 1,
+      "gold": 1775,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "e4cb82da816eaab26cde98aa28b2e0ab57adb29b192b22983bd4e9e96b7e5c17"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_9fca24f5-1a9b-4ce2-9acb-9fd2d9f87e29",
+      "class": 6,
+      "gold": 1630,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "e4cb82da816eaab26cde98aa28b2e0ab57adb29b192b22983bd4e9e96b7e5c17"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_9fca24f5-1a9b-4ce2-9acb-9fd2d9f87e29",
+      "class": 8,
+      "gold": 780,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SteelBuckler",
+        "NoItem",
+        "SapphireRing",
+        "ThornwoodStaff"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "e4cb82da816eaab26cde98aa28b2e0ab57adb29b192b22983bd4e9e96b7e5c17"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_7c5b2ec5-5dd0-43d1-9c6d-fcf03b0a45a1",
+      "class": 1,
+      "gold": 260,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "c2eeabfc6de7a9d41ae8c1153e6e0cfe4b3c2ef83ac234d187e2dd95a358a401"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_7c5b2ec5-5dd0-43d1-9c6d-fcf03b0a45a1",
+      "class": 6,
+      "gold": 1630,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        2
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "c2eeabfc6de7a9d41ae8c1153e6e0cfe4b3c2ef83ac234d187e2dd95a358a401"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_7c5b2ec5-5dd0-43d1-9c6d-fcf03b0a45a1",
+      "class": 8,
+      "gold": 600,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "c2eeabfc6de7a9d41ae8c1153e6e0cfe4b3c2ef83ac234d187e2dd95a358a401"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_a7e58a50-4d49-47de-b596-1e5a5aac9a12",
+      "class": 6,
+      "gold": 2495,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "89ada4f5df3f0c7c24d2aae84518884570e932aab75820a8f317b029a77c9723"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_a7e58a50-4d49-47de-b596-1e5a5aac9a12",
+      "class": 1,
+      "gold": 490,
+      "inventory": [
+        "CrimsonDagger",
+        "HealthPotion",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "89ada4f5df3f0c7c24d2aae84518884570e932aab75820a8f317b029a77c9723"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_a7e58a50-4d49-47de-b596-1e5a5aac9a12",
+      "class": 0,
+      "gold": 10,
+      "inventory": [
+        "LeatherGauntlets",
+        "SteelHelmet",
+        "CrimsonDagger",
+        "NoItem",
+        "SunsteelLongsword",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "89ada4f5df3f0c7c24d2aae84518884570e932aab75820a8f317b029a77c9723"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_201d9bd7-a477-43de-b664-c2e2f02a309b",
+      "class": 1,
+      "gold": 525,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "3854cc2179ad7fa0caf0f838df3b70180d6c33d20d4ad18612b77591cfe87f19"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_201d9bd7-a477-43de-b664-c2e2f02a309b",
+      "class": 6,
+      "gold": 1330,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "3854cc2179ad7fa0caf0f838df3b70180d6c33d20d4ad18612b77591cfe87f19"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_201d9bd7-a477-43de-b664-c2e2f02a309b",
+      "class": 8,
+      "gold": 455,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "SapphireRing",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "3854cc2179ad7fa0caf0f838df3b70180d6c33d20d4ad18612b77591cfe87f19"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_d0f217e9-0f2f-4fe2-bebf-c0435814e251",
+      "class": 1,
+      "gold": 1140,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 7,
+      "audit_sha256": "280b941338e2de039379c0a43073f7659922e30fb66a6cd005dd8924bc82a9f5"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_d0f217e9-0f2f-4fe2-bebf-c0435814e251",
+      "class": 6,
+      "gold": 780,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "280b941338e2de039379c0a43073f7659922e30fb66a6cd005dd8924bc82a9f5"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_d0f217e9-0f2f-4fe2-bebf-c0435814e251",
+      "class": 8,
+      "gold": 380,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "SteelBuckler",
+        "SunsteelLongsword",
+        "KnightArmor"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 8,
+      "audit_sha256": "280b941338e2de039379c0a43073f7659922e30fb66a6cd005dd8924bc82a9f5"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_bcd00a3b-c411-451e-a009-86b523a46d64",
+      "class": 6,
+      "gold": 3685,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "a44126638523e6eb9ea03ccee4c74154e7c44a6bbf2d2d15a4f041c59ccdf8cb"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_bcd00a3b-c411-451e-a009-86b523a46d64",
+      "class": 1,
+      "gold": 350,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "a44126638523e6eb9ea03ccee4c74154e7c44a6bbf2d2d15a4f041c59ccdf8cb"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_bcd00a3b-c411-451e-a009-86b523a46d64",
+      "class": 8,
+      "gold": 10,
+      "inventory": [
+        "AmethystWand",
+        "NoItem",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "a44126638523e6eb9ea03ccee4c74154e7c44a6bbf2d2d15a4f041c59ccdf8cb"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_e6eba01d-b5f4-40d4-9677-0b1c023c3fa7",
+      "class": 6,
+      "gold": 1575,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "b1c5c3379b779084c854d40a1a8bb9d1195e84d94f327efbeb23b7aa7a84b9e2"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_e6eba01d-b5f4-40d4-9677-0b1c023c3fa7",
+      "class": 1,
+      "gold": 170,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        2
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "b1c5c3379b779084c854d40a1a8bb9d1195e84d94f327efbeb23b7aa7a84b9e2"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_e6eba01d-b5f4-40d4-9677-0b1c023c3fa7",
+      "class": 8,
+      "gold": 890,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "SteelBuckler",
+        "SunsteelLongsword",
+        "ThornwoodStaff"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "b1c5c3379b779084c854d40a1a8bb9d1195e84d94f327efbeb23b7aa7a84b9e2"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_daa1059d-f5d7-4043-b9d4-4de6caca9a1f",
+      "class": 6,
+      "gold": 3010,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "RuneCrossbow",
+        "BattleAxe",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "120dbc8a31a1fd2cffb77b62777030b7208b63020940c35655245b8191cd1b13"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_daa1059d-f5d7-4043-b9d4-4de6caca9a1f",
+      "class": 1,
+      "gold": 410,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "120dbc8a31a1fd2cffb77b62777030b7208b63020940c35655245b8191cd1b13"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_daa1059d-f5d7-4043-b9d4-4de6caca9a1f",
+      "class": 8,
+      "gold": 335,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "120dbc8a31a1fd2cffb77b62777030b7208b63020940c35655245b8191cd1b13"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_3ecc34b9-b8da-46a5-a62a-317bac1f2770",
+      "class": 1,
+      "gold": 1950,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "f83800ab664ac2f3d75822b4ee679b94006950690b2652fcdfa325579295b85f"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_3ecc34b9-b8da-46a5-a62a-317bac1f2770",
+      "class": 6,
+      "gold": 2070,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "NoItem",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "f83800ab664ac2f3d75822b4ee679b94006950690b2652fcdfa325579295b85f"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_3ecc34b9-b8da-46a5-a62a-317bac1f2770",
+      "class": 8,
+      "gold": 690,
+      "inventory": [
+        "AmethystWand",
+        "NoItem",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "f83800ab664ac2f3d75822b4ee679b94006950690b2652fcdfa325579295b85f"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_adab1820-768d-4533-b942-193cbbedab4c",
+      "class": 1,
+      "gold": 860,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "bbf84df4358300e4f3b0b58eee87abe6c170fbe319b92845efd36ab0708a052f"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_adab1820-768d-4533-b942-193cbbedab4c",
+      "class": 6,
+      "gold": 1865,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "bbf84df4358300e4f3b0b58eee87abe6c170fbe319b92845efd36ab0708a052f"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_adab1820-768d-4533-b942-193cbbedab4c",
+      "class": 8,
+      "gold": 595,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "bbf84df4358300e4f3b0b58eee87abe6c170fbe319b92845efd36ab0708a052f"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_b90a4a81-cf8f-42d3-ace0-e0cf03bb6834",
+      "class": 1,
+      "gold": 210,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "d4762a1f3efe483c9dbad5cc58565e1c3169b79c4f50c9849838e793a32068ec"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_b90a4a81-cf8f-42d3-ace0-e0cf03bb6834",
+      "class": 6,
+      "gold": 3025,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "d4762a1f3efe483c9dbad5cc58565e1c3169b79c4f50c9849838e793a32068ec"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_b90a4a81-cf8f-42d3-ace0-e0cf03bb6834",
+      "class": 8,
+      "gold": 255,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "BattleAxe",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "d4762a1f3efe483c9dbad5cc58565e1c3169b79c4f50c9849838e793a32068ec"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_ac106f0c-1690-462f-9c53-45dd8ca34652",
+      "class": 6,
+      "gold": 3635,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "0c83d96ac9ff5e125b5a3b6ff598b1098b9d089869a75a6f80f34a927d0ddc62"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_ac106f0c-1690-462f-9c53-45dd8ca34652",
+      "class": 1,
+      "gold": 1125,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "0c83d96ac9ff5e125b5a3b6ff598b1098b9d089869a75a6f80f34a927d0ddc62"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_ac106f0c-1690-462f-9c53-45dd8ca34652",
+      "class": 8,
+      "gold": 1590,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "BattleAxe",
+        "SapphireRing"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "0c83d96ac9ff5e125b5a3b6ff598b1098b9d089869a75a6f80f34a927d0ddc62"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_4978cf0c-8685-463c-b674-2cfdcdd43919",
+      "class": 6,
+      "gold": 4835,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "NoItem",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "c29d081d3ebc4b13b32b40f27e429fa1fd6a1d274e17a677c80d5ff8f20cee69"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_4978cf0c-8685-463c-b674-2cfdcdd43919",
+      "class": 1,
+      "gold": 465,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "c29d081d3ebc4b13b32b40f27e429fa1fd6a1d274e17a677c80d5ff8f20cee69"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_4978cf0c-8685-463c-b674-2cfdcdd43919",
+      "class": 8,
+      "gold": 1025,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "SteelBuckler"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 7,
+      "audit_sha256": "c29d081d3ebc4b13b32b40f27e429fa1fd6a1d274e17a677c80d5ff8f20cee69"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_9f24f2f5-c1c0-47ef-a930-9d931f9a6bf6",
+      "class": 1,
+      "gold": 455,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "979b6f9f67a66f74e0d54c94b6d693201438bb41aada822594a2005a105c7658"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_9f24f2f5-c1c0-47ef-a930-9d931f9a6bf6",
+      "class": 6,
+      "gold": 1515,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "979b6f9f67a66f74e0d54c94b6d693201438bb41aada822594a2005a105c7658"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_9f24f2f5-c1c0-47ef-a930-9d931f9a6bf6",
+      "class": 8,
+      "gold": 280,
+      "inventory": [
+        "AmethystWand",
+        "SunsteelLongsword",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "CrimsonDagger"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "979b6f9f67a66f74e0d54c94b6d693201438bb41aada822594a2005a105c7658"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_6322d7eb-3156-4d46-b700-afc0ce208bb5",
+      "class": 6,
+      "gold": 3760,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "RuneCrossbow",
+        "BattleAxe",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "1a1438305738b308bfd6b3e63d80833409fd828d559e169a04393025184a8c06"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_6322d7eb-3156-4d46-b700-afc0ce208bb5",
+      "class": 1,
+      "gold": 1050,
+      "inventory": [
+        "CrimsonDagger",
+        "BattleAxe",
+        "KnightArmor",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "1a1438305738b308bfd6b3e63d80833409fd828d559e169a04393025184a8c06"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_6322d7eb-3156-4d46-b700-afc0ce208bb5",
+      "class": 8,
+      "gold": 660,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SunsteelLongsword",
+        "KnightArmor"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "1a1438305738b308bfd6b3e63d80833409fd828d559e169a04393025184a8c06"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_4a977bda-29d8-466f-8e1a-152bdf7893d9",
+      "class": 1,
+      "gold": 220,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "d4e8be4d8de5f94a12551e75b5945bd0c4ad64d178a583679167a95ea7a9f373"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_4a977bda-29d8-466f-8e1a-152bdf7893d9",
+      "class": 6,
+      "gold": 1170,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "HealthPotion",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "d4e8be4d8de5f94a12551e75b5945bd0c4ad64d178a583679167a95ea7a9f373"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_4a977bda-29d8-466f-8e1a-152bdf7893d9",
+      "class": 8,
+      "gold": 430,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SunsteelLongsword",
+        "KnightArmor"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "d4e8be4d8de5f94a12551e75b5945bd0c4ad64d178a583679167a95ea7a9f373"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_7334a815-b316-4262-b681-3151f006b199",
+      "class": 1,
+      "gold": 2340,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "ded5229296b3b0708e27bc258aaa64584932dc471d6df06f4c06abd597c31630"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_7334a815-b316-4262-b681-3151f006b199",
+      "class": 6,
+      "gold": 1245,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "ded5229296b3b0708e27bc258aaa64584932dc471d6df06f4c06abd597c31630"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_7334a815-b316-4262-b681-3151f006b199",
+      "class": 8,
+      "gold": 40,
+      "inventory": [
+        "AmethystWand",
+        "VitalityElixir",
+        "SteelBuckler",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "CrimsonDagger"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "ded5229296b3b0708e27bc258aaa64584932dc471d6df06f4c06abd597c31630"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_fe54d461-fdf4-46f5-bd0d-cdc0e4375650",
+      "class": 1,
+      "gold": 1845,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "252a317081c4bbdc28622ab4d941cad4ed497a0653f2092dc32595efc4685507"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_fe54d461-fdf4-46f5-bd0d-cdc0e4375650",
+      "class": 6,
+      "gold": 1025,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "252a317081c4bbdc28622ab4d941cad4ed497a0653f2092dc32595efc4685507"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_fe54d461-fdf4-46f5-bd0d-cdc0e4375650",
+      "class": 8,
+      "gold": 30,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "252a317081c4bbdc28622ab4d941cad4ed497a0653f2092dc32595efc4685507"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_80c767fb-ddf6-49bd-85a0-0bb2cabc6a99",
+      "class": 6,
+      "gold": 3750,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "NoItem",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "efd42a2fcd4fffc883ce45481048dc14fff787e7968537ed8a0bf23ca27b4896"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_80c767fb-ddf6-49bd-85a0-0bb2cabc6a99",
+      "class": 1,
+      "gold": 445,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "efd42a2fcd4fffc883ce45481048dc14fff787e7968537ed8a0bf23ca27b4896"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_80c767fb-ddf6-49bd-85a0-0bb2cabc6a99",
+      "class": 8,
+      "gold": 135,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "SteelBuckler",
+        "SunsteelLongsword",
+        "ManaPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "efd42a2fcd4fffc883ce45481048dc14fff787e7968537ed8a0bf23ca27b4896"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_d7e0f433-4bc5-4fe1-a43c-b3616d98ecfc",
+      "class": 1,
+      "gold": 3335,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "6bec9e041d2c5e8836e192ee94b4fbcbfe37a03827b1cfd071aff59468136309"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_d7e0f433-4bc5-4fe1-a43c-b3616d98ecfc",
+      "class": 6,
+      "gold": 2360,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "6bec9e041d2c5e8836e192ee94b4fbcbfe37a03827b1cfd071aff59468136309"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_d7e0f433-4bc5-4fe1-a43c-b3616d98ecfc",
+      "class": 8,
+      "gold": 575,
+      "inventory": [
+        "AmethystWand",
+        "SapphireRing",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "SteelBuckler",
+        "ManaPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "6bec9e041d2c5e8836e192ee94b4fbcbfe37a03827b1cfd071aff59468136309"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_b9604308-771c-4f17-9d4b-a430ac97a6c4",
+      "class": 6,
+      "gold": 2160,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "HealthPotion",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "8f27ae278839454dcdf25c47e6a992d889c0f8c347e67eb6cc83679ba9ff945c"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_b9604308-771c-4f17-9d4b-a430ac97a6c4",
+      "class": 1,
+      "gold": 1290,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "8f27ae278839454dcdf25c47e6a992d889c0f8c347e67eb6cc83679ba9ff945c"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_b9604308-771c-4f17-9d4b-a430ac97a6c4",
+      "class": 0,
+      "gold": 200,
+      "inventory": [
+        "LeatherGauntlets",
+        "SteelHelmet",
+        "CrimsonDagger",
+        "PoisonPotion",
+        "SteelBuckler",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "8f27ae278839454dcdf25c47e6a992d889c0f8c347e67eb6cc83679ba9ff945c"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_4e3d64e1-a118-4d3a-a7cb-36c02342089d",
+      "class": 1,
+      "gold": 225,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "ce54d66c5012c25fa2b98ef7a05ea3680b1d6e09f4dc81999fd2a58ab9f94f24"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_4e3d64e1-a118-4d3a-a7cb-36c02342089d",
+      "class": 6,
+      "gold": 1425,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "ce54d66c5012c25fa2b98ef7a05ea3680b1d6e09f4dc81999fd2a58ab9f94f24"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_4e3d64e1-a118-4d3a-a7cb-36c02342089d",
+      "class": 8,
+      "gold": 1460,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "ce54d66c5012c25fa2b98ef7a05ea3680b1d6e09f4dc81999fd2a58ab9f94f24"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_c28b5bc0-a0cc-4fa9-9171-f2510afd5d74",
+      "class": 1,
+      "gold": 1055,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "9efead8581a71e65c53e7e5dffc53ff04e519b8cfd56555f4e160ad98dacfccf"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_c28b5bc0-a0cc-4fa9-9171-f2510afd5d74",
+      "class": 6,
+      "gold": 2915,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "9efead8581a71e65c53e7e5dffc53ff04e519b8cfd56555f4e160ad98dacfccf"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_c28b5bc0-a0cc-4fa9-9171-f2510afd5d74",
+      "class": 8,
+      "gold": 185,
+      "inventory": [
+        "AmethystWand",
+        "ArcaneSpellbook",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "RubyAmulet"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 9,
+      "audit_sha256": "9efead8581a71e65c53e7e5dffc53ff04e519b8cfd56555f4e160ad98dacfccf"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_7250ee8e-93ad-4d07-a292-50a87263a88a",
+      "class": 6,
+      "gold": 1890,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "RuneCrossbow",
+        "BattleAxe",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "6038036eb02babaa0e4aa64edeb2d9c245b845fad6adeffe1383cdc0d4670513"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_7250ee8e-93ad-4d07-a292-50a87263a88a",
+      "class": 1,
+      "gold": 445,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "6038036eb02babaa0e4aa64edeb2d9c245b845fad6adeffe1383cdc0d4670513"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_7250ee8e-93ad-4d07-a292-50a87263a88a",
+      "class": 8,
+      "gold": 145,
+      "inventory": [
+        "AmethystWand",
+        "ManaPotion",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook",
+        "CrimsonDagger"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "6038036eb02babaa0e4aa64edeb2d9c245b845fad6adeffe1383cdc0d4670513"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_c31bc211-1f61-491c-9dff-d05dc4f77f33",
+      "class": 1,
+      "gold": 535,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "5f92b05c09aad8aead0db229a85277ee99261cb1b420f11621169dcae3c6fffa"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_c31bc211-1f61-491c-9dff-d05dc4f77f33",
+      "class": 6,
+      "gold": 1330,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "5f92b05c09aad8aead0db229a85277ee99261cb1b420f11621169dcae3c6fffa"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_c31bc211-1f61-491c-9dff-d05dc4f77f33",
+      "class": 8,
+      "gold": 1405,
+      "inventory": [
+        "AmethystWand",
+        "SunsteelLongsword",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "5f92b05c09aad8aead0db229a85277ee99261cb1b420f11621169dcae3c6fffa"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_d009e3a5-36cc-4bde-a40d-04a193041b19",
+      "class": 1,
+      "gold": 815,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "a95157c0170c087964257ed3e1029cb09f71ceabfa68906cb7b0a8d48a9a9838"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_d009e3a5-36cc-4bde-a40d-04a193041b19",
+      "class": 6,
+      "gold": 1470,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "a95157c0170c087964257ed3e1029cb09f71ceabfa68906cb7b0a8d48a9a9838"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_d009e3a5-36cc-4bde-a40d-04a193041b19",
+      "class": 8,
+      "gold": 940,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "SteelBuckler",
+        "ThornwoodStaff",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "a95157c0170c087964257ed3e1029cb09f71ceabfa68906cb7b0a8d48a9a9838"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_984f51f5-896c-4816-8d6e-9baba110265d",
+      "class": 1,
+      "gold": 2400,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "e6510fd648839c2e298b0d053d606264abc0a42fe21069f54827f3ccf4894d80"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_984f51f5-896c-4816-8d6e-9baba110265d",
+      "class": 6,
+      "gold": 1740,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "e6510fd648839c2e298b0d053d606264abc0a42fe21069f54827f3ccf4894d80"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_984f51f5-896c-4816-8d6e-9baba110265d",
+      "class": 8,
+      "gold": 245,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "NoItem",
+        "SapphireRing"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "e6510fd648839c2e298b0d053d606264abc0a42fe21069f54827f3ccf4894d80"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_ee4fdc1d-2fab-4997-a6b2-057d233dca2d",
+      "class": 1,
+      "gold": 3200,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "f9d74c65da8ae7b4399a8c0f1837e3df3d13332541c6a2adefa0d146b7e7b020"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_ee4fdc1d-2fab-4997-a6b2-057d233dca2d",
+      "class": 6,
+      "gold": 2095,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "f9d74c65da8ae7b4399a8c0f1837e3df3d13332541c6a2adefa0d146b7e7b020"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_ee4fdc1d-2fab-4997-a6b2-057d233dca2d",
+      "class": 8,
+      "gold": 390,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SteelBuckler",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "f9d74c65da8ae7b4399a8c0f1837e3df3d13332541c6a2adefa0d146b7e7b020"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_e94cb7a1-7260-42aa-bca6-2cec9ef26a65",
+      "class": 6,
+      "gold": 2030,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "04c5239f018c16e28709612cac44b59140e4ad7521835653649e4efd15853898"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_e94cb7a1-7260-42aa-bca6-2cec9ef26a65",
+      "class": 1,
+      "gold": 415,
+      "inventory": [
+        "CrimsonDagger",
+        "HealthPotion",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "04c5239f018c16e28709612cac44b59140e4ad7521835653649e4efd15853898"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_e94cb7a1-7260-42aa-bca6-2cec9ef26a65",
+      "class": 8,
+      "gold": 570,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "BattleAxe",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "04c5239f018c16e28709612cac44b59140e4ad7521835653649e4efd15853898"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_a4740650-11ce-4f99-a724-2880abe5ce49",
+      "class": 6,
+      "gold": 2005,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "34ea04e735a022aa06a6a15ae5590779d07cb7fdcbac7b5c7b705e0582027be4"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_a4740650-11ce-4f99-a724-2880abe5ce49",
+      "class": 1,
+      "gold": 1120,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "34ea04e735a022aa06a6a15ae5590779d07cb7fdcbac7b5c7b705e0582027be4"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_a4740650-11ce-4f99-a724-2880abe5ce49",
+      "class": 8,
+      "gold": 805,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SunsteelLongsword",
+        "KnightArmor"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 6,
+      "audit_sha256": "34ea04e735a022aa06a6a15ae5590779d07cb7fdcbac7b5c7b705e0582027be4"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_329b7889-c472-459b-a9bc-7a125d8a2f9d",
+      "class": 6,
+      "gold": 5150,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "59c731bfdc030accec5f683e50ed9e9400b432f58e7575eda5a0694b68ff1e05"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_329b7889-c472-459b-a9bc-7a125d8a2f9d",
+      "class": 1,
+      "gold": 1600,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 2,
+      "audit_sha256": "59c731bfdc030accec5f683e50ed9e9400b432f58e7575eda5a0694b68ff1e05"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_329b7889-c472-459b-a9bc-7a125d8a2f9d",
+      "class": 8,
+      "gold": 705,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "SunsteelLongsword"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 7,
+      "audit_sha256": "59c731bfdc030accec5f683e50ed9e9400b432f58e7575eda5a0694b68ff1e05"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_33f93d87-bb47-4245-8d4e-dba3458850cd",
+      "class": 1,
+      "gold": 945,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 3,
+      "audit_sha256": "a25ebfab2ea5755100ab017e8afa4825f78174cd76e90f4a2ad97cab674d8956"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_33f93d87-bb47-4245-8d4e-dba3458850cd",
+      "class": 6,
+      "gold": 795,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "a25ebfab2ea5755100ab017e8afa4825f78174cd76e90f4a2ad97cab674d8956"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_33f93d87-bb47-4245-8d4e-dba3458850cd",
+      "class": 8,
+      "gold": 605,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SapphireRing",
+        "ThornwoodStaff",
+        "SteelBuckler",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "a25ebfab2ea5755100ab017e8afa4825f78174cd76e90f4a2ad97cab674d8956"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_3973fc3f-9b98-4245-ad3d-56b2f2a224a5",
+      "class": 1,
+      "gold": 1425,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "NoItem",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "37d430b60df992a40234f89c6175e0a374bc617cb5346236199c7a624cc56339"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_3973fc3f-9b98-4245-ad3d-56b2f2a224a5",
+      "class": 6,
+      "gold": 2170,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "37d430b60df992a40234f89c6175e0a374bc617cb5346236199c7a624cc56339"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_3973fc3f-9b98-4245-ad3d-56b2f2a224a5",
+      "class": 8,
+      "gold": 10,
+      "inventory": [
+        "AmethystWand",
+        "NoItem",
+        "SteelBuckler",
+        "NoItem",
+        "NoItem",
+        "NoItem"
+      ],
+      "counts": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "37d430b60df992a40234f89c6175e0a374bc617cb5346236199c7a624cc56339"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_ff0666c8-1efb-4df1-8698-d7505044ad8b",
+      "class": 6,
+      "gold": 1850,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "43cc3d527bcd0503e08f566ab1c18b081703daf8aaaa6813fbb5821284bd4216"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_ff0666c8-1efb-4df1-8698-d7505044ad8b",
+      "class": 1,
+      "gold": 765,
+      "inventory": [
+        "CrimsonDagger",
+        "PortalScroll",
+        "KnightArmor",
+        "BattleAxe",
+        "HealthPotion",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "buyback_attempts": 4,
+      "audit_sha256": "43cc3d527bcd0503e08f566ab1c18b081703daf8aaaa6813fbb5821284bd4216"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_ff0666c8-1efb-4df1-8698-d7505044ad8b",
+      "class": 0,
+      "gold": 735,
+      "inventory": [
+        "LeatherGauntlets",
+        "SteelHelmet",
+        "KnightArmor",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "BattleAxe"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "43cc3d527bcd0503e08f566ab1c18b081703daf8aaaa6813fbb5821284bd4216"
+    },
+    {
+      "policy": "ours",
+      "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+      "own_color": 1,
+      "episode": "ereq_7231fcf9-789e-43c6-805c-a283d9c3363f",
+      "class": 6,
+      "gold": 1650,
+      "inventory": [
+        "CrimsonDagger",
+        "HealthPotion",
+        "KnightArmor",
+        "PortalScroll",
+        "BattleAxe",
+        "RuneCrossbow"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 0,
+      "audit_sha256": "0a720b53a7efc35ba763aa3a7e364604e9163f5dd8a8106e999d0966543debe1"
+    },
+    {
+      "policy": "khors114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "own_color": 0,
+      "episode": "ereq_7231fcf9-789e-43c6-805c-a283d9c3363f",
+      "class": 1,
+      "gold": 1395,
+      "inventory": [
+        "CrimsonDagger",
+        "KnightArmor",
+        "BattleAxe",
+        "PortalScroll",
+        "RuneCrossbow",
+        "HealthPotion"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "buyback_attempts": 1,
+      "audit_sha256": "0a720b53a7efc35ba763aa3a7e364604e9163f5dd8a8106e999d0966543debe1"
+    },
+    {
+      "policy": "richard167",
+      "version": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+      "own_color": 0,
+      "episode": "ereq_7231fcf9-789e-43c6-805c-a283d9c3363f",
+      "class": 8,
+      "gold": 1140,
+      "inventory": [
+        "AmethystWand",
+        "CrimsonDagger",
+        "SunsteelLongsword",
+        "KnightArmor",
+        "BattleAxe",
+        "ArcaneSpellbook"
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "buyback_attempts": 5,
+      "audit_sha256": "0a720b53a7efc35ba763aa3a7e364604e9163f5dd8a8106e999d0966543debe1"
+    }
+  ]
+}

@@ -22,6 +22,8 @@ def data():
     stage='confirmation' if (study/'confirmation/plan.json').exists() else 'screen'
     finish=STUDY.with_name('gota-finish-score-20260922')
     if (finish/'trial/plan.json').exists():study,stage=finish,'trial'
+    refresh=STUDY.with_name('gota-finish-refresh-20260922')
+    if (refresh/'refresh/plan.json').exists():study,stage=refresh,'refresh'
     plan=read(study/stage/'plan.json')
     for arm in plan['arms']:
         name,side=arm['name'],arm['side']

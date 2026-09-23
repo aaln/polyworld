@@ -1,0 +1,31 @@
+{
+  "schema": "gota-opponent-counter-feedback/1",
+  "game_version": "2026.9.22.3",
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "policies": {
+    "richard167": "e811221e-c419-4f7b-9629-01f8722ab9f7",
+    "khors114": "145c01e0-0cbf-4e1e-8120-11b437175b91"
+  },
+  "preserved_models": [
+    "richard_v167.ir.json",
+    "khors_v114.ir.json"
+  ],
+  "feedback": [
+    {
+      "hypothesis": "Separate damaging spell targets; broad hero attack priority",
+      "source_sha256": "5b693e5cca100905df9d205c1fb4e3f1aad15a2d95cbca54e5ad96b68c1af297",
+      "status": "rejected_complete_policy",
+      "finding": "Screen+13.92%, independent later-draft confirmation-4.20% withred-13.35%; no component causality.",
+      "evidence": "../../../../examples/gods_of_the_arena/players/ir/forks/adaptive-score20260922/evidence/confirmation/report.json"
+    },
+    {
+      "hypothesis": "Apply same intervention only to Crossbowman",
+      "source_sha256": "513f8a2c485e96334dc755164d2009003ae40da63bd69ffec7a9083d7c0f893c",
+      "status": "rejected_complete_policy",
+      "finding": "Fresh160games-6.35%aggregate; red-31.94%,blue+20.78%. Preserving fallback behavior does not validate score gains.",
+      "evidence": "../../../../examples/gods_of_the_arena/players/ir/forks/class-score20260922/evidence/screen/report.json"
+    }
+  ],
+  "source_ordering": "Still unidentified; no recovered v167/v114 executable or forecast-qualified proxy.",
+  "field_updates": "Preserve these exact-version studies. New champions require fresh snapshots, game checks and comparisons; oldv135 Ranger source is not v167 Warlock evidence."
+}
