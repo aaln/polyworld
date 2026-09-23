@@ -1,0 +1,18 @@
+{
+  "origin": "User requests discrete math aggregation and XP harvest at all costs, rather than game wins.",
+  "primary": "Expected individual floor(max(0,XP-200*elapsed minutes)).",
+  "hard_non_objectives": [
+    "team victory",
+    "few deaths",
+    "nonzero frequency",
+    "conditional nonzero mean"
+  ],
+  "diagnostics": [
+    "XP sources",
+    "time states",
+    "hero/side/seat",
+    "nonzero/productive rate",
+    "death recovery"
+  ],
+  "scope": "Exploratory local responsive games only; hosted followup needs own freeze. No change to running CC pilot or captured inputs."
+}

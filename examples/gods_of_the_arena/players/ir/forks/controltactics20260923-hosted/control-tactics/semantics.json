@@ -1,0 +1,229 @@
+{
+  "situation": {
+    "observation": "Bassy Q16.16 decimals for fractional action coordinates, integer snapshot tiles and IDs; six inventory slots; shared public hero draft.",
+    "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+    "predicates": {
+      "always": "Unconditional lifecycle phase",
+      "low_health_in_field": "Below 30% health outside the friendly keep/spawn, alive and not channeling/stunned. Recovery takes priority over farming and attack reacquisition.",
+      "low_health_in_base": "Critical health inside own keep/spawn commits to walking and replenishment without a home portal.",
+      "active": "Alive, battle started, decision due, not channeling or stunned",
+      "active_druid": "Current public hero class is Druid and its normal decision is active; all other classes skip lane recovery entirely.",
+      "in_base": "Host canShop identifies own keep or spawn; home recalls are disallowed here while useful outbound channels remain legal.",
+      "town_scroll_ready": "Committed field recovery with an actual ready scroll; safe channel checks must still pass.",
+      "recovery_remaining": "Recovery owns the decision and no successful channel/replenishment action has claimed it."
+    }
+  },
+  "belief": {
+    "memory": [
+      "crossed",
+      "enemyX",
+      "enemyY",
+      "homeX",
+      "homeY",
+      "hurtTick",
+      "initialized",
+      "lane",
+      "laneHealUntil",
+      "laneUntil",
+      "moveTick",
+      "nextThink",
+      "portalBusy",
+      "previousHits",
+      "previousHp",
+      "restock",
+      "resumeTarget",
+      "retreat",
+      "scanOffset",
+      "spawnX",
+      "spawnY"
+    ],
+    "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. The lifecycle binding explicitly resets initialization and retreat state after death.",
+    "uncertainty": "Unseen enemies are unknown. Visible targets may be masked. Only the draft roster, allied positions and visible opponents inform live choices."
+  },
+  "skills": {
+    "portal_state": {
+      "meaning": "Hold the channel lock through its zero-remaining-ticks completion boundary; release only when the host publishes cooldown (completed/interrupted) or death.",
+      "parameters": {},
+      "actions": []
+    },
+    "draft": {
+      "meaning": "Prefer available Crossbowman after the damage buff; retain the exact public ranged-first fallback and every post-draft controller rule.",
+      "parameters": {
+        "think_ticks": 6
+      },
+      "actions": [
+        "draftHero"
+      ]
+    },
+    "recovery_intent": {
+      "meaning": "Critical field health takes priority before post-hit attack reacquisition; commit to survive_and_replenish until recovered at spawn.",
+      "parameters": {},
+      "actions": []
+    },
+    "base_recovery_intent": {
+      "meaning": "Low health inside the keep still commits to walking toward the fountain; never leave base merely because field-only recall is ineligible. For the blue lead ranged route, a newly critical hero already in the keep immediately triggers a decision and releases the movement throttle. This replaces a persisted outward advance with local recovery before leaving the keep; prevents the route/recovery handoff from wasting a town scroll. Other classes/ordinals and red retain the parent guard.",
+      "parameters": {},
+      "actions": []
+    },
+    "timing": {
+      "meaning": "After an observed landed hit, walk for one physics tick to clear recovery, then reacquire the remembered public target. Same-tick walk and attack does not reset the new engine swing. Never cancel unfinished windup or a portal channel; clear pending reacquisition after death.",
+      "parameters": {},
+      "actions": [
+        "walkTo",
+        "attackTarget"
+      ]
+    },
+    "lifecycle": {
+      "meaning": "Recover lifecycle state after death, conserve buyback gold during short respawns, and spend available legal ability ranks before combat. While dead, scan6own inventory slots for the four unique core items11/16/18/19. With all4, use public buybackPrice and remaining respawn: buy back at>5seconds if gold>=price+100. Otherwise original>25seconds/price+200. Host forbids duplicate equipment, validates dead/alive/match-ended state, restores spawn HP/mana/learned charges, preserves potion/portal family cooldowns. No claim of saved future time or score. All field economy, targeting, draft and portal decisions unchanged. Warlock and Lich unlock E control with their next available point from level2 after preserving the level1 primary. Other rank priorities remain.",
+      "parameters": {
+        "buyback_seconds": 25,
+        "buyback_reserve": 200
+      },
+      "actions": [
+        "buyback",
+        "levelAbility"
+      ]
+    },
+    "observe": {
+      "meaning": "Visible bounded scan: reward in-range last hits, count current keep attackers and defenders, and select an allied portal tower toward the assigned farming lane. Separately measure public hero/creep gaps and require a living home-area tower for recall; never infer hidden enemies are absent. Within the same bounded public scan, rank nearby visible hero control opportunities by immediate spell finish, current attacker or mana-bearing caster, proximity and health. Read appropriate stun/silence/root remaining duration. Do not reapply redundant control beyond cast delay plus one decision unless spell damage can finish. Coarse integer-tile radius is a prefilter; castTarget remains the exact range/shape validator.",
+      "parameters": {
+        "scan_limit": 96
+      },
+      "actions": []
+    },
+    "economy": {
+      "meaning": "Buy dagger and armor, then the first retreat scroll before axe/crossbow. Once all four core items are owned, maintain up to two stacked scrolls using live inventory/gold. Outward travel must leave one emergency scroll; no additional inventory slot required. Only Druid records accepted potion recovery for the lane-healing controller; other classes keep the original calls.",
+      "parameters": {
+        "shop_gold": 500
+      },
+      "actions": [
+        "buyItem",
+        "useItem"
+      ]
+    },
+    "control_hero": {
+      "meaning": "Cast the selected hero control before retreat/tower movement claims stopped. Require learned, charged, ready, unsilenced and affordable. Preserve the largest affordable imminent healing cost below65percent HP. This skill never changes movement or basic attack target, never blocks escape, and never initiates during an existing channel/stun. Keep useful damage finishes even under existing control.",
+      "parameters": {},
+      "actions": [
+        "castTarget"
+      ]
+    },
+    "portal_context": {
+      "meaning": "Re-read live inventory after purchases. Ready means an actual charge, zero shared/item cooldown, alive and free of root/stun/channel; in_base uses the host keep/spawn query.",
+      "parameters": {},
+      "actions": []
+    },
+    "lane_recovery": {
+      "meaning": "Druid only. During a health-only field retreat, prefer a safe stationary lane heal over completing the base path. An affordable missing core item with an empty slot preserves the shopping trip. Otherwise no nearby enemy hero/creep/tower or imminent non-self warning permits a maximum twelve-second hold for an accepted potion, pending self-heal or learned charged affordable heal ready within eight seconds. Cast a useful strongest ready heal; resume normal play at sixty percent HP and twenty percent mana. Danger, no usable recovery or expired hold falls through to the existing escape. Current keep replenishment and active channels retain ownership. No extra heal casts outside this recovery state. During silence, wait within the existing bounded safe recovery window without issuing a rejected heal; resume casting after expiry. Keep root-compatible healing, potion use, danger and shopping priorities unchanged.",
+      "parameters": {},
+      "actions": [
+        "castTarget",
+        "walkTo"
+      ]
+    },
+    "replenish": {
+      "meaning": "Finish rapid fountain recovery until 90% HP and 80% mana, then release the retreat goal. Do not cast a home scroll inside the keep or spawn.",
+      "parameters": {},
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "channel_town_scroll": {
+      "meaning": "Prefer a safe field channel to walking home. Require a living home-area tower, useful travel distance, no damage for one second, no nearby heroes/creeps/towers or imminent public spell warning. Enemy uncertainty remains; this is a bounded safety heuristic, not guaranteed invulnerability.",
+      "parameters": {},
+      "actions": [
+        "useItemAt"
+      ]
+    },
+    "walk_to_base": {
+      "meaning": "When recall is unsafe/unavailable, or already inside the keep, walk toward spawn and reconsider on later decisions. Interrupted channels use live cooldown/root state; no retry loop spends extra charges.",
+      "parameters": {},
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "home_portal": {
+      "meaning": "At most the first two public team ordinals may safely channel home when visible enemy heroes threaten the keep and fewer than two allies already defend. Require health, distance, no recent damage and portal readiness; current threat disappearance releases defense. Never recall defensively from inside the keep; require a live home anchor and current item readiness.",
+      "parameters": {},
+      "actions": [
+        "useItemAt"
+      ]
+    },
+    "tower_safety": {
+      "meaning": "Leave doubled-tower aggro at a health threshold; do not enter an empty tower kill zone without allied creep cover.",
+      "parameters": {
+        "tower_hp": 65
+      },
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "xp_close": {
+      "meaning": "For safe Crossbowman creep farming, step inside the six-tile XP radius instead of stopping at its 6.5-tile attack range. Override stale navigation throttles before an out-of-range XP last hit; defer while tower safety or recovery owns movement.",
+      "parameters": {},
+      "actions": [
+        "walkTo"
+      ]
+    },
+    "combat": {
+      "meaning": "Keep basic attacks connected, optionally shorten recovery only after observed hits, and cast learned damage or self-healing spells when useful. All spells require explicit casts. Skip only the spell channel while silenced. Attack selection and legal post-hit movement continue; rooted basic attacks and spells remain available. Reduced ability damage is read from the live host, never an obsolete hard-coded kill threshold. Hero control slots are scheduled by the earlier dedicated skill; prevent the generic loop from overriding overlap/resource decisions. Other spells, creep finishing and structure casts retain baseline behavior.",
+      "parameters": {
+        "reset_recovery": 1
+      },
+      "actions": [
+        "walkTo",
+        "attackTarget",
+        "castTarget"
+      ]
+    },
+    "advance": {
+      "meaning": "Assign 2/2/1 lane farming by public team ordinal; push past the midpoint, defend only nearby present threats, and portal from recovery to a surviving forward tower. Outbound portals require two scrolls so one remains for field recovery after cooldown; home and outward channel purposes are distinct. Before crossing the route waypoint, blue public team ordinal zero on Ranger or Crossbowman uses the map center instead of the northwest outer corner. Existing target engagement, retreat, nearby defense, forward portal and post-waypoint advance still arbitrate normally. Other ordinals/classes and all red commands retain parent behavior. Earlier access to hero XP is a hypothesis, not an observed promise.",
+      "parameters": {},
+      "actions": [
+        "attackMove",
+        "useItemAt"
+      ]
+    }
+  },
+  "temporal_execution": {
+    "facts": {
+      "self_data": "self* and worldTick are set once before each hero's VM decision; use/buy do not refresh them.",
+      "queries": "object* and item* query current engine state at the call; visibility still filters objects.",
+      "inventory_flags": "Presence and empty-slot flags accumulate before useItem for each slot. They are earlier observations, not current post-use/post-buy inventory.",
+      "gold": "All affordability guards read starting selfGold; each buyItem checks and spends the remaining live balance.",
+      "equipment": "Successful purchases refresh stats: increases in maximum HP/mana also add that increase to current HP/mana. Resource gear therefore has immediate sustain effects as well as permanent capacity.",
+      "attack": "attackTarget stores an engine pursuit target if valid; accepted does not prove path reachability or damage.",
+      "walk": "walkTo clears attack intent before pathfinding, including when pathfinding subsequently returns false.",
+      "poison": "useItem on poison strikes the engine's current attackObjectId, not a policy-local bestId variable.",
+      "failures": "A command return of zero does not universally mean no state changed. Failed walkTo can clear attack intent.",
+      "memory": "Policy globals persist; baseline resets its decision-local scan variables. Engine attack/movement intent is separate persistent state.",
+      "abilities": "Replay61: every ability requires an explicit cast and learned rank. No automatic spell fallback. Basic acquisition remains automatic when not walking.",
+      "balance": "Ranger HP growth29; Crossbowman base damage58; Chalice heal45; Gale Slash65. Rank1 BlazingBlade72, DreadTotem70, GolemSeed68, BoneMarionette53.",
+      "controls": "Public selfStunTicks/selfSilenceTicks/selfRootTicks and visible objectStunTicks/objectSilenceTicks/objectRootTicks are remaining ticks in the frozen decision frame. Zero unseen status is not evidence about a hidden hero.",
+      "control_legality": "Stun blocks movement, basic attacks, spells and item use. Ability leveling has separate gates. Root blocks movement but allows attacks, spells and items. Silence blocks spells but permits movement, basic attacks and items. Stun/root interrupt an active portal; silence does not.",
+      "control_durations": "At24ticks/sec: Vanguard R stun24; Warlock E silence48; Druid R root48; Lich E root24. Fixed duration across learned ranks; hostile impact affects heroes and creeps, not structures. Timers refresh to the later expiry, not additive duration."
+    },
+    "rule_order": [
+      "R_portal_state",
+      "R_draft",
+      "R_recovery_intent",
+      "R_base_recovery_intent",
+      "R_timing",
+      "R_lifecycle",
+      "R_observe",
+      "R_economy",
+      "R_control_hero",
+      "R_portal_context",
+      "R_lane_recovery",
+      "R_replenish",
+      "R_channel_town_scroll",
+      "R_walk_to_base",
+      "R_home_portal",
+      "R_tower_safety",
+      "R_xp_close",
+      "R_combat",
+      "R_advance"
+    ],
+    "action_arbitration": "Rules execute in order; multiple commands can affect shared engine state during one decision."
+  }
+}

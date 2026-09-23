@@ -7,6 +7,6 @@
   "comparison": "Same baseline seed, resolved roster, engine/config and probe slot; replace only the subject policy and rerun responsive policies. Record baseline/candidate episode IDs and paired score deltas.",
   "selection": "Freeze candidate, baseline cohort selection, contexts and analysis before viewing counterfactual outcomes. Use paired uncertainty estimates; unmatched random-seed A/B is not a counterfactual.",
   "budget": "Count every newly created baseline and counterfactual episode in the existing shared ledger; preserve daily100000, cycle400 and concurrency3. Per-request100 is not the daily limit.",
-  "api": "Use /v2/counterfactual-evals with explicit n between1and100, subject to live schema and audited seed/roster/config fidelity; a new journaled adapter is needed before first use. Do not treat fixed opposing replay actions as responsive counterfactuals.",
+  "api": "Use /v2/counterfactual-evals with explicit n between1and100, live schema and audited seed/roster/config fidelity. Use tools/gota_autoresearch/counterfactual_journal.py with shared budget/concurrency accounting and same-key timeout recovery. Do not treat fixed opposing replay actions as responsive counterfactuals.",
   "scope": "Future studies; preserve old frozen requests, results and their original statistical design."
 }

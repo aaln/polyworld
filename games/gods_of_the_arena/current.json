@@ -20,7 +20,7 @@
     "aaron": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
     "coach": "d75ff766-e78f-4aa5-b656-55eb29248208"
   },
-  "current_experiment": "games/gods_of_the_arena/release-audits/2026-09-23-crowd-control/README.md",
+  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-23-control-tactics.md",
   "deployment_status": "Both incumbent champions verified competing/active at2026-09-23T22:12:02.193497+00:00. Release61 compatibility fork303eeddb remains inert; no score gain established or league writes.",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
@@ -32,22 +32,36 @@
   "reference_validation_game_version": "2026.9.22.3",
   "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Crowd-control61 exact engine audit complete. Four upstream suites,104paired fixtures,8responsive native matches pass. Silence guard removes388rejections; local paired score deltas0. Save rooted-defense/control-timing/income hypotheses for a new candidate; use paired<=100game hosted requests.",
-  "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/control20260923-local",
-  "candidate_source_sha256": "303eeddb9d0bb3a63d905fd3a8067d6c358cbcefac066dc68e07521a75be47a5",
-  "candidate_ir_sha256": "a68694a4627682f1a7e1380a0cc011067e66185b8ff3cb149daf695217452bf2",
+  "research_status": "Control tactics61 pilot passes:80paired hosted games +2.64%score,95%delta[2.0625,135.0375],all1600VMs/replay hashes/XP/scores valid. Directionalpilot,not deployed. Separate discreteXP/work harvesting fork is locally nearlyflat,notuploaded. Futureprimaryobjective solely expectedindividualXPminustime; pairedstatisticalaggregation/timeandXPstatebudgets implemented.",
+  "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/controltactics20260923-hosted/control-tactics",
+  "candidate_source_sha256": "b3f0c124c1f54c4faf857964d6ae42c43935bb82ecb81a384c9439d9a70e509e",
+  "candidate_ir_sha256": "b47d9adbcda7a65eb2a8056d7778f17cfbd3a3fedd4fce573dc2daab85416daf",
   "candidate_evidence": {
-    "local_fixtures": 104,
-    "paired_native_games": 4,
-    "removed_silenced_casts": 388,
-    "score_delta": 0,
-    "score_gain_established": false
+    "paired_hosted_games": 80,
+    "total_hosted_games": 160,
+    "mean_baseline": 2429.5125,
+    "mean_candidate": 2493.625,
+    "paired_delta95": [
+      2.0625,
+      135.0375
+    ],
+    "pilot_advance": true,
+    "deployment_qualified": false,
+    "rung": "directional",
+    "natural_classes": [
+      "Ranger",
+      "Crossbowman",
+      "DruidWarden"
+    ]
   },
   "current_engine_reference_control": {
     "game_version": "2026.9.23.3",
     "engine_commit": "e42c4822f44e04726b09bb4ffe853152c7a18207",
-    "scope": "4full native reference controls and4paired compatibility candidates, all10VMs and replay hashes valid. No current-release hosted score qualification.",
-    "evidence": "games/gods_of_the_arena/release-audits/2026-09-23-crowd-control/native-comparison.json"
+    "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+    "fresh_games": 80,
+    "all_valid": true,
+    "scope": "One subject, pinnedmixedfield,4side/seatcontexts. Pairedstudy reference; no currentleague superiority claim.",
+    "evidence": "games/gods_of_the_arena/experiments/2026-09-23-control-tactics.md"
   },
   "adaptive_score_study": {
     "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-adaptive-score-20260922",
@@ -92,276 +106,170 @@
     }
   },
   "live_league_snapshot": {
-    "at": "2026-09-23T22:12:02.193497+00:00",
+    "at": "2026-09-23T23:36:51.734641+00:00",
     "standings": [
       {
         "rank": 1,
         "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
         "player_name": "Andre von Auto",
-        "score": 2257.93614076544,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "khors:v180",
-        "recent_rounds": null
+        "score": 2158.058426678345,
+        "rounds_played": 92,
+        "policy_label": "khors:v180"
       },
       {
         "rank": 2,
         "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
         "player_name": "Aaron",
-        "score": 1924.8040599280564,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": null,
-        "recent_rounds": null
+        "score": 1668.5509471494715,
+        "rounds_played": 92,
+        "policy_label": null
       },
       {
         "rank": 3,
         "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
         "player_name": "Aaron's Co-play Coach",
-        "score": 1886.9666937332718,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": null,
-        "recent_rounds": null
+        "score": 1615.8888919427918,
+        "rounds_played": 92,
+        "policy_label": null
       },
       {
         "rank": 4,
         "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
         "player_name": "relh",
-        "score": 1262.2170714180033,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "relh-gods-of-the-arena:v169",
-        "recent_rounds": null
+        "score": 1296.8101527345812,
+        "rounds_played": 92,
+        "policy_label": "relh-gods-of-the-arena:v169"
       },
       {
         "rank": 5,
         "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
         "player_name": "richard",
-        "score": 1044.609812189576,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "richard-gods-of-the-arena:v204",
-        "recent_rounds": null
+        "score": 1122.786683603231,
+        "rounds_played": 92,
+        "policy_label": "richard-gods-of-the-arena:v204"
       },
       {
         "rank": 6,
-        "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
-        "player_name": "Jordan",
-        "score": 621.1507467442065,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v411",
-        "recent_rounds": null
+        "player_id": "ply_2c897a35-6553-40e8-ad91-6900d9254646",
+        "player_name": "BeWellBot",
+        "score": 956.4976380077446,
+        "rounds_played": 86,
+        "policy_label": "BeWellBot-Arena:v45"
       },
       {
         "rank": 7,
-        "player_id": "ply_2c897a35-6553-40e8-ad91-6900d9254646",
-        "player_name": "BeWellBot",
-        "score": 528.964460110624,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 83,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "BeWellBot-Arena:v35",
-        "recent_rounds": null
+        "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+        "player_name": "Jordan",
+        "score": 538.051048498132,
+        "rounds_played": 92,
+        "policy_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v411"
       },
       {
         "rank": 8,
         "player_id": "ply_74ab20ef-cdf2-4250-b995-2b4f2cc96fc0",
         "player_name": "juliajerome",
-        "score": 467.3491970438439,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 53,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": null,
-        "recent_rounds": null
+        "score": 370.8251405383968,
+        "rounds_played": 56,
+        "policy_label": null
       },
       {
         "rank": 9,
         "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
         "player_name": "daveey",
-        "score": 217.55622091114017,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": null,
-        "recent_rounds": null
+        "score": 166.66714685936165,
+        "rounds_played": 92,
+        "policy_label": null
       },
       {
         "rank": 10,
         "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
         "player_name": "macromackie",
-        "score": 174.62463351509157,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": null,
-        "recent_rounds": null
+        "score": 115.55010305745563,
+        "rounds_played": 92,
+        "policy_label": null
       },
       {
         "rank": 11,
-        "player_id": "ply_0ec32dcc-cb25-4a89-b756-4af0eaf38456",
-        "player_name": "daveey-2",
-        "score": 138.3608235940523,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "arena-codex-secondary-attack-timing-20260921:v1",
-        "recent_rounds": null
+        "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+        "player_name": "Andre von Houck",
+        "score": 90.55087774754625,
+        "rounds_played": 92,
+        "policy_label": null
       },
       {
         "rank": 12,
-        "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
-        "player_name": "Andre von Houck",
-        "score": 99.83554284151639,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": null,
-        "recent_rounds": null
+        "player_id": "ply_0ec32dcc-cb25-4a89-b756-4af0eaf38456",
+        "player_name": "daveey-2",
+        "score": 89.65896578969738,
+        "rounds_played": 92,
+        "policy_label": "arena-codex-secondary-attack-timing-20260921:v1"
       },
       {
         "rank": 13,
         "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
         "player_name": "Scott Smith",
-        "score": 71.54552530936162,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "gota-g003:v2",
-        "recent_rounds": null
+        "score": 85.58457842291939,
+        "rounds_played": 92,
+        "policy_label": "gota-g003:v2"
       },
       {
         "rank": 14,
-        "player_id": "ply_176e1e1a-7af8-40f7-9ee3-a67b96690ad6",
-        "player_name": "docxology",
-        "score": 28.662149680843335,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "daf-gota-v1:v1",
-        "recent_rounds": null
+        "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+        "player_name": "Alex Smith",
+        "score": 79.93884615384614,
+        "rounds_played": 92,
+        "policy_label": null
       },
       {
         "rank": 15,
-        "player_id": "ply_ac95b848-2475-4901-9344-95c88f33f8e6",
-        "player_name": "NanosaurusX",
-        "score": 24.529835018351594,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "nancy-goa:v2",
-        "recent_rounds": null
+        "player_id": "ply_176e1e1a-7af8-40f7-9ee3-a67b96690ad6",
+        "player_name": "docxology",
+        "score": 25.872969595824834,
+        "rounds_played": 92,
+        "policy_label": "daf-gota-v1:v1"
       },
       {
         "rank": 16,
-        "player_id": "ply_ac7e5318-5781-4ed6-8fc9-d9f66d6b1637",
-        "player_name": "Andrew Brower",
-        "score": 5.401909347947063,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "red-kite:v34",
-        "recent_rounds": null
+        "player_id": "ply_ac95b848-2475-4901-9344-95c88f33f8e6",
+        "player_name": "NanosaurusX",
+        "score": 21.483808007568253,
+        "rounds_played": 92,
+        "policy_label": "nancy-goa:v2"
       },
       {
         "rank": 17,
-        "player_id": "ply_f39295d0-ac38-4a62-ac4f-e1d62d7dc9d1",
-        "player_name": "Games Bond",
-        "score": 2.6068253725032022,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "games-bond-gota:v6",
-        "recent_rounds": null
+        "player_id": "ply_ac7e5318-5781-4ed6-8fc9-d9f66d6b1637",
+        "player_name": "Andrew Brower",
+        "score": 3.31744757830799,
+        "rounds_played": 92,
+        "policy_label": "red-kite:v34"
       },
       {
         "rank": 18,
         "player_id": "ply_0f9ea7d3-fa48-4586-9df3-123e9ee21f1c",
         "player_name": "Andrew Brower B",
-        "score": 1.6020352674539784,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "black-kite:v16",
-        "recent_rounds": null
+        "score": 3.084657600932867,
+        "rounds_played": 92,
+        "policy_label": "black-kite:v16"
       },
       {
         "rank": 19,
-        "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
-        "player_name": "Alex Smith",
+        "player_id": "ply_f39295d0-ac38-4a62-ac4f-e1d62d7dc9d1",
+        "player_name": "Games Bond",
+        "score": 1.600916631888529,
+        "rounds_played": 92,
+        "policy_label": "games-bond-gota:v6"
+      },
+      {
+        "rank": 20,
+        "player_id": "ply_305f0175-65a2-47ca-9566-69991871b743",
+        "player_name": "Rohit Mukherjee",
         "score": 0.0,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 89,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "gota-g002:v1",
-        "recent_rounds": null
+        "rounds_played": 0,
+        "policy_label": null
       }
     ],
-    "scope": "Observed cumulative standings, separate from local score comparisons; both incumbent identities verified active."
+    "scope": "Cumulative observed league scores; both incumbent memberships verified active/competing. No league writes."
   },
   "reward_refresh_study": {
     "games": 160,
@@ -1420,6 +1328,18 @@
         },
         "late_survival_gate_passed": false
       }
+    },
+    {
+      "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/control20260923-local",
+      "candidate_source_sha256": "303eeddb9d0bb3a63d905fd3a8067d6c358cbcefac066dc68e07521a75be47a5",
+      "candidate_ir_sha256": "a68694a4627682f1a7e1380a0cc011067e66185b8ff3cb149daf695217452bf2",
+      "candidate_evidence": {
+        "local_fixtures": 104,
+        "paired_native_games": 4,
+        "removed_silenced_casts": 388,
+        "score_delta": 0,
+        "score_gain_established": false
+      }
     }
   ],
   "deployment_status_history": [
@@ -2104,6 +2024,278 @@
         }
       ],
       "scope": "Cumulative standings, separate from controlled trial; champion identities verified through normal user-authorized membership readback."
+    },
+    {
+      "at": "2026-09-23T22:12:02.193497+00:00",
+      "standings": [
+        {
+          "rank": 1,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "score": 2257.93614076544,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "khors:v180",
+          "recent_rounds": null
+        },
+        {
+          "rank": 2,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "score": 1924.8040599280564,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 3,
+          "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+          "player_name": "Aaron's Co-play Coach",
+          "score": 1886.9666937332718,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 4,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "score": 1262.2170714180033,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "relh-gods-of-the-arena:v169",
+          "recent_rounds": null
+        },
+        {
+          "rank": 5,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "score": 1044.609812189576,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "richard-gods-of-the-arena:v204",
+          "recent_rounds": null
+        },
+        {
+          "rank": 6,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "score": 621.1507467442065,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v411",
+          "recent_rounds": null
+        },
+        {
+          "rank": 7,
+          "player_id": "ply_2c897a35-6553-40e8-ad91-6900d9254646",
+          "player_name": "BeWellBot",
+          "score": 528.964460110624,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 83,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "BeWellBot-Arena:v35",
+          "recent_rounds": null
+        },
+        {
+          "rank": 8,
+          "player_id": "ply_74ab20ef-cdf2-4250-b995-2b4f2cc96fc0",
+          "player_name": "juliajerome",
+          "score": 467.3491970438439,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 53,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 9,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "score": 217.55622091114017,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 10,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "score": 174.62463351509157,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 11,
+          "player_id": "ply_0ec32dcc-cb25-4a89-b756-4af0eaf38456",
+          "player_name": "daveey-2",
+          "score": 138.3608235940523,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "arena-codex-secondary-attack-timing-20260921:v1",
+          "recent_rounds": null
+        },
+        {
+          "rank": 12,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "score": 99.83554284151639,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 13,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "score": 71.54552530936162,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "gota-g003:v2",
+          "recent_rounds": null
+        },
+        {
+          "rank": 14,
+          "player_id": "ply_176e1e1a-7af8-40f7-9ee3-a67b96690ad6",
+          "player_name": "docxology",
+          "score": 28.662149680843335,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "daf-gota-v1:v1",
+          "recent_rounds": null
+        },
+        {
+          "rank": 15,
+          "player_id": "ply_ac95b848-2475-4901-9344-95c88f33f8e6",
+          "player_name": "NanosaurusX",
+          "score": 24.529835018351594,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "nancy-goa:v2",
+          "recent_rounds": null
+        },
+        {
+          "rank": 16,
+          "player_id": "ply_ac7e5318-5781-4ed6-8fc9-d9f66d6b1637",
+          "player_name": "Andrew Brower",
+          "score": 5.401909347947063,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "red-kite:v34",
+          "recent_rounds": null
+        },
+        {
+          "rank": 17,
+          "player_id": "ply_f39295d0-ac38-4a62-ac4f-e1d62d7dc9d1",
+          "player_name": "Games Bond",
+          "score": 2.6068253725032022,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "games-bond-gota:v6",
+          "recent_rounds": null
+        },
+        {
+          "rank": 18,
+          "player_id": "ply_0f9ea7d3-fa48-4586-9df3-123e9ee21f1c",
+          "player_name": "Andrew Brower B",
+          "score": 1.6020352674539784,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "black-kite:v16",
+          "recent_rounds": null
+        },
+        {
+          "rank": 19,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "score": 0.0,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 89,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "gota-g002:v1",
+          "recent_rounds": null
+        }
+      ],
+      "scope": "Observed cumulative standings, separate from local score comparisons; both incumbent identities verified active."
     }
   ],
   "current_engine_reference_control_history": [
@@ -2120,6 +2312,12 @@
       "mean_score": 1901.635,
       "report": "games/gods_of_the_arena/experiments/2026-09-23-weak-hero-survival.md",
       "scope": "Fresh controls across four fixed color/draft contexts; not a new comparison with the pre-incumbent policy or original qualification."
+    },
+    {
+      "game_version": "2026.9.23.3",
+      "engine_commit": "e42c4822f44e04726b09bb4ffe853152c7a18207",
+      "scope": "4full native reference controls and4paired compatibility candidates, all10VMs and replay hashes valid. No current-release hosted score qualification.",
+      "evidence": "games/gods_of_the_arena/release-audits/2026-09-23-crowd-control/native-comparison.json"
     }
   ],
   "evaluation_request_policy": {
@@ -2131,7 +2329,7 @@
     "comparison": "Same baseline seed, resolved roster, engine/config and probe slot; replace only the subject policy and rerun responsive policies. Record baseline/candidate episode IDs and paired score deltas.",
     "selection": "Freeze candidate, baseline cohort selection, contexts and analysis before viewing counterfactual outcomes. Use paired uncertainty estimates; unmatched random-seed A/B is not a counterfactual.",
     "budget": "Count every newly created baseline and counterfactual episode in the existing shared ledger; preserve daily100000, cycle400 and concurrency3. Per-request100 is not the daily limit.",
-    "api": "Use /v2/counterfactual-evals with explicit n between1and100, subject to live schema and audited seed/roster/config fidelity; a new journaled adapter is needed before first use. Do not treat fixed opposing replay actions as responsive counterfactuals.",
+    "api": "Use /v2/counterfactual-evals with explicit n between1and100, live schema and audited seed/roster/config fidelity. Use tools/gota_autoresearch/counterfactual_journal.py with shared budget/concurrency accounting and same-key timeout recovery. Do not treat fixed opposing replay actions as responsive counterfactuals.",
     "scope": "Future studies; preserve old frozen requests, results and their original statistical design."
   },
   "crowd_control_release": {
@@ -2142,5 +2340,45 @@
     "new_hosted_games": 0,
     "league_writes": 0,
     "replay_version": 61
+  },
+  "objective_update": {
+    "record": "docs/guides/guide-gota-score-analysis.md",
+    "primary": "Expected individual floor(max(0,XP-200*elapsed_minutes)); user explicitly rejects game-win optimization.",
+    "diagnostics_only": [
+      "team wins",
+      "deaths",
+      "nonzero frequency",
+      "conditional nonzero mean",
+      "productive frequency"
+    ],
+    "preserve_prior_frozen_rules": true
+  },
+  "control_tactics_study": {
+    "report": "games/gods_of_the_arena/experiments/2026-09-23-control-tactics.md",
+    "pair": "examples/gods_of_the_arena/players/ir/forks/controltactics20260923-hosted/control-tactics",
+    "source_sha256": "b3f0c124c1f54c4faf857964d6ae42c43935bb82ecb81a384c9439d9a70e509e",
+    "ir_sha256": "b47d9adbcda7a65eb2a8056d7778f17cfbd3a3fedd4fce573dc2daab85416daf",
+    "game_version": "2026.9.23.3",
+    "engine_commit": "e42c4822f44e04726b09bb4ffe853152c7a18207",
+    "pairs": 80,
+    "new_episodes": 160,
+    "candidate_version": "f063e236-4f9b-4f52-a57c-e41b29d14caf",
+    "baseline_clone_version": "5384edda-2fe7-45f1-93f9-1092c5a4f10f",
+    "counterfactual_eval": "cfeval_acdc717b-596b-40f1-82be-19f5eca56aff",
+    "pilot_advance": true,
+    "deployment_qualified": false,
+    "league_writes": []
+  },
+  "harvest_value_study": {
+    "pair": "examples/gods_of_the_arena/players/ir/forks/harvest-value20260923-local/harvest-value",
+    "source_sha256": "5c5f5d97d89468f508d97a5c80ffd5a766e168fa5b4f90f29c238cd028409477",
+    "ir_sha256": "cfe9ffd8530606c6bead9823e08d62d891b88fdc5f6e5a19f067d40b76891d99",
+    "paired_native_games": 8,
+    "baseline_sum": 19367,
+    "candidate_sum": 19376,
+    "new_hosted_games": 0,
+    "uploaded": false,
+    "deployment_qualified": false,
+    "scope": "Discrete reward/work target ranking, locally nearlyflat with mixedsideeffects; refinement required."
   }
 }

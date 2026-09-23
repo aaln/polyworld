@@ -1,0 +1,5471 @@
+{
+  "overall": {
+    "n": 80,
+    "baseline": {
+      "n": 80,
+      "mean": 2429.5125,
+      "nonzero_mean": 2699.4583333333335,
+      "nonzero_rate": 0.9,
+      "productive_mean": 2806.695652173913,
+      "productive_rate": 0.8625,
+      "zero_games": 8,
+      "productive_games": 69,
+      "nonzero_wilson95": [
+        0.8148931119389591,
+        0.9484523844326191
+      ],
+      "productive_wilson95": [
+        0.7703289993301339,
+        0.9214528567566089
+      ],
+      "mean_contribution": {
+        "small_positive": 8.7375,
+        "productive": 2420.775
+      }
+    },
+    "candidate": {
+      "n": 80,
+      "mean": 2493.625,
+      "nonzero_mean": 2695.810810810811,
+      "nonzero_rate": 0.925,
+      "productive_mean": 2837.5,
+      "productive_rate": 0.875,
+      "zero_games": 6,
+      "productive_games": 70,
+      "nonzero_wilson95": [
+        0.8458798391878072,
+        0.9651747507069949
+      ],
+      "productive_wilson95": [
+        0.7849719790084033,
+        0.9306644238399513
+      ],
+      "mean_contribution": {
+        "small_positive": 10.8125,
+        "productive": 2482.8125
+      }
+    },
+    "mean_delta": 64.1125,
+    "delta95": [
+      2.0625,
+      135.0375
+    ],
+    "wins": 13,
+    "ties": 56,
+    "losses": 11,
+    "exact_sign_p": 0.8388197422027588,
+    "rescued_nonzero": 2,
+    "lost_nonzero": 0,
+    "mean_score_decomposition": {
+      "xp": 115.1375,
+      "elapsed_time": -29.70138888888889,
+      "zero_floor": -21.336111111111112,
+      "integer_rounding": 0.012499999999999997
+    },
+    "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+  },
+  "all_160_games_10_vms_valid": true,
+  "full_hash_xp_score_config_pair_audits": true,
+  "by_color": {
+    "0": {
+      "n": 40,
+      "baseline": {
+        "n": 40,
+        "mean": 2358.3,
+        "nonzero_mean": 2482.4210526315787,
+        "nonzero_rate": 0.95,
+        "productive_mean": 2546.108108108108,
+        "productive_rate": 0.925,
+        "zero_games": 2,
+        "productive_games": 37,
+        "nonzero_wilson95": [
+          0.8349612263085903,
+          0.9861793326138516
+        ],
+        "productive_wilson95": [
+          0.8013576647568946,
+          0.9741639742254119
+        ],
+        "mean_contribution": {
+          "small_positive": 3.15,
+          "productive": 2355.15
+        }
+      },
+      "candidate": {
+        "n": 40,
+        "mean": 2434.025,
+        "nonzero_mean": 2562.1315789473683,
+        "nonzero_rate": 0.95,
+        "productive_mean": 2627.972972972973,
+        "productive_rate": 0.925,
+        "zero_games": 2,
+        "productive_games": 37,
+        "nonzero_wilson95": [
+          0.8349612263085903,
+          0.9861793326138516
+        ],
+        "productive_wilson95": [
+          0.8013576647568946,
+          0.9741639742254119
+        ],
+        "mean_contribution": {
+          "small_positive": 3.15,
+          "productive": 2430.875
+        }
+      },
+      "mean_delta": 75.725,
+      "delta95": [
+        -31.725,
+        201.45
+      ],
+      "wins": 5,
+      "ties": 27,
+      "losses": 8,
+      "exact_sign_p": 0.5810546875,
+      "rescued_nonzero": 0,
+      "lost_nonzero": 0,
+      "mean_score_decomposition": {
+        "xp": 103.625,
+        "elapsed_time": 6.795138888888892,
+        "zero_floor": -34.703472222222224,
+        "integer_rounding": 0.008333333333333328
+      },
+      "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+    },
+    "1": {
+      "n": 40,
+      "baseline": {
+        "n": 40,
+        "mean": 2500.725,
+        "nonzero_mean": 2942.029411764706,
+        "nonzero_rate": 0.85,
+        "productive_mean": 3108,
+        "productive_rate": 0.8,
+        "zero_games": 6,
+        "productive_games": 32,
+        "nonzero_wilson95": [
+          0.709276756335103,
+          0.9293881228267964
+        ],
+        "productive_wilson95": [
+          0.652426936536005,
+          0.895000102745623
+        ],
+        "mean_contribution": {
+          "small_positive": 14.325,
+          "productive": 2486.4
+        }
+      },
+      "candidate": {
+        "n": 40,
+        "mean": 2553.225,
+        "nonzero_mean": 2836.9166666666665,
+        "nonzero_rate": 0.9,
+        "productive_mean": 3072.4242424242425,
+        "productive_rate": 0.825,
+        "zero_games": 4,
+        "productive_games": 33,
+        "nonzero_wilson95": [
+          0.7694822477247771,
+          0.9604204713173936
+        ],
+        "productive_wilson95": [
+          0.6805000966821229,
+          0.9125458625396408
+        ],
+        "mean_contribution": {
+          "small_positive": 18.475,
+          "productive": 2534.75
+        }
+      },
+      "mean_delta": 52.5,
+      "delta95": [
+        -2.825,
+        114.2
+      ],
+      "wins": 8,
+      "ties": 29,
+      "losses": 3,
+      "exact_sign_p": 0.2265625,
+      "rescued_nonzero": 2,
+      "lost_nonzero": 0,
+      "mean_score_decomposition": {
+        "xp": 126.65,
+        "elapsed_time": -66.19791666666667,
+        "zero_floor": -7.968750000000002,
+        "integer_rounding": 0.016666666666666666
+      },
+      "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+    }
+  },
+  "by_context": {
+    "side0-seat0": {
+      "n": 20,
+      "baseline": {
+        "n": 20,
+        "mean": 3098.85,
+        "nonzero_mean": 3098.85,
+        "nonzero_rate": 1.0,
+        "productive_mean": 3098.85,
+        "productive_rate": 1.0,
+        "zero_games": 0,
+        "productive_games": 20,
+        "nonzero_wilson95": [
+          0.8388748419471806,
+          1
+        ],
+        "productive_wilson95": [
+          0.8388748419471806,
+          1
+        ],
+        "mean_contribution": {
+          "small_positive": 0.0,
+          "productive": 3098.85
+        }
+      },
+      "candidate": {
+        "n": 20,
+        "mean": 3098.85,
+        "nonzero_mean": 3098.85,
+        "nonzero_rate": 1.0,
+        "productive_mean": 3098.85,
+        "productive_rate": 1.0,
+        "zero_games": 0,
+        "productive_games": 20,
+        "nonzero_wilson95": [
+          0.8388748419471806,
+          1
+        ],
+        "productive_wilson95": [
+          0.8388748419471806,
+          1
+        ],
+        "mean_contribution": {
+          "small_positive": 0.0,
+          "productive": 3098.85
+        }
+      },
+      "mean_delta": 0,
+      "delta95": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "ties": 20,
+      "losses": 0,
+      "exact_sign_p": 1,
+      "rescued_nonzero": 0,
+      "lost_nonzero": 0,
+      "mean_score_decomposition": {
+        "xp": 0.0,
+        "elapsed_time": 0.0,
+        "zero_floor": 0.0,
+        "integer_rounding": 0.0
+      },
+      "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+    },
+    "side0-seat3": {
+      "n": 20,
+      "baseline": {
+        "n": 20,
+        "mean": 1617.75,
+        "nonzero_mean": 1797.5,
+        "nonzero_rate": 0.9,
+        "productive_mean": 1895.8235294117646,
+        "productive_rate": 0.85,
+        "zero_games": 2,
+        "productive_games": 17,
+        "nonzero_wilson95": [
+          0.6989663547715128,
+          0.9721335187862319
+        ],
+        "productive_wilson95": [
+          0.6395811352592431,
+          0.9476312541037835
+        ],
+        "mean_contribution": {
+          "small_positive": 6.3,
+          "productive": 1611.45
+        }
+      },
+      "candidate": {
+        "n": 20,
+        "mean": 1769.2,
+        "nonzero_mean": 1965.7777777777778,
+        "nonzero_rate": 0.9,
+        "productive_mean": 2074,
+        "productive_rate": 0.85,
+        "zero_games": 2,
+        "productive_games": 17,
+        "nonzero_wilson95": [
+          0.6989663547715128,
+          0.9721335187862319
+        ],
+        "productive_wilson95": [
+          0.6395811352592431,
+          0.9476312541037835
+        ],
+        "mean_contribution": {
+          "small_positive": 6.3,
+          "productive": 1762.9
+        }
+      },
+      "mean_delta": 151.45,
+      "delta95": [
+        -59.8,
+        406.0
+      ],
+      "wins": 5,
+      "ties": 7,
+      "losses": 8,
+      "exact_sign_p": 0.5810546875,
+      "rescued_nonzero": 0,
+      "lost_nonzero": 0,
+      "mean_score_decomposition": {
+        "xp": 207.25,
+        "elapsed_time": 13.590277777777784,
+        "zero_floor": -69.40694444444445,
+        "integer_rounding": 0.016666666666666656
+      },
+      "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+    },
+    "side1-seat0": {
+      "n": 20,
+      "baseline": {
+        "n": 20,
+        "mean": 3763.65,
+        "nonzero_mean": 3763.65,
+        "nonzero_rate": 1.0,
+        "productive_mean": 3763.65,
+        "productive_rate": 1.0,
+        "zero_games": 0,
+        "productive_games": 20,
+        "nonzero_wilson95": [
+          0.8388748419471806,
+          1
+        ],
+        "productive_wilson95": [
+          0.8388748419471806,
+          1
+        ],
+        "mean_contribution": {
+          "small_positive": 0.0,
+          "productive": 3763.65
+        }
+      },
+      "candidate": {
+        "n": 20,
+        "mean": 3763.65,
+        "nonzero_mean": 3763.65,
+        "nonzero_rate": 1.0,
+        "productive_mean": 3763.65,
+        "productive_rate": 1.0,
+        "zero_games": 0,
+        "productive_games": 20,
+        "nonzero_wilson95": [
+          0.8388748419471806,
+          1
+        ],
+        "productive_wilson95": [
+          0.8388748419471806,
+          1
+        ],
+        "mean_contribution": {
+          "small_positive": 0.0,
+          "productive": 3763.65
+        }
+      },
+      "mean_delta": 0,
+      "delta95": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "ties": 20,
+      "losses": 0,
+      "exact_sign_p": 1,
+      "rescued_nonzero": 0,
+      "lost_nonzero": 0,
+      "mean_score_decomposition": {
+        "xp": 0.0,
+        "elapsed_time": 0.0,
+        "zero_floor": 0.0,
+        "integer_rounding": 0.0
+      },
+      "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+    },
+    "side1-seat3": {
+      "n": 20,
+      "baseline": {
+        "n": 20,
+        "mean": 1237.8,
+        "nonzero_mean": 1768.2857142857142,
+        "nonzero_rate": 0.7,
+        "productive_mean": 2015.25,
+        "productive_rate": 0.6,
+        "zero_games": 6,
+        "productive_games": 12,
+        "nonzero_wilson95": [
+          0.4810271816464765,
+          0.8545227551323956
+        ],
+        "productive_wilson95": [
+          0.3865815007622531,
+          0.781193467627183
+        ],
+        "mean_contribution": {
+          "small_positive": 28.65,
+          "productive": 1209.15
+        }
+      },
+      "candidate": {
+        "n": 20,
+        "mean": 1342.8,
+        "nonzero_mean": 1678.5,
+        "nonzero_rate": 0.8,
+        "productive_mean": 2009,
+        "productive_rate": 0.65,
+        "zero_games": 4,
+        "productive_games": 13,
+        "nonzero_wilson95": [
+          0.5839825677481064,
+          0.919342337420202
+        ],
+        "productive_wilson95": [
+          0.43285427668523624,
+          0.818808175898918
+        ],
+        "mean_contribution": {
+          "small_positive": 36.95,
+          "productive": 1305.85
+        }
+      },
+      "mean_delta": 105,
+      "delta95": [
+        -3.4,
+        226.4
+      ],
+      "wins": 8,
+      "ties": 9,
+      "losses": 3,
+      "exact_sign_p": 0.2265625,
+      "rescued_nonzero": 2,
+      "lost_nonzero": 0,
+      "mean_score_decomposition": {
+        "xp": 253.3,
+        "elapsed_time": -132.39583333333334,
+        "zero_floor": -15.937500000000004,
+        "integer_rounding": 0.03333333333333333
+      },
+      "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+    }
+  },
+  "by_class": {
+    "1": {
+      "n": 18,
+      "baseline": {
+        "n": 18,
+        "mean": 3262.0555555555557,
+        "nonzero_mean": 3262.0555555555557,
+        "nonzero_rate": 1.0,
+        "productive_mean": 3262.0555555555557,
+        "productive_rate": 1.0,
+        "zero_games": 0,
+        "productive_games": 18,
+        "nonzero_wilson95": [
+          0.8241207763533425,
+          1
+        ],
+        "productive_wilson95": [
+          0.8241207763533425,
+          1
+        ],
+        "mean_contribution": {
+          "small_positive": 0.0,
+          "productive": 3262.0555555555557
+        }
+      },
+      "candidate": {
+        "n": 18,
+        "mean": 3262.0555555555557,
+        "nonzero_mean": 3262.0555555555557,
+        "nonzero_rate": 1.0,
+        "productive_mean": 3262.0555555555557,
+        "productive_rate": 1.0,
+        "zero_games": 0,
+        "productive_games": 18,
+        "nonzero_wilson95": [
+          0.8241207763533425,
+          1
+        ],
+        "productive_wilson95": [
+          0.8241207763533425,
+          1
+        ],
+        "mean_contribution": {
+          "small_positive": 0.0,
+          "productive": 3262.0555555555557
+        }
+      },
+      "mean_delta": 0,
+      "delta95": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "ties": 18,
+      "losses": 0,
+      "exact_sign_p": 1,
+      "rescued_nonzero": 0,
+      "lost_nonzero": 0,
+      "mean_score_decomposition": {
+        "xp": 0.0,
+        "elapsed_time": 0.0,
+        "zero_floor": 0.0,
+        "integer_rounding": 0.0
+      },
+      "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+    },
+    "3": {
+      "n": 40,
+      "baseline": {
+        "n": 40,
+        "mean": 1427.775,
+        "nonzero_mean": 1784.71875,
+        "nonzero_rate": 0.8,
+        "productive_mean": 1945.2413793103449,
+        "productive_rate": 0.725,
+        "zero_games": 8,
+        "productive_games": 29,
+        "nonzero_wilson95": [
+          0.652426936536005,
+          0.895000102745623
+        ],
+        "productive_wilson95": [
+          0.5716504419378943,
+          0.8389198375233267
+        ],
+        "mean_contribution": {
+          "small_positive": 17.475,
+          "productive": 1410.3
+        }
+      },
+      "candidate": {
+        "n": 40,
+        "mean": 1556,
+        "nonzero_mean": 1830.5882352941176,
+        "nonzero_rate": 0.85,
+        "productive_mean": 2045.8333333333333,
+        "productive_rate": 0.75,
+        "zero_games": 6,
+        "productive_games": 30,
+        "nonzero_wilson95": [
+          0.709276756335103,
+          0.9293881228267964
+        ],
+        "productive_wilson95": [
+          0.5980603857923197,
+          0.858128813609037
+        ],
+        "mean_contribution": {
+          "small_positive": 21.625,
+          "productive": 1534.375
+        }
+      },
+      "mean_delta": 128.225,
+      "delta95": [
+        6.65,
+        270.075
+      ],
+      "wins": 13,
+      "ties": 16,
+      "losses": 11,
+      "exact_sign_p": 0.8388197422027588,
+      "rescued_nonzero": 2,
+      "lost_nonzero": 0,
+      "mean_score_decomposition": {
+        "xp": 230.275,
+        "elapsed_time": -59.40277777777778,
+        "zero_floor": -42.672222222222224,
+        "integer_rounding": 0.024999999999999994
+      },
+      "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+    },
+    "6": {
+      "n": 22,
+      "baseline": {
+        "n": 22,
+        "mean": 3569.681818181818,
+        "nonzero_mean": 3569.681818181818,
+        "nonzero_rate": 1.0,
+        "productive_mean": 3569.681818181818,
+        "productive_rate": 1.0,
+        "zero_games": 0,
+        "productive_games": 22,
+        "nonzero_wilson95": [
+          0.8513451253913791,
+          1
+        ],
+        "productive_wilson95": [
+          0.8513451253913791,
+          1
+        ],
+        "mean_contribution": {
+          "small_positive": 0.0,
+          "productive": 3569.681818181818
+        }
+      },
+      "candidate": {
+        "n": 22,
+        "mean": 3569.681818181818,
+        "nonzero_mean": 3569.681818181818,
+        "nonzero_rate": 1.0,
+        "productive_mean": 3569.681818181818,
+        "productive_rate": 1.0,
+        "zero_games": 0,
+        "productive_games": 22,
+        "nonzero_wilson95": [
+          0.8513451253913791,
+          1
+        ],
+        "productive_wilson95": [
+          0.8513451253913791,
+          1
+        ],
+        "mean_contribution": {
+          "small_positive": 0.0,
+          "productive": 3569.681818181818
+        }
+      },
+      "mean_delta": 0,
+      "delta95": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "ties": 22,
+      "losses": 0,
+      "exact_sign_p": 1,
+      "rescued_nonzero": 0,
+      "lost_nonzero": 0,
+      "mean_score_decomposition": {
+        "xp": 0.0,
+        "elapsed_time": 0.0,
+        "zero_floor": 0.0,
+        "integer_rounding": 0.0
+      },
+      "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim."
+    }
+  },
+  "telemetry": {
+    "baseline": {
+      "n": 80,
+      "means": {
+        "score": 2429.5125,
+        "xp": 5646.85,
+        "minutes": 16.40785590277778,
+        "kills": 13.1125,
+        "deaths": 7.725,
+        "creep_last_hits": 207.9625,
+        "spells": 102.2,
+        "rejected": 599.625,
+        "gold_spent": 3759,
+        "buyback_gold": 1828.75,
+        "consumables": 19.05,
+        "hero_control_impacts": 0.875,
+        "hero_xp": 1966.875,
+        "creep_xp": 3202.475,
+        "structure_or_other_xp": 477.5,
+        "alive_drought_ge30_seconds": 200.04583333333335,
+        "draft_seconds": 14.041666666666666,
+        "dead_seconds": 104.90885416666667,
+        "stunned_seconds": 0.06875,
+        "portal_channel_seconds": 22.2609375,
+        "own_keep_seconds": 140.73541666666668,
+        "moving_field_seconds": 546.1348958333333,
+        "other_field_seconds": 156.32083333333333,
+        "issued_commands": 2211.7125
+      },
+      "pooled_xp_per_minute": 344.1552652253616,
+      "pooled_deaths_per_minute": 0.47081105817684515,
+      "pooled_rejected_share": 0.27111344715915836,
+      "hero_xp_flow": [
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 10200
+        },
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 79650
+        },
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 4050
+        },
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 3750
+        },
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 2550
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 27000
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 10500
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 5700
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "baseline",
+          "xp": 43050
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "xp": 6750
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 22500
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 5550
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 750
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "baseline",
+          "xp": 33450
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "xp": 900
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 15000
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 72000
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 5100
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 7500
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 750
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 12900
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 70650
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 14400
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 7050
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 5700
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 21150
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 2550
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 750
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "baseline",
+          "xp": 2700
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "xp": 150
+        },
+        {
+          "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 20550
+        },
+        {
+          "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 10650
+        },
+        {
+          "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 300
+        },
+        {
+          "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "recipient": "baseline",
+          "xp": 38850
+        },
+        {
+          "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "xp": 450
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 31950
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 17250
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 1350
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "baseline",
+          "xp": 39300
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "xp": 4950
+        },
+        {
+          "victim": "baseline",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 3450
+        },
+        {
+          "victim": "baseline",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 84000
+        },
+        {
+          "victim": "baseline",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 450
+        },
+        {
+          "victim": "baseline",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 1650
+        },
+        {
+          "victim": "baseline",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 450
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 20700
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 90150
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 2400
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 6150
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 4050
+        }
+      ],
+      "player_class_side_seat": [
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Arcanist",
+          "side": 0,
+          "seat": 1,
+          "n": 20,
+          "mean_score": 324.75,
+          "mean_xp": 3434.85,
+          "deaths_per_minute": 0.6601423132885531
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Arcanist",
+          "side": 1,
+          "seat": 1,
+          "n": 13,
+          "mean_score": 908.0769230769231,
+          "mean_xp": 3363.6153846153848,
+          "deaths_per_minute": 0.583886494478875
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Crossbowman",
+          "side": 0,
+          "seat": 0,
+          "n": 10,
+          "mean_score": 1451,
+          "mean_xp": 4614.9,
+          "deaths_per_minute": 0.5209399702891802
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Crossbowman",
+          "side": 1,
+          "seat": 0,
+          "n": 12,
+          "mean_score": 2272.75,
+          "mean_xp": 5897.416666666667,
+          "deaths_per_minute": 0.4552756212295891
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Ranger",
+          "side": 0,
+          "seat": 0,
+          "n": 10,
+          "mean_score": 442.7,
+          "mean_xp": 2743.9,
+          "deaths_per_minute": 0.7432004752120439
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Ranger",
+          "side": 1,
+          "seat": 0,
+          "n": 8,
+          "mean_score": 1607.625,
+          "mean_xp": 4166.875,
+          "deaths_per_minute": 0.6971099645874504
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Warlock",
+          "side": 1,
+          "seat": 1,
+          "n": 7,
+          "mean_score": 0,
+          "mean_xp": 1457,
+          "deaths_per_minute": 0.7563680021241104
+        },
+        {
+          "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "hero_class": "Lich",
+          "side": 1,
+          "seat": 1,
+          "n": 30,
+          "mean_score": 816.2,
+          "mean_xp": 3877.733333333333,
+          "deaths_per_minute": 0.5966974594536496
+        },
+        {
+          "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "hero_class": "VanguardKnight",
+          "side": 0,
+          "seat": 1,
+          "n": 40,
+          "mean_score": 7.4,
+          "mean_xp": 1723.25,
+          "deaths_per_minute": 0.6893870057568061
+        },
+        {
+          "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "hero_class": "Warlock",
+          "side": 1,
+          "seat": 1,
+          "n": 10,
+          "mean_score": 0,
+          "mean_xp": 1806.8,
+          "deaths_per_minute": 0.6871974076155143
+        },
+        {
+          "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "hero_class": "Crossbowman",
+          "side": 0,
+          "seat": 0,
+          "n": 15,
+          "mean_score": 6595.6,
+          "mean_xp": 9596.533333333333,
+          "deaths_per_minute": 0.3066259724789611
+        },
+        {
+          "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "hero_class": "Crossbowman",
+          "side": 1,
+          "seat": 0,
+          "n": 21,
+          "mean_score": 5763.523809523809,
+          "mean_xp": 8774.42857142857,
+          "deaths_per_minute": 0.15818126694406973
+        },
+        {
+          "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "hero_class": "Ranger",
+          "side": 0,
+          "seat": 0,
+          "n": 25,
+          "mean_score": 6434.44,
+          "mean_xp": 9763.84,
+          "deaths_per_minute": 0.5767574748169262
+        },
+        {
+          "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "hero_class": "Ranger",
+          "side": 1,
+          "seat": 0,
+          "n": 19,
+          "mean_score": 5226.631578947368,
+          "mean_xp": 8967.842105263158,
+          "deaths_per_minute": 0.4530283963451332
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "Arcanist",
+          "side": 0,
+          "seat": 1,
+          "n": 10,
+          "mean_score": 249.8,
+          "mean_xp": 2808.3,
+          "deaths_per_minute": 0.5048154171251619
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "DemonHunter",
+          "side": 0,
+          "seat": 2,
+          "n": 20,
+          "mean_score": 92.2,
+          "mean_xp": 2529.5,
+          "deaths_per_minute": 0.6228299216678957
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "Lich",
+          "side": 0,
+          "seat": 1,
+          "n": 10,
+          "mean_score": 199.3,
+          "mean_xp": 3140,
+          "deaths_per_minute": 0.5043142265565468
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "Lich",
+          "side": 1,
+          "seat": 1,
+          "n": 20,
+          "mean_score": 127.35,
+          "mean_xp": 2645.95,
+          "deaths_per_minute": 0.49353017634391916
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "Lich",
+          "side": 1,
+          "seat": 2,
+          "n": 20,
+          "mean_score": 130.05,
+          "mean_xp": 2712.8,
+          "deaths_per_minute": 0.4890580233904888
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DeathKnight",
+          "side": 0,
+          "seat": 4,
+          "n": 3,
+          "mean_score": 0,
+          "mean_xp": 1122.6666666666667,
+          "deaths_per_minute": 0.7227464364585424
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DeathKnight",
+          "side": 1,
+          "seat": 4,
+          "n": 5,
+          "mean_score": 0,
+          "mean_xp": 1906.2,
+          "deaths_per_minute": 0.7085985334333631
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DemonHunter",
+          "side": 0,
+          "seat": 4,
+          "n": 17,
+          "mean_score": 0,
+          "mean_xp": 1528.2941176470588,
+          "deaths_per_minute": 0.801039733391321
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DemonHunter",
+          "side": 1,
+          "seat": 4,
+          "n": 27,
+          "mean_score": 0,
+          "mean_xp": 1156.037037037037,
+          "deaths_per_minute": 0.8241012219839037
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DruidWarden",
+          "side": 0,
+          "seat": 4,
+          "n": 3,
+          "mean_score": 0,
+          "mean_xp": 1942.6666666666667,
+          "deaths_per_minute": 0.6260081683083365
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DruidWarden",
+          "side": 1,
+          "seat": 4,
+          "n": 8,
+          "mean_score": 21,
+          "mean_xp": 2393.25,
+          "deaths_per_minute": 0.4484229193936579
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "Warlock",
+          "side": 0,
+          "seat": 4,
+          "n": 17,
+          "mean_score": 0,
+          "mean_xp": 1858.235294117647,
+          "deaths_per_minute": 0.6777713680216462
+        },
+        {
+          "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "hero_class": "Arcanist",
+          "side": 0,
+          "seat": 2,
+          "n": 15,
+          "mean_score": 415.73333333333335,
+          "mean_xp": 3331.733333333333,
+          "deaths_per_minute": 0.13331564020824396
+        },
+        {
+          "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "hero_class": "Berserker",
+          "side": 0,
+          "seat": 2,
+          "n": 25,
+          "mean_score": 193.92,
+          "mean_xp": 3162.92,
+          "deaths_per_minute": 0.18023671088028945
+        },
+        {
+          "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "hero_class": "Berserker",
+          "side": 1,
+          "seat": 2,
+          "n": 40,
+          "mean_score": 436.4,
+          "mean_xp": 3370.075,
+          "deaths_per_minute": 0.17573143867705004
+        },
+        {
+          "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "hero_class": "Berserker",
+          "side": 0,
+          "seat": 3,
+          "n": 7,
+          "mean_score": 122.71428571428571,
+          "mean_xp": 3417.5714285714284,
+          "deaths_per_minute": 0.4488337595022193
+        },
+        {
+          "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "hero_class": "VanguardKnight",
+          "side": 1,
+          "seat": 3,
+          "n": 40,
+          "mean_score": 10.625,
+          "mean_xp": 1897.725,
+          "deaths_per_minute": 0.4050758586454035
+        },
+        {
+          "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "hero_class": "Warlock",
+          "side": 0,
+          "seat": 3,
+          "n": 33,
+          "mean_score": 3.090909090909091,
+          "mean_xp": 2199.151515151515,
+          "deaths_per_minute": 0.38783689730482157
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "Berserker",
+          "side": 0,
+          "seat": 4,
+          "n": 8,
+          "mean_score": 0,
+          "mean_xp": 1223.375,
+          "deaths_per_minute": 0.6971099645874504
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DeathKnight",
+          "side": 0,
+          "seat": 4,
+          "n": 7,
+          "mean_score": 0,
+          "mean_xp": 1311.2857142857142,
+          "deaths_per_minute": 0.6927249082816151
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DeathKnight",
+          "side": 1,
+          "seat": 4,
+          "n": 7,
+          "mean_score": 0,
+          "mean_xp": 753.8571428571429,
+          "deaths_per_minute": 0.5529604847872743
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DemonHunter",
+          "side": 0,
+          "seat": 4,
+          "n": 13,
+          "mean_score": 0,
+          "mean_xp": 1193.8461538461538,
+          "deaths_per_minute": 0.8821192813637625
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DemonHunter",
+          "side": 1,
+          "seat": 4,
+          "n": 3,
+          "mean_score": 0,
+          "mean_xp": 1400.3333333333333,
+          "deaths_per_minute": 0.7020965382740126
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DruidWarden",
+          "side": 0,
+          "seat": 4,
+          "n": 12,
+          "mean_score": 0,
+          "mean_xp": 1015.3333333333334,
+          "deaths_per_minute": 0.7256881141891591
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DruidWarden",
+          "side": 1,
+          "seat": 4,
+          "n": 17,
+          "mean_score": 32.64705882352941,
+          "mean_xp": 1936.1764705882354,
+          "deaths_per_minute": 0.46922633170729355
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "Warlock",
+          "side": 1,
+          "seat": 4,
+          "n": 13,
+          "mean_score": 0,
+          "mean_xp": 1523.3846153846155,
+          "deaths_per_minute": 0.5016513372928998
+        },
+        {
+          "policy": "baseline",
+          "hero_class": "Crossbowman",
+          "side": 0,
+          "seat": 0,
+          "n": 9,
+          "mean_score": 4198.444444444444,
+          "mean_xp": 8086.444444444444,
+          "deaths_per_minute": 0.24007812065830944
+        },
+        {
+          "policy": "baseline",
+          "hero_class": "Crossbowman",
+          "side": 1,
+          "seat": 0,
+          "n": 13,
+          "mean_score": 3134.3846153846152,
+          "mean_xp": 6191.2307692307695,
+          "deaths_per_minute": 0.5385849561141347
+        },
+        {
+          "policy": "baseline",
+          "hero_class": "DruidWarden",
+          "side": 0,
+          "seat": 3,
+          "n": 20,
+          "mean_score": 1617.75,
+          "mean_xp": 4693.35,
+          "deaths_per_minute": 0.5262026568075319
+        },
+        {
+          "policy": "baseline",
+          "hero_class": "DruidWarden",
+          "side": 1,
+          "seat": 3,
+          "n": 20,
+          "mean_score": 1237.8,
+          "mean_xp": 4356.85,
+          "deaths_per_minute": 0.42524298213281087
+        },
+        {
+          "policy": "baseline",
+          "hero_class": "Ranger",
+          "side": 0,
+          "seat": 0,
+          "n": 11,
+          "mean_score": 2199.181818181818,
+          "mean_xp": 5353.545454545455,
+          "deaths_per_minute": 0.5245964642582629
+        },
+        {
+          "policy": "baseline",
+          "hero_class": "Ranger",
+          "side": 1,
+          "seat": 0,
+          "n": 7,
+          "mean_score": 4932.285714285715,
+          "mean_xp": 8370.142857142857,
+          "deaths_per_minute": 0.5901332763825476
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "Arcanist",
+          "side": 0,
+          "seat": 2,
+          "n": 10,
+          "mean_score": 0,
+          "mean_xp": 1430.6,
+          "deaths_per_minute": 0.7537003825460479
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "Arcanist",
+          "side": 1,
+          "seat": 2,
+          "n": 12,
+          "mean_score": 0,
+          "mean_xp": 2075,
+          "deaths_per_minute": 0.7082065219126941
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "DeathKnight",
+          "side": 0,
+          "seat": 2,
+          "n": 10,
+          "mean_score": 0,
+          "mean_xp": 447.3,
+          "deaths_per_minute": 0.8133137275905385
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "DeathKnight",
+          "side": 0,
+          "seat": 3,
+          "n": 20,
+          "mean_score": 0,
+          "mean_xp": 478.4,
+          "deaths_per_minute": 0.7864304080046242
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "DeathKnight",
+          "side": 1,
+          "seat": 2,
+          "n": 8,
+          "mean_score": 0,
+          "mean_xp": 987.25,
+          "deaths_per_minute": 0.8403517381328169
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "DeathKnight",
+          "side": 1,
+          "seat": 3,
+          "n": 20,
+          "mean_score": 0,
+          "mean_xp": 635.7,
+          "deaths_per_minute": 0.7837468323565525
+        }
+      ]
+    },
+    "candidate": {
+      "n": 80,
+      "means": {
+        "score": 2493.625,
+        "xp": 5761.9875,
+        "minutes": 16.55636284722222,
+        "kills": 13.475,
+        "deaths": 7.6125,
+        "creep_last_hits": 210.4625,
+        "spells": 103.7375,
+        "rejected": 585.6375,
+        "gold_spent": 3779.125,
+        "buyback_gold": 1851.25,
+        "consumables": 18.95,
+        "hero_control_impacts": 1.3125,
+        "hero_xp": 2021.25,
+        "creep_xp": 3243.2375,
+        "structure_or_other_xp": 497.5,
+        "alive_drought_ge30_seconds": 204.07604166666667,
+        "draft_seconds": 14.041666666666666,
+        "dead_seconds": 98.09114583333333,
+        "stunned_seconds": 0.06875,
+        "portal_channel_seconds": 22.0734375,
+        "own_keep_seconds": 141.50052083333333,
+        "moving_field_seconds": 558.0734375,
+        "other_field_seconds": 159.5328125,
+        "issued_commands": 2225.5
+      },
+      "pooled_xp_per_minute": 348.02254294437193,
+      "pooled_deaths_per_minute": 0.4597930155461169,
+      "pooled_rejected_share": 0.26314873062233207,
+      "hero_xp_flow": [
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 9600
+        },
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 82800
+        },
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 4050
+        },
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 3600
+        },
+        {
+          "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 2700
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 26400
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 10200
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 5400
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "candidate",
+          "xp": 45300
+        },
+        {
+          "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "xp": 7050
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 22650
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 4800
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 600
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "candidate",
+          "xp": 34200
+        },
+        {
+          "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "xp": 750
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 14550
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 73650
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 5250
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 7500
+        },
+        {
+          "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 1050
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 12600
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 72450
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 14250
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 5700
+        },
+        {
+          "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 6450
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 19800
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 2700
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 750
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "candidate",
+          "xp": 2850
+        },
+        {
+          "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "xp": 150
+        },
+        {
+          "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 20250
+        },
+        {
+          "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 9900
+        },
+        {
+          "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 300
+        },
+        {
+          "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "recipient": "candidate",
+          "xp": 39300
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "xp": 30900
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "xp": 16500
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "xp": 1500
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "candidate",
+          "xp": 40050
+        },
+        {
+          "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "xp": 5250
+        },
+        {
+          "victim": "candidate",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 3000
+        },
+        {
+          "victim": "candidate",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 83400
+        },
+        {
+          "victim": "candidate",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 450
+        },
+        {
+          "victim": "candidate",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 1350
+        },
+        {
+          "victim": "candidate",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 750
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "xp": 19950
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "xp": 90900
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "xp": 3000
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "xp": 7500
+        },
+        {
+          "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "xp": 4500
+        }
+      ],
+      "player_class_side_seat": [
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Arcanist",
+          "side": 0,
+          "seat": 1,
+          "n": 20,
+          "mean_score": 324.75,
+          "mean_xp": 3434.85,
+          "deaths_per_minute": 0.6601423132885531
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Arcanist",
+          "side": 1,
+          "seat": 1,
+          "n": 13,
+          "mean_score": 908.0769230769231,
+          "mean_xp": 3363.6153846153848,
+          "deaths_per_minute": 0.583886494478875
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Crossbowman",
+          "side": 0,
+          "seat": 0,
+          "n": 10,
+          "mean_score": 1183.2,
+          "mean_xp": 4362.1,
+          "deaths_per_minute": 0.5210967891658439
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Crossbowman",
+          "side": 1,
+          "seat": 0,
+          "n": 12,
+          "mean_score": 2493,
+          "mean_xp": 6137.833333333333,
+          "deaths_per_minute": 0.47103658536585363
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Ranger",
+          "side": 0,
+          "seat": 0,
+          "n": 10,
+          "mean_score": 149.5,
+          "mean_xp": 2145.5,
+          "deaths_per_minute": 0.7784528536573697
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Ranger",
+          "side": 1,
+          "seat": 0,
+          "n": 8,
+          "mean_score": 1703.75,
+          "mean_xp": 4563.625,
+          "deaths_per_minute": 0.676707830680277
+        },
+        {
+          "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "hero_class": "Warlock",
+          "side": 1,
+          "seat": 1,
+          "n": 7,
+          "mean_score": 0,
+          "mean_xp": 1457,
+          "deaths_per_minute": 0.7563680021241104
+        },
+        {
+          "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "hero_class": "Lich",
+          "side": 1,
+          "seat": 1,
+          "n": 30,
+          "mean_score": 827.9666666666667,
+          "mean_xp": 3790.6666666666665,
+          "deaths_per_minute": 0.6037650899062948
+        },
+        {
+          "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "hero_class": "VanguardKnight",
+          "side": 0,
+          "seat": 1,
+          "n": 40,
+          "mean_score": 7.4,
+          "mean_xp": 1728.1,
+          "deaths_per_minute": 0.695305204176925
+        },
+        {
+          "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "hero_class": "Warlock",
+          "side": 1,
+          "seat": 1,
+          "n": 10,
+          "mean_score": 0,
+          "mean_xp": 1685.1,
+          "deaths_per_minute": 0.6796914641293617
+        },
+        {
+          "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "hero_class": "Crossbowman",
+          "side": 0,
+          "seat": 0,
+          "n": 15,
+          "mean_score": 6975.333333333333,
+          "mean_xp": 10136.6,
+          "deaths_per_minute": 0.27841819561339004
+        },
+        {
+          "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "hero_class": "Crossbowman",
+          "side": 1,
+          "seat": 0,
+          "n": 21,
+          "mean_score": 5864.666666666667,
+          "mean_xp": 8899.619047619048,
+          "deaths_per_minute": 0.1569236000017436
+        },
+        {
+          "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "hero_class": "Ranger",
+          "side": 0,
+          "seat": 0,
+          "n": 25,
+          "mean_score": 6414.52,
+          "mean_xp": 9753.6,
+          "deaths_per_minute": 0.5822654639303917
+        },
+        {
+          "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "hero_class": "Ranger",
+          "side": 1,
+          "seat": 0,
+          "n": 19,
+          "mean_score": 5183.263157894737,
+          "mean_xp": 8883.578947368422,
+          "deaths_per_minute": 0.45235512722487947
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "Arcanist",
+          "side": 0,
+          "seat": 1,
+          "n": 10,
+          "mean_score": 104.7,
+          "mean_xp": 2620.8,
+          "deaths_per_minute": 0.516672248002679
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "DemonHunter",
+          "side": 0,
+          "seat": 2,
+          "n": 20,
+          "mean_score": 92.2,
+          "mean_xp": 2529.5,
+          "deaths_per_minute": 0.6228299216678957
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "Lich",
+          "side": 0,
+          "seat": 1,
+          "n": 10,
+          "mean_score": 161.9,
+          "mean_xp": 2760.3,
+          "deaths_per_minute": 0.5041045025626099
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "Lich",
+          "side": 1,
+          "seat": 1,
+          "n": 20,
+          "mean_score": 126,
+          "mean_xp": 2630.15,
+          "deaths_per_minute": 0.5098263310889711
+        },
+        {
+          "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "hero_class": "Lich",
+          "side": 1,
+          "seat": 2,
+          "n": 20,
+          "mean_score": 130.05,
+          "mean_xp": 2712.8,
+          "deaths_per_minute": 0.4890580233904888
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DeathKnight",
+          "side": 0,
+          "seat": 4,
+          "n": 3,
+          "mean_score": 0,
+          "mean_xp": 1068,
+          "deaths_per_minute": 0.720710111433324
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DeathKnight",
+          "side": 1,
+          "seat": 4,
+          "n": 5,
+          "mean_score": 0,
+          "mean_xp": 1818.2,
+          "deaths_per_minute": 0.7218389707110973
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DemonHunter",
+          "side": 0,
+          "seat": 4,
+          "n": 17,
+          "mean_score": 0,
+          "mean_xp": 1471.6470588235295,
+          "deaths_per_minute": 0.7977133028103104
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DemonHunter",
+          "side": 1,
+          "seat": 4,
+          "n": 27,
+          "mean_score": 0,
+          "mean_xp": 1196.3703703703704,
+          "deaths_per_minute": 0.810488905045944
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DruidWarden",
+          "side": 0,
+          "seat": 4,
+          "n": 3,
+          "mean_score": 0,
+          "mean_xp": 1942.6666666666667,
+          "deaths_per_minute": 0.6260081683083365
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "DruidWarden",
+          "side": 1,
+          "seat": 4,
+          "n": 8,
+          "mean_score": 21,
+          "mean_xp": 2393.25,
+          "deaths_per_minute": 0.4484229193936579
+        },
+        {
+          "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "hero_class": "Warlock",
+          "side": 0,
+          "seat": 4,
+          "n": 17,
+          "mean_score": 0,
+          "mean_xp": 1858.235294117647,
+          "deaths_per_minute": 0.6777713680216462
+        },
+        {
+          "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "hero_class": "Arcanist",
+          "side": 0,
+          "seat": 2,
+          "n": 15,
+          "mean_score": 447.46666666666664,
+          "mean_xp": 3517.8,
+          "deaths_per_minute": 0.12655372527881367
+        },
+        {
+          "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "hero_class": "Berserker",
+          "side": 0,
+          "seat": 2,
+          "n": 25,
+          "mean_score": 143.16,
+          "mean_xp": 3126.24,
+          "deaths_per_minute": 0.1557500212159484
+        },
+        {
+          "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "hero_class": "Berserker",
+          "side": 1,
+          "seat": 2,
+          "n": 40,
+          "mean_score": 445.25,
+          "mean_xp": 3380.05,
+          "deaths_per_minute": 0.1805646375598074
+        },
+        {
+          "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "hero_class": "Berserker",
+          "side": 0,
+          "seat": 3,
+          "n": 7,
+          "mean_score": 122.71428571428571,
+          "mean_xp": 3417.5714285714284,
+          "deaths_per_minute": 0.4488337595022193
+        },
+        {
+          "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "hero_class": "VanguardKnight",
+          "side": 1,
+          "seat": 3,
+          "n": 40,
+          "mean_score": 10.625,
+          "mean_xp": 1940.325,
+          "deaths_per_minute": 0.3909746697575995
+        },
+        {
+          "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "hero_class": "Warlock",
+          "side": 0,
+          "seat": 3,
+          "n": 33,
+          "mean_score": 11.121212121212121,
+          "mean_xp": 2203.5454545454545,
+          "deaths_per_minute": 0.3894568901960937
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "Berserker",
+          "side": 0,
+          "seat": 4,
+          "n": 8,
+          "mean_score": 0,
+          "mean_xp": 1479.25,
+          "deaths_per_minute": 0.6938396744949675
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DeathKnight",
+          "side": 0,
+          "seat": 4,
+          "n": 7,
+          "mean_score": 0,
+          "mean_xp": 1384.142857142857,
+          "deaths_per_minute": 0.6849858087430827
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DeathKnight",
+          "side": 1,
+          "seat": 4,
+          "n": 7,
+          "mean_score": 0,
+          "mean_xp": 968,
+          "deaths_per_minute": 0.548792270531401
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DemonHunter",
+          "side": 0,
+          "seat": 4,
+          "n": 13,
+          "mean_score": 0,
+          "mean_xp": 1164,
+          "deaths_per_minute": 0.8818853663257632
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DemonHunter",
+          "side": 1,
+          "seat": 4,
+          "n": 3,
+          "mean_score": 0,
+          "mean_xp": 1329.3333333333333,
+          "deaths_per_minute": 0.720710111433324
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DruidWarden",
+          "side": 0,
+          "seat": 4,
+          "n": 12,
+          "mean_score": 0,
+          "mean_xp": 1015.3333333333334,
+          "deaths_per_minute": 0.7256881141891591
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "DruidWarden",
+          "side": 1,
+          "seat": 4,
+          "n": 17,
+          "mean_score": 32.64705882352941,
+          "mean_xp": 1936.1764705882354,
+          "deaths_per_minute": 0.46922633170729355
+        },
+        {
+          "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "hero_class": "Warlock",
+          "side": 1,
+          "seat": 4,
+          "n": 13,
+          "mean_score": 0,
+          "mean_xp": 1558.6153846153845,
+          "deaths_per_minute": 0.4954780209215325
+        },
+        {
+          "policy": "candidate",
+          "hero_class": "Crossbowman",
+          "side": 0,
+          "seat": 0,
+          "n": 9,
+          "mean_score": 4198.444444444444,
+          "mean_xp": 8086.444444444444,
+          "deaths_per_minute": 0.24007812065830944
+        },
+        {
+          "policy": "candidate",
+          "hero_class": "Crossbowman",
+          "side": 1,
+          "seat": 0,
+          "n": 13,
+          "mean_score": 3134.3846153846152,
+          "mean_xp": 6191.2307692307695,
+          "deaths_per_minute": 0.5385849561141347
+        },
+        {
+          "policy": "candidate",
+          "hero_class": "DruidWarden",
+          "side": 0,
+          "seat": 3,
+          "n": 20,
+          "mean_score": 1769.2,
+          "mean_xp": 4900.6,
+          "deaths_per_minute": 0.46625782762707146
+        },
+        {
+          "policy": "candidate",
+          "hero_class": "DruidWarden",
+          "side": 1,
+          "seat": 3,
+          "n": 20,
+          "mean_score": 1342.8,
+          "mean_xp": 4610.15,
+          "deaths_per_minute": 0.4412531988372382
+        },
+        {
+          "policy": "candidate",
+          "hero_class": "Ranger",
+          "side": 0,
+          "seat": 0,
+          "n": 11,
+          "mean_score": 2199.181818181818,
+          "mean_xp": 5353.545454545455,
+          "deaths_per_minute": 0.5245964642582629
+        },
+        {
+          "policy": "candidate",
+          "hero_class": "Ranger",
+          "side": 1,
+          "seat": 0,
+          "n": 7,
+          "mean_score": 4932.285714285715,
+          "mean_xp": 8370.142857142857,
+          "deaths_per_minute": 0.5901332763825476
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "Arcanist",
+          "side": 0,
+          "seat": 2,
+          "n": 10,
+          "mean_score": 0,
+          "mean_xp": 1273.8,
+          "deaths_per_minute": 0.7703169926799432
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "Arcanist",
+          "side": 1,
+          "seat": 2,
+          "n": 12,
+          "mean_score": 0,
+          "mean_xp": 2097.5833333333335,
+          "deaths_per_minute": 0.708841463414634
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "DeathKnight",
+          "side": 0,
+          "seat": 2,
+          "n": 10,
+          "mean_score": 0,
+          "mean_xp": 426.5,
+          "deaths_per_minute": 0.8128976701908817
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "DeathKnight",
+          "side": 0,
+          "seat": 3,
+          "n": 20,
+          "mean_score": 0,
+          "mean_xp": 478.4,
+          "deaths_per_minute": 0.7864304080046242
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "DeathKnight",
+          "side": 1,
+          "seat": 2,
+          "n": 8,
+          "mean_score": 0,
+          "mean_xp": 1092.875,
+          "deaths_per_minute": 0.8308944250124919
+        },
+        {
+          "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "hero_class": "DeathKnight",
+          "side": 1,
+          "seat": 3,
+          "n": 20,
+          "mean_score": 0,
+          "mean_xp": 635.7,
+          "deaths_per_minute": 0.7837468323565525
+        }
+      ]
+    }
+  },
+  "class_telemetry": {
+    "1": {
+      "baseline": {
+        "n": 18,
+        "means": {
+          "score": 3262.0555555555557,
+          "xp": 6526.666666666667,
+          "minutes": 16.321026234567903,
+          "kills": 18.61111111111111,
+          "deaths": 9,
+          "creep_last_hits": 240.44444444444446,
+          "spells": 139.33333333333334,
+          "rejected": 958.5555555555555,
+          "gold_spent": 5056.666666666667,
+          "buyback_gold": 2888.8888888888887,
+          "consumables": 23.22222222222222,
+          "hero_control_impacts": 0,
+          "hero_xp": 2791.6666666666665,
+          "creep_xp": 3212.777777777778,
+          "structure_or_other_xp": 522.2222222222222,
+          "alive_drought_ge30_seconds": 159.6064814814815,
+          "draft_seconds": 14.041666666666666,
+          "dead_seconds": 97.35648148148148,
+          "stunned_seconds": 0.011574074074074075,
+          "portal_channel_seconds": 26.037037037037038,
+          "own_keep_seconds": 172.20833333333334,
+          "moving_field_seconds": 549.4814814814815,
+          "other_field_seconds": 120.125,
+          "issued_commands": 2614.0555555555557
+        },
+        "pooled_xp_per_minute": 399.89315456421485,
+        "pooled_deaths_per_minute": 0.551435912831144,
+        "pooled_rejected_share": 0.36669287824368263,
+        "hero_xp_flow": [
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 3900
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 19350
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 300
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 900
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 1500
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 3450
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 1950
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 1950
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "baseline",
+            "xp": 15300
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 600
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 300
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 1350
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "baseline",
+            "xp": 8400
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 4650
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 20250
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 150
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 3300
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 3300
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 16050
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 3300
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 300
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 2400
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 2100
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 150
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "baseline",
+            "xp": 900
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 2250
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 150
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "baseline",
+            "xp": 14850
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 6750
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 2700
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 450
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "baseline",
+            "xp": 10800
+          },
+          {
+            "victim": "baseline",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 1200
+          },
+          {
+            "victim": "baseline",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 21750
+          },
+          {
+            "victim": "baseline",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 450
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 6600
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 18300
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 600
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1650
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 750
+          }
+        ],
+        "player_class_side_seat": [
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 1,
+            "n": 11,
+            "mean_score": 175.8181818181818,
+            "mean_xp": 2875.818181818182,
+            "deaths_per_minute": 0.7090699461952344
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Warlock",
+            "side": 1,
+            "seat": 1,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1457,
+            "deaths_per_minute": 0.7563680021241104
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 1,
+            "n": 11,
+            "mean_score": 1394.8181818181818,
+            "mean_xp": 4360.090909090909,
+            "deaths_per_minute": 0.559185242121445
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "VanguardKnight",
+            "side": 0,
+            "seat": 1,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1595.7142857142858,
+            "deaths_per_minute": 0.7148093206887196
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Crossbowman",
+            "side": 0,
+            "seat": 0,
+            "n": 7,
+            "mean_score": 7281.142857142857,
+            "mean_xp": 10719,
+            "deaths_per_minute": 0.4072750780668286
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Crossbowman",
+            "side": 1,
+            "seat": 0,
+            "n": 11,
+            "mean_score": 5652.090909090909,
+            "mean_xp": 8806.454545454546,
+            "deaths_per_minute": 0.18447348193697155
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 2,
+            "n": 11,
+            "mean_score": 154.8181818181818,
+            "mean_xp": 2327.3636363636365,
+            "deaths_per_minute": 0.686010760953113
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 2,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1888.4285714285713,
+            "deaths_per_minute": 0.6067567489567038
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DemonHunter",
+            "side": 1,
+            "seat": 4,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1119.4285714285713,
+            "deaths_per_minute": 0.8145501561336572
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "Warlock",
+            "side": 0,
+            "seat": 4,
+            "n": 11,
+            "mean_score": 0,
+            "mean_xp": 1836.8181818181818,
+            "deaths_per_minute": 0.6629515757109915
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 2,
+            "n": 7,
+            "mean_score": 455.57142857142856,
+            "mean_xp": 3762,
+            "deaths_per_minute": 0.07480562658370322
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 1,
+            "seat": 2,
+            "n": 11,
+            "mean_score": 27.454545454545453,
+            "mean_xp": 2450,
+            "deaths_per_minute": 0.13835511145272866
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "Berserker",
+            "side": 0,
+            "seat": 3,
+            "n": 7,
+            "mean_score": 122.71428571428571,
+            "mean_xp": 3417.5714285714284,
+            "deaths_per_minute": 0.4488337595022193
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "VanguardKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 11,
+            "mean_score": 0,
+            "mean_xp": 1794,
+            "deaths_per_minute": 0.46694850115295927
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DruidWarden",
+            "side": 0,
+            "seat": 4,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1154.857142857143,
+            "deaths_per_minute": 0.7813032109853447
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DruidWarden",
+            "side": 1,
+            "seat": 4,
+            "n": 11,
+            "mean_score": 50.45454545454545,
+            "mean_xp": 2135.181818181818,
+            "deaths_per_minute": 0.5015372790161414
+          },
+          {
+            "policy": "baseline",
+            "hero_class": "Ranger",
+            "side": 0,
+            "seat": 0,
+            "n": 11,
+            "mean_score": 2199.181818181818,
+            "mean_xp": 5353.545454545455,
+            "deaths_per_minute": 0.5245964642582629
+          },
+          {
+            "policy": "baseline",
+            "hero_class": "Ranger",
+            "side": 1,
+            "seat": 0,
+            "n": 7,
+            "mean_score": 4932.285714285715,
+            "mean_xp": 8370.142857142857,
+            "deaths_per_minute": 0.5901332763825476
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 3,
+            "n": 11,
+            "mean_score": 0,
+            "mean_xp": 385.72727272727275,
+            "deaths_per_minute": 0.8416602613374328
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 414.7142857142857,
+            "deaths_per_minute": 0.7813032109853447
+          }
+        ]
+      },
+      "candidate": {
+        "n": 18,
+        "means": {
+          "score": 3262.0555555555557,
+          "xp": 6526.666666666667,
+          "minutes": 16.321026234567903,
+          "kills": 18.61111111111111,
+          "deaths": 9,
+          "creep_last_hits": 240.44444444444446,
+          "spells": 139.33333333333334,
+          "rejected": 958.5555555555555,
+          "gold_spent": 5056.666666666667,
+          "buyback_gold": 2888.8888888888887,
+          "consumables": 23.22222222222222,
+          "hero_control_impacts": 0,
+          "hero_xp": 2791.6666666666665,
+          "creep_xp": 3212.777777777778,
+          "structure_or_other_xp": 522.2222222222222,
+          "alive_drought_ge30_seconds": 159.6064814814815,
+          "draft_seconds": 14.041666666666666,
+          "dead_seconds": 97.35648148148148,
+          "stunned_seconds": 0.011574074074074075,
+          "portal_channel_seconds": 26.037037037037038,
+          "own_keep_seconds": 172.20833333333334,
+          "moving_field_seconds": 549.4814814814815,
+          "other_field_seconds": 120.125,
+          "issued_commands": 2614.0555555555557
+        },
+        "pooled_xp_per_minute": 399.89315456421485,
+        "pooled_deaths_per_minute": 0.551435912831144,
+        "pooled_rejected_share": 0.36669287824368263,
+        "hero_xp_flow": [
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 3900
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 19350
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 300
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 900
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 1500
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 3450
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 1950
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 1950
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "candidate",
+            "xp": 15300
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 600
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 300
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 1350
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "candidate",
+            "xp": 8400
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 4650
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 20250
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 150
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 3300
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 3300
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 16050
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 3300
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 300
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 2400
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 2100
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 150
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "candidate",
+            "xp": 900
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 2250
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 150
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "candidate",
+            "xp": 14850
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 6750
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 2700
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 450
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "candidate",
+            "xp": 10800
+          },
+          {
+            "victim": "candidate",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 1200
+          },
+          {
+            "victim": "candidate",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 21750
+          },
+          {
+            "victim": "candidate",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 450
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 6600
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 18300
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 600
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1650
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 750
+          }
+        ],
+        "player_class_side_seat": [
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 1,
+            "n": 11,
+            "mean_score": 175.8181818181818,
+            "mean_xp": 2875.818181818182,
+            "deaths_per_minute": 0.7090699461952344
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Warlock",
+            "side": 1,
+            "seat": 1,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1457,
+            "deaths_per_minute": 0.7563680021241104
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 1,
+            "n": 11,
+            "mean_score": 1394.8181818181818,
+            "mean_xp": 4360.090909090909,
+            "deaths_per_minute": 0.559185242121445
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "VanguardKnight",
+            "side": 0,
+            "seat": 1,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1595.7142857142858,
+            "deaths_per_minute": 0.7148093206887196
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Crossbowman",
+            "side": 0,
+            "seat": 0,
+            "n": 7,
+            "mean_score": 7281.142857142857,
+            "mean_xp": 10719,
+            "deaths_per_minute": 0.4072750780668286
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Crossbowman",
+            "side": 1,
+            "seat": 0,
+            "n": 11,
+            "mean_score": 5652.090909090909,
+            "mean_xp": 8806.454545454546,
+            "deaths_per_minute": 0.18447348193697155
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 2,
+            "n": 11,
+            "mean_score": 154.8181818181818,
+            "mean_xp": 2327.3636363636365,
+            "deaths_per_minute": 0.686010760953113
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 2,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1888.4285714285713,
+            "deaths_per_minute": 0.6067567489567038
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DemonHunter",
+            "side": 1,
+            "seat": 4,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1119.4285714285713,
+            "deaths_per_minute": 0.8145501561336572
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "Warlock",
+            "side": 0,
+            "seat": 4,
+            "n": 11,
+            "mean_score": 0,
+            "mean_xp": 1836.8181818181818,
+            "deaths_per_minute": 0.6629515757109915
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 2,
+            "n": 7,
+            "mean_score": 455.57142857142856,
+            "mean_xp": 3762,
+            "deaths_per_minute": 0.07480562658370322
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 1,
+            "seat": 2,
+            "n": 11,
+            "mean_score": 27.454545454545453,
+            "mean_xp": 2450,
+            "deaths_per_minute": 0.13835511145272866
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "Berserker",
+            "side": 0,
+            "seat": 3,
+            "n": 7,
+            "mean_score": 122.71428571428571,
+            "mean_xp": 3417.5714285714284,
+            "deaths_per_minute": 0.4488337595022193
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "VanguardKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 11,
+            "mean_score": 0,
+            "mean_xp": 1794,
+            "deaths_per_minute": 0.46694850115295927
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DruidWarden",
+            "side": 0,
+            "seat": 4,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1154.857142857143,
+            "deaths_per_minute": 0.7813032109853447
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DruidWarden",
+            "side": 1,
+            "seat": 4,
+            "n": 11,
+            "mean_score": 50.45454545454545,
+            "mean_xp": 2135.181818181818,
+            "deaths_per_minute": 0.5015372790161414
+          },
+          {
+            "policy": "candidate",
+            "hero_class": "Ranger",
+            "side": 0,
+            "seat": 0,
+            "n": 11,
+            "mean_score": 2199.181818181818,
+            "mean_xp": 5353.545454545455,
+            "deaths_per_minute": 0.5245964642582629
+          },
+          {
+            "policy": "candidate",
+            "hero_class": "Ranger",
+            "side": 1,
+            "seat": 0,
+            "n": 7,
+            "mean_score": 4932.285714285715,
+            "mean_xp": 8370.142857142857,
+            "deaths_per_minute": 0.5901332763825476
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 3,
+            "n": 11,
+            "mean_score": 0,
+            "mean_xp": 385.72727272727275,
+            "deaths_per_minute": 0.8416602613374328
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 414.7142857142857,
+            "deaths_per_minute": 0.7813032109853447
+          }
+        ]
+      }
+    },
+    "3": {
+      "baseline": {
+        "n": 40,
+        "means": {
+          "score": 1427.775,
+          "xp": 4525.1,
+          "minutes": 16.13095486111111,
+          "kills": 6.425,
+          "deaths": 7.675,
+          "creep_last_hits": 181.85,
+          "spells": 76.575,
+          "rejected": 246.725,
+          "gold_spent": 3059,
+          "buyback_gold": 1430,
+          "consumables": 13.775,
+          "hero_control_impacts": 1.75,
+          "hero_xp": 963.75,
+          "creep_xp": 3123.85,
+          "structure_or_other_xp": 437.5,
+          "alive_drought_ge30_seconds": 224.93020833333333,
+          "draft_seconds": 14.041666666666666,
+          "dead_seconds": 127.01145833333334,
+          "stunned_seconds": 0.1,
+          "portal_channel_seconds": 16.69375,
+          "own_keep_seconds": 111.46875,
+          "moving_field_seconds": 531.709375,
+          "other_field_seconds": 166.83229166666666,
+          "issued_commands": 1803.975
+        },
+        "pooled_xp_per_minute": 280.5227612972384,
+        "pooled_deaths_per_minute": 0.47579328477963023,
+        "pooled_rejected_share": 0.13676741639989468,
+        "hero_xp_flow": [
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 2250
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 43200
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 2100
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1650
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 150
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 18900
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 5250
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 1800
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "baseline",
+            "xp": 12450
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 6000
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 17850
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 3150
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "baseline",
+            "xp": 2100
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 750
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 3750
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 36150
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 4050
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1800
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 150
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 3450
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 38700
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 7350
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 5250
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 1200
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 12300
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 1500
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 150
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "baseline",
+            "xp": 900
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 150
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 15900
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 6600
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "baseline",
+            "xp": 9300
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 450
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 17700
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 10050
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 600
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "baseline",
+            "xp": 13800
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 3450
+          },
+          {
+            "victim": "baseline",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 1650
+          },
+          {
+            "victim": "baseline",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 41400
+          },
+          {
+            "victim": "baseline",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 300
+          },
+          {
+            "victim": "baseline",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 900
+          },
+          {
+            "victim": "baseline",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 300
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 7200
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 48000
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 1350
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 2550
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 1050
+          }
+        ],
+        "player_class_side_seat": [
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Crossbowman",
+            "side": 0,
+            "seat": 0,
+            "n": 10,
+            "mean_score": 1451,
+            "mean_xp": 4614.9,
+            "deaths_per_minute": 0.5209399702891802
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Crossbowman",
+            "side": 1,
+            "seat": 0,
+            "n": 12,
+            "mean_score": 2272.75,
+            "mean_xp": 5897.416666666667,
+            "deaths_per_minute": 0.4552756212295891
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Ranger",
+            "side": 0,
+            "seat": 0,
+            "n": 10,
+            "mean_score": 442.7,
+            "mean_xp": 2743.9,
+            "deaths_per_minute": 0.7432004752120439
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Ranger",
+            "side": 1,
+            "seat": 0,
+            "n": 8,
+            "mean_score": 1607.625,
+            "mean_xp": 4166.875,
+            "deaths_per_minute": 0.6971099645874504
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 1,
+            "n": 10,
+            "mean_score": 69,
+            "mean_xp": 2492.6,
+            "deaths_per_minute": 0.6169966209307534
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "VanguardKnight",
+            "side": 0,
+            "seat": 1,
+            "n": 20,
+            "mean_score": 0,
+            "mean_xp": 1768.95,
+            "deaths_per_minute": 0.6642481618716899
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "Warlock",
+            "side": 1,
+            "seat": 1,
+            "n": 10,
+            "mean_score": 0,
+            "mean_xp": 1806.8,
+            "deaths_per_minute": 0.6871974076155143
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Crossbowman",
+            "side": 0,
+            "seat": 0,
+            "n": 8,
+            "mean_score": 5995.75,
+            "mean_xp": 8614.375,
+            "deaths_per_minute": 0.19098903139382203
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Crossbowman",
+            "side": 1,
+            "seat": 0,
+            "n": 10,
+            "mean_score": 5886.1,
+            "mean_xp": 8739.2,
+            "deaths_per_minute": 0.12620385428129047
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Ranger",
+            "side": 0,
+            "seat": 0,
+            "n": 12,
+            "mean_score": 7297.25,
+            "mean_xp": 10921.916666666666,
+            "deaths_per_minute": 0.5518492378540474
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Ranger",
+            "side": 1,
+            "seat": 0,
+            "n": 10,
+            "mean_score": 6959.4,
+            "mean_xp": 10568.5,
+            "deaths_per_minute": 0.36022444754039057
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 1,
+            "n": 10,
+            "mean_score": 249.8,
+            "mean_xp": 2808.3,
+            "deaths_per_minute": 0.5048154171251619
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Lich",
+            "side": 0,
+            "seat": 1,
+            "n": 10,
+            "mean_score": 199.3,
+            "mean_xp": 3140,
+            "deaths_per_minute": 0.5043142265565468
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 1,
+            "n": 20,
+            "mean_score": 127.35,
+            "mean_xp": 2645.95,
+            "deaths_per_minute": 0.49353017634391916
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 4,
+            "n": 3,
+            "mean_score": 0,
+            "mean_xp": 1122.6666666666667,
+            "deaths_per_minute": 0.7227464364585424
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 4,
+            "n": 5,
+            "mean_score": 0,
+            "mean_xp": 1906.2,
+            "deaths_per_minute": 0.7085985334333631
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 4,
+            "n": 17,
+            "mean_score": 0,
+            "mean_xp": 1528.2941176470588,
+            "deaths_per_minute": 0.801039733391321
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DemonHunter",
+            "side": 1,
+            "seat": 4,
+            "n": 15,
+            "mean_score": 0,
+            "mean_xp": 1184.3333333333333,
+            "deaths_per_minute": 0.8090363572184963
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 2,
+            "n": 8,
+            "mean_score": 380.875,
+            "mean_xp": 2955.25,
+            "deaths_per_minute": 0.20053848296351315
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 0,
+            "seat": 2,
+            "n": 12,
+            "mean_score": 222.58333333333334,
+            "mean_xp": 3401.25,
+            "deaths_per_minute": 0.21154220784405148
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 1,
+            "seat": 2,
+            "n": 20,
+            "mean_score": 737.45,
+            "mean_xp": 3797.25,
+            "deaths_per_minute": 0.17952796526374618
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "VanguardKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 20,
+            "mean_score": 21.25,
+            "mean_xp": 1885.5,
+            "deaths_per_minute": 0.38072309874897897
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "Warlock",
+            "side": 0,
+            "seat": 3,
+            "n": 20,
+            "mean_score": 5.1,
+            "mean_xp": 2374.35,
+            "deaths_per_minute": 0.3600597512949347
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "Berserker",
+            "side": 0,
+            "seat": 4,
+            "n": 8,
+            "mean_score": 0,
+            "mean_xp": 1223.375,
+            "deaths_per_minute": 0.6971099645874504
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 4,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1311.2857142857142,
+            "deaths_per_minute": 0.6927249082816151
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 4,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 753.8571428571429,
+            "deaths_per_minute": 0.5529604847872743
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 4,
+            "n": 5,
+            "mean_score": 0,
+            "mean_xp": 843.8,
+            "deaths_per_minute": 0.8479949662399263
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DemonHunter",
+            "side": 1,
+            "seat": 4,
+            "n": 3,
+            "mean_score": 0,
+            "mean_xp": 1400.3333333333333,
+            "deaths_per_minute": 0.7020965382740126
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "Warlock",
+            "side": 1,
+            "seat": 4,
+            "n": 10,
+            "mean_score": 0,
+            "mean_xp": 1231.8,
+            "deaths_per_minute": 0.5188380676008608
+          },
+          {
+            "policy": "baseline",
+            "hero_class": "DruidWarden",
+            "side": 0,
+            "seat": 3,
+            "n": 20,
+            "mean_score": 1617.75,
+            "mean_xp": 4693.35,
+            "deaths_per_minute": 0.5262026568075319
+          },
+          {
+            "policy": "baseline",
+            "hero_class": "DruidWarden",
+            "side": 1,
+            "seat": 3,
+            "n": 20,
+            "mean_score": 1237.8,
+            "mean_xp": 4356.85,
+            "deaths_per_minute": 0.42524298213281087
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 2,
+            "n": 10,
+            "mean_score": 0,
+            "mean_xp": 1430.6,
+            "deaths_per_minute": 0.7537003825460479
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "Arcanist",
+            "side": 1,
+            "seat": 2,
+            "n": 12,
+            "mean_score": 0,
+            "mean_xp": 2075,
+            "deaths_per_minute": 0.7082065219126941
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 2,
+            "n": 10,
+            "mean_score": 0,
+            "mean_xp": 447.3,
+            "deaths_per_minute": 0.8133137275905385
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 2,
+            "n": 8,
+            "mean_score": 0,
+            "mean_xp": 987.25,
+            "deaths_per_minute": 0.8403517381328169
+          }
+        ]
+      },
+      "candidate": {
+        "n": 40,
+        "means": {
+          "score": 1556,
+          "xp": 4755.375,
+          "minutes": 16.42796875,
+          "kills": 7.15,
+          "deaths": 7.45,
+          "creep_last_hits": 186.85,
+          "spells": 79.65,
+          "rejected": 218.8,
+          "gold_spent": 3099.25,
+          "buyback_gold": 1475,
+          "consumables": 13.575,
+          "hero_control_impacts": 2.625,
+          "hero_xp": 1072.5,
+          "creep_xp": 3205.375,
+          "structure_or_other_xp": 477.5,
+          "alive_drought_ge30_seconds": 232.990625,
+          "draft_seconds": 14.041666666666666,
+          "dead_seconds": 113.37604166666667,
+          "stunned_seconds": 0.1,
+          "portal_channel_seconds": 16.31875,
+          "own_keep_seconds": 112.99895833333333,
+          "moving_field_seconds": 555.5864583333333,
+          "other_field_seconds": 173.25625,
+          "issued_commands": 1831.6
+        },
+        "pooled_xp_per_minute": 289.46822777466025,
+        "pooled_deaths_per_minute": 0.45349489723128433,
+        "pooled_rejected_share": 0.1194583970299192,
+        "hero_xp_flow": [
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 1650
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 46350
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 2100
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1500
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 300
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 18300
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 4950
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 1500
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "candidate",
+            "xp": 14700
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 6300
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 18000
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 2400
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 150
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "candidate",
+            "xp": 2850
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 600
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 3300
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 37800
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 4200
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1800
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 450
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 3150
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 40500
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 7200
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 3900
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 1950
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 10950
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 1650
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 150
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "candidate",
+            "xp": 1050
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 150
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 15600
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 5850
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "candidate",
+            "xp": 9750
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 16650
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 9300
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 750
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "candidate",
+            "xp": 14550
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 3750
+          },
+          {
+            "victim": "candidate",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 1200
+          },
+          {
+            "victim": "candidate",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 40800
+          },
+          {
+            "victim": "candidate",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 300
+          },
+          {
+            "victim": "candidate",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 600
+          },
+          {
+            "victim": "candidate",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 600
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 6450
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 48750
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 1950
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 3900
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 1500
+          }
+        ],
+        "player_class_side_seat": [
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Crossbowman",
+            "side": 0,
+            "seat": 0,
+            "n": 10,
+            "mean_score": 1183.2,
+            "mean_xp": 4362.1,
+            "deaths_per_minute": 0.5210967891658439
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Crossbowman",
+            "side": 1,
+            "seat": 0,
+            "n": 12,
+            "mean_score": 2493,
+            "mean_xp": 6137.833333333333,
+            "deaths_per_minute": 0.47103658536585363
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Ranger",
+            "side": 0,
+            "seat": 0,
+            "n": 10,
+            "mean_score": 149.5,
+            "mean_xp": 2145.5,
+            "deaths_per_minute": 0.7784528536573697
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Ranger",
+            "side": 1,
+            "seat": 0,
+            "n": 8,
+            "mean_score": 1703.75,
+            "mean_xp": 4563.625,
+            "deaths_per_minute": 0.676707830680277
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 1,
+            "n": 10,
+            "mean_score": 104.3,
+            "mean_xp": 2231.4,
+            "deaths_per_minute": 0.6406735875233219
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "VanguardKnight",
+            "side": 0,
+            "seat": 1,
+            "n": 20,
+            "mean_score": 0,
+            "mean_xp": 1778.65,
+            "deaths_per_minute": 0.6767870009192775
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "Warlock",
+            "side": 1,
+            "seat": 1,
+            "n": 10,
+            "mean_score": 0,
+            "mean_xp": 1685.1,
+            "deaths_per_minute": 0.6796914641293617
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Crossbowman",
+            "side": 0,
+            "seat": 0,
+            "n": 8,
+            "mean_score": 6707.75,
+            "mean_xp": 9627,
+            "deaths_per_minute": 0.14562067242486973
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Crossbowman",
+            "side": 1,
+            "seat": 0,
+            "n": 10,
+            "mean_score": 6098.5,
+            "mean_xp": 9002.1,
+            "deaths_per_minute": 0.12400133952064296
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Ranger",
+            "side": 0,
+            "seat": 0,
+            "n": 12,
+            "mean_score": 7255.75,
+            "mean_xp": 10900.583333333334,
+            "deaths_per_minute": 0.5625
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Ranger",
+            "side": 1,
+            "seat": 0,
+            "n": 10,
+            "mean_score": 6877,
+            "mean_xp": 10408.4,
+            "deaths_per_minute": 0.35683801866791487
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 1,
+            "n": 10,
+            "mean_score": 104.7,
+            "mean_xp": 2620.8,
+            "deaths_per_minute": 0.516672248002679
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Lich",
+            "side": 0,
+            "seat": 1,
+            "n": 10,
+            "mean_score": 161.9,
+            "mean_xp": 2760.3,
+            "deaths_per_minute": 0.5041045025626099
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 1,
+            "n": 20,
+            "mean_score": 126,
+            "mean_xp": 2630.15,
+            "deaths_per_minute": 0.5098263310889711
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 4,
+            "n": 3,
+            "mean_score": 0,
+            "mean_xp": 1068,
+            "deaths_per_minute": 0.720710111433324
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 4,
+            "n": 5,
+            "mean_score": 0,
+            "mean_xp": 1818.2,
+            "deaths_per_minute": 0.7218389707110973
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 4,
+            "n": 17,
+            "mean_score": 0,
+            "mean_xp": 1471.6470588235295,
+            "deaths_per_minute": 0.7977133028103104
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DemonHunter",
+            "side": 1,
+            "seat": 4,
+            "n": 15,
+            "mean_score": 0,
+            "mean_xp": 1256.9333333333334,
+            "deaths_per_minute": 0.7858744112238986
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 2,
+            "n": 8,
+            "mean_score": 440.375,
+            "mean_xp": 3304.125,
+            "deaths_per_minute": 0.17988436005425082
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 0,
+            "seat": 2,
+            "n": 12,
+            "mean_score": 116.83333333333333,
+            "mean_xp": 3324.8333333333335,
+            "deaths_per_minute": 0.1646341463414634
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 1,
+            "seat": 2,
+            "n": 20,
+            "mean_score": 755.15,
+            "mean_xp": 3817.2,
+            "deaths_per_minute": 0.18961151656834238
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "VanguardKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 20,
+            "mean_score": 21.25,
+            "mean_xp": 1970.7,
+            "deaths_per_minute": 0.3512475634790605
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "Warlock",
+            "side": 0,
+            "seat": 3,
+            "n": 20,
+            "mean_score": 18.35,
+            "mean_xp": 2381.6,
+            "deaths_per_minute": 0.3637357449874531
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "Berserker",
+            "side": 0,
+            "seat": 4,
+            "n": 8,
+            "mean_score": 0,
+            "mean_xp": 1479.25,
+            "deaths_per_minute": 0.6938396744949675
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 4,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 1384.142857142857,
+            "deaths_per_minute": 0.6849858087430827
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 4,
+            "n": 7,
+            "mean_score": 0,
+            "mean_xp": 968,
+            "deaths_per_minute": 0.548792270531401
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 4,
+            "n": 5,
+            "mean_score": 0,
+            "mean_xp": 766.2,
+            "deaths_per_minute": 0.8478743465495429
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DemonHunter",
+            "side": 1,
+            "seat": 4,
+            "n": 3,
+            "mean_score": 0,
+            "mean_xp": 1329.3333333333333,
+            "deaths_per_minute": 0.720710111433324
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "Warlock",
+            "side": 1,
+            "seat": 4,
+            "n": 10,
+            "mean_score": 0,
+            "mean_xp": 1277.6,
+            "deaths_per_minute": 0.5097832846959767
+          },
+          {
+            "policy": "candidate",
+            "hero_class": "DruidWarden",
+            "side": 0,
+            "seat": 3,
+            "n": 20,
+            "mean_score": 1769.2,
+            "mean_xp": 4900.6,
+            "deaths_per_minute": 0.46625782762707146
+          },
+          {
+            "policy": "candidate",
+            "hero_class": "DruidWarden",
+            "side": 1,
+            "seat": 3,
+            "n": 20,
+            "mean_score": 1342.8,
+            "mean_xp": 4610.15,
+            "deaths_per_minute": 0.4412531988372382
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 2,
+            "n": 10,
+            "mean_score": 0,
+            "mean_xp": 1273.8,
+            "deaths_per_minute": 0.7703169926799432
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "Arcanist",
+            "side": 1,
+            "seat": 2,
+            "n": 12,
+            "mean_score": 0,
+            "mean_xp": 2097.5833333333335,
+            "deaths_per_minute": 0.708841463414634
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 2,
+            "n": 10,
+            "mean_score": 0,
+            "mean_xp": 426.5,
+            "deaths_per_minute": 0.8128976701908817
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 2,
+            "n": 8,
+            "mean_score": 0,
+            "mean_xp": 1092.875,
+            "deaths_per_minute": 0.8308944250124919
+          }
+        ]
+      }
+    },
+    "6": {
+      "baseline": {
+        "n": 22,
+        "means": {
+          "score": 3569.681818181818,
+          "xp": 6966.545454545455,
+          "minutes": 16.9823547979798,
+          "kills": 20.772727272727273,
+          "deaths": 6.7727272727272725,
+          "creep_last_hits": 228.86363636363637,
+          "spells": 118.4090909090909,
+          "rejected": 947.5909090909091,
+          "gold_spent": 3970,
+          "buyback_gold": 1686.3636363636363,
+          "consumables": 25.227272727272727,
+          "hero_control_impacts": 0,
+          "hero_xp": 3115.909090909091,
+          "creep_xp": 3337,
+          "structure_or_other_xp": 513.6363636363636,
+          "alive_drought_ge30_seconds": 187.8882575757576,
+          "draft_seconds": 14.041666666666666,
+          "dead_seconds": 70.90151515151516,
+          "stunned_seconds": 0.058712121212121215,
+          "portal_channel_seconds": 29.293560606060606,
+          "own_keep_seconds": 168.1969696969697,
+          "moving_field_seconds": 569.625,
+          "other_field_seconds": 166.82386363636363,
+          "issued_commands": 2623.8636363636365
+        },
+        "pooled_xp_per_minute": 410.22258322939916,
+        "pooled_deaths_per_minute": 0.39880966764002296,
+        "pooled_rejected_share": 0.3611433521004764,
+        "hero_xp_flow": [
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 4050
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 17100
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 1650
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1200
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 900
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 4650
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 3300
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 1950
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "baseline",
+            "xp": 15300
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 150
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 4350
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 1050
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 150
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "baseline",
+            "xp": 22950
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 150
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 6600
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 15600
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 900
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 2400
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 600
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 6150
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 15900
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 3750
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1500
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 2100
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 6750
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 900
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "baseline",
+            "xp": 900
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 2400
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 3900
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "baseline",
+            "xp": 14700
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 7500
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 4500
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "baseline",
+            "xp": 14700
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 1500
+          },
+          {
+            "victim": "baseline",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 600
+          },
+          {
+            "victim": "baseline",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 20850
+          },
+          {
+            "victim": "baseline",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 150
+          },
+          {
+            "victim": "baseline",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 300
+          },
+          {
+            "victim": "baseline",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 150
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 6900
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 23850
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 450
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1950
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 2250
+          }
+        ],
+        "player_class_side_seat": [
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 1,
+            "n": 9,
+            "mean_score": 506.77777777777777,
+            "mean_xp": 4118.111111111111,
+            "deaths_per_minute": 0.6116275931056931
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Arcanist",
+            "side": 1,
+            "seat": 1,
+            "n": 13,
+            "mean_score": 908.0769230769231,
+            "mean_xp": 3363.6153846153848,
+            "deaths_per_minute": 0.583886494478875
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 1,
+            "n": 9,
+            "mean_score": 939.2222222222222,
+            "mean_xp": 4827.222222222223,
+            "deaths_per_minute": 0.6173437388356529
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "VanguardKnight",
+            "side": 0,
+            "seat": 1,
+            "n": 13,
+            "mean_score": 22.76923076923077,
+            "mean_xp": 1721.6153846153845,
+            "deaths_per_minute": 0.7147576053103469
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Ranger",
+            "side": 0,
+            "seat": 0,
+            "n": 13,
+            "mean_score": 5638,
+            "mean_xp": 8694.846153846154,
+            "deaths_per_minute": 0.6040205115298707
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Ranger",
+            "side": 1,
+            "seat": 0,
+            "n": 9,
+            "mean_score": 3301.3333333333335,
+            "mean_xp": 7189.333333333333,
+            "deaths_per_minute": 0.5487499900761359
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 2,
+            "n": 9,
+            "mean_score": 15.666666666666666,
+            "mean_xp": 2776.5555555555557,
+            "deaths_per_minute": 0.5601822815360553
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 2,
+            "n": 13,
+            "mean_score": 200.07692307692307,
+            "mean_xp": 3156.6923076923076,
+            "deaths_per_minute": 0.41778085380816055
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DemonHunter",
+            "side": 1,
+            "seat": 4,
+            "n": 5,
+            "mean_score": 0,
+            "mean_xp": 1122.4,
+            "deaths_per_minute": 0.8942340533435452
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DruidWarden",
+            "side": 0,
+            "seat": 4,
+            "n": 3,
+            "mean_score": 0,
+            "mean_xp": 1942.6666666666667,
+            "deaths_per_minute": 0.6260081683083365
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DruidWarden",
+            "side": 1,
+            "seat": 4,
+            "n": 8,
+            "mean_score": 21,
+            "mean_xp": 2393.25,
+            "deaths_per_minute": 0.4484229193936579
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "Warlock",
+            "side": 0,
+            "seat": 4,
+            "n": 6,
+            "mean_score": 0,
+            "mean_xp": 1897.5,
+            "deaths_per_minute": 0.7002741524676761
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 0,
+            "seat": 2,
+            "n": 13,
+            "mean_score": 167.46153846153845,
+            "mean_xp": 2942.923076923077,
+            "deaths_per_minute": 0.14597162361971874
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 1,
+            "seat": 2,
+            "n": 9,
+            "mean_score": 267.22222222222223,
+            "mean_xp": 3545.3333333333335,
+            "deaths_per_minute": 0.20578124627855096
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "VanguardKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 9,
+            "mean_score": 0,
+            "mean_xp": 2051.6666666666665,
+            "deaths_per_minute": 0.3886979096372629
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "Warlock",
+            "side": 0,
+            "seat": 3,
+            "n": 13,
+            "mean_score": 0,
+            "mean_xp": 1929.6153846153845,
+            "deaths_per_minute": 0.4328813665964073
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 4,
+            "n": 8,
+            "mean_score": 0,
+            "mean_xp": 1412.625,
+            "deaths_per_minute": 0.904446227251615
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DruidWarden",
+            "side": 0,
+            "seat": 4,
+            "n": 5,
+            "mean_score": 0,
+            "mean_xp": 820,
+            "deaths_per_minute": 0.6259638373404817
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DruidWarden",
+            "side": 1,
+            "seat": 4,
+            "n": 6,
+            "mean_score": 0,
+            "mean_xp": 1571.3333333333333,
+            "deaths_per_minute": 0.4201644914806057
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "Warlock",
+            "side": 1,
+            "seat": 4,
+            "n": 3,
+            "mean_score": 0,
+            "mean_xp": 2495.3333333333335,
+            "deaths_per_minute": 0.4612691766482479
+          },
+          {
+            "policy": "baseline",
+            "hero_class": "Crossbowman",
+            "side": 0,
+            "seat": 0,
+            "n": 9,
+            "mean_score": 4198.444444444444,
+            "mean_xp": 8086.444444444444,
+            "deaths_per_minute": 0.24007812065830944
+          },
+          {
+            "policy": "baseline",
+            "hero_class": "Crossbowman",
+            "side": 1,
+            "seat": 0,
+            "n": 13,
+            "mean_score": 3134.3846153846152,
+            "mean_xp": 6191.2307692307695,
+            "deaths_per_minute": 0.5385849561141347
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 3,
+            "n": 9,
+            "mean_score": 0,
+            "mean_xp": 591.6666666666666,
+            "deaths_per_minute": 0.7316666534348478
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 13,
+            "mean_score": 0,
+            "mean_xp": 754.6923076923077,
+            "deaths_per_minute": 0.7852266649888319
+          }
+        ]
+      },
+      "candidate": {
+        "n": 22,
+        "means": {
+          "score": 3569.681818181818,
+          "xp": 6966.545454545455,
+          "minutes": 16.9823547979798,
+          "kills": 20.772727272727273,
+          "deaths": 6.7727272727272725,
+          "creep_last_hits": 228.86363636363637,
+          "spells": 118.4090909090909,
+          "rejected": 947.5,
+          "gold_spent": 3970,
+          "buyback_gold": 1686.3636363636363,
+          "consumables": 25.227272727272727,
+          "hero_control_impacts": 0,
+          "hero_xp": 3115.909090909091,
+          "creep_xp": 3337,
+          "structure_or_other_xp": 513.6363636363636,
+          "alive_drought_ge30_seconds": 187.8882575757576,
+          "draft_seconds": 14.041666666666666,
+          "dead_seconds": 70.90151515151516,
+          "stunned_seconds": 0.058712121212121215,
+          "portal_channel_seconds": 29.293560606060606,
+          "own_keep_seconds": 168.1969696969697,
+          "moving_field_seconds": 569.625,
+          "other_field_seconds": 166.82386363636363,
+          "issued_commands": 2623.7727272727275
+        },
+        "pooled_xp_per_minute": 410.22258322939916,
+        "pooled_deaths_per_minute": 0.39880966764002296,
+        "pooled_rejected_share": 0.36112121684597126,
+        "hero_xp_flow": [
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 4050
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 17100
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 1650
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1200
+          },
+          {
+            "victim": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 900
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 4650
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 3300
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 1950
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "candidate",
+            "xp": 15300
+          },
+          {
+            "victim": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 150
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 4350
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 1050
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 150
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "candidate",
+            "xp": 22950
+          },
+          {
+            "victim": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 150
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 6600
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 15600
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 900
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 2400
+          },
+          {
+            "victim": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 600
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 6150
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 15900
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 3750
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1500
+          },
+          {
+            "victim": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 2100
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 6750
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 900
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "recipient": "candidate",
+            "xp": 900
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 2400
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 3900
+          },
+          {
+            "victim": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "recipient": "candidate",
+            "xp": 14700
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "xp": 7500
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "xp": 4500
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "xp": 300
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "candidate",
+            "xp": 14700
+          },
+          {
+            "victim": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "recipient": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "xp": 1500
+          },
+          {
+            "victim": "candidate",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 600
+          },
+          {
+            "victim": "candidate",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 20850
+          },
+          {
+            "victim": "candidate",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 150
+          },
+          {
+            "victim": "candidate",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 300
+          },
+          {
+            "victim": "candidate",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 150
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "xp": 6900
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "xp": 23850
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "xp": 450
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "xp": 1950
+          },
+          {
+            "victim": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "recipient": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "xp": 2250
+          }
+        ],
+        "player_class_side_seat": [
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Arcanist",
+            "side": 0,
+            "seat": 1,
+            "n": 9,
+            "mean_score": 506.77777777777777,
+            "mean_xp": 4118.111111111111,
+            "deaths_per_minute": 0.6116275931056931
+          },
+          {
+            "policy": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+            "hero_class": "Arcanist",
+            "side": 1,
+            "seat": 1,
+            "n": 13,
+            "mean_score": 908.0769230769231,
+            "mean_xp": 3363.6153846153848,
+            "deaths_per_minute": 0.583886494478875
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 1,
+            "n": 9,
+            "mean_score": 939.2222222222222,
+            "mean_xp": 4827.222222222223,
+            "deaths_per_minute": 0.6173437388356529
+          },
+          {
+            "policy": "25e89eeb-3449-45dd-afbf-c61020891a49",
+            "hero_class": "VanguardKnight",
+            "side": 0,
+            "seat": 1,
+            "n": 13,
+            "mean_score": 22.76923076923077,
+            "mean_xp": 1721.6153846153845,
+            "deaths_per_minute": 0.7147576053103469
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Ranger",
+            "side": 0,
+            "seat": 0,
+            "n": 13,
+            "mean_score": 5638,
+            "mean_xp": 8694.846153846154,
+            "deaths_per_minute": 0.6040205115298707
+          },
+          {
+            "policy": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+            "hero_class": "Ranger",
+            "side": 1,
+            "seat": 0,
+            "n": 9,
+            "mean_score": 3301.3333333333335,
+            "mean_xp": 7189.333333333333,
+            "deaths_per_minute": 0.5487499900761359
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 2,
+            "n": 9,
+            "mean_score": 15.666666666666666,
+            "mean_xp": 2776.5555555555557,
+            "deaths_per_minute": 0.5601822815360553
+          },
+          {
+            "policy": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+            "hero_class": "Lich",
+            "side": 1,
+            "seat": 2,
+            "n": 13,
+            "mean_score": 200.07692307692307,
+            "mean_xp": 3156.6923076923076,
+            "deaths_per_minute": 0.41778085380816055
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DemonHunter",
+            "side": 1,
+            "seat": 4,
+            "n": 5,
+            "mean_score": 0,
+            "mean_xp": 1122.4,
+            "deaths_per_minute": 0.8942340533435452
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DruidWarden",
+            "side": 0,
+            "seat": 4,
+            "n": 3,
+            "mean_score": 0,
+            "mean_xp": 1942.6666666666667,
+            "deaths_per_minute": 0.6260081683083365
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "DruidWarden",
+            "side": 1,
+            "seat": 4,
+            "n": 8,
+            "mean_score": 21,
+            "mean_xp": 2393.25,
+            "deaths_per_minute": 0.4484229193936579
+          },
+          {
+            "policy": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+            "hero_class": "Warlock",
+            "side": 0,
+            "seat": 4,
+            "n": 6,
+            "mean_score": 0,
+            "mean_xp": 1897.5,
+            "deaths_per_minute": 0.7002741524676761
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 0,
+            "seat": 2,
+            "n": 13,
+            "mean_score": 167.46153846153845,
+            "mean_xp": 2942.923076923077,
+            "deaths_per_minute": 0.14597162361971874
+          },
+          {
+            "policy": "a15665be-4edf-4857-b23b-2888b4b49868",
+            "hero_class": "Berserker",
+            "side": 1,
+            "seat": 2,
+            "n": 9,
+            "mean_score": 267.22222222222223,
+            "mean_xp": 3545.3333333333335,
+            "deaths_per_minute": 0.20578124627855096
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "VanguardKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 9,
+            "mean_score": 0,
+            "mean_xp": 2051.6666666666665,
+            "deaths_per_minute": 0.3886979096372629
+          },
+          {
+            "policy": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+            "hero_class": "Warlock",
+            "side": 0,
+            "seat": 3,
+            "n": 13,
+            "mean_score": 0,
+            "mean_xp": 1929.6153846153845,
+            "deaths_per_minute": 0.4328813665964073
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DemonHunter",
+            "side": 0,
+            "seat": 4,
+            "n": 8,
+            "mean_score": 0,
+            "mean_xp": 1412.625,
+            "deaths_per_minute": 0.904446227251615
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DruidWarden",
+            "side": 0,
+            "seat": 4,
+            "n": 5,
+            "mean_score": 0,
+            "mean_xp": 820,
+            "deaths_per_minute": 0.6259638373404817
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "DruidWarden",
+            "side": 1,
+            "seat": 4,
+            "n": 6,
+            "mean_score": 0,
+            "mean_xp": 1571.3333333333333,
+            "deaths_per_minute": 0.4201644914806057
+          },
+          {
+            "policy": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+            "hero_class": "Warlock",
+            "side": 1,
+            "seat": 4,
+            "n": 3,
+            "mean_score": 0,
+            "mean_xp": 2495.3333333333335,
+            "deaths_per_minute": 0.4612691766482479
+          },
+          {
+            "policy": "candidate",
+            "hero_class": "Crossbowman",
+            "side": 0,
+            "seat": 0,
+            "n": 9,
+            "mean_score": 4198.444444444444,
+            "mean_xp": 8086.444444444444,
+            "deaths_per_minute": 0.24007812065830944
+          },
+          {
+            "policy": "candidate",
+            "hero_class": "Crossbowman",
+            "side": 1,
+            "seat": 0,
+            "n": 13,
+            "mean_score": 3134.3846153846152,
+            "mean_xp": 6191.2307692307695,
+            "deaths_per_minute": 0.5385849561141347
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 0,
+            "seat": 3,
+            "n": 9,
+            "mean_score": 0,
+            "mean_xp": 591.6666666666666,
+            "deaths_per_minute": 0.7316666534348478
+          },
+          {
+            "policy": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+            "hero_class": "DeathKnight",
+            "side": 1,
+            "seat": 3,
+            "n": 13,
+            "mean_score": 0,
+            "mean_xp": 754.6923076923077,
+            "deaths_per_minute": 0.7852266649888319
+          }
+        ]
+      }
+    }
+  },
+  "streams": {
+    "baseline": {
+      "unique": 80,
+      "duplicates": []
+    },
+    "candidate": {
+      "unique": 80,
+      "duplicates": []
+    }
+  },
+  "pilot_advance": true,
+  "deployment_qualified": false,
+  "scope": "Directional pilot, 80 paired seeds across four fixed contexts. Frozen gate unchanged. Extra telemetry requested during run is exploratory; not an added selection gate. No established verdict sample floor. Other player comparisons confounded by draft/seat; no causal superiority claim."
+}

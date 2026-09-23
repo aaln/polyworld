@@ -41,7 +41,14 @@ def reserve(c,body,out):
         cache_path=STUDY/'terminal-requests.json'
         cache=h.read(cache_path) if cache_path.exists() else {}
         check=[]
+        counterfactual_active=0
         for entry in journal.values():
+            if entry.get('kind') == 'counterfactual_eval':
+                receipt=Path(entry['output'])/'evaluation.json'
+                assert receipt.exists(), 'Resume unresolved counterfactual reservation first'
+                status=h.get(c,'/v2/counterfactual-evals/'+h.read(receipt)['id'])
+                counterfactual_active += status['status'] not in ('completed','failed','cancelled','error','skipped')
+                continue
             if released_before_creation(entry):
                 continue
             path=Path(entry['output'])/'created.json'
@@ -53,7 +60,7 @@ def reserve(c,body,out):
             ident,n=item;eps=h.episodes(c,ident)
             terminal=len(eps)==n and all(e['status'] in ('completed','failed','cancelled','error') for e in eps)
             return ident,n,terminal
-        active=0
+        active=counterfactual_active
         with ThreadPoolExecutor(4) as pool:
             for ident,n,terminal in pool.map(status,check):
                 if terminal:cache[ident]={'games':n,'terminal':True,'checked_at':h.research.now()}

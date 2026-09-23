@@ -1,5 +1,10 @@
 # Current Gods of the Arena policy work
 
+New studies optimize **individual XP-minus-time score only**, per the user’s
+September23 clarification. Team wins, deaths and productivity rates are
+diagnostics, not independent future gates. Preserve every already frozen study.
+Use [discrete score accounting and paired statistics](guide-gota-score-analysis.md).
+
 Future XP requests must contain **at most 100 game variations** (smaller batches
 are allowed) and use **paired counterfactual controls**. Reuse the baseline seed,
 resolved roster, subject slot and exact engine/configuration; replace the subject
@@ -8,9 +13,10 @@ with paired uncertainty estimates. Independent random-seed A/B and fixed opposin
 replay actions are not substitutes. Freeze cohort selection before outcomes.
 Use the platform counterfactual endpoint with explicit `n <= 100`; inspect its
 live schema and returned pair metadata. Journal all new baseline and counterfactual
-episodes before creation through the shared budget/concurrency controls. The first
-counterfactual runner must add this journaled adapter; do not bypass accounting
-with a direct untracked POST. Preserve all existing frozen studies unchanged.
+episodes before creation through the shared budget/concurrency controls. Use
+`tools/gota_autoresearch/counterfactual_journal.py`; its idempotent adapter shares
+the budget and active-request accounting with ordinary XP requests. Do not bypass
+accounting with a direct untracked POST. Preserve all frozen studies unchanged.
 The permanent 100,000-game daily allowance remains separate from this request cap.
 
 Read `games/gods_of_the_arena/current.json`. The active engine is
@@ -31,6 +37,23 @@ deltas. It is retained locally, not deployed or score-qualified. Both incumbent
 champions remain29f6d7e6. New semantic hypotheses cover productive rooted defense,
 control timing and resource use without sacrificing wave XP. Read the current
 contract before using old IR: archived auto-cast/balance claims do not apply now.
+
+The [control-tactics pilot](../../games/gods_of_the_arena/experiments/2026-09-23-control-tactics.md)
+now completes80paired responsive comparisons/160hosted games. Mean individual score
+2429.51→2493.63 (+2.64%), paired95%delta[+2.06,+135.04]; all ten VMs, full replay
+hashes, XP, integer scores and pair configuration/source identities pass.
+Druid improves1427.78→1556.00; Ranger/Crossbowman remain identical. Warlock silence
+and Vanguard stun have fixture evidence, not hosted class coverage. The frozen
+pilot advances, but does not qualify deployment. Sourceb3f0c124 is uploaded inertly
+as morrow-ibis-61c2:v1; both champions still use29f6d7e6.
+
+The separate [XP/work harvesting fork](../../examples/gods_of_the_arena/players/ir/forks/harvest-value20260923-local/harvest-value/README.md)
+is prepared through semantic IR and tested in eight matched native comparisons.
+Total score19367→19376 is nearly flat with opposite side effects; do not upload or
+promote it unchanged from this screen. The new statistical pipeline partitions
+score into XP/time/clamp/rounding, keeps whole-game pairing and class/side/seat
+context, and reconstructs time states and victim-to-recipient XP graphs. The
+[method guide](guide-gota-score-analysis.md) records the user's score-only objective.
 
 The following release60 audit and studies retain their historical scope:
 
@@ -278,7 +301,7 @@ prior studies below retain their original decisions and engine scope.
   same starting state, then move together; collected damage resolves before
   deaths and rewards. Mutual kills and simultaneous fort draws are legal.
 - Faction draft bonuses are gone. Ranger HP growth is **29**, Crossbowman base
-  damage **58**, and Warlock Dread Totem damage **87**. Read actual stats, ability
+  damage **58**, and rank1 Warlock Dread Totem damage **70** with silence. Read actual stats, ability
   ranks, costs and ranges from the host; do not import an old hero stat table.
 - Explicit draft picks and skill-point spending remain required. Keep the public
   availability fallback and ten-second pick deadline. Abilities start locked.
