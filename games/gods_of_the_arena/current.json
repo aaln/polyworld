@@ -1,7 +1,7 @@
 {
-  "game_version": "2026.9.23.2",
-  "engine_commit": "fd315c8fa30f8923c7a7709a577c40ac071b1c2a",
-  "coworld_id": "cow_f2dcdbcd-f984-445b-af5b-ee9481a7f362",
+  "game_version": "2026.9.23.3",
+  "engine_commit": "e42c4822f44e04726b09bb4ffe853152c7a18207",
+  "coworld_id": "cow_9ff2e22a-c7e3-4500-ae49-62f42970d699",
   "variant_id": "competition",
   "primary_metric": "mean per-hero max(0, lifetime XP * 1440 - 200 * world ticks) // 1440, including draft ticks",
   "fort_outcome": "diagnostic; not an advancement gate for new XP-score experiments",
@@ -20,142 +20,34 @@
     "aaron": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
     "coach": "d75ff766-e78f-4aa5-b656-55eb29248208"
   },
-  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-23-weak-hero-survival.md",
-  "deployment_status": "Both incumbent champions verified competing/active with normal saved user credentials at 2026-09-23T20:15:41.349026+00:00. No league writes. Research candidate failed its400game replay60 gate and remains inert; prior selected-player auth limitation resolved without changing selected credentials.",
+  "current_experiment": "games/gods_of_the_arena/release-audits/2026-09-23-crowd-control/README.md",
+  "deployment_status": "Both incumbent champions verified competing/active at2026-09-23T22:12:02.193497+00:00. Release61 compatibility fork303eeddb remains inert; no score gain established or league writes.",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
     "label": "relh-gods-of-the-arena:v169",
     "id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
-    "qualification": "Relh169exact source audit remains valid; its200game score/activation cohort is replay59 and must not be treated as current replay60strength. Re-resolve current opponents before testing.",
+    "qualification": "Relh169exact source audit remains valid; its200game score/activation cohort is replay59 and must not be treated as current replay61strength. Re-resolve current opponents before testing.",
     "prior_analysis": "docs/opponents/relh-v169/source-audit-20260923/README.md"
   },
   "reference_validation_game_version": "2026.9.22.3",
   "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Completed400fresh replay60 games: explicit-sustain bundle mean score1901.635 to1735.790(-8.72%); late deaths/minute improve but XP/minute declines. Keep incumbent. Save income-preserving wave/chase proposals and fully reconstructed Arcanist shopping coaching; caster changes have local evidence only.",
-  "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/weakhero20260923-hosted",
-  "candidate_source_sha256": "36e346c9aba0f18784b1c974d4f7d277add63868c078ac2f33da424ee88cc59b",
-  "candidate_ir_sha256": "4d080be18d1b1a80aa01ae9628bbfd12b02c7bba9815277348d0620d76fd7f2c",
+  "research_status": "Crowd-control61 exact engine audit complete. Four upstream suites,104paired fixtures,8responsive native matches pass. Silence guard removes388rejections; local paired score deltas0. Save rooted-defense/control-timing/income hypotheses for a new candidate; use paired<=100game hosted requests.",
+  "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/control20260923-local",
+  "candidate_source_sha256": "303eeddb9d0bb3a63d905fd3a8067d6c358cbcefac066dc68e07521a75be47a5",
+  "candidate_ir_sha256": "a68694a4627682f1a7e1380a0cc011067e66185b8ff3cb149daf695217452bf2",
   "candidate_evidence": {
-    "name": "explicit-sustain",
-    "source_sha256": "36e346c9aba0f18784b1c974d4f7d277add63868c078ac2f33da424ee88cc59b",
-    "score_gate_passed": false,
-    "baseline_score": 1901.635,
-    "candidate_score": 1735.79,
-    "aggregate_gain_percent": -8.72117940614261,
-    "gain_ci95_percent": [
-      -20.27602945838769,
-      4.513999059070661
-    ],
-    "per_context_gain_percent": [
-      -8.912884437613766,
-      -7.13803335720864,
-      -33.66336633663367,
-      -42.219492219492224
-    ],
-    "late_score_gain_percent": -41.00491918482081,
-    "primary_score_gate_passed": false,
-    "productivity_gate_passed": false,
-    "productivity": {
-      "baseline": {
-        "overall_mean": 1901.635,
-        "nonzero_mean": 3278.6810344827586,
-        "nonzero_rate": 0.58,
-        "productive_mean": 3704.7156862745096,
-        "productive_rate": 0.51,
-        "zero_games": 84,
-        "productive_games": 102,
-        "games": 200
-      },
-      "candidate": {
-        "overall_mean": 1735.79,
-        "nonzero_mean": 3099.625,
-        "nonzero_rate": 0.56,
-        "productive_mean": 3511.591836734694,
-        "productive_rate": 0.49,
-        "zero_games": 88,
-        "productive_games": 98,
-        "games": 200
-      },
-      "difference_ci95": {
-        "nonzero_mean": [
-          -642.5106583072102,
-          293.89093308492465
-        ],
-        "nonzero_rate": [
-          -0.07499999999999996,
-          0.03500000000000003
-        ],
-        "productive_mean": [
-          -654.6946182728411,
-          270.2135922330099
-        ],
-        "productive_rate": [
-          -0.065,
-          0.025000000000000022
-        ]
-      }
-    },
-    "context_productivity": {
-      "red-lead": {
-        "overall_mean": 3212.26,
-        "nonzero_mean": 3277.816326530612,
-        "nonzero_rate": 0.98,
-        "productive_mean": 3277.816326530612,
-        "productive_rate": 0.98,
-        "zero_games": 1,
-        "productive_games": 49,
-        "games": 50
-      },
-      "blue-lead": {
-        "overall_mean": 3630.16,
-        "nonzero_mean": 3861.872340425532,
-        "nonzero_rate": 0.94,
-        "productive_mean": 3938.5434782608695,
-        "productive_rate": 0.92,
-        "zero_games": 3,
-        "productive_games": 46,
-        "games": 50
-      },
-      "red-late": {
-        "overall_mean": 16.08,
-        "nonzero_mean": 160.8,
-        "nonzero_rate": 0.1,
-        "productive_mean": 0,
-        "productive_rate": 0.0,
-        "zero_games": 45,
-        "productive_games": 0,
-        "games": 50
-      },
-      "blue-late": {
-        "overall_mean": 84.66,
-        "nonzero_mean": 384.8181818181818,
-        "nonzero_rate": 0.22,
-        "productive_mean": 783.3333333333334,
-        "productive_rate": 0.06,
-        "zero_games": 39,
-        "productive_games": 3,
-        "games": 50
-      }
-    },
-    "late_survival": {
-      "baseline": {
-        "deaths_per_minute": 0.4235324659804902,
-        "xp_per_minute": 150.0736484140712
-      },
-      "candidate": {
-        "deaths_per_minute": 0.3514765122762064,
-        "xp_per_minute": 148.4434069036412
-      }
-    },
-    "late_survival_gate_passed": false
+    "local_fixtures": 104,
+    "paired_native_games": 4,
+    "removed_silenced_casts": 388,
+    "score_delta": 0,
+    "score_gain_established": false
   },
   "current_engine_reference_control": {
-    "game_version": "2026.9.23.2",
-    "games": 200,
-    "mean_score": 1901.635,
-    "report": "games/gods_of_the_arena/experiments/2026-09-23-weak-hero-survival.md",
-    "scope": "Fresh controls across four fixed color/draft contexts; not a new comparison with the pre-incumbent policy or original qualification."
+    "game_version": "2026.9.23.3",
+    "engine_commit": "e42c4822f44e04726b09bb4ffe853152c7a18207",
+    "scope": "4full native reference controls and4paired compatibility candidates, all10VMs and replay hashes valid. No current-release hosted score qualification.",
+    "evidence": "games/gods_of_the_arena/release-audits/2026-09-23-crowd-control/native-comparison.json"
   },
   "adaptive_score_study": {
     "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-adaptive-score-20260922",
@@ -200,16 +92,16 @@
     }
   },
   "live_league_snapshot": {
-    "at": "2026-09-23T20:15:41.349026+00:00",
+    "at": "2026-09-23T22:12:02.193497+00:00",
     "standings": [
       {
         "rank": 1,
         "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
         "player_name": "Andre von Auto",
-        "score": 2184.713235522801,
+        "score": 2257.93614076544,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -220,10 +112,10 @@
         "rank": 2,
         "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
         "player_name": "Aaron",
-        "score": 1799.3137199974615,
+        "score": 1924.8040599280564,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -234,10 +126,10 @@
         "rank": 3,
         "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
         "player_name": "Aaron's Co-play Coach",
-        "score": 1773.4063301172755,
+        "score": 1886.9666937332718,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -248,10 +140,10 @@
         "rank": 4,
         "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
         "player_name": "relh",
-        "score": 1458.7401623240125,
+        "score": 1262.2170714180033,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -262,24 +154,24 @@
         "rank": 5,
         "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
         "player_name": "richard",
-        "score": 1128.830598063472,
+        "score": 1044.609812189576,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
-        "policy_label": "richard-gods-of-the-arena:v195",
+        "policy_label": "richard-gods-of-the-arena:v204",
         "recent_rounds": null
       },
       {
         "rank": 6,
         "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
         "player_name": "Jordan",
-        "score": 610.2370854623913,
+        "score": 621.1507467442065,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -288,12 +180,26 @@
       },
       {
         "rank": 7,
-        "player_id": "ply_74ab20ef-cdf2-4250-b995-2b4f2cc96fc0",
-        "player_name": "juliajerome",
-        "score": 459.57275818565756,
+        "player_id": "ply_2c897a35-6553-40e8-ad91-6900d9254646",
+        "player_name": "BeWellBot",
+        "score": 528.964460110624,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 50,
+        "rounds_played": 83,
+        "episode_wins": null,
+        "episodes_played": null,
+        "win_rate": null,
+        "policy_label": "BeWellBot-Arena:v35",
+        "recent_rounds": null
+      },
+      {
+        "rank": 8,
+        "player_id": "ply_74ab20ef-cdf2-4250-b995-2b4f2cc96fc0",
+        "player_name": "juliajerome",
+        "score": 467.3491970438439,
+        "score_label": "Score",
+        "score_value_type": "number",
+        "rounds_played": 53,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -301,27 +207,13 @@
         "recent_rounds": null
       },
       {
-        "rank": 8,
-        "player_id": "ply_2c897a35-6553-40e8-ad91-6900d9254646",
-        "player_name": "BeWellBot",
-        "score": 382.95632625381495,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 80,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "BeWellBot-Arena:v17",
-        "recent_rounds": null
-      },
-      {
         "rank": 9,
-        "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
-        "player_name": "macromackie",
-        "score": 260.96601849989077,
+        "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+        "player_name": "daveey",
+        "score": 217.55622091114017,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -330,12 +222,12 @@
       },
       {
         "rank": 10,
-        "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
-        "player_name": "daveey",
-        "score": 232.5752865201988,
+        "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+        "player_name": "macromackie",
+        "score": 174.62463351509157,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -344,26 +236,12 @@
       },
       {
         "rank": 11,
-        "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
-        "player_name": "Andre von Houck",
-        "score": 120.31972796689637,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 86,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": null,
-        "recent_rounds": null
-      },
-      {
-        "rank": 12,
         "player_id": "ply_0ec32dcc-cb25-4a89-b756-4af0eaf38456",
         "player_name": "daveey-2",
-        "score": 94.2042720847585,
+        "score": 138.3608235940523,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -371,13 +249,27 @@
         "recent_rounds": null
       },
       {
+        "rank": 12,
+        "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+        "player_name": "Andre von Houck",
+        "score": 99.83554284151639,
+        "score_label": "Score",
+        "score_value_type": "number",
+        "rounds_played": 89,
+        "episode_wins": null,
+        "episodes_played": null,
+        "win_rate": null,
+        "policy_label": null,
+        "recent_rounds": null
+      },
+      {
         "rank": 13,
         "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
         "player_name": "Scott Smith",
-        "score": 79.20156307713616,
+        "score": 71.54552530936162,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -388,10 +280,10 @@
         "rank": 14,
         "player_id": "ply_176e1e1a-7af8-40f7-9ee3-a67b96690ad6",
         "player_name": "docxology",
-        "score": 34.818371460453534,
+        "score": 28.662149680843335,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -402,10 +294,10 @@
         "rank": 15,
         "player_id": "ply_ac95b848-2475-4901-9344-95c88f33f8e6",
         "player_name": "NanosaurusX",
-        "score": 25.09417466859612,
+        "score": 24.529835018351594,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -414,26 +306,12 @@
       },
       {
         "rank": 16,
-        "player_id": "ply_f39295d0-ac38-4a62-ac4f-e1d62d7dc9d1",
-        "player_name": "Games Bond",
-        "score": 4.24477976389693,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 86,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "games-bond-gota:v6",
-        "recent_rounds": null
-      },
-      {
-        "rank": 17,
         "player_id": "ply_ac7e5318-5781-4ed6-8fc9-d9f66d6b1637",
         "player_name": "Andrew Brower",
-        "score": 1.3109579324319234,
+        "score": 5.401909347947063,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -441,13 +319,27 @@
         "recent_rounds": null
       },
       {
+        "rank": 17,
+        "player_id": "ply_f39295d0-ac38-4a62-ac4f-e1d62d7dc9d1",
+        "player_name": "Games Bond",
+        "score": 2.6068253725032022,
+        "score_label": "Score",
+        "score_value_type": "number",
+        "rounds_played": 89,
+        "episode_wins": null,
+        "episodes_played": null,
+        "win_rate": null,
+        "policy_label": "games-bond-gota:v6",
+        "recent_rounds": null
+      },
+      {
         "rank": 18,
         "player_id": "ply_0f9ea7d3-fa48-4586-9df3-123e9ee21f1c",
         "player_name": "Andrew Brower B",
-        "score": 0.6017264684778805,
+        "score": 1.6020352674539784,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -461,7 +353,7 @@
         "score": 0.0,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 86,
+        "rounds_played": 89,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -469,7 +361,7 @@
         "recent_rounds": null
       }
     ],
-    "scope": "Cumulative standings, separate from controlled trial; champion identities verified through normal user-authorized membership readback."
+    "scope": "Observed cumulative standings, separate from local score comparisons; both incumbent identities verified active."
   },
   "reward_refresh_study": {
     "games": 160,
@@ -514,9 +406,9 @@
     }
   },
   "priority_richard": {
-    "label": "richard-gods-of-the-arena:v195",
-    "version": "19d5c60e-b0d4-4382-b253-fabcfd03f896",
-    "scope": "Exact hosted source identity audited in replay59 trials; historicalv174source transfer remains preserved, not a source model ofv195."
+    "label": "richard-gods-of-the-arena:v204",
+    "version": "25e89eeb-3449-45dd-afbf-c61020891a49",
+    "scope": "Observed current champion during control61audit; no source or competitive result inferred from historicalv174/v195 models."
   },
   "reference_history": [
     {
@@ -1274,6 +1166,11 @@
       "coworld_id": "cow_32f7afc6-78f6-49d5-990b-5b3c3619662c",
       "reference_validation_game_version": "2026.9.22.3",
       "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde"
+    },
+    {
+      "game_version": "2026.9.23.2",
+      "engine_commit": "fd315c8fa30f8923c7a7709a577c40ac071b1c2a",
+      "coworld_id": "cow_f2dcdbcd-f984-445b-af5b-ee9481a7f362"
     }
   ],
   "deferred_candidates": [
@@ -1331,6 +1228,11 @@
       "admission": "docs/opponents/richard-v174/admission-20260923",
       "scope": "Exact co-gas source reconstructed82818commands across4Warlock games. Source-informed IR available; no semantic surrogate claimed. Earlier score comparison remains scoped to its own source and roster.",
       "source_audit": "docs/opponents/richard-v174/source-audit-20260923"
+    },
+    {
+      "label": "richard-gods-of-the-arena:v195",
+      "version": "19d5c60e-b0d4-4382-b253-fabcfd03f896",
+      "scope": "Exact hosted source identity audited in replay59 trials; historicalv174source transfer remains preserved, not a source model ofv195."
     }
   ],
   "selective_finish_study": {
@@ -1399,10 +1301,130 @@
           9.742789896282611
         ]
       }
+    },
+    {
+      "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/weakhero20260923-hosted",
+      "candidate_source_sha256": "36e346c9aba0f18784b1c974d4f7d277add63868c078ac2f33da424ee88cc59b",
+      "candidate_ir_sha256": "4d080be18d1b1a80aa01ae9628bbfd12b02c7bba9815277348d0620d76fd7f2c",
+      "candidate_evidence": {
+        "name": "explicit-sustain",
+        "source_sha256": "36e346c9aba0f18784b1c974d4f7d277add63868c078ac2f33da424ee88cc59b",
+        "score_gate_passed": false,
+        "baseline_score": 1901.635,
+        "candidate_score": 1735.79,
+        "aggregate_gain_percent": -8.72117940614261,
+        "gain_ci95_percent": [
+          -20.27602945838769,
+          4.513999059070661
+        ],
+        "per_context_gain_percent": [
+          -8.912884437613766,
+          -7.13803335720864,
+          -33.66336633663367,
+          -42.219492219492224
+        ],
+        "late_score_gain_percent": -41.00491918482081,
+        "primary_score_gate_passed": false,
+        "productivity_gate_passed": false,
+        "productivity": {
+          "baseline": {
+            "overall_mean": 1901.635,
+            "nonzero_mean": 3278.6810344827586,
+            "nonzero_rate": 0.58,
+            "productive_mean": 3704.7156862745096,
+            "productive_rate": 0.51,
+            "zero_games": 84,
+            "productive_games": 102,
+            "games": 200
+          },
+          "candidate": {
+            "overall_mean": 1735.79,
+            "nonzero_mean": 3099.625,
+            "nonzero_rate": 0.56,
+            "productive_mean": 3511.591836734694,
+            "productive_rate": 0.49,
+            "zero_games": 88,
+            "productive_games": 98,
+            "games": 200
+          },
+          "difference_ci95": {
+            "nonzero_mean": [
+              -642.5106583072102,
+              293.89093308492465
+            ],
+            "nonzero_rate": [
+              -0.07499999999999996,
+              0.03500000000000003
+            ],
+            "productive_mean": [
+              -654.6946182728411,
+              270.2135922330099
+            ],
+            "productive_rate": [
+              -0.065,
+              0.025000000000000022
+            ]
+          }
+        },
+        "context_productivity": {
+          "red-lead": {
+            "overall_mean": 3212.26,
+            "nonzero_mean": 3277.816326530612,
+            "nonzero_rate": 0.98,
+            "productive_mean": 3277.816326530612,
+            "productive_rate": 0.98,
+            "zero_games": 1,
+            "productive_games": 49,
+            "games": 50
+          },
+          "blue-lead": {
+            "overall_mean": 3630.16,
+            "nonzero_mean": 3861.872340425532,
+            "nonzero_rate": 0.94,
+            "productive_mean": 3938.5434782608695,
+            "productive_rate": 0.92,
+            "zero_games": 3,
+            "productive_games": 46,
+            "games": 50
+          },
+          "red-late": {
+            "overall_mean": 16.08,
+            "nonzero_mean": 160.8,
+            "nonzero_rate": 0.1,
+            "productive_mean": 0,
+            "productive_rate": 0.0,
+            "zero_games": 45,
+            "productive_games": 0,
+            "games": 50
+          },
+          "blue-late": {
+            "overall_mean": 84.66,
+            "nonzero_mean": 384.8181818181818,
+            "nonzero_rate": 0.22,
+            "productive_mean": 783.3333333333334,
+            "productive_rate": 0.06,
+            "zero_games": 39,
+            "productive_games": 3,
+            "games": 50
+          }
+        },
+        "late_survival": {
+          "baseline": {
+            "deaths_per_minute": 0.4235324659804902,
+            "xp_per_minute": 150.0736484140712
+          },
+          "candidate": {
+            "deaths_per_minute": 0.3514765122762064,
+            "xp_per_minute": 148.4434069036412
+          }
+        },
+        "late_survival_gate_passed": false
+      }
     }
   ],
   "deployment_status_history": [
-    "No league writes. Both incumbent champions verified competing/active at2026-09-23T17:48:22.699052+00:00. Later membership listings returned no rows; the portfolio endpoint returned403: current player credentials are not authorized for that route. Own version metadata returned404. Later membership confirmation is unavailable under these credentials, not evidence of retirement."
+    "No league writes. Both incumbent champions verified competing/active at2026-09-23T17:48:22.699052+00:00. Later membership listings returned no rows; the portfolio endpoint returned403: current player credentials are not authorized for that route. Own version metadata returned404. Later membership confirmation is unavailable under these credentials, not evidence of retirement.",
+    "Both incumbent champions verified competing/active with normal saved user credentials at 2026-09-23T20:15:41.349026+00:00. No league writes. Research candidate failed its400game replay60 gate and remains inert; prior selected-player auth limitation resolved without changing selected credentials."
   ],
   "weak_hero_survival_study": {
     "status": "complete_not_qualified",
@@ -1810,6 +1832,278 @@
         }
       ],
       "scope": "Read-only cumulative standings, not an experimental qualification. This later membership-list response was unexpectedly empty for all players; last successful active-champion readback is separately preserved."
+    },
+    {
+      "at": "2026-09-23T20:15:41.349026+00:00",
+      "standings": [
+        {
+          "rank": 1,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "score": 2184.713235522801,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "khors:v180",
+          "recent_rounds": null
+        },
+        {
+          "rank": 2,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "score": 1799.3137199974615,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 3,
+          "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+          "player_name": "Aaron's Co-play Coach",
+          "score": 1773.4063301172755,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 4,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "score": 1458.7401623240125,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "relh-gods-of-the-arena:v169",
+          "recent_rounds": null
+        },
+        {
+          "rank": 5,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "score": 1128.830598063472,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "richard-gods-of-the-arena:v195",
+          "recent_rounds": null
+        },
+        {
+          "rank": 6,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "score": 610.2370854623913,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v411",
+          "recent_rounds": null
+        },
+        {
+          "rank": 7,
+          "player_id": "ply_74ab20ef-cdf2-4250-b995-2b4f2cc96fc0",
+          "player_name": "juliajerome",
+          "score": 459.57275818565756,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 50,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 8,
+          "player_id": "ply_2c897a35-6553-40e8-ad91-6900d9254646",
+          "player_name": "BeWellBot",
+          "score": 382.95632625381495,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 80,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "BeWellBot-Arena:v17",
+          "recent_rounds": null
+        },
+        {
+          "rank": 9,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "score": 260.96601849989077,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 10,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "score": 232.5752865201988,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 11,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "score": 120.31972796689637,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 12,
+          "player_id": "ply_0ec32dcc-cb25-4a89-b756-4af0eaf38456",
+          "player_name": "daveey-2",
+          "score": 94.2042720847585,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "arena-codex-secondary-attack-timing-20260921:v1",
+          "recent_rounds": null
+        },
+        {
+          "rank": 13,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "score": 79.20156307713616,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "gota-g003:v2",
+          "recent_rounds": null
+        },
+        {
+          "rank": 14,
+          "player_id": "ply_176e1e1a-7af8-40f7-9ee3-a67b96690ad6",
+          "player_name": "docxology",
+          "score": 34.818371460453534,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "daf-gota-v1:v1",
+          "recent_rounds": null
+        },
+        {
+          "rank": 15,
+          "player_id": "ply_ac95b848-2475-4901-9344-95c88f33f8e6",
+          "player_name": "NanosaurusX",
+          "score": 25.09417466859612,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "nancy-goa:v2",
+          "recent_rounds": null
+        },
+        {
+          "rank": 16,
+          "player_id": "ply_f39295d0-ac38-4a62-ac4f-e1d62d7dc9d1",
+          "player_name": "Games Bond",
+          "score": 4.24477976389693,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "games-bond-gota:v6",
+          "recent_rounds": null
+        },
+        {
+          "rank": 17,
+          "player_id": "ply_ac7e5318-5781-4ed6-8fc9-d9f66d6b1637",
+          "player_name": "Andrew Brower",
+          "score": 1.3109579324319234,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "red-kite:v34",
+          "recent_rounds": null
+        },
+        {
+          "rank": 18,
+          "player_id": "ply_0f9ea7d3-fa48-4586-9df3-123e9ee21f1c",
+          "player_name": "Andrew Brower B",
+          "score": 0.6017264684778805,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "black-kite:v16",
+          "recent_rounds": null
+        },
+        {
+          "rank": 19,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "score": 0.0,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 86,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "gota-g002:v1",
+          "recent_rounds": null
+        }
+      ],
+      "scope": "Cumulative standings, separate from controlled trial; champion identities verified through normal user-authorized membership readback."
     }
   ],
   "current_engine_reference_control_history": [
@@ -1819,6 +2113,13 @@
       "red_score": 1955.2,
       "blue_score": 2990.85,
       "scope": "Fresh fixed first-pick mixed-roster controls in the score opportunity experiment; separate from original 2026.9.22.2 portal qualification."
+    },
+    {
+      "game_version": "2026.9.23.2",
+      "games": 200,
+      "mean_score": 1901.635,
+      "report": "games/gods_of_the_arena/experiments/2026-09-23-weak-hero-survival.md",
+      "scope": "Fresh controls across four fixed color/draft contexts; not a new comparison with the pre-incumbent policy or original qualification."
     }
   ],
   "evaluation_request_policy": {
@@ -1832,5 +2133,14 @@
     "budget": "Count every newly created baseline and counterfactual episode in the existing shared ledger; preserve daily100000, cycle400 and concurrency3. Per-request100 is not the daily limit.",
     "api": "Use /v2/counterfactual-evals with explicit n between1and100, subject to live schema and audited seed/roster/config fidelity; a new journaled adapter is needed before first use. Do not treat fixed opposing replay actions as responsive counterfactuals.",
     "scope": "Future studies; preserve old frozen requests, results and their original statistical design."
+  },
+  "crowd_control_release": {
+    "report": "games/gods_of_the_arena/release-audits/2026-09-23-crowd-control/README.md",
+    "semantic_ir": "games/gods_of_the_arena/release-audits/2026-09-23-crowd-control/mechanics-and-coaching.ir.json",
+    "pair": "examples/gods_of_the_arena/players/ir/forks/control20260923-local",
+    "deployment_qualified": false,
+    "new_hosted_games": 0,
+    "league_writes": 0,
+    "replay_version": 61
   }
 }

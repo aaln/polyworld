@@ -1,0 +1,24 @@
+Testing self and melee keys cast without a confirmation click
+Testing melee keys strike nearby targets and swing at distant targets
+Testing every Ranger key uses the same existing combat target
+Testing selected allies receive healing despite an enemy combat target
+Testing missing or dead targets leave ranged abilities armed
+Testing the six gameplay footprints independently of visual effects
+Testing arc and cone effects share a sector footprint
+Testing three charges, two-second cooldown, serial twelve-second recharge
+Testing a delayed circle hits occupants at impact, not at cast time
+Testing targeted projectiles only hit their selected object
+Testing empty-ground melee and projectile casts produce effects
+Testing ground projectiles stop at the first enemy during travel
+Testing a projectile cannot hit an already traversed part of its path
+Testing lines and cones hit multiple enemies and exclude their sides
+Testing targeted rings place the selected enemy inside their band
+Testing ground areas respect protected towers
+Testing area healing affects living allies and includes the caster
+Testing explicit target commands release delayed map casts
+Testing explicit healing while walking without a combat target
+Testing heroes never use abilities or items without an explicit command
+Testing zero-mana melee and rejected casts preserve resources
+Testing every current ability consumes its declared resources
+Testing pending spells and charges survive cloning and affect hashes
+GOTA spell tests passed

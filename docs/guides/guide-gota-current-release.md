@@ -14,12 +14,25 @@ with a direct untracked POST. Preserve all existing frozen studies unchanged.
 The permanent 100,000-game daily allowance remains separate from this request cap.
 
 Read `games/gods_of_the_arena/current.json`. The active engine is
-**2026.9.23.2 / fd315c8fa30f8923c7a7709a577c40ac071b1c2a**, published coworld
-`cow_f2dcdbcd-f984-445b-af5b-ee9481a7f362`. Verify the live league's source,
-version and configuration before new hosted work. The research branch preserves
-older engine files and studies; use a separate exact engine worktree and the
-replay60 contract checks in `games/gods_of_the_arena/instruments/explicit20260923/`.
-The former `productive20260923/bootstrap59.py` remains pinned to archived replay59.
+**2026.9.23.3 / e42c4822f44e04726b09bb4ffe853152c7a18207**, published coworld
+`cow_9ff2e22a-c7e3-4500-ae49-62f42970d699`. Verify live source/configuration before
+new hosted work. Use the isolated exact engine and replay61 instruments in
+`games/gods_of_the_arena/instruments/control20260923/`; older engine checkouts and
+replay59/60 instruments are preserved for their original datasets.
+
+The [crowd-control release audit](../../games/gods_of_the_arena/release-audits/2026-09-23-crowd-control/README.md)
+verifies stun/silence/root effects and their lower damage. Silence blocks spells;
+root blocks movement; other legal action channels remain available. Stun/root
+interrupt portals; silence does not. Explicit casting remains mandatory.
+Four upstream suites,104matched fixtures and8complete native matches pass.
+The IR-first compatibility fork303eeddb removes388silenced rejections with
+otherwise equal fixture commands/gameplay samples and four zero native score
+deltas. It is retained locally, not deployed or score-qualified. Both incumbent
+champions remain29f6d7e6. New semantic hypotheses cover productive rooted defense,
+control timing and resource use without sacrificing wave XP. Read the current
+contract before using old IR: archived auto-cast/balance claims do not apply now.
+
+The following release60 audit and studies retain their historical scope:
 
 The [explicit-abilities release audit](../../games/gods_of_the_arena/release-audits/2026-09-23-explicit-abilities/README.md)
 verifies the live manifest at18:37UTC, upstream spell/basic-attack/reference-policy
