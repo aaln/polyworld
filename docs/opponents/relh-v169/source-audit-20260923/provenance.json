@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-09-23T18:31:00.287461+00:00",
+  "identity": {
+    "owner": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+    "version": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+    "source_sha256": "6791bc8cab237d88225356efa03713e2dbbd875c2c42bb718f1cfc926b02f9ca",
+    "cogas_commit": "27fb04fabfda2f2731ab231bfb17d3daf3347462",
+    "source_commit": "be20720b4f493d50056d768af0d2cbcfe85edb1c",
+    "engine": "d6827a4bd3a55a46cf86f88e921f147137709c64",
+    "game_version": "2026.9.23.1"
+  },
+  "request": "request.txt",
+  "source_path": "/Users/aaln/experiments/softmax/co-gas/players/users/relh/co-gas/polyworld-basic/gods_of_the_arena_neural_v58_drafthead_diagnostic.bas",
+  "scope": [
+    "Fixed mixed-team roster; relh is our teammate in these contexts, not a controlled opponent comparison",
+    "Our source/Andre/Richard occupy different draft roles and classes",
+    "co-gas priorv58promotion evidence is reported provenance, not independently reverified: its runtime captures are absent here",
+    "Source branch existence and exact replay reconstruction do not establish benefit after transplantation"
+  ],
+  "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-relh169-audit-20260923",
+  "selection": "plan.json",
+  "runtime": "runtime-provenance.json",
+  "games": 200,
+  "unique_replay_sha256": 200,
+  "full_reconstructions": 8,
+  "matched_commands": 142715,
+  "new_hosted_games": 0,
+  "league_writes": 0,
+  "preserved_failure": "Initial draft instrument build referenced unexported ReplayError; changed to ValueError, then rebuilt. No source policy changes.",
+  "prior_scope": "Source trained/promoted on replay58. All new independent replay reconstruction and200game analysis use replay59.",
+  "verification": "verify.py"
+}

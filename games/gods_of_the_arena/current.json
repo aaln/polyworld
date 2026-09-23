@@ -24,18 +24,15 @@
   "deployment_status": "No league writes. Both incumbent champions verified competing/active at2026-09-23T17:48:22.699052+00:00. Later membership listings returned no rows; the portfolio endpoint returned403: current player credentials are not authorized for that route. Own version metadata returned404. Later membership confirmation is unavailable under these credentials, not evidence of retirement.",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
-    "label": "khors:v180",
-    "id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
-    "qualification": "Exact pinned current rival in two400-game replay59 trials; neither own candidate qualified. Re-resolve before new work.",
-    "prior_analysis": [
-      "docs/opponents/khors-v114/score-audit-20260923/README.md",
-      "docs/opponents/khors-v179/score-audit-20260923/README.md"
-    ]
+    "label": "relh-gods-of-the-arena:v169",
+    "id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+    "qualification": "User-directed source review; exact source and8full replay59 reconstructions verified. No competitive own-policy transfer claim. Relh third at18:23UTC; khors180 remains leaderboard leader.",
+    "prior_analysis": "docs/opponents/relh-v169/source-audit-20260923/README.md"
   },
   "reference_validation_game_version": "2026.9.22.3",
   "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Unit-only and selective-short-finish bundles completed800fresh games and failed their frozen joint gates. Both reviewed IR/policy pairs retained; no replacement deployed. Manual screenshots structured into semantic hypotheses with200existing current-engine resource audits; causal interventions remain untested.",
+  "research_status": "Relh169source review complete: sharedRichard174battle controller, learned draft head;8full source reconstructions/200current-engine controls. Direct draft transplant only changes30DeathKnight picks toVanguard; all100own late states forced melee. Proposed melee income and class-kit/return tests remain non-executable. Prior unit-only/selective-finish andRichard transfers failed their original gates and remain preserved. No replacement deployed.",
   "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
   "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
@@ -1209,6 +1206,15 @@
       "id": "346416a0-78f9-401f-b0d3-fed3f840af8d",
       "qualification": "New current champion; prior khors114 evidence is historical and cannot qualify superiority to this version.",
       "prior_analysis": "docs/opponents/khors-v114/score-audit-20260923/README.md"
+    },
+    {
+      "label": "khors:v180",
+      "id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+      "qualification": "Exact pinned current rival in two400-game replay59 trials; neither own candidate qualified. Re-resolve before new work.",
+      "prior_analysis": [
+        "docs/opponents/khors-v114/score-audit-20260923/README.md",
+        "docs/opponents/khors-v179/score-audit-20260923/README.md"
+      ]
     }
   ],
   "priority_richard_history": [
@@ -1242,5 +1248,19 @@
     "existing_games_audited": 200,
     "new_hosted_games_for_diagnosis": 0,
     "executable": false
+  },
+  "relh169_source_audit": {
+    "report": "docs/opponents/relh-v169/source-audit-20260923/README.md",
+    "ir": "docs/opponents/relh-v169/source-audit-20260923/relh_v169.source.ir.json",
+    "hypotheses": "docs/opponents/relh-v169/source-audit-20260923/transfer-hypotheses.ir.json",
+    "status": "completed_source_draft_and_productivity_audit",
+    "existing_games": 200,
+    "complete_source_reconstructions": 8,
+    "commands_matched": 142715,
+    "draft_picks_matched": 400,
+    "battle_body_identical_to": "richard-gods-of-the-arena:v174",
+    "new_hosted_games": 0,
+    "deployed": false,
+    "leaderboard_snapshot": "docs/opponents/relh-v169/source-audit-20260923/live-readback.json"
   }
 }

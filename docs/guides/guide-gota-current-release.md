@@ -50,6 +50,19 @@ Andre always drafts Ranger/Crossbowman; our14Vanguard games all scorezero and
 an intervention. Proposed skills and their validation gates are non-executable
 research IR, not a qualified policy replacement. Both live champions remain29f6d7e6.
 
+The [relh169 source audit](../opponents/relh-v169/source-audit-20260923/README.md)
+verifies142,715commands across8complete replay59 games and audits all200existing
+controls. Its battle body is byte-identical to Richard174; the new component is a
+legal-masked learned draft head. All200relh picks and200own picks are reconstructed.
+Applying relh's head to our actual states changes only30DeathKnight choices to
+Vanguard: all100own late states permit only melee. Relh's mage-only cohort scores
+2027.89 with95%nonzero; our carry cohort scores3311.42 but forced-melee cohort118.23.
+These are different seats/classes on the same team, not causal comparisons.
+New non-executable IR prioritizes melee income/reach and class-specific kit/return
+tests. Prior failed siege transfers remain closed; no policy changes or hosted
+spend occurred. The18:23UTC leaderboard showskhors180first,Aaronsecond,relh169third;
+it does not provide the missing own champion identity readback.
+
 The live game changed during individual-score research: replay version58 adds
 **500XP to every teammate when the enemy god is destroyed**, including dead
 and distant teammates, awarded once. Timeouts grant no god reward. The score

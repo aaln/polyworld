@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Compare every Gods of the Arena player, from drafting and orders to economy and results, using eight hours of recent league replays.">
+  <title>Players · Gods of the Arena</title>
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="players.css">
+  <script src="players.js?v=2" defer></script>
+</head>
+<body>
+<!-- GOTA navigation. -->
+<header class="site-header wrap">
+  <a class="site-brand" href="../../" aria-label="Polyworld Buff home">
+    <img src="../assets/themes/gota/gota_logo.png" alt="Gods of the Arena">
+  </a>
+  <nav class="site-nav" aria-label="GOTA pages">
+    <a href="../index.html">Game guide</a>
+    <a href="../heros/">Hero statistics</a>
+    <a href="../standings/">Latest Tournament</a>
+    <a href="../players/" aria-current="page">Players</a>
+    <a href="https://softmax.com/gods-of-the-arena/wiki/game-guide">Softmax wiki</a>
+  </nav>
+</header>
+<!-- End GOTA navigation. -->
+<main class="wrap">
+  <section class="intro" aria-labelledby="page-title">
+    <div>
+      <p class="eyebrow">Gods of the Arena <span>/</span> League field notes</p>
+      <h1 id="page-title">Players</h1>
+      <p class="lede">Every player. Every decision. From the draft to the final fight.</p>
+    </div>
+    <div class="snapshot-badge"><span class="snapshot-dot"></span> 8-hour snapshot</div>
+  </section>
+  <section class="snapshot" aria-label="Snapshot coverage">
+    <div><strong id="player-count">—</strong><span>players</span></div>
+    <div><strong id="replay-count">—</strong><span>league replays</span></div>
+    <div><strong id="stat-count">—</strong><span>statistics</span></div>
+    <div class="window"><strong id="window-date">Loading snapshot…</strong><span id="window-time">Recent completed league games</span></div>
+  </section>
+  <div class="workspace">
+    <div class="toolbar">
+      <div class="player-picker">
+        <label for="player-select">Follow a player</label>
+        <select id="player-select"><option value="">Choose a column</option></select>
+      </div>
+      <div class="player-picker version-picker">
+        <label for="version-select">Policy version</label>
+        <select id="version-select" disabled aria-describedby="selection"><option value="">Select a player first</option></select>
+      </div>
+      <p id="selection" class="selection" aria-live="polite">Select a name to highlight its column.</p>
+      <button id="clear-selection" class="quiet-button" type="button" hidden>Clear</button>
+      <div class="scroll-buttons" aria-label="Scroll player columns">
+        <button id="scroll-left" type="button" aria-label="Scroll players left">←</button>
+        <button id="scroll-right" type="button" aria-label="Scroll players right">→</button>
+      </div>
+    </div>
+    <nav id="sections" class="section-tabs" aria-label="Statistic groups"></nav>
+    <div class="table-hint"><span>Sorted by displayed score ↓ · Choose a player, then a policy version</span><span><i></i> Longer bar = higher value, not always better</span></div>
+    <div class="top-scroll" id="top-scroll" aria-label="Scroll player columns horizontally" tabindex="0"><div></div></div>
+    <div class="matrix-scroll" id="matrix-scroll" tabindex="0" role="region" aria-label="Player statistics. Scroll horizontally for more players and vertically for more statistics." aria-describedby="table-notes">
+      <p id="loading" role="status">Loading recent player statistics…</p>
+      <table id="matrix" hidden>
+        <caption class="sr-only">Players are ordered by displayed average score, highest first. Values are means across each player's hero-games for all versions or their chosen policy version. Win/loss shows percentages of those games.</caption>
+        <thead id="matrix-head"></thead>
+      </table>
+    </div>
+    <p class="table-notes" id="table-notes">One column per player · Numbers are per hero-game unless a unit says otherwise · — means no observation · Select a row label for its definition</p>
+    <aside id="metric-detail" class="metric-detail" aria-live="polite" hidden></aside>
+  </div>
+  <details class="methodology">
+    <summary>About this snapshot <span>Sources, units &amp; coverage</span></summary>
+    <div>
+      <p id="coverage"></p>
+      <p>League is the first category: score, win/loss, then average glory. Score determines column order, highest first. It is the average recorded evaluation score across each player's games in this window. The current per-game formula is <code>max(0, floor(total XP − 200 × game minutes))</code>. Earlier games retain their recorded score precision. Equal scores are ordered by name; players without a score appear last.</p>
+      <p>Win/loss shows the win percentage, with loss percentage below as L and draw percentage as D when present. All three use the column's total game count; hover for the original counts. Glory is each game's recorded score on a win and zero on a loss or draw, averaged across all observed games. A missing score on a win is excluded from the glory average.</p>
+      <p>Each player's policy versions are combined by default. Select a player and choose an exact policy version to update that column's statistics and game count. Versions are listed by their latest game in this snapshot; newer versions outside this window are not included. Columns re-sort by their displayed scores, and version choices stay in place as you compare players until you reload. Choose All versions to restore a column's combined statistics.</p>
+      <p>Every current league player is listed, including players with no games in this window. Built-in opponents appear as separate baseline columns. Values are arithmetic means across hero-games, so each appearance carries equal weight. Order rates count accepted commands per minute alive; total, repeated and rejected order rates include every issued command. Rejections are commands the game engine refused. CPU is the recorded percentage of the instruction allowance. Missing telemetry is excluded from that metric's mean.</p>
+      <p>Draft shares use the final drafted class. Target shares use games with at least one accepted attack-target order. Movement uses full-precision positions and excludes death/respawn and portal jumps. Proximity uses the original tower locations, including towers later destroyed. Low-health walk orders are a behavior proxy; they do not necessarily indicate retreat.</p>
+      <p>Replay engines can change during the window; their versions and coverage are shown above. League score comes from the platform's recorded reward. These are descriptive observations across different drafts and teammates. The latest tournament remains a separate fixed report.</p>
+      <p><a href="data.json" download>Download snapshot JSON</a> · <a href="https://github.com/Metta-AI/polyworld-buff/blob/main/tools/PLAYERS.md">Refresh instructions &amp; extractor</a> · <a href="../standings/">Latest Tournament</a></p>
+    </div>
+  </details>
+  <footer>Gods of the Arena <span>·</span> Polyworld Buff <span>·</span> <a href="../index.html">Game guide</a></footer>
+</main>
+</body>
+</html>

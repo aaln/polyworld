@@ -1,0 +1,1897 @@
+{
+  "at": "2026-09-23T18:12:34.703375+00:00",
+  "question": "What current relh169 source behavior and draft decisions can inform our score policy?",
+  "selection": "All200baseline games from completed unit-farming trial; eight complete VM reconstructions are first2lexical episode UUIDs in each of4color/draft contexts. No selection by relh score/class. No heldout forecast or causal transfer claim.",
+  "identity": {
+    "owner": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+    "version": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+    "source_sha256": "6791bc8cab237d88225356efa03713e2dbbd875c2c42bb718f1cfc926b02f9ca",
+    "cogas_commit": "27fb04fabfda2f2731ab231bfb17d3daf3347462",
+    "source_commit": "be20720b4f493d50056d768af0d2cbcfe85edb1c",
+    "engine": "d6827a4bd3a55a46cf86f88e921f147137709c64",
+    "game_version": "2026.9.23.1"
+  },
+  "cases": [
+    {
+      "episode": "ereq_00d1c372-ab90-4830-8569-fa823b858e30",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_00d1c372-ab90-4830-8569-fa823b858e30",
+      "replay_sha256": "daada273771fa02bd32a71d444e5c5c170f24288bf11bf086410419861d512e6",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_05941fcf-63f7-486c-b4cf-8e4286a585e5",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_05941fcf-63f7-486c-b4cf-8e4286a585e5",
+      "replay_sha256": "69219b3ed8e6e146070005b88397c7f5d50e64ee3aea756b4f200c6862d4db4d",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_104afd3e-9f3d-4ae3-8d52-cef7b6808b4e",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_104afd3e-9f3d-4ae3-8d52-cef7b6808b4e",
+      "replay_sha256": "45db5df38f1709b63db411b48e1e4c5a5abd1666158cda8a2115883dd00f3b2a",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_146a83a5-bdc1-4599-9032-7a51757d2b9d",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_146a83a5-bdc1-4599-9032-7a51757d2b9d",
+      "replay_sha256": "4c2c012f5b99021b3ecfffcc0db874960e9549f5215ebab9fe3e23e2f4becb08",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_160d1c22-13d9-4403-927c-425bfb9968a9",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_160d1c22-13d9-4403-927c-425bfb9968a9",
+      "replay_sha256": "ba10cdfacf7b6d3d585d3d511c97281e3eb5339c576273593241d80493c407d1",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_17853a79-3d1f-4e60-9460-3a7112543b6b",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_17853a79-3d1f-4e60-9460-3a7112543b6b",
+      "replay_sha256": "f5937ded9142d5528fe207459bfe15d71e363ed4d6dfb36f3215c90d66a84ccf",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_2611db1d-018d-409b-bf52-e479a0081024",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_2611db1d-018d-409b-bf52-e479a0081024",
+      "replay_sha256": "830d5ab960fb31a7d9b84e238b9a939f965a16ae6c0a872612b811eede15fb8c",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_2732b85b-28d3-4b9f-8a52-61a1339feadb",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_2732b85b-28d3-4b9f-8a52-61a1339feadb",
+      "replay_sha256": "72c36d0bd9e3a0113e3890ff9dfd2a6ccd99391f7d553ae02416da09fda5f079",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_2999b27d-3a28-4675-99d5-8d8c94f32b25",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_2999b27d-3a28-4675-99d5-8d8c94f32b25",
+      "replay_sha256": "b3637775821cce66135b826a201900ace3a83a360528aa972b0f96d657037e5b",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_2e15f36e-686e-4f84-a1f2-a6a344827dfb",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_2e15f36e-686e-4f84-a1f2-a6a344827dfb",
+      "replay_sha256": "34e09bcaa020559fe1939efae688f61ec8ff2dc1df1bcb8a00b022273fbb7306",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_3776d578-3c45-481c-b09c-cfffc5211bf7",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_3776d578-3c45-481c-b09c-cfffc5211bf7",
+      "replay_sha256": "1393d8f90790557526a6f9310a305ee513693dbbf98b18701e05a274459a49db",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_383f6415-3498-4d8d-95e1-9ab4eb38b534",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_383f6415-3498-4d8d-95e1-9ab4eb38b534",
+      "replay_sha256": "c253e6c5ace53d00ad27b8a00724634148d9f42703a8905d194a725fe8e1b6e1",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_3b726a73-1ebe-41c5-a3c2-4f3c07ea382e",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_3b726a73-1ebe-41c5-a3c2-4f3c07ea382e",
+      "replay_sha256": "07445067937e43d61e2388396da7778a0dc344a488a0b7ea21834c9258af30cc",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_3d7a3396-cdcb-4a2e-90d6-8464db37a013",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_3d7a3396-cdcb-4a2e-90d6-8464db37a013",
+      "replay_sha256": "0c58141a9f34673b61982e668437ae70ff01da24af3ca7b533ba08f84562afb4",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_43420e1c-962e-4075-a53a-f17619464657",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_43420e1c-962e-4075-a53a-f17619464657",
+      "replay_sha256": "b1e01f6229efaf27791fbeeadffa62a0cb319c0bb2c2881ab46ed0c9b7a94815",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_44cd51fa-d2cb-4ad4-85ba-1f97f71d947d",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_44cd51fa-d2cb-4ad4-85ba-1f97f71d947d",
+      "replay_sha256": "07b8a245abd85c1c85e29f3cbca72587bb35f990e95f4437f8258b2895a8f562",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_4a98a21e-5368-4008-b368-842397da9db9",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_4a98a21e-5368-4008-b368-842397da9db9",
+      "replay_sha256": "0cfdec4283d1a1889a78c6b3b2fc227698b07c41bcc2cf6fabd32dc790bac6fa",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_55b015d5-1f5b-4c45-8a97-bfbe03e4fc8f",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_55b015d5-1f5b-4c45-8a97-bfbe03e4fc8f",
+      "replay_sha256": "082ac71fb4f1109d2519dfd005e6beddca69ff49f0ff0d85836e39c29a82f6dc",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_5a3130d7-8925-4a75-9a1e-81e49982bc9f",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_5a3130d7-8925-4a75-9a1e-81e49982bc9f",
+      "replay_sha256": "6e9cdec506203d67a4e2c5002056df6d98ab140d1f529494b4fcab0d03dbc261",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_5c0add3d-9940-483b-a9fc-44cbc4eaf3c4",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_5c0add3d-9940-483b-a9fc-44cbc4eaf3c4",
+      "replay_sha256": "e155a1048b48c7eec14e370bdcbaea0c27664acee598d2c221920706f1255463",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_5f526dd8-74d9-4158-87b5-2492fc8ab429",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_5f526dd8-74d9-4158-87b5-2492fc8ab429",
+      "replay_sha256": "1637133a79f2ec4745b2725b1a43e59b113b3b3eaa1a2cba156cbd806e31695c",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_5f53601b-5457-4c55-b1be-a9f50cfd162f",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_5f53601b-5457-4c55-b1be-a9f50cfd162f",
+      "replay_sha256": "bc6a5a03b9835fc9944a4ed7282bc57aeaa24deb00d18923d6e6314a6f5bcb21",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_611fed30-a747-4a7f-a9ba-336ffc632036",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_611fed30-a747-4a7f-a9ba-336ffc632036",
+      "replay_sha256": "829ca8a99549151168f9eb215c6948889d0d2e2fcc30c61d9a53314e0447cd9e",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_6abf37ad-1bee-4b62-ae32-982df1ec2c2d",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_6abf37ad-1bee-4b62-ae32-982df1ec2c2d",
+      "replay_sha256": "0f1341b9e25b9820fe33af3ce1cba9dafcb6695b1ef74b7d870b0acbafbc4a76",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_71814fae-598b-4032-8fd5-9eea7a2e7893",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_71814fae-598b-4032-8fd5-9eea7a2e7893",
+      "replay_sha256": "0c8f25c1a418f2c8d8381933b1643830ca0c15ef7960672d922740ad7a6cf733",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_7d8a64d9-575f-4c23-94c0-30938929c2b9",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_7d8a64d9-575f-4c23-94c0-30938929c2b9",
+      "replay_sha256": "632694b69c749280b5dbdcd9a3180ca297a4296005139ec2187628d70e675c23",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_80f9aea3-f205-404d-9f1d-0008cf0de1ee",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_80f9aea3-f205-404d-9f1d-0008cf0de1ee",
+      "replay_sha256": "56754ca74bd9085d4afca602d1410be8f1d377ed1325c8795567a79a65da48df",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_81c39c56-8100-4ae9-86c7-599e94f9209d",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_81c39c56-8100-4ae9-86c7-599e94f9209d",
+      "replay_sha256": "fd450118ef580c61bcf121ab4ac44217ad9da7d2d4814eeea58a308a974a3655",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_860e144f-10db-475e-bad5-731859ce16c8",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_860e144f-10db-475e-bad5-731859ce16c8",
+      "replay_sha256": "24cf33e4b08382a18a51bafb4d70f08cc66dd42f96940c212cc1c667afbf317f",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_8d73d040-f8c6-468a-b286-ecd1ebc7e832",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_8d73d040-f8c6-468a-b286-ecd1ebc7e832",
+      "replay_sha256": "ae2d17d9628c2eabfee79305d9127412761ef9af431b9abf270c1b4d3e8a3d0b",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_8f07efda-8d59-410f-8b2d-9e0d53bff1d9",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_8f07efda-8d59-410f-8b2d-9e0d53bff1d9",
+      "replay_sha256": "ae4f23dc5622d1118d330102fa86c704a1ca0d889f92814e956beb7a25c82e20",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_94c316e5-7d34-4db4-8946-cecf949d32a4",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_94c316e5-7d34-4db4-8946-cecf949d32a4",
+      "replay_sha256": "78f48165ff0ab0e027085747bb305fe5c4f1e606a07bac9a4a10122aa14978cc",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_98849a33-42ad-421e-a942-19b344a00627",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_98849a33-42ad-421e-a942-19b344a00627",
+      "replay_sha256": "10f38a3d9143f68ca9d930416adfe19d9e263074e93b7df8841dba5406359bda",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_9b80419f-4a15-4ef5-8130-42a7783aed6c",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_9b80419f-4a15-4ef5-8130-42a7783aed6c",
+      "replay_sha256": "71f73838e844b23bb0254db97bcd03ddf75383051f0f115dfb7e70bd0fbd3768",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_9e9d371b-08de-4e1d-ad9c-8f6be5f28aba",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_9e9d371b-08de-4e1d-ad9c-8f6be5f28aba",
+      "replay_sha256": "dbe5d0967272a951a372853efe70a036feee7601190975b848276d23d1ac594c",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_adae614c-c1b1-4bc7-97fe-29f4bcc6482a",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_adae614c-c1b1-4bc7-97fe-29f4bcc6482a",
+      "replay_sha256": "ebad4a9092821d424ba756ce989db2c38da3f31d061b75919d6b5b706d15cca7",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_aea17e66-ec5b-440e-84f9-02c725a2e6e6",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_aea17e66-ec5b-440e-84f9-02c725a2e6e6",
+      "replay_sha256": "394c62be6833f49bde70067025044a4c0c83f71badd68e022c7ddc7bae719c56",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_b9e5601f-eef6-4772-a9bf-4a326dede6dd",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_b9e5601f-eef6-4772-a9bf-4a326dede6dd",
+      "replay_sha256": "b4813b26ff473f68abc50972177d731e4d0fba580fb938b59714090d3f907d4b",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_ba11447d-4c89-4c19-a2c4-33a653d5af75",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_ba11447d-4c89-4c19-a2c4-33a653d5af75",
+      "replay_sha256": "f9c54e99cf864a8138389446abf2fcaca62e163087a3d96d085189e39423466f",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_bbd1dad7-bc70-4133-8cff-3b8137d47be4",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_bbd1dad7-bc70-4133-8cff-3b8137d47be4",
+      "replay_sha256": "eb3ec559ddea004ade0ee6978be54550662a71533cce813a1d92f4f4989ca7ee",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_bd1dbda7-2e80-4bae-94e8-b31d4c03345a",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_bd1dbda7-2e80-4bae-94e8-b31d4c03345a",
+      "replay_sha256": "18fc0fea15b61cd3b4156fd2b37530e1090cf62585395f0763df69e8a766a3d7",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_c27249c4-ce4f-4494-b2a5-0937ce9f297d",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_c27249c4-ce4f-4494-b2a5-0937ce9f297d",
+      "replay_sha256": "63653c9cf9b1bb028803fef518a51465b3c8baff2a92467f95ddb59b778ebcd8",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_c4adc56a-c3dc-4e11-a74c-3718143a8160",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_c4adc56a-c3dc-4e11-a74c-3718143a8160",
+      "replay_sha256": "03825033ec038407590685a09b2580db5833f59ad264cc522dddc4803f52f8ab",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_cbbef847-f7c9-4f71-afaa-ec8d38ca0d74",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_cbbef847-f7c9-4f71-afaa-ec8d38ca0d74",
+      "replay_sha256": "342d6fa53cc876951c916fa00091a422a0ff7198987f811393b304a08389e594",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_e523453e-b513-42e1-9a49-4e0a052f8f5d",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_e523453e-b513-42e1-9a49-4e0a052f8f5d",
+      "replay_sha256": "16af64fb17963579f14708f6abdeff11d46de4a29e1a030cd476eaa274234c4b",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_e9914d03-300f-4bcc-9b01-ca62611ebc55",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_e9914d03-300f-4bcc-9b01-ca62611ebc55",
+      "replay_sha256": "eb792dd8a154d0b686d29ab508cbc092aac4015491388c189e8876ce9471f0f7",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_ead849b0-ad5e-4a01-b7bd-770cc6d7bed2",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_ead849b0-ad5e-4a01-b7bd-770cc6d7bed2",
+      "replay_sha256": "218606596d933cc9b46e43daaef1c064b8b6901fd3cd3f10146f84c808ab26f9",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_f2177396-7ef5-430f-805f-953f06837bf4",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_f2177396-7ef5-430f-805f-953f06837bf4",
+      "replay_sha256": "dd46ed1ec59ed1d4a04ac4fa196803f4dddf572bb973b2b017e397c7ab15d2b8",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_f45054ab-a5b6-4b15-8d41-86bd40eb1785",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_f45054ab-a5b6-4b15-8d41-86bd40eb1785",
+      "replay_sha256": "435c5d002cc1797a57aecf71e1cfe4b6b2c30ee4c3aded0535750cda61316a8f",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_f762f9be-5ba1-48fe-97d8-528adcc34633",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_f762f9be-5ba1-48fe-97d8-528adcc34633",
+      "replay_sha256": "c5811160f1aea9868ac3fe8e2572d8a9e75a9be6721085e0f5f20846c04ea165",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_06d627b3-a003-40da-bc98-0d6c442b9064",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_06d627b3-a003-40da-bc98-0d6c442b9064",
+      "replay_sha256": "649a4f6d9205eb28e7c0ce7289220eabd92445d5c0e6b000dfdb5d2cfda68957",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_0c9a939d-90ce-469b-92b6-f5ab75a7f3b0",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_0c9a939d-90ce-469b-92b6-f5ab75a7f3b0",
+      "replay_sha256": "b946cc2e6d553093abf6e05229418a6e4f6cc199ff15e301c30dff2176dceb92",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_0c9e9fd3-16e8-4155-8361-9964ed67b2a9",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_0c9e9fd3-16e8-4155-8361-9964ed67b2a9",
+      "replay_sha256": "1c4610afe23472a225571fc38bca2002c20255c519778b313447d604052b2619",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_0d36734c-c072-452d-882a-08f553ed3f36",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_0d36734c-c072-452d-882a-08f553ed3f36",
+      "replay_sha256": "635e6d877bbce675c4e64d5c91e970435e78a896069cedc2fbbdaf5339e6c1bc",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_12987afc-ff90-491b-9058-e40bd44256b7",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_12987afc-ff90-491b-9058-e40bd44256b7",
+      "replay_sha256": "103fb6939ea3c1546b4e8ff912fa997b2b4f7768d391f52ff86fc7b7568d6bd2",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_24029c5d-a086-44cd-847a-c04f4b19313e",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_24029c5d-a086-44cd-847a-c04f4b19313e",
+      "replay_sha256": "3c39686382fa9099be602a0e406ab1a437de1d63c387d8d543ebf108431e2463",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_37b9fd81-ee76-4333-8ba3-cbaa596ab8dd",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_37b9fd81-ee76-4333-8ba3-cbaa596ab8dd",
+      "replay_sha256": "b327f653253758a65bca776955ff8e690196b1688c9440154ff0294ec1f9179d",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_3a41c965-5761-4fd1-94fe-d67757cd51c6",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_3a41c965-5761-4fd1-94fe-d67757cd51c6",
+      "replay_sha256": "a38a45ddbee39e128ccc294bbe02217a7ef3ec730e361db364ee205580d4b147",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_3cd897cd-c89b-43b2-b9a0-8a677ef3b1ec",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_3cd897cd-c89b-43b2-b9a0-8a677ef3b1ec",
+      "replay_sha256": "b7502dfbd69cb45c7d6bbddadcd3461ec5e36148a04a4d20d6de27f3ed4b75f3",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_3fb4c7ef-b85e-4f03-a399-ceb2e59d2eec",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_3fb4c7ef-b85e-4f03-a399-ceb2e59d2eec",
+      "replay_sha256": "e813c09080441b462a555105c67bbd2bfa02ad195ac786db537d37d4b2bad5f4",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_50f8e4f5-1506-4290-aad5-ba48418f6ac6",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_50f8e4f5-1506-4290-aad5-ba48418f6ac6",
+      "replay_sha256": "c20f42ba79ad0a93cf68ef5626f4af0c89edd8825474c020f1ecf6be1c026de7",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_58cd9a3c-a41d-4dc4-a90d-12ab16e7c188",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_58cd9a3c-a41d-4dc4-a90d-12ab16e7c188",
+      "replay_sha256": "eaeac5dd635712d37e755103e357b483581d760c42b73f0a9c2d58dcd13cefed",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_5e8584eb-6583-4efb-a3ac-c96b0d09a8d5",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_5e8584eb-6583-4efb-a3ac-c96b0d09a8d5",
+      "replay_sha256": "2083f20fc990c455621fa2fc1f69de9a014e9bd67fe683a1e2b3ef73dcdb7f8a",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_60e323b1-606e-4662-a2e8-a18a948b8e95",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_60e323b1-606e-4662-a2e8-a18a948b8e95",
+      "replay_sha256": "4f860412f43c960ad1595e4e67783ab39afa406476be38d7a65f6f2298a1200b",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_6549a2ee-1f90-46e2-85ac-39e5d1571a90",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_6549a2ee-1f90-46e2-85ac-39e5d1571a90",
+      "replay_sha256": "f4afe1765daf916f1fde8392b0078f0e3296e36485cb5011deaad1e6d47f7ff4",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_6a54646d-a75d-466a-b1b9-216db58ecf61",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_6a54646d-a75d-466a-b1b9-216db58ecf61",
+      "replay_sha256": "0da854f476704a7b4a1024f358b73633c0bc371d5bfc64d84d63b135ef5da535",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_6c3bb938-14c8-42f6-8da9-103920be3f43",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_6c3bb938-14c8-42f6-8da9-103920be3f43",
+      "replay_sha256": "cf710afd00225a6fc88745c035b4529a6bbbbab21d24aa492299f8b540ace8cc",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_6f46f6d5-ad61-4886-8804-6b58085b8acb",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_6f46f6d5-ad61-4886-8804-6b58085b8acb",
+      "replay_sha256": "6336698c73df6cc40da8887887590432f05d7c6b93cc0ba0e31ab9d2fb450ba3",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_6f79b5b4-6342-4210-a3d5-ba3cc2427813",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_6f79b5b4-6342-4210-a3d5-ba3cc2427813",
+      "replay_sha256": "84a1f8bc9c1b0c4b0553bfc3a6ebff5c2c0f3de250aeb8a9894bd2139bb6d77c",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_72215339-fc7f-488c-a309-f888804b0fc8",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_72215339-fc7f-488c-a309-f888804b0fc8",
+      "replay_sha256": "34007aad8a384cc16deffb1b4ac1a60ef7f169a6a36dfe4f967e27457a54ea8b",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_7e94eddf-fd17-4585-9b0f-e3f92af0959f",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_7e94eddf-fd17-4585-9b0f-e3f92af0959f",
+      "replay_sha256": "f96e2a606807928d4d54856a917c71dddc638f245766e9608ff17caabc752b3c",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_7f158f4e-94a1-47f3-ba4e-b524f5d1efaf",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_7f158f4e-94a1-47f3-ba4e-b524f5d1efaf",
+      "replay_sha256": "617e550b7c8da4f782168393ff92330a86fcde560c7a4f32fe9f3e23e0b8a2d8",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_824c9b1b-afac-4fed-a60d-9750dd349bf4",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_824c9b1b-afac-4fed-a60d-9750dd349bf4",
+      "replay_sha256": "c49350c39b715896a755cb0ba602044d644ed292fbf239df0473404b86fa84c7",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_897cb3fe-6c4a-427a-9e3e-17cdcf316272",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_897cb3fe-6c4a-427a-9e3e-17cdcf316272",
+      "replay_sha256": "2d9c8e1b0a397fdb4dc481775869ea80d7c18f06932c8f58f0b31563fb52c8e4",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_8fdb3533-1fe0-4a38-8112-92826212c0d6",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_8fdb3533-1fe0-4a38-8112-92826212c0d6",
+      "replay_sha256": "c46d1bd8841ca27277e2b5baeeb5c4e1e75d6066069d069922d786daa2321458",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_93ddd0b2-8774-4375-8c7b-5b769e397b2a",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_93ddd0b2-8774-4375-8c7b-5b769e397b2a",
+      "replay_sha256": "48cdcd2de82f4171ca7858ed9c5fbc8d7fe9e77d65074dd1d8395f2f0d810061",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_947c06fe-794d-4197-ad72-41f5cb0f877d",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_947c06fe-794d-4197-ad72-41f5cb0f877d",
+      "replay_sha256": "118c3939c93faf1202756bd987cc841d40cce387e0ca3d1a18090f754015b95a",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_a1fe85d8-6618-4978-8a29-c3dca1c2e328",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_a1fe85d8-6618-4978-8a29-c3dca1c2e328",
+      "replay_sha256": "dcb262ab71eece93dd671bbd3c1ba851767e9c47c2cf5a48591f73421abf5aeb",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_a9307213-7fcb-447e-8023-0cec1e50a362",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_a9307213-7fcb-447e-8023-0cec1e50a362",
+      "replay_sha256": "14272c5efba3f0a960b1777845ad3d67e8a3551a722367033958a69c6a7e679f",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_ae4cb8d4-d623-45a0-b52f-ab4dd29cfa89",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_ae4cb8d4-d623-45a0-b52f-ab4dd29cfa89",
+      "replay_sha256": "487ba8f3247dbb9658dded24f6ef1f6975238b49d9c394052cfb114a538d92f4",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_b71ec691-a526-4e12-91d5-7ccd7e07e597",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_b71ec691-a526-4e12-91d5-7ccd7e07e597",
+      "replay_sha256": "92215125acb6f04d67ff9d984f6ebde700652867518b2b1baedee60592d99197",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_c22b63b3-4124-4425-a9ba-296dc0271853",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_c22b63b3-4124-4425-a9ba-296dc0271853",
+      "replay_sha256": "eec3d69219eceed6b31c79a8f14ef1482c5556b0c37b8000e9af7e86f87f648b",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_c51c028a-94b2-439f-879b-758a21ade768",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_c51c028a-94b2-439f-879b-758a21ade768",
+      "replay_sha256": "6c097415fc5acfe5bdef9110f362b2df3076142be776a880feb3bfe6c0676cfe",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_c5521075-7f31-4f65-b3a5-ac1b0d0062d5",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_c5521075-7f31-4f65-b3a5-ac1b0d0062d5",
+      "replay_sha256": "7cc2bacfc0c502eef02641e457538a5cd5f04dbddca03f52bdafa15726809cb4",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_c599359e-2ca7-429d-9a09-8d8856779398",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_c599359e-2ca7-429d-9a09-8d8856779398",
+      "replay_sha256": "536cf49a1a160ee228b0c3606a12df603a79b317c5a5fc0d4e6fbcf70ca7505f",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_ca7bc4ce-2423-4a15-b397-ffa940d06d78",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_ca7bc4ce-2423-4a15-b397-ffa940d06d78",
+      "replay_sha256": "15e392c0754ba3428a711696a86e7a4b8c5311ec8b0cbf8be560ef8b36457a6a",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_ce96c34a-e3bc-4f4c-b173-17c1c9de08fe",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_ce96c34a-e3bc-4f4c-b173-17c1c9de08fe",
+      "replay_sha256": "79608306c92b029b3bef4f9880806933d52c0339331d30939d71e4b512a54f47",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_d0783eba-e357-4db7-a2f0-9deb16658cd8",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_d0783eba-e357-4db7-a2f0-9deb16658cd8",
+      "replay_sha256": "b70c07a3f3f5ce48ffd3d30949ee30e8ebabee9c028ec4570fd729e40ddf22e7",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_d113bb30-81b1-40c3-9f22-602bf7597a66",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_d113bb30-81b1-40c3-9f22-602bf7597a66",
+      "replay_sha256": "c3290eff0b9968d725297ccca6fe9aec5929b66ddcf5f9eaa380f86813ab72cb",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_d1d122e7-0d49-4d0e-89c6-560b50bff186",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_d1d122e7-0d49-4d0e-89c6-560b50bff186",
+      "replay_sha256": "130aac2bd10e06b37bddc0221c48a3998eb8be74a0bfc92655eb4d12d75762bf",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_d27a498c-6a73-4f63-963f-eefbf15d3677",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_d27a498c-6a73-4f63-963f-eefbf15d3677",
+      "replay_sha256": "ae2d306d45770a3cf514df88a0488c9ea678682dacb70efa9fffe76eadbc989d",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_d3967a94-1721-4686-82d6-b065ce8117b3",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_d3967a94-1721-4686-82d6-b065ce8117b3",
+      "replay_sha256": "fd006f263b3e19b9a89d3dc8e2dd79235bf1c012401cec5b283a234306cf5e25",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_d5183f33-8b9b-4852-a64e-c9d25216dafd",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_d5183f33-8b9b-4852-a64e-c9d25216dafd",
+      "replay_sha256": "1087ab2d5a85df6d84c30375c028a9bc89a60220c67840c1875085e20edd3622",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_d596da50-0fdb-4b19-8738-68cb27e91e15",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_d596da50-0fdb-4b19-8738-68cb27e91e15",
+      "replay_sha256": "9b8d7db701c4d301b717978a983d2b8f27dc9e0db20c0d261872e6689707edec",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_e0cf23db-d4ea-4351-bc2b-743d7b9954ee",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_e0cf23db-d4ea-4351-bc2b-743d7b9954ee",
+      "replay_sha256": "41f91be28d270b399648a87321b5663ff447d06b6901d1edc349da0b2d5874e2",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_e9338645-517d-40bc-a354-bbda5ab47073",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_e9338645-517d-40bc-a354-bbda5ab47073",
+      "replay_sha256": "039054351f1ec77335e1073120872087d56442b0a1dd89a4663c4ee38a7cfe34",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_eba0d7cd-8915-441b-9ea5-0bbf1005f23e",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_eba0d7cd-8915-441b-9ea5-0bbf1005f23e",
+      "replay_sha256": "c7f66182d386c2480d85a9151562aee75bdeaf1447de2b0b376fe6843260db5a",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_f006353d-211d-42b7-9d79-a85ede9b695e",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_f006353d-211d-42b7-9d79-a85ede9b695e",
+      "replay_sha256": "becb2dde5f9705601cc68a8de7b9595cd330cbc9da0936cdce380be8abd2a2b7",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_f1d24b42-611a-4243-a8d6-cbf7ff420c26",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_f1d24b42-611a-4243-a8d6-cbf7ff420c26",
+      "replay_sha256": "2091967587049492a89ff3ca4b66ad5037ec3af008957c44360be83287d2404c",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_f7a9934d-d43e-4618-9588-dacdaea87a94",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_f7a9934d-d43e-4618-9588-dacdaea87a94",
+      "replay_sha256": "e70cffe27990f8cd38a1a405a59df8cfa4f66174ecfa90145dce579f9678b694",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_04468f6a-4c31-4c8f-b0df-36c1931c6567",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_04468f6a-4c31-4c8f-b0df-36c1931c6567",
+      "replay_sha256": "93e6cfeb60ae75ff91c1e5d4a521d6fe13c45ebaf73b69d82b66b30203bd7f07",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_11767c65-e21e-463d-bbda-1c23b1a944b3",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_11767c65-e21e-463d-bbda-1c23b1a944b3",
+      "replay_sha256": "08de1c8bb2b127044db2fecc70302756429aa303d4e5a251da45e16e1bbf5f98",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_14d7f5e9-c107-44d5-8f85-212cdb88948f",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_14d7f5e9-c107-44d5-8f85-212cdb88948f",
+      "replay_sha256": "e6c1190a698329a355f42e37c14d042f3c5d9f108f736a3b91fcd62c205f6ea8",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_17965cde-719c-43c9-8d5f-d65783749f6c",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_17965cde-719c-43c9-8d5f-d65783749f6c",
+      "replay_sha256": "0d61e40cd965a76429ad6d86e88d14b1333ae0d392aaa993f0f9f8ac482de728",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_1ae6f960-3c8f-4257-9f71-bc224776f9a5",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_1ae6f960-3c8f-4257-9f71-bc224776f9a5",
+      "replay_sha256": "31b17530f1129fd08e4005aebcc9b9ffdc78b9fdb9bd9ae830eb3b818c739928",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_2f5365d4-dc9a-4f18-82e0-db0e8b612dae",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_2f5365d4-dc9a-4f18-82e0-db0e8b612dae",
+      "replay_sha256": "c724584d23b9c5ae06fd9dbb66e65faf0e42382e270c7024bcb7830aafa25e8b",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_34a04ba8-bdcf-44a2-8197-eee05f95575e",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_34a04ba8-bdcf-44a2-8197-eee05f95575e",
+      "replay_sha256": "7c8eb5d707aa5d0d5bde79d1bf754f58bf0581f4202d8faebbe892be37a8b241",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_3a3cd203-d535-49fc-8753-82232604d43b",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_3a3cd203-d535-49fc-8753-82232604d43b",
+      "replay_sha256": "b7b2968a0589ca33a23fd54f577ac70dca29c6c7c1a90e02b76c281edb5d2119",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_3e9500f7-6572-46f6-9da1-67f5cdae9539",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_3e9500f7-6572-46f6-9da1-67f5cdae9539",
+      "replay_sha256": "f915f249a7ca9c1abb3d7e2763a0a020dda7c68c0c2ee650f6ef4297abaf1978",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_4040910a-7cb8-4176-b992-d9694bc445d9",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_4040910a-7cb8-4176-b992-d9694bc445d9",
+      "replay_sha256": "1ace27f1c1c4c4118f3f4cad47398384141653db9b4ef6faf3b9a57df0a06b19",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_425dc728-6782-48a8-a0cb-653a686556d4",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_425dc728-6782-48a8-a0cb-653a686556d4",
+      "replay_sha256": "aed506a881b7136281470284fb18d3bbec5a79c2b99cd2143a6845d1cffecb11",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_42d33eab-4355-4b03-acf6-4c15055bbd20",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_42d33eab-4355-4b03-acf6-4c15055bbd20",
+      "replay_sha256": "63578daf8f84bfd5c74277e38e4c465650c8bde92c4e91851dd3128ddc45f3ad",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_46673582-714c-4bbc-bc4a-fba2df84ab13",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_46673582-714c-4bbc-bc4a-fba2df84ab13",
+      "replay_sha256": "5f1c74e5f47723b2f4c425c867c56519a3b755b9905a9c4ec18a57cd10e037cb",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_46df9670-5492-4a5f-9e69-467c089fe109",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_46df9670-5492-4a5f-9e69-467c089fe109",
+      "replay_sha256": "26129e696b984ba7e4de5305e507c822014cbbf2fb0402feedbaf056f6356013",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_4e9066d2-47ac-41b2-9db8-36c20d452729",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_4e9066d2-47ac-41b2-9db8-36c20d452729",
+      "replay_sha256": "2b82b4363150822817f165acec88be106dc211e0a3f2bfe0f0ce7c58f2fdfff4",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_5d9f3ec5-6e6a-413f-a2a5-941a32602d5d",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_5d9f3ec5-6e6a-413f-a2a5-941a32602d5d",
+      "replay_sha256": "afb6cfd82527b10d9db978061d746fa28725d885131f20e249e16af879a00ff6",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_6103b548-9137-461b-9bb0-e6a4fb5cb903",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_6103b548-9137-461b-9bb0-e6a4fb5cb903",
+      "replay_sha256": "d25c586e89e878b24e14e4395fbe4b27144d5af848a3989f1773db26f7f81256",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_615dc138-6cdc-492c-b698-a2266269d8a2",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_615dc138-6cdc-492c-b698-a2266269d8a2",
+      "replay_sha256": "082c15cb98869d62d2a09413dec4cafaa028a0a7a1eb47eb04cfbbc900e897da",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_61fbd6d8-106d-4991-86c3-121578bbbf3e",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_61fbd6d8-106d-4991-86c3-121578bbbf3e",
+      "replay_sha256": "dabe4eafe4384dd3a173a1fb1d083516704294815be662b3c6d863f4e49a7e3c",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_67e7eff6-f769-4b0f-bd45-4bd1bfce1c5a",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_67e7eff6-f769-4b0f-bd45-4bd1bfce1c5a",
+      "replay_sha256": "e3e7e1790aec48f15921a0971d1cd933afa7467b9a1e1c31ed7e18234d440875",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_6f6d7566-e289-40c0-9088-c014cc728d05",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_6f6d7566-e289-40c0-9088-c014cc728d05",
+      "replay_sha256": "c3359505ec70074126ce45dc803065c1f18ef2eb6b49193dc3281521c7d095da",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_7251e7a8-b0b0-4938-8c1f-dc19bc5ce4a0",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_7251e7a8-b0b0-4938-8c1f-dc19bc5ce4a0",
+      "replay_sha256": "792e7a2de64de438a1b2e0f4a7980a0545ddd2815cd220b56f4f4c1244867bf6",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_73af7b33-ef0a-495e-85ca-c5e0e3056c29",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_73af7b33-ef0a-495e-85ca-c5e0e3056c29",
+      "replay_sha256": "8814f18d01ee034dd3253601a9ce6b6338a07e7d75ed8623aaaf6f41a63006f5",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_774e89ac-09dc-45a3-8dba-c9f097ddb7a8",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_774e89ac-09dc-45a3-8dba-c9f097ddb7a8",
+      "replay_sha256": "b844341de15a26bbbf33d8889c11aa19011eb99288884967fe1015e7e98086d8",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_7926ef9c-392a-44de-9a2e-77d10e4f86cf",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_7926ef9c-392a-44de-9a2e-77d10e4f86cf",
+      "replay_sha256": "f3cc6b59f5b7c682a711e7b714959badd1d3b320368e93561766d7873c6df8c8",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_7ec87a25-9195-4f49-87a2-a7ff0f828447",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_7ec87a25-9195-4f49-87a2-a7ff0f828447",
+      "replay_sha256": "c7b0f072e497067974f82138b69a635c4e6a5721a445f106ef1fb96b5806ca1e",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_7f4aa627-dc94-4ea9-9d35-96f03d406d50",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_7f4aa627-dc94-4ea9-9d35-96f03d406d50",
+      "replay_sha256": "a26d4deb4acfcd7019effabf32bb8a7990d5b3ec462e8445cd131b398a188d05",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_80a3869a-514d-4b69-b1c0-aa0082b02217",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_80a3869a-514d-4b69-b1c0-aa0082b02217",
+      "replay_sha256": "d7b78181450cc311abbf6e7621d335e3d761b1f5ee2f82973824ddaa99ebcc14",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_82b3f56f-bffa-4f40-9c1e-f401548e1bc2",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_82b3f56f-bffa-4f40-9c1e-f401548e1bc2",
+      "replay_sha256": "6ffa46543fcf079c104d9d9ee16106ca074872fcd1c18c6b72377259a2016c4e",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_83342d8a-305f-4530-9529-ed54b734800d",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_83342d8a-305f-4530-9529-ed54b734800d",
+      "replay_sha256": "f87728dd56662dc86893f6ee16c90c6d39c6df9cdc24648cb05c2ff8154d6e71",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_8f6edb02-0261-45a1-b02e-29ca8fbce00b",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_8f6edb02-0261-45a1-b02e-29ca8fbce00b",
+      "replay_sha256": "9e86d33e95e9c0fe7674c1d7655ac3cc8c6eb7f1b8c815d1d2d5a20110ecad91",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_a1427aff-11a3-44f2-b342-6dbca1cac49d",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_a1427aff-11a3-44f2-b342-6dbca1cac49d",
+      "replay_sha256": "d849a7e88379e355df0ba8bba86eae8b38bc3e7b4f42756c0f82717a8a17cf7a",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_a416baeb-5b34-4a27-9778-ef57f56a39ba",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_a416baeb-5b34-4a27-9778-ef57f56a39ba",
+      "replay_sha256": "8b75c411bfd6898433849cfacfb3c088c2ca7b81af6d312b001390e3fd7f60fa",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_b397bde3-8fab-45c9-aaac-0e469f7c72a1",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_b397bde3-8fab-45c9-aaac-0e469f7c72a1",
+      "replay_sha256": "97a4c9b3e4633e2978a028d25e37f70a967841354a616d15836e6b40f5f9c291",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_b472ca33-698b-4a9b-9987-a84301e0a573",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_b472ca33-698b-4a9b-9987-a84301e0a573",
+      "replay_sha256": "91f3c5de342e2fab1610d8fd3211767e9f554cd0bc37bf3fc95f515ddf76ece4",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_b69d201f-1cc1-417e-bff9-13f92c9f893f",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_b69d201f-1cc1-417e-bff9-13f92c9f893f",
+      "replay_sha256": "f6794cc856579a3c67ae18bcbf1b52a8e30eecae5fbb440083ce2c9917108b21",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_bbd56112-cc88-457e-9010-a013da58dc9c",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_bbd56112-cc88-457e-9010-a013da58dc9c",
+      "replay_sha256": "4ce4e0665f52076ee4f57a331efd16d75bbe29afc734e3bc0c689f37f8020a20",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_c0f85ccd-d2ef-4514-b8ec-7551155fca82",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_c0f85ccd-d2ef-4514-b8ec-7551155fca82",
+      "replay_sha256": "3244de70cd18cda154632c69584f695fba4b39959c8a745d01516b43a42f2864",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_c274b2c5-a729-44e9-83fb-1e7a47453898",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_c274b2c5-a729-44e9-83fb-1e7a47453898",
+      "replay_sha256": "f3833582f8c1b546abcc6e68cd73d083be4036f934015612b178cee55c8e55e5",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_d078e48a-7d6d-4a7a-bba0-1174eddb9718",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_d078e48a-7d6d-4a7a-bba0-1174eddb9718",
+      "replay_sha256": "34829a754b132af584ebcb95834cf5745f6f504764228c1b731288cd6bf91bc9",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_d1879813-3765-4692-953c-09d44d963ae5",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_d1879813-3765-4692-953c-09d44d963ae5",
+      "replay_sha256": "d0ede13194f60dca96c939578520dda9c769f275c38c687dd13e7ed5d7e62c3a",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_d61dcd2f-64e1-435c-8397-8a6900540a4e",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_d61dcd2f-64e1-435c-8397-8a6900540a4e",
+      "replay_sha256": "f3cf5ad7dab7829d127eb7392efd5359edb96addfa608fa5d2bc885e9962b86e",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_e1bc8a5c-cea8-4b1a-854e-1b30e5e6644f",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_e1bc8a5c-cea8-4b1a-854e-1b30e5e6644f",
+      "replay_sha256": "d599f3b6c635a3c26892c221b776bc8068c36294775dce17aa26cd5bb1b5342e",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_e3311844-0399-4901-bfd1-d0587b304ed1",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_e3311844-0399-4901-bfd1-d0587b304ed1",
+      "replay_sha256": "8d6e54c49b8e2901f77779788868348ea111c65f074af855e8a2a7fb8f6624db",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_e7211c20-0c08-4d3e-adbc-32ce3bd64713",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_e7211c20-0c08-4d3e-adbc-32ce3bd64713",
+      "replay_sha256": "f1d49171be4531496b6441139bd1ee0300b26b7e7d15aec0c33fd02ca9d14d6b",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_e829c306-b3df-4503-b072-3e501def3093",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_e829c306-b3df-4503-b072-3e501def3093",
+      "replay_sha256": "4b0abdab4556c95fb520374efd304fe8380ac4be92e6c93edc77003e114f1baa",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_ee399a92-5903-478e-a107-415071b8bcef",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_ee399a92-5903-478e-a107-415071b8bcef",
+      "replay_sha256": "ee857ef67a8aa5e28098c364408b659a2e0e40154812312e49d6e271036d52a3",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_efcb44d4-7c24-4688-8fe9-a2496ce9eca1",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_efcb44d4-7c24-4688-8fe9-a2496ce9eca1",
+      "replay_sha256": "8dd1960e1a436157d5c39f969b0239813c9b1b302ac7c5f7593521e665028b5a",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_f2856e99-1159-4bce-a309-2d998b5db92d",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_f2856e99-1159-4bce-a309-2d998b5db92d",
+      "replay_sha256": "372719653a98e549a05af716fbff7925b7db0c80434be8eb41fd79f51cf19830",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_f4e095a7-ec35-4601-abec-f46f28997ae9",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_f4e095a7-ec35-4601-abec-f46f28997ae9",
+      "replay_sha256": "28d398e3b10362f11662fe86e41494af139211ba81810bda9c4b11dabca62386",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_0548caad-5e61-486f-a950-f05012b8394f",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_0548caad-5e61-486f-a950-f05012b8394f",
+      "replay_sha256": "b38ecc70fc64e698ca9ae952da464d00568ec486298845f5fdcead86520f4c06",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_086cd13b-3953-4f20-8988-4a5dec13ef81",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_086cd13b-3953-4f20-8988-4a5dec13ef81",
+      "replay_sha256": "4c0dfe1554817b1e6281878daaaf464f8ac832b70a3ac6bdc12b61c6119c5e62",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_17aae0a7-8782-4112-822c-d7122d7a2550",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_17aae0a7-8782-4112-822c-d7122d7a2550",
+      "replay_sha256": "d97bd2f801a262d259de02092728bae0cb577c42da0efd920d84f312796bab47",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_204d368b-b201-4797-8214-1165b02935f2",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_204d368b-b201-4797-8214-1165b02935f2",
+      "replay_sha256": "595d57cc17aefe16d0adea368efdae94c9d0b2e54cbfc3aac6eda2281e57ddea",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_24f2ce0d-3ff9-4c2d-aff5-dc5dca109f26",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_24f2ce0d-3ff9-4c2d-aff5-dc5dca109f26",
+      "replay_sha256": "4c0c0483cf8b500de7cf91991c6954ba04c247e0d30b3700b11fedbc204d17fd",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_2d43d184-1b27-4fcc-aee2-e464fa75936e",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_2d43d184-1b27-4fcc-aee2-e464fa75936e",
+      "replay_sha256": "1821199271dc0ae8bf499884b2dcd9dbdb5d0bd1a20f9ecf5077a7419b19befb",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_30225e8e-d43e-4da5-9d39-e3fa53dc5c20",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_30225e8e-d43e-4da5-9d39-e3fa53dc5c20",
+      "replay_sha256": "18168b1e128be63b1e68b262569004596ef3f468f4dc959d5e57bf6f9b5900a1",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_31e1c9cd-5b66-4e24-ad56-1a976b878041",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_31e1c9cd-5b66-4e24-ad56-1a976b878041",
+      "replay_sha256": "4ffac82001a80d6daf7d01c2813c53711a9c8a4dc8d6bbad99a5f1f8df273aea",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_34b74294-dc4e-4945-8c66-729bd1f2e49e",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_34b74294-dc4e-4945-8c66-729bd1f2e49e",
+      "replay_sha256": "f177ba15220fa28c9eb1b96623fa317689dcf7b2b42021a144c169e47598f27a",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_3cbecfbb-82e6-49c0-9ac1-10b2e606a7ef",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_3cbecfbb-82e6-49c0-9ac1-10b2e606a7ef",
+      "replay_sha256": "6f46815877fd744dd76c28fc786900a988650862344660ac8e6c944a4840fd18",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_568186e4-8dfa-48cc-832b-d68620441f33",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_568186e4-8dfa-48cc-832b-d68620441f33",
+      "replay_sha256": "74d78009f3316763b12d2286efab14acbcd7d33892073b569dd0a40576884cee",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_56a09a04-8b0f-4d0c-a6dd-735a87f320d8",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_56a09a04-8b0f-4d0c-a6dd-735a87f320d8",
+      "replay_sha256": "89162f4e873bdc7404e14d849d6117dfb3a10324669275cdd5ffe9256dd1e85b",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_56b3f371-85e7-4190-9200-e265393537aa",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_56b3f371-85e7-4190-9200-e265393537aa",
+      "replay_sha256": "8545422477022ddcacd633df0df2d6fccca2749bdbcfecede09f1a1c4dc82ba3",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_59ab7426-8a8e-4e67-a6a3-f7ff9770f67f",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_59ab7426-8a8e-4e67-a6a3-f7ff9770f67f",
+      "replay_sha256": "2ab8270b73f316efec2869a624d8d2c9f27094d066ca43b39508cda463a3f128",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_5f791c41-2fa8-4926-a287-5166dbf71167",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_5f791c41-2fa8-4926-a287-5166dbf71167",
+      "replay_sha256": "36cdbe13ba614650f45c0ed6a6f9251352d7d57282f9d2a85c87ca1d2a135000",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_637aebce-9775-4148-9b0f-7e81b98e7fbe",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_637aebce-9775-4148-9b0f-7e81b98e7fbe",
+      "replay_sha256": "369c916c46fd999326d5568ef8d4f885baebe0b92492eed04ee167ef052ec229",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_6fcb2fbb-060f-4f61-bdce-bdaddb039cd7",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_6fcb2fbb-060f-4f61-bdce-bdaddb039cd7",
+      "replay_sha256": "cc091e2a5dc7068550edb7e34f47c33c474bf0e32fa39513a44de8e2478ca3c1",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_7977fbb1-0358-4ba4-956d-7d4b83b27bae",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_7977fbb1-0358-4ba4-956d-7d4b83b27bae",
+      "replay_sha256": "7109ebfd48e804ef4787156240a0c9b22666943d1c5ce61aca91a77678215ee7",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_7a090744-8d9b-4260-9751-41e27f57b229",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_7a090744-8d9b-4260-9751-41e27f57b229",
+      "replay_sha256": "e172e6fe9fae9f2f6698f9af6a9db0112211f2177de56893e7d14a2a7c033236",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_7e0c23a2-a47e-4c9b-bdc5-3e82149d401d",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_7e0c23a2-a47e-4c9b-bdc5-3e82149d401d",
+      "replay_sha256": "47baa13393abd43eb1baf1eb1d4f1e85de32d374bea70cfee5d455eb938d2150",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_7f5d57d1-af4b-49cd-a648-4a31b2b8f3a4",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_7f5d57d1-af4b-49cd-a648-4a31b2b8f3a4",
+      "replay_sha256": "e9bda3b146662f0dfefb7812984bd2a732a530406313011ce60e5f893fa3f6c8",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_82344f03-81aa-41da-9547-4155cd06f578",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_82344f03-81aa-41da-9547-4155cd06f578",
+      "replay_sha256": "af424fe955336c72e949ce9fd564c29bdc91a7769775ce5943a6e3784ad9aa55",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_88b3c9f4-fc72-4231-b113-c542ff786c5b",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_88b3c9f4-fc72-4231-b113-c542ff786c5b",
+      "replay_sha256": "882f52ac8d6f8cdc365d949cd7169a4bd624d0f745f2ab43bb7db74365864164",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_8d5e94f1-2b94-459c-bb44-48a17319eafb",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_8d5e94f1-2b94-459c-bb44-48a17319eafb",
+      "replay_sha256": "fba3f7e8883224eca46c67fd4ed3ea2d19fe211c3482bf090722d0bab5386b47",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_93576781-5f19-4e6f-ab1e-45b6ab747454",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_93576781-5f19-4e6f-ab1e-45b6ab747454",
+      "replay_sha256": "3b65e74ac75d535debd35ccabfc44816e152a409fa8f83b099558ad7727a4027",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_99bcb223-1ff7-480b-9286-953ed9243a13",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_99bcb223-1ff7-480b-9286-953ed9243a13",
+      "replay_sha256": "334c80db85fb64c252fc4adb7ea7b2a600c27be0a3ad62a6fc6887db0860410e",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_9f2f2b81-7c22-4147-9241-d808e7dde85d",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_9f2f2b81-7c22-4147-9241-d808e7dde85d",
+      "replay_sha256": "4fe6fec67b9c496a4042fed379c1283a3465ecc8f03755a41851c70f5a0bdaf3",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_ab1aef96-213a-4847-b0c6-551250ee3982",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_ab1aef96-213a-4847-b0c6-551250ee3982",
+      "replay_sha256": "4bb1c7c81e8bcf91ab8d1c62c1169b3df76e8b58b57f8d3b4ef1be4c5ced1f74",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_afd7f1cb-2828-4224-92a3-e067191bfd79",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_afd7f1cb-2828-4224-92a3-e067191bfd79",
+      "replay_sha256": "5e7bdaa30df687e1aa434f022fd2caeb43fc54ab7018321ec92fada382f0842d",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_bd2edd1b-3d56-40b3-9ed2-19a44478e433",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_bd2edd1b-3d56-40b3-9ed2-19a44478e433",
+      "replay_sha256": "4da1ff0f1a92222c6fd6d2fbb820a4a8d6a181c1d0363e77da3e684fb4ec7aa8",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_be7a3f76-0024-4885-b6de-cd6f03ce389b",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_be7a3f76-0024-4885-b6de-cd6f03ce389b",
+      "replay_sha256": "5d6f024bd1739d1bdc1fee578c18b847fd977a2bf8747c4fc3933f56045dc6d3",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_c2066c16-b78b-4d1b-bba6-0fd09d92e2a4",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_c2066c16-b78b-4d1b-bba6-0fd09d92e2a4",
+      "replay_sha256": "ad0798d8164324bc4d58c23b18221f84d192234903c6593cf968f59879aedf78",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_c8466812-9f12-4a55-8fb1-ff1226f60126",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_c8466812-9f12-4a55-8fb1-ff1226f60126",
+      "replay_sha256": "1e009556b8eed0c13b807d5444de42a287e689ae90c6ea205236ffc5a5cc3723",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_cffdbe75-4776-4ccc-a58d-8fc7c42b5896",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_cffdbe75-4776-4ccc-a58d-8fc7c42b5896",
+      "replay_sha256": "79e3c96268c32aca4cd943eab38700c26f02e87c70d6dc88d4f78377dc581df9",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_d32f6b81-afc0-4401-855f-0c90c60f68e2",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_d32f6b81-afc0-4401-855f-0c90c60f68e2",
+      "replay_sha256": "083d69f5b0b9370fb6fde1c58fcde85d5ff026d078fc248c08f3f502b9e2c8e3",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_d4c501db-478f-423b-b41c-3e22a32068cd",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_d4c501db-478f-423b-b41c-3e22a32068cd",
+      "replay_sha256": "931402a7d9b792815574a972e383ebdd37f7884fb1a3d9f3160ed0d041f855c4",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_d792a185-c693-4f70-85a4-ea40daac13cf",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_d792a185-c693-4f70-85a4-ea40daac13cf",
+      "replay_sha256": "14b1c3a8b7ab4705f6429acd2f5e5396eac6c1a1392efe49971d73da1da02734",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_dc30f950-a868-4d04-a4f4-f5012c18f205",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_dc30f950-a868-4d04-a4f4-f5012c18f205",
+      "replay_sha256": "8fc19ec905657f33f465a8a6691330f01c9fbdc8bb657d1bf78ee9b45de34e99",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_e0cf66fb-f6a4-4e72-a4d4-7a331c6efb3c",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_e0cf66fb-f6a4-4e72-a4d4-7a331c6efb3c",
+      "replay_sha256": "a00660b2136b3412febdace0d04d73f07268835905de090a8d9d5203b352f20d",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_e24d9713-f299-4648-8e44-6c4b95717cd0",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_e24d9713-f299-4648-8e44-6c4b95717cd0",
+      "replay_sha256": "242db939bbc6b035b7a2c35a3c18ebda8e06ae95f55a6e0133361d3b95653b9f",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_e25b18c8-e1ae-458e-b4b7-224d1e9a5e6d",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_e25b18c8-e1ae-458e-b4b7-224d1e9a5e6d",
+      "replay_sha256": "5fdc2a467bde2ee2b2a2f0f0a4ef25ef0480c593c8eb85a019b27bd3490cf068",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_e2c4212c-0138-43b3-aa8f-2cf14fe9d91f",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_e2c4212c-0138-43b3-aa8f-2cf14fe9d91f",
+      "replay_sha256": "f33d8bbb84bcf9d495ddb2c364e055a66f8e9ba3999bcb48a4138bc62b9ef039",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_e41bb700-f700-410b-be9f-d9f9ed4282db",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_e41bb700-f700-410b-be9f-d9f9ed4282db",
+      "replay_sha256": "719432e1aeb9d238f26e91f2c3b0056ec38d86be97fac09fbfd9ea3ef22d52a8",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_e4529311-840b-4cf1-9ca1-e1dfce3e4eb4",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_e4529311-840b-4cf1-9ca1-e1dfce3e4eb4",
+      "replay_sha256": "7d00795bf1654e845f6db83269724b0a3bcb920769f9cf2f812e91647dd32a37",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_e60603f7-c2bb-4c35-b557-23fb980827a8",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_e60603f7-c2bb-4c35-b557-23fb980827a8",
+      "replay_sha256": "7d4355fb2f442b91925319bf3892882b79b0bf7e5b4de4ea9715c0ff1ec11a60",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_e94e2c00-f786-4415-a125-762ac349f601",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_e94e2c00-f786-4415-a125-762ac349f601",
+      "replay_sha256": "44a318931e618081a2b229e5363104dc10e96805de012447df7e445cc282e428",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_f3a26e7c-098e-426e-ac07-25e1c89cb80d",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_f3a26e7c-098e-426e-ac07-25e1c89cb80d",
+      "replay_sha256": "4c47d81315259045a794381872bb1a438fcad00fe5a77868cc8a685241e12f91",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_f4618f2a-d28f-43bd-96ca-3966af71d9bc",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_f4618f2a-d28f-43bd-96ca-3966af71d9bc",
+      "replay_sha256": "601e46a24b56ccf83315a75af57fccc155b6717ebe7d5144321c07881016db7f",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_f5604b2b-25d9-4b2b-b874-cd6f8f3753e5",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_f5604b2b-25d9-4b2b-b874-cd6f8f3753e5",
+      "replay_sha256": "804a7eb7a4e98cf00717f9c6728db986b9a9837e7345488f848794e52dcea090",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_f8de4f4a-0346-4835-ad45-b50cbc01b8a2",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_f8de4f4a-0346-4835-ad45-b50cbc01b8a2",
+      "replay_sha256": "bd6fbb9459514dc8a02c64615ce2ad6016cbe6f2e7cc0c620f546c951fa109a4",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    }
+  ],
+  "source_reconstruction": [
+    {
+      "episode": "ereq_00d1c372-ab90-4830-8569-fa823b858e30",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_00d1c372-ab90-4830-8569-fa823b858e30",
+      "replay_sha256": "daada273771fa02bd32a71d444e5c5c170f24288bf11bf086410419861d512e6",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_05941fcf-63f7-486c-b4cf-8e4286a585e5",
+      "context": "red-lead",
+      "slot": 1,
+      "our_slot": 0,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-lead/artifacts/ereq_05941fcf-63f7-486c-b4cf-8e4286a585e5",
+      "replay_sha256": "69219b3ed8e6e146070005b88397c7f5d50e64ee3aea756b4f200c6862d4db4d",
+      "spec_sha256": "56ca246885cc5a40b0cd1c4f649ebd46f386576594d666fda63501853f3c4966"
+    },
+    {
+      "episode": "ereq_06d627b3-a003-40da-bc98-0d6c442b9064",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_06d627b3-a003-40da-bc98-0d6c442b9064",
+      "replay_sha256": "649a4f6d9205eb28e7c0ce7289220eabd92445d5c0e6b000dfdb5d2cfda68957",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_0c9a939d-90ce-469b-92b6-f5ab75a7f3b0",
+      "context": "blue-lead",
+      "slot": 6,
+      "our_slot": 5,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-lead/artifacts/ereq_0c9a939d-90ce-469b-92b6-f5ab75a7f3b0",
+      "replay_sha256": "b946cc2e6d553093abf6e05229418a6e4f6cc199ff15e301c30dff2176dceb92",
+      "spec_sha256": "0f66f30c0ccb9bef9e3beac270fe3fa3d75674ef2ec5fc11e7d7aff39cf81593"
+    },
+    {
+      "episode": "ereq_04468f6a-4c31-4c8f-b0df-36c1931c6567",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_04468f6a-4c31-4c8f-b0df-36c1931c6567",
+      "replay_sha256": "93e6cfeb60ae75ff91c1e5d4a521d6fe13c45ebaf73b69d82b66b30203bd7f07",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_11767c65-e21e-463d-bbda-1c23b1a944b3",
+      "context": "red-late",
+      "slot": 1,
+      "our_slot": 3,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/red-late/artifacts/ereq_11767c65-e21e-463d-bbda-1c23b1a944b3",
+      "replay_sha256": "08de1c8bb2b127044db2fecc70302756429aa303d4e5a251da45e16e1bbf5f98",
+      "spec_sha256": "8de5c7f159980a18fb7a0b1cc0e83fac0a4eda6d393292ddac4e231d1bf02479"
+    },
+    {
+      "episode": "ereq_0548caad-5e61-486f-a950-f05012b8394f",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_0548caad-5e61-486f-a950-f05012b8394f",
+      "replay_sha256": "b38ecc70fc64e698ca9ae952da464d00568ec486298845f5fdcead86520f4c06",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    },
+    {
+      "episode": "ereq_086cd13b-3953-4f20-8988-4a5dec13ef81",
+      "context": "blue-late",
+      "slot": 6,
+      "our_slot": 8,
+      "folder": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-unit-farming59-20260923/trial/baseline/blue-late/artifacts/ereq_086cd13b-3953-4f20-8988-4a5dec13ef81",
+      "replay_sha256": "4c0dfe1554817b1e6281878daaaf464f8ac832b70a3ac6bdc12b61c6119c5e62",
+      "spec_sha256": "92fd9baa7ba95033229950ec1218bb7f719f2166b8edef9b64874d1011fd3582"
+    }
+  ],
+  "new_hosted_games": 0,
+  "limitations": [
+    "Fixed mixed-team roster; relh is our teammate in these contexts, not a controlled opponent comparison",
+    "Our source/Andre/Richard occupy different draft roles and classes",
+    "co-gas priorv58promotion evidence is reported provenance, not independently reverified: its runtime captures are absent here",
+    "Source branch existence and exact replay reconstruction do not establish benefit after transplantation"
+  ]
+}

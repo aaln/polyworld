@@ -1,0 +1,192 @@
+id: gods-of-the-arena-relh-draft-head58-diagnostic-20260923
+game: gods_of_the_arena
+status: promoted
+parent: gods-of-the-arena-neural-release51-v32-20260922
+target_lane: relhalpha
+protected_lane: richard
+hypothesis: >
+  In two hash-verified GameVersion 58 zero-score relh games, v161 explicitly
+  chose Vanguard Knight or Death Knight while Crossbowman was available.
+  A legal-masked draft head learned from current leading players selects
+  Crossbowman on both exact observed states. Test whether that learned draft
+  decision improves relh without reducing protected Richard's score.
+tags:
+- replay-diagnosed
+- exact-release
+- neural-draft-head
+- hybrid-diagnostic
+- source-buildable
+- local-passed
+- no-submit-uploaded
+- hosted-xp-completed
+- promotion-supported
+- champion-membership-active
+- user-directed-relh-focus
+build:
+  coworld_id: cow_2cb5d47d-c064-44af-8b44-cef246667920
+  coworld_version: 2026.9.22.3
+  game_version: 58
+  release_source_commit: 1b70894436b7ffdcd0d421b6b32c2415c9c8bfde
+  environment_snapshot: .runtime/gota-neural-phase-20260923/environment-drafthead-diagnostic.json
+  source_paths:
+  - players/users/relh/co-gas/polyworld-basic/gods_of_the_arena_neural_v58_drafthead_diagnostic.bas
+  source_sha256: 6791bc8cab237d88225356efa03713e2dbbd875c2c42bb718f1cfc926b02f9ca
+  parent_source: players/users/relh/co-gas/polyworld-basic/gods_of_the_arena_neural_release51_v32.bas
+  parent_policy_version_id: 6b72f83b-6623-458c-add3-85ec0ef6e38b
+  protected_policy_version_id: 19d5c60e-b0d4-4382-b253-fabcfd03f896
+  hosted_policy_version_id: 0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1
+  hosted_policy_version: 169
+  tournament_membership_id: lpm_eb7458f7-2198-4b7c-996c-b963d018d528
+  submission_id: sub_ecf92f44-74a1-4851-96a3-e53dbab811a9
+evidence:
+- source: leaderboard
+  artifacts:
+  - .runtime/gota-neural-phase-20260923/field-pages-review-continuation.json
+  - .runtime/gota-continuation-20260923-pass9/round686-live-readback.json
+  visited_at_utc: 2026-09-23T14:36:16Z
+  notes: >
+    Both mandatory Polyworld Buff pages returned HTTP 200 with unchanged
+    content hashes; pooled hero/player statistics do not isolate v58.
+    The current mandate check still targets relh, ranked fifth.
+- source: replay
+  artifacts:
+  - .runtime/gota-continuation-20260923-pass9/round685-relh-low
+  - .runtime/gota-neural-phase-20260923/round683-686-draft-summary.json
+  - .runtime/gota-neural-phase-20260923/environment-drafthead-diagnostic.json
+  scores:
+    game_version: 58
+    verified_draft_games: 96
+    commanded_draft_examples: 558
+    deadline_autopicks_excluded: 402
+    relh_zero_score_failure_episodes: 2
+    replay_hash_mismatches: 0
+  notes: >
+    Stable relh player and policy IDs identify both failures. The first
+    episode picked Vanguard Knight from all ten classes; the second picked
+    Death Knight while Crossbowman was available. Both replay audits had
+    zero hash mismatches and GameVersion 58. Draft examples preserve event
+    order to avoid same-tick future-pick leakage.
+- source: local
+  artifacts:
+  - .runtime/gota-neural-phase-20260923/draft-head-observable32.json
+  - .runtime/gota-neural-phase-20260923/relh-firstpick-base-probe.json
+  - .runtime/gota-neural-phase-20260923/relh-firstpick-candidate-probe.json
+  - .runtime/gota-neural-phase-20260923/relh-secondpick-base-probe.json
+  - .runtime/gota-neural-phase-20260923/relh-secondpick-candidate-probe.json
+  scores:
+    train_examples: 153
+    development_validation_examples: 51
+    masked_frequency_top1: 0.7255
+    draft_head_top1: 0.7843
+    exact_prefix_hash_mismatches: 0
+    first_pick_parent_class: 0
+    first_pick_candidate_class: 6
+    second_pick_parent_class: 5
+    second_pick_candidate_class: 6
+    short_smoke_battle_ticks: 120
+    short_smoke_failed_vms: 0
+  notes: >
+    The epoch was selected on the same development validation set, so the
+    offline comparison is not independent test evidence. Two exact replay
+    prefixes changed only the relh draft choice to Crossbowman with healthy
+    BASIC VMs. The exact v58 source compiled and completed ten-hero drafting
+    plus 120 battle ticks without a VM failure. The source is a draft-only
+    hybrid and does not satisfy the later full-neural submission objective.
+- source: hosted-upload
+  artifacts:
+  - .runtime/gota-neural-phase-20260923/drafthead-upload.json
+  notes: >
+    relh v169 was created with --no-submit from committed source be20720b4.
+    The upload had no champion membership and Richard v195 remained protected.
+- source: hosted-xp
+  artifacts:
+  - .runtime/gota-neural-phase-20260923/xp-drafthead-index.json
+  - .runtime/gota-neural-phase-20260923/xp-drafthead-artifact-manifest.json
+  - .runtime/gota-neural-phase-20260923/xp-drafthead-audit-summary.json
+  scores:
+    completed_paired_episodes: 8
+    artifact_download_errors: 0
+    replay_hash_mismatches: 0
+    vm_failures: 0
+    relh_champion_scores: [0, 0, 0, 0]
+    relh_candidate_scores: [2318, 6969, 0, 2637]
+    richard_champion_control_scores: [1580, 1076]
+    richard_champion_candidate_shared_scores: [1580, 1771]
+    public_leader_control_scores: [869, 6145]
+    public_leader_candidate_shared_scores: [869, 22]
+  notes: >
+    Four exact-roster, fixed-seat and effective-seed controls each changed
+    only relh v161 to v169. The two replay-diagnosed zero-score drafts changed
+    to Crossbowman and relh scored 2318 and 6969. One public-leader roster
+    drafted the same Arcanist class and was bit-for-bit score-identical; the
+    other changed Vanguard Knight to Crossbowman and relh scored 2637 rather
+    than zero. Protected Richard was unchanged in one pair and gained 695 in
+    the other. All eight completed results, GameVersion 58 replays, engine
+    logs, and owned policy logs were inspected. Every replay has zero hash
+    mismatches and ten draft states; no VM failure or runtime error appeared.
+- source: hosted
+  artifacts:
+  - .runtime/gota-neural-phase-20260923/drafthead-submit.json
+  - .runtime/gota-neural-phase-20260923/drafthead-live-readback.json
+  scores:
+    relh_champion_policy_version: 169
+    richard_protected_champion_policy_version: 195
+    latest_readback_richard_rank: 3
+    latest_readback_relh_rank: 5
+  notes: >
+    Exact hosted v169 was submitted only to relh. The platform reports its
+    top-division membership competing, active, and champion. Independent
+    membership readback confirms Richard v195 is still champion. The
+    immediate leaderboard still shows relh v161's prior-round score and
+    Richard at third after a newer completed public round; this is not yet
+    evidence that live v169 improved the leaderboard. Observe a completed
+    round in which v169 actually plays before claiming rank progress.
+- source: leaderboard
+  artifacts:
+  - .runtime/gota-neural-phase-20260923/field-pages-review-v169-live.json
+  - .runtime/gota-neural-phase-20260923/round688-entrant-readback.json
+  - .runtime/gota-neural-phase-20260923/round688-score-summary.txt
+  - .runtime/gota-neural-phase-20260923/round688-live-board.json
+  visited_at_utc: 2026-09-23T15:08:20Z
+  scores:
+    first_live_round: 688
+    relh_v169_appearances: 13
+    relh_v169_average_score: 1688
+    relh_v169_min_score: 360
+    relh_v169_max_score: 2710
+    relh_live_rank_after_round: 5
+    richard_live_rank_after_round: 4
+  notes: >
+    Both mandatory Buff pages were revisited and unchanged. The first
+    completed public round explicitly configured relh v169 and Richard v195.
+    Relh had the highest per-round average in the field and no zero-score
+    game; the rolling leaderboard still ranks relh fifth and Richard fourth.
+    A single round supports live compatibility and score progress, not the
+    standing-mandate requirement of ranks one and two.
+- source: replay
+  artifacts:
+  - .runtime/gota-neural-phase-20260923/round688-low
+  - .runtime/gota-neural-phase-20260923/round688-owned-scores.json
+  scores:
+    sampled_completed_replays: 3
+    game_version: 58
+    replay_hash_mismatches: 0
+    relh_low_scores: [360, 499]
+  notes: >
+    Three first-live-round replays were decoded against the exact release and
+    stable owned player IDs. Relh's 360-point Berserker was a forced final
+    class; the 499-point Warlock was chosen from five available classes with
+    no ranged carry left. Richard's two low Warlocks scored 193 and zero in
+    separate shared games, while a forced Demon Hunter scored 3899. These
+    observations narrow the next behavior investigation; they do not by
+    themselves justify another replacement.
+decision:
+  outcome: promote
+  notes: >
+    Replace only relh v161 with source-backed v169 as an interim leaderboard
+    correction. Completed paired evidence is strongly positive for relh and
+    shows no harm to protected Richard. This policy is still a hybrid: the
+    learned head controls draft, while the existing BASIC shell controls
+    other strategic families. Continue developing a fully neural relh policy
+    after the immediate ladder recovery. Verify exact live membership after
+    submission and observe the next completed public round.
