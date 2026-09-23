@@ -1,0 +1,62 @@
+{
+  "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+  "ir_sha256": "f1926b00764488c758b0c758c4db6d6674b8d77398bfa06a8bd31876ec262473",
+  "local": {
+    "passed": true,
+    "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+    "checks": 662,
+    "checks_by_suite": {
+      "target_and_safety": 80,
+      "druid_recovery": 92,
+      "opening": 100,
+      "buyback": 180,
+      "portal": 84,
+      "broad": 126
+    },
+    "full_native_games": 16,
+    "native_passed": true,
+    "competitive_inference": false,
+    "details": {
+      "practice": {
+        "checks": 80,
+        "max_instructions": 12389,
+        "max_work": 18660,
+        "scope": "Fully visible artificial scenes establish current-host choices, guard precedence and runtime; no competitive inference."
+      },
+      "recovery": {
+        "passed": true,
+        "checks": 92,
+        "max_instructions": 13050,
+        "max_work": 20814,
+        "scope": "Actual-tick lane healing, useful shopping and bounded escape. Local mechanism only."
+      },
+      "openings": {
+        "checks": 100,
+        "max_instructions": 5528,
+        "max_work": 8960,
+        "scope": "Actual first opening command, all ten classes/two teams/five ordinals. Both sources tested against prospective expectations; not competitive evidence."
+      },
+      "buyback": {
+        "checks": 180,
+        "max_instructions": 12389,
+        "max_work": 18660,
+        "scope": "Actual buyback cost/spawn resources/charges/cooldown preservation and non-spending guards, both colors/all classes. Baseline checked against its own unchanged expected behavior; not competitive evidence."
+      },
+      "portals": {
+        "checks": 84,
+        "max_instructions": 12965,
+        "max_work": 20319,
+        "scope": "Deterministic actual-tick fixtures; direct world manipulations test mechanics and guards, not competitive strength."
+      },
+      "scenarios": {
+        "passed": true,
+        "checks": 126,
+        "max_instructions": 16757,
+        "max_work": 24378,
+        "scope": "All ten classes on both colors: real host upgrades, shop, portal guards, death/buyback, 600-creep stress; both-color finite defense release, observed-hit fractional movement and fog exclusion."
+      }
+    }
+  },
+  "hosted_complete": false,
+  "deployment_qualified": false
+}

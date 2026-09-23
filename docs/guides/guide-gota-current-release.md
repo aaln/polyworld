@@ -34,6 +34,17 @@ comparison. Do not reinterpret the earlier rejection as passing.
 September23UTC allowance is11,600games after explicit authorization for10,000more;
 2,320reserved after these studies. Normal1,600limit resumes after the dated override.
 
+## Active research: Richard v174 source transfer
+
+The [source-informed opponent IR](../opponents/richard-v174/source-audit-20260923/README.md)
+reconstructs82,818commands and every replay hash across four Warlock games.
+It preserves the neural selector and later overrides, without claiming an
+executable semantic surrogate. The [coordinated guarded siege experiment](../../games/gods_of_the_arena/experiments/2026-09-23-richard174-transfer.md)
+tests covered tower pressure together with retaliation against a reachable
+attacker. Source **f7873bb2** passes662local checks and16native matches;400fresh
+hosted games are running across red/blue and early/later draft contexts.
+The qualified Druid reference above remains deployed until new gates pass.
+
 ## Prior deployed reference: blue central route
 
 Source **c02f8cb6**, reviewed IR **88860443**, binding
@@ -53,7 +64,8 @@ The [field-sustain IR/policy pair](../../examples/gods_of_the_arena/players/ir/f
 completed 240 fresh games against blue-center after 558 local checks and 12
 complete native games. All audits pass, but mean score falls 10.73% and every
 context misses the 95% preservation floor. It is saved for research and is
-**not deployed**. Both champions continue using blue-center `c02f8cb6`.
+**not deployed**. Both champions retained blue-center `c02f8cb6` at that decision;
+the later Druid-only study above subsequently replaced it.
 
 The [verified coaching replay](../coaching/2026-09-23-field-sustain/README.md)
 confirms that automatic healing already worked: a recovered Druid continued its
