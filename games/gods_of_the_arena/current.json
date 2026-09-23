@@ -12,7 +12,7 @@
   "history": "docs/guides/devin-gota-autoresearch.md",
   "policy_inputs": "public current observations only; opponent versions and replay truth are evaluation metadata",
   "legacy_acceptance_applies": false,
-  "budget": "Permanent user-authorized100000 hosted episodes per UTC day, shared journal;400per experiment cycle, maximum3active XP,40-100per request. No daily expiry.",
+  "budget": "Permanent user-authorized100000 hosted episodes per UTC day;400per cycle,maximum3active XP. Requests1\u2013100games with paired counterfactual controls; each counterfactual request explicitly1\u2013100pairs. No daily expiry.",
   "reference_ir_sha256": "d331ba094eae5ac56e4dbe8533b29b543df089a7720ca2b3d52943d02734e122",
   "reference_evidence": "400 fresh natural later-draft games: mean score273.34 to394.085,+44.17%,red+49.24%,blue+43.42%,95%gainCI[9.73,92.18]. All audits pass; non-Druid local exact command equivalence. Scope fixed later-draft rosters.",
   "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-deployment",
@@ -1820,5 +1820,17 @@
       "blue_score": 2990.85,
       "scope": "Fresh fixed first-pick mixed-roster controls in the score opportunity experiment; separate from original 2026.9.22.2 portal qualification."
     }
-  ]
+  ],
+  "evaluation_request_policy": {
+    "at": "2026-09-23T20:44:54.074366+00:00",
+    "instruction": "Ensure that future xp requests use 100 game variations or smaller with counterfactuals.",
+    "max_episodes_per_xp_request": 100,
+    "max_counterfactual_pairs_per_request": 100,
+    "counterfactual_controls_required": true,
+    "comparison": "Same baseline seed, resolved roster, engine/config and probe slot; replace only the subject policy and rerun responsive policies. Record baseline/candidate episode IDs and paired score deltas.",
+    "selection": "Freeze candidate, baseline cohort selection, contexts and analysis before viewing counterfactual outcomes. Use paired uncertainty estimates; unmatched random-seed A/B is not a counterfactual.",
+    "budget": "Count every newly created baseline and counterfactual episode in the existing shared ledger; preserve daily100000, cycle400 and concurrency3. Per-request100 is not the daily limit.",
+    "api": "Use /v2/counterfactual-evals with explicit n between1and100, subject to live schema and audited seed/roster/config fidelity; a new journaled adapter is needed before first use. Do not treat fixed opposing replay actions as responsive counterfactuals.",
+    "scope": "Future studies; preserve old frozen requests, results and their original statistical design."
+  }
 }

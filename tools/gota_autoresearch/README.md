@@ -1,3 +1,16 @@
+Future XP requests must contain **at most 100 game variations** (smaller batches
+are allowed) and use **paired counterfactual controls**. Reuse the baseline seed,
+resolved roster, subject slot and exact engine/configuration; replace the subject
+policy and rerun responsive opponents. Record paired episode IDs and score deltas,
+with paired uncertainty estimates. Independent random-seed A/B and fixed opposing
+replay actions are not substitutes. Freeze cohort selection before outcomes.
+Use the platform counterfactual endpoint with explicit `n <= 100`; inspect its
+live schema and returned pair metadata. Journal all new baseline and counterfactual
+episodes before creation through the shared budget/concurrency controls. The first
+counterfactual runner must add this journaled adapter; do not bypass accounting
+with a direct untracked POST. Preserve all existing frozen studies unchanged.
+The permanent 100,000-game daily allowance remains separate from this request cap.
+
 # GotA continuous autoresearch
 
 For the portable Devin handoff, start with
@@ -64,7 +77,7 @@ research incumbent. Latest user-authorized live upgrades follow the separate
 FOCUS.md target/field gate and verified Aaron/Coach membership workflow.
 
 Budgets: 400 new hosted episodes per agent cycle, 1,600 per UTC day, at most three
-concurrent requests. A request contains 40–200 games. Studies can span cycles/days;
+concurrent requests. A request contains 1–100 games. Studies can span cycles/days;
 requests are journaled and retried with the same idempotency key. The worker keeps
 doing useful local/replay analysis when hosted allowance is exhausted. Settings
 are in `config.json`; the research agent must not relax them to pass an experiment.

@@ -72,6 +72,19 @@ At handoff capture, a local continuous worker and a separate interactive coachin
 4. Use one durable state volume and a process lock spanning the **whole research cycle**, including uploads/promotions. Local `flock` prevents overlap only for processes sharing that filesystem. Separate ephemeral Devin machines require an external transactional lease and shared ledger; until implemented, use the same session or remain read-only. A Git file that merely says “locked” is not a cross-machine mutex.
 5. Preserve original archived plans and manifests. Put relocated working paths in a separate mapping; do not rewrite history and still claim its old hashes. Recompute new runtime provenance on Linux.
 
+Future XP requests must contain **at most 100 game variations** (smaller batches
+are allowed) and use **paired counterfactual controls**. Reuse the baseline seed,
+resolved roster, subject slot and exact engine/configuration; replace the subject
+policy and rerun responsive opponents. Record paired episode IDs and score deltas,
+with paired uncertainty estimates. Independent random-seed A/B and fixed opposing
+replay actions are not substitutes. Freeze cohort selection before outcomes.
+Use the platform counterfactual endpoint with explicit `n <= 100`; inspect its
+live schema and returned pair metadata. Journal all new baseline and counterfactual
+episodes before creation through the shared budget/concurrency controls. The first
+counterfactual runner must add this journaled adapter; do not bypass accounting
+with a direct untracked POST. Preserve all existing frozen studies unchanged.
+The permanent 100,000-game daily allowance remains separate from this request cap.
+
 Current user authorization (September23): **100,000 hosted episodes per UTC day permanently**, without a dated expiry. See [authorization](../../games/gods_of_the_arena/budget-authorizations/2026-09-23-permanent-100000.json) and the current-release guide. The historical limits below describe the older handoff and do not override this authorization. Shared cycle/concurrency rules still apply.
 
 Normal limits: **400 new hosted episodes per research cycle**, **1,600 per UTC day**, at most **3 active XP requests**, batches **40–200**. The capture includes a **100,000 allowance for September 20 only**, with a dated authorization and a 1,600 normal limit; it is not a standing remote budget increase. Count inherited and interactive spending, not just this process's requests. Continue useful local analysis when budget is exhausted. Never modify limits to make an experiment pass.

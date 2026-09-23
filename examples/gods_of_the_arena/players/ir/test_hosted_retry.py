@@ -7,6 +7,23 @@ from hosted_wave import ResilientClient
 
 
 class RetryTests(unittest.TestCase):
+    def test_request_caps_reject_before_any_network_call(self):
+        calls = []
+        def handle(request):
+            calls.append(request)
+            return httpx.Response(200, json={'ok': True})
+        with ResilientClient(base_url='https://example.invalid', transport=httpx.MockTransport(handle)) as c:
+            for path, field in [('/v2/experience-requests', 'num_episodes'),
+                                ('/v2/counterfactual-evals', 'n')]:
+                for count in [0, 101, 200, None, True, 100.0, '100']:
+                    with self.subTest(path=path, count=count), self.assertRaises(ValueError):
+                        c.post(path, json={field: count})
+                for count in [1, 50, 100]:
+                    self.assertEqual(c.post(path, json={field: count}).status_code, 200)
+            with self.assertRaises(ValueError):
+                c.post('/v2/counterfactual-evals', json={})
+        self.assertEqual(len(calls), 6)
+
     def exercise(self, method, url, body=None):
         calls = []
         def handle(request):

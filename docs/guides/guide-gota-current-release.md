@@ -1,5 +1,18 @@
 # Current Gods of the Arena policy work
 
+Future XP requests must contain **at most 100 game variations** (smaller batches
+are allowed) and use **paired counterfactual controls**. Reuse the baseline seed,
+resolved roster, subject slot and exact engine/configuration; replace the subject
+policy and rerun responsive opponents. Record paired episode IDs and score deltas,
+with paired uncertainty estimates. Independent random-seed A/B and fixed opposing
+replay actions are not substitutes. Freeze cohort selection before outcomes.
+Use the platform counterfactual endpoint with explicit `n <= 100`; inspect its
+live schema and returned pair metadata. Journal all new baseline and counterfactual
+episodes before creation through the shared budget/concurrency controls. The first
+counterfactual runner must add this journaled adapter; do not bypass accounting
+with a direct untracked POST. Preserve all existing frozen studies unchanged.
+The permanent 100,000-game daily allowance remains separate from this request cap.
+
 Read `games/gods_of_the_arena/current.json`. The active engine is
 **2026.9.23.2 / fd315c8fa30f8923c7a7709a577c40ac071b1c2a**, published coworld
 `cow_f2dcdbcd-f984-445b-af5b-ee9481a7f362`. Verify the live league's source,

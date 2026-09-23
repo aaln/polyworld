@@ -24,6 +24,15 @@ HELPER = Path.home() / ".codex/skills/run-eval/scripts/eval_request.py"
 class ResilientClient(httpx.Client):
     """Retry transient reads and explicitly idempotent XP creation only."""
     def request(self, method, url, **kwargs):
+        if method.upper() == 'POST' and str(url) in (
+                '/v2/experience-requests', '/v2/counterfactual-evals'):
+            body = kwargs.get('json') or {}
+            # Counterfactual defaults can exceed the user's per-request limit;
+            # require an explicit paired-comparison count for that endpoint.
+            count = (body.get('num_episodes', 1) if str(url) == '/v2/experience-requests'
+                     else body.get('n'))
+            if type(count) is not int or not 1 <= count <= 100:
+                raise ValueError('XP and counterfactual requests require 1–100 games/comparisons')
         safe = method.upper() == 'GET' or (
             method.upper() == 'POST' and str(url) == '/v2/experience-requests'
             and bool((kwargs.get('json') or {}).get('idempotency_key')))

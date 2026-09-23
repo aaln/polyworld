@@ -393,7 +393,10 @@ def accept(root, path):
 
 def reserve(root, body, output, cycle):
     c = config(root)
-    require(40 <= body['num_episodes'] <= 200, 'Batch size must be 40–200')
+    count = body['num_episodes']
+    maximum = min(100, c.get('max_episodes_per_xp_request', 100))
+    require(type(count) is int and 1 <= count <= maximum,
+            'Batch size must be 1–' + str(maximum))
     require(body['target'] == c['target'], 'Wrong game')
     require(body['game_config_overrides'] == c['game_config'], 'Unapproved engine/config change')
     key = body['idempotency_key']

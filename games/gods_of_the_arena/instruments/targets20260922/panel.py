@@ -61,7 +61,7 @@ def reserve(c,body,out):
         h.write(cache_path,cache)
         assert active<cfg['max_parallel_xp'] or (out/'created.json').exists()
         # Current API rejects >100 before creation (captured September 23).
-        assert 40<=body['num_episodes']<=100
+        assert type(body['num_episodes']) is int and 1<=body['num_episodes']<=min(100,cfg.get('max_episodes_per_xp_request',100))
         assert body['target']=={'coworld_id':h.GAME,'variant_id':'competition'}
         expected={k:v for k,v in h.read(STUDY/'canonical-game.json')['manifest']['variants'][0]['game_config'].items() if k not in ('seed','players','tokens')}
         assert body['game_config_overrides']==expected

@@ -11,6 +11,21 @@ import researcher as r
 
 
 class ResearcherTests(unittest.TestCase):
+    def test_request_cap_precedes_budget_reservation(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            r.write(root/'config.json', dict(tooling=tmp, target={'coworld_id':'test'},
+                    game_config={}, daily_episode_limit=100000, cycle_episode_limit=400))
+            body = dict(idempotency_key='small', num_episodes=1,
+                        target={'coworld_id':'test'}, game_config_overrides={})
+            for count in [0, 101, 200, True, 100.0]:
+                with self.subTest(count=count), self.assertRaises(ValueError):
+                    r.reserve(root, body | {'num_episodes':count}, root/'bad', 'cycle')
+            self.assertFalse((root/'xp-ledger.json').exists())
+            r.reserve(root, body, root/'small', 'cycle')
+            r.reserve(root, body | {'idempotency_key':'hundred', 'num_episodes':100}, root/'hundred', 'cycle')
+            self.assertEqual(sum(e['episodes'] for e in r.read(root/'xp-ledger.json').values()), 101)
+
     def matrix(self):
         arms, results = [], {}
         def add(kind, role, color, group, wins=32):

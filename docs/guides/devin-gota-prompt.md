@@ -7,3 +7,16 @@ Use the same seven-layer Python IR as the primary policy. Diagnose losses throug
 Have the coach propose explicit hypotheses tied to rule/skill/layer, mechanism predictions, falsifiers and runtime cost. Fork, compile/extract exactly, test activation and full responsive games, then freeze and run fresh hosted comparisons through a durable idempotent budget journal. Record what actually changed and worked. Preserve all null results, regressions and invalid runs. Never tune on confirmation or silently relax gates. Deploy only the exact qualified source within current authority; verify membership and subsequent league performance and retain rollback.
 
 At each checkpoint, commit portable code, models and sanitized results to this fork and retain raw evidence privately. Report live rank, exact versions/hashes, per-color W/L/D/invalid, distinct streams, mechanism evidence, gate results, spend/pending jobs and the next discriminating test. No guaranteed-win claims. If no candidate qualifies, retain the incumbent and continue research. Do not send messages to other people or publish credentials.
+
+Future XP requests must contain **at most 100 game variations** (smaller batches
+are allowed) and use **paired counterfactual controls**. Reuse the baseline seed,
+resolved roster, subject slot and exact engine/configuration; replace the subject
+policy and rerun responsive opponents. Record paired episode IDs and score deltas,
+with paired uncertainty estimates. Independent random-seed A/B and fixed opposing
+replay actions are not substitutes. Freeze cohort selection before outcomes.
+Use the platform counterfactual endpoint with explicit `n <= 100`; inspect its
+live schema and returned pair metadata. Journal all new baseline and counterfactual
+episodes before creation through the shared budget/concurrency controls. The first
+counterfactual runner must add this journaled adapter; do not bypass accounting
+with a direct untracked POST. Preserve all existing frozen studies unchanged.
+The permanent 100,000-game daily allowance remains separate from this request cap.
