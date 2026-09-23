@@ -1,0 +1,7 @@
+{
+  "source_path": "tests/test_gota_attacks.nim",
+  "source_commit": "fd315c8fa30f8923c7a7709a577c40ac071b1c2a",
+  "output": "Testing all ten heroes acquire the nearest visible enemy\nTesting selected targets override creeps and all classes chase into range\nTesting basic attack damage scales independently of all four spells\nTesting a lost chase target returns the hero to nearby creeps\nTesting ordinary walking suppresses automatic target acquisition\nTesting an extra ability can end a chase without leaving a stale path\nTesting idle heroes attack nearby heroes without a selected target\nTesting attack cooldown predicts both windup and repeat hits\nTesting walking cancels windup and reports actual movement\nTesting collision displacement and creep motion are observable\nTesting attack counters survive respawn and motion state is hashed\nGOTA basic attack tests passed\n",
+  "output_sha256": "b0242422a40bc9371ec1f2289f4767217a96081f97d07ea2275cdaf4045df034",
+  "exit_code": 0
+}

@@ -1,7 +1,7 @@
 {
-  "game_version": "2026.9.23.1",
-  "engine_commit": "d6827a4bd3a55a46cf86f88e921f147137709c64",
-  "coworld_id": "cow_32f7afc6-78f6-49d5-990b-5b3c3619662c",
+  "game_version": "2026.9.23.2",
+  "engine_commit": "fd315c8fa30f8923c7a7709a577c40ac071b1c2a",
+  "coworld_id": "cow_f2dcdbcd-f984-445b-af5b-ee9481a7f362",
   "variant_id": "competition",
   "primary_metric": "mean per-hero max(0, lifetime XP * 1440 - 200 * world ticks) // 1440, including draft ticks",
   "fort_outcome": "diagnostic; not an advancement gate for new XP-score experiments",
@@ -26,13 +26,13 @@
   "priority_opponent": {
     "label": "relh-gods-of-the-arena:v169",
     "id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
-    "qualification": "User-directed source review; exact source and8full replay59 reconstructions verified. No competitive own-policy transfer claim. Relh third at18:23UTC; khors180 remains leaderboard leader.",
+    "qualification": "Relh169exact source audit remains valid; its200game score/activation cohort is replay59 and must not be treated as current replay60strength. Re-resolve current opponents before testing.",
     "prior_analysis": "docs/opponents/relh-v169/source-audit-20260923/README.md"
   },
   "reference_validation_game_version": "2026.9.22.3",
   "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Relh169source review complete: sharedRichard174battle controller, learned draft head;8full source reconstructions/200current-engine controls. Direct draft transplant only changes30DeathKnight picks toVanguard; all100own late states forced melee. Proposed melee income and class-kit/return tests remain non-executable. Prior unit-only/selective-finish andRichard transfers failed their original gates and remain preserved. No replacement deployed.",
+  "research_status": "Replay60explicit-abilities release verified. All automatic ability casting removed.20natural-vision healing fixtures expose missing noncombat Vanguard/DeathKnight sustain; dedicated Druid recovery works. Four complete native matches/hash audits pass for unchanged incumbent. Prior score/opponent comparisons remain historical on their exact releases; next priority explicit casting/healing before a fresh hosted score comparison.",
   "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
   "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
@@ -1168,6 +1168,13 @@
       "coworld_id": "cow_2cb5d47d-c064-44af-8b44-cef246667920",
       "reference_validation_game_version": "2026.9.22.3",
       "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde"
+    },
+    {
+      "game_version": "2026.9.23.1",
+      "engine_commit": "d6827a4bd3a55a46cf86f88e921f147137709c64",
+      "coworld_id": "cow_32f7afc6-78f6-49d5-990b-5b3c3619662c",
+      "reference_validation_game_version": "2026.9.22.3",
+      "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde"
     }
   ],
   "deferred_candidates": [
@@ -1247,7 +1254,8 @@
     "status": "complete_diagnosis_and_proposed_tests",
     "existing_games_audited": 200,
     "new_hosted_games_for_diagnosis": 0,
-    "executable": false
+    "executable": false,
+    "release_amendment": "games/gods_of_the_arena/release-audits/2026-09-23-explicit-abilities/mechanics-and-coaching.ir.json"
   },
   "relh169_source_audit": {
     "report": "docs/opponents/relh-v169/source-audit-20260923/README.md",
@@ -1261,6 +1269,15 @@
     "battle_body_identical_to": "richard-gods-of-the-arena:v174",
     "new_hosted_games": 0,
     "deployed": false,
-    "leaderboard_snapshot": "docs/opponents/relh-v169/source-audit-20260923/live-readback.json"
+    "leaderboard_snapshot": "docs/opponents/relh-v169/source-audit-20260923/live-readback.json",
+    "release_scope": "2026.9.23.1/replay59; source identity preserved; automatic spell and score observations do not qualify replay60 behavior."
+  },
+  "explicit_abilities_release": {
+    "report": "games/gods_of_the_arena/release-audits/2026-09-23-explicit-abilities/README.md",
+    "ir": "games/gods_of_the_arena/release-audits/2026-09-23-explicit-abilities/mechanics-and-coaching.ir.json",
+    "verified_at": "2026-09-23T18:37:29.470266+00:00",
+    "replay_version": 60,
+    "qualification": "Engine contract and native runtime verified; incumbent not competitively requalified on replay60.",
+    "new_hosted_games": 0
   }
 }

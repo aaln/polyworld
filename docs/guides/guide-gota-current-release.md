@@ -1,19 +1,42 @@
 # Current Gods of the Arena policy work
 
 Read `games/gods_of_the_arena/current.json`. The active engine is
-**2026.9.23.1 / d6827a4bd3a55a46cf86f88e921f147137709c64**, published coworld
-`cow_32f7afc6-78f6-49d5-990b-5b3c3619662c`. Verify the live league's source,
+**2026.9.23.2 / fd315c8fa30f8923c7a7709a577c40ac071b1c2a**, published coworld
+`cow_f2dcdbcd-f984-445b-af5b-ee9481a7f362`. Verify the live league's source,
 version and configuration before new hosted work. The research branch preserves
-older engine files and studies; build the exact pinned engine through
-`games/gods_of_the_arena/instruments/productive20260923/bootstrap59.py`.
+older engine files and studies; use a separate exact engine worktree and the
+replay60 contract checks in `games/gods_of_the_arena/instruments/explicit20260923/`.
+The former `productive20260923/bootstrap59.py` remains pinned to archived replay59.
 
-The September 23 balance release uses replay game version **59**, game format **6**
+The [explicit-abilities release audit](../../games/gods_of_the_arena/release-audits/2026-09-23-explicit-abilities/README.md)
+verifies the live manifest at18:37UTC, upstream spell/basic-attack/reference-policy
+checks,20natural-vision healing fixtures and4complete ten-VM native matches.
+**All abilities now require explicit casts**, including healing, slot0 and
+ultimates. Automatic basic acquisition now includes heroes and exposed structures
+as well as creeps; walking still suppresses it. Items already required explicit
+use. Replay version is60, format6, outer2. The obsolete manual-spell flag/action
+is removed; do not add it back to current instruments. Bassy is now pinned to
+`b25e0efef3fec0bd86ed3154659c0762a7158bd3`; preserve old dependency checkouts.
+
+The unchanged incumbent passes runtime checks but has a verified healing gap:
+low-health Vanguard/DeathKnight issue no heal while returning home without a
+target. Druid's dedicated lane rule explicitly heals and resumes play in the
+same fixture. New semantic coaching prioritizes safe explicit sustain before
+retreat/no-target stops, legal ability shapes and useful charge spending.
+No replacement policy or new hosted games were introduced in this audit.
+All prior score comparisons retain their old release scope; get fresh replay60
+controls before claiming improvement or opponent superiority. Historical failed
+experiments remain preserved and do not prohibit a separately frozen test under
+these changed mechanics.
+
+The previous September 23 balance release uses replay game version **59**, game format **6**
 and outer file version **2**. Ranger HP growth is now **29**, Crossbowman base
 attack damage **58**, Gale Slash damage **65**, and Sanguine Chalice healing **45**.
 The score formula, BASIC host and simulation controller code remain unchanged;
-content stats and the replay envelope changed. Existing source29f6d7e6 champions
-remain live; all competitive qualifications below belong to their recorded old
-release until a fresh replay59 comparison passes. Andre's coached high-score episode uses khors v179; the subsequent trial
+content stats and the replay envelope changed in that release. Existing
+source29f6d7e6 remains the deployed reference; all competitive qualifications below
+belong to their recorded old release until a fresh replay60 comparison passes.
+Andre's coached high-score episode uses khors v179; the subsequent trial
 freezes v180 after an upgrade before submission.
 
 The [khors179 audit](../opponents/khors-v179/score-audit-20260923/README.md)
@@ -43,8 +66,9 @@ is preserved and deferred before hosted spending, not combined with this test.
 The [manual coaching IR](../coaching/2026-09-23-manual-score/README.md) preserves
 five user screenshots and audits all200existing replay59 controls for resource,
 spell and kill productivity. Andre's higher spending includes more buyback gold;
-consumables include portals. Automatic casting is enabled, so rejected manual
-casts alone do not prove lost spell effects. Half our cohort is melee, while
+consumables include portals. In that replay59 cohort, automatic casting was enabled,
+so rejected manual casts alone did not prove lost spell effects. The replay60
+amendment above removes that fallback assumption. Half our cohort is melee, while
 Andre always drafts Ranger/Crossbowman; our14Vanguard games all scorezero and
 86DeathKnight games average137.48. Class/role context is required before choosing
 an intervention. Proposed skills and their validation gates are non-executable
