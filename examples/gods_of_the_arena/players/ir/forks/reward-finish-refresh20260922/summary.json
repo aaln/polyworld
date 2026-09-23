@@ -1,0 +1,30 @@
+{
+  "refresh": [
+    {
+      "name": "reward-finisher",
+      "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
+      "score_gate_passed": false,
+      "baseline_score": 2409.0375,
+      "candidate_score": 2353.7125,
+      "aggregate_gain_percent": -2.29656034827187,
+      "gain_ci95_percent": [
+        -17.59214526573656,
+        15.593064042628924
+      ],
+      "per_color_gain_percent": [
+        3.2573653061793273,
+        -9.321894464684455
+      ]
+    }
+  ],
+  "qualified": null,
+  "pairs": [
+    {
+      "verified": true,
+      "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
+      "ir_sha256": "2939446eca7f0820d30b11af548f176ce0aedadaf7d39b26f697ce168ecc122d",
+      "trial_passed": false,
+      "deployment_qualified": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "gota-research-hypotheses/1",
+  "situation": {
+    "game_version": "2026.9.22.3",
+    "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+    "observed": "Same four final equipment items for ours and khors in all80current-engine audited control games; ours retains1738mean gold, khors1162.",
+    "public_features_available": [
+      "selfGold",
+      "selfRespawnTicks",
+      "buybackPrice()",
+      "itemId(slot)",
+      "itemCount(slot)",
+      "selfPortalCooldown"
+    ],
+    "evidence": "inventory-review.json"
+  },
+  "belief": {
+    "status": "hypothesis",
+    "claims": [
+      "Gold has no direct final-score value; buying equipment, consumables or respawn time can affect XP.",
+      "More buyback attempts do not prove more productive time or better score.",
+      "Final inventories do not identify purchase order or successful item use."
+    ]
+  },
+  "goal": {
+    "individual_score": "Increase final XP less200points/minute; no separate gold or team-win gate."
+  },
+  "skill": {
+    "productive_buyback": {
+      "status": "unimplemented",
+      "proposal": "Test spending surplus gold on earlier buyback after the core is complete, with explicit remaining-respawn and gear/scroll reserves. Preserve survival/portal control and assess full-policy XP/time effects.",
+      "required_practice": [
+        "Price/reserve and insufficient-gold guards",
+        "Actual death-to-respawn timing and cost",
+        "Ability, mana and portal state after buyback",
+        "Both colors/classes and full VM budget"
+      ]
+    },
+    "equipment_slot_choice": {
+      "status": "unimplemented",
+      "proposal": "Evaluate the opportunity cost of early dagger versus later mobility or mana gear; no sell/upgrade API exists and equipment cannot duplicate. Do not infer benefit from unused gold alone."
+    }
+  },
+  "strategy": [
+    {
+      "when": "Completing the current unchanged-source confirmation",
+      "prefer": "Retain its frozen decision; do not blend these hypotheses into that candidate."
+    },
+    {
+      "when": "Starting a new cycle after full results and a fresh field check",
+      "prefer": "Choose one coordinated gold-to-productive-time candidate with current controls and freeze its numerical score rule before games."
+    }
+  ],
+  "execution": {
+    "binding": null,
+    "executable": false,
+    "competitive_validation": false,
+    "live_inputs": "Public observations only; no replay truth or player UUID inference."
+  },
+  "update": {
+    "origin": "Current-engine source inventory semantics,80clean replay final inventories,and buyback-attempt counts. Save separately from validated policy IR.",
+    "evidence": [
+      "inventory-review.json",
+      "../../../games/gods_of_the_arena/experiments/2026-09-22-reward-refresh.md"
+    ],
+    "no_automatic_spending": true
+  }
+}

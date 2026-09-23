@@ -20,7 +20,7 @@
     "aaron": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
     "coach": "088c0fed-b536-4777-9f7a-14abee21e5b8"
   },
-  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-22-reward-refresh.md",
+  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-23-combat-elixir.md",
   "deployment_status": "Both unchanged portal champions verified competing and active at 2026-09-22T21:38:06.362197+00:00; score candidate rejected, no league mutation.",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
@@ -31,7 +31,7 @@
   "reference_validation_game_version": "2026.9.22.2",
   "reference_validation_engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Reward-finisher400game scoregate passed+12.44%,CI[0.084,26.409],red+22.29%,blue+4.01%; original all-field gate failed after Julia updated. Fresh160current-background confirmation running, frozen score/principal-version gate. Both portal champions unchanged.",
+  "research_status": "Combat elixir sourceaca1e7d1 in frozen400-game current-roster trial;450fixtures/8native/IRroundtrip pass. Both portal champions retained. Finisher refresh160 rejected.",
   "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
   "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
@@ -76,12 +76,12 @@
     "confirmation_gain_percent": -4.203742159004086
   },
   "active_candidate": {
-    "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
-    "ir_sha256": "928ded9658b2e9c1102d063e6a3577b327bf67e07adfcebeef43c86f78dbd5da",
-    "local_pair": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-finish-score-20260922/reward-finisher",
-    "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-finish-refresh-20260922",
-    "binding": "gota-bassy/reward-finish-2026-09-22-r1",
-    "status": "hosted_refresh_running"
+    "source_sha256": "aca1e7d147b84c69bd942d1d07f83751b1b37036b0969ff66aacb2c8f01f7b58",
+    "ir_sha256": "15a88bf3d098961901bcd9be47e516f4b828299eba70c1845e0e1ad08a4d2805",
+    "binding": "gota-bassy/combat-elixir-2026-09-23-r1",
+    "local_pair": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-combat-elixir-20260923/combat-elixir",
+    "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-combat-elixir-20260923",
+    "status": "hosted_trial_running"
   },
   "class_score_study": {
     "status": "complete_rejected",
@@ -123,5 +123,26 @@
     "khors_score": 1690.985455007314,
     "rounds": 48,
     "note": "Standings are time-stamped context, not a predictor. Exact capture in refresh/field-before/snapshot.json."
+  },
+  "reward_refresh_study": {
+    "games": 160,
+    "status": "complete_rejected",
+    "pair_bundle": "examples/gods_of_the_arena/players/ir/forks/reward-finish-refresh20260922",
+    "result": {
+      "name": "reward-finisher",
+      "source_sha256": "e6bb1eba81233cd5b1757e678b33817ea26e9db283b1ea56f4cf70d2e6e1d4b3",
+      "score_gate_passed": false,
+      "baseline_score": 2409.0375,
+      "candidate_score": 2353.7125,
+      "aggregate_gain_percent": -2.29656034827187,
+      "gain_ci95_percent": [
+        -17.59214526573656,
+        15.593064042628924
+      ],
+      "per_color_gain_percent": [
+        3.2573653061793273,
+        -9.321894464684455
+      ]
+    }
   }
 }

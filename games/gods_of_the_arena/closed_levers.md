@@ -45,3 +45,10 @@
 
 ## 2026-09-20 finite defense + scout + Ranger focus
 The exact standard07de1de1 and armor801cabc6 bundles failed Richard135 red0/40 each (blue40/40 each). Unchanged standard also failed Alex red2/40,blue0/40 and Jordan0/40each. All400hosted/108local valid; no promotion. Reduced emergency duration and fewer raw deaths accompanied earlier red fort loss, not established survival improvement. Do not rerun these sources unchanged or attribute failure to every possible offense/grouping design. New evidence required: a distinct mechanism with actual full-game activation and fresh per-color comparisons. Record: /Users/aaln/experiments/softmax/polyworld/games/gods_of_the_arena/experiments/2026-09-20-richard135-transition.md.
+
+- 2026-09-23UTC: reward-finisher e6bb1eba failed fresh160-game Julia B5
+  confirmation: −2.30% overall, red+3.26%,blue−9.32%,CI[−17.59,+15.59].
+  All160 valid; unchanged field. Do not rerun unchanged or deploy from the
+  earlier400-game positive slice. This rejects the complete candidate under
+  the frozen rule, not every possible finishing mechanism. See
+  `experiments/2026-09-22-reward-refresh.md`.

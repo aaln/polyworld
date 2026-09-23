@@ -32,7 +32,7 @@ tests must account for slot opportunity cost and time recovered in the field.
 | Same source, independent later-draft roster | 160 | −4.20% | −13.35% / +6.54% | Rejected |
 | Crossbow-only intervention | 160 | −6.35% | −31.94% / +20.78% | Rejected |
 | Reward-ordered immediate finishes | 400 | +12.44% | +22.29% / +4.01% | Score gate passed; field changed |
-| Same source with refreshed Julia teammate | 160 | Pending | Pending | Independent confirmation running |
+| Same source with refreshed Julia teammate | 160 | −2.30% | +3.26% / −9.32% | Rejected |
 
 The initial two candidates share one explicitly reported 80-game control;
 that screen totals 240 games. Adding its 160-game independent confirmation
@@ -74,3 +74,13 @@ records exact champion versions and prioritizes changed champions, then current
 leaders. It includes new entrants before their first ranked round. Its output
 is a research queue, not a live policy input, forecast or automatic deployment.
 The paused legacy worker must not resume its obsolete game configuration.
+
+The completed refreshed160-game test fails the aggregate and blue-preservation
+gates, despite a stable field and all audits passing. Both deployed policies
+remain db71abb3. [Reviewed refreshed IR/source pair](../../../examples/gods_of_the_arena/players/ir/forks/reward-finish-refresh20260922/README.md).
+
+Next investigation: effective consumable healing. Current cheap potions heal
+120HP over10seconds and any damage interrupts recovery. Vitality Elixirs
+cost75gold and heal90HP immediately, sharing the10second health cooldown.
+Changing the item choice, combat-use guard and post-core reserve is one
+coordinated survival hypothesis, not a validated improvement.
