@@ -5,33 +5,33 @@
   "variant_id": "competition",
   "primary_metric": "mean per-hero max(0, lifetime XP * 1440 - 200 * world ticks) // 1440, including draft ticks",
   "fort_outcome": "diagnostic; not an advancement gate for new XP-score experiments",
-  "reference_pair": "examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-hosted",
-  "reference_source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
-  "binding": "gota-bassy/portals-2026-09-22-r3",
+  "reference_pair": "examples/gods_of_the_arena/players/ir/forks/core-buyback20260923/core-buyback",
+  "reference_source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+  "binding": "gota-bassy/core-buyback-2026-09-23-r1",
   "current_guide": "docs/guides/guide-gota-current-release.md",
   "history": "docs/guides/devin-gota-autoresearch.md",
   "policy_inputs": "public current observations only; opponent versions and replay truth are evaluation metadata",
   "legacy_acceptance_applies": false,
   "budget": "Shared existing journal; 400 new hosted games/cycle, 1600/UTC day, maximum 3 active XP, 40-200/batch. Expired dated overrides do not apply.",
-  "reference_ir_sha256": "ecd1f2a1aa3f06272084d3247e9b39219a8f463b9df3e3babfa7ab1f24e7e052",
-  "reference_evidence": "160 fresh-control hosted games: +11.56% mean score, red+27.46% and blue+0.60%; all source/VM/replay/XP/integer scores verified. Outscored khors:v11445/80; confidence intervals includezero. Keep-to-home starts107\u21921. Fixed roster, no #1 guarantee.",
-  "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-deployment",
+  "reference_ir_sha256": "c1a5839bcfe2c4a155f6ee76de78fb6a86d59601e1e051dafe62bac5bb7b5b20",
+  "reference_evidence": "400 fresh held-out games,100/source/color: +30.18%mean individual score,red+22.97%,blue+39.79%,95%gainCI[+16.10,+46.54]. All10source/VM/fullreplay/XP/integer audits pass. Richard174 outscored160/200; khors114 100/200,blue mean gap-161.49. Fixed first-team-seat roster,not universal rank.",
+  "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/core-buyback20260923-deployment",
   "live_versions": {
-    "aaron": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
-    "coach": "088c0fed-b536-4777-9f7a-14abee21e5b8"
+    "aaron": "30a0e469-8c2f-450c-b3bc-4a687a6c74e3",
+    "coach": "2013aad3-a754-4e31-8cea-727aa6c3a6b1"
   },
   "current_experiment": "games/gods_of_the_arena/experiments/2026-09-23-core-buyback.md",
-  "deployment_status": "Both unchanged portal champions verified competing and active at 2026-09-22T21:38:06.362197+00:00; score candidate rejected, no league mutation.",
+  "deployment_status": "Both core-buyback champions verified competing and active at 2026-09-23T01:35:32.222011+00:00; future league-round outcome unmeasured.",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
     "label": "khors:v114",
     "id": "145c01e0-0cbf-4e1e-8120-11b437175b91",
-    "qualification": "Historical portal study outscored khors114 in 45/80. Current 2026.9.22.3 controls outscore 38/80; rejected score candidate 33/80. Confident both-color superiority remains unmet."
+    "qualification": "Core-buyback candidate outscores khors114 100/200; red64/100,blue36/100. Mean gaps+1013.26/-161.49. Both-color superiority still unqualified."
   },
-  "reference_validation_game_version": "2026.9.22.2",
-  "reference_validation_engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67",
+  "reference_validation_game_version": "2026.9.22.3",
+  "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Core-buyback67fdcd5d in400fresh current-Richard174 games;390fixtures/8native pass. Elixir400 unqualified+6.79%,CIcrosses0; both portal champions retained.",
+  "research_status": "Core buyback qualified and deployed to both players;400freshgames+390fixtures+8native. Prior failures preserved. No pending requests; old worker remains paused.",
   "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
   "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
@@ -77,11 +77,13 @@
   },
   "active_candidate": {
     "source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
-    "ir_sha256": "f0c81ccd1d250a4b10452983e23055ed5d928e5e6921509a135eafa9f7fd5be5",
+    "ir_sha256": "c1a5839bcfe2c4a155f6ee76de78fb6a86d59601e1e051dafe62bac5bb7b5b20",
     "binding": "gota-bassy/core-buyback-2026-09-23-r1",
     "local_pair": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-core-buyback-20260923/core-buyback",
     "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-core-buyback-20260923",
-    "status": "hosted_trial_running"
+    "status": "qualified_deployed",
+    "initial_ir_sha256": "f0c81ccd1d250a4b10452983e23055ed5d928e5e6921509a135eafa9f7fd5be5",
+    "pair": "examples/gods_of_the_arena/players/ir/forks/core-buyback20260923/core-buyback"
   },
   "class_score_study": {
     "status": "complete_rejected",
@@ -116,13 +118,66 @@
     }
   },
   "live_league_snapshot": {
-    "at": "2026-09-23T00:02:29.924570+00:00",
-    "aaron_rank": 2,
-    "aaron_score": 1670.8027541678664,
-    "khors_rank": 1,
-    "khors_score": 1690.985455007314,
-    "rounds": 48,
-    "note": "Standings are time-stamped context, not a predictor. Exact capture in refresh/field-before/snapshot.json."
+    "at": "2026-09-23T01:34:37.142974+00:00",
+    "standings": [
+      {
+        "rank": 1,
+        "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+        "player_name": "Andre von Auto",
+        "score": 1721.3683031332898,
+        "score_label": "Score",
+        "score_value_type": "number",
+        "rounds_played": 51,
+        "episode_wins": null,
+        "episodes_played": null,
+        "win_rate": null,
+        "policy_label": "khors:v114",
+        "recent_rounds": null
+      },
+      {
+        "rank": 2,
+        "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "player_name": "Aaron",
+        "score": 1666.2642894802639,
+        "score_label": "Score",
+        "score_value_type": "number",
+        "rounds_played": 51,
+        "episode_wins": null,
+        "episodes_played": null,
+        "win_rate": null,
+        "policy_label": null,
+        "recent_rounds": null
+      },
+      {
+        "rank": 3,
+        "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+        "player_name": "richard",
+        "score": 1623.7345975456806,
+        "score_label": "Score",
+        "score_value_type": "number",
+        "rounds_played": 51,
+        "episode_wins": null,
+        "episodes_played": null,
+        "win_rate": null,
+        "policy_label": "richard-gods-of-the-arena:v174",
+        "recent_rounds": null
+      },
+      {
+        "rank": 4,
+        "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "player_name": "Aaron's Co-play Coach",
+        "score": 1391.5491355209554,
+        "score_label": "Score",
+        "score_value_type": "number",
+        "rounds_played": 51,
+        "episode_wins": null,
+        "episodes_played": null,
+        "win_rate": null,
+        "policy_label": null,
+        "recent_rounds": null
+      }
+    ],
+    "scope": "Before core-buyback deployment; round51 reflects previous policies. Future performance unmeasured."
   },
   "reward_refresh_study": {
     "games": 160,
@@ -171,6 +226,48 @@
     "label": "Richard:v174",
     "source_sha256": "c6429ea4ee202edc456de71c5ee7ad896ec423b11bbf2717c0dd4dd76c58b766",
     "admission": "docs/opponents/richard-v174/admission-20260923",
-    "scope": "One runtime-admitted replay; no executable proxy or competitive claim."
+    "scope": "400fresh mixed-roster trial pins174 on opposing team both colors. Candidate outscores174 160/200,positive per-color mean gap intervals. No executable proxy recovered."
+  },
+  "reference_history": [
+    {
+      "reference_pair": "examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-hosted",
+      "reference_source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "reference_ir_sha256": "ecd1f2a1aa3f06272084d3247e9b39219a8f463b9df3e3babfa7ab1f24e7e052",
+      "binding": "gota-bassy/portals-2026-09-22-r3",
+      "reference_evidence": "160 fresh-control hosted games: +11.56% mean score, red+27.46% and blue+0.60%; all source/VM/replay/XP/integer scores verified. Outscored khors:v11445/80; confidence intervals includezero. Keep-to-home starts107\u21921. Fixed roster, no #1 guarantee.",
+      "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-deployment",
+      "live_versions": {
+        "aaron": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+        "coach": "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      },
+      "reference_validation_game_version": "2026.9.22.2",
+      "reference_validation_engine_commit": "ffcedcd866c4d31924361ed4baff2b7a6d3aba67"
+    }
+  ],
+  "core_buyback_study": {
+    "games": 400,
+    "status": "qualified_deployed",
+    "pair_bundle": "examples/gods_of_the_arena/players/ir/forks/core-buyback20260923",
+    "result": {
+      "name": "core-buyback",
+      "source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+      "score_gate_passed": true,
+      "baseline_score": 2270.46,
+      "candidate_score": 2955.775,
+      "aggregate_gain_percent": 30.18397152999832,
+      "gain_ci95_percent": [
+        16.096293942450224,
+        46.53996509682161
+      ],
+      "per_color_gain_percent": [
+        22.97206626357353,
+        39.78661354254378
+      ]
+    },
+    "field_changes": {
+      "game_changed": false,
+      "champion_changes": [],
+      "action": "Revalidate changed opponents and refreshed mixed rosters. Frozen A/B results retain exact pinned-version scope; do not substitute versions or claim enduring rank."
+    }
   }
 }

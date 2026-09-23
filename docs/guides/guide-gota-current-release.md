@@ -15,6 +15,33 @@ from2026.9.22.2 and do not qualify a replacement under this patch. The deployed
 source remains the byte-exact reference; fresh controls are required. Preserve
 the old replay57 engine and datasets.
 
+## Latest deployed reference: core buyback
+
+Source **67fdcd5d**, reviewed IR **c1a5839b**, binding
+`gota-bassy/core-buyback-2026-09-23-r1` is now deployed to both players.
+The [portable pair and report](../../examples/gods_of_the_arena/players/ir/forks/core-buyback20260923/README.md)
+passed400fresh held-out games on the active2026.9.22.3 engine: mean score
+**2270.46→2955.775(+30.18%)**, red+22.97%,blue+39.79%,95%gain interval
+**[+16.10%,+46.54%]**. All ten source/VM, replay hashes, XP and integer-score
+checks pass; the field stayed stable. There are100games/source/color, with
+one duplicate stream in control red and candidate blue. Fixed first-team
+seat and roster; no late-draft or permanent#1claim.
+
+After completing four core items, the policy buys back with>5seconds remaining
+and price+100gold; without complete core it retains>25seconds/price+200.
+Respawn grows with death count, not level. All390host fixtures and8native
+matches pass; only the lifecycle executable body changes. The score increase
+comes with more hero/creep XP and more deaths; it is not a survival claim.
+Richard174 is outscored160/200,Jordan411166/200,khors114100/200.
+Andre's blue mean still leads by161.49; both-color superiority remains unmet.
+
+Aaron `30a0e469-8c2f-450c-b3bc-4a687a6c74e3` and Coach
+`2013aad3-a754-4e31-8cea-727aa6c3a6b1` were verified active competing champions
+at2026-09-23T01:35:32Z. [Deployment and rollback receipts](../../examples/gods_of_the_arena/players/ir/forks/core-buyback20260923-deployment/README.md)
+preserve old portal versions and exact source identity. New league-round
+performance remains unmeasured. Re-resolve opponents before new experiments;
+prior studies below retain their original decisions and engine scope.
+
 ## Current contract
 
 - BASIC supports decimals and fractional action coordinates. Public position
@@ -97,23 +124,23 @@ record before taking the writer; the prior worker is paused during interactive
 work. The user's root checkout moved to upstream main and the old LaunchAgent
 script path is absent: do not blindly restart an obsolete or missing runner.
 
-Current live registrations are Aaron `b65ccf7b-d7a1-4681-b57f-a55f5ace43c7`
+Historical portal registrations were Aaron `b65ccf7b-d7a1-4681-b57f-a55f5ace43c7`
 and Coach `088c0fed-b536-4777-9f7a-14abee21e5b8`, both **db71abb3**.
-Both were verified competing, active and champion through normal
+Both portal registrations were verified competing, active and champion through normal
 `auto_champion=always` placement. The [deployment receipts](../../examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-deployment/README.md)
 preserve source hashes, readback and rollback identities. Placement does not
 establish later league-round performance. Resolve live versions before new work.
 Manual champion selection previously returned HTTP500; normal placement worked.
 Do not retire a live champion before its replacement is verified.
 
-## Current portal coaching reference
+## Preserved portal coaching parent
 
 The [portal coaching experiment](../../games/gods_of_the_arena/experiments/2026-09-22-portal-coaching.md)
 and [validated portable pair](../../examples/gods_of_the_arena/players/ir/forks/portal-coaching20260922-hosted/README.md)
 add safe field recall, a complete channel lock, scroll reserves and keep-local
 walking recovery. All 84 portal fixtures, 126 broader host checks and eight
 full native matches pass mechanism/runtime checks; native scores are mixed.
-The local snapshot remains preserved; the hosted-reviewed pair is now the deployed reference.
+The local snapshot and hosted-reviewed pair remain preserved as the parent and rollback for core buyback.
 
 Before any request was created, the user authorized 160 additional September 22
 games and named khors:v114 as a target. The revised A/B uses exact v114 in the
@@ -156,7 +183,7 @@ hosted games passed source, all-VM, full-replay, XP and integer-score audits;
 each 40-game cell has 40 distinct command streams. Mean score fell
 2473.025 → 2234.45 (**−9.65%**), red +10.23%, blue −22.64%. The 95% bootstrap
 gain interval is [−25.65%, +9.74%]. The frozen +10% aggregate / 95% each-color
-rule failed. **Both players retain the portal reference.**
+rule failed. **Both players retained the portal reference at that decision.**
 
 This coordinated candidate separates hero/creep/structure opportunities,
 checks public threat context, favors reachable hero finishes and values a

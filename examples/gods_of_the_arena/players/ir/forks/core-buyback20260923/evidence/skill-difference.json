@@ -1,0 +1,26 @@
+{
+  "changed_executable_rules": [
+    "R_lifecycle"
+  ],
+  "unchanged_rules": [
+    "comments identify regions only; the extractor reads all executable statements.",
+    "R_portal_state",
+    "R_draft",
+    "R_recovery_intent",
+    "R_base_recovery_intent",
+    "R_timing",
+    "R_observe",
+    "R_economy",
+    "R_portal_context",
+    "R_replenish",
+    "R_channel_town_scroll",
+    "R_walk_to_base",
+    "R_home_portal",
+    "R_tower_safety",
+    "R_xp_close",
+    "R_combat",
+    "R_advance"
+  ],
+  "source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+  "scope": "Only lifecycle body differs; runtime-generated code from semantic IR. All field rules unchanged."
+}

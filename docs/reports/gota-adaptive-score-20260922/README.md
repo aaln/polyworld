@@ -1,10 +1,16 @@
-# Adapting individual-score policy to Richard v167 and khors v114
+# Adapting individual score to Richard and Andre
 
-Current work targets the actual September 22 game: 2026.9.22.3, replay 58,
-engine 1b708944. Richard v167 and Andre von Auto’s khors v114 oppose our
-subject in both colors. The original portal source db71abb3 remains deployed. At the latest captured
-48th round, Andre ranks first at 1690.99 and Aaron second at 1670.80; this
-context is time-sensitive and does not replace controlled testing.
+**Core buyback is now deployed to both players.** In400fresh games against
+current Richard174,khors114 andJordan411, average individual score improved
+**30.18%**, with95%confidence interval **+16.10%to+46.54%**. Both colors improve;
+all source/VM/replay/XP checks pass. [Validated IR/policy and results](../../../examples/gods_of_the_arena/players/ir/forks/core-buyback20260923/README.md)
+and [deployment receipts](../../../examples/gods_of_the_arena/players/ir/forks/core-buyback20260923-deployment/README.md)
+are preserved. Exact current engine is2026.9.22.3/1b708944,replay58.
+
+The candidate outscores Richard174 in160/200 andAndre in100/200. Andre still
+leads its blue mean, so confident both-color superiority remains unproven.
+Round51 before deployment rankedAndre#1(1721.37),Aaron#2(1666.26),Richard#3(1623.73);
+these reflect previous policies. New league-round performance is unmeasured.
 
 The [opponent audit](../../opponents/richard-v167/replay-audit-20260922/README.md)
 reconstructs all 80 earlier control games. Richard drafts Warlock in 73/80;
@@ -34,6 +40,7 @@ tests must account for slot opportunity cost and time recovered in the field.
 | Reward-ordered immediate finishes | 400 | +12.44% | +22.29% / +4.01% | Score gate passed; field changed |
 | Same source with refreshed Julia teammate | 160 | −2.30% | +3.26% / −9.32% | Rejected |
 | Combat elixir recovery | 400 | +6.79% | +3.88% / +10.64% | Unqualified; CI crosses zero, Richard changed |
+| Post-core early buyback | 400 | +30.18% | +22.97% / +39.79% | Qualified; deployed to both players |
 
 The initial two candidates share one explicitly reported 80-game control;
 that screen totals 240 games. Adding its 160-game independent confirmation
@@ -78,9 +85,9 @@ The paused legacy worker must not resume its obsolete game configuration.
 
 The completed refreshed160-game test fails the aggregate and blue-preservation
 gates, despite a stable field and all audits passing. Both deployed policies
-remain db71abb3. [Reviewed refreshed IR/source pair](../../../examples/gods_of_the_arena/players/ir/forks/reward-finish-refresh20260922/README.md).
+retained db71abb3 at that decision. [Reviewed refreshed IR/source pair](../../../examples/gods_of_the_arena/players/ir/forks/reward-finish-refresh20260922/README.md).
 
-Next investigation: effective consumable healing. Current cheap potions heal
+The next completed investigation tested effective consumable healing. Current cheap potions heal
 120HP over10seconds and any damage interrupts recovery. Vitality Elixirs
 cost75gold and heal90HP immediately, sharing the10second health cooldown.
 Changing the item choice, combat-use guard and post-core reserve is one
@@ -93,3 +100,19 @@ fewer deaths; preserve the directional outcome without promoting. Richard
 updated to174 during the trial. A fresh source changes only post-core buyback,
 motivated by8/8baseline diagnostic replays with missed eligible opportunities
 (mean31.25seconds of observed excluded dead time, not predicted savings).
+
+The buyback study converts surplus gold into earlier return to play after core
+equipment. The baseline excludes most first-four-death opportunities because it
+requires>25seconds remaining. The candidate uses>5seconds and100gold reserve
+once the full four-item core is present. All180actual-tick buyback cases,
+84portal cases,126broader cases and8complete native games pass. The reviewed
+IR records bounded competitive support without changing frozen hosted bytes.
+
+Full400-game results show higher hero and creep XP on both colors, offsetting
+the extra200points/minute duration penalty. Deaths also rise. Sixteen selected
+effect replays show accepted buybacks increasing and dead time decreasing;
+class/scene imbalance prevents causal component estimates. Later-draft guards,
+blue Ranger positioning and specific avoidable area spells remain possible
+future tests, not unvalidated rules in the deployed source. Richard174's public
+admission preserves a warning-type hypothesis; targeted projectile spells do
+not necessarily become avoidable merely by moving after the cast.

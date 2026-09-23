@@ -58,3 +58,16 @@ The exact standard07de1de1 and armor801cabc6 bundles failed Richard135 red0/40 e
   CI[−5.39,+20.87]. All400valid; Richard167 also changed to174.
   Preserve the positive but unqualified result; do not deploy it or claim
   fewer deaths (both means rose). See `experiments/2026-09-23-combat-elixir.md`.
+
+
+## 2026-09-23: post-core early buyback qualified
+
+Source67fdcd5d / reviewed IRc1a5839b, current2026.9.22.3. Complete lifecycle
+change only: with dagger11/armor16/axe18/crossbow19, buy back at>5seconds and
+price+100; otherwise old>25/price+200.400freshgames100/source/color gain+30.18%,
+red+22.97%,blue+39.79%,95%CI[+16.10,+46.54],all audits valid,field stable.
+Deployed to both authorized players; source/IR and receipts in
+examples/gods_of_the_arena/players/ir/forks/core-buyback20260923{-deployment}.
+This opens a current reference, not permission to import rejected elixir or
+finisher changes. Andre blue still leads; deaths increase. New opponent/draft
+and positioning interventions require fresh controls and prospective tests.

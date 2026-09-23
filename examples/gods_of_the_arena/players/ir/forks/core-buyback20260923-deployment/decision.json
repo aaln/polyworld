@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-23T01:34:37.151502+00:00",
+  "authorization": "Existing user authorization to deploy validated latest policy to both Aaron and Coach; unsigned research commits permitted.",
+  "source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+  "ir_sha256": "c1a5839bcfe2c4a155f6ee76de78fb6a86d59601e1e051dafe62bac5bb7b5b20",
+  "trial_report": {
+    "name": "core-buyback",
+    "source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+    "score_gate_passed": true,
+    "baseline_score": 2270.46,
+    "candidate_score": 2955.775,
+    "aggregate_gain_percent": 30.18397152999832,
+    "gain_ci95_percent": [
+      16.096293942450224,
+      46.53996509682161
+    ],
+    "per_color_gain_percent": [
+      22.97206626357353,
+      39.78661354254378
+    ]
+  },
+  "rollback_versions": {
+    "aaron": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+    "coach": "088c0fed-b536-4777-9f7a-14abee21e5b8"
+  },
+  "rollback_source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "gota-research-hypotheses/1",
+  "situation": {
+    "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+    "public_features": [
+      "spellAbility(i)",
+      "spellCasterId(i)",
+      "spellX(i)",
+      "spellY(i)",
+      "spellImpactTick(i)"
+    ],
+    "source_facts": "sim.resolveSpell directly hits targetId for non-area targeted casts; AreaCast clears targetId and resolves the fixed footprint. Ground-targeted projectiles use swept collision. content.abilitySpec makes MothHex a projectile, DreadTotem/ VoidPortal area casts."
+  },
+  "belief": {
+    "status": "unvalidated_counter_hypothesis",
+    "observed": "One v174 admitted replay records900ActionCastTarget attempts and0ActionCastPoint attempts. Attempts are not successful effects and do not establish all future behavior.",
+    "prediction": "Blanket warning movement can waste basic windup without preventing a targeted projectile; area-specific evasion may avoid damage."
+  },
+  "goal": {
+    "objective": "Improve XP-minus-time by avoiding preventable damage without forfeiting productive attacks."
+  },
+  "skill": {
+    "area_evasion": {
+      "implemented": false,
+      "requirements": [
+        "Filter harmful area abilities and friendly/unknown caster context using public observations",
+        "Account for missing spell orientation and observation rounding",
+        "Actual-tick tests of escaped AoE damage and unavoidable targeted casts",
+        "Preserve complete portal channels and emergency recovery",
+        "Fresh whole-policy score comparison"
+      ]
+    }
+  },
+  "strategy": {
+    "current_trial": "No warning changes in frozen core-buyback source67fdcd5d.",
+    "future": "Consider only after a distinct implementation and current-version validation."
+  },
+  "execution": {
+    "executable": false,
+    "proxy_usable": false,
+    "inputs": "Public observations only; replay commands used for diagnosis, not live hidden inputs."
+  },
+  "update": {
+    "references": [
+      "preflight.json",
+      "richard_v174.ir.json",
+      "../../../../games/gods_of_the_arena/experiments/2026-09-23-core-buyback.md"
+    ],
+    "competitive_validation": false
+  }
+}
