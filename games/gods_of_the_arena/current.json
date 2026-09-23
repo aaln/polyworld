@@ -20,7 +20,7 @@
     "aaron": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
     "coach": "4dbada5e-8a62-4654-89ab-34cbea555bfe"
   },
-  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-23-field-sustain.md",
+  "current_experiment": "games/gods_of_the_arena/experiments/2026-09-23-lane-recovery.md",
   "deployment_status": "Both blue-center champions verified active/competing on deployment and unchanged in the completed coaching study field snapshot at 2026-09-23T03:41:10.703228+00:00. Coaching candidate rejected; retained blue-center.",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
@@ -31,18 +31,18 @@
   "reference_validation_game_version": "2026.9.22.3",
   "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Blue-center remains deployed to both players. The field-sustain coaching study completed all 240 games and audits but failed its original score gate; its reviewed IR/policy and captures are preserved.",
+  "research_status": "Simpler lane healing and useful shopping candidate passed 582 local checks and 16 native games. Fresh 320-game four-context comparison running; both champions retain blue-center.",
   "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
   "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
   "budget_override": {
-    "utc_day": "2026-09-22",
-    "daily_limit": 10000,
+    "utc_day": "2026-09-23",
+    "daily_limit": 11600,
     "normal_limit": 1600,
-    "authorization": "raise cap to 10000",
-    "record": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-score-20260922/budget/authorization-10000.json",
-    "reserved_after_comparison": 2880,
-    "remaining_after_comparison": 7120
+    "additional_games_authorized": 10000,
+    "authorization": "increase cap to 10000 more",
+    "record": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-lane-recovery-20260923/budget/authorization.json",
+    "reserved_before_comparison": 1600
   },
   "candidate_evidence": {
     "games": 160,
@@ -75,7 +75,15 @@
     "screen_gain_percent": 13.923576310823416,
     "confirmation_gain_percent": -4.203742159004086
   },
-  "active_candidate": null,
+  "active_candidate": {
+    "source_sha256": "2878f3e962b9b8ac28690a939317508c6df38a55545be292b9846c91095fef45",
+    "ir_sha256": "2dde8d84cac98a28eecc71bafe26837254302508fec65a3761e27ca6e16180fe",
+    "binding": "gota-bassy/lane-recovery-2026-09-23-r1",
+    "pair": "examples/gods_of_the_arena/players/ir/forks/lane-recovery20260923-local/lane-recovery",
+    "status": "hosted_running",
+    "games": 320,
+    "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-lane-recovery-20260923"
+  },
   "class_score_study": {
     "status": "complete_rejected",
     "games": 160,
@@ -412,6 +420,17 @@
         }
       ],
       "scope": "Before core-buyback deployment; round51 reflects previous policies. Future performance unmeasured."
+    }
+  ],
+  "budget_override_history": [
+    {
+      "utc_day": "2026-09-22",
+      "daily_limit": 10000,
+      "normal_limit": 1600,
+      "authorization": "raise cap to 10000",
+      "record": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-score-20260922/budget/authorization-10000.json",
+      "reserved_after_comparison": 2880,
+      "remaining_after_comparison": 7120
     }
   ]
 }

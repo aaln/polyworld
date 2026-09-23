@@ -1,0 +1,9 @@
+{
+  "policy_changed": false,
+  "issues": [
+    "Baseline has no laneUntil global; inspect that memory only on candidate.",
+    "Blue shopping hero entered keep and purchased dagger, correctly clearing restock; assert purchase or active shopping return.",
+    "Potion actually restores120HP. On three high-HP classes it cannot reach60percent; assert bounded recovery followed by fallback rather than impossible full recovery."
+  ],
+  "failures_preserved": true
+}
