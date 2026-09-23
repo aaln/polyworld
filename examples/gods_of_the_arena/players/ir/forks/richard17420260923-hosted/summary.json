@@ -1,0 +1,30 @@
+{
+  "trial": {
+    "name": "guarded-siege",
+    "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+    "score_gate_passed": false,
+    "baseline_score": 1654.575,
+    "candidate_score": 1779.945,
+    "aggregate_gain_percent": 7.577172385657938,
+    "gain_ci95_percent": [
+      -8.650446677910429,
+      27.054058522069766
+    ],
+    "per_context_gain_percent": [
+      3.24869787245603,
+      4.846182856527115,
+      -53.15045719035745,
+      55.88104140225707
+    ],
+    "late_score_gain_percent": 37.23271155595997
+  },
+  "deployment_qualified": false,
+  "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+  "ir_sha256": "841b52731c7e39476727bb26a448cf5b6b5775ffa5a8aa6af4eff2feeb93f4bb",
+  "mechanism_totals": {
+    "selected_covered_tower": 149,
+    "submitted_attack_covered_tower": 44,
+    "selected_siege_attacker": 2,
+    "submitted_attack_siege_attacker": 2
+  }
+}

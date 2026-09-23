@@ -1,0 +1,2545 @@
+{
+  "plan": {
+    "selection": "First4 lexical episode UUIDs per source/context, chosen in prospective-experiment.md before hosted spend. Retrospective descriptive subset, no independent competitive gate.",
+    "cases": [
+      {
+        "name": "baseline",
+        "cell": "red-lead",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_03804f78-e7b4-4ee4-8dd6-62ec53280322",
+        "class": 1,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "red-lead",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_04526b73-f8e5-4d35-a01a-377470c27f21",
+        "class": 1,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "red-lead",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_14b1ca8b-5541-494d-b6c1-a972b1fa1d16",
+        "class": 6,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "red-lead",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_1a9cf0cb-c093-4306-a6c4-3f978179af15",
+        "class": 1,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "blue-lead",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_029a04cb-b547-4063-90c7-3ea9b29a1670",
+        "class": 1,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "blue-lead",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_033db063-2c23-477c-8569-a0810cac6b7a",
+        "class": 1,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "blue-lead",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_0a35e684-233f-411e-8f58-11b73be56aaa",
+        "class": 1,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "blue-lead",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_0f1054f3-347c-4cff-b191-cff01a520dd7",
+        "class": 6,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "red-late",
+        "side": 0,
+        "slot": 3,
+        "episode": "ereq_03b4e6bc-79c1-4b3d-bfca-3ff3fe1fdeed",
+        "class": 3,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "red-late",
+        "side": 0,
+        "slot": 3,
+        "episode": "ereq_1bb573ab-8c45-4143-b04b-9ac67fa76262",
+        "class": 3,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "red-late",
+        "side": 0,
+        "slot": 3,
+        "episode": "ereq_1d153a60-2803-49a7-bd6b-0445cdc5fd7d",
+        "class": 3,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "red-late",
+        "side": 0,
+        "slot": 3,
+        "episode": "ereq_232de1eb-1926-485b-9c3d-e62d4b19cfc3",
+        "class": 3,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "blue-late",
+        "side": 1,
+        "slot": 8,
+        "episode": "ereq_0247b86d-80d8-4bae-a882-8c0307e199dd",
+        "class": 3,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "blue-late",
+        "side": 1,
+        "slot": 8,
+        "episode": "ereq_05e9ec85-cc93-4a98-91f6-d72a5dabe189",
+        "class": 3,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "blue-late",
+        "side": 1,
+        "slot": 8,
+        "episode": "ereq_07b7c728-4022-4aed-be02-d3a2e0985908",
+        "class": 3,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "baseline",
+        "cell": "blue-late",
+        "side": 1,
+        "slot": 8,
+        "episode": "ereq_12868deb-22da-4228-8df5-43821e6808f0",
+        "class": 3,
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "red-lead",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_007cadba-0bd3-4724-8674-a38e7c824c9f",
+        "class": 6,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "red-lead",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_01d791cf-9fca-4756-985e-15b9fd66a3a6",
+        "class": 6,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "red-lead",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_02c494d6-2962-40f4-8399-c8e9763ae6cf",
+        "class": 6,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "red-lead",
+        "side": 0,
+        "slot": 0,
+        "episode": "ereq_034cf6e9-c225-4b19-b684-245b7d825e6e",
+        "class": 6,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "blue-lead",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_0086d4d5-96df-4005-b20f-198ea54a75cd",
+        "class": 6,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "blue-lead",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_022d5415-c691-4e8f-a5a9-e3bd029238ba",
+        "class": 1,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "blue-lead",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_08790e04-dab0-4e45-ac5e-3358385b175b",
+        "class": 1,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "blue-lead",
+        "side": 1,
+        "slot": 5,
+        "episode": "ereq_0bfbde56-6fe3-4891-9880-1deb18c40a6d",
+        "class": 1,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "red-late",
+        "side": 0,
+        "slot": 3,
+        "episode": "ereq_0525d208-52af-4b1c-8678-42a1b758901c",
+        "class": 3,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "red-late",
+        "side": 0,
+        "slot": 3,
+        "episode": "ereq_0787c05f-8cf4-43c4-84ac-8d2684fc936d",
+        "class": 3,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "red-late",
+        "side": 0,
+        "slot": 3,
+        "episode": "ereq_127e48a7-57d9-4571-aae5-526389acacb8",
+        "class": 3,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "red-late",
+        "side": 0,
+        "slot": 3,
+        "episode": "ereq_148fdb7c-be3a-467f-8f02-871769947abb",
+        "class": 3,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "blue-late",
+        "side": 1,
+        "slot": 8,
+        "episode": "ereq_022b79e8-9211-45f9-bdd5-74fc71951e5e",
+        "class": 3,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "blue-late",
+        "side": 1,
+        "slot": 8,
+        "episode": "ereq_09e375d8-ed39-4352-b191-3e672858dd24",
+        "class": 3,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "blue-late",
+        "side": 1,
+        "slot": 8,
+        "episode": "ereq_0b1072b9-4477-4c76-bed8-0773b4730115",
+        "class": 3,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      },
+      {
+        "name": "guarded-siege",
+        "cell": "blue-late",
+        "side": 1,
+        "slot": 8,
+        "episode": "ereq_0dcba1e8-a40a-4b95-8ab7-00851e3d02f1",
+        "class": 3,
+        "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143"
+      }
+    ],
+    "instrument_sha256": "b4f407553b50b5edb8e611433476730c937fcfc20ee76951c89647ae1fd57cfe",
+    "binary_sha256": "754ab0cf7b487a8a0371bbf9ce62e71a741dc6647991c2abd772e5c6b9066617",
+    "execution": "Decode complete cells as available; final sample checked against all complete cells, identical to the frozen selection.",
+    "instrument_revision": "r2: query pressureChoice only in the new source; absent baseline global raised a diagnostic error. Failed logs and r1 preserved; no hosted policy bytes changed."
+  },
+  "cells": [
+    {
+      "name": "baseline",
+      "cell": "red-lead",
+      "n": 4,
+      "mean_counts": {
+        "command_kind_1": 437.25,
+        "command_kind_15": 5.75,
+        "command_kind_16": 11.25,
+        "command_kind_2": 478,
+        "command_kind_3": 23,
+        "command_kind_4": 10.25,
+        "command_kind_5": 349.75,
+        "command_kind_6": 733,
+        "our_active": 2691,
+        "our_home_threat": 150.5,
+        "our_retreat": 287.25,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 18.25
+      },
+      "classes": [
+        1,
+        1,
+        6,
+        1
+      ]
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "n": 4,
+      "mean_counts": {
+        "command_kind_1": 239,
+        "command_kind_15": 6.25,
+        "command_kind_16": 9.25,
+        "command_kind_2": 272.5,
+        "command_kind_3": 22,
+        "command_kind_4": 8.5,
+        "command_kind_5": 232.5,
+        "command_kind_6": 655.5,
+        "our_active": 1978.25,
+        "our_home_threat": 108.25,
+        "our_retreat": 303.25,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 6.5
+      },
+      "classes": [
+        1,
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "name": "baseline",
+      "cell": "red-late",
+      "n": 4,
+      "mean_counts": {
+        "command_kind_1": 282.75,
+        "command_kind_15": 3,
+        "command_kind_16": 5.75,
+        "command_kind_2": 363,
+        "command_kind_3": 14.25,
+        "command_kind_4": 5.25,
+        "command_kind_5": 334.75,
+        "command_kind_6": 86.25,
+        "our_active": 2372.25,
+        "our_home_threat": 34,
+        "our_retreat": 270.5,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 17.5
+      },
+      "classes": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "n": 4,
+      "mean_counts": {
+        "command_kind_1": 317.25,
+        "command_kind_15": 4.5,
+        "command_kind_16": 7.75,
+        "command_kind_2": 407.75,
+        "command_kind_3": 17,
+        "command_kind_4": 5.25,
+        "command_kind_5": 319,
+        "command_kind_6": 117.5,
+        "our_active": 2290.5,
+        "our_home_threat": 6,
+        "our_retreat": 326,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 27.25
+      },
+      "classes": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-lead",
+      "n": 4,
+      "mean_counts": {
+        "command_kind_1": 626.25,
+        "command_kind_15": 8.75,
+        "command_kind_16": 13.5,
+        "command_kind_2": 619.25,
+        "command_kind_3": 30.5,
+        "command_kind_4": 15.25,
+        "command_kind_5": 477.75,
+        "command_kind_6": 962.25,
+        "our_active": 3986.75,
+        "our_home_threat": 228.25,
+        "our_retreat": 610.5
+      },
+      "classes": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-lead",
+      "n": 4,
+      "mean_counts": {
+        "command_kind_1": 324.5,
+        "command_kind_15": 6.75,
+        "command_kind_16": 9.5,
+        "command_kind_2": 372.5,
+        "command_kind_3": 24,
+        "command_kind_4": 10,
+        "command_kind_5": 273.75,
+        "command_kind_6": 758,
+        "our_active": 2302.25,
+        "our_home_threat": 72.75,
+        "our_retreat": 303.5,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 4.5
+      },
+      "classes": [
+        6,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-late",
+      "n": 4,
+      "mean_counts": {
+        "command_kind_1": 293.5,
+        "command_kind_15": 2.75,
+        "command_kind_16": 5.5,
+        "command_kind_2": 389.5,
+        "command_kind_3": 12,
+        "command_kind_4": 4.25,
+        "command_kind_5": 341.75,
+        "command_kind_6": 49.75,
+        "our_active": 2383,
+        "our_home_threat": 10,
+        "our_retreat": 293.75,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 4,
+        "selected_covered_tower": 13.5,
+        "selected_siege_attacker": 0.25,
+        "submitted_attack_covered_tower": 3.75,
+        "submitted_attack_siege_attacker": 0.25
+      },
+      "classes": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-late",
+      "n": 4,
+      "mean_counts": {
+        "command_kind_1": 340.75,
+        "command_kind_15": 3.75,
+        "command_kind_16": 7.75,
+        "command_kind_2": 494.5,
+        "command_kind_3": 15.5,
+        "command_kind_4": 5.5,
+        "command_kind_5": 278.25,
+        "command_kind_6": 111,
+        "our_active": 2233.5,
+        "our_home_threat": 16.25,
+        "our_retreat": 328.75,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 12.5,
+        "selected_covered_tower": 23.75,
+        "selected_siege_attacker": 0.25,
+        "submitted_attack_covered_tower": 7.25,
+        "submitted_attack_siege_attacker": 0.25
+      },
+      "classes": [
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "name": "baseline",
+      "cell": "red-lead",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_03804f78-e7b4-4ee4-8dd6-62ec53280322",
+      "class": 1,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        0
+      ],
+      "ticks": 13980,
+      "commands_matched": 1500,
+      "decisions": 13416,
+      "max_instructions": 10867,
+      "max_work": 16219,
+      "counts": {
+        "command_kind_5": 291,
+        "command_kind_6": 488,
+        "command_kind_4": 5,
+        "command_kind_3": 14,
+        "command_kind_16": 10,
+        "our_active": 2118,
+        "command_kind_2": 360,
+        "our_retreat": 251,
+        "command_kind_15": 4,
+        "our_home_threat": 52,
+        "command_kind_1": 324,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 21
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1940,
+          "hero": 100,
+          "hp": 219,
+          "max_hp": 219,
+          "creep": 1104,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 2,
+          "enemy_power": 0,
+          "friend_power": 8,
+          "commands": [
+            {
+              "tick": 1940,
+              "hero_id": 100,
+              "kind": 2,
+              "slot": 0,
+              "first": 1104,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "3df1b90c659bc08613bc7a4452e515d46506012cec72b55fc71b1fb0a86d81f7"
+    },
+    {
+      "name": "baseline",
+      "cell": "red-lead",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_04526b73-f8e5-4d35-a01a-377470c27f21",
+      "class": 1,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        0
+      ],
+      "ticks": 13481,
+      "commands_matched": 1494,
+      "decisions": 12917,
+      "max_instructions": 10853,
+      "max_work": 16219,
+      "counts": {
+        "command_kind_5": 240,
+        "command_kind_6": 401,
+        "command_kind_4": 6,
+        "command_kind_3": 18,
+        "command_kind_16": 8,
+        "our_active": 2021,
+        "command_kind_2": 441,
+        "our_retreat": 249,
+        "command_kind_15": 5,
+        "our_home_threat": 420,
+        "command_kind_1": 373,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 40
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1940,
+          "hero": 100,
+          "hp": 219,
+          "max_hp": 219,
+          "creep": 1104,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 2,
+          "enemy_power": 0,
+          "friend_power": 8,
+          "commands": [
+            {
+              "tick": 1940,
+              "hero_id": 100,
+              "kind": 2,
+              "slot": 0,
+              "first": 1104,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "25f8a47db799bfe6662860bc8c2d4b540d376fd39a2cd7a7f87f11958401bd83"
+    },
+    {
+      "name": "baseline",
+      "cell": "red-lead",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_14b1ca8b-5541-494d-b6c1-a972b1fa1d16",
+      "class": 6,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        0
+      ],
+      "ticks": 18753,
+      "commands_matched": 2490,
+      "decisions": 18189,
+      "max_instructions": 10946,
+      "max_work": 16432,
+      "counts": {
+        "command_kind_5": 319,
+        "command_kind_6": 1044,
+        "command_kind_4": 17,
+        "command_kind_3": 31,
+        "command_kind_16": 13,
+        "our_active": 2948,
+        "command_kind_2": 491,
+        "our_retreat": 385,
+        "command_kind_15": 6,
+        "our_home_threat": 57,
+        "command_kind_1": 567
+      },
+      "first_examples": {},
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "4ac6d96c1ee20820f662348da0c9854834fd89974042f2dadd7122c497e9b199"
+    },
+    {
+      "name": "baseline",
+      "cell": "red-lead",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_1a9cf0cb-c093-4306-a6c4-3f978179af15",
+      "class": 1,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        0
+      ],
+      "ticks": 23614,
+      "commands_matched": 2724,
+      "decisions": 23050,
+      "max_instructions": 11189,
+      "max_work": 16881,
+      "counts": {
+        "command_kind_5": 549,
+        "command_kind_6": 999,
+        "command_kind_4": 13,
+        "command_kind_3": 29,
+        "command_kind_16": 14,
+        "our_active": 3677,
+        "command_kind_2": 620,
+        "our_retreat": 264,
+        "command_kind_15": 8,
+        "our_home_threat": 73,
+        "command_kind_1": 485,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 12
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1940,
+          "hero": 100,
+          "hp": 219,
+          "max_hp": 219,
+          "creep": 1104,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 2,
+          "enemy_power": 0,
+          "friend_power": 4,
+          "commands": [
+            {
+              "tick": 1940,
+              "hero_id": 100,
+              "kind": 2,
+              "slot": 0,
+              "first": 1104,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "2fc7419e8ef5b2309b0d46c2c318e7b138d1a9562383a0f31bd1b4d02f397ad7"
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_029a04cb-b547-4063-90c7-3ea9b29a1670",
+      "class": 1,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        5
+      ],
+      "ticks": 20578,
+      "commands_matched": 1418,
+      "decisions": 20014,
+      "max_instructions": 11140,
+      "max_work": 16331,
+      "counts": {
+        "command_kind_5": 332,
+        "command_kind_6": 501,
+        "command_kind_4": 12,
+        "command_kind_3": 27,
+        "command_kind_16": 10,
+        "our_active": 2437,
+        "command_kind_2": 283,
+        "our_retreat": 371,
+        "command_kind_15": 8,
+        "our_home_threat": 252,
+        "command_kind_1": 240,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 8
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 4359,
+          "hero": 105,
+          "hp": 219,
+          "max_hp": 219,
+          "creep": 1380,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 8,
+          "enemy_power": 0,
+          "friend_power": 9,
+          "commands": [
+            {
+              "tick": 4359,
+              "hero_id": 105,
+              "kind": 2,
+              "slot": 0,
+              "first": 1380,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "df208a1f510b2fda032e3a666a37534c92a0754bd45e57d5728a818c58313b1b"
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_033db063-2c23-477c-8569-a0810cac6b7a",
+      "class": 1,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        5
+      ],
+      "ticks": 17027,
+      "commands_matched": 1159,
+      "decisions": 16463,
+      "max_instructions": 11227,
+      "max_work": 16323,
+      "counts": {
+        "command_kind_5": 159,
+        "command_kind_6": 594,
+        "command_kind_4": 5,
+        "command_kind_3": 19,
+        "command_kind_16": 7,
+        "our_active": 1512,
+        "command_kind_2": 203,
+        "our_retreat": 278,
+        "command_kind_15": 6,
+        "our_home_threat": 110,
+        "command_kind_1": 165,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 9
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 3354,
+          "hero": 105,
+          "hp": 257,
+          "max_hp": 257,
+          "creep": 1285,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 1,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": [
+            {
+              "tick": 3354,
+              "hero_id": 105,
+              "kind": 2,
+              "slot": 0,
+              "first": 1285,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            },
+            {
+              "tick": 3354,
+              "hero_id": 105,
+              "kind": 6,
+              "slot": 2,
+              "first": 1285,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "b5977f091c56b5cf77c3ca8368dbb4b7467d7fd779f7cbba06dcf5e429126bda"
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_0a35e684-233f-411e-8f58-11b73be56aaa",
+      "class": 1,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        5
+      ],
+      "ticks": 16309,
+      "commands_matched": 994,
+      "decisions": 15745,
+      "max_instructions": 11227,
+      "max_work": 16323,
+      "counts": {
+        "command_kind_5": 151,
+        "command_kind_6": 486,
+        "command_kind_4": 4,
+        "command_kind_3": 17,
+        "command_kind_16": 7,
+        "our_active": 1368,
+        "command_kind_2": 173,
+        "our_retreat": 260,
+        "command_kind_15": 5,
+        "our_home_threat": 60,
+        "command_kind_1": 150,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 9
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 3354,
+          "hero": 105,
+          "hp": 257,
+          "max_hp": 257,
+          "creep": 1285,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 1,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": [
+            {
+              "tick": 3354,
+              "hero_id": 105,
+              "kind": 2,
+              "slot": 0,
+              "first": 1285,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            },
+            {
+              "tick": 3354,
+              "hero_id": 105,
+              "kind": 6,
+              "slot": 2,
+              "first": 1285,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "dab5f620f9afe7b5e6ba773479fa65fa92ed6ed4ee7db879fad0a263e4dd8df0"
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_0f1054f3-347c-4cff-b191-cff01a520dd7",
+      "class": 6,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        5
+      ],
+      "ticks": 16823,
+      "commands_matched": 2221,
+      "decisions": 16259,
+      "max_instructions": 11010,
+      "max_work": 16470,
+      "counts": {
+        "command_kind_5": 288,
+        "command_kind_6": 1041,
+        "command_kind_4": 13,
+        "command_kind_3": 25,
+        "command_kind_16": 13,
+        "our_active": 2596,
+        "command_kind_2": 431,
+        "our_retreat": 304,
+        "command_kind_15": 6,
+        "our_home_threat": 11,
+        "command_kind_1": 401
+      },
+      "first_examples": {},
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "f0f83bd1fd5309397b09d9f7ceb66170dfe4ac3101b279e685eb915f3503aaf6"
+    },
+    {
+      "name": "baseline",
+      "cell": "red-late",
+      "side": 0,
+      "slot": 3,
+      "episode": "ereq_03b4e6bc-79c1-4b3d-bfca-3ff3fe1fdeed",
+      "class": 3,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        3
+      ],
+      "ticks": 9462,
+      "commands_matched": 583,
+      "decisions": 9126,
+      "max_instructions": 10614,
+      "max_work": 16024,
+      "counts": {
+        "command_kind_5": 189,
+        "command_kind_6": 2,
+        "command_kind_4": 4,
+        "command_kind_3": 10,
+        "command_kind_16": 4,
+        "our_active": 1462,
+        "command_kind_2": 166,
+        "our_retreat": 343,
+        "command_kind_15": 1,
+        "command_kind_1": 206,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 20
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1712,
+          "hero": 103,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1104,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 2,
+          "enemy_power": 0,
+          "friend_power": 10,
+          "commands": [
+            {
+              "tick": 1712,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 1104,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "f936f54256cf0dfa3e350dcce32690961df8af21d97f325c8441fe0d214acb7b"
+    },
+    {
+      "name": "baseline",
+      "cell": "red-late",
+      "side": 0,
+      "slot": 3,
+      "episode": "ereq_1bb573ab-8c45-4143-b04b-9ac67fa76262",
+      "class": 3,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        3
+      ],
+      "ticks": 29133,
+      "commands_matched": 1578,
+      "decisions": 28797,
+      "max_instructions": 10877,
+      "max_work": 15823,
+      "counts": {
+        "command_kind_5": 553,
+        "command_kind_6": 185,
+        "command_kind_4": 8,
+        "command_kind_3": 19,
+        "command_kind_16": 7,
+        "our_active": 3690,
+        "command_kind_2": 440,
+        "our_retreat": 364,
+        "command_kind_15": 5,
+        "our_home_threat": 81,
+        "command_kind_1": 359,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 16
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1712,
+          "hero": 103,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1104,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 4,
+          "enemy_power": 0,
+          "friend_power": 9,
+          "commands": [
+            {
+              "tick": 1712,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 1104,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "45bc3de4b8f58201a86692c102d0ecde2ea4daa704ec80c8282445d3fba25403"
+    },
+    {
+      "name": "baseline",
+      "cell": "red-late",
+      "side": 0,
+      "slot": 3,
+      "episode": "ereq_1d153a60-2803-49a7-bd6b-0445cdc5fd7d",
+      "class": 3,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        3
+      ],
+      "ticks": 16160,
+      "commands_matched": 1259,
+      "decisions": 15824,
+      "max_instructions": 10983,
+      "max_work": 15950,
+      "counts": {
+        "command_kind_5": 287,
+        "command_kind_6": 72,
+        "command_kind_4": 3,
+        "command_kind_3": 14,
+        "command_kind_16": 6,
+        "our_active": 2360,
+        "command_kind_2": 522,
+        "our_retreat": 304,
+        "command_kind_15": 4,
+        "our_home_threat": 3,
+        "command_kind_1": 349,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 22
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1712,
+          "hero": 103,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1104,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 3,
+          "enemy_power": 0,
+          "friend_power": 9,
+          "commands": [
+            {
+              "tick": 1712,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 1104,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "86ce6ad4c0c60caf0a6f070248c8c8c9a6eae67fcd20d6ea9bce4a9304e8febf"
+    },
+    {
+      "name": "baseline",
+      "cell": "red-late",
+      "side": 0,
+      "slot": 3,
+      "episode": "ereq_232de1eb-1926-485b-9c3d-e62d4b19cfc3",
+      "class": 3,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        3
+      ],
+      "ticks": 15568,
+      "commands_matched": 966,
+      "decisions": 15232,
+      "max_instructions": 10830,
+      "max_work": 16121,
+      "counts": {
+        "command_kind_5": 310,
+        "command_kind_6": 86,
+        "command_kind_4": 6,
+        "command_kind_3": 14,
+        "command_kind_16": 6,
+        "our_active": 1977,
+        "command_kind_2": 324,
+        "our_retreat": 71,
+        "command_kind_15": 2,
+        "our_home_threat": 52,
+        "command_kind_1": 217,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 12
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1712,
+          "hero": 103,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1104,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 2,
+          "enemy_power": 0,
+          "friend_power": 10,
+          "commands": [
+            {
+              "tick": 1712,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 1104,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "ecbeec3276c0ff1e3dcf257a537e9acf87b6669d187cce33fa1b2c76610f10af"
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "side": 1,
+      "slot": 8,
+      "episode": "ereq_0247b86d-80d8-4bae-a882-8c0307e199dd",
+      "class": 3,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        8
+      ],
+      "ticks": 11266,
+      "commands_matched": 957,
+      "decisions": 10930,
+      "max_instructions": 11468,
+      "max_work": 16795,
+      "counts": {
+        "command_kind_5": 224,
+        "command_kind_6": 47,
+        "command_kind_4": 6,
+        "command_kind_3": 17,
+        "command_kind_16": 7,
+        "our_active": 1764,
+        "command_kind_2": 365,
+        "our_retreat": 315,
+        "command_kind_15": 3,
+        "command_kind_1": 286,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 26
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1232,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1023,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 7,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": [
+            {
+              "tick": 1232,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 1023,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "1ab6e518d135cad7f775686afbaf6ad59aa06b5bef25b1099eafdf5dbf7c8818"
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "side": 1,
+      "slot": 8,
+      "episode": "ereq_05e9ec85-cc93-4a98-91f6-d72a5dabe189",
+      "class": 3,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        8
+      ],
+      "ticks": 18149,
+      "commands_matched": 1416,
+      "decisions": 17813,
+      "max_instructions": 11468,
+      "max_work": 16508,
+      "counts": {
+        "command_kind_5": 361,
+        "command_kind_6": 124,
+        "command_kind_4": 6,
+        "command_kind_3": 19,
+        "command_kind_16": 9,
+        "our_active": 2577,
+        "command_kind_2": 518,
+        "our_retreat": 305,
+        "command_kind_15": 6,
+        "command_kind_1": 369,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 21
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1232,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1023,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 7,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": [
+            {
+              "tick": 1232,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 1023,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "d95b2c75cf08e1b9d6e1b4b34476a4f737615a4fa79c38ac4cf0fc39f3917551"
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "side": 1,
+      "slot": 8,
+      "episode": "ereq_07b7c728-4022-4aed-be02-d3a2e0985908",
+      "class": 3,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        8
+      ],
+      "ticks": 20796,
+      "commands_matched": 1263,
+      "decisions": 20460,
+      "max_instructions": 11289,
+      "max_work": 16414,
+      "counts": {
+        "command_kind_5": 444,
+        "command_kind_6": 224,
+        "command_kind_4": 4,
+        "command_kind_3": 17,
+        "command_kind_16": 7,
+        "our_active": 2813,
+        "command_kind_2": 279,
+        "our_retreat": 412,
+        "command_kind_15": 6,
+        "our_home_threat": 24,
+        "command_kind_1": 281,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 34
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1220,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1023,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 6,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": []
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "519eb9abb3a18fd028c14780c68062d70f09d155dad086d08fcf18700e40b60a"
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "side": 1,
+      "slot": 8,
+      "episode": "ereq_12868deb-22da-4228-8df5-43821e6808f0",
+      "class": 3,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        8
+      ],
+      "ticks": 13632,
+      "commands_matched": 1158,
+      "decisions": 13296,
+      "max_instructions": 11468,
+      "max_work": 16508,
+      "counts": {
+        "command_kind_5": 247,
+        "command_kind_6": 75,
+        "command_kind_4": 5,
+        "command_kind_3": 15,
+        "command_kind_16": 8,
+        "our_active": 2008,
+        "command_kind_2": 469,
+        "our_retreat": 272,
+        "command_kind_15": 3,
+        "command_kind_1": 333,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 28
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1232,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1023,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 7,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": [
+            {
+              "tick": 1232,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 1023,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "27d460f37bec07cbf1f5a193b9d803b71845f85543b85a109f42afb29688e1d3"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-lead",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_007cadba-0bd3-4724-8674-a38e7c824c9f",
+      "class": 6,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        0
+      ],
+      "ticks": 29365,
+      "commands_matched": 3266,
+      "decisions": 28801,
+      "max_instructions": 11552,
+      "max_work": 17198,
+      "counts": {
+        "command_kind_5": 522,
+        "command_kind_6": 1146,
+        "command_kind_4": 18,
+        "command_kind_3": 34,
+        "command_kind_16": 14,
+        "our_active": 4679,
+        "command_kind_2": 736,
+        "our_retreat": 758,
+        "command_kind_15": 10,
+        "our_home_threat": 352,
+        "command_kind_1": 780
+      },
+      "first_examples": {},
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "556be87834e6e74348fc14cdd6a159fb25b7179f1f180aa04d04f604ae40cc95"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-lead",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_01d791cf-9fca-4756-985e-15b9fd66a3a6",
+      "class": 6,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        0
+      ],
+      "ticks": 21929,
+      "commands_matched": 2184,
+      "decisions": 21365,
+      "max_instructions": 11658,
+      "max_work": 17198,
+      "counts": {
+        "command_kind_5": 501,
+        "command_kind_6": 736,
+        "command_kind_4": 9,
+        "command_kind_3": 24,
+        "command_kind_16": 12,
+        "our_active": 3473,
+        "command_kind_2": 454,
+        "our_retreat": 338,
+        "command_kind_15": 7,
+        "our_home_threat": 467,
+        "command_kind_1": 434
+      },
+      "first_examples": {},
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "965f12e533d66b25f57bf3aad00efd1912086bb14ac9310b76851876ddf9b010"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-lead",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_02c494d6-2962-40f4-8399-c8e9763ae6cf",
+      "class": 6,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        0
+      ],
+      "ticks": 27969,
+      "commands_matched": 3091,
+      "decisions": 27405,
+      "max_instructions": 11517,
+      "max_work": 17029,
+      "counts": {
+        "command_kind_5": 527,
+        "command_kind_6": 1153,
+        "command_kind_4": 17,
+        "command_kind_3": 34,
+        "command_kind_16": 14,
+        "our_active": 4400,
+        "command_kind_2": 641,
+        "our_retreat": 804,
+        "command_kind_15": 11,
+        "our_home_threat": 94,
+        "command_kind_1": 690
+      },
+      "first_examples": {},
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "6203086e9636b7b3c1fb4fe855dff1d148295bff224591b4e30d6caeff836b90"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-lead",
+      "side": 0,
+      "slot": 0,
+      "episode": "ereq_034cf6e9-c225-4b19-b684-245b7d825e6e",
+      "class": 6,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        0
+      ],
+      "ticks": 21461,
+      "commands_matched": 2493,
+      "decisions": 20897,
+      "max_instructions": 11683,
+      "max_work": 17349,
+      "counts": {
+        "command_kind_5": 361,
+        "command_kind_6": 814,
+        "command_kind_4": 17,
+        "command_kind_3": 30,
+        "command_kind_16": 14,
+        "our_active": 3395,
+        "command_kind_2": 646,
+        "our_retreat": 542,
+        "command_kind_15": 7,
+        "command_kind_1": 601
+      },
+      "first_examples": {},
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "e0a9fcc51ecc5372683fbc580ed5bdd51b9e5d4d3ebf5ef1a5a43055542f168b"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-lead",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_0086d4d5-96df-4005-b20f-198ea54a75cd",
+      "class": 6,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        5
+      ],
+      "ticks": 29365,
+      "commands_matched": 3512,
+      "decisions": 28801,
+      "max_instructions": 11800,
+      "max_work": 17415,
+      "counts": {
+        "command_kind_5": 573,
+        "command_kind_6": 1460,
+        "command_kind_4": 25,
+        "command_kind_3": 45,
+        "command_kind_16": 14,
+        "our_active": 4560,
+        "command_kind_2": 709,
+        "our_retreat": 499,
+        "command_kind_15": 12,
+        "our_home_threat": 121,
+        "command_kind_1": 670
+      },
+      "first_examples": {},
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "b5503bb46a22ec1974106fe38aea9116024f1f0b1d99c880a49f1c3a21004d6a"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-lead",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_022d5415-c691-4e8f-a5a9-e3bd029238ba",
+      "class": 1,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        5
+      ],
+      "ticks": 17027,
+      "commands_matched": 1159,
+      "decisions": 16463,
+      "max_instructions": 12050,
+      "max_work": 17423,
+      "counts": {
+        "command_kind_5": 159,
+        "command_kind_6": 594,
+        "command_kind_4": 5,
+        "command_kind_3": 19,
+        "command_kind_16": 7,
+        "our_active": 1512,
+        "command_kind_2": 203,
+        "our_retreat": 278,
+        "command_kind_15": 6,
+        "our_home_threat": 110,
+        "command_kind_1": 165,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 9
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 3354,
+          "hero": 105,
+          "hp": 257,
+          "max_hp": 257,
+          "creep": 1285,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 1,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": [
+            {
+              "tick": 3354,
+              "hero_id": 105,
+              "kind": 2,
+              "slot": 0,
+              "first": 1285,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            },
+            {
+              "tick": 3354,
+              "hero_id": 105,
+              "kind": 6,
+              "slot": 2,
+              "first": 1285,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "a395dcc1c835762a0e3a76d568d02d675f25e660b10fc54fc488470f8ebea2e7"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-lead",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_08790e04-dab0-4e45-ac5e-3358385b175b",
+      "class": 1,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        5
+      ],
+      "ticks": 12415,
+      "commands_matched": 1461,
+      "decisions": 11851,
+      "max_instructions": 11746,
+      "max_work": 17537,
+      "counts": {
+        "command_kind_5": 212,
+        "command_kind_6": 492,
+        "command_kind_4": 6,
+        "command_kind_3": 15,
+        "command_kind_16": 10,
+        "our_active": 1769,
+        "command_kind_2": 405,
+        "our_retreat": 177,
+        "command_kind_15": 4,
+        "command_kind_1": 313
+      },
+      "first_examples": {},
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "2a46b15abad8ab7e3dbc0367ab996a115c8b8c15f98c8e5d3a0ae85cc152e1b0"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-lead",
+      "side": 1,
+      "slot": 5,
+      "episode": "ereq_0bfbde56-6fe3-4891-9880-1deb18c40a6d",
+      "class": 1,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        5
+      ],
+      "ticks": 16309,
+      "commands_matched": 994,
+      "decisions": 15745,
+      "max_instructions": 12050,
+      "max_work": 17423,
+      "counts": {
+        "command_kind_5": 151,
+        "command_kind_6": 486,
+        "command_kind_4": 4,
+        "command_kind_3": 17,
+        "command_kind_16": 7,
+        "our_active": 1368,
+        "command_kind_2": 173,
+        "our_retreat": 260,
+        "command_kind_15": 5,
+        "our_home_threat": 60,
+        "command_kind_1": 150,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 9
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 3354,
+          "hero": 105,
+          "hp": 257,
+          "max_hp": 257,
+          "creep": 1285,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 1,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": [
+            {
+              "tick": 3354,
+              "hero_id": 105,
+              "kind": 2,
+              "slot": 0,
+              "first": 1285,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            },
+            {
+              "tick": 3354,
+              "hero_id": 105,
+              "kind": 6,
+              "slot": 2,
+              "first": 1285,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "83ed19c8bad36594f52042abcc5d4cf5e09106c07c63585857e6c3816e3a3e21"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-late",
+      "side": 0,
+      "slot": 3,
+      "episode": "ereq_0525d208-52af-4b1c-8678-42a1b758901c",
+      "class": 3,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        3
+      ],
+      "ticks": 16572,
+      "commands_matched": 1265,
+      "decisions": 16236,
+      "max_instructions": 11891,
+      "max_work": 18519,
+      "counts": {
+        "command_kind_5": 366,
+        "command_kind_6": 113,
+        "command_kind_4": 7,
+        "command_kind_3": 18,
+        "command_kind_16": 8,
+        "selected_siege_attacker": 1,
+        "our_active": 2448,
+        "command_kind_2": 464,
+        "our_retreat": 170,
+        "command_kind_15": 5,
+        "command_kind_1": 282,
+        "selected_covered_tower": 10,
+        "submitted_attack_siege_attacker": 1,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 10,
+        "submitted_attack_covered_tower": 3
+      },
+      "first_examples": {
+        "first_selected_siege_attacker": {
+          "tick": 2840,
+          "hero": 103,
+          "hp": 334,
+          "max_hp": 346,
+          "target": 107,
+          "target_kind": 2,
+          "target_hp": 392,
+          "commands": [
+            {
+              "tick": 2840,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 107,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "first_safe_tower_opportunity": {
+          "tick": 5203,
+          "hero": 103,
+          "hp": 454,
+          "max_hp": 466,
+          "creep": 1483,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 3,
+          "enemy_power": 0,
+          "friend_power": 5,
+          "commands": []
+        },
+        "first_selected_covered_tower": {
+          "tick": 7202,
+          "hero": 103,
+          "hp": 514,
+          "max_hp": 514,
+          "target": 20,
+          "target_kind": 4,
+          "target_hp": 497,
+          "commands": []
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "73e160a7e6ba746d8ed20f8fbe94df0acdd85e1f383daff40ccff8188f5ba5ac"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-late",
+      "side": 0,
+      "slot": 3,
+      "episode": "ereq_0787c05f-8cf4-43c4-84ac-8d2684fc936d",
+      "class": 3,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        3
+      ],
+      "ticks": 11721,
+      "commands_matched": 727,
+      "decisions": 11385,
+      "max_instructions": 11255,
+      "max_work": 16623,
+      "counts": {
+        "command_kind_5": 232,
+        "command_kind_6": 8,
+        "command_kind_4": 1,
+        "command_kind_3": 5,
+        "command_kind_16": 3,
+        "our_active": 1700,
+        "command_kind_2": 258,
+        "our_retreat": 291,
+        "our_home_threat": 33,
+        "command_kind_1": 219,
+        "selected_covered_tower": 3,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 2,
+        "submitted_attack_covered_tower": 1
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 2336,
+          "hero": 103,
+          "hp": 298,
+          "max_hp": 298,
+          "creep": 1200,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 8,
+          "enemy_power": 0,
+          "friend_power": 12,
+          "commands": [
+            {
+              "tick": 2336,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 1200,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "first_selected_covered_tower": {
+          "tick": 2348,
+          "hero": 103,
+          "hp": 298,
+          "max_hp": 298,
+          "target": 14,
+          "target_kind": 4,
+          "target_hp": 2600,
+          "commands": [
+            {
+              "tick": 2348,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 14,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "47df94806f11f4c21157b6710012d694b7314a0328aafea4364b7b1c4a7e8d3b"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-late",
+      "side": 0,
+      "slot": 3,
+      "episode": "ereq_127e48a7-57d9-4571-aae5-526389acacb8",
+      "class": 3,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        3
+      ],
+      "ticks": 20178,
+      "commands_matched": 1229,
+      "decisions": 19842,
+      "max_instructions": 11535,
+      "max_work": 17041,
+      "counts": {
+        "command_kind_5": 411,
+        "command_kind_6": 8,
+        "command_kind_4": 6,
+        "command_kind_3": 12,
+        "command_kind_16": 5,
+        "our_active": 2892,
+        "command_kind_2": 427,
+        "our_retreat": 417,
+        "command_kind_15": 1,
+        "our_home_threat": 5,
+        "command_kind_1": 358,
+        "selected_covered_tower": 32,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 1,
+        "submitted_attack_covered_tower": 8
+      },
+      "first_examples": {
+        "first_selected_covered_tower": {
+          "tick": 2354,
+          "hero": 103,
+          "hp": 298,
+          "max_hp": 298,
+          "target": 14,
+          "target_kind": 4,
+          "target_hp": 2600,
+          "commands": [
+            {
+              "tick": 2354,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 14,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "first_safe_tower_opportunity": {
+          "tick": 2786,
+          "hero": 103,
+          "hp": 346,
+          "max_hp": 346,
+          "creep": 1248,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 1,
+          "enemy_power": 0,
+          "friend_power": 9,
+          "commands": [
+            {
+              "tick": 2786,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 1248,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "b7655f260fa67d3a1cb112e873f7a65f89929dd3c8cc9a37c3593689e786df55"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-late",
+      "side": 0,
+      "slot": 3,
+      "episode": "ereq_148fdb7c-be3a-467f-8f02-871769947abb",
+      "class": 3,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        3
+      ],
+      "ticks": 18021,
+      "commands_matched": 1180,
+      "decisions": 17685,
+      "max_instructions": 11721,
+      "max_work": 17548,
+      "counts": {
+        "command_kind_5": 358,
+        "command_kind_6": 70,
+        "command_kind_4": 3,
+        "command_kind_3": 13,
+        "command_kind_16": 6,
+        "our_active": 2492,
+        "command_kind_2": 409,
+        "our_retreat": 297,
+        "command_kind_15": 5,
+        "our_home_threat": 2,
+        "command_kind_1": 315,
+        "selected_covered_tower": 9,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 3,
+        "submitted_attack_covered_tower": 3
+      },
+      "first_examples": {
+        "first_selected_covered_tower": {
+          "tick": 1712,
+          "hero": 103,
+          "hp": 250,
+          "max_hp": 250,
+          "target": 13,
+          "target_kind": 4,
+          "target_hp": 1662,
+          "commands": []
+        },
+        "first_safe_tower_opportunity": {
+          "tick": 2330,
+          "hero": 103,
+          "hp": 298,
+          "max_hp": 298,
+          "creep": 1200,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 8,
+          "enemy_power": 0,
+          "friend_power": 12,
+          "commands": [
+            {
+              "tick": 2330,
+              "hero_id": 103,
+              "kind": 2,
+              "slot": 0,
+              "first": 1200,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "9fdfefc2f724362fc43f3476f463b9ae7c64cf71bfb1b2fecea80248f94f87e4"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-late",
+      "side": 1,
+      "slot": 8,
+      "episode": "ereq_022b79e8-9211-45f9-bdd5-74fc71951e5e",
+      "class": 3,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        8
+      ],
+      "ticks": 19363,
+      "commands_matched": 1475,
+      "decisions": 19027,
+      "max_instructions": 12223,
+      "max_work": 17555,
+      "counts": {
+        "command_kind_5": 368,
+        "command_kind_6": 140,
+        "command_kind_4": 4,
+        "command_kind_3": 17,
+        "command_kind_16": 9,
+        "our_active": 2698,
+        "command_kind_2": 540,
+        "our_retreat": 439,
+        "command_kind_15": 6,
+        "our_home_threat": 25,
+        "command_kind_1": 388,
+        "selected_covered_tower": 22,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 13,
+        "submitted_attack_covered_tower": 7
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1232,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1023,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 7,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": [
+            {
+              "tick": 1232,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 1023,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "first_selected_covered_tower": {
+          "tick": 1286,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "target": 10,
+          "target_kind": 4,
+          "target_hp": 1900,
+          "commands": [
+            {
+              "tick": 1286,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 10,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "959373f15156deb855c0dac8e1cb11dea3522bed243f918144abc8877a4c843c"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-late",
+      "side": 1,
+      "slot": 8,
+      "episode": "ereq_09e375d8-ed39-4352-b191-3e672858dd24",
+      "class": 3,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        8
+      ],
+      "ticks": 19160,
+      "commands_matched": 1588,
+      "decisions": 18824,
+      "max_instructions": 12340,
+      "max_work": 17880,
+      "counts": {
+        "command_kind_5": 345,
+        "command_kind_6": 196,
+        "command_kind_4": 5,
+        "command_kind_3": 16,
+        "command_kind_16": 8,
+        "our_active": 2915,
+        "command_kind_2": 561,
+        "our_retreat": 495,
+        "command_kind_15": 5,
+        "command_kind_1": 449,
+        "selected_covered_tower": 10,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 18,
+        "submitted_attack_covered_tower": 1
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1232,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1023,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 7,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": [
+            {
+              "tick": 1232,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 1023,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "first_selected_covered_tower": {
+          "tick": 1286,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "target": 10,
+          "target_kind": 4,
+          "target_hp": 1900,
+          "commands": [
+            {
+              "tick": 1286,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 10,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "4f4214534424e713b735beef801023b2510d30a91519a1725c4e536981a91aff"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-late",
+      "side": 1,
+      "slot": 8,
+      "episode": "ereq_0b1072b9-4477-4c76-bed8-0773b4730115",
+      "class": 3,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        8
+      ],
+      "ticks": 13329,
+      "commands_matched": 1153,
+      "decisions": 12993,
+      "max_instructions": 11652,
+      "max_work": 17308,
+      "counts": {
+        "command_kind_5": 245,
+        "command_kind_6": 100,
+        "command_kind_4": 7,
+        "command_kind_3": 18,
+        "command_kind_16": 8,
+        "selected_siege_attacker": 1,
+        "our_active": 2047,
+        "command_kind_2": 467,
+        "our_retreat": 327,
+        "command_kind_15": 3,
+        "our_home_threat": 40,
+        "command_kind_1": 304,
+        "selected_covered_tower": 48,
+        "submitted_attack_siege_attacker": 1,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 8,
+        "submitted_attack_covered_tower": 18
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1220,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1023,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 6,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": []
+        },
+        "first_selected_covered_tower": {
+          "tick": 1286,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "target": 10,
+          "target_kind": 4,
+          "target_hp": 1900,
+          "commands": [
+            {
+              "tick": 1286,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 10,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "first_selected_siege_attacker": {
+          "tick": 6350,
+          "hero": 108,
+          "hp": 382,
+          "max_hp": 562,
+          "target": 104,
+          "target_kind": 2,
+          "target_hp": 484,
+          "commands": [
+            {
+              "tick": 6350,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 104,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "087d46a8a3bfae362bb715d3db44f78da7d87fa585802abc9edac51a8af2df4b"
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-late",
+      "side": 1,
+      "slot": 8,
+      "episode": "ereq_0dcba1e8-a40a-4b95-8ab7-00851e3d02f1",
+      "class": 3,
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        8
+      ],
+      "ticks": 8491,
+      "commands_matched": 820,
+      "decisions": 8155,
+      "max_instructions": 12626,
+      "max_work": 18132,
+      "counts": {
+        "command_kind_5": 155,
+        "command_kind_6": 8,
+        "command_kind_4": 6,
+        "command_kind_3": 11,
+        "command_kind_16": 6,
+        "our_active": 1274,
+        "command_kind_2": 410,
+        "our_retreat": 54,
+        "command_kind_15": 1,
+        "command_kind_1": 222,
+        "selected_covered_tower": 15,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 11,
+        "submitted_attack_covered_tower": 3
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1220,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "creep": 1023,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 6,
+          "enemy_power": 0,
+          "friend_power": 6,
+          "commands": []
+        },
+        "first_selected_covered_tower": {
+          "tick": 1292,
+          "hero": 108,
+          "hp": 250,
+          "max_hp": 250,
+          "target": 10,
+          "target_kind": 4,
+          "target_hp": 1900,
+          "commands": [
+            {
+              "tick": 1292,
+              "hero_id": 108,
+              "kind": 2,
+              "slot": 0,
+              "first": 10,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones.",
+      "audit_sha256": "265641e04652f5e314e48ea35d9a175342ec9271e71f02ba664f7c241261cfc1"
+    }
+  ],
+  "scope": "32-game descriptive source reconstruction; guards and submitted commands are not landed damage or causal score contribution. Full400-game score qualification remains separate."
+}

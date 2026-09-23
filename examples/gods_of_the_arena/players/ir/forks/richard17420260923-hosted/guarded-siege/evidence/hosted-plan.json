@@ -1,0 +1,205 @@
+{
+  "stage": "trial",
+  "games": 400,
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3",
+  "cycle": "interactive-richard174-source-20260923",
+  "arms": [
+    {
+      "name": "baseline",
+      "cell": "red-lead",
+      "side": 0,
+      "ordinal": 0,
+      "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 50
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "side": 1,
+      "ordinal": 0,
+      "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 50
+    },
+    {
+      "name": "baseline",
+      "cell": "red-late",
+      "side": 0,
+      "ordinal": 3,
+      "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        3
+      ],
+      "roster": [
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 50
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "side": 1,
+      "ordinal": 3,
+      "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        8
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "a25248bc-0013-4267-a12c-c55af87da30f"
+      ],
+      "games": 50
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-lead",
+      "side": 0,
+      "ordinal": 0,
+      "version": "2a2c64b6-efa8-43f3-b4fb-83ec07ebb09c",
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "2a2c64b6-efa8-43f3-b4fb-83ec07ebb09c",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 50
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-lead",
+      "side": 1,
+      "ordinal": 0,
+      "version": "2a2c64b6-efa8-43f3-b4fb-83ec07ebb09c",
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "2a2c64b6-efa8-43f3-b4fb-83ec07ebb09c",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 50
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-late",
+      "side": 0,
+      "ordinal": 3,
+      "version": "2a2c64b6-efa8-43f3-b4fb-83ec07ebb09c",
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "own_slots": [
+        3
+      ],
+      "roster": [
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "2a2c64b6-efa8-43f3-b4fb-83ec07ebb09c",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 50
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-late",
+      "side": 1,
+      "ordinal": 3,
+      "version": "2a2c64b6-efa8-43f3-b4fb-83ec07ebb09c",
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "own_slots": [
+        8
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "2a2c64b6-efa8-43f3-b4fb-83ec07ebb09c",
+        "a25248bc-0013-4267-a12c-c55af87da30f"
+      ],
+      "games": 50
+    }
+  ],
+  "rule": "400 fresh games,50/source/context: red lead,blue lead,red late,blue late; ordinals0/3. Zero10source/VM/full-replay/XP/integer failures;>=10percent pooled mean score gain,eachcontext>=95percentcontrol,positive lower95percent context-stratified independent whole-game bootstrap gain. Stable game/principal champions. One frozen combined source; no prior hosted controls or posthoc class filtering.",
+  "budget": "2320/11600 reserved before;400new in8x50, separate cycle,maximum3active. User authorized10000additional games September23UTC.",
+  "source_evidence": "docs/opponents/richard-v174/source-audit-20260923",
+  "source_freeze": "Guarded siege r2, generated from current Druid IR; coordinated pressure and retaliation; fresh controls; natural draft."
+}

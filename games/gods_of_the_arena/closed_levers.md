@@ -99,3 +99,8 @@ no unchanged rerun or deployment from a favorable class slice. A new Druid-only
 source may be tested prospectively with fresh controls and demonstrably unchanged
 non-Druid commands. Recording this hypothesis does not validate it.
 Evidence: `experiments/2026-09-23-lane-recovery.md` and the hosted pair capsule.
+
+
+## 2026-09-23 Richard174 broad guarded siege — not qualified
+
+Sourcef7873bb2, parentDruid29f6d7e6. Covered-tower pressure plus siege attacker response passed662local checks/16native and all400hosted audits. Mean score+7.58%,95%gainCI[−8.65,+27.05]; red late−53.15%,blue late+55.88%. Failed frozen rule; no deployment or unchanged rerun. Blue Druid favorable slice is only a new scoped hypothesis requiring separate source, fresh controls and red/other-class command equivalence. Also check gaps versuskhors114/Richard174: blue personal gain coincided with a worse khors gap. Eight late-draft baseline replays found zero redundant home-navigation commands, so nearest-defender transfer remains unmotivated by this subset. See `experiments/2026-09-23-richard174-transfer.md`.

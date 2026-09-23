@@ -1,0 +1,895 @@
+{
+  "complete": true,
+  "stage": "trial",
+  "games": 400,
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3",
+  "selected": null,
+  "candidates": [
+    {
+      "name": "guarded-siege",
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "score_gate_passed": false,
+      "baseline_score": 1654.575,
+      "candidate_score": 1779.945,
+      "aggregate_gain_percent": 7.577172385657938,
+      "gain_ci95_percent": [
+        -8.650446677910429,
+        27.054058522069766
+      ],
+      "per_context_gain_percent": [
+        3.24869787245603,
+        4.846182856527115,
+        -53.15045719035745,
+        55.88104140225707
+      ],
+      "late_score_gain_percent": 37.23271155595997
+    }
+  ],
+  "cells": [
+    {
+      "name": "baseline",
+      "cell": "red-lead",
+      "ordinal": 0,
+      "side": 0,
+      "games": 50,
+      "invalid": 0,
+      "distinct_streams": 50,
+      "duplicate_groups": [],
+      "means": {
+        "score": 2945.18,
+        "xp": 6002.32,
+        "hero_xp": 2592,
+        "creep_xp": 2616.32,
+        "building_xp": 564,
+        "god_xp": 230,
+        "kills": 17.28,
+        "deaths": 6.54,
+        "level": 12.16,
+        "creep_last_hits": 195.48,
+        "minutes": 15.355847222222222,
+        "spells": 120.58,
+        "out_of_range": 838.28
+      },
+      "score_ci95": [
+        2518.8,
+        3372.2
+      ],
+      "by_class": {
+        "1": {
+          "n": 33,
+          "score": 2571.3636363636365,
+          "xp": 5682.787878787879,
+          "hero_xp": 2368.181818181818,
+          "creep_xp": 2554,
+          "building_xp": 563.6363636363636,
+          "god_xp": 196.96969696969697,
+          "kills": 15.787878787878787,
+          "deaths": 7.909090909090909,
+          "level": 11.787878787878787,
+          "creep_last_hits": 196.33333333333334,
+          "minutes": 15.664667508417509,
+          "spells": 127.06060606060606,
+          "out_of_range": 815.2424242424242
+        },
+        "6": {
+          "n": 17,
+          "score": 3670.823529411765,
+          "xp": 6622.588235294118,
+          "hero_xp": 3026.470588235294,
+          "creep_xp": 2737.294117647059,
+          "building_xp": 564.7058823529412,
+          "god_xp": 294.11764705882354,
+          "kills": 20.176470588235293,
+          "deaths": 3.8823529411764706,
+          "level": 12.882352941176471,
+          "creep_last_hits": 193.8235294117647,
+          "minutes": 14.756372549019607,
+          "spells": 108,
+          "out_of_range": 883
+        }
+      },
+      "pooled_xp_per_minute": 390.8817216749682,
+      "team_wins": 23,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 5,
+          "score": 2164.74,
+          "own_minus_rival": 780.44,
+          "difference_ci95": [
+            147.9,
+            1416.38
+          ],
+          "individual_outscores": 31,
+          "ties": 0
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 7,
+          "score": 1347.34,
+          "own_minus_rival": 1597.84,
+          "difference_ci95": [
+            1037.14,
+            2145.26
+          ],
+          "individual_outscores": 40,
+          "ties": 0
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 6,
+          "score": 1211.96,
+          "own_minus_rival": 1733.22,
+          "difference_ci95": [
+            1282.4,
+            2196.38
+          ],
+          "individual_outscores": 42,
+          "ties": 0
+        }
+      ]
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "ordinal": 0,
+      "side": 1,
+      "games": 50,
+      "invalid": 0,
+      "distinct_streams": 50,
+      "duplicate_groups": [],
+      "means": {
+        "score": 2969.76,
+        "xp": 5716.7,
+        "hero_xp": 3015,
+        "creep_xp": 2203.7,
+        "building_xp": 318,
+        "god_xp": 180,
+        "kills": 20.1,
+        "deaths": 7.98,
+        "level": 11.62,
+        "creep_last_hits": 161.3,
+        "minutes": 13.90788888888889,
+        "spells": 105.5,
+        "out_of_range": 754.2
+      },
+      "score_ci95": [
+        2318.14,
+        3625.36
+      ],
+      "by_class": {
+        "1": {
+          "n": 28,
+          "score": 1226.142857142857,
+          "xp": 3896.1785714285716,
+          "hero_xp": 2067.8571428571427,
+          "creep_xp": 1689.0357142857142,
+          "building_xp": 103.57142857142857,
+          "god_xp": 35.714285714285715,
+          "kills": 13.785714285714286,
+          "deaths": 10.321428571428571,
+          "level": 9.571428571428571,
+          "creep_last_hits": 130.17857142857142,
+          "minutes": 13.661185515873015,
+          "spells": 89.5,
+          "out_of_range": 605.7142857142857
+        },
+        "6": {
+          "n": 22,
+          "score": 5188.909090909091,
+          "xp": 8033.727272727273,
+          "hero_xp": 4220.454545454545,
+          "creep_xp": 2858.7272727272725,
+          "building_xp": 590.9090909090909,
+          "god_xp": 363.6363636363636,
+          "kills": 28.136363636363637,
+          "deaths": 5,
+          "level": 14.227272727272727,
+          "creep_last_hits": 200.9090909090909,
+          "minutes": 14.221875,
+          "spells": 125.86363636363636,
+          "out_of_range": 943.1818181818181
+        }
+      },
+      "pooled_xp_per_minute": 411.0400971471028,
+      "team_wins": 18,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 0,
+          "score": 2382.66,
+          "own_minus_rival": 587.1,
+          "difference_ci95": [
+            -188.38,
+            1384.76
+          ],
+          "individual_outscores": 24,
+          "ties": 0
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 2,
+          "score": 662.36,
+          "own_minus_rival": 2307.4,
+          "difference_ci95": [
+            1568.16,
+            3036.26
+          ],
+          "individual_outscores": 36,
+          "ties": 0
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 1,
+          "score": 1148.36,
+          "own_minus_rival": 1821.4,
+          "difference_ci95": [
+            1224.28,
+            2426.98
+          ],
+          "individual_outscores": 34,
+          "ties": 0
+        }
+      ]
+    },
+    {
+      "name": "baseline",
+      "cell": "red-late",
+      "ordinal": 3,
+      "side": 0,
+      "games": 50,
+      "invalid": 0,
+      "distinct_streams": 50,
+      "duplicate_groups": [],
+      "means": {
+        "score": 120.3,
+        "xp": 2016.7,
+        "hero_xp": 360,
+        "creep_xp": 1064.7,
+        "building_xp": 122,
+        "god_xp": 470,
+        "kills": 2.4,
+        "deaths": 5.16,
+        "level": 6.84,
+        "creep_last_hits": 52.54,
+        "minutes": 12.334333333333333,
+        "spells": 52.1,
+        "out_of_range": 171.68
+      },
+      "score_ci95": [
+        63.46,
+        185.26
+      ],
+      "by_class": {
+        "3": {
+          "n": 42,
+          "score": 143.21428571428572,
+          "xp": 2110.0714285714284,
+          "hero_xp": 375,
+          "creep_xp": 1120.7857142857142,
+          "building_xp": 138.0952380952381,
+          "god_xp": 476.1904761904762,
+          "kills": 2.5,
+          "deaths": 4.857142857142857,
+          "level": 7,
+          "creep_last_hits": 54.69047619047619,
+          "minutes": 11.984986772486772,
+          "spells": 55.76190476190476,
+          "out_of_range": 72.23809523809524
+        },
+        "5": {
+          "n": 8,
+          "score": 0,
+          "xp": 1526.5,
+          "hero_xp": 281.25,
+          "creep_xp": 770.25,
+          "building_xp": 37.5,
+          "god_xp": 437.5,
+          "kills": 1.875,
+          "deaths": 6.75,
+          "level": 6,
+          "creep_last_hits": 41.25,
+          "minutes": 14.168402777777777,
+          "spells": 32.875,
+          "out_of_range": 693.75
+        }
+      },
+      "pooled_xp_per_minute": 163.50295921952272,
+      "team_wins": 47,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 5,
+          "score": 1017.32,
+          "own_minus_rival": -897.02,
+          "difference_ci95": [
+            -1166.26,
+            -634.34
+          ],
+          "individual_outscores": 6,
+          "ties": 4
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 7,
+          "score": 1051.04,
+          "own_minus_rival": -930.74,
+          "difference_ci95": [
+            -1208.06,
+            -675.7
+          ],
+          "individual_outscores": 6,
+          "ties": 4
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 6,
+          "score": 825.5,
+          "own_minus_rival": -705.2,
+          "difference_ci95": [
+            -904.96,
+            -507
+          ],
+          "individual_outscores": 5,
+          "ties": 4
+        }
+      ]
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "ordinal": 3,
+      "side": 1,
+      "games": 50,
+      "invalid": 0,
+      "distinct_streams": 50,
+      "duplicate_groups": [],
+      "means": {
+        "score": 583.06,
+        "xp": 3016.22,
+        "hero_xp": 486,
+        "creep_xp": 1890.22,
+        "building_xp": 190,
+        "god_xp": 450,
+        "kills": 3.24,
+        "deaths": 4.96,
+        "level": 8.52,
+        "creep_last_hits": 102.32,
+        "minutes": 12.665750000000001,
+        "spells": 67.6,
+        "out_of_range": 212.94
+      },
+      "score_ci95": [
+        425.88,
+        750.42
+      ],
+      "by_class": {
+        "3": {
+          "n": 44,
+          "score": 475.8636363636364,
+          "xp": 2772.9772727272725,
+          "hero_xp": 419.3181818181818,
+          "creep_xp": 1694.5681818181818,
+          "building_xp": 193.1818181818182,
+          "god_xp": 465.90909090909093,
+          "kills": 2.7954545454545454,
+          "deaths": 4.4772727272727275,
+          "level": 8.181818181818182,
+          "creep_last_hits": 87.38636363636364,
+          "minutes": 12.054024621212122,
+          "spells": 61.77272727272727,
+          "out_of_range": 122.0909090909091
+        },
+        "4": {
+          "n": 6,
+          "score": 1369.1666666666667,
+          "xp": 4800,
+          "hero_xp": 975,
+          "creep_xp": 3325,
+          "building_xp": 166.66666666666666,
+          "god_xp": 333.3333333333333,
+          "kills": 6.5,
+          "deaths": 8.5,
+          "level": 11,
+          "creep_last_hits": 211.83333333333334,
+          "minutes": 17.15173611111111,
+          "spells": 110.33333333333333,
+          "out_of_range": 879.1666666666666
+        }
+      },
+      "pooled_xp_per_minute": 238.13986538499495,
+      "team_wins": 45,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 0,
+          "score": 1827.32,
+          "own_minus_rival": -1244.26,
+          "difference_ci95": [
+            -1758.56,
+            -757.96
+          ],
+          "individual_outscores": 17,
+          "ties": 0
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 2,
+          "score": 897.04,
+          "own_minus_rival": -313.98,
+          "difference_ci95": [
+            -658.22,
+            20.92
+          ],
+          "individual_outscores": 25,
+          "ties": 2
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 1,
+          "score": 320.54,
+          "own_minus_rival": 262.52,
+          "difference_ci95": [
+            42.12,
+            488.82
+          ],
+          "individual_outscores": 26,
+          "ties": 7
+        }
+      ]
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-lead",
+      "ordinal": 0,
+      "side": 0,
+      "games": 50,
+      "invalid": 0,
+      "distinct_streams": 50,
+      "duplicate_groups": [],
+      "means": {
+        "score": 3040.86,
+        "xp": 6294.36,
+        "hero_xp": 2658,
+        "creep_xp": 3070.36,
+        "building_xp": 426,
+        "god_xp": 140,
+        "kills": 17.72,
+        "deaths": 6.1,
+        "level": 12.56,
+        "creep_last_hits": 226.9,
+        "minutes": 16.366680555555554,
+        "spells": 129.9,
+        "out_of_range": 848.18
+      },
+      "score_ci95": [
+        2600.1,
+        3475.42
+      ],
+      "by_class": {
+        "1": {
+          "n": 24,
+          "score": 1945.25,
+          "xp": 5092.875,
+          "hero_xp": 2100,
+          "creep_xp": 2609.5416666666665,
+          "building_xp": 362.5,
+          "god_xp": 20.833333333333332,
+          "kills": 14,
+          "deaths": 7.958333333333333,
+          "level": 11.25,
+          "creep_last_hits": 208.20833333333334,
+          "minutes": 15.947135416666667,
+          "spells": 127.45833333333333,
+          "out_of_range": 823.375
+        },
+        "6": {
+          "n": 26,
+          "score": 4052.1923076923076,
+          "xp": 7403.423076923077,
+          "hero_xp": 3173.076923076923,
+          "creep_xp": 3495.730769230769,
+          "building_xp": 484.61538461538464,
+          "god_xp": 250,
+          "kills": 21.153846153846153,
+          "deaths": 4.384615384615385,
+          "level": 13.76923076923077,
+          "creep_last_hits": 244.15384615384616,
+          "minutes": 16.75395299145299,
+          "spells": 132.15384615384616,
+          "out_of_range": 871.0769230769231
+        }
+      },
+      "pooled_xp_per_minute": 384.5837876919656,
+      "team_wins": 14,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 5,
+          "score": 2442.28,
+          "own_minus_rival": 598.58,
+          "difference_ci95": [
+            -149.94,
+            1326.46
+          ],
+          "individual_outscores": 27,
+          "ties": 0
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 7,
+          "score": 1485.84,
+          "own_minus_rival": 1555.02,
+          "difference_ci95": [
+            1028.86,
+            2062.1
+          ],
+          "individual_outscores": 39,
+          "ties": 0
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 6,
+          "score": 1226.76,
+          "own_minus_rival": 1814.1,
+          "difference_ci95": [
+            1362.76,
+            2255.86
+          ],
+          "individual_outscores": 41,
+          "ties": 0
+        }
+      ]
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-lead",
+      "ordinal": 0,
+      "side": 1,
+      "games": 50,
+      "invalid": 0,
+      "distinct_streams": 48,
+      "duplicate_groups": [
+        [
+          "ereq_e6b32757-6b63-4083-9ef6-af48cb46680d",
+          "ereq_1246b19b-0ca9-4a34-8880-1cd04c060116"
+        ],
+        [
+          "ereq_2232f225-f325-4e87-874c-7a714e720aff",
+          "ereq_1a04b887-c39c-41d5-a01b-3fa793e26be6"
+        ]
+      ],
+      "means": {
+        "score": 3113.68,
+        "xp": 5918.54,
+        "hero_xp": 3180,
+        "creep_xp": 2202.54,
+        "building_xp": 346,
+        "god_xp": 190,
+        "kills": 21.2,
+        "deaths": 8.08,
+        "level": 11.68,
+        "creep_last_hits": 159.82,
+        "minutes": 14.206930555555555,
+        "spells": 110.58,
+        "out_of_range": 796.16
+      },
+      "score_ci95": [
+        2451.9,
+        3765.9
+      ],
+      "by_class": {
+        "1": {
+          "n": 28,
+          "score": 1565.5,
+          "xp": 4156.035714285715,
+          "hero_xp": 2282.1428571428573,
+          "creep_xp": 1534.607142857143,
+          "building_xp": 214.28571428571428,
+          "god_xp": 125,
+          "kills": 15.214285714285714,
+          "deaths": 9.321428571428571,
+          "level": 9.678571428571429,
+          "creep_last_hits": 117.64285714285714,
+          "minutes": 13.280902777777778,
+          "spells": 92.28571428571429,
+          "out_of_range": 686.8928571428571
+        },
+        "6": {
+          "n": 22,
+          "score": 5084.090909090909,
+          "xp": 8161.727272727273,
+          "hero_xp": 4322.727272727273,
+          "creep_xp": 3052.6363636363635,
+          "building_xp": 513.6363636363636,
+          "god_xp": 272.72727272727275,
+          "kills": 28.818181818181817,
+          "deaths": 6.5,
+          "level": 14.227272727272727,
+          "creep_last_hits": 213.5,
+          "minutes": 15.385511363636363,
+          "spells": 133.86363636363637,
+          "out_of_range": 935.2272727272727
+        }
+      },
+      "pooled_xp_per_minute": 416.59526502616586,
+      "team_wins": 19,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 0,
+          "score": 2571.4,
+          "own_minus_rival": 542.28,
+          "difference_ci95": [
+            -180.3,
+            1280.36
+          ],
+          "individual_outscores": 26,
+          "ties": 0
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 2,
+          "score": 765.5,
+          "own_minus_rival": 2348.18,
+          "difference_ci95": [
+            1602.22,
+            3068.38
+          ],
+          "individual_outscores": 35,
+          "ties": 0
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 1,
+          "score": 1039.98,
+          "own_minus_rival": 2073.7,
+          "difference_ci95": [
+            1483.4,
+            2651.1
+          ],
+          "individual_outscores": 36,
+          "ties": 0
+        }
+      ]
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "red-late",
+      "ordinal": 3,
+      "side": 0,
+      "games": 50,
+      "invalid": 0,
+      "distinct_streams": 50,
+      "duplicate_groups": [],
+      "means": {
+        "score": 56.36,
+        "xp": 1940.6,
+        "hero_xp": 375,
+        "creep_xp": 981.6,
+        "building_xp": 124,
+        "god_xp": 460,
+        "kills": 2.5,
+        "deaths": 5.62,
+        "level": 6.76,
+        "creep_last_hits": 44.28,
+        "minutes": 13.269847222222221,
+        "spells": 54.92,
+        "out_of_range": 173.32
+      },
+      "score_ci95": [
+        17.36,
+        106.88
+      ],
+      "by_class": {
+        "3": {
+          "n": 42,
+          "score": 65.54761904761905,
+          "xp": 1960.9285714285713,
+          "hero_xp": 364.2857142857143,
+          "creep_xp": 1006.1666666666666,
+          "building_xp": 138.0952380952381,
+          "god_xp": 452.3809523809524,
+          "kills": 2.4285714285714284,
+          "deaths": 5.5476190476190474,
+          "level": 6.785714285714286,
+          "creep_last_hits": 43.69047619047619,
+          "minutes": 13.35854828042328,
+          "spells": 58.69047619047619,
+          "out_of_range": 86.23809523809524
+        },
+        "5": {
+          "n": 8,
+          "score": 8.125,
+          "xp": 1833.875,
+          "hero_xp": 431.25,
+          "creep_xp": 852.625,
+          "building_xp": 50,
+          "god_xp": 500,
+          "kills": 2.875,
+          "deaths": 6,
+          "level": 6.625,
+          "creep_last_hits": 47.375,
+          "minutes": 12.804166666666667,
+          "spells": 35.125,
+          "out_of_range": 630.5
+        }
+      },
+      "pooled_xp_per_minute": 146.2413219611295,
+      "team_wins": 46,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 5,
+          "score": 1087.02,
+          "own_minus_rival": -1030.66,
+          "difference_ci95": [
+            -1366.56,
+            -710.5
+          ],
+          "individual_outscores": 4,
+          "ties": 12
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 7,
+          "score": 1030.74,
+          "own_minus_rival": -974.38,
+          "difference_ci95": [
+            -1259.8,
+            -707.74
+          ],
+          "individual_outscores": 2,
+          "ties": 7
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 6,
+          "score": 1052.8,
+          "own_minus_rival": -996.44,
+          "difference_ci95": [
+            -1155.64,
+            -833.8
+          ],
+          "individual_outscores": 1,
+          "ties": 0
+        }
+      ]
+    },
+    {
+      "name": "guarded-siege",
+      "cell": "blue-late",
+      "ordinal": 3,
+      "side": 1,
+      "games": 50,
+      "invalid": 0,
+      "distinct_streams": 50,
+      "duplicate_groups": [],
+      "means": {
+        "score": 908.88,
+        "xp": 3640.96,
+        "hero_xp": 624,
+        "creep_xp": 2348.96,
+        "building_xp": 228,
+        "god_xp": 440,
+        "kills": 4.16,
+        "deaths": 5.26,
+        "level": 9.42,
+        "creep_last_hits": 127.58,
+        "minutes": 13.842875,
+        "spells": 85.44,
+        "out_of_range": 254.2
+      },
+      "score_ci95": [
+        727.24,
+        1095.2
+      ],
+      "by_class": {
+        "3": {
+          "n": 42,
+          "score": 871.7857142857143,
+          "xp": 3400.3571428571427,
+          "hero_xp": 539.2857142857143,
+          "creep_xp": 2149.1666666666665,
+          "building_xp": 247.61904761904762,
+          "god_xp": 464.2857142857143,
+          "kills": 3.5952380952380953,
+          "deaths": 4.476190476190476,
+          "level": 9.119047619047619,
+          "creep_last_hits": 111.33333333333333,
+          "minutes": 12.860515873015872,
+          "spells": 78.85714285714286,
+          "out_of_range": 121.47619047619048
+        },
+        "4": {
+          "n": 8,
+          "score": 1103.625,
+          "xp": 4904.125,
+          "hero_xp": 1068.75,
+          "creep_xp": 3397.875,
+          "building_xp": 125,
+          "god_xp": 312.5,
+          "kills": 7.125,
+          "deaths": 9.375,
+          "level": 11,
+          "creep_last_hits": 212.875,
+          "minutes": 19.000260416666666,
+          "spells": 120,
+          "out_of_range": 951
+        }
+      },
+      "pooled_xp_per_minute": 263.02050693949053,
+      "team_wins": 44,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 0,
+          "score": 2988.06,
+          "own_minus_rival": -2079.18,
+          "difference_ci95": [
+            -2578.08,
+            -1612.68
+          ],
+          "individual_outscores": 4,
+          "ties": 0
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 2,
+          "score": 617.92,
+          "own_minus_rival": 290.96,
+          "difference_ci95": [
+            4.54,
+            572.7
+          ],
+          "individual_outscores": 35,
+          "ties": 2
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 1,
+          "score": 276.32,
+          "own_minus_rival": 632.56,
+          "difference_ci95": [
+            393.4,
+            868.94
+          ],
+          "individual_outscores": 39,
+          "ties": 2
+        }
+      ]
+    }
+  ],
+  "field_changes": {
+    "game_changed": false,
+    "champion_changes": [],
+    "action": "Revalidate changed opponents and refreshed mixed rosters. Frozen A/B results retain exact pinned-version scope; do not substitute versions or claim enduring rank."
+  },
+  "deployment_qualified": false,
+  "evidence_scope": "Fresh controls and unmatched random seeds, one subject, fixed mixed roster;10 source hashes/VM exits, full replay hashes, XP sources and integer scores checked. Context-stratified independent whole-game bootstrap; duplicate streams disclosed. One preselected combined source;400fresh games across red lead/blue lead/red late/blue late,50/source/context. Later draft has two identical fixed reference teammates; actual classes reported without filtering. Positive lower95%gain bound; no universal rank or per-component causality."
+}

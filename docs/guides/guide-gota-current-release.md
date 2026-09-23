@@ -41,8 +41,9 @@ reconstructs82,818commands and every replay hash across four Warlock games.
 It preserves the neural selector and later overrides, without claiming an
 executable semantic surrogate. The [coordinated guarded siege experiment](../../games/gods_of_the_arena/experiments/2026-09-23-richard174-transfer.md)
 tests covered tower pressure together with retaliation against a reachable
-attacker. Source **f7873bb2** passes662local checks and16native matches;400fresh
-hosted games are running across red/blue and early/later draft contexts.
+attacker. Source **f7873bb2** passed662local checks and16native matches but failed its400-game
+hosted rule:+7.58%aggregate,95%interval[−8.65,+27.05],redlate−53.15%.
+A new blue-Druid-only source is undergoing separate validation with fresh controls.
 The qualified Druid reference above remains deployed until new gates pass.
 
 ## Prior deployed reference: blue central route

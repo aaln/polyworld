@@ -32,7 +32,7 @@ Four exact replays of our deployed Druid-lane source contain **109 decisions** s
 
 The candidate is generated through our IR conversion workflow, with changes in observation, skill, strategy, belief and execution. It retains available last hits, already-selected heroes and gods, recovery, portals, and current safety priorities. It can then switch a tower assault to the lowest-HP in-range hero targeting self. Both behaviors are evaluated together against fresh controls; neither is assumed to improve alone.
 
-[Experiment protocol and result](../../../../games/gods_of_the_arena/experiments/2026-09-23-richard174-transfer.md) records 662 local checks, 16 native matches and the frozen 400-game hosted comparison. The current Druid-lane champion stays live until the new source qualifies. Uploaded candidate names are opaque; the hosting API has no private-policy flag.
+[Experiment protocol and result](../../../../games/gods_of_the_arena/experiments/2026-09-23-richard174-transfer.md) records 662 local checks, 16 native matches and the frozen 400-game hosted comparison. The broad transfer failed its400-game gate (+7.58%,95%interval−8.65% to+27.05%; red later-draft−53.15%) and was not deployed. [Transfer review](transfer-review.json) records that result and an eight-game diagnostic finding no redundant home navigation. A separate blue-Druid-only hypothesis now requires its own400fresh games. Current Druid-lane champions remain live. Uploaded candidate names are opaque; the hosting API has no private-policy flag.
 
 ## Limits and preserved evidence
 

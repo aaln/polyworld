@@ -31,7 +31,7 @@
   "reference_validation_game_version": "2026.9.22.3",
   "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Richard174 source IR verified; guarded siege coordinated transfer running400fresh games; current champions retained.",
+  "research_status": "Broad Richard174 transfer unqualified; blue-Druid-only independent follow-up locally validating. Current29f6d7e6 champions retained.",
   "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
   "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
@@ -43,8 +43,8 @@
     "authorization": "increase cap to 10000 more",
     "record": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-lane-recovery-20260923/budget/authorization.json",
     "reserved_before_comparison": 1600,
-    "reserved_after_comparison": 2320,
-    "remaining_after_comparison": 9280
+    "reserved_after_comparison": 2720,
+    "remaining_after_comparison": 8880
   },
   "candidate_evidence": {
     "games": 160,
@@ -78,13 +78,11 @@
     "confirmation_gain_percent": -4.203742159004086
   },
   "active_candidate": {
-    "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
-    "ir_sha256": "f1926b00764488c758b0c758c4db6d6674b8d77398bfa06a8bd31876ec262473",
-    "binding": "gota-bassy/guarded-siege-2026-09-23-r2",
-    "pair": "examples/gods_of_the_arena/players/ir/forks/richard17420260923-local/guarded-siege",
-    "status": "hosted_running",
+    "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+    "binding": "gota-bassy/blue-druid-siege-2026-09-23-r2",
+    "status": "local_validation",
     "games": 400,
-    "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-richard174-source-20260923"
+    "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-blue-druid-siege-20260923"
   },
   "class_score_study": {
     "status": "complete_rejected",
@@ -515,5 +513,31 @@
       "champion_changes": [],
       "action": "Revalidate changed opponents and refreshed mixed rosters. Frozen A/B results retain exact pinned-version scope; do not substitute versions or claim enduring rank."
     }
+  },
+  "richard174_transfer_study": {
+    "status": "complete_unqualified",
+    "games": 400,
+    "pair_bundle": "examples/gods_of_the_arena/players/ir/forks/richard17420260923-hosted",
+    "result": {
+      "name": "guarded-siege",
+      "source_sha256": "f7873bb2ec9ef14eb118639568144cadc75ad9a67f6b202a25a802890c85f143",
+      "score_gate_passed": false,
+      "baseline_score": 1654.575,
+      "candidate_score": 1779.945,
+      "aggregate_gain_percent": 7.577172385657938,
+      "gain_ci95_percent": [
+        -8.650446677910429,
+        27.054058522069766
+      ],
+      "per_context_gain_percent": [
+        3.24869787245603,
+        4.846182856527115,
+        -53.15045719035745,
+        55.88104140225707
+      ],
+      "late_score_gain_percent": 37.23271155595997
+    },
+    "reviewed_ir_sha256": "841b52731c7e39476727bb26a448cf5b6b5775ffa5a8aa6af4eff2feeb93f4bb",
+    "defense_diagnosis": "docs/opponents/richard-v174/source-audit-20260923/defense-diagnosis.json"
   }
 }

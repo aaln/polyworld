@@ -119,7 +119,7 @@ while game.run.world.tick < tape.hashes.len and not game.run.world.gameOver:
             template ov(key:string):int32=vm.runtime.getGlobal(key).int32
             if ov("active")==1:
               counts.inc("our_active")
-              if ov("pressureChoice") in [1'i32,2'i32]:
+              if getEnv("AUDIT_TRANSFER")=="1" and ov("pressureChoice") in [1'i32,2'i32]:
                 let label=if ov("pressureChoice")==1:"covered_tower" else:"siege_attacker"
                 counts.inc("selected_" & label)
                 for a in actual:
