@@ -1,0 +1,207 @@
+POLICY = {'schema': 'gota-semantic-policy/1',
+ 'id': 'gota_unit_farming59_20260923',
+ 'situation': {'grounded': {'observation': 'Bassy Q16.16 decimals for fractional action coordinates, integer '
+                                           'snapshot tiles and IDs; six inventory slots; shared public hero '
+                                           'draft.',
+                            'structure_alive': 'For structures objectAlive means exposed; positive HP means '
+                                               'standing.',
+                            'predicates': {'always': 'Unconditional lifecycle phase',
+                                           'low_health_in_field': 'Below 30% health outside the friendly '
+                                                                  'keep/spawn, alive and not '
+                                                                  'channeling/stunned. Recovery takes '
+                                                                  'priority over farming and attack '
+                                                                  'reacquisition.',
+                                           'low_health_in_base': 'Critical health inside own keep/spawn '
+                                                                 'commits to walking and replenishment '
+                                                                 'without a home portal.',
+                                           'active': 'Alive, battle started, decision due, not channeling or '
+                                                     'stunned',
+                                           'active_druid': 'Current public hero class is Druid and its '
+                                                           'normal decision is active; all other classes '
+                                                           'skip lane recovery entirely.',
+                                           'in_base': 'Host canShop identifies own keep or spawn; home '
+                                                      'recalls are disallowed here while useful outbound '
+                                                      'channels remain legal.',
+                                           'town_scroll_ready': 'Committed field recovery with an actual '
+                                                                'ready scroll; safe channel checks must '
+                                                                'still pass.',
+                                           'recovery_remaining': 'Recovery owns the decision and no '
+                                                                 'successful channel/replenishment action '
+                                                                 'has claimed it.'}},
+               'notes': 'Coached home recall differs from outbound tower travel. in_base=canShop, '
+                        'fountain=inOwnSpawn. Public hero/creep separation and warnings gate a field '
+                        'channel. Global geometry and Crossbow draft are retained; current engine rejects '
+                        'ordinary commands during channels. Actual stun/root, anchor loss or death '
+                        'interrupts; a bot cannot cancel a channel by walking. Respawn grows with deaths, '
+                        'not hero level. Public remaining respawn and buybackPrice, gold and own unique core '
+                        'items support an earlier post-core buyback rule. No opponent identity or hidden '
+                        'information features. Public blue team, team ordinal zero and ranged class define a '
+                        'central opening route. No opponent identity or hidden position is an input. Lane '
+                        'recovery checks public current healing resources and affordable missing core items. '
+                        'A learned charged affordable heal within8seconds, a successfully used potion or '
+                        'pending accepted heal supports a bounded12second safe hold. No passive field HP '
+                        'regeneration is assumed. UnitFarming: only visible alive enemy heroes and creeps '
+                        'enter deliberate target ranking. Buildings remain observations for safety and '
+                        'navigation; hidden XP and opponent identity are never live inputs.'},
+ 'belief': {'grounded': {'memory': ['crossed',
+                                    'enemyX',
+                                    'enemyY',
+                                    'homeX',
+                                    'homeY',
+                                    'hurtTick',
+                                    'initialized',
+                                    'lane',
+                                    'laneHealUntil',
+                                    'laneUntil',
+                                    'moveTick',
+                                    'nextThink',
+                                    'portalBusy',
+                                    'previousHits',
+                                    'previousHp',
+                                    'restock',
+                                    'resumeTarget',
+                                    'retreat',
+                                    'scanOffset',
+                                    'spawnX',
+                                    'spawnY'],
+                         'lifetime': 'BASIC globals start at zero per episode and persist across decisions '
+                                     'and respawns. The lifecycle binding explicitly resets initialization '
+                                     'and retreat state after death.',
+                         'uncertainty': 'Unseen enemies are unknown. Visible targets may be masked. Only the '
+                                        'draft roster, allied positions and visible opponents inform live '
+                                        'choices.'},
+            'claims': {'CoachingInterpretation': {'status': 'supported',
+                                                  'claim': 'The verified recorded Druid kept walking home '
+                                                           'after healing. The previous broader '
+                                                           'field-sustain bundle failed its240game score '
+                                                           'gate. The all-class lane-recovery study also '
+                                                           'failed overall while later-draft means improved; '
+                                                           'that is a hypothesis for a new Druid-only '
+                                                           'source, not evidence of qualification.',
+                                                  'evidence': [{'artifact': 'evidence/coaching-review.json'}]},
+                       'RecoveryMechanism': {'status': 'supported',
+                                             'claim': 'The inherited Druid recovery behavior previously '
+                                                      'passed its own scoped study. For this unit-targeting '
+                                                      'source, 92 recovery, 100 opening, 180 buyback, 84 '
+                                                      'portal and 126 broader host checks pass again on '
+                                                      'replay59; 16 complete responsive native matches '
+                                                      'validate runtime. The separate 80 target fixtures '
+                                                      'validate the new eligibility rule. Prior non-Druid '
+                                                      'command-equivalence claims describe the Druid parent '
+                                                      'change, not this all-class targeting intervention.',
+                                             'evidence': [{'artifact': 'evidence/recovery.json'},
+                                                          {'artifact': 'evidence/local-summary.json'},
+                                                          {'artifact': 'evidence/native-result.json'}]},
+                       'CompetitiveGain': {'status': 'contradicted',
+                                           'claim': 'Frozen400game qualification passed=False. Mean '
+                                                    'score1714.825→1241.795, '
+                                                    'gain-27.585%,95%gainCI[-38.30206352360138, '
+                                                    '-16.072129276210177]; context '
+                                                    'gains[-38.788990825688074, -16.448084067073054, '
+                                                    '-70.38167938931296, -84.36802596875634]. Productivity '
+                                                    'metrics and field drift recorded in trial-report. '
+                                                    'Fixedkhors180/Richard195/Jordan411 rosters; this is not '
+                                                    'a universal rank or certain population-effect claim.',
+                                           'evidence': [{'artifact': 'evidence/trial-report.json'}]},
+                       'CurrentPatch': {'status': 'supported',
+                                        'claim': 'Published d6827a4/replay59: Ranger HP growth29, '
+                                                 'Crossbowman damage58, Gale Slash65, Sanguine Chalice45. '
+                                                 'Hero kills150XP, buildings100XP to killer, god500XP per '
+                                                 'teammate. Prior hosted gains belong to replay58.',
+                                        'evidence': [{'artifact': 'evidence/release.json'}]},
+                       'UnitFarming': {'status': 'supported',
+                                       'claim': 'All 80 target-eligibility fixtures plus 582 inherited '
+                                                'checks and 16 native games pass on replay59. In the 32-game '
+                                                'preselected hosted diagnostic subset, candidate explicit '
+                                                'building-target commands=0, baseline=1813. This validates '
+                                                'the observed targeting mechanism only; routing and '
+                                                'competitive value remain separate.',
+                                       'evidence': [{'artifact': 'evidence/local-summary.json'},
+                                                    {'artifact': 'evidence/effects-summary.json'}]}}},
+ 'goal': {'Win': {'preference': 'Enemy-god destruction supplies 500 own XP and avoids later elapsed-time '
+                                'cost. This experiment forgoes deliberate structure targeting to test the '
+                                'opportunity cost against recurring unit XP; incidental area damage is still '
+                                'possible. Longer games alone do not improve score.',
+                  'provenance': 'authored'},
+          'Grow': {'preference': 'Earn shared XP and last-hit gold, spend legal skill points, and convert '
+                                 'gold into durable combat strength.',
+                   'provenance': 'authored'},
+          'Survive': {'preference': 'Avoid repeated feeding, recover efficiently, and promptly return to '
+                                    'productive play.',
+                      'provenance': 'authored'},
+          'Score': {'preference': 'Maximize final individual floor(max(0,lifetime XP-200*elapsed minutes)). '
+                                  'Evaluate overall and nonzero averages together with nonzero/productive '
+                                  'frequency; longer matches alone are not gains.',
+                    'provenance': 'authored'},
+          'Practice': {'preference': 'Secure feasible last hits and shared XP, buy useful permanent power, '
+                                     'and use safe portals for urgent defense or productive recovery.',
+                       'provenance': 'authored'},
+          'survive_and_replenish': {'preference': 'Druid only: stay near the current lane while useful '
+                                                  'healing can safely recover a health-only retreat. Return '
+                                                  'for an affordable missing core item, absent healing or '
+                                                  'danger. Resume farming at60%HP/20%mana; hold at '
+                                                  'most12seconds.',
+                                    'provenance': 'interpretation'}},
+ 'skill': {'portal_state': {'operator': 'unitfarm_portal_state', 'parameters': {}},
+           'draft': {'operator': 'unitfarm_draft', 'parameters': {'think_ticks': 6}},
+           'recovery_intent': {'operator': 'unitfarm_recovery_intent', 'parameters': {}},
+           'base_recovery_intent': {'operator': 'unitfarm_base_recovery_intent', 'parameters': {}},
+           'timing': {'operator': 'unitfarm_timing', 'parameters': {}},
+           'lifecycle': {'operator': 'unitfarm_lifecycle',
+                         'parameters': {'buyback_seconds': 25, 'buyback_reserve': 200}},
+           'observe': {'operator': 'unitfarm_observe', 'parameters': {'scan_limit': 96}},
+           'economy': {'operator': 'unitfarm_economy', 'parameters': {'shop_gold': 500}},
+           'portal_context': {'operator': 'unitfarm_portal_context', 'parameters': {}},
+           'lane_recovery': {'operator': 'unitfarm_lane_recovery', 'parameters': {}},
+           'replenish': {'operator': 'unitfarm_replenish', 'parameters': {}},
+           'channel_town_scroll': {'operator': 'unitfarm_channel_town_scroll', 'parameters': {}},
+           'walk_to_base': {'operator': 'unitfarm_walk_to_base', 'parameters': {}},
+           'home_portal': {'operator': 'unitfarm_home_portal', 'parameters': {}},
+           'tower_safety': {'operator': 'unitfarm_tower_safety', 'parameters': {'tower_hp': 65}},
+           'xp_close': {'operator': 'unitfarm_xp_close', 'parameters': {}},
+           'combat': {'operator': 'unitfarm_combat', 'parameters': {'reset_recovery': 1}},
+           'advance': {'operator': 'unitfarm_advance', 'parameters': {}}},
+ 'strategy': [{'id': 'R_portal_state', 'when': 'always', 'skill': 'portal_state', 'for': ['Score']},
+              {'id': 'R_draft', 'when': 'always', 'skill': 'draft', 'for': ['Score']},
+              {'id': 'R_recovery_intent',
+               'when': 'low_health_in_field',
+               'skill': 'recovery_intent',
+               'for': ['Score']},
+              {'id': 'R_base_recovery_intent',
+               'when': 'low_health_in_base',
+               'skill': 'base_recovery_intent',
+               'for': ['Score']},
+              {'id': 'R_timing', 'when': 'always', 'skill': 'timing', 'for': ['Score']},
+              {'id': 'R_lifecycle', 'when': 'always', 'skill': 'lifecycle', 'for': ['Score']},
+              {'id': 'R_observe', 'when': 'active', 'skill': 'observe', 'for': ['Score']},
+              {'id': 'R_economy', 'when': 'active', 'skill': 'economy', 'for': ['Score']},
+              {'id': 'R_portal_context', 'when': 'active', 'skill': 'portal_context', 'for': ['Score']},
+              {'id': 'R_lane_recovery',
+               'when': 'active_druid',
+               'skill': 'lane_recovery',
+               'for': ['Score', 'survive_and_replenish']},
+              {'id': 'R_replenish', 'when': 'in_base', 'skill': 'replenish', 'for': ['Score']},
+              {'id': 'R_channel_town_scroll',
+               'when': 'town_scroll_ready',
+               'skill': 'channel_town_scroll',
+               'for': ['Score']},
+              {'id': 'R_walk_to_base',
+               'when': 'recovery_remaining',
+               'skill': 'walk_to_base',
+               'for': ['Score']},
+              {'id': 'R_home_portal', 'when': 'active', 'skill': 'home_portal', 'for': ['Score']},
+              {'id': 'R_tower_safety', 'when': 'active', 'skill': 'tower_safety', 'for': ['Score']},
+              {'id': 'R_xp_close', 'when': 'active', 'skill': 'xp_close', 'for': ['Score']},
+              {'id': 'R_combat', 'when': 'active', 'skill': 'combat', 'for': ['Score']},
+              {'id': 'R_advance', 'when': 'active', 'skill': 'advance', 'for': ['Score']}],
+ 'execution': {'binding': 'gota-bassy/unit-farming-2026-09-23-r59',
+               'game_version': '2026.9.23.1',
+               'language': 'BASIC'},
+ 'update': {'revision': 2,
+            'parent': 'f6932f2e2c56696a6e3ad254cee67dc6a73a7bab25c00b7c2afe559e07503704',
+            'change': {'origin': 'Complete hosted and local evidence reflected into IR; tested BASIC bytes '
+                                 'unchanged.',
+                       'deployment_qualified': False},
+            'needs_review': [],
+            'evidence': [{'artifact': 'evidence/trial-report.json'},
+                         {'artifact': 'evidence/effects-summary.json'}]}}

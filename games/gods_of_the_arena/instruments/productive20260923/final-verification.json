@@ -1,0 +1,36 @@
+{
+  "changed_records_validation": "4 record(s): 0 problem(s), 0 warning(s)",
+  "records": [
+    "2026-09-23-productive-fights",
+    "2026-09-23-productive-return",
+    "2026-09-23-unit-farming",
+    "2026-09-23-selective-finish"
+  ],
+  "whole_archive_validation": {
+    "records": 34,
+    "legacy_problems": 25,
+    "note": "All reported problems belong to unchanged older records. Historical frontmatter conventions preserved."
+  },
+  "verified": [
+    "Unit-farming reviewed IR/BASIC compilation, extraction, source and artifact hashes",
+    "Selective-finish reviewed IR/BASIC compilation, extraction, source and artifact hashes",
+    "Khors179 thirteen replay/source/XP/score proofs",
+    "Manual coaching five captured screenshot hashes, Python/JSON agreement, all200diagnostic means and non-executable schema rejection"
+  ],
+  "runtime_tests_previously_completed": {
+    "unit_farming": {
+      "candidate_checks": 662,
+      "native_games": 16,
+      "hosted_games": 400
+    },
+    "selective_finish": {
+      "candidate_checks": 802,
+      "baseline_checks": 84,
+      "native_games": 16,
+      "hosted_games": 400
+    }
+  },
+  "engine_tracked_files_unchanged": true,
+  "league_writes": 0,
+  "later_membership_confirmation": "Unavailable with current player credentials; last successful active/competing readback preserved at17:48UTC."
+}

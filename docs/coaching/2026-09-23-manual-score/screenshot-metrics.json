@@ -1,0 +1,45 @@
+{
+  "values": {
+    "Andre von Auto": {
+      "games": 192,
+      "rejected_percent": 2.0,
+      "gold_spent": 2901.3,
+      "consumables_used": 17.4,
+      "creep_last_hit_xp": 2142.2,
+      "hero_kills": 14.2
+    },
+    "Aaron": {
+      "games": 187,
+      "rejected_percent": 32.8,
+      "gold_spent": 2037.2,
+      "consumables_used": 12.8,
+      "creep_last_hit_xp": 1511.4,
+      "hero_kills": 10.1
+    },
+    "richard": {
+      "games": 190,
+      "rejected_percent": 10.3,
+      "gold_spent": 1890.7,
+      "consumables_used": 3.9,
+      "creep_last_hit_xp": 1491.5,
+      "hero_kills": 9.9
+    },
+    "Coach": {
+      "games": 188,
+      "rejected_percent": 34.5,
+      "gold_spent": 1976.8,
+      "consumables_used": 13.0,
+      "creep_last_hit_xp": 1543.7,
+      "hero_kills": 9.5
+    }
+  },
+  "source": "Five preserved user screenshots; values transcribed, not freshly fetched standings.",
+  "units": "Per-game arithmetic means except rejection share in percent. Different sample sizes; snapshot window and policy filters not bound by the screenshots.",
+  "derived_andre_vs_aaron": {
+    "gold_spent_percent": 42.416061260553704,
+    "consumables_percent": 35.93749999999998,
+    "creep_last_hit_xp_percent": 41.73613867937009,
+    "hero_kills_percent": 40.594059405940584,
+    "rejected_percentage_point_gap": 30.799999999999997
+  }
+}

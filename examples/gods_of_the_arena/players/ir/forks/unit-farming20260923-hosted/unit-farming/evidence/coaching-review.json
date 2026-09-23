@@ -1,0 +1,24 @@
+{
+  "session": "/Users/aaln/Documents/Policy Loops/sessions/2026-09-23t02-52-57-098ze03810",
+  "synthesis": "f8dbaa0f-a6d0-4216-a983-4b32c28c0144",
+  "status": "reviewed_bound_to_verified_episode",
+  "verified_visuals": [
+    "Selected Aaron hero is Druid.",
+    "At recording9s HP is diminished;13s HP is substantially recovered while moving homeward;19s HUD health is full.",
+    "Replay clock changes nonuniformly and jumps backward after26s: video seconds are not simulation elapsed time."
+  ],
+  "not_verified": [
+    "Gemini exact112/390 and388/390HP numbers differ from visible level2 HUD near298max; excluded.",
+    "Precise cast identity, accepted self-heal, fountain arrival timing, engine release and executed policy cannot be established from footage alone.",
+    "Episode ID and source version absent; optional URL requested."
+  ],
+  "source_mechanism": [
+    "Current baseline retreat is latched until inOwnSpawn andHP90%/mana80%.",
+    "Explicit self-heal casts are in combat, after retreat walking owns the decision.",
+    "Druid HealingBloom andKindredWisps are fixed-position areas with12tick impact; guards must prevent walking beyond radius during self-sustain.",
+    "Automatic healing was active during the recorded retreat. The verified defect is the unreleased fountain path; extra explicit healing remains part of the tested bundle, not independently justified by absence of healing."
+  ],
+  "inputs": "captured-session is a byte-preserving local copy; session-input-manifest records all51files including original video/audio/inputs.",
+  "accepted_coaching": "Reassess recovery on current HP/resources/threat, heal while withdrawing, short safe field sustain, terminate unnecessary health-only retreat. Preserve shopping intent and actual danger overrides.",
+  "subsequent_evidence": "coaching-episode-binding.json"
+}

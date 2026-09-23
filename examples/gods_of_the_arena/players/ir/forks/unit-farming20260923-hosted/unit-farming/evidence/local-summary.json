@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "source_sha256": "1238ec73cfd85d2f157b7ea9c639679c9c24110f54bb49e684515f3999ffa10d",
+  "rows": [
+    {
+      "name": "unit",
+      "checks": 80,
+      "passed": true,
+      "binary_sha256": "4a4ccd8e81cd708210dbe0d766190ada20b8e65a0b553fde930f2b590d87f9c5",
+      "max_instructions": 3820,
+      "max_work": 6288
+    },
+    {
+      "name": "baseline-unit",
+      "checks": 80,
+      "passed": true,
+      "binary_sha256": "4a4ccd8e81cd708210dbe0d766190ada20b8e65a0b553fde930f2b590d87f9c5",
+      "max_instructions": 3820,
+      "max_work": 6234
+    },
+    {
+      "name": "practice",
+      "checks": 84,
+      "passed": true,
+      "binary_sha256": "ccac8653271f39197967ff6d81f58c07ec2209227663e4e0fd2694c0b6e072fd",
+      "max_instructions": 12202,
+      "max_work": 19209
+    },
+    {
+      "name": "baseline-practice",
+      "checks": 84,
+      "passed": true,
+      "binary_sha256": "ccac8653271f39197967ff6d81f58c07ec2209227663e4e0fd2694c0b6e072fd",
+      "max_instructions": 11866,
+      "max_work": 18873
+    },
+    {
+      "name": "recovery",
+      "checks": 92,
+      "passed": true,
+      "binary_sha256": "21c81711bc700f74b4884b27b5ca46a3c36be42443419cb0ede8aac65c49f611",
+      "max_instructions": 12287,
+      "max_work": 19704
+    },
+    {
+      "name": "openings",
+      "checks": 100,
+      "passed": true,
+      "binary_sha256": "99b49aaef856a35a18ca3cb3e3d227ebd17baea675c7a567c95714939ad073a6",
+      "max_instructions": 5501,
+      "max_work": 8922
+    },
+    {
+      "name": "buyback",
+      "checks": 180,
+      "passed": true,
+      "binary_sha256": "580740fc5e9a4fa86372f4a4c08c1558b6a296216fcd2f88b81181fec4620b3c",
+      "max_instructions": 11606,
+      "max_work": 17530
+    },
+    {
+      "name": "scenarios",
+      "checks": 126,
+      "passed": true,
+      "binary_sha256": "0516213f2a83a72734c64ff151a0532d0527baa1c38b2af1fdd0905e8b44dc33",
+      "max_instructions": 15482,
+      "max_work": 22532
+    }
+  ],
+  "checks": 662,
+  "native_games": 16,
+  "competitive_inference": false,
+  "max_instructions": 15482,
+  "max_work": 22532
+}

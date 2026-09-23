@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-23T16:36:08.066054+00:00",
+  "authorization": "raise xp requests limit to 100000 always, effectively a very high limit so you do not get stuck.",
+  "daily_episode_limit": 100000,
+  "expires": null,
+  "scope": "Permanent daily hosted-game allowance. Existing request concurrency, API batch ceiling and frozen experiment sizes remain. No retrospective ledger reset.",
+  "previous_effective_daily_limit": 11600,
+  "cycle_episode_limit": 400,
+  "max_parallel_xp": 3
+}

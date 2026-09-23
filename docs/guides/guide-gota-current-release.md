@@ -1,11 +1,54 @@
 # Current Gods of the Arena policy work
 
 Read `games/gods_of_the_arena/current.json`. The active engine is
-**2026.9.22.3 / 1b70894436b7ffdcd0d421b6b32c2415c9c8bfde**, published coworld
-`cow_2cb5d47d-c064-44af-8b44-cef246667920`. Verify the live league's source,
+**2026.9.23.1 / d6827a4bd3a55a46cf86f88e921f147137709c64**, published coworld
+`cow_32f7afc6-78f6-49d5-990b-5b3c3619662c`. Verify the live league's source,
 version and configuration before new hosted work. The research branch preserves
 older engine files and studies; build the exact pinned engine through
-`games/gods_of_the_arena/instruments/score20260922/bootstrap.py`.
+`games/gods_of_the_arena/instruments/productive20260923/bootstrap59.py`.
+
+The September 23 balance release uses replay game version **59**, game format **6**
+and outer file version **2**. Ranger HP growth is now **29**, Crossbowman base
+attack damage **58**, Gale Slash damage **65**, and Sanguine Chalice healing **45**.
+The score formula, BASIC host and simulation controller code remain unchanged;
+content stats and the replay envelope changed. Existing source29f6d7e6 champions
+remain live; all competitive qualifications below belong to their recorded old
+release until a fresh replay59 comparison passes. Andre's coached high-score episode uses khors v179; the subsequent trial
+freezes v180 after an upgrade before submission.
+
+The [khors179 audit](../opponents/khors-v179/score-audit-20260923/README.md)
+explains the coached7,781game with full replay/XP reconciliation and a separate
+seven-layer descriptive IR. It identifies recurring hero/creep XP,48%own building
+attack commands, and lost farming sources after barracks destruction. Buildings
+still award100XP and the enemy god500team XP. Twelve other recent games prevent
+treating the selected high score as typical; other-player VM failures are explicit.
+
+The [unit-farming trial](../../games/gods_of_the_arena/experiments/2026-09-23-unit-farming.md)
+tests excluding buildings from deliberate target selection, retaining safety and
+navigation observations. Source1238ec73 passed662candidate checks and16native games;
+400fresh games compare it with incumbent29f6d7e6 againstkhors180/Richard195/Jordan411,
+on both colors and draft contexts. All400games passed audits, but score fell27.58%
+(95%interval−38.30%to−16.07%) and productive frequency fell54.5%to38%.
+[The reviewed pair](../../examples/gods_of_the_arena/players/ir/forks/unit-farming20260923-hosted/README.md)
+is rejected; source29f6d7e6 remains live. The user then requested selective short
+finishes. Source08987348 passed802checks/16native games and completed a
+[separate400-game comparison](../../games/gods_of_the_arena/experiments/2026-09-23-selective-finish.md)
+with fresh controls. It permits nearby two-hit towers/god and one-hit barracks,
+without long deliberate sieges. Mean score fell1.82% (95%interval−16.53%to+14.35%);
+productive frequency fell53%to44.5%, despite a higher conditional productive mean.
+It failed the frozen joint rule and was not deployed. The separately
+prepared [outbound portal candidate](../../games/gods_of_the_arena/experiments/2026-09-23-productive-return.md)
+is preserved and deferred before hosted spending, not combined with this test.
+
+The [manual coaching IR](../coaching/2026-09-23-manual-score/README.md) preserves
+five user screenshots and audits all200existing replay59 controls for resource,
+spell and kill productivity. Andre's higher spending includes more buyback gold;
+consumables include portals. Automatic casting is enabled, so rejected manual
+casts alone do not prove lost spell effects. Half our cohort is melee, while
+Andre always drafts Ranger/Crossbowman; our14Vanguard games all scorezero and
+86DeathKnight games average137.48. Class/role context is required before choosing
+an intervention. Proposed skills and their validation gates are non-executable
+research IR, not a qualified policy replacement. Both live champions remain29f6d7e6.
 
 The live game changed during individual-score research: replay version58 adds
 **500XP to every teammate when the enemy god is destroyed**, including dead
@@ -31,8 +74,11 @@ The all-class lane recovery attempt remains rejected:320games,−5.26%aggregate,
 bluelead−12.15%. The later Druid-only source used its own frozen400fresh-game
 comparison. Do not reinterpret the earlier rejection as passing.
 
-September23UTC allowance is11,600games after explicit authorization for10,000more;
-3,120 reserved after the completed Richard-transfer studies; 8,480 remain. Normal1,600limit resumes after the dated override.
+The user permanently authorized **100,000 hosted episodes per UTC day** on
+September23. The shared config no longer has an expiring daily override.
+[Authorization](../../games/gods_of_the_arena/budget-authorizations/2026-09-23-permanent-100000.json)
+preserves the request and previous allowance. Shared journals,400-game experiment
+cycles, at most3active requests and current API batch ceilings remain in force.
 
 ## Completed analysis: khors v114 and low-score situations
 
@@ -142,8 +188,8 @@ prior studies below retain their original decisions and engine scope.
   inventory and ability operations update immediately. Movement plans use the
   same starting state, then move together; collected damage resolves before
   deaths and rewards. Mutual kills and simultaneous fort draws are legal.
-- Faction draft bonuses are gone. Ranger HP growth is **19**, Crossbowman base
-  damage **69**, and Warlock Dread Totem damage **87**. Read actual stats, ability
+- Faction draft bonuses are gone. Ranger HP growth is **29**, Crossbowman base
+  damage **58**, and Warlock Dread Totem damage **87**. Read actual stats, ability
   ranks, costs and ranges from the host; do not import an old hero stat table.
 - Explicit draft picks and skill-point spending remain required. Keep the public
   availability fallback and ten-second pick deadline. Abilities start locked.
@@ -205,8 +251,8 @@ least 10%, and each cell retaining at least 95% of control. Rival score
 superiority, late-draft strength and #1 rank are separate claims. A reused
 control cohort must be labeled explicitly; it is not fresh concurrent evidence.
 
-Shared journal limits remain 400 new games/cycle, 1600/UTC day, at most three
-active requests, 40–200 games/request. Do not reset a ledger or change limits to
+Shared journal limits are 400 new games/cycle, 100,000/UTC day, at most three
+active requests, 40–100 games/request under the captured current API. Do not reset a ledger or change limits to
 make an experiment pass. Runtime, ownership and evidence safeguards remain even
 when historical tactical IR is obsolete. Read the campaign FOCUS/ownership
 record before taking the writer; the prior worker is paused during interactive

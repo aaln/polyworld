@@ -1,0 +1,968 @@
+{
+  "schema": "gota-optimization-hypotheses/1",
+  "id": "manual_score_coaching_20260923",
+  "situation": {
+    "game_version": "2026.9.23.1",
+    "engine_commit": "d6827a4bd3a55a46cf86f88e921f147137709c64",
+    "reference_source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+    "origin": "User manual coaching, five screenshots on September23; input-manifest.json binds exact images.",
+    "public_inputs": [
+      "Own class/rank/HP/mana/gold/items/cooldowns/attack timer",
+      "Own position, team and current target",
+      "Visible object kind/HP/position and public warnings",
+      "Public allied cover and alive structures",
+      "Return values of own accepted/rejected commands"
+    ],
+    "evaluation_only": [
+      "Lifetime rawXP and unclamped margin",
+      "Opponent policy UUID/source identity",
+      "Hidden positions and full replay truth",
+      "Typed event rejection reasons and counterfactual outcomes",
+      "Aggregate player statistics"
+    ],
+    "predicates": {
+      "spell_actionable": "Alive, unlocked, ready, charged, affordable, valid visible target, correct ability geometry and class/rank range. BASIC has no ability-range query: derive a current-engine binding and practice rounding boundaries.",
+      "safe_regeneration_window": "Missing a useful amount of HP/mana, family cooldown ready, outside own spawn, and a public cover/threat estimate supports uninterrupted recovery. A recent hit or nearby warning can invalidate it.",
+      "consumable_stock_short": "At own keep, useful stack below a bounded target, actual slot/stack capacity available, and spending preserves the selected core-item and buyback budget.",
+      "one_hit_creep_window": "Observed living enemy creep could be killed by the basic hit when it lands, using public HP history, distance, own attack timing and visible incoming damage. Prediction uncertainty must be measured.",
+      "xp_eligible_position": "Alive and within six tiles on the correct floor when a creep dies. Distinct from maximum weapon reach.",
+      "reachable_hero_finish": "Visible hero in a short, affordable damage sequence with acceptable cover, HP and retreat route; opportunity cost includes likely death, travel and forgone creepXP.",
+      "plausible_structure_finish": "Nearby exposed tower/god <=two current basic hits; barracks <=one. This exact proposed cutoff is already under a separate trial, not presumed optimal.",
+      "weak_melee_productivity": "Current own class has poor score support in a given role; evaluation-only class/role stratification identifies it. A live intervention must use public local threat, reach, wave opportunity and recovery inputs, not a memorized policy name or retrospective score."
+    }
+  },
+  "belief": {
+    "screenshot_observations": {
+      "Andre von Auto": {
+        "games": 192,
+        "rejected_percent": 2.0,
+        "gold_spent": 2901.3,
+        "consumables_used": 17.4,
+        "creep_last_hit_xp": 2142.2,
+        "hero_kills": 14.2
+      },
+      "Aaron": {
+        "games": 187,
+        "rejected_percent": 32.8,
+        "gold_spent": 2037.2,
+        "consumables_used": 12.8,
+        "creep_last_hit_xp": 1511.4,
+        "hero_kills": 10.1
+      },
+      "richard": {
+        "games": 190,
+        "rejected_percent": 10.3,
+        "gold_spent": 1890.7,
+        "consumables_used": 3.9,
+        "creep_last_hit_xp": 1491.5,
+        "hero_kills": 9.9
+      },
+      "Coach": {
+        "games": 188,
+        "rejected_percent": 34.5,
+        "gold_spent": 1976.8,
+        "consumables_used": 13.0,
+        "creep_last_hit_xp": 1543.7,
+        "hero_kills": 9.5
+      }
+    },
+    "causal_status": "Screenshots generate hypotheses; they do not show that more spending causes better scores.",
+    "confounders": [
+      "Mixed/unknown policy filters and game versions",
+      "Different classes, draft roles, teams, sides and durations",
+      "Background VM validity unknown in screenshot aggregate",
+      "More earned gold permits spending; spending can be consequence rather than cause",
+      "Conditional nonzero/productive means can rise by discarding weak games"
+    ],
+    "verified_mechanics": {
+      "score": "floor(max(0,lifetime XP-200*elapsed minutes)), including draft.",
+      "kill_rewards": "150hero killXP;100building last-hitXP;500XP to every teammate for enemy-god destruction.",
+      "health_potion": "30gold,120HP over10seconds; positive incoming damage interrupts recovery. Ten-second shared health-family cooldown persists.",
+      "vitality_elixir": "75gold,90instantHP; shares health-family cooldown with the health potion.",
+      "mana_potion": "45gold,90mana over10seconds; damage interrupts. Mana Elixir costs90gold for60instantmana; same resource family shares cooldown.",
+      "inventory": "Six slots, stackable consumables, own-keep shopping and no sell operation. Existing four core items + health potion + portal stack use all six slots. More item types require an explicit inventory tradeoff.",
+      "casts": "Object-targeted range rejection occurs before mana/charge/cooldown spending. Merely suppressing rejected casts does not demonstrate more DPS or XP. Basic attackTarget may initiate approach; do not apply spell rejection rules to it.",
+      "creep_metric": "Website last-hit XP is reward attributed at creep last hits, not a count or accuracy percentage. Nearby sharedXP is separate; current last hitter also participates in the85% share if eligible.",
+      "automatic_spells": "Engine automatic casting is enabled for these bots. All200complete replays contain zero ActionManualSpells toggles across all ten actors. Failed manual range checks precede resource spending; automatic spell selection may still cast later. Prove additional effective casts or better targets before treating rejection suppression as a score intervention."
+    },
+    "current_controller_findings": [
+      "R_combat tries ready damaging spells on bestId without an ability-range guard. Coached replay has1328out-of-range rejections for Coach versus50for Andre; classes differ.",
+      "R_economy stocks up to two health potions, uses them with>=70missingHP, no threat within8tiles and no hit for>1second, and keeps a portal stack. No general mana/poison/elixir purchase/use policy exists.",
+      "A lethal-creep ranking bonus and Crossbowman XP-radius approach already exist. Additional last-hit gains require a newly demonstrated timing, opportunity or routing gap.",
+      "Druid lane recovery and earlier post-core buyback already exist. Do not silently reintroduce failed all-class retreat or unqualified instant-elixir bundles.",
+      "Unit-only targeting failed400clean games:\u221227.58%mean score despite more creepXP; deaths/time and lost hero/objectiveXP outweighed it."
+    ],
+    "forecast_state_proposals": {
+      "resource_runway": "Estimate useful heal/mana charges and gold reserved for continued productive play; actual return/use feedback invalidates stale estimates.",
+      "farm_opportunity": "Lagged visible wave density and recent observed eligible creep windows; no hidden future deaths or rawXP in live features.",
+      "engagement_margin": "Class/rank-aware public damage/HP/cover estimate; an uncalibrated heuristic until tested."
+    },
+    "current_engine_diagnostics": {
+      "selection": "All200 controls from the completed unit-farming trial; no new hosted games. All ten VMs, replay hashes, source identities, XP and integer scores verified.",
+      "summary": {
+        "ours": {
+          "overall": {
+            "n": 200,
+            "means": {
+              "buyback_gold": 1235.5,
+              "buybacks": 2.49,
+              "consumables_used": 16.95,
+              "creep_last_hits": 155.56,
+              "dead_ticks": 3343.75,
+              "field_gold500_ticks": 6284.39,
+              "field_low_health_ticks": 1724.325,
+              "field_low_mana_ticks": 3613.045,
+              "field_ticks": 15345.515,
+              "gold_earned": 3574.775,
+              "gold_spent": 2920.35,
+              "healing_item_HealthPotion": 921.025,
+              "healing_other": 1234.985,
+              "hero_kills": 10.505,
+              "interrupted_HealthPotion": 3.775,
+              "keep_ticks": 3504.335,
+              "orders": 1978.215,
+              "purchased_BattleAxe": 0.87,
+              "purchased_CrimsonDagger": 1,
+              "purchased_HealthPotion": 11.885,
+              "purchased_KnightArmor": 0.94,
+              "purchased_PortalScroll": 7.655,
+              "purchased_RuneCrossbow": 0.81,
+              "rejected": 737.995,
+              "rejected_1_0_ActionNoRoute": 0.315,
+              "rejected_2_0_ActionTargetUnavailable": 1.79,
+              "rejected_6_0_ActionOutOfRange": 50.74,
+              "rejected_6_1_ActionOutOfRange": 346.41,
+              "rejected_6_2_ActionInsufficientMana": 2.41,
+              "rejected_6_2_ActionOutOfRange": 247.59,
+              "rejected_6_3_ActionInsufficientMana": 0.79,
+              "rejected_6_3_ActionOutOfRange": 87.95,
+              "rejected_ActionInsufficientMana": 3.2,
+              "rejected_ActionNoRoute": 0.315,
+              "rejected_ActionOutOfRange": 732.69,
+              "rejected_ActionTargetUnavailable": 1.79,
+              "used_HealthPotion": 10.63,
+              "used_PortalScroll": 6.32,
+              "xp_creep_at_last_hit": 2032.515,
+              "xp_creep_shared": 239.345
+            },
+            "mean_score": 1714.825,
+            "mean_gold_end": 804.425,
+            "mean_minutes": 15.724722222222223,
+            "mean_rejected_share": 0.3706799417742125,
+            "pooled_hero_kills_per_field_minute": 0.9857733676582376,
+            "pooled_creep_xp_per_field_minute": 213.18791842437352,
+            "class_counts": {
+              "Crossbowman": 49,
+              "DeathKnight": 86,
+              "Ranger": 51,
+              "VanguardKnight": 14
+            }
+          },
+          "classes": {
+            "Crossbowman": {
+              "n": 49,
+              "means": {
+                "buyback_gold": 2618.3673469387754,
+                "buybacks": 5.244897959183674,
+                "consumables_used": 27.877551020408163,
+                "creep_last_hits": 266.1224489795918,
+                "dead_ticks": 2179.6938775510203,
+                "field_gold500_ticks": 13120.714285714286,
+                "field_low_health_ticks": 2594.5102040816328,
+                "field_low_mana_ticks": 7881.326530612245,
+                "field_ticks": 20267.14285714286,
+                "gold_earned": 6566.326530612245,
+                "gold_spent": 5013.877551020408,
+                "healing_item_HealthPotion": 1539.1836734693877,
+                "healing_other": 2092.795918367347,
+                "hero_kills": 22.591836734693878,
+                "interrupted_HealthPotion": 6.142857142857143,
+                "keep_ticks": 4593.163265306122,
+                "orders": 2784.1428571428573,
+                "purchased_BattleAxe": 1,
+                "purchased_CrimsonDagger": 1,
+                "purchased_HealthPotion": 18.510204081632654,
+                "purchased_KnightArmor": 1,
+                "purchased_PortalScroll": 12.10204081632653,
+                "purchased_RuneCrossbow": 1,
+                "rejected": 922.265306122449,
+                "rejected_1_0_ActionNoRoute": 1.2857142857142858,
+                "rejected_2_0_ActionTargetUnavailable": 1.510204081632653,
+                "rejected_6_0_ActionOutOfRange": 123.18367346938776,
+                "rejected_6_1_ActionOutOfRange": 354.3061224489796,
+                "rejected_6_2_ActionInsufficientMana": 9.204081632653061,
+                "rejected_6_2_ActionOutOfRange": 296,
+                "rejected_6_3_ActionInsufficientMana": 2.877551020408163,
+                "rejected_6_3_ActionOutOfRange": 133.89795918367346,
+                "rejected_ActionInsufficientMana": 12.081632653061224,
+                "rejected_ActionNoRoute": 1.2857142857142858,
+                "rejected_ActionOutOfRange": 907.3877551020408,
+                "rejected_ActionTargetUnavailable": 1.510204081632653,
+                "used_HealthPotion": 17.387755102040817,
+                "used_PortalScroll": 10.489795918367347,
+                "xp_creep_at_last_hit": 3582.0408163265306,
+                "xp_creep_shared": 314.61224489795916
+              },
+              "mean_score": 4041.2244897959185,
+              "mean_gold_end": 1702.4489795918366,
+              "mean_minutes": 19.169444444444444,
+              "mean_rejected_share": 0.33123094526410246,
+              "pooled_hero_kills_per_field_minute": 1.605171736700601,
+              "pooled_creep_xp_per_field_minute": 276.8609491586865,
+              "class_counts": {
+                "Crossbowman": 49
+              }
+            },
+            "DeathKnight": {
+              "n": 86,
+              "means": {
+                "buyback_gold": 126.74418604651163,
+                "buybacks": 0.2441860465116279,
+                "consumables_used": 9.05813953488372,
+                "creep_last_hits": 82.70930232558139,
+                "dead_ticks": 3916.3372093023254,
+                "field_gold500_ticks": 1317.0116279069769,
+                "field_low_health_ticks": 1416.9767441860465,
+                "field_low_mana_ticks": 1247.0581395348838,
+                "field_ticks": 12523.686046511628,
+                "gold_earned": 1410.6976744186047,
+                "gold_spent": 1289.7674418604652,
+                "healing_item_HealthPotion": 460.1046511627907,
+                "healing_other": 693.2790697674419,
+                "hero_kills": 1.0813953488372092,
+                "interrupted_HealthPotion": 3.011627906976744,
+                "keep_ticks": 2851.093023255814,
+                "orders": 1487.2441860465117,
+                "purchased_BattleAxe": 0.7790697674418605,
+                "purchased_CrimsonDagger": 1,
+                "purchased_HealthPotion": 7.116279069767442,
+                "purchased_KnightArmor": 0.9069767441860465,
+                "purchased_PortalScroll": 4.348837209302325,
+                "purchased_RuneCrossbow": 0.6627906976744186,
+                "rejected": 678.5,
+                "rejected_2_0_ActionTargetUnavailable": 0.7558139534883721,
+                "rejected_6_1_ActionOutOfRange": 357.8837209302326,
+                "rejected_6_2_ActionInsufficientMana": 0.046511627906976744,
+                "rejected_6_2_ActionOutOfRange": 243.96511627906978,
+                "rejected_6_3_ActionInsufficientMana": 0.09302325581395349,
+                "rejected_6_3_ActionOutOfRange": 75.75581395348837,
+                "rejected_ActionInsufficientMana": 0.13953488372093023,
+                "rejected_ActionOutOfRange": 677.6046511627907,
+                "rejected_ActionTargetUnavailable": 0.7558139534883721,
+                "used_HealthPotion": 5.837209302325581,
+                "used_PortalScroll": 3.2209302325581395,
+                "xp_creep_at_last_hit": 1152.4186046511627,
+                "xp_creep_shared": 227.58139534883722
+              },
+              "mean_score": 137.47674418604652,
+              "mean_gold_end": 270.93023255813955,
+              "mean_minutes": 13.629941860465117,
+              "mean_rejected_share": 0.4360571740251493,
+              "pooled_hero_kills_per_field_minute": 0.12434113219880097,
+              "pooled_creep_xp_per_field_minute": 158.67532870272794,
+              "class_counts": {
+                "DeathKnight": 86
+              }
+            },
+            "Ranger": {
+              "n": 51,
+              "means": {
+                "buyback_gold": 2115.6862745098038,
+                "buybacks": 4.313725490196078,
+                "consumables_used": 22.745098039215687,
+                "creep_last_hits": 204.35294117647058,
+                "dead_ticks": 3552.7843137254904,
+                "field_gold500_ticks": 9814.588235294117,
+                "field_low_health_ticks": 1482.6470588235295,
+                "field_low_mana_ticks": 4287.333333333333,
+                "field_ticks": 15845.313725490196,
+                "gold_earned": 5156.9607843137255,
+                "gold_spent": 4265.490196078431,
+                "healing_item_HealthPotion": 1219.1960784313726,
+                "healing_other": 1250.5294117647059,
+                "hero_kills": 17.54901960784314,
+                "interrupted_HealthPotion": 3.2941176470588234,
+                "keep_ticks": 3691.549019607843,
+                "orders": 2253.9803921568628,
+                "purchased_BattleAxe": 1,
+                "purchased_CrimsonDagger": 1,
+                "purchased_HealthPotion": 15.03921568627451,
+                "purchased_KnightArmor": 1,
+                "purchased_PortalScroll": 10.686274509803921,
+                "purchased_RuneCrossbow": 1,
+                "rejected": 790.6470588235294,
+                "rejected_2_0_ActionTargetUnavailable": 4.1568627450980395,
+                "rejected_6_0_ActionOutOfRange": 80.62745098039215,
+                "rejected_6_1_ActionOutOfRange": 345.94117647058823,
+                "rejected_6_2_ActionInsufficientMana": 0.5294117647058824,
+                "rejected_6_2_ActionOutOfRange": 275.15686274509807,
+                "rejected_6_3_ActionInsufficientMana": 0.17647058823529413,
+                "rejected_6_3_ActionOutOfRange": 84.05882352941177,
+                "rejected_ActionInsufficientMana": 0.7058823529411765,
+                "rejected_ActionOutOfRange": 785.7843137254902,
+                "rejected_ActionTargetUnavailable": 4.1568627450980395,
+                "used_HealthPotion": 13.607843137254902,
+                "used_PortalScroll": 9.137254901960784,
+                "xp_creep_at_last_hit": 2446.549019607843,
+                "xp_creep_shared": 146.80392156862746
+              },
+              "mean_score": 2610.235294117647,
+              "mean_gold_end": 1041.4705882352941,
+              "mean_minutes": 16.42614379084967,
+              "mean_rejected_share": 0.3382426979462373,
+              "pooled_hero_kills_per_field_minute": 1.5948304131486888,
+              "pooled_creep_xp_per_field_minute": 235.68029639492596,
+              "class_counts": {
+                "Ranger": 51
+              }
+            },
+            "VanguardKnight": {
+              "n": 14,
+              "means": {
+                "consumables_used": 6.071428571428571,
+                "creep_last_hits": 38.357142857142854,
+                "dead_ticks": 3139.1428571428573,
+                "field_gold500_ticks": 11.142857142857142,
+                "field_low_health_ticks": 1447.0714285714287,
+                "field_low_mana_ticks": 751.6428571428571,
+                "field_ticks": 13633.214285714286,
+                "gold_earned": 634.2857142857143,
+                "gold_spent": 709.2857142857143,
+                "healing_item_HealthPotion": 502.64285714285717,
+                "healing_other": 1503.642857142857,
+                "hero_kills": 0.42857142857142855,
+                "interrupted_HealthPotion": 1.9285714285714286,
+                "keep_ticks": 3024.214285714286,
+                "orders": 1168.857142857143,
+                "purchased_BattleAxe": 0.5,
+                "purchased_CrimsonDagger": 1,
+                "purchased_HealthPotion": 6.5,
+                "purchased_KnightArmor": 0.7142857142857143,
+                "purchased_PortalScroll": 1.3571428571428572,
+                "purchased_RuneCrossbow": 0.35714285714285715,
+                "rejected": 266.7142857142857,
+                "rejected_2_0_ActionTargetUnavailable": 0.5,
+                "rejected_6_1_ActionOutOfRange": 250,
+                "rejected_6_3_ActionOutOfRange": 16.214285714285715,
+                "rejected_ActionOutOfRange": 266.2142857142857,
+                "rejected_ActionTargetUnavailable": 0.5,
+                "used_HealthPotion": 5.571428571428571,
+                "used_PortalScroll": 0.5,
+                "xp_creep_at_last_hit": 507.2142857142857,
+                "xp_creep_shared": 385.2857142857143
+              },
+              "mean_score": 0,
+              "mean_gold_end": 75,
+              "mean_minutes": 13.980952380952381,
+              "mean_rejected_share": 0.22531267682003792,
+              "pooled_hero_kills_per_field_minute": 0.0452675975165693,
+              "pooled_creep_xp_per_field_minute": 94.26977182825557,
+              "class_counts": {
+                "VanguardKnight": 14
+              }
+            }
+          }
+        },
+        "Andre khors180": {
+          "overall": {
+            "n": 200,
+            "means": {
+              "buyback_gold": 2245,
+              "buybacks": 3.13,
+              "consumables_used": 26.09,
+              "creep_last_hits": 234.57,
+              "dead_ticks": 2992.145,
+              "field_gold500_ticks": 11238.17,
+              "field_low_health_ticks": 2810.725,
+              "field_low_mana_ticks": 6106.79,
+              "field_ticks": 15633.58,
+              "gold_earned": 5880.8,
+              "gold_spent": 4422.05,
+              "healing_item_HealthPotion": 1464.945,
+              "healing_other": 894.535,
+              "hero_kills": 23.585,
+              "interrupted_HealthPotion": 7.41,
+              "keep_ticks": 3567.875,
+              "orders": 1033.96,
+              "purchased_BattleAxe": 1,
+              "purchased_CrimsonDagger": 1,
+              "purchased_HealthPotion": 18.335,
+              "purchased_KnightArmor": 1,
+              "purchased_PortalScroll": 9.97,
+              "purchased_RuneCrossbow": 1,
+              "rejected": 25.84,
+              "rejected_15_1_ActionTargetUnavailable": 0.185,
+              "rejected_15_3_ActionTargetUnavailable": 1.02,
+              "rejected_1_0_ActionChanneling": 2.095,
+              "rejected_1_0_ActionNoRoute": 0.69,
+              "rejected_2_0_ActionChanneling": 0.52,
+              "rejected_2_0_ActionTargetUnavailable": 2.475,
+              "rejected_4_1_ActionChanneling": 0.005,
+              "rejected_4_3_ActionChanneling": 0.005,
+              "rejected_4_4_ActionChanneling": 0.08,
+              "rejected_4_5_ActionChanneling": 0.08,
+              "rejected_5_0_ActionChanneling": 4.375,
+              "rejected_6_0_ActionChanneling": 0.005,
+              "rejected_6_0_ActionOutOfRange": 0.55,
+              "rejected_6_1_ActionChanneling": 0.08,
+              "rejected_6_1_ActionOutOfRange": 4.09,
+              "rejected_6_2_ActionChanneling": 0.06,
+              "rejected_6_2_ActionInsufficientMana": 3.59,
+              "rejected_6_2_ActionOutOfRange": 3.705,
+              "rejected_6_3_ActionChanneling": 0.005,
+              "rejected_6_3_ActionInsufficientMana": 1.04,
+              "rejected_6_3_ActionOutOfRange": 1.185,
+              "rejected_ActionChanneling": 7.31,
+              "rejected_ActionInsufficientMana": 4.63,
+              "rejected_ActionNoRoute": 0.69,
+              "rejected_ActionOutOfRange": 9.53,
+              "rejected_ActionTargetUnavailable": 3.68,
+              "used_HealthPotion": 17.04,
+              "used_PortalScroll": 9.05,
+              "xp_creep_at_last_hit": 3016.045,
+              "xp_creep_shared": 321.335
+            },
+            "mean_score": 3774.72,
+            "mean_gold_end": 1608.75,
+            "mean_minutes": 15.724722222222223,
+            "mean_rejected_share": 0.02431466793959265,
+            "pooled_hero_kills_per_field_minute": 2.1724006913323755,
+            "pooled_creep_xp_per_field_minute": 307.4041390391708,
+            "class_counts": {
+              "Crossbowman": 104,
+              "Ranger": 96
+            }
+          },
+          "classes": {
+            "Crossbowman": {
+              "n": 104,
+              "means": {
+                "buyback_gold": 1778.8461538461538,
+                "buybacks": 2.6346153846153846,
+                "consumables_used": 27.721153846153847,
+                "creep_last_hits": 221.34615384615384,
+                "dead_ticks": 1668.951923076923,
+                "field_gold500_ticks": 12252.336538461539,
+                "field_low_health_ticks": 3248.5,
+                "field_low_mana_ticks": 6646.875,
+                "field_ticks": 16165.64423076923,
+                "gold_earned": 5817.788461538462,
+                "gold_spent": 3953.75,
+                "healing_item_HealthPotion": 1674.1442307692307,
+                "healing_other": 1010.2884615384615,
+                "hero_kills": 24.903846153846153,
+                "interrupted_HealthPotion": 8.403846153846153,
+                "keep_ticks": 3776.278846153846,
+                "orders": 1104.8076923076924,
+                "purchased_BattleAxe": 1,
+                "purchased_CrimsonDagger": 1,
+                "purchased_HealthPotion": 20.375,
+                "purchased_KnightArmor": 1,
+                "purchased_PortalScroll": 9.336538461538462,
+                "purchased_RuneCrossbow": 1,
+                "rejected": 27.78846153846154,
+                "rejected_15_3_ActionTargetUnavailable": 1.9230769230769231,
+                "rejected_1_0_ActionChanneling": 2.1923076923076925,
+                "rejected_1_0_ActionNoRoute": 1.3269230769230769,
+                "rejected_2_0_ActionChanneling": 0.625,
+                "rejected_2_0_ActionTargetUnavailable": 1.2692307692307692,
+                "rejected_4_3_ActionChanneling": 0.009615384615384616,
+                "rejected_4_4_ActionChanneling": 0.057692307692307696,
+                "rejected_4_5_ActionChanneling": 0.08653846153846154,
+                "rejected_5_0_ActionChanneling": 3.5961538461538463,
+                "rejected_6_0_ActionChanneling": 0.009615384615384616,
+                "rejected_6_0_ActionOutOfRange": 0.6153846153846154,
+                "rejected_6_1_ActionChanneling": 0.09615384615384616,
+                "rejected_6_1_ActionOutOfRange": 3.326923076923077,
+                "rejected_6_2_ActionChanneling": 0.0673076923076923,
+                "rejected_6_2_ActionInsufficientMana": 6.605769230769231,
+                "rejected_6_2_ActionOutOfRange": 2.9038461538461537,
+                "rejected_6_3_ActionChanneling": 0.009615384615384616,
+                "rejected_6_3_ActionInsufficientMana": 1.9038461538461537,
+                "rejected_6_3_ActionOutOfRange": 1.1634615384615385,
+                "rejected_ActionChanneling": 6.75,
+                "rejected_ActionInsufficientMana": 8.509615384615385,
+                "rejected_ActionNoRoute": 1.3269230769230769,
+                "rejected_ActionOutOfRange": 8.009615384615385,
+                "rejected_ActionTargetUnavailable": 3.1923076923076925,
+                "used_HealthPotion": 19.28846153846154,
+                "used_PortalScroll": 8.432692307692308,
+                "xp_creep_at_last_hit": 2952.701923076923,
+                "xp_creep_shared": 395.03846153846155
+              },
+              "mean_score": 4096.076923076923,
+              "mean_gold_end": 2014.0384615384614,
+              "mean_minutes": 15.318529647435897,
+              "mean_rejected_share": 0.024394041877878987,
+              "pooled_hero_kills_per_field_minute": 2.218379790474457,
+              "pooled_creep_xp_per_field_minute": 298.2093435330268,
+              "class_counts": {
+                "Crossbowman": 104
+              }
+            },
+            "Ranger": {
+              "n": 96,
+              "means": {
+                "buyback_gold": 2750,
+                "buybacks": 3.6666666666666665,
+                "consumables_used": 24.322916666666668,
+                "creep_last_hits": 248.89583333333334,
+                "dead_ticks": 4425.604166666667,
+                "field_gold500_ticks": 10139.489583333334,
+                "field_low_health_ticks": 2336.46875,
+                "field_low_mana_ticks": 5521.697916666667,
+                "field_ticks": 15057.177083333334,
+                "gold_earned": 5949.0625,
+                "gold_spent": 4929.375,
+                "healing_item_HealthPotion": 1238.3125,
+                "healing_other": 769.1354166666666,
+                "hero_kills": 22.15625,
+                "interrupted_HealthPotion": 6.333333333333333,
+                "keep_ticks": 3342.1041666666665,
+                "orders": 957.2083333333334,
+                "purchased_BattleAxe": 1,
+                "purchased_CrimsonDagger": 1,
+                "purchased_HealthPotion": 16.125,
+                "purchased_KnightArmor": 1,
+                "purchased_PortalScroll": 10.65625,
+                "purchased_RuneCrossbow": 1,
+                "rejected": 23.729166666666668,
+                "rejected_15_1_ActionTargetUnavailable": 0.3854166666666667,
+                "rejected_15_3_ActionTargetUnavailable": 0.041666666666666664,
+                "rejected_1_0_ActionChanneling": 1.9895833333333333,
+                "rejected_2_0_ActionChanneling": 0.40625,
+                "rejected_2_0_ActionTargetUnavailable": 3.78125,
+                "rejected_4_1_ActionChanneling": 0.010416666666666666,
+                "rejected_4_4_ActionChanneling": 0.10416666666666667,
+                "rejected_4_5_ActionChanneling": 0.07291666666666667,
+                "rejected_5_0_ActionChanneling": 5.21875,
+                "rejected_6_0_ActionOutOfRange": 0.4791666666666667,
+                "rejected_6_1_ActionChanneling": 0.0625,
+                "rejected_6_1_ActionOutOfRange": 4.916666666666667,
+                "rejected_6_2_ActionChanneling": 0.052083333333333336,
+                "rejected_6_2_ActionInsufficientMana": 0.3229166666666667,
+                "rejected_6_2_ActionOutOfRange": 4.572916666666667,
+                "rejected_6_3_ActionInsufficientMana": 0.10416666666666667,
+                "rejected_6_3_ActionOutOfRange": 1.2083333333333333,
+                "rejected_ActionChanneling": 7.916666666666667,
+                "rejected_ActionInsufficientMana": 0.4270833333333333,
+                "rejected_ActionOutOfRange": 11.177083333333334,
+                "rejected_ActionTargetUnavailable": 4.208333333333333,
+                "used_HealthPotion": 14.604166666666666,
+                "used_PortalScroll": 9.71875,
+                "xp_creep_at_last_hit": 3084.6666666666665,
+                "xp_creep_shared": 241.48958333333334
+              },
+              "mean_score": 3426.5833333333335,
+              "mean_gold_end": 1169.6875,
+              "mean_minutes": 16.16476417824074,
+              "mean_rejected_share": 0.024228679506449115,
+              "pooled_hero_kills_per_field_minute": 2.1189230772423726,
+              "pooled_creep_xp_per_field_minute": 318.0984704829992,
+              "class_counts": {
+                "Ranger": 96
+              }
+            }
+          }
+        },
+        "Richard195": {
+          "overall": {
+            "n": 200,
+            "means": {
+              "buyback_gold": 1298,
+              "buybacks": 3.16,
+              "consumables_used": 6.545,
+              "creep_last_hits": 123.36,
+              "dead_ticks": 4793.005,
+              "field_gold500_ticks": 4452.325,
+              "field_low_health_ticks": 3125.485,
+              "field_low_mana_ticks": 1040.365,
+              "field_ticks": 13673.54,
+              "gold_earned": 2739.775,
+              "gold_spent": 2308.15,
+              "healing_item_HealthPotion": 17.815,
+              "healing_item_VitalityElixir": 41.85,
+              "healing_other": 47.025,
+              "hero_kills": 7.645,
+              "interrupted_HealthPotion": 0.56,
+              "interrupted_ManaPotion": 0.145,
+              "keep_ticks": 3727.055,
+              "mana_item_ManaPotion": 20.405,
+              "orders": 19142.8,
+              "purchased_AmethystWand": 1,
+              "purchased_ArcaneSpellbook": 0.335,
+              "purchased_BattleAxe": 0.115,
+              "purchased_CrimsonDagger": 0.835,
+              "purchased_HealthPotion": 0.685,
+              "purchased_KnightArmor": 0.295,
+              "purchased_ManaPotion": 0.415,
+              "purchased_PoisonPotion": 5.11,
+              "purchased_RubyAmulet": 0.075,
+              "purchased_SapphireRing": 0.88,
+              "purchased_SteelBuckler": 0.74,
+              "purchased_SunsteelLongsword": 0.535,
+              "purchased_ThornwoodStaff": 0.615,
+              "purchased_VitalityElixir": 0.495,
+              "rejected": 1331.98,
+              "rejected_3_0_ActionAlreadyEquipped": 5.37,
+              "rejected_3_0_ActionInsufficientGold": 12.58,
+              "rejected_3_0_ActionInventoryFull": 376.22,
+              "rejected_4_1_ActionTargetUnavailable": 22.18,
+              "rejected_4_2_ActionTargetUnavailable": 0.605,
+              "rejected_4_3_ActionTargetUnavailable": 2.065,
+              "rejected_4_4_ActionTargetUnavailable": 8.41,
+              "rejected_4_5_ActionTargetUnavailable": 7.13,
+              "rejected_6_1_ActionCooldown": 69.905,
+              "rejected_6_1_ActionNoCharges": 32.42,
+              "rejected_6_1_ActionOutOfRange": 461.21,
+              "rejected_6_1_ActionTargetUnavailable": 0.515,
+              "rejected_6_3_ActionAbilityLocked": 94.44,
+              "rejected_6_3_ActionCooldown": 106.32,
+              "rejected_6_3_ActionInsufficientMana": 3.14,
+              "rejected_6_3_ActionOutOfRange": 34.14,
+              "rejected_6_3_ActionTargetUnavailable": 95.33,
+              "rejected_ActionAbilityLocked": 94.44,
+              "rejected_ActionAlreadyEquipped": 5.37,
+              "rejected_ActionCooldown": 176.225,
+              "rejected_ActionInsufficientGold": 12.58,
+              "rejected_ActionInsufficientMana": 3.14,
+              "rejected_ActionInventoryFull": 376.22,
+              "rejected_ActionNoCharges": 32.42,
+              "rejected_ActionOutOfRange": 495.35,
+              "rejected_ActionTargetUnavailable": 136.235,
+              "used_HealthPotion": 0.67,
+              "used_ManaPotion": 0.345,
+              "used_PoisonPotion": 5.065,
+              "used_VitalityElixir": 0.465,
+              "xp_creep_at_last_hit": 1655.885,
+              "xp_creep_shared": 432.005
+            },
+            "mean_score": 620.285,
+            "mean_gold_end": 581.625,
+            "mean_minutes": 15.724722222222223,
+            "mean_rejected_share": 0.07337431930244033,
+            "pooled_hero_kills_per_field_minute": 0.8051170362612754,
+            "pooled_creep_xp_per_field_minute": 219.88172777495805,
+            "class_counts": {
+              "Warlock": 200
+            }
+          },
+          "classes": {
+            "Warlock": {
+              "n": 200,
+              "means": {
+                "buyback_gold": 1298,
+                "buybacks": 3.16,
+                "consumables_used": 6.545,
+                "creep_last_hits": 123.36,
+                "dead_ticks": 4793.005,
+                "field_gold500_ticks": 4452.325,
+                "field_low_health_ticks": 3125.485,
+                "field_low_mana_ticks": 1040.365,
+                "field_ticks": 13673.54,
+                "gold_earned": 2739.775,
+                "gold_spent": 2308.15,
+                "healing_item_HealthPotion": 17.815,
+                "healing_item_VitalityElixir": 41.85,
+                "healing_other": 47.025,
+                "hero_kills": 7.645,
+                "interrupted_HealthPotion": 0.56,
+                "interrupted_ManaPotion": 0.145,
+                "keep_ticks": 3727.055,
+                "mana_item_ManaPotion": 20.405,
+                "orders": 19142.8,
+                "purchased_AmethystWand": 1,
+                "purchased_ArcaneSpellbook": 0.335,
+                "purchased_BattleAxe": 0.115,
+                "purchased_CrimsonDagger": 0.835,
+                "purchased_HealthPotion": 0.685,
+                "purchased_KnightArmor": 0.295,
+                "purchased_ManaPotion": 0.415,
+                "purchased_PoisonPotion": 5.11,
+                "purchased_RubyAmulet": 0.075,
+                "purchased_SapphireRing": 0.88,
+                "purchased_SteelBuckler": 0.74,
+                "purchased_SunsteelLongsword": 0.535,
+                "purchased_ThornwoodStaff": 0.615,
+                "purchased_VitalityElixir": 0.495,
+                "rejected": 1331.98,
+                "rejected_3_0_ActionAlreadyEquipped": 5.37,
+                "rejected_3_0_ActionInsufficientGold": 12.58,
+                "rejected_3_0_ActionInventoryFull": 376.22,
+                "rejected_4_1_ActionTargetUnavailable": 22.18,
+                "rejected_4_2_ActionTargetUnavailable": 0.605,
+                "rejected_4_3_ActionTargetUnavailable": 2.065,
+                "rejected_4_4_ActionTargetUnavailable": 8.41,
+                "rejected_4_5_ActionTargetUnavailable": 7.13,
+                "rejected_6_1_ActionCooldown": 69.905,
+                "rejected_6_1_ActionNoCharges": 32.42,
+                "rejected_6_1_ActionOutOfRange": 461.21,
+                "rejected_6_1_ActionTargetUnavailable": 0.515,
+                "rejected_6_3_ActionAbilityLocked": 94.44,
+                "rejected_6_3_ActionCooldown": 106.32,
+                "rejected_6_3_ActionInsufficientMana": 3.14,
+                "rejected_6_3_ActionOutOfRange": 34.14,
+                "rejected_6_3_ActionTargetUnavailable": 95.33,
+                "rejected_ActionAbilityLocked": 94.44,
+                "rejected_ActionAlreadyEquipped": 5.37,
+                "rejected_ActionCooldown": 176.225,
+                "rejected_ActionInsufficientGold": 12.58,
+                "rejected_ActionInsufficientMana": 3.14,
+                "rejected_ActionInventoryFull": 376.22,
+                "rejected_ActionNoCharges": 32.42,
+                "rejected_ActionOutOfRange": 495.35,
+                "rejected_ActionTargetUnavailable": 136.235,
+                "used_HealthPotion": 0.67,
+                "used_ManaPotion": 0.345,
+                "used_PoisonPotion": 5.065,
+                "used_VitalityElixir": 0.465,
+                "xp_creep_at_last_hit": 1655.885,
+                "xp_creep_shared": 432.005
+              },
+              "mean_score": 620.285,
+              "mean_gold_end": 581.625,
+              "mean_minutes": 15.724722222222223,
+              "mean_rejected_share": 0.07337431930244033,
+              "pooled_hero_kills_per_field_minute": 0.8051170362612754,
+              "pooled_creep_xp_per_field_minute": 219.88172777495805,
+              "class_counts": {
+                "Warlock": 200
+              }
+            }
+          }
+        }
+      },
+      "interpretation": "Andre plays only Ranger/Crossbowman; own cohort includes100melee appearances. Similar pooled field time does not imply equal opportunities, class strength or lane position. Within-class comparisons remain confounded by draft, side and team.",
+      "critical_findings": [
+        "Own Crossbowman mean4041.22 versus Andre4096.08; own Ranger2610.24 versus Andre3426.58, in different case mixes. Own DeathKnight137.48 in86games; all14Vanguard games scorezero.",
+        "Own health-potion use10.63/game versus Andre17.04, with actual healing921.025 versus1464.945. Consumables16.95 versus26.09 also include portals6.32 versus9.05.",
+        "Own gold spent2920.35 versus4422.05; buyback spending1235.50 versus2245 accounts for1009.50 of the1501.70 gap. End gold804.425 versus1608.75 does not show Andre spending down reserves more aggressively.",
+        "Own field time10.6566 versus10.8567minutes; hero kills per field minute0.9858 versus2.1724, total creepXP per field minute213.19 versus307.40. Opportunity and conversion still need predecision exposure measurement.",
+        "Own rejected orders37.07% versus2.43% as means of per-game shares. Of own737.995rejections/game,732.69 are out-of-range casts. These are not proven lost spell effects."
+      ]
+    }
+  },
+  "goal": {
+    "primary": "Increase final individual XP-minus-time score.",
+    "joint_success": [
+      "Raise overall mean",
+      "Raise nonzero average without reducing nonzero frequency",
+      "Increase fraction of games scoring>=500",
+      "Raise productive-game score while retaining low-tail performance"
+    ],
+    "avoid_proxy_goals": [
+      "Maximizing gold spent or items consumed",
+      "Minimizing rejected-command percentage without more effective actions",
+      "Extending games without enough additionalXP",
+      "Maximizing hero kills while feeding more valuable XP/time",
+      "Eliminating all building attacks or all retreats"
+    ]
+  },
+  "skill": {
+    "effective_spell_selection": {
+      "status": "missing manual range guard verified; harmful lost-opportunity mechanism unproven",
+      "proposed_implementation": "Generate class/slot/rank geometry from current content. Select a valid useful spell target independently of basic attack target where appropriate; keep basic timing and defensive actions. Consider bounded retry backoff from return0 without pretending the runtime exposes an error reason.",
+      "practice": [
+        "Both colors/all10classes; inside/outside rounded range, self/area/projectile geometry, obscured/dead targets, mana/charge/cooldown checks",
+        "Assert accepted spell effects, damage/healing and no loss of basic hits; dense-scene VM budget"
+      ],
+      "diagnostic": [
+        "Rejected commands by type/slot/reason and opportunity; accepted releases and effective damage/healing per field minute",
+        "Separate harmless failed attempts from missed cast opportunities",
+        "Reconstruct automatic and manual releases together. Admission requires missed useful effects or harmful target choice, not merely rejected commands."
+      ],
+      "competitive_test": "Freeze source/IR/current engine/exact rivals first. Fresh400games,50/source/context across both colors and lead/later draft. Mean score>=+10%, positive lower95% context-stratified whole-game bootstrap gain, eachcontext>=95%control, nonzero mean>=+5%, nonzero frequency preserved, score>=500 frequency strictly higher, zero source/VM/replay/XP/score failures and stable field. No sample extension or favorable class filtering after outcomes."
+    },
+    "productive_consumable_reserve": {
+      "status": "proposed; verify inventory and wasted-recovery exposure first",
+      "proposed_implementation": "Test bounded additional health stacks during already-required keep visits after protecting core progression and buyback reserve. Coordinate safe regeneration timing with existing recovery. Mana or instant-heal stacks require a separately stated slot tradeoff; do not assume all can fit.",
+      "practice": [
+        "Actual purchase/stack counts at full inventory, family cooldowns and insufficient gold",
+        "Actual HP/mana restored over10seconds, interruption on damage, no double-use and immediate escape under threat",
+        "Do not expand all-class heal holds without a new discriminator from failed prior bundles"
+      ],
+      "diagnostic": [
+        "Per-item purchases/uses, effective HP/mana per gold, interruptions, unused stock, gold earned/spent and buyback share",
+        "Shopping/retreat minutes avoided, deaths, XP after recovery, and item/core timing by class/context"
+      ],
+      "competitive_test": "Freeze source/IR/current engine/exact rivals first. Fresh400games,50/source/context across both colors and lead/later draft. Mean score>=+10%, positive lower95% context-stratified whole-game bootstrap gain, eachcontext>=95%control, nonzero mean>=+5%, nonzero frequency preserved, score>=500 frequency strictly higher, zero source/VM/replay/XP/score failures and stable field. No sample extension or favorable class filtering after outcomes."
+    },
+    "last_hit_opportunity_and_timing": {
+      "status": "proposed; distinguish opportunity from conversion",
+      "proposed_implementation": "Reuse bounded public scans and short HP history to initiate or retain the basic hit that can finish a creep. Preserve a committed windup where appropriate, keep within XP radius, and recover toward a productive visible wave after a drought. Current basic hit applies at windup; do not invent ranged-basic projectile delay.",
+      "practice": [
+        "Responsive allied/enemy last-hit competition with exact current attack timing",
+        "HP falling before windup completes, target death/disappearance, retarget starvation, floor/XP-radius boundaries and low-HP hero threat",
+        "Mirrored tests and full600creep stress without exceeding19000instruction margin"
+      ],
+      "diagnostic": [
+        "Enemy creep deaths encountered per alive field minute and distinct visible one-hit windows",
+        "Last hits per eligible opportunity, creepXP within radius, sharedXP, gold and wave travel; opportunities are not inferred solely from XP totals",
+        "Attribution requires predecision public exposure; actual future deaths are evaluation-only"
+      ],
+      "competitive_test": "Freeze source/IR/current engine/exact rivals first. Fresh400games,50/source/context across both colors and lead/later draft. Mean score>=+10%, positive lower95% context-stratified whole-game bootstrap gain, eachcontext>=95%control, nonzero mean>=+5%, nonzero frequency preserved, score>=500 frequency strictly higher, zero source/VM/replay/XP/score failures and stable field. No sample extension or favorable class filtering after outcomes."
+    },
+    "bounded_hero_engagement": {
+      "status": "proposed; do not repeat deferred zero-activation close-hero rule",
+      "proposed_implementation": "Prioritize an observed reachable kill over low-return chipping when public damage/cover predicts a profitable short fight. Keep a chase deadline, anti-tower guard and low-health escape; do not chase healthy distant heroes just to raise kill count.",
+      "practice": [
+        "Reachable lethal hero versus lethal creep or finishable structure",
+        "Outnumbered/tower-covered target, lost vision, root/stun, recovery/channel priority and chase timeout",
+        "Measure activation in existing authentic-source replays before spending; prior close-hero diagnostic had0opportunities in4productive examples"
+      ],
+      "diagnostic": [
+        "Hero killXP per field minute, feasible engagements, kill conversion and assists separately",
+        "Deaths, XP donated to enemies, XP lost during travel/recovery, creepXP displaced and final score"
+      ],
+      "competitive_test": "Freeze source/IR/current engine/exact rivals first. Fresh400games,50/source/context across both colors and lead/later draft. Mean score>=+10%, positive lower95% context-stratified whole-game bootstrap gain, eachcontext>=95%control, nonzero mean>=+5%, nonzero frequency preserved, score>=500 frequency strictly higher, zero source/VM/replay/XP/score failures and stable field. No sample extension or favorable class filtering after outcomes."
+    },
+    "selective_structure_finish": {
+      "status": "complete_not_qualified",
+      "source_sha256": "08987348157268b5aaf02b9c173942f2cde5866deba3064df64a15dee3db7b93",
+      "record": "../../../games/gods_of_the_arena/experiments/2026-09-23-selective-finish.md",
+      "local_validation": "802candidate checks,84baseline checks and16native games passed;400fresh games audited.",
+      "must_not_change_midtrial": true,
+      "hosted_result": {
+        "qualified": false,
+        "mean_gain_percent": -1.8168538596377237,
+        "gain_ci95_percent": [
+          -16.5290232015061,
+          14.353619145499907
+        ],
+        "productivity": {
+          "baseline": {
+            "overall_mean": 1540.3,
+            "nonzero_mean": 2484.3548387096776,
+            "nonzero_rate": 0.62,
+            "productive_mean": 2877.669811320755,
+            "productive_rate": 0.53,
+            "zero_games": 76,
+            "productive_games": 106,
+            "games": 200
+          },
+          "candidate": {
+            "overall_mean": 1512.315,
+            "nonzero_mean": 2800.5833333333335,
+            "nonzero_rate": 0.54,
+            "productive_mean": 3351.921348314607,
+            "productive_rate": 0.445,
+            "zero_games": 92,
+            "productive_games": 89,
+            "games": 200
+          },
+          "difference_ci95": {
+            "nonzero_mean": [
+              -114.10092902266797,
+              756.7899371069179
+            ],
+            "nonzero_rate": [
+              -0.14,
+              -0.019999999999999907
+            ],
+            "productive_mean": [
+              29.000515410782555,
+              918.9401430030643
+            ],
+            "productive_rate": [
+              -0.13999999999999996,
+              -0.034999999999999976
+            ]
+          }
+        }
+      },
+      "interpretation": "Short-finish mechanics work, but only3structure commands activate in16candidate diagnostic games. Productive and nonzero conditional means rise while their frequencies fall; the joint acceptance rule fails. Preserve the exact bundle, do not deploy it."
+    }
+  },
+  "strategy": [
+    {
+      "id": "S_CAST_VALID_EFFECT",
+      "when": "spell_actionable and useful effect predicted",
+      "prefer": "effective_spell_selection",
+      "for": [
+        "primary"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "S_STOCK_PRODUCTIVE_RECOVERY",
+      "when": "consumable_stock_short during an already-required keep visit",
+      "prefer": "productive_consumable_reserve",
+      "for": [
+        "primary"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "S_FIELD_SUSTAIN",
+      "when": "safe_regeneration_window and stocked resource can restore productive play",
+      "prefer": "use recovery and remain near a productive lane over a health-only base trip",
+      "for": [
+        "primary"
+      ],
+      "status": "proposed; preserve required shopping/escape and prior failed-study exclusions"
+    },
+    {
+      "id": "S_LAST_HIT_COMMIT",
+      "when": "one_hit_creep_window and xp_eligible_position",
+      "prefer": "last_hit_opportunity_and_timing",
+      "for": [
+        "primary"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "S_HERO_FINISH",
+      "when": "reachable_hero_finish beats local farming opportunity cost",
+      "prefer": "bounded_hero_engagement",
+      "for": [
+        "primary"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "S_STRUCTURE_FINISH",
+      "when": "plausible_structure_finish",
+      "prefer": "separately tested selective_structure_finish",
+      "for": [
+        "primary"
+      ],
+      "status": "tested exact bundle did not qualify; a distinct intervention needs new evidence and a new frozen trial"
+    },
+    {
+      "id": "S_CLASS_SCOPED_ADMISSION",
+      "when": "A proposed change addresses a measured class/role failure window",
+      "prefer": "Practice and diagnose that scope, preserve demonstrated ranged behavior, then freeze a new source and prospectively test all declared contexts",
+      "for": [
+        "primary"
+      ],
+      "status": "research rule; no outcome-driven exclusion from existing frozen trials"
+    }
+  ],
+  "execution": {
+    "binding": "research-hypotheses/1",
+    "executable": false,
+    "apply_to_live_policy": false,
+    "conversion_requirement": "After a hypothesis passes its diagnostic admission, update executable semantic IR and current binding together; regenerate BASIC through repo conversion, round-trip, practice and compare. Only validated final pairs may replace either live champion.",
+    "test_rule": "Freeze source/IR/current engine/exact rivals first. Fresh400games,50/source/context across both colors and lead/later draft. Mean score>=+10%, positive lower95% context-stratified whole-game bootstrap gain, eachcontext>=95%control, nonzero mean>=+5%, nonzero frequency preserved, score>=500 frequency strictly higher, zero source/VM/replay/XP/score failures and stable field. No sample extension or favorable class filtering after outcomes.",
+    "tested_frozen_source_unchanged": "08987348157268b5aaf02b9c173942f2cde5866deba3064df64a15dee3db7b93"
+  },
+  "update": {
+    "revision": 2,
+    "origin": "Manual user coaching, not model-discovered intent",
+    "priority": [
+      "Diagnose missed effective spell opportunities with automatic casting included",
+      "Measure last-hit exposure and conversion, especially weak melee roles and Ranger",
+      "Practice bounded health-stock and safe-use changes only where resource exhaustion causes a lost productive window",
+      "Admit a hero-engagement change only after observed activation and measured opportunity cost"
+    ],
+    "evidence": [
+      "input-manifest.json",
+      "screenshot-metrics.json",
+      "evidence/current-engine-analysis.json",
+      "../../opponents/khors-v179/score-audit-20260923/README.md",
+      "evidence/autocast-proof.json",
+      "evidence/coached-resource-comparison.json"
+    ],
+    "status": "Manual suggestions and200-game diagnosis complete. Separate400-game selective-finish trial rejected by its frozen rule; live incumbent retained. Other proposed gameplay interventions remain unvalidated."
+  }
+}

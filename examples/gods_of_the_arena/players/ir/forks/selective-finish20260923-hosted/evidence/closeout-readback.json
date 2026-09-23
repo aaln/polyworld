@@ -1,0 +1,42 @@
+{
+  "trial_end": {
+    "captured_at": "2026-09-23T17:48:22.699052+00:00",
+    "champions": [
+      {
+        "player": "Aaron's Co-play Coach",
+        "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+        "version": "d75ff766-e78f-4aa5-b656-55eb29248208",
+        "status": "competing",
+        "substatus": "active",
+        "is_champion": true
+      },
+      {
+        "player": "Aaron",
+        "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+        "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "status": "competing",
+        "substatus": "active",
+        "is_champion": true
+      }
+    ],
+    "league_writes": 0
+  },
+  "later_membership_readback": {
+    "at": "2026-09-23T17:54:33.852773+00:00",
+    "total_rows": 0,
+    "mine_and_all_unfiltered_retries": 0,
+    "status": "unavailable_under_current_player_credentials",
+    "capture_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-selective-finish59-20260923/final-readback",
+    "portfolio_http_status": 403,
+    "portfolio_error": "Player credentials are not authorized for this route",
+    "own_version_metadata_http_status": 404,
+    "last_successful_membership_at": "2026-09-23T17:48:22.699052+00:00"
+  },
+  "league_writes": 0,
+  "budget": {
+    "per_utc_day": 100000,
+    "expires": null,
+    "reserved_2026_09_23": 3920,
+    "selective_trial": 400
+  }
+}

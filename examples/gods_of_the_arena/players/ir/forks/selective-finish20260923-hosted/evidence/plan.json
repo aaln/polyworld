@@ -1,0 +1,205 @@
+{
+  "stage": "trial",
+  "games": 400,
+  "engine_commit": "d6827a4bd3a55a46cf86f88e921f147137709c64",
+  "game_version": "2026.9.23.1",
+  "cycle": "interactive-selective-finish59-20260923",
+  "arms": [
+    {
+      "name": "baseline",
+      "cell": "red-lead",
+      "side": 0,
+      "ordinal": 0,
+      "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "19d5c60e-b0d4-4382-b253-fabcfd03f896",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "d75ff766-e78f-4aa5-b656-55eb29248208"
+      ],
+      "games": 50
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "side": 1,
+      "ordinal": 0,
+      "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "19d5c60e-b0d4-4382-b253-fabcfd03f896",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "d75ff766-e78f-4aa5-b656-55eb29248208",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 50
+    },
+    {
+      "name": "baseline",
+      "cell": "red-late",
+      "side": 0,
+      "ordinal": 3,
+      "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        3
+      ],
+      "roster": [
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "19d5c60e-b0d4-4382-b253-fabcfd03f896",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "d75ff766-e78f-4aa5-b656-55eb29248208"
+      ],
+      "games": 50
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "side": 1,
+      "ordinal": 3,
+      "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        8
+      ],
+      "roster": [
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "19d5c60e-b0d4-4382-b253-fabcfd03f896",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "d75ff766-e78f-4aa5-b656-55eb29248208",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "a25248bc-0013-4267-a12c-c55af87da30f"
+      ],
+      "games": 50
+    },
+    {
+      "name": "selective-finish",
+      "cell": "red-lead",
+      "side": 0,
+      "ordinal": 0,
+      "version": "a2cf0f06-0f5e-4bb7-8f0c-64b5825ab2a1",
+      "source_sha256": "08987348157268b5aaf02b9c173942f2cde5866deba3064df64a15dee3db7b93",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "a2cf0f06-0f5e-4bb7-8f0c-64b5825ab2a1",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "19d5c60e-b0d4-4382-b253-fabcfd03f896",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "d75ff766-e78f-4aa5-b656-55eb29248208"
+      ],
+      "games": 50
+    },
+    {
+      "name": "selective-finish",
+      "cell": "blue-lead",
+      "side": 1,
+      "ordinal": 0,
+      "version": "a2cf0f06-0f5e-4bb7-8f0c-64b5825ab2a1",
+      "source_sha256": "08987348157268b5aaf02b9c173942f2cde5866deba3064df64a15dee3db7b93",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "19d5c60e-b0d4-4382-b253-fabcfd03f896",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "d75ff766-e78f-4aa5-b656-55eb29248208",
+        "a2cf0f06-0f5e-4bb7-8f0c-64b5825ab2a1",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 50
+    },
+    {
+      "name": "selective-finish",
+      "cell": "red-late",
+      "side": 0,
+      "ordinal": 3,
+      "version": "a2cf0f06-0f5e-4bb7-8f0c-64b5825ab2a1",
+      "source_sha256": "08987348157268b5aaf02b9c173942f2cde5866deba3064df64a15dee3db7b93",
+      "own_slots": [
+        3
+      ],
+      "roster": [
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "a2cf0f06-0f5e-4bb7-8f0c-64b5825ab2a1",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "19d5c60e-b0d4-4382-b253-fabcfd03f896",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "d75ff766-e78f-4aa5-b656-55eb29248208"
+      ],
+      "games": 50
+    },
+    {
+      "name": "selective-finish",
+      "cell": "blue-late",
+      "side": 1,
+      "ordinal": 3,
+      "version": "a2cf0f06-0f5e-4bb7-8f0c-64b5825ab2a1",
+      "source_sha256": "08987348157268b5aaf02b9c173942f2cde5866deba3064df64a15dee3db7b93",
+      "own_slots": [
+        8
+      ],
+      "roster": [
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "19d5c60e-b0d4-4382-b253-fabcfd03f896",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "d75ff766-e78f-4aa5-b656-55eb29248208",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "a2cf0f06-0f5e-4bb7-8f0c-64b5825ab2a1",
+        "a25248bc-0013-4267-a12c-c55af87da30f"
+      ],
+      "games": 50
+    }
+  ],
+  "rule": "400 fresh games,50/source/context: red lead,blue lead,red late,blue late; ordinals0/3. Zero10source/VM/full-replay/XP/integer failures;>=10percent pooled mean score gain,eachcontext>=95percentcontrol,positive lower95percent context-stratified independent whole-game bootstrap gain. Nonzero mean>=105percentcontrol, nonzero frequency>=control, score>=500 frequency strictly higher. Stable game/principal champions. One frozen combined source; no prior hosted controls or posthoc class filtering.",
+  "budget": "Permanent100000/day authorized;400new in8x50, separate cycle, maximum3active; shared ledger retained.",
+  "source_evidence": "docs/opponents/khors-v179/score-audit-20260923",
+  "source_freeze": "Selective finish r1: bounded near-target eligibility and one-hit building priority; current Druid baseline; fresh controls; natural draft."
+}

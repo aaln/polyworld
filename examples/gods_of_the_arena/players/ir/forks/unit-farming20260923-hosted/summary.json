@@ -1,0 +1,108 @@
+{
+  "trial": {
+    "name": "unit-farming",
+    "source_sha256": "1238ec73cfd85d2f157b7ea9c639679c9c24110f54bb49e684515f3999ffa10d",
+    "score_gate_passed": false,
+    "baseline_score": 1714.825,
+    "candidate_score": 1241.7949999999998,
+    "aggregate_gain_percent": -27.58473896753314,
+    "gain_ci95_percent": [
+      -38.30206352360138,
+      -16.072129276210177
+    ],
+    "per_context_gain_percent": [
+      -38.788990825688074,
+      -16.448084067073054,
+      -70.38167938931296,
+      -84.36802596875634
+    ],
+    "late_score_gain_percent": -82.04347458343906,
+    "primary_score_gate_passed": false,
+    "productivity_gate_passed": false,
+    "productivity": {
+      "baseline": {
+        "overall_mean": 1714.825,
+        "nonzero_mean": 2834.4214876033056,
+        "nonzero_rate": 0.605,
+        "productive_mean": 3127.798165137615,
+        "productive_rate": 0.545,
+        "zero_games": 79,
+        "productive_games": 109,
+        "games": 200
+      },
+      "candidate": {
+        "overall_mean": 1241.795,
+        "nonzero_mean": 2459,
+        "nonzero_rate": 0.505,
+        "productive_mean": 3201.1447368421054,
+        "productive_rate": 0.38,
+        "zero_games": 99,
+        "productive_games": 76,
+        "games": 200
+      },
+      "difference_ci95": {
+        "nonzero_mean": [
+          -785.8414261206831,
+          36.104150620453765
+        ],
+        "nonzero_rate": [
+          -0.16499999999999998,
+          -0.03500000000000003
+        ],
+        "productive_mean": [
+          -341.2017400075656,
+          476.55330385654634
+        ],
+        "productive_rate": [
+          -0.21999999999999997,
+          -0.11000000000000004
+        ]
+      }
+    },
+    "context_productivity": {
+      "red-lead": {
+        "overall_mean": 1668,
+        "nonzero_mean": 1985.7142857142858,
+        "nonzero_rate": 0.84,
+        "productive_mean": 2518.1875,
+        "productive_rate": 0.64,
+        "zero_games": 8,
+        "productive_games": 32,
+        "games": 50
+      },
+      "blue-lead": {
+        "overall_mean": 3256.72,
+        "nonzero_mean": 3618.5777777777776,
+        "nonzero_rate": 0.9,
+        "productive_mean": 3697.840909090909,
+        "productive_rate": 0.88,
+        "zero_games": 5,
+        "productive_games": 44,
+        "games": 50
+      },
+      "red-late": {
+        "overall_mean": 11.64,
+        "nonzero_mean": 194,
+        "nonzero_rate": 0.06,
+        "productive_mean": 0,
+        "productive_rate": 0.0,
+        "zero_games": 47,
+        "productive_games": 0,
+        "games": 50
+      },
+      "blue-late": {
+        "overall_mean": 30.82,
+        "nonzero_mean": 140.0909090909091,
+        "nonzero_rate": 0.22,
+        "productive_mean": 0,
+        "productive_rate": 0.0,
+        "zero_games": 39,
+        "productive_games": 0,
+        "games": 50
+      }
+    }
+  },
+  "deployment_qualified": false,
+  "source_sha256": "1238ec73cfd85d2f157b7ea9c639679c9c24110f54bb49e684515f3999ffa10d",
+  "ir_sha256": "e1d85975c5a7ce8bd1d44d1eb74a92111b0ebd62b6f0b6174aae00217293f787"
+}

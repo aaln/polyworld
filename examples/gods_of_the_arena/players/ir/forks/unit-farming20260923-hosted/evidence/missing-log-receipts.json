@@ -1,0 +1,27 @@
+{
+  "episodes": [
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "episode": "ereq_72215339-fc7f-488c-a309-f888804b0fc8",
+      "receipt": {
+        "status": 404,
+        "body": "{\"detail\":\"No logs found for job 51c8ac6d-8590-4f2d-8cc8-98f60c6d7313\",\"type\":\"not_found\",\"documentation_url\":\"https://softmax.com/docs/api-reference/error-handling\"}",
+        "checked_at": "2026-09-23T16:40:03.678179+00:00"
+      },
+      "logs_present_at_seal": false
+    },
+    {
+      "name": "baseline",
+      "cell": "blue-lead",
+      "episode": "ereq_824c9b1b-afac-4fed-a60d-9750dd349bf4",
+      "receipt": {
+        "status": 404,
+        "body": "{\"detail\":\"No logs found for job dfad3bdc-db56-46b6-bab4-dbb7013899f9\",\"type\":\"not_found\",\"documentation_url\":\"https://softmax.com/docs/api-reference/error-handling\"}",
+        "checked_at": "2026-09-23T16:40:03.298324+00:00"
+      },
+      "logs_present_at_seal": false
+    }
+  ],
+  "scope": "Ancillary text logs only; no game excluded or replaced. Exact source identities, player exits, replay states, XP and integer scores remain mandatory."
+}
