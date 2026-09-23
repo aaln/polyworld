@@ -1,0 +1,35 @@
+{
+  "schema": "gota-retrospective-counter-hypothesis/1",
+  "opponent": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+  "opponent_label": "khors:v114",
+  "own_source": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+  "engine": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "status": "hosted_counter_test_running",
+  "executable_proxy": false,
+  "known_source": false,
+  "situation": {
+    "retrospective": "In the selected blue opening samples, ours is on the outer route while khors is near center. Frames are post-tick truth, not exact paths or bot observation.",
+    "public_counter_trigger": "Blue selfTeam, ordinal zero from public draft player IDs, Ranger/Crossbowman, no higher-priority combat or recovery action."
+  },
+  "belief": {
+    "supported_observation": "In all100blue prior candidate games, khors has more hero-kill XP within both own hero classes. Our creep XP exceeds khors in both class slices. Four selected blue replays show5.75mean khors early kills versus0.5own; all khors early kills are teammates.",
+    "hypothesis": "Earlier central routing may contest the early hero XP and level lead. This is not an identified causal explanation of the whole blue gap."
+  },
+  "goal": "Raise final own XP-minus-time score; reduced travel or earlier contact alone do not qualify.",
+  "skill": [
+    "central blue ranged lead route",
+    "immediate critical keep recovery overrides persistent outward motion"
+  ],
+  "strategy": "Change both route and recovery handoff; preserve parent retreat/combat/draft/buyback and all red or later-ordinal commands.",
+  "execution": "Live controller uses only public observations and own state; no opponent UUID, replay truth or counterfactual command tape input.",
+  "update": {
+    "candidate": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+    "prior_local_failure": "r1 route only failed2/84portal guards; original retained",
+    "decision": "Frozen400fresh hosted score+blue rival gap gates. No completed counter claim yet."
+  },
+  "evidence": [
+    "diagnosis-class.json",
+    "diagnosis-openings.json",
+    "/Users/aaln/experiments/softmax/polyworld/tmp/gota-blue-khors-20260923/trial/plan.json"
+  ]
+}

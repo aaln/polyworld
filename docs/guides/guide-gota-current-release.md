@@ -15,10 +15,24 @@ from2026.9.22.2 and do not qualify a replacement under this patch. The deployed
 source remains the byte-exact reference; fresh controls are required. Preserve
 the old replay57 engine and datasets.
 
-## Latest deployed reference: core buyback
+## Latest deployed reference: blue central route
+
+Source **c02f8cb6**, reviewed IR **88860443**, binding
+`gota-bassy/blue-center-2026-09-23-r2` is deployed to both players.
+[Portable pair and evidence](../../examples/gods_of_the_arena/players/ir/forks/blue-center20260923-hosted/README.md)
+record400fresh games: aggregate+15.68%,blue+40.74%,red−3.07%; all preset gates
+and ten-source/VM/full-replay/XP audits pass. Blue mean gap versuskhors114 is
++1266.72,95%CI[648.84,1881.67],58/100outscored. Fixed first-team-seat roster;
+no late-draft or lasting #1claim. Red executable behavior is unchanged.
+Both champions were verified active/competing; current.json holds exact UUIDs.
+[Deployment receipts](../../examples/gods_of_the_arena/players/ir/forks/blue-center20260923-deployment/README.md)
+preserve core-buyback67fdcd5d as rollback.
+
+## Prior deployed reference: core buyback
+
 
 Source **67fdcd5d**, reviewed IR **c1a5839b**, binding
-`gota-bassy/core-buyback-2026-09-23-r1` is now deployed to both players.
+`gota-bassy/core-buyback-2026-09-23-r1` was deployed to both players before blue-center.
 The [portable pair and report](../../examples/gods_of_the_arena/players/ir/forks/core-buyback20260923/README.md)
 passed400fresh held-out games on the active2026.9.22.3 engine: mean score
 **2270.46→2955.775(+30.18%)**, red+22.97%,blue+39.79%,95%gain interval

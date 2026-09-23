@@ -1,6 +1,6 @@
 # Blue central route against khors v114
 
-Status: confirmed; deployed to both players after400fresh audited games. User requests better blue play against Andre's khors114.
+Status: local admission. User requests better blue play against Andre's khors114.
 Parent is the newly deployed core-buyback policy67fdcd5d, reviewed IRc1a5839b.
 Active game2026.9.22.3/replay58/engine1b708944 is freshly verified unchanged;
 khors114 andRichard174 remain current. Prior failures and captures are preserved.
@@ -83,23 +83,3 @@ receive detailed effect/route analysis; this subset is diagnostic, not a holdout
 
 Raw inputs:polyworld/tmp/gota-blue-khors-20260923. Preserve original parent
 trial, source, local IR and portal coaching session2026-09-22t16-43-56-076z862811.
-
-## Local admission result
-
-Final r2 sourcec02f8cb6, initial IRf82ba63e.100opening,180buyback,84portal and
-126broad checks pass(490 total); all8complete native games pass source/runtime,
-replay and XP checks. Both red native seeds produce identical full command
-streams and terminal states. Maximum14954instructions/22020work. Portable
-compile/extract reproduces the exact source and semantic IR.
-
-Initial r1 route-only source5273b04c failed2keep20portal cases and remains
-preserved under initial-r1 with its own native results. The shared test harness
-initially queried read-only mapWidth as a mutable BASIC global; both sources
-failed that query. Using the host's mapTiles accessor repairs the fixture without
-changing policy bytes. Native scores are mixed and are not rival evidence.
-
-## Completed result and verdict
-
-All400passed,100distinct streams/cell; stable game/principal champions. Aggregate+15.6819%,95%CI[3.1625,29.5629]; red−3.0687%,blue+40.7398%,blue95%CI[18.7416,66.3351]. Blue mean gapkhors114+1266.72,95%CI[648.84,1881.67],58/100outscored. All prospective gates pass.
-
-Retain coordinated r2 sourcec02f8cb6; reviewed IR88860443. Both authorized champions active/competing. Original400held-out scope is unchanged by later coaching. Rollback67fdcd5d. All4requests completed:6f98f15a,a84671e2,5b38d744,44e19e16(fullIDs in evidence).

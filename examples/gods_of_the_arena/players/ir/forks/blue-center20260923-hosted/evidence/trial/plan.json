@@ -1,0 +1,99 @@
+{
+  "stage": "trial",
+  "games": 400,
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3",
+  "cycle": "interactive-blue-center-20260923",
+  "arms": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "version": "30a0e469-8c2f-450c-b3bc-4a687a6c74e3",
+      "source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "30a0e469-8c2f-450c-b3bc-4a687a6c74e3",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 100
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "version": "30a0e469-8c2f-450c-b3bc-4a687a6c74e3",
+      "source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "30a0e469-8c2f-450c-b3bc-4a687a6c74e3",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 100
+    },
+    {
+      "name": "blue-center",
+      "side": 0,
+      "version": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+      "source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+      "own_slots": [
+        0
+      ],
+      "roster": [
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      ],
+      "games": 100
+    },
+    {
+      "name": "blue-center",
+      "side": 1,
+      "version": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+      "source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+      "own_slots": [
+        5
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "a25248bc-0013-4267-a12c-c55af87da30f",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9"
+      ],
+      "games": 100
+    }
+  ],
+  "rule": "One preselected source;400fresh games,100/source/color. Zero invalid and all10source/VM/replay/XP/integer audits; aggregate mean gain>=10%, each color>=95% control, positive lower95% side-stratified whole-game bootstrap gain bound. Blue mean must improve with positive lower95%gain bound; mean blue own-minus-khors114 must be positive. No screening/control reuse. Game and principal champion versions must remain unchanged; background changes disclosed. Fixed first-seat mixed roster; no universal rank or late-draft claim.",
+  "budget": "Normal Sep23UTC1600; shared ledger,one400-game cycle,parallel3,batch100. No additional stage."
+}

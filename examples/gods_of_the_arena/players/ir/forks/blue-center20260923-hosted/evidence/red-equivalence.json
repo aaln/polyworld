@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "seed": 923020,
+      "full_commands_equal": true,
+      "terminal_state_equal": true,
+      "commands": {
+        "canonical_commands_sha1": "D0E2979347F134A63CE7169BDF0F6584A627190C",
+        "actions": 5516,
+        "ticks": 15409
+      }
+    },
+    {
+      "seed": 923021,
+      "full_commands_equal": true,
+      "terminal_state_equal": true,
+      "commands": {
+        "canonical_commands_sha1": "C7C219412134FD2FCA841E6411AF4663C653CBCF",
+        "actions": 4415,
+        "ticks": 11875
+      }
+    }
+  ],
+  "scope": "Two complete native seeds; all commands match. Candidate only changes blue ordinal0 ranged guard, all other rule bodies identical. Runtime counters may differ."
+}

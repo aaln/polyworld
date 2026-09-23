@@ -13,7 +13,7 @@ def main():
     assert not OUT.exists(),'Preserve existing capsule'
     OUT.mkdir(parents=True)
     evidence=OUT/'evidence';evidence.mkdir()
-    for name in ['diagnosis-class.json','opening-samples.png','local-summary.json','native-plan.json','native-result.json','red-equivalence.json','runtime-provenance.json','start.json','conversion-proof.json','source-discovery.json','practice-provenance.json','skill-difference.json','prospective-experiment.md','baseline-practice.json']:
+    for name in ['diagnosis-class.json','diagnosis-openings.json','opening-samples.png','local-summary.json','native-plan.json','native-result.json','red-equivalence.json','runtime-provenance.json','start.json','conversion-proof.json','source-discovery.json','practice-provenance.json','skill-difference.json','prospective-experiment.md','baseline-practice.json']:
         shutil.copy2(STUDY/name,evidence/name)
     shutil.copy2(ROOT/'games/gods_of_the_arena/experiments/2026-09-23-blue-center.md',evidence/'experiment.md')
     for name in ['plan.json','result.json','report.json','field-changes.json','effects-plan.json','effects-summary.json','score-breakdown.png']:
