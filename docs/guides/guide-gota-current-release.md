@@ -34,6 +34,30 @@ comparison. Do not reinterpret the earlier rejection as passing.
 September23UTC allowance is11,600games after explicit authorization for10,000more;
 3,120 reserved after the completed Richard-transfer studies; 8,480 remain. Normal1,600limit resumes after the dated override.
 
+## Completed analysis: khors v114 and low-score situations
+
+The [seven-layer opponent IR and report](../opponents/khors-v114/score-audit-20260923/README.md)
+cover 72 recent league games, with full replay hashes and XP/score reconciliation.
+Khors source was unavailable; this is a descriptive model, not an executable proxy.
+Other players failed in 63 games; all own and khors VMs were clean. Nine fully clean
+games are reported separately, alongside 200 reused clean historical controls.
+
+Ours scored zero in 14/75 appearances, including nine of 13 melee appearances;
+Crossbowman/Ranger had none in 27. Khors also had eight zeroes in 39, but its nonzero
+mean was 2,842.68 versus 2,068.67 for ours. Four authentic own-source reconstructions
+match 5,826 submitted commands, exposing both repeated deaths and healthy,
+unproductive advances. The counter IR prioritizes safer weak melee play, public
+progress recovery, farming opportunity cost, outbound portals and legal cast reach.
+These are proposed changes, not demonstrated improvements; preserve effective
+ranged behavior and all earlier failed experiments.
+
+The objective is `floor(max(0, XP - 200 * elapsed minutes))`, including draft.
+At seven minutes, 1,400 XP scores zero. An added minute needs more than 200 extra XP
+to raise the unclamped margin, and any existing deficit must be recovered first.
+Raw XP is unavailable to BASIC; proposed live recovery must use public proxies.
+No hosted games or policy changes were made for this analysis. Current champions
+and the game budget remain unchanged.
+
 ## Completed research: Richard v174 source transfer
 
 The [source-informed opponent IR](../opponents/richard-v174/source-audit-20260923/README.md)

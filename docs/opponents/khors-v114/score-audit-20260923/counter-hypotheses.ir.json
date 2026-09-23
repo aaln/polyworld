@@ -1,0 +1,101 @@
+{
+  "schema": "gota-counter-hypotheses-ir/1",
+  "parent_source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+  "status": "proposed_only_no_policy_changes",
+  "opponent_version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+  "goal": "Raise mean individual score while reducing zero/under500frequency and preserving effective ranged play.",
+  "hypotheses": [
+    {
+      "id": "C114_MELEE_FLOOR",
+      "priority": 1,
+      "situation": "Low-level melee hero, visible enemy pressure, weak local allied cover",
+      "belief": "Our melee9/13zeroes; late ordinal5eight/tenzeroes. Availability often forces these heroes.",
+      "skill": "Farm behind allied creeps; retreat before repeated lethal engagements; choose reachable low-risk XP opportunities.",
+      "strategy": {
+        "when": "Public class/range and visible local power show a disadvantaged engagement",
+        "skill": "SafeMeleeFarm",
+        "for": [
+          "survive",
+          "individual_xp"
+        ]
+      },
+      "guards": "Do not hardcode actor slot or opponent identity. Preserve killing blows when safely reachable.",
+      "validation": "Actual reach/XP-radius fixtures and responsive mixed rosters with late-drafted melee exposure; score+zero-rate+hero/creepXP, not deaths alone."
+    },
+    {
+      "id": "C114_PROGRESS_RELEASE",
+      "priority": 2,
+      "situation": "Alive/healthy outside keep, no selected target and no visible progress for a bounded period",
+      "belief": "Source-reconstructed low-score routes repeatedly advance to enemy base; healthy field droughts recur even with few/no deaths.",
+      "skill": "Reevaluate public lane/visible-wave destination and clear stale crossed-route commitment when its purpose is unproductive.",
+      "strategy": {
+        "when": "Public no-target/progress timer expires with safe alternatives",
+        "skill": "ReacquireProductiveLane",
+        "for": [
+          "individual_xp"
+        ]
+      },
+      "guards": "BASIC has no raw XP input. Use validated public proxies such as target absence, landed-hit history, level/gold changes and visible waves. Avoid claiming that gold/hit changes equal XP. Bound oscillation and preserve emergency defense.",
+      "validation": "Replay correspondence and public observation fixtures; exact hit/route changes; independent mean score and no-XP intervals, whole-game responsiveness."
+    },
+    {
+      "id": "C114_OBJECTIVE_OPPORTUNITY_COST",
+      "priority": 3,
+      "situation": "Choice between nearby hero/creep earnings and lengthy structure engagement",
+      "belief": "Khors basic structure damage19/game versus ours8466, with more hero/creepXP. Our objective-biased routes can win with zero points. Clean first-draft controls still favor ours, so global structure avoidance is not established.",
+      "skill": "Compare feasible hero/creep actions against objective return and travel time; preserve decisive500XPgod finishes.",
+      "strategy": {
+        "when": "Public reachable XP opportunities compete with a low-value structure route",
+        "skill": "ChooseProductiveOpportunity",
+        "for": [
+          "individual_xp"
+        ]
+      },
+      "guards": "Do not prolong a game when marginal XP<200/minute. Avoid copying opponent aggregates as fixed priorities. Prior Richard siege and reward-finisher failures remain rejected.",
+      "validation": "Score-centered mixed-roster A/B stratified by hero availability and color; no promotion from win rate or one rival gap alone."
+    },
+    {
+      "id": "C114_OUTBOUND_PORTALS",
+      "priority": 4,
+      "situation": "Recovered/shopped at keep with a ready scroll and a safe useful friendly destination",
+      "belief": "Khors128outbound completions/39 appearances versus ours130/75, but also57keep-to-keep completions and23interruptions.",
+      "skill": "Use a destination outside keep to rejoin reachable farming or combat sooner.",
+      "strategy": {
+        "when": "Public safe destination meaningfully shortens productive travel",
+        "skill": "ReturnToFieldByPortal",
+        "for": [
+          "individual_xp"
+        ]
+      },
+      "guards": "Keep existing channel lock, no redundant keep recall, and reserve policy unless independently disproved.",
+      "validation": "Accepted endpoint/HP/return-to-XP events and fresh point comparison; more portal starts alone are not success."
+    },
+    {
+      "id": "C114_CAST_AFFORDANCE",
+      "priority": 5,
+      "situation": "An ability is ready and target is selected, but target reach may exceed that ability",
+      "belief": "Ours has~579out-of-range rejections/game versus6.46khors; our R_combat lacks an explicit ability range guard. Rejected casts do not establish lost mana or opportunity.",
+      "skill": "Check current-engine ability geometry and select a reachable target when beneficial.",
+      "strategy": {
+        "when": "Public target/ability geometry passes a validated cast-affordance test",
+        "skill": "CastReachableTarget",
+        "for": [
+          "individual_xp"
+        ]
+      },
+      "guards": "Earlier independent spell-pressure confirmation failed; do not repeat it unchanged or equate fewer rejected calls with improved score.",
+      "validation": "Accepted damage/healing and alternative-action outcomes, then independent hosted score; all sources and failures preserved."
+    }
+  ],
+  "evaluation": "A future implementation needs public-input semantic binding, source/IR round trip, runtime checks, fresh baseline comparisons, both colors and naturally constrained drafts. Report whole-game-correlated uncertainty, personal mean, zero and under500rates, low-case XP, and gaps to khors/Richard/Jordan. No new games scheduled by this analysis.",
+  "score_objective": {
+    "formula": "floor(max(0, lifetime XP - 200 * elapsed minutes))",
+    "required_diagnostics": [
+      "time_cost_xp",
+      "unclamped_score_margin",
+      "xp_deficit_to_break_even",
+      "net_xp_per_minute"
+    ],
+    "guard": "Optimize final individual score. Longer games, survival, damage, portal count or XP alone are not advancement gates. Raw XP diagnostics must not leak into live BASIC inputs."
+  }
+}

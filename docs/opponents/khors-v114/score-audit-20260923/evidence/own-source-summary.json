@@ -1,0 +1,348 @@
+{
+  "plan": {
+    "selection": "Retrospective contrasting low-score cases from completed72-game survey; diagnostic, not heldout or representative prevalence. Cases chosen before private own-VM reconstruction.",
+    "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+    "source": "/Users/aaln/experiments/softmax/polyworld-gota-adaptive-score-20260922/examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-hosted/druid-lane/policy.bas",
+    "cases": [
+      {
+        "episode": "ereq_b2fc0a02-1cf0-4039-9f7c-706c6cf283c5",
+        "slot": 6,
+        "reason": "Lowest-XP zero-score appearance;9deaths, all VMs clean"
+      },
+      {
+        "episode": "ereq_780efe39-9013-4122-8876-ed376507ae53",
+        "slot": 6,
+        "reason": "Second zero-score Arcanist with only2deaths; all VMs clean"
+      },
+      {
+        "episode": "ereq_39c56471-ac42-4d99-80af-0dcd258b74b6",
+        "slot": 4,
+        "reason": "Zero-score Warlock with zero deaths and objective damage"
+      },
+      {
+        "episode": "ereq_5d0b4a67-b368-440f-9ec6-b5910907c894",
+        "slot": 7,
+        "reason": "Zero-score DeathKnight with longest healthy-field XP drought occupancy"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        6
+      ],
+      "ticks": 13792,
+      "commands_matched": 540,
+      "decisions": 13228,
+      "max_instructions": 11055,
+      "max_work": 16116,
+      "counts": {
+        "command_kind_5": 207,
+        "our_no_selected_target": 936,
+        "command_kind_6": 187,
+        "our_selected_kind_0": 109,
+        "our_walk": 45,
+        "command_kind_4": 1,
+        "command_kind_3": 6,
+        "command_kind_16": 3,
+        "our_attack_move_enemy_base": 18,
+        "our_selected_kind_2": 334,
+        "our_active": 1259,
+        "command_kind_2": 76,
+        "our_retreat": 157,
+        "our_home_threat": 95,
+        "command_kind_1": 59,
+        "our_stopped": 457,
+        "our_selected_kind_3": 802,
+        "our_in_base": 474,
+        "our_attack_move": 207,
+        "our_selected_kind_4": 14
+      },
+      "first_examples": {
+        "own_minute_7200": {
+          "tick": 7200,
+          "hero": 106,
+          "hp": 190,
+          "max_hp": 190,
+          "xp": 87,
+          "x": -2560953,
+          "z": 2326416,
+          "target": 103,
+          "target_kind": 2,
+          "retreat": 0,
+          "home_threat": 0,
+          "in_base": 1,
+          "stopped": 1,
+          "goal_x": 58,
+          "goal_y": 58,
+          "commands": [
+            {
+              "tick": 7200,
+              "hero_id": 106,
+              "kind": 6,
+              "slot": 1,
+              "first": 103,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones."
+    },
+    {
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        6
+      ],
+      "ticks": 9679,
+      "commands_matched": 940,
+      "decisions": 9115,
+      "max_instructions": 10795,
+      "max_work": 15550,
+      "counts": {
+        "command_kind_5": 180,
+        "our_no_selected_target": 867,
+        "command_kind_6": 361,
+        "our_selected_kind_0": 107,
+        "our_selected_kind_5": 34,
+        "our_walk": 73,
+        "command_kind_4": 2,
+        "command_kind_3": 8,
+        "command_kind_16": 4,
+        "our_attack_move_enemy_base": 93,
+        "our_selected_kind_2": 504,
+        "our_active": 1420,
+        "command_kind_2": 205,
+        "our_retreat": 232,
+        "command_kind_1": 179,
+        "our_stopped": 728,
+        "our_selected_kind_3": 537,
+        "our_selected_kind_1": 10,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 15,
+        "our_in_base": 218,
+        "our_attack_move": 180,
+        "our_selected_kind_4": 228
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 1460,
+          "hero": 106,
+          "hp": 190,
+          "max_hp": 190,
+          "creep": 1092,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 2,
+          "enemy_power": 0,
+          "friend_power": 11,
+          "commands": []
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones."
+    },
+    {
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        4
+      ],
+      "ticks": 10194,
+      "commands_matched": 1212,
+      "decisions": 9174,
+      "max_instructions": 11042,
+      "max_work": 16206,
+      "counts": {
+        "command_kind_5": 138,
+        "our_no_selected_target": 839,
+        "command_kind_6": 476,
+        "our_selected_kind_0": 107,
+        "our_selected_kind_5": 29,
+        "our_walk": 133,
+        "command_kind_4": 4,
+        "command_kind_3": 6,
+        "command_kind_16": 4,
+        "our_attack_move_enemy_base": 109,
+        "our_selected_kind_2": 447,
+        "our_active": 1499,
+        "command_kind_2": 310,
+        "our_retreat": 416,
+        "command_kind_1": 273,
+        "our_stopped": 972,
+        "our_selected_kind_3": 534,
+        "our_selected_kind_1": 3,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 6,
+        "our_in_base": 225,
+        "our_attack_move": 138,
+        "our_selected_kind_4": 379
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 2822,
+          "hero": 104,
+          "hp": 238,
+          "max_hp": 286,
+          "creep": 1184,
+          "creep_hp": 60,
+          "near_towers": 1,
+          "tanks": 12,
+          "enemy_power": 3,
+          "friend_power": 13,
+          "commands": [
+            {
+              "tick": 2822,
+              "hero_id": 104,
+              "kind": 2,
+              "slot": 0,
+              "first": 1184,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            },
+            {
+              "tick": 2822,
+              "hero_id": 104,
+              "kind": 6,
+              "slot": 2,
+              "first": 1184,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones."
+    },
+    {
+      "schema": "gota-source-reveal-runtime-audit/1",
+      "slots": [
+        7
+      ],
+      "ticks": 29821,
+      "commands_matched": 3134,
+      "decisions": 28801,
+      "max_instructions": 11131,
+      "max_work": 16509,
+      "counts": {
+        "command_kind_5": 548,
+        "our_no_selected_target": 2595,
+        "command_kind_6": 1595,
+        "our_selected_kind_0": 144,
+        "our_selected_kind_5": 50,
+        "our_walk": 285,
+        "command_kind_4": 16,
+        "command_kind_3": 33,
+        "command_kind_16": 9,
+        "our_attack_move_enemy_base": 426,
+        "our_selected_kind_2": 2140,
+        "our_active": 4466,
+        "command_kind_2": 492,
+        "our_retreat": 921,
+        "command_kind_15": 10,
+        "our_home_threat": 209,
+        "command_kind_1": 429,
+        "our_stopped": 2369,
+        "our_selected_kind_3": 1581,
+        "safe_tower_opportunity_while_nonlethal_creep_selected": 6,
+        "our_in_base": 803,
+        "our_attack_move": 548,
+        "our_selected_kind_4": 551
+      },
+      "first_examples": {
+        "first_safe_tower_opportunity": {
+          "tick": 2618,
+          "hero": 107,
+          "hp": 326,
+          "max_hp": 350,
+          "creep": 1110,
+          "creep_hp": 48,
+          "near_towers": 1,
+          "tanks": 8,
+          "enemy_power": 3,
+          "friend_power": 7,
+          "commands": [
+            {
+              "tick": 2618,
+              "hero_id": 107,
+              "kind": 2,
+              "slot": 0,
+              "first": 1110,
+              "second": 0,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "own_minute_17280": {
+          "tick": 17280,
+          "hero": 107,
+          "hp": 496,
+          "max_hp": 842,
+          "xp": 1972,
+          "x": 2797614,
+          "z": -1322049,
+          "target": 0,
+          "target_kind": 4,
+          "retreat": 0,
+          "home_threat": 0,
+          "in_base": 0,
+          "stopped": 0,
+          "goal_x": 105,
+          "goal_y": 10,
+          "commands": [
+            {
+              "tick": 17280,
+              "hero_id": 107,
+              "kind": 5,
+              "slot": 0,
+              "first": 105,
+              "second": 10,
+              "offset_raw": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "own_minute_27360": {
+          "tick": 27360,
+          "hero": 107,
+          "hp": 892,
+          "max_hp": 904,
+          "xp": 2891,
+          "x": -2279146,
+          "z": 2580964,
+          "target": 0,
+          "target_kind": 3,
+          "retreat": 0,
+          "home_threat": 0,
+          "in_base": 1,
+          "stopped": 0,
+          "goal_x": 105,
+          "goal_y": 10,
+          "commands": []
+        }
+      },
+      "all_state_hashes_equal": true,
+      "all_actions_consumed": true,
+      "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones."
+    }
+  ],
+  "selected_kind_warning": "bestKind persists when bestId=0; kind counts are diagnostic VM values, not a valid target histogram. Use no-selected-target and submitted commands separately."
+}

@@ -1,0 +1,257 @@
+{
+  "schema": "gota-opponent-descriptive-ir/2",
+  "id": "khors_v114_score_audit_20260923",
+  "situation": {
+    "identity": {
+      "owner": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+      "label": "khors:v114",
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "source_sha256_from_host_specs": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160",
+      "source_available": false
+    },
+    "game_version": "2026.9.22.3",
+    "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+    "authority": "Retrospective full replay truth and accepted typed events; no khors source or private memory. Separate authentic own-policy reconstruction on4contrasting cases.",
+    "selection": "All72 episodes of the three latest completed division rounds returned at study start. No outcome selection or extension. All invalid matches retained separately. Every exact subject appearance included, whether allies or opponents.",
+    "episodes": "evidence/plan.json",
+    "rounds": [
+      {
+        "id": "round_d7f2c3cb-8a74-4d0f-9bf3-b9c1d9729449",
+        "number": 685
+      },
+      {
+        "id": "round_1e22c987-ccd2-4e7b-ba69-9da55e051491",
+        "number": 684
+      },
+      {
+        "id": "round_6ad74839-2152-4709-9c55-ceffda3d59e3",
+        "number": 683
+      }
+    ],
+    "appearances": {
+      "khors": 39,
+      "aaron": 38,
+      "coach": 37
+    },
+    "features": {
+      "draft_available": "Actual pool immediately before observed accepted pick; observed from successive draft transitions.",
+      "combat_economy": "Typed hero/creep/building/god XP, damage, purchases and actions reconciled with final score.",
+      "low_score": "zero and0<score<500, frozen before new outcomes.",
+      "diagnostic_xp_drought": "30world seconds without XP; replay-only, includes preceding dead time. Raw XP is not exposed to BASIC.",
+      "healthy_field": "alive, outside own keep,HP>=60%; post-tick truth, not an identified opponent guard.",
+      "replenishment": "Same-actor portal starts and endings, with keep membership and HP at the event tick."
+    },
+    "unknown": [
+      "Exact target ordering and range gates",
+      "Memory, route and retreat thresholds",
+      "Ability timing and automatic/manual responsibility",
+      "Buyback decision policy",
+      "Opponent identity recognition"
+    ],
+    "score_accounting": {
+      "formula": "floor(max(0, lifetime XP - 200 * elapsed minutes))",
+      "elapsed_time": "All world ticks, including draft",
+      "seven_minute_example": {
+        "xp": 1400,
+        "elapsed_minutes": 7,
+        "score": 0
+      },
+      "interpretation": "An added minute needs more than 200 additional XP to increase the unclamped margin. Existing deficits must be recovered before positive points appear. This is engine accounting, not a recovered khors objective.",
+      "evidence": "evidence/mechanics.json"
+    }
+  },
+  "belief": {
+    "claims": [
+      {
+        "id": "K114_IDENTITY",
+        "status": "verified_hosted_identity",
+        "claim": "Exact khors:v114 UUID and content hash verified for all39 subject appearances on the current engine. Executable source unavailable.",
+        "evidence": [
+          "evidence/plan.json",
+          "evidence/verified.json"
+        ]
+      },
+      {
+        "id": "K114_DRAFT",
+        "status": "observed_conditional_choices",
+        "claim": "Selected Crossbowman12/12 times available; Ranger6/6 when available and Crossbowman unavailable. Lich/Druid alternatives vary when both available, so a universal fixed fallback ordering is not identified.",
+        "evidence": [
+          "evidence/actor-rows.json",
+          "evidence/analysis.json"
+        ]
+      },
+      {
+        "id": "K114_FARM",
+        "status": "observed_effects_not_intent",
+        "claim": "Mean2176.92hero XP and2325.10creep XP, versus only5.13building XP; mean basic structure damage19. Actual output strongly concentrates on heroes/creeps in this sample, but exact selection guards and intentional game extension are unknown.",
+        "evidence": [
+          "evidence/analysis.json"
+        ]
+      },
+      {
+        "id": "K114_RESOURCE",
+        "status": "observed_accepted_actions",
+        "claim": "First purchase dagger39/39; accepted core equipment follows11\u219216\u219218\u219219 in every observed progression, completed35/39. Potions/scrolls interleave. Our core order is already the same. Item19 is RuneCrossbow, not ArcaneSpellbook.",
+        "evidence": [
+          "evidence/analysis.json",
+          "evidence/mechanics.json"
+        ]
+      },
+      {
+        "id": "K114_PORTAL",
+        "status": "observed_typed_transitions",
+        "claim": "252portal starts:128keep-to-field completions,43field-to-keep,57keep-to-keep,23interruptions,1unfinished. Outbound mobility is a useful hypothesis; copying the whole portal behavior would also copy inefficient-looking keep-to-keep channels. Destination selection/internal guard unknown.",
+        "evidence": [
+          "evidence/portal-transitions.json"
+        ]
+      },
+      {
+        "id": "K114_LOW_TAIL",
+        "status": "observed_no_general_floor_advantage",
+        "claim": "Khors8/39zero scores and11/39under500; our combined14/75zero and21/75under500. Khors has a higher nonzero mean2842.68 versus2068.67. Low-tail repairs matter, but fewer zeroes do not explain this observed lead.",
+        "evidence": [
+          "evidence/analysis.json",
+          "evidence/actor-rows.json"
+        ]
+      },
+      {
+        "id": "K114_FAILURE_CONTEXT",
+        "status": "confounded_live_field",
+        "claim": "63/72games contain another failed VM. All khors/Aaron/Coach VMs clean. Khors earns12.54%of hero XP from slots whose VMs eventually fail; exact failure timing and intent are unidentified. Preserve all league outcomes and report9fullyclean games separately.",
+        "evidence": [
+          "evidence/analysis.json"
+        ]
+      },
+      {
+        "id": "OWN_EMPTY_ADVANCE",
+        "status": "own_source_replay_verified",
+        "claim": "Four contrasting own low-score cases reproduce5826submitted commands and every world hash. When no rule stops advance, crossed=1 keeps enemy-base goal; no public progress timeout exists. The zero-score Warlock emits109enemy-base attack-moves; the long-drought DeathKnight426. This identifies executed routing, not the causal gain of changing it.",
+        "evidence": [
+          "evidence/own-source-summary.json",
+          "../../../../examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-hosted/druid-lane/policy.bas"
+        ]
+      }
+    ],
+    "forecast_validated": false,
+    "counter_validated": false,
+    "uncertainty": "39opponent appearances across72shared games; nine games have all clean VMs. No randomization of draft/class, no heldout online model, no causal attribution to a single skill. Scores are shared-game correlated."
+  },
+  "goal": {
+    "individual_xp": {
+      "status": "analyst_hypothesis",
+      "description": "Acquire XP from heroes and creeps while sustaining repeated field participation. No evidence of an explicit internal XP-minus-time objective."
+    },
+    "maintain_resources": {
+      "status": "analyst_hypothesis",
+      "description": "Acquire core gear and refresh through potions/portals."
+    },
+    "prolong_game": {
+      "status": "unidentified",
+      "description": "Near-zero structure damage is consistent with unit-focused farming, but does not prove deliberate game prolongation."
+    }
+  },
+  "skill": {
+    "DraftAvailableCarry": {
+      "status": "observed",
+      "initiation": "Draft turn with carry available",
+      "operator": "select Crossbowman, otherwise Ranger in the observed opportunities",
+      "termination": "Accepted draft choice",
+      "evidence": "K114_DRAFT"
+    },
+    "FarmAndFight": {
+      "status": "effect_profile_only",
+      "initiation": "Unknown",
+      "operator": "Deal basic and spell damage to heroes/creeps and receive XP",
+      "termination": "Unknown",
+      "evidence": "K114_FARM"
+    },
+    "PurchaseCoreAndRestock": {
+      "status": "observed_accepted_sequence",
+      "initiation": "Shopping accepted at own keep; exact resource thresholds unknown",
+      "operator": "Dagger\u2192armor\u2192axe\u2192RuneCrossbow, with potions and scrolls interleaved",
+      "termination": "Unknown",
+      "evidence": "K114_RESOURCE"
+    },
+    "PortalBetweenKeepAndField": {
+      "status": "observed_typed_events",
+      "initiation": "Exact guard unknown",
+      "operator": "Channel portal, then complete or interrupt",
+      "termination": "Typed completion/interruption or game end",
+      "evidence": "K114_PORTAL"
+    }
+  },
+  "strategy": [
+    {
+      "id": "K114_CARRY_WHEN_AVAILABLE",
+      "when": "Crossbowman is available at own draft turn",
+      "skill": "DraftAvailableCarry",
+      "for": [
+        "individual_xp"
+      ],
+      "status": "observed12/12; no heldout forecast",
+      "priority_identified": false
+    },
+    {
+      "id": "K114_FARMING_EMPHASIS",
+      "when": "Living match participation",
+      "skill": "FarmAndFight",
+      "for": [
+        "individual_xp"
+      ],
+      "status": "aggregate effect profile; action selection guard unknown",
+      "priority_identified": false
+    },
+    {
+      "id": "K114_CORE_RESTOCK",
+      "when": "Accepted shopping opportunity",
+      "skill": "PurchaseCoreAndRestock",
+      "for": [
+        "maintain_resources"
+      ],
+      "status": "accepted item order observed; gold threshold/order among consumables unknown",
+      "priority_identified": false
+    },
+    {
+      "id": "K114_OUTBOUND_MOBILITY",
+      "when": "At keep with a portal start observed",
+      "skill": "PortalBetweenKeepAndField",
+      "for": [
+        "individual_xp",
+        "maintain_resources"
+      ],
+      "status": "transition observed; cannot infer destination value or exact trigger",
+      "priority_identified": false
+    }
+  ],
+  "execution": {
+    "binding": "retrospective-descriptive/2",
+    "source_available": false,
+    "proxy_usable": false,
+    "forecast_validated": false,
+    "compile_to_basic": false,
+    "known_ordering": "Accepted draft and purchase subsequences only. No controller execution graph recovered.",
+    "boundary": "No private replay state, policy UUID, inferred raw XP or future commands may enter a live policy. Use exact hosted khors for responsive comparisons."
+  },
+  "update": {
+    "revision": 1,
+    "guide": "guide-snapshot.md",
+    "guide_sha256": "d236f3139259814951b8830cef79362cabaeec5adf80081d4650d1cfc4b160a4",
+    "preserved_prior_models": "evidence/preserved-prior-models.json",
+    "new_evidence": [
+      "evidence/analysis.json",
+      "evidence/clean-control-comparison.json",
+      "evidence/own-source-summary.json"
+    ],
+    "rejected_overgeneralizations": [
+      "Khors always drafts Ranger/Crossbowman",
+      "Fewer deaths or fewer zeroes explain its lead",
+      "All portals are beneficial",
+      "Item19 is a spellbook on the current engine",
+      "Longer games always improve points",
+      "Our low scores are simply a home-defense lock"
+    ],
+    "next_experiments": "counter-hypotheses.ir.json",
+    "hosted_games_created": 0,
+    "league_changed": false
+  }
+}

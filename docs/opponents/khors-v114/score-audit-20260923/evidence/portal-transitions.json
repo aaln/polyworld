@@ -1,0 +1,34 @@
+{
+  "scope": "Paired typed start/end events by same actor; keep membership sampled after event tick. Keep-to-keep does not by itself prove identical destination.",
+  "policies": {
+    "khors": {
+      "starts": 252,
+      "counts": {
+        "keep_to_keep": 57,
+        "keep_to_field": 128,
+        "field_to_keep": 43,
+        "interrupted": 23,
+        "unfinished_at_game_end": 1
+      }
+    },
+    "aaron": {
+      "starts": 146,
+      "counts": {
+        "field_to_keep": 83,
+        "keep_to_field": 53,
+        "interrupted": 3,
+        "keep_to_keep": 6,
+        "unfinished_at_game_end": 1
+      }
+    },
+    "coach": {
+      "starts": 159,
+      "counts": {
+        "field_to_keep": 74,
+        "keep_to_field": 77,
+        "keep_to_keep": 4,
+        "interrupted": 4
+      }
+    }
+  }
+}
