@@ -1,0 +1,63 @@
+{
+  "cases": [
+    [
+      "baseline",
+      "red-druid",
+      0,
+      3,
+      923082
+    ],
+    [
+      "baseline",
+      "red-druid",
+      0,
+      3,
+      923083
+    ],
+    [
+      "baseline",
+      "blue-druid",
+      1,
+      3,
+      923082
+    ],
+    [
+      "baseline",
+      "blue-druid",
+      1,
+      3,
+      923083
+    ],
+    [
+      "blue-druid-siege",
+      "red-druid",
+      0,
+      3,
+      923082
+    ],
+    [
+      "blue-druid-siege",
+      "red-druid",
+      0,
+      3,
+      923083
+    ],
+    [
+      "blue-druid-siege",
+      "blue-druid",
+      1,
+      3,
+      923082
+    ],
+    [
+      "blue-druid-siege",
+      "blue-druid",
+      1,
+      3,
+      923083
+    ]
+  ],
+  "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+  "reference_sha256": "c891a253a0e39146a75f685bb33f302399ce15b7d14d4bff3951a80a0bc38418",
+  "scope": "Extra local actual-draft Druid coverage: teammate2 uses Druid-deferred native reference; team0 remains deployed baseline. Richard174 remains opposing. Not league performance."
+}

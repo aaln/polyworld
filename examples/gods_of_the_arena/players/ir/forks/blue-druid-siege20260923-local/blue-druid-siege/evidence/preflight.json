@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "version": "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+      "episode": "ereq_b825c4d6-44a9-478d-baa0-dcd3f75cf7ca",
+      "slot": 0,
+      "passed": true,
+      "source_sha256": "d4b8c9cea8620eeee5938d9b84496615425a404f635816baaf10b2271a9cb614",
+      "evidence_directory": "preflight/145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "other_failed": [
+        3
+      ]
+    },
+    {
+      "version": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+      "episode": "ereq_fc72d7b6-fb83-4f6e-b85c-42d0a7791f46",
+      "slot": 9,
+      "passed": true,
+      "source_sha256": "eeabcd4c5f5ff1f3719525fe17af1ca28cb027c4cf12a575c1bd99d9eef0773f",
+      "evidence_directory": "preflight/088c0fed-b536-4777-9f7a-14abee21e5b8",
+      "other_failed": [
+        6,
+        8
+      ]
+    },
+    {
+      "version": "e7d1ba41-3be1-4785-815d-b3c9ad8f46b9",
+      "episode": "ereq_b825c4d6-44a9-478d-baa0-dcd3f75cf7ca",
+      "slot": 2,
+      "passed": true,
+      "source_sha256": "2048a7943c2285ff2ee1a975c9551651c317bb035194d28e6de0804b4e21e88c",
+      "evidence_directory": "preflight/145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "other_failed": [
+        3
+      ]
+    },
+    {
+      "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "episode": "ereq_b825c4d6-44a9-478d-baa0-dcd3f75cf7ca",
+      "slot": 6,
+      "passed": true,
+      "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160",
+      "evidence_directory": "preflight/145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "other_failed": [
+        3
+      ]
+    },
+    {
+      "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+      "episode": "ereq_b825c4d6-44a9-478d-baa0-dcd3f75cf7ca",
+      "slot": 1,
+      "passed": true,
+      "source_sha256": "130151d9843ccf9b02a3dcb1fc841812eb2725ee8c450b1b43284f9ace819368",
+      "evidence_directory": "preflight/145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "other_failed": [
+        3
+      ]
+    },
+    {
+      "version": "2777766f-4931-4fd9-83f2-44a3f509ede1",
+      "episode": "ereq_b825c4d6-44a9-478d-baa0-dcd3f75cf7ca",
+      "slot": 9,
+      "passed": true,
+      "source_sha256": "f9fa89ffc2ee0d85e1e5e97ac662f022a2321c5fc70d3b20a5a5abbd858609b1",
+      "evidence_directory": "preflight/145c01e0-0cbf-4e1e-8120-11b437175b91",
+      "other_failed": [
+        3
+      ]
+    },
+    {
+      "version": "088c0fed-b536-4777-9f7a-14abee21e5b8",
+      "episode": "ereq_fc72d7b6-fb83-4f6e-b85c-42d0a7791f46",
+      "slot": 3,
+      "passed": true,
+      "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+      "evidence_directory": "preflight/088c0fed-b536-4777-9f7a-14abee21e5b8",
+      "other_failed": [
+        6,
+        8
+      ]
+    },
+    {
+      "version": "a25248bc-0013-4267-a12c-c55af87da30f",
+      "episode": "ereq_424759dd-4c59-4678-9488-007d909c301c",
+      "job_index": 0,
+      "source_sha256": "e805b8e63da235d044c4516f69f7a9796d0789e8d21b5b2617aed8393f0f042e",
+      "rule": "Lowest job index in first control request; no outcome selection.",
+      "passed": true,
+      "evidence_directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-finish-refresh-20260922/refresh",
+      "scope": "All160 current-engine full audits verified exact source and VM exits."
+    },
+    {
+      "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+      "source_sha256": "c6429ea4ee202edc456de71c5ee7ad896ec423b11bbf2717c0dd4dd76c58b766",
+      "episode": "ereq_0406ebbd-93d7-4f6e-be02-4ad877c577c6",
+      "slot": 2,
+      "class": 8,
+      "passed": true,
+      "other_failed": [
+        4,
+        8
+      ],
+      "all_replay_hashes_equal": true,
+      "evidence_directory": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-combat-elixir-20260923/richard174-update/artifacts/ereq_0406ebbd-93d7-4f6e-be02-4ad877c577c6",
+      "competitive_inference": false
+    },
+    {
+      "version": "30a0e469-8c2f-450c-b3bc-4a687a6c74e3",
+      "source_sha256": "67fdcd5d0e8692138655c5f5ca93c98ec723690665eb1ca0fe412cb630a99024",
+      "evidence": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-core-buyback-20260923/trial/report.json",
+      "scope": "All200 candidate games passed exact-source/all-VM/fullreplay/XP/integer audits; deployed version identical. Prior row metadata retained below for provenance only.",
+      "inherited_row": {
+        "version": "b65ccf7b-d7a1-4681-b57f-a55f5ace43c7",
+        "episode": "ereq_b825c4d6-44a9-478d-baa0-dcd3f75cf7ca",
+        "slot": 7,
+        "passed": true,
+        "source_sha256": "db71abb37180a06a432ac71c3c5d6802be2ba2c1b2d782b151336beacd8b1520",
+        "evidence_directory": "preflight/145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "other_failed": [
+          3
+        ]
+      },
+      "passed": true
+    },
+    {
+      "version": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+      "source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+      "evidence": "../gota-blue-khors-20260923/trial/report.json;400clean games and verified champion upload, exact same source."
+    }
+  ],
+  "scope": "Current-engine source admission reused only; all400 competitive controls are fresh and every source/VM/replay audited again.",
+  "revision": "Before any candidate hosted request or result, replace Games Bond (episode listing HTTP500) with currently active Julia, whose own VM is healthy in the prespecified calibration episode. Freeze all nine background versions equally in both arms. Preserve the initial roster.",
+  "inherited_from": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-druid-lane-20260923/preflight.json"
+}

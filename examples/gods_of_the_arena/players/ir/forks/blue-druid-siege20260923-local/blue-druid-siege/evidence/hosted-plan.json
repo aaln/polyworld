@@ -1,0 +1,61 @@
+{
+  "stage": "trial",
+  "games": 400,
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3",
+  "cycle": "interactive-blue-druid-siege-20260923",
+  "arms": [
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "side": 1,
+      "ordinal": 3,
+      "version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "own_slots": [
+        8
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "a25248bc-0013-4267-a12c-c55af87da30f"
+      ],
+      "games": 200
+    },
+    {
+      "name": "blue-druid-siege",
+      "cell": "blue-late",
+      "side": 1,
+      "ordinal": 3,
+      "version": "90de60f5-213b-4113-b9ca-0efc28d0591c",
+      "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+      "own_slots": [
+        8
+      ],
+      "roster": [
+        "145c01e0-0cbf-4e1e-8120-11b437175b91",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "5b854825-446a-4864-8dfc-bb3404d4fe81",
+        "2777766f-4931-4fd9-83f2-44a3f509ede1",
+        "088c0fed-b536-4777-9f7a-14abee21e5b8",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "6b72f83b-6623-458c-add3-85ec0ef6e38b",
+        "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+        "90de60f5-213b-4113-b9ca-0efc28d0591c",
+        "a25248bc-0013-4267-a12c-c55af87da30f"
+      ],
+      "games": 200
+    }
+  ],
+  "rule": "400fresh games,200/source, natural blue later-draft ordinal3. Zero10source/VM/fullreplay/XP/integer failures;>=10percent mean score gain and positive lower95percent independent whole-game bootstrap gain;>=40Druids/source without outcome/class filtering; mean score gap against khors114 and Richard174 must not worsen versus fresh control. Complete native command/world equivalence mandatory for red and other heroes. Stable game/principal champions. One new scoped source; no broad-study hosted control reuse, no extension or retuning.",
+  "budget": "2720/11600 reserved before;400new in2x200, separate cycle,maximum3active. User authorized10000additional games September23UTC.",
+  "source_evidence": "docs/opponents/richard-v174/source-audit-20260923",
+  "source_freeze": "Blue-Druid-only siege r2, generated from current Druid IR; prior broad transfer rejected, favorable slice hypothesis only. All400fresh; red and other heroes preserve commands."
+}

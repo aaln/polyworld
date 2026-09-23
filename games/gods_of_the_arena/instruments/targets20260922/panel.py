@@ -21,6 +21,16 @@ def setup():
         p=STUDY/'bin'/name
         if not p.exists():p.symlink_to(PREVIOUS/'bin'/name)
 
+def released_before_creation(entry):
+    """Recognize a preserved, proven request-validation failure with zero spend."""
+    if entry['episodes'] != 0 or not entry.get('response_evidence'):
+        return False
+    response = h.read(Path(entry['response_evidence']))
+    assert response['status'] == 422 and response['body']['type'] == 'validation_error'
+    assert entry['original_reservation']['episodes'] > 0
+    assert not (Path(entry['output']) / 'created.json').exists()
+    return True
+
 def reserve(c,body,out):
     """Cache only complete terminal requests; unknown states never permit spend."""
     with h.research.lock(h.CAMPAIGN/'xp-create.lock'):
@@ -32,6 +42,8 @@ def reserve(c,body,out):
         cache=h.read(cache_path) if cache_path.exists() else {}
         check=[]
         for entry in journal.values():
+            if released_before_creation(entry):
+                continue
             path=Path(entry['output'])/'created.json'
             assert path.exists(), 'Unreconciled reservation: '+str(path)
             ident=h.read(path)['id']
@@ -48,7 +60,8 @@ def reserve(c,body,out):
                 else:active+=1
         h.write(cache_path,cache)
         assert active<cfg['max_parallel_xp'] or (out/'created.json').exists()
-        assert 40<=body['num_episodes']<=200
+        # Current API rejects >100 before creation (captured September 23).
+        assert 40<=body['num_episodes']<=100
         assert body['target']=={'coworld_id':h.GAME,'variant_id':'competition'}
         expected={k:v for k,v in h.read(STUDY/'canonical-game.json')['manifest']['variants'][0]['game_config'].items() if k not in ('seed','players','tokens')}
         assert body['game_config_overrides']==expected

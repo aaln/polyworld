@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "comparisons": [
+    {
+      "context": "red-lead",
+      "seed": 923080,
+      "class": 6,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "85FA08953C3F0374AFC21B8F7DB0AEE347029FFB",
+        "actions": 22685,
+        "ticks": 19176
+      }
+    },
+    {
+      "context": "red-lead",
+      "seed": 923081,
+      "class": 6,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "E727452959A88AFEFAEF3798A398A690F5465025",
+        "actions": 17691,
+        "ticks": 13579
+      }
+    },
+    {
+      "context": "blue-lead",
+      "seed": 923080,
+      "class": 6,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "4355C49919EFB7EEB6C549DD39183491D0C45B3E",
+        "actions": 19242,
+        "ticks": 17191
+      }
+    },
+    {
+      "context": "blue-lead",
+      "seed": 923081,
+      "class": 6,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "C7A044812CE11126A680059A71DBA9A864AD4D04",
+        "actions": 23196,
+        "ticks": 18197
+      }
+    },
+    {
+      "context": "red-late",
+      "seed": 923080,
+      "class": 5,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "CCCB5645CA06B30F54077D3A5CA55AFF1C8598F6",
+        "actions": 15822,
+        "ticks": 11700
+      }
+    },
+    {
+      "context": "red-late",
+      "seed": 923081,
+      "class": 5,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "27D7F5ED69604800F88BCDECC1A78EA0581DEBC9",
+        "actions": 13236,
+        "ticks": 12078
+      }
+    },
+    {
+      "context": "blue-late",
+      "seed": 923080,
+      "class": 5,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "29BBA68E0319E8B9C0C6BE4793FDFE66E3A9A34B",
+        "actions": 13140,
+        "ticks": 11091
+      }
+    },
+    {
+      "context": "blue-late",
+      "seed": 923081,
+      "class": 5,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "6E3C098490567F8B483A98B4AFF9F833E1853C82",
+        "actions": 10990,
+        "ticks": 8664
+      }
+    },
+    {
+      "context": "red-druid",
+      "seed": 923082,
+      "class": 3,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "4885BBD942C78EA63A0AEA7BE353337220FAC069",
+        "actions": 19775,
+        "ticks": 17444
+      }
+    },
+    {
+      "context": "red-druid",
+      "seed": 923083,
+      "class": 3,
+      "all_commands_equal": true,
+      "terminal_world_equal": true,
+      "hashes": {
+        "canonical_commands_sha1": "D9DFE8E0A75E0FE8D66266B8AF894B849344BA56",
+        "actions": 18572,
+        "ticks": 16252
+      }
+    }
+  ],
+  "active_blue_druid_games": 2,
+  "scope": "Exact full command tapes and terminal state in ten unaffected deterministic match pairs; blue-Druid behavior intentionally differs. Local runtime/equivalence, not competitive evidence."
+}
