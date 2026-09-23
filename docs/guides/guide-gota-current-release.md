@@ -32,9 +32,9 @@ bluelead−12.15%. The later Druid-only source used its own frozen400fresh-game
 comparison. Do not reinterpret the earlier rejection as passing.
 
 September23UTC allowance is11,600games after explicit authorization for10,000more;
-2,320reserved after these studies. Normal1,600limit resumes after the dated override.
+3,120 reserved after the completed Richard-transfer studies; 8,480 remain. Normal1,600limit resumes after the dated override.
 
-## Active research: Richard v174 source transfer
+## Completed research: Richard v174 source transfer
 
 The [source-informed opponent IR](../opponents/richard-v174/source-audit-20260923/README.md)
 reconstructs82,818commands and every replay hash across four Warlock games.
@@ -43,8 +43,12 @@ executable semantic surrogate. The [coordinated guarded siege experiment](../../
 tests covered tower pressure together with retaliation against a reachable
 attacker. Source **f7873bb2** passed662local checks and16native matches but failed its400-game
 hosted rule:+7.58%aggregate,95%interval[−8.65,+27.05],redlate−53.15%.
-A new blue-Druid-only source is undergoing separate validation with fresh controls.
-The qualified Druid reference above remains deployed until new gates pass.
+The [blue-Druid-only source](../../examples/gods_of_the_arena/players/ir/forks/blue-druid-siege20260923-hosted/README.md)
+completed its own400fresh games: −0.08% own score,95% interval[−17.43,+21.10].
+It outscored Richard119/200 versus86/200 baseline, but worsened the mean khors gap
+by718.49points. Both studies are unqualified; the scoped fork is saved for
+Richard-focused research. The qualified Druid reference remains deployed to both
+players. All800games passed audits, and no new jobs or league writes are pending.
 
 ## Prior deployed reference: blue central route
 

@@ -1,0 +1,286 @@
+{
+  "complete": true,
+  "stage": "trial",
+  "games": 400,
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3",
+  "selected": null,
+  "candidates": [
+    {
+      "name": "blue-druid-siege",
+      "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+      "score_gate_passed": false,
+      "baseline_score": 722.445,
+      "candidate_score": 721.89,
+      "aggregate_gain_percent": -0.07682245707286706,
+      "gain_ci95_percent": [
+        -17.426862383440934,
+        21.1011960589901
+      ],
+      "per_context_gain_percent": [
+        -0.07682245707286706
+      ],
+      "late_score_gain_percent": -0.07682245707286706,
+      "druid_exposure": {
+        "baseline": 176,
+        "blue-druid-siege": 168
+      },
+      "unchanged_context_equivalence": true,
+      "relative_gaps": {
+        "khors:v114": {
+          "baseline": -1216.615,
+          "candidate": -1935.105
+        },
+        "Richard:v174": {
+          "baseline": -256.46,
+          "candidate": 196.04
+        }
+      },
+      "relative_preservation": false,
+      "absolute_score_gate_passed": false
+    }
+  ],
+  "cells": [
+    {
+      "name": "baseline",
+      "cell": "blue-late",
+      "ordinal": 3,
+      "side": 1,
+      "games": 200,
+      "invalid": 0,
+      "distinct_streams": 199,
+      "duplicate_groups": [
+        [
+          "ereq_fdb2b7d2-92fc-4d61-aaa9-d074b0e787d9",
+          "ereq_215e9a70-1989-484d-baa3-d3011867c6af"
+        ]
+      ],
+      "means": {
+        "score": 722.445,
+        "xp": 3215.855,
+        "hero_xp": 528.75,
+        "creep_xp": 2039.605,
+        "building_xp": 200,
+        "god_xp": 447.5,
+        "kills": 3.525,
+        "deaths": 5.28,
+        "level": 8.775,
+        "creep_last_hits": 110.23,
+        "minutes": 13.30979861111111,
+        "spells": 73.425,
+        "out_of_range": 208.62
+      },
+      "score_ci95": [
+        629.65,
+        818.78
+      ],
+      "by_class": {
+        "3": {
+          "n": 176,
+          "score": 663.4204545454545,
+          "xp": 3022.4602272727275,
+          "hero_xp": 456.8181818181818,
+          "creep_xp": 1882.1193181818182,
+          "building_xp": 211.9318181818182,
+          "god_xp": 471.59090909090907,
+          "kills": 3.0454545454545454,
+          "deaths": 4.846590909090909,
+          "level": 8.5,
+          "creep_last_hits": 97.32386363636364,
+          "minutes": 12.738675820707071,
+          "spells": 68.68181818181819,
+          "out_of_range": 117.9375
+        },
+        "4": {
+          "n": 24,
+          "score": 1155.2916666666667,
+          "xp": 4634.083333333333,
+          "hero_xp": 1056.25,
+          "creep_xp": 3194.5,
+          "building_xp": 112.5,
+          "god_xp": 270.8333333333333,
+          "kills": 7.041666666666667,
+          "deaths": 8.458333333333334,
+          "level": 10.791666666666666,
+          "creep_last_hits": 204.875,
+          "minutes": 17.498032407407408,
+          "spells": 108.20833333333333,
+          "out_of_range": 873.625
+        }
+      },
+      "pooled_xp_per_minute": 241.61560170530169,
+      "team_wins": 179,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 0,
+          "score": 1939.06,
+          "own_minus_rival": -1216.615,
+          "difference_ci95": [
+            -1470.755,
+            -963.31
+          ],
+          "individual_outscores": 66,
+          "ties": 0
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 2,
+          "score": 978.905,
+          "own_minus_rival": -256.46,
+          "difference_ci95": [
+            -433.055,
+            -85.885
+          ],
+          "individual_outscores": 86,
+          "ties": 15
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 1,
+          "score": 452.845,
+          "own_minus_rival": 269.6,
+          "difference_ci95": [
+            137.205,
+            399.395
+          ],
+          "individual_outscores": 115,
+          "ties": 14
+        }
+      ]
+    },
+    {
+      "name": "blue-druid-siege",
+      "cell": "blue-late",
+      "ordinal": 3,
+      "side": 1,
+      "games": 200,
+      "invalid": 0,
+      "distinct_streams": 196,
+      "duplicate_groups": [
+        [
+          "ereq_6fc53a69-d095-466a-b6ed-bc9e68201f7b",
+          "ereq_e69a7b87-ff37-4000-8453-694b2a424cb1"
+        ],
+        [
+          "ereq_d1c87af7-e6af-4124-bf81-91eb0d07f51c",
+          "ereq_e458c147-f24b-4fda-9a93-78e01c456fcd"
+        ],
+        [
+          "ereq_ffe3d7dc-3f74-488f-9fe4-e268c4f9eff9",
+          "ereq_07874372-0ab5-4347-951f-0927d797997d"
+        ],
+        [
+          "ereq_43452c6e-a1b1-4433-91d4-e625e76a23d3",
+          "ereq_880c2fba-d51a-45b8-8e06-9e634f0396ac"
+        ]
+      ],
+      "means": {
+        "score": 721.89,
+        "xp": 3196.13,
+        "hero_xp": 490.5,
+        "creep_xp": 2072.13,
+        "building_xp": 181,
+        "god_xp": 452.5,
+        "kills": 3.27,
+        "deaths": 4.84,
+        "level": 8.855,
+        "creep_last_hits": 110.46,
+        "minutes": 12.890701388888889,
+        "spells": 74.62,
+        "out_of_range": 218.68
+      },
+      "score_ci95": [
+        623.185,
+        824.555
+      ],
+      "by_class": {
+        "3": {
+          "n": 168,
+          "score": 626.6607142857143,
+          "xp": 2936.0119047619046,
+          "hero_xp": 385.7142857142857,
+          "creep_xp": 1871.1309523809523,
+          "building_xp": 200,
+          "god_xp": 479.1666666666667,
+          "kills": 2.5714285714285716,
+          "deaths": 4.226190476190476,
+          "level": 8.511904761904763,
+          "creep_last_hits": 93.66071428571429,
+          "minutes": 12.12027943121693,
+          "spells": 68.75,
+          "out_of_range": 97.35714285714286
+        },
+        "4": {
+          "n": 32,
+          "score": 1221.84375,
+          "xp": 4561.75,
+          "hero_xp": 1040.625,
+          "creep_xp": 3127.375,
+          "building_xp": 81.25,
+          "god_xp": 312.5,
+          "kills": 6.9375,
+          "deaths": 8.0625,
+          "level": 10.65625,
+          "creep_last_hits": 198.65625,
+          "minutes": 16.93541666666667,
+          "spells": 105.4375,
+          "out_of_range": 855.625
+        }
+      },
+      "pooled_xp_per_minute": 247.94073678216586,
+      "team_wins": 181,
+      "opponents": [
+        {
+          "label": "khors:v114",
+          "version": "145c01e0-0cbf-4e1e-8120-11b437175b91",
+          "slot": 0,
+          "score": 2656.995,
+          "own_minus_rival": -1935.105,
+          "difference_ci95": [
+            -2170.225,
+            -1711.915
+          ],
+          "individual_outscores": 11,
+          "ties": 0
+        },
+        {
+          "label": "Richard:v174",
+          "version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+          "slot": 2,
+          "score": 525.85,
+          "own_minus_rival": 196.04,
+          "difference_ci95": [
+            36.81,
+            350.505
+          ],
+          "individual_outscores": 119,
+          "ties": 13
+        },
+        {
+          "label": "Jordan:v411",
+          "version": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "slot": 1,
+          "score": 278.615,
+          "own_minus_rival": 443.275,
+          "difference_ci95": [
+            315.26,
+            571.48
+          ],
+          "individual_outscores": 130,
+          "ties": 12
+        }
+      ]
+    }
+  ],
+  "field_changes": {
+    "game_changed": false,
+    "champion_changes": [],
+    "action": "Revalidate changed opponents and refreshed mixed rosters. Frozen A/B results retain exact pinned-version scope; do not substitute versions or claim enduring rank."
+  },
+  "deployment_qualified": false,
+  "evidence_scope": "Fresh controls and unmatched random seeds, one subject, fixed mixed roster;10 source hashes/VM exits, full replay hashes, XP sources and integer scores checked. Context-stratified independent whole-game bootstrap; duplicate streams disclosed. One new scoped blue-Druid source;400fresh blue later-draft games,200/source. Prior rejected broad-study class/color slice generated this hypothesis only. Red and other hero command/world equivalence required locally. Later draft has two identical fixed reference teammates;>=40Druids/source required,all actual classes included. Mean score gaps against khors114 and Richard174 must not worsen. Positive lower95%gain bound; no universal rank or per-component causality."
+}

@@ -1,0 +1,56 @@
+{
+  "status": "complete_unqualified_specialist_saved",
+  "games": 400,
+  "pair": "examples/gods_of_the_arena/players/ir/forks/blue-druid-siege20260923-hosted/blue-druid-siege",
+  "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+  "reviewed_ir_sha256": "d27e4d370185a8fc1b02b94bd5883cee7017f6fbd9476f77742ec367352ded95",
+  "result": {
+    "name": "blue-druid-siege",
+    "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+    "score_gate_passed": false,
+    "baseline_score": 722.445,
+    "candidate_score": 721.89,
+    "aggregate_gain_percent": -0.07682245707286706,
+    "gain_ci95_percent": [
+      -17.426862383440934,
+      21.1011960589901
+    ],
+    "per_context_gain_percent": [
+      -0.07682245707286706
+    ],
+    "late_score_gain_percent": -0.07682245707286706,
+    "druid_exposure": {
+      "baseline": 176,
+      "blue-druid-siege": 168
+    },
+    "unchanged_context_equivalence": true,
+    "relative_gaps": {
+      "khors:v114": {
+        "baseline": -1216.615,
+        "candidate": -1935.105
+      },
+      "Richard:v174": {
+        "baseline": -256.46,
+        "candidate": 196.04
+      }
+    },
+    "relative_preservation": false,
+    "absolute_score_gate_passed": false
+  },
+  "deployment_qualified": false,
+  "report": "examples/gods_of_the_arena/players/ir/forks/blue-druid-siege20260923-hosted/evidence/report.json",
+  "richard_individual_outscores": {
+    "baseline": 86,
+    "candidate": 119,
+    "games_per_source": 200
+  },
+  "mechanism_totals": {
+    "selected_covered_tower": 114,
+    "submitted_attack_covered_tower": 77,
+    "selected_siege_attacker": 0,
+    "submitted_attack_siege_attacker": 0
+  },
+  "scope": "Fresh blue later-draft fixed-roster comparison; all natural classes included. No universal rank, red gain, opponent identity detection, or individual-component causal claim.",
+  "interpretation": "The fork improved its relative score against Richard but did not increase its own points and worsened its gap to khors. Preserve for research, retain current champions.",
+  "decomposition": "examples/gods_of_the_arena/players/ir/forks/blue-druid-siege20260923-hosted/evidence/opponent-decomposition.json"
+}

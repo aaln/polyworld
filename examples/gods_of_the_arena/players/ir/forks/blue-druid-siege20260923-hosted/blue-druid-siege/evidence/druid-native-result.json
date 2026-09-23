@@ -1,0 +1,414 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "name": "baseline",
+      "context": "red-druid",
+      "side": 0,
+      "ordinal": 3,
+      "seed": 923082,
+      "valid": true,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "replay_sha256": "4baae0f5f1fe52a3d4b8ecaca6f7bbe13d6cfae1085fe9c0772189e50b880b7b",
+      "ticks": 17444,
+      "hero": {
+        "slot": 3,
+        "team": 0,
+        "class": 3,
+        "drafted": true,
+        "hp": 610,
+        "x": -2845543,
+        "z": 1185678,
+        "score": 0,
+        "deaths": 4,
+        "xp": 1590,
+        "hits": 182,
+        "level": 6,
+        "gold": 100,
+        "ranks": [
+          0,
+          3,
+          2,
+          0
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "HealthPotion",
+          "NoItem"
+        ],
+        "item_counts": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          0
+        ],
+        "max_work": 16245,
+        "max_instructions": 11162
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "baseline",
+      "context": "red-druid",
+      "side": 0,
+      "ordinal": 3,
+      "seed": 923083,
+      "valid": true,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "replay_sha256": "6d3a12f3b12edbcb18fd958a3608024c275982e484e323928b6eacf503a07771",
+      "ticks": 16252,
+      "hero": {
+        "slot": 3,
+        "team": 0,
+        "class": 3,
+        "drafted": true,
+        "hp": 610,
+        "x": -2841067,
+        "z": -231539,
+        "score": 0,
+        "deaths": 3,
+        "xp": 1565,
+        "hits": 224,
+        "level": 6,
+        "gold": 35,
+        "ranks": [
+          0,
+          3,
+          2,
+          0
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow",
+          "HealthPotion"
+        ],
+        "item_counts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "max_work": 16269,
+        "max_instructions": 11180
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "baseline",
+      "context": "blue-druid",
+      "side": 1,
+      "ordinal": 3,
+      "seed": 923082,
+      "valid": true,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "replay_sha256": "b716a673359ad3be17951a1f6e1154c4ee39f4d2302b1a2bf03efee394eb0865",
+      "ticks": 9735,
+      "hero": {
+        "slot": 8,
+        "team": 1,
+        "class": 3,
+        "drafted": true,
+        "hp": 696,
+        "x": 2904895,
+        "z": -2806672,
+        "score": 1702,
+        "deaths": 1,
+        "xp": 3055,
+        "hits": 183,
+        "level": 9,
+        "gold": 765,
+        "ranks": [
+          0,
+          4,
+          3,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow",
+          "HealthPotion"
+        ],
+        "item_counts": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "max_work": 16929,
+        "max_instructions": 11141
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "baseline",
+      "context": "blue-druid",
+      "side": 1,
+      "ordinal": 3,
+      "seed": 923083,
+      "valid": true,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "replay_sha256": "303d3cf16f3b7d2d0b24b5e67dd39470451817fee54a66ff2553ca3662911bd7",
+      "ticks": 20044,
+      "hero": {
+        "slot": 8,
+        "team": 1,
+        "class": 3,
+        "drafted": true,
+        "hp": 850,
+        "x": 3051583,
+        "z": -2943758,
+        "score": 2319,
+        "deaths": 3,
+        "xp": 5103,
+        "hits": 263,
+        "level": 11,
+        "gold": 1335,
+        "ranks": [
+          2,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow",
+          "HealthPotion"
+        ],
+        "item_counts": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "max_work": 16929,
+        "max_instructions": 11610
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "blue-druid-siege",
+      "context": "red-druid",
+      "side": 0,
+      "ordinal": 3,
+      "seed": 923082,
+      "valid": true,
+      "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+      "replay_sha256": "a4b93ae12c9d07db494f9f9b4d36a1661e97708d820fda8fa360c72fc7f318f8",
+      "ticks": 17444,
+      "hero": {
+        "slot": 3,
+        "team": 0,
+        "class": 3,
+        "drafted": true,
+        "hp": 610,
+        "x": -2845543,
+        "z": 1185678,
+        "score": 0,
+        "deaths": 4,
+        "xp": 1590,
+        "hits": 182,
+        "level": 6,
+        "gold": 100,
+        "ranks": [
+          0,
+          3,
+          2,
+          0
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "HealthPotion",
+          "NoItem"
+        ],
+        "item_counts": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          0
+        ],
+        "max_work": 17090,
+        "max_instructions": 11916
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "blue-druid-siege",
+      "context": "red-druid",
+      "side": 0,
+      "ordinal": 3,
+      "seed": 923083,
+      "valid": true,
+      "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+      "replay_sha256": "42f3e3c192e6780c55736dacbd2d93c618a5fda970e9afc516baba376db763a6",
+      "ticks": 16252,
+      "hero": {
+        "slot": 3,
+        "team": 0,
+        "class": 3,
+        "drafted": true,
+        "hp": 610,
+        "x": -2841067,
+        "z": -231539,
+        "score": 0,
+        "deaths": 3,
+        "xp": 1565,
+        "hits": 224,
+        "level": 6,
+        "gold": 35,
+        "ranks": [
+          0,
+          3,
+          2,
+          0
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "RuneCrossbow",
+          "HealthPotion"
+        ],
+        "item_counts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "max_work": 17114,
+        "max_instructions": 11934
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "blue-druid-siege",
+      "context": "blue-druid",
+      "side": 1,
+      "ordinal": 3,
+      "seed": 923082,
+      "valid": true,
+      "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+      "replay_sha256": "8a6dbb446b6ab2dd53a403318528832d0c172398b0c3f4f14ffa8f86c1fb0b80",
+      "ticks": 16902,
+      "hero": {
+        "slot": 8,
+        "team": 1,
+        "class": 3,
+        "drafted": true,
+        "hp": 802,
+        "x": -2930459,
+        "z": -1139334,
+        "score": 1516,
+        "deaths": 4,
+        "xp": 3864,
+        "hits": 262,
+        "level": 10,
+        "gold": 450,
+        "ranks": [
+          0,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "HealthPotion",
+          "RuneCrossbow"
+        ],
+        "item_counts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_work": 17624,
+        "max_instructions": 11755
+      },
+      "all_hashes_equal": true
+    },
+    {
+      "name": "blue-druid-siege",
+      "context": "blue-druid",
+      "side": 1,
+      "ordinal": 3,
+      "seed": 923083,
+      "valid": true,
+      "source_sha256": "b7cd11916f0e21eb0dad9b4ca1f8acd956809c0c680ab21bb62696900558b100",
+      "replay_sha256": "f062b3f5f852364cd12a144819164f039269b3d749b6c6af40395d73e638b200",
+      "ticks": 15942,
+      "hero": {
+        "slot": 8,
+        "team": 1,
+        "class": 3,
+        "drafted": true,
+        "hp": 802,
+        "x": 2693512,
+        "z": -2609927,
+        "score": 1586,
+        "deaths": 3,
+        "xp": 3801,
+        "hits": 248,
+        "level": 10,
+        "gold": 655,
+        "ranks": [
+          0,
+          4,
+          4,
+          1
+        ],
+        "inventory": [
+          "CrimsonDagger",
+          "KnightArmor",
+          "PortalScroll",
+          "BattleAxe",
+          "NoItem",
+          "RuneCrossbow"
+        ],
+        "item_counts": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          1
+        ],
+        "max_work": 17624,
+        "max_instructions": 11755
+      },
+      "all_hashes_equal": true
+    }
+  ],
+  "scope": "Extra local actual-draft Druid coverage: teammate2 uses Druid-deferred native reference; team0 remains deployed baseline. Richard174 remains opposing. Not league performance."
+}

@@ -20,4 +20,14 @@ Transport amendment before any hosted outcomes: serverHTTP422 rejects requests a
 
 ## Execution
 
-All662 local checks and24native games pass, including active blue Druids. Ten unaffected match pairs preserve every command and final world state. [Local pair](../../../examples/gods_of_the_arena/players/ir/forks/blue-druid-siege20260923-local/) saved; independent400-game comparison is running.
+All662 local checks and24native games pass, including active blue Druids. Ten unaffected match pairs preserve every command and final world state. [Local pair](../../../examples/gods_of_the_arena/players/ir/forks/blue-druid-siege20260923-local/) saved; independent 400-game comparison is complete.
+
+## Completed result: retain current champions
+
+All400 hosted games are valid and the field is unchanged. Baseline722.445 → candidate721.890,−0.0768%; 95% gain interval[−17.4269,+21.1012]%. Druid exposure176/168 exceeds the requirement, and all natural classes remain included. Absolute score improvement fails. Mean own-minus-khors score deteriorates from−1216.615 to−1935.105, so relative preservation also fails. No deployment.
+
+The candidate outscored Richard in119/200 games versus86/200 baseline, with mean gap−256.46 → +196.04. Save this as a Richard-focused research fork, not an overall improvement. Its own XP stayed nearly flat while Richard's fell and Andre's rose. Additional descriptive gap intervals and XP decomposition do not replace the frozen gate.
+
+The16-game mechanism audit confirms114 covered-tower selections and77 submitted attacks; no siege-attacker activation in that subset. All reconstructed subject commands and full world hashes match. Reviewed IRd27e4d37 records these results; BASIC remainsb7cd1191. The [final pair and evidence](../../../examples/gods_of_the_arena/players/ir/forks/blue-druid-siege20260923-hosted/README.md) preserve all four request receipts, the initial and amended transport plans, raw hashes and the unchanged-input check. Current source29f6d7e6 remains active for both players, verified at2026-09-23T08:14:19.217854+00:00.
+
+Budget after completion:3120reserved of11600 today,8480remaining. No further jobs or league writes are pending.

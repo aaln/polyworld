@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-23T07:46:18.931992+00:00",
+  "reason": "Server rejects requests above100 despite local validator accepting200. Both logical arms remain200; split each into2x100 without changing sample, source, roster or scoring rule. No old requests created and no outcomes seen.",
+  "rejected_response": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-blue-druid-siege-20260923/local-revisions/rejected-200-request/trial/baseline/blue-late/batch/submission-response.json",
+  "released_reservation": 200,
+  "original_reservation": {
+    "day": "2026-09-23",
+    "cycle": "interactive-blue-druid-siege-20260923",
+    "episodes": 200,
+    "body_sha256": "4e65a09354329e3c0f3a2c966a6116e5a9415bb7d2e2f7bb0ab16c5cd47d2d60",
+    "output": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-blue-druid-siege-20260923/trial/baseline/blue-late/batch",
+    "reserved_at": "2026-09-23T07:41:08.707052+00:00",
+    "new_release": "2026.9.22.3",
+    "engine": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde"
+  },
+  "new_hosted_total": 400,
+  "reservation_guard_checks": 5,
+  "shared_panel_source_sha256": "223733488de7e388c015783af37eeed87eafa24703f4b3d4344b2a5cb49eb59a",
+  "guard_scope": "Zero-episode releases require captured validation422, original positive reservation, and no created receipt; created and ambiguous failures remain blocked. Future batches capped at100 before reservation."
+}

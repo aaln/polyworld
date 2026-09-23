@@ -55,7 +55,50 @@
         "start_line": 91,
         "end_line": 251
       }
-    ]
+    ],
+    "class_ids": {
+      "0": {
+        "enum": "VanguardKnight",
+        "display": "Vanguard Knight"
+      },
+      "1": {
+        "enum": "Ranger",
+        "display": "Ranger"
+      },
+      "2": {
+        "enum": "Arcanist",
+        "display": "Arcanist"
+      },
+      "3": {
+        "enum": "DruidWarden",
+        "display": "Druid Warden"
+      },
+      "4": {
+        "enum": "DemonHunter",
+        "display": "Demon Hunter"
+      },
+      "5": {
+        "enum": "DeathKnight",
+        "display": "Death Knight"
+      },
+      "6": {
+        "enum": "Crossbowman",
+        "display": "Crossbowman"
+      },
+      "7": {
+        "enum": "Lich",
+        "display": "Lich"
+      },
+      "8": {
+        "enum": "Warlock",
+        "display": "Warlock"
+      },
+      "9": {
+        "enum": "Berserker",
+        "display": "Berserker"
+      }
+    },
+    "class_evidence": "class-mapping.json"
   },
   "belief": {
     "claims": {
@@ -98,6 +141,15 @@
       "BlindTransferRisk": {
         "status": "supported",
         "claim": "Draft role bonus and branch names are not score evidence. Source still uses older potion affordability constants; two neural inputs and mode18 are unused. No explicit score/XP-time optimizer exists."
+      },
+      "CompetitiveTransfer": {
+        "status": "two_fresh_comparisons_complete_no_deployment",
+        "games": 800,
+        "evidence": [
+          "transfer-review.json",
+          "scoped-transfer-review.json"
+        ],
+        "claim": "Broad transfer failed its score and red later-draft gates. The scoped blue-Druid fork outscored Richard in119/200 games versus86/200 baseline, but own mean score stayed flat and its khors gap worsened. This is a context-specific counter result, not a general score improvement."
       }
     },
     "uncertainty": "Four retrospective Warlock games; no newly validated other-class online predictor, no learned-weight causal attribution, no semantic proxy validation."
@@ -342,19 +394,20 @@
     "runtime_scope": "Observed maxima in4fullWarlocksource-reconstructiongames, not a universal bound."
   },
   "update": {
-    "revision": 2,
+    "revision": 4,
     "origin": "User-requested source reveal from../co-gas; old admission model remains unchanged.",
     "preserve_prior": "../admission-20260923/richard_v174.ir.json",
     "evidence": [
       "provenance.json",
       "source-audit-plan.json",
       "evidence/",
-      "buff-visits.json"
+      "buff-visits.json",
+      "class-mapping.json",
+      "scoped-transfer-review.json"
     ],
-    "next_tests": [
-      "Blue-Druid-only guarded siege: favorable original slice generates a hypothesis, not qualification. New source requires400fresh blue later-draft games and complete red/other-class command equivalence; personal score and gaps against khors114/Richard174 must hold."
-    ],
-    "competitive_transfer_status": "broad_transfer_unqualified_scoped_hypothesis_unvalidated",
-    "transfer_evidence": "transfer-review.json"
+    "next_tests": [],
+    "competitive_transfer_status": "broad_and_scoped_transfers_unqualified_for_deployment",
+    "transfer_evidence": "transfer-review.json",
+    "scoped_transfer_evidence": "scoped-transfer-review.json"
   }
 }

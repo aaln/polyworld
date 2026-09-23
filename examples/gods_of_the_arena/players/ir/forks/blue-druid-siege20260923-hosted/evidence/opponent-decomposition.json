@@ -1,0 +1,105 @@
+{
+  "means": {
+    "baseline": {
+      "self": {
+        "score": 722.445,
+        "xp": 3215.855,
+        "hero_xp": 528.75,
+        "creep_xp": 2039.605,
+        "structure_and_god_xp": 647.5,
+        "kills": 3.525,
+        "deaths": 5.28,
+        "level": 8.775
+      },
+      "khors114": {
+        "score": 1939.06,
+        "xp": 4551.12,
+        "hero_xp": 1948.5,
+        "creep_xp": 2593.12,
+        "structure_and_god_xp": 9.5,
+        "kills": 12.99,
+        "deaths": 8.94,
+        "level": 10.24
+      },
+      "Richard174": {
+        "score": 978.905,
+        "xp": 3507.515,
+        "hero_xp": 1299,
+        "creep_xp": 2043.515,
+        "structure_and_god_xp": 165,
+        "kills": 8.66,
+        "deaths": 8.485,
+        "level": 8.995
+      },
+      "Jordan411": {
+        "score": 452.845,
+        "xp": 2806.625,
+        "hero_xp": 256.5,
+        "creep_xp": 2523.625,
+        "structure_and_god_xp": 26.5,
+        "kills": 1.71,
+        "deaths": 5.32,
+        "level": 8.09
+      }
+    },
+    "blue-druid-siege": {
+      "self": {
+        "score": 721.89,
+        "xp": 3196.13,
+        "hero_xp": 490.5,
+        "creep_xp": 2072.13,
+        "structure_and_god_xp": 633.5,
+        "kills": 3.27,
+        "deaths": 4.84,
+        "level": 8.855
+      },
+      "khors114": {
+        "score": 2656.995,
+        "xp": 5235.65,
+        "hero_xp": 2150.25,
+        "creep_xp": 3078.9,
+        "structure_and_god_xp": 6.5,
+        "kills": 14.335,
+        "deaths": 8.52,
+        "level": 11.14
+      },
+      "Richard174": {
+        "score": 525.85,
+        "xp": 2843.635,
+        "hero_xp": 963.75,
+        "creep_xp": 1718.885,
+        "structure_and_god_xp": 161,
+        "kills": 6.425,
+        "deaths": 8.95,
+        "level": 8.035
+      },
+      "Jordan411": {
+        "score": 278.615,
+        "xp": 2527.13,
+        "hero_xp": 216,
+        "creep_xp": 2282.63,
+        "structure_and_god_xp": 28.5,
+        "kills": 1.44,
+        "deaths": 5.22,
+        "level": 7.735
+      }
+    }
+  },
+  "gap_changes": {
+    "khors114": {
+      "change_in_own_minus_rival": -718.49,
+      "independent_whole_game_bootstrap_ci95": [
+        -1061.19,
+        -377.02
+      ]
+    },
+    "Richard174": {
+      "change_in_own_minus_rival": 452.5,
+      "independent_whole_game_bootstrap_ci95": [
+        220.315,
+        684.645
+      ]
+    }
+  },
+  "scope": "Retrospective descriptive decomposition of the complete400-game independent comparison. No extra selection, new gate or proof of individual-component causality; source and context as frozen."
+}
