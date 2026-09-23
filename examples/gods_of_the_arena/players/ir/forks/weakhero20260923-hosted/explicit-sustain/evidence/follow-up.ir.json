@@ -1,0 +1,137 @@
+{
+  "schema": "semantic-coaching-hypotheses/1",
+  "id": "weakhero_income_preserving_survival60",
+  "game_version": "2026.9.23.2",
+  "engine_commit": "fd315c8fa30f8923c7a7709a577c40ac071b1c2a",
+  "situation": {
+    "public_observations": [
+      "selfHp/maxHp, mana, level, deaths, attack target/cooldown/hits",
+      "visible object position/type/HP/level/target; no direct object-layer field",
+      "ability ranks/cooldowns/charges",
+      "tile navigation and spell warnings"
+    ],
+    "unavailable": "No direct self lifetime-XP or object-layer field in current BASIC. Replay XP/drought and object navLayer must never become controller inputs; validate reachable same-floor routing through available navigation before using XP-radius assumptions.",
+    "proposed_predicates": {
+      "wave_xp_reachable": "Visible living enemy creep with a navigation-validated approach into six-tile XP radius; reject unreachable or ambiguous floor geometry.",
+      "unsafe_hero_chase": "Selected hero outside practical melee reach, no plausible immediate finish, and chase would leave reachable wave or enter stronger enemy/tower pressure.",
+      "income_access_missing": "No visible enemy creep within XP radius for a bounded observation-memory interval; this is a public opportunity proxy, not measured personal XP.",
+      "basic_hit_committed": "Self target remains valid and basic attack windup is close to impact; retain it until a hit, target disappearance or urgent escape.",
+      "safe_wave_edge": "Navigable same-floor point within6tiles of a visible enemy creep, on the allied side relative to nearby enemy heroes; incoming danger and tower target checks pass."
+    },
+    "verified_class_geometry": {
+      "VanguardKnight": {
+        "base_move_per_tick": 5800,
+        "base_attack_range": 70000
+      },
+      "DeathKnight": {
+        "base_move_per_tick": 5700,
+        "base_attack_range": 76000
+      },
+      "Ranger": {
+        "base_move_per_tick": 6900,
+        "base_attack_range": 330000
+      },
+      "RangerBoots": {
+        "item_id": 8,
+        "cost": 100,
+        "added_move_per_tick": 800
+      },
+      "RuneCrossbow": {
+        "item_id": 19,
+        "cost": 180,
+        "added_damage": 14,
+        "added_range": 0
+      },
+      "world_units_per_tile": 60000,
+      "starting_gold": 150,
+      "evidence": "Pinned fd315c8 content.nim HeroSpecs/ItemSpecs; sim.nim hero initialization. Current captured DeathKnight buys110gold dagger then30gold health potion. Item names do not imply ranged attacks."
+    }
+  },
+  "belief": {
+    "survival_alone": {
+      "status": "supported_observation_not_component_causality",
+      "claim": "Completed400game replay60 bundle lowered late-draft deaths/minute from0.42353 to0.35148 but XP/minute also fell150.07 to148.44; late mean score fell85.38 to50.37. Fewer deaths alone did not qualify a score improvement. All joint gates and classes are reported.",
+      "evidence": [
+        "trial/report.json"
+      ]
+    },
+    "income_access": {
+      "status": "diagnostic_hypothesis",
+      "claim": "Completed32game outcome-blind diagnostic sample: late-draft healing rose22.5 to1732.5HP/game and dead-time share fell17.23% to11.51%, while field time already30seconds without XP rose33.53% to36.57% of battle time. This motivates wave/target routing; it is not proof of the proposed solution.",
+      "evidence": [
+        "diagnostic-plan.json",
+        "diagnostic-selection.json",
+        "diagnostic-summary.json"
+      ]
+    },
+    "attribution_limit": "The tested bundle changes unlocks, healing, spacing and creep spell budgeting together. Do not attribute its score effect to any single component without a separate intervention.",
+    "chase_geometry": {
+      "status": "source_verified_geometry_value_unmeasured",
+      "claim": "Vanguard/DeathKnight have substantially less basic reach and movement speed than Ranger. Boots increase movement but do not make either class faster than same-level unbooted Ranger. Repeated open-field pursuit needs a credible closing/finish opportunity; equipment value needs a joint route/target test."
+    }
+  },
+  "goal": {
+    "score": "Increase overall mean XP-minus200perminute score, nonzero conditional mean and productive frequency.",
+    "survival": "Reduce avoidable deaths while retaining or increasing XP per minute. Fewer deaths with lower XP is insufficient."
+  },
+  "skill": {
+    "FarmAtSafeWaveEdge": {
+      "status": "proposed_not_implemented",
+      "initiation": "wave_xp_reachable and enemy pressure makes direct melee unsafe",
+      "operation": "Select a navigable allied-side wave point inside XP radius; observe danger there, use useful recovery, and take brief in-range last-hit opportunities. Avoid an unconditional home trip or permanent standstill.",
+      "termination": "Wave dies/leaves, enemies threaten the point, health requires escape, shopping becomes worthwhile or a high-value finish opens."
+    },
+    "RejectUnproductiveChase": {
+      "status": "proposed_not_implemented",
+      "operation": "Before attackTarget on a distant hero, compare a reachable wave and local danger. Prefer recurring wave XP unless an affordable short kill is plausible. Do not retreat indefinitely simply because an enemy is visible."
+    },
+    "ProtectBasicLastHit": {
+      "status": "proposed_not_implemented",
+      "operation": "Preserve a nearly completed basic windup against a lethal creep; do not retarget or walk merely because another target marginally outranks it. Urgent survival overrides; clear state after hit/target loss."
+    },
+    "PendingSpellBudget": {
+      "status": "proposed_not_implemented",
+      "operation": "Track accepted lethal creep spell target/expected impact briefly across decisions, not just within one decision, to avoid subsequent overcasts while a projectile travels. Bound the memory and cancel if target disappears or circumstances change."
+    },
+    "MeleeMobilityKit": {
+      "status": "proposed_not_implemented",
+      "operation": "Compare a100gold boots plus30gold potion opening with current110gold dagger plus30gold potion; test positioning/escape and lost early damage together. Coordinate later core-item selection, six inventory slots, shopping intent and buyback completion tests so substituted gear does not cause endless restocking or disabled buyback. Do not assume Rune Crossbow increases melee range.",
+      "gate": "Fresh class-stratified full games; score, XP/minute, deaths/minute and reach/creep-access diagnostics, preserving unaffected classes."
+    }
+  },
+  "strategy": [
+    {
+      "when": "unsafe_hero_chase and wave_xp_reachable",
+      "prefer": "FarmAtSafeWaveEdge",
+      "over": "distant hero pursuit",
+      "for": "score"
+    },
+    {
+      "when": "basic_hit_committed and not imminent lethal danger",
+      "prefer": "ProtectBasicLastHit",
+      "for": "score"
+    },
+    {
+      "when": "income_access_missing",
+      "prefer": "public-wave route reacquisition",
+      "for": "score"
+    }
+  ],
+  "execution": {
+    "executable": false,
+    "deployed": false,
+    "baseline_unchanged": true,
+    "scope": "Follow-up proposals only. Frozen400game source unchanged and rejected; live incumbent retained."
+  },
+  "update": {
+    "origin": "User survival/farming request; completed replay60 trial and supplied Arcanist shopping replay. Original preliminary IR preserved separately.",
+    "next_test": "Separately freeze a Vanguard/DeathKnight income-preserving movement candidate. Compare complete held-out games on both colors and natural draft, measure mean score, conditional nonzero mean, productive rate, deaths/minute and XP/minute. Include current controls and audit all ten VMs.",
+    "needs_review": [
+      "skill/FarmAtSafeWaveEdge",
+      "skill/RejectUnproductiveChase",
+      "skill/ProtectBasicLastHit",
+      "skill/PendingSpellBudget"
+    ],
+    "additional_coaching": "docs/coaching/2026-09-23-arcanist-shopping/suggestions.ir.json"
+  }
+}

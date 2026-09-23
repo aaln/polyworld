@@ -29,6 +29,32 @@ controls before claiming improvement or opponent superiority. Historical failed
 experiments remain preserved and do not prohibit a separately frozen test under
 these changed mechanics.
 
+The [replay60 weak-hero trial](../../games/gods_of_the_arena/experiments/2026-09-23-weak-hero-survival.md)
+now completes 400 fresh games. The explicit sustain/early-unlock/close-threat
+spacing bundle passed 220 fixtures and 16 native games but failed its score gate:
+mean 1,901.64 to 1,735.79 (−8.72%, 95% interval −20.28% to +4.51%). Later-draft
+deaths per minute fell 17%, but XP per minute also fell and late score dropped
+41%. Keep source29f6d7e6; do not rerun the rejected source unchanged. Preserve the
+[reviewed IR/policy pair](../../examples/gods_of_the_arena/players/ir/forks/weakhero20260923-hosted/README.md).
+The next priority is survival that preserves wave XP, achievable finishes and
+basic last hits. No Arcanist/Warlock subjects naturally appeared in this hosted
+cohort; their resource changes have local evidence only.
+
+The [Arcanist shopping coaching](../coaching/2026-09-23-arcanist-shopping/README.md)
+reconstructs all 1,315 own commands and 10,814 state hashes in the supplied episode.
+A full-health shopping return at tick3,530 took48seconds to the keep and66seconds
+until next XP. The wave had cleared; this was not a missed-creep scan bug. Mana
+Crystal stayed locked. New non-executable IR proposes early restoration and
+bounded wave/upgrade-aware shopping; useful purchases and urgent escapes remain.
+Three other VMs failed, so the single episode is diagnostic evidence only.
+
+Normal saved **user** credentials resolved the earlier selected-player readback
+limitation. [20:15UTC readback](../../games/gods_of_the_arena/experiments/2026-09-23-weakhero60-readback.json)
+confirms both incumbent champions competing and active; no league writes occurred.
+Do not infer retirement from the older token's empty membership response. The
+400-game trial brings September23 UTC reservations to4,320 of the permanent100,000
+allowance, with no pending requests. The obsolete worker remains paused.
+
 The previous September 23 balance release uses replay game version **59**, game format **6**
 and outer file version **2**. Ranger HP growth is now **29**, Crossbowman base
 attack damage **58**, Gale Slash damage **65**, and Sanguine Chalice healing **45**.

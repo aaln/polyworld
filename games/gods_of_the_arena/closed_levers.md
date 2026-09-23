@@ -117,3 +117,21 @@ Source1238ec73, parent29f6d7e6, published replay59/d6827a4. All400 fresh games p
 ## 2026-09-23 selective short structure finishes — not qualified
 
 Source08987348, parent29f6d7e6, replay59/d6827a4. Nearby two-hit towers/god and one-hit barracks, with one-hit building priority, passed802local checks and16native games. All400fresh hosted games passed audits,50distinct streams/cell, field unchanged. Mean1540.30→1512.315 (−1.82%,95%gain interval[−16.53%,+14.35%]); redlead−16.22%,bluelead+11.67%,redlate+339.56%from10.06,bluelate−63.37%. Nonzero mean rose but frequency fell62%→54%; productive mean rose but frequency fell53%→44.5%. Three candidate structure commands in16diagnostic games all satisfy the intended cutoff. More creepXP did not compensate for lost objectiveXP, additional deaths and elapsed time under the joint score rule. Population direction remains uncertain; the exact replacement hypothesis fails. No unchanged rerun or deployment of a favorable blue/class slice. A different coordinated routing/opportunity intervention needs measured activation and a new frozen comparison. See `experiments/2026-09-23-selective-finish.md`.
+
+
+## 2026-09-23 replay60 explicit sustain and close-threat spacing — not qualified
+
+Source `36e346c9`, parent `29f6d7e6`, engine `fd315c8`. Four hundred fresh games
+passed all source/VM/replay/XP audits after 220 real-tick fixtures and 16 native
+games. Mean score 1901.635→1735.790 (−8.72%, 95% interval −20.28% to +4.51%);
+nonzero frequency 58%→56%, productive frequency 51%→49%. Late deaths/minute
+0.4235→0.3515 improves, but XP/minute 150.07→148.44 and late score 85.38→50.37
+decline. The coordinated bundle fails; keep incumbent and do not rerun unchanged.
+No component-level causal conclusion: early unlocks, explicit healing, short
+spacing and spell-budget guards changed together. Lead carry behavior is unchanged;
+its unmatched-seed sample movement is not evidence that healing hurt carries.
+No hosted Arcanist/Warlock subjects occurred. A new caster shopping or melee
+income-preserving routing candidate needs a distinct frozen pair, adequate class
+exposure and fresh controls. Record fewer deaths together with XP/minute and score,
+not as a substitute. See `experiments/2026-09-23-weak-hero-survival.md` and
+`docs/coaching/2026-09-23-arcanist-shopping/README.md`.

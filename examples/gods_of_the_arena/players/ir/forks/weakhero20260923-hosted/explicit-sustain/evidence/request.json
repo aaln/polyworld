@@ -1,0 +1,14 @@
+{
+  "user_request": "Improve scores on heroes that usually score poorly to raise our overall average.",
+  "priorities": [
+    "mean score",
+    "conditional nonzero mean",
+    "productive game frequency"
+  ],
+  "baseline": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+  "release": "2026.9.23.2",
+  "prior_evidence": [
+    "docs/opponents/relh-v169/source-audit-20260923",
+    "games/gods_of_the_arena/release-audits/2026-09-23-explicit-abilities"
+  ]
+}
