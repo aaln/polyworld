@@ -52,3 +52,9 @@ The exact standard07de1de1 and armor801cabc6 bundles failed Richard135 red0/40 e
   earlier400-game positive slice. This rejects the complete candidate under
   the frozen rule, not every possible finishing mechanism. See
   `experiments/2026-09-22-reward-refresh.md`.
+
+- 2026-09-23UTC: combat-elixir aca1e7d1 failed the frozen400-game
+  >=10%/positive-lower-CI rule: +6.79%,red+3.88%,blue+10.64%,
+  CI[−5.39,+20.87]. All400valid; Richard167 also changed to174.
+  Preserve the positive but unqualified result; do not deploy it or claim
+  fewer deaths (both means rose). See `experiments/2026-09-23-combat-elixir.md`.

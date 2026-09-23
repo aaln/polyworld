@@ -1,0 +1,26 @@
+{
+  "changed_executable_rules": [
+    "R_economy"
+  ],
+  "unchanged_rules": [
+    "comments identify regions only; the extractor reads all executable statements.",
+    "R_portal_state",
+    "R_draft",
+    "R_recovery_intent",
+    "R_base_recovery_intent",
+    "R_timing",
+    "R_lifecycle",
+    "R_observe",
+    "R_portal_context",
+    "R_replenish",
+    "R_channel_town_scroll",
+    "R_walk_to_base",
+    "R_home_portal",
+    "R_tower_safety",
+    "R_xp_close",
+    "R_combat",
+    "R_advance"
+  ],
+  "source_sha256": "aca1e7d147b84c69bd942d1d07f83751b1b37036b0969ff66aacb2c8f01f7b58",
+  "scope": "Only economy action body differs; its item choice/use/reserve are coordinated. Generated source, no manual BASIC edits."
+}

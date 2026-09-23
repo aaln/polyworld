@@ -20,6 +20,7 @@ CONFIRM_SUBJECT=2
 GAMES=40
 REQUEST_PREFIX='gota-adaptive0922'
 RULE_OVERRIDE=BUDGET_OVERRIDE=NOTES_OVERRIDE=None
+PINNED_RIVALS=None
 
 def source(label):return (PARENT if label=='baseline' else STUDY/label)/'policy.bas'
 def upload(c,label):
@@ -62,7 +63,7 @@ def prepare(stage,candidate=None):
         assert cfg(game)==cfg(original)
         template=h.read(STUDY/'roster-template-v2.json')
         # Active named rivals must still match the pinned research targets.
-        for owner,version in [('ply_3d22435e-30a2-4f2a-b037-a5c249583788','145c01e0-0cbf-4e1e-8120-11b437175b91'),('ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83','e811221e-c419-4f7b-9629-01f8722ab9f7')]:
+        for owner,version in (PINNED_RIVALS if PINNED_RIVALS is not None else [('ply_3d22435e-30a2-4f2a-b037-a5c249583788','145c01e0-0cbf-4e1e-8120-11b437175b91'),('ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83','e811221e-c419-4f7b-9629-01f8722ab9f7')]):
             assert snap['champions'][owner]['version']==version,'Named rival updated: prepare new cohort instead of silently substituting.'
         for row in h.read(STUDY/'preflight.json')['rows']:
             path=out/'versions'/(row['version']+'.json')

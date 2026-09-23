@@ -1,6 +1,6 @@
 # Convert surplus gold into effective combat healing
 
-Status: complete; rejected from deployment. Checked closed_levers.md and the completed refreshed
+Status: local development. Checked closed_levers.md and the completed refreshed
 reward-finisher rejection before choosing this distinct intervention.
 
 Current engine2026.9.22.3/1b708944: cheap HealthPotion heals120 over240ticks,
@@ -54,42 +54,3 @@ Budget: one400game cycle interactive-combat-elixir-20260923, shared normal
 1600/UTC day (160 already reserved September23), at most3active requests and
 100games/request. The expired September22 override is not extended. Preserve
 captures under polyworld/tmp/gota-combat-elixir-20260923. Prior worker paused.
-
-## Local admission
-
-Source aca1e7d147b84c69bd942d1d07f83751b1b37036b0969ff66aacb2c8f01f7b58,
-initialIR15a88bf3d098961901bcd9be47e516f4b828299eba70c1845e0e1ad08a4d2805.
-All240 actual-tick item/healing/economy checks,84portal and126broader checks
-pass; maximum14936instructions/21996work. Baseline independently passes240
-expectations for its original behavior: zero instant combat healing. All8
-complete native matches pass VM/full replay hashes/XP/integer-score checks.
-Native scores are not evidence of rival strength. Portable compile and extract
-reproduce source and semantic IR exactly. Initial fixture compiler failure
-from assigning a computed abilityPoints accessor is preserved; no policy change.
-
-Initial submitted requests: xreq_a1eb6417-1590-4132-9aea-11770fb6a69a, xreq_8cb85b7a-3af8-48ce-85e8-f2754c6a0a23, xreq_3e89cd52-790c-459d-b11d-2a23e6aa8494.
-The remaining blue candidate arm is admitted after an active slot frees.
-
-## Completed result
-
-All400 games completed with zero invalids and all ten sources/VM exits, full
-replay hashes, XP sources and integer scores verified. Control cells and red
-candidate each have100distinct streams; blue candidate has99/100, disclosed.
-Mean score2447.32→2613.44 (+6.78783%), red2791.53→2899.93 (+3.88318%),
-blue2103.11→2326.95 (+10.64329%).95%bootstrap gain interval
-[−5.38795%,+20.87219%]. Aggregate10% and positive lower-bound gates fail.
-Both portal champions remain deployed. Richard also changed167→174 during
-the comparison, independently failing principal-field stability. No result
-against167 is relabeled as174 evidence.
-
-Hero XP rises on both colors (red2368.5→2575.5,blue1890→2014.5). Blue creep
-XP2271.37→2600.04 rises; red2824.5→2822.39 is nearly unchanged. Mean deaths
-rise5.45→5.60 red and5.18→5.51 blue. Longer games incur extra time cost.
-The16-game diagnostic subset records more actual item healing with elixirs,
-but different class/scene mixes prevent causal comparison of healing alone.
-This does not establish reduced deaths or stronger overall survival.
-
-Final request: xreq_cc069149-a53a-4767-ac00-19639b93c7c7. All400 reserved
-September23UTC; shared total560/1600. Preserve original pair and all captures.
-The directional gain is insufficient under the frozen rule; any future new
-source must receive new controls and face current Richard174.

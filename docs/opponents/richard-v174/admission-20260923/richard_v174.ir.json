@@ -1,0 +1,34 @@
+{
+  "schema": "opponent-semantic-ir/1",
+  "situation": {
+    "game_version": "2026.9.22.3",
+    "policy_version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+    "source_sha256": "c6429ea4ee202edc456de71c5ee7ad896ec423b11bbf2717c0dd4dd76c58b766"
+  },
+  "belief": {
+    "observed": "One admitted current-version episode used Warlock; exact controller ordering and general draft preferences unknown.",
+    "status": "limited_evidence"
+  },
+  "goal": {
+    "inferred_objective": "Individual XP-minus-time under current score rules; policy internal goal unobserved."
+  },
+  "skill": {
+    "observed_draft": "Warlock once; do not assume v167 controller continuity."
+  },
+  "strategy": {
+    "counter_hypothesis": "Test productive post-core buyback against this exact version and khors114; unvalidated."
+  },
+  "execution": {
+    "source_available": false,
+    "proxy_usable": false,
+    "live_policy_inputs": "Public game observations only; UUID/hash are evaluation metadata."
+  },
+  "update": {
+    "evidence": [
+      "preflight.json",
+      "preflight-plan.json"
+    ],
+    "preserve_prior_model": "../../richard-v167/replay-audit-20260922/richard_v167.ir.json",
+    "competitive_validation": false
+  }
+}

@@ -26,6 +26,8 @@ def data():
     if (refresh/'refresh/plan.json').exists():study,stage=refresh,'refresh'
     elixir=STUDY.with_name('gota-combat-elixir-20260923')
     if (elixir/'trial/plan.json').exists():study,stage=elixir,'trial'
+    buyback=STUDY.with_name('gota-core-buyback-20260923')
+    if (buyback/'trial/plan.json').exists():study,stage=buyback,'trial'
     plan=read(study/stage/'plan.json')
     for arm in plan['arms']:
         name,side=arm['name'],arm['side']

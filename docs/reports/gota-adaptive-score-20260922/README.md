@@ -33,6 +33,7 @@ tests must account for slot opportunity cost and time recovered in the field.
 | Crossbow-only intervention | 160 | −6.35% | −31.94% / +20.78% | Rejected |
 | Reward-ordered immediate finishes | 400 | +12.44% | +22.29% / +4.01% | Score gate passed; field changed |
 | Same source with refreshed Julia teammate | 160 | −2.30% | +3.26% / −9.32% | Rejected |
+| Combat elixir recovery | 400 | +6.79% | +3.88% / +10.64% | Unqualified; CI crosses zero, Richard changed |
 
 The initial two candidates share one explicitly reported 80-game control;
 that screen totals 240 games. Adding its 160-game independent confirmation
@@ -84,3 +85,11 @@ Next investigation: effective consumable healing. Current cheap potions heal
 cost75gold and heal90HP immediately, sharing the10second health cooldown.
 Changing the item choice, combat-use guard and post-core reserve is one
 coordinated survival hypothesis, not a validated improvement.
+
+The [elixir comparison](../../../examples/gods_of_the_arena/players/ir/forks/combat-elixir20260923/README.md)
+passes all400runtime/replay/XP checks, but misses its10%aggregate and positive
+lower-confidence-bound conditions. More healing and hero XP did not establish
+fewer deaths; preserve the directional outcome without promoting. Richard
+updated to174 during the trial. A fresh source changes only post-core buyback,
+motivated by8/8baseline diagnostic replays with missed eligible opportunities
+(mean31.25seconds of observed excluded dead time, not predicted savings).

@@ -1,0 +1,30 @@
+{
+  "trial": [
+    {
+      "name": "combat-elixir",
+      "source_sha256": "aca1e7d147b84c69bd942d1d07f83751b1b37036b0969ff66aacb2c8f01f7b58",
+      "score_gate_passed": false,
+      "baseline_score": 2447.32,
+      "candidate_score": 2613.4399999999996,
+      "aggregate_gain_percent": 6.787833221646511,
+      "gain_ci95_percent": [
+        -5.387954891727665,
+        20.872191467148603
+      ],
+      "per_color_gain_percent": [
+        3.8831751763369837,
+        10.643285420163462
+      ]
+    }
+  ],
+  "qualified": null,
+  "pairs": [
+    {
+      "verified": true,
+      "source_sha256": "aca1e7d147b84c69bd942d1d07f83751b1b37036b0969ff66aacb2c8f01f7b58",
+      "ir_sha256": "4ac85cf7a9f3510ae24680ba88394d79df0ec41ece3ceb3ccac14e84579dac69",
+      "trial_passed": false,
+      "deployment_qualified": false
+    }
+  ]
+}
