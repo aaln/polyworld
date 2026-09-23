@@ -5,23 +5,23 @@
   "variant_id": "competition",
   "primary_metric": "mean per-hero max(0, lifetime XP * 1440 - 200 * world ticks) // 1440, including draft ticks",
   "fort_outcome": "diagnostic; not an advancement gate for new XP-score experiments",
-  "reference_pair": "examples/gods_of_the_arena/players/ir/forks/blue-center20260923-hosted/blue-center",
-  "reference_source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
-  "binding": "gota-bassy/blue-center-2026-09-23-r2",
+  "reference_pair": "examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-hosted/druid-lane",
+  "reference_source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+  "binding": "gota-bassy/druid-lane-recovery-2026-09-23-r1",
   "current_guide": "docs/guides/guide-gota-current-release.md",
   "history": "docs/guides/devin-gota-autoresearch.md",
   "policy_inputs": "public current observations only; opponent versions and replay truth are evaluation metadata",
   "legacy_acceptance_applies": false,
   "budget": "Shared existing journal; 400 new hosted games/cycle, 1600/UTC day, maximum 3 active XP, 40-200/batch. Expired dated overrides do not apply.",
-  "reference_ir_sha256": "8886044384594a4fd1d50d0524545c3dd87265f06cebba623a1214aa1bfdb021",
-  "reference_evidence": "400 fresh held-out games,100/source/color: aggregate+15.68%,blue+40.74%,red\u22123.07%.95%gainCI[3.16,29.56],blueCI[18.74,66.34]; all audits pass. Blue mean gapkhors114+1266.72,CI[648.84,1881.67],58/100outscored. Fixed first-team-seat scope.",
-  "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/blue-center20260923-deployment",
+  "reference_ir_sha256": "d331ba094eae5ac56e4dbe8533b29b543df089a7720ca2b3d52943d02734e122",
+  "reference_evidence": "400 fresh natural later-draft games: mean score273.34 to394.085,+44.17%,red+49.24%,blue+43.42%,95%gainCI[9.73,92.18]. All audits pass; non-Druid local exact command equivalence. Scope fixed later-draft rosters.",
+  "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-deployment",
   "live_versions": {
-    "aaron": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
-    "coach": "4dbada5e-8a62-4654-89ab-34cbea555bfe"
+    "aaron": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+    "coach": "d75ff766-e78f-4aa5-b656-55eb29248208"
   },
   "current_experiment": "games/gods_of_the_arena/experiments/2026-09-23-druid-lane-recovery.md",
-  "deployment_status": "Both blue-center champions verified active/competing on deployment and unchanged in the completed coaching study field snapshot at 2026-09-23T03:41:10.703228+00:00. Coaching candidate rejected; retained blue-center.",
+  "deployment_status": "Both exact-source opaque-name champions verified active/competing at 2026-09-23T06:20:00.223273+00:00",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
     "label": "khors:v114",
@@ -31,7 +31,7 @@
   "reference_validation_game_version": "2026.9.22.3",
   "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "All-class lane recovery failed its320-game gate. New Druid-only source preserves non-Druid commands and is running a separately frozen400-game fresh comparison. Both champions retain blue-center.",
+  "research_status": "Druid-only lane recovery qualified and deployed; Richard v174 source-informed IR and transfer study starting.",
   "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
   "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
@@ -42,7 +42,9 @@
     "additional_games_authorized": 10000,
     "authorization": "increase cap to 10000 more",
     "record": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-lane-recovery-20260923/budget/authorization.json",
-    "reserved_before_comparison": 1600
+    "reserved_before_comparison": 1600,
+    "reserved_after_comparison": 2320,
+    "remaining_after_comparison": 9280
   },
   "candidate_evidence": {
     "games": 160,
@@ -77,10 +79,10 @@
   },
   "active_candidate": {
     "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
-    "ir_sha256": "5af7815f536be8a6ab668f4f2151961b1bd185c0432a46aad16eb945faaf9b80",
+    "ir_sha256": "d331ba094eae5ac56e4dbe8533b29b543df089a7720ca2b3d52943d02734e122",
     "binding": "gota-bassy/druid-lane-recovery-2026-09-23-r1",
-    "pair": "examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-local/druid-lane",
-    "status": "hosted_running",
+    "pair": "examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-hosted/druid-lane",
+    "status": "qualified_deployed",
     "games": 400,
     "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-druid-lane-20260923"
   },
@@ -252,6 +254,20 @@
       "live_versions": {
         "aaron": "30a0e469-8c2f-450c-b3bc-4a687a6c74e3",
         "coach": "2013aad3-a754-4e31-8cea-727aa6c3a6b1"
+      },
+      "reference_validation_game_version": "2026.9.22.3",
+      "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde"
+    },
+    {
+      "reference_pair": "examples/gods_of_the_arena/players/ir/forks/blue-center20260923-hosted/blue-center",
+      "reference_source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+      "reference_ir_sha256": "8886044384594a4fd1d50d0524545c3dd87265f06cebba623a1214aa1bfdb021",
+      "binding": "gota-bassy/blue-center-2026-09-23-r2",
+      "reference_evidence": "400 fresh held-out games,100/source/color: aggregate+15.68%,blue+40.74%,red\u22123.07%.95%gainCI[3.16,29.56],blueCI[18.74,66.34]; all audits pass. Blue mean gapkhors114+1266.72,CI[648.84,1881.67],58/100outscored. Fixed first-team-seat scope.",
+      "deployment_receipts": "examples/gods_of_the_arena/players/ir/forks/blue-center20260923-deployment",
+      "live_versions": {
+        "aaron": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+        "coach": "4dbada5e-8a62-4654-89ab-34cbea555bfe"
       },
       "reference_validation_game_version": "2026.9.22.3",
       "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde"
@@ -465,5 +481,38 @@
     "deployment_qualified": false,
     "source_sha256": "2878f3e962b9b8ac28690a939317508c6df38a55545be292b9846c91095fef45",
     "ir_sha256": "a6ce2a4bf793135ba4d2564b6ba41459a19d9b62b7506e01cbb462fb65e996e7"
+  },
+  "druid_lane_study": {
+    "status": "qualified_deployed",
+    "games": 400,
+    "pair_bundle": "examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-hosted",
+    "result": {
+      "name": "druid-lane",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "score_gate_passed": true,
+      "baseline_score": 273.34,
+      "candidate_score": 394.085,
+      "aggregate_gain_percent": 44.17392258725397,
+      "gain_ci95_percent": [
+        9.73105204022131,
+        92.18288815150235
+      ],
+      "per_context_gain_percent": [
+        49.24050632911394,
+        43.41645990159384
+      ],
+      "late_score_gain_percent": 44.17392258725397,
+      "druid_exposure": {
+        "baseline": 175,
+        "druid-lane": 172
+      },
+      "aggregate_gate_passed": true,
+      "non_druid_equivalence": true
+    },
+    "field_changes": {
+      "game_changed": false,
+      "champion_changes": [],
+      "action": "Revalidate changed opponents and refreshed mixed rosters. Frozen A/B results retain exact pinned-version scope; do not substitute versions or claim enduring rank."
+    }
   }
 }

@@ -1,6 +1,6 @@
 # Druid lane recovery with unchanged other heroes
 
-Status: completed; frozen gates passed; deployed to both players.
+Status: local development; no hosted games submitted.
 
 The all-class lane-recovery source `2878f3e9` failed its frozen 320-game gate:
 aggregate −5.26%, blue lead −12.15%, both later-draft contexts approximately +25%.
@@ -64,21 +64,3 @@ study, 1,920 of 11,600 are reserved; this separate 400-game cycle brings it to
 Preserve captured session `2026-09-23t02-52-57-098ze03810` and all prior outcomes.
 
 Raw evidence: `polyworld/tmp/gota-druid-lane-20260923`.
-
-
-## Local admission
-
-Source `29f6d7e6`, initial IR `d61b2b24`, locally reviewed IR `5af7815f`.
-All 582 local checks pass; maximum 14,962 instructions and 22,028 work.
-Eight fresh main native games plus eight preserved local controls pass; all eight
-non-Druid complete command streams and terminal states match. Four additional
-full native games specifically exercise Ranger and Crossbowman and match exactly
-between source variants. The additional cases close the main native roster's
-lack of a Ranger subject; they do not change competitive scope or source bytes.
-All portable IR/BASIC round trips pass. Four 100-game requests are prepared and
-running under the existing additional-game authorization. Both champions retain
-blue-center until the full original rule is met.
-
-## Completed result
-
-Pooled points273.34→394.085(+44.17%),red+49.24%,blue+43.42%;95%gainCI[+9.73,+92.18]. All400games valid,100distinct streams/cell,175/172Druid exposure; stable field and all gates passed. Both opaque-name versions are verified active/competing. See `examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-hosted/README.md`.

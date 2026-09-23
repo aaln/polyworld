@@ -1,0 +1,28 @@
+{
+  "trial": {
+    "name": "druid-lane",
+    "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+    "score_gate_passed": true,
+    "baseline_score": 273.34,
+    "candidate_score": 394.085,
+    "aggregate_gain_percent": 44.17392258725397,
+    "gain_ci95_percent": [
+      9.73105204022131,
+      92.18288815150235
+    ],
+    "per_context_gain_percent": [
+      49.24050632911394,
+      43.41645990159384
+    ],
+    "late_score_gain_percent": 44.17392258725397,
+    "druid_exposure": {
+      "baseline": 175,
+      "druid-lane": 172
+    },
+    "aggregate_gate_passed": true,
+    "non_druid_equivalence": true
+  },
+  "deployment_qualified": true,
+  "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+  "ir_sha256": "d331ba094eae5ac56e4dbe8533b29b543df089a7720ca2b3d52943d02734e122"
+}

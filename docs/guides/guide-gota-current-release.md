@@ -15,10 +15,29 @@ from2026.9.22.2 and do not qualify a replacement under this patch. The deployed
 source remains the byte-exact reference; fresh controls are required. Preserve
 the old replay57 engine and datasets.
 
-## Latest deployed reference: blue central route
+## Latest deployed reference: Druid lane recovery
+
+Source **29f6d7e6**, reviewed IR **d331ba09**, binding
+`gota-bassy/druid-lane-recovery-2026-09-23-r1` is verified on both players.
+[Pair and evidence](../../examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-hosted/README.md)
+record400fresh natural later-draft games:+44.17%pooled score,red+49.24%,blue+43.42%,
+95%gainCI[+9.73,+92.18]. All audits and preset gates pass. Other hero commands
+are unchanged with local complete-match equivalence. Fixed later-draft scope,
+not a universal score gain or rank claim. Shopping and unsafe escape remain.
+[Deployment receipts](../../examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-deployment/README.md)
+preserve blue-center rollback. Opaque names requested; the API has no privacy flag.
+
+The all-class lane recovery attempt remains rejected:320games,−5.26%aggregate,
+bluelead−12.15%. The later Druid-only source used its own frozen400fresh-game
+comparison. Do not reinterpret the earlier rejection as passing.
+
+September23UTC allowance is11,600games after explicit authorization for10,000more;
+2,320reserved after these studies. Normal1,600limit resumes after the dated override.
+
+## Prior deployed reference: blue central route
 
 Source **c02f8cb6**, reviewed IR **88860443**, binding
-`gota-bassy/blue-center-2026-09-23-r2` is deployed to both players.
+`gota-bassy/blue-center-2026-09-23-r2` was deployed to both players before Druid lane recovery.
 [Portable pair and evidence](../../examples/gods_of_the_arena/players/ir/forks/blue-center20260923-hosted/README.md)
 record400fresh games: aggregate+15.68%,blue+40.74%,red−3.07%; all preset gates
 and ten-source/VM/full-replay/XP audits pass. Blue mean gap versuskhors114 is

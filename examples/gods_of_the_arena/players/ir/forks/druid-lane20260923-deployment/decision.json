@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-23T06:19:18.716944+00:00",
+  "authorization": "Existing user authorization to deploy validated latest policy to both Aaron and Coach; unsigned research commits permitted.",
+  "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+  "ir_sha256": "d331ba094eae5ac56e4dbe8533b29b543df089a7720ca2b3d52943d02734e122",
+  "trial_report": {
+    "name": "druid-lane",
+    "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+    "score_gate_passed": true,
+    "baseline_score": 273.34,
+    "candidate_score": 394.085,
+    "aggregate_gain_percent": 44.17392258725397,
+    "gain_ci95_percent": [
+      9.73105204022131,
+      92.18288815150235
+    ],
+    "per_context_gain_percent": [
+      49.24050632911394,
+      43.41645990159384
+    ],
+    "late_score_gain_percent": 44.17392258725397,
+    "druid_exposure": {
+      "baseline": 175,
+      "druid-lane": 172
+    },
+    "aggregate_gate_passed": true,
+    "non_druid_equivalence": true
+  },
+  "validation_note": "Druid-only safe lane healing with bounded cooldown wait, recovered-route release and affordable core shopping. Other hero controllers unchanged with local complete command equivalence. One preselected source,400fresh held-out games,100/source/color, natural later-draft ordinal3: gain44.174%, contexts[49.24050632911394, 43.41645990159384],95% interval[9.73105204022131, 92.18288815150235]. All10source/VM/replay/XP/integer audits. ExactRichard174 andkhors114; fixed later-draft roster scope, no universal ranking guarantee. Prior user authorization for both players.",
+  "naming_authorization": "do it. use bespoke hidden policy names",
+  "opaque_names": {
+    "aaron": "nacre-velvet-7c2f",
+    "coach": "umbra-wren-93ad"
+  },
+  "visibility": "Upload/submission API has no policy visibility setting; opaque names and neutral public notes only.",
+  "rollback_versions": {
+    "aaron": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce",
+    "coach": "4dbada5e-8a62-4654-89ab-34cbea555bfe"
+  },
+  "rollback_source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "game_version": "2026.9.22.3"
+}
