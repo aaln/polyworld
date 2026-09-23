@@ -71,3 +71,18 @@ examples/gods_of_the_arena/players/ir/forks/core-buyback20260923{-deployment}.
 This opens a current reference, not permission to import rejected elixir or
 finisher changes. Andre blue still leads; deaths increase. New opponent/draft
 and positioning interventions require fresh controls and prospective tests.
+
+
+## 2026-09-23 field sustain and global retreat interruption — not qualified
+
+Source3807330d, parentblue-centerc02f8cb6, coaching session2026-09-23t02-52-57-098ze03810.
+Coordinated explicit field-heal, bounded cover step and75%HP/20%mana retreat
+release passed558fixtures/12native, but240fresh games fell10.73%,95%CI[−30.33,+13.17].
+Blue lead−8.87%,red late−68.52%,blue late−5.83%; all context floors failed;
+61/70Druid exposure and all source/VM/replay/XP audits clean. Keep blue-center.
+Mechanism subset reduces healthy base walks and increases field self-healing;
+that did not qualify score improvement. Original recording already had automatic
+healing; its actual defect is the path latch. Do not rerun this bundle unchanged.
+Post-hoc blueDruid improvement is only a narrower future hypothesis requiring
+fresh controls, not a qualification of a newly scoped policy.
+Evidence: examples/gods_of_the_arena/players/ir/forks/field-sustain20260923-hosted.

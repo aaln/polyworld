@@ -1,6 +1,6 @@
 # Field sustain and interruptible health retreats
 
-Status: complete; competitive improvement not confirmed. Retain deployed blue-center.
+Status: local validation, before hosted spending.
 
 Session: `/Users/aaln/Documents/Policy Loops/sessions/2026-09-23t02-52-57-098ze03810`.
 Read notes, session metadata, synthesis, linked frames and the game implementation.
@@ -87,40 +87,3 @@ remains paused. Existing user authorization covers evaluation and validated
 deployment to both players; no messages to others.
 
 Raw evidence: `polyworld/tmp/gota-field-sustain-20260923`.
-
-## Local admission
-
-Source3807330d, initial IR7731f1a4, bindingr2. All558checks pass:68sustain,100opening,180buyback,84portal,126broad;12complete native games pass full replay/XP/runtime verification. Max15678instructions/23247work. Portable compile/extract exact. Wrong initial inherited-harness invocation and corrected output are separately preserved; no failed comparison was discarded.
-
-## Recording subsequently identified
-
-The league URL was traced to episode4a6d182f/requestereq_7ad01f93,22358ticks,slot4redDruid,source67fdcd5d. Exact replay hashes and own VM pass; other slots1/2/7fail, so only mechanistic evidence. Self-healing already occurs automatically during retreat; at248/298HP it continues home45.46seconds, then returns outward. Full source/trace review:docs/coaching/2026-09-23-field-sustain. This finding was recorded after source/cohort freeze and does not change the tested bundle or acceptance rule.
-
-## Completed result and verdict
-
-All240games pass ten-source/VM/full-replay/XP/integer checks,40distinct command
-streams per cell; game/principal champions unchanged. Exposure:61controlDruids,
-70candidateDruids. Mean equal-context score1547.225→1381.233(−10.7283%);
-95%gainCI[−30.3257,+13.1679]. Blue lead−8.8703%,red late−68.5242%,blue late−5.8254%.
-Pooled late mean−21.4203%; blue lead mean gapkhors114 remains+965.025.
-Every context misses the95%preservation floor. Reject promotion under the
-original rule; this finite sample does not establish certain population harm.
-
-Twenty-four mechanically selected replays confirm the intended behavior moves:
-mean healthy homeward ticks without core-item shopping need fall494.25→1.25in
-red-late and514.25→48in blue-late. Field self-healing rises1625.75→2358.75 and
-1627.5→2398.75. These4-game-per-cell diagnostics have different class/scene
-mixes and are not an independent score holdout or isolated-component attribution.
-
-Full-cohort Druid slices differ by color: red235.76→59.78points(n29/36),
-blue351.38→552.79(n32/34). Ranged class means in the blue lead context are
-slightly higher despite the aggregate falling because more Rangers were drawn.
-These post-hoc slices explain heterogeneity, not permission to cherry-pick a
-blue-only deployment. A future narrower interruption-only or color/class
-hypothesis needs its own fresh test; never rerun this exact bundle unchanged.
-
-Both champions retain validated blue-centerc02f8cb6. The coaching pair3807330d
-is preserved with supported mechanism and unconfirmed competitive claims;
-original inputs/session hashes remain unchanged. All6requests complete:
-33cb0a22,801be28b,aca1f1fb,63a87d95,9ee20081,eb280547(fullIDs in evidence).
-September23UTC journal now1600/1600; no pending requests or extra spend.

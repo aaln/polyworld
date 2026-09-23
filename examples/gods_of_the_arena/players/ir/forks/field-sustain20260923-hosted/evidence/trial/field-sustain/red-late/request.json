@@ -1,0 +1,91 @@
+{
+  "idempotency_key": "gota-sustain0923-field-sustain-red-late-3807330dfe",
+  "target": {
+    "coworld_id": "cow_2cb5d47d-c064-44af-8b44-cef246667920",
+    "variant_id": "competition"
+  },
+  "game_config_overrides": {
+    "max_ticks": 28800,
+    "map_preset": {
+      "seed": 54,
+      "map_size": 116,
+      "high_size": 511,
+      "lake_width": 80,
+      "road_width": 52.7,
+      "camp_radius": 36,
+      "castle_size": 295,
+      "lake_wobble": 30,
+      "road_wobble": 73,
+      "stem_length": 50,
+      "camp_scatter": 35,
+      "jungle_roads": 32,
+      "lake_crossings": 4,
+      "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 480
+  },
+  "num_episodes": 40,
+  "roster": [
+    {
+      "slot": 0,
+      "player": {
+        "policy_ref": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce"
+      }
+    },
+    {
+      "slot": 1,
+      "player": {
+        "policy_ref": "6b72f83b-6623-458c-add3-85ec0ef6e38b"
+      }
+    },
+    {
+      "slot": 2,
+      "player": {
+        "policy_ref": "d9761f9c-c1cb-4e61-9850-d5a7ea2dd3ce"
+      }
+    },
+    {
+      "slot": 3,
+      "player": {
+        "policy_ref": "e9eac37a-2377-4b75-90a7-615d1448286d"
+      }
+    },
+    {
+      "slot": 4,
+      "player": {
+        "policy_ref": "a25248bc-0013-4267-a12c-c55af87da30f"
+      }
+    },
+    {
+      "slot": 5,
+      "player": {
+        "policy_ref": "145c01e0-0cbf-4e1e-8120-11b437175b91"
+      }
+    },
+    {
+      "slot": 6,
+      "player": {
+        "policy_ref": "a15665be-4edf-4857-b23b-2888b4b49868"
+      }
+    },
+    {
+      "slot": 7,
+      "player": {
+        "policy_ref": "5b854825-446a-4864-8dfc-bb3404d4fe81"
+      }
+    },
+    {
+      "slot": 8,
+      "player": {
+        "policy_ref": "2777766f-4931-4fd9-83f2-44a3f509ede1"
+      }
+    },
+    {
+      "slot": 9,
+      "player": {
+        "policy_ref": "088c0fed-b536-4777-9f7a-14abee21e5b8"
+      }
+    }
+  ],
+  "notes": "240fresh games,40/source/context: blue lead,red late ordinal3,blue late ordinal3. All10source/VM/fullreplay/XP/integer audits;>=10%aggregate gain,each context>=95%control,positive lower95%context-stratified independent whole-game bootstrap aggregate gain;pooled late score improves;blue lead mean gapkhors114 positive;>=10Druid/source pooledlate. Stable game/principal champions; no added samples,old-control reuse or universal rank claim."
+}

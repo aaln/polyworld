@@ -1,0 +1,30 @@
+{
+  "trial": {
+    "name": "field-sustain",
+    "source_sha256": "3807330dfedef2756b6874f9758dcf4452ef240c635db84485e347bb9a9b6281",
+    "score_gate_passed": false,
+    "baseline_score": 1547.225,
+    "candidate_score": 1381.2333333333333,
+    "aggregate_gain_percent": -10.728346986809711,
+    "gain_ci95_percent": [
+      -30.32570881245068,
+      13.16792307235708
+    ],
+    "per_context_gain_percent": [
+      -8.870330448416041,
+      -68.52420652332896,
+      -5.8253837586557555
+    ],
+    "late_score_gain_percent": -21.420256111757862,
+    "druid_exposure": {
+      "baseline": 61,
+      "field-sustain": 70
+    },
+    "blue_lead_mean_khors_gap": 965.025,
+    "aggregate_gate_passed": false
+  },
+  "deployment_qualified": false,
+  "source_sha256": "3807330dfedef2756b6874f9758dcf4452ef240c635db84485e347bb9a9b6281",
+  "ir_sha256": "205918cd97b4e0354c88068a263183cf8b4fb4c665be021ea358c53b0fbf4636",
+  "original_session_inputs_unchanged": true
+}

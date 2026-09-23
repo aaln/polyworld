@@ -21,7 +21,7 @@
     "coach": "4dbada5e-8a62-4654-89ab-34cbea555bfe"
   },
   "current_experiment": "games/gods_of_the_arena/experiments/2026-09-23-field-sustain.md",
-  "deployment_status": "Both blue-center champions verified active/competing at2026-09-23T03:09:08.437057+00:00. Future league-round result not established.",
+  "deployment_status": "Both blue-center champions verified active/competing on deployment and unchanged in the completed coaching study field snapshot at 2026-09-23T03:41:10.703228+00:00. Coaching candidate rejected; retained blue-center.",
   "optimization_hypotheses": "docs/reports/gota-player-stats-20260922/optimization.ir.json",
   "priority_opponent": {
     "label": "khors:v114",
@@ -31,7 +31,7 @@
   "reference_validation_game_version": "2026.9.22.3",
   "reference_validation_engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
   "god_reward": "Enemy god destruction grants500XP to each teammate once, including dead or distant heroes. No timeout bonus.",
-  "research_status": "Blue trial complete and deployed. New field-sustain coaching study follows from session2026-09-23t02-52-57-098ze03810; not yet competitive validated.",
+  "research_status": "Blue-center remains deployed to both players. The field-sustain coaching study completed all 240 games and audits but failed its original score gate; its reviewed IR/policy and captures are preserved.",
   "candidate_pair": "examples/gods_of_the_arena/players/ir/forks/score-opportunities20260922-hosted",
   "candidate_source_sha256": "f6a0dace2f72f64c62562dd374d48feec1ca62e2d2365fe5d050a276aa6782ec",
   "candidate_ir_sha256": "e3786265cb4e8bb5d80d0b89fddbea112dc951f648c1833b640c6458a8e619db",
@@ -75,13 +75,7 @@
     "screen_gain_percent": 13.923576310823416,
     "confirmation_gain_percent": -4.203742159004086
   },
-  "active_candidate": {
-    "source_sha256": "3807330dfedef2756b6874f9758dcf4452ef240c635db84485e347bb9a9b6281",
-    "ir_sha256": "7731f1a43fd9c98187dd585a947d7195760ac463335990de1207480a02529e14",
-    "binding": "gota-bassy/field-sustain-2026-09-23-r2",
-    "status": "local_passed_preparing",
-    "raw_root": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-field-sustain-20260923"
-  },
+  "active_candidate": null,
   "class_score_study": {
     "status": "complete_rejected",
     "games": 160,
@@ -115,16 +109,16 @@
     }
   },
   "live_league_snapshot": {
-    "at": "2026-09-23T01:34:37.142974+00:00",
+    "at": "2026-09-23T03:41:10.703228+00:00",
     "standings": [
       {
         "rank": 1,
         "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
         "player_name": "Andre von Auto",
-        "score": 1721.3683031332898,
+        "score": 1839.3230887490104,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 51,
+        "rounds_played": 55,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -135,10 +129,10 @@
         "rank": 2,
         "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
         "player_name": "Aaron",
-        "score": 1666.2642894802639,
+        "score": 1721.4888434528145,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 51,
+        "rounds_played": 55,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
@@ -147,34 +141,34 @@
       },
       {
         "rank": 3,
-        "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
-        "player_name": "richard",
-        "score": 1623.7345975456806,
-        "score_label": "Score",
-        "score_value_type": "number",
-        "rounds_played": 51,
-        "episode_wins": null,
-        "episodes_played": null,
-        "win_rate": null,
-        "policy_label": "richard-gods-of-the-arena:v174",
-        "recent_rounds": null
-      },
-      {
-        "rank": 4,
         "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
         "player_name": "Aaron's Co-play Coach",
-        "score": 1391.5491355209554,
+        "score": 1716.7488281355743,
         "score_label": "Score",
         "score_value_type": "number",
-        "rounds_played": 51,
+        "rounds_played": 55,
         "episode_wins": null,
         "episodes_played": null,
         "win_rate": null,
         "policy_label": null,
         "recent_rounds": null
+      },
+      {
+        "rank": 4,
+        "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+        "player_name": "richard",
+        "score": 1620.1293890293107,
+        "score_label": "Score",
+        "score_value_type": "number",
+        "rounds_played": 55,
+        "episode_wins": null,
+        "episodes_played": null,
+        "win_rate": null,
+        "policy_label": "richard-gods-of-the-arena:v174",
+        "recent_rounds": null
       }
     ],
-    "scope": "Before core-buyback deployment; round51 reflects previous policies. Future performance unmeasured."
+    "scope": "Round 55 snapshot after blue-center deployment; cumulative league scores are not an isolated policy comparison. Andre remains first."
   },
   "reward_refresh_study": {
     "games": 160,
@@ -312,5 +306,112 @@
       "champion_changes": [],
       "action": "Revalidate changed opponents and refreshed mixed rosters. Frozen A/B results retain exact pinned-version scope; do not substitute versions or claim enduring rank."
     }
-  }
+  },
+  "field_sustain_study": {
+    "status": "complete_rejected",
+    "games": 240,
+    "pair_bundle": "examples/gods_of_the_arena/players/ir/forks/field-sustain20260923-hosted",
+    "source_sha256": "3807330dfedef2756b6874f9758dcf4452ef240c635db84485e347bb9a9b6281",
+    "reviewed_ir_sha256": "205918cd97b4e0354c88068a263183cf8b4fb4c665be021ea358c53b0fbf4636",
+    "initial_ir_sha256": "7731f1a43fd9c98187dd585a947d7195760ac463335990de1207480a02529e14",
+    "binding": "gota-bassy/field-sustain-2026-09-23-r2",
+    "result": {
+      "name": "field-sustain",
+      "source_sha256": "3807330dfedef2756b6874f9758dcf4452ef240c635db84485e347bb9a9b6281",
+      "score_gate_passed": false,
+      "baseline_score": 1547.225,
+      "candidate_score": 1381.2333333333333,
+      "aggregate_gain_percent": -10.728346986809711,
+      "gain_ci95_percent": [
+        -30.32570881245068,
+        13.16792307235708
+      ],
+      "per_context_gain_percent": [
+        -8.870330448416041,
+        -68.52420652332896,
+        -5.8253837586557555
+      ],
+      "late_score_gain_percent": -21.420256111757862,
+      "druid_exposure": {
+        "baseline": 61,
+        "field-sustain": 70
+      },
+      "blue_lead_mean_khors_gap": 965.025,
+      "aggregate_gate_passed": false
+    },
+    "field_changes": {
+      "game_changed": false,
+      "champion_changes": [],
+      "action": "Revalidate changed opponents and refreshed mixed rosters. Frozen A/B results retain exact pinned-version scope; do not substitute versions or claim enduring rank."
+    },
+    "coaching_session": "2026-09-23t02-52-57-098ze03810",
+    "coaching_episode_request": "ereq_7ad01f93-5ee5-4eca-ba01-a9b7ee9ea658",
+    "coaching_review": "docs/coaching/2026-09-23-field-sustain/README.md",
+    "captured_inputs_unchanged": true,
+    "retained_source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163"
+  },
+  "league_snapshot_history": [
+    {
+      "at": "2026-09-23T01:34:37.142974+00:00",
+      "standings": [
+        {
+          "rank": 1,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "score": 1721.3683031332898,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 51,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "khors:v114",
+          "recent_rounds": null
+        },
+        {
+          "rank": 2,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "score": 1666.2642894802639,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 51,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        },
+        {
+          "rank": 3,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "score": 1623.7345975456806,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 51,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": "richard-gods-of-the-arena:v174",
+          "recent_rounds": null
+        },
+        {
+          "rank": 4,
+          "player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9",
+          "player_name": "Aaron's Co-play Coach",
+          "score": 1391.5491355209554,
+          "score_label": "Score",
+          "score_value_type": "number",
+          "rounds_played": 51,
+          "episode_wins": null,
+          "episodes_played": null,
+          "win_rate": null,
+          "policy_label": null,
+          "recent_rounds": null
+        }
+      ],
+      "scope": "Before core-buyback deployment; round51 reflects previous policies. Future performance unmeasured."
+    }
+  ]
 }

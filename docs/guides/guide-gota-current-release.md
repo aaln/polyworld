@@ -28,6 +28,21 @@ Both champions were verified active/competing; current.json holds exact UUIDs.
 [Deployment receipts](../../examples/gods_of_the_arena/players/ir/forks/blue-center20260923-deployment/README.md)
 preserve core-buyback67fdcd5d as rollback.
 
+## Completed coaching study: retain blue-center
+
+The [field-sustain IR/policy pair](../../examples/gods_of_the_arena/players/ir/forks/field-sustain20260923-hosted/README.md)
+completed 240 fresh games against blue-center after 558 local checks and 12
+complete native games. All audits pass, but mean score falls 10.73% and every
+context misses the 95% preservation floor. It is saved for research and is
+**not deployed**. Both champions continue using blue-center `c02f8cb6`.
+
+The [verified coaching replay](../coaching/2026-09-23-field-sustain/README.md)
+confirms that automatic healing already worked: a recovered Druid continued its
+base route for about 45 seconds. The tested bundle improves route interruption
+and field healing, without a qualified score gain. Preserve this negative result
+and all captured inputs. A narrower intervention needs a separately frozen test;
+do not repeat the same bundle or select a favorable post-hoc class slice.
+
 ## Prior deployed reference: core buyback
 
 
