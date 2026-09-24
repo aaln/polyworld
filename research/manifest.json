@@ -35,5 +35,20 @@
     "deployed": false,
     "weak-neutral": false
   },
-  "qualification_note": "Historical nested manifest and verifier qualification flags apply only to their frozen original studies. The current comparison did not qualify either challenger; incumbent is retained."
+  "qualification_note": "Historical nested manifest and verifier qualification flags apply only to their frozen original studies. The current comparison did not qualify either challenger; incumbent is retained.",
+  "context_migration": {
+    "entrypoint": "START_HERE.md",
+    "workflow": "research/IR_WORKFLOW.md",
+    "operations": "research/OPERATIONS.md",
+    "knowledge": "research/knowledge/README.md",
+    "controller_ir": "research/knowledge/controller.ir.json",
+    "historical_library": "research/library/manifest.json",
+    "coaching_inputs": "research/coaching_inputs/manifest.json",
+    "verification": "research/migration-evidence/verification.json",
+    "portable_pairs": 3,
+    "historical_pairs": 16,
+    "executable_changes": false,
+    "new_hosted_games": 0,
+    "league_writes": 0
+  }
 }

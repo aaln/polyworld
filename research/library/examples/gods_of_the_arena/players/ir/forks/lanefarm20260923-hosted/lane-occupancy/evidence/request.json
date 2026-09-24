@@ -1,0 +1,22 @@
+{
+  "user": "Players that have their own lane may get more xp than players that don't. Let's try the strategy of going to a lane where other players aren't going to to try to score more points",
+  "objective": "Individual floor(max(0, XP - 200 * elapsed minutes)); wins and deaths are diagnostics only.",
+  "mechanics": {
+    "engine": "e42c4822f44e04726b09bb4ffe853152c7a18207",
+    "creep_pool_xp": 15,
+    "nearby_range_tiles": 6,
+    "last_hit_reserved_percent": 15,
+    "shared_percent_if_last_hitter_nearby": 85,
+    "solo_share": 15,
+    "two_allies_last_hitter_share": 8.625,
+    "two_allies_other_share": 6.375,
+    "sources": [
+      "sim.nim:gainCreepRewards",
+      "sim.nim:objectVisibleTo",
+      "sim.nim:scriptObjectKey"
+    ]
+  },
+  "hypothesis": "One early commitment to fewer allied heroes can increase own recurring creep XP enough to pay routing and combat opportunity costs. Ally angular positions are a proxy, not guaranteed future occupancy.",
+  "falsifier": "No matched individual-score improvement, or no own creep-XP increase when the mechanism activates. More isolation itself is not success.",
+  "selection": "Keep all eighty prior control-tactics candidate episodes as reused baseline; no favorable subsets. Eight matched native comparisons first. New responsive counterfactual request n80 only after local validity. Discovery study, not independent confirmation or deployment qualification."
+}

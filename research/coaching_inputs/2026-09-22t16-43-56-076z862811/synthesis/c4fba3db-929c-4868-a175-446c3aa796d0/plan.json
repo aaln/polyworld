@@ -1,0 +1,16 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "source_sha256": "545abe4f7d0a8e9795a18bb33f9041bde30f1f302cb3675b2edd98187f74b795",
+  "duration_ms": 21864,
+  "reference_id": "capture",
+  "transport": "inline",
+  "compact_video": false,
+  "anchors_ms": [],
+  "max_output_tokens": 65536,
+  "max_context_bytes": 1048576,
+  "analysis_passes": 2,
+  "synthesis": "Covers every distinct supported coaching idea, with semantic reasoning, dependencies and tests. No fixed number of suggestions or moments.",
+  "upload": "The full recording (including recorded microphone audio), notes, local transcript and reference IR go to Google Gemini. Reviewed transcript corrections, bookmarks, capture coverage and up to 200 nearby control events are also included when available. Gemini reviews the full session twice: initial synthesis, then a coverage check for missing ideas. Both passes use API tokens.",
+  "storage": "Original evidence and results stay on this device. API requests use store=false; provider data policies still apply."
+}

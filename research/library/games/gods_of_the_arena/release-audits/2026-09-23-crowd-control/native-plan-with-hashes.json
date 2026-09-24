@@ -1,0 +1,56 @@
+{
+  "cases": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "ordinal": 4,
+      "seed": 9230620
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "ordinal": 4,
+      "seed": 9230620
+    },
+    {
+      "name": "control-legality",
+      "side": 0,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "control-legality",
+      "side": 0,
+      "ordinal": 4,
+      "seed": 9230620
+    },
+    {
+      "name": "control-legality",
+      "side": 1,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "control-legality",
+      "side": 1,
+      "ordinal": 4,
+      "seed": 9230620
+    }
+  ],
+  "own_source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+  "candidate_source_sha256": "303eeddb9d0bb3a63d905fd3a8067d6c358cbcefac066dc68e07521a75be47a5",
+  "upstream_source_sha256": "e1845070072fe7e61a5e866b0f1b09573fa37357c5b9cbe7c3268820b81b4c7f",
+  "scope": "Eight complete games, four fixed baseline controls and four candidate games, one subject and nine current reference VMs. Matched seed/roster/slot/config with nine responsive current reference VMs; runtime evidence, not league qualification."
+}

@@ -1,0 +1,81 @@
+{
+  "summary": "This second-pass review identifies and develops distinct semantic components missed or left implicit in the first pass: specifically, grounding the temporal trigger to the match's late-game phase ('towards the latter part of the game'), defining the overarching objective shift in the goal layer from distributed laning to collective siege, and formalizing the update layer mechanism for evaluating and selecting an entry vector during base perimeter circling.",
+  "moments": [
+    {
+      "start_ms": 44930,
+      "end_ms": 50630,
+      "observation": "The coach explicitly identifies the timing of the base circling and breach probing behavior, noting that Richard's policy transitions into this 4- to 5-man perimeter grouping specifically 'towards the latter part of the game'.",
+      "coaching_intent": "Restrict the collective perimeter circling and base-breach behavior to the late-game phase rather than applying it indiscriminately across early or mid-game laning.",
+      "uncertainty": "Whether 'the latter part of the game' is triggered by game clock/ticks, destroyed outer towers, or player level/item milestones is not quantified in the session.",
+      "evidence_ids": [
+        "speech-6",
+        "speech-7",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 60450,
+      "end_ms": 69070,
+      "observation": "The coach observes that when the opponent is spread across the map, Richard's clustered deathball encounters minimal resistance in initiating and executing concentrated attacks with total local numerical superiority.",
+      "coaching_intent": "Incorporate an asymmetric dispersion assessment that triggers aggressive engagement when friendly units are clustered and enemy units are detected as dispersed.",
+      "uncertainty": "Visibility requirements (fog of war vs global vision) for assessing enemy dispersion are unstated.",
+      "evidence_ids": [
+        "speech-8",
+        "speech-9",
+        "video"
+      ]
+    }
+  ],
+  "ir_proposals": [
+    {
+      "layer": "situation",
+      "change": "Define the temporal/state predicate 'is_late_game' based on match progression indicators (e.g., match tick threshold or destruction of outer defensive structures).",
+      "rationale": "The first pass proposed base-circling and rally rules without conditioning them on game progression. The coach specifically qualifies that this base encirclement and entry probing happens 'towards the latter part of the game' (speech-7).",
+      "verification": "Evaluate game state transitions; confirm 'is_late_game' evaluates to false during initial laning and transitions to true once configured match thresholds (or outer tower destructions) are reached.",
+      "evidence_ids": [
+        "speech-6",
+        "speech-7",
+        "video"
+      ]
+    },
+    {
+      "layer": "goal",
+      "change": "Define a late-game macro goal 'GroupSiegeAndCoreAssault' that overrides individual split-pushing, farming, and separate lane defense priorities in favor of unified 5-man team fighting and base destruction.",
+      "rationale": "The draft analysis introduced skills and strategies but omitted the top-level goal shift. The coach notes 'there's a lot to be said by forming up as a team' and 'no splitting up when it's time, they all come together in order to make a final attack' (speech-12, speech-13, speech-14), signifying an explicit goal hierarchy change.",
+      "verification": "Log utility values across policy goals; ensure individual lane maintenance and split-push utilities drop below 'GroupSiegeAndCoreAssault' when 'is_late_game' is active.",
+      "evidence_ids": [
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "video"
+      ]
+    },
+    {
+      "layer": "update",
+      "change": "Implement an update rule 'UpdateBreachPathVector' that dynamically revises the chosen base entry choke point as agents execute 'GroupProbeAndCircleBase' around the base exterior.",
+      "rationale": "The coach notes that while circling around the base, the team 'tries to find like ways in' (speech-7). The draft skill described moving around the perimeter but lacked the mechanism by which sensory observations during circling update the intended breach path.",
+      "verification": "In replay testing, verify that the target breach waypoint shifts along the perimeter as defenders reposition or as minion waves create favorable entry paths, rather than committing rigidly to a single predefined entry point.",
+      "evidence_ids": [
+        "speech-6",
+        "speech-7",
+        "video"
+      ]
+    },
+    {
+      "layer": "strategy",
+      "change": "Augment strategy rules with condition: WHEN is_late_game AND enemy_spread_out AND allies_concentrated PREFER SynchronizedTeamAssault FOR GroupSiegeAndCoreAssault.",
+      "rationale": "The coach notes that Richard's team has 'a much easier time to form up and attack' specifically 'when we're spread out' (speech-9), indicating that enemy dispersion should directly accelerate the decision to commit the concentrated strike.",
+      "verification": "Simulate late-game scenarios comparing clustered vs dispersed defender configurations; confirm the policy initiates breach and assault significantly faster when enemy units are scattered across lanes.",
+      "evidence_ids": [
+        "speech-8",
+        "speech-9",
+        "speech-11",
+        "speech-14",
+        "video"
+      ]
+    }
+  ],
+  "questions": [
+    "What specific criteria in the 'Gods of the Arena' engine define the transition to 'the latter part of the game' (e.g., elapsed match time/ticks, tier-1/tier-2 tower destruction, or team level thresholds)?"
+  ]
+}

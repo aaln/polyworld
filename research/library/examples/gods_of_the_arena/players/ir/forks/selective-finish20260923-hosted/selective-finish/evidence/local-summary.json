@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "source_sha256": "08987348157268b5aaf02b9c173942f2cde5866deba3064df64a15dee3db7b93",
+  "rows": [
+    {
+      "name": "finish",
+      "checks": 220,
+      "passed": true,
+      "binary_sha256": "03b0078c723d972a6c3694219ed7c93d943ee273f9199b7716019afc2f4549b6",
+      "max_instructions": 6238,
+      "max_work": 9147
+    },
+    {
+      "name": "practice",
+      "checks": 84,
+      "passed": true,
+      "binary_sha256": "ccac8653271f39197967ff6d81f58c07ec2209227663e4e0fd2694c0b6e072fd",
+      "max_instructions": 12664,
+      "max_work": 19713
+    },
+    {
+      "name": "baseline-practice",
+      "checks": 84,
+      "passed": true,
+      "binary_sha256": "ccac8653271f39197967ff6d81f58c07ec2209227663e4e0fd2694c0b6e072fd",
+      "max_instructions": 11866,
+      "max_work": 18873
+    },
+    {
+      "name": "recovery",
+      "checks": 92,
+      "passed": true,
+      "binary_sha256": "21c81711bc700f74b4884b27b5ca46a3c36be42443419cb0ede8aac65c49f611",
+      "max_instructions": 12749,
+      "max_work": 20208
+    },
+    {
+      "name": "openings",
+      "checks": 100,
+      "passed": true,
+      "binary_sha256": "99b49aaef856a35a18ca3cb3e3d227ebd17baea675c7a567c95714939ad073a6",
+      "max_instructions": 5501,
+      "max_work": 8922
+    },
+    {
+      "name": "buyback",
+      "checks": 180,
+      "passed": true,
+      "binary_sha256": "580740fc5e9a4fa86372f4a4c08c1558b6a296216fcd2f88b81181fec4620b3c",
+      "max_instructions": 12068,
+      "max_work": 18034
+    },
+    {
+      "name": "scenarios",
+      "checks": 126,
+      "passed": true,
+      "binary_sha256": "0516213f2a83a72734c64ff151a0532d0527baa1c38b2af1fdd0905e8b44dc33",
+      "max_instructions": 17930,
+      "max_work": 25048
+    }
+  ],
+  "checks": 802,
+  "native_games": 16,
+  "competitive_inference": false,
+  "max_instructions": 17930,
+  "max_work": 25048
+}

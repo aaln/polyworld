@@ -1,0 +1,127 @@
+{
+  "schema": "gota-opponent-descriptive-ir/2",
+  "id": "khors_v179_score_audit_20260923",
+  "situation": {
+    "identity": {
+      "owner": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+      "label": "khors:v179",
+      "version": "346416a0-78f9-401f-b0d3-fed3f840af8d",
+      "source_sha256_from_host_specs": "6636686a0a927b4d252170bda373e30ebef1c60c014e4670c88cf3d264cf359b",
+      "source_available": false
+    },
+    "game_version": "2026.9.23.1",
+    "engine_commit": "d6827a4bd3a55a46cf86f88e921f147137709c64",
+    "authority": "Retrospective full replay truth, submitted commands and accepted typed effects. Not a live feature set.",
+    "selection": "User-selected high-score episode separately, plus up to12 latest other completed khors179 episodes on replay59 from the already captured listing; no outcome filtering. No forecast/proxy or causal claim.",
+    "features": [
+      "visible enemy unit versus structure category",
+      "creep wave renewal by surviving barracks",
+      "typed XP sources",
+      "elapsed time and post-tick keep/dead/field durations"
+    ],
+    "unknown": [
+      "Target ordering, threshold and memory",
+      "Exact route selection and opponent identity inference",
+      "Whether game extension is intentional",
+      "Ability auto/manual division"
+    ]
+  },
+  "belief": {
+    "claims": [
+      {
+        "id": "K179_UNIT_FOCUS",
+        "status": "observed",
+        "claim": "Coached game:0/730 explicit attack-target commands addressed buildings;12/13 audited games have zero basic structure damage. One game has170, so never attacks buildings is overbroad.",
+        "evidence": [
+          "evidence/analysis.json"
+        ]
+      },
+      {
+        "id": "K179_RENEWABLE_XP",
+        "status": "observed_effects",
+        "claim": "11892XP=6342creep+5550hero;37hero kills435creep last hits, no objective reward. Continued highXP late while Coach stopped receiving creepXP after minute11.",
+        "evidence": [
+          "evidence/coached-economy.json",
+          "evidence/coached-combat.json"
+        ]
+      },
+      {
+        "id": "BARRACKS_ECONOMY",
+        "status": "source_verified_mechanism_observed_exposure",
+        "claim": "Destroyed barracks stop waves. Blue destroyed4of6red barracks, including3byCoach, removing both central and lane2spawns. Six blue barracks survived. This supports, but does not prove, a productive-lane opportunity-cost intervention.",
+        "evidence": [
+          "evidence/opportunity.json",
+          "../../../../games/gods_of_the_arena/experiments/2026-09-23-unit-farming.md"
+        ]
+      },
+      {
+        "id": "K179_VARIABILITY",
+        "status": "observed",
+        "claim": "Other12recent games include3zero scores; mean1642.25. The7781episode is not a demonstrated typical outcome.",
+        "evidence": [
+          "evidence/analysis.json"
+        ]
+      }
+    ],
+    "forecast_validated": false,
+    "counter_validated": false
+  },
+  "goal": {
+    "renewable_xp": {
+      "status": "analyst_hypothesis",
+      "description": "Maintain recurring hero/creep XP that exceeds200per added minute."
+    },
+    "preserve_barracks": {
+      "status": "unidentified_intent",
+      "description": "Avoiding structures preserves creep sources, but intent/internal goal is unavailable."
+    }
+  },
+  "strategy": [
+    {
+      "id": "UNIT_TARGET_BIAS",
+      "status": "descriptive",
+      "when": "Engaging enemies in audited games",
+      "prefer": "heroes/creeps over deliberate building attacks",
+      "unknown": "eligible opportunity counts and exact guard ordering"
+    },
+    {
+      "id": "REPEATED_FARM",
+      "status": "descriptive",
+      "when": "Later stages of coached Crossbowman episode",
+      "prefer": "continued creep farming and repeated hero kills",
+      "unknown": "public route-selection rule"
+    }
+  ],
+  "skill": {
+    "unit_combat": {
+      "status": "observed",
+      "effects": "37hero kills435creep last hits in coached game; attacks and spells both contribute"
+    },
+    "resource_return": {
+      "status": "observed",
+      "effects": "Portals, potions and5buyback requests occur; inherited own core build already11\u219216\u219218\u219219. Do not copy unvalidated timing or keep-to-keep portal use."
+    },
+    "cast_range": {
+      "status": "transfer_hypothesis",
+      "effects": "50out-of-range rejections versus1328for our Ranger; classes differ. Validate legal ranges before separate transfer."
+    }
+  },
+  "execution": {
+    "kind": "descriptive_non_executable",
+    "forecast_status": "not_validated",
+    "proxy_usable": false,
+    "may_use_hidden_features_in_live_policy": false
+  },
+  "update": {
+    "revision": 3,
+    "origin": "User episode and attack-building screenshot September23; separate from preserved khors114 model.",
+    "evidence": [
+      "evidence/analysis.json",
+      "evidence/verified.json",
+      "../../../../games/gods_of_the_arena/experiments/2026-09-23-unit-farming.md",
+      "../../../../games/gods_of_the_arena/experiments/2026-09-23-selective-finish.md"
+    ],
+    "counter_candidate": "Unit-farming1238ec73 failed400fresh games (\u221227.58%). Selective-finish08987348 completed its separate400games:\u22121.82%,95%CI[\u221216.53,+14.35], productive frequency53%\u219244.5%; joint gate failed. Neither is deployed. These interventions are separate from the observed v179 strategy.",
+    "version_drift": "Andre moved to khors180 during analysis. Descriptive model remainsv179; prospective comparison uses independently resolved current rivals."
+  }
+}

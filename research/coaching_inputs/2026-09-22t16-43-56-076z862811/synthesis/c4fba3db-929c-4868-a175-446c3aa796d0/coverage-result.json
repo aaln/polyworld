@@ -1,0 +1,47 @@
+{
+  "summary": "This coverage review adds missing execution and goal layer specifications omitted in the first pass. While the draft identified the skill selection rule to use the town scroll in the field when low on health, it lacked the execution-level channel controller needed to prevent input cancellation during the 3.0-second cast time, as well as the explicit goal prioritization governing field retreat. It also identifies a crucial mechanic ambiguity regarding whether town scrolls function as a fixed base recall or targetable structure teleport.",
+  "moments": [
+    {
+      "start_ms": 1700,
+      "end_ms": 7500,
+      "observation": "The coach interacts with the replay timeline controls (clicking near the bottom-left playback scrub bar at ~6268ms and ~7110ms) to inspect the Ranger hero's recall behavior inside the allied fountain base.",
+      "coaching_intent": "Locate and review the specific replay moment where the agent activated the town scroll to demonstrate the inefficiency of recalling while already inside the base.",
+      "uncertainty": "Local unreviewed ASR transcribed 'Trump squirrels' for 'town scrolls'; acoustic and context confirm discussion of town scroll usage.",
+      "evidence_ids": [
+        "speech-0",
+        "input-6",
+        "input-14",
+        "input-15",
+        "video"
+      ]
+    }
+  ],
+  "ir_proposals": [
+    {
+      "layer": "execution",
+      "change": "Implement a stationary channel controller for `channel_town_scroll`: upon initiating the 3.0-second teleport cast, lock movement, attack, and standard ability inputs until the 3.0-second duration completes or an explicit interrupt/evasion threshold is breached.",
+      "rationale": "The draft proposed a skill and strategy rule to trigger `channel_town_scroll` while in the field. However, in execution, continuous policy ticks issuing standard movement or auto-attack commands would immediately cancel the 3.0-second channel (evidenced by the 'TELEPORTING 3s' cast indicator in the HUD). An execution lock is necessary to make the coached skill realizable.",
+      "verification": "In an offline sandbox test, trigger `channel_town_scroll` while low on health in a lane and verify that subsequent default navigation commands do not abort the channel before the 3.0-second teleport resolves.",
+      "evidence_ids": [
+        "speech-1",
+        "speech-3",
+        "speech-4",
+        "video"
+      ]
+    },
+    {
+      "layer": "goal",
+      "change": "Define goal `survive_and_replenish`: elevated to highest tactical priority over lane wave pushing and hero harassment when agent health is below critical retreat threshold.",
+      "rationale": "The agent in the replay delayed using the town scroll until reaching base on foot. Establishing `survive_and_replenish` as an explicit goal provides the motivational structure for the strategy proposal to prefer immediate teleportation over continued traversal or farming.",
+      "verification": "Simulate low health states during wave farming; verify that the policy shifts goal arbitration from lane pressure to `survive_and_replenish`.",
+      "evidence_ids": [
+        "speech-3",
+        "speech-4",
+        "video"
+      ]
+    }
+  ],
+  "questions": [
+    "Does the Town Scroll item in this game function strictly as an untargeted return-to-base recall, or can it target friendly towers and creeps to teleport back to lane (which could explain why the agent held the scroll until reaching the base)?"
+  ]
+}

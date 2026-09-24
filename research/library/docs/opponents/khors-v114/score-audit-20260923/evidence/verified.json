@@ -1,0 +1,2329 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "episode": "ereq_027e30b3-cd41-4e68-a923-f85606f8491f",
+      "valid": false,
+      "failed_slots": [
+        3
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 16258,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "045AD137C3AD73402E1B09441A43D85202DE6104",
+      "actions": 136670,
+      "hashes": {
+        "spec.json": "6c10df1415e6dbacf4129aa46c3cf10fdb886c0c463b770947e499b5c5fbee40",
+        "economy.json": "795dcde2fcf10d33bf72bc274153a5895af6076e2f261345c63e0edbd0dc0735",
+        "audit.json": "afda7da0e517ea49cbcac59e422716480d07c5958df97c85381bd2329607ee2d",
+        "player-status.json": "663488ea142338e031ab719092c51572378d3c81b03e2ea1ece6300591b8634e",
+        "episode.json": "23020f4d1c1705bbc477c3d2fb987cfc38821423e6dadec0fe66742a817fa63c",
+        "replay.bin": "09106914cb925adf9a38ab6120f2271528b9865c821234393550085145ffe378",
+        "results.json": "d893d001d2c6f0bb9887a588b5b73c62345eec5ef23dba9a4a603172f4a7f992",
+        "commands.json": "b588e54410c05c44070765440ffc3534b66d5ba7073728dbbc470f53faf834e9",
+        "combat.json": "849090197aae5976218f8722e577449285e198ee0d6fccefc05fd671118c0f5e"
+      }
+    },
+    {
+      "episode": "ereq_064a5e7f-4b0f-4b93-889e-161c5088dbe2",
+      "valid": false,
+      "failed_slots": [
+        3
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 2,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 11073,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "07ADAC9337E7EF9C8465CA7E34551609F2F9E8A9",
+      "actions": 94655,
+      "hashes": {
+        "spec.json": "91571419be125d6111337d5b58ef519007467e7a6225f943576291167766b680",
+        "economy.json": "375e0df4133211e8a3de68ec692db4eab4a3edb6518c860c3cfe04038a5eab84",
+        "audit.json": "c7deff3c7d391909d80f075a86e63355c23f3eb06de471cf31ba16670ebbdb77",
+        "player-status.json": "fde0e110027112dc2cdc62c5f293ae27f50a7c8d3b7bb9366a9331daa2afb9c0",
+        "episode.json": "698a7f5c16b172bfd69dfe4d2bd679e9685f26743b43b0d0e80c856eccefdd98",
+        "replay.bin": "29434468239c56a5b0027ca10182a6306d1fbed0336470ea621d93b97628d34d",
+        "results.json": "72400c7c8f7378654ef5bc69f21e92e9cf63bc59be365032d61a9c921cb89b91",
+        "commands.json": "7752b2cff49219259bdd51d7fa8f4893c7f7d88a50e663dc9c97ea34523035e9",
+        "combat.json": "53f808ed15dcbba84890840286b5e81fcd2ba33843b70a74ff286c59a120095c"
+      }
+    },
+    {
+      "episode": "ereq_07572ed1-1e1b-48d6-9af6-3bd12fe797b7",
+      "valid": false,
+      "failed_slots": [
+        0
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 5,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 9655,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "81DB4A17B04F19A3C7703C86324B5AF86A990968",
+      "actions": 87411,
+      "hashes": {
+        "spec.json": "007ee9858f966eb9538136d9feb5852efcaab5f4d69feb699d718478a97aa899",
+        "economy.json": "f8123b7299727ff648ca28f572d656106044f2b3a4c073fe6c655afaa9d788f2",
+        "audit.json": "789b4fd88fe23dc2f279cb7365cb7468111d141f0ed31e94ee7871f4cc411e52",
+        "player-status.json": "1dc9ba25b067dcc58287b1ff0d1f13bc8badb1fb91d1174a14793830f73a662c",
+        "episode.json": "f2f3f4a5a772a9d9128a1452066efc4117b6c11b3c70136167fbc61539d25a6d",
+        "replay.bin": "368a2de2a88943528dc57b392d683a8bf733e2e083f147cb30c6d5bd2a8b4308",
+        "results.json": "7f308bdb467853e77639913e4c486e9c9aa687d5de898ba04ee7c64f8b8d86ca",
+        "commands.json": "2457b8d9de793759fe686c172d3b3014d6d0472999c961a518b4486432a443ef",
+        "combat.json": "a39e90c4332828c2d1aaf6e811ed77661f9870265d9106c0803aad641b8ade09"
+      }
+    },
+    {
+      "episode": "ereq_0c6e28a0-53cc-4049-a1bc-b71e93707d5f",
+      "valid": false,
+      "failed_slots": [
+        5,
+        6,
+        7
+      ],
+      "subjects": [],
+      "ticks": 8242,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "24E6BB73868BB79AAF2442DE18FFAB5F4ACF540E",
+      "actions": 54345,
+      "hashes": {
+        "spec.json": "fb9ad997029395021071b0358c613557e17e1b020c853ae7fb7716ea82708a45",
+        "economy.json": "6c5facb9dcf38c39a8edc46b4af49289ba89f6752aae55ab627ec2419e6b8fe7",
+        "audit.json": "5e752afbfeb83e7a5ca63dfa665e748038b6806579d46e6db5aa92f40a145197",
+        "player-status.json": "80cbfdfa81a172d68059bba700a59bc3c0f68bce1b5262a83c1838195412efb3",
+        "episode.json": "2b4a2a3a196ff26fd35c0d9837baef1e7603d6f598ac05ae14d0810537d6df96",
+        "replay.bin": "91435686bd6e7d8e90b6f760d4e65dce64b348e7637418c361021091b9302d9c",
+        "results.json": "42dee7b9da141232308a10a7abe8a05738523649be66342d695e2642beaa3b42",
+        "commands.json": "b07d3672bb6e408a1bdfc7eedc9f5c7ff85c37f0a78dc45fa7db4a0a8e41d6e8",
+        "combat.json": "bd0de16e0bbf1d4d7f44d08c8a006914a24014af2065b6e82400d5c9bd5a96ed"
+      }
+    },
+    {
+      "episode": "ereq_0ee4a4bb-55bc-45fe-9eaa-1033513985e8",
+      "valid": false,
+      "failed_slots": [
+        5,
+        8
+      ],
+      "subjects": [
+        {
+          "name": "coach",
+          "slot": 3,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 9717,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "222467999CB3F1FCFE024DE8CE537E2C4A512D50",
+      "actions": 53239,
+      "hashes": {
+        "spec.json": "2a6011cc6f996c7813ed99ebfb260ecd72271ec2787601757df898b6e5190cb9",
+        "economy.json": "d34f829f838eefb34e109caba7304c09322c1f23f4cfd1248a1cc89e192f625e",
+        "audit.json": "2a8ee2ab4d9329f32fd4c9c383adf3e93d8a1b456ef06b6a9b916d740b154f3a",
+        "player-status.json": "1e8f6bc730b7ae15639e6f4adbd9e5ab6a6b92f0726cf958de011f99ffeca63e",
+        "episode.json": "e98f735d25a6e807528282949eca1a3079053108cc5adb804309d53bcc17ff1a",
+        "replay.bin": "4d8afb8a3e262a8b848fd9d4c691b2c9d1a0d0a9f1a79f32bc5a091719c80cc8",
+        "results.json": "3f1e786925efc00434ea7dc5d6cd5ef53c489308b5b366d6d18cd55f0734c2df",
+        "commands.json": "caef942b2c1cff1c3761852ad65edeaef0518ec6c3905cfa3b0d0d85b039595b",
+        "combat.json": "c71c43164cb30bcc1bcbbd3e5dd299287edcb8e042cee8573add3a520836fd64"
+      }
+    },
+    {
+      "episode": "ereq_10bd047f-c621-4088-aaa5-f703169d1a65",
+      "valid": false,
+      "failed_slots": [
+        5
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 0,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 8,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 24288,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "0EF586AA184B8395F0F81B708F8C72F68532AADF",
+      "actions": 334910,
+      "hashes": {
+        "spec.json": "aca54bd89414dc2fda34805a40b5012c9e9b4fb37c640cf9aa2b231fe0606a18",
+        "economy.json": "4c8e10b11c37fb39e0a6fb5d20df80293db624359dd229fee3be7b3029427bfc",
+        "audit.json": "6b57cfc1683429f3fbc52b4a417e713ac9d1297f6b99d17e1fcee77f7747686a",
+        "player-status.json": "93b3aed52d2f0dd597b81dd5981f5816bb250eac76386ced874108dfe0787dc0",
+        "episode.json": "a876b3fffb29fb81ff15554b4baa73ce72c795953cfecae593fffd0fde467344",
+        "replay.bin": "d8387ae37ae13539a746e8599f079c8be345fd6c4651f27792cce64712c0aaf9",
+        "results.json": "b794ac6cd62a60e651c1db9eebb4893a8cd4f3f0215b7706fa721a22071952be",
+        "commands.json": "cf5dabfc8a8e7c98c485868d4d30f0a1473da80af26249ddff9117cd44877065",
+        "combat.json": "4a2771e8595b0f1c20bcddc825c0da8fe2b5a11f7cc20e7dc8d323e6a24c5781"
+      }
+    },
+    {
+      "episode": "ereq_12aca26f-c887-4c8a-96e4-156305a8772e",
+      "valid": false,
+      "failed_slots": [
+        4
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 7,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 7436,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "91B25B31A092F32B07722382A1F3E064A64C8FB3",
+      "actions": 67534,
+      "hashes": {
+        "spec.json": "8d166b51f30b9dc0c12a6b0429ad40ea41ca8cf581d9b0bb4d82490d75d3b745",
+        "economy.json": "87d6d8bfb4e47cac31025e3c32475784298057db44e2d13739fc8c11ea8a5266",
+        "audit.json": "a64ee241582a0bb7d90d5cd20b72c522a0ad8f2f4b83feb036e2bed47a0d0622",
+        "player-status.json": "a56e92499c967e682ae674f4792cdc330dfb9ed7305f8f5f46b7fae90e91c21f",
+        "episode.json": "2a49116d3e2b8bf61387ef29e37624d181b9e3fa402505d28c79d6f30ee2ba75",
+        "replay.bin": "11c3be033abcdb57b8d56ad5eb9624849fa4d31e70c534bfc179238db96390dd",
+        "results.json": "306023171deff0d5dad1cdd2ed8ab91ec67d2fda01b86065be5c8562c0683978",
+        "commands.json": "97ec408c0c3b7e90fdbebb1b793d329796c1d52091f1563d36c92ad95e2a8dd6",
+        "combat.json": "8fa184bbd28f933b63c9b04d7d33119744f3cc2f7235dc19f88abab1d02d3546"
+      }
+    },
+    {
+      "episode": "ereq_1be4c5de-d34b-4891-948f-d50d1e986d2e",
+      "valid": false,
+      "failed_slots": [
+        1,
+        7
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 4,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 3,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 29821,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "3F0435F7CDB609C449EA7C2D8E8BA330152BABE8",
+      "actions": 241507,
+      "hashes": {
+        "spec.json": "beff2024ab7dd352dd69bbc4eea41171e1ee60495300373ed9abf4ee6e666d59",
+        "economy.json": "c7705bfc127c3e164fa98976758e660a92c22d37918050a3ed146e305d917c67",
+        "audit.json": "b041cf55a2b9b85f966a44f9fb5f985572eac32f793c32625220cc9fe5eb08fc",
+        "player-status.json": "9208b1af5183da50a5c0c946dbb4d65c3a822ebd45b3bf0d66e762093138efe6",
+        "episode.json": "5b420a287760b7197d5d2631306557b84406ce865bb035e5d677348c34819611",
+        "replay.bin": "7223c1e6a2d4b732c8c3a9be99f7044054c451de01821cca8a16785bf87ce58e",
+        "results.json": "e1f7b76d7798110b6849cfb34ab54afc6e9ee645d1229f4090004997727caf64",
+        "commands.json": "ef40e2403af04c5d3e5b0a277bc483b15292dffb1a0e5251b9c0c3cc14c46da0",
+        "combat.json": "b8afda97d9bf399dca474fb88d02f0d8b03f0626f569902c1f0e8a28ce2a77e4"
+      }
+    },
+    {
+      "episode": "ereq_1df7ad9f-8457-43ee-82b1-593b7b84ce53",
+      "valid": true,
+      "failed_slots": [],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 4,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 15642,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "69A369DF4E9965AEC8D912E1E49ED8B74F060C1D",
+      "actions": 91012,
+      "hashes": {
+        "spec.json": "0a844467a42cf6f70a1540353de24122d0bdb442b866bec254065af8129d03c2",
+        "economy.json": "052b7dd01e385b320f51845f5e273f14918e665f0b700c973ad673280cd67925",
+        "audit.json": "a1a20b308fb88632f7d1dc7e1fe9f6132abfd273637e5f4ca7d30aa1168d292e",
+        "player-status.json": "cb3f92451ee363aaa5ba9bb833a9beff0738ee8ecbf21af80df461199a137733",
+        "episode.json": "d39873f81b52219b8322b33b31c72f86ea256e8db99d35c5df6076ff6bcfeb93",
+        "replay.bin": "51bda3bd9b94589f4744fcb9b7981b2d054188eab833a0c4eeefad6a73e28d0d",
+        "results.json": "ddac6a2735c955ebfdb91aa6010b79cf0d3ef06ba5be6727fd2087a8b39ddd3a",
+        "commands.json": "baeb6aa2e3742ba16181803cebb0ef43bebf1b22de08355c88f0b62e754b3ca8",
+        "combat.json": "116d4363ed2975554b12ff53690102e2cda2760a13ab0d8d6ac0e31afd1dd8de"
+      }
+    },
+    {
+      "episode": "ereq_20df94f4-82d5-4e9b-bef0-ffa2647a9800",
+      "valid": false,
+      "failed_slots": [
+        6
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 8,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 23590,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "1860522AB7A7BA91AA389302DDF7A79F241BC032",
+      "actions": 356040,
+      "hashes": {
+        "spec.json": "186e130fe126e6cd077c6ac6931d31c96abc351b2f4fc537b7946e7ffea92c0f",
+        "economy.json": "f56ef30cedef7de0e350f1904ef9feb62597944e87799d215a2c43e46088e3d8",
+        "audit.json": "7b94310603580bede954022a99cd3d92c403bf2b7ce40541cbc8abe0d42d807a",
+        "player-status.json": "35c92cbcca99e8e324033c3e679fc84e0d5164da6120a6ce1b6b192a960390ff",
+        "episode.json": "d60c0db0c5788697171468dc391f6f15c5a37a16c1fd346fa08c2561182f8566",
+        "replay.bin": "d060e1b18eaa4193b48b1c3bd079ef0494c546eea66bcac8b8f6f6f1769a49fe",
+        "results.json": "f131ef6b6590bdfbc14acfd3e3138804a8d01d9e88d154cddad24d375ad761c2",
+        "commands.json": "69db63dfe171deb54fc8d3bf8b6f3c24c945148d97dca578b2f3719ca3b97c38",
+        "combat.json": "e54f5536000a8506bb9300c3515b57797ebdad86e6fb2654a00b684540e2d38e"
+      }
+    },
+    {
+      "episode": "ereq_22dcd8ee-7510-477b-a9d4-2abe2341ff47",
+      "valid": false,
+      "failed_slots": [
+        8
+      ],
+      "subjects": [
+        {
+          "name": "coach",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 14871,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "60BF212E2BC3C6A9D8B600D4DA86243F65DD56A3",
+      "actions": 111673,
+      "hashes": {
+        "spec.json": "706f661a780c8ebc6a328900645f991742045a3a2c4b4a2a366c5ba770d3a50d",
+        "economy.json": "0b6721fa15928b15a39cd26863eec1180e73111af0f4b1e8f0679954b8bb1e5a",
+        "audit.json": "ff947520a9a85e24a70cce6a4a3dbb0762db6387cef538e18969bdace17db8c4",
+        "player-status.json": "4f6868abb5c765297f35afe25c2bfaf5d33a7cf210012e5e1ab6ca7899a35fcd",
+        "episode.json": "6ec3a8733e7f7606df1b3bbe48ccc5ef092391b8b329eba0f7cf55737e6708d4",
+        "replay.bin": "67533314d4c97d1f495aa5e1cc7b1ac7646a6064c23eebdf20d3435b9b6cf548",
+        "results.json": "5488f050b3938ecb6025677dbc23e8034efa9fddf72dac07e499725e7d6c879f",
+        "commands.json": "077baf0d58e7a44d8af70b79d67cad91a05ec3f3584229d6a63e2c0e86b5580b",
+        "combat.json": "5c15fd9b1369746b712fde5f62cf7f0789e25e57e1d4f3bb0382fd34acda0c0b"
+      }
+    },
+    {
+      "episode": "ereq_286cb0d3-8f16-40e8-8a52-15bd10343958",
+      "valid": false,
+      "failed_slots": [
+        0,
+        4,
+        9
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 1,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 30277,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "3ED8A447B264DE611542DE1097AA4023E33FB581",
+      "actions": 342961,
+      "hashes": {
+        "spec.json": "148fae120995b49e3e5814df1ca08f1495f3f55d7a799d08836fc7fdb0536bed",
+        "economy.json": "1a215a76514502a44efbbf32dff58d7e8f46c3c0272649c538c7d11531b2f6c9",
+        "audit.json": "24f79b2f27763aa5f93a0859c07377aa12257dca30ed602eca92cbc5ef6a5f6d",
+        "player-status.json": "c2767f559b9bf97ab3e19877e47638c929f837b8590dd5b335a242aa49a04b1e",
+        "episode.json": "2220361580aaa775a7f23238dc222aeeedbd20c093c35c2b898fe6d3ab20dda2",
+        "replay.bin": "c5cd975dec52f876700a289219f3dbc7c16d6d955b1d105534f3342c136ed49b",
+        "results.json": "83a04169e9d281407c1620abc9c94588c4270f671cf6077a2709b23a96ece854",
+        "commands.json": "a3593335c9e6da9073e43f34e3755390c5c74642eddeb710764c6ed407c97870",
+        "combat.json": "aa0bea1692f2b9e9cfa494430b9f1432db3a1c46bf8e8e3a12d7d2be834b1662"
+      }
+    },
+    {
+      "episode": "ereq_288b56f2-fb1c-4f8a-981c-14cbdd13dcdf",
+      "valid": false,
+      "failed_slots": [
+        7,
+        9
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 4,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 3,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 11537,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "01EFA1912C481E58CBFF7D0C8183DE9CC6798EC0",
+      "actions": 74075,
+      "hashes": {
+        "spec.json": "348f611618e37a9d005305530f766d927b6b71c24897bac1e27ad627e9c93510",
+        "economy.json": "94d70918f70b41da749a7cfdd6329bfb582556a24e0485d6eee4742afd2816c9",
+        "audit.json": "0bdcac1023aec23637d310d45b466b6ba68e7bd9b12fae393c51bd4a7761b6c8",
+        "player-status.json": "c651ddfecb28e13bba94943a6b2fd67599c2da82f35ab7a473553a74b4ba5913",
+        "episode.json": "6e92d8c798955fed241ab53b5711697b2fcccf5f584ab57934ce24b28ab986e8",
+        "replay.bin": "d07d2803ec42d8b094cf6d4c0e7cc8714df280226ef1d3ce7f99f9148f2bcf4f",
+        "results.json": "6cc145d5b86e5378735e42923ec4ec09cc6cb6115c6e71c6164df5eaac6553dc",
+        "commands.json": "4b8f437171b2af0190d0c99913ac85c330236f440c5d752d5a1bd34385671dcf",
+        "combat.json": "4a290fd898813bcbf3fb3b3f1d606a52b94d1d54f49de1c7be226d359a47b39e"
+      }
+    },
+    {
+      "episode": "ereq_290df17b-b9e7-4104-b60f-54787196448c",
+      "valid": true,
+      "failed_slots": [],
+      "subjects": [
+        {
+          "name": "coach",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 9132,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "7D58A3D279D46397B178D1FE54445DAD27E345A0",
+      "actions": 72752,
+      "hashes": {
+        "spec.json": "dcd6394ea835fa0fe0a194784a5c5f4e18969067d3e7b81d9007b7ecb13c9d5c",
+        "economy.json": "a6a9c6adbd36b596bae6d27e5aa59c811cf4d6db8bcb317787a570075b9a7d56",
+        "audit.json": "d2fdc6e9d9bd586c7e737ad7774198f13c7a0430799462bb3ac7fcbf806630f3",
+        "player-status.json": "bc78867156ffc06125a4dbfb900dc701a9a62e4fe76dba968188e12cec3cd1db",
+        "episode.json": "bd4546f0e2781a43ca1f009086a3e52b998e1fa434c76c2ecbe51b314a8ae927",
+        "replay.bin": "9885d7efe295c6bbc9fae5013d3669e47f7fbb60b74a3ab6a34cf65be7731bde",
+        "results.json": "55b7debe80f6a7a92adfd4265f31e6c5b54ec90afdcc2d8a6c9d3d0bfd73678a",
+        "commands.json": "bdface0b166772f40fa06b535e71680ea81822f853f117d524fc79b69db4c25e",
+        "combat.json": "76317ae05a4fc6d7ace8a0b38fabeb6a349b8dbd8398ceac71ce0e18bb82e58f"
+      }
+    },
+    {
+      "episode": "ereq_3336526a-8134-4e41-a10f-35dbf3ac54f7",
+      "valid": false,
+      "failed_slots": [
+        2,
+        5
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 7,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 9,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 13676,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "60D18CC79EB03277E99CF52845A9947E612755A2",
+      "actions": 74927,
+      "hashes": {
+        "spec.json": "75b62954080e3cbabb55e6ef44a922b7304ecac00c1f8352dafa48ee587d47dc",
+        "economy.json": "9db0a29d2196470b3763c5eb92027e110a4803d80dcde68dbfb3afcaf1ba5ee0",
+        "audit.json": "44e88793b735330373e9b00255ba2ac273f488d11e73b09616416a6868c675d7",
+        "player-status.json": "78ffbbe378551ef53b7da8526686438df507e806994d94b3124b7ce15b8bc944",
+        "episode.json": "f3cf6661cbfc1e586cbe12efcd34668f1607361f6c97a39fbde32f16b0fb3abd",
+        "replay.bin": "01264fffdb2568335016fbd80a9efcaefaf46d8241a525aad0891157a1993995",
+        "results.json": "5e903dec158ee694dfb2c54b78e4784c99444634a60b03840c4acf2d04f4988c",
+        "commands.json": "ab22f523c8be24ca9aad58dbb1fad7ce97af4b069dd2e698c0d578b3a512fb39",
+        "combat.json": "9b060c7dea6f43ca4ca746345f99890ad660972f3bee94454ea878a74f1eb15f"
+      }
+    },
+    {
+      "episode": "ereq_34043cf5-2dd0-49a4-9406-33a16175b66a",
+      "valid": false,
+      "failed_slots": [
+        5,
+        9
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 2,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 11814,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "5C1F65028D5ABF8066E327FF9B90040993F9D3D6",
+      "actions": 76987,
+      "hashes": {
+        "spec.json": "0825b13ca5c63910057c30cd5b5925aff86e1ebee21ce04586197f48dab6c394",
+        "economy.json": "0dbd47669f8cab39ba497937987be1b0ce41a4673027306ada4d78ed2d5c94de",
+        "audit.json": "80767a251e2ee8dcfc63cff0d1a64215d76981314b6b425d68b6577a6fc7b81d",
+        "player-status.json": "e1a5b21547777bac75837d18b743ea83f19d32e05860d680a63873a66eb710e4",
+        "episode.json": "1275a9f5d990d277b2573aeb1424a37ba5126db41f5e90f5a9f1aeb71824423a",
+        "replay.bin": "a12c66c5b7e9d1ac2c420fe6c2338578ece25cb982b31b3cdd2f6f2e1a0bf1f4",
+        "results.json": "0c71747630a3dc87b788c136116ce8a57a46a6765b189298e195a7afad5d7cdc",
+        "commands.json": "7c1d087e1f4de692345b5a45a30fc891e78563e0633cc7c0d866e1e6e8c3d5a4",
+        "combat.json": "c3992b2fb484b47a7bb9023fb83ed3adb11170ff4d316216118e2b6e7711ef95"
+      }
+    },
+    {
+      "episode": "ereq_363a28d1-a286-4aaa-8831-e079650c3e61",
+      "valid": false,
+      "failed_slots": [
+        6,
+        9
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 5,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 8,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 24752,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "FED0DEBEA00E88ABBDE7903D157696887196032D",
+      "actions": 142808,
+      "hashes": {
+        "spec.json": "5c942c54b9cd8f67841476603a84d66cadba6a492f288a92248815590a527fb7",
+        "economy.json": "57dc4907e01e1f1ad7fdbae1a45628cc2f51d60e4923855216673ba869e79d37",
+        "audit.json": "781151bc605964a1af2d72d643fe0f435f5c2a01572d06233ac63b66f300789f",
+        "player-status.json": "a33a7e6dfdc311df5d594c935b2256a039469a3495761054af7fbcd657e46d47",
+        "episode.json": "24f861d2e6b21049733625c4f6baeaebca060b902a65bb0468c91ddef2cc751e",
+        "replay.bin": "cae4c6f0f88532d2b92a8d2c44215a3cc2b7bbf734a752ce8109b092f3161841",
+        "results.json": "f04c0c7d4b4c8eb18a1be419dd5712fe0c3dcc24edb9780006c3273e5e2b200f",
+        "commands.json": "eb8f9a1593a2d6ee66400abc2a766fc3e1db425fffeaa4ef8b83e326b55e1c34",
+        "combat.json": "c56f1f31f256a0c138e2fc73f2ae612de261bf69d4b4aba31b2b4249ee3be836"
+      }
+    },
+    {
+      "episode": "ereq_39c56471-ac42-4d99-80af-0dcd258b74b6",
+      "valid": false,
+      "failed_slots": [
+        6,
+        7,
+        8
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 4,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 10194,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "B806156129652A86028D24D34B03DB04A90A9871",
+      "actions": 38451,
+      "hashes": {
+        "spec.json": "eac59e5223e1f826aedc92be0cf1cd0f03bcd837e0df17d53cd7fa71c37f82c4",
+        "economy.json": "7df7175dc8032692c01bd69c574de5942a72d7143f330055fde12c4e533be01f",
+        "audit.json": "132df87260f9e1791a84c176a84ae6f2f6bad4745f11a1109ca17bd834c07ab8",
+        "player-status.json": "c68ba9636e196d60df15603f4e9a34e505276ca869cfc6a9f604613eb52b176e",
+        "episode.json": "870814b41f9cf1af171bff7959ecea9de87d1a42ca2e4a72e6c5a87f0b361107",
+        "replay.bin": "fd0eaa246317b37531b13f0601de5c9c2bddd2a9b861e26d60e8db033766ad80",
+        "results.json": "6086d1f9db0ad68776e5cb6979c76bbad7bb174852857f1682d59089d50da3a4",
+        "commands.json": "e2eb20d72771a4a1a6f7f5a1bd810dc14086c8ade10aeed7225ff28298f52c63",
+        "combat.json": "57189518bf0c9d08fb656ee3975460cfdc466ed75b9d1944ac342da89ccfebc2"
+      }
+    },
+    {
+      "episode": "ereq_45d9f052-20e1-456a-93dc-6962d28a219d",
+      "valid": true,
+      "failed_slots": [],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 4,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 9,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 29593,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "9E5F08E7DC7D3B0F8CD2547077FFF08E15E62712",
+      "actions": 251456,
+      "hashes": {
+        "spec.json": "730b7d007f56dbf0e1b4356c4822423a821c8185250085ca651e098ccf2b5e70",
+        "economy.json": "a63fe60871acf53ceebcb65e7289067ed143e56bc46d451f55199b961e8b9afc",
+        "audit.json": "9f9124aefff71fea6b57ae496ce9a04475093d395c92c92a4f2bca38f30991fb",
+        "player-status.json": "03930e40bc24555eb78da0781cd0f6fe7d700609067af4288fd0bf80212cc5d0",
+        "episode.json": "5dc2ad9b312fb03b1f90ea5e7378f8fe6beeabc3850ab601b059d372c601ee60",
+        "replay.bin": "bb02e7a9f487cb4216ea9905def4bfc42549d8d417e8275d13b68148f8c8b0c7",
+        "results.json": "4a8ceb329dce1128664e12fdac0c0746e820dca4b8554c518a6a12eea3c653fb",
+        "commands.json": "d46585fe09392d1da193efdd390a1bc3ba4d89ab805c2fe03864cf7084844815",
+        "combat.json": "eec1aeb8f41c73369d4d43537c018034aeebb243f33cef29c07ed4116e5611f2"
+      }
+    },
+    {
+      "episode": "ereq_4a98f37b-7209-45c9-8bfe-586ead923ee5",
+      "valid": false,
+      "failed_slots": [
+        3,
+        6
+      ],
+      "subjects": [],
+      "ticks": 15704,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "ACC50F7B3AA92CC2D4A41CB2B656BE8CAA4DECFD",
+      "actions": 89696,
+      "hashes": {
+        "spec.json": "4ee88e7d46be931db996a262852fde31cff7ec1f6907390c713edcff8a0d9cb2",
+        "economy.json": "6b581991218c141a20bbb2504ed6c78b3c50d80a40d38d331c4c2466d3a2b7e6",
+        "audit.json": "1ebf719420936c6e96350cd064ede7dcbf884997d2996aaf77c0e4db4bcd63db",
+        "player-status.json": "64d813306569367c96f5dd024d3e9bb52b50def42abe7ff2feeec127b5b63a55",
+        "episode.json": "15cf7e6207ed476a9bfc44064760cbed46b97da59c3313e1c73488b62e6fe8b6",
+        "replay.bin": "83f67c47875ae6ae4445ac95b2f9247cb3dd67595fb8da3d2dc8e345fee48c54",
+        "results.json": "876c968bd62becc1a3bb6539980095996eee6e4c754f109fb1a3b8feaa7aa4c4",
+        "commands.json": "40d9867accc2dd93fd6d0f5e23fd15bca94a513f2b6064b78cd0fc0537e68508",
+        "combat.json": "2165047fb8afdbb50dbee0e1fef54dc6c93e73b496329f92395022b762745ce5"
+      }
+    },
+    {
+      "episode": "ereq_4b543201-0c2a-4959-b52d-6a445044746f",
+      "valid": false,
+      "failed_slots": [
+        4,
+        9
+      ],
+      "subjects": [],
+      "ticks": 15690,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "228D4665E6FEBD4108B614BF629DFA9B093B9E50",
+      "actions": 162668,
+      "hashes": {
+        "spec.json": "fcebabdce05acdc7948370eab58d2b36ad4b0d20ba18dc6d0786473b4599cfa9",
+        "economy.json": "7e5b24df34bb1d127057bec4d40f444f31981d8cca96f95c4cf3f801c317b4cf",
+        "audit.json": "f1b5742f5cc933b81b09f55c62f117e7d4e038b37e75687456010ab47bb95583",
+        "player-status.json": "c5760413e93b9f9868af1b1203dd05277630a6a5b595a3dde7f9b41323f34763",
+        "episode.json": "ee4fb1920881d62b607377caffa90c947c851d19e4d83dfa5f075638d4c71415",
+        "replay.bin": "368ef61f5c4a5b9b374a26da60d84883d7688957b7926f008a55e9e30eac906d",
+        "results.json": "f76d64c8f616f53451fb27e9021c6696f00a6d140c4022773df85c188fa0a3db",
+        "commands.json": "03420e7c0c3d750bf230ca8728ac39f0a6e19464b33f6d58a2cf16edb7667c92",
+        "combat.json": "8e5fb5bedccc557e05cba53b47b3c02103c68f5493b5089528172d8734661257"
+      }
+    },
+    {
+      "episode": "ereq_5184e4a6-2311-43eb-937c-ddc4470ebc2b",
+      "valid": false,
+      "failed_slots": [
+        1
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 7,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 4,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 12878,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "18970C8A5A1201B718313E85BEE6EFB575FD1842",
+      "actions": 165289,
+      "hashes": {
+        "spec.json": "2bdd722df24f3206d086efff9a9de0bf211bf529f9e98b7892cfe5810b8e5a4f",
+        "economy.json": "9c336618ae43e05797391fb57363467e90b2a95f5306c253cc41447ccccf633d",
+        "audit.json": "a81ff744f89a4972baf5a75f52dfa6eee5787d375d503a36d0389d9c63aef8c2",
+        "player-status.json": "7d974b9469494d8cafa9b2fdcdbef02fe2d737f4532d9896ddb15b94ece28a4c",
+        "episode.json": "b42200fe458c02765ef01d5dc15befaa9c2e808a7ba9a200c3c249a4db887d2a",
+        "replay.bin": "59aa9e7b15d4a3872993025e8e652a0896eae287a9394d1d7bcbea08e2792008",
+        "results.json": "b4b69da5b7be1a343c35dd53145b0ad9527500ca28b4a72b2610a4b847c5c70a",
+        "commands.json": "4c3b78db2cb92c84f0a758732d99b0d61dfdbd247b7c13986fecfedeb705a1a1",
+        "combat.json": "ce40cd15ba58f038b50868adaa44416264b5161526bdfa6dda0279f7a8f5752a"
+      }
+    },
+    {
+      "episode": "ereq_52df385f-2a6c-45aa-8c31-ff531e60024a",
+      "valid": false,
+      "failed_slots": [
+        2,
+        4
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 0,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 13829,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "CA43FF148A7CB1343111ADB88CB8F155E8F3F2DA",
+      "actions": 76287,
+      "hashes": {
+        "spec.json": "b02d2e2b1da42f6f3e0175716762016ef423032d05b4aa08348819d7a96c200d",
+        "economy.json": "a407756ddfb53606dffa28bdb7877722d5718b4c7a5110dc56dca01af2135cac",
+        "audit.json": "a36d59ada140237d67d795ab95567e05abcee30906557b77dae14f5a8b1a2726",
+        "player-status.json": "a6d1d34e5a0d4e01be37477eb209a616f911a5252892e1e057037debc3e04ccf",
+        "episode.json": "dafb2d2be0dbcbad2e33e1d8e8ccd177be3aaf1551c15a931fa6d2370544fd32",
+        "replay.bin": "7c2392e34fd0549a473609ad59a348338ae486704334c93a89196a5ff3ae3928",
+        "results.json": "e60e184aff19f4d022454c28048238c81ff73891afef5a98bc9b05c7d0ff7f15",
+        "commands.json": "8cdb30775ff898279a980d037d8a681a4c8472de437945d83c574c940265e814",
+        "combat.json": "f4ea595ba87bca29997cc870d7c1d3fbf4092942d35e004122604c26f5c2f861"
+      }
+    },
+    {
+      "episode": "ereq_532d1651-c6fa-401c-886f-3b8e5fca20ab",
+      "valid": false,
+      "failed_slots": [
+        8
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 5,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 0,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 10346,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "39644C632130F8AED6BDD620ADEA011499B57407",
+      "actions": 52930,
+      "hashes": {
+        "spec.json": "9444e811ab8e1ad99f3d55cd6d17fca9a5769718ddc3e9e910eb5aa2d05a045f",
+        "economy.json": "8221b301e14095f3b9991861427976b3b7b9032b146b62f75c9f964447341f5f",
+        "audit.json": "c7fc4fe708b87a6917aa8063d5a9ba2090f46c7429f3a3bf02d55d723b841f7a",
+        "player-status.json": "81b764554d376d8e6b7111a6825df17f0182bbc6e005e81b57a9c2e9728c1456",
+        "episode.json": "b9ead2211c0c56ea37c6a6927ce43e769c7779733c135a9933a37c04fed1e189",
+        "replay.bin": "ed01d2881877c8854e4cd9ef96c1f200d54462be2fb40e50eb9a60bf9f3759f8",
+        "results.json": "9a5686cc3de1344c0880d2ea8cdb20517fdefc9b0bbf8b9127549436ceac28b9",
+        "commands.json": "1ac88547453156d3aae07bcfcc0145c71ab064c1439dabe3e330d5b051f79060",
+        "combat.json": "117f0576d87de6a357b53a4b9193e4ebce77fc9c4b3333bba3c558a9f836a9b0"
+      }
+    },
+    {
+      "episode": "ereq_56d9e948-0c4f-4a7d-b548-3e0b838ab31d",
+      "valid": false,
+      "failed_slots": [
+        5,
+        6
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 9,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 2,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 18002,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "79A69C1A87476C3E90AA2EFB0ACC53EAAFA86182",
+      "actions": 106479,
+      "hashes": {
+        "spec.json": "abc50c2d3960c481c1f29a49fbe5e12d3cb376cae8244e3597beec1e788af559",
+        "economy.json": "a360423448ab4ba1be8f756390eb1d356580229c0a2e30e5d52de685dee3892b",
+        "audit.json": "bf83029fe51baf802d5b897aad5c714c8ba3267e78d482fabc26b1a41330606a",
+        "player-status.json": "1911554f4b2f13055387a733858bac1b2e4bd477c711faffbaf24af8bcfc2e9a",
+        "episode.json": "e2a514f770db8c64ea26e97eac92cdf43a7bc58733646aa91c7a9126e3885bfe",
+        "replay.bin": "cb6ad8e34e85da2926793a190fd3b12d8f60249e00875bb663f66d92479de273",
+        "results.json": "5045a630c60226c0909ff386e7e829bd55ede34b065cc3fd5fb17acba621ebdc",
+        "commands.json": "531d1f6b5bde07269b58f758a60c89316d57cbb3118c2d77ddc6d92281812c3c",
+        "combat.json": "1052d0eec9212b2cfe9f078c5b4b0d0857f5efe7f8ca54d2deb261ebf598a9b1"
+      }
+    },
+    {
+      "episode": "ereq_58d04832-0835-4f0c-a0df-f90106c4a4c1",
+      "valid": false,
+      "failed_slots": [
+        1,
+        7,
+        8
+      ],
+      "subjects": [],
+      "ticks": 28908,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "A7A2AAA35E197DFF0E72947BE2D2D125EFEB659C",
+      "actions": 377554,
+      "hashes": {
+        "spec.json": "942b328ae2386624a440d592880b5477a9f1a3b317964cb8a28d243075ee4b93",
+        "economy.json": "2eb5cf756e2c87dc8bedb59c614a30c89344fb278090c24e205f2afd17fc9adc",
+        "audit.json": "d1fa195e1451cf502909936dafe7130d80e2d62b0efa536cd8288c9a8ea6f283",
+        "player-status.json": "8495345710518c63275f3ef8093a8a5fc61cb99611529ea538f84d31b8f094ff",
+        "episode.json": "6d1d6d56ed806a3f5b22795b8499fac6111658da512cbf7075227ba7c064e8b9",
+        "replay.bin": "a47977a2d18400b6e2d2afad268649f00b53beb1c83f8fbc67c7227f14d89186",
+        "results.json": "d253f8215716b5a43cf26f5aacde0e3057f96c24bcfafda7ca9b17e0cf34dbeb",
+        "commands.json": "4a033ad0ead0cccb071069bba19175490366419c741e5939e364f40c6dda1b9f",
+        "combat.json": "667b540f7b9f50a4a348170fd8a38da626645049f6e4bd0f288de0844bb62bd0"
+      }
+    },
+    {
+      "episode": "ereq_5d0b4a67-b368-440f-9ec6-b5910907c894",
+      "valid": true,
+      "failed_slots": [],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 7,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 29821,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "40B78D876E8C570A2C6802C481FCA86A1082A6C1",
+      "actions": 412909,
+      "hashes": {
+        "spec.json": "6ea99ff4567cda23cfbdf054acd7e4b0fe8f4d9961cb71663ed48416734f7f33",
+        "economy.json": "f57f044cec8123f3784f9464eb021d5e18ecd18dfd0b7d0d329a614b631d989a",
+        "audit.json": "636d4c9d73f3e77c1dcda91d468fa394c4de98e4f162e850af6168ccddb17739",
+        "player-status.json": "2d031f7a614de8a24893c10adbcef3be0bc5e33136be787f04b4c4bf1cc8088e",
+        "episode.json": "09fbc9c886bfac70e472db948c4761803e499bef76ff896ca43c751c167b0580",
+        "replay.bin": "22481508dc22d6699efefc86a40bef02026a7ebab41d79ef17b64e569d1b6026",
+        "results.json": "d8195e6ccef531ecddd4d88e4d19d4abc5de29b30a5b8d58925a70df4fa0a5a4",
+        "commands.json": "b2b3659a8003ff41ac9a30cd9d621b706e537f43e4e1397f8e95328aa41f05bd",
+        "combat.json": "e9d098d2d376830bf9daaa1a3d9bde713fd2914f0fc86438186bd22710ba0252"
+      }
+    },
+    {
+      "episode": "ereq_69fb80a5-6808-44ec-b090-5f96895f8559",
+      "valid": false,
+      "failed_slots": [
+        4
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 5,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 29821,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "0849B5AD1C519E619B9DB732B82206BF3437292F",
+      "actions": 252468,
+      "hashes": {
+        "spec.json": "aca87da36c27b43de3a06b52a93eacfccd9dcc8dd0e793c3ce41bddc1af5bcf5",
+        "economy.json": "c021333424c78cb6bc7931bc47234de5755f024ff26ec46394c94cedd63fb11d",
+        "audit.json": "16ffce4132264c3c7d527173f51799c33d3e66e939abcdbeda5cc43aa5778601",
+        "player-status.json": "2af9d6965fe0bc45b41569d9b492b6524b082ac97662a83e7a7788165de5aedd",
+        "episode.json": "28e80cddb149d0745c25fffe70a8d10f279c0d3a8895653a4660797d68065078",
+        "replay.bin": "b0342ee0c706546d167112ae45e5f97a629cffe4c580a4d291caafe7b7e79879",
+        "results.json": "1c3e3517236d73dfc60d56a1b882797e0d470c52e3abf504a5717c4aba1990c6",
+        "commands.json": "4176224c6e30ba0971c5ee3ae4f17998babfdfa38f71a31657932bea10863866",
+        "combat.json": "c23d3d6040de0605e19698a97cacadcd05de7a459211ad6f08e634cf885a44e0"
+      }
+    },
+    {
+      "episode": "ereq_6a84ee89-1c61-4d3f-b8d2-d342fe136567",
+      "valid": false,
+      "failed_slots": [
+        0,
+        3,
+        7
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 6,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 21576,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "BE2A17C831EBC571CD80694220273F06C3831BEA",
+      "actions": 116151,
+      "hashes": {
+        "spec.json": "904c29150f1969b12bb04dbb32f60c0a2da22cc2a4e2aa96e1277716d3ec060a",
+        "economy.json": "8d52a9f58b187ca2a726d6db3adf8d75c446a4020577c08dc48c1cc90cdf9749",
+        "audit.json": "124ad0be9e7fe024b8635b9cb4a713e0f23d66e9228f3e833d2386ab16f0688e",
+        "player-status.json": "cb63cb2b5cc3a12386f96e868cdea7581f2981c60aed740424cbc02043798f47",
+        "episode.json": "acf42b304c01000d08a06b44eb3fe67570743afcc1408d16992e2a0d95ed702f",
+        "replay.bin": "dc935453fd3c86e4ef872029bd336dacad01a75eb7897fb4a7fbfba9668d5633",
+        "results.json": "2173a4948e94d072715122705dace8a86ec7176eedcb1d02059982e334f2238f",
+        "commands.json": "d34d410f728a0cb469cbb5b97f2154e70011054780712468023149f9890ce2ca",
+        "combat.json": "e78f2791b9fdd88a706346d68a9207d5dd458bba5a9fc9a1d4bd809f096bb062"
+      }
+    },
+    {
+      "episode": "ereq_6fdcb9d1-e61f-4ef6-8853-98ea44328479",
+      "valid": false,
+      "failed_slots": [
+        0,
+        2
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 4,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 9319,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "88F1D357EE2ECE1E2F4A082169D7066B571213FE",
+      "actions": 38556,
+      "hashes": {
+        "spec.json": "02a4ae02f1452cd08a3aea0f09a622556d255bd8317f4593b721249ecab7b8a6",
+        "economy.json": "4bbd4010b9c9045728678faa5080585cdc2c56e1f36b2540fe163284439604bd",
+        "audit.json": "ec160570428b514a86aecd755350aea2291c353d50ded49263ef3fc8a90d7d6f",
+        "player-status.json": "57caa85ae5ab67c8fb8d7e2b74ae374151b5a72abd83c065daca0e1135302fb8",
+        "episode.json": "68e166ed11cb72e4e6f290b10099c225c494506ce3aa650b8c962e0eedbe5d02",
+        "replay.bin": "dd2bb246aa678b47d9957e8dee3555dbaf6ad423de1dba1bcc1e69d3aaaba1e6",
+        "results.json": "af077be5054316f07e5ec6e24e022e97b2490e57e7e6f98b9c7d28c88670a7f1",
+        "commands.json": "2a8d10cb2b8c65005c13b0a358862bc754cb63852824bdcfb011fd9380847bdb",
+        "combat.json": "acaf2f41dda15dfb6c0123338c7793ab3d07c8cf83d67cac00fea9826938c935"
+      }
+    },
+    {
+      "episode": "ereq_70eed4a5-faf8-445e-ac11-554e5155e941",
+      "valid": false,
+      "failed_slots": [
+        7,
+        8,
+        9
+      ],
+      "subjects": [
+        {
+          "name": "coach",
+          "slot": 5,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 17743,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "1C3448C9C695BD761CED4AAB7897E71053BFA56D",
+      "actions": 143159,
+      "hashes": {
+        "spec.json": "7a32dd5f185f6dce32d0d61034fb0c189cbcb3a1b12394bb8c0158bae98a6244",
+        "economy.json": "c8862bfc8199d5bd39dcdf6aa89d6dce8a2592657815f73888160418fd918cda",
+        "audit.json": "7cd3bdd42e806cee4e9a4d82eaa7e706bab11401f4fdae60886b4c7cb3cda0d9",
+        "player-status.json": "3cdf3995afb71748649ac36d168c8c2bbf6d2c195a537f7e50197bf48230543a",
+        "episode.json": "2b098953084f3f2378234ef1018fb568269be9a6165ec082e29c279007958c43",
+        "replay.bin": "d1d93563486b6241f686a763793718722d9c1853096994e7c2b613e8db69c6fa",
+        "results.json": "637bc9a5c132a7cfcff57f2ea2002bdfe470f975c2f71707d0b2778cc8f8077e",
+        "commands.json": "15430841ff07cf6dfb1dad3173237871637c985a4325820c4d0332f27277d58f",
+        "combat.json": "d2d43557e34910826be1193b44134cf8b9cd472f8a546ada8047dda7e9af10c7"
+      }
+    },
+    {
+      "episode": "ereq_731a986f-53ab-43a2-b2ad-b70ca6fa6927",
+      "valid": false,
+      "failed_slots": [
+        2,
+        3
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 0,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 16965,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "28851085B7263E59862CF425F0E5F930C3CC0D92",
+      "actions": 84935,
+      "hashes": {
+        "spec.json": "286876825f244d914a5b1eea5e1f90e4c6a9c4190ddc09e8fd1120bf95a5d908",
+        "economy.json": "55f122a16f18b37367e44d6aba90421a472c42822c004a9794acd9ee1c6263ad",
+        "audit.json": "a61cdc04423651b94403ab98f89868a02a7aa495e02275bdcc23b610d027a648",
+        "player-status.json": "055673a879137d09c0aeccb52cd2902cd5e7751a22327cee4fe40982776fb85f",
+        "episode.json": "7c98d68c63f6774d445d92e8d99a8a268c59c6aa480b32e814a44abd72ccc285",
+        "replay.bin": "0c2945ad9f27348408f6a0603aa4ada465813c5a7e12de1b717a9c8d0a2c129a",
+        "results.json": "454303d19473ebaea800d99bdfd506d017ad901e052c4af0162e98e5bb77d1ae",
+        "commands.json": "d3fb22cffb544961e6c183045d0c74c008c801c99d34b9304981c4b8d00f76eb",
+        "combat.json": "a213ff5d3c09c88e2aa676fadf173c9263f7c324bc6cfad1a019fd3a56944604"
+      }
+    },
+    {
+      "episode": "ereq_7429b24d-909f-4bee-b990-cd060d8467d1",
+      "valid": false,
+      "failed_slots": [
+        4,
+        5,
+        7
+      ],
+      "subjects": [
+        {
+          "name": "coach",
+          "slot": 3,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 8967,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "21CBE9EDAA3D2DB9E28BDA0CFDD1349A45AD8196",
+      "actions": 71840,
+      "hashes": {
+        "spec.json": "f047a7551d5e9435102b621dad81a30bc6ef79dd15cf064a5f29d0796414d3cb",
+        "economy.json": "e2ed7ef7167431d8f4ca04a7f6f144621397bd58e0dbc46e33dcd8d70682609d",
+        "audit.json": "76975978093444a7178f5d8806f3ae81b9d1701ea6c386a3a5c2ab7f408fe690",
+        "player-status.json": "bd33bf4ed82c2fd121de9f3139a3fbd6ba8d24479c8bac5cfda9f54f5037f19b",
+        "episode.json": "9e3c14034fafe179c05a0ed913e2102439ec090f1a08dfa406b5ea2faf2b9f52",
+        "replay.bin": "5bfeba2a26c2dd2ad7fadc5c0b1159dc8e76fc8926d13932a3328133cb94e909",
+        "results.json": "fa0a69443294923814a733de4903aa6440f4a4cb4d488ee5969f3d2ca1aabc92",
+        "commands.json": "34bda78fd879fc5d12910ed55b9c8e35aeeb26d6e731828c79e76eb694ac3e39",
+        "combat.json": "5b9d6026df7ff70136b6e6c25cc5660f1c5c041eead39c0560e9f22440e747b7"
+      }
+    },
+    {
+      "episode": "ereq_74e34f21-093d-49cc-a991-317ca66e439d",
+      "valid": false,
+      "failed_slots": [
+        1
+      ],
+      "subjects": [
+        {
+          "name": "coach",
+          "slot": 5,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 29821,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "A9B37C1A1716D0C4327BBE6DABDE097469247D4D",
+      "actions": 293230,
+      "hashes": {
+        "spec.json": "99c8d450eeb28aa110eae22e07d7dff7633ee1c16e74e650c823302d52f0966f",
+        "economy.json": "35416d1a297a4f6c9e796ee49e0abe909e2154bcfe809501a346a5ee30fbcc58",
+        "audit.json": "a8dc592981d670a7336074bc10142283ef1c3433b651920c32472b1e2ea86833",
+        "player-status.json": "a04d1bbe4d326d05a9f2ec1f8dc248b2f152ed1b4971637458d1226d9262fdf3",
+        "episode.json": "5eb41ff2caaddf6d86e5ee3e89c37c1e25d6be29195ccc87630ab458375324bd",
+        "replay.bin": "8a2f5fcaa1593865b8555004f8742c1182598c8786c82532dc2bad185fce420f",
+        "results.json": "fff36b22496186f8b5ce766d8650805728c4dccb66d5f07e8226db8950e632d6",
+        "commands.json": "641919ff18035d86fcdade53557f916d76534cfbd79a0e9cec689914e50aa82b",
+        "combat.json": "723c08673df8a5488b8b0b743885c445a002ae84e92255355e2c7adcd1982583"
+      }
+    },
+    {
+      "episode": "ereq_780efe39-9013-4122-8876-ed376507ae53",
+      "valid": true,
+      "failed_slots": [],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 2,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 3,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 9679,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "79BA83B10649D9A494E0B4BC52F3F5BF31797998",
+      "actions": 50641,
+      "hashes": {
+        "spec.json": "822bcfb4c25a04622a0712c23dc2a415011f7885381701353dc4ed28d711eb48",
+        "economy.json": "a0b660cd490d1c7579b43f28fdd86bca2f22cf81bd810977b93675edee2620fe",
+        "audit.json": "45ae999b9a94d2e44984097be0331c5907fe88df7a66d90f965dea53bf412243",
+        "player-status.json": "2214dfd0ca5d9e2ab2ad3a27ec821758340a34f32fd47f8a25431c6da825e032",
+        "episode.json": "c7868e857be30a9b5f35e291c2049d891d86e858a8488ed367e9699d7385f1be",
+        "replay.bin": "014f53cb615df17649e8d9eb66c75ce7a6d65937f22fbb18d51902e52c8b2c9e",
+        "results.json": "20324b8f010354768ddc11c352078fb5d0c2ab33ad52f443aabda5aa5744c57f",
+        "commands.json": "172c0ef53f7689f6afd5d524b85434c94992377eacad5453ad2a1c4462c35a82",
+        "combat.json": "db56a87fb59fb63f142a3bed21195bcba8afd450d2ef09272a4c616c84817dc7"
+      }
+    },
+    {
+      "episode": "ereq_79816f64-07d6-46b7-bd6d-f7be8ddc2404",
+      "valid": false,
+      "failed_slots": [
+        0,
+        8
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 7,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 28684,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "3EB0E593250A8BEFDE00AE3B4E2BAB8BDA004CCE",
+      "actions": 351066,
+      "hashes": {
+        "spec.json": "f83e5745c330f3722a2d4246f42f881d94d061fa025935313e3d64f3c1057921",
+        "economy.json": "e0a0864a0a4b4735d88864cd22d6f06f4099ae0d78c3cd965785b938f7393020",
+        "audit.json": "3a49fd5f09d539ad61f46a26402bc728def7413d8e6bd74516ebfee6eab6329c",
+        "player-status.json": "8fbcc6636227b5a639c616f234b55cdf3956db2e172856a4b6746afcc7c77799",
+        "episode.json": "b1de72c65c5735861f5904eb1c8e2bd9da60b4a7740b4f773ff3cd4b6559cce6",
+        "replay.bin": "bf6c6f5fb51e84846e45adfc3c2c081a421d66f0914d0cb330f1b325365c8d3d",
+        "results.json": "a4d46bb762fd0053c7e98fd6e951b3b176833a16cddb651949013528d0029da2",
+        "commands.json": "79224215f4975912acbe416730222546dc04314a39b81b9f45661ecbab523181",
+        "combat.json": "8c54d4b08543f116c8c2192fa1e908d08dd53acf95b9dd37bceba75f1a974a51"
+      }
+    },
+    {
+      "episode": "ereq_7bfa0870-4de2-4c40-b4ac-22ed055112f7",
+      "valid": false,
+      "failed_slots": [
+        6
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 1,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 2,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 7,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 11060,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "2DC565AFF4801553804C14A87C5D1026DDE15CD8",
+      "actions": 79249,
+      "hashes": {
+        "spec.json": "101513cea6451019181d755f9a64eb519ce0e244448f2f9ef98e259ec76da212",
+        "economy.json": "368a73e1ae45b01bc73471439c0685c14a0f0de00e61c8cac3094e8ef57e972c",
+        "audit.json": "2777d1b26d667fabb83934db2b28a1f72075ac6028d6c27207be30bbe84651c2",
+        "player-status.json": "a1e97f4308dd533d2d672dad0624b9c7075b1ce24ef26523717c1359346e0386",
+        "episode.json": "ad2f1fddebcf8631b3165d00bdad8894fb3fec1626f09f3c118fc2d97e752972",
+        "replay.bin": "6537a874f6c14244decd6c5f394810fe8a4199de76f480ebc45211b89b7ba614",
+        "results.json": "c2366a6ab044f5f9af2641f82cd4a364820e40c36e88c34e8c8cdbffbd57bbc9",
+        "commands.json": "7f254651ff4980199b9ac158f36e4bf636b3948110b4b6ee3a00c52d6d0e3a86",
+        "combat.json": "1fb2155a92b93624fc92226c6e21f627efc62c24cf49549ff93cf117083a0fed"
+      }
+    },
+    {
+      "episode": "ereq_7d81d041-bc01-429e-9697-7c1b6afb7c1c",
+      "valid": false,
+      "failed_slots": [
+        2,
+        9
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 5,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 7,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 21205,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "F7A0B94AA736BA90DFD35EBFD83AE1222575B50A",
+      "actions": 82384,
+      "hashes": {
+        "spec.json": "a159210a1df741c22f3866e95bb6dac8cf3128c313e4a9fe44440baedab93837",
+        "economy.json": "e9bcdc12c7f6d9a153fb5828497a2346e0d9f38693a7d1c48c0f5e83694433b6",
+        "audit.json": "e98898613415b85337de7ddeedcd88b09c8559b92325b79ce07e10263945b99e",
+        "player-status.json": "b0d3e60b4f62ade3c57e23d6a68771ac0c6e50dad80d09d18cfd272a86a93243",
+        "episode.json": "71a0e8d7e40a86cbb175e9d1a781d247a784534c70a3891995a07cb0cef7a096",
+        "replay.bin": "eb68c9bcdcca36c646196f26bafcc84f2561f9c3cdb1ab51445da596236c9903",
+        "results.json": "7602f94e2802f0a95248fd99ac38a3d50c1634053a4af1e76924a1108e187c06",
+        "commands.json": "701773a72e2aba5d3a45af8c33d6ce7d62dbce69959c053590478478b76e36d0",
+        "combat.json": "1dcfb2c47e1cc5d33e838a30a6b7fb0f9fab46ee297af66b14bf212496b779ed"
+      }
+    },
+    {
+      "episode": "ereq_8262f03c-0776-4d14-82ef-337afe03ffcf",
+      "valid": false,
+      "failed_slots": [
+        1
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 0,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 4,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 13056,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "42909A7B898FE55B1D0FF18B50B27A2C595EA9CF",
+      "actions": 103993,
+      "hashes": {
+        "spec.json": "2ce8f225ca0191214090e163ebfd1c09f123870778eb6f5c55c771b74e109e8f",
+        "economy.json": "92efe640c40a307c0fbf3de29214d840bcb051bd65ff646d813eadc44049102c",
+        "audit.json": "5d62e4c728b39fce1abc92f50a45b945575712a9af889f646fd9bdcd17285f4c",
+        "player-status.json": "2726470a2d89a1996272770e50a231b36255048aa9e0731b0d96e56da98de445",
+        "episode.json": "48c88fbb83529eb937a53772bde737513dc9ee83d8e70d781d8ac999e27d8d69",
+        "replay.bin": "cb89aaad340aa1c9abead723c5e38129819bc83ad6127366260797aa6c45b2b1",
+        "results.json": "8f6b588757711099f68fbdb271df52fe330a06f824b271d7f2394fc0d5e197bd",
+        "commands.json": "bc950795cc173e80a5d6432e9d343a4c6a16cf2634cd0ced4c335bd0e22fcad7",
+        "combat.json": "4916ddd61877edc420c1ab4af32235d6b663640ddff6453b00d65a9a91b4ba8a"
+      }
+    },
+    {
+      "episode": "ereq_8275fbd8-db25-46ee-9ec7-655941c86f0a",
+      "valid": false,
+      "failed_slots": [
+        1,
+        4,
+        8
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 0,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 12894,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "058F809D5A43B5851DBEAADBC799C91E02C4C65A",
+      "actions": 38524,
+      "hashes": {
+        "spec.json": "a3fc9b1781adba74a7a59926b7c7f4f5cbdd69caa1525b54d27191f219b752b6",
+        "economy.json": "7d9be7fae668308e121d85029043810c3206c1f26fba73d39793824bc0f13484",
+        "audit.json": "beb1b1ee1f76e63cf0da2552eb86527e2bb2cc5da56127fad7f502894f5e6288",
+        "player-status.json": "4664024d15247d74507d349c34db1f894b088761c4cdc94fa70695239d6cfb4a",
+        "episode.json": "cbdcf5555ba648d62a931bf111cdb7959fac7c1fb2e96f66028265f235d65764",
+        "replay.bin": "84522f84188eb396b591142801a6c64482dbc5e3115345a4412cb7a01a866a4e",
+        "results.json": "b4b3c3bd2266cdbc873ccdcc2f29ecafe40baa0304a4d6297ffcae204cda7408",
+        "commands.json": "6318fc4eb54424ae12349a2efa20ee7d0520e5fdd40c891a69b59657f7ff25b0",
+        "combat.json": "1b87358f2809c8fca54a5bc544e62692593267070cae2a1b5c221c65d7d098ea"
+      }
+    },
+    {
+      "episode": "ereq_84a27fcb-95d9-47d1-a374-d2144ef3f492",
+      "valid": false,
+      "failed_slots": [
+        5,
+        8
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 0,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 21313,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "06AD36E55078C0E0FF9A13506564F4EA43FDC770",
+      "actions": 164113,
+      "hashes": {
+        "spec.json": "b7a1ef8c26d9370d7dab3841bc79e2730b9c5c9e63555690c474d6e3c21256ca",
+        "economy.json": "6ef1060631d0b63052a8a725c6aefb2ab0523ca27e4e2e85297c71079bdf3352",
+        "audit.json": "b3eae3a3f1f44d40821de9f0334d81e2925aa773540d3045d33df188c1615001",
+        "player-status.json": "f5e9061b25ce47b828e5445813b7385dacc86ad59fbd102390953457101211c8",
+        "episode.json": "a57ac7f90377607514d6786bfdeb2270492861c792ea9e3e9471045620af4bf3",
+        "replay.bin": "3f665e6096b17e980014e5c58c9068fb96a78bb81aa1876e11ed122e110cf11d",
+        "results.json": "0d96be00579d1cabd88e7f404f1691c79bef1bb6b5a34c7251266e7a4a2e8b73",
+        "commands.json": "0b321eacd7fc2ba877afde54c79c7280ccd7a79c595cb2f8d1cb2685d7dd0b8b",
+        "combat.json": "5160e6874445aff4bf36096b7a8f0043ad99d3976d7fa6b2c48b6d6ff20d936a"
+      }
+    },
+    {
+      "episode": "ereq_89d45c85-73a1-4fcc-ab0f-7c00144fa663",
+      "valid": true,
+      "failed_slots": [],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 3,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 7,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 9011,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "DEE0774515FAEFE00184BB96BAFA1D5E8FCF7023",
+      "actions": 49741,
+      "hashes": {
+        "spec.json": "979704e160e45ace85a629250f882ea5c6f2669576e588c28885d720c97aeb86",
+        "economy.json": "390a006ca1d4f2e9d478d874bf755fdf88bd87b1156ffd343b9734c7f7eabdd2",
+        "audit.json": "d16a8b7400ce9380bdef8cb702f203301f75fd272866672298781ba5dcd51d4d",
+        "player-status.json": "0aceecf1147d41a561a35e3628c5f1c2788cd33b1d4991041b8bb32a01bda9e1",
+        "episode.json": "b6f88fd3d567e7bbf1c39e271fd094c88cf90056e80d671c8698c8a455f86ed2",
+        "replay.bin": "98d71f5bffd60ed19a4ae92e80a7bf79f39d6249707174a68573fba113a021db",
+        "results.json": "633d1c91d6946a07bf0e4cbc5fd3db92ff7365b54712c6eeb100bb16eadad400",
+        "commands.json": "068d3b850ae0148e2609a80296afb7ded657b389bfeab535c8b80560e5b4c0e5",
+        "combat.json": "782b484e7ace3dc6afbc57440ae5e4008ec01294d2b8356e7e8652336e658784"
+      }
+    },
+    {
+      "episode": "ereq_8c18e50c-ec08-474c-bdfe-f5127c7356a0",
+      "valid": false,
+      "failed_slots": [
+        0,
+        5
+      ],
+      "subjects": [],
+      "ticks": 29821,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "075AFEF04932E56C9AB2A973071F76D0EF3F9745",
+      "actions": 234495,
+      "hashes": {
+        "spec.json": "7e50b32ca4c9e7450d5b25b978af4c26560be7af7db1be6d74fd677654e4014c",
+        "economy.json": "94aea1160da1f1efb68e6dfdafd9daf404df6c1ba192b36d031cfdbc5b9870b4",
+        "audit.json": "dec6c654803a1ce22d2fdaf5ccebf953bf51419820a7bb29fbe4e585ebd5d016",
+        "player-status.json": "88804f7dc372395a986c6b781a7b7cf9af2e9aaed1e4cca1ccfe39314683bcbe",
+        "episode.json": "e951ffdda1b6b9513aed31c2c02f59150f1b9b4539d3e096841d9e290d30c0e2",
+        "replay.bin": "5106cbe12b121afbd6dafe2100b5639728c2c8ff184f267dd0758d24f49a6247",
+        "results.json": "6502c359f484b69c706e46fc49cfefbb1cbab884123cc427e286bf4251d79c1e",
+        "commands.json": "b2f79284a79dc32de95936edf8aaf5a0b122fcea058182d5826b7e811445590c",
+        "combat.json": "09c839f8a98ff10a83eeb932f1712231b9c995186a61c8db63c40cefa5b0c6cb"
+      }
+    },
+    {
+      "episode": "ereq_8c874458-c088-4dd2-b43a-5226cd39685c",
+      "valid": false,
+      "failed_slots": [
+        4,
+        5
+      ],
+      "subjects": [
+        {
+          "name": "coach",
+          "slot": 0,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 21021,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "6A6A37D97C7494BC131476765054F101BC61B0E4",
+      "actions": 203508,
+      "hashes": {
+        "spec.json": "3de82cdb6f991810951b9d9009dc281770c1425e60ac637767ac4f3aad0715ff",
+        "economy.json": "064911962e9987ed1d5f05f9b97f43e7a191287976e060044fbab1ed86dd9459",
+        "audit.json": "367c871c8d1ef89e2f5dbde9e9f564bce10edbcc2e4babde4b772d45ae146f51",
+        "player-status.json": "cee466f0ed6d8a921840d2f3d6fa0d3fc81f294b992aff4001064c26e3bc1c2c",
+        "episode.json": "72974f1e5ab5b57de881f9422a98badf56282ce26f475779d8e9c33ff54a7d21",
+        "replay.bin": "49e197f6be8a8aa2274460e0425b95209ef85741ced0e8949132cf1327e000a1",
+        "results.json": "0670f282ab2737d4d07ffb8a5fc5491cc7e9c41d6606fc7d649882ea74b27687",
+        "commands.json": "354debc6766060c49976c47bab90e739a3408a7130f91b9ba9191bd70e38b1ef",
+        "combat.json": "5d813f6b2b4c88db25acee74a7d9eb8ca4c680dd49bd3073c6b3e1b5de3522ac"
+      }
+    },
+    {
+      "episode": "ereq_8da0de80-d739-4a59-8470-911604318b46",
+      "valid": false,
+      "failed_slots": [
+        0,
+        4,
+        5
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 3,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 8,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 19201,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "ABE34E995DD88406D61CCF1DA10F332B0449A45E",
+      "actions": 172433,
+      "hashes": {
+        "spec.json": "31f14842b9fabcca96f36b6d302b84c234d89f64bcba0c816e102e6846be357f",
+        "economy.json": "a9ee48a399a0b37351f7072a4ee3d8ad2ed8cc137df22a45657ac527bf71d380",
+        "audit.json": "672c187deac1db196a45d9f7466de2f021b529c3024e7bff135be025fffbc7f6",
+        "player-status.json": "21de7b3aa143b5a19c474599b379ef218eb558a76eaf9d466db7720b7e340e96",
+        "episode.json": "0ba206dab58ece0b393dcba00d2a2642773e33bc177daef86f434be07cd88238",
+        "replay.bin": "b1ec78e95039f2503bdf30a388e1975130808224d5dccb68ce0de4f1036e6c40",
+        "results.json": "7e6a53b8195932314dc88176395144c7a6736829470486ee9dd365766ba02ed6",
+        "commands.json": "c568c39b30fbdb64289f48e8beecb758366f7b9db813b0eabff437f8b5541833",
+        "combat.json": "48d425838e6cddabbe5487a64c25716c6d75f6af7ed9bbe9243492a1eaa8962c"
+      }
+    },
+    {
+      "episode": "ereq_8f6793bc-f84a-4f01-b4d0-fce8e544f85b",
+      "valid": false,
+      "failed_slots": [
+        2,
+        5
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 3,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 0,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 14637,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "8048445F8A30F3C85BB058CE8E569D6A9B1DCCA4",
+      "actions": 123640,
+      "hashes": {
+        "spec.json": "7a969f7d126311d1466d4bb1476929801622ed500106e95ebf173d346b7ac272",
+        "economy.json": "5d8eafa45d3d35e99d0252f9987caa05f3796eb9bde8b556a55c492bb3d93971",
+        "audit.json": "9aaedb0fd22cfe0739c45678481691f359b0a90955e0c2fefbf78cfad32a4cf7",
+        "player-status.json": "e50ec62007ed320dd507eea57dc535e9057affcc484b106017c12a74cd498bfd",
+        "episode.json": "3fc1126fdba7cde24dc52b334627950c9376568a306c696560597074d374e85a",
+        "replay.bin": "5c80ecab9f21e2df12ba1a248806eaedda3b6a523c3d966dc3cc23bfa2a42285",
+        "results.json": "a194ff502f7723f6ac1dbd8529c47df52da2359e4a53be56fab899a684b84964",
+        "commands.json": "57fe5f35ab8a748a092b9d3e213ceabec6efa4ea8d41479f9c869c9ddb53a7e3",
+        "combat.json": "a1d54d670d93a7cfdc5b921522711ea6686e45f5f9068c7b9369ec0253569a97"
+      }
+    },
+    {
+      "episode": "ereq_94068dbc-138e-4ce8-9e2d-2cd712100b3f",
+      "valid": false,
+      "failed_slots": [
+        5,
+        7
+      ],
+      "subjects": [
+        {
+          "name": "coach",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 26886,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "87AC86CD13C3950C460D4A4A69088677B5376F8A",
+      "actions": 290193,
+      "hashes": {
+        "spec.json": "e49e7896a9e86a618220ef4405c8ac479b6b412f9e82f937f1c36095c87a87a3",
+        "economy.json": "68ba260eb3062a417c5e0646cdd17d74b421b65d7b412f145f21a59506e67802",
+        "audit.json": "d73a15e20feb7f06fdbc66e04acc62faece6af6ad36aef68b545fc6682a96c6b",
+        "player-status.json": "a6a73a147a207f4f0727ef3d662277e87ab45ba42740fd2de0f8022b459b64cd",
+        "episode.json": "5c5a894287d1312d17934abf35908aa2cf846388aca8e5a4768e9473e1c405d5",
+        "replay.bin": "b938ef3d5a663946954804ab9960f96d3856be2c8f918a36ce5300d968db918b",
+        "results.json": "2aabc3a6d706b56d1b605e2b0d2d020465d8423eb2b975b80f27b39407fed518",
+        "commands.json": "ed195eabed6d284620597cb0f1bf78411fa4a4fd103b852f34e92113ceec9104",
+        "combat.json": "705fb366379f2af3b8e7e95054bb1d34d826f6f8b68c1bf26476562621d655d7"
+      }
+    },
+    {
+      "episode": "ereq_95587063-fb35-4d30-be27-54569ed22dd2",
+      "valid": true,
+      "failed_slots": [],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 7,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 5,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 29365,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "432F2141D7BD5D780EFB4C803BF2D6A1AE0C212A",
+      "actions": 271924,
+      "hashes": {
+        "spec.json": "384765858b2a04bcd16655a52b3135ab25d08308adc7b2cc1176bc80246c5dcf",
+        "economy.json": "f4dcd1034d8622059ae82226aba8a81f1275aab29d8bad0c759bb84e11106b06",
+        "audit.json": "20fd7c0f0bca579e9473e4d0764e8f76840c816fcbc3686c718846c2b2da0994",
+        "player-status.json": "2ea482c2f53c0670f5c38a5215a492963aca3c41c3f4fdf964d116d80dcbeaf1",
+        "episode.json": "47bed762319dfb8cd274a7b9ba1842c62f468d0eccef684c3e63aafdd5ea4c93",
+        "replay.bin": "1dbb1f8c7ce3008f42b5a35ed4a7ed218d837ef02f092dd679d72acae7176e22",
+        "results.json": "b70a4894b6ab1a09d522ffb560a5d7b9f1ecaa77901e34744a96071ffd68fadf",
+        "commands.json": "5363dd990382dbeaa7ad6084b12faf1daf305047efe103ce674bc2dfab5cad56",
+        "combat.json": "3ce2f35b1fcc251b15b3a4b886cde041b02fd8c62343becd006acceaa1ebf8b3"
+      }
+    },
+    {
+      "episode": "ereq_9583143c-70aa-45bf-8fb5-dda20610971b",
+      "valid": false,
+      "failed_slots": [
+        5
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 0,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 17461,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "A21CA4600F14FD57455A5B09A82E25F3CC319AA2",
+      "actions": 76363,
+      "hashes": {
+        "spec.json": "65aaecec7a921a76cf021d21499dd82df50d6cd4002b2d10a68c839cb14c50c3",
+        "economy.json": "8158b5ff2938116236031662a251f38a41ba0bc940297732fa6c69ae8a9c961d",
+        "audit.json": "158a965faeae56468560e44bd365b425b7077050126f28f5221e1126543e3c5c",
+        "player-status.json": "7181b019dafc386933effe8e8c02bd4bb81bc4340ab20bfa9414c23f916baa4f",
+        "episode.json": "2ab2eaf5b1f59cc7d2ae29027f82afdcdf23219a10c32aec78561b858dbd103f",
+        "replay.bin": "2e24bc4dcfd59d3e32225b3fb579c85de52b8559d86e83019645bc99b7c93079",
+        "results.json": "ee270894b5f9b6cae45b8392dd77e73104515d809c6cf1494d785c631ba1cd28",
+        "commands.json": "e0183b9737693856deb88aee91eadab2d933a6f2aaa4d101550d35b5b42d406d",
+        "combat.json": "a2bd6bf59ea9213cf32e80bf6d58a9d43e614bfb299e4fce41ea09794ab018f8"
+      }
+    },
+    {
+      "episode": "ereq_a0dbfc9d-59bc-4b62-8eaf-5cc7478b1b5b",
+      "valid": false,
+      "failed_slots": [
+        3
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 0,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 8,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 9,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 29821,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "51FF20F6E99D1D893B2474ACC9E041A41777AA27",
+      "actions": 185467,
+      "hashes": {
+        "spec.json": "5e594ad27f03cc05fbbe55168ae4305dd5d81a646c92cd5d457d7e5259aa2d67",
+        "economy.json": "7ba625b2ea0ba4d4620b0facdcabb75ed3929c36c2b1cfb227feacd49ae60576",
+        "audit.json": "f4daf36520f5e32f6474aabfe82c6b804d8c39f4701efc52aceeb33fcd9d716e",
+        "player-status.json": "7ce6eda33a38dfcff9f4b59189058080307cc262f390e303561bdce11981d14e",
+        "episode.json": "e8de00e168a6f1ac7197b562624aad854742dfb4cd6baa134f3ff991c8e647ab",
+        "replay.bin": "787a68f0145f7091c1e54bfaf3dc7d36463dfdf28f61c30423e5d06a1db1239d",
+        "results.json": "e42fe29774151548e8ded8487d7af38bd98eb7c23e50ab8584ed6b924837a704",
+        "commands.json": "71b3fff2326c31fb79bd49b256f0df7a19d378f16a8a34d43cb30c0e5f14c195",
+        "combat.json": "99ea00bdccd6e6bcffb8164fb8b85b8ad70a1b41b5ed49352aa47cee08265e24"
+      }
+    },
+    {
+      "episode": "ereq_a76ecfac-3396-4321-a38a-09323ec761c7",
+      "valid": false,
+      "failed_slots": [
+        0
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 6,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 2,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 5,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 15841,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "3EC147DC0E1196BDC159921B03EF8430539845F4",
+      "actions": 108171,
+      "hashes": {
+        "spec.json": "b02f26f5506acfd890d08f7074b4a35cad35540b67b81893eee664f8632e8672",
+        "economy.json": "2ace8baf404cab885a3cdc62d8450e0131bdaf920681e719dee5ee01039e9a83",
+        "audit.json": "4e7b7197c3996f9d8b66a51528d5bceac348a239858cc63557d3e747a34ea8ad",
+        "player-status.json": "e389644554dd9b8ae6ac85d9218ccef3b4103ababadcfa5c34c2624c5a72938c",
+        "episode.json": "bc1552ac753ada036fe32636c14870b737078ef23f0674fb17ba8690583bb2fe",
+        "replay.bin": "1332648d7dfb9308731394001b590d4bee73b04e5da1f14d249e64826140e3fc",
+        "results.json": "8c81e5d6aa9ee4620a0259654acf0b49e55937b02d5bd1eba275d7d73b31d5d2",
+        "commands.json": "eb2d90df6a709d299e7942dc2a6a6af99338fd505f937ef2bb5a35bffb302b99",
+        "combat.json": "dae40656020de509f271c3a0ae365d898f8c1724e7f053754b0a5c831150ab67"
+      }
+    },
+    {
+      "episode": "ereq_a8d754a1-c844-43b8-924a-219c6ab41011",
+      "valid": false,
+      "failed_slots": [
+        0
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 3,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 5,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 21250,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "D4CE9776101EF6DD8FBCA9BDDDC7C25B6380E202",
+      "actions": 302927,
+      "hashes": {
+        "spec.json": "625a66b69b514d0407723fa33e47ee851dae519b6c165a841c636eb8f8772403",
+        "economy.json": "7a81f9575c872f5a33e36bbf97174b9a62bd13325ff4f75fa78670dd4251b22a",
+        "audit.json": "cfa71ca87641cdfed4eb9b555f6f6a8bbef7194ddf568e8014af4c82030c2c2a",
+        "player-status.json": "6f571bc20c13dada6d6e073ed5ce72fa48d9a406d30e5ca3017737ebd87e0483",
+        "episode.json": "2eb55514ce5cd312b4d4504a8313f732bcc498614740be3b8684ba23d4af20c2",
+        "replay.bin": "a1bbee9d64acea969574fce21df95b87e810df6130510d31911ecc0b131643e5",
+        "results.json": "f56b2da54288ab8adb8b1e62999695a93dd8a21ce07a2187adf1cf35fa24fbfa",
+        "commands.json": "9936af96fe0ded29550afad492b1fa3f681d7e4e4af8962fb3f78cb8f5a86715",
+        "combat.json": "dc4ba6df6ae2814d7b8c3c79a086d2b59c547045ecccb40d81fe4b57b77c7fbc"
+      }
+    },
+    {
+      "episode": "ereq_af96eed5-d261-47e3-a087-c0bd107389d6",
+      "valid": false,
+      "failed_slots": [
+        5,
+        7,
+        8
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 6,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 19593,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "14C0F80133CB63B071D0136C9E7F757749F4B6E8",
+      "actions": 86042,
+      "hashes": {
+        "spec.json": "30be5e35f0edd3e710fd799703ff925bd43789b9de97010b96543c53f052bf2f",
+        "economy.json": "51eb57d2925407fb3506ae55a85d912e501db1ca3c57830c6438a57f1f64650a",
+        "audit.json": "aacbd0b01d0a13e89e5e5eabcfd166aca2a5f302a41cb43cd8340a5be95da6f7",
+        "player-status.json": "5f1dea90c11fc8d0a9cda4506e56c44525bd8fc0b7ed2f7433b95bca59cb8d06",
+        "episode.json": "9bd6c971288b4df44fc94c60b2f0362dfc7695c83dda8b31b3ff80ce97a8bbc3",
+        "replay.bin": "fdc11117e960d57f988ae2b7ed1723fd8b1baaf995685258b7c7e93c61be37ff",
+        "results.json": "775a0b96cdb19f746eb45a6480851c44902fc14d942dce74506d35d98e9b0111",
+        "commands.json": "993a0290301c2d64a8c859375cf8d220cc349685cf1da15998816fa0565cc7a8",
+        "combat.json": "340565934e809e123eb468862290a403455db980c0275b9c71b28e28a4e61d7b"
+      }
+    },
+    {
+      "episode": "ereq_b22d661c-315a-426e-b4d4-7d530f2968d6",
+      "valid": false,
+      "failed_slots": [
+        2
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 4,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 20364,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "ABA7B53DFB9D32F82ABB1A2D0A9B8A654E06E2B2",
+      "actions": 138127,
+      "hashes": {
+        "spec.json": "95a3ba8204abb9a9baa499040411d115d641e7e4c6d0fb3dcd51e39405f5b3f7",
+        "economy.json": "7d1adfe4adc6c92bd1d1de855a3df993b827bc5cb940d7e47b085caef5ddd08e",
+        "audit.json": "40e52a5b08f923abaee4212262abc57b3743bf0c9b52dfadb01e3598794cd036",
+        "player-status.json": "6e32c619e0d29b5a301b258aeeadaa6ce82c3ce6b4c234cd2412056268dd49e1",
+        "episode.json": "135f5b99db4f8c804315e537ea3c08b6c38d77ac91e31b8d4a9fb436d1ad834d",
+        "replay.bin": "61567995ccfa222810e677906a7b05abb54f53e1f958b43ab623cc29dc8e249d",
+        "results.json": "90d745d2445833675ac83831730c23f5ecf0df337cd851c2c3e03e339b9c84be",
+        "commands.json": "d6e9a1d4a134610d0662d09ae06adfe11f84b93151a81912047c4cd86ac9e6f2",
+        "combat.json": "10c710d9ca030052a039101033abc387c2a82cf6c7d7c00b4c13e48a59c30b89"
+      }
+    },
+    {
+      "episode": "ereq_b2fc0a02-1cf0-4039-9f7c-706c6cf283c5",
+      "valid": true,
+      "failed_slots": [],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 3,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 6,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 2,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 13792,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "ED54DF8365FA5125A9D1AED477CC05992D8DBC8D",
+      "actions": 77316,
+      "hashes": {
+        "spec.json": "977bd6fec9c20097959b8864af7d29fa88c216b3b18c68922e5268431bba21b3",
+        "economy.json": "aa04c3c2aa08f9a4e1e1a232315b42d0186d3f6f929ea7691b7bd44649e34584",
+        "audit.json": "6cb086ad9acb3fbbddcc7df1f132f897d4a50723f5140815d030d7ebaf38cf40",
+        "player-status.json": "a41b761abe88197eaec0b2380b958f1b1007d25457506ff410bf98e88766ccf2",
+        "episode.json": "ff5234943360cc45564f5ca19f8e1c61673de9cb7f99c48dd1777cb264a52f9f",
+        "replay.bin": "f04ae6b3097c3b3cd3d4b6f1e1d50dc8264bed7845207e65cb44a504cc5d780c",
+        "results.json": "414729c82fa5a6dc23cc91894f12993a58b5aa8e3581593d5a37e93e3aa96d4f",
+        "commands.json": "07f9ac78bb112157534f3ed4cf150a8ae6a84e64b5485003bb667d148340c4a3",
+        "combat.json": "2967df17e48dbda04b32329d1dbacc5f3bda12159374de2d087003eaeca6ac9b"
+      }
+    },
+    {
+      "episode": "ereq_b85ae4e9-3e7d-4f17-a1e7-6419f9f1e07d",
+      "valid": false,
+      "failed_slots": [
+        1,
+        4,
+        8
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 0,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 5,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 15631,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "2B4D41DCCFEEE8D41011B3FBA9A1C3E7D760744C",
+      "actions": 73209,
+      "hashes": {
+        "spec.json": "972bd3b813f69998f27ad4b560e412310c3e52d0a5a4c3e55d57b9216f1aab8f",
+        "economy.json": "0a27f1c7ebaa50ff2a099c6e60dd6d5bbf943e732aca12a4bb53c5f93eec40f6",
+        "audit.json": "5a007e5c2efb1f54a318801f1f27b6a3b64bae4420064763e08856b5a7eec39a",
+        "player-status.json": "efe8db797a3e800f39069cce4a50485a820056319bf83f9bc271776b3c0dedab",
+        "episode.json": "fa3ce8b507338ea2e09e23c752cce65ba3e13b6026b19c9ce3152a7456abef00",
+        "replay.bin": "2192eac7fb3ba148cfb86bb0d32e4210dca5c40868693291c239e8c832229c93",
+        "results.json": "a6f79b4809d5a32bf38a00f71690809fc6b2becd72670957870329db53125174",
+        "commands.json": "244939bc36e0c35300a5d70291b90f8f2d075be9dd89d086b2a44845643b2042",
+        "combat.json": "9e9469c58da9d2fa1f62d3acc4c18ec805b54f25b5622915b07fe44332dcc3d4"
+      }
+    },
+    {
+      "episode": "ereq_bb4149ad-2926-4df5-8743-5f8a7713b73c",
+      "valid": false,
+      "failed_slots": [
+        4
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 0,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 8,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 16824,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "503387FB5D9C758EAAECF91245227A27738ABEB6",
+      "actions": 133454,
+      "hashes": {
+        "spec.json": "1cf8365b1b128c10f23ed0e6cc3f6e27a630a39a4c1d30f010b8104804819297",
+        "economy.json": "3b000941c4ad141d5e2cfdb71d690a1693652f6ccdc3fbd954657c6e03f3ca76",
+        "audit.json": "664dd3ba7ca961e80af8595c9b5b55b8eb8c4f67ef7cff1d4ecba25b132c45b6",
+        "player-status.json": "9e4151537af760c96ee93de277130a6ade766db86211cb2aece3173fd5453194",
+        "episode.json": "e268f8d8e5402d84eb21b49389c72acd67b2d12f0227d28a51866befcc626344",
+        "replay.bin": "6e6789085c35d0b90da27ffa1ae1b6a50ab4f9173fc66f6c2d0500c75f9a0687",
+        "results.json": "cfcedf2351d55b15d20593a5d7e9e5411b2bf3e8e0f82f5402059fb6310ee109",
+        "commands.json": "1814fe1b633c05c1a0eb338e0ab99cb9150bd38fd2f54b5af46bd51792a151fb",
+        "combat.json": "e87a7a5bf1956187b68591a5b5a4d7cd2d1e02b7aed365ab8186197e2b5c5ef0"
+      }
+    },
+    {
+      "episode": "ereq_bb477881-1d55-401d-b9aa-ff98cd2bcf9e",
+      "valid": false,
+      "failed_slots": [
+        5,
+        6
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 9,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 15072,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "6B4B56F2FA2FB51F33E93E25EFF9434CEA8AED6A",
+      "actions": 84097,
+      "hashes": {
+        "spec.json": "e5086a4b9d1994c814ffec09345277c64794e2df91e81824a095028b6ba676f1",
+        "economy.json": "1943f7ccaa75fbdd1b8e7428d5dafa839ec6c474e95513d5aa8fa925d3bc5f25",
+        "audit.json": "5dbe5fa1684f85481fc69f3806f81817d99d86311378b0d4b29608335a0f67bd",
+        "player-status.json": "c855b3a6c6b3afd4e172cacbee14afc35357c05ebb4086bcc9fe257a4ff82e4d",
+        "episode.json": "42874f37a61bbc38ca7e7516d464f15eb7856e9771f0e03f8e8e0f489057aa9c",
+        "replay.bin": "d97b13d3311889e75a88874301c1331ee5736179b0e670eb3efb6e5ff5c336c6",
+        "results.json": "88c21fd3d11d82c9f9db123f63f3768d0390361438efdbbaa8493126b84914f6",
+        "commands.json": "86af85d3d002fbc5e692b27acb128bbb5b25346993f0350a57ca8e0fe2b1c7c1",
+        "combat.json": "11c56fb991c9ce9ed382d64be6bad2dbb9b741615ae8054ccc8388bda2d6ff5d"
+      }
+    },
+    {
+      "episode": "ereq_bd670937-2b5a-4716-ae19-204dd1d6eaf0",
+      "valid": false,
+      "failed_slots": [
+        2
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 8,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 28539,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "DBEB6A22550EAA66533ED4F8CFF5C34809107A09",
+      "actions": 373609,
+      "hashes": {
+        "spec.json": "d48123af998643282a587da809aee5e522695373cafcfa542f916f2c539d19d9",
+        "economy.json": "9303a3834ade54cfcdb6f9a06d4e43485ca04f333ae44d60c739d9fdb799a31e",
+        "audit.json": "40e21aa93691647b701e079c9dbf6037d9228f48a908a85f64f88b65fe18be32",
+        "player-status.json": "879a782f6dc730fd22fbc7eb5afb03a3416a5f5c3450dada4ff40e737791d5d3",
+        "episode.json": "45ea44427405ccd4c2a747cd7f5439fac4b3f788a01fd3535eb4b3706d09f474",
+        "replay.bin": "121d3ee4ea309c2eeb2102f72a2fb01079392417e6a7cba246e2ebd62f3f8c46",
+        "results.json": "de7de089a298193012f97f9db7dc100f5ecea71ee3ccb7aef89c714b4a3f8e34",
+        "commands.json": "407296b7ff712fc3153f03401d14b053b8658ad7b12628b50bca8be1ce5ad514",
+        "combat.json": "34ded74ada15769e5baaf68662618dfccffb83d8baf01432db564ae18aba3945"
+      }
+    },
+    {
+      "episode": "ereq_be0117a5-0db2-4e4c-bea3-0a20aacf36a4",
+      "valid": false,
+      "failed_slots": [
+        5
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 7,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 8,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 16741,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "1731C6E01C2C1C1212DB7ED11FCB69D3C63E361D",
+      "actions": 125484,
+      "hashes": {
+        "spec.json": "6e59bced98d8eb36749f4db3ef0e96f2bb8ee4c44b1684fe3afa824b278fe862",
+        "economy.json": "cafb8bc06f30475656ee6617b36e3016aaf79575eb731472fbcacc5bd6355341",
+        "audit.json": "05b4213e6f6a7895a70326133f4f4f60677ed635e7bff353793805505690c260",
+        "player-status.json": "1b4364c9df2cb4482c0193b27d97fd8ca9687a4970b16ad56c142e3dd2ffc683",
+        "episode.json": "34919f2a1c1106d43328f3b512850d18fe35621a0138ff79bc7bc9c5971fa6e6",
+        "replay.bin": "5a6afc8db7b2f6ed6d013a379a3b9d65fd8450d7f22c155cd675138c666f37f3",
+        "results.json": "d01f26a791b5765b16268b05c5a7c6731cff50a534ae93c57a38b85014ea392c",
+        "commands.json": "30c98cbbbbcfe80dec23ad0bbbb079f3956ea657b1c83d3a03366c45672f68fa",
+        "combat.json": "379fa0ab6b28f0bcbd4e5d21f033e1664cdd9c7e0847cc2c0e207e1d4dc70fdf"
+      }
+    },
+    {
+      "episode": "ereq_c3cc9e5d-96fa-4de0-a874-dd45cc339854",
+      "valid": false,
+      "failed_slots": [
+        7
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 8,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "coach",
+          "slot": 3,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 9883,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "CC915BFA18D21D4E737D46667C40B36A23AE5057",
+      "actions": 99529,
+      "hashes": {
+        "spec.json": "dc1dd9bd8db98ec5ccdab9757288c6a1d194389e00dce2a873311b67d5efb2bc",
+        "economy.json": "23ef4358f4b64c1b108efb84408561250d8b4e9c2c296c6b041e50bcecf67299",
+        "audit.json": "5d453d883aff22cc561626feb7e424bb844ef92137f6cfbc7a78541a19233292",
+        "player-status.json": "e6e5fbd1c6aca4a60a5bc9789ff4275c4d68196cfb8fcde9d4d0ae2d9c8f58ba",
+        "episode.json": "321f2512d0b81fc472a2cb40a7550e2cc3e7d0097c11ae1ba1762689cb59ab78",
+        "replay.bin": "8f88347fb9165105031f188ca378355c74dab702e7e914bcde31a431c9a639a9",
+        "results.json": "b4a1a98e75059a9851b624e3ec63bab8e5c29db978b5a4bcb389f23447710c41",
+        "commands.json": "f489c3639333b300173b60a905a482d784edb2de22b34bf0c61c8fb17bda204e",
+        "combat.json": "91fdc301ee02d18e6c45a7d604df7e4d9a7cf37b8319d26ebfa20907243ae44d"
+      }
+    },
+    {
+      "episode": "ereq_d25d0497-cae2-455f-aeac-0ced51f97c5b",
+      "valid": false,
+      "failed_slots": [
+        2
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 6,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        },
+        {
+          "name": "coach",
+          "slot": 3,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 10828,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "AC5D57966EF356ACE9C504395C7057919722A0D9",
+      "actions": 81091,
+      "hashes": {
+        "spec.json": "71d966625ecf8ef9631dc26078922dac5eb66a5d761804c11e6940cb9fb3ab84",
+        "economy.json": "03718796f9630f29868ea5e9a878f2d2e575876d096b435d236806b7e101fe64",
+        "audit.json": "49d00350e67a7111cda8e7a64855040a5a23727cfd33a767ecc71eb5e971eb97",
+        "player-status.json": "ac86f64a6507b4d27fde9bc406be43a5e53feeeeaa8933ff81b8795c53d30d88",
+        "episode.json": "1ae21a03a1099c1051fe8ca3369819e8a9248131cebea49f4dc395fe597bef4c",
+        "replay.bin": "f32e739b19a2e95a5f39a79a5193d740063dd586c0a7c4c3c9b2fe1d55905e4e",
+        "results.json": "72dd25074529ea080da65ab4ec65adb86b56ebec56b3003b4f3dbcb861b3ec21",
+        "commands.json": "869887139c81508683b8662cf947f39acef052824db267fafb3a5ed41507ad4b",
+        "combat.json": "2c6c3e9686333427a349773ee0c201cb2df972fa9c452a65905e9214ccdf9b73"
+      }
+    },
+    {
+      "episode": "ereq_d3995eeb-9688-4b0e-a701-68d84f7f9d96",
+      "valid": false,
+      "failed_slots": [
+        8
+      ],
+      "subjects": [],
+      "ticks": 9012,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "97E9C5CA651873AD1EF8B60E3265AC1763D95557",
+      "actions": 83086,
+      "hashes": {
+        "spec.json": "209f0d9ac66fcbd0de937c509fb73a167c3b89b0c94ace25073506bbd87d0558",
+        "economy.json": "f190cf809c8c22a292a60db70fc41d7494a8953baf20f3ceb2d27bb0b2595161",
+        "audit.json": "4fd373bc0cd6f5f436c9d6ddb7ad9c913320c0682d5d71deeaa60f305fdfe844",
+        "player-status.json": "0b61a75f63b6385bfd68c42859c694be52344954750fe63597b99adeab318619",
+        "episode.json": "9fbcabafd0a7aa1ecc7db92c36e73d4c003fa4e2508f55def34a199a463acf9e",
+        "replay.bin": "ffe250d1cab575abb29e8dfbce2087837ad16cd64c325d3e3a672c27b1f2dabf",
+        "results.json": "4d91fc5df3bf828c59485062e59a0a8a9703a453fca51ab6916397cb99a20a4a",
+        "commands.json": "9a9b8020c4e81f9a87e4beb6a1bf8d15c3ef24e86d3659c5cf9c9eb805e54fce",
+        "combat.json": "8d24889c841d2f56364ec9ce4ef937a8249cada0adc978a235e84198c798d55d"
+      }
+    },
+    {
+      "episode": "ereq_d70562fe-f5a3-4fbd-8de4-1da2546fcc89",
+      "valid": false,
+      "failed_slots": [
+        2,
+        4
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 5,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 0,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 29593,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "5088100F333D27F77A48A03FCD2B6060151F6FE8",
+      "actions": 159144,
+      "hashes": {
+        "spec.json": "c9f1c01fa36b8490a3d05fa851eacf2ab4bb6100836defe93ef920c8edddaae0",
+        "economy.json": "e65847125d0d7677d3f2b4193aaac9998c8cc34cc4c6b95e0398a74f94fe40d9",
+        "audit.json": "af44bbe5050083b608797f61538dc561f6c958537ad1c25addec6c68aa933707",
+        "player-status.json": "438c4c716a0aaf43999b315237c72e5edf7507e98514f40bfd94f993b39cf69a",
+        "episode.json": "2635ec66c1019d8cbec52f1eae00e8ff69db2d3d8491cdcc2ab6477394ff90ee",
+        "replay.bin": "a0f1fee6cb4f72fb973c9d7ea76556a8a5565faa0d81998a9600fa8b4d25e3cb",
+        "results.json": "9807ee55253b4534c7e05d09b2547276c4d95ba8e144d0aadb4e00050305352a",
+        "commands.json": "1236a8a68291b30ce20e4afed23d5025feeae3c6a818205b2e4dac47ddc080e7",
+        "combat.json": "2e8150453ef8b5860dc6451e0471896b361727c1f75fa9621967f1db88edc443"
+      }
+    },
+    {
+      "episode": "ereq_d7bd77f4-8a2d-4ace-997c-dc9efb1dc665",
+      "valid": true,
+      "failed_slots": [],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 6,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 13587,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "E9BC1E15B42D7102C99C6702166B03FDF8BCCF1C",
+      "actions": 134497,
+      "hashes": {
+        "spec.json": "8abf8218b9101965e60173bb81135713d611bd0d1069cf27b21702a92ff19b77",
+        "economy.json": "41a1e54df8736e7f81683de0b5c8eb270dee043253069890cd072a2f9f43d395",
+        "audit.json": "1f223b7c37da6cb19d092e3b2cf72595e438f83c28c4b0a32b6e29f23fbd4828",
+        "player-status.json": "b77b9fea3338450559d88fb97e82f8b204155d7864fc5e0d1261b78d21cf4783",
+        "episode.json": "9997e37aca6253a01211c77fd74b315cc75d87b1ea036899dee5cb023829f732",
+        "replay.bin": "240281285e5ffea5517840722b94a761d27a2caf9622fb17c3189f764e550b19",
+        "results.json": "096bb357d23c816ae4c248a55c6cc23f33aa3c4fa5da5b9d54324055fef21d3f",
+        "commands.json": "f7446cea43a273150956b450c347a26d0df0a6afa0e1a0cb20234f4b99aaa873",
+        "combat.json": "a890e7813b08fed1afbe93c33773f9c688d7cb49dad08a30cd94d0ff61982842"
+      }
+    },
+    {
+      "episode": "ereq_d8ac2e73-b3ec-4079-9793-11cb0e3c61a0",
+      "valid": false,
+      "failed_slots": [
+        1
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 8,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        }
+      ],
+      "ticks": 27846,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "AC7013D05F4CC36BFA3C16FBFF5E20672C275062",
+      "actions": 343260,
+      "hashes": {
+        "spec.json": "c11690c543adcb8744350cef2ef17b888d33ff786f75e60f18555af744fa422b",
+        "economy.json": "260c4469e88e4032b1fb42bf9f23ef4d772455f1d897a796a35f2f966e5b76f5",
+        "audit.json": "8d25055d9a0e9e9a8897313bcbba5a9068a0c3f6bd1918ef03bebc41b152efd0",
+        "player-status.json": "da2336048343913b8efe3736fa9e4e0c2e6ed639765f941fe55dfda9a3de7548",
+        "episode.json": "47db5424d61c3854975e82c661c122d9c944397fd303504b1af2f5710ad83492",
+        "replay.bin": "ec77668b3be2b24dff7286c63de778151140d91e4ad1683f9b35c9881dadddfa",
+        "results.json": "edf5bcdd29ace6cecf87ce61e1426ba0ac7c8c6c441f9cf0e3ccdaf79bb62f51",
+        "commands.json": "45860bb40dd124f1c25592615e5f3ee60c96aad1f54bf50a2cb465272e08a75e",
+        "combat.json": "0f2261abb33d43bb0e0974c04954aaac2891a898bc49edb2a90691fb5c3567c8"
+      }
+    },
+    {
+      "episode": "ereq_dcb42d2a-56e7-4368-bbc6-56fa7acc4c48",
+      "valid": false,
+      "failed_slots": [
+        5
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 3,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 7,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 8705,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "DF461BFC815009C9CBE11B047E2273AA811707D0",
+      "actions": 71789,
+      "hashes": {
+        "spec.json": "f6899f11697ec9f7550ca3cac99d5a3bd873c8836641446136f10405fcba15eb",
+        "economy.json": "8d266df4fc4608f5df9c99d7dfd9f25eeac9fd670f2d1f58f27b34a333160ff9",
+        "audit.json": "61c039e55728aa265f0eae215c8b079942fa8e1f25e98c5c46a645cf21ced001",
+        "player-status.json": "1ca25fac240f0233e9c7f831b969499771cb1f37cec0ab470eddf74ad83459e1",
+        "episode.json": "c33a5dfd1a7ec457da7ce3697fed4661fccc7a1c652f1cbc5ba0a1a19ede6036",
+        "replay.bin": "3a327569ec84af4c4ceb739d17938ce7bb9c13805e6d39b192d49dc98898cc3a",
+        "results.json": "cb8c70363cb670d0c2b549396e7c1621ecf78dc8a7cab41812daddbfca5945e6",
+        "commands.json": "5371a0e15207f4e9bfab4644dfc6e7845bfc94a84a1f59ad95a7a98c4a03dda4",
+        "combat.json": "bf1713bd619295d99138fe9650d9eb9d3cdb264d97ae7e6dcf2304bb7efa5699"
+      }
+    },
+    {
+      "episode": "ereq_e48eea5b-4631-4a53-8305-f4cf8d970dab",
+      "valid": false,
+      "failed_slots": [
+        0,
+        7,
+        8
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 3,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 11117,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "0066A056AC4AA987F682EF928CBB565E769BB231",
+      "actions": 97094,
+      "hashes": {
+        "spec.json": "2dc75c8fef60139f1b45dd4ff343868b6d2ce7532bd2a4034c776d2890917d5f",
+        "economy.json": "c43019ffba05d5a5c58b251edc9039606ebad592d22f3f6d257e0825b9cf6aa2",
+        "audit.json": "d575f3d4d7b92949e1f26b87baa248ccbfbce33d38ebd4b99b3222e23c67f2ea",
+        "player-status.json": "2518228661f29346adbd9c53d0503abca0a0d4aa54db6dc66df31f5cf6880573",
+        "episode.json": "5b2d50a80653b371c83c868009da4b132a9a1122ea412c281856dfa33f37d42d",
+        "replay.bin": "87d91baae4d89d7cba29bcb906b46b60a64bee83f5f31165807d7110ef8a6f94",
+        "results.json": "4cfdeaa9aea405fc83101f695beaa08d93aea5e783721667871f929ef0c6ab6f",
+        "commands.json": "024cbd77cafea73d765fb08013de40f8bafbd5f3e6aa6ab6e13411c6bcb596c6",
+        "combat.json": "cafde2a858baec65bbdaf93ed45fdcab67b78a246676acf6c5b089a645acd581"
+      }
+    },
+    {
+      "episode": "ereq_e884ff4a-fc3b-47bc-9a85-d43caa4895c7",
+      "valid": false,
+      "failed_slots": [
+        2,
+        5
+      ],
+      "subjects": [
+        {
+          "name": "khors",
+          "slot": 8,
+          "source_sha256": "e66729cb198ac6a7a398abc529457b24595013d7070210c09e9445ee138ae160"
+        },
+        {
+          "name": "aaron",
+          "slot": 9,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 29593,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "90C898A1ED3F4A9FD98963C13E9050C7B57D49C5",
+      "actions": 109825,
+      "hashes": {
+        "spec.json": "148d982c9391024ec4c6216bb3aecf3f0c8d81a4b6bf80c83fcb61f30709b152",
+        "economy.json": "ccd1999b06d261767a1ec7ca8b741bab1ef817fb1762a6e948dce5764a42caaa",
+        "audit.json": "50729b3ee223d466cfedb2cc042c8704a2dc781a3fd0daa4252c394cd5340d31",
+        "player-status.json": "8e9684d95dc6c34a29a355c9a88b35b7e30e4dcdb68e806c3ac66f988249a723",
+        "episode.json": "f42dd45fafd1e0e0327d42c7b9486c1910c9384513cca30bae35604dfd62089c",
+        "replay.bin": "8045587a929caeceeabe9e0fc1a265eb059e1e55fddcf812d7cc4189811e83c8",
+        "results.json": "93fe1247e18884dacce42d81319715f431906c609467ecf46925be9d4b9bc96b",
+        "commands.json": "59127dfd73cb2e34ca93631629566b82c58c6232ead0434d29c4d12cd2a57a4f",
+        "combat.json": "d1ae1f94603af2da06b535cbd5ac483d302f6c305f0f7ff560193c8a14de60c3"
+      }
+    },
+    {
+      "episode": "ereq_e91eb454-59b3-4d3a-af13-5783acd8f8b3",
+      "valid": false,
+      "failed_slots": [
+        4,
+        6,
+        8
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 1,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 8693,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "3F68E96942515228797DE713A81EB327749E46F7",
+      "actions": 53255,
+      "hashes": {
+        "spec.json": "e63c3aba9210d79fb4f212c0b4f7dd0120b866a48a77c6722f23d500866889c5",
+        "economy.json": "42f34b6a68d4fad866172c11bbd61b14ba1bc7b2365871b86ce0adc7d67896b3",
+        "audit.json": "b0a8e2cc40094a80222f15c66ed9708033ad6a92cafb79384c5159a6e8777736",
+        "player-status.json": "2e2db63178a2eb1d98b641ffe464a17dad8cf0439b600a796fe89ed32d70be2e",
+        "episode.json": "ffe331a7fb8414b3e52cc8280456ab4a775d943a8c6d0a77a0fbee7e3564a4d5",
+        "replay.bin": "85bf0ed6e1a4477f163bc1f0050deca7227722bc6a5b4a481c9e0ec326f7b97b",
+        "results.json": "7070f22773a5130a00dde8987b4f3293d8f4d6ab3d94d26828de04ba6ce62bae",
+        "commands.json": "29261d12534c26fadfda59a288d8be5eb2ee9755eca71d6742680b9f8addf56e",
+        "combat.json": "8fcf4d5cd352c862010749d0d7b00de6cc3ee7c8898a9e9edd4c4ce956e74ade"
+      }
+    },
+    {
+      "episode": "ereq_ed6f9ab0-0fc9-433c-9a5a-87b3e2074bb2",
+      "valid": false,
+      "failed_slots": [
+        3,
+        9
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 2,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 10983,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "764593BEF4AB0E57108FA222AFC635495C36EFC1",
+      "actions": 105010,
+      "hashes": {
+        "spec.json": "d9f8ba109f8fd96e4ac8e2aee230d963769e7aad55b9b6784a6e509eda7f443c",
+        "economy.json": "70a19cfe769ab29f57762c5a812b31f9653cd37fa9a30138e69e05470bc41a9a",
+        "audit.json": "194534a2c6903ae5aa0e754c2869734780e19f0359e31d8e45c569fabbffa540",
+        "player-status.json": "0c74059b33794f24124ac453f4d494299e45be26ad1042624ee37dde1b56cec4",
+        "episode.json": "f960650d46ddec83a2f6aa335026563501be28197dfc2bf741507451612cdd9b",
+        "replay.bin": "0d3d9aee5c24527a296aa925badae2198c4a4cc384c4da41e4361eb63e50bac2",
+        "results.json": "a9578b0cf308a9cc81c2861603a7f490ddb8d1eafc6356d1fb09219d14628d89",
+        "commands.json": "d1c2ea4cc8ab5937f53c6f101b9a6babd019e7d81b0457b49cd8ad486b340a95",
+        "combat.json": "8fe72c0a7ff8d9a4ba6b8dd0c75c2426175a921ecbc3a4596dacd8a6bf9b0d6c"
+      }
+    },
+    {
+      "episode": "ereq_ef5dcbf2-f7c5-4414-8076-345f49b8ee2d",
+      "valid": false,
+      "failed_slots": [
+        6,
+        7
+      ],
+      "subjects": [
+        {
+          "name": "aaron",
+          "slot": 8,
+          "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36"
+        }
+      ],
+      "ticks": 11758,
+      "all_replay_hashes_equal": true,
+      "canonical_commands_sha1": "B7B3C225755A01FFAA28F735AEE3D55BF57267A5",
+      "actions": 94765,
+      "hashes": {
+        "spec.json": "138eaf282b67ca3e81aac70554a76cfaa16d3ae67d8ae340393e252799fb7f16",
+        "economy.json": "1a171b2bbf7f8ba2b8e414b552cac9213bbc240f2f87951c212762bffee1e5b1",
+        "audit.json": "cd28e0374a9a0cb71fa575e74ae23e1ac206ca24e6585129539b2d28540a195c",
+        "player-status.json": "769595043b026685fb94407a00a648f60dd8d925f44bd7acc3c2fe2a8c288927",
+        "episode.json": "9f916257782d7d769baf0c9eb8793fd2f3be39c999d89cf7983d4ab3d0e12f3e",
+        "replay.bin": "fc0cc8dc8a99deab8ea952ab62142d7f61e6a6786fe20c7e656dd9f328d872cd",
+        "results.json": "09e1fb06c5c3d24815a975e7605c7fddea66b942af7331ab96398d68e3820d31",
+        "commands.json": "3e6b2d80eaaedcb700cbf72be6a41f8fced2f91637db546d3ece9e92822edee2",
+        "combat.json": "f6936e3c7ac1ba69a0df82f5784695e7fa2684fe9de2063ac7d87e95404710a1"
+      }
+    }
+  ]
+}

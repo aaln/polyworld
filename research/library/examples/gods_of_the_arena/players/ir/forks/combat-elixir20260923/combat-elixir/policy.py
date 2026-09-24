@@ -1,0 +1,175 @@
+POLICY = {'schema': 'gota-semantic-policy/1',
+ 'id': 'gota_combat_elixir20260923',
+ 'situation': {'grounded': {'observation': 'Bassy Q16.16 decimals for fractional action coordinates, integer '
+                                           'snapshot tiles and IDs; six inventory slots; shared public hero '
+                                           'draft.',
+                            'structure_alive': 'For structures objectAlive means exposed; positive HP means '
+                                               'standing.',
+                            'predicates': {'always': 'Unconditional lifecycle phase',
+                                           'low_health_in_field': 'Below 30% health outside the friendly '
+                                                                  'keep/spawn, alive and not '
+                                                                  'channeling/stunned. Recovery takes '
+                                                                  'priority over farming and attack '
+                                                                  'reacquisition.',
+                                           'low_health_in_base': 'Critical health inside own keep/spawn '
+                                                                 'commits to walking and replenishment '
+                                                                 'without a home portal.',
+                                           'active': 'Alive, battle started, decision due, not channeling or '
+                                                     'stunned',
+                                           'in_base': 'Host canShop identifies own keep or spawn; home '
+                                                      'recalls are disallowed here while useful outbound '
+                                                      'channels remain legal.',
+                                           'town_scroll_ready': 'Committed field recovery with an actual '
+                                                                'ready scroll; safe channel checks must '
+                                                                'still pass.',
+                                           'recovery_remaining': 'Recovery owns the decision and no '
+                                                                 'successful channel/replenishment action '
+                                                                 'has claimed it.'}},
+               'notes': 'Coached home recall differs from outbound tower travel. in_base=canShop, '
+                        'fountain=inOwnSpawn. Public hero/creep separation and warnings gate a field '
+                        'channel. Global geometry and Crossbow draft are retained; current engine rejects '
+                        'ordinary commands during channels. Actual stun/root, anchor loss or death '
+                        'interrupts; a bot cannot cancel a channel by walking. Current item2 restores90HP '
+                        'instantly for75gold; item1 regenerates120 over10seconds and damage interrupts it. '
+                        'Health consumables share10second cooldown. Public observations only; no opponent '
+                        'identity features.'},
+ 'belief': {'grounded': {'memory': ['crossed',
+                                    'enemyX',
+                                    'enemyY',
+                                    'homeX',
+                                    'homeY',
+                                    'hurtTick',
+                                    'initialized',
+                                    'lane',
+                                    'moveTick',
+                                    'nextThink',
+                                    'portalBusy',
+                                    'previousHits',
+                                    'previousHp',
+                                    'restock',
+                                    'resumeTarget',
+                                    'retreat',
+                                    'scanOffset',
+                                    'spawnX',
+                                    'spawnY'],
+                         'lifetime': 'BASIC globals start at zero per episode and persist across decisions '
+                                     'and respawns. The lifecycle binding explicitly resets initialization '
+                                     'and retreat state after death.',
+                         'uncertainty': 'Unseen enemies are unknown. Visible targets may be masked. Only the '
+                                        'draft roster, allied positions and visible opponents inform live '
+                                        'choices.'},
+            'claims': {'OpportunityMechanism': {'claim': 'All240 actual-tick item/healing/economy scenes '
+                                                         'pass across ten classes and both colors. Baseline '
+                                                         'separately satisfies240 expectations for its '
+                                                         'original behavior, including no immediate combat '
+                                                         'healing. Eight full native games pass '
+                                                         'runtime/replay/XP checks. This validates immediate '
+                                                         'healing, cooldown, spawn, inventory and reserve '
+                                                         'guards, not comparative rival score.',
+                                                'status': 'supported',
+                                                'evidence': [{'artifact': 'evidence/practice.json'}]},
+                       'PortalPreserved': {'claim': 'All84 inherited portal fixtures and126 broader '
+                                                    'all-class host checks pass on the frozen current '
+                                                    'engine.',
+                                           'status': 'supported',
+                                           'evidence': [{'artifact': 'evidence/portals.json'},
+                                                        {'artifact': 'evidence/scenarios.json'}]},
+                       'CompetitiveGain': {'claim': '400-game fresh held-out trial failed: 6.788% aggregate, '
+                                                    'colors [3.8831751763369837, 10.643285420163462],95% '
+                                                    'interval [-5.387954891727665, 20.872191467148603]. Gate '
+                                                    'requires >=10%aggregate, >=95%eachcolor and positive '
+                                                    'lower95%bound, zero invalid. Game/principal-stable '
+                                                    'deployment qualification: False. Exact-version fixed '
+                                                    'first-seat roster only; no future rank or late-draft '
+                                                    'claim.',
+                                           'status': 'contradicted',
+                                           'evidence': [{'artifact': 'evidence/trial-report.json'}]},
+                       'FieldDrift': {'status': 'supported',
+                                      'claim': 'Opponent-version and game snapshots are evaluation metadata; '
+                                               'newer entries can change optimal behavior. No opponent UUID '
+                                               'or hidden replay state enters the live source. Changed game '
+                                               'or principal champions prevent deployment; background '
+                                               'changes are reported. Preserve exact tested-version scope.',
+                                      'evidence': [{'artifact': 'evidence/field-changes.json'}]}}},
+ 'goal': {'Win': {'preference': 'No independent victory incentive. Enemy-god destruction supplies500 own XP '
+                                'and avoids later elapsed-time cost. Keep the baseline structure targeting '
+                                'in this experiment; do not idle merely to lengthen games.',
+                  'provenance': 'authored'},
+          'Grow': {'preference': 'Earn shared XP and last-hit gold, spend legal skill points, and convert '
+                                 'gold into durable combat strength.',
+                   'provenance': 'authored'},
+          'Survive': {'preference': 'Avoid repeated feeding, recover efficiently, and promptly return to '
+                                    'productive play.',
+                      'provenance': 'authored'},
+          'Score': {'preference': 'Sole objective: maximize final individual max(0, lifetime XP*1440 '
+                                  '-200*world_ticks)//1440. Hero kill150XP, shared creep pool15XP, '
+                                  'building100XP, enemy god destruction500XP for every teammate. Prefer '
+                                  'productive kills and farming; elapsed time always costs200/minute. '
+                                  'Survival, items and portals matter only through their contribution to '
+                                  'this objective.',
+                    'provenance': 'authored'},
+          'Practice': {'preference': 'Secure feasible last hits and shared XP, buy useful permanent power, '
+                                     'and use safe portals for urgent defense or productive recovery.',
+                       'provenance': 'authored'},
+          'survive_and_replenish': {'preference': 'At critical field health, disengage and channel safely '
+                                                  'home before more farming; restore HP/mana at spawn and '
+                                                  'return productively with a reserved scroll.',
+                                    'provenance': 'interpretation'}},
+ 'skill': {'portal_state': {'operator': 'elixir_portal_state', 'parameters': {}},
+           'draft': {'operator': 'elixir_draft', 'parameters': {'think_ticks': 6}},
+           'recovery_intent': {'operator': 'elixir_recovery_intent', 'parameters': {}},
+           'base_recovery_intent': {'operator': 'elixir_base_recovery_intent', 'parameters': {}},
+           'timing': {'operator': 'elixir_timing', 'parameters': {}},
+           'lifecycle': {'operator': 'elixir_lifecycle',
+                         'parameters': {'buyback_seconds': 25, 'buyback_reserve': 200}},
+           'observe': {'operator': 'elixir_observe', 'parameters': {'scan_limit': 96}},
+           'economy': {'operator': 'elixir_economy', 'parameters': {'shop_gold': 500}},
+           'portal_context': {'operator': 'elixir_portal_context', 'parameters': {}},
+           'replenish': {'operator': 'elixir_replenish', 'parameters': {}},
+           'channel_town_scroll': {'operator': 'elixir_channel_town_scroll', 'parameters': {}},
+           'walk_to_base': {'operator': 'elixir_walk_to_base', 'parameters': {}},
+           'home_portal': {'operator': 'elixir_home_portal', 'parameters': {}},
+           'tower_safety': {'operator': 'elixir_tower_safety', 'parameters': {'tower_hp': 65}},
+           'xp_close': {'operator': 'elixir_xp_close', 'parameters': {}},
+           'combat': {'operator': 'elixir_combat', 'parameters': {'reset_recovery': 1}},
+           'advance': {'operator': 'elixir_advance', 'parameters': {}}},
+ 'strategy': [{'id': 'R_portal_state', 'when': 'always', 'skill': 'portal_state', 'for': ['Score']},
+              {'id': 'R_draft', 'when': 'always', 'skill': 'draft', 'for': ['Score']},
+              {'id': 'R_recovery_intent',
+               'when': 'low_health_in_field',
+               'skill': 'recovery_intent',
+               'for': ['Score']},
+              {'id': 'R_base_recovery_intent',
+               'when': 'low_health_in_base',
+               'skill': 'base_recovery_intent',
+               'for': ['Score']},
+              {'id': 'R_timing', 'when': 'always', 'skill': 'timing', 'for': ['Score']},
+              {'id': 'R_lifecycle', 'when': 'always', 'skill': 'lifecycle', 'for': ['Score']},
+              {'id': 'R_observe', 'when': 'active', 'skill': 'observe', 'for': ['Score']},
+              {'id': 'R_economy', 'when': 'active', 'skill': 'economy', 'for': ['Score']},
+              {'id': 'R_portal_context', 'when': 'active', 'skill': 'portal_context', 'for': ['Score']},
+              {'id': 'R_replenish', 'when': 'in_base', 'skill': 'replenish', 'for': ['Score']},
+              {'id': 'R_channel_town_scroll',
+               'when': 'town_scroll_ready',
+               'skill': 'channel_town_scroll',
+               'for': ['Score']},
+              {'id': 'R_walk_to_base',
+               'when': 'recovery_remaining',
+               'skill': 'walk_to_base',
+               'for': ['Score']},
+              {'id': 'R_home_portal', 'when': 'active', 'skill': 'home_portal', 'for': ['Score']},
+              {'id': 'R_tower_safety', 'when': 'active', 'skill': 'tower_safety', 'for': ['Score']},
+              {'id': 'R_xp_close', 'when': 'active', 'skill': 'xp_close', 'for': ['Score']},
+              {'id': 'R_combat', 'when': 'active', 'skill': 'combat', 'for': ['Score']},
+              {'id': 'R_advance', 'when': 'active', 'skill': 'advance', 'for': ['Score']}],
+ 'execution': {'binding': 'gota-bassy/combat-elixir-2026-09-23-r1',
+               'game_version': '2026.9.22.3',
+               'language': 'BASIC'},
+ 'update': {'revision': 2,
+            'parent': '15a88bf3d098961901bcd9be47e516f4b828299eba70c1845e0e1ad08a4d2805',
+            'change': {'origin': 'Current-engine practice and completed hosted outcomes reflected into IR; '
+                                 'executable bytes unchanged',
+                       'trial_passed': False,
+                       'deployment_qualified': False},
+            'needs_review': [],
+            'evidence': [{'artifact': 'evidence/trial-report.json'}]}}

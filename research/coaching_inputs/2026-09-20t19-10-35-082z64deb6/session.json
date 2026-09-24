@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-20t19-10-35-082z64deb6",
+  "project": null,
+  "project_name": "Coaching session",
+  "game": "",
+  "reference_status": "unbound",
+  "source": {
+    "id": "window:11845:0",
+    "name": "Softmax Dashboard",
+    "test": false,
+    "purpose": "gameplay",
+    "surface": "window"
+  },
+  "started_at": "2026-09-20T19:10:35.082Z",
+  "status": "complete",
+  "duration_ms": 92220,
+  "note_count": 0,
+  "experiment": {
+    "id": "",
+    "condition": "unassigned"
+  },
+  "context": "",
+  "pre_session_context": [],
+  "pauses": [
+    {
+      "at_ms": 92220,
+      "started_at": "2026-09-20T19:12:07.395Z",
+      "ended_at": "2026-09-20T19:12:08.265Z"
+    }
+  ],
+  "paused": false,
+  "input_git_commit": null,
+  "input_revision": null,
+  "input_had_uncommitted_changes": false,
+  "input_execution_verified": false,
+  "input_selection": "No policy attached. Resolve the game and policy from the recording and target repository.",
+  "ir_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "policy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "policy_extension": "txt",
+  "video": {
+    "file": "recording.webm",
+    "mime_type": "video/webm;codecs=vp8,opus",
+    "settings": {
+      "aspectRatio": 1.451505016722408,
+      "cursor": "always",
+      "deviceId": "window:11845:0",
+      "displaySurface": "window",
+      "frameRate": 10,
+      "height": 598,
+      "logicalSurface": true,
+      "resizeMode": "crop-and-scale",
+      "screenPixelRatio": 2,
+      "width": 868
+    },
+    "audio": {
+      "microphone": true,
+      "system": false
+    },
+    "encoding": {
+      "video_bits_per_second": 450000,
+      "audio_bits_per_second": 32000,
+      "profile": "compact-960-10fps"
+    },
+    "bytes": 2494080,
+    "sha256": "5e7849a5f3010760324886a03e15b4b2351536ee728323a293bf5a48bef40cfc",
+    "microphone_events": [
+      {
+        "at_ms": 2,
+        "state": "live",
+        "label": "Default - MacBook Pro Microphone (Built-in)",
+        "selection": "system-default",
+        "sample_rate": 48000,
+        "channels": 1
+      },
+      {
+        "at_ms": 92220,
+        "state": "paused",
+        "label": "Default - MacBook Pro Microphone (Built-in)",
+        "selection": "system-default",
+        "sample_rate": 48000,
+        "channels": 1
+      }
+    ]
+  },
+  "feedback_file": "feedback.jsonl",
+  "timing": "Times are video-relative milliseconds, excluding pauses. at_ms is when feedback began; submitted_at_ms is when it was saved. Context defaults to the preceding 10 seconds. Notes while paused refer to the frozen video time.",
+  "research_brief": "Inspect each feedback event with its video context and the pinned input IR/policy. Make the coordinated changes needed to realize the coached behavior, across as many IR layers and policy components as necessary. Evaluate their combined effect; individual edits need not improve results alone. Regenerate the policy, test coaching fidelity, then run matched evaluations. This recording is human evidence, not an evaluation or an automatic policy update.",
+  "interaction_capture": {
+    "enabled": true,
+    "target": {
+      "pid": 95540,
+      "window_id": 11845,
+      "bundle_id": "com.brave.Browser"
+    },
+    "status": "saved",
+    "platform": "darwin",
+    "file": "interactions.jsonl",
+    "pointer_max_hz": 20,
+    "last_at_ms": 92220,
+    "last_status": "stopped",
+    "sha256": "8d3ffa47ea1b7598597a7de9b6126322447e68d1150d83eb7fd75864d3309cd2"
+  },
+  "ended_at": "2026-09-20T19:12:08.265Z",
+  "error": null,
+  "notes_file": "notes.md",
+  "notes_generation": "local-transcript-and-context-v2",
+  "enrichment": {
+    "status": "complete",
+    "local": true,
+    "error": null,
+    "completed_at": "2026-09-20T19:12:18.994Z",
+    "speech_segments": 18,
+    "frame_count": 49,
+    "processing_seconds": 10.243,
+    "index_sha256": "7ca682343f99455da8906a38ee62b938d7245c5a68e30958ac4d86ad2f7a44f3"
+  }
+}

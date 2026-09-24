@@ -1,0 +1,391 @@
+{
+  "episode": "ereq_724a8b4c-122d-407d-b988-b80cd73548e8",
+  "url": "https://softmax.com/observatory/v2?tab=overview&detail=episode-request:ereq_724a8b4c-122d-407d-b988-b80cd73548e8",
+  "engine_commit": "fd315c8fa30f8923c7a7709a577c40ac071b1c2a",
+  "game_version": "2026.9.23.2",
+  "slot": 7,
+  "class": "Arcanist",
+  "policy_version": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+  "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+  "commands_matched": 1315,
+  "all_state_hashes_equal": true,
+  "all_actions_consumed": true,
+  "other_vm_failure_slots": [
+    2,
+    4,
+    5
+  ],
+  "trigger": {
+    "visible_enemy_creeps_at_trigger": [
+      {
+        "index": 68,
+        "id": 1119,
+        "distance_squared_tiles": 9799.242072214443,
+        "hp": 60
+      },
+      {
+        "index": 69,
+        "id": 1127,
+        "distance_squared_tiles": 9833.966289745,
+        "hp": 60
+      },
+      {
+        "index": 70,
+        "id": 1126,
+        "distance_squared_tiles": 9804.792968649444,
+        "hp": 36
+      },
+      {
+        "index": 71,
+        "id": 1124,
+        "distance_squared_tiles": 9732.422292484445,
+        "hp": 60
+      },
+      {
+        "index": 72,
+        "id": 1118,
+        "distance_squared_tiles": 9891.396178723611,
+        "hp": 36
+      },
+      {
+        "index": 73,
+        "id": 1117,
+        "distance_squared_tiles": 9808.373540125,
+        "hp": 12
+      },
+      {
+        "index": 74,
+        "id": 1125,
+        "distance_squared_tiles": 9975.112965510278,
+        "hp": 60
+      },
+      {
+        "index": 75,
+        "id": 1116,
+        "distance_squared_tiles": 9895.355675273613,
+        "hp": 60
+      }
+    ],
+    "tick": 3530,
+    "hp": 250,
+    "max_hp": 250,
+    "mana": 28,
+    "max_mana": 210,
+    "gold": 590,
+    "xp": 461,
+    "x_raw": 2936032,
+    "z_raw": -175424,
+    "ranks": [
+      0,
+      2,
+      1,
+      0
+    ],
+    "inventory": [
+      "CrimsonDagger",
+      "HealthPotion",
+      "NoItem",
+      "NoItem",
+      "NoItem",
+      "NoItem"
+    ],
+    "item_counts": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "memory": {
+      "active": 1,
+      "retreat": 1,
+      "restock": 1,
+      "inBase": 0,
+      "gearCount": 1,
+      "threatDistance": 5218,
+      "bestId": 0,
+      "bestKind": 3,
+      "moveTick": 3554,
+      "portalReady": 0,
+      "spawnX": 4,
+      "spawnY": 111,
+      "homeX": 10,
+      "homeY": 105,
+      "stopped": 1,
+      "towerAggro": 0,
+      "tanks": 9,
+      "objects": 76,
+      "scanOffset": 0,
+      "recallCreepDistance": 9701
+    },
+    "commands": [
+      {
+        "tick": 3530,
+        "hero_id": 107,
+        "kind": 1,
+        "slot": 0,
+        "first": 4,
+        "second": 111,
+        "offset_raw": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "shop_arrival": {
+    "visible_enemy_creeps_at_trigger": [],
+    "tick": 4682,
+    "hp": 370,
+    "max_hp": 370,
+    "mana": 210,
+    "max_mana": 210,
+    "gold": 120,
+    "xp": 461,
+    "x_raw": -1591809,
+    "z_raw": 3098377,
+    "ranks": [
+      0,
+      2,
+      1,
+      0
+    ],
+    "inventory": [
+      "CrimsonDagger",
+      "HealthPotion",
+      "KnightArmor",
+      "PortalScroll",
+      "BattleAxe",
+      "NoItem"
+    ],
+    "item_counts": [
+      1,
+      2,
+      1,
+      1,
+      1,
+      0
+    ],
+    "memory": {
+      "active": 1,
+      "retreat": 1,
+      "restock": 0,
+      "inBase": 1,
+      "gearCount": 3,
+      "threatDistance": 441,
+      "bestId": 0,
+      "bestKind": 3,
+      "moveTick": 4706,
+      "portalReady": 1,
+      "spawnX": 4,
+      "spawnY": 111,
+      "homeX": 10,
+      "homeY": 105,
+      "stopped": 1,
+      "towerAggro": 0,
+      "tanks": 8,
+      "objects": 84,
+      "scanOffset": 0,
+      "recallCreepDistance": 441
+    },
+    "commands": [
+      {
+        "tick": 4682,
+        "hero_id": 107,
+        "kind": 3,
+        "slot": 0,
+        "first": 16,
+        "second": 0,
+        "offset_raw": [
+          0,
+          0
+        ]
+      },
+      {
+        "tick": 4682,
+        "hero_id": 107,
+        "kind": 3,
+        "slot": 0,
+        "first": 21,
+        "second": 0,
+        "offset_raw": [
+          0,
+          0
+        ]
+      },
+      {
+        "tick": 4682,
+        "hero_id": 107,
+        "kind": 3,
+        "slot": 0,
+        "first": 18,
+        "second": 0,
+        "offset_raw": [
+          0,
+          0
+        ]
+      },
+      {
+        "tick": 4682,
+        "hero_id": 107,
+        "kind": 3,
+        "slot": 0,
+        "first": 1,
+        "second": 0,
+        "offset_raw": [
+          0,
+          0
+        ]
+      },
+      {
+        "tick": 4682,
+        "hero_id": 107,
+        "kind": 1,
+        "slot": 0,
+        "first": 4,
+        "second": 111,
+        "offset_raw": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "walk_to_shop_seconds": 48.0,
+  "first_xp_after_return_tick": 5114,
+  "xp_gap_seconds": 66.0,
+  "time_charge_during_gap": 220.0,
+  "causal_limit": "The time charge is exact; XP obtainable by staying and final-score improvement are unmeasured counterfactuals. Other three VMs failed, so this is a controller diagnosis, not a competitive evaluation.",
+  "final_hero": {
+    "slot": 7,
+    "team": 1,
+    "class": 2,
+    "drafted": true,
+    "hp": 520,
+    "x": 2700290,
+    "z": -2607269,
+    "score": 861,
+    "deaths": 0,
+    "xp": 2363,
+    "hits": 204,
+    "level": 8,
+    "gold": 1010,
+    "ranks": [
+      0,
+      4,
+      2,
+      1
+    ],
+    "inventory": [
+      "CrimsonDagger",
+      "PortalScroll",
+      "KnightArmor",
+      "HealthPotion",
+      "BattleAxe",
+      "RuneCrossbow"
+    ],
+    "item_counts": [
+      1,
+      2,
+      1,
+      2,
+      1,
+      1
+    ],
+    "max_work": 0,
+    "max_instructions": 0
+  },
+  "xp_sources": {
+    "structure_or_other": 800,
+    "creep": 813,
+    "hero": 750
+  },
+  "purchases": [
+    {
+      "tick": 1250,
+      "slot": 7,
+      "item": 11,
+      "hp": 190,
+      "level": 1
+    },
+    {
+      "tick": 1250,
+      "slot": 7,
+      "item": 1,
+      "hp": 190,
+      "level": 1
+    },
+    {
+      "tick": 4682,
+      "slot": 7,
+      "item": 16,
+      "hp": 370,
+      "level": 3
+    },
+    {
+      "tick": 4682,
+      "slot": 7,
+      "item": 21,
+      "hp": 370,
+      "level": 3
+    },
+    {
+      "tick": 4682,
+      "slot": 7,
+      "item": 18,
+      "hp": 370,
+      "level": 3
+    },
+    {
+      "tick": 4682,
+      "slot": 7,
+      "item": 1,
+      "hp": 370,
+      "level": 3
+    },
+    {
+      "tick": 5264,
+      "slot": 7,
+      "item": 19,
+      "hp": 370,
+      "level": 3
+    },
+    {
+      "tick": 8751,
+      "slot": 7,
+      "item": 21,
+      "hp": 96,
+      "level": 6
+    },
+    {
+      "tick": 8751,
+      "slot": 7,
+      "item": 21,
+      "hp": 96,
+      "level": 6
+    },
+    {
+      "tick": 8751,
+      "slot": 7,
+      "item": 1,
+      "hp": 96,
+      "level": 6
+    },
+    {
+      "tick": 8757,
+      "slot": 7,
+      "item": 1,
+      "hp": 96,
+      "level": 6
+    },
+    {
+      "tick": 8763,
+      "slot": 7,
+      "item": 1,
+      "hp": 99,
+      "level": 6
+    }
+  ],
+  "diagnosis": "R_economy sets restock after the local wave clears: fewer than4core items, gold>=500, observed enemy unit distance squared>225. Full-health return was not caused by low HP or low mana. No portal scroll was owned. R_walk_to_base walks to spawn and R_replenish clears retreat only in own spawn. Q remains rank0 through level8."
+}

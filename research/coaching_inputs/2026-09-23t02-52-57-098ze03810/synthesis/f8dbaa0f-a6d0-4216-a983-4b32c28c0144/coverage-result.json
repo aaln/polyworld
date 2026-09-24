@@ -1,0 +1,73 @@
+{
+  "summary": "While the initial draft correctly recognized the coach's desire to use self-healing to sustain in lane instead of retreating to base, it overlooked a critical execution defect visible in the match replay: the agent's retreat skill lacked an early abort/termination condition. At 00:10–00:13, after casting its healing spell at low HP, the Druid's health restored almost completely (reaching 388/390 HP), yet the hero continued navigating all the way into the friendly base fountain before turning back to lane. This second pass develops the missing skill termination, interruptible execution controller, and dynamic belief revision required to stop premature full-base journeys when health has already recovered in the field.",
+  "moments": [
+    {
+      "start_ms": 10730,
+      "end_ms": 32000,
+      "observation": "After dropping to low HP (~112/390) and casting self-heal at 00:08, the Druid's health bar recovers to near maximum (388/390 HP) by ~00:12.5. However, rather than stopping or turning around, the hero continues walking all the way through the jungle back to the home base fountain (arriving at ~00:24), lingers briefly, and then paths all the way back out to lane.",
+      "coaching_intent": "The coach emphasizes that because the hero healed itself, walking all the way back to base was completely unnecessary ('he'll actually move to run back to base' / 'didn't have to be that') and wasted substantial lane uptime and point/XP earning opportunity ('so he can keep playing and keep pushing... could have earned more points all before').",
+      "uncertainty": "ASR transcript noise ('still themselves' for 'healed themselves', 'put on time in the revenues' for 'prevent that from happening'), but visual health indicators and the coach's direct verbal commentary clearly establish the intended behavior.",
+      "evidence_ids": [
+        "speech-1",
+        "speech-2",
+        "speech-3",
+        "speech-4",
+        "speech-5",
+        "speech-8",
+        "speech-9",
+        "speech-10",
+        "speech-11",
+        "video"
+      ]
+    }
+  ],
+  "ir_proposals": [
+    {
+      "layer": "skill",
+      "change": "Add an early termination/abort condition to `skill_base_retreat`: terminate immediately if `current_hp >= hp_safe_threshold` or if self-healing restores health to operational levels while in transit.",
+      "rationale": "The first pass proposed preventing retreat initiation when heal is available, but failed to address in-progress retreats. In the replay, the agent initiated a retreat while low, healed to 388/390 HP en route, but stayed locked into running to the base fountain for over 15 seconds because the retreat skill only terminates upon reaching the fountain.",
+      "verification": "Induce low HP on the agent, trigger retreat toward base, apply a heal that brings HP above the safe threshold en route, and verify `skill_base_retreat` terminates immediately rather than navigating to the fountain.",
+      "evidence_ids": [
+        "speech-1",
+        "speech-2",
+        "speech-3",
+        "speech-4",
+        "speech-5",
+        "speech-9",
+        "speech-10",
+        "speech-11",
+        "video"
+      ]
+    },
+    {
+      "layer": "execution",
+      "change": "Implement an interruptible pathing controller for base retreats that clears waypoints and halts fountain navigation as soon as higher-level retreat skills are aborted or superseded by field sustain/push goals.",
+      "rationale": "Even if strategic priorities switch, if the underlying movement controller treats navigation to base fountain as an uninterruptible waypoint queue, the agent will walk all the way to base despite having full health. Dynamic pathing cancellation is necessary to realize field re-engagement.",
+      "verification": "Issue a base retreat pathing command, inject an interrupt event when HP is restored, and verify that motor commands toward base cease within one tick and orient toward the lane objective.",
+      "evidence_ids": [
+        "speech-1",
+        "speech-2",
+        "speech-5",
+        "speech-9",
+        "video"
+      ]
+    },
+    {
+      "layer": "belief",
+      "change": "Update the belief layer to maintain a continuously revised hypothesis `base_fountain_required`, which evaluates to false whenever current HP and field regeneration capacity are sufficient to survive the active lane threat.",
+      "rationale": "The coach explicitly notes that the player 'didn't actually need to run back to base' because the hero was already healed. The current policy appears to treat reaching low HP as a latched state requiring fountain replenishment regardless of field health status.",
+      "verification": "Monitor `base_fountain_required` during a heal-in-transit episode; verify the belief shifts to false upon HP reaching the safe threshold and triggers strategy re-evaluation prior to arriving at base.",
+      "evidence_ids": [
+        "speech-0",
+        "speech-1",
+        "speech-2",
+        "speech-10",
+        "speech-11",
+        "video"
+      ]
+    }
+  ],
+  "questions": [
+    "What specific HP percentage threshold (e.g., 70% vs 90%) should trigger an immediate abort of an in-progress base retreat when no enemy heroes are actively pursuing?"
+  ]
+}

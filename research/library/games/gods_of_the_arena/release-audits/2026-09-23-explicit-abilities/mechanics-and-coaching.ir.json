@@ -1,0 +1,155 @@
+{
+  "schema": "semantic-coaching-hypotheses/1",
+  "id": "explicit_abilities_release60_20260923",
+  "situation": {
+    "game_version": "2026.9.23.2",
+    "coworld_id": "cow_f2dcdbcd-f984-445b-af5b-ee9481a7f362",
+    "engine_commit": "fd315c8fa30f8923c7a7709a577c40ac071b1c2a",
+    "replay_version": 60,
+    "baseline_source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+    "verified_contract": {
+      "abilities": "Every ability, including slot0, healing, restoration and ultimates, requires an explicit castTarget/castPoint command.",
+      "items": "Explicit useItem/useItemAt remains required; this is not a newly introduced item-use rule.",
+      "basic_attacks": "Idle acquisition now includes nearest visible attackable creeps, heroes and exposed structures. walkTo still suppresses acquisition.",
+      "removed": [
+        "Hero.manualSpells",
+        "ActionManualSpells14",
+        "tryCombatAbilities",
+        "tryCastAbility"
+      ],
+      "unchanged": [
+        "Draft and skill point requirements",
+        "Portal channel and cooldown",
+        "Keep-only shopping",
+        "XP-minus200perminute score",
+        "Current balance stats"
+      ]
+    },
+    "predicates": {
+      "ready_safe_heal": "Learned self-capable healing ability; missing health worthwhile; enough mana and charge; cooldown ready; no active portal channel; safe field context.",
+      "ready_mana_restore": "Learned abilityRestore>0; worthwhile missing mana; charge and cooldown ready; no active portal channel.",
+      "valuable_cast": "Visible legal target and correct ability shape/reach; plausible hero finish, efficient wave clear or justified structure finish; public observations only."
+    }
+  },
+  "belief": {
+    "engine_change": {
+      "status": "source_and_runtime_verified",
+      "evidence": [
+        "release.json",
+        "live-readback.json",
+        "tests/test_gota_spells.json",
+        "tests/test_gota_attacks.json"
+      ]
+    },
+    "healing_gap": {
+      "status": "observed_fixture",
+      "claim": "Incumbent Vanguard and DeathKnight at29%HP with mana/rank/charges available issue zero healing spells and walk home in both colors. Generic combat casting is bypassed by retreat/no-target flow.",
+      "evidence": "healing-probe.json"
+    },
+    "druid_preserved": {
+      "status": "observed_fixture",
+      "claim": "Dedicated Druid lane rule explicitly casts3heals, restores212HP and exits retreat in both colors over180ticks. This is fixture behavior, not score qualification.",
+      "evidence": "healing-probe.json"
+    },
+    "mana_restore_gap": {
+      "status": "source_inspected_not_low_mana_fixture",
+      "claim": "Incumbent generic casting handles abilityHeal and abilityDamage but never abilityRestore. Arcanist and Warlock restoration abilities have neither heal nor damage, so this path omits them.",
+      "evidence": "Pinned content.nim and incumbent R_combat; no native score attribution."
+    },
+    "runtime": {
+      "status": "four_complete_native_games_pass",
+      "claim": "Unchanged incumbent works on new host with nine updated reference VMs; all replay hashes and40integer hero scores match. Not rival qualification.",
+      "evidence": "smoke.json"
+    },
+    "rejected_orders": {
+      "status": "interpretation_updated",
+      "claim": "Rejected casts still spend no ability resources, but no automatic ability fallback can compensate for omitted or invalid explicit calls. Measure accepted releases and effects."
+    },
+    "opponent_models": {
+      "status": "requires_new_release_evidence",
+      "claim": "Relh169/Richard174 source modes0and8 relied on automatic spells in the old audits except special Lich behavior. Source identity remains verified, but old activation/score findings do not establish new-patch strength."
+    }
+  },
+  "goal": {
+    "score": "Raise mean floor(max(0,XP-200*elapsed_minutes)) with more productive games and improved nonzero mean.",
+    "spells": "Explicitly schedule useful healing and damage while protecting escape/heal reserves; no blanket ban on efficient creep casts."
+  },
+  "skill": {
+    "ExplicitFieldSustain": {
+      "status": "proposed_not_implemented",
+      "initiation": "ready_safe_heal, including no enemy selected and health-only retreat",
+      "operation": "Evaluate healing before retreat/target stop conditions. Use self/ally-capable targets correctly; retain channel lock and useful shop return. Re-evaluate safety and ability availability.",
+      "evidence": "healing-probe.json"
+    },
+    "ExplicitManaRestore": {
+      "status": "proposed_not_implemented",
+      "initiation": "ready_mana_restore, including no enemy selected",
+      "operation": "Explicitly cast the learned restoration ability on self; avoid spending at full mana, preserve channel lock, and test low-mana retreat interruption separately."
+    },
+    "LegalExplicitCombat": {
+      "status": "proposed_not_implemented",
+      "initiation": "valuable_cast",
+      "operation": "Use current shape/range table, legal minimum distances, target-tracking projectiles and damaging ring placement. Prioritize meaningful hero or wave opportunities; evaluate accepted effects, not attempted-command count.",
+      "evidence": "release.json"
+    },
+    "ReserveHighValueCharges": {
+      "status": "proposed_not_implemented",
+      "operation": "Reserve scarce ultimates/mana for high-value public opportunities; allow an affordable cast to secure sufficient creep income. Learn thresholds under new-engine controls."
+    }
+  },
+  "strategy": [
+    {
+      "id": "EXPLICIT60_SAFE_HEAL",
+      "when": "ready_safe_heal and no active portal channel",
+      "prefer": "ExplicitFieldSustain",
+      "over": "unnecessary health-only walk home",
+      "for": "score"
+    },
+    {
+      "id": "EXPLICIT60_MANA_RESTORE",
+      "when": "ready_mana_restore",
+      "prefer": "ExplicitManaRestore",
+      "for": "score"
+    },
+    {
+      "id": "EXPLICIT60_CAST_EFFECT",
+      "when": "valuable_cast",
+      "prefer": "LegalExplicitCombat",
+      "for": "spells"
+    },
+    {
+      "id": "EXPLICIT60_CHARGE_VALUE",
+      "when": "multiple legal cast opportunities",
+      "prefer": "ReserveHighValueCharges",
+      "for": "score"
+    }
+  ],
+  "execution": {
+    "binding": null,
+    "executable": false,
+    "deployed": false,
+    "baseline_unchanged": true,
+    "proposed_order": [
+      "Preserve active portal-channel lock",
+      "Read current ranks/resources/visible targets",
+      "Evaluate safe self/ally sustain before no-target or retreat stops",
+      "Choose useful legal damage cast",
+      "Preserve independent basic/route actions"
+    ]
+  },
+  "update": {
+    "revision": 1,
+    "origin": "User game-creator update; independently verified published source and live manifest.",
+    "preserve": [
+      "Replay59engine and locked dependencies",
+      "All historical results and source/IR pairs",
+      "Previous rejected transfer records"
+    ],
+    "next_tests": [
+      "IR-first explicit-sustain candidate with no-target/retreat, unsafe threat, shop and portal-channel guards",
+      "All40ability geometry/resource fixtures plus current-engine native matches",
+      "Fresh controlled replay60score trial and opponent refresh before promotion"
+    ],
+    "qualification": "No new competitive gain measured. Prior negative experiments keep their original release scope; changed mechanics justify a separately frozen new test."
+  }
+}

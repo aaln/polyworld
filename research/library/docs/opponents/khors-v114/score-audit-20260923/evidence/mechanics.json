@@ -1,0 +1,33 @@
+{
+  "game_version": "2026.9.22.3",
+  "engine_commit": "1b70894436b7ffdcd0d421b6b32c2415c9c8bfde",
+  "replay_version": 58,
+  "score": "max(0, lifetime_xp * 1440 - 200 * world_ticks) // 1440",
+  "raw_xp_public_to_basic": false,
+  "public_progress_proxies": [
+    "selfLevel",
+    "selfGold",
+    "selfAttacksLanded",
+    "selfDeaths",
+    "selfTarget",
+    "worldTick",
+    "visible objects"
+  ],
+  "host_sources": {
+    "examples/gods_of_the_arena/bots.nim": "3acbd7e0722261ded597a2a2c16ceb20e8c5d55d696008026e2eb316b13da73d",
+    "examples/gods_of_the_arena/content.nim": "ceb104245fe5cc3a45b8ef3d8a55a4c4624d4bcbf887bce3dbaedd96e8f5ff73",
+    "examples/gods_of_the_arena/sim.nim": "1e6d514073fad1517a5c88cd942b5501891d9443ac0756213ecc533565fe10d7",
+    "examples/gods_of_the_arena/scores.nim": "9448dbf3eabe3a1f70bed2b0b759bd5082b1f6ad58985375b55e1f9cdd3f2141"
+  },
+  "source_availability": "No khors executable in searched local repositories. Hosted specs bind content hash to version; public metadata did not expose source. No source/private-VM claim for khors.",
+  "item_ids": {
+    "11": "CrimsonDagger",
+    "16": "KnightArmor",
+    "18": "BattleAxe",
+    "19": "RuneCrossbow",
+    "20": "ArcaneSpellbook",
+    "21": "PortalScroll",
+    "1": "HealthPotion"
+  },
+  "league_score": "Per-player round mean then EMA0.15 new +0.85 previous; snapshot rounds_played74 is scored-round count, while analyzed platform round numbers are683,684,685."
+}

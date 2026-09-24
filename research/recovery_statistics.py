@@ -5,8 +5,8 @@ import importlib.util, json, subprocess, time
 
 ROOT=Path(__file__).resolve().parents[1]
 RAW=ROOT.parent/'polyworld/tmp/gota-weak-neutral62-20260924'
-ARCHIVE=Path(json.loads((ROOT/'research/manifest.json').read_text())['archive'])
-spec=importlib.util.spec_from_file_location('recovery_statistics',ARCHIVE/'games/gods_of_the_arena/instruments/neutralfarm20260923/statistics_report.py')
+VENDOR=ROOT/'research/vendor'
+spec=importlib.util.spec_from_file_location('recovery_statistics',VENDOR/'games/gods_of_the_arena/instruments/neutralfarm20260923/statistics_report.py')
 stats=importlib.util.module_from_spec(spec);spec.loader.exec_module(stats)
 stats.RAW=stats.base.RAW=RAW
 read,write=stats.read,stats.write

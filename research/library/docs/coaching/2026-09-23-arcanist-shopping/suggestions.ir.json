@@ -1,0 +1,83 @@
+{
+  "schema": "semantic-coaching-hypotheses/1",
+  "id": "arcanist_productive_restock60",
+  "situation": {
+    "healthy_undergeared_shopper": "Outside keep, full or sustainable HP, incomplete item basket and enough gold to consider upgrades.",
+    "recent_wave_cleared": "Recent visible wave has died; distinguish a brief gap before the next wave from a persistently empty route.",
+    "resource_sustain_available": "Mana Crystal learned, charged and ready, outside spawn, with useful mana deficit.",
+    "worthwhile_shop_basket": "Explicit affordable next purchases and inventory space, plus legal return route, justify leaving now.",
+    "safe_visible_wave": "Visible enemy creep reachable on a safe route. Current BASIC exposes no direct object-layer or lifetime-XP field; validate same-floor reach using navigation, never private replay fields."
+  },
+  "belief": {
+    "observed_return": {
+      "status": "source_reconstructed",
+      "claim": "Shopping latch at3530; full250HP,28mana,590gold,one core item. Full1315command and10814state-hash match. Local enemy wave had just cleared; all76visible objects fit the96object scan, so no partial-scan omission at this trigger."
+    },
+    "measured_cost": {
+      "status": "observed",
+      "claim": "48seconds to shop;66seconds until next XP. Bought armor160,scroll100,axe180,potion30. The220point time charge is not a proven220point counterfactual score loss."
+    },
+    "resource_gap": {
+      "status": "source_verified",
+      "claim": "Mana Crystal never unlocked, even at level8. Current engine requires explicit casts; low mana itself did not trigger this return."
+    },
+    "upgrade_value": {
+      "status": "unresolved",
+      "claim": "Return bought meaningful upgrades, including120maxHP. Disabling shopping globally is not justified. Need a class-specific complete-game comparison of earlier sustain and return timing."
+    }
+  },
+  "goal": {
+    "primary": "Raise XP-minus-time score, conditional nonzero mean and productive frequency.",
+    "constraint": "Preserve necessary survival escapes and item upgrades; never replace lane downtime with deaths."
+  },
+  "skill": {
+    "RestoreManaInLane": {
+      "status": "locally_verified_in_separate_unqualified_bundle",
+      "operation": "Unlock Q from level2 after the normal level1 skill, explicitly cast useful ready Mana Crystal before target-dependent stops. No movement cancellation or portal interruption.",
+      "evidence": "../../../examples/gods_of_the_arena/players/ir/forks/weakhero20260923-hosted/explicit-sustain/evidence/local-summary.json"
+    },
+    "PlanProductiveRestock": {
+      "status": "proposed",
+      "operation": "Compute the next affordable class-specific item basket and travel commitment; use a safe wave gap for return. When healthy and a near-term wave can be farmed, briefly defer the shopping latch with bounded reevaluation. Treat urgent HP escape separately."
+    },
+    "RetainReturnOptions": {
+      "status": "proposed",
+      "operation": "Restock scrolls at actual shopping visits and preserve safe channel continuation. Do not assume a scroll exists at the first590gold return; the starting150gold was spent on dagger110 plus potion30."
+    },
+    "ReconsiderShopCommitment": {
+      "status": "proposed",
+      "operation": "Before irrevocable travel, reevaluate an already visible reachable wave and recent lane progress. Bound deferrals; once travel is committed avoid oscillation, and keep danger overrides."
+    }
+  },
+  "strategy": [
+    {
+      "when": "resource_sustain_available",
+      "prefer": "RestoreManaInLane",
+      "for": "productive_lane_time"
+    },
+    {
+      "when": "healthy_undergeared_shopper and safe_visible_wave and no urgent upgrade or lethal threat",
+      "prefer": "bounded wave farming then PlanProductiveRestock",
+      "over": "gold-threshold-only immediate home latch"
+    },
+    {
+      "when": "worthwhile_shop_basket and a verified safe wave gap",
+      "prefer": "useful shopping with return planning",
+      "for": "future XP rate"
+    }
+  ],
+  "execution": {
+    "executable": false,
+    "deployed": false,
+    "evidence_scope": "One supplied episode with three other-player VM failures. The separate400game survival bundle had no naturally drafted Arcanist/Warlock subjects, so it does not competitively validate caster changes."
+  },
+  "update": {
+    "origin": "User screenshot and episode at~3570; captured inputs retained.",
+    "evidence": [
+      "summary.json",
+      "source-audit-r5.json",
+      "screenshot.png"
+    ],
+    "next_test": "Freeze Arcanist-specific mana/upgrade/return changes as a coordinated pair. Real-tick fixtures: ready/cooling/lockedQ, item basket, no-scroll return, safe wave present/absent, imminent danger, channel lock, bounded deferral. Complete responsive games with natural Arcanist exposure on both colors, source/VM/replay audits and fresh score/productivity gates; no fixed-opponent-action replay counterfactual as score proof."
+  }
+}

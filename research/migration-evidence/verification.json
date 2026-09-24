@@ -1,0 +1,31 @@
+{
+  "offline": true,
+  "engine_commit": "2c8db6ebe1dc785ce1eea87496505d1244ee4c44",
+  "checks": {
+    "library_byte_exact_files": 350,
+    "historical_pairs": 16,
+    "vendor_byte_exact_files": 25,
+    "coaching_sessions": 4,
+    "coaching_copies": 64,
+    "coaching_inputs_indexed": 214,
+    "originals_verified": 592,
+    "portable_pairs": {
+      "previous": {
+        "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+        "compile_and_extract_equal": true
+      },
+      "deployed": {
+        "source_sha256": "2fbd789b0d9b9f25df3c41b24c31be665ddc0a7e6a9482b79ad80d52dcabe83c",
+        "compile_and_extract_equal": true
+      },
+      "weak-neutral": {
+        "source_sha256": "c2321ead3ea8c3cab828c0c128662db355cebf67fde440711a50321c00ac0a7a",
+        "compile_and_extract_equal": true
+      }
+    },
+    "ordered_controller_rules": 21,
+    "imports_without_archive_or_network": true,
+    "unchanged_engine_files": 68
+  },
+  "passed": true
+}

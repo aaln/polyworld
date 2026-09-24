@@ -1,0 +1,73 @@
+{
+  "summary": "This second-pass review addresses gaps in the draft analysis by introducing the missing situation, execution, and update IR layers required to make the coached behaviors operational. Specifically, it establishes grounded situation predicates for post-wave defensive lulls, an execution-level coordinated focus-fire controller against kiting ranged carries, and an update mechanism benchmarking friendly character itemization and power scaling against high-performing opponent builds.",
+  "moments": [
+    {
+      "start_ms": 43570,
+      "end_ms": 57050,
+      "observation": "Red successfully repels multiple successive minion waves at their base gate without taking significant structure damage, but champions immediately retreat back behind the tower line after each wave rather than following the friendly minion counter-wave.",
+      "coaching_intent": "Demonstrate that high defensive execution alone yields zero victory progress if the team never converts cleared waves into territory or structural counter-play.",
+      "uncertainty": "It is unverified whether the retreat is triggered by low health/mana thresholds or a hardcoded anchor point inside the base courtyard.",
+      "evidence_ids": [
+        "speech-6",
+        "speech-7",
+        "speech-8",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 81700,
+      "end_ms": 90300,
+      "observation": "The coach reviews the Blue Ranger's combat stats (level 9, 123 physical attack, 410 range) and inventory loadout, noting that Red's characters fell far behind in individual combat efficacy.",
+      "coaching_intent": "Benchmark friendly hero builds and progression against the opponent's build to determine why the enemy Ranger was able to solo Red's team and structures, requiring Red's heroes to match that power level.",
+      "uncertainty": "The coach does not specify whether Red's deficit stemmed from gold/XP starvation due to turtling, sub-optimal shop purchases, or hero-kit matchup differences.",
+      "evidence_ids": [
+        "speech-16",
+        "speech-17",
+        "video"
+      ]
+    }
+  ],
+  "ir_proposals": [
+    {
+      "layer": "situation",
+      "change": "Define grounded predicates `PerimeterCleared` (true when no hostile units or minions remain within friendly base turret attack range) and `HostilesUnobserved` (true when all enemy champions are hidden in the fog of war for more than a set time window).",
+      "rationale": "The draft proposed a strategy transition rule and scouting skill, but lacked the formal situation predicates required to trigger them. The coach noted that Red idles defenseless in base while unaware of enemy positions ('defending not really doing anything that much... we don't know where the enemy is'). Grounded predicates are needed to evaluate when the base is safe enough to dispatch scouts or push.",
+      "verification": "In headless replay parsing, verify that `PerimeterCleared` evaluates to true within 500 ms of the last lane minion dying at the tower, and `HostilesUnobserved` flags true during fog-of-war lulls.",
+      "evidence_ids": [
+        "speech-2",
+        "speech-3",
+        "speech-4",
+        "speech-5"
+      ]
+    },
+    {
+      "layer": "execution",
+      "change": "Implement a synchronized gap-closing and focus-fire execution controller for defending champions: WHEN engaging a single dominant ranged carry (e.g., Ranger), initiate gap-closing abilities and attacks simultaneously rather than approaching sequentially in single-file pathing.",
+      "rationale": "During the end-game breach (01:05–01:25), the surviving Blue Ranger eliminated Red's champions one by one as they trickled toward it while it fired from range 410. The coach stressed: 'this character single-handedly takes down us the tower and all of our other characters. And so we have to avoid this happening.' High-threat ranged units require synchronized engagement to prevent kiting.",
+      "verification": "Test against an isolated ranged carry bot; confirm defending melee and ranged units synchronize initiation commands within a tight timing window, preventing individual unit attrition.",
+      "evidence_ids": [
+        "speech-10",
+        "speech-11",
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "video"
+      ]
+    },
+    {
+      "layer": "update",
+      "change": "Add an offline policy/itemization update rule: compare friendly champion net worth, item paths, and damage scaling against opponent carries across match replays, updating shop priorities and resource-harvesting weights to ensure friendly damage dealers match enemy power curves.",
+      "rationale": "The coach concluded the review by emphasizing: 'we need to figure out why this Ranger is so good and how they were able to defeat us and we need our characters to get as good.' Turtling inside base starved Red of map resources, creating an insurmountable stat deficit against Blue's carry.",
+      "verification": "Compare end-game gold, XP, and inventory tier of Red's primary carries against enemy benchmarks across 20 evaluation matches; verify the power gap shrinks when offensive farming and updated item builds are active.",
+      "evidence_ids": [
+        "speech-16",
+        "speech-17",
+        "video"
+      ]
+    }
+  ],
+  "questions": [
+    "Does the game engine support vision wards or deployable sensors, or does scouting require risking physical champion presence in unrevealed areas?",
+    "Did the Blue Ranger's dominant damage output result primarily from a level/item advantage accumulated while Red was turtling, or from inherently superior base class attributes?"
+  ]
+}

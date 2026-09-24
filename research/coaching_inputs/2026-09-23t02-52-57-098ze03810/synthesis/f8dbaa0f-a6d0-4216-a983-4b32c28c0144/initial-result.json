@@ -1,0 +1,94 @@
+{
+  "summary": "Reviewing a match replay of a Druid hero ('Aaron'), the coach observes the agent repeatedly executing a full retreat to base after taking damage and dropping to low HP. Because the Druid possesses self-healing capabilities that restore health in the field, the coach notes that retreating all the way to base wastes valuable time and sacrifices lane pressure and experience/point accumulation. The coach advises modifying the retreat policy to sustain and continue pushing in lane when self-healing is available.",
+  "moments": [
+    {
+      "start_ms": 2220,
+      "end_ms": 35000,
+      "observation": "The coached Druid takes minion/tower damage, casts an area self-heal (green circle), but proceeds to retreat all the way back into the friendly base fountain before walking all the way back out to the lane.",
+      "coaching_intent": "The coach wants the agent to sustain in lane using its healing ability rather than retreating to base when low on HP, allowing it to maintain lane pressure, stay on the map, and farm experience and points.",
+      "uncertainty": "The coach's transcribed phrasing contains minor ASR noise ('OHB' for low HP, 'still themselves' for heal themselves), but visual feedback of the green healing aura confirms self-healing mechanics.",
+      "evidence_ids": [
+        "speech-0",
+        "speech-1",
+        "speech-2",
+        "speech-3",
+        "speech-4",
+        "speech-5",
+        "speech-8",
+        "speech-9",
+        "speech-10",
+        "speech-11",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 39930,
+      "end_ms": 52000,
+      "observation": "In a subsequent push, the Druid pushes forward into enemy territory, takes damage down to low HP, and again begins running all the way back to base.",
+      "coaching_intent": "The coach explicitly requests preventing this repetitive full-base retreat behavior when sustaining in the field is viable.",
+      "uncertainty": "Exact mana cost or cooldown limitations on the Druid's heal ability are not fully readable from the low-resolution HUD.",
+      "evidence_ids": [
+        "speech-12",
+        "speech-13",
+        "speech-14",
+        "speech-15",
+        "video"
+      ]
+    }
+  ],
+  "ir_proposals": [
+    {
+      "layer": "situation",
+      "change": "Define a predicate `can_sustain_in_lane` that evaluates whether the agent has a ready or active self-heal ability, sufficient mana/resources to cast it, and is not facing imminent lethal burst damage from overwhelming enemy units.",
+      "rationale": "The coach points out that running back to base was unnecessary because the Druid could heal itself and remain active in lane.",
+      "verification": "Check in replay state whether the Druid triggers `can_sustain_in_lane` when HP drops below retreat thresholds while the healing spell is off cooldown.",
+      "evidence_ids": [
+        "speech-0",
+        "speech-1",
+        "speech-2",
+        "video"
+      ]
+    },
+    {
+      "layer": "strategy",
+      "change": "Update retreat strategy: WHEN `low_hp` AND `can_sustain_in_lane` PREFER `skill_field_sustain_and_push` over `skill_base_retreat` FOR lane presence and XP farming.",
+      "rationale": "Currently the agent defaults to running back to base upon reaching low HP, wasting transit time. Supplying an alternative sustain-in-field skill keeps the hero active.",
+      "verification": "Expose the agent to lane combat where its HP drops to low levels with heal available; verify it casts self-heal and remains in lane rather than pathing to base.",
+      "evidence_ids": [
+        "speech-3",
+        "speech-4",
+        "speech-10",
+        "speech-11",
+        "speech-15"
+      ]
+    },
+    {
+      "layer": "skill",
+      "change": "Create or refine `skill_field_sustain_and_push`: step back to a safe position behind allied creeps/towers, activate self-healing ability, and resume pushing/farming once HP is above safe threshold.",
+      "rationale": "The coach stresses that after healing, the hero should 'keep playing and keep pushing' instead of navigating to the fountain.",
+      "verification": "Verify pathing trajectories do not generate waypoints toward the spawn fountain when executing field sustain.",
+      "evidence_ids": [
+        "speech-3",
+        "speech-4",
+        "speech-11",
+        "video"
+      ]
+    },
+    {
+      "layer": "goal",
+      "change": "Increase the relative priority of map uptime and lane pushing/XP gathering compared to base retreat safety when sustaining mechanics are available.",
+      "rationale": "The agent was overly conservative, prioritizing a complete base return at the cost of losing significant lane points and time.",
+      "verification": "Compare average time spent in lane vs time in transit to base over simulated match episodes.",
+      "evidence_ids": [
+        "speech-5",
+        "speech-10",
+        "speech-11",
+        "speech-15"
+      ]
+    }
+  ],
+  "questions": [
+    "What are the precise mana and cooldown constraints on the Druid's self-healing skill that dictate whether staying in lane is safe versus requiring a fountain refill?",
+    "Under what specific threat levels (e.g., enemy hero presence, tower dive risk) should the agent override lane sustain and commit to a full retreat to base?"
+  ]
+}

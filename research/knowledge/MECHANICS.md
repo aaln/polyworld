@@ -1,0 +1,21 @@
+# Current mechanics that invalidate older assumptions
+
+Scope: game **2026.9.23.4**, engine **2c8db6e**, replay **62**. These facts are pinned, not a promise that the live game will never change. Read the current [BASIC documentation](../../examples/gods_of_the_arena/docs/index.html) and source before changing behavior.
+
+| Topic | Current rule and practical implication | Authority |
+|---|---|---|
+| Individual score | `max(0, XP*1440 - 200*ticks) // 1440`; draft time counts. `sim.scores()` still describes team outcome, so use the individual score module for optimization. | [scores.nim](../../examples/gods_of_the_arena/scores.nim) |
+| Draft | Ten shared unique heroes; public availability; alternate team picks, ten-second deadline. Late seats may legally have only melee choices. | [drafts.nim](../../examples/gods_of_the_arena/drafts.nim) |
+| Abilities | Explicit commands and skill spending are required. An old replay with automatic spells cannot establish today's cast behavior. | [bots.nim](../../examples/gods_of_the_arena/bots.nim), [content.nim](../../examples/gods_of_the_arena/content.nim) |
+| Crowd control | Vanguard R stuns 1s, Warlock E silences 2s, Druid R roots 2s, Lich E roots 1s. Damage was reduced. Silence blocks spells; root blocks movement. Preserve other legal channels. | [content.nim](../../examples/gods_of_the_arena/content.nim), [sim.nim](../../examples/gods_of_the_arena/sim.nim) |
+| Portals | Three-second channel, sixty-second cooldown, stackable scrolls. Root/stun interrupts; ordinary walking does not cancel a channel. Home recall and useful outbound travel are distinct. | [sim.nim](../../examples/gods_of_the_arena/sim.nim) |
+| Economy | Shop at your own keep; six slots, stackable consumables, no sell/upgrade operation. Spawn restores resources. Hero death has a capped respawn timer and optional buyback. | [content.nim](../../examples/gods_of_the_arena/content.nim), [sim.nim](../../examples/gods_of_the_arena/sim.nim) |
+| Lane XP | Fifteen XP pool per creep; eligible living same-floor heroes within six tiles share it. Eligible last hitter gets a 15% reserve, then shares the remaining 85%. Crossbow range can exceed XP range. | `gainCreepRewards` in [sim.nim](../../examples/gods_of_the_arena/sim.nim) |
+| Neutral XP | Only the last-hitting unit's team is eligible; living recipients must be within six tiles on the same floor. Normal tier rewards 20/35/50 XP and 10/20/30 last-hit gold; leaders double HP/rewards. Only a hero last hitter gets gold. | [sim.nim](../../examples/gods_of_the_arena/sim.nim) |
+| Camp access | Public static camp geometry; hidden living counts/respawn times are not exposed. Damage or entry within two tiles with sight engages a camp. Twelve-tile leash; returning mobs are immune. Full clear respawns after 60s, delayed by any living hero within ten tiles. | [bots.nim](../../examples/gods_of_the_arena/bots.nim), [sim.nim](../../examples/gods_of_the_arena/sim.nim) |
+| Other rewards | Hero kill 150 XP; building kill 100 XP; enemy god destruction grants every teammate 500 XP, even dead/distant heroes. Damage alone does not earn those kill rewards. | [sim.nim](../../examples/gods_of_the_arena/sim.nim) |
+| Geometry | Use host coordinates consistently; self, visible objects and static camp positions use the team's map-coordinate convention. Do not mix replay world units with BASIC tile coordinates. | `mapCoordinate`, `campProc`, `runHeroScript` in [bots.nim](../../examples/gods_of_the_arena/bots.nim) |
+| BASIC | Q16.16 decimal `/`, integer `\`; IDs/slots require exact integers. Logical operators are bitwise: compare host flags explicitly with 0/1. Keep work/instruction bounds and scan limits. | Current BASIC docs and locked Bassy dependency |
+| Observability | Only public draft, own state, static geometry and legally visible dynamic objects may drive play. Omniscient replay events are retrospective diagnostics. | [bots.nim](../../examples/gods_of_the_arena/bots.nim) |
+
+Read current stats from the host where available; ability shape/range tables must track `content.nim`. Old Ranger/Crossbow balance announcements are historical. Team symmetry changes do not prove an inherited mirrored controller will score better; that requires measurement.

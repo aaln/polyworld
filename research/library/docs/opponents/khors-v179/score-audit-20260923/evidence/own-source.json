@@ -1,0 +1,52 @@
+{
+  "schema": "gota-source-reveal-runtime-audit/1",
+  "slots": [
+    7
+  ],
+  "ticks": 29593,
+  "commands_matched": 3235,
+  "decisions": 28801,
+  "max_instructions": 10770,
+  "max_work": 16185,
+  "counts": {
+    "command_kind_5": 539,
+    "command_kind_6": 1361,
+    "command_kind_4": 15,
+    "command_kind_3": 34,
+    "command_kind_16": 12,
+    "safe_single_scroll_outbound_opportunity": 71,
+    "our_active": 3968,
+    "command_kind_2": 688,
+    "our_retreat": 352,
+    "command_kind_15": 11,
+    "our_home_threat": 178,
+    "command_kind_1": 569
+  },
+  "first_examples": {
+    "first_single_scroll": {
+      "tick": 3398,
+      "hero": 107,
+      "hp": 378,
+      "max_hp": 378,
+      "forward_x": 95,
+      "forward_y": 104,
+      "commands": [
+        {
+          "tick": 3398,
+          "hero_id": 107,
+          "kind": 5,
+          "slot": 0,
+          "first": 105,
+          "second": 10,
+          "offset_raw": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "all_state_hashes_equal": true,
+  "all_actions_consumed": true,
+  "label_scope": "Retrospective source/private-state audit; guards can overlap and later commands override earlier ones."
+}

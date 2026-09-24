@@ -1,0 +1,831 @@
+{
+  "schema": "gota-context-index/1",
+  "id": "deployed_controller_current62",
+  "situation": {
+    "engine_commit": "2c8db6ebe1dc785ce1eea87496505d1244ee4c44",
+    "game_version": "2026.9.23.4",
+    "public_inputs_only": true,
+    "controller_source_sha256": "2fbd789b0d9b9f25df3c41b24c31be665ddc0a7e6a9482b79ad80d52dcabe83c"
+  },
+  "belief": {
+    "incumbent": "Retained after completed 180-game comparison; not independently proved optimal.",
+    "compiler_memory_annotations_are_partial": true,
+    "additional_persistent_state_visible_in_source": {
+      "lane_selection": [
+        "laneDecisionStarted",
+        "laneDecisionStart",
+        "laneAssigned",
+        "laneStored",
+        "laneChanged"
+      ],
+      "neutral_pull": [
+        "nPullStage",
+        "nPullCamp",
+        "nPullMob",
+        "nPullUntil",
+        "nPullReady",
+        "nLastSeen"
+      ],
+      "note": "These globals persist between decisions; lifecycle explicitly clears nPullStage on death. One-time lane assignment survives respawn. Read full source for all state."
+    }
+  },
+  "goal": {
+    "Score": "Expected floor(max(0, XP - 200 * elapsed_minutes)); individual score only."
+  },
+  "skill": {
+    "portal_state": {
+      "rule": "R_portal_state",
+      "when": "always",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 4,
+        "region_sha256": "701a973386d922eb797b830a90bda0e50c4df419a49ba301f4c357451a3ded8e"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/portal_state"
+      },
+      "binding": {
+        "operator": "neutralfarm_portal_state",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Hold the channel lock through its zero-remaining-ticks completion boundary; release only when the host publishes cooldown (completed/interrupted) or death.",
+        "parameters": {},
+        "actions": []
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "draft": {
+      "rule": "R_draft",
+      "when": "always",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 12,
+        "region_sha256": "4d314dfcf5b9114015bbab219cd155c58f0d61ddd12cdc379ebd2a116683ea83"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/draft"
+      },
+      "binding": {
+        "operator": "neutralfarm_draft",
+        "parameters": {
+          "think_ticks": 6
+        }
+      },
+      "grounded_contract": {
+        "meaning": "Prefer available Crossbowman after the damage buff; retain the exact public ranged-first fallback and every post-draft controller rule.",
+        "parameters": {
+          "think_ticks": 6
+        },
+        "actions": [
+          "draftHero"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "recovery_intent": {
+      "rule": "R_recovery_intent",
+      "when": "low_health_in_field",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 81,
+        "region_sha256": "9f5dfba1e4d0b9f6d487670832f830e44a8d891d6a7ab1fd91b32c8bf908f7f3"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/recovery_intent"
+      },
+      "binding": {
+        "operator": "neutralfarm_recovery_intent",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Critical field health takes priority before post-hit attack reacquisition; commit to survive_and_replenish until recovered at spawn.",
+        "parameters": {},
+        "actions": []
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "base_recovery_intent": {
+      "rule": "R_base_recovery_intent",
+      "when": "low_health_in_base",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 90,
+        "region_sha256": "d9b0a750829b34332e41c76d6d4bbc98cd24e4517002de310d780bbddf5ea5c7"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/base_recovery_intent"
+      },
+      "binding": {
+        "operator": "neutralfarm_base_recovery_intent",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Low health inside the keep still commits to walking toward the fountain; never leave base merely because field-only recall is ineligible. For the blue lead ranged route, a newly critical hero already in the keep immediately triggers a decision and releases the movement throttle. This replaces a persisted outward advance with local recovery before leaving the keep; prevents the route/recovery handoff from wasting a town scroll. Other classes/ordinals and red retain the parent guard.",
+        "parameters": {},
+        "actions": []
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "timing": {
+      "rule": "R_timing",
+      "when": "always",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 102,
+        "region_sha256": "d49ff108b2acf7032dbaecd8fa1a9468be9791f702841e96ebc8732717348188"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/timing"
+      },
+      "binding": {
+        "operator": "neutralfarm_timing",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "After an observed landed hit, walk for one physics tick to clear recovery, then reacquire the remembered public target. Same-tick walk and attack does not reset the new engine swing. Never cancel unfinished windup or a portal channel; clear pending reacquisition after death.",
+        "parameters": {},
+        "actions": [
+          "walkTo",
+          "attackTarget"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "lifecycle": {
+      "rule": "R_lifecycle",
+      "when": "always",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 124,
+        "region_sha256": "09d3a1260d04c661a1732a747fb369fe3d46cacf21e808a3d1835b0a53077cf7"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/lifecycle"
+      },
+      "binding": {
+        "operator": "neutralfarm_lifecycle",
+        "parameters": {
+          "buyback_seconds": 25,
+          "buyback_reserve": 200
+        }
+      },
+      "grounded_contract": {
+        "meaning": "Recover lifecycle state after death, conserve buyback gold during short respawns, and spend available legal ability ranks before combat. While dead, scan6own inventory slots for the four unique core items11/16/18/19. With all4, use public buybackPrice and remaining respawn: buy back at>5seconds if gold>=price+100. Otherwise original>25seconds/price+200. Host forbids duplicate equipment, validates dead/alive/match-ended state, restores spawn HP/mana/learned charges, preserves potion/portal family cooldowns. No claim of saved future time or score. All field economy, targeting, draft and portal decisions unchanged. Warlock and Lich unlock E control with their next available point from level2 after preserving the level1 primary. Other rank priorities remain. Start a single opening lane-decision window on first living activation; never restart it after death. Persist the selected lane across respawns. Death cancels any neutral pull; camp IDs are not treated as permanent mob identities.",
+        "parameters": {
+          "buyback_seconds": 25,
+          "buyback_reserve": 200
+        },
+        "actions": [
+          "buyback",
+          "levelAbility"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "observe": {
+      "rule": "R_observe",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 226,
+        "region_sha256": "73e70c943aadaaa23c1468ac2a7955162b899190b55e90d7b66528a0de35d064"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/observe"
+      },
+      "binding": {
+        "operator": "neutralfarm_observe",
+        "parameters": {
+          "scan_limit": 96
+        }
+      },
+      "grounded_contract": {
+        "meaning": "Visible bounded scan: reward in-range last hits, count current keep attackers and defenders, and select an allied portal tower toward the assigned farming lane. Separately measure public hero/creep gaps and require a living home-area tower for recall; never infer hidden enemies are absent. Within the same bounded public scan, rank nearby visible hero control opportunities by immediate spell finish, current attacker or mana-bearing caster, proximity and health. Read appropriate stun/silence/root remaining duration. Do not reapply redundant control beyond cast delay plus one decision unless spell damage can finish. Coarse integer-tile radius is a prefilter; castTarget remains the exact range/shape validator. During the opening only, classify living allied heroes at least12tiles from home by maximum positive squared angular projection toward the three existing lane waypoints. Count each once in the same bounded scan. Allied positions are public even outside vision; heroes precede creeps. Near-home allies are uncommitted, not empty-lane evidence. This geometric lane intent is an estimate, not path or XP ground truth. Recognize visible neutral kind6/faction2 separately; returning mobs are immune and never selected. Retain lane/hero target priority. In the same96object scan, remember a nearby eligible-tier neutral, nearby allied creeps and idle wave coordinates. Active pulls track visible camp targets and release when another actor takes aggro. Static camp geometry is public; no hidden spawn/life state is inferred.",
+        "parameters": {
+          "scan_limit": 96
+        },
+        "actions": []
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "economy": {
+      "rule": "R_economy",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 568,
+        "region_sha256": "ccd18fd99d5c69b51bf14ffab8fa3b3b9c5b57a5b9a3e299a3fde1a06f402751"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/economy"
+      },
+      "binding": {
+        "operator": "neutralfarm_economy",
+        "parameters": {
+          "shop_gold": 500
+        }
+      },
+      "grounded_contract": {
+        "meaning": "Buy dagger and armor, then the first retreat scroll before axe/crossbow. Once all four core items are owned, maintain up to two stacked scrolls using live inventory/gold. Outward travel must leave one emergency scroll; no additional inventory slot required. Only Druid records accepted potion recovery for the lane-healing controller; other classes keep the original calls.",
+        "parameters": {
+          "shop_gold": 500
+        },
+        "actions": [
+          "buyItem",
+          "useItem"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "control_hero": {
+      "rule": "R_control_hero",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 692,
+        "region_sha256": "327f7e237ec99168b937392353d88a97b25f6e5c26e62f5bd9038260fac5a1bf"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/control_hero"
+      },
+      "binding": {
+        "operator": "neutralfarm_control_hero",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Cast the selected hero control before retreat/tower movement claims stopped. Require learned, charged, ready, unsilenced and affordable. Preserve the largest affordable imminent healing cost below65percent HP. This skill never changes movement or basic attack target, never blocks escape, and never initiates during an existing channel/stun. Keep useful damage finishes even under existing control.",
+        "parameters": {},
+        "actions": [
+          "castTarget"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "portal_context": {
+      "rule": "R_portal_context",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 721,
+        "region_sha256": "2d01e2fb86e9cd9eefcb53ea4ced35f4ad9242f1f65206c3745bf2df6fe47633"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/portal_context"
+      },
+      "binding": {
+        "operator": "neutralfarm_portal_context",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Re-read live inventory after purchases. Ready means an actual charge, zero shared/item cooldown, alive and free of root/stun/channel; in_base uses the host keep/spawn query.",
+        "parameters": {},
+        "actions": []
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "choose_lane": {
+      "rule": "R_choose_lane",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 742,
+        "region_sha256": "93af8aaff233073c67db93303c9d5dd6b85530d41d0a3d7242a78a225a9a26b1"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/choose_lane"
+      },
+      "binding": {
+        "operator": "neutralfarm_choose_lane",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Between12and35seconds after first activation, change once to a strictly less allied-crowded lane after at leasttwo allies have visibly departed home. Preserve current lane on occupancy ties; among strictly better lanes prefer fewer allies then shorter straight-line waypoint distance. Require at least50percent HP, no retreat and no enemy within10tiles or selected target within12tiles. Reset crossed/move clock and invalidate old forward portal anchor for this frame. Store route across lives. At35seconds close the window without changing baseline routing if no safe improvement was observed. All outcomes are judged by individual XP-minus-time.",
+        "parameters": {},
+        "actions": []
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "lane_recovery": {
+      "rule": "R_lane_recovery",
+      "when": "active_druid",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 808,
+        "region_sha256": "57b0de4e3c5e285bad2e096f3f698c1adc9d47ba18f74f665f305f757f8bde8f"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/lane_recovery"
+      },
+      "binding": {
+        "operator": "neutralfarm_lane_recovery",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Druid only. During a health-only field retreat, prefer a safe stationary lane heal over completing the base path. An affordable missing core item with an empty slot preserves the shopping trip. Otherwise no nearby enemy hero/creep/tower or imminent non-self warning permits a maximum twelve-second hold for an accepted potion, pending self-heal or learned charged affordable heal ready within eight seconds. Cast a useful strongest ready heal; resume normal play at sixty percent HP and twenty percent mana. Danger, no usable recovery or expired hold falls through to the existing escape. Current keep replenishment and active channels retain ownership. No extra heal casts outside this recovery state. During silence, wait within the existing bounded safe recovery window without issuing a rejected heal; resume casting after expiry. Keep root-compatible healing, potion use, danger and shopping priorities unchanged.",
+        "parameters": {},
+        "actions": [
+          "castTarget",
+          "walkTo"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "replenish": {
+      "rule": "R_replenish",
+      "when": "in_base",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 911,
+        "region_sha256": "225f3417814ac84234b1ebee1f3264b9865ac2106986610423a819fa99d7cef4"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/replenish"
+      },
+      "binding": {
+        "operator": "neutralfarm_replenish",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Finish rapid fountain recovery until 90% HP and 80% mana, then release the retreat goal. Do not cast a home scroll inside the keep or spawn.",
+        "parameters": {},
+        "actions": [
+          "walkTo"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "channel_town_scroll": {
+      "rule": "R_channel_town_scroll",
+      "when": "town_scroll_ready",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 927,
+        "region_sha256": "841d61570b3c52c53b2bd454437facb5f6e007b81399100d752575b610af6d4c"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/channel_town_scroll"
+      },
+      "binding": {
+        "operator": "neutralfarm_channel_town_scroll",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Prefer a safe field channel to walking home. Require a living home-area tower, useful travel distance, no damage for one second, no nearby heroes/creeps/towers or imminent public spell warning. Enemy uncertainty remains; this is a bounded safety heuristic, not guaranteed invulnerability.",
+        "parameters": {},
+        "actions": [
+          "useItemAt"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "walk_to_base": {
+      "rule": "R_walk_to_base",
+      "when": "recovery_remaining",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 960,
+        "region_sha256": "695b38da4523ff2bb112e41cac97abf9feb0d49c6f4af1d157907b32bf176186"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/walk_to_base"
+      },
+      "binding": {
+        "operator": "neutralfarm_walk_to_base",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "When recall is unsafe/unavailable, or already inside the keep, walk toward spawn and reconsider on later decisions. Interrupted channels use live cooldown/root state; no retry loop spends extra charges.",
+        "parameters": {},
+        "actions": [
+          "walkTo"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "home_portal": {
+      "rule": "R_home_portal",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 969,
+        "region_sha256": "c47ca5599625ce8a81233a589dc1f540a99cb69ca85489eb3378c306488686a4"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/home_portal"
+      },
+      "binding": {
+        "operator": "neutralfarm_home_portal",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "At most the first two public team ordinals may safely channel home when visible enemy heroes threaten the keep and fewer than two allies already defend. Require health, distance, no recent damage and portal readiness; current threat disappearance releases defense. Never recall defensively from inside the keep; require a live home anchor and current item readiness.",
+        "parameters": {},
+        "actions": [
+          "useItemAt"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "tower_safety": {
+      "rule": "R_tower_safety",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 987,
+        "region_sha256": "1be7db05806d0b10aa4068ed9beec4189dfa87a9fba417ace4373a022a368337"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/tower_safety"
+      },
+      "binding": {
+        "operator": "neutralfarm_tower_safety",
+        "parameters": {
+          "tower_hp": 65
+        }
+      },
+      "grounded_contract": {
+        "meaning": "Leave doubled-tower aggro at a health threshold; do not enter an empty tower kill zone without allied creep cover.",
+        "parameters": {
+          "tower_hp": 65
+        },
+        "actions": [
+          "walkTo"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "neutral_farm": {
+      "rule": "R_neutral_farm",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 1023,
+        "region_sha256": "8e1bbd502f53256ab9b2b3d3696ac8e048f12717ec964e5b2d4225f22b4e3b1e"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/neutral_farm"
+      },
+      "binding": {
+        "operator": "neutralfarm_neutral_farm",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Prefer existing visible lane/hero combat. When safe, >=70percent HP and sufficient tier level, farm a nearby visible nonreturning neutral instead of an empty route or structure target. If two nearby allied creeps and an idle wave4to9tiles from camp are present, walk into aggro then two tiles beyond the wave, keeping goal within10tiles of camp versus12tile leash. Stop on handoff, lost wave/sight, danger, root, <50percent HP, invalid route or15second timeout; retry after20seconds. Claim stopped only for an accepted walk, suppressing the later combat spell/item loop while baiting. No hidden camp state, teammate identities or private XP are used.",
+        "parameters": {},
+        "actions": [
+          "walkTo"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "xp_close": {
+      "rule": "R_xp_close",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 1119,
+        "region_sha256": "77e850787b86bbf02bd2f455e231c9e2b8e0f0a1e36badb281d3db4d37257dd5"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/xp_close"
+      },
+      "binding": {
+        "operator": "neutralfarm_xp_close",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "For safe Crossbowman creep farming, step inside the six-tile XP radius instead of stopping at its 6.5-tile attack range. Override stale navigation throttles before an out-of-range XP last hit; defer while tower safety or recovery owns movement.",
+        "parameters": {},
+        "actions": [
+          "walkTo"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "combat": {
+      "rule": "R_combat",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 1132,
+        "region_sha256": "b8387f372e7b7a6811087b2ae6d27ac963f3c305b4a1d02e97fbf45bd6adf8d1"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/combat"
+      },
+      "binding": {
+        "operator": "neutralfarm_combat",
+        "parameters": {
+          "reset_recovery": 1
+        }
+      },
+      "grounded_contract": {
+        "meaning": "Keep basic attacks connected, optionally shorten recovery only after observed hits, and cast learned damage or self-healing spells when useful. All spells require explicit casts. Skip only the spell channel while silenced. Attack selection and legal post-hit movement continue; rooted basic attacks and spells remain available. Reduced ability damage is read from the live host, never an obsolete hard-coded kill threshold. Hero control slots are scheduled by the earlier dedicated skill; prevent the generic loop from overriding overlap/resource decisions. Other spells, creep finishing and structure casts retain baseline behavior.",
+        "parameters": {
+          "reset_recovery": 1
+        },
+        "actions": [
+          "walkTo",
+          "attackTarget",
+          "castTarget"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    },
+    "advance": {
+      "rule": "R_advance",
+      "when": "active",
+      "goals": [
+        "Score"
+      ],
+      "executable": {
+        "path": "research/policies/deployed/policy.bas",
+        "line": 1166,
+        "region_sha256": "c15b13c6bc5ee27219eb4bc7409a035f43f6e66a957c7a3b92464c955c58b247"
+      },
+      "ir": {
+        "path": "research/policies/deployed/policy.ir.json",
+        "pointer": "/skill/advance"
+      },
+      "binding": {
+        "operator": "neutralfarm_advance",
+        "parameters": {}
+      },
+      "grounded_contract": {
+        "meaning": "Assign 2/2/1 lane farming by public team ordinal; push past the midpoint, defend only nearby present threats, and portal from recovery to a surviving forward tower. Outbound portals require two scrolls so one remains for field recovery after cooldown; home and outward channel purposes are distinct. Before crossing the route waypoint, blue public team ordinal zero on Ranger or Crossbowman uses the map center instead of the northwest outer corner. Existing target engagement, retreat, nearby defense, forward portal and post-waypoint advance still arbitrate normally. Other ordinals/classes and all red commands retain parent behavior. Earlier access to hero XP is a hypothesis, not an observed promise. Honor explicit occupancy-based lane choice instead of overriding it with the blue first-seat ranged center route. Preserve that center override when no actual adaptive change occurs.",
+        "parameters": {},
+        "actions": [
+          "attackMove",
+          "useItemAt"
+        ]
+      },
+      "efficacy": "Inherited bundle behavior; no isolated current-release causal effect asserted."
+    }
+  },
+  "strategy": [
+    {
+      "id": "R_portal_state",
+      "when": "always",
+      "skill": "portal_state",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_draft",
+      "when": "always",
+      "skill": "draft",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_recovery_intent",
+      "when": "low_health_in_field",
+      "skill": "recovery_intent",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_base_recovery_intent",
+      "when": "low_health_in_base",
+      "skill": "base_recovery_intent",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_timing",
+      "when": "always",
+      "skill": "timing",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_lifecycle",
+      "when": "always",
+      "skill": "lifecycle",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_observe",
+      "when": "active",
+      "skill": "observe",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_economy",
+      "when": "active",
+      "skill": "economy",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_control_hero",
+      "when": "active",
+      "skill": "control_hero",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_portal_context",
+      "when": "active",
+      "skill": "portal_context",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_choose_lane",
+      "when": "active",
+      "skill": "choose_lane",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_lane_recovery",
+      "when": "active_druid",
+      "skill": "lane_recovery",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_replenish",
+      "when": "in_base",
+      "skill": "replenish",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_channel_town_scroll",
+      "when": "town_scroll_ready",
+      "skill": "channel_town_scroll",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_walk_to_base",
+      "when": "recovery_remaining",
+      "skill": "walk_to_base",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_home_portal",
+      "when": "active",
+      "skill": "home_portal",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_tower_safety",
+      "when": "active",
+      "skill": "tower_safety",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_neutral_farm",
+      "when": "active",
+      "skill": "neutral_farm",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_xp_close",
+      "when": "active",
+      "skill": "xp_close",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_combat",
+      "when": "active",
+      "skill": "combat",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_advance",
+      "when": "active",
+      "skill": "advance",
+      "for": [
+        "Score"
+      ]
+    }
+  ],
+  "execution": {
+    "kind": "navigation_index_not_a_second_executable_policy",
+    "authoritative_pair": "research/policies/deployed",
+    "workflow": "research/IR_WORKFLOW.md",
+    "order_matters": "Later commands can replace earlier intent; active/stopped, retreat and portal locks arbitrate channels."
+  },
+  "update": {
+    "revision": 1,
+    "origin": "User requested fresh context and useful IR-to-policy migration.",
+    "evidence": [
+      "research/RESULTS.md",
+      "research/results/statistics.json"
+    ],
+    "executable_changed": false
+  }
+}

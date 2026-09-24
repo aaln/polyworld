@@ -1,0 +1,29 @@
+{
+  "web_tool": "Both required pages unavailable via web.open; independent HTTP capture attempted.",
+  "pages": [
+    {
+      "url": "https://metta-ai.github.io/polyworld-buff/GOTA/heros/",
+      "at": "2026-09-23T18:10:27.618831+00:00",
+      "status": 200,
+      "bytes": 76813,
+      "sha256": "42b03abf9fe18128e64c6cc102f344db271cfd5c0e0a75c71af2c385cdaabb85",
+      "title": [
+        "GOTA | Hero statistics"
+      ],
+      "script_src": []
+    },
+    {
+      "url": "https://metta-ai.github.io/polyworld-buff/GOTA/players/",
+      "at": "2026-09-23T18:10:27.660745+00:00",
+      "status": 200,
+      "bytes": 7271,
+      "sha256": "58bbe9126a049d43f7c6248855b919aa519d1e81da749d533f943d982413856d",
+      "title": [
+        "Players \u00b7 Gods of the Arena"
+      ],
+      "script_src": [
+        "players.js?v=2"
+      ]
+    }
+  ]
+}

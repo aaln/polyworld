@@ -1,0 +1,79 @@
+{
+  "summary": "The coach observes a replay where the controlled hero (Ranger) walks all the way back to base before activating their town scroll (teleport). The coach instructs that the agent should activate town scroll while out in the field (in lane or river) when low on health rather than walking back to base.",
+  "moments": [
+    {
+      "start_ms": 8000,
+      "end_ms": 13400,
+      "observation": "The Ranger is visible inside the allied base with a 'TELEPORTING 3s' cast indicator active, indicating the hero is channeling a town scroll teleport while already inside the base.",
+      "coaching_intent": "Highlight the inefficiency of waiting until the character reaches the base before activating a town scroll.",
+      "uncertainty": "Unreviewed ASR transcribed 'Trump squirrels' and 'towns scroll'; acoustic and UI context clearly indicates 'town scroll' (portal teleport).",
+      "evidence_ids": [
+        "speech-1",
+        "speech-2",
+        "video"
+      ]
+    },
+    {
+      "start_ms": 13500,
+      "end_ms": 20200,
+      "observation": "The coach navigates the camera to the river and lane areas where the hero was previously engaged.",
+      "coaching_intent": "Direct the policy to trigger the town scroll to recall to base when low on health while out on the map, rather than traversing back on foot.",
+      "uncertainty": "The coach does not specify an exact numerical health percentage threshold for 'low on health' or explicit safe-channeling positioning rules (e.g., hiding in fog or under a tower).",
+      "evidence_ids": [
+        "speech-3",
+        "speech-4",
+        "input-101",
+        "input-106",
+        "input-135",
+        "input-143",
+        "input-150",
+        "input-158",
+        "input-167",
+        "input-175",
+        "input-191",
+        "input-197",
+        "video"
+      ]
+    }
+  ],
+  "ir_proposals": [
+    {
+      "layer": "situation",
+      "change": "Define predicate `low_health_in_field(agent)`: true when agent health is below a retreat threshold (e.g., < 30% HP or threatened) AND agent is located outside the base fountain/safe area.",
+      "rationale": "The coach explicitly pointed to locations outside base ('over here', 'when they're low on health') and contrasted them with being inside base.",
+      "verification": "Evaluate that `low_health_in_field` evaluates to true in lane/river when HP drops below threshold, and evaluates to false once the agent enters the base perimeter.",
+      "evidence_ids": [
+        "speech-3",
+        "speech-4",
+        "video"
+      ]
+    },
+    {
+      "layer": "skill",
+      "change": "Add guard condition to `channel_town_scroll` skill: require `NOT in_base(agent)` and `town_scroll_ready(agent)` before initiating the 3-second teleport channel. Terminate channel if interrupted or upon arrival at base.",
+      "rationale": "Currently the agent channels town scroll while already standing in base, wasting the cooldown and consumable item utility.",
+      "verification": "Verify in unit tests that the agent never activates town scroll when already located in base.",
+      "evidence_ids": [
+        "speech-1",
+        "speech-2",
+        "video"
+      ]
+    },
+    {
+      "layer": "strategy",
+      "change": "WHEN `low_health_in_field(agent)` AND `town_scroll_ready(agent)` PREFER `channel_town_scroll` OVER `walk_to_base` FOR goal `survive_and_replenish`.",
+      "rationale": "Directly implements the coach's instruction: 'they should have town scrolled when they're over here when they're low on health'.",
+      "verification": "In simulated matches where the hero sustains heavy damage in lane or jungle, verify that the hero attempts to channel town scroll from a secure spot rather than pathing all the way back across the map.",
+      "evidence_ids": [
+        "speech-1",
+        "speech-3",
+        "speech-4",
+        "video"
+      ]
+    }
+  ],
+  "questions": [
+    "What specific health percentage or combat condition should trigger the decision to town scroll back to base?",
+    "Can the 3-second town scroll channel be canceled by enemy hero attacks or creep damage, requiring the agent to retreat to fog of war or tower safety before channeling?"
+  ]
+}

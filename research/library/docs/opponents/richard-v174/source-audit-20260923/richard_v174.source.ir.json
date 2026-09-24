@@ -1,0 +1,413 @@
+{
+  "schema": "opponent-semantic-ir/2-source",
+  "id": "richard_v174_source_20260923",
+  "situation": {
+    "identity": {
+      "policy_version": "5b854825-446a-4864-8dfc-bb3404d4fe81",
+      "source_sha256": "c6429ea4ee202edc456de71c5ee7ad896ec423b11bbf2717c0dd4dd76c58b766",
+      "engine": "2026.9.22.3/replay58",
+      "repository_provenance": "provenance.json"
+    },
+    "perspective": "Richard public observation and private memory reconstructed retrospectively; never feed this memory to our runtime.",
+    "coordinates": {
+      "distance": "squared observation-cell distance",
+      "attack_reach": "distance_squared*3600 <= (selfAttackRange\\1000)^2",
+      "team_transform": "Negates ally/enemy displacement features for blue. Hardcoded opening paths are separate.",
+      "structure_alive": "Exposed/targetable, not merely standing; reserveHome only exists when own god objectAlive is true."
+    },
+    "features": [
+      "hp_percent",
+      "mana_percent",
+      "max_squared_ally_distance_div100",
+      "level_times5",
+      "team_relative_ally_centroid_dx",
+      "team_relative_ally_centroid_dy",
+      "team_relative_nearest_enemy_dx",
+      "team_relative_nearest_enemy_dy",
+      "nearest_enemy_hp_div10",
+      "nearest_enemy_kind_times25",
+      "battle_ticks_div288",
+      "ability_charges_0_times25",
+      "ability_charges_1_times25",
+      "ability_charges_2_times25",
+      "ability_charges_3_times25",
+      "class_onehot_0_times100",
+      "class_onehot_1_times100",
+      "class_onehot_2_times100",
+      "class_onehot_3_times100",
+      "class_onehot_4_times100",
+      "class_onehot_5_times100",
+      "class_onehot_6_times100",
+      "class_onehot_7_times100",
+      "class_onehot_8_times100",
+      "class_onehot_9_times100"
+    ],
+    "predicates": {
+      "eligible_siege_attacker": "Visible living enemy hero targets self, is within approximate current basic reach; select lowest absolute HP.",
+      "near_objective": "Closest exposed enemy god or tower distance_squared<=300.",
+      "near_enemy_hero": "Closest enemy hero distance_squared<=700.",
+      "reserve_defender": "Exposed own god, <=1 nearby standing guard tower OR critical guard<=780HP and self within30cells; no closer visible living allied hero; no own one-hit god finish.",
+      "group_at_opening": "At least3allied heroes within4cells of scripted opening point; may include self."
+    },
+    "source": [
+      {
+        "artifact": "richard-v174.bas",
+        "start_line": 91,
+        "end_line": 251
+      }
+    ],
+    "class_ids": {
+      "0": {
+        "enum": "VanguardKnight",
+        "display": "Vanguard Knight"
+      },
+      "1": {
+        "enum": "Ranger",
+        "display": "Ranger"
+      },
+      "2": {
+        "enum": "Arcanist",
+        "display": "Arcanist"
+      },
+      "3": {
+        "enum": "DruidWarden",
+        "display": "Druid Warden"
+      },
+      "4": {
+        "enum": "DemonHunter",
+        "display": "Demon Hunter"
+      },
+      "5": {
+        "enum": "DeathKnight",
+        "display": "Death Knight"
+      },
+      "6": {
+        "enum": "Crossbowman",
+        "display": "Crossbowman"
+      },
+      "7": {
+        "enum": "Lich",
+        "display": "Lich"
+      },
+      "8": {
+        "enum": "Warlock",
+        "display": "Warlock"
+      },
+      "9": {
+        "enum": "Berserker",
+        "display": "Berserker"
+      }
+    },
+    "class_evidence": "class-mapping.json"
+  },
+  "belief": {
+    "claims": {
+      "ExactSource": {
+        "status": "verified",
+        "evidence": [
+          "provenance.json",
+          "source-candidate.yaml",
+          "source-audit-plan.json"
+        ],
+        "commands_matched": 82818,
+        "episodes": 4,
+        "classes": [
+          "Warlock"
+        ],
+        "both_colors": true,
+        "all_world_hashes_equal": true
+      },
+      "StructurePressure": {
+        "status": "source_and_activation_verified",
+        "combat8_decisions": 45490,
+        "living_decisions": 71954,
+        "claim": "The structure-first mode is frequent on these four paths. Its causal contribution to score is unmeasured."
+      },
+      "SiegeRetaliation": {
+        "status": "source_guard_observed",
+        "guard_decisions": 141,
+        "claim": "Tower assault can retarget an in-range attacker; later home/recovery commands can override it. Guard counts are not landed hits or causal effectiveness."
+      },
+      "NearestDefender": {
+        "status": "source_guard_observed",
+        "guard_decisions": 101,
+        "claim": "A geometrically nearest visible hero handles exposed-god defense; no communication or identity recognition."
+      },
+      "AttackRecovery": {
+        "status": "source_and_activation_verified",
+        "guard_decisions": 1033,
+        "claim": "A final walkTo(selfX,selfY) after a new landed basic interrupts recovery and cancels prior attack intent; next invocation restores an attack. Our deployed controller already uses this principle."
+      },
+      "BlindTransferRisk": {
+        "status": "supported",
+        "claim": "Draft role bonus and branch names are not score evidence. Source still uses older potion affordability constants; two neural inputs and mode18 are unused. No explicit score/XP-time optimizer exists."
+      },
+      "CompetitiveTransfer": {
+        "status": "two_fresh_comparisons_complete_no_deployment",
+        "games": 800,
+        "evidence": [
+          "transfer-review.json",
+          "scoped-transfer-review.json"
+        ],
+        "claim": "Broad transfer failed its score and red later-draft gates. The scoped blue-Druid fork outscored Richard in119/200 games versus86/200 baseline, but own mean score stayed flat and its khors gap worsened. This is a context-specific counter result, not a general score improvement."
+      }
+    },
+    "uncertainty": "Four retrospective Warlock games; no newly validated other-class online predictor, no learned-weight causal attribution, no semantic proxy validation."
+  },
+  "goal": {
+    "status": "analyst_explanatory_labels_not_explicit_score_objective",
+    "PressureObjectives": "Advance toward exposed structures and finish objectives.",
+    "FightReachableThreats": "Respond to nearby attackers while preserving basic damage.",
+    "ProtectExposedGod": "Allocate home defense based on geometry and structure state.",
+    "MaintainResources": "Use gear/healing/mana and return from death.",
+    "ScoreTransfer": "Our experiment objective is individual XP-minus-time, which must be tested independently."
+  },
+  "skill": {
+    "DraftPatchAware": {
+      "initiation": "Own public draft turn",
+      "operation": "Start100;subtract100per allied matching role;+1for class faction matching team;+25Crossbowman;+10Warlock;\u221220Druid/DeathKnight;+2Ranger if Berserker available; first strict max.",
+      "evidence": [
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 4,
+          "end_line": 54
+        }
+      ],
+      "limits": "Host faction bonuses are gone; this remains a policy tie-break. No player UUID detection."
+    },
+    "SpendSkills": {
+      "operation": "Up to4legal upgrades each living invocation; R>W>E>Q.",
+      "evidence": [
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 74,
+          "end_line": 88
+        }
+      ]
+    },
+    "ReturnFromDeath": {
+      "operation": "If dead and buybackPrice>0 and enough gold, buyback without respawn-time or item-reserve threshold, then end.",
+      "evidence": [
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 66,
+          "end_line": 72
+        }
+      ],
+      "transfer": "Keep our independently validated core-aware buyback instead of blindly copying."
+    },
+    "NeuralMode": {
+      "operation": "Clamp25effective inputs to[-100,100],16ReLUhidden,18linearoutputs; strict argmaxevery4livingcalls. Decisions9..17 selectobjectivegear and combatmode=decision\u22129;0..8genericgear.",
+      "evidence": [
+        "neural-controller.json",
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 252,
+          "end_line": 429
+        }
+      ]
+    },
+    "BaseCombat": {
+      "operation": "Mode8 attacks exposed objective<=300,elsehero<=700,elsenearestenemy,elsescriptedroute. Othermodes first attacknearest orwalk64,64.",
+      "evidence": [
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 430,
+          "end_line": 478
+        }
+      ]
+    },
+    "UseAndShop": {
+      "operation": "Heal items below60%; mana below40% and poison nearby onlygenericbuild. Keep-only shop: healing beforegear; genericclassgear vsobjective dagger\u2192sword\u2192armor\u2192axe\u2192book, actualacceptedgold/inventorymutatebetweenattempts.",
+      "evidence": [
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 480,
+          "end_line": 647
+        }
+      ],
+      "limits": "Source checks vitality>=50 but currentcost75; some attempts fail. Do not infer accepted build from named branches."
+    },
+    "ModeCorrection": {
+      "operation": "Mode1walkhome;2objective/hero/route;3..6castslot0..3atnearestorself;7walkallycentroid. Mode18perimeter branch is unreachable from networkoutputs0..17.",
+      "evidence": [
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 648,
+          "end_line": 714
+        }
+      ]
+    },
+    "CounterSiegeAttacker": {
+      "initiation": "Mode2or8,nearestobjectiveis tower and<=300,eligibleattackerexists",
+      "operation": "IssueattackTarget(lowestHPeligibleattacker)",
+      "termination": "Next invocation re-evaluates; home defense and post-hit movement can supersede",
+      "evidence": [
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 716,
+          "end_line": 718
+        }
+      ]
+    },
+    "ReserveNearestDefender": {
+      "operation": "Amongvisibleallies,selfmustnotbefartherfromexposedgod; nearbydirectgodattacker outranksnearesthero outranksnearestunit. Attack within20cells ofhome,otherwise walkhome. Suppressed by reachableone-hit enemy-godfinish.",
+      "evidence": [
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 720,
+          "end_line": 778
+        }
+      ],
+      "limits": "Equal-distance ties may elect multiple defenders; unseen allies cannot participate."
+    },
+    "PostHitRecovery": {
+      "operation": "Afteranynewlandedbasic,walktocurrentintegerposition afterallotherchannels; persistlast-hitcount acrossdeath.",
+      "evidence": [
+        {
+          "artifact": "richard-v174.bas",
+          "start_line": 780,
+          "end_line": 785
+        }
+      ]
+    }
+  },
+  "strategy": [
+    {
+      "id": "R174_draft",
+      "when": "drafting",
+      "skill": "DraftPatchAware",
+      "for": [
+        "MaintainResources"
+      ],
+      "priority": "terminal"
+    },
+    {
+      "id": "R174_dead",
+      "when": "dead",
+      "skill": "ReturnFromDeath",
+      "for": [
+        "MaintainResources"
+      ],
+      "priority": "terminal"
+    },
+    {
+      "id": "R174_upgrade",
+      "when": "alive",
+      "skill": "SpendSkills",
+      "for": [
+        "FightReachableThreats"
+      ]
+    },
+    {
+      "id": "R174_mode",
+      "when": "alive and neural countdown expired",
+      "skill": "NeuralMode",
+      "for": [
+        "PressureObjectives"
+      ]
+    },
+    {
+      "id": "R174_base",
+      "when": "alive",
+      "skill": "BaseCombat",
+      "for": [
+        "PressureObjectives"
+      ]
+    },
+    {
+      "id": "R174_economy",
+      "when": "alive",
+      "skill": "UseAndShop",
+      "for": [
+        "MaintainResources"
+      ]
+    },
+    {
+      "id": "R174_correction",
+      "when": "alive",
+      "skill": "ModeCorrection",
+      "for": [
+        "FightReachableThreats"
+      ]
+    },
+    {
+      "id": "R174_retaliation",
+      "when": "eligible_siege_attacker and tower_assault",
+      "skill": "CounterSiegeAttacker",
+      "for": [
+        "FightReachableThreats"
+      ]
+    },
+    {
+      "id": "R174_defense",
+      "when": "reserve_defender",
+      "skill": "ReserveNearestDefender",
+      "for": [
+        "ProtectExposedGod"
+      ]
+    },
+    {
+      "id": "R174_recovery",
+      "when": "new_landed_basic",
+      "skill": "PostHitRecovery",
+      "for": [
+        "FightReachableThreats"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "descriptive-source-cascade/1",
+    "source_available": true,
+    "proxy_usable": false,
+    "authentic_source_replay_verified": true,
+    "semantic_reimplementation_verified": false,
+    "ordering": [
+      "draftterminal",
+      "battleclockinit",
+      "deadbuybackterminal",
+      "skillspend",
+      "publicscan/features",
+      "neuralifcountdownexpired",
+      "mainattack/navigation",
+      "Lichringcast",
+      "items/shopping",
+      "modecorrection",
+      "unreachablemode18",
+      "siegeretaliation",
+      "nearesthomedefense",
+      "post-hitwalk"
+    ],
+    "state": [
+      "battleStarted/battleStartTick",
+      "neuralActionCountdown/decision",
+      "groupDeparture",
+      "gateEarlyThreatX/Seen(unusedbyNN)",
+      "perimeterStage(unreachable)",
+      "recoveryInitialized/recoveryLastHit"
+    ],
+    "simultaneous_channels": "Inventory and skill operations need not overwrite movement/attack. Later movement/attack intent can replace earlier intent; track accepted effects separately.",
+    "runtime_max": {
+      "instructions": 10824,
+      "work": 16410
+    },
+    "runtime_scope": "Observed maxima in4fullWarlocksource-reconstructiongames, not a universal bound."
+  },
+  "update": {
+    "revision": 4,
+    "origin": "User-requested source reveal from../co-gas; old admission model remains unchanged.",
+    "preserve_prior": "../admission-20260923/richard_v174.ir.json",
+    "evidence": [
+      "provenance.json",
+      "source-audit-plan.json",
+      "evidence/",
+      "buff-visits.json",
+      "class-mapping.json",
+      "scoped-transfer-review.json"
+    ],
+    "next_tests": [],
+    "competitive_transfer_status": "broad_and_scoped_transfers_unqualified_for_deployment",
+    "transfer_evidence": "transfer-review.json",
+    "scoped_transfer_evidence": "scoped-transfer-review.json"
+  }
+}

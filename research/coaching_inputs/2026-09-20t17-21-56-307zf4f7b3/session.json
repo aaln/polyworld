@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-20t17-21-56-307zf4f7b3",
+  "project": null,
+  "project_name": "Coaching session",
+  "game": "",
+  "reference_status": "unbound",
+  "source": {
+    "id": "window:10384:0",
+    "name": "Softmax Dashboard",
+    "test": false,
+    "purpose": "gameplay",
+    "surface": "window"
+  },
+  "started_at": "2026-09-20T17:21:56.308Z",
+  "status": "complete",
+  "duration_ms": 81324,
+  "note_count": 0,
+  "experiment": {
+    "id": "",
+    "condition": "unassigned"
+  },
+  "context": "",
+  "pre_session_context": [],
+  "pauses": [],
+  "paused": false,
+  "input_git_commit": null,
+  "input_revision": null,
+  "input_had_uncommitted_changes": false,
+  "input_execution_verified": false,
+  "input_selection": "No policy attached. Resolve the game and policy from the recording and target repository.",
+  "ir_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "policy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "policy_extension": "txt",
+  "video": {
+    "file": "recording.webm",
+    "mime_type": "video/webm;codecs=vp8,opus",
+    "settings": {
+      "aspectRatio": 1.54,
+      "cursor": "always",
+      "deviceId": "window:10384:0",
+      "displaySurface": "window",
+      "frameRate": 10,
+      "height": 600,
+      "logicalSurface": true,
+      "resizeMode": "crop-and-scale",
+      "screenPixelRatio": 2,
+      "width": 924
+    },
+    "audio": {
+      "microphone": true,
+      "system": false
+    },
+    "encoding": {
+      "video_bits_per_second": 450000,
+      "audio_bits_per_second": 32000,
+      "profile": "compact-960-10fps"
+    },
+    "bytes": 2398110,
+    "sha256": "21a79922070b6623199c0e3a0d688280258f87252b3653dd6b557386d858e4c0",
+    "microphone_events": [
+      {
+        "at_ms": 5,
+        "state": "checking",
+        "label": "Default - AirPods (Bluetooth)",
+        "selection": "system-default",
+        "sample_rate": 48000,
+        "channels": 1
+      },
+      {
+        "at_ms": 388,
+        "state": "live",
+        "label": "Default - AirPods (Bluetooth)",
+        "selection": "system-default",
+        "sample_rate": 48000,
+        "channels": 1
+      }
+    ]
+  },
+  "feedback_file": "feedback.jsonl",
+  "timing": "Times are video-relative milliseconds, excluding pauses. at_ms is when feedback began; submitted_at_ms is when it was saved. Context defaults to the preceding 10 seconds. Notes while paused refer to the frozen video time.",
+  "research_brief": "Inspect each feedback event with its video context and the pinned input IR/policy. Make the coordinated changes needed to realize the coached behavior, across as many IR layers and policy components as necessary. Evaluate their combined effect; individual edits need not improve results alone. Regenerate the policy, test coaching fidelity, then run matched evaluations. This recording is human evidence, not an evaluation or an automatic policy update.",
+  "interaction_capture": {
+    "enabled": true,
+    "target": {
+      "pid": 95540,
+      "window_id": 10384,
+      "bundle_id": "com.brave.Browser"
+    },
+    "status": "saved",
+    "platform": "darwin",
+    "file": "interactions.jsonl",
+    "pointer_max_hz": 20,
+    "last_at_ms": 81324,
+    "last_status": "stopped",
+    "sha256": "c4c0a298d59dc6e784177a085b659a697c11238ae43b27f1d5a61d3b376f8f84"
+  },
+  "ended_at": "2026-09-20T17:23:17.713Z",
+  "error": null,
+  "notes_file": "notes.md",
+  "notes_generation": "local-transcript-and-context-v2",
+  "enrichment": {
+    "status": "complete",
+    "local": true,
+    "error": null,
+    "completed_at": "2026-09-20T17:23:25.635Z",
+    "speech_segments": 15,
+    "frame_count": 39,
+    "processing_seconds": 7.381,
+    "index_sha256": "a05db98a7923df8f7a2a355a4b644d38a434692d4f4acce475152c8121a8d31b"
+  }
+}

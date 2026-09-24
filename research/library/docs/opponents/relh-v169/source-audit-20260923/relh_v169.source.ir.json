@@ -1,0 +1,443 @@
+{
+  "schema": "opponent-semantic-ir/2-source",
+  "id": "relh_v169_source_20260923",
+  "situation": {
+    "identity": {
+      "label": "relh-gods-of-the-arena:v169",
+      "owner": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+      "version": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+      "source_sha256": "6791bc8cab237d88225356efa03713e2dbbd875c2c42bb718f1cfc926b02f9ca",
+      "cogas_commit": "27fb04fabfda2f2731ab231bfb17d3daf3347462",
+      "source_commit": "be20720b4f493d50056d768af0d2cbcfe85edb1c",
+      "engine": "d6827a4bd3a55a46cf86f88e921f147137709c64",
+      "game_version": "2026.9.23.1",
+      "replay_game_version": 59,
+      "repository_provenance": "provenance.json"
+    },
+    "perspective": "Relh public observations and source-private memory reconstructed retrospectively. No player identity or hidden XP enters a live controller.",
+    "coordinates": {
+      "distance": "squared observation-cell distance",
+      "attack_reach": "distance_squared*3600 <= (selfAttackRange\\1000)^2",
+      "team_transform": "Negates ally/enemy displacement features for blue. Hardcoded opening paths are separate.",
+      "structure_alive": "Exposed/targetable, not merely standing; reserveHome only exists when own god objectAlive is true."
+    },
+    "features": [
+      "hp_percent",
+      "mana_percent",
+      "max_squared_ally_distance_div100",
+      "level_times5",
+      "team_relative_ally_centroid_dx",
+      "team_relative_ally_centroid_dy",
+      "team_relative_nearest_enemy_dx",
+      "team_relative_nearest_enemy_dy",
+      "nearest_enemy_hp_div10",
+      "nearest_enemy_kind_times25",
+      "battle_ticks_div288",
+      "ability_charges_0_times25",
+      "ability_charges_1_times25",
+      "ability_charges_2_times25",
+      "ability_charges_3_times25",
+      "class_onehot_0_times100",
+      "class_onehot_1_times100",
+      "class_onehot_2_times100",
+      "class_onehot_3_times100",
+      "class_onehot_4_times100",
+      "class_onehot_5_times100",
+      "class_onehot_6_times100",
+      "class_onehot_7_times100",
+      "class_onehot_8_times100",
+      "class_onehot_9_times100"
+    ],
+    "predicates": {
+      "eligible_siege_attacker": "Visible living enemy hero targets self, is within approximate current basic reach; select lowest absolute HP.",
+      "near_objective": "Closest exposed enemy god or tower distance_squared<=300.",
+      "near_enemy_hero": "Closest enemy hero distance_squared<=700.",
+      "reserve_defender": "Exposed own god, <=1 nearby standing guard tower OR critical guard<=780HP and self within30cells; no closer visible living allied hero; no own one-hit god finish.",
+      "group_at_opening": "At least3allied heroes within4cells of scripted opening point; may include self."
+    },
+    "source": [
+      {
+        "artifact": "source/relh-v169.bas",
+        "start_line": 441,
+        "end_line": 601
+      }
+    ],
+    "class_ids": {
+      "0": {
+        "enum": "VanguardKnight",
+        "display": "Vanguard Knight"
+      },
+      "1": {
+        "enum": "Ranger",
+        "display": "Ranger"
+      },
+      "2": {
+        "enum": "Arcanist",
+        "display": "Arcanist"
+      },
+      "3": {
+        "enum": "DruidWarden",
+        "display": "Druid Warden"
+      },
+      "4": {
+        "enum": "DemonHunter",
+        "display": "Demon Hunter"
+      },
+      "5": {
+        "enum": "DeathKnight",
+        "display": "Death Knight"
+      },
+      "6": {
+        "enum": "Crossbowman",
+        "display": "Crossbowman"
+      },
+      "7": {
+        "enum": "Lich",
+        "display": "Lich"
+      },
+      "8": {
+        "enum": "Warlock",
+        "display": "Warlock"
+      },
+      "9": {
+        "enum": "Berserker",
+        "display": "Berserker"
+      }
+    },
+    "class_evidence": "../../richard-v174/source-audit-20260923/class-mapping.json",
+    "draft_features": {
+      "0_to_9": "Public legal hero availability",
+      "10_to_19": "Own team already-picked class indicators",
+      "20_to_29": "Enemy team already-picked class indicators",
+      "30_and_31": "Own/enemy picked counts divided by five",
+      "weights": "draft-controller.json",
+      "arithmetic": "BASIC Q16.16; six-decimal exported literals; strict first maximum among legal classes",
+      "unknown": [
+        "Opponent policy identity",
+        "Lifetime XP",
+        "Counterfactual score from a different pick"
+      ]
+    }
+  },
+  "belief": {
+    "claims": {
+      "SourceIdentity": {
+        "status": "verified",
+        "source_sha256": "6791bc8cab237d88225356efa03713e2dbbd875c2c42bb718f1cfc926b02f9ca",
+        "full_games": 8,
+        "commands_matched": 142715,
+        "all_world_hashes_equal": true
+      },
+      "SharedCombat": {
+        "status": "byte_verified",
+        "claim": "Battle body is identical to Richard174; the new component is draft selection.",
+        "evidence": "battle-body-comparison.json"
+      },
+      "DraftBehavior": {
+        "status": "source_and_current_replay_verified",
+        "relh_picks_matched": 200,
+        "own_draft_control_picks_matched": 200,
+        "actual_relh_classes": {
+          "Arcanist": 96,
+          "Lich": 104
+        }
+      },
+      "DraftTransfer": {
+        "status": "counterfactual_choice_only",
+        "changed_own_choices": 30,
+        "change": "DeathKnight to VanguardKnight; all other170 unchanged",
+        "limits": "No hypothetical score simulated. No ranged hero is legal in any of100own late drafts."
+      },
+      "Productivity": {
+        "status": "retrospective_descriptive",
+        "score_mean": 2027.89,
+        "nonzero_rate": 0.95,
+        "productive_score500_rate": 0.9,
+        "hero_kills_mean": 15.46,
+        "creep_xp_mean": 2235.185,
+        "hero_xp_mean": 2319,
+        "scope": "Fixed roster; relh is our teammate; classes and seats differ."
+      },
+      "ActiveModes": {
+        "status": "observed_on_eight_paths",
+        "normal_nearest_enemy": 49650,
+        "objective_build_mode8": 87026,
+        "retreat_mode1": 0,
+        "siege_retaliation_guards": 95,
+        "post_hit_walks": 1566,
+        "limits": "Counts are eligible controller decisions, not distinct kills or causal benefits. Home-defense guard did not activate in these eight paths."
+      },
+      "HistoricalPromotion": {
+        "status": "reported_not_reaudited",
+        "evidence": "source/candidate.yaml",
+        "claim": "Draft-only change fixed v161 overlooking an available Crossbowman in two selected failures; four paired controls reported. Raw co-gas runtime captures unavailable here."
+      },
+      "PreviousCombatTransfers": {
+        "status": "prior_failures_preserved",
+        "evidence": [
+          "../../richard-v174/source-audit-20260923/transfer-review.json",
+          "../../richard-v174/source-audit-20260923/scoped-transfer-review.json"
+        ],
+        "claim": "800earlier games did not qualify either broad or blue-Druid siege transfer; do not retry unchanged just because relh shares the body."
+      }
+    },
+    "uncertainty": "No matched class/seat competitive ablation of relh versus ours; no rank forecast. Eight reconstructed mage paths do not establish every class or branch."
+  },
+  "goal": {
+    "status": "analyst_explanatory_labels_not_explicit_score_objective",
+    "PressureObjectives": "Advance toward exposed structures and finish objectives.",
+    "FightReachableThreats": "Respond to nearby attackers while preserving basic damage.",
+    "ProtectExposedGod": "Allocate home defense based on geometry and structure state.",
+    "MaintainResources": "Use gear/healing/mana and return from death.",
+    "ScoreTransfer": "Our experiment objective is individual XP-minus-time, which must be tested independently.",
+    "DraftLegalContext": "Imitate observed leading-player picks under legal/team context; exported head is not a learned score-value estimator."
+  },
+  "skill": {
+    "SpendSkills": {
+      "operation": "Up to4legal upgrades each living invocation; R>W>E>Q.",
+      "evidence": [
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 424,
+          "end_line": 438
+        }
+      ]
+    },
+    "ReturnFromDeath": {
+      "operation": "If dead and buybackPrice>0 and enough gold, buyback without respawn-time or item-reserve threshold, then end.",
+      "evidence": [
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 416,
+          "end_line": 422
+        }
+      ],
+      "transfer": "Keep our independently validated core-aware buyback instead of blindly copying."
+    },
+    "NeuralMode": {
+      "operation": "Clamp25effective inputs to[-100,100],16ReLUhidden,18linearoutputs; strict argmaxevery4livingcalls. Decisions9..17 selectobjectivegear and combatmode=decision\u22129;0..8genericgear.",
+      "evidence": [
+        "../../richard-v174/source-audit-20260923/neural-controller.json",
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 602,
+          "end_line": 779
+        }
+      ]
+    },
+    "BaseCombat": {
+      "operation": "Mode8 attacks exposed objective<=300,elsehero<=700,elsenearestenemy,elsescriptedroute. Othermodes first attacknearest orwalk64,64.",
+      "evidence": [
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 780,
+          "end_line": 828
+        }
+      ]
+    },
+    "UseAndShop": {
+      "operation": "Heal items below60%; mana below40% and poison nearby onlygenericbuild. Keep-only shop: healing beforegear; genericclassgear vsobjective dagger\u2192sword\u2192armor\u2192axe\u2192book, actualacceptedgold/inventorymutatebetweenattempts.",
+      "evidence": [
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 830,
+          "end_line": 997
+        }
+      ],
+      "limits": "Source checks vitality>=50 but currentcost75; some attempts fail. Do not infer accepted build from named branches."
+    },
+    "ModeCorrection": {
+      "operation": "Mode1walkhome;2objective/hero/route;3..6castslot0..3atnearestorself;7walkallycentroid. Mode18perimeter branch is unreachable from networkoutputs0..17.",
+      "evidence": [
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 998,
+          "end_line": 1064
+        }
+      ]
+    },
+    "CounterSiegeAttacker": {
+      "initiation": "Mode2or8,nearestobjectiveis tower and<=300,eligibleattackerexists",
+      "operation": "IssueattackTarget(lowestHPeligibleattacker)",
+      "termination": "Next invocation re-evaluates; home defense and post-hit movement can supersede",
+      "evidence": [
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 1066,
+          "end_line": 1068
+        }
+      ]
+    },
+    "ReserveNearestDefender": {
+      "operation": "Amongvisibleallies,selfmustnotbefartherfromexposedgod; nearbydirectgodattacker outranksnearesthero outranksnearestunit. Attack within20cells ofhome,otherwise walkhome. Suppressed by reachableone-hit enemy-godfinish.",
+      "evidence": [
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 1070,
+          "end_line": 1128
+        }
+      ],
+      "limits": "Equal-distance ties may elect multiple defenders; unseen allies cannot participate."
+    },
+    "PostHitRecovery": {
+      "operation": "Afteranynewlandedbasic,walktocurrentintegerposition afterallotherchannels; persistlast-hitcount acrossdeath.",
+      "evidence": [
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 1130,
+          "end_line": 1135
+        }
+      ]
+    },
+    "DraftLegalContext": {
+      "initiation": "Own public draft turn",
+      "operation": "Build32public features, apply10linear logits plus biases, mask unavailable classes, select first strict maximum, submit draftHero and end.",
+      "evidence": [
+        {
+          "artifact": "source/relh-v169.bas",
+          "start_line": 5,
+          "end_line": 403
+        },
+        "draft-controller.json"
+      ],
+      "training": "Reported153training and51development examples; 78.43% agreement versus72.55% masked-frequency. Same development set selected epoch; no independent holdout claim.",
+      "transfer": "Choice compatibility check fails to address our forced-melee problem; no direct promotion."
+    }
+  },
+  "strategy": [
+    {
+      "id": "RELH169_draft",
+      "when": "drafting",
+      "skill": "DraftLegalContext",
+      "for": [
+        "DraftLegalContext"
+      ],
+      "priority": "terminal"
+    },
+    {
+      "id": "RELH169_dead",
+      "when": "dead",
+      "skill": "ReturnFromDeath",
+      "for": [
+        "MaintainResources"
+      ],
+      "priority": "terminal"
+    },
+    {
+      "id": "RELH169_upgrade",
+      "when": "alive",
+      "skill": "SpendSkills",
+      "for": [
+        "FightReachableThreats"
+      ]
+    },
+    {
+      "id": "RELH169_mode",
+      "when": "alive and neural countdown expired",
+      "skill": "NeuralMode",
+      "for": [
+        "PressureObjectives"
+      ]
+    },
+    {
+      "id": "RELH169_base",
+      "when": "alive",
+      "skill": "BaseCombat",
+      "for": [
+        "PressureObjectives"
+      ]
+    },
+    {
+      "id": "RELH169_economy",
+      "when": "alive",
+      "skill": "UseAndShop",
+      "for": [
+        "MaintainResources"
+      ]
+    },
+    {
+      "id": "RELH169_correction",
+      "when": "alive",
+      "skill": "ModeCorrection",
+      "for": [
+        "FightReachableThreats"
+      ]
+    },
+    {
+      "id": "RELH169_retaliation",
+      "when": "eligible_siege_attacker and tower_assault",
+      "skill": "CounterSiegeAttacker",
+      "for": [
+        "FightReachableThreats"
+      ]
+    },
+    {
+      "id": "RELH169_defense",
+      "when": "reserve_defender",
+      "skill": "ReserveNearestDefender",
+      "for": [
+        "ProtectExposedGod"
+      ]
+    },
+    {
+      "id": "RELH169_recovery",
+      "when": "new_landed_basic",
+      "skill": "PostHitRecovery",
+      "for": [
+        "FightReachableThreats"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "descriptive-source-cascade/1",
+    "source_available": true,
+    "proxy_usable": false,
+    "authentic_source_replay_verified": true,
+    "semantic_reimplementation_verified": false,
+    "ordering": [
+      "draftterminal",
+      "battleclockinit",
+      "deadbuybackterminal",
+      "skillspend",
+      "publicscan/features",
+      "neuralifcountdownexpired",
+      "mainattack/navigation",
+      "Lichringcast",
+      "items/shopping",
+      "modecorrection",
+      "unreachablemode18",
+      "siegeretaliation",
+      "nearesthomedefense",
+      "post-hitwalk"
+    ],
+    "state": [
+      "battleStarted/battleStartTick",
+      "neuralActionCountdown/decision",
+      "groupDeparture",
+      "gateEarlyThreatX/Seen(unusedbyNN)",
+      "perimeterStage(unreachable)",
+      "recoveryInitialized/recoveryLastHit"
+    ],
+    "simultaneous_channels": "Inventory and skill operations need not overwrite movement/attack. Later movement/attack intent can replace earlier intent; track accepted effects separately.",
+    "runtime_max": {
+      "instructions": 10386,
+      "work": 16583
+    },
+    "runtime_scope": "Observed maxima across8current-engine Arcanist/Lich full reconstructions; not a universal bound.",
+    "draft_terminal_before_battle": true,
+    "portal_support": "None in this source; preserve our qualified portal/channel behavior."
+  },
+  "update": {
+    "revision": 1,
+    "origin": "User source-review request; source inputs preserved.",
+    "evidence": [
+      "provenance.json",
+      "plan.json",
+      "evidence/analysis.json",
+      "battle-body-comparison.json",
+      "live-readback.json"
+    ],
+    "hypotheses": "transfer-hypotheses.ir.json",
+    "competitive_transfer_status": "No live-policy edits; proposals require current-engine controlled evaluation."
+  }
+}

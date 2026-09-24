@@ -1,0 +1,14 @@
+Testing base policy calls cover the current GotA host API
+Testing base spends ability points in R, W, E, Q order at legal levels
+Testing all forty abilities are explicitly cast at suitable targets
+Testing base shopping, safe portals, channels, and shared cooldowns
+Testing base prioritizes last hits and ignores hidden enemies
+Testing explicit allied healing and led area casts
+Testing base skips unavailable and out-of-range spells
+Testing Death Knight keeps enemies outside the ring's empty center
+Testing safe gradual recovery and emergency burst consumables
+Testing hostile warnings and maximum-size crowded maps stay bounded
+  64 tiles: 14846 instructions, 24248 work units
+  116 tiles: 14524 instructions, 23511 work units
+  256 tiles: 14524 instructions, 23511 work units
+GotA base policy checks passed

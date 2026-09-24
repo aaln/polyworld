@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "2026-09-23t02-52-57-098ze03810",
+  "project": null,
+  "project_name": "Coaching session",
+  "game": "",
+  "reference_status": "unbound",
+  "source": {
+    "id": "window:18895:0",
+    "name": "Gods Of The Arena",
+    "test": false,
+    "purpose": "gameplay",
+    "surface": "window"
+  },
+  "started_at": "2026-09-23T02:52:57.098Z",
+  "status": "complete",
+  "duration_ms": 52771,
+  "note_count": 0,
+  "experiment": {
+    "id": "",
+    "condition": "unassigned"
+  },
+  "context": "",
+  "pre_session_context": [],
+  "pauses": [
+    {
+      "at_ms": 52771,
+      "started_at": "2026-09-23T02:53:50.009Z",
+      "ended_at": "2026-09-23T02:53:50.864Z"
+    }
+  ],
+  "paused": false,
+  "input_git_commit": null,
+  "input_revision": null,
+  "input_had_uncommitted_changes": false,
+  "input_execution_verified": false,
+  "input_selection": "No policy attached. Resolve the game and policy from the recording and target repository.",
+  "ir_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "policy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "policy_extension": "txt",
+  "video": {
+    "file": "recording.webm",
+    "mime_type": "video/webm;codecs=vp8,opus",
+    "settings": {
+      "aspectRatio": 1.451505016722408,
+      "cursor": "always",
+      "deviceId": "window:18895:0",
+      "displaySurface": "window",
+      "frameRate": 10,
+      "height": 598,
+      "logicalSurface": true,
+      "resizeMode": "crop-and-scale",
+      "screenPixelRatio": 2,
+      "width": 868
+    },
+    "audio": {
+      "microphone": true,
+      "system": false
+    },
+    "encoding": {
+      "video_bits_per_second": 450000,
+      "audio_bits_per_second": 32000,
+      "profile": "compact-960-10fps"
+    },
+    "bytes": 1638745,
+    "sha256": "c9a02339061d21ffcfb2bb47a6e6fa969bf74c11a2c7e7e7c0e812310ef0be03",
+    "microphone_events": [
+      {
+        "at_ms": 6,
+        "state": "checking",
+        "label": "Default - AirPods (Bluetooth)",
+        "selection": "system-default",
+        "sample_rate": 48000,
+        "channels": 1
+      },
+      {
+        "at_ms": 417,
+        "state": "live",
+        "label": "Default - AirPods (Bluetooth)",
+        "selection": "system-default",
+        "sample_rate": 48000,
+        "channels": 1
+      },
+      {
+        "at_ms": 52771,
+        "state": "paused",
+        "label": "Default - AirPods (Bluetooth)",
+        "selection": "system-default",
+        "sample_rate": 48000,
+        "channels": 1
+      }
+    ]
+  },
+  "feedback_file": "feedback.jsonl",
+  "timing": "Times are video-relative milliseconds, excluding pauses. at_ms is when feedback began; submitted_at_ms is when it was saved. Context defaults to the preceding 10 seconds. Notes while paused refer to the frozen video time.",
+  "research_brief": "Inspect each feedback event with its video context and the pinned input IR/policy. Make the coordinated changes needed to realize the coached behavior, across as many IR layers and policy components as necessary. Evaluate their combined effect; individual edits need not improve results alone. Regenerate the policy, test coaching fidelity, then run matched evaluations. This recording is human evidence, not an evaluation or an automatic policy update.",
+  "interaction_capture": {
+    "enabled": true,
+    "target": {
+      "pid": 45210,
+      "window_id": 18895,
+      "bundle_id": "com.brave.Browser"
+    },
+    "status": "saved",
+    "platform": "darwin",
+    "file": "interactions.jsonl",
+    "pointer_max_hz": 20,
+    "last_at_ms": 52771,
+    "last_status": "stopped",
+    "sha256": "8763d871ac5166698ac47d4fc1b908035f19497820edf12d30f16feb04fc47f2"
+  },
+  "ended_at": "2026-09-23T02:53:50.864Z",
+  "error": null,
+  "notes_file": "notes.md",
+  "notes_generation": "local-transcript-and-context-v2",
+  "enrichment": {
+    "status": "complete",
+    "local": true,
+    "error": null,
+    "completed_at": "2026-09-23T02:53:58.476Z",
+    "speech_segments": 16,
+    "frame_count": 30,
+    "processing_seconds": 7.02,
+    "index_sha256": "1a920ac49a181cb00d6744dcbc5585ffef1e8aee26f262b2f01a72043f8695dd"
+  }
+}

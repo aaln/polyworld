@@ -1,0 +1,74 @@
+{
+  "schema": "gota-coaching-hypotheses/1",
+  "id": "fresh_context_next_income_tests",
+  "situation": {
+    "game_version": "2026.9.23.4",
+    "public_features_only": true,
+    "predicates_to_define": ["no_productive_lane_target", "reachable_safe_camp", "reward_credit_eligible", "affordable_useful_upgrade_basket", "resource_restoration_ready"]
+  },
+  "belief": {
+    "status": "untested_transfer_hypotheses",
+    "facts": [
+      "Current broad weak-neutral targeting did not improve mean score.",
+      "Vanguard's audited poor game rarely encountered eligible camps.",
+      "Neutral kills do not guarantee the killer receives neutral XP.",
+      "Arcanist's audited full-health retreat was triggered by shopping, not low mana or a missed visible creep.",
+      "Tiny favorable class slices are discovery evidence, not confirmation."
+    ],
+    "uncertainty": "Static camp geometry is public; hidden life, future danger, enemy intent and respawn state are unknown."
+  },
+  "goal": {
+    "Score": "Maximize expected individual floor(max(0, XP - 200 * elapsed_minutes))."
+  },
+  "skill": {
+    "bounded_camp_access": {
+      "proposal": "For low-income heroes lacking productive lane opportunities, choose a nearby reachable low-risk camp route with a travel budget, health/kit guard, destination reconsideration and early abandonment when a better visible wave/hero opportunity appears.",
+      "measure": "Own eligible neutral XP plus changes in lane/hero income, time cost and final score.",
+      "falsifier": "Travel, leash resets, camping near respawn or lost wave income outweigh neutral receipts."
+    },
+    "credit_aware_finish": {
+      "proposal": "Maintain living same-floor six-tile eligibility around feasible neutral/creep deaths without overriding urgent survival.",
+      "measure": "Actual reward recipients and net score, not kills alone.",
+      "falsifier": "Movement to claim XP costs more income or exposes the hero to lethal damage."
+    },
+    "caster_restore_and_shop": {
+      "proposal": "Coordinate useful early mana-restoration unlock/casting with an affordable class-specific upgrade basket and bounded wave-aware shopping deferral.",
+      "measure": "Mana-restoration effects, time to useful upgrades, XP gaps and final score in natural caster contexts.",
+      "falsifier": "Deferral loses item power or survival, or mana use prevents needed spells."
+    },
+    "class_specific_return_core": {
+      "proposal": "Test melee/caster-appropriate core readiness together with buyback and productive return timing; the inherited controller requires the same four ranged-core items for all heroes.",
+      "measure": "Time to core, gold allocation, productive field time and score.",
+      "falsifier": "Faster returns or extra buybacks spend gold without enough XP."
+    },
+    "lich_scoped_neutral_transfer": {
+      "proposal": "Independently test the direct-neutral branch only for Lich, preserving other classes, after the exploratory four-pair gain.",
+      "measure": "Fresh matched Lich score and broader unchanged-controller checks.",
+      "falsifier": "Gain disappears on new rosters/seeds or is explained by lost income elsewhere."
+    },
+    "carry_reference_transfer": {
+      "proposal": "Discriminate which prior-policy routing/targeting choices explain the old Ranger gain; test one coordinated transfer on fresh carry contexts.",
+      "measure": "Current-engine individual score with source/seed/roster/seat identity.",
+      "falsifier": "Gain was context-specific or the transfer harms expected score."
+    }
+  },
+  "strategy": [
+    {"priority": 1, "when": "low-income hero lacks productive lane opportunities", "skill": "bounded_camp_access", "for": "Score"},
+    {"priority": 2, "when": "a feasible death may award XP outside current eligibility", "skill": "credit_aware_finish", "for": "Score"},
+    {"priority": 3, "when": "caster income is limited by restoration or shopping timing", "skill": "caster_restore_and_shop", "for": "Score"},
+    {"priority": 4, "when": "inherited ranged core delays a useful melee/caster return", "skill": "class_specific_return_core", "for": "Score"},
+    {"priority": 5, "when": "fresh Lich contexts are available", "skill": "lich_scoped_neutral_transfer", "for": "Score"},
+    {"priority": 6, "when": "fresh carry contexts can discriminate older behavior", "skill": "carry_reference_transfer", "for": "Score"}
+  ],
+  "execution": {
+    "kind": "research_plan_non_executable",
+    "compiler_eligible": false,
+    "current_parent": "research/policies/deployed",
+    "validation": "IR-first coordinated edit; current-engine mechanics/runtime checks; frozen responsive paired hosted comparison; fresh confirmation before promotion."
+  },
+  "update": {
+    "revision": 1,
+    "evidence": ["research/RESULTS.md", "research/results/statistics.json", "research/opponents/khors-v180/opponent.ir.json", "research/library/docs/coaching/2026-09-23-arcanist-shopping/suggestions.ir.json"],
+    "note": "Migration records hypotheses, not implemented improvements."
+  }
+}

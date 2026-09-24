@@ -1,0 +1,3655 @@
+{
+  "schema": "gota-source-reveal-discriminating-fixtures/1",
+  "source_sha256": "f48bb0057aeaf2ff939035324340183e34f8f9544e03226edfe62e78faad5a30",
+  "vm_binary_sha256": "c132f338e1ca1136b058a3fd270e81faa4be1239ce91952b798107cd047ea176",
+  "vm_source_sha256": "45d434be2935cc292753743715ffb0b21b2a0c1b6197ec1ba3e31eb61bb74661",
+  "scenes": 12,
+  "executed_decisions": 21,
+  "all_assertions_passed": true,
+  "frozen_ir_forecasts": {
+    "6": {
+      "skill": "target_structure",
+      "probabilities": {
+        "advance": 0.013582342954159592,
+        "hold": 0.001697792869269949,
+        "lateral": 0.001697792869269949,
+        "target_creep": 0.4057724957555178,
+        "target_structure": 0.5755517826825127,
+        "withdraw": 0.001697792869269949
+      },
+      "preference_id": "Richard135_I_O13",
+      "context": "mask_6_low_0",
+      "usable_for_rollout": false
+    },
+    "7": {
+      "skill": "target_hero",
+      "probabilities": {
+        "advance": 0.1724137931034483,
+        "hold": 0.1724137931034483,
+        "lateral": 0.034482758620689655,
+        "target_creep": 0.034482758620689655,
+        "target_hero": 0.5172413793103449,
+        "target_structure": 0.034482758620689655,
+        "withdraw": 0.034482758620689655
+      },
+      "preference_id": "Richard135_I_O15",
+      "context": "mask_7_low_0",
+      "usable_for_rollout": false
+    }
+  },
+  "scope": "Synthetic source-reveal branch tests with scripted acceptance. Counterexamples to identifying mechanisms from the old coarse context; not estimates of old-model forecast accuracy or real combat outcomes.",
+  "private_state_injected": false,
+  "fixtures": [
+    {
+      "id": "siege_quiet",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5621,
+          "work": 7781
+        }
+      ]
+    },
+    {
+      "id": "siege_attacker_targets_self",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 100
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                200
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 200,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5654,
+          "work": 7849
+        }
+      ]
+    },
+    {
+      "id": "siege_attacker_targets_other_ally",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 101
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5621,
+          "work": 7781
+        }
+      ]
+    },
+    {
+      "id": "siege_attacker_outside_range",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 61,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 100
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5646,
+          "work": 7813
+        }
+      ]
+    },
+    {
+      "id": "siege_god_is_not_tower",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 1,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 100
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 1,
+            "siegeThreatId": 200,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5652,
+          "work": 7827
+        }
+      ]
+    },
+    {
+      "id": "siege_lowest_hp_eligible_attacker",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 100
+              },
+              {
+                "objectId": 202,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 51,
+                "objectHp": 100,
+                "objectAlive": 1,
+                "objectTarget": 100
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                202
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 202,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5852,
+          "work": 8186
+        }
+      ]
+    },
+    {
+      "id": "structure_context_tower",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5433,
+          "work": 7440
+        }
+      ]
+    },
+    {
+      "id": "structure_context_barracks",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 5,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "walkTo",
+              "arguments": [
+                11,
+                106
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 0,
+            "objectiveKind": 0,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5448,
+          "work": 8228
+        }
+      ]
+    },
+    {
+      "id": "neural_four_decision_clock",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          },
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8001,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          },
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8002,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          },
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8003,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          },
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8004,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          },
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8005,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          },
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8006,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          },
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8007,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5621,
+          "work": 7781
+        },
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 3,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 1933,
+          "work": 3363
+        },
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 2,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 1933,
+          "work": 3363
+        },
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 1,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 1933,
+          "work": 3363
+        },
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5621,
+          "work": 7781
+        },
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 3,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 1933,
+          "work": 3363
+        },
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 2,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 1933,
+          "work": 3363
+        },
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 1,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 1933,
+          "work": 3363
+        }
+      ]
+    },
+    {
+      "id": "one_decision_hit_recovery_pulse",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          },
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8001,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 1,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          },
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8002,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 1,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 10,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 10,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 105,
+                "objectY": 13,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 11,
+                "objectKind": 4,
+                "objectTeam": 0,
+                "objectX": 101,
+                "objectY": 10,
+                "objectHp": 1950,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5621,
+          "work": 7781
+        },
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "walkTo",
+              "arguments": [
+                50,
+                50
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 3,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 1
+          },
+          "instructions": 1938,
+          "work": 4167
+        },
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 2,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 0,
+            "reserveDirect": 0,
+            "reserveGuards": 2,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 1
+          },
+          "instructions": 1933,
+          "work": 3363
+        }
+      ]
+    },
+    {
+      "id": "home_direct_creep_over_hero",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 60,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 1
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 1,
+            "reserveTarget": 201,
+            "reserveDirect": 201,
+            "reserveGuards": 0,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5446,
+          "work": 7530
+        }
+      ]
+    },
+    {
+      "id": "home_closer_ally_removes_self_reservation",
+      "request": {
+        "decisions": [
+          {
+            "self": {
+              "selfId": 100,
+              "selfTeam": 0,
+              "selfClass": 7,
+              "selfX": 50,
+              "selfY": 50,
+              "selfHp": 800,
+              "selfMaxHp": 800,
+              "selfMana": 200,
+              "selfMaxMana": 300,
+              "selfGold": 0,
+              "selfLevel": 5,
+              "worldTick": 8000,
+              "selfAttackRange": 600000,
+              "selfAttackDamage": 40,
+              "selfAttacksLanded": 0,
+              "mapWidth": 116,
+              "mapHeight": 116
+            },
+            "inventory": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "objects": [
+              {
+                "objectId": 1,
+                "objectKind": 1,
+                "objectTeam": 0,
+                "objectX": 60,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 100,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 50,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 21,
+                "objectKind": 4,
+                "objectTeam": 1,
+                "objectX": 55,
+                "objectY": 50,
+                "objectHp": 1000,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 201,
+                "objectKind": 3,
+                "objectTeam": 1,
+                "objectX": 51,
+                "objectY": 50,
+                "objectHp": 60,
+                "objectAlive": 1,
+                "objectTarget": 1
+              },
+              {
+                "objectId": 200,
+                "objectKind": 2,
+                "objectTeam": 1,
+                "objectX": 54,
+                "objectY": 50,
+                "objectHp": 400,
+                "objectAlive": 1,
+                "objectTarget": 0
+              },
+              {
+                "objectId": 101,
+                "objectKind": 2,
+                "objectTeam": 0,
+                "objectX": 59,
+                "objectY": 50,
+                "objectHp": 800,
+                "objectAlive": 1,
+                "objectTarget": 0
+              }
+            ],
+            "abilities": [
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              },
+              {
+                "abilityCharges": 1,
+                "abilityCooldown": 0
+              }
+            ]
+          }
+        ],
+        "memory": [
+          "decision",
+          "combatDecision",
+          "objectiveBuild",
+          "neuralActionCountdown",
+          "bestId",
+          "objectiveId",
+          "objectiveKind",
+          "siegeThreatId",
+          "reserveNearest",
+          "reserveTarget",
+          "reserveDirect",
+          "reserveGuards",
+          "reserveGuardCritical",
+          "reserveFinish",
+          "groupDeparture",
+          "recoveryLastHit"
+        ]
+      },
+      "actual": [
+        {
+          "actions": [
+            {
+              "command": "attackTarget",
+              "arguments": [
+                201
+              ],
+              "accepted": 1
+            },
+            {
+              "command": "attackTarget",
+              "arguments": [
+                21
+              ],
+              "accepted": 1
+            }
+          ],
+          "memory": {
+            "decision": 11,
+            "combatDecision": 2,
+            "objectiveBuild": 1,
+            "neuralActionCountdown": 4,
+            "bestId": 201,
+            "objectiveId": 21,
+            "objectiveKind": 4,
+            "siegeThreatId": 0,
+            "reserveNearest": 0,
+            "reserveTarget": 201,
+            "reserveDirect": 201,
+            "reserveGuards": 0,
+            "reserveGuardCritical": 0,
+            "reserveFinish": 0,
+            "groupDeparture": 0,
+            "recoveryLastHit": 0
+          },
+          "instructions": 5591,
+          "work": 7752
+        }
+      ]
+    }
+  ]
+}

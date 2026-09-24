@@ -79,8 +79,8 @@ def main():
                          'interpretation':'Neutral kills alone are not an efficacy metric. Class-specific findings are exploratory; no rollout.'},
                  results='../../RESULTS.md')
     write(OUT/'counter-hypotheses.ir.json',hypotheses)
-    archive=Path(read(ROOT/'research/manifest.json')['archive'])
-    shutil.copy2(archive/'docs/guides/guide-opponent-model-ir.md',OUT/'guide-snapshot.md')
+    library=ROOT/'research/library'
+    shutil.copy2(library/'docs/guides/guide-opponent-model-ir.md',OUT/'guide-snapshot.md')
     rows_text='\n'.join('| '+k+' | '+str(v['n'])+' | '+str(round(v['mean_score']))+' | '+str(round(v['mean_xp_sources']['neutral']))+' |' for k,v in s['khors_classes'].items())
     report=f'''# Khors v180: observed behavior on the neutral-camp release
 

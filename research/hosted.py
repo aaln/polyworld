@@ -5,10 +5,22 @@ from concurrent.futures import ThreadPoolExecutor
 import httpx, jsonschema
 
 ROOT=Path(__file__).resolve().parents[1]
-ARCHIVE=Path(json.loads((ROOT/'research/manifest.json').read_text())['archive'])
-spec=importlib.util.spec_from_file_location('recovery_platform',ARCHIVE/'games/gods_of_the_arena/instruments/neutralfarm20260923/hosted.py')
+VENDOR=ROOT/'research/vendor'
+spec=importlib.util.spec_from_file_location('recovery_platform',VENDOR/'games/gods_of_the_arena/instruments/neutralfarm20260923/hosted.py')
 platform=importlib.util.module_from_spec(spec);spec.loader.exec_module(platform)
 h,cc,panel=platform.h,platform.cc,platform.panel
+h.ROOT=h.ENGINE=ROOT
+h.CAMPAIGN=ROOT.parent/'gota-autoresearch'
+
+def shared_budget_config(campaign):
+    """Read shared limits without importing the paused worker's old tooling."""
+    cfg=h.read(campaign/'config.json')
+    override=cfg.get('daily_episode_limit_override')
+    if override and h.research.now()[:10]!=override['utc_day']:
+        cfg['daily_episode_limit']=override['normal_limit']
+    return cfg
+
+h.research.config=shared_budget_config
 RAW=ROOT.parent/'polyworld/tmp/gota-weak-neutral62-20260924'
 platform.RAW=cc.RAW=h.STUDY=panel.STUDY=RAW
 h.CYCLE='interactive-score-recovery62-20260924'

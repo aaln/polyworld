@@ -3,7 +3,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 from pathlib import Path
 
-RAW = Path('/Users/aaln/experiments/softmax/polyworld/tmp/gota-weak-neutral62-20260924')
+RAW = Path(__file__).resolve().parents[2] / 'polyworld/tmp/gota-weak-neutral62-20260924'
 PAGE = '''<!doctype html><meta charset="utf-8"><title>GotA score recovery</title>
 <style>body{font:17px system-ui;max-width:1000px;margin:40px;background:#f5f7fa;color:#172637}td,th{padding:12px;border-bottom:1px solid #bbb;text-align:left}table{border-collapse:collapse;width:100%}</style>
 <h1>Current-engine score recovery</h1><p>Release62 · Matched responsive games · Individual score</p>

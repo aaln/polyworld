@@ -4,9 +4,9 @@ import json
 from pathlib import Path
 import subprocess
 import hashlib
-ROOT = Path('/Users/aaln/experiments/softmax/polyworld-gota-score-recovery-20260924')
+ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT.parent / 'polyworld/tmp/gota-weak-neutral62-20260924'
-ENGINE = ROOT.parent / 'polyworld-gota-score-recovery-20260924'
+ENGINE = ROOT
 SOURCES = {k:ROOT/'research/policies'/k/'policy.bas' for k in ['deployed','previous','weak-neutral']}
 sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 

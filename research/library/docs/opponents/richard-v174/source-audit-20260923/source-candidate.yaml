@@ -1,0 +1,156 @@
+id: gods-of-the-arena-richard-ranger-berserker58-20260923
+game: gods_of_the_arena
+status: promoted
+parent: gods-of-the-arena-richard-buffed-hero-draft57-canary-20260922
+target_lane: richard
+protected_lane: relh
+hypothesis: >
+  In a current GameVersion 58 round-659 zero-score loss, richard chose
+  Berserker solely because its one-point faction tie-break beat Ranger.
+  Ranger was available, the team had Arcanist and Warlock, and Berserker
+  died ten times. Give Ranger a two-point preference only when Berserker
+  is also available, leaving the stronger Crossbowman and Warlock bonuses
+  unchanged. The earlier broad twenty-point Ranger bonus had regressed
+  mixed public-roster XP; this correction targets a different observed tie.
+tags:
+- replay-diagnosed
+- programmatic-correction
+- exact-release
+- source-buildable
+- local-passed
+- user-directed-richard-focus
+- no-submission
+- hosted-xp
+- hosted-artifacts-reviewed
+- tournament-submitted
+build:
+  coworld_id: cow_2cb5d47d-c064-44af-8b44-cef246667920
+  coworld_version: 2026.9.22.3
+  game_version: 58
+  release_source_commit: 1b70894436b7ffdcd0d421b6b32c2415c9c8bfde
+  environment_snapshot: .runtime/gota-richard-continuation-20260923-pass4/environment-ranger-berserker58.json
+  source_paths:
+  - players/users/relh/co-gas/polyworld-basic/gods_of_the_arena_richard_ranger_over_berserker58.bas
+  source_sha256: c6429ea4ee202edc456de71c5ee7ad896ec423b11bbf2717c0dd4dd76c58b766
+  parent_source: players/users/relh/co-gas/polyworld-basic/gods_of_the_arena_richard_crossbow_warlock_draft57.bas
+  parent_policy_version_id: e811221e-c419-4f7b-9629-01f8722ab9f7
+  hosted_policy_version_id: 5b854825-446a-4864-8dfc-bb3404d4fe81
+  hosted_policy_version: 174
+  membership_id: lpm_59eaeb0f-9654-4b41-a390-9a9710265476
+  submission_id: sub_879b4410-cc0f-463f-ac4c-c35753531436
+  promotion_readback: .runtime/gota-richard-continuation-20260923-pass4/v174-promotion-readback.json
+  membership_status: competing
+  membership_substatus: active
+  membership_is_champion: true
+evidence:
+- source: leaderboard
+  artifacts:
+  - .runtime/gota-richard-continuation-20260923-pass4/heros.html
+  - .runtime/gota-richard-continuation-20260923-pass4/players.html
+  - .runtime/gota-richard-continuation-20260923-pass4/field-pages-review.json
+  visited_at_utc: 2026-09-23T00:06:15Z
+  notes: >
+    Both required live pages returned HTTP 200 but remain older than the
+    current release. Use the exact GameVersion 58 replay as the diagnosis.
+- source: replay
+  artifacts:
+  - .runtime/gota-richard-continuation-20260923-pass4/round659-zero-ereq_80c377f6-468d-4fd4-80ef-5e4fccc9b3c9/replay.replay
+  - .runtime/gota-richard-continuation-20260923-pass4/ereq_80c377f6-468d-4fd4-80ef-5e4fccc9b3c9-focus107.audit.json
+  - .runtime/gota-richard-continuation-20260923-pass4/environment-ranger-berserker58.json
+  scores:
+    game_version: 58
+    replay_hash_mismatches: 0
+    richard_score: 0
+    richard_xp: 2254
+    richard_deaths: 10
+    team_won: false
+  notes: >
+    The stable owned player ID maps to richard v167 at observed replay hero
+    107. Its completed loss and every replay hash verified; the draft picked
+    Berserker while Ranger remained available.
+- source: local
+  artifacts:
+  - .runtime/gota-richard-continuation-20260923-pass4/round659-berserker-zero-draft-parent.json
+  - .runtime/gota-richard-continuation-20260923-pass4/round659-ranger-berserker-probe.json
+  scores:
+    exact_pre_pick_tick: 504
+    hash_mismatches: 0
+    vm_failures: 0
+    parent_draft_class: Berserker
+    candidate_draft_class: Ranger
+  notes: >
+    On the hash-verified exact pre-pick state, candidate draftHero(1)
+    replaces parent draftHero(9), with no VM failure.
+- source: local
+  artifacts:
+  - .runtime/gota-richard-continuation-20260923-pass4/ranger-berserker-smoke.json
+  scores:
+    game_version: 58
+    battle_ticks: 3000
+    vm_failures: 0
+  notes: >
+    The bounded release worker smoke completed with ten healthy VMs. Hosted
+    exact-roster XP must decide whether the changed draft improves the match.
+- source: hosted-xp
+  artifacts:
+  - .runtime/gota-richard-continuation-20260923-pass4/ranger-berserker-upload.json
+  - .runtime/gota-richard-continuation-20260923-pass4/xp-ranger-berserker-artifact-manifest.json
+  - .runtime/gota-richard-continuation-20260923-pass4/xp-ranger-berserker-audit-summary.json
+  - .runtime/gota-richard-continuation-20260923-pass4/xp-ranger-berserker-seeds-artifact-manifest.json
+  - .runtime/gota-richard-continuation-20260923-pass4/xp-ranger-berserker-seeds-audit-summary.json
+  scores:
+    game_version: 58
+    completed_hosted_games: 13
+    xp_episodes_completed: 13
+    replay_hash_mismatches: 0
+    vm_failures: 0
+    original_seed_parent_score: 0
+    original_seed_candidate_score: 6707
+    rank_one_parent_score: 2820
+    rank_one_candidate_score: 5749
+    rank_two_parent_score: 0
+    rank_two_candidate_score: 9955
+    protected_relh_parent_score: 1301
+    protected_relh_candidate_score: 2809
+    protected_matchup_parent_richard_score: 0
+    protected_matchup_candidate_richard_score: 5693
+    independent_seed_parent_score: 670
+    independent_seed_candidate_score: 5038
+    unchanged_seed_pairs: 2
+  notes: >
+    All completed fixed-seat GameVersion 58 replays had clean richard policy
+    logs, zero hash mismatches and zero VM failures. On the diagnosed seed,
+    Ranger replaced Berserker in the original roster and both active-leader
+    rosters, raising richard's score in all three. Against relh v161 on the
+    opposing team, both owned scores rose. Of three independent seed pairs,
+    two kept the same Warlock draft and scores, while one changed Lich to
+    Ranger and raised richard from 670 to 5038. The draft preference can
+    therefore affect a Lich decision as well as the diagnosed Berserker tie.
+- source: hosted-xp
+  artifacts:
+  - .runtime/gota-richard-continuation-20260923-pass5-field-pages-review.json
+  - .runtime/gota-richard-continuation-20260923-pass5/xp-v174-round660-artifact-manifest.json
+  - .runtime/gota-richard-continuation-20260923-pass5/xp-v174-round660-status.json
+  - .runtime/gota-richard-continuation-20260923-pass5/xp-v174-round660-audit-summary.json
+  scores:
+    game_version: 58
+    xp_episodes_completed: 3
+    replay_hash_mismatches: 0
+    vm_failures: 0
+    unchanged_zero_score_cases: 3
+  notes: >
+    Three completed round-660 zero-score failures from the v167 league roster
+    were repeated with v174 at their exact effective seeds and fixed positions.
+    All three v174 scores, relh co-appearance scores and richard action traces
+    were identical to the original completed league replays; the audited
+    drafts were Warlock, Vanguard Knight and Warlock. This documents that the
+    Ranger correction does not cover these failures. All replay hashes and
+    richard policy logs were clean. The field-note pages were visited again
+    during this pass but remain older than GameVersion 58.
+decision:
+  outcome: promote
+  notes: >
+    Exact release environment verified current before submission. V174 was
+    submitted to richard only and the live top-division membership readback
+    shows it competing and active as champion. The protected relhalpha lane
+    remains v161. Monitor new league rounds for leaderboard impact.

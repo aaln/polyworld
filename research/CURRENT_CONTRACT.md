@@ -10,9 +10,9 @@ Use matched responsive counterfactuals: identical engine, seed, roster and subje
 
 ## Evidence boundaries
 
-- `policies/previous`: previous deployed source `29f6d7e6`; a historical reference requiring current-engine comparison.
+- `policies/previous`: previous deployed source `29f6d7e6`; retained transfer reference; its completed current-engine comparison did not qualify a rollback.
 - `policies/deployed`: current live source `2fbd789b`; the baseline for improvement claims.
-- `policies/weak-neutral`: source `c2321ead`; a coordinated nearby-neutral hypothesis for heroes other than Ranger and Crossbowman. Its effect is unproven until the frozen comparison completes.
+- `policies/weak-neutral`: source `c2321ead`; a coordinated nearby-neutral hypothesis for heroes other than Ranger and Crossbowman. The completed 60-pair comparison lowered mean score and did not qualify promotion; reviewed IR preserves this negative result.
 - `opponents/khors-v180`: observations tied to version and source hashes, with explicit denominators and failed-opponent caveats. It is neither authentic source nor an executable reconstruction.
 
 Historical coaching, old win-rate targets, old hero balance, and claims from different replay versions are retained as history. They are not premises for new score claims. Frozen conversion code exists to reproduce each policy; only the current engine defines mechanics.
@@ -23,4 +23,4 @@ The latest deployed policy had a favorable narrow pilot against a research paren
 
 ## Continuing from a fresh conversation
 
-Read `manifest.json`, this file, the latest `RESULTS.md` if present, and `../AGENTS.md`. Check shared campaign ownership before writing. Do not restart the obsolete archive worker. Consult historical notes only when their engine/version and hypothesis are relevant; do not load the entire research history as current instructions.
+Read `../START_HERE.md` and `RESULTS.md`, then load indexed details as needed. Run `verify_workspace.py` before new experiments. Check shared campaign ownership before writing. Do not restart the obsolete archive worker. Consult historical notes only when their engine/version and hypothesis are relevant; do not load the entire research history as current instructions. Historical snapshots in `library/` and original coaching synthesis carry no new current-release qualification.

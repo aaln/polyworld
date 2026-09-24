@@ -1,5 +1,7 @@
 # Score recovery on release62
 
+Open [START_HERE.md](../START_HERE.md) for the short fresh-context handoff. [IR workflow](IR_WORKFLOW.md), [operations](OPERATIONS.md), and the [knowledge map](knowledge/README.md) provide the portable conversion, verification and historical transfer details.
+
 Fresh engine checkout; no accumulated gameplay merges. The previous high-scoring deployed source29f6d7e6 is the historical reference, current source2fbd789b is the deployed comparison, and c2321ead is a weak-hero nearby-neutral hypothesis. None is assumed best on the current broad field.
 
 Raw captured league evidence: /Users/aaln/experiments/softmax/polyworld/tmp/gota-khors180-observations-20260924
