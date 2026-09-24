@@ -1,0 +1,407 @@
+{
+  "schema": "gota-semantic-policy/1",
+  "id": "gota_lane_neutral20260923",
+  "situation": {
+    "grounded": {
+      "observation": "Bassy Q16.16 decimals for fractional action coordinates, integer snapshot tiles and IDs; six inventory slots; shared public hero draft.",
+      "structure_alive": "For structures objectAlive means exposed; positive HP means standing.",
+      "predicates": {
+        "always": "Unconditional lifecycle phase",
+        "low_health_in_field": "Below 30% health outside the friendly keep/spawn, alive and not channeling/stunned. Recovery takes priority over farming and attack reacquisition.",
+        "low_health_in_base": "Critical health inside own keep/spawn commits to walking and replenishment without a home portal.",
+        "active": "Alive, battle started, decision due, not channeling or stunned",
+        "active_druid": "Current public hero class is Druid and its normal decision is active; all other classes skip lane recovery entirely.",
+        "in_base": "Host canShop identifies own keep or spawn; home recalls are disallowed here while useful outbound channels remain legal.",
+        "town_scroll_ready": "Committed field recovery with an actual ready scroll; safe channel checks must still pass.",
+        "recovery_remaining": "Recovery owns the decision and no successful channel/replenishment action has claimed it."
+      }
+    },
+    "notes": "Coached home recall differs from outbound tower travel. in_base=canShop, fountain=inOwnSpawn. Public hero/creep separation and warnings gate a field channel. Global geometry and Crossbow draft are retained; current engine rejects ordinary commands during channels. Actual stun/root, anchor loss or death interrupts; a bot cannot cancel a channel by walking. Respawn grows with deaths, not hero level. Public remaining respawn and buybackPrice, gold and own unique core items support an earlier post-core buyback rule. No opponent identity or hidden information features. Public blue team, team ordinal zero and ranged class define a central opening route. No opponent identity or hidden position is an input. Lane recovery checks public current healing resources and affordable missing core items. A learned charged affordable heal within8seconds, a successfully used potion or pending accepted heal supports a bounded12second safe hold. No passive field HP regeneration is assumed. Release61 adds distinct stun, silence and root states. Silence is not a global inactive state; root is not a spell or item prohibition. Enemy status timers are visible-only evidence. Current host abilityDamage supplies the reduced damage thresholds. Release61 adds distinct stun, silence and root states. Silence is not a global inactive state; root is not a spell or item prohibition. Enemy status timers are visible-only evidence. Current host abilityDamage supplies the reduced damage thresholds. Control61tactics uses currently visible heroes, appropriate remaining-control timers and exact host cast validation. No opponent identity or private XP is used. Public allied positions identify estimated lane commitment via positive angular projection from home onto the three existing waypoints. Alive allies within12tiles of home are uncommitted. Shared-XP eligibility depends on actual six-tile range and navigation layer; estimated lane counts do not assert eligibility. Release62 adds neutral kind6/faction2, visible camp/leader/returning fields and public static camp geometry. Returning mobs are immune. Camp life/respawn knowledge remains visibility-limited. Lane XP sharing remains15percent last-hit reserve plus85percent nearby share; neutral recipients must be on the last-hitting unit team."
+  },
+  "belief": {
+    "grounded": {
+      "memory": [
+        "crossed",
+        "enemyX",
+        "enemyY",
+        "homeX",
+        "homeY",
+        "hurtTick",
+        "initialized",
+        "lane",
+        "laneHealUntil",
+        "laneUntil",
+        "moveTick",
+        "nextThink",
+        "portalBusy",
+        "previousHits",
+        "previousHp",
+        "restock",
+        "resumeTarget",
+        "retreat",
+        "scanOffset",
+        "spawnX",
+        "spawnY"
+      ],
+      "lifetime": "BASIC globals start at zero per episode and persist across decisions and respawns. The lifecycle binding explicitly resets initialization and retreat state after death.",
+      "uncertainty": "Unseen enemies are unknown. Visible targets may be masked. Only the draft roster, allied positions and visible opponents inform live choices."
+    },
+    "claims": {
+      "CampMechanism": {
+        "status": "requires_review",
+        "claim": "48 actual-host decision fixtures verify guarded pulling, handoff, timeout, returning immunity and cancellation. All40complete hosted own-source reconstructions match every command and state hash: 39games select neutrals; 32games start74pulls. These observations do not isolate the score effect of successful wave pulls from direct neutral farming or unrelated combat changes.",
+        "evidence": [
+          {
+            "artifact": "evidence/practice-comparison.json"
+          },
+          {
+            "artifact": "evidence/source-audit.json"
+          },
+          {
+            "artifact": "evidence/statistics.json"
+          }
+        ]
+      },
+      "CurrentScoreGain": {
+        "status": "supported",
+        "claim": "Fresh replay62 discovery,40matched seeds: parent mean2706.075, lane-only2353.150, lane-neutral3220.450. Combined delta+514.375,97.5%interval[22.725, 972.2]; incremental camp-vs-lane delta+867.300,95%interval[348.65, 1368.25]. Combined score pilot advance=True; no independent confirmation or deployment qualification.",
+        "evidence": [
+          {
+            "artifact": "evidence/statistics.json"
+          },
+          {
+            "artifact": "evidence/hosted-plan.json"
+          }
+        ]
+      }
+    }
+  },
+  "goal": {
+    "Win": {
+      "preference": "No independent victory incentive. Enemy-god destruction supplies500 own XP and avoids later elapsed-time cost. Keep the baseline structure targeting in this experiment; do not idle merely to lengthen games.",
+      "provenance": "authored"
+    },
+    "Grow": {
+      "preference": "Earn shared XP and last-hit gold, spend legal skill points, and convert gold into durable combat strength.",
+      "provenance": "authored"
+    },
+    "Survive": {
+      "preference": "Avoid repeated feeding, recover efficiently, and promptly return to productive play. Exploit legal defensive actions during root or silence; preserve productive basic attacks and item recovery.",
+      "provenance": "authored"
+    },
+    "Score": {
+      "preference": "Maximize expected individual floor(max(0, XP - 200 * elapsed minutes)). Lane occupancy, survival, team victory and game duration have value only through this score. Compare marginal expected XP against travel/death downtime and time penalty.",
+      "provenance": "authored"
+    },
+    "Practice": {
+      "preference": "Secure feasible last hits and shared XP, buy useful permanent power, and use safe portals for urgent defense or productive recovery.",
+      "provenance": "authored"
+    },
+    "survive_and_replenish": {
+      "preference": "Druid only: stay near the current lane while useful healing can safely recover a health-only retreat. Return for an affordable missing core item, absent healing or danger. Resume farming at60%HP/20%mana; hold at most12seconds.",
+      "provenance": "interpretation"
+    }
+  },
+  "skill": {
+    "portal_state": {
+      "operator": "neutralfarm_portal_state",
+      "parameters": {}
+    },
+    "draft": {
+      "operator": "neutralfarm_draft",
+      "parameters": {
+        "think_ticks": 6
+      }
+    },
+    "recovery_intent": {
+      "operator": "neutralfarm_recovery_intent",
+      "parameters": {}
+    },
+    "base_recovery_intent": {
+      "operator": "neutralfarm_base_recovery_intent",
+      "parameters": {}
+    },
+    "timing": {
+      "operator": "neutralfarm_timing",
+      "parameters": {}
+    },
+    "lifecycle": {
+      "operator": "neutralfarm_lifecycle",
+      "parameters": {
+        "buyback_seconds": 25,
+        "buyback_reserve": 200
+      }
+    },
+    "observe": {
+      "operator": "neutralfarm_observe",
+      "parameters": {
+        "scan_limit": 96
+      }
+    },
+    "economy": {
+      "operator": "neutralfarm_economy",
+      "parameters": {
+        "shop_gold": 500
+      }
+    },
+    "control_hero": {
+      "operator": "neutralfarm_control_hero",
+      "parameters": {}
+    },
+    "portal_context": {
+      "operator": "neutralfarm_portal_context",
+      "parameters": {}
+    },
+    "choose_lane": {
+      "operator": "neutralfarm_choose_lane",
+      "parameters": {}
+    },
+    "lane_recovery": {
+      "operator": "neutralfarm_lane_recovery",
+      "parameters": {}
+    },
+    "replenish": {
+      "operator": "neutralfarm_replenish",
+      "parameters": {}
+    },
+    "channel_town_scroll": {
+      "operator": "neutralfarm_channel_town_scroll",
+      "parameters": {}
+    },
+    "walk_to_base": {
+      "operator": "neutralfarm_walk_to_base",
+      "parameters": {}
+    },
+    "home_portal": {
+      "operator": "neutralfarm_home_portal",
+      "parameters": {}
+    },
+    "tower_safety": {
+      "operator": "neutralfarm_tower_safety",
+      "parameters": {
+        "tower_hp": 65
+      }
+    },
+    "neutral_farm": {
+      "operator": "neutralfarm_neutral_farm",
+      "parameters": {}
+    },
+    "xp_close": {
+      "operator": "neutralfarm_xp_close",
+      "parameters": {}
+    },
+    "combat": {
+      "operator": "neutralfarm_combat",
+      "parameters": {
+        "reset_recovery": 1
+      }
+    },
+    "advance": {
+      "operator": "neutralfarm_advance",
+      "parameters": {}
+    }
+  },
+  "strategy": [
+    {
+      "id": "R_portal_state",
+      "when": "always",
+      "skill": "portal_state",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_draft",
+      "when": "always",
+      "skill": "draft",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_recovery_intent",
+      "when": "low_health_in_field",
+      "skill": "recovery_intent",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_base_recovery_intent",
+      "when": "low_health_in_base",
+      "skill": "base_recovery_intent",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_timing",
+      "when": "always",
+      "skill": "timing",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_lifecycle",
+      "when": "always",
+      "skill": "lifecycle",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_observe",
+      "when": "active",
+      "skill": "observe",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_economy",
+      "when": "active",
+      "skill": "economy",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_control_hero",
+      "when": "active",
+      "skill": "control_hero",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_portal_context",
+      "when": "active",
+      "skill": "portal_context",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_choose_lane",
+      "when": "active",
+      "skill": "choose_lane",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_lane_recovery",
+      "when": "active_druid",
+      "skill": "lane_recovery",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_replenish",
+      "when": "in_base",
+      "skill": "replenish",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_channel_town_scroll",
+      "when": "town_scroll_ready",
+      "skill": "channel_town_scroll",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_walk_to_base",
+      "when": "recovery_remaining",
+      "skill": "walk_to_base",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_home_portal",
+      "when": "active",
+      "skill": "home_portal",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_tower_safety",
+      "when": "active",
+      "skill": "tower_safety",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_neutral_farm",
+      "when": "active",
+      "skill": "neutral_farm",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_xp_close",
+      "when": "active",
+      "skill": "xp_close",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_combat",
+      "when": "active",
+      "skill": "combat",
+      "for": [
+        "Score"
+      ]
+    },
+    {
+      "id": "R_advance",
+      "when": "active",
+      "skill": "advance",
+      "for": [
+        "Score"
+      ]
+    }
+  ],
+  "execution": {
+    "binding": "gota-bassy/lane-neutral-farming-2026-09-23-r62b",
+    "game_version": "2026.9.23.4",
+    "language": "BASIC"
+  },
+  "update": {
+    "revision": 2,
+    "parent": "a7bfae3297b269f66d6e1df5d55993a13d521e044f7ba0c2029428a9ea40c000",
+    "change": {
+      "origin": "Reviewed neutral-camp update and prior lane coaching with a fresh matched release62 cohort; score-only rule. Invalid Jordan411 compilation cohort preserved in full. Tested BASIC unchanged.",
+      "deployment_qualified": false
+    },
+    "needs_review": [
+      "belief/CampMechanism"
+    ],
+    "evidence": [
+      {
+        "artifact": "evidence/request.json"
+      },
+      {
+        "artifact": "evidence/cohort-amendment.json"
+      },
+      {
+        "artifact": "evidence/statistics.json"
+      },
+      {
+        "artifact": "evidence/practice-comparison.json"
+      },
+      {
+        "artifact": "evidence/native-comparison.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,982 @@
+{
+  "passed": true,
+  "paired_fixtures": 60,
+  "executions": 120,
+  "baseline": {
+    "passed": true,
+    "rows": [
+      {
+        "scenario": "crowded",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "crowded",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "crowded",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "crowded",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "crowded",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "crowded",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "respawn",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "respawn",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "respawn",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "respawn",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "respawn",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "respawn",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "blue_override",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "blue_override",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "blue_override",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "blue_override",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 1,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "blue_override",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "blue_override",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 1,
+        "selected": 2,
+        "changed": 0
+      }
+    ],
+    "max_instructions": 5819,
+    "max_work": 8957,
+    "scope": "60isolated actual host decision fixtures per source; allied positions manipulated to create commitment contexts. Not gameplay efficacy evidence."
+  },
+  "candidate": {
+    "passed": true,
+    "rows": [
+      {
+        "scenario": "crowded",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "crowded",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 2,
+        "changed": 1
+      },
+      {
+        "scenario": "crowded",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "crowded",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "crowded",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 0,
+        "changed": 1
+      },
+      {
+        "scenario": "crowded",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "near_home_unknown",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "balanced",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "low_hp",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "enemy_close",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "early",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 0
+      },
+      {
+        "scenario": "expired",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 0
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 1
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 1
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 1
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "already_chosen",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 1
+      },
+      {
+        "scenario": "respawn",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 1
+      },
+      {
+        "scenario": "respawn",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "respawn",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 1
+      },
+      {
+        "scenario": "respawn",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 0,
+        "changed": 1
+      },
+      {
+        "scenario": "respawn",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "respawn",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 2,
+        "changed": 1
+      },
+      {
+        "scenario": "blue_override",
+        "team": 0,
+        "initial": 0,
+        "current_effective": 0,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "blue_override",
+        "team": 0,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 2,
+        "changed": 1
+      },
+      {
+        "scenario": "blue_override",
+        "team": 0,
+        "initial": 2,
+        "current_effective": 2,
+        "selected": 1,
+        "changed": 1
+      },
+      {
+        "scenario": "blue_override",
+        "team": 1,
+        "initial": 0,
+        "current_effective": 1,
+        "selected": 0,
+        "changed": 1
+      },
+      {
+        "scenario": "blue_override",
+        "team": 1,
+        "initial": 1,
+        "current_effective": 1,
+        "selected": 0,
+        "changed": 1
+      },
+      {
+        "scenario": "blue_override",
+        "team": 1,
+        "initial": 2,
+        "current_effective": 1,
+        "selected": 0,
+        "changed": 1
+      }
+    ],
+    "max_instructions": 7323,
+    "max_work": 11149,
+    "scope": "60isolated actual host decision fixtures per source; allied positions manipulated to create commitment contexts. Not gameplay efficacy evidence."
+  },
+  "scope": "Actual host observations and decisions with constructed allied lane positions. Proves routing guard, expiry and persistence behavior; not natural match efficacy."
+}

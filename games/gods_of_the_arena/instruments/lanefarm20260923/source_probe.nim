@@ -1,0 +1,101 @@
+## Exact61 opening source audit; replay is only retrospective mechanism evidence.
+import std/[json, os, strutils, tables]
+import ../game
+include ../bots
+
+proc applyRecorded(world: World, action: ReplayAction): bool {.discardable.} =
+  ## Applies one recorded bot command without requiring its private VM.
+  case action.kind
+  of ActionWalkTo:
+    applyWalkTo(world, action.heroId, action.first, action.second, action.offset)
+  of ActionAttackMove:
+    applyAttackMove(
+      world, action.heroId, action.first, action.second, action.offset
+    )
+  of ActionAttackTarget:
+    applyAttackTarget(world, action.heroId, action.first)
+  of ActionBuyItem:
+    applyBuyItem(world, action.heroId, action.first)
+  of ActionBuyback:
+    applyBuyback(world, action.heroId)
+  of ActionUseItem:
+    applyUseItem(world, action.heroId, action.first)
+  of ActionUseItemAt:
+    applyUseItemAt(world, action.heroId, action.slot,
+      action.first, action.second, action.offset)
+  of ActionCastTarget:
+    applyCastTarget(world, action.heroId,
+      action.slot, action.first)
+  of ActionCastPoint:
+    applyCastPoint(world, action.heroId,
+      action.slot, action.first, action.second, action.offset)
+  of ActionLevelAbility:
+    applyLevelAbility(world, action.heroId, action.slot)
+  of ActionDraft:
+    applyDraft(world, action.heroId, action.first)
+  else:
+    raise newException(ReplayError, "replay action kind is invalid")
+
+proc actionsJson(actions:seq[ReplayAction]):JsonNode=
+  result=newJArray()
+  for a in actions:
+    result.add(%*{"tick":a.tick,"hero_id":a.heroId,"kind":a.kind,"slot":a.slot,"first":a.first,"second":a.second,"offset_raw":[int32(a.offset.x),int32(a.offset.y)]})
+
+doAssert game.run.replayMode
+let tape = game.run.replayData
+let subject = parseInt(getEnv("AUDIT_SLOT"))
+doAssert subject in 0..9
+loadBots(game.run, [BotGroup(path: getEnv("AUDIT_POLICY"), count: 10)])
+game.run.historyPlayback = false
+startReplayRecording(uint32(tape.hashes.len))
+var index, checked, maxInstructions, maxWork: int
+var firstChoice = newJNull()
+var decisionFrames = newJArray()
+let until = min(tape.hashes.len, 2400)
+while game.run.world.tick < until and not game.run.world.gameOver:
+  tickWorld(game.run, proc() =
+    var perSlot: array[10, seq[ReplayAction]]
+    while index < tape.actions.len and tape.actions[index].tick == uint32(game.run.world.tick):
+      let a = tape.actions[index]
+      perSlot[heroIndex(game.run.world, a.heroId)].add(a)
+      inc index
+    let wasDrafting = game.run.world.phase == Drafting
+    let draftSlot = game.run.world.heroIndex(game.run.world.draftHeroId())
+    for offset in 0..<10:
+      let slot = if wasDrafting: offset else: (game.run.world.heroTurnStart + offset) mod 10
+      if wasDrafting and slot != draftSlot:
+        doAssert perSlot[slot].len == 0
+        continue
+      if slot != subject:
+        for a in perSlot[slot]: applyRecorded(game.run.world, a)
+      else:
+        let first = game.run.recorder.data.actions.len
+        let vm = game.run.heroVms[slot]
+        let before = vm.decisions
+        runHeroScript(game.run, slot)
+        doAssert not vm.failed, vm.lastError
+        let actual = game.run.recorder.data.actions[first..<game.run.recorder.data.actions.len]
+        doAssert actual == perSlot[slot], "Command mismatch at " & $game.run.world.tick
+        checked += actual.len
+        maxInstructions = max(maxInstructions, int(vm.lastInstructions))
+        maxWork = max(maxWork, int(vm.lastWork))
+        if not wasDrafting and vm.decisions > before:
+          template v(key: string): int32 = vm.runtime.getGlobal(key)
+          if v("active") == 1 and firstChoice.kind == JNull:
+            var frame = newJObject()
+            frame["tick"] = %game.run.world.tick
+            for key in ["lane", "laneAssigned", "laneChanged", "laneStored", "laneKnown",
+                        "laneCount0", "laneCount1", "laneCount2", "laneDecisionStart",
+                        "laneCurrent", "laneChoice", "bestDistance", "threatDistance",
+                        "retreat", "goalX", "goalY"]:
+              frame[key] = %v(key)
+            if game.run.world.tick mod 24 == 0: decisionFrames.add(frame)
+            if v("laneAssigned") == 1: firstChoice = frame
+    if not wasDrafting:
+      game.run.world.heroTurnStart = (game.run.world.heroTurnStart + 1) mod 10
+  )
+  doAssert game.run.stateHash() == tape.hashes[game.run.world.tick - 1], "Hash mismatch at " & $game.run.world.tick
+echo $(%*{"valid": true, "slot": subject, "prefix_ticks": game.run.world.tick,
+  "matched_commands": checked, "max_instructions": maxInstructions, "max_work": maxWork,
+  "first_choice": firstChoice, "opening_frames": decisionFrames,
+  "scope": "All subject commands and full state hashes match through2400ticks; nine recorded policies used only for retrospective source reconstruction, not counterfactual score evidence."})

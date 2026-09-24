@@ -1,0 +1,188 @@
+{
+  "game": "2026.9.23.4",
+  "engine": "2c8db6ebe1dc785ce1eea87496505d1244ee4c44",
+  "versions": {
+    "baseline": "a0e6226e-b9e5-4c2d-8090-56d4365862dc",
+    "lane-only": "4d55ef4d-cfa2-485d-a048-a81c35b8acd3",
+    "lane-neutral": "3ddff6be-799c-4cb7-a592-6c73471b456e"
+  },
+  "source_hashes": {
+    "baseline": "b3f0c124c1f54c4faf857964d6ae42c43935bb82ecb81a384c9439d9a70e509e",
+    "lane-only": "222c7471cfc155410105c74dc220aa86b75a5d3112fce2ed2f7c9dd3437f3306",
+    "lane-neutral": "2fbd789b0d9b9f25df3c41b24c31be665ddc0a7e6a9482b79ad80d52dcabe83c"
+  },
+  "arms": [
+    {
+      "side": 0,
+      "ordinal": 0,
+      "slot": 0,
+      "roster": [
+        "a0e6226e-b9e5-4c2d-8090-56d4365862dc",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "388a19e8-a772-4a60-9b28-c102de7befa5",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "cell": "side0-seat0",
+      "games": 10
+    },
+    {
+      "side": 0,
+      "ordinal": 3,
+      "slot": 3,
+      "roster": [
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "a0e6226e-b9e5-4c2d-8090-56d4365862dc",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "388a19e8-a772-4a60-9b28-c102de7befa5",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "cell": "side0-seat3",
+      "games": 10
+    },
+    {
+      "side": 1,
+      "ordinal": 0,
+      "slot": 5,
+      "roster": [
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "388a19e8-a772-4a60-9b28-c102de7befa5",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36",
+        "a0e6226e-b9e5-4c2d-8090-56d4365862dc",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3"
+      ],
+      "cell": "side1-seat0",
+      "games": 10
+    },
+    {
+      "side": 1,
+      "ordinal": 3,
+      "slot": 8,
+      "roster": [
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "388a19e8-a772-4a60-9b28-c102de7befa5",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "a0e6226e-b9e5-4c2d-8090-56d4365862dc",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3"
+      ],
+      "cell": "side1-seat3",
+      "games": 10
+    }
+  ],
+  "pairs_per_candidate": 40,
+  "new_games": 120,
+  "field": {
+    "relh": {
+      "id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+      "policy": {
+        "id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+        "name": "relh-gods-of-the-arena"
+      },
+      "version": 169,
+      "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+      "label": "relh-gods-of-the-arena:v169"
+    },
+    "Alex Smith": {
+      "id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+      "policy": {
+        "id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+        "name": "gota-g004"
+      },
+      "version": 1,
+      "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+      "label": "gota-g004:v1"
+    },
+    "macromackie": {
+      "id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+      "policy": {
+        "id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+        "name": "macromackie-gota-neural"
+      },
+      "version": 2,
+      "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+      "label": "macromackie-gota-neural:v2"
+    },
+    "Scott Smith": {
+      "id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+      "policy": {
+        "id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+        "name": "gota-g003"
+      },
+      "version": 2,
+      "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+      "label": "gota-g003:v2"
+    },
+    "Andre von Auto": {
+      "id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+      "policy": {
+        "id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+        "name": "khors"
+      },
+      "version": 180,
+      "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+      "label": "khors:v180"
+    },
+    "richard": {
+      "id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+      "policy": {
+        "id": "cfced003-7272-4a82-9abf-3775963e9f06",
+        "name": "richard-gods-of-the-arena"
+      },
+      "version": 204,
+      "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+      "label": "richard-gods-of-the-arena:v204"
+    },
+    "BeWellBot": {
+      "id": "388a19e8-a772-4a60-9b28-c102de7befa5",
+      "policy": {
+        "id": "fbd851b6-7c90-49a2-a881-1ea992a9d39c",
+        "name": "BeWellBot-Arena"
+      },
+      "version": 45,
+      "player_id": "ply_2c897a35-6553-40e8-ad91-6900d9254646",
+      "label": "BeWellBot-Arena:v45"
+    },
+    "Andre von Houck": {
+      "id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+      "policy": {
+        "id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+        "name": "Polyworld GOTA base.bas"
+      },
+      "version": 2,
+      "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+      "label": "Polyworld GOTA base.bas:v2"
+    },
+    "daveey": {
+      "id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+      "policy": {
+        "id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+        "name": "arena-codex-draft-compatibility-20260921"
+      },
+      "version": 1,
+      "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+      "label": "arena-codex-draft-compatibility-20260921:v1"
+    }
+  },
+  "selection": "All40new baseline episodes from unique version history, ten per color/seat. Both treatments reuse exact same40baseline seeds, slots, resolved rosters and config; allotherpolicies respond. Never compare to replay61 outcomes as current-release controls.",
+  "rule": "Two directional contrasts versus baseline, plus paired lane-neutral versus lane-only. All games,tenVMs,replayhashes,XP,scores,seed/config/source identity must validate. Primary expectedindividualscore. Report stratified paired10000resample percentile95%intervals(seed9236102) and97.5%intervals for two baseline contrasts(Bonferroni). Advance a candidate only if mean>0 and97.5%lower>=0. No independent win/death/nonzero gate; all secondary slices descriptive. No deployment from directional pilot or unestablished verdict floor."
+}

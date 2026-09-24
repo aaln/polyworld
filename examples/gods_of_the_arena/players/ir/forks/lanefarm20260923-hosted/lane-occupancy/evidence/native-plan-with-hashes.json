@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "ordinal": 2,
+      "seed": 9230630
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "ordinal": 2,
+      "seed": 9230631
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "ordinal": 4,
+      "seed": 9230630
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "ordinal": 4,
+      "seed": 9230631
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "ordinal": 2,
+      "seed": 9230630
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "ordinal": 2,
+      "seed": 9230631
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "ordinal": 4,
+      "seed": 9230630
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "ordinal": 4,
+      "seed": 9230631
+    },
+    {
+      "name": "lane-occupancy",
+      "side": 0,
+      "ordinal": 2,
+      "seed": 9230630
+    },
+    {
+      "name": "lane-occupancy",
+      "side": 0,
+      "ordinal": 2,
+      "seed": 9230631
+    },
+    {
+      "name": "lane-occupancy",
+      "side": 0,
+      "ordinal": 4,
+      "seed": 9230630
+    },
+    {
+      "name": "lane-occupancy",
+      "side": 0,
+      "ordinal": 4,
+      "seed": 9230631
+    },
+    {
+      "name": "lane-occupancy",
+      "side": 1,
+      "ordinal": 2,
+      "seed": 9230630
+    },
+    {
+      "name": "lane-occupancy",
+      "side": 1,
+      "ordinal": 2,
+      "seed": 9230631
+    },
+    {
+      "name": "lane-occupancy",
+      "side": 1,
+      "ordinal": 4,
+      "seed": 9230630
+    },
+    {
+      "name": "lane-occupancy",
+      "side": 1,
+      "ordinal": 4,
+      "seed": 9230631
+    }
+  ],
+  "own_source_sha256": "b3f0c124c1f54c4faf857964d6ae42c43935bb82ecb81a384c9439d9a70e509e",
+  "candidate_source_sha256": "222c7471cfc155410105c74dc220aa86b75a5d3112fce2ed2f7c9dd3437f3306",
+  "upstream_source_sha256": "e1845070072fe7e61a5e866b0f1b09573fa37357c5b9cbe7c3268820b81b4c7f",
+  "scope": "Sixteen observations: eight preserved control-tactics native games and eight new lane-occupancy games, one subject and nine current reference VMs. Matched seed/roster/slot/config with nine responsive current reference VMs; runtime evidence, not league qualification."
+}

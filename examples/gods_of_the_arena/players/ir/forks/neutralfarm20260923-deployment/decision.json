@@ -1,0 +1,90 @@
+{
+  "at": "2026-09-24T01:29:07.719048+00:00",
+  "authorization_verbatim": "publish the better policy",
+  "scope": "Publish the best completed lane/camp pilot to both players, consistent with prior both-player publication scope.",
+  "source_sha256": "2fbd789b0d9b9f25df3c41b24c31be665ddc0a7e6a9482b79ad80d52dcabe83c",
+  "ir_sha256": "c50dd4153254e948039283f88fd112eee5471ec821644b72f4ef79a20b90afc0",
+  "engine": "2c8db6ebe1dc785ce1eea87496505d1244ee4c44",
+  "game_version": "2026.9.23.4",
+  "research_evidence": {
+    "n": 40,
+    "baseline": {
+      "n": 40,
+      "mean": 2706.075,
+      "nonzero_mean": 3280.090909090909,
+      "nonzero_rate": 0.825,
+      "productive_mean": 3483.9032258064517,
+      "productive_rate": 0.775,
+      "zero_games": 7,
+      "productive_games": 31,
+      "nonzero_wilson95": [
+        0.6805000966821229,
+        0.9125458625396408
+      ],
+      "productive_wilson95": [
+        0.6249690325768998,
+        0.8768390867645927
+      ],
+      "mean_contribution": {
+        "small_positive": 6.05,
+        "productive": 2700.025
+      }
+    },
+    "candidate": {
+      "n": 40,
+      "mean": 3220.45,
+      "nonzero_mean": 3303.025641025641,
+      "nonzero_rate": 0.975,
+      "productive_mean": 3459.0810810810813,
+      "productive_rate": 0.925,
+      "zero_games": 1,
+      "productive_games": 37,
+      "nonzero_wilson95": [
+        0.8711863103652591,
+        0.9955731684973186
+      ],
+      "productive_wilson95": [
+        0.8013576647568946,
+        0.9741639742254119
+      ],
+      "mean_contribution": {
+        "small_positive": 20.8,
+        "productive": 3199.65
+      }
+    },
+    "mean_delta": 514.375,
+    "delta95": [
+      91.7,
+      921.975
+    ],
+    "wins": 24,
+    "ties": 1,
+    "losses": 15,
+    "exact_sign_p": 0.19959086691960692,
+    "rescued_nonzero": 6,
+    "lost_nonzero": 0,
+    "mean_score_decomposition": {
+      "xp": 645.725,
+      "elapsed_time": -2.4479166666666665,
+      "zero_floor": -128.81944444444446,
+      "integer_rounding": -0.08263888888888889
+    },
+    "uncertainty": "Paired whole-game percentile bootstrap, stratified by frozen side/seat. Conditional means use different outcome-selected subsets. Hero/context slices descriptive; no multiplicity-adjusted efficacy claim.",
+    "delta975": [
+      22.725,
+      972.2
+    ]
+  },
+  "scientific_status": "Successful directional score pilot versus research parent b3f0c124; not independent incumbent confirmation or broad-field qualification. User explicitly requested publication after seeing that limitation.",
+  "user_authorized_pilot_deployment": true,
+  "blue_druid_caution": "Redseat3delta+659.5,blueseat3-664.3; pooledDruidflat. Diagnostic slices, not confirmed effects.",
+  "rollback_versions": {
+    "aaron": "0c766ec9-131f-45d1-a207-ad75aea9ccc5",
+    "coach": "d75ff766-e78f-4aa5-b656-55eb29248208"
+  },
+  "rollback_source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+  "rollback_plan": "On confirmed own-runtime invalidity or disqualification, immediately reselect the corresponding prior version. Investigate persistent score regression with fresh paired controls; do not churn on one league result.",
+  "submission_skill": "/Users/aaln/.codex/skills/submit/SKILL.md",
+  "visibility": "Opaque names; API has no privacy setting.",
+  "league_writes": "Both selected players only; no messages to others."
+}

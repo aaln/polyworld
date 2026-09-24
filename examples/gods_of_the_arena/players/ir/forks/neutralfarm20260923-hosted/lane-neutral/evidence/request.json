@@ -1,0 +1,39 @@
+{
+  "user": "Neutral camps are live in GotA. Three tiers, leaders, XP and gold. Pull into a creep wave; leash and respawn. Continue testing less-crowded lanes for individual score.",
+  "objective": "Expected individual floor(max(0, XP - 200 * elapsed minutes)); no team-win gate.",
+  "engine": "2c8db6ebe1dc785ce1eea87496505d1244ee4c44",
+  "mechanics": {
+    "neutral_kind": 6,
+    "neutral_faction": 2,
+    "hp_by_tier": [
+      100,
+      180,
+      300
+    ],
+    "xp_by_tier": [
+      20,
+      35,
+      50
+    ],
+    "gold_by_tier": [
+      10,
+      20,
+      30
+    ],
+    "leader_reward_multiplier": 2,
+    "leash_tiles": 12,
+    "respawn_seconds": 60,
+    "respawn_blocked_by_hero_radius": 10,
+    "xp_recipient_range": 6,
+    "xp_eligible_team": "last-hitting unit team",
+    "last_hit_reserved_percent": 15
+  },
+  "sources": [
+    "sim.nim:gainCreepRewards",
+    "sim.nim:updateCamps",
+    "bots.nim:campProc",
+    "players/puller.bas"
+  ],
+  "hypothesis": "Retain productive lane selection and harvest visible neutral downtime opportunities, optionally transferring neutral damage to nearby allied creeps. More rewards must outweigh pulling time, damage and missed lane/hero XP.",
+  "scope": "Fresh release62 discovery: four side/seat contexts, ten fresh baseline games each, forty matched lane-only counterfactuals and forty matched lane-plus-camp counterfactuals. Every request<=100 and all newgames journaled. No deployment from a directional pilot."
+}

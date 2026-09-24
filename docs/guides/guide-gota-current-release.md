@@ -20,11 +20,48 @@ accounting with a direct untracked POST. Preserve all frozen studies unchanged.
 The permanent 100,000-game daily allowance remains separate from this request cap.
 
 Read `games/gods_of_the_arena/current.json`. The active engine is
-**2026.9.23.3 / e42c4822f44e04726b09bb4ffe853152c7a18207**, published coworld
-`cow_9ff2e22a-c7e3-4500-ae49-62f42970d699`. Verify live source/configuration before
-new hosted work. Use the isolated exact engine and replay61 instruments in
-`games/gods_of_the_arena/instruments/control20260923/`; older engine checkouts and
-replay59/60 instruments are preserved for their original datasets.
+**2026.9.23.4 / 2c8db6ebe1dc785ce1eea87496505d1244ee4c44**, published coworld
+`cow_a472c872-2b97-4b81-9961-e171304e5d63`. Verify live source/configuration before
+new hosted work. Use the isolated exact engine and replay62 instruments in
+`games/gods_of_the_arena/instruments/neutralfarm20260923/`; older engine checkouts
+and replay59/60/61 instruments are preserved for their original datasets.
+
+Neutral camps add three tiers, leaders, XP and gold. Neutral XP is shared among
+nearby eligible heroes on the last-hitting unit's team; gold requires a hero
+last hit. Aggro can transfer into lane waves. Returning mobs are immune; chasing
+beyond the12-tile leash wastes time. Fully cleared camps respawn after60seconds,
+blocked by heroes within10tiles. Static camp geometry is public; unseen mob
+life and respawn state are not. Explicit spell casts, crowd control and the
+individual XP-minus-time objective remain in effect.
+
+The [lane occupancy pilot](../../games/gods_of_the_arena/experiments/2026-09-23-lane-occupancy.md)
+completed80matched replay61 comparisons:2493.63→2771.45 mean score (+11.14%),
+paired95%delta[113.68,461.75]. All20changed games were blue first-seat ranged
+heroes choosing an emptier allied lane; the other60command streams were equal.
+Creep XP increased while hero XP fell. This is release61 discovery evidence,
+not a release62 deployment qualification.
+
+The [release62 comparison](../../games/gods_of_the_arena/experiments/2026-09-23-lane-neutral-farming.md)
+now completes40matched seeds/120valid hosted games: parent2706.08, lane-only2353.15,
+lane-plus-neutral3220.45. The combined policy gains19.01%; adjusted97.5%paired
+delta[22.73,972.20] passes its score-only pilot rule. Lane-only fails. The first
+10baseline games failed Jordan411 compilation and remain archived; the separate
+valid cohort replaces Jordan with BeWellBot. All1200VMs, replay hashes, XP,
+scores and pair identities pass;40full source reconstructions match85822commands.
+Forty-eight host fixtures,12native games and the upstream camp suite also pass.
+
+The combined policy earns less neutral XP but more lane/hero XP. This supports
+selective camp behavior as a bundle, not maximizing camp clears. Druid's pooled
+mean is flat, masking red-seat3+659.50 and blue-seat3−664.30. Preserve that
+diagnostic weakness. Source2fbd789b and reviewedIRc50dd415 are saved and uploaded
+as research versions. The user then explicitly requested **“publish the better
+policy”**. Both players are now verified active competing champions on2fbd789b:
+Aaron `quartz-marten-62e4:v1`, Coach `linen-kestrel-62f5:v1`.
+[Deployment receipts and rollback](../../examples/gods_of_the_arena/players/ir/forks/neutralfarm20260923-deployment/README.md)
+preserve the prior29f6d7e6 versions. This is user-directed pilot publication;
+there is still no independent incumbent confirmation or established verdict-size
+floor. Keep the frozen evidence status. Next: monitor actual league runtime,
+investigate blue Druid and confirm on prospectively frozen fresh seeds/rosters.
 
 The [crowd-control release audit](../../games/gods_of_the_arena/release-audits/2026-09-23-crowd-control/README.md)
 verifies stun/silence/root effects and their lower damage. Silence blocks spells;
