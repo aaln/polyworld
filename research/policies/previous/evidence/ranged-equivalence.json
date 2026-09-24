@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "label": "baseline",
+      "side": 0,
+      "class": 1,
+      "source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+      "replay_sha256": "900d26e0c198a7b59c617c80835c9b5e96e9b0f298dfcd1e3f47aba65307ab52",
+      "hashes": {
+        "canonical_commands_sha1": "EA7A66BED7DC3D17AC8557761A89EC9321CE6D20",
+        "actions": 18621,
+        "ticks": 23718
+      },
+      "valid": true
+    },
+    {
+      "label": "baseline",
+      "side": 1,
+      "class": 6,
+      "source_sha256": "c02f8cb601c1d8d0576850facbc10fb0e8d75f170e1565a0da1bdff08372b163",
+      "replay_sha256": "900d26e0c198a7b59c617c80835c9b5e96e9b0f298dfcd1e3f47aba65307ab52",
+      "hashes": {
+        "canonical_commands_sha1": "EA7A66BED7DC3D17AC8557761A89EC9321CE6D20",
+        "actions": 18621,
+        "ticks": 23718
+      },
+      "valid": true
+    },
+    {
+      "label": "druid-lane",
+      "side": 0,
+      "class": 1,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "replay_sha256": "c62d0324c596a738e30d1b5c5a0ff344cca665f1febeead80e3f033f3c545902",
+      "hashes": {
+        "canonical_commands_sha1": "EA7A66BED7DC3D17AC8557761A89EC9321CE6D20",
+        "actions": 18621,
+        "ticks": 23718
+      },
+      "valid": true
+    },
+    {
+      "label": "druid-lane",
+      "side": 1,
+      "class": 6,
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "replay_sha256": "9ef925f5d5c69dcd5681b2c9a1937550d3d37d81614f31450c8190fb7be89fae",
+      "hashes": {
+        "canonical_commands_sha1": "EA7A66BED7DC3D17AC8557761A89EC9321CE6D20",
+        "actions": 18621,
+        "ticks": 23718
+      },
+      "valid": true
+    }
+  ],
+  "scope": "Ranger and Crossbowman actual commands and complete world terminal state equal under both source variants; four full local games, normal draft."
+}

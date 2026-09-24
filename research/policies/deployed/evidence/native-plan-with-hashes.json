@@ -1,0 +1,83 @@
+{
+  "cases": [
+    {
+      "name": "baseline",
+      "side": 0,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "baseline",
+      "side": 0,
+      "ordinal": 3,
+      "seed": 9230620
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "baseline",
+      "side": 1,
+      "ordinal": 3,
+      "seed": 9230620
+    },
+    {
+      "name": "lane-only",
+      "side": 0,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "lane-only",
+      "side": 0,
+      "ordinal": 3,
+      "seed": 9230620
+    },
+    {
+      "name": "lane-only",
+      "side": 1,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "lane-only",
+      "side": 1,
+      "ordinal": 3,
+      "seed": 9230620
+    },
+    {
+      "name": "lane-neutral",
+      "side": 0,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "lane-neutral",
+      "side": 0,
+      "ordinal": 3,
+      "seed": 9230620
+    },
+    {
+      "name": "lane-neutral",
+      "side": 1,
+      "ordinal": 0,
+      "seed": 9230620
+    },
+    {
+      "name": "lane-neutral",
+      "side": 1,
+      "ordinal": 3,
+      "seed": 9230620
+    }
+  ],
+  "source_hashes": {
+    "baseline": "b3f0c124c1f54c4faf857964d6ae42c43935bb82ecb81a384c9439d9a70e509e",
+    "lane-only": "222c7471cfc155410105c74dc220aa86b75a5d3112fce2ed2f7c9dd3437f3306",
+    "lane-neutral": "2fbd789b0d9b9f25df3c41b24c31be665ddc0a7e6a9482b79ad80d52dcabe83c"
+  },
+  "upstream_source_sha256": "5dbbd273ca48953649e8fc772644fd81242ecb3454e482154665ece13adec904",
+  "scope": "Twelve fresh replay62 native games; baseline, lane-only, lane-plus-neutral; one subject, nine responsive current reference VMs; two sides and two seats, one matched seed. Runtime/mechanism screen only."
+}

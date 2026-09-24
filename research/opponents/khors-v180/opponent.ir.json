@@ -1,0 +1,330 @@
+{
+  "schema": "gota-opponent-descriptive-ir/3",
+  "id": "khors_v180_current62_observations_20260924",
+  "situation": {
+    "identity": {
+      "name": "khors:v180",
+      "owner": "Andre von Auto",
+      "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+      "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+      "source_sha256_from_specs": "0c75859a5583f0bdae6d4bc68045ab73bb8d22de136ce24d91e2dd9cbe5eb8d2",
+      "source_available": false
+    },
+    "game": {
+      "version": "2026.9.23.4",
+      "engine_commit": "2c8db6ebe1dc785ce1eea87496505d1244ee4c44",
+      "replay": 62
+    },
+    "authority": {
+      "features": "Each actor own legal predecision visibility-filtered public objects, exported within18tiles, plus own public stats. Not the opponent source or internal state.",
+      "labels": "Recorded submitted commands; accepted effects/XP/score separately reconstructed from full replay truth.",
+      "clock": "World tick at frozen decision callback; only explicit attack commands enter conditional choice denominators.",
+      "limits": "Farther-than18tile targets are unknown in this export; action arguments do not prove acceptance. Returning neutrals remain explicit exceptions."
+    },
+    "predicates": {
+      "hero_and_creep_in_basic_reach": "Both visible alive enemy categories within nominal hero basic range+0.25tile",
+      "neutral_downtime": "Visible nonreturning neutral<=10tiles; no visible enemy hero<=10 and no enemy lane creep<=6",
+      "estimated_creep_finish": "Visible alive creep in nominal reach and HP<=public basic damage",
+      "structure_opportunity": "Exposed alive enemy structure/god visible<=9tiles"
+    },
+    "coverage": {
+      "episodes_scanned": 36,
+      "khors_appearances": 28,
+      "distinct_whole_game_command_streams": 28,
+      "all_vm_clean_khors_games": 5,
+      "classes": {
+        "Crossbowman": 8,
+        "DeathKnight": 5,
+        "DemonHunter": 1,
+        "DruidWarden": 6,
+        "Lich": 2,
+        "Ranger": 3,
+        "VanguardKnight": 2,
+        "Warlock": 1
+      },
+      "no_new_hosted_games_for_model": true
+    }
+  },
+  "belief": {
+    "claims": [
+      {
+        "id": "K180_HERO_OVER_CREEP",
+        "claim": "Strong hero-target preference when both a hero and a lane creep are within nominal basic range (+0.25tile measurement tolerance).",
+        "status": "observed_conditional_tendency",
+        "evidence": {
+          "opportunities": 816,
+          "choices": 801,
+          "fraction": 0.9816176470588235,
+          "eligible_episodes": 27,
+          "choice_episodes": 27,
+          "episode_cluster_bootstrap95": [
+            0.9679715302491103,
+            0.9907692307692307
+          ],
+          "unit": "Recorded explicit attack command, conditional on listed exported public affordances; not every game tick."
+        },
+        "clean_game_evidence": {
+          "opportunities": 78,
+          "choices": 75,
+          "fraction": 0.9615384615384616,
+          "eligible_episodes": 4,
+          "choice_episodes": 4,
+          "episode_cluster_bootstrap95": [
+            0.88,
+            1.0
+          ],
+          "unit": "Recorded explicit attack command, conditional on listed exported public affordances; not every game tick."
+        },
+        "alternatives": [
+          "Nearest/lowest-HP hero scoring",
+          "Current-target persistence",
+          "Hero-specific target logic",
+          "Opportunity selection differs from deliberate pursuit"
+        ],
+        "source": "evidence/actor-rows.json",
+        "priority_identified": false,
+        "state": {
+          "required_history": "unknown",
+          "reset": "unknown"
+        },
+        "proxy_usable": false
+      },
+      {
+        "id": "K180_NEUTRAL_DOWNTIME",
+        "claim": "Usually attacks a visible neutral within10tiles when no enemy hero is within10tiles and no enemy lane creep within6tiles.",
+        "status": "observed_conditional_tendency",
+        "evidence": {
+          "opportunities": 1307,
+          "choices": 1243,
+          "fraction": 0.9510328997704667,
+          "eligible_episodes": 28,
+          "choice_episodes": 28,
+          "episode_cluster_bootstrap95": [
+            0.9208542713567839,
+            0.9680275454992622
+          ],
+          "unit": "Recorded explicit attack command, conditional on listed exported public affordances; not every game tick."
+        },
+        "clean_game_evidence": {
+          "opportunities": 305,
+          "choices": 296,
+          "fraction": 0.9704918032786886,
+          "eligible_episodes": 5,
+          "choice_episodes": 5,
+          "episode_cluster_bootstrap95": [
+            0.8596491228070176,
+            0.9864864864864865
+          ],
+          "unit": "Recorded explicit attack command, conditional on listed exported public affordances; not every game tick."
+        },
+        "alternatives": [
+          "Generic nearest-target selection",
+          "Explicit downtime farming",
+          "Lane route intersects camps",
+          "Farm-health guard or existing aggro"
+        ],
+        "source": "evidence/actor-rows.json",
+        "priority_identified": false,
+        "state": {
+          "required_history": "unknown",
+          "reset": "unknown"
+        },
+        "proxy_usable": false
+      },
+      {
+        "id": "K180_LAST_HIT",
+        "claim": "Often selects a lane creep whose observed HP fits one nominal basic attack while it is in range. This is an estimated last-hit opportunity, not guaranteed damage or last-hit credit.",
+        "status": "observed_conditional_tendency",
+        "evidence": {
+          "opportunities": 3571,
+          "choices": 2685,
+          "fraction": 0.7518902268272193,
+          "eligible_episodes": 28,
+          "choice_episodes": 28,
+          "episode_cluster_bootstrap95": [
+            0.6807928913192071,
+            0.808736426456071
+          ],
+          "unit": "Recorded explicit attack command, conditional on listed exported public affordances; not every game tick."
+        },
+        "clean_game_evidence": {
+          "opportunities": 454,
+          "choices": 357,
+          "fraction": 0.7863436123348018,
+          "eligible_episodes": 5,
+          "choice_episodes": 5,
+          "episode_cluster_bootstrap95": [
+            0.7763371150729336,
+            0.8188405797101449
+          ],
+          "unit": "Recorded explicit attack command, conditional on listed exported public affordances; not every game tick."
+        },
+        "alternatives": [
+          "Lowest absolute HP",
+          "Explicit kill threshold",
+          "Attack cooldown timing",
+          "Competing hero priority"
+        ],
+        "source": "evidence/actor-rows.json",
+        "priority_identified": false,
+        "state": {
+          "required_history": "unknown",
+          "reset": "unknown"
+        },
+        "proxy_usable": false
+      },
+      {
+        "id": "K180_BUILDINGS",
+        "status": "observed_rejection_of_universal_claim",
+        "claim": "1125/9914 explicit attack commands address buildings/gods; never attacks buildings is false for v180. This does not identify which HP threshold or priority causes a siege.",
+        "evidence": [
+          "evidence/summary.json",
+          "evidence/actor-rows.json"
+        ],
+        "proxy_usable": false
+      },
+      {
+        "id": "K180_WEAK_MELEE",
+        "status": "observed_context_limited",
+        "claim": "Neutral farming is not sufficient for weak melee productivity: two Vanguard games score0 and five DeathKnight games average163.8 despite neutral kills. These tiny, confounded class slices are not causal kit comparisons.",
+        "evidence": [
+          "evidence/summary.json"
+        ],
+        "proxy_usable": false
+      },
+      {
+        "id": "K180_RESOURCES",
+        "status": "observed_effects",
+        "claim": "250health potions and151portal scrolls consumed across28appearances. Mean gold spent1885.36 includes414.29buybackgold; high spending is not all healing. Exact shopping trigger and portal direction rule remain unidentified.",
+        "evidence": [
+          "evidence/summary.json",
+          "evidence/actor-rows.json"
+        ],
+        "proxy_usable": false
+      },
+      {
+        "id": "K180_NEUTRAL_CREDIT",
+        "status": "observed_counterexample_to_kill_equals_xp",
+        "claim": "One Crossbowman game has11neutral kills but only30neutral XP. Killing a neutral does not establish that the killer received its full reward. Current mechanics require alive/in-range eligibility and shareXP. Individual missing receipts need event-level distance/alive checks.",
+        "evidence": [
+          {
+            "episode": "ereq_307914d5-94f6-4db1-bf58-2d2d67bf2166",
+            "slot": 0,
+            "artifact": "evidence/actor-rows.json"
+          }
+        ],
+        "proxy_usable": false
+      }
+    ],
+    "global_limits": [
+      "Only5khors games have all ten VMs clean; other-player failures change opportunity distributions. Khors itself is clean in all28.",
+      "No heldout forecasting test or mechanistic intervention. Thousands of commands are clustered within28games.",
+      "Observed current62 behavior must not overwrite v114/v179 historical IR.",
+      "No calibration claim for latent goals or exact thresholds. No JEV used."
+    ]
+  },
+  "goal": {
+    "individual_income": {
+      "status": "analyst_hypothesis",
+      "description": "Repeated hero kills and creep/neutral income consistent with XP accumulation; internal objective weights unknown."
+    },
+    "survival_and_return": {
+      "status": "analyst_hypothesis",
+      "description": "Consumables, portals and buybacks maintain presence; optimal thresholds not identified."
+    }
+  },
+  "skill": {
+    "hero_focus": {
+      "initiation": "Observed attack choices when heroes and creeps coexist in reach",
+      "operator": "prefer_hero_target_motif",
+      "termination": "Unknown; target changes retained in evidence",
+      "channels": [
+        "attack intent",
+        "spells and movement may coexist"
+      ]
+    },
+    "creep_finish": {
+      "initiation": "Estimated basic-finish creep available",
+      "operator": "select_finishable_creep_motif",
+      "termination": "Target dies, changes or exits visibility; controller rule unidentified"
+    },
+    "neutral_income": {
+      "initiation": "Observed downtime predicate",
+      "operator": "direct_neutral_attack_motif",
+      "termination": "New units, threat, returning mob or camp death; exact precedence unknown"
+    },
+    "resource_cycle": {
+      "initiation": "Accepted item/portal/buyback events",
+      "operator": "replenish_and_return_motif",
+      "termination": "Observed portal completion/interruption or next field action; trigger thresholds unknown"
+    }
+  },
+  "strategy": [
+    {
+      "id": "K180_S_HERO",
+      "when": "hero_and_creep_in_basic_reach",
+      "skill": "hero_focus",
+      "for": [
+        "individual_income"
+      ],
+      "status": "conditional_preference_observed",
+      "claim": "K180_HERO_OVER_CREEP"
+    },
+    {
+      "id": "K180_S_CREEP",
+      "when": "estimated_creep_finish",
+      "skill": "creep_finish",
+      "for": [
+        "individual_income"
+      ],
+      "status": "conditional_preference_observed",
+      "claim": "K180_LAST_HIT"
+    },
+    {
+      "id": "K180_S_NEUTRAL",
+      "when": "neutral_downtime",
+      "skill": "neutral_income",
+      "for": [
+        "individual_income"
+      ],
+      "status": "conditional_preference_observed",
+      "claim": "K180_NEUTRAL_DOWNTIME"
+    },
+    {
+      "id": "K180_S_RESOURCE",
+      "when": "Unknown resource thresholds",
+      "skill": "resource_cycle",
+      "for": [
+        "survival_and_return"
+      ],
+      "status": "effects_observed_trigger_unidentified",
+      "claim": "K180_RESOURCES"
+    }
+  ],
+  "execution": {
+    "kind": "descriptive_non_executable",
+    "compiler_eligible": false,
+    "proxy_usable": false,
+    "forecast_validated": false,
+    "controller_order_identified": false,
+    "latent_memory_identified": false,
+    "may_supply_hidden_features_to_live_policy": false
+  },
+  "update": {
+    "revision": 1,
+    "parent": "Separate version-specific replacement for using khors114/v179 assumptions onv180; old models unchanged.",
+    "evidence": [
+      "evidence/plan.json",
+      "evidence/summary.json",
+      "evidence/actor-rows.json",
+      "evidence/artifact-index.json"
+    ],
+    "next_tests": [
+      "Actual responsive neutral-income trial with both carry and weak-hero draft contexts",
+      "Matched hero-versus-creep target priority with kill likelihood, travel and enemy control guards",
+      "Verify XP eligibility radius and alive state on neutral kills with little XP",
+      "Hold geometry/history fixed to discriminate nearest-target scoring from explicit priority",
+      "Chronological holdout needed before any predictive or executable proxy claim"
+    ]
+  }
+}

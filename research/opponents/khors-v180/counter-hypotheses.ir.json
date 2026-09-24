@@ -1,0 +1,42 @@
+{
+  "schema": "gota-counter-hypotheses/1",
+  "opponent": "opponent.ir.json",
+  "goal": "Expected individual XP-minus-time score",
+  "hypotheses": [
+    {
+      "id": "OWN_WEAK_NEUTRAL",
+      "status": "tested_did_not_pass_score_gate",
+      "change": "Direct nearby neutral combat for weak heroes, level-tier/HP/nearby-wave guards, no speculative weak-hero pulls",
+      "source_sha256": "c2321ead3ea8c3cab828c0c128662db355cebf67fde440711a50321c00ac0a7a",
+      "metric": "Paired individual score plus actual neutral kills and XP",
+      "falsifier": "More camp kills but lower score or no neutral XP increase",
+      "experiment": "../../hosted.py",
+      "result": {
+        "paired_games": 60,
+        "mean_score_delta": -129.45,
+        "adjusted_975_interval": [
+          -318.25,
+          41.65
+        ],
+        "baseline_neutral_kills": 6.866666666666666,
+        "candidate_neutral_kills": 8.516666666666667,
+        "interpretation": "More neutral kills did not improve expected score. Class-specific findings are exploratory; no rollout."
+      },
+      "results": "../../RESULTS.md"
+    },
+    {
+      "id": "OWN_HERO_FINISH_PRIORITY",
+      "status": "proposed_not_tested",
+      "change": "Prefer reachable, plausible hero finishes while retaining imminent creep last hits; do not copy unconditional aggression",
+      "metric": "Hero XP gained minus lane/neutral XP and extra downtime",
+      "falsifier": "More pursuit/deaths or less total score"
+    },
+    {
+      "id": "OWN_CREDIT_RADIUS",
+      "status": "proposed_not_tested",
+      "change": "Keep weak hero alive within6tiles when a pulled neutral dies; measure recipients rather than kill counters",
+      "metric": "Neutral XP per kill/opportunity and net score",
+      "falsifier": "Neutral kills without own receipts; travel/survival cost exceeds income"
+    }
+  ]
+}

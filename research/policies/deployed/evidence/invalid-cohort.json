@@ -1,0 +1,2376 @@
+{
+  "request": "xreq_0ce9a734-3e37-4158-abaa-8ecb9c367fc2",
+  "episodes": [
+    {
+      "id": "ereq_d7a5dea2-a0c0-42aa-a76a-ace673c7fa62",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 0,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "b0375dff-4f60-41db-adac-346513f46868",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.513690Z",
+      "dispatched_at": "2026-09-24T00:44:16.680424Z",
+      "running_at": "2026-09-24T00:44:43.583987Z",
+      "completed_at": "2026-09-24T00:44:50.895027Z",
+      "cost_usd": 0.004951,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    },
+    {
+      "id": "ereq_16b30139-1fdb-447b-b8af-629b068ca4ef",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 1,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "bbc33716-5d40-4cf0-a073-ebf113cecbcb",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.514450Z",
+      "dispatched_at": "2026-09-24T00:44:25.459793Z",
+      "running_at": "2026-09-24T00:44:51.416914Z",
+      "completed_at": "2026-09-24T00:44:58.333909Z",
+      "cost_usd": 0.005579,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    },
+    {
+      "id": "ereq_8d5f8412-a351-4cdb-9778-f9dfa8bd1c16",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 2,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "6895fd61-fc22-4f50-ae58-b004c03b73ca",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.515132Z",
+      "dispatched_at": "2026-09-24T00:44:15.617788Z",
+      "running_at": "2026-09-24T00:44:43.598737Z",
+      "completed_at": "2026-09-24T00:44:50.806628Z",
+      "cost_usd": 0.005972,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    },
+    {
+      "id": "ereq_92f2e697-896f-409d-b039-44c2c8444f3d",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 3,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "3f6e1436-bd46-424a-b413-aa031d649cb0",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.515803Z",
+      "dispatched_at": "2026-09-24T00:44:25.459793Z",
+      "running_at": "2026-09-24T00:45:06.320873Z",
+      "completed_at": "2026-09-24T00:45:11.890619Z",
+      "cost_usd": 0.004431,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    },
+    {
+      "id": "ereq_2570cf60-a557-4078-8b1a-95ab36fb3865",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 4,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "4769d5f5-d38b-4b19-828a-07bbec23a5d5",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.516468Z",
+      "dispatched_at": "2026-09-24T00:44:36.006416Z",
+      "running_at": null,
+      "completed_at": "2026-09-24T00:44:50.892399Z",
+      "cost_usd": 0.001176,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    },
+    {
+      "id": "ereq_19315fb7-175e-49d8-94a9-c3a6a3ea7c92",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 5,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "fcf49de4-ad63-44c0-ae83-464c3d62125f",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.517126Z",
+      "dispatched_at": "2026-09-24T00:44:36.006416Z",
+      "running_at": null,
+      "completed_at": "2026-09-24T00:44:50.864880Z",
+      "cost_usd": 0.000762,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    },
+    {
+      "id": "ereq_c270d75f-9467-46e0-b881-f635e30bfe69",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 6,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "f3ae8540-fe91-42d7-9a33-779ce37326ac",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.518247Z",
+      "dispatched_at": "2026-09-24T00:44:36.006416Z",
+      "running_at": "2026-09-24T00:44:51.446954Z",
+      "completed_at": "2026-09-24T00:44:52.514432Z",
+      "cost_usd": 0.001149,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    },
+    {
+      "id": "ereq_6328dafe-5d5b-4346-8af6-16ef3683bd96",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 7,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "bd288011-6711-4ae8-a2f6-5c389390783b",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.518983Z",
+      "dispatched_at": "2026-09-24T00:44:36.006416Z",
+      "running_at": "2026-09-24T00:44:50.442125Z",
+      "completed_at": "2026-09-24T00:44:51.802368Z",
+      "cost_usd": 0.000761,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    },
+    {
+      "id": "ereq_d2c3f27a-072a-4f9f-ad46-0690b3df77ca",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 8,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "5b69b030-e727-475a-99aa-d3317fd318d0",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.519675Z",
+      "dispatched_at": "2026-09-24T00:44:36.006416Z",
+      "running_at": null,
+      "completed_at": "2026-09-24T00:44:51.954746Z",
+      "cost_usd": 0.001514,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    },
+    {
+      "id": "ereq_34061717-1d73-48ac-9784-d81410aa4cb3",
+      "requester_user_id": "h0835grji1zfy5wakd4i56kn",
+      "round_id": null,
+      "coworld_id": "cow_a472c872-2b97-4b81-9961-e171304e5d63",
+      "coworld_name": "Gods of the Arena",
+      "coworld_version": "2026.9.23.4",
+      "variant_name": "Competition",
+      "max_steps": null,
+      "job_index": 9,
+      "status": "failed",
+      "policy_version_ids": [
+        "62c0f338-af71-49ae-b4f8-0d41415de253",
+        "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "a15665be-4edf-4857-b23b-2888b4b49868",
+        "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "b975deec-7463-4ace-a2b3-5736f47c6e36"
+      ],
+      "participants": [
+        {
+          "position": 0,
+          "kind": "policy",
+          "policy_version_id": "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "policy_id": "4645a271-662b-4652-8c0c-3e5cd9386d28",
+          "policy_name": "brume-linnet-62e4",
+          "version": 1,
+          "player_id": "ply_630a768f-d623-44b2-80fa-36968d6fa75a",
+          "player_name": "Aaron",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 1,
+          "kind": "policy",
+          "policy_version_id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "policy_id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "policy_name": "relh-gods-of-the-arena",
+          "version": 169,
+          "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+          "player_name": "relh",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 2,
+          "kind": "policy",
+          "policy_version_id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "policy_id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "policy_name": "gota-g004",
+          "version": 1,
+          "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+          "player_name": "Alex Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 3,
+          "kind": "policy",
+          "policy_version_id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "policy_id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "policy_name": "macromackie-gota-neural",
+          "version": 2,
+          "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+          "player_name": "macromackie",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 4,
+          "kind": "policy",
+          "policy_version_id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "policy_id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "policy_name": "gota-g003",
+          "version": 2,
+          "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+          "player_name": "Scott Smith",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 5,
+          "kind": "policy",
+          "policy_version_id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "policy_id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "policy_name": "khors",
+          "version": 180,
+          "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+          "player_name": "Andre von Auto",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 6,
+          "kind": "policy",
+          "policy_version_id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "policy_id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "policy_name": "richard-gods-of-the-arena",
+          "version": 204,
+          "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+          "player_name": "richard",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 7,
+          "kind": "policy",
+          "policy_version_id": "a15665be-4edf-4857-b23b-2888b4b49868",
+          "policy_id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "policy_name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "version": 411,
+          "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+          "player_name": "Jordan",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 8,
+          "kind": "policy",
+          "policy_version_id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "policy_id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "policy_name": "Polyworld GOTA base.bas",
+          "version": 2,
+          "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+          "player_name": "Andre von Houck",
+          "is_filler": false,
+          "is_seed": false
+        },
+        {
+          "position": 9,
+          "kind": "policy",
+          "policy_version_id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "policy_id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "policy_name": "arena-codex-draft-compatibility-20260921",
+          "version": 1,
+          "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+          "player_name": "daveey",
+          "is_filler": false,
+          "is_seed": false
+        }
+      ],
+      "job_id": "dcfc84eb-0c19-4a9d-a22c-9b2f4be36de8",
+      "episode_id": null,
+      "replay_url": null,
+      "live_url": null,
+      "error_type": "player_error",
+      "error": "BASIC compilation failed for player slot 7",
+      "failed_policy_index": 7,
+      "failed_agent_index": 7,
+      "scores": [],
+      "participant_scores": [],
+      "created_at": "2026-09-24T00:43:41.520761Z",
+      "dispatched_at": "2026-09-24T00:44:36.006416Z",
+      "running_at": null,
+      "completed_at": "2026-09-24T00:44:51.781966Z",
+      "cost_usd": 0.001247,
+      "game_config": {
+        "seed": 2026,
+        "players": [
+          {
+            "name": "Player 1"
+          },
+          {
+            "name": "Player 2"
+          },
+          {
+            "name": "Player 3"
+          },
+          {
+            "name": "Player 4"
+          },
+          {
+            "name": "Player 5"
+          },
+          {
+            "name": "Player 6"
+          },
+          {
+            "name": "Player 7"
+          },
+          {
+            "name": "Player 8"
+          },
+          {
+            "name": "Player 9"
+          },
+          {
+            "name": "Player 10"
+          }
+        ],
+        "max_ticks": 28800,
+        "map_preset": {
+          "seed": 54,
+          "map_size": 116,
+          "high_size": 511,
+          "lake_width": 80,
+          "road_width": 52.7,
+          "camp_radius": 36,
+          "castle_size": 295,
+          "lake_wobble": 30,
+          "road_wobble": 73,
+          "stem_length": 50,
+          "camp_scatter": 35,
+          "jungle_roads": 32,
+          "lake_crossings": 4,
+          "camps_touch_roads": true
+        },
+        "spawn_interval_ticks": 480
+      },
+      "llm_spend_limit_rejections": null
+    }
+  ],
+  "plan": {
+    "game": "2026.9.23.4",
+    "engine": "2c8db6ebe1dc785ce1eea87496505d1244ee4c44",
+    "versions": {
+      "baseline": "62c0f338-af71-49ae-b4f8-0d41415de253",
+      "lane-only": "4d55ef4d-cfa2-485d-a048-a81c35b8acd3",
+      "lane-neutral": "3ddff6be-799c-4cb7-a592-6c73471b456e"
+    },
+    "source_hashes": {
+      "baseline": "b3f0c124c1f54c4faf857964d6ae42c43935bb82ecb81a384c9439d9a70e509e",
+      "lane-only": "222c7471cfc155410105c74dc220aa86b75a5d3112fce2ed2f7c9dd3437f3306",
+      "lane-neutral": "2fbd789b0d9b9f25df3c41b24c31be665ddc0a7e6a9482b79ad80d52dcabe83c"
+    },
+    "arms": [
+      {
+        "side": 0,
+        "ordinal": 0,
+        "slot": 0,
+        "roster": [
+          "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "a15665be-4edf-4857-b23b-2888b4b49868",
+          "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "b975deec-7463-4ace-a2b3-5736f47c6e36"
+        ],
+        "cell": "side0-seat0",
+        "games": 10
+      },
+      {
+        "side": 0,
+        "ordinal": 3,
+        "slot": 3,
+        "roster": [
+          "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+          "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "a15665be-4edf-4857-b23b-2888b4b49868",
+          "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "b975deec-7463-4ace-a2b3-5736f47c6e36"
+        ],
+        "cell": "side0-seat3",
+        "games": 10
+      },
+      {
+        "side": 1,
+        "ordinal": 0,
+        "slot": 5,
+        "roster": [
+          "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "a15665be-4edf-4857-b23b-2888b4b49868",
+          "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "8cea4626-a0f1-4dd0-b066-58e6bd194ad3"
+        ],
+        "cell": "side1-seat0",
+        "games": 10
+      },
+      {
+        "side": 1,
+        "ordinal": 3,
+        "slot": 8,
+        "roster": [
+          "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+          "25e89eeb-3449-45dd-afbf-c61020891a49",
+          "a15665be-4edf-4857-b23b-2888b4b49868",
+          "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+          "b975deec-7463-4ace-a2b3-5736f47c6e36",
+          "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+          "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+          "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+          "62c0f338-af71-49ae-b4f8-0d41415de253",
+          "8cea4626-a0f1-4dd0-b066-58e6bd194ad3"
+        ],
+        "cell": "side1-seat3",
+        "games": 10
+      }
+    ],
+    "pairs_per_candidate": 40,
+    "new_games": 120,
+    "field": {
+      "relh": {
+        "id": "0f0c8e5a-a004-4c34-88ba-56bd2cca0dc1",
+        "policy": {
+          "id": "8d33a211-f297-4de1-bdcc-5a3aaba6c17e",
+          "name": "relh-gods-of-the-arena"
+        },
+        "version": 169,
+        "player_id": "ply_18302115-9fc9-482d-a2f3-f4c592bf9e57",
+        "label": "relh-gods-of-the-arena:v169"
+      },
+      "Alex Smith": {
+        "id": "7f6dcdc0-ad3b-41a1-87f0-0306fb315ae4",
+        "policy": {
+          "id": "d1012992-6b7a-4feb-9897-8a5c08dc8a10",
+          "name": "gota-g004"
+        },
+        "version": 1,
+        "player_id": "ply_4e9a2db0-dbc2-4283-b4cc-3ce79e9f8d40",
+        "label": "gota-g004:v1"
+      },
+      "macromackie": {
+        "id": "cce4ab8a-ae60-4b87-b2bd-22f7f4025c9e",
+        "policy": {
+          "id": "6fa8e8a9-52db-4737-83b1-84ddd185dbdb",
+          "name": "macromackie-gota-neural"
+        },
+        "version": 2,
+        "player_id": "ply_5b832230-f519-4af8-adda-bb3e02349b7d",
+        "label": "macromackie-gota-neural:v2"
+      },
+      "Scott Smith": {
+        "id": "8cea4626-a0f1-4dd0-b066-58e6bd194ad3",
+        "policy": {
+          "id": "a67f72c8-7727-44d3-b9c4-a146a5f7ed8c",
+          "name": "gota-g003"
+        },
+        "version": 2,
+        "player_id": "ply_b7fd1a00-9728-455c-98bc-3b5788ee9784",
+        "label": "gota-g003:v2"
+      },
+      "Andre von Auto": {
+        "id": "564e4650-5efb-4b66-b9d4-a49070e1e68e",
+        "policy": {
+          "id": "fe2118ce-4bc8-4624-a8c7-1c68366e3f64",
+          "name": "khors"
+        },
+        "version": 180,
+        "player_id": "ply_3d22435e-30a2-4f2a-b037-a5c249583788",
+        "label": "khors:v180"
+      },
+      "richard": {
+        "id": "25e89eeb-3449-45dd-afbf-c61020891a49",
+        "policy": {
+          "id": "cfced003-7272-4a82-9abf-3775963e9f06",
+          "name": "richard-gods-of-the-arena"
+        },
+        "version": 204,
+        "player_id": "ply_ded11f40-3e30-4921-b019-f7f6bc3e9c83",
+        "label": "richard-gods-of-the-arena:v204"
+      },
+      "Jordan": {
+        "id": "a15665be-4edf-4857-b23b-2888b4b49868",
+        "policy": {
+          "id": "28e3646b-eb7e-482d-9217-5cb4d5d36029",
+          "name": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb"
+        },
+        "version": 411,
+        "player_id": "ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb",
+        "label": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v411"
+      },
+      "Andre von Houck": {
+        "id": "b0e0780b-9fd4-400e-a4cb-57a1987f7ace",
+        "policy": {
+          "id": "a4c0f5e1-e58e-48be-bec1-4e38e04b66ac",
+          "name": "Polyworld GOTA base.bas"
+        },
+        "version": 2,
+        "player_id": "ply_607f17a2-3acf-405b-91fe-d12ef1001c00",
+        "label": "Polyworld GOTA base.bas:v2"
+      },
+      "daveey": {
+        "id": "b975deec-7463-4ace-a2b3-5736f47c6e36",
+        "policy": {
+          "id": "dc7430d7-98e6-4eae-a4de-1075227e131d",
+          "name": "arena-codex-draft-compatibility-20260921"
+        },
+        "version": 1,
+        "player_id": "ply_44ae9048-3242-4654-881f-6d9d43347fa3",
+        "label": "arena-codex-draft-compatibility-20260921:v1"
+      }
+    },
+    "selection": "All40new baseline episodes from unique version history, ten per color/seat. Both treatments reuse exact same40baseline seeds, slots, resolved rosters and config; allotherpolicies respond. Never compare to replay61 outcomes as current-release controls.",
+    "rule": "Two directional contrasts versus baseline, plus paired lane-neutral versus lane-only. All games,tenVMs,replayhashes,XP,scores,seed/config/source identity must validate. Primary expectedindividualscore. Report stratified paired10000resample percentile95%intervals(seed9236102) and97.5%intervals for two baseline contrasts(Bonferroni). Advance a candidate only if mean>0 and97.5%lower>=0. No independent win/death/nonzero gate; all secondary slices descriptive. No deployment from directional pilot or unestablished verdict floor."
+  },
+  "files": {
+    "hosted.py": "0b7ff01684d788c4c7bb5e81ef3c195bca41bb915eb591249a8d38ac3de37433",
+    "openapi-preparation.json": "0f678e89a7301e885e8a42721d55896f143f36ff54eb792095416fd3b707bce6",
+    "memberships-preparation.json": "00e4832e65e6747eadb407cf80f74485df283c66f07219841899bb834eac0c52",
+    "canonical-game.json": "4885819513d0bc688ac6b01ff297acdcaad1d60e4a59ec4a389b05730ebd23b8",
+    "hosted-run.log": "68a7b4ad2aaa1006e67d6a6344c568736d77dc7d880234de62f61aca5d5461c5",
+    "failed-release62-batch.json": "910e2c905bf7a1c33f6e2ad6a7d0452f879b200a0236eda9d0fc581f480b4783",
+    "hosted-plan.json": "3a7221ecfba0ed04d420b5528fa895cf8855464c57673d8b9baf3e8bb1a0500c",
+    "hosted/side0-seat0/request.json": "0f6d784630266a835a39c8b522e87b553095716911758beb638cc806065b52fe",
+    "hosted/side0-seat0/result.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "hosted/side0-seat0/episodes.json": "e115f2f3d800c17227a250f0dfcd73f56b362b8856872ef6e65e1bd621aa8d85",
+    "hosted/side1-seat0/request.json": "095ac512dfd809d85ab355dac204e4ea973231c4b67707ad11dfa03d20dde4e1",
+    "hosted/side0-seat3/request.json": "de065f3c77de0dbcd556ec706b32b4237e7d615f36bf116f25dff3c30a71c894",
+    "hosted/side1-seat3/request.json": "7d817680da791e11c0aea6e489393b06981b826b800574766ae48eb69328895b",
+    "hosted/side0-seat0/batch/request.json": "0f6d784630266a835a39c8b522e87b553095716911758beb638cc806065b52fe",
+    "hosted/side0-seat0/batch/created.json": "3dc437cb17ddc780fc3255ab95e15a062fd409173c542d4a860bd99c5b1ab8a0",
+    "hosted/side0-seat0/batch/dry-run.json": "488b57d8bf682364650c16769dd5044ac310186053ca971750a442f10f83e6ca",
+    "hosted/side1-seat0/batch/request.json": "095ac512dfd809d85ab355dac204e4ea973231c4b67707ad11dfa03d20dde4e1",
+    "hosted/side1-seat0/batch/dry-run.json": "b090179a0fa81a562cdac5de6a077066d5eefaff7036fedab9c83d621308916a",
+    "hosted/side0-seat3/batch/request.json": "de065f3c77de0dbcd556ec706b32b4237e7d615f36bf116f25dff3c30a71c894",
+    "hosted/side0-seat3/batch/dry-run.json": "c7b9a15d9cf776965fc73101c901e0ac85d4c040fc95a6a51836ade690fc21ae",
+    "hosted/side1-seat3/batch/request.json": "7d817680da791e11c0aea6e489393b06981b826b800574766ae48eb69328895b",
+    "hosted/side1-seat3/batch/dry-run.json": "ce75032bd59bdf66efebe0ea3a685599ff13599ff316fc0289992c3ec3e03c79",
+    "uploads/baseline/request.json": "f834e535f637458fce955d511268bdb4388a1bc7a80eae10050a0f42521ced19",
+    "uploads/baseline/version.json": "1b16845b54904f119d28d41ea71006f7ef3ef9ef50a3668b70bdede9ebcceffe",
+    "uploads/baseline/metadata.json": "9edbc293df1146232310e0deb5dcb0673d9e17102efd4f8bb4a993b3c1a64bb3",
+    "uploads/lane-neutral/request.json": "58dc8881f55128a7a2fc7d57a59535c31821064a4f4085482a208f3c4f3f38e3",
+    "uploads/lane-neutral/version.json": "33ffd5237e79a005c6bb0e9410f2aae5d7ac78db5c7b18f38b952c809960f78d",
+    "uploads/lane-neutral/metadata.json": "c8e929f2a6bf030e34c7696435841da94911acbc94a8bbce22a04df22d9fc2ca",
+    "failed-artifacts/ereq_d7a5dea2-a0c0-42aa-a76a-ace673c7fa62/spec.json": "003f92acb1e47654b6e0b2d387330148b8e8be7d867b147221e59fb503c725db",
+    "failed-artifacts/ereq_d7a5dea2-a0c0-42aa-a76a-ace673c7fa62/logs.json": "e699acf9d3cbb36825776cde14d7d105e6303d21cd1e1245c3d7c4667d93a915",
+    "failed-artifacts/ereq_d7a5dea2-a0c0-42aa-a76a-ace673c7fa62/player-status.json": "48fde57e737fd43b35f8fc749d9fcceff783ddd282d60cdd1c1bdcf584bb7fa5"
+  }
+}

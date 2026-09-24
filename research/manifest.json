@@ -1,0 +1,39 @@
+{
+  "engine_commit": "2c8db6ebe1dc785ce1eea87496505d1244ee4c44",
+  "game_version": "2026.9.23.4",
+  "replay_version": 62,
+  "archive": "/Users/aaln/experiments/softmax/polyworld-gota-adaptive-score-20260922",
+  "archive_commit": "4219045a545f0b6b5628472ab420904e8d7e8778",
+  "objective": "Expected individual floor(max(0, XP - 200 * elapsed minutes))",
+  "policies": {
+    "previous": {
+      "origin": "/Users/aaln/experiments/softmax/polyworld-gota-adaptive-score-20260922/examples/gods_of_the_arena/players/ir/forks/druid-lane20260923-hosted/druid-lane",
+      "source_sha256": "29f6d7e67252a9cc32521e5a906ec33222a5e7e3b5e59b168db5c6b20c9c9e36",
+      "semantic_ir_status": "Historical annotation preserved; no current-release score qualification inferred."
+    },
+    "deployed": {
+      "origin": "/Users/aaln/experiments/softmax/polyworld-gota-adaptive-score-20260922/examples/gods_of_the_arena/players/ir/forks/neutralfarm20260923-hosted/lane-neutral",
+      "source_sha256": "2fbd789b0d9b9f25df3c41b24c31be665ddc0a7e6a9482b79ad80d52dcabe83c",
+      "semantic_ir_status": "Deployed pilot"
+    },
+    "weak-neutral": {
+      "origin": "/Users/aaln/experiments/softmax/polyworld/tmp/gota-weak-neutral62-20260924/weak-neutral",
+      "source_sha256": "c2321ead3ea8c3cab828c0c128662db355cebf67fde440711a50321c00ac0a7a",
+      "semantic_ir_status": "Reviewed with current local/hosted evidence; no independent confirmation or deployment qualification."
+    }
+  },
+  "constraints": [
+    "No code/controller/custom-gameplay merge from research archive.",
+    "Archived sources may require release validation; current engine is authoritative.",
+    "All hosted requests<=100; responsive paired controls;100000/day shared journal.",
+    "No win-rate gate; no silent deletion of negative evidence.",
+    "No JEV at user request."
+  ],
+  "results": "research/RESULTS.md",
+  "current_release_promotion": {
+    "previous": false,
+    "deployed": false,
+    "weak-neutral": false
+  },
+  "qualification_note": "Historical nested manifest and verifier qualification flags apply only to their frozen original studies. The current comparison did not qualify either challenger; incumbent is retained."
+}

@@ -1,0 +1,8 @@
+{
+  "user": "Fix low league scores; test that weak heroes kill neutrals for income. Skip Jev. Preserve khors180 observational analysis.",
+  "engine": "2c8db6ebe1dc785ce1eea87496505d1244ee4c44",
+  "objective": "Expected individual floor(max(0, XP - 200 * elapsed minutes)).",
+  "hypothesis": "Weak heroes lose income while preferring distant units or structure pressure to nearby camps. Bounded direct neutral combat, safer tier requirements and no speculative weak-hero wave pulls may improve score.",
+  "scope": "Coordinated targeting/guard/navigation changes; carry behavior preserved. Test against deployed source and prior champion with fresh responsive counterfactuals, diverse natural draft contexts. No efficacy claim from old narrow pilot.",
+  "evidence": "gota-khors180-observations-20260924; current36leaguegames; heterogeneous hero draws and two unrelated failing opponents preclude naive causal rollback."
+}

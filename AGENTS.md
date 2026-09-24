@@ -1,0 +1,3 @@
+# Current GotA score recovery
+
+Read research/manifest.json, research/CURRENT_CONTRACT.md and research/RESULTS.md first. This workspace pins the current engine and isolates three policy sources, with frozen input IR and reviewed evidence preserved. Optimize expected individual XP-minus-time score. Do not import old mechanics or win-only gates. Preserve historical annotations as history; validate current behavior before promoting. Existing campaign budget and ownership are shared at ../gota-autoresearch. Use at most 100 game variations per request with responsive paired controls. Do not restart the obsolete worker. Neither candidate in the completed 180-game study passed the score rule; the deployed source remains the working reference.

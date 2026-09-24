@@ -1,0 +1,14 @@
+/Users/aaln/experiments/softmax/polyworld-gota-neutral62-20260923/tests/test_gota_camps.nim(4, 19) Warning: imported and not used: 'pathing' [UnusedImport]
+Testing seeded camp tiers, mirror groups, and valid spawn tiles
+Testing explicit attacks, group aggro, and both teams
+Testing proximity wakes camps for heroes and creeps on either team
+Testing a nearby hidden hero does not provoke a camp
+Testing the exact twelve-tile leash boundary
+Testing contested neutral rewards reserve 15 percent for the last hit
+Testing full-clear cooldown, exact hero blocking radius, and fresh IDs
+Testing neutral observations never inherit navigation-side vision
+Testing leaders pay double and partial clears never refill
+Testing returning immunity and tower last hits share XP without gold
+Testing lane creeps pull resting camps and both sides deal damage
+Testing all neutral BASIC queries through an actual policy VM
+Neutral camp tests passed
