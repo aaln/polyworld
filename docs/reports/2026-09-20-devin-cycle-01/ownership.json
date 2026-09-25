@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-20T23:55:00+00:00",
+  "host": "devin-58dc29146e95400ca86b1215ff93a5b9",
+  "remote_mode": "observe",
+  "single_writer_transfer": "not_confirmed",
+  "reason": [
+    "docs/handoff/gota-20260920 is a point-in-time export captured at 2026-09-20T20:11:21Z with pending_jobs=[] and cycle_xp_exhausted=true.",
+    "Read-only GET /v2/experience-requests?mine=true shows 119 requests / 4,328 episodes created on 2026-09-20 UTC, the latest at 22:14:20Z, i.e. after the export. Another writer with this account's token was active after the archive; its checkpoint and xp-ledger have not been transferred to this host.",
+    "Live memberships for Aaron and Coach started 2026-09-20T22:41:30Z (formation-profile-pruned-0920 pair), recorded in examples/gods_of_the_arena/players/ir/forks/formation-adaptive-deployment-20260920/."
+  ],
+  "consequence": "No hosted XP purchases, uploads, or membership changes from this host until the previous worker is confirmed stopped and its ledger transferred. Local-only research this cycle.",
+  "active_remote_requests_at_check": {"pending": 0, "submitted": 0, "running": 0, "checked_at": "2026-09-20T23:50:00+00:00"},
+  "utc_day_episodes_purchased_by_account": 4328,
+  "daily_limit": 1600,
+  "budget_status": "exhausted_for_2026-09-20",
+  "incumbent": {"player": "ply_630a768f-d623-44b2-80fa-36968d6fa75a", "name": "Aaron", "version": "61148477-1928-43c6-a881-8daea0e8f6c2"},
+  "challenger": {"player": "ply_594ec24d-d7f3-4370-a000-468354ec41c9", "name": "Coach", "version": "2bb94c84-fc32-4a81-9e6d-46666bc0315f"},
+  "retired": ["a-aron"],
+  "deployed_source_sha256": "c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4",
+  "formal_accepted_snapshot": "0000-b2693715459d"
+}

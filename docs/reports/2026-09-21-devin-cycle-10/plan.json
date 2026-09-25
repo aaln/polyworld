@@ -1,0 +1,68 @@
+{
+ "candidate": "6ffbede747b848d56925a47e0a02f00b2e55cf539e16037a970a8f9ded0cd97b",
+ "candidate_path": "examples/gods_of_the_arena/players/ir/forks/red-def-release-20260921/policy.bas",
+ "rivals": {
+  "richard": {
+   "sha256": "f48bb0057aeaf2ff939035324340183e34f8f9544e03226edfe62e78faad5a30",
+   "path": "/home/ubuntu/repos/polyworld/docs/opponents/richard-v135/source-audit-20260920/v135.bas"
+  },
+  "parent": {
+   "sha256": "c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4",
+   "path": "/home/ubuntu/repos/polyworld/examples/gods_of_the_arena/players/ir/forks/formation-adaptive-20260920/policy.bas"
+  }
+ },
+ "seeds": [
+  54,
+  101,
+  202
+ ],
+ "colors": [
+  "red",
+  "blue"
+ ],
+ "engine": {
+  "at": "2026-09-20T23:41:14.403697+00:00",
+  "engine": "f2ab9598d8f8001b6beae3e66404e341770c803f",
+  "nim": "Nim Compiler Version 2.2.10 [Linux: amd64]\nCompiled at 2026-09-09\nCopyright (c) 2006-2026 by Andreas Rumpf\n\ngit hash: bfeb3146d1638b39f69007a4ae5a23e23ae4e5ef\nactive boot switches: -d:release",
+  "dependencies": {
+   "silky": "fb9b13910edd66cf1751056784c2f7d2932a59fc",
+   "pixie": "87cecced5c4c6f311c658a5f3ca0c9b43edb6aa7",
+   "vmath": "1b6080f4dc8114d2becaeb5f0944694f7e45794f",
+   "chroma": "08b0d65590221bb964544fd9badf29a146b9091a",
+   "zippy": "cd562ba43ae8904a4d1ba55611b8a521ef4a179e",
+   "flatty": "9c3f14cc287890b742196b4f0f74f0b9faab29cb",
+   "nimsimd": "ba71ac4e2927ba61e6d1bf75d0d124eacc714d1c",
+   "bumpy": "93583f6f8056a6259aaa96c89f4c143ba55bc6f0",
+   "crunchy": "98eb6526982bb8aae8eec6e8781f4539fa19e049",
+   "shady": "fc66679144717e715b2d4c397b5c515101e78be9",
+   "windy": "c9e19887b0ff143f382f5e99a0720ee01f9a9f51",
+   "opengl": "8e2e098f82dc5eefd874488c37b5830233cd18f4",
+   "urlly": "99784779f05649df25fd9c33003d8ef6de027345",
+   "ws": "c9c0c7b51e2e83cc9305a895a0b144a297b4bea8",
+   "dx12": "65049f4e2ec1acbbf1987bfa79817d472650c15e",
+   "vk14": "9465abdfbcdb61ecd7eca371889641f653ae0780",
+   "metal4": "e9ef085d38cdc7abf3d89670f3eae1754595b9f9",
+   "jsony": "c5874fb71435e3ced8ee0025822e15f5d0e8e622",
+   "fluffy": "535c5f234b41cd097b762203b5c216da1f4aeb1c",
+   "gltf": "9417000bfd90a6ad93bc840df92af13a1ee1acf9",
+   "webby": "fe515be4ab5d02695289f88fca0d27f703a05599",
+   "noisy": "9625ee0a9dbdae44c427df95a4f8de006c061150",
+   "benchy": "6425417b578dc54008285aad020625b4b4f61f7b",
+   "mummy": "01deb1ff694988635c7bf0f24f6088a0bdf6db5d"
+  },
+  "dependency_lock_sha256": "efa2ddd0c3f2639ca8dc6c4b11ef951f890c9d816b811559af0834c065e3f413",
+  "sources": {
+   "episode": "fa084b770e979d32ecfed086adedc098154c2bdd71d6255d78a7ebd1a0a0813c",
+   "audit-hosted": "93dfcf1ce98186354ca1af3a7bfc000204701a4c37ca4743d2b8772be12d6367",
+   "scenario-vm": "25fc29f355da0f8ba096f25f4cdfb5c7462711d56c58e3ff7126780318cc1dfa",
+   "observer-probe": "87067bed9a3ea71bbf9cd1c0981c694380d2fcdd6112a84d8186a4a103914368"
+  },
+  "binaries": {
+   "episode": "55206faa5bebf66fe8dfd124ed1152fbc27935fd5df826c372efe15936a8c4c4",
+   "audit-hosted": "a58228a8026769a4f512b219dc6938fc408f12d1c9ea5598c672ad7237bf2289",
+   "scenario-vm": "b624db3bf3f1a54f36628ff5f27ceb39e12f6cef31ea1f6529ecfe0a79edf1fe",
+   "observer-probe": "d3af87963128aee9a1d73180aefe48f320ecd44821aeecc12f618549b307dd7d"
+  }
+ },
+ "frozen_at": "2026-09-21T16:28:14.612982+00:00"
+}

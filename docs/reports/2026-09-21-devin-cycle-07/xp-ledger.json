@@ -1,0 +1,111 @@
+{
+ "account_active_requests": 0,
+ "account_readonly": {
+  "active": {
+   "pending": 0,
+   "running": 0,
+   "submitted": 0
+  },
+  "checked_at": "2026-09-21T06:30:00+00:00",
+  "episodes_represented": 4328,
+  "latest_request_created_at": "2026-09-20T22:14:20.812841Z",
+  "requests_created": 119,
+  "snapshot": ".gota/xp-requests-20260920-readonly.json",
+  "utc_day": "2026-09-21"
+ },
+ "days": {
+  "2026-09-21": {
+   "active_at_end": {
+    "pending": 0,
+    "running": 0,
+    "submitted": 0
+   },
+   "cycle_06": {
+    "control-blue": "not purchased: candidate failed its absolute floor (0/40 blue) so the control-blue arm could not change the decision; idempotency key frozen in requests/control-blue/request.json if ever needed",
+    "episodes": 120,
+    "requests": [
+     "xreq_04e46b7f-e6f4-42be-be21-318aaff98bb0",
+     "xreq_2b5e1bbd-bf64-429d-af8b-8ccc10f1d855",
+     "xreq_0bc7ca99-d0f9-44e7-8209-0df7985b6f14"
+    ],
+    "study": "gota-ab-v3-relh159-20260921"
+   },
+   "purchased_by_this_host": 160,
+   "reconciled_at": "2026-09-21T08:44:50+00:00",
+   "requests": [
+    {
+     "arm": "candidate-red",
+     "created_at": "2026-09-21T08:37:05+00:00",
+     "episodes": 40,
+     "idempotency_key": "gota-ab-5502d7d7ef59dfb08660",
+     "request_id": "xreq_04e46b7f-e6f4-42be-be21-318aaff98bb0",
+     "reserved_at": "2026-09-21T08:37:04+00:00",
+     "status": "created",
+     "study": "gota-ab-v3-relh159-20260921"
+    },
+    {
+     "arm": "candidate-blue",
+     "created_at": "2026-09-21T08:37:07+00:00",
+     "episodes": 40,
+     "idempotency_key": "gota-ab-28f4cca2c50ca196a5cb",
+     "request_id": "xreq_2b5e1bbd-bf64-429d-af8b-8ccc10f1d855",
+     "reserved_at": "2026-09-21T08:37:05+00:00",
+     "status": "created",
+     "study": "gota-ab-v3-relh159-20260921"
+    },
+    {
+     "arm": "control-red",
+     "created_at": "2026-09-21T08:37:08+00:00",
+     "episodes": 40,
+     "idempotency_key": "gota-ab-61bf7dd4bc49cf16f40e",
+     "request_id": "xreq_0bc7ca99-d0f9-44e7-8209-0df7985b6f14",
+     "reserved_at": "2026-09-21T08:37:07+00:00",
+     "status": "created",
+     "study": "gota-ab-v3-relh159-20260921"
+    },
+    {
+     "arm": "candidate-red",
+     "created_at": "2026-09-21T10:34:05+00:00",
+     "episodes": 40,
+     "idempotency_key": "gota-ab-b06d22482a1b081f8fce",
+     "request_id": "xreq_72487884-3655-4518-bb40-e13c8339fc2e",
+     "reserved_at": "2026-09-21T10:34:03+00:00",
+     "status": "created",
+     "study": "gota-ab-transit-off-relh159-20260921"
+    }
+   ],
+   "cycle_07": {
+    "study": "gota-ab-transit-off-relh159-20260921",
+    "episodes": 40,
+    "requests": [
+     "xreq_72487884-3655-4518-bb40-e13c8339fc2e"
+    ],
+    "result": "candidate-red 0W/40L/0D/0INV; falsified"
+   }
+  }
+ },
+ "episodes_purchased_by_this_host": 200,
+ "host": "devin-58dc29146e95400ca86b1215ff93a5b9",
+ "last_reconciled": "2026-09-21T10:50Z",
+ "latest_account_request_created_at": "2026-09-20T22:14:20.812841Z",
+ "limits": {
+  "max_active": 3,
+  "per_cycle": 400,
+  "per_utc_day": 1600
+ },
+ "note": "Fresh observer ledger on this host. It does NOT replace the previous worker's private ledger, which has not been transferred. Account-level spend below is read-only from GET /v2/experience-requests?mine=true.",
+ "requests_created_by_this_host": [
+  "xreq_04e46b7f-e6f4-42be-be21-318aaff98bb0",
+  "xreq_2b5e1bbd-bf64-429d-af8b-8ccc10f1d855",
+  "xreq_0bc7ca99-d0f9-44e7-8209-0df7985b6f14",
+  "xreq_72487884-3655-4518-bb40-e13c8339fc2e",
+  {
+   "cycle": 7,
+   "request_id": "xreq_72487884-3655-4518-bb40-e13c8339fc2e",
+   "episodes": 40,
+   "created_at": "2026-09-21T10:34Z",
+   "result": "0W/40L/0D/0INV"
+  }
+ ],
+ "schema": 1
+}

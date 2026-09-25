@@ -1,0 +1,6 @@
+## Cycle 02 — check 2026-09-21T00:23:31Z (engine 2026.9.16.5, no drift)
+Live: Richard #1 1956.3 v135 `7c370daf`; Alex #2 1700.5 g002:v1 `a30542cb`; Coach #4 1669.8 `2bb94c84`; Jordan #6 1626.0 v268 `207ffaf9`; Aaron #8 1614.6 `61148477`.
+Exact-current-version live H2H since deploy (completed): Coach — W vs Richard(blue), W vs Alex(blue), W vs Jordan(blue), W vs Scott g003(red), D vs macromackie v4(red). Aaron — W vs Jordan(red), 2W vs Scott(blue), D vs NanosaurusX(red), **L vs relh v159 (blue)** — relh v159 is a NEW version, watch it. No red game vs Richard yet (known 0/40 hosted).
+Trigger: NOT met (ranks −1 each vs 23:41Z, first check of slippage; no repeated H2H losses). No hosted spend.
+Ownership: claimed single-writer (no foreign XP requests since 22:14:20Z over two checks; 0 active). Spent today 0/1600.
+Local step: observer-trajectory probes (hash-validated, 5898 ticks, 73861 actions) on red-54 slot2 and blue-54 slot7 → H-RED-TRANSIT-01 (see progress.json): red-only caster-transit sends slots 2–3 alone to centre at tick ~850 into 3 Richard heroes; blue has no such lone pair. Next discriminating test: fork with transit gated on ≥3 nearby allies, screen red vs Richard and red vs Alex/Jordan (risk: transit is part of tested Alex/Jordan red package).

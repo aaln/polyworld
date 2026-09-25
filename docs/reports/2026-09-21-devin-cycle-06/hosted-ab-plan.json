@@ -1,0 +1,28 @@
+{
+ "arms": {
+  "candidate": "CANDIDATE",
+  "control": "61148477-1928-43c6-a881-8daea0e8f6c2"
+ },
+ "candidate_ir_sha256": "e170dea48ebfdd640c2fd37c3bec30af9e3d850f69a016ea1503373e08223dbe",
+ "candidate_name": "aaron-gota-ir-ally-under-attack-v3-0921",
+ "candidate_sha256": "d60f9626c51d607fad99102e7bb52c50807853a0a98aefb77951fa97ee74532d",
+ "candidate_source": "examples/gods_of_the_arena/players/ir/forks/ally-under-attack-v3-20260921/policy.bas",
+ "config": {},
+ "coworld_id": "cow_126f2fcb-80a0-4b6e-8166-eb6163576db5",
+ "decision_rule": "Fixed 5v5 seats, 40 platform-seeded episodes per arm per colour (160 total, 0 pending prior). Candidate qualifies as a hosted challenger only if: 0 INVALID candidate episodes; candidate blue wins >= control blue wins + 8 AND candidate blue wins >= 16/40; candidate red wins >= control red wins - 2. Draws count zero. Otherwise null result, incumbent retained. Passing this A/B alone does not deploy: a Richard/Alex/Jordan field check follows before any Coach promotion.",
+ "episodes_per_color": 40,
+ "frozen_at": "2026-09-21T08:36:42+00:00",
+ "game_version": "2026.9.16.5",
+ "hypothesis": "H-ALLY-UNDER-ATTACK-01 v3 single-pass assist retarget",
+ "local_gates": {
+  "activation": "offline: blue relh loss fires tick 1418 (hero108) / 1496 (hero107); red relh loss 0 fires",
+  "instructions": "+661 blue (16660 vs 15999), +591 red (19001 vs 18410); falsifier 1500",
+  "regression": "vs Richard v135 state hashes identical to parent (6/6); vs parent mirror red 0-2-1 = control, blue 3-0-0 vs control 2-0-1",
+  "valid": "12/12 valid, 0 VM failures"
+ },
+ "parent_sha256": "c708970db2c1be838d6d38b726cbc1b94b73c88f7c5b20c0adfd4d02666436a4",
+ "rival_label": "relh-gods-of-the-arena:v159",
+ "rival_version": "ce5bfbfa-4532-461e-adbb-017cdf6784f6",
+ "study_id": "gota-ab-v3-relh159-20260921",
+ "upload_player_id": "ply_594ec24d-d7f3-4370-a000-468354ec41c9"
+}

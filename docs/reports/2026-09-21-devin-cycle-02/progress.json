@@ -1,0 +1,27 @@
+{
+ "cycle": "02",
+ "phase": "local-mechanism-diagnosis",
+ "focus": "Richard v135 red loss (hosted 0/40 red, 40/40 blue; locally reproduced 0/3 red, 3/3 blue)",
+ "hypothesis_id": "H-RED-OPEN-SPLIT-01",
+ "status": "proposed; rule-level episode IR not yet extracted",
+ "next_action": "Fork formation-adaptive-20260920 IR: gate transit_state on allies-nearby>=3 (or red team transit off); rebuild via frozen compiler.zip toolchain (verify.py path), test activation, screen red seeds 54/101/202 vs Richard v135 and red vs Alex g002/Jordan v268 pinned sources.",
+ "last_result": "Deployed source c708970d\u2026 vs authentic Richard v135 (f48bb005\u2026): red L/L/L (1 distinct stream), blue W/W/W. Red: 2 heroes die alone at centre by tick 1085, 5 deaths vs 1 by tick 1805; Richard heroes reach level 7; fort lost at tick 5898 in a structure race.",
+ "checked_at": "2026-09-21T00:26:44Z",
+ "hypotheses": [
+  {
+   "id": "H-RED-TRANSIT-01",
+   "refines": "H-RED-OPEN-SPLIT-01",
+   "layer": "skill/strategy",
+   "rule": "R_profile_transit -> skill transit_state (formation_profile_transit_state_v1, red-only: selfTeam=0 and gaActive=0 and adMode<>3)",
+   "status": "proposed, untested",
+   "mechanism": "Red opening is a 1/2/2 dispersal: slot0 right lane, slots1+4 far-left (x 12-28,y 13), slots2+3 break off at tick ~450 toward centre (61,51), arrive ~850 alone, meet Richard 106/108/109 and die by 950. Blue opening (winning) is 3/2 along edges with no lone centre pair.",
+   "prediction": "Routing slots 2-3 with the left group (transit disabled or gated on >=3 allies within 8 tiles) yields <=1 red death by tick 1800 vs Richard v135 seed 54.",
+   "falsifier": "Grouped variant still loses seeds 54/101/202 on red with early deaths, OR regresses Alex g002/Jordan v268 red (transit was part of the tested Alex/Jordan red package).",
+   "runtime_cost": "<= +200 instructions (one ally-count predicate on the transit guard)",
+   "evidence": [
+    ".gota/cycles/20260920T2340Z-devin/local-richard/red-54.observer-slot2.jsonl",
+    ".gota/cycles/20260920T2340Z-devin/local-richard/blue-54.observer-slot7.jsonl"
+   ]
+  }
+ ]
+}
